@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {# <link rel="stylesheet" href="/styles/code.css" /> #}
+  </head>
+
+  <body>
+
+    {# <header>
+      <h1>{{title}}</h1>
+      <p>{{subtitle}}</p>
+      <p><span class="date">{{date}}</span></p>
+    </header> #}
+    <div>
+      piblings
+      <ul>
+      {% for pibling in piblings %}
+        <li>
+          <a href="/{{pibling}}.html">{{pibling}}</a>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+
+    <div>
+      siblings
+      <ul>
+      {% for sibling in siblings %}
+        <li>
+          <a href="/{{sibling}}.html">{{sibling}}</a>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+
+    <div>
+      children:
+      <ul>
+      {% for child in children %}
+        <li>
+          <a href="/{{child}}.html">{{child}}</a>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+    
+    <main>
+      <article>{{body}}</article>
+    </main>
+
+  </body>
+</html>
