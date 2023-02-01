@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+  </head>
+
+  <body>
+
+    
+    <div>
+      piblings
+      <ul>
+      
+        <li>
+          <a href="/Problems.html">Problems</a>
+        </li>
+      
+        <li>
+          <a href="/Folklore.html">Folklore</a>
+        </li>
+      
+      </ul>
+    </div>
+
+    <div>
+      siblings
+      <ul>
+      
+        <li>
+          <a href="/Ghidhra HiDPI.html">Ghidhra HiDPI</a>
+        </li>
+      
+        <li>
+          <a href="/Keychron Fn Keys.html">Keychron Fn Keys</a>
+        </li>
+      
+        <li>
+          <a href="/Git Subdirectory Branch.html">Git Subdirectory Branch</a>
+        </li>
+      
+        <li>
+          <a href="/Firefox Photon.html">Firefox Photon</a>
+        </li>
+      
+        <li>
+          <a href="/Xfce Screentearing.html">Xfce Screentearing</a>
+        </li>
+      
+      </ul>
+    </div>
+
+    <div>
+      children:
+      <ul>
+      
+      </ul>
+    </div>
+    
+    <main>
+      <article><p>Styling Firefox Proton to resemble Firefox Photon.</p>
+<p>Originally tested on Firefox 91, confirmed working on Firefox 104.</p>
+<p>Firefox Proton
+<img alt="" src="Media/firefox-proton.png" /></p>
+<p>Firefox Photon
+<img alt="" src="Media/firefox-photon.png" /></p>
+<p>Firefox Proton brought many lovely features, but I deeply prefer the Photon tab design.  Luckily, Proton supports applying CSS styling to window elements like the tab bar.</p>
+<ol>
+<li>Open <code>about:config</code></li>
+<li>Find for <code>toolkit.legacyUserProfileCustomizations.stylesheets</code>, set its value to true.</li>
+<li>Open <code>about:support</code> and go to the directory marked "Profile Directory" or "Profile Folder".</li>
+<li>Create file <code>&lt;profile directory&gt;/chrome/userChrome.css</code> with custom stylesheet, e.g.</li>
+</ol>
+<pre class="codehilite"><code>.tab-background {
+    border-radius: 0px 0px !important;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+}
+
+.tabbrowser-tab:not([selected=true]):not([multiselected=true]) .tab-background {
+    background-color: color-mix(in srgb, currentColor 0%, transparent);
+}
+</code></pre>
+
+<ol>
+<li>Restart Firefox</li>
+</ol>
+<p><img alt="" src="Media/firefox-proton-modded.png" /></p>
+<h2 id="links">Links</h2>
+<p>Source : https://superuser.com/questions/1653533/how-to-switch-back-to-firefox-old-style-of-tabs/1669549#1669549</p></article>
+    </main>
+
+  </body>
+</html>

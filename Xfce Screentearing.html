@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+  </head>
+
+  <body>
+
+    
+    <div>
+      piblings
+      <ul>
+      
+        <li>
+          <a href="/Problems.html">Problems</a>
+        </li>
+      
+        <li>
+          <a href="/Folklore.html">Folklore</a>
+        </li>
+      
+      </ul>
+    </div>
+
+    <div>
+      siblings
+      <ul>
+      
+        <li>
+          <a href="/Ghidhra HiDPI.html">Ghidhra HiDPI</a>
+        </li>
+      
+        <li>
+          <a href="/Keychron Fn Keys.html">Keychron Fn Keys</a>
+        </li>
+      
+        <li>
+          <a href="/Git Subdirectory Branch.html">Git Subdirectory Branch</a>
+        </li>
+      
+        <li>
+          <a href="/Firefox Photon.html">Firefox Photon</a>
+        </li>
+      
+        <li>
+          <a href="/Xfce Screentearing.html">Xfce Screentearing</a>
+        </li>
+      
+      </ul>
+    </div>
+
+    <div>
+      children:
+      <ul>
+      
+      </ul>
+    </div>
+    
+    <main>
+      <article><p>Tested myself on Xfce 4.12 on Xubuntu 20.04 on trenzalore (Intel HD Graphics 530), allegedly works on Xubuntu 16.04.03.</p>
+<p>Create file <code>/etc/X11/xorg.conf</code> with the content:</p>
+<pre class="codehilite"><code>        Section &quot;Device&quot;
+            Identifier  &quot;Intel Graphics&quot;
+            Driver      &quot;intel&quot;
+            Option      &quot;AccelMethod&quot;   &quot;sna&quot;
+            Option      &quot;TearFree&quot;  &quot;true&quot;
+        EndSection
+</code></pre>
+
+<p>Source: https://forum.xfce.org/viewtopic.php?id=12019</p></article>
+    </main>
+
+  </body>
+</html>

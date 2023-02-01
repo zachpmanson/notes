@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+  </head>
+
+  <body>
+
+    
+    <div>
+      piblings
+      <ul>
+      
+        <li>
+          <a href="/Problems.html">Problems</a>
+        </li>
+      
+        <li>
+          <a href="/Folklore.html">Folklore</a>
+        </li>
+      
+      </ul>
+    </div>
+
+    <div>
+      siblings
+      <ul>
+      
+        <li>
+          <a href="/Ghidhra HiDPI.html">Ghidhra HiDPI</a>
+        </li>
+      
+        <li>
+          <a href="/Keychron Fn Keys.html">Keychron Fn Keys</a>
+        </li>
+      
+        <li>
+          <a href="/Git Subdirectory Branch.html">Git Subdirectory Branch</a>
+        </li>
+      
+        <li>
+          <a href="/Firefox Photon.html">Firefox Photon</a>
+        </li>
+      
+        <li>
+          <a href="/Xfce Screentearing.html">Xfce Screentearing</a>
+        </li>
+      
+      </ul>
+    </div>
+
+    <div>
+      children:
+      <ul>
+      
+      </ul>
+    </div>
+    
+    <main>
+      <article><p>Mounting a Git branch to a subdirectory.</p>
+<p>Create an orphaned branch if it doesn't already exist, and remove any shared history with the trunk.</p>
+<pre class="codehilite"><code>git checkout --orphan gh-pages
+git reset --hard
+git commit --allow-empty -m &quot;Init&quot;
+git checkout master
+</code></pre>
+
+<p>Make the subdirectory that will host the branch.</p>
+<pre class="codehilite"><code>mkdir site
+git worktree add site gh-pages
+</code></pre>
+
+<p>Moving in and out of this directory should now switch branches.</p>
+<p>To set up a subdirectory branch on a cloned Git repo, only run the last two commands.</p>
+<p>This site uses this set up for deploying to GitHub Pages.</p>
+<p>Source: http://sangsoonam.github.io/2019/02/08/using-git-worktree-to-deploy-github-pages.html</p></article>
+    </main>
+
+  </body>
+</html>
