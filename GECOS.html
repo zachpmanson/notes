@@ -73,24 +73,24 @@
         <h1>GECOS</h1>
       </header>
       <article><p>When creating a new user account using the <code>adduser</code> program on Unix machines there is a field called GECOS that conventionally used to store information about the user, such as their real name or phone number.</p>
-<div class="codehilite"><pre><span></span><code><span class="n">adduser</span><span class="w"> </span>
-<span class="w">    </span><span class="o">[</span><span class="n">options</span><span class="o">]</span><span class="w"> </span>
-<span class="w">    </span><span class="o">[</span><span class="n">--home DIR</span><span class="o">]</span>
-<span class="w">    </span><span class="o">[</span><span class="n">--shell SHELL</span><span class="o">]</span>
-<span class="w">    </span><span class="o">[</span><span class="n">--no-create-home</span><span class="o">]</span>
-<span class="w">    </span><span class="o">[</span><span class="n">--uid ID</span><span class="o">]</span>
-<span class="w">    </span><span class="o">[</span><span class="n">--firstuid ID</span><span class="o">]</span>
-<span class="w">    </span><span class="o">[</span><span class="n">--lastuid ID</span><span class="o">]</span>
-<span class="w">    </span><span class="o">[</span><span class="n">--ingroup GROUP | --gid  ID</span><span class="o">]</span><span class="w"> </span>
-<span class="w">    </span><span class="o">[</span><span class="n">--disabled-password</span><span class="o">]</span><span class="w"> </span>
-<span class="w">    </span><span class="o">[</span><span class="n">--disabled-login</span><span class="o">]</span>
-<span class="w">    </span><span class="o">[</span><span class="n">--gecos GECOS</span><span class="o">]</span>
-<span class="w">    </span><span class="o">[</span><span class="n">--add_extra_groups</span><span class="o">]</span>
-<span class="w">    </span><span class="o">[</span><span class="n">--encrypt-home</span><span class="o">]</span><span class="w"> </span><span class="k">user</span>
+<div class="codehilite"><pre><span></span><code>adduser 
+    [options] 
+    [--home DIR]
+    [--shell SHELL]
+    [--no-create-home]
+    [--uid ID]
+    [--firstuid ID]
+    [--lastuid ID]
+    [--ingroup GROUP | --gid  ID] 
+    [--disabled-password] 
+    [--disabled-login]
+    [--gecos GECOS]
+    [--add_extra_groups]
+    [--encrypt-home] user
 
-<span class="o">--</span><span class="n">gecos</span><span class="w"> </span><span class="n">GECOS</span>
-<span class="k">Set</span><span class="w">  </span><span class="n">the</span><span class="w">  </span><span class="n">gecos</span><span class="w">  </span><span class="n">field</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">entry</span><span class="w"> </span><span class="n">generated</span><span class="p">.</span><span class="w">  </span><span class="n">adduser</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">ask</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">finger</span><span class="w"> </span>
-<span class="n">information</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">this</span><span class="w"> </span><span class="k">option</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">given</span><span class="p">.</span>
+--gecos GECOS
+Set  the  gecos  field for the new entry generated.  adduser will not ask for finger 
+information if this option is given.
 </code></pre></div>
 
 <p>The cryptic title is not explained in the man pages.  This field is called GECOS as it was originally used to describe the purpose of machines running the <a href="https://en.wikipedia.org/wiki/General_Comprehensive_Operating_System">General Electric Comprehensive Operating System</a> (GECOS), which had user accounts set up to access the services running on those machines, such as print spooling.  This field was added to <code>/etc/passwd</code>, and was later repurposed to contain identifying information on each user.  This anachronism has managed to persist into modern Unix and Linux system to this day.</p></article>
