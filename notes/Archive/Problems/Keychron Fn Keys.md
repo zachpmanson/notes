@@ -25,8 +25,8 @@ echo 1 | sudo tee /sys/module/hid_apple/parameters/fnmode
 ```
 
 ## Links
-Original post: https://www.reddit.com/r/MechanicalKeyboards/comments/d5io49/keychron_k2_f_keys_dont_work_w_linux_help/
-Adding persistency: https://mikeshade.com/posts/keychron-linux-function-keys/
-Archived Adding persistency: https://web.archive.org/web/20220721020355/https://mikeshade.com/posts/keychron-linux-function-keys/
-Other Keychron settings: https://github.com/Kurgol/keychron/blob/master/k2.md)
-Other Keychron settings fork: https://github.com/pavo-etc/keychron
+ - [Original post](https://www.reddit.com/r/MechanicalKeyboards/comments/d5io49/keychron_k2_f_keys_dont_work_w_linux_help/)
+ - [Adding persistency](https://mikeshade.com/posts/keychron-linux-function-keys/)
+ - [Archived Adding persistency](https://web.archive.org/web/20220721020355/https://mikeshade.com/posts/keychron-linux-function-keys/)
+ - [Other Keychron settings](https://github.com/Kurgol/keychron/blob/master/k2.md)
+ - [Other Keychron settings fork](https://github.com/pavo-etc/keychron)

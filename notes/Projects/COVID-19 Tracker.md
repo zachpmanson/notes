@@ -11,6 +11,5 @@ My tracker scrapes these press releases, stores them, produces a simple plot of 
 The project has been broken since September 2022, as the government switched to only reporting weekly numbers.
 
 ## Links
-
-Source : https://github.com/pavo-etc/wa-covid-tracker
-Deployment : https://tracker.zachmanson.com
+ - [Source](https://github.com/pavo-etc/wa-covid-tracker)
+ - [Deployment](https://tracker.zachmanson.com)

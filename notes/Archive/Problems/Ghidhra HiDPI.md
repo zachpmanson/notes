@@ -13,4 +13,5 @@ to:
 VMARGS_LINUX=-Dsun.java2d.uiScale=2
 ```
 
-Source: https://gist.github.com/nstarke/baa031e0cab64a608c9bd77d73c50fc6
+## Links
+ - [Source](https://gist.github.com/nstarke/baa031e0cab64a608c9bd77d73c50fc6)

@@ -20,4 +20,5 @@ To set up a subdirectory branch on a cloned Git repo, only run the last two comm
 
 This site uses this set up for deploying to GitHub Pages.
 
-Source: http://sangsoonam.github.io/2019/02/08/using-git-worktree-to-deploy-github-pages.html
+## Links
+ - [Source](http://sangsoonam.github.io/2019/02/08/using-git-worktree-to-deploy-github-pages.html)

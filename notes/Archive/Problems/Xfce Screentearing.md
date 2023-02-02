@@ -10,4 +10,5 @@ Create file `/etc/X11/xorg.conf` with the content:
 		EndSection
 ```
 
-Source: https://forum.xfce.org/viewtopic.php?id=12019
+## Links
+[Source](https://forum.xfce.org/viewtopic.php?id=12019)
