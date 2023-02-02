@@ -118,7 +118,8 @@ def traverse_tree():
                 "parent":parent,
                 "children": children,
                 "siblings": siblings,
-                "piblings": piblings
+                "piblings": piblings,
+                "len":len
             }))
         print(f"Generated {grandparent}/{parent}/{node}.html")
         # print(siblings)
