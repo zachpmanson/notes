@@ -15,12 +15,14 @@ ignore_names = [
 #   "children":[child1, child2]}
 # }
 tree = {
-    "notes":{
+    "index": {
         "parent": None,
         "children": []
     }
 }
-routes = {}
+routes = {
+    "index": "./"
+}
 
 
 
@@ -30,6 +32,8 @@ def get_tree():
             continue
 
         title = root.split("/")[-1]
+        if title == "notes":
+            title = "index"
         # print(title,tree[title])
 
         for file in files:
@@ -65,7 +69,7 @@ def get_tree():
     print(tree.keys())
     
     # Generate parents
-    queue = ["notes"]
+    queue = ["index"]
     for node in queue:
         children = tree[node]["children"]
         
@@ -81,15 +85,15 @@ def get_tree():
 def traverse_tree():
     post_template = jinja2.Template(open("generator/template.jinja", "r").read())
 
-    queue = [*tree["notes"]["children"]]
+    queue = ["index"]#[*tree["notes"]["children"]]
     for node in queue:
 
         children = tree[node]["children"]
 
         parent = tree[node]["parent"]
-        siblings = tree[parent]["children"]
+        siblings = tree[parent]["children"] if parent != None else None
         grandparent = tree[parent]["parent"] if parent != None else None
-        piblings = tree[grandparent]["children"] if grandparent != None else []
+        piblings = tree[grandparent]["children"] if grandparent != None else None
         
         for child in children:
             if node != child:
@@ -99,7 +103,7 @@ def traverse_tree():
             with open(os.path.join(routes[node], node+".md"), "r") as src_file:
                 text = src_file.read()
                 text = re.sub(r"(?<!!)\[\[(.*)\]\]", "[\\1](\\1.html)",text)
-                text = re.sub(r"!\[\[(.*)\]\]", "![](Media/\\1)",text)
+                text = re.sub(r"!\[\[(.*)\]\]", "![](/static/media/\\1)",text)
                 body = markdown.markdown(
                     text,
                     extensions=['fenced_code', "codehilite", 'md_in_html', 'toc']
@@ -109,7 +113,9 @@ def traverse_tree():
 
         with open(os.path.join("site", f"{node}.html"), "w") as f:
             f.write(post_template.render({
+                "title":node,
                 "body":body,
+                "parent":parent,
                 "children": children,
                 "siblings": siblings,
                 "piblings": piblings

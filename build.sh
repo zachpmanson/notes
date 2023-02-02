@@ -5,5 +5,7 @@ echo Activated venv
 python3 ./generator/generator.py
 deactivate
 echo Deactivated venv
-cp -R ./notes/Media ./site/Media 
+mkdir -p ./site/static/media
+rm -r ./site/static/media/*
+cp -R ./notes/Media/ ./site/static/media/
 echo Done!
