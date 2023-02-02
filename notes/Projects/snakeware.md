@@ -25,6 +25,5 @@ Other planned projects were networking, a chat application, and a package system
 The project was coordinated over a Discord server, though this hasn't been active for some time.
 
 ## Links
-
-snakeware source code : https://github.com/joshiemoore/snakeware
-CATH text editor : https://github.com/Cyppa/CATH-for-Snakeware
+ - [snakeware source code](https://github.com/joshiemoore/snakeware)
+ - [CATH text editor](https://github.com/Cyppa/CATH-for-Snakeware)

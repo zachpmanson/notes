@@ -15,7 +15,7 @@ Firefox Proton brought many lovely features, but I deeply prefer the Photon tab 
 2. Find for `toolkit.legacyUserProfileCustomizations.stylesheets`, set its value to true.
 3. Open `about:support` and go to the directory marked "Profile Directory" or "Profile Folder".
 4. Create file `<profile directory>/chrome/userChrome.css` with custom stylesheet, e.g.
-```
+```css
 .tab-background {
 	border-radius: 0px 0px !important;
 	margin-bottom: 0px !important;
