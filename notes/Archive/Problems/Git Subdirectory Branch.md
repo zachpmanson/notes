@@ -1,7 +1,7 @@
 Mounting a Git branch to a subdirectory.
 
 Create an orphaned branch if it doesn't already exist, and remove any shared history with the trunk.
-```
+```sh
 git checkout --orphan gh-pages
 git reset --hard
 git commit --allow-empty -m "Init"
@@ -9,7 +9,7 @@ git checkout master
 ```
 
 Make the subdirectory that will host the branch.
-```
+```sh
 mkdir site
 git worktree add site gh-pages
 ```

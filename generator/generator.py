@@ -4,6 +4,7 @@ import re
 
 import jinja2
 import markdown
+from markdown.extensions.codehilite import CodeHiliteExtension
 
 ignore_names = [
     ".obsidian",
@@ -85,7 +86,7 @@ def get_tree():
 def traverse_tree():
     post_template = jinja2.Template(open("generator/template.jinja", "r").read())
 
-    queue = ["index"]#[*tree["notes"]["children"]]
+    queue = ["index"]
     for node in queue:
 
         children = tree[node]["children"]
@@ -106,7 +107,7 @@ def traverse_tree():
                 text = re.sub(r"!\[\[(.*)\]\]", "![](/static/media/\\1)",text)
                 body = markdown.markdown(
                     text,
-                    extensions=['fenced_code', "codehilite", 'md_in_html', 'toc']
+                    extensions=['fenced_code', CodeHiliteExtension(guess_lang=False), 'md_in_html', 'toc']
                 )
         except FileNotFoundError:
             body = ""

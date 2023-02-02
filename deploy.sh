@@ -7,7 +7,7 @@ cd ../
 echo "Building..."
 ./build.sh
 #rsync -rvhP --inplace  --include=".htaccess" --exclude={'.*','src'} $HOME/projects/c/ochrs/ uberspace:html/
-cd ../site/
+cd ./site/
 git add -A
 git commit -m "gh-pages deployment"
 echo "Uploading to webserver..."
