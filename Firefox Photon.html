@@ -1,68 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
   <head>
-    
+    <link rel='stylesheet' href='/static/styles/colors.css' />
+    <link rel='stylesheet' href='/static/styles/global.css' />
+    <link rel='stylesheet' href='/static/styles/code.css' />
   </head>
 
   <body>
 
-    
-    <div>
-      piblings
-      <ul>
-      
-        <li>
-          <a href="/Problems.html">Problems</a>
-        </li>
-      
-        <li>
-          <a href="/Folklore.html">Folklore</a>
-        </li>
-      
-      </ul>
-    </div>
+     <nav>
 
-    <div>
-      siblings
-      <ul>
+      <div>
+        <a href='index.html'>
+          <img src='/static/icon/icon.png' alt='notes' height='100'>
+        </a>
+      </div>
       
-        <li>
-          <a href="/Ghidhra HiDPI.html">Ghidhra HiDPI</a>
-        </li>
       
-        <li>
-          <a href="/Keychron Fn Keys.html">Keychron Fn Keys</a>
-        </li>
+      <div>
+        <ul>
+        
+          <li>
+            
+            <a href='/Problems.html' class='activated-link'>Problems</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href='/Folklore.html'>Folklore</a>
+            
+          </li>
+        
+        </ul>
+      </div>
       
-        <li>
-          <a href="/Git Subdirectory Branch.html">Git Subdirectory Branch</a>
-        </li>
-      
-        <li>
-          <a href="/Firefox Photon.html">Firefox Photon</a>
-        </li>
-      
-        <li>
-          <a href="/Xfce Screentearing.html">Xfce Screentearing</a>
-        </li>
-      
-      </ul>
-    </div>
 
-    <div>
-      children:
-      <ul>
       
-      </ul>
-    </div>
-    
+      <div>
+        <ul>
+        
+          <li>
+            
+            <a href='/Ghidhra HiDPI.html'>Ghidhra HiDPI</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href='/Keychron Fn Keys.html'>Keychron Fn Keys</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href='/Git Subdirectory Branch.html'>Git Subdirectory Branch</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href='/Firefox Photon.html' class='activated-link'>Firefox Photon</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href='/Xfce Screentearing.html'>Xfce Screentearing</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      
+
+      <div>
+        <ul>
+        
+        </ul>
+      </div>
+    </nav>
     <main>
+      <header>
+        <h1>Firefox Photon</h1>
+      </header>
       <article><p>Styling Firefox Proton to resemble Firefox Photon.</p>
 <p>Originally tested on Firefox 91, confirmed working on Firefox 104.</p>
 <p>Firefox Proton
-<img alt="" src="Media/firefox-proton.png" /></p>
+<img alt="" src="/static/media/firefox-proton.png" /></p>
 <p>Firefox Photon
-<img alt="" src="Media/firefox-photon.png" /></p>
+<img alt="" src="/static/media/firefox-photon.png" /></p>
 <p>Firefox Proton brought many lovely features, but I deeply prefer the Photon tab design.  Luckily, Proton supports applying CSS styling to window elements like the tab bar.</p>
 <ol>
 <li>Open <code>about:config</code></li>
@@ -70,21 +97,21 @@
 <li>Open <code>about:support</code> and go to the directory marked "Profile Directory" or "Profile Folder".</li>
 <li>Create file <code>&lt;profile directory&gt;/chrome/userChrome.css</code> with custom stylesheet, e.g.</li>
 </ol>
-<pre class="codehilite"><code>.tab-background {
-    border-radius: 0px 0px !important;
-    margin-bottom: 0px !important;
-    margin-top: 0px !important;
-}
+<div class="codehilite"><pre><span></span><code><span class="p">.</span><span class="nc">tab-background</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="kt">px</span><span class="w"> </span><span class="mi">0</span><span class="kt">px</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="w">    </span><span class="k">margin-bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="kt">px</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="w">    </span><span class="k">margin-top</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="kt">px</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
+<span class="p">}</span>
 
-.tabbrowser-tab:not([selected=true]):not([multiselected=true]) .tab-background {
-    background-color: color-mix(in srgb, currentColor 0%, transparent);
-}
-</code></pre>
+<span class="p">.</span><span class="nc">tabbrowser-tab</span><span class="p">:</span><span class="nd">not</span><span class="o">([</span><span class="nt">selected</span><span class="o">=</span><span class="nt">true</span><span class="o">])</span><span class="p">:</span><span class="nd">not</span><span class="o">([</span><span class="nt">multiselected</span><span class="o">=</span><span class="nt">true</span><span class="o">])</span><span class="w"> </span><span class="p">.</span><span class="nc">tab-background</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="nf">color-mix</span><span class="p">(</span><span class="n">in</span><span class="w"> </span><span class="n">srgb</span><span class="p">,</span><span class="w"> </span><span class="kc">currentColor</span><span class="w"> </span><span class="mi">0</span><span class="kt">%</span><span class="p">,</span><span class="w"> </span><span class="kc">transparent</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
 
 <ol>
 <li>Restart Firefox</li>
 </ol>
-<p><img alt="" src="Media/firefox-proton-modded.png" /></p>
+<p><img alt="" src="/static/media/firefox-proton-modded.png" /></p>
 <h2 id="links">Links</h2>
 <p>Source : https://superuser.com/questions/1653533/how-to-switch-back-to-firefox-old-style-of-tabs/1669549#1669549</p></article>
     </main>

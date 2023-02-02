@@ -1,78 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
   <head>
-    
+    <link rel='stylesheet' href='/static/styles/colors.css' />
+    <link rel='stylesheet' href='/static/styles/global.css' />
+    <link rel='stylesheet' href='/static/styles/code.css' />
   </head>
 
   <body>
 
-    
-    <div>
-      piblings
-      <ul>
-      
-        <li>
-          <a href="/Problems.html">Problems</a>
-        </li>
-      
-        <li>
-          <a href="/Folklore.html">Folklore</a>
-        </li>
-      
-      </ul>
-    </div>
+     <nav>
 
-    <div>
-      siblings
-      <ul>
+      <div>
+        <a href='index.html'>
+          <img src='/static/icon/icon.png' alt='notes' height='100'>
+        </a>
+      </div>
       
-        <li>
-          <a href="/Ghidhra HiDPI.html">Ghidhra HiDPI</a>
-        </li>
       
-        <li>
-          <a href="/Keychron Fn Keys.html">Keychron Fn Keys</a>
-        </li>
+      <div>
+        <ul>
+        
+          <li>
+            
+            <a href='/Problems.html' class='activated-link'>Problems</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href='/Folklore.html'>Folklore</a>
+            
+          </li>
+        
+        </ul>
+      </div>
       
-        <li>
-          <a href="/Git Subdirectory Branch.html">Git Subdirectory Branch</a>
-        </li>
-      
-        <li>
-          <a href="/Firefox Photon.html">Firefox Photon</a>
-        </li>
-      
-        <li>
-          <a href="/Xfce Screentearing.html">Xfce Screentearing</a>
-        </li>
-      
-      </ul>
-    </div>
 
-    <div>
-      children:
-      <ul>
       
-      </ul>
-    </div>
-    
+      <div>
+        <ul>
+        
+          <li>
+            
+            <a href='/Ghidhra HiDPI.html'>Ghidhra HiDPI</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href='/Keychron Fn Keys.html' class='activated-link'>Keychron Fn Keys</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href='/Git Subdirectory Branch.html'>Git Subdirectory Branch</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href='/Firefox Photon.html'>Firefox Photon</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href='/Xfce Screentearing.html'>Xfce Screentearing</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      
+
+      <div>
+        <ul>
+        
+        </ul>
+      </div>
+    </nav>
     <main>
+      <header>
+        <h1>Keychron Fn Keys</h1>
+      </header>
       <article><p>Fixing Keychron function keys on Linux machines.</p>
 <p>Tested on Keychron K2v2 on Xubuntu 20.04 and 22.04 on trenzalore.</p>
 <p>To enable Function keys on Keychron K2:
 + Set the keyboard to Windows mode
 + Run the following command:</p>
-<pre class="codehilite"><code>echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode
-</code></pre>
+<div class="codehilite"><pre><span></span><code>echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode
+</code></pre></div>
 
 <p>To make this change persistent, add a module option for hid_apple:</p>
-<pre class="codehilite"><code>echo &quot;options hid_apple fnmode=0&quot; | sudo tee -a /etc/modprobe.d/hid_apple.conf
-</code></pre>
+<div class="codehilite"><pre><span></span><code>echo &quot;options hid_apple fnmode=0&quot; | sudo tee -a /etc/modprobe.d/hid_apple.conf
+</code></pre></div>
 
 <p>To toggle function mode, hold Fn + X + L for 4 seconds.</p>
 <p>If this all fails, set it back to 1:</p>
-<pre class="codehilite"><code>echo 1 | sudo tee /sys/module/hid_apple/parameters/fnmode
-</code></pre>
+<div class="codehilite"><pre><span></span><code>echo 1 | sudo tee /sys/module/hid_apple/parameters/fnmode
+</code></pre></div>
 
 <h2 id="links">Links</h2>
 <p>Original post: https://www.reddit.com/r/MechanicalKeyboards/comments/d5io49/keychron_k2_f_keys_dont_work_w_linux_help/
