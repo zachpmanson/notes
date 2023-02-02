@@ -66,7 +66,7 @@ def get_tree():
                 tree[dirname] = {"children":[]}
 
             routes[dirname] = root
-    print(tree.keys())
+    # print(tree.keys())
     
     # Generate parents
     queue = ["index"]
@@ -134,6 +134,6 @@ def generate_page(pagename):
 
 if __name__=="__main__":
     get_tree()
-    pprint(tree)
+    # pprint(tree)
     # pprint(routes)
     traverse_tree()
