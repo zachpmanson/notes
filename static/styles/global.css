@@ -63,3 +63,7 @@ a:active {
   color: var(--purple);
   text-decoration-color: var(--purple);
 }
+
+.bold {
+  font-weight: bold;
+}
