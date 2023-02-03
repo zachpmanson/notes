@@ -102,8 +102,8 @@ def traverse_tree():
             
             with open(os.path.join(routes[node], node+".md"), "r") as src_file:
                 text = src_file.read()
-                text = re.sub(r"(?<!!)\[\[(.*)\]\]", "[\\1](\\1)", text)
-                text = re.sub(r"!\[\[(.*)\]\]", "![](/static/media/\\1)", text)
+                text = re.sub(r"(?<!!)\[\[([^\]]+)?\]\]", format_backlink, text)
+                text = re.sub(r"!\[\[([^\]]+)?\]\]", "![](/static/media/\\1)", text)
                 body = markdown.markdown(
                     text,
                     extensions=['fenced_code', CodeHiliteExtension(guess_lang=False), 'md_in_html', 'toc']
@@ -131,11 +131,29 @@ def traverse_tree():
                 "sanitize_url": sanitize_url
             }))
         print(f"Generated {grandparent}/{parent}/{sanitize_url(node)}/index.html")
-        # print(siblings)
 
-            
+
+def format_backlink(matches):
+    if "|" in matches.group(1):
+        segments = matches.group(1).split("|")
+        text = segments[1]
+        url = segments[0]
+    else:
+        text = matches.group(1)
+        url = matches.group(1)
+    
+    # if they are capitalised differently, fix it 
+    if url not in routes.keys():
+        for key in routes.keys():
+            if url.lower() == key.lower():
+                url = key
+                break
+
+    print(f"[{text}]({sanitize_url(url)})")
+    return f"[{text}]({sanitize_url(url)})"
+        
 def sanitize_url(url):
-    clean_url = url.replace(" ", "_")
+    clean_url = url.replace(" ", "_").replace('"', '')
     return clean_url
 
 
