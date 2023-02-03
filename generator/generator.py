@@ -140,7 +140,7 @@ def generate_pages():
                 "sanitize_url": sanitize_url,
                 "backlinks": tree[node]["backlinks"]
             }))
-        print(f"Generated {grandparent}/{parent}/{sanitize_url(node)}/Index.html")
+        print(f"Generated {grandparent}/{parent}/{sanitize_url(node)}/index.html")
 
 
 def format_backlink(matches):
