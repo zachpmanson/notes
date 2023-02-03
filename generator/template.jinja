@@ -70,6 +70,14 @@
       </header>
       <article>{{body}}</article>
       
+      {% if len(backlinks) > 0 %}
+      <p><span class="bold">Backlinks:</span>
+        {% for backlink in backlinks %}
+        <a href="/{{sanitize_url(backlink)|e}}">{{backlink}}</a>
+        {% endfor %}
+      </p>
+      {% endif %}
+
       {% for child in children %}
       <h2><a href="/{{sanitize_url(child)|e}}">{{child}}</a></h2>
       {% endfor %}

@@ -13,19 +13,27 @@ ignore_names = [
 
 # node: {
 #   "parent":parentnode,
-#   "children":[child1, child2]}
+#   "children":[child1, child2]},
+#   "body":""
+#   "backlinks":[]
 # }
 tree = {
-    "index": {
+    "Index": {
         "parent": None,
-        "children": []
+        "children": [],
+        "body":"",
+        "backlinks":[]
+
     }
 }
 routes = {
-    "index": "./"
+    "Index": "./"
 }
 
+# {node: ["link1", "link2"]}
+backlinks = {}
 
+current_node = "Index"
 
 def get_tree():
     for (root,dirs,files) in os.walk('./notes', topdown=True):
@@ -34,7 +42,7 @@ def get_tree():
 
         title = root.split("/")[-1]
         if title == "notes":
-            title = "index"
+            title = "Index"
         # print(title,tree[title])
 
         for file in files:
@@ -67,12 +75,13 @@ def get_tree():
                 tree[dirname] = {"children":[]}
 
             routes[dirname] = root
-    # print(tree.keys())
     
-    # Generate parents
-    queue = ["index"]
+    # Generate parents and backlinks
+    queue = ["Index"]
     for node in queue:
         children = tree[node]["children"]
+        tree[node]["backlinks"] = []
+        tree[node]["body"] = ""
         
         for child in children:
             if node == child:
@@ -81,25 +90,13 @@ def get_tree():
             tree[child]["parent"] = node
             queue.append(child)
 
-    
-
 def traverse_tree():
-    post_template = jinja2.Template(open("generator/template.jinja", "r").read())
-    queue = ["index"]
-    for node in queue:
+    global current_node
 
-        children = tree[node]["children"]
-
-        parent = tree[node]["parent"]
-        siblings = tree[parent]["children"] if parent != None else None
-        grandparent = tree[parent]["parent"] if parent != None else None
-        piblings = tree[grandparent]["children"] if grandparent != None else None
-        
-        for child in children:
-            if node != child:
-                queue.append(child)
+    # generate page bodies and record backlinks
+    for node in tree.keys():
+        current_node = node
         try:
-            
             with open(os.path.join(routes[node], node+".md"), "r") as src_file:
                 text = src_file.read()
                 text = re.sub(r"(?<!!)\[\[([^\]]+)?\]\]", format_backlink, text)
@@ -110,8 +107,20 @@ def traverse_tree():
                 )
         except FileNotFoundError:
             body = ""
+        tree[node]["body"] = body
 
-        if node != "index":
+def generate_pages():
+    post_template = jinja2.Template(open("generator/template.jinja", "r").read())
+    # actually generate pages
+    for node in tree.keys():
+        children = tree[node]["children"]
+
+        parent = tree[node]["parent"]
+        siblings = tree[parent]["children"] if parent != None else None
+        grandparent = tree[parent]["parent"] if parent != None else None
+        piblings = tree[grandparent]["children"] if grandparent != None else None
+
+        if node != "Index":
             path = os.path.join("site", sanitize_url(node))
         else:
             path = "site"
@@ -119,50 +128,50 @@ def traverse_tree():
         if not os.path.exists(path):
             os.mkdir(path)
 
-        with open(os.path.join(path, "index.html"), "w") as f:
+        with open(os.path.join(path, "Index.html"), "w") as f:
             f.write(post_template.render({
                 "title": node,
-                "body": body,
+                "body": tree[node]["body"],
                 "parent": parent,
                 "children": children,
                 "siblings": siblings,
                 "piblings": piblings,
                 "len": len,
-                "sanitize_url": sanitize_url
+                "sanitize_url": sanitize_url,
+                "backlinks": tree[node]["backlinks"]
             }))
-        print(f"Generated {grandparent}/{parent}/{sanitize_url(node)}/index.html")
+        print(f"Generated {grandparent}/{parent}/{sanitize_url(node)}/Index.html")
 
 
 def format_backlink(matches):
     if "|" in matches.group(1):
         segments = matches.group(1).split("|")
         text = segments[1]
-        url = segments[0]
+        page = segments[0]
     else:
         text = matches.group(1)
-        url = matches.group(1)
+        page = text
     
     # if they are capitalised differently, fix it 
-    if url not in routes.keys():
+    if page not in routes.keys():
         for key in routes.keys():
-            if url.lower() == key.lower():
-                url = key
+            if page.lower() == key.lower():
+                page = key
                 break
 
-    print(f"[{text}]({sanitize_url(url)})")
-    return f"[{text}]({sanitize_url(url)})"
+    tree[page]["backlinks"].append(current_node)
+
+    return f"[{text}](/{sanitize_url(page)})"
         
 def sanitize_url(url):
-    clean_url = url.replace(" ", "_").replace('"', '')
+    if url == "Index":
+        clean_url = ""
+    else:
+        clean_url = url.replace(" ", "_").replace('"', '')
+        
     return clean_url
-
-
-
-def generate_page(pagename):
-    pass
 
 if __name__=="__main__":
     get_tree()
-    # pprint(tree)
-    # pprint(routes)
     traverse_tree()
+    generate_pages()
