@@ -128,7 +128,7 @@ def generate_pages():
         if not os.path.exists(path):
             os.mkdir(path)
 
-        with open(os.path.join(path, "Index.html"), "w") as f:
+        with open(os.path.join(path, "index.html"), "w") as f:
             f.write(post_template.render({
                 "title": node,
                 "body": tree[node]["body"],
