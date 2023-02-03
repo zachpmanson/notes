@@ -14,7 +14,7 @@
      <nav>
 
       <div>
-        <a href='index.html'>
+        <a href='/'>
           <img src='/static/icon/icon.png' alt='notes' height='100'>
         </a>
       </div>
@@ -25,9 +25,9 @@
         {% for pibling in piblings %}
           <li>
             {% if pibling == parent %}
-            <a href='/{{pibling}}.html' class='activated-link'>{{pibling}}</a>
+            <a href='/{{pibling}}' class='activated-link'>{{pibling}}</a>
             {% else %}
-            <a href='/{{pibling}}.html'>{{pibling}}</a>
+            <a href='/{{pibling}}'>{{pibling}}</a>
             {%endif%}
           </li>
         {% endfor %}
@@ -41,9 +41,9 @@
         {% for sibling in siblings %}
           <li>
             {% if sibling == title %}
-            <a href='/{{sibling}}.html' class='activated-link'>{{sibling}}</a>
+            <a href='/{{sibling}}' class='activated-link'>{{sibling}}</a>
             {% else %}
-            <a href='/{{sibling}}.html'>{{sibling}}</a>
+            <a href='/{{sibling}}'>{{sibling}}</a>
             {%endif%}
           </li>
         {% endfor %}
@@ -56,7 +56,7 @@
         <ul>
         {% for child in children %}
           <li>
-            <a href='/{{child}}.html'>{{child}}</a>
+            <a href='/{{child}}'>{{child}}</a>
           </li>
         {% endfor %}
         </ul>
@@ -71,7 +71,7 @@
       <article>{{body}}</article>
       
       {% for child in children %}
-      <h2><a href='/{{child}}.html'>{{child}}</a></h2>
+      <h2><a href='/{{child}}'>{{child}}</a></h2>
       {% endfor %}
 
     </main>

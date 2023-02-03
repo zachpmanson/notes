@@ -103,8 +103,8 @@ def traverse_tree():
             
             with open(os.path.join(routes[node], node+".md"), "r") as src_file:
                 text = src_file.read()
-                text = re.sub(r"(?<!!)\[\[(.*)\]\]", "[\\1](\\1.html)",text)
-                text = re.sub(r"!\[\[(.*)\]\]", "![](/static/media/\\1)",text)
+                text = re.sub(r"(?<!!)\[\[(.*)\]\]", "[\\1](\\1)", text)
+                text = re.sub(r"!\[\[(.*)\]\]", "![](/static/media/\\1)", text)
                 body = markdown.markdown(
                     text,
                     extensions=['fenced_code', CodeHiliteExtension(guess_lang=False), 'md_in_html', 'toc']
@@ -112,7 +112,14 @@ def traverse_tree():
         except FileNotFoundError:
             body = ""
 
-        with open(os.path.join("site", f"{node}.html"), "w") as f:
+        if node != "index":
+            path = os.path.join("site", node)
+        else:
+            path = "site"
+        if not os.path.exists(path):
+            os.mkdir(path)
+
+        with open(os.path.join(path, "index.html"), "w") as f:
             f.write(post_template.render({
                 "title":node,
                 "body":body,
@@ -122,7 +129,7 @@ def traverse_tree():
                 "piblings": piblings,
                 "len":len
             }))
-        print(f"Generated {grandparent}/{parent}/{node}.html")
+        print(f"Generated {grandparent}/{parent}/{node}/index.html")
         # print(siblings)
 
             
