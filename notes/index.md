@@ -1,1 +1,1 @@
-This site is a collection of my personal notes and archive.  This is automatically generated from my Obsidian vault and is constantly changing.
+This site is a collection of my personal notes and archive.  This is automatically generated from [my Obsidian vault](https://github.com/pavo-etc/notes/tree/main/notes) and is constantly changing.

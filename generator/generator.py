@@ -164,7 +164,7 @@ def format_backlink(matches):
     return f"[{text}](/{sanitize_url(page)})"
         
 def sanitize_url(url):
-    if url == "Index":
+    if url.lower() == "index":
         clean_url = ""
     else:
         clean_url = url.replace(" ", "_").replace('"', '')
