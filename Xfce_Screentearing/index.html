@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/static/styles/code.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: Problems</title>
+    <title>notes: Xfce Screentearing</title>
   </head>
 
   <body>
@@ -19,32 +19,6 @@
         </a>
       </div>
       
-      
-      <div>
-        <ul>
-        
-          <li>
-            
-            <a href="/Archive" class="activated-link">Archive</a>
-            
-          </li>
-        
-          <li>
-            
-            <a href="/Projects">Projects</a>
-            
-          </li>
-        
-          <li>
-            
-            <a href="/Notes">Notes</a>
-            
-          </li>
-        
-        </ul>
-      </div>
-      
-
       
       <div>
         <ul>
@@ -70,47 +44,59 @@
         <ul>
         
           <li>
+            
             <a href="/Ghidhra_HiDPI">Ghidhra HiDPI</a>
+            
           </li>
         
           <li>
+            
             <a href="/Keychron_Fn_Keys">Keychron Fn Keys</a>
+            
           </li>
         
           <li>
+            
             <a href="/Git_Subdirectory_Branch">Git Subdirectory Branch</a>
+            
           </li>
         
           <li>
+            
             <a href="/Firefox_Photon">Firefox Photon</a>
+            
           </li>
         
           <li>
-            <a href="/Xfce_Screentearing">Xfce Screentearing</a>
+            
+            <a href="/Xfce_Screentearing" class="activated-link">Xfce Screentearing</a>
+            
           </li>
         
         </ul>
       </div>
       
 
+      
+
     </nav>
     <main>
       <header>
-        <h1>Problems</h1>
+        <h1>Xfce Screentearing</h1>
       </header>
-      <article><p>Wisdom of the ancients.</p>
-<p>This is a collection of solutions I have found to problems deep in internet rabbitholes.  I fear they will die to link rot eventually, so I archive them here.</p></article>
+      <article><p>Tested myself on Xfce 4.12 on Xubuntu 20.04 on trenzalore (Intel HD Graphics 530), allegedly works on Xubuntu 16.04.03.</p>
+<p>Create file <code>/etc/X11/xorg.conf</code> with the content:</p>
+<div class="codehilite"><pre><span></span><code>        Section &quot;Device&quot;
+            Identifier  &quot;Intel Graphics&quot;
+            Driver      &quot;intel&quot;
+            Option      &quot;AccelMethod&quot;   &quot;sna&quot;
+            Option      &quot;TearFree&quot;  &quot;true&quot;
+        EndSection
+</code></pre></div>
+
+<h2 id="links">Links</h2>
+<p><a href="https://forum.xfce.org/viewtopic.php?id=12019">Source</a></p></article>
       
-      
-      <h2><a href="/Ghidhra_HiDPI">Ghidhra HiDPI</a></h2>
-      
-      <h2><a href="/Keychron_Fn_Keys">Keychron Fn Keys</a></h2>
-      
-      <h2><a href="/Git_Subdirectory_Branch">Git Subdirectory Branch</a></h2>
-      
-      <h2><a href="/Firefox_Photon">Firefox Photon</a></h2>
-      
-      <h2><a href="/Xfce_Screentearing">Xfce Screentearing</a></h2>
       
 
     </main>
