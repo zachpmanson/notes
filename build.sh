@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 source ./venv/bin/activate
-rm ./site/*.html
+rm -r ./site/*
 echo Activated venv
 python3 ./generator/generator.py
 deactivate

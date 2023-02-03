@@ -85,7 +85,6 @@ def get_tree():
 
 def traverse_tree():
     post_template = jinja2.Template(open("generator/template.jinja", "r").read())
-
     queue = ["index"]
     for node in queue:
 
@@ -113,27 +112,31 @@ def traverse_tree():
             body = ""
 
         if node != "index":
-            path = os.path.join("site", node)
+            path = os.path.join("site", sanitize_url(node))
         else:
             path = "site"
+
         if not os.path.exists(path):
             os.mkdir(path)
 
         with open(os.path.join(path, "index.html"), "w") as f:
             f.write(post_template.render({
-                "title":node,
-                "body":body,
-                "parent":parent,
+                "title": node,
+                "body": body,
+                "parent": parent,
                 "children": children,
                 "siblings": siblings,
                 "piblings": piblings,
-                "len":len
+                "len": len,
+                "sanitize_url": sanitize_url
             }))
-        print(f"Generated {grandparent}/{parent}/{node}/index.html")
+        print(f"Generated {grandparent}/{parent}/{sanitize_url(node)}/index.html")
         # print(siblings)
 
             
-
+def sanitize_url(url):
+    clean_url = url.replace(" ", "_")
+    return clean_url
 
 
 

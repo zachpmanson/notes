@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
   <head>
-    <link rel='stylesheet' href='/static/styles/colors.css' />
-    <link rel='stylesheet' href='/static/styles/global.css' />
-    <link rel='stylesheet' href='/static/styles/code.css' />
+    <link rel="stylesheet" href="/static/styles/colors.css" />
+    <link rel="stylesheet" href="/static/styles/global.css" />
+    <link rel="stylesheet" href="/static/styles/code.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
     <title>notes: {{title}}</title>
@@ -14,8 +14,8 @@
      <nav>
 
       <div>
-        <a href='/'>
-          <img src='/static/icon/icon.png' alt='notes' height='100'>
+        <a href="/">
+          <img src="/static/icon/icon.png" alt="notes" height="100">
         </a>
       </div>
       
@@ -25,9 +25,9 @@
         {% for pibling in piblings %}
           <li>
             {% if pibling == parent %}
-            <a href='/{{pibling}}' class='activated-link'>{{pibling}}</a>
+            <a href="/{{sanitize_url(pibling)|e}}" class="activated-link">{{pibling}}</a>
             {% else %}
-            <a href='/{{pibling}}'>{{pibling}}</a>
+            <a href="/{{sanitize_url(pibling)|e}}">{{pibling}}</a>
             {%endif%}
           </li>
         {% endfor %}
@@ -41,9 +41,9 @@
         {% for sibling in siblings %}
           <li>
             {% if sibling == title %}
-            <a href='/{{sibling}}' class='activated-link'>{{sibling}}</a>
+            <a href="/{{sanitize_url(sibling)|e}}" class="activated-link">{{sibling}}</a>
             {% else %}
-            <a href='/{{sibling}}'>{{sibling}}</a>
+            <a href="/{{sanitize_url(sibling)|e}}">{{sibling}}</a>
             {%endif%}
           </li>
         {% endfor %}
@@ -56,7 +56,7 @@
         <ul>
         {% for child in children %}
           <li>
-            <a href='/{{child}}'>{{child}}</a>
+            <a href="/{{sanitize_url(child)|e}}">{{child}}</a>
           </li>
         {% endfor %}
         </ul>
@@ -71,7 +71,7 @@
       <article>{{body}}</article>
       
       {% for child in children %}
-      <h2><a href='/{{child}}'>{{child}}</a></h2>
+      <h2><a href="/{{sanitize_url(child)|e}}">{{child}}</a></h2>
       {% endfor %}
 
     </main>
