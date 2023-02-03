@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <link rel='stylesheet' href='/static/styles/colors.css' />
+    <link rel='stylesheet' href='/static/styles/global.css' />
+    <link rel='stylesheet' href='/static/styles/code.css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>notes: snakeware</title>
+  </head>
+
+  <body>
+
+     <nav>
+
+      <div>
+        <a href='/'>
+          <img src='/static/icon/icon.png' alt='notes' height='100'>
+        </a>
+      </div>
+      
+      
+      <div>
+        <ul>
+        
+          <li>
+            
+            <a href='/Archive'>Archive</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href='/Projects' class='activated-link'>Projects</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href='/Notes'>Notes</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      
+
+      
+      <div>
+        <ul>
+        
+          <li>
+            
+            <a href='/COVID-19 Tracker'>COVID-19 Tracker</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href='/Alculator'>Alculator</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href='/snakeware' class='activated-link'>snakeware</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      
+
+      
+
+    </nav>
+    <main>
+      <header>
+        <h1>snakeware</h1>
+      </header>
+      <article><p>A Linux-based operating system with a pure Python userspace.</p>
+<p><img alt="" src="/static/media/snakeware.png" /></p>
+<p>snakeware is an experimental OS with developed in 2020.  Its userspace is written entirely in Python, barring a single Busybox root process.  It was created by Joshua Moore drawing inspiration from the Commodore 64.  The window manager, snakewm, is written primarily with pygame_gui.  It is not based on X11 or Wayland, instead writing directly to the framebuffer (<code>/dev/fb0</code>).</p>
+<p>On first boot, snakeware launches you directly a the Python interpreter.  From here you can run Python commands directly, launch the window manager, or launch CLI games.
+To launch snakewm from the interpreter, run the <code>snakewm</code> command.  From snakewm the aopp menu can be opened using the Super key.  From here a number of applications can be launched.</p>
+<p>To launch CLI games, enter the following commands:</p>
+<div class="codehilite"><pre><span></span><code>&gt;&gt;&gt; import snake_games
+&gt;&gt;&gt; snake_games.menu()
+</code></pre></div>
+
+<p>Games included as of 2022 are snake, snakepaint, and circlez.</p>
+<h2 id="history">History</h2>
+<p>snakeware was a short-lived project and should be considered inactive, with most significant contributions ending in 2020.  It was created and maintained by Joshua Moore and had a small number of contributors.  Some of the applications included in snakeware never reached their intended goals, such as the included terminal emulator snaketerm which is extremely rudimentary.</p>
+<p>One of the goals in making the entire userspace in Python was to make it modifiable by the user with little effort.  As Python is intepreted, all code for the window manager and the interface would be visible and modifiable by any snakeware user, and would be easy to extend.  Unfortunately, the planned text editor for snakeware, CATH, was never finished.</p>
+<p>Other planned projects were networking, a chat application, and a package system built on top of PyPI called snakeoil.</p>
+<p>The project was coordinated over a Discord server, though this hasn't been active for some time.</p>
+<h2 id="links">Links</h2>
+<ul>
+<li><a href="https://github.com/joshiemoore/snakeware">snakeware source code</a></li>
+<li><a href="https://github.com/Cyppa/CATH-for-Snakeware">CATH text editor</a></li>
+</ul></article>
+      
+      
+
+    </main>
+
+  </body>
+</html>
