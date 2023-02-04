@@ -10,9 +10,7 @@
   </head>
 
   <body>
-
      <nav>
-
       <div>
         <a href="/">
           <img src="/static/icon/icon.png" alt="notes" height="100">
@@ -51,7 +49,7 @@
       </div>
       {% endif %}
 
-      {% if len(children) > 0 %}
+      {% if children != None and len(children) > 0 %}
       <div>
         <ul>
         {% for child in children %}
@@ -78,9 +76,12 @@
       </p>
       {% endif %}
 
-      {% for child in children %}
-      <h2><a href="/{{sanitize_url(child)|e}}">{{child}}</a></h2>
-      {% endfor %}
+      {% if children != None%}
+        {% for child in children %}
+        <h2><a href="/{{sanitize_url(child)|e}}">{{child}}</a></h2>
+        {% endfor %}
+      {% endif %}
+
 
     </main>
 

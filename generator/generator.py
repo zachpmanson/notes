@@ -33,6 +33,7 @@ routes = {
 # {node: ["link1", "link2"]}
 backlinks = {}
 
+sitemap_md = ""
 current_node = "Index"
 
 def get_tree():
@@ -143,6 +144,40 @@ def generate_pages():
         print(f"Generated {grandparent}/{parent}/{sanitize_url(node)}/index.html")
 
 
+def generate_sitemap():
+    global sitemap_md
+    # generate some markdown
+    sitemap_md += "- [Index](/)\n"
+    for node in tree["Index"]["children"]:
+        append_bullet(node, 4)
+    
+    post_template = jinja2.Template(open("generator/template.jinja", "r").read())
+    sitemap_html = markdown.markdown(
+        sitemap_md,
+        extensions=['fenced_code', CodeHiliteExtension(guess_lang=False), 'md_in_html', 'toc']
+    )
+    with open(os.path.join("site", "404.html"), "w") as f:
+        f.write(post_template.render({
+            "title": "Sitemap",
+            "body": sitemap_html,
+            "parent": "Index",
+            "children": None,
+            "siblings": tree["Index"]["children"],
+            "piblings": None,
+            "len": len,
+            "sanitize_url": sanitize_url,
+            "backlinks": tree[node]["backlinks"]
+        }))
+    print("Generated sitemap")
+
+def append_bullet(node, depth):
+    global sitemap_md
+    sitemap_md += f"{' ' * depth}- [{node}](/{sanitize_url(node)})\n"
+
+    for child in tree[node]["children"]:
+        append_bullet(child, depth+4)
+
+
 def format_backlink(matches):
     if "|" in matches.group(1):
         segments = matches.group(1).split("|")
@@ -175,3 +210,4 @@ if __name__=="__main__":
     get_tree()
     traverse_tree()
     generate_pages()
+    generate_sitemap()
