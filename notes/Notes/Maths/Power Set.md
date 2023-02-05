@@ -1,0 +1,1 @@
+A  power set of S is the set of all subsets of S, usually represented as 𝒫(_S_), _P_(_S_), ℙ(S).
