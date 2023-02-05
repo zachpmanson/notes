@@ -80,6 +80,7 @@ def get_tree():
     # Generate parents and backlinks
     queue = ["Index"]
     for node in queue:
+        (tree[node]["children"]).sort()
         children = tree[node]["children"]
         tree[node]["backlinks"] = []
         tree[node]["body"] = ""
