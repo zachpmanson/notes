@@ -1,1 +1,1 @@
-This site is a collection of my personal notes and archive.  This is automatically generated with [[Ochrs]] and is changing constantly.  A full sitemap can be found [here](/404.html)
+This site is a collection of my personal notes and archive.  This is automatically generated with [[Ochrs]] and is changing constantly, unlike my [main site](https://zachmanson.com) which should stay relatively stable.  A full sitemap can be found [here](/404.html).
