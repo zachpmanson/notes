@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/styles/colors.css" />
+    <link rel="stylesheet" href="/static/styles/global.css" />
+    <link rel="stylesheet" href="/static/styles/code.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>notes: status messenger</title>
+  </head>
+
+  <body>
+     <nav>
+      <div>
+        <a href="/">
+          <img src="/static/icon/icon.png" alt="notes" height="100">
+        </a>
+      </div>
+      
+      
+      <div>
+        <ul>
+        
+          <li>
+            
+            <a href="/archive">Archive</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/notes">Notes</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/projects" class="activated-link">Projects</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      
+
+      
+      <div>
+        <ul>
+        
+          <li>
+            
+            <a href="/alculator">Alculator</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/covid-19-tracker">COVID-19 Tracker</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/ochrs">Ochrs</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/status-messenger" class="activated-link">Status Messenger</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/snakeware">snakeware</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      
+
+      
+
+    </nav>
+    <main>
+      <header>
+        <h1>Status Messenger</h1>
+      </header>
+      <article><p>Status Messenger is an extension for VS Code (and <a href="https://vscodium.com/">VSCodium</a>) that places a message in the editor status bar that is periodically updated by a remote server.  This was built so that I could shame people at work with a counter that said how many days its been since somebody broke a prod deployment.</p>
+<p><img alt="" src="/static/media/status-messenger-1.png" /></p>
+<p>On install, the user will be prompted to enter a URL.  This URL should be an API that responds with a message with the following schema:</p>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span><span class="w"> </span><span class="p">[</span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">}</span>
+</code></pre></div>
+
+<p>An example of a return value is:</p>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;DEV&quot;</span><span class="p">:</span><span class="s2">&quot;0 days since last broken DEV deployment&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;PROD&quot;</span><span class="p">:</span><span class="s2">&quot;PROD has never had a broken deployment&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;UAT&quot;</span><span class="p">:</span><span class="s2">&quot;90 days since last broken UAT deployment&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>This URL can be changed usingthe <strong>Set Remote Message URL</strong>* command.</p>
+<p><img alt="" src="/static/media/status-messenger-3.png" /></p>
+<p>Each key corresponds to a different message variant that will display in the status bar. These can be switched between using the <strong>Set Message Variant</strong> command, or by clicking on the message in the status bar.</p>
+<p><img alt="" src="/static/media/status-messenger-2.png" /></p>
+<p>The extension will automatically pull messages from the server every 20 minutes after opening VS Code.  It will stop displaying and updating the message if the <strong>Hide Status Bar Message</strong> command is used.  It can be brought back using the <strong>Set Status Message Variant</strong>.</p>
+<p>The URL and variant is stored per workspace, so different workspaces can have different servers or variants.</p>
+<p>The extension is built with TypeScript and is available on <a href="https://marketplace.visualstudio.com/items?itemName=ZachManson.status-messenger">VS Code Marketplace</a> and <a href="https://open-vsx.org/extension/ZachManson/status-messenger">Open VSX</a>.  The source code is available on <a href="https://github.com/pavo-etc/status-messenger">GitHub</a>.</p></article>
+      
+      
+
+      
+        
+      
+
+
+    </main>
+
+  </body>
+</html>
