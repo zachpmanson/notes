@@ -200,10 +200,11 @@ def format_backlink(matches):
     return f"[{text}](/{sanitize_url(page)})"
         
 def sanitize_url(url):
-    if url.lower() == "index":
+    url = url.lower()
+    if url == "index":
         clean_url = ""
     else:
-        clean_url = url.replace(" ", "_").replace('"', '')
+        clean_url = url.replace(" ", "-").replace('"', '')
         
     return clean_url
 
