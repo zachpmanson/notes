@@ -4,7 +4,7 @@ The lemniscate symbol (∞, U+221E) is used to represent infinity, a concept tha
 
 ### Cardinality
 
-The sizes of infinite sets are measured using cardinal numbers, using generalised natural numbers. Cardinality is measured using bijective functions, where two sets are equal in size (cardinality) iff they there is a bijective function that can map all elements from set A to set B. Bijection is  a function where there is a one to one correspondances between two sets.
+The sizes of infinite sets are measured using cardinal numbers, using generalised natural numbers. Cardinality is measured using bijective functions, where two sets are equal in size (cardinality) iff they there is a bijective function that can map all elements from set A to set B. Bijection is  a function where there is a one to one correspondance between two sets.
 
 Through this, infinite sets can have different cardinalities.  The classic example is that the cardinality of the set of real numbers (ℝ) is greater than the cardinality of the set of natural numbers (ℕ), as there is no possible bijective function that can map the set of natural numbers to the set of  real numbers.
 
