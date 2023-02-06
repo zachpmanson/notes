@@ -1,6 +1,6 @@
 import os
-from pprint import pprint
 import re
+from datetime import datetime
 
 import jinja2
 import markdown
@@ -148,6 +148,7 @@ def generate_pages():
 def generate_sitemap():
     global sitemap_md
     # generate some markdown
+    sitemap_md += f"Last build: {datetime.now()}\n\n"
     sitemap_md += "- [Index](/)\n"
     for node in tree["Index"]["children"]:
         append_bullet(node, 4)
