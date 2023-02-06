@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/styles/colors.css" />
+    <link rel="stylesheet" href="/static/styles/global.css" />
+    <link rel="stylesheet" href="/static/styles/code.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>notes: git subdirectory branch</title>
+  </head>
+
+  <body>
+     <nav>
+      <div>
+        <a href="/">
+          <img src="/static/icon/icon.png" alt="notes" height="100">
+        </a>
+      </div>
+      
+      
+      <div>
+        <ul>
+        
+          <li>
+            
+            <a href="/folklore">Folklore</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/problems" class="activated-link">Problems</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      
+
+      
+      <div>
+        <ul>
+        
+          <li>
+            
+            <a href="/firefox-photon">Firefox Photon</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/ghidhra-hidpi">Ghidhra HiDPI</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/git-subdirectory-branch" class="activated-link">Git Subdirectory Branch</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/keychron-fn-keys">Keychron Fn Keys</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/xfce-screentearing">Xfce Screentearing</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      
+
+      
+
+    </nav>
+    <main>
+      <header>
+        <h1>Git Subdirectory Branch</h1>
+      </header>
+      <article><p>Mounting a Git branch to a subdirectory.</p>
+<p>Create an orphaned branch if it doesn't already exist, and remove any shared history with the trunk.</p>
+<div class="codehilite"><pre><span></span><code>git<span class="w"> </span>checkout<span class="w"> </span>--orphan<span class="w"> </span>gh-pages
+git<span class="w"> </span>reset<span class="w"> </span>--hard
+git<span class="w"> </span>commit<span class="w"> </span>--allow-empty<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Init&quot;</span>
+git<span class="w"> </span>checkout<span class="w"> </span>master
+</code></pre></div>
+
+<p>Make the subdirectory that will host the branch.</p>
+<div class="codehilite"><pre><span></span><code>mkdir<span class="w"> </span>site
+git<span class="w"> </span>worktree<span class="w"> </span>add<span class="w"> </span>site<span class="w"> </span>gh-pages
+</code></pre></div>
+
+<p>Moving in and out of this directory should now switch branches.</p>
+<p>To set up a subdirectory branch on a cloned Git repo, only run the last two commands.</p>
+<p>This site uses this set up for deploying to GitHub Pages.</p>
+<h2 id="links">Links</h2>
+<ul>
+<li><a href="http://sangsoonam.github.io/2019/02/08/using-git-worktree-to-deploy-github-pages.html">Source</a></li>
+</ul></article>
+      
+      
+
+      
+        
+      
+
+
+    </main>
+
+  </body>
+</html>
