@@ -1,5 +1,7 @@
 The following was [written by Richard Gabriel](https://dreamsongs.com/RiseOfWorseIsBetter.html) and presented at Europal in March 1990, later published by AI Expert as part of a larger essay in June 1991.
 
+---
+
 I and just about every designer of Common Lisp and CLOS has had extreme exposure to the MIT/Stanford style of design. The essence of this style can be captured by the phrase _the right thing_. To such a designer it is important to get all of the following characteristics right:
 
 -   Simplicity -- the design must be simple, both in implementation and interface. It is more important for the interface to be simple than the implementation.

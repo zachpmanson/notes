@@ -1,4 +1,6 @@
-As written by Carl Lange [here](http://carl.flax.ie/dothingstellpeople.html):
+As written by Carl Lange [here](http://carl.flax.ie/dothingstellpeople.html).
+
+---
 
 These are the only things you need to do to be successful*. You can get away with just doing one of the two, but that's rare, and usually someone else is doing the other part for you.
 

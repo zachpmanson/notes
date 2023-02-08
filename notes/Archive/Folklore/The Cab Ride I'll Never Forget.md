@@ -1,5 +1,6 @@
 As written by Ken Nerburn [here](https://kentnerburn.com/the-cab-ride-ill-never-forget).
 
+---
 
 There was a time in my life twenty years ago when I was driving a cab for a living. It was a cowboy’s life, a gambler’s life, a life for someone who wanted no boss, constant movement and the thrill of a dice roll every time a new passenger got into the cab.
 

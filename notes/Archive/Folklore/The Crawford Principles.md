@@ -1,5 +1,7 @@
 As written (and titled) by J. B. Crawford [here](https://jbcrawford.us/notes/principles).
 
+---
+
 Everyone hopes to have something named after them. I'm accelerating the process by just naming things after myself.
 
 ## The First Crawford Principle

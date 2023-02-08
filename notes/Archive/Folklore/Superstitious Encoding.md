@@ -1,6 +1,8 @@
 The tribulations of obscure character encoding.
 
-The following is taken from a comment on HN written by user jake_morrison on 2022-07-14:
+The following is taken from a comment on HN written by user jake_morrison on 2022-07-14.
+
+---
 
 In the 90s I worked on a project to digitize land registration in Taiwan.
 
