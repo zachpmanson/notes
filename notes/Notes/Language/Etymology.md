@@ -8,7 +8,7 @@ This is also the origin of em dashes, where they are one "m" character in width.
 More on this can be read [here](https://tonsky.me/blog/font-size/).
 
 ## Inspire and Expire
-They originate from Latin words for relating to breathing in and out, respectively.
+They originate from Latin words relating to breathing in and out, respectively.
 
 The English word *inspire* comes from the Middle English word *enspire*, meaning "to fill (the mind, heart, etc., with grace, etc.)", which comes from Old French *inspirer* which comes from the Latin word *inspirare* meaning "to blow into, breath upon", figuratively "inspire, excite, inflame". 
 
