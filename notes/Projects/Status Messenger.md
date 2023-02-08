@@ -16,7 +16,7 @@ An example of a return value is:
 }
 ```
 
-This URL can be changed usingthe **Set Remote Message URL*** command.
+This URL can be changed using the **Set Remote Message URL** command.
 
 ![[status-messenger-3.png]]
 
