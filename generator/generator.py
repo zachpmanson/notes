@@ -37,9 +37,19 @@ sitemap_md = ""
 current_node = "Index"
 
 def get_tree():
+    print("Building tree")
     for (root,dirs,files) in os.walk('./notes', topdown=True):
-        if (root == ".") or root.split("/")[-1] in ignore_names:
+        if (root == "."):
             continue
+        
+        on_ignore = False
+        for segment in root.split("/"):
+            if segment in ignore_names:
+                on_ignore = True
+        if on_ignore:
+            print("Skipping", root)
+            continue
+
 
         title = root.split("/")[-1]
         if title == "notes":

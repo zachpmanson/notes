@@ -67,3 +67,33 @@ a:active {
 .bold {
   font-weight: bold;
 }
+
+/* Inline monospace */
+p code {
+  color: var(--yellow);
+}
+
+hr {
+  color: var(--white);
+  margin: 2rem auto;
+}
+
+footer {
+  font-weight: lighter;
+  margin-top: 5rem;
+}
+
+summary h2 {
+  display: inline;
+}
+
+blockquote {
+  margin: 1rem;
+  padding: 0 1rem;
+  border-left: 2px solid var(--dark-blue);
+}
+
+blockquote + p cite {
+  margin-left: 1rem;
+  content: "– ";
+}
