@@ -87,10 +87,8 @@ summary h2 {
   display: inline;
 }
 
-cite ::before {
-  content: "- ";
-}
-
 blockquote {
+  margin: 1rem 0;
+  padding: 0 3rem;
   border-left: 2px solid var(--grey);
 }
