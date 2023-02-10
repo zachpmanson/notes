@@ -6,6 +6,6 @@ Hilariously, most people believe they have more friends than their friends have.
 
 > On the bright side, the people you are not friends with have fewer friends than you do.
 
-[<cite>woah on HN</cite>](https://news.ycombinator.com/item?id=33781098)
+<cite>[woah on HN](https://news.ycombinator.com/item?id=33781098)</cite>
 
 
