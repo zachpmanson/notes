@@ -39,3 +39,8 @@ The first time I used Obsidian I immediately knew I wanted all my notes to be wr
 [Ochrs 2.0](https://github.com/pavo-etc/notes/tree/main/generator) is a rewrite of the original in Python. While this loses the purity that C provides, it also makes it pleasant and flexible.  It has proper Markdown support, code highlighting, and is designed to use an Obsidian vault as the content source.  The appearance of the website is extremely similar to the original and is much simpler to customise using jinja templates.
 
 The code itself is similar to [[ironprof]], a simple static site generator script I wrote for my [personal site](https://zachmanson.com) that recursively builds jinja templates and converts Markdown into blogposts.
+
+## ochrs-deploy
+
+Ochrs Deploy is a simple Obsidian plugin I made to add a button to the Obsidian left panel to run the `update-notes.sh` script.  Its a bit hacky but does technically work. It isn't in the Obsidian plugin directory (yet), but can be downloaded and added from the [repo](https://github.com/pavo-etc/ochrs-deploy).
+
