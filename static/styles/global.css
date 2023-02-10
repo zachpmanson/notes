@@ -89,6 +89,6 @@ summary h2 {
 
 blockquote {
   margin: 1rem 0;
-  padding: 0 3rem;
+  padding: 0 2rem;
   border-left: 2px solid var(--grey);
 }
