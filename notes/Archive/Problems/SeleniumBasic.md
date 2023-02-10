@@ -57,14 +57,8 @@ driver.Quit
 End Sub
 ```
 
-  
+Software versions used: Windows 10 10.0.19043, Excel 2201, SeleniumBasic 2.0.9.0, Edge 98.0.1108.50, EdgeDriver 98.0.1108.51
 
-## Footnotes
-
-  
-
-1. Software versions used: Windows 10 10.0.19043, Excel 2201, SeleniumBasic 2.0.9.0, Edge 98.0.1108.50, EdgeDriver 98.0.1108.51
-
-2. [Official Selenium Documentation](https://www.selenium.dev/documentation/overview/)
-
-3. A fantastic resource for VBA+Selenium is [WiseOwlTutorials' series](https://youtube.com/playlist?list=PLNIs-AWhQzcl3xKvF8sVL4sWRWICj_clM) on this exact thing.
+## Links
+- [Official Selenium Documentation](https://www.selenium.dev/documentation/overview/)
+- A fantastic resource for VBA+Selenium is [WiseOwlTutorials' series](https://youtube.com/playlist?list=PLNIs-AWhQzcl3xKvF8sVL4sWRWICj_clM) on this exact thing.
