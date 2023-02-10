@@ -67,3 +67,22 @@ a:active {
 .bold {
   font-weight: bold;
 }
+
+/* Inline monospace */
+p code {
+  color: var(--yellow);
+}
+
+hr {
+  color: var(--white);
+  margin: 2rem auto;
+}
+
+footer {
+  font-weight: lighter;
+  margin-top: 5rem;
+}
+
+summary h2 {
+  display: inline;
+}
