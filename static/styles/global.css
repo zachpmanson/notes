@@ -86,3 +86,11 @@ footer {
 summary h2 {
   display: inline;
 }
+
+cite ::before {
+  content: "- ";
+}
+
+blockquote {
+  border-left: 2px solid var(--grey);
+}
