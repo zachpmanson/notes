@@ -5,6 +5,5 @@ It is a form of sampling bias, as any given person is more likely to be friends 
 Hilariously, most people believe they have more friends than their friends have.
 
 > On the bright side, the people you are not friends with have fewer friends than you do.
-
--- [woah on HN](https://news.ycombinator.com/item?id=33781098)
+> - [woah on HN](https://news.ycombinator.com/item?id=33781098)
 
