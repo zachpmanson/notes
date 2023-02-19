@@ -104,7 +104,12 @@
 <ol>
 <li>Install postgres. This will add a <code>postgres</code> user account to the system. I set up another user account to interact with the database, in this case called <code>pg-user</code>.</li>
 <li>Using <code>psql</code>, create a database that will be used for your application.</li>
-<li>Whiler running <code>pg-user</code>, in <code>psql</code>, run <code>\password</code> and set a password for this account to interact with Postgres.  This password should not use an <code>@</code>, as it will conflict with the connection string later.</li>
+<li>Whiler running <code>pg-user</code>, in <code>psql</code>, run <code>\password</code> and set a password for this account to interact with Postgres.  This password should not use an <code>@</code>, as it will conflict with the connection string later. </li>
+<li>
+<p>Grant the user account access to the database with the SQL command. </p>
+<div class="highlight"><pre><span></span><code><span class="k">GRANT</span><span class="w"> </span><span class="k">ALL</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="ss">&quot;my_db&quot;</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">my_user</span><span class="p">;</span>
+</code></pre></div>
+</li>
 <li>
 <p>Modify <code>/etc/postgresql/14/main/pg_hba.conf</code> (or equivalent). Set the <code>ADDRESS</code> field for IPv4 connections to this:</p>
 <div class="highlight"><pre><span></span><code># IPv4 local connections:
