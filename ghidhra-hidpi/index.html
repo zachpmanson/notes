@@ -103,14 +103,12 @@
       <article><p>Making Ghidra scale on HiDPI screens.</p>
 <p>Tested on Kali Linux 5.18.0-kali5-amd64, Ghidra 10.1.4, Java 11.0.16.</p>
 <p>Ghidra doesn't scale to HiDPI screens, but this can be fixed by modifying the <code>launch.properties</code> file.  This is located in <code>&lt;GhidraInstallDir&gt;/support/launch.properties</code>, which when installed using apt is <code>/usr/share/ghidra/support/launch.properties</code>.</p>
-<p>Change this setting:</p>
-<div class="codehilite"><pre><span></span><code>VMARGS_LINUX=-Dsun.java2d.uiScale=1
+<p>Change this setting:
+<div class="highlight"><pre><span></span><code>VMARGS_LINUX=-Dsun.java2d.uiScale=1
 </code></pre></div>
-
-<p>to:</p>
-<div class="codehilite"><pre><span></span><code>VMARGS_LINUX=-Dsun.java2d.uiScale=2
-</code></pre></div>
-
+to:
+<div class="highlight"><pre><span></span><code>VMARGS_LINUX=-Dsun.java2d.uiScale=2
+</code></pre></div></p>
 <h2 id="links">Links</h2>
 <ul>
 <li><a href="https://gist.github.com/nstarke/baa031e0cab64a608c9bd77d73c50fc6">Source</a></li>

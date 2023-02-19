@@ -107,24 +107,23 @@
 <li>Whiler running <code>pg-user</code>, in <code>psql</code>, run <code>\password</code> and set a password for this account to interact with Postgres.  This password should not use an <code>@</code>, as it will conflict with the connection string later.</li>
 <li>
 <p>Modify <code>/etc/postgresql/14/main/pg_hba.conf</code> (or equivalent). Set the <code>ADDRESS</code> field for IPv4 connections to this:</p>
-<p>```</p>
-<h1 id="ipv4-local-connections">IPv4 local connections:</h1>
-<p>host    all             all             0.0.0.0/0              scram-sha-256
-```</p>
+<div class="highlight"><pre><span></span><code># IPv4 local connections:
+host    all             all             0.0.0.0/0              scram-sha-256
+</code></pre></div>
 </li>
 <li>
 <p>Modify  <code>/etc/postgresql/14/main/postgresql.conf</code>.  Set <code>listening_addresses</code> to all:</p>
-<p>```</p>
-<h1 id="-connection-settings-">- Connection Settings -</h1>
-<p>listen_addresses = '*'
-```</p>
+<div class="highlight"><pre><span></span><code># - Connection Settings -
+listen_addresses = &#39;*&#39;
+</code></pre></div>
 </li>
 <li>
 <p>Restart Postgres <code>systemctl restart postgres</code></p>
 </li>
 <li>
 <p>In the Prisma application, set up Prisma normally.  The connection string in <code>.env</code> should be this format:</p>
-<p><code>postgresql://pg-user:passwd@example.com:5432/db?schema=public</code></p>
+<div class="highlight"><pre><span></span><code>postgresql://pg-user:passwd@example.com:5432/db?schema=public
+</code></pre></div>
 </li>
 <li>
 <p>Push the schema designed in <code>prisma/schema.prisma</code> using the command <code>npx prisma db push</code>.</p>

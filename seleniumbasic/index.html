@@ -121,14 +121,14 @@
 <p>To enable SeleniumBasic in Excel you'll need to navigate to <code>Tools &gt; References</code> and check <code>Selenium Type Library</code>.</p>
 <p><img alt="" src="/static/media/adding-reference.png" />)</p>
 <p>From here you can write fairly standard Selenium code in VBA.</p>
-<div class="codehilite"><pre><span></span><code>Sub AutoSearch()
+<div class="highlight"><pre><span></span><code>Sub AutoSearch()
 
 Dim driver As Selenium.EdgeDriver
 Set driver = New Selenium.EdgeDriver
 
 driver.Start
 
-driver.Get (&quot;https://old.reddit.com/&quot;)  
+driver.Get (&quot;https://old.reddit.com/&quot;)
 
 Dim searchbox As WebElement
 Set searchbox = driver.FindElementByName(&quot;q&quot;, -1, True)
@@ -143,7 +143,6 @@ driver.Quit
 
 End Sub
 </code></pre></div>
-
 <p>Software versions used: Windows 10 10.0.19043, Excel 2201, SeleniumBasic 2.0.9.0, Edge 98.0.1108.50, EdgeDriver 98.0.1108.51</p>
 <h2 id="links">Links</h2>
 <ul>
