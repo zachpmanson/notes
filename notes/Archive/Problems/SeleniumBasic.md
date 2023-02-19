@@ -1,7 +1,7 @@
 Everything that's required to get VBA and Selenium to work together.
 
 This is a cut down version of an old [blog post](https://zachmanson.com/blog/basic-seleniumbasic/).
-  
+
 SeleniumBasic is a Selenium based framework for the VB family that has been unmaintained since 2016.
 
 ## Installation
@@ -33,7 +33,7 @@ To enable SeleniumBasic in Excel you'll need to navigate to `Tools > References`
 
 From here you can write fairly standard Selenium code in VBA.
 
-```vb
+```VB
 Sub AutoSearch()
 
 Dim driver As Selenium.EdgeDriver
@@ -41,7 +41,7 @@ Set driver = New Selenium.EdgeDriver
 
 driver.Start
 
-driver.Get ("https://old.reddit.com/")  
+driver.Get ("https://old.reddit.com/")
 
 Dim searchbox As WebElement
 Set searchbox = driver.FindElementByName("q", -1, True)
@@ -60,5 +60,6 @@ End Sub
 Software versions used: Windows 10 10.0.19043, Excel 2201, SeleniumBasic 2.0.9.0, Edge 98.0.1108.50, EdgeDriver 98.0.1108.51
 
 ## Links
+
 - [Official Selenium Documentation](https://www.selenium.dev/documentation/overview/)
 - A fantastic resource for VBA+Selenium is [WiseOwlTutorials' series](https://youtube.com/playlist?list=PLNIs-AWhQzcl3xKvF8sVL4sWRWICj_clM) on this exact thing.
