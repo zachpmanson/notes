@@ -105,27 +105,15 @@
 <li>Install postgres. This will add a <code>postgres</code> user account to the system. I set up another user account to interact with the database, in this case called <code>pg-user</code>.</li>
 <li>Using <code>psql</code>, create a database that will be used for your application.</li>
 <li>Whiler running <code>pg-user</code>, in <code>psql</code>, run <code>\password</code> and set a password for this account to interact with Postgres.  This password should not use an <code>@</code>, as it will conflict with the connection string later.</li>
-<li>Modify <code>/etc/postgresql/14/main/pg_hba.conf</code> (or equivalent). Set the <code>ADDRESS</code> field for IPv4 connections to this:</li>
-</ol>
-<div class="codehilite"><pre><span></span><code># IPv4 local connections:
-host    all             all             0.0.0.0/0              scram-sha-256
-</code></pre></div>
-
-<ol>
-<li>Modify  <code>/etc/postgresql/14/main/postgresql.conf</code>.  Set <code>listening_addresses</code> to all:</li>
-</ol>
-<div class="codehilite"><pre><span></span><code># - Connection Settings -
-listen_addresses = &#39;*&#39;
-</code></pre></div>
-
-<ol>
+<li>Modify <code>/etc/postgresql/14/main/pg_hba.conf</code> (or equivalent). Set the <code>ADDRESS</code> field for IPv4 connections to this:
+    <code># IPv4 local connections:
+    host    all             all             0.0.0.0/0              scram-sha-256</code></li>
+<li>Modify  <code>/etc/postgresql/14/main/postgresql.conf</code>.  Set <code>listening_addresses</code> to all:
+    <code># - Connection Settings -
+    listen_addresses = '*'</code></li>
 <li>Restart Postgres <code>systemctl restart postgres</code></li>
-<li>In the Prisma application, set up Prisma normally.  The connection string in <code>.env</code> should be this format:</li>
-</ol>
-<div class="codehilite"><pre><span></span><code>postgresql://pg-user:passwd@example.com:5432/db?schema=public
-</code></pre></div>
-
-<ol>
+<li>In the Prisma application, set up Prisma normally.  The connection string in <code>.env</code> should be this format:
+    <code>postgresql://pg-user:passwd@example.com:5432/db?schema=public</code></li>
 <li>Push the schema designed in <code>prisma/schema.prisma</code> using the command <code>npx prisma db push</code>.</li>
 <li>If this succeed, Prisma can now effectively connect to the database!</li>
 </ol></article>
