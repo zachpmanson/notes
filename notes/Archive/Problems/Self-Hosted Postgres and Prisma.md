@@ -2,8 +2,14 @@ Learnings from setting up Postgres on a DigitalOcean droplet for [[Penultimate G
 
 1. Install postgres. This will add a `postgres` user account to the system. I set up another user account to interact with the database, in this case called `pg-user`.
 2. Using `psql`, create a database that will be used for your application.
-3. Whiler running `pg-user`, in `psql`, run `\password` and set a password for this account to interact with Postgres.  This password should not use an `@`, as it will conflict with the connection string later.
-4. Modify `/etc/postgresql/14/main/pg_hba.conf` (or equivalent). Set the `ADDRESS` field for IPv4 connections to this:
+3. Whiler running `pg-user`, in `psql`, run `\password` and set a password for this account to interact with Postgres.  This password should not use an `@`, as it will conflict with the connection string later. 
+4. Grant the user account access to the database with the SQL command. 
+
+    ```sql
+    GRANT ALL PRIVILEGES ON DATABASE "my_db" to my_user;
+    ```
+
+5. Modify `/etc/postgresql/14/main/pg_hba.conf` (or equivalent). Set the `ADDRESS` field for IPv4 connections to this:
 
     ```
     # IPv4 local connections:
