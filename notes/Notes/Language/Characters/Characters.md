@@ -1,0 +1,1 @@
+Notes on characters and glyphs, Unicode or otherwise.

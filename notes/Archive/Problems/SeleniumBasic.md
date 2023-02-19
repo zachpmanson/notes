@@ -33,7 +33,7 @@ To enable SeleniumBasic in Excel you'll need to navigate to `Tools > References`
 
 From here you can write fairly standard Selenium code in VBA.
 
-```vb
+```VB
 Sub AutoSearch()
 
 Dim driver As Selenium.EdgeDriver
