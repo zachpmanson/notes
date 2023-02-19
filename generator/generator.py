@@ -115,7 +115,7 @@ def traverse_tree():
                 text = re.sub(r"!\[\[([^\]]+)?\]\]", "![](/static/media/\\1)", text)
                 body = markdown.markdown(
                     text,
-                    extensions=['fenced_code', CodeHiliteExtension(guess_lang=False), 'md_in_html', 'toc']
+                    extensions=['fenced_code', CodeHiliteExtension(guess_lang=False), 'md_in_html', 'toc', 'pymdownx.superfences']
                 )
         except FileNotFoundError:
             body = ""

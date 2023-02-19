@@ -93,7 +93,19 @@ blockquote {
   border-left: 2px solid var(--dark-blue);
 }
 
-blockquote + p cite {
+blockquote + p > cite {
   margin-left: 1rem;
+}
+
+blockquote + p > cite::before {
+  content: "– ";
+}
+
+/* has() not supported on firefox yet */
+blockquote + p:has(a cite)::before {
+  margin-left: 1rem;
+}
+
+blockquote + p:has(a cite)::before {
   content: "– ";
 }
