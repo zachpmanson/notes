@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/static/styles/code.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: ghidhra hidpi</title>
+    <title>notes: sticky elements</title>
   </head>
 
   <body>
@@ -49,7 +49,7 @@
         
           <li>
             
-            <a href="/ghidhra-hidpi" class="activated-link">Ghidhra HiDPI</a>
+            <a href="/ghidhra-hidpi">Ghidhra HiDPI</a>
             
           </li>
         
@@ -79,7 +79,7 @@
         
           <li>
             
-            <a href="/sticky-elements">Sticky Elements</a>
+            <a href="/sticky-elements" class="activated-link">Sticky Elements</a>
             
           </li>
         
@@ -98,23 +98,17 @@
     </nav>
     <main>
       <header>
-        <h1>Ghidhra HiDPI</h1>
+        <h1>Sticky Elements</h1>
       </header>
-      <article><p>Making Ghidra scale on HiDPI screens.</p>
-<p>Tested on Kali Linux 5.18.0-kali5-amd64, Ghidra 10.1.4, Java 11.0.16.</p>
-<p>Ghidra doesn't scale to HiDPI screens, but this can be fixed by modifying the <code>launch.properties</code> file.  This is located in <code>&lt;GhidraInstallDir&gt;/support/launch.properties</code>, which when installed using apt is <code>/usr/share/ghidra/support/launch.properties</code>.</p>
-<p>Change this setting:</p>
-<div class="codehilite"><pre><span></span><code>VMARGS_LINUX=-Dsun.java2d.uiScale=1
-</code></pre></div>
-
-<p>to:</p>
-<div class="codehilite"><pre><span></span><code>VMARGS_LINUX=-Dsun.java2d.uiScale=2
-</code></pre></div>
-
-<h2 id="links">Links</h2>
-<ul>
-<li><a href="https://gist.github.com/nstarke/baa031e0cab64a608c9bd77d73c50fc6">Source</a></li>
-</ul></article>
+      <article><ol>
+<li>Pick element Child to be <code>position: sticky</code>.  Ensure it has a one of the following set: <code>top,bottom,left,right</code></li>
+<li>Ensure it has a parent that has <code>position: relative</code></li>
+<li>Ensure that all elements between the parent and child have <code>overflow: visible</code><ul>
+<li><strong>Next.js sets <code>overflow:disabled</code> on the entire document by default</strong></li>
+<li>Easiest to diagnose this by selecting child in Inspect Element, filter styles for "overflow" and click up repeatedly to traverse up the DOM.</li>
+</ul>
+</li>
+</ol></article>
       
       
 
