@@ -2,6 +2,7 @@
 DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscuresorrows.com/).
 
 + *Apricity* (English) - the warmth of the sun in winter
++ *Avarice* (Middle English) - extreme greed for wealth or material gain.
 + *Avuncular* - kind and friendly towards a younger or less experienced person.
 + *Complect* - intertwine, embrace especially; to plait together; interweave.
 + *Ichor* - God's equivalent for blood
