@@ -8,7 +8,7 @@ DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscu
 + *Ichor* - God's equivalent for blood
 + *Interrobang* (Character) - ‽
 + *Juvenioa* (English) - The fear or hostility directed by an older generation toward a younger one, or toward youth culture in general.
-+ Kaboomlaut - a unicode character that breaks a piece of software
++ *Kaboomlaut* - a unicode character that breaks a piece of software
 + *Kenja Taimu* (Japanese) - post-jerk clarity / wiseman time
 + *Loquacious* (English) - tending to talk a great deal; talkative.
 + *Midding* (DoOS) - feeling the tranquil pleasure of being near a gathering but not quite in it—hovering on the perimeter of a campfire, chatting outside a party while others dance inside, resting your head in the backseat of a car listening to your friends chatting up front—feeling blissfully invisible yet still fully included, safe in the knowledge that everyone is together and everyone is okay, with all the thrill of being there without the burden of having to be.
