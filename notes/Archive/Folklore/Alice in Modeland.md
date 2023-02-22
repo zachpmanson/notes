@@ -2,7 +2,6 @@ As written by Dan Hon , posted to [Mastodon](https://dan.mastohon.com/@danhon/10
 
 ---
 
-
 At the front of the house, Alice found two curious characters, both search engines. 
 
 "I am Googl-E," said the one plastered in advertisements. 
