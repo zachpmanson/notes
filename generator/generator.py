@@ -8,7 +8,8 @@ from markdown.extensions.codehilite import CodeHiliteExtension
 
 ignore_names = [
     ".obsidian",
-    "Media"
+    "Media",
+    ".trash"
 ]
 
 # node: {
