@@ -192,6 +192,7 @@ def append_bullet(node, depth):
 
 
 def format_backlink(matches):
+    
     if "|" in matches.group(1):
         segments = matches.group(1).split("|")
         text = segments[1]
@@ -200,6 +201,15 @@ def format_backlink(matches):
         text = matches.group(1)
         page = text
     
+    anchor = ""
+
+    if "#" in page:
+        segments = page.split("#")
+        page = segments[0]
+        anchor = f"#{sanitize_anchor(segments[1])}"
+
+        
+
     # if they are capitalised differently, fix it 
     if page not in routes.keys():
         for key in routes.keys():
@@ -209,8 +219,13 @@ def format_backlink(matches):
 
     tree[page]["backlinks"].append(current_node)
 
-    return f"[{text}](/{sanitize_url(page)})"
-        
+    return f"[{text}](/{sanitize_url(page)}{anchor})"
+
+def sanitize_anchor(anchor):
+    clean_anchor = anchor.lower()
+    clean_anchor = clean_anchor.replace(" ", "-")
+    return clean_anchor
+
 def sanitize_url(url):
     url = url.lower()
     if url == "index":
