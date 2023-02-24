@@ -1,4 +1,4 @@
-The lemniscate symbol (∞, U+221E) is used to represent infinity, a concept that is larger than any natural number.
+The [[lemniscate]] symbol (∞, U+221E) is used to represent infinity, a concept that is larger than any natural number.
 
 ## Set Theory
 
