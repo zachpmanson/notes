@@ -111,5 +111,6 @@ blockquote + p:has(a cite)::before {
 }
 
 .backlinks {
-  margin: auto 0.5rem;
+  display: flex;
+  gap: 0.5rem;
 }
