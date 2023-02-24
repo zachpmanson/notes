@@ -8,5 +8,6 @@ The exact reason Wallis chose the lemniscate is unclear, multiple theories have 
 - A variant of lower case omega, ω
 
 ## Related Characters
+
 - ♾ PERMANENT PAPER SIGN (U+267E)
 - ⚭ MARRIAGE SYMBOL (U+26AD)
