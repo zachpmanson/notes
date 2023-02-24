@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/styles/colors.css" />
+    <link rel="stylesheet" href="/static/styles/global.css" />
+    <link rel="stylesheet" href="/static/styles/code.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>notes: sticky elements</title>
+  </head>
+
+  <body>
+     <nav>
+      <div>
+        <a href="/">
+          <img src="/static/icon/icon.png" alt="notes" height="100">
+        </a>
+      </div>
+      
+      
+      <div>
+        <ul>
+        
+          <li>
+            
+            <a href="/fiction">Fiction</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/folklore">Folklore</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/problems" class="activated-link">Problems</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      
+
+      
+      <div>
+        <ul>
+        
+          <li>
+            
+            <a href="/firefox-photon">Firefox Photon</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/ghidhra-hidpi">Ghidhra HiDPI</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/git-subdirectory-branch">Git Subdirectory Branch</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/keychron-fn-keys">Keychron Fn Keys</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/seleniumbasic">SeleniumBasic</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/self-hosted-postgres-and-prisma">Self-Hosted Postgres and Prisma</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/sticky-elements" class="activated-link">Sticky Elements</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/xfce-screentearing">Xfce Screentearing</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      
+
+      
+
+    </nav>
+    <main>
+      <header>
+        <h1>Sticky Elements</h1>
+      </header>
+      <article><ol>
+<li>Pick element Child to be <code>position: sticky</code>.  Ensure it has a one of the following set: <code>top,bottom,left,right</code></li>
+<li>Ensure it has a parent that has <code>position: relative</code></li>
+<li>Ensure that all elements between the parent and child have <code>overflow: visible</code><ul>
+<li><strong>Next.js sets <code>overflow:disabled</code> on the entire document by default</strong></li>
+<li>Easiest to diagnose this by selecting child in Inspect Element, filter styles for "overflow" and click up repeatedly to traverse up the DOM.</li>
+</ul>
+</li>
+</ol></article>
+      
+      
+
+      
+        
+      
+
+
+    </main>
+  </body>
+</html>
