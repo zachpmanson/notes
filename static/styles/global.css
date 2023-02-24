@@ -109,3 +109,8 @@ blockquote + p:has(a cite)::before {
 blockquote + p:has(a cite)::before {
   content: "– ";
 }
+
+.backlinks {
+  display: flex;
+  gap: 0.5rem;
+}

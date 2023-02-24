@@ -69,10 +69,11 @@
       <article>{{body}}</article>
       
       {% if len(backlinks) > 0 %}
-      <p><span class="bold">Incoming ({{len(backlinks)}}):</span>
-        {% for backlink in backlinks %}
-        <a href="/{{sanitize_url(backlink)|e}}">{{backlink}}</a>
-        {% endfor %}
+      <p class="backlinks"><span class="bold">Incoming ({{len(backlinks)}}):</span>
+          {% for backlink in backlinks %}
+          <a href="/{{sanitize_url(backlink)|e}}">{{backlink}}</a>
+          {% endfor %}
+        </span>
       </p>
       {% endif %}
 

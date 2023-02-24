@@ -151,7 +151,7 @@ def generate_pages():
                 "piblings": piblings,
                 "len": len,
                 "sanitize_url": sanitize_url,
-                "backlinks": tree[node]["backlinks"]
+                "backlinks": [*set(tree[node]["backlinks"])]
             }))
         print(f"Generated {grandparent}/{parent}/{sanitize_url(node)}/index.html")
 
