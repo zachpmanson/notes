@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 cd ./site/
 git stash
 git stash drop

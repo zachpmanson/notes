@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-
+set -e
 source ./venv/bin/activate
 rm -r ./site/*
 echo Activated venv
-python3 ./generator/genertor.py
+python3 ./generator/generator.py
 deactivate
 echo Deactivated venv
 mkdir -p ./site/static/media
