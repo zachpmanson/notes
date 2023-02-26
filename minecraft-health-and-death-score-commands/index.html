@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/static/styles/code.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: sticky elements</title>
+    <title>notes: minecraft health and death score commands</title>
   </head>
 
   <body>
@@ -73,7 +73,7 @@
         
           <li>
             
-            <a href="/minecraft-health-and-death-score-commands">Minecraft Health and Death Score Commands</a>
+            <a href="/minecraft-health-and-death-score-commands" class="activated-link">Minecraft Health and Death Score Commands</a>
             
           </li>
         
@@ -91,7 +91,7 @@
         
           <li>
             
-            <a href="/sticky-elements" class="activated-link">Sticky Elements</a>
+            <a href="/sticky-elements">Sticky Elements</a>
             
           </li>
         
@@ -110,17 +110,15 @@
     </nav>
     <main>
       <header>
-        <h1>Sticky Elements</h1>
+        <h1>Minecraft Health and Death Score Commands</h1>
       </header>
-      <article><ol>
-<li>Pick element Child to be <code>position: sticky</code>.  Ensure it has a one of the following set: <code>top,bottom,left,right</code></li>
-<li>Ensure it has a parent that has <code>position: relative</code></li>
-<li>Ensure that all elements between the parent and child have <code>overflow: visible</code><ul>
-<li><strong>Next.js sets <code>overflow:disabled</code> on the entire document by default</strong></li>
-<li>Easiest to diagnose this by selecting child in Inspect Element, filter styles for "overflow" and click up repeatedly to traverse up the DOM.</li>
-</ul>
-</li>
-</ol></article>
+      <article><p>The commands to show players' health in the tab menu and deathcount above players heads:</p>
+<div class="highlight"><pre><span></span><code>/scoreboard objectives add deaths deathCount &quot;Deaths&quot;
+/scoreboard players add username deaths
+
+/scoreboard objectives add health health
+/scoreboard objectives setdisplay list health
+</code></pre></div></article>
       
       
 
