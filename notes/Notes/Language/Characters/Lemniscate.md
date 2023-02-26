@@ -10,4 +10,4 @@ The exact reason Wallis chose the lemniscate is unclear, multiple theories have 
 ## Related Characters
 
 - ♾ PERMANENT PAPER SIGN (U+267E)
-- ⚭ MARRIAGE SYMBOL (U+26AD)
+- ⚭ MARRIAGE SYMBOL (U+26AD)i
