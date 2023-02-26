@@ -11,4 +11,4 @@ Create file `/etc/X11/xorg.conf` with the content:
 ```
 
 ## Links
-[Source](https://forum.xfce.org/viewtopic.php?id=12019)
+ - [Source](https://forum.xfce.org/viewtopic.php?id=12019)
