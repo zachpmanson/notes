@@ -9,7 +9,7 @@ This site is hosted on [notes.zachmanson.com](https://zachmanson.com) alongside 
 	- **[tracker.zachmanson.com](https://tracker.zachmanson.com)**  
 	  likely defunct [[COVID-19 Tracker]] for WA  
 	  trackstar
-	- **[api.zachmanson.com](api.zachmanson.com)**  
+	- **[api.zachmanson.com](https://api.zachmanson.com)**  
 	  general purpose API currently only used for serving [[Status Messenger]]  
 	  trackstar
 	- **[minecraftle.zachmanson.com](https://minecraftle.zachmanson.com)**  
