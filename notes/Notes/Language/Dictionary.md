@@ -6,7 +6,6 @@ DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscu
 + *Avuncular* - kind and friendly towards a younger or less experienced person.
 + *Complect* - intertwine, embrace especially; to plait together; interweave.
 + *Ichor* - God's equivalent for blood
-+ *Interrobang* (Character) - ‽
 + *Juvenioa* (English) - The fear or hostility directed by an older generation toward a younger one, or toward youth culture in general.
 + *Kaboomlaut* ([mcculley](https://news.ycombinator.com/item?id=34461282)) - a unicode character that breaks a piece of software
 + *Kenja Taimu* (Japanese) - post-jerk clarity / wiseman time
