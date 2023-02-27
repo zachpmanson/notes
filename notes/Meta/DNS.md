@@ -1,7 +1,7 @@
 This site is hosted on [notes.zachmanson.com](https://zachmanson.com) alongside several other subdomains.
 
-- [zachmanson.com](https://zachmanson.com) \
-  main home page and blog \
+- [zachmanson.com](https://zachmanson.com) \ 
+  main home page and blog \ 
   gh pages
 	- [notes.zachmanson.com](https://notes.zachmanson.com) \
 	  this site \
