@@ -15,6 +15,7 @@ This was updated in version 15.0.0 of the Unicode specification when [Jonty Ware
 ## Related Characters
 
 ꙮ is related to other ocular and multiocular Cyrillic O's, such as:
+
  - Ꙩ (U+A668)
  - ꙩ (U+A669)
  - Ꙫ (U+A66A)
