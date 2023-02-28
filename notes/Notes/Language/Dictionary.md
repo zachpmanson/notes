@@ -5,11 +5,13 @@ DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscu
 + *Avarice* (Middle English) - extreme greed for wealth or material gain.
 + *Avuncular* - kind and friendly towards a younger or less experienced person.
 + *Complect* - intertwine, embrace especially; to plait together; interweave.
++ *Gloaming* - twilight; dusk
 + *Ichor* - God's equivalent for blood
 + *Juvenioa* (English) - The fear or hostility directed by an older generation toward a younger one, or toward youth culture in general.
 + *Kaboomlaut* ([mcculley](https://news.ycombinator.com/item?id=34461282)) - a unicode character that breaks a piece of software
 + *Kenja Taimu* (Japanese) - post-jerk clarity / wiseman time
 + *Loquacious* (English) - tending to talk a great deal; talkative.
++ *Lurid* (English) - unpleasantly bright in colour, especially so as to create a harsh or unnatural effect; presented in vividly shocking or sensational terms.
 + *Midding* (DoOS) - feeling the tranquil pleasure of being near a gathering but not quite in it—hovering on the perimeter of a campfire, chatting outside a party while others dance inside, resting your head in the backseat of a car listening to your friends chatting up front—feeling blissfully invisible yet still fully included, safe in the knowledge that everyone is together and everyone is okay, with all the thrill of being there without the burden of having to be.
 + *Mojibake* (Japanese) - garbled characters
 + *Moment of Tangency* (DoOS) - A glimpse of what might have been.  If two lines are truly parallel, it means they’ll never actually meet.
