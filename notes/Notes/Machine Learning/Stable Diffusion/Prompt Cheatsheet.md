@@ -6,10 +6,12 @@ The further to the beginning of the prompt a word is placed, the greater its eff
 
 *3D renders & realism*
 unreal engine, octane render, bokeh, vray, houdini render, quixel megascans, depth of field (or dof), arnold render, 8k uhd, raytracing, cgi, lumen reflections, cgsociety, ultra realistic, volumetric fog, overglaze, macro photography, analog photo, polaroid, 100mm, film photography, dslr, cinema4d, studio quality
+
 Try experimenting with the names of professional cameras (e. g. Fujifilm XT3 or Canon Eos 5D) and lens specifications (e. g. 80mm Sigma f/1.4 or any ZEISS lens).
 
 *2D art*
 digital art, digital painting, color page, featured on pixiv (for anime/manga), trending on dribbble (for vector graphics), trending on artstation, precise lineart, tarot card, character design, concept art, symmetry, golden ratio, evocative, award winning, shiny, smooth, surreal, divine, celestial, elegant, oil painting, soft, fascinating, fine art
+
 Note that Stable Diffusion's output quality is more dependant on artists' names than those of DALL-E and Midjourney. Without at least one artist name the output might look like a beginner's work.
 
 *Environments*
