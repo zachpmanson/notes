@@ -1,4 +1,4 @@
-This site is hosted on [notes.zachmanson.com](https://zachmanson.com) alongside several other subdomains.
+This site is hosted on [zachmanson.com](https://zachmanson.com) alongside several other subdomains.
 
 - **[zachmanson.com](https://zachmanson.com)**  
   main home page and blog  
