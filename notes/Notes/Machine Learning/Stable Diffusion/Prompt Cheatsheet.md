@@ -1,7 +1,6 @@
-The open source image generation model by Stability AI.
+Written by [Moritz](https://moritz.pm) under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).  Only minor formatting changes have been made. Could potentially go in the [[Archive]] I suppose.
 
-## Prompt Cheatsheet
-Written by [Moritz](https://moritz.pm) under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).  Only minor formatting changes have been made.
+---
 
 The further to the beginning of the prompt a word is placed, the greater its effect. Use multiple exclamation marks !! to stress a word and brackets () to reduce its strength.
 
