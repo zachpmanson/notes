@@ -1,8 +1,8 @@
 #!/bin/bash
-set -e
 cd ./site/
 git stash
 git stash drop
+set -e
 git pull
 cd ../
 echo "Building..."
