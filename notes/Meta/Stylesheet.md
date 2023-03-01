@@ -44,14 +44,20 @@ let codeblock: TypeScript = "this should have code highlighting"
 
 ---
 
+Ordered list:
+
 1. First item
 2. Second
 3. ...
 4. ...
 
+Unordered list:
+
 - unordered list
 - ...
 - ...
+
+Ordereed list with codeblock:
 
 1. List with codeblock
 2. Grant the user account access to the database with the SQL command. 
