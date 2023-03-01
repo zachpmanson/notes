@@ -57,7 +57,7 @@ Unordered list:
 - ...
 - ...
 
-Ordereed list with codeblock:
+Ordered list with codeblock:
 
 1. List with codeblock
 2. Grant the user account access to the database with the SQL command. 
