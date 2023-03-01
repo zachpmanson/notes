@@ -13,6 +13,6 @@ The reason that the ADM-3A used hjkl for navigation is due to the ASCII standard
 
 Applying this to Ctrl-H results in BS (backspace), which is why H was chosen to move the the cursor back one space on the ADM-3A. Applying this to Ctrl-J results in LF (line feed, a new line), which is why J was chosen to move the cursor down one line on the ADM-3A. For conceptual symmetry K and L became the inverses of these, though Ctrl-K corresponds to VT (vertical tab), and Ctrl-L corresponds to FF (form feed, similar to a pagebreak).  These were both useful control characters in the contexts of printing terminals but less  broadly applicable for screen based terminals like the ADM-3A. This use of L and K was new with the ADM-3A
 
-I first learnt of this was [here](https://twitter.com/hillelogram/status/1326600125569961991), which links to [this table](https://sltls.org/ASCII) which greatly helps in visualising this property.
+I first learnt of this [here](https://twitter.com/hillelogram/status/1326600125569961991), which links to [this table](https://sltls.org/ASCII) which greatly helps in visualising this property.
 
-The Home key and tilde symbols on the chevron key is potentially associated with the use of ~ to reference the user home directory in Unix. This key usage was also a first by ADM-3A.
+The Home and tilde symbols on the chevron key is potentially associated with the use of ~ to reference the user home directory in Unix. This key usage was also a first by ADM-3A.
