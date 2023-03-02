@@ -1,4 +1,4 @@
-Taken from [this post](https://np.reddit.com/r/StableDiffusion/comments/xcrm4d/useful_prompt_engineering_tools_and_resources/) by /u/nightkall
+Taken from [this post](https://np.reddit.com/r/StableDiffusion/comments/xcrm4d/useful_prompt_engineering_tools_and_resources/) by /u/nightkall.
 
 ---
 
