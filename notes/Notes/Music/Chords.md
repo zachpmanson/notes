@@ -1,5 +1,14 @@
 Chords are combinations of 3+ notes, starting with the root.
 
+## Inversions
+
+Inversions are alternate forms of chords that arrange the same notes differently. 
+
+- root position, where the root of the chord is the lowest note played
+- first inversion, third is the lowest note
+- second inversion, fifth is the lowest note
+- third inversion, sixth or seventh is the lowest note
+
 ## Triads
 
 A triad (aka harmony) is the most basic kind of chord consisting of a root, third, and fifth.  This is sometimes called stacked thirds, since their is a third between the 2nd and 3rd note.
