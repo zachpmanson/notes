@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/static/styles/code.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: ghidhra hidpi</title>
+    <title>notes: domain based link colours</title>
   </head>
 
   <body>
@@ -49,7 +49,7 @@
         
           <li>
             
-            <a href="/domain-based-link-colours">Domain Based Link Colours</a>
+            <a href="/domain-based-link-colours" class="activated-link">Domain Based Link Colours</a>
             
           </li>
         
@@ -61,7 +61,7 @@
         
           <li>
             
-            <a href="/ghidhra-hidpi" class="activated-link">Ghidhra HiDPI</a>
+            <a href="/ghidhra-hidpi">Ghidhra HiDPI</a>
             
           </li>
         
@@ -122,22 +122,27 @@
     </nav>
     <main>
       <header>
-        <h1>Ghidhra HiDPI</h1>
+        <h1>Domain Based Link Colours</h1>
       </header>
-      <article><p>Making Ghidra scale on HiDPI screens.</p>
-<p>Tested on Kali Linux 5.18.0-kali5-amd64, Ghidra 10.1.4, Java 11.0.16.</p>
-<p>Ghidra doesn't scale to HiDPI screens, but this can be fixed by modifying the <code>launch.properties</code> file.  This is located in <code>&lt;GhidraInstallDir&gt;/support/launch.properties</code>, which when installed using apt is <code>/usr/share/ghidra/support/launch.properties</code>.</p>
-<p>Change this setting:
-<div class="highlight"><pre><span></span><code>VMARGS_LINUX=-Dsun.java2d.uiScale=1
-</code></pre></div>
-to:
-<div class="highlight"><pre><span></span><code>VMARGS_LINUX=-Dsun.java2d.uiScale=2
-</code></pre></div></p>
-<h2 id="links">Links</h2>
-<ul>
-<li><a href="https://gist.github.com/nstarke/baa031e0cab64a608c9bd77d73c50fc6">Source</a></li>
-</ul></article>
+      <article><p>To make <code>&lt;a&gt;</code> tag colour depend on the domain the <code>href</code> attribute points to, you can use a CSS selector that checks from the start of the element.</p>
+<div class="highlight"><pre><span></span><code><span class="c">/* Internal links */</span>
+<span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">^=</span><span class="s2">&quot;/&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">purple</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Other Links */</span>
+<span class="nt">a</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></article>
       
+      
+      <p class="backlinks"><span class="bold">Incoming (1):</span>
+          
+          <a href="/">Index</a>
+          
+        </span>
+      </p>
       
 
       
