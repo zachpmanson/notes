@@ -33,6 +33,10 @@ nav {
   display: flex;
 }
 
+nav ul {
+  margin: 0 auto;
+}
+
 nav ul li {
   list-style: none;
   text-align: left;

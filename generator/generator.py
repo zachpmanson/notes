@@ -179,7 +179,7 @@ def generate_sitemap():
             "piblings": None,
             "len": len,
             "sanitize_url": sanitize_url,
-            "backlinks": tree[node]["backlinks"]
+            "backlinks": []
         }))
     print("Generated sitemap")
 
