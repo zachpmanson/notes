@@ -71,6 +71,15 @@ a:active {
 }
 
 .activated-link:hover {
+  color: var(--pink);
+  text-decoration-color: var(--pink);
+}
+
+a[href^="/"].activated-link {
+  color: var(--white);
+}
+
+a[href^="/"].activated-link:hover {
   color: var(--purple);
   text-decoration-color: var(--purple);
 }
