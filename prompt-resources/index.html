@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/styles/colors.css" />
+    <link rel="stylesheet" href="/static/styles/global.css" />
+    <link rel="stylesheet" href="/static/styles/code.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>notes: prompt resources</title>
+  </head>
+
+  <body>
+     <nav>
+      <div>
+        <a href="/">
+          <img src="/static/icon/icon.png" alt="notes" height="100">
+        </a>
+      </div>
+      
+      
+      <div>
+        <ul>
+        
+          <li>
+            
+            <a href="/chatgpt">ChatGPT</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/stable-diffusion" class="activated-link">Stable Diffusion</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      
+
+      
+      <div>
+        <ul>
+        
+          <li>
+            
+            <a href="/prompt-cheatsheet">Prompt Cheatsheet</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/prompt-resources" class="activated-link">Prompt Resources</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      
+
+      
+
+    </nav>
+    <main>
+      <header>
+        <h1>Prompt Resources</h1>
+      </header>
+      <article><p>Taken from <a href="https://np.reddit.com/r/StableDiffusion/comments/xcrm4d/useful_prompt_engineering_tools_and_resources/">this post</a> by /u/nightkall</p>
+<p>A list of useful <strong>Prompt</strong> Engineering <strong>tools</strong> and <strong>resources</strong> for text-to-image AI generative models like <strong>Stable Diffusion</strong>, DALL·E 2 and Midjourney.</p>
+<p><strong>Prompt galleries and search engines:</strong></p>
+<ul>
+<li><a href="https://lexica.art">Lexica</a>: CLIP Content-based search. <strong>Create</strong> with <strong>Seed</strong>, CFG, Dimensions. Favorites.</li>
+<li><a href="https://openart.ai/discovery?dataSource=sd">OpenArt</a>: CLIP Content-based search. <a href="https://openart.ai/presets">Presets</a>, Favorites. SD, DALL·E 2, Midjourney. <strong>Seed,</strong> Dimensions. <strong>Create.</strong></li>
+<li><a href="https://playgroundai.com/">Playground AI</a>: Gallery &amp; Remix. SD, DALL·E 2. img2img, Instruct Pix2Pix. Full Parameters.</li>
+<li><a href="https://prompthero.com/">PromptHero</a>: Filtery by models. <strong>Seed</strong>, CFG, Dimensions, Steps. Favorites. SD, DALL·E 2, Midjourney. <strong>Generate.</strong> NSFW</li>
+<li><a href="https://artspark.io">artspark</a>: Search and use <strong>filters</strong> like Style, Artists, aesthetics... <strong>Create</strong>.</li>
+<li><a href="https://www.krea.ai/">Krea</a>: CLIP Content-based search. Likes, related images and profiles. <a href="https://atlas.nomic.ai/map/809ef16a-5b2d-4291-b772-a913f4c8ee61/9ed7d171-650b-4526-85bf-3592ee51ea31">Atlas</a>: similar map</li>
+<li><a href="https://www.midjourney.com/showcase/">Midjourney:</a> Community Showcase</li>
+<li><a href="http://avyn.com/">Avyn</a>: Search engine and txt2img. In-Painting.</li>
+<li><a href="https://pagebrain.ai/promptsearch/?q=&amp;page=1">PromptSearch</a>: text and image search.</li>
+<li><a href="https://www.promptlocker.com/">PromptLocker</a>: a community for AI Artists to get and give feedback.</li>
+<li><a href="https://promptflow.co">Promptflow</a>: Search + Generate AI images.</li>
+<li><a href="https://visualise.ai">Visualise</a>: <strong>Create</strong> and share image prompts. Marketplace.</li>
+<li><a href="https://sparklpaint.com">Sparkl</a>: <strong>Create</strong> images and gallery. Chrome extension</li>
+<li><a href="https://publicprompts.art">Publicprompts.art</a>: Free HQ prompts</li>
+<li><a href="https://promptbase.com">Promptbase</a>: Prompt Marketplace</li>
+<li><a href="https://eyeforai.xyz">Eye For AI</a>: <strong>Create</strong> with prompt modifiers.</li>
+<li><a href="https://findanything.app">Find Anything</a>: Add AI-generated images to Google Search extension.</li>
+<li><a href="https://kfs334.itch.io/prompt-crafter-organizer">Prompt crafter organizer</a>: Windows software</li>
+<li><a href="https://superprompts.com">SuperPrompts</a>: Create a beautiful gallery for your AI art without leaving Twitter.</li>
+<li><a href="https://pixela.ai">Pixela.ai</a>: AI-Generated Game Textures.</li>
+<li><a href="https://thepromptbay.com">ThePromptBay</a>: AI images and text prompts. Share &amp; Learn.</li>
+<li><a href="https://pixai.art">Pixai.art</a>: Prompt discussion board and gallery. <strong>Share</strong>. NovelAI. (<strong>NSFW</strong>)</li>
+<li><a href="https://www.ponzu.ai/?t=&amp;p=colorful&amp;w=feed">Ponzu Logos</a></li>
+<li><a href="https://phraser.tech/compare">Phraser</a>: Create and search. Paid subscription.</li>
+<li><a href="https://histre.com/integrations/generative/">Histre</a>: <strong>Create</strong> and share prompts.</li>
+<li><a href="https://promptrush.com">PromptRush</a>: Prompt keyword research tool &amp; <a href="https://promptrush.com/prompt-analyzer">analyzer</a> (<strong><em>Down?</em></strong>)</li>
+<li><strong>NSFW</strong>:</li>
+<li><a href="https://booru.plus/+stablediffusion">booru.plus/+stablediffusion</a> Search NSFW</li>
+<li><a href="https://nastyprompts.com">NastyPrompts</a>: Search NSFW. Model <strong>Seed.</strong></li>
+<li><a href="https://novelai.io">NovelAI.io</a>: <strong>AUTOMATIC1111</strong> full PNG EXIF: +-prompt, steps, sampler, CFG, <strong>Seed</strong>, strength, noise, size.</li>
+<li><a href="https://www.ptsearch.info/home/">Ptsearch</a>: <strong>AUTOMATIC1111</strong> full PNG EXIF: +-prompt, steps, sampler, CFG, <strong>Seed</strong>, strength, noise.</li>
+</ul>
+<p><strong>Visual search:</strong></p>
+<ul>
+<li><a href="https://lexica.art/?q=">Lexica</a>: enter an image URL in the search bar.</li>
+<li><a href="https://openart.ai/discovery?dataSource=sd">OpenArt</a>: enter an image URL in the search bar.</li>
+<li><a href="https://enterpix.app">Enterpix</a>: Context, prompt, and image search. <strong>Generate</strong>.</li>
+<li><a href="https://rom1504.github.io/clip-retrieval/?back=https%3A%2F%2Fknn5.laion.ai&amp;index=laion5B&amp;useMclip=false&amp;imageUrl=">Clip retrieval</a>: Camera icon=similar, magnifying glass=captions.</li>
+<li><a href="https://haveibeentrained.com">Haveibeentrained</a>: <strong>search</strong> laion-5b <strong>dataset.</strong></li>
+<li><a href="https://pagebrain.ai/promptsearch/?q=&amp;page=1">PromptSearch</a>: Upload an image, paste an URL, or click on the magnifying glass. Click image/search for more.</li>
+<li><a href="https://phraser.tech/compare">Phraser</a>: image icon at the right.</li>
+<li><a href="https://same.energy">same.energy</a>: Right-click to view image info.</li>
+<li><a href="https://yandex.com/images/">Yandex</a>, <a href="https://www.bing.com/images/feed">Bing</a>, <a href="https://www.google.com/imghp">Google</a>, <a href="https://www.immerse.zone">immerse</a>, <a href="https://www.tineye.com/">Tineye</a>, <a href="https://iqdb.org">iqdb</a>: reverse and similar image search engines (sorted best to worst).</li>
+<li><a href="https://www.pinterest.com/search/">Pinterest</a></li>
+<li><a href="https://github.com/dessant/search-by-image">dessant/search-by-image</a>: Open-source browser extension for reverse image search.</li>
+<li><a href="https://github.com/marqo-ai/marqo">marqo-ai</a>: Index your images using AI.</li>
+</ul>
+<p><strong>Prompt generators:</strong></p>
+<ul>
+<li><a href="https://promptly.pro/">Promptly</a>: <strong>Uses AI</strong> to build and enhance Prompts. Image samples (in advanced mode)</li>
+<li><a href="https://promptomania.com/prompt-builder/">promptoMANIA</a>: <strong>Visual</strong> modifiers. Great selection. With weight setting.</li>
+<li><a href="https://phraser.tech/">Phraser</a>: <strong>Visual</strong> modifiers.</li>
+<li><a href="https://promptgen.vercel.app/">Promptgen</a>: Customizable (saving JSON). <a href="https://www.reddit.com/r/StableDiffusion/comments/xijom8/tool_release_promptgen_v01_easy_and_fast_prompt/">Info</a></li>
+<li><a href="https://aitextpromptgenerator.com/">AI Text Prompt Generator</a></li>
+<li><a href="https://rexwang8.github.io/resource/ai/generator">Dynamic Prompt generator</a></li>
+<li><a href="https://huggingface.co/spaces/Gustavosta/MagicPrompt-Stable-Diffusion">Gustavosta/MagicPrompt-Stable-Diffusion</a>: <a href="https://huggingface.co/Gustavosta/MagicPrompt-Stable-Diffusion">GPT-2</a> text completion. <a href="https://huggingface.co/spaces/Gustavosta/MagicPrompt-Dalle">Dall-E 2</a> <a href="https://huggingface.co/Gustavosta/MagicPrompt-Dalle">version</a>.</li>
+<li><a href="https://huggingface.co/succinctly/text2image-prompt-generator">succinctly/text2image</a>: GPT-2 Midjourney trained text completion.</li>
+<li><a href="https://www.aiprompt.io">Aiprompt.io</a>: GPT-2 random prompt generator. <a href="https://www.reddit.com/r/StableDiffusion/comments/xv822i/aipromptio_a_prompt_generator_with_surprisingly/">Info</a>.</li>
+<li><a href="https://colab.research.google.com/drive/1GtyVgVCwnDfRvfsHbeU0AlG-SgQn1p8e?usp=sharing">Prompt Parrot colab</a>: Train and generate prompts.</li>
+<li><a href="https://github.com/cmdr2/stable-diffusion-ui">cmdr2</a>: 1-click SD installation with image modifiers gallery.</li>
+<li><a href="https://www.phase.art/">Phase.art</a>: assistant with <strong>visual</strong> modifiers. SD <a href="https://www.phase.art/images/cl826cjsb000509mlwqbael1i">Generator and share</a>.</li>
+<li><a href="https://colab.research.google.com/github/WASasquatch/noodle-soup-prompts/blob/main/Noodle_Soup_Prompts_Prompt_Terminology_Generator_v3_0.ipynb">Noodle Soup Prompts v3.0</a>: Prompt <a href="https://github.com/WASasquatch/noodle-soup-prompts/wiki/Terminology-Reference">Terminology</a> Generator. <a href="https://github.com/WASasquatch/noodle-soup-prompts">Github</a>.</li>
+<li><a href="https://huggingface.co/spaces/daspartho/prompt-extend">Prompt extend</a>: add suitable modifiers and styles.</li>
+<li><a href="https://artemai.art">ARTemAI</a>: Prompt Enhancer and generator.</li>
+<li><a href="https://huggingface.co/spaces/fffiloni/prompt-converter">prompt-converter</a>: SD v1 to V2</li>
+<li><a href="https://www.promptextend.com">Promptextend.com</a></li>
+<li><a href="https://huggingface.co/FredZhang7/distilgpt2-stable-diffusion-v2">DistilGPT2 Stable Diffusion V2 Model Card</a></li>
+<li>Prompt <a href="https://promptrush.com/prompt-analyzer">important keyword analyzer</a></li>
+<li>OpenAI CLIP <a href="https://platform.openai.com/tokenizer">Tokenizer</a>: count tokens</li>
+</ul>
+<p><strong>Image-to-prompt Img2prompt:</strong></p>
+<ul>
+<li><a href="https://www.latentspace.dev">latentspace.dev</a>: <strong>explore</strong> <a href="https://huggingface.co/CompVis/stable-diffusion-v1-2#training">Stable Diffusion</a> <strong>latent space</strong> and find prompt descriptions + Lexica.</li>
+<li><a href="https://phraser.tech/compare">Phraser</a>: Upload an image and the prompt will be displayed in the search bar.</li>
+<li><a href="https://magicstudio.com/pic2prompt/editor">Magicstudio pic2prompt</a></li>
+<li><a href="https://replicate.com/methexis-inc/img2prompt">img2prompt</a> Replicate by <a href="https://replicate.com/methexis-inc">methexis-inc</a>: Optimized for SD (clip ViT-L/14).</li>
+<li><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">AUTOMATIC1111</a>: Interrogate CLIP in img2img tab</li>
+<li><a href="https://github.com/pharmapsychotic/clip-interrogator">Clip interrogator</a>: by <a href="https://twitter.com/pharmapsychotic">@pharmapsychotic</a></li>
+<li><a href="https://colab.research.google.com/github/lowfuel/CLIP_artists/blob/main/CLIP_Evaluator.ipynb">CLIP Artist Evaluator colab</a></li>
+<li><a href="https://huggingface.co/spaces/Salesforce/BLIP">BLIP</a></li>
+</ul>
+<p><strong>Explore Artists, styles, and modifiers:</strong></p>
+<ul>
+<li><a href="https://proximacentaurib.notion.site/proximacentaurib/parrot-zone-74a5c04d4feb4f12b52a41fc8750b205">Parrot Zone</a>: <a href="https://proximacentaurib.notion.site/e28a4f8d97724f14a784a538b8589e7d?v=42948fd8f45c4d47a0edfc4b78937474">Artist Style Studies</a> (<a href="https://proximacentaurib.notion.site/28e037176b58439785ee04af6b0ae4ea?v=9fbc9cb55a7b42bba7148f7e2f1b70f5">SD2</a>) &amp; <a href="https://proximacentaurib.notion.site/2b07d3195d5948c6a7e5836f9d535592?v=e8062bc85bfd43a99fb6e187e9bac926">Modifier Studies</a></li>
+<li><a href="https://knn5.laion.ai/">Clip retrieval</a>: <strong>search dataset</strong>. <a href="https://rom1504.github.io/clip-retrieval/?back=https%3A%2F%2Fknn5.laion.ai&amp;index=laion5B&amp;useMclip=false&amp;imageUrl=">Similar search</a> Camera icon=similar, magnifying glass=captions. <a href="https://github.com/rom1504/clip-retrieval">Github</a>.</li>
+<li><a href="https://laion-aesthetic.datasette.io/laion-aesthetic-6pls/images">Datasette</a>: <strong>dataset</strong> <a href="https://laion-aesthetic.datasette.io/laion-aesthetic-6pls">explorer</a>; image-count sort by <a href="https://laion-aesthetic.datasette.io/laion-aesthetic-6pls/artists?_sort_desc=image_counts">artist</a>, <a href="https://laion-aesthetic.datasette.io/laion-aesthetic-6pls/celebrities?_sort_desc=image_counts">celebrities</a>, <a href="https://laion-aesthetic.datasette.io/laion-aesthetic-6pls/characters?_sort_desc=image_counts">characters</a>, <a href="https://laion-aesthetic.datasette.io/laion-aesthetic-6pls/domain?_sort_desc=image_counts">domain</a>. <a href="https://simonwillison.net/2022/Sep/5/laion-aesthetics-weeknotes/">Info</a>. <a href="https://waxy.org/2022/08/exploring-12-million-of-the-images-used-to-train-stable-diffusions-image-generator/">In</a>.</li>
+<li><a href="https://haveibeentrained.com">Haveibeentrained</a>: <strong>search dataset.</strong> <a href="https://haveibeentrained.com/?url=">Similar search</a> (enter an image URL next to '?url='). Click image/search for more.</li>
+<li><a href="https://sgreens.notion.site/sgreens/4ca6f4e229e24da6845b6d49e6b08ae7?v=fdf861d1c65d456e98904fe3f3670bd3">SD Artist Collection</a> by sgreens.</li>
+<li><a href="https://www.the-ai-art.com/modifiers">The Ai Art</a><a href="https://www.the-ai-art.com/modifiers">:</a> <strong>gallery</strong> for modifiers.</li>
+<li><a href="https://www.urania.ai/top-sd-artists">urania.ai</a>: Top 500 Artists <strong>gallery</strong>, sorted by <a href="https://laion-aesthetic.datasette.io/laion-aesthetic-6pls/artists?_sort_desc=image_counts">image count</a>. With modifiers/styles.</li>
+<li>
+<p><a href="https://generrated.com/">Generrated</a>: DALL•E 2 table <strong>gallery</strong> sorted by <a href="https://en.wikipedia.org/wiki/Category:Visual_arts_media">visual arts media</a></p>
+</li>
+<li>
+<p>.</p>
+</li>
+<li><a href="https://remidurant.com/artists/">Artist Studies by @remi_durant</a>: <strong>gallery</strong> and Search.</li>
+<li><a href="https://sdartists.app/">SDArtists</a>: 100+ artists identified in SD.</li>
+<li><a href="https://rentry.org/artists_sd-v1-4">https://rentry.org/artists_sd-v1-4</a></li>
+<li><a href="https://www.reddit.com/r/StableDiffusion/comments/xy8zin/i_present_to_you_the_largest_of_my_studies_which/">3680 images in the styles of 919 artists</a>: <a href="https://mega.nz/folder/SYIVAASS#uGEmnfJoqoqdFnf2rQxYiw">Mega</a></li>
+<li><a href="https://gorgeous.adityashankar.xyz">A flower woman by 1500+ Artists.</a></li>
+<li><a href="https://docs.google.com/document/d/1SaQx1uJ9LBRS7c6OsZIaeanJGkUdsUBjk9X4dC59BaA/edit">Artist, Keywords, Artstyles Google Doc</a>.</li>
+<li><a href="https://docs.google.com/spreadsheets/d/1_jgQ9SyvUaBNP1mHHEzZ6HhL_Es1KwBKQtnpnmWW82I/">MisterRuffian's Latent Artist &amp; Modifier Encyclopedia</a>.</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Category:Visual_arts">Visual</a>
+<a href="https://en.wikipedia.org/wiki/Category:The_arts">arts</a>: <a href="https://en.wikipedia.org/wiki/Category:Visual_arts_media">media</a> <a href="https://en.wikipedia.org/wiki/List_of_art_media">list</a>, <a href="https://en.wikipedia.org/wiki/Category:Arts-related_lists">related</a>; <a href="https://en.wikipedia.org/wiki/Category:Artists">Artists</a> <a href="https://en.wikipedia.org/wiki/Category:Lists_of_artists">list</a> by <a href="https://en.wikipedia.org/wiki/Category:Artists_by_genre">genre</a>, <a href="https://en.wikipedia.org/wiki/Category:Artists_by_medium">medium</a>; <a href="https://en.wikipedia.org/wiki/Portal:The_arts">Portal</a></p>
+</li>
+<li>
+<p>.</p>
+</li>
+<li>SD 1.5 recognized <a href="https://docs.google.com/spreadsheets/d/1SRqJ7F_6yHVSOeCi3U82aA448TqEGrUlRrLLZ51abLg">Artist</a> / <a href="https://docs.google.com/spreadsheets/d/1BA8EMidpQsQbSDc7s3k-hA9CyijQ7X3pSACNhAuzut8">Modifiers</a> Study by Manav Mashruwala</li>
+</ul>
+<p><strong>Guides and studies:</strong></p>
+<ul>
+<li><a href="https://openart.ai/promptbook">SD Prompt Book</a>: by <a href="https://openart.ai">OpenArt</a> &amp; <a href="https://publicprompts.art/">PublicPrompts</a>.</li>
+<li><a href="https://www.reddit.com/r/StableDiffusion/wiki/index/">r/StableDiffusion/wiki/</a></li>
+<li><a href="https://wiki.installgentoo.com/wiki/Stable_Diffusion">SD Wiki:</a> <a href="https://wiki.installgentoo.com/wiki/Stable_Diffusion#Prompt_Design_.2F_General_Tips">Tips</a>, <a href="https://wiki.installgentoo.com/wiki/Stable_Diffusion#Keywords">Keywords</a></li>
+<li><a href="https://www.jonstokes.com/p/getting-started-with-stable-diffusion">Getting Started</a>, <a href="https://towardsdatascience.com/a-beginners-guide-to-prompt-design-for-text-to-image-generative-models-8242e1361580">beginners guide</a></li>
+<li>NAI Research: <a href="https://unideer.notion.site/Perspective-Research-NovelAI-9fb472f4faeb492d8e0b095d2efa0796">Perspective</a>, <a href="https://unideer.notion.site/Clothes-Research-NovelAI-ae4219aebcd742ea89aaa553c00e7b40">Clothes</a></li>
+<li><a href="https://www.paepper.com/blog/posts/how-and-why-stable-diffusion-works-for-text-to-image-generation/">How and why stable diffusion works for text to image generation</a>: <a href="https://jalammar.github.io/illustrated-stable-diffusion/">Illustrated visual explanation.</a></li>
+<li><a href="https://mpaugam.notion.site/Disco-Diffusion-Illustrated-Settings-cd4badf06e08440c99d8a93d4cd39f51">Disco Diffusion Illustrated Settings</a></li>
+<li><a href="https://sweet-hall-e72.notion.site/A-Traveler-s-Guide-to-the-Latent-Space-85efba7e5e6a40e5bd3cae980f30235f">A Traveler’s Guide to the Latent Space</a></li>
+<li><a href="https://medium.com/@soapsudtycoon/stable-diffusion-trending-on-art-station-and-other-myths-c09b09084e33">Stable Diffusion: Trending on Art Station and other myths</a>; <a href="https://medium.com/@soapsudtycoon/prompt-engineering-trending-on-artstation-and-other-myths-part-2-d61e25a90517">part 2</a></li>
+<li>Stable Diffusion <a href="https://huggingface.co/CompVis/stable-diffusion-v1-2#training">Training</a> data <a href="https://www.reddit.com/r/StableDiffusion/comments/wpvbkt/the_current_model_was_trained_on_laion_2b_a_100/">info</a>.</li>
+<li><a href="https://www.reddit.com/r/StableDiffusion/comments/yev37i/comparison_of_upscaling_models_for_ai_generated/">comparison_of_upscaling_models</a></li>
+<li><a href="https://deepai.org/publication/best-prompts-for-text-to-image-models-and-how-to-find-them">best-prompts-for-text-to-image-models-and-how-to-find-them</a></li>
+<li>
+<p><a href="https://www.reddit.com/r/StableDiffusion/comments/10cgxrx/wellresearched_comparison_of_training_techniques/">Comparison</a> of Training Techniques: Lora, Inversion, Dreambooth, Hypernetworks: <a href="https://www.youtube.com/watch?v=dVjMiJsuR5o">Video</a></p>
+</li>
+<li>
+<p><a href="https://www.reddit.com/r/StableDiffusion/comments/zyi24j/how_to_turn_any_model_into_an_inpainting_model/">How to turn any model into an inpainting model</a></p>
+</li>
+</ul>
+<p>​</p>
+<p><strong>Top text-to-image txt2img software:</strong></p>
+<ul>
+<li><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">AUTOMATIC1111</a>: <strong>Latest features</strong>. <a href="https://github.com/EmpireMediaScience/A1111-Web-UI-Installer">1click</a>, <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki">Wiki</a>; <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Extensions">Extensions</a>: <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Extensions#deforum">Video</a>; <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Custom-Scripts">Scripts</a>: In/Outpaint GUI's: <a href="https://github.com/zero01101/openOutpaint"><strong>openOutpaint</strong></a>, <a href="https://github.com/BlinkDL/Hua">Hua</a>, <a href="https://github.com/farique1/diffusion-browser">Image browser</a>, <a href="https://github.com/demibit/stable-toolkit">viewer</a>; <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Optimizations"><strong>Optimizations</strong></a>: xformers (+ it/s speed), 1.5 <a href="https://www.reddit.com/r/StableDiffusion/comments/yaknek/you_can_use_the_new_vae_on_old_models_as_well_for/">VAE autoencoder</a> (better faces/hands). <a href="https://github.com/adieyal/sd-dynamic-prompts">Dynamic Prompts</a>: <a href="https://github.com/themartiantourist/Wildcards-for-SD">Wildcards-for-SD</a> <a href="https://github.com/mattjaybe/sd-wildcards">sd-wildcards</a> ; <a href="https://github.com/lllyasviel/ControlNet"><strong>ControlNet</strong></a>: <a href="https://github.com/Mikubill/sd-webui-controlnet">sd-webui-controlnet</a>, <a href="https://github.com/ThereforeGames/unprompted">unprompted</a></li>
+<li><a href="https://github.com/invoke-ai/InvokeAI">InvokeAI</a>: <strong>Best Web UI</strong>. In/Outpaint infinite canvas.</li>
+<li><a href="https://github.com/comfyanonymous/ComfyUI">ComfyUI</a>: Modular Stable Diffusion GUI</li>
+<li><a href="https://github.com/sd-webui/stable-diffusion-webui">sd-webui</a> (hlky)</li>
+<li><a href="https://github.com/victordibia/peacasso">Peacasso</a></li>
+<li><a href="https://replicate.com/deforum/deforum_stable_diffusion">deforum:</a> create animations.</li>
+<li>Inpainting: <a href="https://github.com/ahrm/UnstableFusion">UnstableFusion</a></li>
+<li>Outpainting: <a href="https://github.com/lkwq007/stablediffusion-infinity">SD-infinity</a>, <a href="https://github.com/Interpause/auto-sd-krita">auto-sd-krita</a> <a href="https://github.com/Interpause/auto-sd-paint-ext">extension</a></li>
+<li><a href="https://github.com/divamgupta/diffusionbee-stable-diffusion-ui">Diffusion Bee</a>: MacOS UI for SD.</li>
+<li><a href="https://chaosreactor.com/">Chaos Reactor</a>: a community &amp; Open Source <strong>modular</strong> tool for synthetic media creators.</li>
+<li><a href="https://aiimag.es">aiimag.es</a>: free, easy to install windows program.</li>
+<li><a href="https://www.reddit.com/r/StableDiffusion/comments/yxdgps/easytouse_local_install_of_stable_diffusion/">ArtRoom</a>: 1-Click setup. Easy UI</li>
+<li><a href="https://www.reddit.com/user/nightkall/comments/zsnuh2/stable_diffusion_plugins_for_apps/">Plugins</a>: Photoshop, Krita, Gimp, Blender.</li>
+<li><a href="https://github.com/Sanster/lama-cleaner">lama-cleaner</a>: erase/remove unwanted objects using LaMa Image Inpainting or SD.</li>
+<li><a href="https://github.com/lllyasviel/style2paints">style2paints</a>: AI driven lineart colorization tool.</li>
+<li><a href="https://github.com/cocktailpeanut/breadboard">Breadboard</a>: Browse, search, and manage all AI generated images on your machine.</li>
+</ul>
+<p><strong>Top text-to-image txt2img</strong> <a href="https://www.reddit.com/r/StableDiffusion/comments/xjqy5y/list_of_stable_diffusion_systems_part_2/">Web Apps</a><strong>:</strong></p>
+<ul>
+<li><a href="https://playgroundai.com/">Playground AI</a>: SD, DALL·E 2. img2img, Instruct Pix2Pix. Gallery.</li>
+<li><a href="https://stablehorde.net">Stable Horde</a>: <a href="https://aqualxx.github.io/stable-ui/">Stable UI</a>, <a href="https://tinybots.net/artbot">ArtBot</a> (<strong>ControlNET</strong> and <strong>Multiple</strong> models), <a href="https://diffusionui.com/b/stable_horde">DiffusionUI</a></li>
+<li><a href="https://pinegraph.com/">Pinegraph</a>: <a href="https://pinegraph.com/discover">discover</a>, <a href="https://pinegraph.com/create">create</a> and edit with Stable/Disco/Waifu diffusion models.</li>
+<li><a href="https://pollinations.ai/c/Anything">Pollinations</a>: AI-generated media (image, video, audio, text).</li>
+<li><a href="https://www.mage.space">mage.space</a>: unfiltered SD WebUI.</li>
+<li><a href="https://sparklpaint.com">Sparkl</a>: Generate images and gallery. Multiple models.</li>
+<li><a href="https://getimg.ai">getimg.ai</a>: txt2img, img2img, inpainting / outpainting.</li>
+<li><a href="https://huggingface.co/spaces/lnyan/stablediffusion-infinity">Stablediffusion-infinity</a>: Outpainting huggingface. <a href="https://github.com/lkwq007/stablediffusion-infinity">Github</a>.</li>
+<li><a href="https://huggingface.co/spaces/anzorq/finetuned_diffusion">Finetuned_diffusion</a>: Multiple fine-tuned Stable Diffusion models.</li>
+<li><a href="https://huggingface.co/spaces/sd-concepts-library/stable-diffusion-conceptualizer">Stable-diffusion-conceptualizer</a>: community-trained SD Textual Inversion concepts.</li>
+<li><a href="https://stablecog.com">Stablecog</a>: Simple, free &amp; open source AI image generator.</li>
+<li><a href="https://huggingface.co/spaces/camenduru/webui">AUTOMATIC1111</a> hugginface</li>
+<li>Multi-user infinite canvas outpainting: <a href="https://www.koll.ai">koll.ai</a>, <a href="https://prompt.ist">prompt.ist</a>, <a href="https://huggingface.co/spaces/huggingface-projects/stable-diffusion-multiplayer?__theme=light&amp;roomid=room-0">SD Multiplayer</a></li>
+<li><a href="https://picfinder.ai">picfinder.ai</a>: Infinite image generation powered by AI.</li>
+</ul>
+<p><strong>Models:</strong></p>
+<ul>
+<li><a href="https://civitai.com">Civitai</a>: Gallery, search and review. All model types.</li>
+<li><a href="https://stadio.ai/models">Stadio</a>: Try models and download.</li>
+<li><a href="https://rentry.org/sdupdates2#dreambooth-models">Dreambooth</a>: <a href="https://cyberes.github.io/stable-diffusion-models/">Cyberes</a>, <a href="https://rentry.org/sdmodels">sdmodels</a>, <a href="https://huggingface.co/sd-dreambooth-library">hf</a></li>
+<li>Upscalers: <a href="https://upscale.wiki/wiki/Model_Database">upscale.wiki</a>, <a href="https://phhofm.github.io/upscale/">Interactive Visual Comparison</a></li>
+<li><a href="https://huggingface.co/spaces/sd-concepts-library/stable-diffusion-conceptualizer">Textual</a> Inversion embeddings:</li>
+</ul>
+<p><strong>Prompt Tools and AI Apps directories:</strong></p>
+<ul>
+<li><a href="https://www.creaitives.com/">Creaitives</a>: 1200+ AI Tools.</li>
+<li><a href="https://www.futurepedia.io">Futurepedia</a>: 1091+ Tools.</li>
+<li><a href="https://favird.com/l/ai-tools-and-applications">Favird</a>: 1049+ Tools.</li>
+<li><a href="https://www.futuretools.io/">Futuretools.</a> 941+ Tools.</li>
+<li><a href="https://topai.tools/">Topai.tools</a>: 850+ Tools.</li>
+<li><a href="https://diffusiondb.com">Diffusiondb</a>: 632+ SD Tools.</li>
+<li><a href="https://aitools.fyi">Aitools.fyi</a></li>
+<li><a href="https://www.aiartapps.com">Aiartapps</a></li>
+<li><a href="https://pharmapsychotic.com/tools.html">Tools and Resources for AI Art</a> by pharmapsychotic</li>
+<li><a href="https://github.com/Maks-s/sd-akashic#prompts-toc">Akashic Records</a></li>
+<li><a href="https://github.com/Maks-s/sd-akashic#prompts-toc">Awesome Stable-Diffusion</a></li>
+<li><a href="https://github.com/questianon/sdupdates">SD RESOURCE GOLDMINE</a>: <a href="https://rentry.org/sdupdates2#prompting">Prompting</a></li>
+<li><a href="https://discord.com/channels/1021229446960779325/1022589636347969547">Chaos Reactor Gallery</a>.</li>
+<li><a href="https://proximacentaurib.notion.site/39805c50735849cfa54b5d688587e12e?v=a13331e2f5f544a39cc0fe43ce9feffe">Parrot Zone Link List</a></li>
+</ul>
+<p><strong>Other SD directories:</strong></p>
+<ul>
+<li><a href="https://www.reddit.com/r/StableDiffusion/comments/wqaizj/list_of_stable_diffusion_systems/">List of SD systems</a>, <a href="https://www.reddit.com/r/StableDiffusion/comments/xjqy5y/list_of_stable_diffusion_systems_part_2/">web apps</a>, <a href="https://www.reddit.com/r/StableDiffusion/comments/xjqzdt/list_of_stable_diffusion_systems_part_3/">Colabs</a>, <a href="https://www.reddit.com/r/StableDiffusion/comments/xjr19j/list_of_stable_diffusion_systems_part_4/">Resources</a>. (<a href="https://www.reddit.com/r/StableDiffusion/comments/ycm5qe/my_posts_of_stable_diffusion_links_that_i/?sort=new">list of posts</a>)</li>
+<li><a href="https://techgaun.github.io/active-forks/index.html#CompVis/stable-diffusion">Active GitHub SD Forks</a>: <a href="https://techgaun.github.io/active-forks/index.html#AUTOMATIC1111/stable-diffusion-webui">AUTOMATIC1111</a>, <a href="https://techgaun.github.io/active-forks/index.html#sd-webui/stable-diffusion-webui">hlky sd-webui</a>, <a href="https://techgaun.github.io/active-forks/index.html#invoke-ai/InvokeAI">InvokeAI</a>, <a href="https://techgaun.github.io/active-forks/index.html#deforum/stable-diffusion">deforum video</a></li>
+<li><strong>MultiReddit</strong> / Custom Feed: <a href="https://www.reddit.com/user/nightkall/m/aiart/">AI Art</a>, <a href="https://www.reddit.com/user/nightkall/m/stablediffusion/">SD</a>, <a href="https://www.reddit.com/user/nightkall/m/ainsfw/">AI NSFW</a></li>
+<li>Discords: <a href="https://discord.gg/stablediffusion">SD Official</a></li>
+</ul>
+<p>Updated 2023-03-01</p></article>
+      
+      
+
+      
+        
+      
+
+
+    </main>
+  </body>
+</html>
