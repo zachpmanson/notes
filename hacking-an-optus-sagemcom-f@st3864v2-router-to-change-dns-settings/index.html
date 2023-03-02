@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/styles/colors.css" />
+    <link rel="stylesheet" href="/static/styles/global.css" />
+    <link rel="stylesheet" href="/static/styles/code.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>notes: hacking an optus sagemcom f@st3864v2 router to change dns settings</title>
+  </head>
+
+  <body>
+     <nav>
+      <div>
+        <a href="/">
+          <img src="/static/icon/icon.png" alt="notes" height="100">
+        </a>
+      </div>
+      
+      
+      <div>
+        <ul>
+        
+          <li>
+            
+            <a href="/fiction">Fiction</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/folklore">Folklore</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/problems" class="activated-link">Problems</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      
+
+      
+      <div>
+        <ul>
+        
+          <li>
+            
+            <a href="/domain-based-link-colours">Domain Based Link Colours</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/firefox-photon">Firefox Photon</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/ghidhra-hidpi">Ghidhra HiDPI</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/git-subdirectory-branch">Git Subdirectory Branch</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/hacking-an-optus-sagemcom-f@st3864v2-router-to-change-dns-settings" class="activated-link">Hacking an Optus Sagemcom F@ST3864V2 router to change DNS settings</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/keychron-fn-keys">Keychron Fn Keys</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/minecraft-health-and-death-score-commands">Minecraft Health and Death Score Commands</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/seleniumbasic">SeleniumBasic</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/self-hosted-postgres-and-prisma">Self-Hosted Postgres and Prisma</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/sticky-elements">Sticky Elements</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/ubuntu-server-not-filling-server-disk">Ubuntu Server Not Filling Server DIsk</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/xfce-screentearing">Xfce Screentearing</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      
+
+      
+
+    </nav>
+    <main>
+      <header>
+        <h1>Hacking an Optus Sagemcom F@ST3864V2 router to change DNS settings</h1>
+      </header>
+      <article><p>As written by Jackson Bates <a href="https://blog.jacksonbates.com/blog/2021-06-05-hacking-optus-router/">here</a> on 2021-06-05.</p>
+<hr />
+<p>I've recently installed a Pi-Hole on my home network. In order to set this up you need to change the DNS settings for your router to try to route everything through the Pi-Hole.</p>
+<p>On most routers, this is not a hard setting to change - but I'm using a router provided by Optus from many years ago, and they have it arbitrarily locked down to stop people messing with it.</p>
+<p>Specifically, the router in question for me is the Sagemcom F@ST3864V2.</p>
+<p>I'm publishing the following information on the understanding that if you attempt to do anything I explain, you are an adult and accept that should you brick your router, you'll need to go buy a new one.</p>
+<p>Do not attempt this on hardware you do not own and cannot afford to replace.</p>
+<p>But assuming you are a grown-up: here's what I did.</p>
+<h2 id="goal">Goal</h2>
+<p>What we are trying to do is access the advanced setup options that can only be accessed by the Admin user.</p>
+<h2 id="cracking-admin-and-changing-dns">Cracking admin and changing DNS</h2>
+<p>Optus does not want you to do this. They'll tell you this is not possible. That means if you break it, they will likely not be too sympathetic.</p>
+<p>The admin user is hidden - it's not obvious that it exists from the user drop down you see in various places.</p>
+<p>Luckily, the router has a conf file that contains the admin user information and a lazily obfuscated password!</p>
+<ol>
+<li>
+<p>Visit <a href="http://192.168.0.1/dumpcfgdynamic.conf">http://192.168.0.1/dumpcfgdynamic.conf</a> to prompt the download of the conf file.</p>
+<p>Note, 192.168.0.1 is my router admin address - yours may vary slightly, but if you've come this far you likely already know yours.</p>
+</li>
+<li>
+<p>Once downloaded, change the file extension to <code>.html</code> instead of conf and open it up in your favourite browser (Firefox for me).</p>
+</li>
+<li>
+<p>Look for the line containing admin password, yours will likely be different: <code>&lt;AdminPassword&gt;WW1Ob1dXbzBhMmM9AA==&lt;/AdminPassword&gt;</code></p>
+</li>
+<li>
+<p>Copy the password string and convert it from base64</p>
+<p>Bash can do this: <code>echo WW1Ob1dXbzBhMmM9AA== | base64 -d</code></p>
+<p>(ignore trailing % if using zsh or fish shell)</p>
+<p>So that <code>WW1Ob1dXbzBhMmM9AA==</code> becomes: <code>YmNoWWo0a2c=</code></p>
+</li>
+<li>
+<p>Then visit: http://admin:YmNoWWo0a2c@192.168.0.1/main.html (note lack of = in url string)</p>
+</li>
+<li>
+<p>If prompted for login, user: <code>admin</code>, password: <code>YmNoWWo0a2c=</code> (note = this time)</p>
+</li>
+<li>
+<p>From here you can now access the DNS settings from the Advanced Setup menu.</p>
+<p>As a bonus easter egg, Optus pops up an alert: <code>Optus does not recommend changing these settings unless you are a proficient computer user.</code></p>
+</li>
+<li>
+<p>Write down anything you change, and probably test reverting it just in case something goes wrong, or you decide to change it back 2 years from now and can't remember what you did.</p>
+</li>
+<li>
+<p>The original DNS servers suggested by Optus when I made this change were 198.142.152.164 and 198.142.152.165 (which I'm writing down here JUST IN CASE I ever need them!).</p>
+</li>
+</ol></article>
+      
+      
+
+      
+        
+      
+
+
+    </main>
+  </body>
+</html>
