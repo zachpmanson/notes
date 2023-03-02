@@ -6,11 +6,11 @@ To split text
 over multiples lines put  
 two spaces at the end.
 
-    This is a quote
+>This is a quote
 
 <cite>Zach Manson</cite>
 
-    Citation for this quote is a hyperlink
+>Citation for this quote is a hyperlink
 
 [<cite>Zach Manson</cite>](https://zachmanson.com)
 
