@@ -97,8 +97,6 @@ A list of useful **Prompt** Engineering **tools** and **resources** for text-to-
 -   [The Ai Art](https://www.the-ai-art.com/modifiers)[:](https://www.the-ai-art.com/modifiers) **gallery** for modifiers.
 -   [urania.ai](https://www.urania.ai/top-sd-artists): Top 500 Artists **gallery**, sorted by [image count](https://laion-aesthetic.datasette.io/laion-aesthetic-6pls/artists?_sort_desc=image_counts). With modifiers/styles.
 -   [Generrated](https://generrated.com/): DALL•E 2 table **gallery** sorted by [visual arts media](https://en.wikipedia.org/wiki/Category:Visual_arts_media)
-
--   .
 -   [Artist Studies by @remi_durant](https://remidurant.com/artists/): **gallery** and Search.
 -   [SDArtists](https://sdartists.app/): 100+ artists identified in SD.
 -   [https://rentry.org/artists_sd-v1-4](https://rentry.org/artists_sd-v1-4)
@@ -108,8 +106,6 @@ A list of useful **Prompt** Engineering **tools** and **resources** for text-to-
 -   [MisterRuffian's Latent Artist & Modifier Encyclopedia](https://docs.google.com/spreadsheets/d/1_jgQ9SyvUaBNP1mHHEzZ6HhL_Es1KwBKQtnpnmWW82I/).
 -   [Visual](https://en.wikipedia.org/wiki/Category:Visual_arts)
 [arts](https://en.wikipedia.org/wiki/Category:The_arts): [media](https://en.wikipedia.org/wiki/Category:Visual_arts_media) [list](https://en.wikipedia.org/wiki/List_of_art_media), [related](https://en.wikipedia.org/wiki/Category:Arts-related_lists); [Artists](https://en.wikipedia.org/wiki/Category:Artists) [list](https://en.wikipedia.org/wiki/Category:Lists_of_artists) by [genre](https://en.wikipedia.org/wiki/Category:Artists_by_genre), [medium](https://en.wikipedia.org/wiki/Category:Artists_by_medium); [Portal](https://en.wikipedia.org/wiki/Portal:The_arts)
-
--   .
 -   SD 1.5 recognized [Artist](https://docs.google.com/spreadsheets/d/1SRqJ7F_6yHVSOeCi3U82aA448TqEGrUlRrLLZ51abLg) / [Modifiers](https://docs.google.com/spreadsheets/d/1BA8EMidpQsQbSDc7s3k-hA9CyijQ7X3pSACNhAuzut8) Study by Manav Mashruwala
 
 **Guides and studies:**
@@ -127,7 +123,6 @@ A list of useful **Prompt** Engineering **tools** and **resources** for text-to-
 -   [comparison_of_upscaling_models](https://www.reddit.com/r/StableDiffusion/comments/yev37i/comparison_of_upscaling_models_for_ai_generated/)
 -   [best-prompts-for-text-to-image-models-and-how-to-find-them](https://deepai.org/publication/best-prompts-for-text-to-image-models-and-how-to-find-them)
 -   [Comparison](https://www.reddit.com/r/StableDiffusion/comments/10cgxrx/wellresearched_comparison_of_training_techniques/) of Training Techniques: Lora, Inversion, Dreambooth, Hypernetworks: [Video](https://www.youtube.com/watch?v=dVjMiJsuR5o)
-
 -   [How to turn any model into an inpainting model](https://www.reddit.com/r/StableDiffusion/comments/zyi24j/how_to_turn_any_model_into_an_inpainting_model/)
 
 ​
