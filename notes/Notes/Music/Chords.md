@@ -28,13 +28,13 @@ A fifth spans 5 staff positions (inclusive):
 
 Major triad:
 
-- minor third
-- major third (perfect fifth from root)
+- major third
+- minor third (perfect fifth from root)
 
 Minor triad:
 
-- major third
-- minor third (perfect fifth from root)
+- minor third
+- major third (perfect fifth from root)
 
 Diminished triad:
 
