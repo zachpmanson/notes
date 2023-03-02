@@ -1,5 +1,6 @@
 Taken from [this post](https://np.reddit.com/r/StableDiffusion/comments/xcrm4d/useful_prompt_engineering_tools_and_resources/) by /u/nightkall
 
+---
 
 A list of useful **Prompt** Engineering **tools** and **resources** for text-to-image AI generative models like **Stable Diffusion**, DALL·E 2 and Midjourney.
 
