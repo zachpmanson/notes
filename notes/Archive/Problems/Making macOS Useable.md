@@ -19,6 +19,6 @@ macOS is a lovely operative system except that it is missing so many basic usabi
 brew install \
 --cask amethyst \
 --cask --no-quarantine middleclick \
---cask scroll-reverser
+--cask scroll-reverser \
 --cask caffeine
 ```
