@@ -61,7 +61,13 @@ a[href^="/"] {
 }
 
 a[href^="/"]:hover {
+  text-decoration-color: var(--purple);
+}
+
+a[href^="/"]:active {
+  color: var(--white);
   text-decoration-color: var(--white);
+  transition: all 0s ease-in;
 }
 
 a:active {

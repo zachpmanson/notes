@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-git pull
+git pull --autostash
 
 if [[ `git status --porcelain` ]]; then
     # if there are changes to notes, commit them and push them
