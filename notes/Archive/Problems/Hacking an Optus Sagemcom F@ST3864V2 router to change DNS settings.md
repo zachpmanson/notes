@@ -1,6 +1,6 @@
 As written by Jackson Bates [here](https://blog.jacksonbates.com/blog/2021-06-05-hacking-optus-router/) on 2021-06-05.
 
---- 
+---
 
 I've recently installed a Pi-Hole on my home network. In order to set this up you need to change the DNS settings for your router to try to route everything through the Pi-Hole.
 
