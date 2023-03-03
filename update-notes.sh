@@ -1,5 +1,4 @@
 #!/bin/bash
-git fetch
 git stash
 set -e
 git pull
