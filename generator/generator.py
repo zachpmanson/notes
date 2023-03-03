@@ -1,10 +1,14 @@
 import os
 import re
 from datetime import datetime
+import getopt
+import sys
 
 import jinja2
 import markdown
 from markdown.extensions.codehilite import CodeHiliteExtension
+
+VERBOSE = False
 
 ignore_names = [
     ".obsidian",
@@ -38,7 +42,7 @@ sitemap_md = ""
 current_node = "Index"
 
 def get_tree():
-    print("Building tree")
+    if VERBOSE: print("Building tree")
     for (root,dirs,files) in os.walk('./notes', topdown=True):
         if (root == "."):
             continue
@@ -48,7 +52,7 @@ def get_tree():
             if segment in ignore_names:
                 on_ignore = True
         if on_ignore:
-            print("Skipping", root)
+            if VERBOSE: print("Skipping", root)
             continue
 
 
@@ -153,7 +157,7 @@ def generate_pages():
                 "sanitize_url": sanitize_url,
                 "backlinks": [*set(tree[node]["backlinks"])]
             }))
-        print(f"Generated {grandparent}/{parent}/{sanitize_url(node)}/index.html")
+        if VERBOSE: print(f"Generated {grandparent}/{parent}/{sanitize_url(node)}/index.html")
 
 
 def generate_sitemap():
@@ -181,7 +185,7 @@ def generate_sitemap():
             "sanitize_url": sanitize_url,
             "backlinks": []
         }))
-    print("Generated sitemap")
+    if VERBOSE: print("Generated sitemap")
 
 def append_bullet(node, depth):
     global sitemap_md
@@ -235,7 +239,20 @@ def sanitize_url(url):
         
     return clean_url
 
+def usage():
+    print("usage: generator.py [-v]", file=sys.stderr) 
+
 if __name__=="__main__":
+    try:
+        opts, args = getopt.getopt(sys.argv[1:], "v")
+    except getopt.GetoptError as err:
+        # print help information and exit:
+        print(err)  # will print something like "option -a not recognized"
+        usage()
+        sys.exit(2)
+    for o, a in opts:
+        if o == "-v":
+            VERBOSE = True
     get_tree()
     traverse_tree()
     generate_pages()
