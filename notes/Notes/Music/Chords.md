@@ -13,8 +13,6 @@ Inversions are alternate forms of chords that arrange the same notes differently
 - second inversion, fifth is the lowest note
 - third inversion, sixth or seventh is the lowest note
 
-
-
 ## Triads
 
 A triad (aka harmony) is the most basic kind of chord consisting of a root, third, and fifth.  This is sometimes called stacked thirds, since their is a third between the 2nd and 3rd note.
