@@ -68,6 +68,19 @@ Ordered list with codeblock:
 
 3. Modify `/etc/postgresql/14/main/pg_hba.conf` (or equivalent). Set the `ADDRESS` field for IPv4 connections to this:
 
+Unordered list with line breaks:
+
+- **[zachmanson.com](https://zachmanson.com)**  
+  main home page and blog  
+  gh pages
+	- **[notes.zachmanson.com](https://notes.zachmanson.com)**  
+	  this site  
+	  gh pages
+	- **[tracker.zachmanson.com](https://tracker.zachmanson.com)**  
+	  likely defunct [[COVID-19 Tracker]] for WA  
+	  trackstar
+
+
 ---
 
 Backlink image:
