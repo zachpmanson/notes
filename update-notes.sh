@@ -11,6 +11,7 @@ if [[ `git status --porcelain` ]]; then
     git add notes
     git commit -m "Auto-commit notes update"
     git push
+    echo "Commited notes to main branch"
 # else
   # No changes
 fi
