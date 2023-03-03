@@ -48,6 +48,7 @@ Diminished triad:
 - minor third (dim fifth from root)
 
 Augmented triad:
+
 - major third
 - major third (aug fifth from root)
 
