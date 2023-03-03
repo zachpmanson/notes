@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/styles/colors.css" />
+    <link rel="stylesheet" href="/static/styles/global.css" />
+    <link rel="stylesheet" href="/static/styles/code.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>notes: python getopt() template</title>
+  </head>
+
+  <body>
+     <nav>
+      <div>
+        <a href="/">
+          <img src="/static/icon/icon.png" alt="notes" height="100">
+        </a>
+      </div>
+      
+      
+      <div>
+        <ul>
+        
+          <li>
+            
+            <a href="/fiction">Fiction</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/folklore">Folklore</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/problems" class="activated-link">Problems</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      
+
+      
+      <div>
+        <ul>
+        
+          <li>
+            
+            <a href="/domain-based-link-colours">Domain Based Link Colours</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/firefox-photon">Firefox Photon</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/ghidhra-hidpi">Ghidhra HiDPI</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/git-subdirectory-branch">Git Subdirectory Branch</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/hacking-an-optus-sagemcom-f@st3864v2-router-to-change-dns-settings">Hacking an Optus Sagemcom F@ST3864V2 router to change DNS settings</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/keychron-fn-keys">Keychron Fn Keys</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/minecraft-health-and-death-score-commands">Minecraft Health and Death Score Commands</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/python-getopt()-template" class="activated-link">Python getopt() Template</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/seleniumbasic">SeleniumBasic</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/self-hosted-postgres-and-prisma">Self-Hosted Postgres and Prisma</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/sticky-elements">Sticky Elements</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/ubuntu-server-not-filling-server-disk">Ubuntu Server Not Filling Server DIsk</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/xfce-screentearing">Xfce Screentearing</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      
+
+      
+
+    </nav>
+    <main>
+      <header>
+        <h1>Python getopt() Template</h1>
+      </header>
+      <article><p>Adapted from the <a href="https://docs.python.org/3/library/getopt.html">getopt() docs</a>.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">getopt</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="k">def</span> <span class="nf">usage</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;usage: ... [-v] [-h] [-o=output]&quot;</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">opts</span><span class="p">,</span> <span class="n">args</span> <span class="o">=</span> <span class="n">getopt</span><span class="o">.</span><span class="n">getopt</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span> <span class="s2">&quot;ho:v&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;help&quot;</span><span class="p">,</span> <span class="s2">&quot;output=&quot;</span><span class="p">])</span>
+    <span class="k">except</span> <span class="n">getopt</span><span class="o">.</span><span class="n">GetoptError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+        <span class="c1"># print help information and exit:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">err</span><span class="p">)</span>  <span class="c1"># will print something like &quot;option -a not recognized&quot;</span>
+        <span class="n">usage</span><span class="p">()</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">verbose</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">for</span> <span class="n">o</span><span class="p">,</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">opts</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">o</span> <span class="o">==</span> <span class="s2">&quot;-v&quot;</span><span class="p">:</span>
+            <span class="n">verbose</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">elif</span> <span class="n">o</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">&quot;-h&quot;</span><span class="p">,</span> <span class="s2">&quot;--help&quot;</span><span class="p">):</span>
+            <span class="n">usage</span><span class="p">()</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+        <span class="k">elif</span> <span class="n">o</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">&quot;-o&quot;</span><span class="p">,</span> <span class="s2">&quot;--output&quot;</span><span class="p">):</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="n">a</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">assert</span> <span class="kc">False</span><span class="p">,</span> <span class="s2">&quot;unhandled option&quot;</span>
+    <span class="c1"># ...</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div></article>
+      
+      
+
+      
+        
+      
+
+
+    </main>
+  </body>
+</html>
