@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/static/styles/code.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: ghidhra hidpi</title>
+    <title>notes: making macos useable</title>
   </head>
 
   <body>
@@ -67,7 +67,7 @@
         
           <li>
             
-            <a href="/ghidhra-hidpi" class="activated-link">Ghidhra HiDPI</a>
+            <a href="/ghidhra-hidpi">Ghidhra HiDPI</a>
             
           </li>
         
@@ -91,7 +91,7 @@
         
           <li>
             
-            <a href="/making-macos-useable">Making macOS Useable</a>
+            <a href="/making-macos-useable" class="activated-link">Making macOS Useable</a>
             
           </li>
         
@@ -140,21 +140,30 @@
     </nav>
     <main>
       <header>
-        <h1>Ghidhra HiDPI</h1>
+        <h1>Making macOS Useable</h1>
       </header>
-      <article><p>Making Ghidra scale on HiDPI screens.</p>
-<p>Tested on Kali Linux 5.18.0-kali5-amd64, Ghidra 10.1.4, Java 11.0.16.</p>
-<p>Ghidra doesn't scale to HiDPI screens, but this can be fixed by modifying the <code>launch.properties</code> file.  This is located in <code>&lt;GhidraInstallDir&gt;/support/launch.properties</code>, which when installed using apt is <code>/usr/share/ghidra/support/launch.properties</code>.</p>
-<p>Change this setting:
-<div class="highlight"><pre><span></span><code>VMARGS_LINUX=-Dsun.java2d.uiScale=1
-</code></pre></div>
-to:
-<div class="highlight"><pre><span></span><code>VMARGS_LINUX=-Dsun.java2d.uiScale=2
-</code></pre></div></p>
-<h2 id="links">Links</h2>
+      <article><p>macOS is a lovely operative system except that it is missing so many basic usability features that macOS feels more like anemicOS.</p>
+<h2 id="must-have">Must have</h2>
 <ul>
-<li><a href="https://gist.github.com/nstarke/baa031e0cab64a608c9bd77d73c50fc6">Source</a></li>
-</ul></article>
+<li>No proper package manager<br />
+<a href="https://brew.sh/">Homebrew</a> package manger</li>
+<li>No window tiling<br />
+<a href="https://ianyh.com/amethyst/">Amethyst</a> tiling window manager</li>
+<li>Can't set  3 finger tap on touchpad to  middle click
+   <a href="https://github.com/artginzburg/MiddleClick-Ventura">MiddleClick</a></li>
+<li>Setting trackpad scrolling direction and mouse scrollwheel scrolling direction independently<br />
+<a href="https://pilotmoon.com/scrollreverser/">Scroll Reverser</a></li>
+</ul>
+<h2 id="nice-to-have">Nice to have</h2>
+<ul>
+<li><a href="https://intelliscapesolutions.com/apps/caffeine">Caffiene</a></li>
+</ul>
+<div class="highlight"><pre><span></span><code>brew<span class="w"> </span>install<span class="w"> </span><span class="se">\</span>
+--cask<span class="w"> </span>amethyst<span class="w"> </span><span class="se">\</span>
+--cask<span class="w"> </span>--no-quarantine<span class="w"> </span>middleclick<span class="w"> </span><span class="se">\</span>
+--cask<span class="w"> </span>scroll-reverser
+--cask<span class="w"> </span>caffeine
+</code></pre></div></article>
       
       
 
