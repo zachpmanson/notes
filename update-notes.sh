@@ -1,9 +1,6 @@
 #!/bin/bash
-git stash
 set -e
 git pull
-git stash apply
-
 
 if [[ `git status --porcelain` ]]; then
     # if there are changes to notes, commit them and push them
