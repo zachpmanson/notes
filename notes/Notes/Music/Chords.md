@@ -1,5 +1,9 @@
 Chords are combinations of 3+ notes, starting with the root.
 
+## Intervals
+
+An interval is the difference in pitch between two sounds.  In the context of a chord, pitches can be vertical or harmonic.
+
 ## Inversions
 
 Inversions are alternate forms of chords that arrange the same notes differently. 
@@ -8,6 +12,8 @@ Inversions are alternate forms of chords that arrange the same notes differently
 - first inversion, third is the lowest note
 - second inversion, fifth is the lowest note
 - third inversion, sixth or seventh is the lowest note
+
+
 
 ## Triads
 
