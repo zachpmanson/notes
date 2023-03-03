@@ -1,5 +1,6 @@
 #!/bin/bash
 git stash
+set -e
 git pull
 git stash apply
 git add notes
