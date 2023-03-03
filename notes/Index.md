@@ -2,5 +2,5 @@ This site is an archive and collection of my personal notes.  This is automatica
 
 The [full sitemap](/404.html) can be found shows the full structure. [[Domain Based Link Colours|Purple links]] are internal, [pink links](https://en.wikipedia.org/wiki/Magic_(programming)) point to sites on other domains. 
 
-The site is editable [here](https://github.dev/pavo-etc/notes/).
+The site [source](https://github.com/pavo-etc/notes) is editable [here](https://github.dev/pavo-etc/notes/).
 
