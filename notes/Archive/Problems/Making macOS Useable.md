@@ -10,7 +10,8 @@ macOS is a lovely operative system except that it is missing so many basic usabi
    [MiddleClick](https://github.com/artginzburg/MiddleClick-Ventura)
 - Setting trackpad scrolling direction and mouse scrollwheel scrolling direction independently  
    [Scroll Reverser](https://pilotmoon.com/scrollreverser/)
-
+- No path in Finder  
+  `Cmd+Alt+P` to toggle path bar
 ## Nice to have
 
 - [Caffiene](https://intelliscapesolutions.com/apps/caffeine)
