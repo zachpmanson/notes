@@ -1,4 +1,4 @@
-As written by Jackson Bates [here](https://blog.jacksonbates.com/blog/2021-06-05-hacking-optus-router/) on 2021-06-05.
+As written by Jackson Bates [here](https://blog.jacksonbates.com/blog/2021-06-05-hacking-optus-router/) on 2021-06-05, originally titled "Hacking an Optus Sagemcom F@ST3864V2 router to change DNS settings".
 
 ---
 
