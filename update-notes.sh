@@ -12,8 +12,8 @@ if [[ `git status --porcelain` ]]; then
     git commit -m "Auto-commit notes update"
     git push
     echo "Commited notes to main branch"
-# else
-  # No changes
+else
+    echo "No changes to notes"
 fi
 
 ./deploy.sh
