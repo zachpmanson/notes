@@ -1,6 +1,7 @@
 #!/bin/bash
 git fetch
 git stash
+set -e
 git pull
 git stash apply
 
