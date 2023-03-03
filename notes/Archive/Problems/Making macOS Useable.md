@@ -15,6 +15,8 @@ macOS is a lovely operative system except that it is missing so many basic usabi
 
 - [Caffiene](https://intelliscapesolutions.com/apps/caffeine)
 
+## Do it
+
 ```sh
 brew install \
 --cask amethyst \
