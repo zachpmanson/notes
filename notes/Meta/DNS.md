@@ -27,6 +27,10 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	- **mc.zachmanson.com**  
 	  Minecraft server  
 	  trenzalore
+	- **[nextcloud.zachmanson.com](https://nextcloud.zachmanson.com)**  
+	  nextcloud instance
+	  trenzalore
+
 - **[manson.dev](https://manson.dev)**  
   currently a directory forward to zachmanson.com, I intend to make it an email server + subdomain forward to zachmanson.com  
   trackstar
