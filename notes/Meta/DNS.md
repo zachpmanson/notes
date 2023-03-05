@@ -28,7 +28,7 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	  Minecraft server  
 	  trenzalore
 	- **[nextcloud.zachmanson.com](https://nextcloud.zachmanson.com)**  
-	  nextcloud instance
+	  nextcloud instance  
 	  trenzalore
 
 - **[manson.dev](https://manson.dev)**  
