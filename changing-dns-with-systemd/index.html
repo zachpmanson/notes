@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/static/styles/code.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: minecraft health and death score commands</title>
+    <title>notes: changing dns with systemd</title>
   </head>
 
   <body>
@@ -55,7 +55,7 @@
         
           <li>
             
-            <a href="/changing-dns-with-systemd">Changing DNS with systemd</a>
+            <a href="/changing-dns-with-systemd" class="activated-link">Changing DNS with systemd</a>
             
           </li>
         
@@ -103,7 +103,7 @@
         
           <li>
             
-            <a href="/minecraft-health-and-death-score-commands" class="activated-link">Minecraft Health and Death Score Commands</a>
+            <a href="/minecraft-health-and-death-score-commands">Minecraft Health and Death Score Commands</a>
             
           </li>
         
@@ -152,14 +152,28 @@
     </nav>
     <main>
       <header>
-        <h1>Minecraft Health and Death Score Commands</h1>
+        <h1>Changing DNS with systemd</h1>
       </header>
-      <article><p>The commands to show players' health in the tab menu and deathcount above players heads:</p>
-<div class="highlight"><pre><span></span><code>/scoreboard objectives add deaths deathCount &quot;Deaths&quot;
-/scoreboard objectives setdisplay belowName deaths
-
-/scoreboard objectives add health health &quot;Health&quot;
-/scoreboard objectives setdisplay list health
+      <article><p>On systems using systemd, <code>/etc/resolve</code> is managed by systemd. To change DNS server, you need to edit <code>/etc/systemd/resolved.conf</code>.</p>
+<div class="highlight"><pre><span></span><code>[Resolve]
+DNS=8.8.8.8
+#FallbackDNS=8.8.8.8
+#Domains=
+#DNSSEC=no
+#DNSOverTLS=no
+#MulticastDNS=no
+#LLMNR=no
+#Cache=no-negative
+#CacheFromLocalhost=no
+DNSStubListener=no
+#DNSStubListenerExtra=
+#ReadEtcHosts=yes
+#ResolveUnicastSingleLabel=no
+</code></pre></div>
+<p>Then restart services:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
+sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>systemd-networkd
+sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>systemd-resolved
 </code></pre></div></article>
       
       
