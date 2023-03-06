@@ -13,7 +13,7 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	  general purpose API currently only used for serving [[Status Messenger]]  
 	  trackstar
 	- **[minecraftle.zachmanson.com](https://minecraftle.zachmanson.com)**  
-	  puzzle game based on Wordle and Minecraft crafting recipes   
+	  deployed version of [[Minecraftle]], a puzzle game based on Wordle and Minecraft crafting recipes   
 	  trackstar
 	- **[pg.zachmanson.com](https://pg.zachmanson.com)**  
 	  deployed version of [[Penultimate Guitar]]   
