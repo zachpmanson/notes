@@ -25,7 +25,7 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	  deployed version of [[Alculator]]  
 	  vercel + gh actions
 	- **mc.zachmanson.com**  
-	  Minecraft server  
+	  minecraft server  
 	  trenzalore
 	- **[nextcloud.zachmanson.com](https://nextcloud.zachmanson.com)**  
 	  nextcloud instance  

@@ -5,3 +5,4 @@
 - MySQL and its spiritual successor MariaDB, named after the creators daughters
 - VSCodium, which is to VS Code what Chromium is to Chrome
 - Iceweasel, a fork of Firefox
+- `dnf`, DaNdiFied YUM, an imrpoved version of YUM
