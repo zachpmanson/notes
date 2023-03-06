@@ -30,7 +30,7 @@ Backlink: [[Projects]]
 
 [[Ochrs#ochrs-deploy|Backlink with anchor]]
 
-[External link](https://zachmanson.com)
+[External link](https://suricrasia.online/unfiction/basilisk/)
 
 This has `some inline` code text.
 
