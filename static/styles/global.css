@@ -53,24 +53,30 @@ a:hover {
   text-decoration-color: var(--pink);
 }
 
-a[href^="/"] {
+a:active {
+  color: var(--white);
+  text-decoration-color: var(--white);
+  transition: all 0s ease-in;
+}
+
+a[href^="/"],
+a[href^="./"],
+a[href*="zachmanson.com"] {
   color: var(--purple);
   text-decoration: underline;
   text-decoration-color: transparent;
   transition: all 0.1s ease-in;
 }
 
-a[href^="/"]:hover {
+a[href^="/"]:hover,
+a[href^="./"]:hover,
+a[href*="zachmanson.com"]:hover {
   text-decoration-color: var(--purple);
 }
 
-a[href^="/"]:active {
-  color: var(--white);
-  text-decoration-color: var(--white);
-  transition: all 0s ease-in;
-}
-
-a:active {
+a[href^="/"]:active,
+a[href^="./"]:active,
+a[href*="zachmanson.com"]:active {
   color: var(--white);
   text-decoration-color: var(--white);
   transition: all 0s ease-in;
