@@ -12,6 +12,7 @@ DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscu
 + *Kenja Taimu* (Japanese) - post-jerk clarity / wiseman time
 + *Loquacious* (English) - tending to talk a great deal; talkative.
 + *Lurid* (English) - unpleasantly bright in colour, especially so as to create a harsh or unnatural effect; presented in vividly shocking or sensational terms.
++ *Mesa* (as prefix) - the opposite of *meta* (as prefix)
 + *Midding* (DoOS) - feeling the tranquil pleasure of being near a gathering but not quite in it—hovering on the perimeter of a campfire, chatting outside a party while others dance inside, resting your head in the backseat of a car listening to your friends chatting up front—feeling blissfully invisible yet still fully included, safe in the knowledge that everyone is together and everyone is okay, with all the thrill of being there without the burden of having to be.
 + *Mojibake* (Japanese) - garbled characters
 + *Moment of Tangency* (DoOS) - A glimpse of what might have been.  If two lines are truly parallel, it means they’ll never actually meet.
