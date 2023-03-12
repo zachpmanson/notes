@@ -14,7 +14,7 @@ macOS is a lovely operative system except that it is missing so many basic usabi
   `Cmd+Alt+P` to toggle path bar
 ## Nice to have
 
-- [Caffiene](https://intelliscapesolutions.com/apps/caffeine)
+- [Caffiene](https://intelliscapesolutions.com/apps/caffeine) - keeps screen awake while active
 
 ## Do it
 
