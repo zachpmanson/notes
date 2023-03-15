@@ -7,4 +7,5 @@ You can  tell what key a song is in by the number of sharps and flats on the sta
 ## Circle of Fifths
 
 From [here](https://pianofs.com/the-best-scales-to-learn-first-on-piano-a-helpful-guide/)
+
 ![[circle-of-fifths.png]]
