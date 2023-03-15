@@ -2,4 +2,10 @@
 
 [<cite>the federation statitics hub</cite>](https://the-federation.info/)
 
-![[fediverse-graph.png]]
+The fediverse uses a few different protocols over the different services, but ActivityPub is the most used by a considerable margin.
+
+![[fediverse-protocol-graph.png]]
+
+## Hmmmm what happened here Elon...
+
+![[fediverse-user-graph.png]]
