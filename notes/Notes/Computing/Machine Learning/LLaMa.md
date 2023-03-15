@@ -1,4 +1,4 @@
-LLaMa is "a collection of foundation language models ranging from 7B to 65B parameters" created by Meta Research.
+LLaMa is "a collection of foundation language models ranging from 7B to 65B parameters" created by Meta Research. 
 
 > We introduce LLaMA, a collection of foundation language models ranging from 7B to 65B parameters. We train our models on trillions of tokens, and show that it is possible to train state-of-the-art models using publicly available datasets exclusively, without resorting to proprietary and inaccessible datasets. In particular, LLaMA-13B outperforms GPT-3 (175B) on most benchmarks, and LLaMA-65B is competitive with the best models, Chinchilla-70B and PaLM-540B. We release all our models to the research community.
 
@@ -20,4 +20,4 @@ Simon Willison has interesting writeups on LLaMa and early responses to it:
 
 - [llama.cpp](https://github.com/ggerganov/llama.cpp) by Georgi Gerganov, a port of Facebook's LLaMA model in C/C++
 - [Dalai](https://github.com/cocktailpeanut/dalai) by @cocktailpeanut, a single command installer to run LLaMa locally with a web interface and API
-- [Stanford Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html), a model fine-tuned from the LLaMA 7B model on 52K instruction-following demonstrations to function like ChatGPT
+- [Stanford Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html), a model fine-tuned from the LLaMA 7B model on 52K instruction-following demonstrations to function like [[ChatGPT]]
