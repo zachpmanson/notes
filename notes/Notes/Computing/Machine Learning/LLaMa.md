@@ -21,4 +21,4 @@ Simon Willison has interesting writeups on LLaMa and early responses to it:
 - [llama.cpp](https://github.com/ggerganov/llama.cpp) by Georgi Gerganov, a port of Facebook's LLaMA model in C/C++
 - [Dalai](https://github.com/cocktailpeanut/dalai) by @cocktailpeanut, a single command installer to run LLaMa locally with a web interface and API
 - [Stanford Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html), a model fine-tuned from the LLaMA 7B model on 52K instruction-following demonstrations to function like [[ChatGPT]]
-- [alpaca.cpp](https://github.com/antimatter15/alpaca.cpp), a recreation of the Stanford Alpaca model, based on LLaMa 7B and the Stanford instruction training set using LoRA instruct tuning.
+- [alpaca.cpp](https://github.com/antimatter15/alpaca.cpp), a recreation of the Stanford Alpaca model, based on LLaMa 7B and the Stanford instruction training set using LoRA instruct tuning
