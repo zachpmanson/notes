@@ -8,6 +8,8 @@ import jinja2
 import markdown
 from markdown.extensions.codehilite import CodeHiliteExtension
 
+import helpers
+
 VERBOSE = False
 
 md_extensions = [
@@ -24,6 +26,11 @@ ignore_names = [
     "Media",
     ".trash"
 ]
+
+ochrs_vars = {
+    "pagecount": lambda: len(tree),
+    "buildtime": lambda: datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+}
 
 # node: {
 #   "parent":parentnode,
@@ -125,8 +132,7 @@ def traverse_tree():
         try:
             with open(os.path.join(routes[node], node+".md"), "r") as src_file:
                 text = src_file.read()
-                text = re.sub(r"(?<!!)\[\[([^\]]+)?\]\]", format_backlink, text)
-                text = re.sub(r"!\[\[([^\]]+)?\]\]", "![](/static/media/\\1)", text)
+                text = preprocess_markdown(text)
                 body = markdown.markdown(
                     text,
                     extensions=md_extensions
@@ -147,7 +153,7 @@ def generate_pages():
         piblings = tree[grandparent]["children"] if grandparent != None else None
 
         if node != "Index":
-            path = os.path.join("site", sanitize_url(node))
+            path = os.path.join("site", helpers.sanitize_url(node))
         else:
             path = "site"
 
@@ -163,20 +169,21 @@ def generate_pages():
                 "siblings": siblings,
                 "piblings": piblings,
                 "len": len,
-                "sanitize_url": sanitize_url,
+                "sanitize_url": helpers.sanitize_url,
                 "backlinks": [*set(tree[node]["backlinks"])]
             }))
-        if VERBOSE: print(f"Generated {grandparent}/{parent}/{sanitize_url(node)}/index.html")
+        if VERBOSE: print(f"Generated {grandparent}/{parent}/{helpers.sanitize_url(node)}/index.html")
 
 
 def generate_sitemap():
     global sitemap_md
     # generate some markdown
-    sitemap_md += f"Last build: {datetime.now()}\n\nThis site currently has {len(tree)} pages.\n\n"
+    sitemap_md += "Last build at <ochrs:buildtime>. This site currently has <ochrs:pagecount> pages.\n\n"
     sitemap_md += "- [Index](/)\n"
     for node in tree["Index"]["children"]:
         append_bullet(node, 4)
     
+    sitemap_md = preprocess_markdown(sitemap_md)
     post_template = jinja2.Template(open("generator/template.jinja", "r").read())
     sitemap_html = markdown.markdown(
         sitemap_md,
@@ -191,21 +198,29 @@ def generate_sitemap():
             "siblings": tree["Index"]["children"],
             "piblings": None,
             "len": len,
-            "sanitize_url": sanitize_url,
+            "sanitize_url": helpers.sanitize_url,
             "backlinks": []
         }))
     if VERBOSE: print("Generated sitemap")
 
 def append_bullet(node, depth):
     global sitemap_md
-    sitemap_md += f"{' ' * depth}- [{node}](/{sanitize_url(node)})\n"
+    sitemap_md += f"{' ' * depth}- [{node}](/{helpers.sanitize_url(node)})\n"
 
     for child in tree[node]["children"]:
         append_bullet(child, depth+4)
 
+def preprocess_markdown(text):
+    processed_text = re.sub(r"(?<!!)\[\[([^\]]+)?\]\]", format_backlink, text)
+    processed_text = re.sub(r"!\[\[([^\]]+)?\]\]", "![](/static/media/\\1)", processed_text)
+    processed_text = re.sub(r"<ochrs:(.+?)>", format_ochrs_var, processed_text)
+    return processed_text
+
+def format_ochrs_var(matches):
+    name = matches.group(1)
+    return str(ochrs_vars[name]())
 
 def format_backlink(matches):
-    
     if "|" in matches.group(1):
         segments = matches.group(1).split("|")
         text = segments[1]
@@ -219,9 +234,7 @@ def format_backlink(matches):
     if "#" in page:
         segments = page.split("#")
         page = segments[0]
-        anchor = f"#{sanitize_anchor(segments[1])}"
-
-        
+        anchor = f"#{helpers.sanitize_anchor(segments[1])}"
 
     # if they are capitalised differently, fix it 
     if page not in routes.keys():
@@ -232,21 +245,9 @@ def format_backlink(matches):
 
     tree[page]["backlinks"].append(current_node)
 
-    return f"[{text}](/{sanitize_url(page)}{anchor})"
+    return f"[{text}](/{helpers.sanitize_url(page)}{anchor})"
 
-def sanitize_anchor(anchor):
-    clean_anchor = anchor.lower()
-    clean_anchor = clean_anchor.replace(" ", "-")
-    return clean_anchor
 
-def sanitize_url(url):
-    url = url.lower()
-    if url == "index":
-        clean_url = ""
-    else:
-        clean_url = url.replace(" ", "-").replace('"', '')
-        
-    return clean_url
 
 def usage():
     print("usage: generator.py [-v]", file=sys.stderr) 
