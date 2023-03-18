@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/styles/colors.css" />
+    <link rel="stylesheet" href="/static/styles/global.css" />
+    <link rel="stylesheet" href="/static/styles/code.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/static/icon/site.webmanifest" />
+    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+    <meta name="theme-color" content="#282A36" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>notes: react prompting</title>
+  </head>
+
+  <body>
+     <nav>
+      <div>
+        <a href="/">
+          <img src="/static/icon/icon.png" alt="notes" height="100">
+        </a>
+      </div>
+      
+      
+      <div>
+        <ul>
+        
+          <li>
+            
+            <a href="/fediverse">Fediverse</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/gecos">GECOS</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/machine-learning" class="activated-link">Machine Learning</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/mistakes">Mistakes</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/programs-with-fun-names">Programs with Fun Names</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/vi(m)">Vi(m)</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      
+
+      
+      <div>
+        <ul>
+        
+          <li>
+            
+            <a href="/chatgpt">ChatGPT</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/llama">LLaMA</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/react-prompting" class="activated-link">ReAct Prompting</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/stable-diffusion">Stable Diffusion</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      
+
+      
+
+    </nav>
+    <main>
+      <header>
+        <h1>ReAct Prompting</h1>
+      </header>
+      <article><p>ReAct prompting is a technique that allows LLMs to outsource tasks to specialised tools to expand their capabilities. This works by prompting the LLM to respond in a thought/act/observation loop, where it follows this chain of events (taken from <a href="https://interconnected.org/home/2023/03/16/singularity">here</a>):</p>
+<blockquote>
+<p>Thought: Let’s think step by step. I need to find out X and then do Y.
+Act: Search Wikipedia for X
+<em>LLM waits for response</em>.
+Observation: From the Wikipedia page I have learnt that …
+Thought: So the answer is …</p>
+</blockquote>
+<p>The act clause is the LLM selecting from a limited number of options that is has been informed of ahead of time, such as searching Wikipedia, entering a calculation into a calculator, searching a database etc.. A ReAct harness program will detect the act clause, take the action, and feed the result back into LLM.  The LLM then uses this data to inform its answer.  This is similar to how Bing Chat's Sydney AI works.</p>
+<p>Here is an example flow by Simon Willison:</p>
+<blockquote>
+<blockquote>
+<p><strong>Question:</strong> Population of Paris, squared? 
+<strong>Thought:</strong> I should look up the population of paris and then multiply it
+<strong>Action:</strong> search_wikipedia: Paris</p>
+</blockquote>
+<p>Then it stops. Your code harness for the model reads that last line, sees the action and goes and executes an API call against Wikipedia. It continues the dialog with the model like this:</p>
+<blockquote>
+<p><strong>Observation:</strong> <truncated content from the Wikipedia page, including the 2,248,780 population figure></p>
+</blockquote>
+<p>The model continues:</p>
+<blockquote>
+<p><strong>Thought:</strong> Paris population is 2,248,780 I should square that
+<strong>Action:</strong> calculator: 2248780 ** 2</p>
+</blockquote>
+<p>Control is handed back to the harness, which passes that to a calculator and returns:</p>
+<blockquote>
+<p><strong>Observation:</strong> 5057011488400</p>
+</blockquote>
+<p>The model then provides the answer:</p>
+<blockquote>
+<p><strong>Answer:</strong> The population of Paris squared is 5,057,011,488,400</p>
+</blockquote>
+</blockquote>
+<p>This allows the capabilities of the LLM to be expanded extremely easily.  This is Willison's  example prompt to set up this user flow for a <a href="https://til.simonwillison.net/llms/python-react-pattern">toy implementation</a>:</p>
+<div class="highlight"><pre><span></span><code>You run in a loop of Thought, Action, PAUSE, Observation.
+At the end of the loop you output an Answer
+Use Thought to describe your thoughts about the question you have been asked.
+Use Action to run one of the actions available to you - then return PAUSE.
+Observation will be the result of running those actions.
+Your available actions are:
+calculate:
+e.g. calculate: 4 * 7 / 3
+Runs a calculation and returns the number - uses Python so be sure to use floating point syntax if necessary
+wikipedia:
+e.g. wikipedia: Django
+Returns a summary from searching Wikipedia
+simon_blog_search:
+e.g. simon_blog_search: Django
+Search Simon&#39;s blog for that term
+Always look things up on Wikipedia if you have the opportunity to do so.
+Example session:
+Question: What is the capital of France?
+Thought: I should look up France on Wikipedia
+Action: wikipedia: France
+PAUSE
+You will be called again with this:
+Observation: France is a country. The capital is Paris.
+You then output:
+Answer: The capital of France is Paris
+</code></pre></div>
+<p>LangChain's codebase provides <a href="https://github.com/hwchase17/langchain/blob/2f6833d4334f762d2abb070a5e1496fc560c5435/langchain/agents/react/wiki_prompt.py#L5">more examples with greater detail</a>.</p>
+<h2 id="links">Links</h2>
+<ul>
+<li><a href="https://react-lm.github.io/">ReAct website</a></li>
+<li><a href="https://github.com/hwchase17/langchain">LangChain</a>, a python library for connecting LLMs to other tools</li>
+<li><a href="https://interconnected.org/home/2023/03/16/singularity">The surprising ease and effectiveness of AI in a loop</a><ul>
+<li>interesting dicussion of ReAct using <a href="https://langchain.readthedocs.io/en/latest/">LangChain</a></li>
+</ul>
+</li>
+<li><a href="https://simonwillison.net/2023/Mar/17/beat-chatgpt-in-a-browser/">Could you train a ChatGPT-beating model for $85,000 and run it in a browser?</a><ul>
+<li>discusses alpaca.cpp, ReAct prompting and the ability to easily expand the capabilities of LLMs, even basic ones</li>
+<li>includes a basic ReAct prompting script with ChatGPT APIs</li>
+</ul>
+</li>
+<li><a href="https://www.geoffreylitt.com/2023/01/29/fun-with-compositional-llms-querying-basketball-stats-with-gpt-3-statmuse-langchain.html">Fuzzy API composition: querying NBA stats with GPT-3 + Statmuse + Langchain</a><ul>
+<li>ReAct prompting in use</li>
+</ul>
+</li>
+<li><a href="https://dagster.io/blog/chatgpt-langchain">Build a GitHub Support Bot with GPT3, LangChain, and Python</a></li>
+</ul></article>
+      
+      
+      <p class="backlinks"><span class="bold">Incoming (1):</span>
+          
+          <a href="/llama">LLaMA</a>
+          
+        </span>
+      </p>
+      
+
+      
+        
+      
+
+
+    </main>
+  </body>
+</html>

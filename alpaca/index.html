@@ -32,7 +32,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: fediverse</title>
+    <title>notes: alpaca</title>
   </head>
 
   <body>
@@ -49,25 +49,25 @@
         
           <li>
             
-            <a href="/language">Language</a>
+            <a href="/chatgpt">ChatGPT</a>
             
           </li>
         
           <li>
             
-            <a href="/mathematics">Mathematics</a>
+            <a href="/llama" class="activated-link">LLaMA</a>
             
           </li>
         
           <li>
             
-            <a href="/music">Music</a>
+            <a href="/react-prompting">ReAct Prompting</a>
             
           </li>
         
           <li>
             
-            <a href="/software" class="activated-link">Software</a>
+            <a href="/stable-diffusion">Stable Diffusion</a>
             
           </li>
         
@@ -81,37 +81,7 @@
         
           <li>
             
-            <a href="/fediverse" class="activated-link">Fediverse</a>
-            
-          </li>
-        
-          <li>
-            
-            <a href="/gecos">GECOS</a>
-            
-          </li>
-        
-          <li>
-            
-            <a href="/machine-learning">Machine Learning</a>
-            
-          </li>
-        
-          <li>
-            
-            <a href="/mistakes">Mistakes</a>
-            
-          </li>
-        
-          <li>
-            
-            <a href="/programs-with-fun-names">Programs with Fun Names</a>
-            
-          </li>
-        
-          <li>
-            
-            <a href="/vi(m)">Vi(m)</a>
+            <a href="/alpaca" class="activated-link">Alpaca</a>
             
           </li>
         
@@ -124,16 +94,16 @@
     </nav>
     <main>
       <header>
-        <h1>Fediverse</h1>
+        <h1>Alpaca</h1>
       </header>
-      <article><blockquote>
-<p>The Federation, or as often called the "Fediverse", refers to a global social network composed of nodes that talk to each other. Each of them is an installation of software which supports one of the federated social web protocols.</p>
-</blockquote>
-<p><a href="https://the-federation.info/"><cite>the federation statitics hub</cite></a></p>
-<p>The fediverse is a series of decentralised instances of social networks that are able to communicate with one another using shared protocols.  It uses a few different protocols over the different services, but ActivityPub (and its flagship platform Mastodon) is the most popular by a considerable margin.</p>
-<p><img alt="" src="/static/media/fediverse-protocol-graph.png" /></p>
-<h2 id="hmmmm-what-happened-here-elon">Hmmmm what happened here Elon...</h2>
-<p><img alt="" src="/static/media/fediverse-user-graph.png" /></p></article>
+      <article><p>Alpaca is a large language model fine-tuned from the <a href="/llama">LLaMA</a> 7B model on 52K instruction-following demonstrations, designed to emulate ChatGPT style instruction tuning.  It was created by researchers at Stanford.</p>
+<p>The 52K instruction were generated using 175 instruction prompts entered into text-davinci-003, costing $600 in OpenAI API fees and $100 in compute for supervised training.  The initial announcement did not release their model weights as they were waiting on Meta to advise them on when and how they should do it, as at the the time the original LLaMA models were only available through leaked torrents.</p>
+<p>They did release their training set and process so the model was recreated by other developers.  <a href="https://github.com/antimatter15/alpaca.cpp">alpaca.cpp</a>, a recreation of the Stanford Alpaca model, was created using LoRA instruct tuning and built on top of llama.cpp.  This was then supported within <a href="">Dalai</a></p>
+<h2 id="links">Links</h2>
+<ul>
+<li><a href="https://crfm.stanford.edu/2023/03/13/alpaca.html">Stanford Alpaca announcment</a></li>
+<li>Simon Willison's <a href="https://simonwillison.net/2023/Mar/13/alpaca/">Stanford Alpaca, and the acceleration of on-device large language model development</a></li>
+</ul></article>
       
       
 

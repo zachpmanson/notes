@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/styles/colors.css" />
+    <link rel="stylesheet" href="/static/styles/global.css" />
+    <link rel="stylesheet" href="/static/styles/code.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/static/icon/site.webmanifest" />
+    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+    <meta name="theme-color" content="#282A36" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>notes: complexity classes</title>
+  </head>
+
+  <body>
+     <nav>
+      <div>
+        <a href="/">
+          <img src="/static/icon/icon.png" alt="notes" height="100">
+        </a>
+      </div>
+      
+      
+      <div>
+        <ul>
+        
+          <li>
+            
+            <a href="/complexity-theory" class="activated-link">Complexity Theory</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      
+
+      
+      <div>
+        <ul>
+        
+          <li>
+            
+            <a href="/complexity-classes" class="activated-link">Complexity Classes</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      
+
+      
+
+    </nav>
+    <main>
+      <header>
+        <h1>Complexity Classes</h1>
+      </header>
+      <article><p>Complexity classes are sets of computational problems, organised by the resources required to solve them.  Most commonly this involves decision problems solvable using Turing machines and the relative time and memory problems would require under that model.</p>
+<h2 id="properties">Properties</h2>
+<h3 id="hardness">Hardness</h3>
+<p>A problem X is hard for class C is every problem in C can be polynomial-time reduced to X, meaning no problem in C is harder than X.  Any algorithm that can solve X can solve all problems in C.</p>
+<h3 id="completeness">Completeness</h3>
+<p>A problem X is complete for class C if it is hard for C and contained within C.  This makes X the hardest possible problem within C (or one of many equally hard hardest problems in C).</p>
+<h2 id="classes">Classes</h2>
+<p>These are in order of hardness, according to L = SL ⊆ NL ⊆ P ⊆ NP ⊆ PSPACE = NPSPACE.</p>
+<h3 id="l">L</h3>
+<p>Class L is the set of decision problems that can be solved by a deterministic Turing machine using a <strong>l</strong>ogarithmic amount of memory.  An example of this kind of problem is detemining whether a graph has a directed cycle. It is also called LSPACE.</p>
+<h4 id="sl">SL</h4>
+<p>Class SL (<strong>s</strong>ymmetric <strong>l</strong>ogspace) is the set of problems that can reduced to USTCON (undirected s-t connectivity, aka the <strong>undirected reachability problem</strong>).  USTCON is the problem of determining whether there exists a path between two vertices in an undirected graph.  This problem is SL-complete.</p>
+<p>SL was first defined in 1982 by Harry R. Lewis and Christos Papadimitriou.  It was originally distinct from L since USTCON wasmconsidered NL at the time but didn't seem to require non-determinisim.  They defined the symmetric Turing machine and used it to define SL.  They showed that USTCON was complete for SL and proved that L ⊆ SL ⊆ NL.</p>
+<p>In October 2004 Omer Reingold proved that SL = L and as a consequence, symmetric Turing machines are equivalent to deterministic Turing machines when limited to log space.</p>
+<h3 id="nl">NL</h3>
+<p>Class NL is the set of decision problems that can be solved by a <strong>n</strong>on-deterministic Turing machine using a <strong>l</strong>ogarithmic amount of memory. An example of an NL problem is the STCON (directed s-t connectivity aka the <strong>directed reachability problem</strong>), which is NL-complete.</p>
+<h3 id="p">P</h3>
+<p>Class P is the set of decision problems that are solvable on a deterministic Turing machine in <strong>p</strong>olynomial time.  These problems are generally considered to be tractable.  This class is  also called PTIME.  An example of a P problem is determining if a number is prime.</p>
+<h3 id="np">NP</h3>
+<p>Class NP is the set of decision problems that are solvable on a <strong>n</strong>on-deterministic Turing machine in <strong>p</strong>olynomial time.  It is an open question whether <code>P = NP</code>, though it's widely believed that <code>P != NP</code>.  An example of an NP problem is the travelling salesman problem.</p>
+<h4 id="np-intermediate">NP-Intermediate</h4>
+<p>Problems that aren't P but also aren't NP-complete are NP-intermediate. P = NP iff NP-intermediate is empty.  Some problems that are considered good candidates for being NP-intermediate are the graph isomorphism problem, factoring, and computing the discrete logarithm.</p>
+<p>We haven't actually definitively proved this class exists.</p>
+<h4 id="np-complete">NP-Complete</h4>
+<p>There are many important NP-complete problems.  Famous examples include the travelling salesman problem (TSP), the knapsack problem and the boolean satisfiability problem.   Many important problems have been shown to be NP-complete, and no fast algorithm for any of them is known</p>
+<h2 id="links">Links</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/List_of_complexity_classes">Wikipedia's list of complexity classes</a></li>
+</ul></article>
+      
+      
+      <p class="backlinks"><span class="bold">Incoming (1):</span>
+          
+          <a href="/complexity-theory">Complexity Theory</a>
+          
+        </span>
+      </p>
+      
+
+      
+        
+      
+
+
+    </main>
+  </body>
+</html>
