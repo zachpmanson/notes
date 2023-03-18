@@ -10,6 +10,15 @@ from markdown.extensions.codehilite import CodeHiliteExtension
 
 VERBOSE = False
 
+md_extensions = [
+    'fenced_code',
+    CodeHiliteExtension(guess_lang=False),
+    'md_in_html',
+    'toc',
+    'pymdownx.superfences',
+    'markdown_checklist.extension'
+]
+
 ignore_names = [
     ".obsidian",
     "Media",
@@ -120,7 +129,7 @@ def traverse_tree():
                 text = re.sub(r"!\[\[([^\]]+)?\]\]", "![](/static/media/\\1)", text)
                 body = markdown.markdown(
                     text,
-                    extensions=['fenced_code', CodeHiliteExtension(guess_lang=False), 'md_in_html', 'toc', 'pymdownx.superfences']
+                    extensions=md_extensions
                 )
         except FileNotFoundError:
             body = ""
@@ -171,7 +180,7 @@ def generate_sitemap():
     post_template = jinja2.Template(open("generator/template.jinja", "r").read())
     sitemap_html = markdown.markdown(
         sitemap_md,
-        extensions=['fenced_code', CodeHiliteExtension(guess_lang=False), 'md_in_html', 'toc']
+        extensions=md_extensions
     )
     with open(os.path.join("site", "404.html"), "w") as f:
         f.write(post_template.render({
