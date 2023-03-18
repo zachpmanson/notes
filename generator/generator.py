@@ -172,7 +172,7 @@ def generate_pages():
 def generate_sitemap():
     global sitemap_md
     # generate some markdown
-    sitemap_md += f"Last build: {datetime.now()}\n\n"
+    sitemap_md += f"Last build: {datetime.now()}\n\nThis site currently has {len(tree)} pages.\n\n"
     sitemap_md += "- [Index](/)\n"
     for node in tree["Index"]["children"]:
         append_bullet(node, 4)
