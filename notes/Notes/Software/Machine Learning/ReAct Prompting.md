@@ -1,9 +1,13 @@
 ReAct prompting is a technique that allows LLMs to outsource tasks to specialised tools to expand their capabilities. This works by prompting the LLM to respond in a thought/act/observation loop, where it follows this chain of events (taken from [here](https://interconnected.org/home/2023/03/16/singularity)):
 
 > Thought: Let’s think step by step. I need to find out X and then do Y.
+> 
 > Act: Search Wikipedia for X
+> 
 > *LLM waits for response*.
+> 
 > Observation: From the Wikipedia page I have learnt that …
+> 
 > Thought: So the answer is …
 
 The act clause is the LLM selecting from a limited number of options that is has been informed of ahead of time, such as searching Wikipedia, entering a calculation into a calculator, searching a database etc.. A ReAct harness program will detect the act clause, take the action, and feed the result back into LLM.  The LLM then uses this data to inform its answer.  This is similar to how Bing Chat's Sydney AI works.
@@ -11,7 +15,9 @@ The act clause is the LLM selecting from a limited number of options that is has
 Here is an example flow by Simon Willison:
 
 > > **Question:** Population of Paris, squared? 
+> > 
 > > **Thought:** I should look up the population of paris and then multiply it
+> > 
 > > **Action:** search_wikipedia: Paris
 >
 >Then it stops. Your code harness for the model reads that last line, sees the action and goes and executes an API call against Wikipedia. It continues the dialog with the model like this:
@@ -21,6 +27,7 @@ Here is an example flow by Simon Willison:
 > The model continues:
 >
 >> **Thought:** Paris population is 2,248,780 I should square that
+>> 
 >> **Action:** calculator: 2248780 ** 2
 >
 >Control is handed back to the harness, which passes that to a calculator and returns:
