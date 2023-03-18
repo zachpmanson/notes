@@ -128,19 +128,19 @@
       </header>
       <article><p>ReAct prompting is a technique that allows LLMs to outsource tasks to specialised tools to expand their capabilities. This works by prompting the LLM to respond in a thought/act/observation loop, where it follows this chain of events (taken from <a href="https://interconnected.org/home/2023/03/16/singularity">here</a>):</p>
 <blockquote>
-<p>Thought: Let’s think step by step. I need to find out X and then do Y.
-Act: Search Wikipedia for X
-<em>LLM waits for response</em>.
-Observation: From the Wikipedia page I have learnt that …
-Thought: So the answer is …</p>
+<p>Thought: Let’s think step by step. I need to find out X and then do Y.</p>
+<p>Act: Search Wikipedia for X</p>
+<p><em>LLM waits for response</em>.</p>
+<p>Observation: From the Wikipedia page I have learnt that …</p>
+<p>Thought: So the answer is …</p>
 </blockquote>
 <p>The act clause is the LLM selecting from a limited number of options that is has been informed of ahead of time, such as searching Wikipedia, entering a calculation into a calculator, searching a database etc.. A ReAct harness program will detect the act clause, take the action, and feed the result back into LLM.  The LLM then uses this data to inform its answer.  This is similar to how Bing Chat's Sydney AI works.</p>
 <p>Here is an example flow by Simon Willison:</p>
 <blockquote>
 <blockquote>
-<p><strong>Question:</strong> Population of Paris, squared? 
-<strong>Thought:</strong> I should look up the population of paris and then multiply it
-<strong>Action:</strong> search_wikipedia: Paris</p>
+<p><strong>Question:</strong> Population of Paris, squared? </p>
+<p><strong>Thought:</strong> I should look up the population of paris and then multiply it</p>
+<p><strong>Action:</strong> search_wikipedia: Paris</p>
 </blockquote>
 <p>Then it stops. Your code harness for the model reads that last line, sees the action and goes and executes an API call against Wikipedia. It continues the dialog with the model like this:</p>
 <blockquote>
@@ -148,8 +148,8 @@ Thought: So the answer is …</p>
 </blockquote>
 <p>The model continues:</p>
 <blockquote>
-<p><strong>Thought:</strong> Paris population is 2,248,780 I should square that
-<strong>Action:</strong> calculator: 2248780 ** 2</p>
+<p><strong>Thought:</strong> Paris population is 2,248,780 I should square that</p>
+<p><strong>Action:</strong> calculator: 2248780 ** 2</p>
 </blockquote>
 <p>Control is handed back to the harness, which passes that to a calculator and returns:</p>
 <blockquote>
