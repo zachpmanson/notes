@@ -2,7 +2,7 @@
 
 [<cite>the federation statitics hub</cite>](https://the-federation.info/)
 
-The fediverse uses a few different protocols over the different services, but ActivityPub is the most used by a considerable margin.
+The fediverse is a series of decentralised instances of social networks that are able to communicate with one another using shared protocols.  It uses a few different protocols over the different services, but ActivityPub (and its flagship platform Mastodon) is the most popular by a considerable margin.
 
 ![[fediverse-protocol-graph.png]]
 

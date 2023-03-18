@@ -1,0 +1,1 @@
+Notes on the theoretical side of computer science. More practical notes on software engineering and particular programs can be found in [[Software]].
