@@ -1,4 +1,4 @@
-Complexity classes are sets of computational problems, organised by the resources required to solve them.  Most commonly this involves decision problems solvable using Turing machines and the relative time and memory problems would require under that model.
+Complexity classes are sets of computational problems, organised by the resources required to solve them.  Most commonly this involves [[decision problems]] solvable using Turing machines and the relative time and memory problems would require under that model.
 
 ## Properties
 
