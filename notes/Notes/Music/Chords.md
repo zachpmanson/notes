@@ -17,7 +17,8 @@ Inversions are alternate forms of chords that arrange the same notes differently
 
 A triad (aka harmony) is the most basic kind of chord consisting of a root, third, and fifth.  This is sometimes called stacked thirds, since their is a third between the 2nd and 3rd note.
 
-A third is an interval encompassing 3 staff positions (inclusive):  
+A third is an interval encompassing 3 staff positions (inclusive):
+
 - major third spans 4 semitones
 - minor third spans 3 semitones.
 
