@@ -105,6 +105,12 @@
         
           <li>
             
+            <a href="/low-rank-adaptation">Low-Rank Adaptation</a>
+            
+          </li>
+        
+          <li>
+            
             <a href="/react-prompting">ReAct Prompting</a>
             
           </li>
@@ -164,14 +170,21 @@
 </ul>
 <h2 id="consequential-projects">Consequential Projects</h2>
 <ul>
-<li><a href="https://github.com/ggerganov/llama.cpp">llama.cpp</a> by Georgi Gerganov, a port of Facebook's LLaMA model in C/C++</li>
+<li><a href="https://github.com/ggerganov/llama.cpp">llama.cpp</a> by Georgi Gerganov, a port of Facebook's LLaMA model in C/C++<ul>
+<li><a href="https://github.com/NouamaneTazi/bloomz.cpp">bloomz.cpp</a>, a port of BLOOM built on top of llama.cpp</li>
+</ul>
+</li>
 <li><a href="https://github.com/cocktailpeanut/dalai">Dalai</a> by @cocktailpeanut, a single command installer to run LLaMa locally with a web interface and API<ul>
 <li>later expanded to include alpaca.cpp</li>
 </ul>
 </li>
-<li><a href="https://crfm.stanford.edu/2023/03/13/alpaca.html">Stanford Alpaca</a>, a model fine-tuned from the LLaMA 7B model on 52K instruction-following demonstrations to function like <a href="/chatgpt">ChatGPT</a></li>
-<li><a href="https://github.com/antimatter15/alpaca.cpp">alpaca.cpp</a>, a recreation of the Stanford Alpaca model, based on LLaMa 7B and the Stanford instruction training set using LoRA instruct tuning.  Built on top of llama.cpp</li>
-<li><a href="https://github.com/NouamaneTazi/bloomz.cpp">bloomz.cpp</a>, a port of BLOOM built on top of llama.cpp</li>
+<li><a href="https://crfm.stanford.edu/2023/03/13/alpaca.html">Stanford Alpaca</a>, a model fine-tuned from the LLaMA 7B model on 52K instruction-following demonstrations to function like <a href="/chatgpt">ChatGPT</a><ul>
+<li><a href="https://github.com/tloen/alpaca-lora">alpaca-lora</a>, a recreation of the Stanford Alpaca model, based on LLaMa 7B and the Stanford instruction training set using <a href="/low-rank-adaptation">Low-Rank Adaptation</a> instruct tuning<ul>
+<li><a href="https://github.com/antimatter15/alpaca.cpp">alpaca.cpp</a>, a fork of llama.cpp that uses alpaca-lora</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h2 id="magnets">Magnets</h2>
 <ul>

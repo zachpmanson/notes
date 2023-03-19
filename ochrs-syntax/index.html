@@ -32,7 +32,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: stable diffusion</title>
+    <title>notes: ochrs syntax</title>
   </head>
 
   <body>
@@ -49,37 +49,49 @@
         
           <li>
             
-            <a href="/fediverse">Fediverse</a>
+            <a href="/alculator">Alculator</a>
             
           </li>
         
           <li>
             
-            <a href="/gecos">GECOS</a>
+            <a href="/covid-19-tracker">COVID-19 Tracker</a>
             
           </li>
         
           <li>
             
-            <a href="/machine-learning" class="activated-link">Machine Learning</a>
+            <a href="/minecraftle">Minecraftle</a>
             
           </li>
         
           <li>
             
-            <a href="/mistakes">Mistakes</a>
+            <a href="/ochrs" class="activated-link">Ochrs</a>
             
           </li>
         
           <li>
             
-            <a href="/programs-with-fun-names">Programs with Fun Names</a>
+            <a href="/penultimate-guitar">Penultimate Guitar</a>
             
           </li>
         
           <li>
             
-            <a href="/vi(m)">Vi(m)</a>
+            <a href="/status-messenger">Status Messenger</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/ironprof">ironprof</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/snakeware">snakeware</a>
             
           </li>
         
@@ -93,31 +105,7 @@
         
           <li>
             
-            <a href="/chatgpt">ChatGPT</a>
-            
-          </li>
-        
-          <li>
-            
-            <a href="/llama">LLaMA</a>
-            
-          </li>
-        
-          <li>
-            
-            <a href="/low-rank-adaptation">Low-Rank Adaptation</a>
-            
-          </li>
-        
-          <li>
-            
-            <a href="/react-prompting">ReAct Prompting</a>
-            
-          </li>
-        
-          <li>
-            
-            <a href="/stable-diffusion" class="activated-link">Stable Diffusion</a>
+            <a href="/ochrs-syntax" class="activated-link">Ochrs Syntax</a>
             
           </li>
         
@@ -125,44 +113,36 @@
       </div>
       
 
-      
-      <div>
-        <ul>
-        
-          <li>
-            <a href="/prompt-cheatsheet">Prompt Cheatsheet</a>
-          </li>
-        
-          <li>
-            <a href="/prompt-resources">Prompt Resources</a>
-          </li>
-        
-        </ul>
-      </div>
       
 
     </nav>
     <main>
       <header>
-        <h1>Stable Diffusion</h1>
+        <h1>Ochrs Syntax</h1>
       </header>
-      <article><p>The open source image generation model by Stability AI.</p>
-<h2 id="links">Links</h2>
-<ul>
-<li><a href="https://stable-diffusion-art.com/">Stable Diffusion Art Tutorials</a></li>
-<li><a href="https://stablehorde.net/">Stable Hoarde</a> - A crowdsourced distributed cluster of image generation workers and text generation workers</li>
-<li><a href="https://www.reddit.com/r/StableDiffusion/wiki/index">/r/StableDiffusion wiki</a></li>
-<li><a href="https://github.com/lllyasviel/ControlNet">ControlNet</a>, a neural network structure to control diffusion models by adding extra conditions</li>
-<li><a href="https://github.com/mlc-ai/web-stable-diffusion">Web Stable Diffusion</a>, a site that can run SD entirelly in browser, without a backend</li>
-</ul></article>
+      <article><h2 id="markdown-extensions">Markdown Extensions</h2>
+<p>Ochrs has a few additions on top of normal <a href="https://python-markdown.github.io/">Python Markdown</a>.  These are the extensions being used by the parser:</p>
+<p>fenced_code, CodeHiliteExtension, md_in_html, toc, pymdownx.superfences, markdown_checklist.extension</p>
+<p>Most of these are officially supported, some are from <a href="https://facelessuser.github.io/pymdown-extensions/">pymdownx</a>, and some are from the <a href="https://github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions">third party extension list</a>.</p>
+<h2 id="ochrs-variables">Ochrs Variables</h2>
+<p>There are also run-time variables that you have access to on all pages.  The list of extensions above is one of these, and is generated at run-time by Ochrs.  The format to insert one of these variables is:</p>
+<div class="highlight"><pre><span></span><code>Some normal text &lt;ochrs:var-name&gt;
+</code></pre></div>
+<p>Currently available Ochrs variables:</p>
+<p>ochrs-vars, example, page-count, build-time, md-extensions</p></article>
       
+      
+      <p class="backlinks"><span class="bold">Incoming (2):</span>
+          
+          <a href="/stylesheet">Stylesheet</a>
+          
+          <a href="/ochrs">Ochrs</a>
+          
+        </span>
+      </p>
       
 
       
-        
-        <h2><a href="/prompt-cheatsheet">Prompt Cheatsheet</a></h2>
-        
-        <h2><a href="/prompt-resources">Prompt Resources</a></h2>
         
       
 
