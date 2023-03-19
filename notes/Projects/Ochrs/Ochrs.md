@@ -40,6 +40,9 @@ The first time I used Obsidian I immediately knew I wanted all my notes to be wr
 
 The code itself is similar to [[ironprof]], a simple static site generator script I wrote for my [personal site](https://zachmanson.com) that recursively builds jinja templates and converts Markdown into blogposts.
 
+Ochrs 2.0 uses Python-Markdown for all parsing, and introduces a few [[Ochrs Syntax|custom syntax]] behaviours on top of this.
+
 ## ochrs-deploy
 
 Ochrs Deploy is a simple Obsidian plugin I made to add a button to the Obsidian left panel to run the `update-notes.sh` script.  Its a bit hacky but does technically work. It isn't in the Obsidian plugin directory (yet), but can be downloaded and added from the [repo](https://github.com/pavo-etc/ochrs-deploy).
+

@@ -80,6 +80,15 @@ Unordered list with line breaks:
 	  likely defunct [[COVID-19 Tracker]] for WA  
 	  trackstar
 
+---
+
+Run-time Ochrs variables:
+
+Last build time: <ochrs:build-time>
+
+List of Ochrs variables: <ochrs:ochrs-vars>
+
+More explanation of these can be found on [[Ochrs Syntax]].
 
 ---
 
