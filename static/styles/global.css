@@ -150,3 +150,7 @@ blockquote + p:has(a cite)::before {
   display: flex;
   gap: 0.5rem;
 }
+
+.inline {
+  display: inline;
+}
