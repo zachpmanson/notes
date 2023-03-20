@@ -4,14 +4,10 @@ The [sitemap](/404.html) shows the full wiki structure. This site currently has 
 
 The site [source](https://github.com/pavo-etc/notes) is editable [here](https://github.dev/pavo-etc/notes/).
 
-<details>
-<summary>
-**Recent changes**  
-</summary>
+<details markdown="1"><summary>**Recent changes**</summary>
 <ochrs:recent-edit:0>  
 <ochrs:recent-edit:1>  
 <ochrs:recent-edit:2>  
 <ochrs:recent-edit:3>  
 <ochrs:recent-edit:4>  
-
 </details>
