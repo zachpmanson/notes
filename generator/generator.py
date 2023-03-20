@@ -28,8 +28,12 @@ ignore_names = [
 ]
 
 ochrs_vars = {
-    "pagecount": lambda: len(tree),
-    "buildtime": lambda: datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    "ochrs-vars": lambda: ", ".join(list(ochrs_vars.keys())),
+    "example": lambda: "<ochrs:var-name>",
+    "page-count": lambda: len(tree),
+    "build-time": lambda: datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+    "md-extensions": lambda: ", ".join([e if isinstance(e, str) else str(type(e).__name__) for e in md_extensions])
+    
 }
 
 # node: {
@@ -181,7 +185,7 @@ def generate_pages():
 def generate_sitemap():
     global sitemap_md
     # generate some markdown
-    sitemap_md += "Last build at <ochrs:buildtime>. This site currently has <ochrs:pagecount> pages.\n\n"
+    sitemap_md += "Last build at <ochrs:build-time>. This site currently has <ochrs:page-count> pages.\n\n"
     sitemap_md += "- [Index](/)\n"
     for node in tree["Index"]["children"]:
         append_bullet(node, 4)
@@ -214,14 +218,21 @@ def append_bullet(node, depth):
         append_bullet(child, depth+4)
 
 def preprocess_markdown(text):
+    # add backlinks
     processed_text = re.sub(r"(?<!!)\[\[([^\]]+)?\]\]", format_backlink, text)
+    # add images backlink
     processed_text = re.sub(r"!\[\[([^\]]+)?\]\]", "![](/static/media/\\1)", processed_text)
+    # add ochrs vars
     processed_text = re.sub(r"<ochrs:(.+?)>", format_ochrs_var, processed_text)
     return processed_text
 
 def format_ochrs_var(matches):
-    name = matches.group(1)
-    return str(ochrs_vars[name]())
+    try:
+        name = matches.group(1)
+        value = str(ochrs_vars[name]())
+    except KeyError:
+        value = "unknown ochrs var"
+    return value
 
 def format_backlink(matches):
     if "|" in matches.group(1):
