@@ -13,3 +13,6 @@ def sanitize_url(url):
         clean_url = url.replace(" ", "-").replace('"', '')
         
     return clean_url
+
+def usage():
+    print("usage: generator.py [-v]", file=sys.stderr) 

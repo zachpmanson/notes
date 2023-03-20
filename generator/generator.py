@@ -37,6 +37,7 @@ ochrs_vars = {
 #   "children":[child1, child2]},
 #   "body":""
 #   "backlinks":[]
+#   "mod_time": mod_time
 # }
 tree = {
     "Index": {
@@ -44,7 +45,6 @@ tree = {
         "children": [],
         "body":"",
         "backlinks":[]
-
     }
 }
 routes = {
@@ -137,9 +137,12 @@ def traverse_tree():
                     text,
                     extensions=md_extensions
                 )
+            mod_time = os.path.getmtime(path)
         except FileNotFoundError:
             body = ""
+            mod_date = 
         tree[node]["body"] = body
+        tree[node]["mod_time"] = mod_time
 
 def generate_pages():
     post_template = jinja2.Template(open("generator/template.jinja", "r").read())
@@ -247,18 +250,13 @@ def format_backlink(matches):
 
     return f"[{text}](/{helpers.sanitize_url(page)}{anchor})"
 
-
-
-def usage():
-    print("usage: generator.py [-v]", file=sys.stderr) 
-
 if __name__=="__main__":
     try:
         opts, args = getopt.getopt(sys.argv[1:], "v")
     except getopt.GetoptError as err:
         # print help information and exit:
         print(err)  # will print something like "option -a not recognized"
-        usage()
+        helpers.usage()
         sys.exit(2)
     for o, a in opts:
         if o == "-v":
