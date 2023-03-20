@@ -93,22 +93,24 @@
         <h1>{{title}}</h1>
       </header>
       <article>{{body}}</article>
-      
-      {% if len(backlinks) > 0 %}
-      <p class="backlinks"><span class="bold">Incoming ({{len(backlinks)}}):</span>
-          {% for backlink in backlinks %}
-          <a href="/{{sanitize_url(backlink)|e}}">{{backlink}}</a>
-          {% endfor %}
+      <p>
+        {% if len(backlinks) > 0 %}
+        <span class="backlinks"><span class="bold">Incoming ({{len(backlinks)}}):</span>
+            {% for backlink in backlinks %}
+            <a href="/{{sanitize_url(backlink)|e}}">{{backlink}}</a>
+            {% endfor %}
+          </span>
         </span>
+        {% endif %}
+        
+        <!--<span class="bold">Last edit:</span> {{last_edit}}-->
       </p>
-      {% endif %}
 
       {% if children != None%}
         {% for child in children %}
         <h2><a href="/{{sanitize_url(child)|e}}">{{child}}</a></h2>
         {% endfor %}
       {% endif %}
-
 
     </main>
   </body>

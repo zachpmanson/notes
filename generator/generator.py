@@ -18,7 +18,8 @@ md_extensions = [
     'md_in_html',
     'toc',
     'pymdownx.superfences',
-    'markdown_checklist.extension'
+    'markdown_checklist.extension',
+    'md_in_html'
 ]
 
 ignore_names = [
@@ -32,8 +33,8 @@ ochrs_vars = {
     "example": lambda: "<ochrs:var-name>",
     "page-count": lambda: len(tree),
     "build-time": lambda: datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-    "md-extensions": lambda: ", ".join([e if isinstance(e, str) else str(type(e).__name__) for e in md_extensions])
-    
+    "md-extensions": lambda: ", ".join([e if isinstance(e, str) else str(type(e).__name__) for e in md_extensions]),
+    "recent-edit": lambda i: helpers.format_recent_edit(tree, i)
 }
 
 # node: {
@@ -48,7 +49,8 @@ tree = {
         "parent": None,
         "children": [],
         "body":"",
-        "backlinks":[]
+        "backlinks":[],
+        "mod_time": 0.0
     }
 }
 routes = {
@@ -119,7 +121,13 @@ def get_tree():
         children = tree[node]["children"]
         tree[node]["backlinks"] = []
         tree[node]["body"] = ""
-        
+        try:
+            path = os.path.join(routes[node], node+".md")
+            mod_time = os.path.getmtime(path)
+        except FileNotFoundError:
+            mod_date = 0.0
+        tree[node]["mod_time"] = mod_time
+
         for child in children:
             if node == child:
                 continue
@@ -134,19 +142,18 @@ def traverse_tree():
     for node in tree.keys():
         current_node = node
         try:
-            with open(os.path.join(routes[node], node+".md"), "r") as src_file:
+            path = os.path.join(routes[node], node+".md")
+            with open(path, "r") as src_file:
                 text = src_file.read()
                 text = preprocess_markdown(text)
                 body = markdown.markdown(
                     text,
                     extensions=md_extensions
                 )
-            mod_time = os.path.getmtime(path)
         except FileNotFoundError:
             body = ""
-            mod_date = 
+            mod_date = 0.0
         tree[node]["body"] = body
-        tree[node]["mod_time"] = mod_time
 
 def generate_pages():
     post_template = jinja2.Template(open("generator/template.jinja", "r").read())
@@ -177,7 +184,8 @@ def generate_pages():
                 "piblings": piblings,
                 "len": len,
                 "sanitize_url": helpers.sanitize_url,
-                "backlinks": [*set(tree[node]["backlinks"])]
+                "backlinks": [*set(tree[node]["backlinks"])],
+                "last_edit": str(datetime.utcfromtimestamp(tree[node]["mod_time"]).strftime('%Y-%m-%d %H:%M:%S'))
             }))
         if VERBOSE: print(f"Generated {grandparent}/{parent}/{helpers.sanitize_url(node)}/index.html")
 
@@ -218,19 +226,25 @@ def append_bullet(node, depth):
         append_bullet(child, depth+4)
 
 def preprocess_markdown(text):
-    # add backlinks
-    processed_text = re.sub(r"(?<!!)\[\[([^\]]+)?\]\]", format_backlink, text)
-    # add images backlink
-    processed_text = re.sub(r"!\[\[([^\]]+)?\]\]", "![](/static/media/\\1)", processed_text)
     # add ochrs vars
-    processed_text = re.sub(r"<ochrs:(.+?)>", format_ochrs_var, processed_text)
-    return processed_text
+    text = re.sub(r"<ochrs:(.+?)>", format_ochrs_var, text)
+    # add backlinks
+    text = re.sub(r"(?<!!)\[\[([^\]]+)?\]\]", format_backlink, text)
+    # add images backlink
+    text = re.sub(r"!\[\[([^\]]+)?\]\]", "![](/static/media/\\1)", text)
+    return text
 
 def format_ochrs_var(matches):
     try:
-        name = matches.group(1)
-        value = str(ochrs_vars[name]())
-    except KeyError:
+        segments = matches.group(1).split(":")
+        name = segments[0]
+        if len(segments) > 1:
+            args = segments[1:]
+        else:
+            args = []
+        value = str(ochrs_vars[name](*args))
+    except KeyError as e:
+        print("KeyError:", e)
         value = "unknown ochrs var"
     return value
 

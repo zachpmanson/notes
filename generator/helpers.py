@@ -1,3 +1,5 @@
+from datetime import datetime
+
 # Self contained helper functions
 
 def sanitize_anchor(anchor):
@@ -16,3 +18,9 @@ def sanitize_url(url):
 
 def usage():
     print("usage: generator.py [-v]", file=sys.stderr) 
+
+def format_recent_edit(tree, i):
+    page_name = sorted(tree, key=lambda x:tree[x]["mod_time"], reverse=True)[int(i)]
+    date = datetime.utcfromtimestamp(tree[page_name]['mod_time']).strftime('%Y-%m-%d %H:%M:%S')
+    # return f"[[{page_name}]] - {datetime.utcfromtimestamp(tree[page_name]['mod_time']).strftime('%Y-%m-%d %H:%M:%S')}"
+    return f"{date} - [[{page_name}]]"
