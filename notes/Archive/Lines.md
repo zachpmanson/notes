@@ -16,7 +16,7 @@ Woodie Guthrie's [Anti-copyright notice](https://en.wikipedia.org/wiki/Anti-copy
 
 ---
 
-"This code is free as in mattress. If you decide to use it, it's your problem."
+> This code is free as in mattress. If you decide to use it, it's your problem.
 
 [<cite>Xe Iaso</cite>](](https://xeiaso.net/blog/GraphicalEmoji))
 
