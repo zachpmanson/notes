@@ -19,7 +19,6 @@ md_extensions = [
     'toc',
     'pymdownx.superfences',
     'markdown_checklist.extension',
-    'md_in_html'
 ]
 
 ignore_names = [
@@ -30,7 +29,7 @@ ignore_names = [
 
 ochrs_vars = {
     "ochrs-vars": lambda: ", ".join(list(ochrs_vars.keys())),
-    "example": lambda: "<ochrs:var-name>",
+    "example": lambda: "<ochrs:var-name:arg1:arg2>",
     "page-count": lambda: len(tree),
     "build-time": lambda: datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
     "md-extensions": lambda: ", ".join([e if isinstance(e, str) else str(type(e).__name__) for e in md_extensions]),
@@ -214,7 +213,8 @@ def generate_sitemap():
             "piblings": None,
             "len": len,
             "sanitize_url": helpers.sanitize_url,
-            "backlinks": []
+            "backlinks": [],
+            "last_edit": ""
         }))
     if VERBOSE: print("Generated sitemap")
 

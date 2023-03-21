@@ -43,8 +43,12 @@
         </a>
       </div>
       
+
       {% if piblings != None %}
       <div>
+        {% if len(piblings) > 9 %}
+        <details><summary>{{len(piblings)}} piblings</summary>
+        {% endif %}
         <ul>
         {% for pibling in piblings %}
           <li>
@@ -56,11 +60,17 @@
           </li>
         {% endfor %}
         </ul>
+        {% if len(piblings) > 9 %}
+        </details>
+        {% endif %}
       </div>
       {% endif %}
 
       {% if siblings != None %}
       <div>
+        {% if len(siblings) > 9 %}
+        <details><summary>{{len(siblings)}} siblings</summary>
+        {% endif %}
         <ul>
         {% for sibling in siblings %}
           <li>
@@ -72,11 +82,19 @@
           </li>
         {% endfor %}
         </ul>
+        {% if len(siblings) > 9 %}
+        </details>
+        {% endif %}
       </div>
       {% endif %}
 
+
+
       {% if children != None and len(children) > 0 %}
       <div>
+        {% if len(children) > 9 %}
+        <details><summary>{{len(children)}} children</summary>
+        {% endif %}
         <ul>
         {% for child in children %}
           <li>
@@ -84,6 +102,9 @@
           </li>
         {% endfor %}
         </ul>
+        {% if len(children) > 9 %}
+        </details>
+        {% endif %}
       </div>
       {% endif %}
 
@@ -93,18 +114,23 @@
         <h1>{{title}}</h1>
       </header>
       <article>{{body}}</article>
+
+      {% if last_edit != "" %}
       <p>
         {% if len(backlinks) > 0 %}
-        <span class="backlinks"><span class="bold">Incoming ({{len(backlinks)}}):</span>
-            {% for backlink in backlinks %}
-            <a href="/{{sanitize_url(backlink)|e}}">{{backlink}}</a>
-            {% endfor %}
+        <div class="inline">
+          <span class="backlinks"><span class="bold">Incoming:</span>
+              {% for backlink in backlinks %}
+              <a href="/{{sanitize_url(backlink)|e}}">{{backlink}}</a>
+              {% endfor %}
+            </span>
           </span>
-        </span>
+        </div>
         {% endif %}
         
-        <!--<span class="bold">Last edit:</span> {{last_edit}}-->
+        {# <span class="bold">Last edit:</span> {{last_edit}} #}
       </p>
+      {% endif %}
 
       {% if children != None%}
         {% for child in children %}

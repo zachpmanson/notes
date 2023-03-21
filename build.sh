@@ -9,7 +9,7 @@ deactivate
 echo Deactivated venv
 mkdir -p ./site/static/media
 rm -r ./site/static/*
-cp -R ./static/ ./site/
+cp -R ./static/* ./site/static/
 cp -R ./notes/Media/ ./site/static/media/
 echo "notes.zachmanson.com" > ./site/CNAME
 echo Done!

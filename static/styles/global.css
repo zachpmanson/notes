@@ -42,6 +42,14 @@ nav ul li {
   text-align: left;
 }
 
+nav details {
+  text-align: left;
+}
+
+nav details summary {
+  margin-left: 40px;
+}
+
 a {
   color: var(--pink);
   text-decoration: underline;
@@ -148,5 +156,10 @@ blockquote + p:has(a cite)::before {
 
 .backlinks {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.inline {
+  display: inline;
 }
