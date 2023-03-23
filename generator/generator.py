@@ -108,12 +108,12 @@ def generate_pages():
     post_template = jinja2.Template(open("generator/template.jinja", "r").read())
     # actually generate pages
     for node in tree.keys():
-        children = list(filter(lambda x: x not in orphans, tree[node]["children"]))
+        children = list(filter(lambda x: x not in orphans or x == node, tree[node]["children"]))
 
         parent = tree[node]["parent"]
-        siblings = tree[parent]["children"] if parent != None else None
+        siblings = list(filter(lambda x: x not in orphans or x == node, tree[parent]["children"])) if parent != None else None
         grandparent = tree[parent]["parent"] if parent != None else None
-        piblings = tree[grandparent]["children"] if grandparent != None else None
+        piblings = list(filter(lambda x: x not in orphans or x == node, tree[grandparent]["children"])) if grandparent != None else None
 
         if node != "Index":
             path = os.path.join("site", helpers.sanitize_url(node))
