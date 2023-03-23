@@ -10,57 +10,7 @@ from markdown.extensions.codehilite import CodeHiliteExtension
 
 import helpers
 
-VERBOSE = False
-
-md_extensions = [
-    'fenced_code',
-    CodeHiliteExtension(guess_lang=False),
-    'md_in_html',
-    'toc',
-    'pymdownx.superfences',
-    'markdown_checklist.extension',
-]
-
-ignore_names = [
-    ".obsidian",
-    "Media",
-    ".trash"
-]
-
-ochrs_vars = {
-    "ochrs-vars": lambda: ", ".join(list(ochrs_vars.keys())),
-    "example": lambda: "<ochrs:var-name:arg1:arg2>",
-    "page-count": lambda: len(tree),
-    "build-time": lambda: datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-    "md-extensions": lambda: ", ".join([e if isinstance(e, str) else str(type(e).__name__) for e in md_extensions]),
-    "recent-edit": lambda i: helpers.format_recent_edit(tree, i)
-}
-
-# node: {
-#   "parent":parentnode,
-#   "children":[child1, child2]},
-#   "body":""
-#   "backlinks":[]
-#   "mod_time": mod_time
-# }
-tree = {
-    "Index": {
-        "parent": None,
-        "children": [],
-        "body":"",
-        "backlinks":[],
-        "mod_time": 0.0
-    }
-}
-routes = {
-    "Index": "./"
-}
-
-# {node: ["link1", "link2"]}
-backlinks = {}
-
-sitemap_md = ""
-current_node = "Index"
+# from pprint import pprint
 
 def get_tree():
     if VERBOSE: print("Building tree")
@@ -96,7 +46,7 @@ def get_tree():
             except KeyError:
                 tree[page_name] = {"children":[]}
 
-            if title != page_name:
+            if (title != page_name):
                 tree[title]["children"].append(page_name)
 
             routes[page_name] = root
@@ -124,7 +74,7 @@ def get_tree():
             path = os.path.join(routes[node], node+".md")
             mod_time = os.path.getmtime(path)
         except FileNotFoundError:
-            mod_date = 0.0
+            mod_time = 0.0
         tree[node]["mod_time"] = mod_time
 
         for child in children:
@@ -133,6 +83,7 @@ def get_tree():
 
             tree[child]["parent"] = node
             queue.append(child)
+    # pprint(tree)
 
 def traverse_tree():
     global current_node
@@ -151,14 +102,13 @@ def traverse_tree():
                 )
         except FileNotFoundError:
             body = ""
-            mod_date = 0.0
         tree[node]["body"] = body
 
 def generate_pages():
     post_template = jinja2.Template(open("generator/template.jinja", "r").read())
     # actually generate pages
     for node in tree.keys():
-        children = tree[node]["children"]
+        children = list(filter(lambda x: x not in orphans, tree[node]["children"]))
 
         parent = tree[node]["parent"]
         siblings = tree[parent]["children"] if parent != None else None
@@ -170,10 +120,15 @@ def generate_pages():
         else:
             path = "site"
 
-        if not os.path.exists(path):
-            os.mkdir(path)
-
-        with open(os.path.join(path, "index.html"), "w") as f:
+        # 404 page is special, must be a html page
+        if node == "404":
+            filename = os.path.join("site", "404.html")
+        else:
+            if not os.path.exists(path):
+                os.mkdir(path)
+            filename = os.path.join(path, "index.html")
+        
+        with open(filename, "w") as f:
             f.write(post_template.render({
                 "title": node,
                 "body": tree[node]["body"],
@@ -192,31 +147,12 @@ def generate_pages():
 def generate_sitemap():
     global sitemap_md
     # generate some markdown
-    sitemap_md += "Last build at <ochrs:build-time>. This site currently has <ochrs:page-count> pages.\n\n"
     sitemap_md += "- [Index](/)\n"
     for node in tree["Index"]["children"]:
         append_bullet(node, 4)
     
-    sitemap_md = preprocess_markdown(sitemap_md)
-    post_template = jinja2.Template(open("generator/template.jinja", "r").read())
-    sitemap_html = markdown.markdown(
-        sitemap_md,
-        extensions=md_extensions
-    )
-    with open(os.path.join("site", "404.html"), "w") as f:
-        f.write(post_template.render({
-            "title": "Sitemap",
-            "body": sitemap_html,
-            "parent": "Index",
-            "children": None,
-            "siblings": tree["Index"]["children"],
-            "piblings": None,
-            "len": len,
-            "sanitize_url": helpers.sanitize_url,
-            "backlinks": [],
-            "last_edit": ""
-        }))
     if VERBOSE: print("Generated sitemap")
+    return sitemap_md
 
 def append_bullet(node, depth):
     global sitemap_md
@@ -275,6 +211,63 @@ def format_backlink(matches):
 
     return f"[{text}](/{helpers.sanitize_url(page)}{anchor})"
 
+
+
+VERBOSE = False
+
+md_extensions = [
+    'fenced_code',
+    CodeHiliteExtension(guess_lang=False),
+    'md_in_html',
+    'toc',
+    'pymdownx.superfences',
+    'markdown_checklist.extension',
+]
+
+ignore_names = [
+    ".obsidian",
+    "Media",
+    ".trash"
+]
+
+ochrs_vars = {
+    "ochrs-vars": lambda: ", ".join(list(ochrs_vars.keys())),
+    "example": lambda: "<ochrs:var-name:arg1:arg2>",
+    "page-count": lambda: len(tree),
+    "build-time": lambda: datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+    "md-extensions": lambda: ", ".join([e if isinstance(e, str) else str(type(e).__name__) for e in md_extensions]),
+    "recent-edit": lambda i: helpers.format_recent_edit(tree, i),
+    "sitemap": generate_sitemap
+}
+
+# node: {
+#   "parent":parentnode,
+#   "children":[child1, child2]},
+#   "body":""
+#   "backlinks":[]
+#   "mod_time": mod_time
+# }
+tree = {
+    "Index": {
+        "parent": None,
+        "children": [],
+        "body":"",
+        "backlinks":[],
+        "mod_time": 0.0
+    }
+}
+routes = {
+    "Index": "./"
+}
+
+# {node: ["link1", "link2"]}
+backlinks = {}
+
+sitemap_md = ""
+current_node = "Index"
+
+orphans = ["404"]
+
 if __name__=="__main__":
     try:
         opts, args = getopt.getopt(sys.argv[1:], "v")
@@ -289,4 +282,3 @@ if __name__=="__main__":
     get_tree()
     traverse_tree()
     generate_pages()
-    generate_sitemap()

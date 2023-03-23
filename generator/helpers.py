@@ -11,6 +11,8 @@ def sanitize_url(url):
     url = url.lower()
     if url == "index":
         clean_url = ""
+    elif url == "404":
+        clean_url = "404.html"
     else:
         clean_url = url.replace(" ", "-").replace('"', '')
         
