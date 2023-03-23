@@ -111,9 +111,12 @@ def generate_pages():
         children = list(filter(lambda x: x not in orphans or x == node, tree[node]["children"]))
 
         parent = tree[node]["parent"]
-        siblings = list(filter(lambda x: x not in orphans or x == parent, tree[parent]["children"])) if parent != None else None
+        if node == "404": print(tree[parent]["children"])
+        siblings = list(filter(lambda x: x not in orphans or x == node, tree[parent]["children"])) if parent != None else None
+        if node == "404": print(siblings)
+        
         grandparent = tree[parent]["parent"] if parent != None else None
-        piblings = list(filter(lambda x: x not in orphans or x == grandparent, tree[grandparent]["children"])) if grandparent != None else None
+        piblings = list(filter(lambda x: x not in orphans or x == parent, tree[grandparent]["children"])) if grandparent != None else None
 
         if node != "Index":
             path = os.path.join("site", helpers.sanitize_url(node))
