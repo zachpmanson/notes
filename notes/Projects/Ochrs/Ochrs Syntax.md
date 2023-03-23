@@ -8,10 +8,10 @@ Most of these are officially supported, some are from [pymdownx](https://faceles
 
 ## Ochrs Variables
 
-There are also run-time variables that you have access to on all pages.  The list of extensions above is one of these, and is generated at run-time by Ochrs.  The format to insert one of these variables is:
+There are also run-time variables that you have access to on all pages.  The list of extensions above is one of these, generated at run-time by Ochrs.  The format to insert one of these variables is:
 
 ```
-Some normal text <ochrs:example>
+Some normal text <ochrs:example> some more text
 ```
 
 Currently available Ochrs variables:
