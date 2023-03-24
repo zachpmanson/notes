@@ -17,7 +17,7 @@ Simon Willison has interesting writeups on LLaMA and early responses to it:
 - [Stanford Alpaca, and the acceleration of on-device large language model development](https://simonwillison.net/2023/Mar/13/alpaca/)
 	- discusses Dalai and Stanford Alpaca
 - [Could you train a ChatGPT-beating model for $85,000 and run it in a browser?](https://simonwillison.net/2023/Mar/17/beat-chatgpt-in-a-browser/)
-	- discusses alpaca.cpp, [[ReAct prompting]] and the ability to easily expand the capabilities of LLMs, even basic ones
+	- discusses alpaca.cpp, [[ReAct Prompting]] and the ability to easily expand the capabilities of LLMs, even basic ones
 - [llama tag](https://simonwillison.net/tags/llama/) on Willison's blog
 
 ## Consequential Projects
