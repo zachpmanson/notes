@@ -70,6 +70,8 @@ Answer: The capital of France is Paris
 
 LangChain's codebase provides [more examples with greater detail](https://github.com/hwchase17/langchain/blob/2f6833d4334f762d2abb070a5e1496fc560c5435/langchain/agents/react/wiki_prompt.py#L5).
 
+[[ChatGPT]] has implemented a kind of ReAct prompting setup with [ChatGPT Plugins](https://openai.com/blog/chatgpt-plugins).
+
 ## Links
 
 - [ReAct website](https://react-lm.github.io/)
@@ -82,3 +84,5 @@ LangChain's codebase provides [more examples with greater detail](https://github
 - [Fuzzy API composition: querying NBA stats with GPT-3 + Statmuse + Langchain](https://www.geoffreylitt.com/2023/01/29/fun-with-compositional-llms-querying-basketball-stats-with-gpt-3-statmuse-langchain.html)
 	- ReAct prompting in use
 - [Build a GitHub Support Bot with GPT3, LangChain, and Python](https://dagster.io/blog/chatgpt-langchain)
+- [ChatGPT Plugins announcement](https://openai.com/blog/chatgpt-plugins)
+	- a modular way ReAct setup
