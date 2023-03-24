@@ -70,7 +70,7 @@ Answer: The capital of France is Paris
 
 LangChain's codebase provides [more examples with greater detail](https://github.com/hwchase17/langchain/blob/2f6833d4334f762d2abb070a5e1496fc560c5435/langchain/agents/react/wiki_prompt.py#L5).
 
-[[ChatGPT]] has implemented a kind of ReAct prompting setup with [ChatGPT Plugins](https://openai.com/blog/chatgpt-plugins).
+Bing Sydney does some form of this, where it can execute Bing search queries to help it answer questions.  [[ChatGPT]] has implemented a kind of ReAct prompting setup with [ChatGPT Plugins](https://openai.com/blog/chatgpt-plugins).
 
 ## Links
 
