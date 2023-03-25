@@ -1,4 +1,9 @@
-Low-Rank Adaptation (LoRA) is a method that is designedto allow full fine-tuning of existing LLMs without having to (expensively) retrain all the model parameters. It works by freezing the model weights of the initial LLM and injecting trainable rank decomcomposition matrices (*I do not understand this*) onto each layer of the Transformer architechture. This reduces the number of parameters used in downstream tasks greatly.  This can reduce the memory requirements significantly, and allows "on-par or better" quality than fine-tuning models.
+
+>Fine-tuning enormous language models is prohibitively expensive in terms of the hardware required and the storage/switching cost for hosting independent instances for different tasks. We propose LoRA, an efficient adaptation strategy that neither introduces inference latency nor reduces input sequence length while retaining high model quality
+
+<cite>Hu et al., [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)</cite>
+
+Low-Rank Adaptation (LoRA) is a method that is designed to allow full fine-tuning of existing LLMs without having to (expensively) retrain all the model parameters, and avoids additional inference latency. It works by freezing the model weights of the initial LLM and injecting trainable rank decomcomposition matrices onto each layer of the Transformer architechture. This reduces the number of parameters used in downstream tasks greatly.  This can reduce the memory requirements significantly, and allows "on-par or better" quality than fine-tuning models.
 
 ##  Injecting trainable rank recomposition matrices?
 
@@ -22,10 +27,17 @@ Low-Rank Adaptation (LoRA) is a method that is designedto allow full fine-tuning
 
 <cite>Hu et al., [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)</cite>
 
-## Wait what is intrensic rank
+## Wait what is intrensic dimensionality
 
+> the **intrinsic dimensionality** of a space is the number of _required_ pieces of information that we need to describe each object in the space, which may differ from the number of pieces of information that we _are_ using, which we call the **extrinsic dimensionality** of the space
+
+<cite>Matthew N. Bernstein</cite>, in his [very good writeup](https://mbernste.github.io/posts/intrinsic_dimensionality/)
+
+## So what is intrensic rank
+
+Still don't truly understand.
 
 
 ## Links
 
-- [Original LoRa paper by Microsoft](https://arxiv.org/abs/2106.09685)
+- [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685), the original LoRA paper by Microsoft
