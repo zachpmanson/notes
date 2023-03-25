@@ -1,0 +1,1 @@
+Rank is one of the fundamental characteristics of a matrix.  The rank of matrix A is maximal number of linearly independent columns of A.  The rank of rows and columns of a matrix is always the same, so matrix rank can be defined based on either of these.
