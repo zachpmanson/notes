@@ -1,1 +1,1 @@
-Notes of programming, programs, and software engineering.
+Notes of programs and software engineering.
