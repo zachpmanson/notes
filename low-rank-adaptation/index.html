@@ -139,7 +139,11 @@
       <header>
         <h1>Low-Rank Adaptation</h1>
       </header>
-      <article><p>Low-Rank Adaptation (LoRA) is a method that is designedto allow full fine-tuning of existing LLMs without having to (expensively) retrain all the model parameters. It works by freezing the model weights of the initial LLM and injecting trainable rank decomcomposition matrices (<em>I do not understand this</em>) onto each layer of the Transformer architechture. This reduces the number of parameters used in downstream tasks greatly.  This can reduce the memory requirements significantly, and allows "on-par or better" quality than fine-tuning models.</p>
+      <article><blockquote>
+<p>Fine-tuning enormous language models is prohibitively expensive in terms of the hardware required and the storage/switching cost for hosting independent instances for different tasks. We propose LoRA, an efficient adaptation strategy that neither introduces inference latency nor reduces input sequence length while retaining high model quality</p>
+</blockquote>
+<p><cite>Hu et al., <a href="https://arxiv.org/abs/2106.09685">LoRA: Low-Rank Adaptation of Large Language Models</a></cite></p>
+<p>Low-Rank Adaptation (LoRA) is a method that is designed to allow full fine-tuning of existing LLMs without having to (expensively) retrain all the model parameters, and avoids additional inference latency. It works by freezing the model weights of the initial LLM and injecting trainable rank decomcomposition matrices onto each layer of the Transformer architechture. This reduces the number of parameters used in downstream tasks greatly.  This can reduce the memory requirements significantly, and allows "on-par or better" quality than fine-tuning models.</p>
 <h2 id="injecting-trainable-rank-recomposition-matrices">Injecting trainable rank recomposition matrices?</h2>
 <blockquote>
 <p>LoRA finds a subset of the original weights (about 1%) which can be trained to achieve about the same result as training the whole model while using 100x less compute.</p>
@@ -157,10 +161,16 @@
 <p>A neural network contains many dense layers which perform matrix multiplication. The weight matrices in these layers typically have full-rank. When adapting to a specific task, Aghajanyan et al. (2020) shows that the pre-trained language models have a low “instrisic dimension” and can still  learn efficiently despite a random projection to a smaller subspace. Inspired by this, we hypothesize the updates to the weights also have a low “intrinsic rank” during adaptation.</p>
 </blockquote>
 <p><cite>Hu et al., <a href="https://arxiv.org/abs/2106.09685">LoRA: Low-Rank Adaptation of Large Language Models</a></cite></p>
-<h2 id="wait-what-is-intrensic-rank">Wait what is intrensic rank</h2>
+<h2 id="wait-what-is-intrensic-dimensionality">Wait what is intrensic dimensionality</h2>
+<blockquote>
+<p>the <strong>intrinsic dimensionality</strong> of a space is the number of <em>required</em> pieces of information that we need to describe each object in the space, which may differ from the number of pieces of information that we <em>are</em> using, which we call the <strong>extrinsic dimensionality</strong> of the space</p>
+</blockquote>
+<p><cite>Matthew N. Bernstein</cite>, in his <a href="https://mbernste.github.io/posts/intrinsic_dimensionality/">very good writeup</a></p>
+<h2 id="so-what-is-intrensic-rank">So what is intrensic rank</h2>
+<p>Still don't truly understand.</p>
 <h2 id="links">Links</h2>
 <ul>
-<li><a href="https://arxiv.org/abs/2106.09685">Original LoRa paper by Microsoft</a></li>
+<li><a href="https://arxiv.org/abs/2106.09685">LoRA: Low-Rank Adaptation of Large Language Models</a>, the original LoRA paper by Microsoft</li>
 </ul></article>
 
       
