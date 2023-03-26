@@ -115,7 +115,7 @@
       </header>
       <article>{{body}}</article>
 
-      {% if len(backlinks) > 0 %}
+      {% if backlinks != None and len(backlinks) > 0 %}
       <p class="backlinks"><span class="bold">Incoming:</span>
           {% for backlink in backlinks %}
           <a href="/{{sanitize_url(backlink)|e}}">{{backlink}}</a>

@@ -10,7 +10,7 @@ from markdown.extensions.codehilite import CodeHiliteExtension
 
 import helpers
 
-# from pprint import pprint
+from pprint import pprint
 
 def get_tree():
     if VERBOSE: print("Building tree")
@@ -44,10 +44,10 @@ def get_tree():
             try:
                 tree[page_name]["children"]
             except KeyError:
-                tree[page_name] = {"children":[]}
+                tree[page_name] = {"children":set()}
 
             if (title != page_name):
-                tree[title]["children"].append(page_name)
+                tree[title]["children"].add(page_name)
 
             routes[page_name] = root
         
@@ -55,20 +55,20 @@ def get_tree():
             if dirname in ignore_names:
                 continue
             
-            tree[title]["children"].append(dirname)
+            tree[title]["children"].add(dirname)
             try:
                 tree[dirname]["children"]
             except KeyError:
-                tree[dirname] = {"children":[]}
+                tree[dirname] = {"children":set()}
 
             routes[dirname] = root
     
     # Generate parents and backlinks
     queue = ["Index"]
     for node in queue:
-        (tree[node]["children"]).sort()
-        children = tree[node]["children"]
-        tree[node]["backlinks"] = []
+        # (tree[node]["children"]).sort()
+        # children = sorted(list(tree[node]["children"]))
+        tree[node]["backlinks"] = set()
         tree[node]["body"] = ""
         try:
             path = os.path.join(routes[node], node+".md")
@@ -77,7 +77,7 @@ def get_tree():
             mod_time = 0.0
         tree[node]["mod_time"] = mod_time
 
-        for child in children:
+        for child in tree[node]["children"]:
             if node == child:
                 continue
 
@@ -96,27 +96,21 @@ def traverse_tree():
             with open(path, "r") as src_file:
                 text = src_file.read()
                 text = preprocess_markdown(text)
-                body = markdown.markdown(
-                    text,
-                    extensions=md_extensions
-                )
+                body = process_markdown(text)
         except FileNotFoundError:
             body = ""
         tree[node]["body"] = body
 
 def generate_pages():
-    post_template = jinja2.Template(open("generator/template.jinja", "r").read())
     # actually generate pages
     for node in tree.keys():
-        children = list(filter(lambda x: x not in orphans or x == node, tree[node]["children"]))
+        children = sorted(list(filter(lambda x: x not in orphans or x == node, tree[node]["children"])))
 
         parent = tree[node]["parent"]
-        if node == "404": print(tree[parent]["children"])
-        siblings = list(filter(lambda x: x not in orphans or x == node, tree[parent]["children"])) if parent != None else None
-        if node == "404": print(siblings)
+        siblings = sorted(list(filter(lambda x: x not in orphans or x == node, tree[parent]["children"]))) if parent != None else None
         
         grandparent = tree[parent]["parent"] if parent != None else None
-        piblings = list(filter(lambda x: x not in orphans or x == parent, tree[grandparent]["children"])) if grandparent != None else None
+        piblings = sorted(list(filter(lambda x: x not in orphans or x == parent, tree[grandparent]["children"]))) if grandparent != None else None
 
         if node != "Index":
             path = os.path.join("site", helpers.sanitize_url(node))
@@ -141,11 +135,10 @@ def generate_pages():
                 "piblings": piblings,
                 "len": len,
                 "sanitize_url": helpers.sanitize_url,
-                "backlinks": [*set(tree[node]["backlinks"])],
+                "backlinks": tree[node]["backlinks"],
                 "last_edit": str(datetime.utcfromtimestamp(tree[node]["mod_time"]).strftime('%Y-%m-%d %H:%M:%S'))
             }))
         if VERBOSE: print(f"Generated {grandparent}/{parent}/{helpers.sanitize_url(node)}/index.html")
-
 
 def generate_sitemap():
     global sitemap_md
@@ -156,6 +149,19 @@ def generate_sitemap():
     
     if VERBOSE: print("Generated sitemap")
     return sitemap_md
+
+def generate_tags():
+    tags_md = ""
+    for tag, pages in tags.items():
+        panel = f"<details><summary>\n## {tag}\n</summary>"
+        
+        panel += "\n".join([f"- [{page}]({helpers.sanitize_anchor(page)})" for page in pages])
+        
+        panel += "</details>"
+
+        tags_md += panel
+
+    return tags_md
 
 def append_bullet(node, depth):
     global sitemap_md
@@ -171,7 +177,33 @@ def preprocess_markdown(text):
     text = re.sub(r"(?<!!)\[\[([^\]]+)?\]\]", format_backlink, text)
     # add images backlink
     text = re.sub(r"!\[\[([^\]]+)?\]\]", "![](/static/media/\\1)", text)
+    # process tags
+    text = re.sub(r"Tags: (.+)", format_tags, text)
     return text
+
+def process_markdown(text):
+    processed_text = markdown.markdown(
+        text,
+        extensions=md_extensions
+    )
+    return processed_text
+
+def format_tags(matches):
+    '''Formats tags and adds them to the tags object'''
+    global current_node
+    tagline = matches.group(1)
+    taglist = tagline.replace("#", "").split()
+    formatted_tags = []
+    for tag in taglist:
+        if tag in tags.keys():
+            tags[tag].add(current_node)
+        else:
+            tags[tag] = set()
+        # tree["Tags"]["children"].add(f"tags/{tag}")
+        formatted_tags.append(f"[{tag}](/tags/{tag})")
+
+    return "**Tags:** " + " ".join(formatted_tags)
+        
 
 def format_ochrs_var(matches):
     try:
@@ -210,7 +242,7 @@ def format_backlink(matches):
                 page = key
                 break
 
-    tree[page]["backlinks"].append(current_node)
+    tree[page]["backlinks"].add(current_node)
 
     return f"[{text}](/{helpers.sanitize_url(page)}{anchor})"
 
@@ -240,7 +272,8 @@ ochrs_vars = {
     "build-time": lambda: datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
     "md-extensions": lambda: ", ".join([e if isinstance(e, str) else str(type(e).__name__) for e in md_extensions]),
     "recent-edit": lambda i: helpers.format_recent_edit(tree, i),
-    "sitemap": generate_sitemap
+    "sitemap": generate_sitemap,
+    "tags": generate_tags
 }
 
 # node: {
@@ -253,9 +286,9 @@ ochrs_vars = {
 tree = {
     "Index": {
         "parent": None,
-        "children": [],
+        "children": set(),
         "body":"",
-        "backlinks":[],
+        "backlinks":set(),
         "mod_time": 0.0
     }
 }
@@ -263,20 +296,26 @@ routes = {
     "Index": "./"
 }
 
+# { tagname: ["link1", "link3"]}
+tags = {}
+
 # {node: ["link1", "link2"]}
-backlinks = {}
+# backlinks = {}
 
 sitemap_md = ""
 current_node = "Index"
 
-orphans = ["404"]
+orphans = ["404"]#, "Tags"]
+
+post_template = jinja2.Template(open("generator/template.jinja", "r").read())
+
 
 if __name__=="__main__":
     try:
         opts, args = getopt.getopt(sys.argv[1:], "v")
     except getopt.GetoptError as err:
         # print help information and exit:
-        print(err)  # will print something like "option -a not recognized"
+        print(err, file=sys.stderr)  # will print something like "option -a not recognized"
         helpers.usage()
         sys.exit(2)
     for o, a in opts:
@@ -285,3 +324,5 @@ if __name__=="__main__":
     get_tree()
     traverse_tree()
     generate_pages()
+
+

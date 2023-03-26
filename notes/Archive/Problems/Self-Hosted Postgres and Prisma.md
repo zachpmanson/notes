@@ -33,4 +33,4 @@ Learnings from setting up Postgres on a DigitalOcean droplet for [[Penultimate G
 8. Push the schema designed in `prisma/schema.prisma` using the command `npx prisma db push`.
 9. If this succeed, Prisma can now effectively connect to the database!
 
-Tags: #self-hosting 
+Tags: #self-hosting
