@@ -30,3 +30,5 @@ echo 1 | sudo tee /sys/module/hid_apple/parameters/fnmode
  - [Archived Adding persistency](https://web.archive.org/web/20220721020355/https://mikeshade.com/posts/keychron-linux-function-keys/)
  - [Other Keychron settings](https://github.com/Kurgol/keychron/blob/master/k2.md)
  - [Other Keychron settings fork](https://github.com/pavo-etc/keychron)
+
+Tags: #linux

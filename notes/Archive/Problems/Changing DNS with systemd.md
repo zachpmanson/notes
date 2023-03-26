@@ -18,7 +18,6 @@ DNSStubListener=no
 #ResolveUnicastSingleLabel=no
 ```
 
-
 Then restart services:
 
 ```sh
@@ -26,3 +25,5 @@ sudo systemctl daemon-reload
 sudo systemctl restart systemd-networkd
 sudo systemctl restart systemd-resolved
 ```
+
+Tags: #linux

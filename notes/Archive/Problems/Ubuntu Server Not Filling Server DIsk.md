@@ -36,3 +36,5 @@ tmpfs                              784M  4.0K  784M   1% /run/
 ## Links
 
  - [Source](https://askubuntu.com/a/1330709)
+
+Tags: #linux

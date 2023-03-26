@@ -151,13 +151,13 @@ def generate_sitemap():
     return sitemap_md
 
 def generate_tags():
+
     tags_md = ""
-    for tag, pages in tags.items():
-        panel = f"<details><summary>\n## {tag}\n</summary>"
-        
-        panel += "\n".join([f"- [{page}]({helpers.sanitize_anchor(page)})" for page in pages])
-        
-        panel += "</details>"
+    for tag in sorted(tags.keys()):
+        pages = tags[tag]
+        panel = f"<details markdown='1'><summary>\n## {tag}\n</summary>\n\n"
+        panel += "\n".join([f"- [{page}](/{helpers.sanitize_anchor(page)})" for page in pages])
+        panel += "\n</details>\n"
 
         tags_md += panel
 
@@ -178,7 +178,7 @@ def preprocess_markdown(text):
     # add images backlink
     text = re.sub(r"!\[\[([^\]]+)?\]\]", "![](/static/media/\\1)", text)
     # process tags
-    text = re.sub(r"Tags: (.+)", format_tags, text)
+    text = re.sub(r"\nTags: (.+)", format_tags, text)
     return text
 
 def process_markdown(text):
@@ -199,10 +199,11 @@ def format_tags(matches):
             tags[tag].add(current_node)
         else:
             tags[tag] = set()
+            tags[tag].add(current_node)
         # tree["Tags"]["children"].add(f"tags/{tag}")
-        formatted_tags.append(f"[{tag}](/tags/{tag})")
+        formatted_tags.append(f"[#{tag}](/tags#{tag})")
 
-    return "**Tags:** " + " ".join(formatted_tags)
+    return "\n**Tags:** " + " ".join(formatted_tags)
         
 
 def format_ochrs_var(matches):
