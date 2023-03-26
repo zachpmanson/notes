@@ -22,3 +22,5 @@ information if this option is given.
 ```
 
 The cryptic title is not explained in the man pages.  This field is called GECOS as it was originally used to describe the purpose of machines running the [General Electric Comprehensive Operating System](https://en.wikipedia.org/wiki/General_Comprehensive_Operating_System) (GECOS), which had user accounts set up to access the services running on those machines, such as print spooling.  This field was added to `/etc/passwd`, and was later repurposed to contain identifying information on each user.  This anachronism has managed to persist into modern Unix and Linux system to this day.
+
+Tags: #unix #linux
