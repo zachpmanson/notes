@@ -32,7 +32,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: recent changes</title>
+    <title>notes: dotfiles being hidden</title>
   </head>
 
   <body>
@@ -51,25 +51,43 @@
         
           <li>
             
-            <a href="/archive">Archive</a>
+            <a href="/fediverse">Fediverse</a>
             
           </li>
         
           <li>
             
-            <a href="/meta" class="activated-link">Meta</a>
+            <a href="/gecos">GECOS</a>
             
           </li>
         
           <li>
             
-            <a href="/notes">Notes</a>
+            <a href="/generative-ai">Generative AI</a>
             
           </li>
         
           <li>
             
-            <a href="/projects">Projects</a>
+            <a href="/mistakes" class="activated-link">Mistakes</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/programs-with-fun-names">Programs with Fun Names</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/self-hosting">Self-Hosting</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/vi(m)">Vi(m)</a>
             
           </li>
         
@@ -85,25 +103,13 @@
         
           <li>
             
-            <a href="/dns">DNS</a>
+            <a href="/dotfiles-being-hidden" class="activated-link">Dotfiles Being Hidden</a>
             
           </li>
         
           <li>
             
-            <a href="/recent-changes" class="activated-link">Recent Changes</a>
-            
-          </li>
-        
-          <li>
-            
-            <a href="/stylesheet">Stylesheet</a>
-            
-          </li>
-        
-          <li>
-            
-            <a href="/tags">Tags</a>
+            <a href="/referer-http-field">Referer HTTP Field</a>
             
           </li>
         
@@ -119,24 +125,16 @@
     </nav>
     <main>
       <header>
-        <h1>Recent Changes</h1>
+        <h1>Dotfiles Being Hidden</h1>
       </header>
-      <article><p>Things I've recently been thinking about.</p>
-<p>2023-03-26 14:34:20 - <a href="/dotfiles-being-hidden">Dotfiles Being Hidden</a><br />
-2023-03-26 14:34:12 - <a href="/mistakes">Mistakes</a><br />
-2023-03-26 14:33:44 - <a href="/referer-http-field">Referer HTTP Field</a><br />
-2023-03-26 14:31:54 - <a href="/vi(m)">Vi(m)</a><br />
-2023-03-26 14:31:54 - <a href="/gecos">GECOS</a><br />
-2023-03-26 14:05:32 - <a href="/tags">Tags</a><br />
-2023-03-26 13:51:05 - <a href="/ubuntu-server-not-filling-server-disk">Ubuntu Server Not Filling Server DIsk</a><br />
-2023-03-26 13:50:40 - <a href="/changing-dns-with-systemd">Changing DNS with systemd</a><br />
-2023-03-26 13:50:03 - <a href="/keychron-fn-keys">Keychron Fn Keys</a><br />
-2023-03-26 13:49:55 - <a href="/self-hosted-postgres-and-prisma">Self-Hosted Postgres and Prisma</a>  </p></article>
+      <article><p>On Unix systems a file can be hidden from <code>ls</code> and other applications by prefixing the filename with a period.  This was introduced in Unix Version 2 as a side-effect of adding  files <code>.</code> and <code>..</code> to support the new hierarchical filesystem.  To avoid these navigation files appearing in every directory when <code>ls</code> was executed, filenames with the first character <code>'.'</code> were filtered out.  This unintentionally hid other files with this prefix. Once this precedent was set, other programs implemented the same behaviour, which continues to this day.</p>
+<p>More details on this can be read in <a href="/rob-pike's-lesson-in-shortcuts">Rob Pike's Lesson in Shortcuts</a>.</p>
+<p><strong>Tags:</strong> <a href="/tags#unix">#unix</a></p></article>
 
       
       <p class="backlinks"><span class="bold">Incoming:</span>
           
-          <a href="/">Index</a>
+          <a href="/recent-changes">Recent Changes</a>
           
         </span>
       </p>
