@@ -6,4 +6,4 @@ Attempting to use Auto-Upload on my camera's folders was messy.  It kept uploadi
 
 I found using [FolderSync](https://www.tacit.dk/foldersync) a much better experience.  It let me simply set up bidirectional sync between custom Nextcloud folders and local folders, let me choose cadence for syncing and allowed me to manually trigger a sync.
 
-#self-hosting 
+Tags: #self-hosting 
