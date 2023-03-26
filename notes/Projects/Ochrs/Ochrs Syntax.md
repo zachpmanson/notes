@@ -17,3 +17,11 @@ Some normal text <ochrs:example> some more text
 Currently available Ochrs variables:
 
 <ochrs:ochrs-vars>
+
+## Tags
+
+Ochrs will detect page tags in ochrs:tags if they are written in the following format:
+
+    Tags: #tagname1 #tagname2
+
+These will be collated on the [[tags]] page.
