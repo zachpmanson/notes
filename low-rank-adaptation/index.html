@@ -142,8 +142,13 @@
 <p>the <strong>intrinsic dimensionality</strong> of a space is the number of <em>required</em> pieces of information that we need to describe each object in the space, which may differ from the number of pieces of information that we <em>are</em> using, which we call the <strong>extrinsic dimensionality</strong> of the space</p>
 </blockquote>
 <p><cite>Matthew N. Bernstein</cite>, in his <a href="https://mbernste.github.io/posts/intrinsic_dimensionality/">very good writeup</a></p>
+<p>This in essence means that the dimensionality that is actually needed may be lower than the full dimensionality of the matrix.  A simple example of this is imagining a set of points on a 2D place that exists within a 3D space.  This has 3 extrensic dimensions, but since only 2 are actually needed to describe points, it has 2 intrensic dimensions.</p>
 <h2 id="so-what-is-intrensic-rank">So what is intrensic rank</h2>
-<p>Still don't truly understand.</p>
+<p>I guess intrensic rank is the <em>required</em> maximal number of linearly independent columns in a matrix, as opposited to the extrensic rank which is the number of linearly indepedent columns.</p>
+<blockquote>
+<p>Extrinsic rank is an objective property of a matrix that is based solely on its entries, while intrinsic rank takes into account the structure and patterns of the data, and it can be lower than the extrinsic rank in cases where the data has low-dimensional structure or redundancy.</p>
+</blockquote>
+<p><cite>ChatGPT</cite></p>
 <h2 id="links">Links</h2>
 <ul>
 <li><a href="https://arxiv.org/abs/2106.09685">LoRA: Low-Rank Adaptation of Large Language Models</a>, the original LoRA paper by Microsoft</li>
@@ -151,6 +156,8 @@
 
       
       <p class="backlinks"><span class="bold">Incoming:</span>
+          
+          <a href="/recent-changes">Recent Changes</a>
           
           <a href="/llama-family-tree">LLaMA Family Tree</a>
           
