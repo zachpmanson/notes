@@ -10,6 +10,7 @@ This is something I am currently reading through, so these notes will be particu
 ## Other Courses
 
 - [Stanford CS229](https://cs229.stanford.edu/)
+- [DeepLearning.AI](https://www.deeplearning.ai/)
 
 ## Quotes
 
