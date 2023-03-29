@@ -1,4 +1,4 @@
-OpenAI's conversational LLM, based on GPT-3.
+OpenAI's conversational AI based on the GPT-3/3.5/4 language models.
 
 ## Interesting Articles
 
