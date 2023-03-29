@@ -14,4 +14,8 @@ Notes on various LLMs and the techniques used to make them.
 >
 >It is instantly clear how strong the model is relative to GPT-4.
 
-[<cite>this thread</cite>](https://news.ycombinator.com/item?id=35349853)
+[<cite>this HN thread</cite>](https://news.ycombinator.com/item?id=35349853)
+
+## Links
+
+- [Awesome-LLM](https://github.com/Hannibal046/Awesome-LLM), a curated list of papers about large language models, especially relating to ChatGPT. It also contains frameworks for LLM training, tools to deploy LLM, courses and tutorials about LLM and all publicly available LLM checkpoints and APIs
