@@ -25,3 +25,5 @@ brew install \
 --cask scroll-reverser \
 --cask caffeine
 ```
+
+Tags: #lists 
