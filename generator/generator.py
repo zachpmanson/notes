@@ -84,7 +84,7 @@ def get_tree():
 
         except FileNotFoundError:
             mod_time = 0.0
-            body = "Note content not found"
+            body = ""
         
         tree[node]["body"] = body
         tree[node]["mod_time"] = mod_time

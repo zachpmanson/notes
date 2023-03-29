@@ -8,3 +8,5 @@
 - `dnf`, DaNdiFied YUM, an improved version of YUM
 - Alpaca, a LLM based on LLaMA
 - Dalai, an installer and interface for LLaMA
+
+Tags: #lists
