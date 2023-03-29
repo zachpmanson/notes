@@ -32,7 +32,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: chatgpt</title>
+    <title>notes: llama family tree</title>
   </head>
 
   <body>
@@ -51,71 +51,13 @@
         
           <li>
             
-            <a href="/fediverse">Fediverse</a>
+            <a href="/chatgpt">ChatGPT</a>
             
           </li>
         
           <li>
             
-            <a href="/gecos">GECOS</a>
-            
-          </li>
-        
-          <li>
-            
-            <a href="/generative-ai" class="activated-link">Generative AI</a>
-            
-          </li>
-        
-          <li>
-            
-            <a href="/mistakes">Mistakes</a>
-            
-          </li>
-        
-          <li>
-            
-            <a href="/programs-with-fun-names">Programs with Fun Names</a>
-            
-          </li>
-        
-          <li>
-            
-            <a href="/self-hosting">Self-Hosting</a>
-            
-          </li>
-        
-          <li>
-            
-            <a href="/vi(m)">Vi(m)</a>
-            
-          </li>
-        
-          <li>
-            
-            <a href="/web-development">Web Development</a>
-            
-          </li>
-        
-        </ul>
-        
-      </div>
-      
-
-      
-      <div>
-        
-        <ul>
-        
-          <li>
-            
-            <a href="/chatgpt" class="activated-link">ChatGPT</a>
-            
-          </li>
-        
-          <li>
-            
-            <a href="/llama">LLaMA</a>
+            <a href="/llama" class="activated-link">LLaMA</a>
             
           </li>
         
@@ -142,6 +84,28 @@
       </div>
       
 
+      
+      <div>
+        
+        <ul>
+        
+          <li>
+            
+            <a href="/alpaca">Alpaca</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/llama-family-tree" class="activated-link">LLaMA Family Tree</a>
+            
+          </li>
+        
+        </ul>
+        
+      </div>
+      
+
 
 
       
@@ -149,25 +113,35 @@
     </nav>
     <main>
       <header>
-        <h1>ChatGPT</h1>
+        <h1>LLaMA Family Tree</h1>
       </header>
-      <article><p>OpenAI's conversational LLM, based on GPT-3.</p>
-<h2 id="interesting-articles">Interesting Articles</h2>
+      <article><p>LLaMA's consequential projects.</p>
 <ul>
-<li><a href="https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web">ChatGPT Is a Blurry JPEG of the Web (The New Yorker)</a> - an excellent writeup about ChatGPT's view of the world by Ted Chiang</li>
-<li><a href="https://simonwillison.net/2022/Dec/4/give-me-ideas-for-crimes-to-do/">A new AI game: Give me ideas for crimes to do</a> - an early blog post about discovering ChatGPT jailbreaks by Simon Willison</li>
+<li><a href="https://github.com/ggerganov/llama.cpp">llama.cpp</a> by Georgi Gerganov, a port of Facebook's LLaMA model in C/C++<ul>
+<li><a href="https://github.com/NouamaneTazi/bloomz.cpp">bloomz.cpp</a>, a port of BLOOM built on top of llama.cpp</li>
 </ul>
-<h2 id="useful-resources">Useful Resources</h2>
-<ul>
-<li><a href="https://www.jailbreakchat.com/">Jailbreak Chat</a> - an archive of prompt injections that allow ChatGPT to break out of OpenAI's constraints</li>
+</li>
+<li><a href="https://github.com/cocktailpeanut/dalai">Dalai</a> by @cocktailpeanut, a single command installer to run LLaMa locally with a web interface and API<ul>
+<li>later expanded to include alpaca.cpp</li>
+</ul>
+</li>
+<li><a href="https://crfm.stanford.edu/2023/03/13/alpaca.html">Stanford Alpaca</a>, a model fine-tuned from the LLaMA 7B model on 52K instruction-following demonstrations to function like <a href="/chatgpt">ChatGPT</a><ul>
+<li><a href="https://github.com/tloen/alpaca-lora">alpaca-lora</a>, a recreation of Stanford Alpaca, based on LLaMa 7B and the Stanford instruction training set using <a href="/low-rank-adaptation">Low-Rank Adaptation</a> instruct tuning<ul>
+<li><a href="https://github.com/antimatter15/alpaca.cpp">alpaca.cpp</a>, a fork of llama.cpp that uses alpaca-lora</li>
+</ul>
+</li>
+<li><a href="https://huggingface.co/chavinlo/alpaca-native">alpaca-native</a>, a recreation of Standford Alpaca, based on LLaMA 7B and the Stanford instruction training set using native fine-tuning (not LoRA)<ul>
+<li><a href="https://huggingface.co/ozcur/alpaca-native-4bit">alpaca-native-4bit</a>, a 4-bit quantisation of alpaca-native made with <a href="https://github.com/qwopqwop200/GPTQ-for-LLaMa">GPTQ-for-LLaMA</a> (which uses <a href="https://arxiv.org/abs/2210.17323">GPTQ</a>)</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul></article>
 
       
       <p class="backlinks"><span class="bold">Incoming:</span>
           
-          <a href="/llama-family-tree">LLaMA Family Tree</a>
-          
-          <a href="/react-prompting">ReAct Prompting</a>
+          <a href="/recent-changes">Recent Changes</a>
           
         </span>
       </p>
