@@ -4,6 +4,8 @@ The 52K instruction were generated using 175 instruction prompts entered into te
 
 They did release their training set and process so the model was recreated by other developers.  [alpaca.cpp](https://github.com/antimatter15/alpaca.cpp), a recreation of the Stanford Alpaca model, was created using LoRA instruct tuning and built on top of llama.cpp.  This was then supported within [Dalai](https://github.com/cocktailpeanut/dalai).
 
+[alpaca-native](https://huggingface.co/chavinlo/alpaca-native) is a recreation of Standford Alpaca, based on LLaMA 7B and the Stanford instruction training set using native fine-tuning (not LoRA).  This methodology was used by others to create similar models based the larger LLaMA models (see [[LLaMA Family Tree]]).
+
 ## Links
 
 - [Stanford Alpaca announcment](https://crfm.stanford.edu/2023/03/13/alpaca.html)
