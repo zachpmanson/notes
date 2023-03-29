@@ -78,13 +78,13 @@ def get_tree():
             mod_time = os.path.getmtime(path)
             with open(path, "r") as src_file:
                 body = src_file.read()
-                
+                 
                 # process tags
                 body = re.sub(r"\nTags: (.+)", format_tags, body)
 
         except FileNotFoundError:
             mod_time = 0.0
-            body = ""
+            body = "🌱"
         
         tree[node]["body"] = body
         tree[node]["mod_time"] = mod_time
