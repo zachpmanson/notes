@@ -35,3 +35,5 @@ DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscu
 + *Weltschmerz* (German) - A feeling of sentimental sadness or pessimism; the weariness that comes with knowing that the world is going to let you down no matter what and there’s nothing you can do to stop it
 + *Wonderlanding* - falling down rabbitholes
 + *Yuenyeung* (Cantonese) - coffee with tea
+
+Tags: #lists 
