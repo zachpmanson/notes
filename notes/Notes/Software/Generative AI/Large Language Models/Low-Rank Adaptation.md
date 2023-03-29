@@ -32,10 +32,15 @@ Low-Rank Adaptation (LoRA) is a method that is designed to allow full fine-tunin
 
 <cite>Matthew N. Bernstein</cite>, in his [very good writeup](https://mbernste.github.io/posts/intrinsic_dimensionality/)
 
+This in essence means that the dimensionality that is actually needed may be lower than the full dimensionality of the matrix.  A simple example of this is imagining a set of points on a 2D place that exists within a 3D space.  This has 3 extrensic dimensions, but since only 2 are actually needed to describe points, it has 2 intrensic dimensions.
+
 ## So what is intrensic rank
 
-Still don't truly understand.
+I guess intrensic rank is the *required* maximal number of linearly independent columns in a matrix, as opposited to the extrensic rank which is the number of linearly indepedent columns.
 
+>Extrinsic rank is an objective property of a matrix that is based solely on its entries, while intrinsic rank takes into account the structure and patterns of the data, and it can be lower than the extrinsic rank in cases where the data has low-dimensional structure or redundancy.
+
+<cite>ChatGPT</cite>
 
 ## Links
 

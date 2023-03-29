@@ -37,3 +37,9 @@ Woodie Guthrie's [Anti-copyright notice](https://en.wikipedia.org/wiki/Anti-copy
 Miyazaki said he can feel it every day, the limit of his ability, and he was talking about getting older but i think that's something a lot of us have experienced. Personally I can feel myself straining against the limit of my ability as though it were a brick fucking wall and my true potential, whatever the hell that is, is some amorphous shape on the other side that i can't quite reach.
 
 [<cite>Savannah Brown</cite>](https://youtu.be/jKV-cym4QfQ](https://youtu.be/jKV-cym4QfQ)
+
+---
+
+>In ISO C, file handles (of type FILE) cannot be safely copied as their addresses may be magic
+
+[<cite>Wikipedia - Magic (programming)</cite>](https://en.wikipedia.org/wiki/Magic_(programming))
