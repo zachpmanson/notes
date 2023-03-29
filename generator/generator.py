@@ -63,9 +63,12 @@ def get_tree():
 
             routes[dirname] = root
     
+    global current_node
+    
     # Generate parents and backlinks
     queue = ["Index"]
     for node in queue:
+        current_node = node
         # (tree[node]["children"]).sort()
         # children = sorted(list(tree[node]["children"]))
         tree[node]["backlinks"] = set()
@@ -73,8 +76,17 @@ def get_tree():
         try:
             path = os.path.join(routes[node], node+".md")
             mod_time = os.path.getmtime(path)
+            with open(path, "r") as src_file:
+                body = src_file.read()
+                
+                # process tags
+                body = re.sub(r"\nTags: (.+)", format_tags, body)
+
         except FileNotFoundError:
             mod_time = 0.0
+            body = "Note content not found"
+        
+        tree[node]["body"] = body
         tree[node]["mod_time"] = mod_time
 
         for child in tree[node]["children"]:
@@ -91,15 +103,8 @@ def traverse_tree():
     # generate page bodies and record backlinks
     for node in tree.keys():
         current_node = node
-        try:
-            path = os.path.join(routes[node], node+".md")
-            with open(path, "r") as src_file:
-                text = src_file.read()
-                text = preprocess_markdown(text)
-                body = process_markdown(text)
-        except FileNotFoundError:
-            body = ""
-        tree[node]["body"] = body
+        tree[node]["body"] = preprocess_markdown(tree[node]["body"])
+        tree[node]["body"] = process_markdown(tree[node]["body"])
 
 def generate_pages():
     # actually generate pages
@@ -151,7 +156,7 @@ def generate_sitemap():
     return sitemap_md
 
 def generate_tags():
-
+    global tags_md
     tags_md = ""
     for tag in sorted(tags.keys()):
         pages = tags[tag]
@@ -160,8 +165,6 @@ def generate_tags():
         panel += "\n</details>\n"
 
         tags_md += panel
-
-    return tags_md
 
 def append_bullet(node, depth):
     global sitemap_md
@@ -177,8 +180,7 @@ def preprocess_markdown(text):
     text = re.sub(r"(?<!!)\[\[([^\]]+)?\]\]", format_backlink, text)
     # add images backlink
     text = re.sub(r"!\[\[([^\]]+)?\]\]", "![](/static/media/\\1)", text)
-    # process tags
-    text = re.sub(r"\nTags: (.+)", format_tags, text)
+
     return text
 
 def process_markdown(text):
@@ -274,7 +276,7 @@ ochrs_vars = {
     "md-extensions": lambda: ", ".join([e if isinstance(e, str) else str(type(e).__name__) for e in md_extensions]),
     "recent-edit": lambda i: helpers.format_recent_edit(tree, i),
     "sitemap": generate_sitemap,
-    "tags": generate_tags
+    "tags": lambda: tags_md
 }
 
 # node: {
@@ -290,7 +292,7 @@ tree = {
         "children": set(),
         "body":"",
         "backlinks":set(),
-        "mod_time": 0.0
+        "mod_time": 0.0,
     }
 }
 routes = {
@@ -299,7 +301,7 @@ routes = {
 
 # { tagname: ["link1", "link3"]}
 tags = {}
-
+tags_md = "Tags not generated yet"
 # {node: ["link1", "link2"]}
 # backlinks = {}
 
@@ -323,6 +325,7 @@ if __name__=="__main__":
         if o == "-v":
             VERBOSE = True
     get_tree()
+    generate_tags()
     traverse_tree()
     generate_pages()
 
