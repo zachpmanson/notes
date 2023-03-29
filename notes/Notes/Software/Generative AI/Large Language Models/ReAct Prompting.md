@@ -85,4 +85,4 @@ Bing Sydney does some form of this, where it can execute Bing search queries to 
 	- ReAct prompting in use
 - [Build a GitHub Support Bot with GPT3, LangChain, and Python](https://dagster.io/blog/chatgpt-langchain)
 - [ChatGPT Plugins announcement](https://openai.com/blog/chatgpt-plugins)
-	- a modular way ReAct setup
+	- a modular ReAct setup
