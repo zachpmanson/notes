@@ -18,4 +18,4 @@ Notes on various LLMs and the techniques used to make them.
 
 ## Links
 
-- [Awesome-LLM](https://github.com/Hannibal046/Awesome-LLM), a curated list of papers about large language models, especially relating to ChatGPT. It also contains frameworks for LLM training, tools to deploy LLM, courses and tutorials about LLM and all publicly available LLM checkpoints and APIs
+- [Awesome-LLM](https://github.com/Hannibal046/Awesome-LLM), a curated list of papers about large language models, especially relating to ChatGPT. It also contains frameworks for LLM training, tools to deploy LLM, courses and tutorials about LLM and all publicly available LLM checkpoints and APIs.
