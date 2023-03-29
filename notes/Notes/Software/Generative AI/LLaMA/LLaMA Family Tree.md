@@ -1,6 +1,5 @@
 LLaMA's consequential projects.
 
-
 - [llama.cpp](https://github.com/ggerganov/llama.cpp) by Georgi Gerganov, a port of Facebook's LLaMA model in C/C++
 	- [bloomz.cpp](https://github.com/NouamaneTazi/bloomz.cpp), a port of BLOOM built on top of llama.cpp
 - [Dalai](https://github.com/cocktailpeanut/dalai) by @cocktailpeanut, a single command installer to run LLaMa locally with a web interface and API
