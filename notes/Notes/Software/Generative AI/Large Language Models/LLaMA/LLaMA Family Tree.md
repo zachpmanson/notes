@@ -8,6 +8,6 @@ LLaMA's consequential projects.
 - [Stanford Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html), a model fine-tuned from the LLaMA 7B model on 52K instruction-following demonstrations to function like [[ChatGPT]]
     - [alpaca-lora](https://github.com/tloen/alpaca-lora), a recreation of Stanford Alpaca, based on LLaMA 7B and the Stanford instruction training set using [[Low-Rank Adaptation]] instruct tuning
         - [alpaca.cpp](https://github.com/antimatter15/alpaca.cpp), a fork of llama.cpp that uses alpaca-lora
-        - many children of this who have followed the method for the larger LLaMA models, such as [chansung/alpaca-lore-13B](https://huggingface.co/chansung/alpaca-lora-13b) and [chansung/alpaca-lora-30B](https://huggingface.co/chansung/alpaca-lora-30b)
+        - many children of this who have followed the method for the larger LLaMA models, such as [chansung/alpaca-lora-13B](https://huggingface.co/chansung/alpaca-lora-13b) and [chansung/alpaca-lora-30B](https://huggingface.co/chansung/alpaca-lora-30b)
     - [alpaca-native](https://huggingface.co/chavinlo/alpaca-native), a recreation of Standford Alpaca, based on LLaMA 7B and the Stanford instruction training set using native fine-tuning (not LoRA) 
         - [alpaca-native-4bit](https://huggingface.co/ozcur/alpaca-native-4bit), a 4-bit quantisation of alpaca-native made with [GPTQ-for-LLaMA](https://github.com/qwopqwop200/GPTQ-for-LLaMa) (which uses [GPTQ](https://arxiv.org/abs/2210.17323))
