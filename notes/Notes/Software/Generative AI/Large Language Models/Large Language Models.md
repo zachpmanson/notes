@@ -2,8 +2,9 @@ Notes on various LLMs and the techniques used to make them.
 
 ## LLM Families
 
-![[llm-family-tree-2023-03.png]]
-[Source](https://github.com/michaelthwan/llm_family_chart)
+![](https://raw.githubusercontent.com/pavo-etc/llm-family-tree/master/LLMfamily2023Mar.drawio.png)
+
+[Source](https://github.com/pavo-etc/llm-family-tree)
 
 ## Comparisons 
 
