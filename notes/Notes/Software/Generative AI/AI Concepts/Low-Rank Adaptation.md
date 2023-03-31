@@ -4,6 +4,12 @@
 
 Low-Rank Adaptation (LoRA) is a method that is designed to allow full fine-tuning of existing LLMs without having to (expensively) retrain all the model parameters, and avoids additional inference latency. It works by freezing the model weights of the initial LLM and injecting trainable rank decomcomposition matrices onto each layer of the Transformer architechture. This reduces the number of parameters used in downstream tasks greatly.  This can reduce the memory requirements significantly, and allows "on-par or better" quality than fine-tuning models.
 
+LoRA was initially explored as a technique for use in LLMs but is also applicable to other kinds of models. [It is used](https://replicate.com/blog/lora-faster-fine-tuning-of-stable-diffusion) to fine-tune [[Stable Diffusion]] models faster than other tools like Dreambooth.
+
+>While we focused on Transformer language models, the proposed principles are generally applicable to any neural networks with dense layers.
+
+<cite>Hu et al., [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)</cite>
+
 ##  Injecting trainable rank recomposition matrices?
 
 >LoRA finds a subset of the original weights (about 1%) which can be trained to achieve about the same result as training the whole model while using 100x less compute.
