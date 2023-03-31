@@ -51,19 +51,25 @@
         
           <li>
             
-            <a href="/chatgpt">ChatGPT</a>
+            <a href="/ai-concepts" class="activated-link">AI Concepts</a>
             
           </li>
         
           <li>
             
-            <a href="/llm-concepts" class="activated-link">LLM Concepts</a>
+            <a href="/large-language-models">Large Language Models</a>
             
           </li>
         
           <li>
             
-            <a href="/llama">LLaMA</a>
+            <a href="/practical-deep-learning">Practical Deep Learning</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/stable-diffusion">Stable Diffusion</a>
             
           </li>
         
@@ -80,6 +86,12 @@
           <li>
             
             <a href="/low-rank-adaptation" class="activated-link">Low-Rank Adaptation</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/quantization">Quantization</a>
             
           </li>
         
@@ -108,6 +120,11 @@
 </blockquote>
 <p><cite>Hu et al., <a href="https://arxiv.org/abs/2106.09685">LoRA: Low-Rank Adaptation of Large Language Models</a></cite></p>
 <p>Low-Rank Adaptation (LoRA) is a method that is designed to allow full fine-tuning of existing LLMs without having to (expensively) retrain all the model parameters, and avoids additional inference latency. It works by freezing the model weights of the initial LLM and injecting trainable rank decomcomposition matrices onto each layer of the Transformer architechture. This reduces the number of parameters used in downstream tasks greatly.  This can reduce the memory requirements significantly, and allows "on-par or better" quality than fine-tuning models.</p>
+<p>LoRA was initially explored as a technique for use in LLMs but is also applicable to other kinds of models. <a href="https://replicate.com/blog/lora-faster-fine-tuning-of-stable-diffusion">It is used</a> to fine-tune <a href="/stable-diffusion">Stable Diffusion</a> models faster than other tools like Dreambooth.</p>
+<blockquote>
+<p>While we focused on Transformer language models, the proposed principles are generally applicable to any neural networks with dense layers.</p>
+</blockquote>
+<p><cite>Hu et al., <a href="https://arxiv.org/abs/2106.09685">LoRA: Low-Rank Adaptation of Large Language Models</a></cite></p>
 <h2 id="injecting-trainable-rank-recomposition-matrices">Injecting trainable rank recomposition matrices?</h2>
 <blockquote>
 <p>LoRA finds a subset of the original weights (about 1%) which can be trained to achieve about the same result as training the whole model while using 100x less compute.</p>
@@ -145,9 +162,9 @@
       
       <p class="backlinks"><span class="bold">Incoming:</span>
           
-          <a href="/llama-family-tree">LLaMA Family Tree</a>
-          
           <a href="/recent-changes">Recent Changes</a>
+          
+          <a href="/llama-family-tree">LLaMA Family Tree</a>
           
         </span>
       </p>
