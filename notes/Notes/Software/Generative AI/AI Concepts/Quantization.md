@@ -10,5 +10,4 @@
 
 [<cite>Hugging Face Optimum Documentation</cite>](https://huggingface.co/docs/optimum/concept_guides/quantization)
 
-
-
+Depending on the model size and the level of quantization used, quantization can result in significant improvements in performance without major degradation of output quality.
