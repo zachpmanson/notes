@@ -2,7 +2,7 @@ Notes on various LLMs and the techniques used to make them.
 
 >LLMs are better thought of as "calculators for words" - retrieval of facts is a by-product of how they are trained, but it's not their core competence at all.
 
-[<cite>Simon Willison</cite>](https://news.ycombinator.com/item?id=35396372)
+[<cite>Simon Willison</cite>](https://news.ycombinator.com/item?id=35396372) on HN, which he later [expanded on](https://simonwillison.net/2023/Apr/2/calculator-for-words/)
 
 ## LLM Families
 
