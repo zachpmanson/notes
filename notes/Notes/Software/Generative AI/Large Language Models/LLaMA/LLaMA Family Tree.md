@@ -11,4 +11,5 @@ LLaMA's consequential projects.
         - many children of this who have followed the method for the larger LLaMA models, such as [chansung/alpaca-lora-13B](https://huggingface.co/chansung/alpaca-lora-13b) and [chansung/alpaca-lora-30B](https://huggingface.co/chansung/alpaca-lora-30b)
     - [alpaca-native](https://huggingface.co/chavinlo/alpaca-native), a recreation of Standford Alpaca, based on LLaMA 7B and the Stanford instruction training set using native fine-tuning (not LoRA) 
         - [alpaca-native-4bit](https://huggingface.co/ozcur/alpaca-native-4bit), a 4-bit quantisation of alpaca-native made with [GPTQ-for-LLaMA](https://github.com/qwopqwop200/GPTQ-for-LLaMa) (which uses [GPTQ](https://arxiv.org/abs/2210.17323))
-    - [Vicuna-13B](https://vicuna.lmsys.org/), a model fine-tuned from LLaMA-13B based on 70k conversations from [ShareGPT](https://sharegpt.com/), with a training method based on Alpaca
+    - [Databricks Dolly](https://github.com/databrickslabs/dolly), a model fine-tuned from GPT-J using the Alpaca training set, demonstrating surprisingly high quality instruction following behavior not characteristic of GPT-J
+- [Vicuna-13B](https://vicuna.lmsys.org/), a model fine-tuned from LLaMA-13B based on 70k conversations from [ShareGPT](https://sharegpt.com/), with a training method improving upon Alpaca's
