@@ -7,3 +7,5 @@ Zero-shot prompting is used to signify no examples are provided to a given probl
 <cite>A basic example from [Wikipedia](https://en.wikipedia.org/wiki/Few-shot_learning_(natural_language_processing))</cite>
 
 Chain-of-thought prompting uses this technique extensively.
+
+GPT-3 was the first LLM to exhibit few-shot learning and chain-of-thought reasoning.
