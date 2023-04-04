@@ -19,3 +19,5 @@ The data itself is riddled with mistakes an inconsistencies. "Standard Drinks" i
 [The final script](https://github.com/pavo-etc/alculator/blob/main/science/api.js) is warty and takes about 15 minutes to run, but converts the data to a sane schema.  This script is run daily via GitHub Action, and the new data is directly stored in JSON files and committed to the repo.  This is inefficient, but meant I didn't have to mess around with databases in my deployment.  I do hope to one day set up a proper database for this.
 
 The source code is available on [GitHub](https://github.com/pavo-etc/alculator).
+
+Tags: #nextjs
