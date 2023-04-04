@@ -11,6 +11,7 @@ This is something I am currently reading through, so these notes will be particu
 
 - [Stanford CS229](https://cs229.stanford.edu/)
 - [DeepLearning.AI](https://www.deeplearning.ai/)
+- [List of courses](https://github.com/SkalskiP/courses)
 
 ## Quotes
 
