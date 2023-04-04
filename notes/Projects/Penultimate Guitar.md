@@ -4,4 +4,4 @@ It is built with TypeScript, Next.js, and Tailwind and deployed on Vercel.  It w
 
 The source code is available [here](https://github.com/pavo-etc/penultimate-guitar).  The deployed version can be found [here](https://pg.zachmanson.com).
 
-Tags: #nextjs
+Tags: #nextjs #prisma 
