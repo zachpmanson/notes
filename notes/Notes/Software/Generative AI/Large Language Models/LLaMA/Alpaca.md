@@ -2,7 +2,7 @@ Alpaca is a large language model fine-tuned from the [[LLaMA]] 7B model on 52K i
 
 The 52K instruction were generated using 175 instruction prompts entered into text-davinci-003, costing $600 in OpenAI API fees and $100 in compute for supervised training.  The initial announcement did not release their model weights as they were waiting on Meta to advise them on when and how they should do it, as at the the time the original LLaMA models were only available through leaked torrents.
 
-They did release their training set and process so the model was recreated by other developers.  [alpaca.cpp](https://github.com/antimatter15/alpaca.cpp), a recreation of the Stanford Alpaca model, was created using LoRA instruct tuning and built on top of llama.cpp.  This was then supported within [Dalai](https://github.com/cocktailpeanut/dalai).
+They did release their training set and process so the model was recreated by other developers.  [alpaca.cpp](https://github.com/antimatter15/alpaca.cpp), a recreation of the Stanford Alpaca model, was created using [[Low-Rank Adaptation]] (LoRA) instruct tuning and built on top of llama.cpp.  This was then supported within [Dalai](https://github.com/cocktailpeanut/dalai).
 
 [alpaca-native](https://huggingface.co/chavinlo/alpaca-native) is a recreation of Standford Alpaca, based on LLaMA 7B and the Stanford instruction training set using native fine-tuning (not LoRA).  This methodology was used by others to create similar models based the larger LLaMA models (see [[LLaMA Family Tree]]).
 
