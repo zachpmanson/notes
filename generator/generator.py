@@ -203,9 +203,9 @@ def format_tags(matches):
             tags[tag] = set()
             tags[tag].add(current_node)
         # tree["Tags"]["children"].add(f"tags/{tag}")
-        formatted_tags.append(f"[#{tag}](/tags#{tag})")
+        formatted_tags.append(f'<a href="/tags#{tag}">#{tag}</a>')
 
-    return "\n**Tags:** " + " ".join(formatted_tags)
+    return '\n<p class="backlinks"><span class="bold">Tags:</span> ' + " ".join(formatted_tags) + "</p>"
         
 
 def format_ochrs_var(matches):
