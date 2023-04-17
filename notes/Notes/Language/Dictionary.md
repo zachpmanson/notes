@@ -34,6 +34,10 @@ DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscu
 + *Watashiato* (DoOS) - curiosity about the impact you’ve had on the lives of the people you know, wondering which of your harmless actions or long-forgotten words might have altered the plot of their stories in ways you’ll never get to see.
 + *Weltschmerz* (German) - A feeling of sentimental sadness or pessimism; the weariness that comes with knowing that the world is going to let you down no matter what and there’s nothing you can do to stop it
 + *Wonderlanding* - falling down rabbitholes
++ *Yak shaving*  
+  >You see, yak shaving is what you are doing when you're doing some stupid, fiddly little task that bears no obvious relationship to what you're supposed to be working on, but yet a chain of twelve causal relations links what you're doing to the original meta-task.
+  
+  [<cite>Jeremy H Brown</cite>](https://projects.csail.mit.edu/gsb/old-archive/gsb-archive/gsb2000-02-11.html)
 + *Yuenyeung* (Cantonese) - coffee with tea
 
 Tags: #lists 
