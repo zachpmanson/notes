@@ -24,6 +24,7 @@
 - [Anti-copyright notice - Wikipedia](https://en.wikipedia.org/wiki/Anti-copyright_notice)
 - [Carcinisation - Wikipedia](https://en.wikipedia.org/wiki/Carcinisation) 
 - [Evolutionary game theory - Wikipedia](https://en.wikipedia.org/wiki/Evolutionary_game_theory#Hawk_dove) 
+- [List of lists of lists - Wikipedia](https://en.wikipedia.org/wiki/List_of_lists_of_lists)
 
 Tags: #lists
 
