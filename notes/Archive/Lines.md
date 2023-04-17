@@ -43,3 +43,9 @@ Woodie Guthrie's [Anti-copyright notice](https://en.wikipedia.org/wiki/Anti-copy
 >In ISO C, file handles (of type FILE) cannot be safely copied as their addresses may be magic
 
 [<cite>Wikipedia - Magic (programming)</cite>](https://en.wikipedia.org/wiki/Magic_(programming))
+
+---
+
+>You can't have art without resistance in the materials
+
+<cite>William Morris</cite>
