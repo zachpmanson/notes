@@ -27,6 +27,7 @@ DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscu
 + *Setsunai* (Japanese) - nostalgic/whistful/longing/melancholy/sad/heartache/bittersweet
 + *Shibboleth* (Hebrew) - a custom, principle, or belief distinguishing a particular class or group of people, especially a long-standing one regarded as outmoded or no longer important.
 + *Sonder* (DoOS) - the realization that each random passerby is living a life as vivid and complex as your own
++ *Supplicant* (Latin) - someone who prays to God
 + *Therianthrope* - what lycanthrope pretends to mean; lycanthrope only refers to wolf transformations
 + *Tsundoku* (Japanses) - the stack(s) of books you’ve purchased but haven’t read
 + *Vellichor* (English) - the strange wistfulness of used bookstores
