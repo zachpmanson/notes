@@ -1,4 +1,3 @@
-
 Some napkin maths on the price of the recently released API for ChatGPT, as written by /u/TotalPositivity [here](https://old.reddit.com/r/singularity/comments/11fn0td/the_implications_of_chatgpts_api_cost/) on 2023-03-02.
 
 --- 
