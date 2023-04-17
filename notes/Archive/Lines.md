@@ -49,3 +49,7 @@ Woodie Guthrie's [Anti-copyright notice](https://en.wikipedia.org/wiki/Anti-copy
 >You can't have art without resistance in the materials
 
 <cite>William Morris</cite>
+
+> There’s a famous William Morris quotation that I love: “you can’t have art without resistance in the materials.” It’s wonderful to remember when you’re sweating to turn a roughly-hewn draft into something with a semblance of humanity, that your work wouldn’t be worthwhile if the words didn’t put up a fight.
+
+[<cite>Eva Deverell</cite>](https://www.eadeverell.com/writer-worksheet-wednesday-the-art-of-resistance/)
