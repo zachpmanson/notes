@@ -38,6 +38,7 @@ DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscu
   >You see, yak shaving is what you are doing when you're doing some stupid, fiddly little task that bears no obvious relationship to what you're supposed to be working on, but yet a chain of twelve causal relations links what you're doing to the original meta-task.
   
   [<cite>Jeremy H Brown</cite>](https://projects.csail.mit.edu/gsb/old-archive/gsb-archive/gsb2000-02-11.html)
+
 + *Yuenyeung* (Cantonese) - coffee with tea
 
 Tags: #lists 
