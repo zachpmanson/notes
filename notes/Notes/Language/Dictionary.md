@@ -1,4 +1,3 @@
-
 DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscuresorrows.com/).
 
 + *Apricity* (English) - the warmth of the sun in winter
@@ -6,6 +5,7 @@ DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscu
 + *Avuncular* - kind and friendly towards a younger or less experienced person.
 + *Complect* - intertwine, embrace especially; to plait together; interweave.
 + *Gloaming* - twilight; dusk
++ *[[gruntle]]* - to put in a good humor
 + *Ichor* - God's equivalent for blood
 + *Juvenioa* (English) - The fear or hostility directed by an older generation toward a younger one, or toward youth culture in general.
 + *Kaboomlaut* ([mcculley](https://news.ycombinator.com/item?id=34461282)) - a unicode character that breaks a piece of software
