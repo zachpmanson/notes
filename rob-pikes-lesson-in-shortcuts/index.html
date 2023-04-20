@@ -32,7 +32,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: price of chatgpt's api vs human</title>
+    <title>notes: rob pike's lesson in shortcuts</title>
   </head>
 
   <body>
@@ -135,13 +135,13 @@
         
           <li>
             
-            <a href="/price-of-chatgpt&#39;s-api-vs-human" class="activated-link">Price of ChatGPT's API vs Human</a>
+            <a href="/price-of-chatgpts-api-vs-human">Price of ChatGPT's API vs Human</a>
             
           </li>
         
           <li>
             
-            <a href="/rob-pike&#39;s-lesson-in-shortcuts">Rob Pike's Lesson in Shortcuts</a>
+            <a href="/rob-pikes-lesson-in-shortcuts" class="activated-link">Rob Pike's Lesson in Shortcuts</a>
             
           </li>
         
@@ -165,7 +165,7 @@
         
           <li>
             
-            <a href="/the-cab-ride-i&#39;ll-never-forget">The Cab Ride I'll Never Forget</a>
+            <a href="/the-cab-ride-ill-never-forget">The Cab Ride I'll Never Forget</a>
             
           </li>
         
@@ -219,21 +219,31 @@
     </nav>
     <main>
       <header>
-        <h1>Price of ChatGPT's API vs Human</h1>
+        <h1>Rob Pike's Lesson in Shortcuts</h1>
       </header>
-      <article><p>Some napkin maths on the price of the recently released API for ChatGPT, as written by /u/TotalPositivity <a href="https://old.reddit.com/r/singularity/comments/11fn0td/the_implications_of_chatgpts_api_cost/">here</a> on 2023-03-02.</p>
+      <article><p>As written by Rob Pike on <a href="https://web.archive.org/web/20180827160401/https://plus.google.com/+RobPikeTheHuman/posts/R58WgWwN9jp">2012-08-12 on Google Plus</a>.</p>
 <hr />
-<h1 id="the-implication-of-chatgpts-api-cost">The Implication of ChatGPT's API Cost</h1>
-<p>As many of us have seen, the ChatGPT API was released today. It is priced at 500,000 tokens per dollar. There have been multiple attempts to quantify the IQ of ChatGPT (which is obviously fraught, because IQ is very arbitrary), but I have seen low estimates of 83 up to high estimates of 147.</p>
-<p>Hopefully this doesn’t cause too much of an argument, but I’m going to classify it as “good at some highly specific tasks, horrible at others”. However, it does speak sections of thousands of languages (try Egyptian Hieroglyphics, Linear A, or Sumerian Cuneiform for a window to the origins of writing itself 4000-6000 years ago). It also has been exposed to most of the scientific and technical knowledge that exists.</p>
-<p>To me, it is essentially a very good “apprentice” level of intelligence. I wouldn’t let it rewire my house or remove my kidney, yet it would be better than me personally at advising on those things in a pinch where a professional is not available.</p>
-<p>Back to costs. So, according to some quick googling, a human thinks at roughly 800 words per minute. We could debate this all day, but it won’t really effect the math. A word is about 1.33 tokens. This means that a human, working diligently 40 hour weeks for a year, fully engaged, could produce about: 52 * 40 * 60 * 800 * 1.33 = 132 million tokens per year of thought. This would cost $264 out of ChatGPT.</p>
-<p>Taking this further, the global workforce of about 3.32 billion people could produce about 440 quadrillion tokens per year employed similarly. This would cost about $882 billion dollars.</p>
-<p>Let me say that again. You can now purchase an intellectual workforce the size of the entire planetary economy, maximally employed and focused, for less than the US military spends per year.</p>
-<p>I’ve lurked here a very long time, and I know this will cause some serious fights, but to me the slow exponential from the formation of life to yesterday just went hyperbolic.</p>
-<p>ChatGPT and its ilk may takes centuries to be employed efficiently, or it may be less than years. But, even if all research stopped tomorrow, it is as if a nation the size of India and China combined dropped into the Pacific this morning, full of workers, who all work remotely, always pay attention, and only cost $264 / (52 * 40) = $0.13 per hour.</p>
-<p>Whatever future you’ve been envisioning, today may forever be the anniversary of all of it.</p></article>
+<p>A lesson in shortcuts.  </p>
+<p>Long ago, as the design of the Unix file system was being worked out, the entries . and .. appeared, to make navigation easier. I'm not sure but I believe .. went in during the Version 2 rewrite, when the file system became hierarchical (it had a very different structure early on).  When one typed ls, however, these files appeared, so either Ken or Dennis added a simple test to the program. It was in assembler then, but the code in question was equivalent to something like this:</p>
+<p><code>if (name[0] == '.') continue;</code></p>
+<p>This statement was a little shorter than what it should have been, which is  </p>
+<p><code>if (strcmp(name, ".") == 0 || strcmp(name, "..") == 0) continue;</code></p>
+<p>but hey, it was easy.  </p>
+<p>Two things resulted.  </p>
+<p>First, a bad precedent was set. A lot of other lazy programmers introduced bugs by making the same simplification. Actual files beginning with periods are often skipped when they should be counted.  </p>
+<p>Second, and much worse, the idea of a "hidden" or "dot" file was created. As a consequence, more lazy programmers started dropping files into everyone's home directory. I don't have all that much stuff installed on the machine I'm using to type this, but my home directory has about a hundred dot files and I don't even know what most of them are or whether they're still needed. Every file name evaluation that goes through my home directory is slowed down by this accumulated sludge.  </p>
+<p>I'm pretty sure the concept of a hidden file was an unintended consequence. It was certainly a mistake.  </p>
+<p>How many bugs and wasted CPU cycles and instances of human frustration (not to mention bad design) have resulted from that one small shortcut about  40 years ago?  </p>
+<p>Keep that in mind next time you want to cut a corner in your code.  </p>
+<p>(For those who object that dot files serve a purpose, I don't dispute that but counter that it's the files that serve the purpose, not the convention for their names. They could just as easily be in <code>$HOME/cfg</code> or <code>$HOME/lib</code>, which is what we did in Plan 9, which had no dot files. Lessons can be learned.)</p></article>
 
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+          
+          <a href="/dotfiles-being-hidden">Dotfiles Being Hidden</a>
+          
+        </span>
+      </p>
       
         
 
