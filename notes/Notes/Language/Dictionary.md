@@ -4,7 +4,7 @@ DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscu
 + *Avarice* (Middle English) - extreme greed for wealth or material gain.
 + *Avuncular* - kind and friendly towards a younger or less experienced person.
 + *Complect* - intertwine, embrace especially; to plait together; interweave.
-+ *Enshittification* ([Pluralistic](https://pluralistic.net/2023/01/21/potemkin-ai/#hey-guys)) - "how platforms die: first, they are good to their users; then they abuse their users to make things better for their business customers; finally, they abuse those business customers to claw back all the value for themselves. Then, they die.", 
++ *Enshittification* ([Pluralistic](https://pluralistic.net/2023/01/21/potemkin-ai/#hey-guys)) - "how platforms die: first, they are good to their users; then they abuse their users to make things better for their business customers; finally, they abuse those business customers to claw back all the value for themselves. Then, they die."
 + *Gloaming* - twilight; dusk
 + *[[Gruntle]]* - to put in a good humor
 + *Ichor* - God's equivalent for blood
