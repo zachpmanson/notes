@@ -8,11 +8,11 @@ two spaces at the end.
 
 >This is a quote
 
-<cite>Zach Manson</cite>
+-- Zach Manson
 
 >Citation for this quote is a hyperlink
 
-[<cite>Zach Manson</cite>](https://zachmanson.com)
+-- [Zach Manson](https://zachmanson.com)
 
 ---
 

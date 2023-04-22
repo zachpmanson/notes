@@ -2,7 +2,7 @@ The process of making computers learn to solve problems themselves, based on exa
 
 >Suppose we arrange for some automatic means of testing the effectiveness of any current weight assignment in terms of actual performance and provide a mechanism for altering the weight assignment so as to maximize the performance. We need not go into the details of such a procedure to see that it could be made entirely automatic and to see that a machine so programmed would "learn" from its experience.
 
-<cite>Arther Samuel, Artificial Intelligence: A Frontier of Automation</cite>
+-- Arther Samuel, Artificial Intelligence: A Frontier of Automation
 
 Important concepts:
 

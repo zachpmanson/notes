@@ -4,7 +4,7 @@ Zero-shot prompting is used to signify no examples are provided to a given probl
 
 > Review: This movie sucks. Sentiment: negative. Review: I love this movie. Sentiment:
 
-<cite>A basic example from [Wikipedia](https://en.wikipedia.org/wiki/Few-shot_learning_(natural_language_processing))</cite>
+-- A basic example from [Wikipedia](https://en.wikipedia.org/wiki/Few-shot_learning_(natural_language_processing))
 
 Chain-of-thought prompting uses this technique extensively.
 

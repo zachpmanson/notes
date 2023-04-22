@@ -2,13 +2,13 @@ LLaMA is "a collection of foundation language models ranging from 7B to 65B para
 
 > We introduce LLaMA, a collection of foundation language models ranging from 7B to 65B parameters. We train our models on trillions of tokens, and show that it is possible to train state-of-the-art models using publicly available datasets exclusively, without resorting to proprietary and inaccessible datasets. In particular, LLaMA-13B outperforms GPT-3 (175B) on most benchmarks, and LLaMA-65B is competitive with the best models, Chinchilla-70B and PaLM-540B. We release all our models to the research community.
 
-[<cite>LLaMA: Open and Efficient Foundation Language Models (Abstract)</cite>](https://research.facebook.com/publications/llama-open-and-efficient-foundation-language-models/)
+-- [LLaMA: Open and Efficient Foundation Language Models (Abstract)](https://research.facebook.com/publications/llama-open-and-efficient-foundation-language-models/)
 
 It was [announced](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/) and [published](https://research.facebook.com/publications/llama-open-and-efficient-foundation-language-models/) on 2023-02-24 and distributed to selected researchers not long after that.  There were several variants of the model with 7B, 13B, 33B, and 65B parameters.
 
 > In a totally cyberpunk move, within a few days of the release, someone [submitted this PR](https://github.com/facebookresearch/llama/pull/73) to the LLaMA repository linking to an unofficial BitTorrent download link for the model files!
 
-[<cite>Simon Willison</cite>](https://simonwillison.net/2023/Mar/11/llama/)
+-- [Simon Willison](https://simonwillison.net/2023/Mar/11/llama/)
 
 Simon Willison has interesting writeups on LLaMA and early responses to it:
 

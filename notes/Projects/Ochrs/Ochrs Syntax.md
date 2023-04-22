@@ -6,6 +6,10 @@ Ochrs has a few additions on top of normal [Python Markdown](https://python-mark
 
 Most of these are officially supported, some are from [pymdownx](https://facelessuser.github.io/pymdown-extensions/), and some are from the [third party extension list](https://github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions).
 
+### Citations
+
+CiteExtentions turns `-- Name Here`  into `<cite>Name here</cite>`. 
+
 ## Ochrs Variables
 
 There are also run-time variables that you have access to on all pages.  The list of extensions above is one of these, generated at run-time by Ochrs.  The format to insert one of these variables is:
@@ -25,3 +29,4 @@ Ochrs will detect page tags in ochrs:tags if they are written in the following f
     Tags: #tagname1 #tagname2
 
 These will be collated on the [[tags]] page.
+
