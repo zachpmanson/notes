@@ -8,13 +8,21 @@ def sanitize_anchor(anchor):
     return clean_anchor
 
 def sanitize_url(url):
-    url = url.lower()
-    if url == "index":
+    clean_url = url.lower()
+
+    if clean_url == "index":
         clean_url = ""
-    elif url == "404":
+    elif clean_url == "404":
         clean_url = "404.html"
     else:
-        clean_url = url.replace(" ", "-").replace('"', '')
+        subs = {
+            " ":"-",
+            '"':"",
+            "'":"",
+            ",":""
+        }   
+        for key,value in subs.items():
+            clean_url = clean_url.replace(key, value)
         
     return clean_url
 

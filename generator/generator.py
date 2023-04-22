@@ -7,6 +7,7 @@ import sys
 import jinja2
 import markdown
 from markdown.extensions.codehilite import CodeHiliteExtension
+from extensions import CiteExtension
 
 import helpers
 
@@ -260,6 +261,7 @@ md_extensions = [
     'toc',
     'pymdownx.superfences',
     'markdown_checklist.extension',
+    CiteExtension(),
 ]
 
 ignore_names = [
