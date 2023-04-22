@@ -50,14 +50,11 @@ More on this on the [Creative Commons site](https://creativecommons.org/2004/04/
 
 >You can't have art without resistance in the materials
 
-<<<<<<< Updated upstream
-<cite>William Morris</cite>
+-- William Morris
 
 ---
 
 >The only technology that you need is deadlines.
 
 <cite>Paul Ford</cite>, [here](https://aboard.com/podcast-episode-2-failure/) (allegedly, I came across the quote [here](https://blog.jim-nielsen.com/2023/deadlines-as-technology/))
-=======
--- William Morris
->>>>>>> Stashed changes
+
