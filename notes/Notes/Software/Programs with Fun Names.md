@@ -9,5 +9,6 @@
 - Alpaca, a LLM based on LLaMA
 - Dalai, an installer and interface for LLaMA
 - APL, A Programming Language
+- Lebab, a transpiler from ES5 code to ES6/ES7, the opposite of Babel
 
 Tags: #lists
