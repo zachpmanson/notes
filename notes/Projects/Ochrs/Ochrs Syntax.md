@@ -8,7 +8,7 @@ Most of these are officially supported, some are from [pymdownx](https://faceles
 
 ### Citations
 
-CiteExtentions turns `-- Name Here`  into `<cite>Name here</cite>`. 
+CiteExtention turns `-- Name Here`  into `<cite>Name here</cite>`. 
 
 ## Ochrs Variables
 
