@@ -32,7 +32,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: index</title>
+    <title>notes: limitations of machine learning</title>
   </head>
 
   <body>
@@ -45,30 +45,26 @@
       
 
       
-
-      
-
-
-
-      
       <div>
         
         <ul>
         
           <li>
-            <a href="/archive">Archive</a>
+            
+            <a href="/machine-learning" class="activated-link">Machine Learning</a>
+            
           </li>
         
           <li>
-            <a href="/meta">Meta</a>
+            
+            <a href="/neural-networks">Neural Networks</a>
+            
           </li>
         
           <li>
-            <a href="/notes">Notes</a>
-          </li>
-        
-          <li>
-            <a href="/projects">Projects</a>
+            
+            <a href="/pytorch">PyTorch</a>
+            
           </li>
         
         </ul>
@@ -76,15 +72,48 @@
       </div>
       
 
+      
+      <div>
+        
+        <ul>
+        
+          <li>
+            
+            <a href="/limitations-of-machine-learning" class="activated-link">Limitations of Machine Learning</a>
+            
+          </li>
+        
+        </ul>
+        
+      </div>
+      
+
+
+
+      
+
     </nav>
     <main>
       <header>
-        <h1>Index</h1>
+        <h1>Limitations of Machine Learning</h1>
       </header>
-      <article><p>This site is an archive and collection of my personal notes.  This is automatically generated with <a href="/ochrs">Ochrs</a> and is changing constantly, unlike my <a href="https://zachmanson.com">main site</a> which should stay relatively stable.  The goal of this is to <a href="https://notes.andymatuschak.org/Work_with_the_garage_door_up">learn</a> <a href="https://www.swyx.io/learn-in-public">with</a> <a href="https://notes.nicolevanderhoeven.com/Learning+in+public">the garage</a> <a href="https://notes.nicolevanderhoeven.com/Working+with+the+garage+door+up">door up</a>.</p>
-<p>The <a href="/404.html">sitemap</a> shows the full wiki structure, currently containing 125 pages. See the list of <a href="/recent-changes">recent changes</a> or the list of <a href="/tags">tags</a>.</p>
-<p><a href="/domain-based-link-colours">Purple links</a> are internal, <a href="https://en.wikipedia.org/wiki/Magic_(programming)">pink links</a> point to sites on other domains.  The site <a href="https://github.com/pavo-etc/notes">source</a> is editable <a href="https://github.dev/pavo-etc/notes/">here</a>.</p>
-<p>I don't like reading things I think I could write myself, and I don't like writing things I wouldn't read myself.  Hopefully this helps me get over that.</p></article>
+      <article><ul>
+<li>a model cannot be created without input data</li>
+<li>a model can only learn based on patterns found in input data</li>
+<li>input data must be labelled</li>
+<li>models predictions will reflect existing biases in the data<ul>
+<li>a predictive policing model based on past arrest data doesn't predict crime, it predicts arrests</li>
+<li>existing biases in arrests will be perpetuated</li>
+</ul>
+</li>
+<li>feedback loops<ul>
+<li>when model results influence future model training, existing biases will be amplified</li>
+<li>when predictive policing model is deployed nad used, additional arrests may be focused on areas that the model already over-emphasised</li>
+<li>feeding this back into future training exacerbates the problem</li>
+</ul>
+</li>
+<li></li>
+</ul></article>
 
       
       <p class="backlinks"><span class="bold">Incoming:</span>
@@ -98,14 +127,6 @@
 
 
       
-        
-        <h2><a href="/archive">Archive</a></h2>
-        
-        <h2><a href="/meta">Meta</a></h2>
-        
-        <h2><a href="/notes">Notes</a></h2>
-        
-        <h2><a href="/projects">Projects</a></h2>
         
       
 

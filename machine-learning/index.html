@@ -109,6 +109,18 @@
 
 
       
+      <div>
+        
+        <ul>
+        
+          <li>
+            <a href="/limitations-of-machine-learning">Limitations of Machine Learning</a>
+          </li>
+        
+        </ul>
+        
+      </div>
+      
 
     </nav>
     <main>
@@ -120,10 +132,11 @@
 <p>Suppose we arrange for some automatic means of testing the effectiveness of any current weight assignment in terms of actual performance and provide a mechanism for altering the weight assignment so as to maximize the performance. We need not go into the details of such a procedure to see that it could be made entirely automatic and to see that a machine so programmed would "learn" from its experience.</p>
 </blockquote>
 <p><cite> Arther Samuel, Artificial Intelligence: A Frontier of Automation</cite></p>
-<p>Important concepts:</p>
+<h2 id="important-concepts">Important concepts</h2>
 <ul>
 <li>"weight assignment"<ul>
 <li>weights are variables, assignments are the values</li>
+<li>weights are sometimes also refered to as parameters</li>
 </ul>
 </li>
 <li>weight assignment has "actual performance"<ul>
@@ -136,15 +149,76 @@
 <li>can compare two versions performance and move weights closer to the better performing model</li>
 </ul>
 </li>
+<li>results != performances<ul>
+<li>results are the outputs<ul>
+<li>results are also called <strong>predictions</strong></li>
 </ul>
-<p><img alt="" src="/static/media/machine-learning.png" /></p></article>
+</li>
+<li>performance is the quality of outputs<ul>
+<li>measure of performance is called <strong>loss</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>classification model is one that predicts a discrete category</li>
+<li>regression model is one that predicts &gt;=1 numeric qualities<ul>
+<li>do not use <em>regression</em> to refer to linear regression models</li>
+</ul>
+</li>
+<li>"overfitting" can occur when a model is trained for too long, and it starts to memorize the input data too precisely, rather than determining generalised rules</li>
+<li>validation set is the subset of all labelled data that is seperated from the training set, used for measuring the accuracy of the model</li>
+<li>model architecture is the functional form of a model</li>
+<li>metric is a function that measures the quality of a models predictions using the validation set<ul>
+<li>a simple example is the error rate of a classifier</li>
+</ul>
+</li>
+<li>metric != loss<ul>
+<li>metric is designed for human consumption and review of a model<ul>
+<li>ideally this is as close to the end task as possible</li>
+</ul>
+</li>
+<li>loss is a measure that allows a training system to update its model weights automatically</li>
+<li>they may be the same, they may not be</li>
+</ul>
+</li>
+<li>"epochs", which are the number of times the training system runs on each label-value pair in the dataset</li>
+<li>transfer learning<ul>
+<li>when working with a pretrained model and using it for a different task to what it was originally trained for</li>
+</ul>
+</li>
+<li>fine tuning is a transfer learning technique of additionally training a pretrained model with further data</li>
+</ul>
+<p>Definitions from Practical Deep Learning Glossary, ch. 1:</p>
+<p>| Term | Meaning |
+| ---- | ------- |
+|Label | The data that we're trying to predict, such as "dog" or "cat"
+|Architecture | The <em>template</em> of the model that we're trying to fit; the actual mathematical function that we're passing the input data and parameters to
+|Model | The combination of the architecture with a particular set of parameters
+|Parameters | The values in the model that change what task it can do, and are updated through model training
+|Fit | Update the parameters of the model such that the predictions of the model using the input data match the target labels
+|Train | A synonym for <em>fit</em>
+|Pretrained model | A model that has already been trained, generally using a large dataset, and will be fine-tuned
+|Fine-tune | Update a pretrained model for a different task
+|Epoch | One complete pass through the input data
+|Loss | A measure of how good the model is, chosen to drive training via SGD
+|Metric | A measurement of how good the model is, using the validation set, chosen for human consumption
+|Validation set | A set of data held out from training, used only for measuring how good the model is
+|Training set | The data used for fitting the model; does not include any data from the validation set
+|Overfitting | Training a model in such a way that it <em>remembers</em> specific features of the input data, rather than generalizing well to data not seen during training
+|CNN | Convolutional neural network; a type of neural network that works particularly well for computer vision tasks</p>
+<p>The training loop:</p>
+<p><img alt="" src="/static/media/machine-learning.png" /></p>
+<blockquote>
+<p><strong>Overfitting is the single most important and challenging issue</strong> when training for all machine learning practitioners, and all algorithms</p>
+</blockquote>
+<p><cite> Practical Deep Learning, ch. 1</cite></p></article>
 
       
       <p class="backlinks"><span class="bold">Incoming:</span>
           
-          <a href="/recent-changes">Recent Changes</a>
-          
           <a href="/neural-networks">Neural Networks</a>
+          
+          <a href="/recent-changes">Recent Changes</a>
           
         </span>
       </p>
@@ -153,6 +227,8 @@
 
 
       
+        
+        <h2><a href="/limitations-of-machine-learning">Limitations of Machine Learning</a></h2>
         
       
 
