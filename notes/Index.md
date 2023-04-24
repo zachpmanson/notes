@@ -4,5 +4,4 @@ The [[404|sitemap]] shows the full wiki structure, currently containing <ochrs:p
 
 [[Domain Based Link Colours|Purple links]] are internal, [pink links](https://en.wikipedia.org/wiki/Magic_(programming)) point to sites on other domains.  The site [source](https://github.com/pavo-etc/notes) is editable [here](https://github.dev/pavo-etc/notes/).
 
-
-
+I don't like reading things I think I could write myself, and I don't like writing things I wouldn't read myself.  Hopefully this helps me get over that.
