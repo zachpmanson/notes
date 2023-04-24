@@ -1,0 +1,11 @@
+- a model cannot be created without input data
+- a model can only learn based on patterns found in input data
+- input data must be labelled
+- models predictions will reflect existing biases in the data
+	- a predictive policing model based on past arrest data doesn't predict crime, it predicts arrests
+	- existing biases in arrests will be perpetuated
+- feedback loops
+	- when model results influence future model training, existing biases will be amplified
+	- when predictive policing model is deployed nad used, additional arrests may be focused on areas that the model already over-emphasised
+	- feeding this back into future training exacerbates the problem
+- 

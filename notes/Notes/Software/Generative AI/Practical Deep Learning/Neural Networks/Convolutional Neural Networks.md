@@ -1,0 +1,1 @@
+Convolutional neural networks are a model architecture that is used for computer vision models, inspired by how human vision works.
