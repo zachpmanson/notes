@@ -58,3 +58,8 @@ More on this on the [Creative Commons site](https://creativecommons.org/2004/04/
 
 -- Paul Ford, [here](https://aboard.com/podcast-episode-2-failure/) (allegedly, I came across the quote [here](https://blog.jim-nielsen.com/2023/deadlines-as-technology/))
 
+---
+
+>Immolation is part of burning bridges
+
+-- [/u/degustibus](https://www.reddit.com/r/reddit.com/comments/1octb/reddit_cofounder_aaron_swartz_discusses_how_he/c1oebd/)
