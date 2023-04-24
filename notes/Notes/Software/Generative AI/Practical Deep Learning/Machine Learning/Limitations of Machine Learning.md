@@ -8,4 +8,3 @@
 	- when model results influence future model training, existing biases will be amplified
 	- when predictive policing model is deployed nad used, additional arrests may be focused on areas that the model already over-emphasised
 	- feeding this back into future training exacerbates the problem
-- 
