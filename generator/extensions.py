@@ -2,7 +2,6 @@ from markdown.inlinepatterns import InlineProcessor
 from markdown.extensions import Extension
 import xml.etree.ElementTree as etree
 
-
 class CiteInlineProcessor(InlineProcessor):
     def handleMatch(self, m, data):
         el = etree.Element('cite')
