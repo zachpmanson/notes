@@ -2,6 +2,8 @@ Notes of fast.ai's course [*Practical Deep Learning*](https://course.fast.ai/).
 
 This is something I am currently reading through, so these notes will be particularly messy.
 
+I have currently read up to ch. 1, "Let's move on to something much less sexy, but perhaps significantly more widely commercially useful: building models from plain _tabular_ data.".
+
 ## Links
 
 - [Course materials](https://course.fast.ai/)
