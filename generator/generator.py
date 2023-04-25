@@ -259,6 +259,7 @@ md_extensions = [
     CodeHiliteExtension(guess_lang=False),
     'md_in_html',
     'toc',
+    'tables',
     'pymdownx.superfences',
     'markdown_checklist.extension',
     CiteExtension(),
