@@ -4,7 +4,7 @@ It is built with TypeScript, Next.js, and Tailwind and deployed on Vercel.  It w
 
 Features include:
 
-- importing Spotify playlists, will find chords for all songs in playlist
+- importing Spotify playlists, will find the highest rated chords for all songs in playlist
 - transposing
 - autoscrolling
 - saving tabs to home
