@@ -17,6 +17,8 @@ I have currently read up to ch. 1, "Let's move on to something much less sexy, b
 
 ## Quotes
 
+Might categorise these later
+
 >The hardest part of deep learning is artisanal: how do you know if you've got enough data, whether it is in the right format, if your model is training properly, and, if it's not, what you should do about it?
 
 -- Practical Deep Learning, ch. 1

@@ -26,6 +26,7 @@
 - [Evolutionary game theory](https://en.wikipedia.org/wiki/Evolutionary_game_theory#Hawk_dove) 
 - [List of lists of lists](https://en.wikipedia.org/wiki/List_of_lists_of_lists)
 - [Eternal September](https://en.wikipedia.org/wiki/Eternal_September)
+- [Bus Factor](https://en.wikipedia.org/wiki/Bus_factor)
 
 Tags: #lists
 
