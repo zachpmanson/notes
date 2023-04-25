@@ -154,3 +154,27 @@ cite::before {
 .inline {
   display: inline;
 }
+
+table {
+  border-spacing: 0;
+  display: block;
+  overflow-x: auto;
+  text-align: left;
+  width: 100%;
+}
+
+td,
+th {
+  border-bottom: 0.1rem solid var(--dark-blue);
+  padding: 0.5rem;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  padding-left: 0;
+}
+
+th:nth-last-child(1),
+td:nth-last-child(1) {
+  padding-right: 0;
+}
