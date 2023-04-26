@@ -1,5 +1,6 @@
 DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscuresorrows.com/).
 
++ *Accrete* - grow by accumulation or coalescence
 + *Apricity* (English) - the warmth of the sun in winter
 + *Avarice* (Middle English) - extreme greed for wealth or material gain.
 + *Avuncular* - kind and friendly towards a younger or less experienced person.
