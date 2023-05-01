@@ -9,6 +9,7 @@ DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscu
 + *Gloaming* - twilight; dusk
 + *[[Gruntle]]* - to put in a good humor
 + *Ichor* - God's equivalent for blood
++ *Impresario* - a person who organizes and often finances concerts, plays, or operas
 + *Juvenioa* (English) - The fear or hostility directed by an older generation toward a younger one, or toward youth culture in general.
 + *Kaboomlaut* ([mcculley](https://news.ycombinator.com/item?id=34461282)) - a unicode character that breaks a piece of software
 + *Kenja Taimu* (Japanese) - post-jerk clarity / wiseman time
