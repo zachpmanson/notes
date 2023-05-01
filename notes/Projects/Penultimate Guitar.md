@@ -5,11 +5,14 @@ It is built with TypeScript, Next.js, and Tailwind and deployed on Vercel.  It w
 Features include:
 
 - importing Spotify playlists, will find the highest rated chords for all songs in playlist
+- chord tooltips
 - transposing
 - autoscrolling
 - saving tabs to home
 - organising saved tabs into folders
 
 The source code is available [here](https://github.com/pavo-etc/penultimate-guitar).  The deployed version can be found [here](https://pg.zachmanson.com).
+
+Chord tooltips are only possible through [chords-db](https://github.com/tombatossals/chords-db) and [react-chords](https://github.com/tombatossals/react-chords), both by  David Rubert.
 
 Tags: #nextjs #prisma 
