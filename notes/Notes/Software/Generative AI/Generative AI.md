@@ -11,3 +11,4 @@ Source: [AI / ML / Transformer Models Timeline](https://ai.v-gar.de/ml/transform
 ## Links
 
 - [AI & Data Today's AI Glossary](https://www.aidatatoday.com/ai-glossary/)
+- [The Little Book of Deep Learning](https://fleuret.org/public/lbdl.pdf)
