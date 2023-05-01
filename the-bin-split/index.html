@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/styles/colors.css" />
+    <link rel="stylesheet" href="/static/styles/global.css" />
+    <link rel="stylesheet" href="/static/styles/code.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/static/icon/site.webmanifest" />
+    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+    <meta name="theme-color" content="#282A36" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>notes: the bin split</title>
+  </head>
+
+  <body>
+     <nav>
+      <div>
+        <a href="/">
+          <img src="/static/icon/icon.png" alt="notes" height="100">
+        </a>
+      </div>
+      
+
+      
+      <div>
+        
+        <ul>
+        
+          <li>
+            
+            <a href="/fiction">Fiction</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/folklore" class="activated-link">Folklore</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/lines">Lines</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/links">Links</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/problems">Problems</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/templates">Templates</a>
+            
+          </li>
+        
+        </ul>
+        
+      </div>
+      
+
+      
+      <div>
+        
+        <details><summary>20 siblings</summary>
+        
+        <ul>
+        
+          <li>
+            
+            <a href="/alice-in-modeland">Alice in Modeland</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/aliens-and-calendars">Aliens and Calendars</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/bill-gates-tries-to-install-windows-movie-maker">Bill Gates Tries To Install Windows Movie Maker</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/competing-with-gpt">Competing with GPT</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/do-things-tell-people">Do Things, Tell People</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/pocket-veto">Pocket Veto</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/price-of-chatgpts-api-vs-human">Price of ChatGPT's API vs Human</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/rob-pikes-lesson-in-shortcuts">Rob Pike's Lesson in Shortcuts</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/sre-threats">SRE Threats</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/superstitious-encoding">Superstitious Encoding</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/the-bitter-lesson">The Bitter Lesson</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/the-cab-ride-ill-never-forget">The Cab Ride I'll Never Forget</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/the-case-of-the-500-mile-email">The Case of the 500-Mile Email</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/the-crawford-principles">The Crawford Principles</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/the-damned-can-now-play-three-chords">The Damned Can Now Play Three Chords</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/the-nazi-bar-problem">The Nazi Bar Problem</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/the-bin-split" class="activated-link">The bin Split</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/virtues-of-a-good-programmer">Virtues of a Good Programmer</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/worse-is-better">Worse is Better</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/yak-shaving">Yak Shaving</a>
+            
+          </li>
+        
+        </ul>
+        
+        </details>
+        
+      </div>
+      
+
+
+
+      
+
+    </nav>
+    <main>
+      <header>
+        <h1>The bin Split</h1>
+      </header>
+      <article><p><a href="http://landley.net/">Rob Landley</a>'s explanation of the bin, sbin, usr/bin, usr/sbin split, taken from the <a href="http://lists.busybox.net/pipermail/busybox/2010-December/074114.html">busybox mailing list</a>.</p>
+<p>Subject:</p>
+<hr />
+<div class="highlight"><pre><span></span><code>From: Rob Landley &lt;rob at landley.net&gt;
+Subject: Understanding the bin, sbin, usr/bin , usr/sbin split 
+Date: Thu Dec 9 15:45:39 UTC 2010 
+
+On Tuesday 30 November 2010 15:58:00 David Collier wrote:
+&gt; I see that busybox spreads it&#39;s links over these 4 directories.
+&gt;
+&gt; Is there a simple rule which decides which directory each link lives
+&gt; in.....
+&gt;
+&gt; For instance I see kill is in /bin and killall in /usr/bin.... I don&#39;t
+&gt; have a grip on what might be the logic for that.
+
+You know how Ken Thompson and Dennis Ritchie created Unix on a PDP-7 in 1969?  
+Well around 1971 they upgraded to a PDP-11 with a pair of RK05 disk packs (1.5 
+megabytes each) for storage.
+
+When the operating system grew too big to fit on the first RK05 disk pack (their 
+root filesystem) they let it leak into the second one, which is where all the 
+user home directories lived (which is why the mount was called /usr).  They 
+replicated all the OS directories under there (/bin, /sbin, /lib, /tmp...) and 
+wrote files to those new directories because their original disk was out of 
+space.  When they got a third disk, they mounted it on /home and relocated all 
+the user directories to there so the OS could consume all the space on both 
+disks and grow to THREE WHOLE MEGABYTES (ooooh!).
+
+Of course they made rules about &quot;when the system first boots, it has to come up 
+enough to be able to mount the second disk on /usr, so don&#39;t put things like 
+the mount command /usr/bin or we&#39;ll have a chicken and egg problem bringing 
+the system up.&quot;  Fairly straightforward.  Also fairly specific to v6 unix of 35 
+years ago.
+
+The /bin vs /usr/bin split (and all the others) is an artifact of this, a 
+1970&#39;s implementation detail that got carried forward for decades by 
+bureaucrats who never question _why_ they&#39;re doing things.  It stopped making 
+any sense before Linux was ever invented, for multiple reasons:
+
+1) Early system bringup is the provice of initrd and initramfs, which deals 
+with the &quot;this file is needed before that file&quot; issues.  We&#39;ve already _got_ a 
+temporary system that boots the main system.
+
+2) shared libraries (introduced by the Berkeley guys) prevent you from 
+independently upgrading the /lib and /usr/bin parts.  They two partitions have 
+to _match_ or they won&#39;t work.  This wasn&#39;t the case in 1974, back then they 
+had a certain level of independence because everything was statically linked.
+
+3) Cheap retail hard drives passed the 100 megabyte mark around 1990, and 
+partition resizing software showed up somewhere around there (partition magic 
+3.0 shipped in 1997).
+
+Of course once the split existed, some people made other rules to justify it.  
+Root was for the OS stuff you got from upstream and /usr was for your site-
+local files.  Then / was for the stuff you got from AT&amp;T and /usr was for the 
+stuff that your distro like IBM AIX or Dec Ultrix or SGI Irix added to it, and 
+/usr/local was for your specific installation&#39;s files.  Then somebody decided 
+/usr/local wasn&#39;t a good place to install new packages, so let&#39;s add /opt!  
+I&#39;m still waiting for /opt/local to show up...
+
+Of course given 30 years to fester, this split made some interesting distro-
+specific rules show up and go away again, such as &quot;/tmp is cleared between 
+reboots but /usr/tmp isn&#39;t&quot;.  (Of course on Ubuntu /usr/tmp doesn&#39;t exist and 
+on Gentoo /usr/tmp is a symlink to /var/tmp which now has the &quot;not cleared 
+between reboots&quot; rule.  Yes all this predated tmpfs.  It has to do with read-
+only root filesystems, /usr is always going to be read only in that case and 
+/var is where your writable space is, / is _mostly_ read only except for bits 
+of /etc which they tried to move to /var but really symlinking /etc to 
+/var/etc happens more often than not...)
+
+Standards bureaucracies like the Linux Foundation (which consumed the Free 
+Standards Group in its&#39; ever-growing accretion disk years ago) happily 
+document and add to this sort of complexity without ever trying to understand 
+why it was there in the first place.  &#39;Ken and Dennis leaked their OS into the 
+equivalent of home because an RK05 disk pack on the PDP-11 was too small&quot; goes 
+whoosh over their heads.
+
+I&#39;m pretty sure the busybox install just puts binaries wherever other versions 
+of those binaries have historically gone.  There&#39;s no actual REASON for any of 
+it anymore.  Personally, I symlink /bin /sbin and /lib to their /usr 
+equivalents on systems I put together.  Embedded guys try to understand and 
+simplify...
+
+Rob
+-- 
+GPLv3: as worthy a successor as The Phantom Menace, as timely as Duke Nukem 
+Forever, and as welcome as New Coke.
+</code></pre></div>
+<p class="backlinks"><span class="bold">Tags:</span> <a href="/tags#unix">#unix</a></p></article>
+
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+          
+          <a href="/recent-changes">Recent Changes</a>
+          
+        </span>
+      </p>
+      
+        
+
+
+      
+        
+      
+
+    </main>
+  </body>
+</html>
