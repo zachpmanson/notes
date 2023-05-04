@@ -17,6 +17,7 @@
 ## [[Language]]
 
 - [Dead metaphor](https://en.wikipedia.org/wiki/Dead_metaphor)
+- [Zalgo Text](https://en.wikipedia.org/wiki/Zalgo_text)
 
 ## Miscellaneous
 
