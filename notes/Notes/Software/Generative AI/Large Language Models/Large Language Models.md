@@ -21,6 +21,10 @@ Notes on various LLMs and the techniques used to make them.
 
 --[this HN thread](https://news.ycombinator.com/item?id=35349853)
 
+## Interesting Articles
+
+- [We Have No Moat, And Neither Does OpenAI](https://www.semianalysis.com/p/google-we-have-no-moat-and-neither), a leaked internal Google document about the success of open source models and how to change their approach against OpenAI
+
 ## Links
 
 - [Awesome-LLM](https://github.com/Hannibal046/Awesome-LLM), a curated list of papers about large language models, especially relating to ChatGPT. It also contains frameworks for LLM training, tools to deploy LLM, courses and tutorials about LLM and all publicly available LLM checkpoints and APIs.

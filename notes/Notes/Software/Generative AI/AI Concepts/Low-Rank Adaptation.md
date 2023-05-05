@@ -48,6 +48,23 @@ I guess intrensic rank is the *required* maximal number of linearly independent 
 
 -- ChatGPT
 
+## Impact
+
+>#### LoRA is an incredibly powerful technique we should probably be paying more attention to
+>
+> [LoRA](https://arxiv.org/abs/2106.09685) works by representing model updates as low-rank factorizations, which reduces the size of the update matrices by a factor of up to several thousand. This allows model fine-tuning at a fraction of the cost and time. Being able to personalize a language model in a few hours on consumer hardware is a big deal, _particularly_ for [aspirations that involve incorporating new and diverse knowledge in near real-time](http://www.internalgooglesitescrubbedbyus.com). The fact that this technology exists is underexploited inside Google, even though it directly impacts some of our most ambitious projects.
+> 
+> ...
+>
+>Part of what makes LoRA so effective is that - like other forms of fine-tuning - it’s stackable. Improvements like instruction tuning can be applied and then leveraged as other contributors add on dialogue, or reasoning, or tool use. While the individual fine tunings are low rank, their sum need not be, allowing full-rank updates to the model to accumulate over time.
+>
+>This means that as new and better datasets and tasks become available, the model can be cheaply kept up to date, without ever having to pay the cost of a full run.
+>
+>By contrast, training giant models from scratch not only throws away the pretraining, but also any iterative improvements that have been made on top. In the open source world, it doesn’t take long before these improvements dominate, making a full retrain extremely costly.
+
+
+-- [Leaked Internal Google Document](https://www.semianalysis.com/p/google-we-have-no-moat-and-neither) on open source LLM progress
+
 ## Links
 
 - [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685), the original LoRA paper by Microsoft
