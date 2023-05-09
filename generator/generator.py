@@ -131,6 +131,7 @@ def generate_pages():
                 os.mkdir(path)
             filename = os.path.join(path, "index.html")
         
+        page_tags = [tagname for tagname, tagpages in tags.items() if node in tagpages]
         with open(filename, "w") as f:
             f.write(post_template.render({
                 "title": node,
@@ -139,6 +140,7 @@ def generate_pages():
                 "children": children,
                 "siblings": siblings,
                 "piblings": piblings,
+                "tags": page_tags,
                 "len": len,
                 "sanitize_url": helpers.sanitize_url,
                 "backlinks": tree[node]["backlinks"],
@@ -160,7 +162,7 @@ def generate_tags():
     global tags_md
     tags_md = ""
     for tag in sorted(tags.keys()):
-        pages = tags[tag]
+        pages = sorted(tags[tag])
         panel = f"<details markdown='1'><summary>\n## {tag}\n</summary>\n\n"
         panel += "\n".join([f"- [{page}](/{helpers.sanitize_anchor(page)})" for page in pages])
         panel += "\n</details>\n"
@@ -191,22 +193,30 @@ def process_markdown(text):
     )
     return processed_text
 
+def propagate_tags():
+    '''Apply tag to all children of a page that matches a tag name''' 
+    for key in tree.keys():
+        if helpers.sanitize_url(key) in tags.keys():
+            queue = list(tree[key]["children"])
+            tags[helpers.sanitize_url(key)].add(key)
+
+            for page in queue:
+                for child in tree[page]["children"]:
+                    queue.append(child)
+                tags[helpers.sanitize_url(key)].add(page)
+
 def format_tags(matches):
     '''Formats tags and adds them to the tags object'''
     global current_node
     tagline = matches.group(1)
     taglist = tagline.replace("#", "").split()
-    formatted_tags = []
+    # formatted_tags = []
     for tag in taglist:
         if tag in tags.keys():
             tags[tag].add(current_node)
         else:
             tags[tag] = set()
             tags[tag].add(current_node)
-        # tree["Tags"]["children"].add(f"tags/{tag}")
-        formatted_tags.append(f'<a href="/tags#{tag}">#{tag}</a>')
-
-    return '\n<p class="backlinks"><span class="bold">Tags:</span> ' + " ".join(formatted_tags) + "</p>"
         
 
 def format_ochrs_var(matches):
@@ -311,7 +321,7 @@ tags_md = "Tags not generated yet"
 sitemap_md = ""
 current_node = "Index"
 
-orphans = ["404"]#, "Tags"]
+orphans = ["404"]
 
 post_template = jinja2.Template(open("generator/template.jinja", "r").read())
 
@@ -328,8 +338,13 @@ if __name__=="__main__":
         if o == "-v":
             VERBOSE = True
     get_tree()
+    propagate_tags()
     generate_tags()
+
     traverse_tree()
     generate_pages()
-
-
+    
+    # for l in tree.keys():
+    #     del tree[l]["body"]
+    #     print(l)
+    #     pprint(tree[l])

@@ -123,6 +123,16 @@
         </span>
       </p>
       {% endif %}
+
+      {% if tags != None and len(tags) > 0 %}
+      <p class="backlinks"><span class="bold">Tags:</span>
+          {% for tag in tags %}
+          <a href="/tags#{{tag}}">#{{tag}}</a>
+          {% endfor %}
+        </span>
+      </p>
+      {% endif %}
+
         
 
 
