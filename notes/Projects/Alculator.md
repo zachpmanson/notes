@@ -20,4 +20,4 @@ The data itself is riddled with mistakes an inconsistencies. "Standard Drinks" i
 
 The source code is available on [GitHub](https://github.com/pavo-etc/alculator).
 
-Tags: #nextjs
+Tags: #nextjs 
