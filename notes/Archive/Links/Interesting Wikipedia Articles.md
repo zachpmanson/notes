@@ -29,8 +29,4 @@
 - [Eternal September](https://en.wikipedia.org/wiki/Eternal_September)
 - [Bus Factor](https://en.wikipedia.org/wiki/Bus_factor)
 
-Tags: #lists
-
-
-
-
+Tags: #lists 
