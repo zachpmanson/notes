@@ -27,3 +27,5 @@ How many bugs and wasted CPU cycles and instances of human frustration (not to m
 Keep that in mind next time you want to cut a corner in your code.  
   
 (For those who object that dot files serve a purpose, I don't dispute that but counter that it's the files that serve the purpose, not the convention for their names. They could just as easily be in `$HOME/cfg` or `$HOME/lib`, which is what we did in Plan 9, which had no dot files. Lessons can be learned.)
+
+Tags: #unix 
