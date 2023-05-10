@@ -28,5 +28,4 @@ Ochrs will detect page tags in ochrs:tags if they are written in the following f
 
     Tags: #tagname1 #tagname2
 
-These will be collated on the [[tags]] page.
-
+These will be collated on the [[tags]] page.  If any tags written in the Markdown source match the name of any individual page, that page (and its children) will all be assigned to that tag.  See [[Unix]] for this in action.
