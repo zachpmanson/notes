@@ -6,3 +6,4 @@ Things I would like to write or learn about in the future.
 - [ ] [3D spinning CSS](https://x.st/spinning-diagrams-with-css/)
 - [ ] 𐐘𐑀 ඞ
 - [ ] chinchilla optimal
+- [ ] more complexity (https://buttondown.email/hillelwayne/archive/problems-harder-than-np-complete/)
