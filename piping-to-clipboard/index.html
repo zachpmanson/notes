@@ -32,7 +32,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: prisma schema changes and vercel</title>
+    <title>notes: piping to clipboard</title>
   </head>
 
   <body>
@@ -159,13 +159,13 @@
         
           <li>
             
-            <a href="/piping-to-clipboard">Piping to Clipboard</a>
+            <a href="/piping-to-clipboard" class="activated-link">Piping to Clipboard</a>
             
           </li>
         
           <li>
             
-            <a href="/prisma-schema-changes-and-vercel" class="activated-link">Prisma Schema Changes and Vercel</a>
+            <a href="/prisma-schema-changes-and-vercel">Prisma Schema Changes and Vercel</a>
             
           </li>
         
@@ -219,31 +219,24 @@
     </nav>
     <main>
       <header>
-        <h1>Prisma Schema Changes and Vercel</h1>
+        <h1>Piping to Clipboard</h1>
       </header>
-      <article><p>When you change a schema using Prisma, Vercel won't automatically regenerate the Prisma client until you add a <code>postinstall</code> command to <code>package.json</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;scripts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;dev&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;next dev&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;build&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;next build&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;start&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;next start&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;lint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;next lint&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;generate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;prisma generate&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// add these two</span>
-<span class="w">    </span><span class="nt">&quot;postinstall&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;npm run generate&quot;</span>
-<span class="p">},</span>
+      <article><p>In Git Bash on Windows:</p>
+<div class="highlight"><pre><span></span><code>date<span class="w"> </span>-u<span class="w"> </span>+%s<span class="w"> </span><span class="p">|</span><span class="w"> </span>clip.exe
 </code></pre></div>
-<p>Solution found <a href="https://github.com/prisma/prisma/issues/5175">here</a>.</p></article>
+<p>In zsh
+<div class="highlight"><pre><span></span><code>date<span class="w"> </span>-u<span class="w"> </span>+%s<span class="w"> </span><span class="p">|</span><span class="w"> </span>pbcopy
+</code></pre></div></p></article>
 
       
-
-      
-      <p class="backlinks"><span class="bold">Tags:</span>
+      <p class="backlinks"><span class="bold">Incoming:</span>
           
-          <a href="/tags#nextjs">#nextjs</a>
-          
-          <a href="/tags#prisma">#prisma</a>
+          <a href="/recent-changes">Recent Changes</a>
           
         </span>
       </p>
+      
+
       
 
         
