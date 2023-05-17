@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 cd ./site/
 git stash
 git stash drop
