@@ -1,10 +1,11 @@
-In Git Bash on Windows:
+In Git Bash and WSL on Windows:
 
 ```sh
 date -u +%s | clip.exe
 ```
 
-In zsh
+In zsh:
+
 ```sh 
 date -u +%s | pbcopy
 ```
