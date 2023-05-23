@@ -2,3 +2,5 @@ Rebracketing is the process some words undergo where the original etymological m
 
 This phenomenon is responsible for the word apron ("a"+"napron" -> "an"+"apron") and outrage ("outre"+"age" -> "out"+"rage").
 
+See more on [Wikipedia](https://en.wikipedia.org/wiki/Rebracketing).
+
