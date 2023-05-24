@@ -12,4 +12,4 @@ class CiteInlineProcessor(InlineProcessor):
 class CiteExtension(Extension):
     def extendMarkdown(self, md):
         CITE_PATTERN = r'--(.*)'  # like -- Zach Manson
-        md.inlinePatterns.register(CiteInlineProcessor(CITE_PATTERN, md), 'cite', 175)
+        md.inlinePatterns.register(CiteInlineProcessor(CITE_PATTERN, md), 'cite', 75)
