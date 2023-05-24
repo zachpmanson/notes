@@ -1,6 +1,6 @@
 Created in 1969 at AT&T Bell Labs to run on departmental computers for the PDP-11.  It used 16-bit words and had 64KiB/128KiB RAM.
 
-It was initially written in ASM, but was C was designed to make development easier.
+It was initially written in ASM, but sparked the creation of C which was designed to make Unix development easier.
 
 ## Philosophy
 
