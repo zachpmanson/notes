@@ -1,11 +1,13 @@
 ## File Permissions
 
-Permissions have 3 kinds of access:  
+Permissions have 3 kinds of access:
+
 - r - read access
 - w - write/modify access
 - x - execute permission
 
-3 user sets:  
+3 user sets:
+
 - u - user, file owner
 - g - group
 - o - everyone else
