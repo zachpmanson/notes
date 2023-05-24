@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/styles/colors.css" />
+    <link rel="stylesheet" href="/static/styles/global.css" />
+    <link rel="stylesheet" href="/static/styles/code.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/static/icon/site.webmanifest" />
+    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+    <meta name="theme-color" content="#282A36" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>notes: bash regular expressions</title>
+  </head>
+
+  <body>
+     <nav>
+      <div>
+        <a href="/">
+          <img src="/static/icon/icon.png" alt="notes" height="100">
+        </a>
+      </div>
+      
+
+      
+      <div>
+        
+        <ul>
+        
+          <li>
+            
+            <a href="/bash" class="activated-link">Bash</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/gecos">GECOS</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/unix-files">Unix Files</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/unix-processes">Unix Processes</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/unix-programs">Unix Programs</a>
+            
+          </li>
+        
+        </ul>
+        
+      </div>
+      
+
+      
+      <div>
+        
+        <ul>
+        
+          <li>
+            
+            <a href="/bash-regular-expressions" class="activated-link">Bash Regular Expressions</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/bash-syntax">Bash Syntax</a>
+            
+          </li>
+        
+        </ul>
+        
+      </div>
+      
+
+
+
+      
+
+    </nav>
+    <main>
+      <header>
+        <h1>Bash Regular Expressions</h1>
+      </header>
+      <article><p>Globbing is relatively simple.  More powerful string matcing can be done with regular expressions.  In <a href="/unix">Unix</a>, modern regex style is derived from <code>ed</code> (a predecessor to <code>vi</code>).</p>
+<h2 id="syntax">Syntax</h2>
+<table>
+<thead>
+<tr>
+<th>ed</th>
+<th>shell</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.</code></td>
+<td><code>?</code></td>
+<td>single character</td>
+</tr>
+<tr>
+<td><code>[ ]</code></td>
+<td><code>[ ]</code></td>
+<td>single from this set or range</td>
+</tr>
+<tr>
+<td><code>[^ ]</code></td>
+<td>`[^ ]</td>
+<td>single character not in set/range</td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td></td>
+<td>&gt;=0 occurances of previous character</td>
+</tr>
+<tr>
+<td><code>.*</code></td>
+<td><code>**</code></td>
+<td>&gt;=0 occurances of any letter</td>
+</tr>
+<tr>
+<td><code>^</code></td>
+<td></td>
+<td>start of string</td>
+</tr>
+<tr>
+<td><code>$</code></td>
+<td></td>
+<td>end of string</td>
+</tr>
+<tr>
+<td><code>\</code></td>
+<td><code>\</code></td>
+<td>escape character</td>
+</tr>
+<tr>
+<td><code>\( \)</code></td>
+<td></td>
+<td>capture match</td>
+</tr>
+</tbody>
+</table>
+<h2 id="capturing-matches">Capturing Matches</h2>
+<p><code>sed</code> and <code>grep</code> provide a way capturing a match and using it again later.</p>
+<p>Using <code>\( \)</code> (up to 9 times), you can recall the captured text with <code>\1</code>, <code>\2</code> ...</p></article>
+
+      
+
+      
+      <p class="backlinks"><span class="bold">Tags:</span>
+          
+          <a href="/tags#unix">#unix</a>
+          
+        </span>
+      </p>
+      
+
+        
+
+
+      
+        
+      
+
+    </main>
+  </body>
+</html>

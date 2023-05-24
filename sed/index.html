@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/styles/colors.css" />
+    <link rel="stylesheet" href="/static/styles/global.css" />
+    <link rel="stylesheet" href="/static/styles/code.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/static/icon/site.webmanifest" />
+    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+    <meta name="theme-color" content="#282A36" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>notes: sed</title>
+  </head>
+
+  <body>
+     <nav>
+      <div>
+        <a href="/">
+          <img src="/static/icon/icon.png" alt="notes" height="100">
+        </a>
+      </div>
+      
+
+      
+      <div>
+        
+        <ul>
+        
+          <li>
+            
+            <a href="/bash">Bash</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/gecos">GECOS</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/unix-files">Unix Files</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/unix-processes">Unix Processes</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/unix-programs" class="activated-link">Unix Programs</a>
+            
+          </li>
+        
+        </ul>
+        
+      </div>
+      
+
+      
+      <div>
+        
+        <ul>
+        
+          <li>
+            
+            <a href="/awk">Awk</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/make">Make</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/vi(m)">Vi(m)</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/sed" class="activated-link">sed</a>
+            
+          </li>
+        
+        </ul>
+        
+      </div>
+      
+
+
+
+      
+
+    </nav>
+    <main>
+      <header>
+        <h1>sed</h1>
+      </header>
+      <article><p>sed (stream editor) is an editing language for manipulating text files.  It performs editing on the fly, intended to work as part of Unix pipelines that reads lines one by one from files.  It performs functions on lines and sending the lines to stdout. Functions are applied sequentially, and they accumulate in complexity quickly.  Breaking it up into smaller scripts can keep the complexity down.</p>
+<h2 id="syntax">Syntax</h2>
+<p><code>sed &lt;options&gt; &lt;file&gt;</code></p>
+<ul>
+<li><code>-e &lt;sed operation&gt;</code> a single edit to apply to the file(s), can have multiple <code>-e</code> calls</li>
+<li><code>-f &lt;file of sed ops&gt;</code></li>
+<li><code>-n</code> transformed output not send to stdout</li>
+</ul>
+<h2 id="inline">Inline</h2>
+<p>Simple actions can be specified inline using <code>-e</code>.</p>
+<div class="highlight"><pre><span></span><code>sed<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;s/[()]/ &amp; /g&quot;</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;s/ */ /g*&quot;</span><span class="w"> </span>file.txt
+</code></pre></div>
+<p>This places places a space around all occurances of <code>(</code> and <code>)</code>.</p>
+<p><code>g</code> means global, applies to every instance on the line rather than just the first of every line.</p>
+<p>This is tedious</p>
+<h2 id="script">Script</h2>
+<p>Can put text manipulations into a sed script invoked with <code>-f</code>.  Comment lines begin with <code>#</code> </p>
+<p>Command format:
+<div class="highlight"><pre><span></span><code>[&lt;address&gt;[, &lt;address&gt;]] &lt;function&gt; [&lt;args&gt;]
+</code></pre></div></p>
+<h2 id="addresses">Addresses</h2>
+<p>Addresses are a range of lines to apply the function to. Without an address, the function is applied to all lines.</p>
+<div class="highlight"><pre><span></span><code>&lt;address&gt;&lt;op&gt;
+42p
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>&lt;address&gt;,&lt;address&gt;&lt;op&gt;
+50,100p
+</code></pre></div>
+<p><code>!</code> inverts the seletion.</p>
+<div class="highlight"><pre><span></span><code>!30p
+</code></pre></div>
+<p>Address variants:</p>
+<ul>
+<li>line num</li>
+<li><code>.</code> current line</li>
+<li><code>$</code> last input line</li>
+<li><code>0</code> before first line</li>
+<li>context address specified by regex</li>
+<li>simple arithmetic on an address</li>
+</ul>
+<h2 id="commands">Commands</h2>
+<ul>
+<li>regex replacements <code>s/&lt;regex&gt;/&lt;replacement&gt;/[g]</code><ul>
+<li><code>g</code> make it global</li>
+</ul>
+</li>
+<li>delete <code>d</code></li>
+<li>print <code>p</code><ul>
+<li>must be used with <code>-n</code></li>
+</ul>
+</li>
+<li>print (include  non-printables and fold lines) <code>l</code></li>
+</ul></article>
+
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+          
+          <a href="/unix-programs">Unix Programs</a>
+          
+          <a href="/awk">Awk</a>
+          
+        </span>
+      </p>
+      
+
+      
+      <p class="backlinks"><span class="bold">Tags:</span>
+          
+          <a href="/tags#unix">#unix</a>
+          
+        </span>
+      </p>
+      
+
+        
+
+
+      
+        
+      
+
+    </main>
+  </body>
+</html>

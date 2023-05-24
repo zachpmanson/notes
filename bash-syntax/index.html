@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/styles/colors.css" />
+    <link rel="stylesheet" href="/static/styles/global.css" />
+    <link rel="stylesheet" href="/static/styles/code.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/static/icon/site.webmanifest" />
+    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+    <meta name="theme-color" content="#282A36" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>notes: bash syntax</title>
+  </head>
+
+  <body>
+     <nav>
+      <div>
+        <a href="/">
+          <img src="/static/icon/icon.png" alt="notes" height="100">
+        </a>
+      </div>
+      
+
+      
+      <div>
+        
+        <ul>
+        
+          <li>
+            
+            <a href="/bash" class="activated-link">Bash</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/gecos">GECOS</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/unix-files">Unix Files</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/unix-processes">Unix Processes</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/unix-programs">Unix Programs</a>
+            
+          </li>
+        
+        </ul>
+        
+      </div>
+      
+
+      
+      <div>
+        
+        <ul>
+        
+          <li>
+            
+            <a href="/bash-regular-expressions">Bash Regular Expressions</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/bash-syntax" class="activated-link">Bash Syntax</a>
+            
+          </li>
+        
+        </ul>
+        
+      </div>
+      
+
+
+
+      
+
+    </nav>
+    <main>
+      <header>
+        <h1>Bash Syntax</h1>
+      </header>
+      <article><h2 id="builtins">Builtins</h2>
+<ul>
+<li><code>$?</code><ul>
+<li>last commands exit code</li>
+</ul>
+</li>
+<li>
+<p>CLI args can be accessed using <code>$0</code>, <code>$1</code>, <code>$2</code> ..., where `$0 == programname.</p>
+<div class="highlight"><pre><span></span><code>ls -l
+
+$0 == ls
+$1 == -l
+</code></pre></div>
+</li>
+<li>
+<p><code>$#</code> is the number of arguments (excluding <code>$0</code>).</p>
+</li>
+<li><code>$IFS</code> is the internal field seperator, which determines characters than can be used to seperate arguments<ul>
+<li>By default this is <code>&lt;space&gt;&lt;tab&gt;&lt;newline&gt;</code></li>
+<li>can be edited to change this</li>
+</ul>
+</li>
+</ul>
+<h2 id="variables">Variables</h2>
+<p>Variable assignments must not use spaces.  <code>$</code> can be used to get values from variables.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">varname</span><span class="o">=</span>variablevalue
+<span class="nv">var2name</span><span class="o">=</span><span class="s2">&quot;value with spaces&quot;</span>
+
+<span class="nb">echo</span><span class="w"> </span><span class="nv">$varname</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;some text </span><span class="nv">$varname</span><span class="s2"> some more&quot;</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;singlequotes $dont interpolate values&#39;</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;can wrap </span><span class="si">${</span><span class="nv">varname</span><span class="si">}</span><span class="s2">in curly backets&quot;</span>
+</code></pre></div>
+<p>Backslashes can be used to escape characters.</p>
+<p>To get the value of programs into text strings, wrap the commands in brackets.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;the time is now </span><span class="k">$(</span>timenow<span class="k">)</span><span class="s2">&quot;</span>
+</code></pre></div>
+<p>Variables are scoped to their script by default.  They can be exported so they can accessed externally or by child processes.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span>PS1
+</code></pre></div>
+<h3 id="if-statements"><code>if</code> statements</h3>
+<p>From <a href="https://unix.stackexchange.com/questions/306111/what-is-the-difference-between-the-bash-operators-vs-vs-vs">here</a>.</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span>
+<span class="w">    </span>command-list1
+<span class="k">then</span>
+<span class="w">    </span>conditional-commands1
+<span class="k">elif</span>
+<span class="w">    </span>command-list2
+<span class="k">then</span>
+<span class="w">    </span>conditional-commands2<span class="w"> </span>
+<span class="k">else</span>
+<span class="w">    </span>conditional-commands3
+<span class="k">fi</span>
+</code></pre></div>
+<p>The <code>then</code> clause is executed if the exit code of <code>command-list1</code> is 0. The <code>command-list1</code> can be a sequence of one or more pipelines separated by one of the operators <code>;</code>, <code>&amp;</code>, <code>&amp;&amp;</code>, <code>||</code> or newline.  There are some common idioms that are special cases of this:</p>
+<h3 id="_1"><code>[ ]</code></h3>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>condition<span class="w"> </span><span class="o">]</span>
+</code></pre></div>
+<p>This is equivalent to POSIX <code>test</code>, which can do a number of comparisons and evaluations.</p>
+<h3 id="_2"><code>[[ ]]</code></h3>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="o">[[</span><span class="w"> </span>condition<span class="w"> </span><span class="o">]]</span>
+</code></pre></div>
+<p>This is an upgraded variation of <code>test</code>, which can do more advanced comparisons like wildcard string comparisons. Not POSIX.</p>
+<ul>
+<li><code>[[ a &lt; b ]]</code> will do string comparisons, not for numbers</li>
+<li><code>[[ a -lt b ]]</code> this works for numbers, similar flags for <code>gt, ge, le, eq</code></li>
+</ul>
+<h3 id="_3"><code>(( ))</code></h3>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="o">((</span>condition<span class="o">))</span>
+</code></pre></div>
+<p>This performs arithmetic, with the result being the exit code of the pipeline. Not POSIX.</p>
+<h3 id="_4"><code>( )</code></h3>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="o">(</span><span class="nb">command</span><span class="o">)</span>
+</code></pre></div>
+<p>This runs the command as a subshell, which can limit side effects.</p>
+<h2 id="shell-arithmetic">Shell Arithmetic</h2>
+<ul>
+<li>not very efficient</li>
+<li>should put substantial computing into other languages like Awk or Python</li>
+<li><code>$((&lt;expression&gt;))</code> will evaluate the expression and return result to stdout</li>
+</ul>
+<p>Operations
+- + plus<br />
+- - minus<br />
+- * multiplication<br />
+- / integer division<br />
+- % remainder<br />
+- &gt;&gt; right shift (/2 N )<br />
+- &lt;&lt; left shift (*2 N )<br />
+- &amp; bitwise AND<br />
+- | bitwise OR<br />
+- ~ bitwise NOT<br />
+- ^ bitwise exclusive OR<br />
+- &amp;&amp; logical AND<br />
+- || logical OR<br />
+- ! logical NOT</p>
+<h2 id="globbing">Globbing</h2>
+<p>A method of wildcard matching.
+- <code>*</code>
+    - matches any number of characters
+- <code>?</code>
+    - matches a single character
+- <code>[ &lt;letters&gt; ]</code>
+    - match 1 of these letters
+- <code>[! &lt;letters&gt; ]</code>
+    - match any one letter except those in range</p>
+<h2 id="case-statements"><code>case</code> statements</h2>
+<div class="highlight"><pre><span></span><code><span class="k">case</span><span class="w"> </span>&lt;expression&gt;<span class="w"> </span><span class="k">in</span>
+<span class="w">    </span>&lt;pattern&gt;<span class="o">[</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>&lt;pattern&gt;...<span class="o">])</span><span class="w"> </span>&lt;statements&gt;<span class="p">;;</span>
+<span class="k">esac</span>
+</code></pre></div>
+<p>Pattern should be a glob pattern. <code>*</code> is used as the else statement as it will match everything.</p>
+<h2 id="loops">Loops</h2>
+<p><code>break</code> is a keyword that would do what you'd expect.</p>
+<h3 id="for-loop"><code>for</code> loop</h3>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span>&lt;name&gt;<span class="w"> </span><span class="k">in</span><span class="w"> </span>&lt;list&gt;<span class="w"> </span><span class="k">do</span>
+<span class="w">    </span>&lt;commands&gt;
+<span class="k">done</span>
+</code></pre></div>
+<p><code>list</code> is just a list of white-space seperated strings.  Good for use with globbing and file names, or reading through textfiles, especially when used in combination with <code>$IFS</code>.</p>
+<p><code>${#name}</code> will print the length of the string <code>name</code>.</p>
+<h3 id="while-loop"><code>while</code> loop</h3>
+<div class="highlight"><pre><span></span><code><span class="k">while</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>condition<span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">   </span>&lt;command3&gt;
+<span class="k">done</span>
+</code></pre></div>
+<h2 id="shift"><code>shift</code></h2>
+<ul>
+<li>shifts the argument to the current script one to the left</li>
+<li>reduces overall arg count by one</li>
+</ul>
+<h2 id="functions">Functions</h2>
+<div class="highlight"><pre><span></span><code><span class="k">function</span><span class="w"> </span>name<span class="w"> </span><span class="o">{</span>
+<span class="w">    </span>&lt;commands&gt;
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">[</span>&lt;<span class="nb">exit</span><span class="w"> </span>status&gt;<span class="o">]</span>
+<span class="o">}</span>
+</code></pre></div>
+<p>Use $1, $2 for parameters.  $0 is the function name.</p>
+<p>All variables are global unless <code>local</code> keyword is when declaring variable.</p></article>
+
+      
+
+      
+      <p class="backlinks"><span class="bold">Tags:</span>
+          
+          <a href="/tags#unix">#unix</a>
+          
+        </span>
+      </p>
+      
+
+        
+
+
+      
+        
+      
+
+    </main>
+  </body>
+</html>

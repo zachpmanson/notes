@@ -141,7 +141,7 @@ blockquote + p > cite {
   margin-left: 1rem;
 }
 
-cite::before {
+cite.standalone::before {
   content: "– ";
 }
 

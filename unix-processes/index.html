@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/styles/colors.css" />
+    <link rel="stylesheet" href="/static/styles/global.css" />
+    <link rel="stylesheet" href="/static/styles/code.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/static/icon/site.webmanifest" />
+    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+    <meta name="theme-color" content="#282A36" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>notes: unix processes</title>
+  </head>
+
+  <body>
+     <nav>
+      <div>
+        <a href="/">
+          <img src="/static/icon/icon.png" alt="notes" height="100">
+        </a>
+      </div>
+      
+
+      
+      <div>
+        
+        <details><summary>10 piblings</summary>
+        
+        <ul>
+        
+          <li>
+            
+            <a href="/debugging">Debugging</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/docker">Docker</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/generative-ai">Generative AI</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/internet">Internet</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/markdown">Markdown</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/mistakes">Mistakes</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/open-source-philosophy">Open Source Philosophy</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/programs-with-fun-names">Programs with Fun Names</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/self-hosting">Self-Hosting</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/unix" class="activated-link">Unix</a>
+            
+          </li>
+        
+        </ul>
+        
+        </details>
+        
+      </div>
+      
+
+      
+      <div>
+        
+        <ul>
+        
+          <li>
+            
+            <a href="/bash">Bash</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/gecos">GECOS</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/unix-files">Unix Files</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/unix-processes" class="activated-link">Unix Processes</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/unix-programs">Unix Programs</a>
+            
+          </li>
+        
+        </ul>
+        
+      </div>
+      
+
+
+
+      
+
+    </nav>
+    <main>
+      <header>
+        <h1>Unix Processes</h1>
+      </header>
+      <article><p>A process is a program in execution.  The process that controls the screen is called the foreground process.  It can take input from the keyboard and write it to the window.</p>
+<ul>
+<li>programs are compiled into objects (binaries/executables)</li>
+<li>programs in execution are processes</li>
+<li>process images are the memory a process occupies</li>
+<li>3 kinds of processes </li>
+<li>user</li>
+<li>system</li>
+<li>kernel</li>
+</ul>
+<h2 id="background-processes">Background Processes</h2>
+<p>More than one process can run in a window by making other processes background processes.  This can be done by appending <code>&amp;</code> to a command.</p>
+<ul>
+<li>background processes can't handle i/o</li>
+<li>this can be achieved by writing to a file</li>
+</ul>
+<p><code>ps</code> lists currently running processes.</p>
+<ul>
+<li><code>-l</code> gives lots of information information</li>
+<li><code>-f</code> provides command args</li>
+</ul>
+<p><code>top</code> list the processes using the most CPU resources at a given time</p>
+<p><code>kill &lt;options&gt; &lt;PIDs&gt;</code> sends a kill signal to the listed process, with options allowing more forceful process killing. (up to <code>kill -9</code>)</p></article>
+
+      
+
+      
+      <p class="backlinks"><span class="bold">Tags:</span>
+          
+          <a href="/tags#unix">#unix</a>
+          
+        </span>
+      </p>
+      
+
+        
+
+
+      
+        
+      
+
+    </main>
+  </body>
+</html>

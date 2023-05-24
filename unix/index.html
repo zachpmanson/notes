@@ -73,6 +73,12 @@
             
           </li>
         
+          <li>
+            
+            <a href="/uni">Uni</a>
+            
+          </li>
+        
         </ul>
         
       </div>
@@ -81,7 +87,21 @@
       
       <div>
         
+        <details><summary>10 siblings</summary>
+        
         <ul>
+        
+          <li>
+            
+            <a href="/debugging">Debugging</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/docker">Docker</a>
+            
+          </li>
         
           <li>
             
@@ -97,7 +117,19 @@
         
           <li>
             
+            <a href="/markdown">Markdown</a>
+            
+          </li>
+        
+          <li>
+            
             <a href="/mistakes">Mistakes</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/open-source-philosophy">Open Source Philosophy</a>
             
           </li>
         
@@ -121,6 +153,8 @@
         
         </ul>
         
+        </details>
+        
       </div>
       
 
@@ -132,11 +166,23 @@
         <ul>
         
           <li>
+            <a href="/bash">Bash</a>
+          </li>
+        
+          <li>
             <a href="/gecos">GECOS</a>
           </li>
         
           <li>
-            <a href="/vi(m)">Vi(m)</a>
+            <a href="/unix-files">Unix Files</a>
+          </li>
+        
+          <li>
+            <a href="/unix-processes">Unix Processes</a>
+          </li>
+        
+          <li>
+            <a href="/unix-programs">Unix Programs</a>
           </li>
         
         </ul>
@@ -149,12 +195,83 @@
       <header>
         <h1>Unix</h1>
       </header>
-      <article><p>🌱</p></article>
+      <article><p>Created in 1969 at AT&amp;T Bell Labs to run on departmental computers for the PDP-11.  It used 16-bit words and had 64KiB/128KiB RAM.</p>
+<p>It was initially written in ASM, but was C was designed to make development easier.</p>
+<h2 id="philosophy">Philosophy</h2>
+<ul>
+<li>smaller kernel, a master process which provides services to system and user processes</li>
+<li>a simple datatype (text) and simple interprocess communication </li>
+<li>allows chaining of processes</li>
+<li>seperation between ordinary users and superusers using privileges</li>
+<li>files </li>
+<li>almost everything is a file <ul>
+<li>processes are files</li>
+<li>directories are files that point to other files</li>
+</ul>
+</li>
+<li>files are just sequences of bytes</li>
+</ul>
+<h2 id="basics">Basics</h2>
+<ul>
+<li>filenames </li>
+<li>extensions are conventional, not required</li>
+<li>filenames can be any non-whitespace character (sus)</li>
+<li>current dir is <code>.</code>, parent is <code>..</code></li>
+<li>dotfiles are hidden</li>
+<li>commands </li>
+<li><code>&lt;commandname&gt; [&lt;options&gt;] [&lt;objects&gt;]</code></li>
+<li>shell </li>
+<li>the program that handles command interpretation</li>
+<li>shell locates commands and objects</li>
+<li>you can chain commands into shell scripts <ul>
+<li>first was Bourne Shell <code>sh</code> in 1976</li>
+<li>followed by <a href="/bash">Bourne Again Shell</a> <code>bash</code> in 1989</li>
+<li>Korn Shell <code>ksh</code> in 1983</li>
+</ul>
+</li>
+</ul>
+<h2 id="environment-variables">Environment Variables</h2>
+<p>Environment variables are defined by the system and will be will be passed to the shell.</p>
+<ul>
+<li>system path is stored in env var <code>PATH</code>, list of dirs seperated by <code>:</code>, usually contains the following paths </li>
+<li><code>/bin</code> <ul>
+<li>top level system commands</li>
+<li><code>cat</code>, <code>echo</code></li>
+</ul>
+</li>
+<li><code>/usr/bin</code> <ul>
+<li>system level commands that generally come with the system but may need to be installed</li>
+<li><code>python</code>, <code>gcc</code></li>
+</ul>
+</li>
+<li><code>/usr/local/bin</code> <ul>
+<li>programs that you have installed for all users of your system locally</li>
+<li><code>pip3</code>, <code>ps2pdf</code></li>
+<li><code>~/bin</code> </li>
+<li>a users programs</li>
+<li><code>.</code></li>
+</ul>
+</li>
+<li><code>CDPATH</code> </li>
+<li>all locations that cd can direct you to</li>
+<li>similar to <code>PATH</code></li>
+<li><code>PS1</code> </li>
+<li>shell prompt text</li>
+<li><code>umask 077</code> </li>
+<li>permissions applied to files on creation</li>
+</ul>
+<p>More environment variables can be setup in the <code>~/.profile</code> executable.</p></article>
 
       
       <p class="backlinks"><span class="bold">Incoming:</span>
           
+          <a href="/markdown">Markdown</a>
+          
+          <a href="/cits2003">CITS2003</a>
+          
           <a href="/ochrs-syntax">Ochrs Syntax</a>
+          
+          <a href="/bash-regular-expressions">Bash Regular Expressions</a>
           
         </span>
       </p>
@@ -174,9 +291,15 @@
 
       
         
+        <h2><a href="/bash">Bash</a></h2>
+        
         <h2><a href="/gecos">GECOS</a></h2>
         
-        <h2><a href="/vi(m)">Vi(m)</a></h2>
+        <h2><a href="/unix-files">Unix Files</a></h2>
+        
+        <h2><a href="/unix-processes">Unix Processes</a></h2>
+        
+        <h2><a href="/unix-programs">Unix Programs</a></h2>
         
       
 

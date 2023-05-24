@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/styles/colors.css" />
+    <link rel="stylesheet" href="/static/styles/global.css" />
+    <link rel="stylesheet" href="/static/styles/code.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/static/icon/site.webmanifest" />
+    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+    <meta name="theme-color" content="#282A36" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>notes: make</title>
+  </head>
+
+  <body>
+     <nav>
+      <div>
+        <a href="/">
+          <img src="/static/icon/icon.png" alt="notes" height="100">
+        </a>
+      </div>
+      
+
+      
+      <div>
+        
+        <ul>
+        
+          <li>
+            
+            <a href="/bash">Bash</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/gecos">GECOS</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/unix-files">Unix Files</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/unix-processes">Unix Processes</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/unix-programs" class="activated-link">Unix Programs</a>
+            
+          </li>
+        
+        </ul>
+        
+      </div>
+      
+
+      
+      <div>
+        
+        <ul>
+        
+          <li>
+            
+            <a href="/awk">Awk</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/make" class="activated-link">Make</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/vi(m)">Vi(m)</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/sed">sed</a>
+            
+          </li>
+        
+        </ul>
+        
+      </div>
+      
+
+
+
+      
+
+    </nav>
+    <main>
+      <header>
+        <h1>Make</h1>
+      </header>
+      <article><p>Make is a language/program that is designed to simplify compiling and linking C programs by automating the process and only recompiling files that have actually been modified.</p>
+<p>Need to have <code>Makefile</code> in the project, run with <code>make</code> command.</p>
+<p>Has 2 kinds of components, rules and variables.</p>
+<h2 id="rules">Rules</h2>
+<div class="highlight"><pre><span></span><code><span class="nf">&lt;target(s)&gt;</span><span class="o">:</span><span class="w"> </span>&lt;<span class="n">prerequisites</span>&gt;
+<span class="w">    </span>&lt;commands&gt;
+</code></pre></div>
+<p>Can have multiple targets seperated by spaces, but don't.
+Commands appear on successive lines, beginning with TAB.</p>
+<h2 id="variables">Variables</h2>
+<div class="highlight"><pre><span></span><code><span class="err">&lt;name&gt;</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="err">&lt;string&gt;</span>
+</code></pre></div>
+<p>Use <code>$( )</code> to insert the value into rules.</p>
+<p><code>%</code> is the equivalent of <code>.*</code>.</p>
+<h2 id="built-ins">Built-ins</h2>
+<ul>
+<li><code>$@</code> - target</li>
+<li><code>$&lt;</code> - first precondition</li>
+<li><code>$^</code> - a list of all preconditions (space seperated)</li>
+<li><code>$*</code> - wildcard pattern match result</li>
+</ul>
+<h2 id="special-targets">Special Targets</h2>
+<p>There exist targets that are not compiled but useful for other purposes.</p>
+<p><code>.PRECIOUS</code> allows files to be ignored when cleaning up intermediate files.  Useful for keeping files that are heavy to compute.</p>
+<h2 id="invokation-args">Invokation Args</h2>
+<ul>
+<li><code>-j &lt;N&gt;</code> makes N targets run in parallel</li>
+<li><code>-k</code> continue even if errors occur</li>
+</ul></article>
+
+      
+
+      
+      <p class="backlinks"><span class="bold">Tags:</span>
+          
+          <a href="/tags#unix">#unix</a>
+          
+        </span>
+      </p>
+      
+
+        
+
+
+      
+        
+      
+
+    </main>
+  </body>
+</html>

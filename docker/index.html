@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/styles/colors.css" />
+    <link rel="stylesheet" href="/static/styles/global.css" />
+    <link rel="stylesheet" href="/static/styles/code.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/static/icon/site.webmanifest" />
+    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+    <meta name="theme-color" content="#282A36" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>notes: docker</title>
+  </head>
+
+  <body>
+     <nav>
+      <div>
+        <a href="/">
+          <img src="/static/icon/icon.png" alt="notes" height="100">
+        </a>
+      </div>
+      
+
+      
+      <div>
+        
+        <ul>
+        
+          <li>
+            
+            <a href="/language">Language</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/mathematics">Mathematics</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/music">Music</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/software" class="activated-link">Software</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/uni">Uni</a>
+            
+          </li>
+        
+        </ul>
+        
+      </div>
+      
+
+      
+      <div>
+        
+        <details><summary>10 siblings</summary>
+        
+        <ul>
+        
+          <li>
+            
+            <a href="/debugging">Debugging</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/docker" class="activated-link">Docker</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/generative-ai">Generative AI</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/internet">Internet</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/markdown">Markdown</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/mistakes">Mistakes</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/open-source-philosophy">Open Source Philosophy</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/programs-with-fun-names">Programs with Fun Names</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/self-hosting">Self-Hosting</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/unix">Unix</a>
+            
+          </li>
+        
+        </ul>
+        
+        </details>
+        
+      </div>
+      
+
+
+
+      
+
+    </nav>
+    <main>
+      <header>
+        <h1>Docker</h1>
+      </header>
+      <article><p>Docker is a system for running virtual machines called containers.</p>
+<h2 id="advantages-of-docker">Advantages of Docker</h2>
+<ul>
+<li>provides consistent, contained environment on your local machine</li>
+<li>containers are lightweight, portable, and boot fast</li>
+<li>useful for hardware agnostic software development</li>
+<li>can be used for non-interactive application execution</li>
+</ul>
+<h2 id="comparison-to-traditional-vms">Comparison to Traditional VMs</h2>
+<ul>
+<li>docker containers are stateless, container storage is erased when the container stops (mapping drives can resolve this)</li>
+<li>uses OS-level virtualisation, so containers share the host OS without needing a Hypervisor<ul>
+<li>smaller and faster than VM</li>
+</ul>
+</li>
+<li>docker platform can run many containers simultaneously and they can communicate with each other</li>
+<li>docker registries allows straighforward deployment of docker images</li>
+</ul>
+<h2 id="architecture">Architecture</h2>
+<ul>
+<li>Client - CLI interface</li>
+<li>Daemon - background service that listend for API requests and manages docker objects</li>
+<li>Docker desktop - manager for other components</li>
+<li>Docker registry - a package repo, docker hub is the default</li>
+<li>Docker objects<ul>
+<li>image is a read only template for container</li>
+<li>container is a runnable instance of an image</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="/static/media/Screen Shot 2023-03-12 at 20.00.45.png" /></p>
+<p><img alt="" src="/static/media/Screen Shot 2023-03-12 at 20.01.39.png" /></p>
+<h2 id="running">Running</h2>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span><span class="se">\ </span><span class="w"> </span>
+--mount<span class="w"> </span><span class="nv">type</span><span class="o">=</span>bind,source<span class="o">=</span>HOST_PATH,target<span class="o">=</span>CONTAINER_PATH<span class="w"> </span><span class="se">\ </span><span class="w"> </span>
+-it<span class="w"> </span>IMAGE:TAG
+</code></pre></div>
+<ul>
+<li><code>mount</code> sets an folder on host to folder in container<ul>
+<li>use absolute folders</li>
+</ul>
+</li>
+<li><code>it</code> allows interaction</li>
+<li><code>TAG</code> is the version of the image</li>
+</ul></article>
+
+      
+
+      
+
+        
+
+
+      
+        
+      
+
+    </main>
+  </body>
+</html>

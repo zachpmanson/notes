@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/styles/colors.css" />
+    <link rel="stylesheet" href="/static/styles/global.css" />
+    <link rel="stylesheet" href="/static/styles/code.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/static/icon/site.webmanifest" />
+    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+    <meta name="theme-color" content="#282A36" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>notes: unix programs</title>
+  </head>
+
+  <body>
+     <nav>
+      <div>
+        <a href="/">
+          <img src="/static/icon/icon.png" alt="notes" height="100">
+        </a>
+      </div>
+      
+
+      
+      <div>
+        
+        <details><summary>10 piblings</summary>
+        
+        <ul>
+        
+          <li>
+            
+            <a href="/debugging">Debugging</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/docker">Docker</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/generative-ai">Generative AI</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/internet">Internet</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/markdown">Markdown</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/mistakes">Mistakes</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/open-source-philosophy">Open Source Philosophy</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/programs-with-fun-names">Programs with Fun Names</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/self-hosting">Self-Hosting</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/unix" class="activated-link">Unix</a>
+            
+          </li>
+        
+        </ul>
+        
+        </details>
+        
+      </div>
+      
+
+      
+      <div>
+        
+        <ul>
+        
+          <li>
+            
+            <a href="/bash">Bash</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/gecos">GECOS</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/unix-files">Unix Files</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/unix-processes">Unix Processes</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/unix-programs" class="activated-link">Unix Programs</a>
+            
+          </li>
+        
+        </ul>
+        
+      </div>
+      
+
+
+
+      
+      <div>
+        
+        <ul>
+        
+          <li>
+            <a href="/awk">Awk</a>
+          </li>
+        
+          <li>
+            <a href="/make">Make</a>
+          </li>
+        
+          <li>
+            <a href="/vi(m)">Vi(m)</a>
+          </li>
+        
+          <li>
+            <a href="/sed">sed</a>
+          </li>
+        
+        </ul>
+        
+      </div>
+      
+
+    </nav>
+    <main>
+      <header>
+        <h1>Unix Programs</h1>
+      </header>
+      <article><p>When programs conclude they return an exit status.
+ - 0 is success, else is failure
+ - positive integers represent an error state, usually 1 is used
+ - in <a href="/bash">Bash</a>, <code>$?</code> can be used to access last commands exit status</p>
+<h2 id="useful-programs">Useful Programs</h2>
+<ul>
+<li><code>apropos &lt;search&gt;</code><ul>
+<li>searches man page titles</li>
+</ul>
+</li>
+<li><code>cut [-d &lt;delim&gt;] -f &lt;fields to remain&gt; &lt;files&gt;</code><ul>
+<li>takes ASCII structured file seperated by a delimiter like <code>TAB</code> and cut returns the fields indicated </li>
+<li><code>cut -d "," -f 1,5-7 datafile.csv</code></li>
+</ul>
+</li>
+<li><code>paste [-d &lt;sep&gt;] &lt;files&gt;</code><ul>
+<li>steps through multiple files in parallel</li>
+<li>delimiter is what seperates each line from each file e.g.</li>
+</ul>
+</li>
+<li><code>tr &lt;options&gt; &lt;string1&gt; &lt;string&gt;</code><ul>
+<li>converts characters in first string to characters in the second string</li>
+<li>takes from stdin</li>
+<li><code>-c</code> complement the first string</li>
+<li><code>-s</code> squeeze character repetitions of string1 characters into a single occurance ("####" -&gt; "#")</li>
+<li><code>tr '[A-Z]' '[a-z]' &lt; file.txt</code></li>
+</ul>
+</li>
+<li><code>comm [&lt;output options&gt;] &lt;file1&gt; &lt;file2&gt;</code><ul>
+<li>two sorted files are compared, 3 columns are produced</li>
+<li>col 1 contains only lines unique to file1</li>
+<li>col 2 contains only lines unique to file2</li>
+<li>col 3 contains common lines</li>
+<li><code>-1</code> suppress col 1</li>
+<li><code>-2</code> duh</li>
+<li><code>-3</code> duh</li>
+</ul>
+</li>
+<li><code>uniq &lt;file&gt;</code><ul>
+<li>compresses adjacent repeated lines into a  single line</li>
+<li><code>-c</code> outputs the counts of the number of copies</li>
+</ul>
+</li>
+<li><code>sort [options] &lt;file&gt;</code><ul>
+<li>outputs to stdout</li>
+<li><code>-u</code> removes duplicate entries</li>
+<li><code>-t &lt;char&gt;</code> used as field seperator, <code>TAB</code> is default</li>
+<li><code>-k</code> can sort on a particular column of structured file</li>
+</ul>
+</li>
+<li><code>basename /path/file.txt</code><ul>
+<li>strips the directory and file extensions from a path</li>
+</ul>
+</li>
+<li><code>grep [options] &lt;pattern string&gt; &lt;file&gt;</code><ul>
+<li>searches for patterns in one or more files</li>
+<li>returns matches to stdout</li>
+<li>returns 0 on successful find, else 1</li>
+</ul>
+</li>
+<li><code>test &lt;expression&gt;</code><ul>
+<li>does conditional checks for a number of common operations</li>
+<li>some examples<ul>
+<li><code>-e FileName</code> FileName exists</li>
+<li><code>-b Filename</code> Returns a True exit value if the specified FileName exists and is a block special file</li>
+<li><code>-c FileName</code> - FileName is a character special file</li>
+<li><code>-d FileName</code> FileName is a directory</li>
+<li><code>-f FileName</code> FileName is a regular file</li>
+<li><code>-g FileName</code> FileName's Set Group ID bit is set</li>
+<li><code>-h FileName</code> FileName is a symbolic link</li>
+<li><code>-k FileName</code> FileName's sticky bit is set</li>
+<li><code>-L FileName</code> FileName is a symbolic link</li>
+<li><code>-p FileName</code> FileName is a named pipe (FIFO)</li>
+<li><code>-r FileName</code> FileName is readable by the current process</li>
+<li><code>-s FileName</code> FileName has a size greater than 0</li>
+<li><code>-t FileDescriptor</code> FileDescriptor is open and associated with a terminal</li>
+<li><code>-u FileName</code> FileName's Set User ID bit is set</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>find [options] &lt;path&gt; [&lt;expression&gt;]</code><ul>
+<li>recursively searches for file patterns</li>
+<li><code>-name &lt;pattern&gt;</code> test file name matches pattern</li>
+<li><code>-type &lt;c&gt;</code> type of file is specified by <code>d/f/l</code></li>
+<li><code>-newer &lt;file&gt;</code> test file has been accessed more recently than <code>&lt;file&gt;</code> was modified</li>
+<li><code>-print</code> prints the full path name of file</li>
+<li><code>-exec &lt;command&gt;</code> execute command on all files found (like JS <code>.map()</code>) <ul>
+<li>command terminated with <code>\;</code></li>
+<li><code>{}</code> refers to file found</li>
+</ul>
+</li>
+<li><code>-ok &lt;command&gt;</code> same as command except user is prompted first</li>
+<li><code>-perm &lt;mode&gt;</code> finds only files with certain permissions<ul>
+<li><code>mode</code> can be octal or symbolic</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>diff &lt;file1&gt; &lt;file2&gt;</code><ul>
+<li>shows the differences between to files</li>
+</ul>
+</li>
+<li><code>grep [&lt;options&gt;] &lt;regex&gt; &lt;file&gt;</code><ul>
+<li><code>-i</code> case insensitive</li>
+<li><code>-n</code> prepend numbers of matching lines</li>
+<li><code>-v</code> invert match so only non-matching lines reported</li>
+</ul>
+</li>
+<li><a href="/sed">sed</a></li>
+</ul></article>
+
+      
+
+      
+      <p class="backlinks"><span class="bold">Tags:</span>
+          
+          <a href="/tags#unix">#unix</a>
+          
+        </span>
+      </p>
+      
+
+        
+
+
+      
+        
+        <h2><a href="/awk">Awk</a></h2>
+        
+        <h2><a href="/make">Make</a></h2>
+        
+        <h2><a href="/vi(m)">Vi(m)</a></h2>
+        
+        <h2><a href="/sed">sed</a></h2>
+        
+      
+
+    </main>
+  </body>
+</html>

@@ -130,42 +130,42 @@
       <article><blockquote>
 <p>Fine-tuning enormous language models is prohibitively expensive in terms of the hardware required and the storage/switching cost for hosting independent instances for different tasks. We propose LoRA, an efficient adaptation strategy that neither introduces inference latency nor reduces input sequence length while retaining high model quality</p>
 </blockquote>
-<p><cite> Hu et al., <a href="https://arxiv.org/abs/2106.09685">LoRA: Low-Rank Adaptation of Large Language Models</a></cite></p>
+<p><cite class="standalone">Hu et al., <a href="https://arxiv.org/abs/2106.09685">LoRA: Low-Rank Adaptation of Large Language Models</a></cite></p>
 <p>Low-Rank Adaptation (LoRA) is a method that is designed to allow full fine-tuning of existing LLMs without having to (expensively) retrain all the model parameters, and avoids additional inference latency. It works by freezing the model weights of the initial LLM and injecting trainable rank decomcomposition matrices onto each layer of the Transformer architechture. This reduces the number of parameters used in downstream tasks greatly.  This can reduce the memory requirements significantly, and allows "on-par or better" quality than fine-tuning models.</p>
 <p>LoRA was initially explored as a technique for use in LLMs but is also applicable to other kinds of models. <a href="https://replicate.com/blog/lora-faster-fine-tuning-of-stable-diffusion">It is used</a> to fine-tune <a href="/stable-diffusion">Stable Diffusion</a> models faster than other tools like Dreambooth.</p>
 <blockquote>
 <p>While we focused on Transformer language models, the proposed principles are generally applicable to any neural networks with dense layers.</p>
 </blockquote>
-<p><cite> Hu et al., <a href="https://arxiv.org/abs/2106.09685">LoRA: Low-Rank Adaptation of Large Language Models</a></cite></p>
+<p><cite class="standalone">Hu et al., <a href="https://arxiv.org/abs/2106.09685">LoRA: Low-Rank Adaptation of Large Language Models</a></cite></p>
 <h2 id="injecting-trainable-rank-recomposition-matrices">Injecting trainable rank recomposition matrices?</h2>
 <blockquote>
 <p>LoRA finds a subset of the original weights (about 1%) which can be trained to achieve about the same result as training the whole model while using 100x less compute.</p>
 <p>Original weights frozen = Rather than modify the original model, the training results are saved to a small file of only a few MB.</p>
 <p>In practice this means you can fine tune a 30B parameter model on a consumer GPU in a couple of hours. Without LoRA you would need to run multiple expensive data center GPUs for days or weeks.</p>
 </blockquote>
-<p><cite> <a href="https://news.ycombinator.com/item?id=35289168">MacsHeadroom</a></cite></p>
+<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=35289168">MacsHeadroom</a></cite></p>
 <blockquote>
 <p>To be more exact, LoRA adds two matrices <code>A</code> and <code>B</code> to any layers that contain trainable weights. The original weights (<code>W_0</code>) have the shape <code>d × k</code>. These are frozen. Matrix <code>A</code> has dimensions <code>d × &lt;rank&gt;</code> (<code>rank</code> is configurable) and matrix <code>B</code> has the shape <code>&lt;rank&gt; × k</code>. A and B are then multiplied and added to <code>W_0</code> to get altered weights. The benefit here is that the extra matrices are small compared to <code>W_0</code>, which means less parameters need to be optimized, so less activations need to be stored in memory.</p>
 </blockquote>
-<p><cite> <a href="https://news.ycombinator.com/item?id=35289319">stephanheijl</a></cite></p>
+<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=35289319">stephanheijl</a></cite></p>
 <h2 id="wait-what-is-rank">Wait what is rank</h2>
 <p><a href="/rank">Rank</a> is the maximal number of linearly independent columns in a matrix.  It has been found that neural networks have low intrinsic rank.</p>
 <blockquote>
 <p>A neural network contains many dense layers which perform matrix multiplication. The weight matrices in these layers typically have full-rank. When adapting to a specific task, Aghajanyan et al. (2020) shows that the pre-trained language models have a low “instrisic dimension” and can still  learn efficiently despite a random projection to a smaller subspace. Inspired by this, we hypothesize the updates to the weights also have a low “intrinsic rank” during adaptation.</p>
 </blockquote>
-<p><cite> Hu et al., <a href="https://arxiv.org/abs/2106.09685">LoRA: Low-Rank Adaptation of Large Language Models</a></cite></p>
+<p><cite class="standalone">Hu et al., <a href="https://arxiv.org/abs/2106.09685">LoRA: Low-Rank Adaptation of Large Language Models</a></cite></p>
 <h2 id="wait-what-is-intrensic-dimensionality">Wait what is intrensic dimensionality</h2>
 <blockquote>
 <p>the <strong>intrinsic dimensionality</strong> of a space is the number of <em>required</em> pieces of information that we need to describe each object in the space, which may differ from the number of pieces of information that we <em>are</em> using, which we call the <strong>extrinsic dimensionality</strong> of the space</p>
 </blockquote>
-<p><cite> Matthew N. Bernstein, in his <a href="https://mbernste.github.io/posts/intrinsic_dimensionality/">very good writeup</a></cite></p>
+<p><cite class="standalone">Matthew N. Bernstein, in his <a href="https://mbernste.github.io/posts/intrinsic_dimensionality/">very good writeup</a></cite></p>
 <p>This in essence means that the dimensionality that is actually needed may be lower than the full dimensionality of the matrix.  A simple example of this is imagining a set of points on a 2D place that exists within a 3D space.  This has 3 extrensic dimensions, but since only 2 are actually needed to describe points, it has 2 intrensic dimensions.</p>
 <h2 id="so-what-is-intrensic-rank">So what is intrensic rank</h2>
 <p>I guess intrensic rank is the <em>required</em> maximal number of linearly independent columns in a matrix, as opposited to the extrensic rank which is the number of linearly indepedent columns.</p>
 <blockquote>
 <p>Extrinsic rank is an objective property of a matrix that is based solely on its entries, while intrinsic rank takes into account the structure and patterns of the data, and it can be lower than the extrinsic rank in cases where the data has low-dimensional structure or redundancy.</p>
 </blockquote>
-<p><cite> ChatGPT</cite></p>
+<p><cite class="standalone">ChatGPT</cite></p>
 <h2 id="impact">Impact</h2>
 <blockquote>
 <h4 id="lora-is-an-incredibly-powerful-technique-we-should-probably-be-paying-more-attention-to">LoRA is an incredibly powerful technique we should probably be paying more attention to</h4>
@@ -175,7 +175,7 @@
 <p>This means that as new and better datasets and tasks become available, the model can be cheaply kept up to date, without ever having to pay the cost of a full run.</p>
 <p>By contrast, training giant models from scratch not only throws away the pretraining, but also any iterative improvements that have been made on top. In the open source world, it doesn’t take long before these improvements dominate, making a full retrain extremely costly.</p>
 </blockquote>
-<p><cite> <a href="https://www.semianalysis.com/p/google-we-have-no-moat-and-neither">Leaked Internal Google Document</a> on open source LLM progress</cite></p>
+<p><cite class="standalone"><a href="https://www.semianalysis.com/p/google-we-have-no-moat-and-neither">Leaked Internal Google Document</a> on open source LLM progress</cite></p>
 <h2 id="links">Links</h2>
 <ul>
 <li><a href="https://arxiv.org/abs/2106.09685">LoRA: Low-Rank Adaptation of Large Language Models</a>, the original LoRA paper by Microsoft</li>

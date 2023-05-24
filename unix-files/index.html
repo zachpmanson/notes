@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/styles/colors.css" />
+    <link rel="stylesheet" href="/static/styles/global.css" />
+    <link rel="stylesheet" href="/static/styles/code.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/static/icon/site.webmanifest" />
+    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+    <meta name="theme-color" content="#282A36" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>notes: unix files</title>
+  </head>
+
+  <body>
+     <nav>
+      <div>
+        <a href="/">
+          <img src="/static/icon/icon.png" alt="notes" height="100">
+        </a>
+      </div>
+      
+
+      
+      <div>
+        
+        <details><summary>10 piblings</summary>
+        
+        <ul>
+        
+          <li>
+            
+            <a href="/debugging">Debugging</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/docker">Docker</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/generative-ai">Generative AI</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/internet">Internet</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/markdown">Markdown</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/mistakes">Mistakes</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/open-source-philosophy">Open Source Philosophy</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/programs-with-fun-names">Programs with Fun Names</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/self-hosting">Self-Hosting</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/unix" class="activated-link">Unix</a>
+            
+          </li>
+        
+        </ul>
+        
+        </details>
+        
+      </div>
+      
+
+      
+      <div>
+        
+        <ul>
+        
+          <li>
+            
+            <a href="/bash">Bash</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/gecos">GECOS</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/unix-files" class="activated-link">Unix Files</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/unix-processes">Unix Processes</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/unix-programs">Unix Programs</a>
+            
+          </li>
+        
+        </ul>
+        
+      </div>
+      
+
+
+
+      
+
+    </nav>
+    <main>
+      <header>
+        <h1>Unix Files</h1>
+      </header>
+      <article><h2 id="file-permissions">File Permissions</h2>
+<p>Permissions have 3 kinds of access:<br />
+- r - read access
+- w - write/modify access
+- x - execute permission</p>
+<p>3 user sets:<br />
+- u - user, file owner
+- g - group
+- o - everyone else</p>
+<p>These are presented like this in <code>ls</code>:</p>
+<div class="highlight"><pre><span></span><code>-rw- --- ---
+</code></pre></div>
+<p>Directories are the same but are preceeded with a <code>d</code>:</p>
+<div class="highlight"><pre><span></span><code>drw- --- ---
+</code></pre></div>
+<p>Setting file permissions can be done with <code>chmod</code><br />
+- <code>chmod &lt;octal mode&gt; &lt;files&gt;</code>
+    - silly to use this 2023 except in shell scripts, but even then
+    - each group of 3 permission is views a 3 bits of an octal number
+        - 100 r perm
+        - 010 w perm
+        - 001 x perm
+- <code>chmod &lt;symbolic mode&gt; &lt;files&gt;</code>
+    - <code>chmod &lt;user sets&gt;&lt;+|-&gt;&lt;perms&gt; &lt;files&gt;</code>
+    - <code>chmod go+r file.txt</code>
+    - may require multiple calls</p>
+<h2 id="inputoutput">Input/Output</h2>
+<p>Unix views all files as characters/bytes, leaving interpretation up to the programs.</p>
+<ul>
+<li>default input is stdin (file descriptor 0), which is mapped to the keyboard by default.</li>
+<li>default output is stdout (file descriptor 1), which is the screen</li>
+<li>default error output is stderr (filedescriptor 2), which also goes to the screen<ul>
+<li>this allows errors to be seperately directed</li>
+</ul>
+</li>
+</ul>
+<h3 id="redirection">Redirection</h3>
+<p>stdin/stdout/stderr can be redirected to other files
+- <code>&lt;</code> redirects stdin to file 
+- <code>&gt;</code> redirects stdout to file
+- <code>&gt;&gt;</code> redirects stdout to append to a file
+- <code>2&gt;</code> redirects stderr to file</p>
+<h3 id="piping">Piping</h3>
+<p>stdout/stderr can be redirected to other programs inputs, rather than files using piping.</p>
+<div class="highlight"><pre><span></span><code>date | wc
+</code></pre></div>
+<p><code>|</code> only applies to stdout, but <code>2&gt; errors |</code> works equivalently for errors.</p>
+<h2 id="scripts">Scripts</h2>
+<p>Scripts are files that contains sets of commands on consecutive lives that can be repeatedly run.</p>
+<p>The first line of a script says what interpreter should be used to execute the script.</p>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/env bash</span>
+</code></pre></div>
+<p>Script needs to be made executable</p>
+<div class="highlight"><pre><span></span><code>chmod<span class="w"> </span>u+x<span class="w"> </span>script.sh
+</code></pre></div>
+<p>From here <a href="/bash">Bash</a> takes overs.</p></article>
+
+      
+
+      
+      <p class="backlinks"><span class="bold">Tags:</span>
+          
+          <a href="/tags#unix">#unix</a>
+          
+        </span>
+      </p>
+      
+
+        
+
+
+      
+        
+      
+
+    </main>
+  </body>
+</html>
