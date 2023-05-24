@@ -1,4 +1,4 @@
-He updated his position on [[chatgpt]].
+He updated his position on [[ChatGPT]].
 
 Discussion of open source philosophy.
 

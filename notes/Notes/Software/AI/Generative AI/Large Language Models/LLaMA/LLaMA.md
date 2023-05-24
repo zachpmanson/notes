@@ -29,7 +29,7 @@ Simon Willison has interesting writeups on LLaMA and early responses to it:
 ## Links
 
 - [llama.cpp](https://github.com/ggerganov/llama.cpp), a port of Facebook's LLaMA model in C/C++
-	- designed to run the model using 4-bit [[quantization]] on a MacBook
+	- designed to run the model using 4-bit [[Quantization]] on a MacBook
 
 ## Magnets
 

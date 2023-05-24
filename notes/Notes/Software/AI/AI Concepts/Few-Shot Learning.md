@@ -1,4 +1,4 @@
-Few-shot learning is a prompting technique where a small number of problem-solution examples are processed by [[large language models]] before they are given a problem.  LLMs can exhibit an emergent property where few-shot learning enables the model to perform significantly better than they otherwise might.  
+Few-shot learning is a prompting technique where a small number of problem-solution examples are processed by [[Large Language Models]] before they are given a problem.  LLMs can exhibit an emergent property where few-shot learning enables the model to perform significantly better than they otherwise might.  
 
 Zero-shot prompting is used to signify no examples are provided to a given problem.
 
