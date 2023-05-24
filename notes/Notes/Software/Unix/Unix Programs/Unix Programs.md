@@ -1,4 +1,5 @@
 When programs conclude they return an exit status.
+
  - 0 is success, else is failure
  - positive integers represent an error state, usually 1 is used
  - in [[Bash]], `$?` can be used to access last commands exit status
