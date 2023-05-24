@@ -14,6 +14,8 @@ two spaces at the end.
 
 -- [Zach Manson](https://zachmanson.com)
 
+This is a sentence with a <cite>Zach Manson</cite> citation in the middle of it.
+
 ---
 
 # Heading

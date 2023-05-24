@@ -8,6 +8,7 @@ def sanitize_anchor(anchor):
     return clean_anchor
 
 def sanitize_url(url):
+    """Converts page name to usable URL"""
     clean_url = url.lower()
 
     if clean_url == "index":
@@ -19,7 +20,8 @@ def sanitize_url(url):
             " ":"-",
             '"':"",
             "'":"",
-            ",":""
+            ",":"",
+            "&":"and"
         }   
         for key,value in subs.items():
             clean_url = clean_url.replace(key, value)

@@ -59,7 +59,7 @@ Uses `;` to seperate commands, double quotes for strings.
 
 ## Commands
 
-- `print [expression list] [> <expression>]|[| <expression>]`
+- `print [expression list] [> <expression>] | [| <expression>]`
 	- without expression, prints `$0`
 	- options `>` will pipe to file
 	- expression must eval to string

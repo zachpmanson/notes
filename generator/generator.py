@@ -7,7 +7,9 @@ import sys
 import jinja2
 import markdown
 from markdown.extensions.codehilite import CodeHiliteExtension
-from extensions import CiteExtension
+
+from extensions.cite import CiteExtension
+from extensions.backlink import BacklinkExtension
 
 import helpers
 
@@ -179,8 +181,6 @@ def append_bullet(node, depth):
 def preprocess_markdown(text):
     # add ochrs vars
     text = re.sub(r"<ochrs:(.+?)>", format_ochrs_var, text)
-    # add backlinks
-    text = re.sub(r"(?<!!)\[\[([^\]]+)?\]\]", format_backlink, text)
     # add images backlink
     text = re.sub(r"!\[\[([^\]]+)?\]\]", "![](/static/media/\\1)", text)
 
@@ -217,7 +217,6 @@ def format_tags(matches):
         else:
             tags[tag] = set()
             tags[tag].add(current_node)
-        
 
 def format_ochrs_var(matches):
     try:
@@ -233,17 +232,13 @@ def format_ochrs_var(matches):
         value = "unknown ochrs var"
     return value
 
-def format_backlink(matches):
-    if "|" in matches.group(1):
-        segments = matches.group(1).split("|")
-        text = segments[1]
-        page = segments[0]
-    else:
-        text = matches.group(1)
-        page = text
+
+VERBOSE = False
+
+def build_backlink(label, base, end):
     
     anchor = ""
-
+    page = label
     if "#" in page:
         segments = page.split("#")
         page = segments[0]
@@ -255,24 +250,30 @@ def format_backlink(matches):
             if page.lower() == key.lower():
                 page = key
                 break
+    
+    # ignore links from lectures
+    if not re.match(r"W[0-9]{2}L[0-9]{2}", current_node):
+        tree[page]["backlinks"].add(current_node)
 
-    tree[page]["backlinks"].add(current_node)
+    page = helpers.sanitize_url(page)
+    
+    return base+page+end+anchor
 
-    return f"[{text}](/{helpers.sanitize_url(page)}{anchor})"
-
-
-
-VERBOSE = False
 
 md_extensions = [
     'fenced_code',
+    BacklinkExtension(
+        build_url=build_backlink,
+        html_class="",
+        end_url=""
+    ),
     CodeHiliteExtension(guess_lang=False),
     'md_in_html',
     'toc',
     'tables',
     'pymdownx.superfences',
     'markdown_checklist.extension',
-    CiteExtension(),
+    CiteExtension()
 ]
 
 ignore_names = [
