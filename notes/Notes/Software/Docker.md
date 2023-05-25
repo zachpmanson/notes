@@ -25,9 +25,9 @@ Docker is a system for running virtual machines called containers.
 	- image is a read only template for container
 	- container is a runnable instance of an image
 
-![[Screen Shot 2023-03-12 at 20.00.45.png]]
+![[docker-architecture.png]]
 
-![[Screen Shot 2023-03-12 at 20.01.39.png]]
+![[docker-vs-vm.png]]
 
 ## Running
 
