@@ -4,6 +4,11 @@ When programs conclude they return an exit status.
  - positive integers represent an error state, usually 1 is used
  - in [[Bash]], `$?` can be used to access last commands exit status
 
+A helpful resources outside of man pages:
+
+- [tldr.sh](https://tldr.sh/)
+	- web client [tldr.inbrowser.app](https://tldr.inbrowser.app/)
+
 ## Useful Programs
  
 - `apropos <search>`
