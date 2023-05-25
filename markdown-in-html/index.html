@@ -233,7 +233,7 @@
       <header>
         <h1>Markdown in HTML</h1>
       </header>
-      <article><p>To include Markdown components within HTML elements within a Markdown file in Python Markdown you need to add an extension and an attribute.</p>
+      <article><p>To include Markdown components within HTML elements within a Markdown file in Python Markdown you need to add the (official) extension <a href="https://python-markdown.github.io/extensions/md_in_html/#markdown-in-html" title="Permanent link">Markdown in HTML</a> and an attribute.</p>
 <div class="highlight"><pre><span></span><code><span class="n">html_content</span> <span class="o">=</span> <span class="n">markdown</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span>
     <span class="n">text</span><span class="o">.</span><span class="n">content</span><span class="p">,</span>
     <span class="n">extensions</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;md_in_html&#39;</span><span class="p">]</span>
@@ -250,7 +250,8 @@
 
     ![](./cyberpunk-toadstool-explodes.png)
 <span class="p">&lt;/</span><span class="nt">details</span><span class="p">&gt;</span>
-</code></pre></div></article>
+</code></pre></div>
+<p>"1" uses the default behaviour of the element, "block" forces it to use block behaviour on the contents of the element, and "span" forces the element to use span behaviour on its contents.</p></article>
 
       
       <p class="backlinks"><span class="bold">Incoming:</span>
