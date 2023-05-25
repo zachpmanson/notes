@@ -38,7 +38,7 @@ The process of making computers learn to solve problems themselves, based on exa
 	- when working with a pretrained model and using it for a different task to what it was originally trained for
 - fine tuning is a transfer learning technique of additionally training a pretrained model with further data
 
-Definitions from Practical Deep Learning Glossary, ch. 1:
+Definitions from [[Practical Deep Learning]] Glossary, ch. 1:
 
 Term | Meaning
 ---- | ------- 
