@@ -4,15 +4,19 @@ Ochrs has a few additions on top of normal [Python Markdown](https://python-mark
 
 <ochrs:md-extensions>
 
-Most of these are officially supported, some are from [pymdownx](https://facelessuser.github.io/pymdown-extensions/), and some are from the [third party extension list](https://github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions).
+Most of these are officially supported, some are from [pymdownx](https://facelessuser.github.io/pymdown-extensions/), some are from the [third party extension list](https://github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions), and some are custom extensions [included as part of Ochrs](https://github.com/pavo-etc/notes/tree/main/generator/extensions).
 
 ### Citations
 
-CiteExtention turns `-- Name Here`  into `<cite>Name here</cite>`.  This is a simple custom extention contained [within the Ochrs repo](https://github.com/pavo-etc/notes/blob/main/generator/extensions.py). 
+CiteExtention is a custom extension that turns `-- Name Here`  into `<cite>Name here</cite>`.
+
+## Backlinks
+
+BacklinkExtension is an enhanced version of [WikiLinkExtension](https://python-markdown.github.io/extensions/wikilinks/) that supports aliased links and can include anchor links.
 
 ## Ochrs Variables
 
-There are also run-time variables that you have access to on all pages.  The list of extensions above is one of these, generated at run-time by Ochrs.  The format to insert one of these variables is:
+There are also build-time variables that you have access to on all pages.  The list of extensions above is one of these, generated at built-time by Ochrs.  The format to insert one of these variables is:
 
 ```
 Some normal text <ochrs:example> some more text

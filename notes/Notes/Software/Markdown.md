@@ -1,4 +1,4 @@
-Markdown is a markup language created by [John Gruber](https://daringfireball.net) in 2004.
+Markdown is a markup language created by [John Gruber](https://daringfireball.net) (with contributions from Aaron Swartz) in 2004.  There is no "official" specification other than Gruber's [original syntax release](https://daringfireball.net/projects/markdown/), but there are formalised variants of it.  Two notable specifications are [CommonMark](https://commonmark.org/) and its superset [GitHub Flavored Markdown](https://github.github.com/gfm/).
 
 ## Background
 
