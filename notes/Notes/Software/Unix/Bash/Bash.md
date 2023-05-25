@@ -1,1 +1,1 @@
-Bash is a scripting programming language that is good for writing glueware.  It is available on most Unices and where it isn't there is usually a similar language available.
+Bash is a scripting programming language that is good for writing glueware.  It is available on most Unices and where it isn't there is usually a similar language available.  It was designed as a replacement for the Bourne Shell (hence the name Bourne Again SHell) by Brian Fox and released in 1989 for the GNU Project.

@@ -1,4 +1,4 @@
-Make is a language/program that is designed to simplify compiling and linking C programs by automating the process and only recompiling files that have actually been modified.
+Make is a language/program that is designed to simplify compiling and linking C programs by automating the process and only recompiling files that have actually been modified.  Its very brittle, but effective in many situations.
 
 Need to have `Makefile` in the project, run with `make` command.
 
