@@ -1,5 +1,7 @@
 As written by Rob Pike on [2012-08-12 on Google Plus](https://web.archive.org/web/20180827160401/https://plus.google.com/+RobPikeTheHuman/posts/R58WgWwN9jp).
 
+Tags: #relics 
+
 ---
 
 A lesson in shortcuts.  

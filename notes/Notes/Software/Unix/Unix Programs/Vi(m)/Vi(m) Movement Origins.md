@@ -1,9 +1,3 @@
-Vi is a text editor created for Unix by Bill Joy in 1976. Its name is short for for visual mode, as it was a originally only a visual interface for ex, a line editor created by Joy and Chuck Haley. Its name has spawned the backronym visual interface.
-
-Vim (Vi IMproved) is an expanded clone of Vim created by Bram Moolenaar in 1991. 
-
-## Movement Origins
-
 Vi uses hjkl for navigation as it was developed on an ADM-3A terminal which didn't have dedicated arrow keys, using hjkl for navigation.
 
 ![[ADM3A.png]]
@@ -17,4 +11,4 @@ I first learnt of this [here](https://twitter.com/hillelogram/status/13266001255
 
 The Home and tilde symbols on the chevron key is potentially associated with the use of ~ to reference the user home directory in Unix. This key usage was also a first by ADM-3A.
 
-Tags: #unix
+Tags: #relics 

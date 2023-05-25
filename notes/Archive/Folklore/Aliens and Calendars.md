@@ -1,5 +1,7 @@
 The following was written by Foone, [posted to Twitter](https://news.ycombinator.com/item?id=32096553) on 2022-09-21.
 
+Tags: #relics
+
 ---
 
 Someday aliens are going to land their saucers in a field somewhere in New Jersey and everything is going to go just fine right up until we try to explain our calendar to them
