@@ -32,7 +32,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: prisma schema changes and vercel</title>
+    <title>notes: markdown in html</title>
   </head>
 
   <body>
@@ -153,7 +153,7 @@
         
           <li>
             
-            <a href="/markdown-in-html">Markdown in HTML</a>
+            <a href="/markdown-in-html" class="activated-link">Markdown in HTML</a>
             
           </li>
         
@@ -177,7 +177,7 @@
         
           <li>
             
-            <a href="/prisma-schema-changes-and-vercel" class="activated-link">Prisma Schema Changes and Vercel</a>
+            <a href="/prisma-schema-changes-and-vercel">Prisma Schema Changes and Vercel</a>
             
           </li>
         
@@ -231,31 +231,36 @@
     </nav>
     <main>
       <header>
-        <h1>Prisma Schema Changes and Vercel</h1>
+        <h1>Markdown in HTML</h1>
       </header>
-      <article><p>When you change a schema using Prisma, Vercel won't automatically regenerate the Prisma client until you add a <code>postinstall</code> command to <code>package.json</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;scripts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;dev&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;next dev&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;build&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;next build&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;start&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;next start&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;lint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;next lint&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;generate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;prisma generate&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// add these two</span>
-<span class="w">    </span><span class="nt">&quot;postinstall&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;npm run generate&quot;</span>
-<span class="p">},</span>
+      <article><p>To include Markdown components within HTML elements within a Markdown file in Python Markdown you need to add an extension and an attribute.</p>
+<div class="highlight"><pre><span></span><code><span class="n">html_content</span> <span class="o">=</span> <span class="n">markdown</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span>
+    <span class="n">text</span><span class="o">.</span><span class="n">content</span><span class="p">,</span>
+    <span class="n">extensions</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;md_in_html&#39;</span><span class="p">]</span>
+<span class="p">)</span>
 </code></pre></div>
-<p>Solution found <a href="https://github.com/prisma/prisma/issues/5175">here</a>.</p></article>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">details</span> <span class="na">markdown</span><span class="o">=</span><span class="s">&quot;1&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">summary</span> <span class="na">markdown</span><span class="o">=</span><span class="s">&quot;block&quot;</span><span class="p">&gt;</span>
+        ## Appendix: Some Generative Art
+    <span class="p">&lt;/</span><span class="nt">summary</span><span class="p">&gt;</span>
+
+    Some images I generated with DALL·E:
+
+    ![](./lemur-pears.png)
+
+    ![](./cyberpunk-toadstool-explodes.png)
+<span class="p">&lt;/</span><span class="nt">details</span><span class="p">&gt;</span>
+</code></pre></div></article>
 
       
-
-      
-      <p class="backlinks"><span class="bold">Tags:</span>
+      <p class="backlinks"><span class="bold">Incoming:</span>
           
-          <a href="/tags#nextjs">#nextjs</a>
-          
-          <a href="/tags#prisma">#prisma</a>
+          <a href="/recent-changes">Recent Changes</a>
           
         </span>
       </p>
+      
+
       
 
         
