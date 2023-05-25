@@ -10,5 +10,7 @@
 - Dalai, an installer and interface for LLaMA
 - APL, A Programming Language
 - Lebab, a transpiler from ES5 code to ES6/ES7, the opposite of Babel
+- `bat`, an advanced version of `cat`
+- Unix, a play on words of a prior system called Multics
 
 Tags: #lists
