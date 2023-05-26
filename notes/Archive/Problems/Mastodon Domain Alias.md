@@ -18,3 +18,5 @@ This is based on these two guides:
 - [Using GitHub Pages to Setup an Alias on Mastodon](https://blog.netnerds.net/2022/11/alias-mastodon-github-pages/)
 
 Hopefully Mastodon implements BlueSky-esque domain as username features.
+
+May be able to get around the static hosting problems using [this, will need to investigate further](https://github.com/mastodon/mastodon/issues/2668#issuecomment-1342518861).
