@@ -45,7 +45,7 @@ class BacklinkExtension(Extension):
         self.md = md
 
         # append to end of inline patterns
-        BACKLINK_RE = r'\[\[([\w0-9_ \-\|\#\,]+)\]\]'
+        BACKLINK_RE = r'\[\[([\w0-9_ \-\|\#\,\'\(\)]+)\]\]'
         backlinkPattern = BacklinkInlineProcessor(BACKLINK_RE, self.getConfigs())
         backlinkPattern.md = md
         md.inlinePatterns.register(backlinkPattern, 'backlink', 75)
