@@ -1,6 +1,6 @@
 ## Timeline
 
-![](https://ai.v-gar.de/ml/transformer/timeline/timeline.png)
+![AI model family tree](https://ai.v-gar.de/ml/transformer/timeline/timeline.png)
 
 Source: [AI / ML / Transformer Models Timeline](https://ai.v-gar.de/ml/transformer/timeline/)
 
