@@ -2,4 +2,4 @@ On Unix systems a file can be hidden from `ls` and other applications by prefixi
 
 More details on this can be read in [[Rob Pike's Lesson in Shortcuts]].
 
-Tags: #unix 
+Tags: #unix #relics 
