@@ -4,7 +4,7 @@ In Git Bash and WSL on Windows:
 date -u +%s | clip.exe
 ```
 
-In zsh:
+In zsh on macOS:
 
 ```sh 
 date -u +%s | pbcopy
