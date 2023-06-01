@@ -37,3 +37,7 @@ Things said by <cite>Michael Wise</cite> in [[CITS2003]].
 [[W12L01 - Markdown]]
 
 >What's happening with reddit is that using markdown so when stuff that you - that is submitted is turned into reddits, the reddits, the reddits are then turned into markdown which are then used to generate HTML.
+
+[[W12L02 - Exam Prep]]
+
+>I'm a simple man, I'm and engineer
