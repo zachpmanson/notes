@@ -19,7 +19,7 @@ This is based on these two guides:
 
 Hopefully Mastodon implements BlueSky-esque domain as username features.
 
-May be able to get around the static hosting problems using [this, will need to investigate further](https://github.com/mastodon/mastodon/issues/2668#issuecomment-1342518861).  Or [this](https://gist.github.com/aaronpk/5846789).  Or [this](https://aeracode.org/2022/11/01/fediverse-custom-domains/).
+May be able to get around the static hosting problems using [this, will need to investigate further](https://github.com/mastodon/mastodon/issues/2668#issuecomment-1342518861).  Or [this](https://gist.github.com/aaronpk/5846789).  Or [this](https://aeracode.org/2022/11/01/fediverse-custom-domains/), which [Simon Willison used](https://til.simonwillison.net/mastodon/custom-domain-mastodon).
 
 To see this in practice, search for @zach@zachmanson.com on Mastodon.
 
