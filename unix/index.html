@@ -223,7 +223,7 @@
 <h2 id="environment-variables">Environment Variables</h2>
 <p>Environment variables are defined by the system and will be will be passed to the shell.</p>
 <ul>
-<li>system path is stored in env var <code>PATH</code>, list of dirs seperated by <code>:</code>, usually contains the following paths </li>
+<li>system path is stored in env var <code>PATH</code>, list of dirs seperated by <code>:</code>, usually contains the following paths <ul>
 <li><code>/bin</code> <ul>
 <li>top level system commands</li>
 <li><code>cat</code>, <code>echo</code></li>
@@ -237,37 +237,52 @@
 <li><code>/usr/local/bin</code> <ul>
 <li>programs that you have installed for all users of your system locally</li>
 <li><code>pip3</code>, <code>ps2pdf</code></li>
-<li><code>~/bin</code> </li>
-<li>a users programs</li>
-<li><code>.</code></li>
 </ul>
 </li>
-<li><code>CDPATH</code> </li>
+<li><code>~/bin</code> <ul>
+<li>a users programs</li>
+</ul>
+</li>
+<li><code>.</code><ul>
+<li>current directory</li>
+</ul>
+</li>
+<li><code>CDPATH</code> <ul>
 <li>all locations that cd can direct you to</li>
 <li>similar to <code>PATH</code></li>
-<li><code>PS1</code> </li>
+</ul>
+</li>
+<li><code>PS1</code> <ul>
 <li>shell prompt text</li>
-<li><code>umask 077</code> </li>
+</ul>
+</li>
+<li><code>umask 077</code> <ul>
 <li>permissions applied to files on creation</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <p>More environment variables can be setup in the <code>~/.profile</code> executable.</p></article>
 
       
       <p class="backlinks"><span class="bold">Incoming:</span>
           
-          <a href="/ochrs-syntax">Ochrs Syntax</a>
-          
           <a href="/bash">Bash</a>
           
           <a href="/programs-with-fun-names">Programs with Fun Names</a>
           
-          <a href="/markdown">Markdown</a>
-          
           <a href="/cits2003">CITS2003</a>
+          
+          <a href="/recent-changes">Recent Changes</a>
+          
+          <a href="/ochrs-syntax">Ochrs Syntax</a>
           
           <a href="/vi(m)">Vi(m)</a>
           
           <a href="/bash-regular-expressions">Bash Regular Expressions</a>
+          
+          <a href="/markdown">Markdown</a>
           
           <a href="/debugging">Debugging</a>
           
