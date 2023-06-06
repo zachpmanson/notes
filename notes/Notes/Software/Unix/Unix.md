@@ -49,13 +49,13 @@ Environment variables are defined by the system and will be will be passed to th
 		- a users programs
 	* `.`
 		* current directory
-	* `CDPATH` 
-		* all locations that cd can direct you to
-		* similar to `PATH`
-	* `PS1` 
-		* shell prompt text
-	* `umask 077` 
-		* permissions applied to files on creation
+* `CDPATH` 
+	* all locations that cd can direct you to
+	* similar to `PATH`
+* `PS1` 
+	* shell prompt text
+* `umask 077` 
+	* permissions applied to files on creation
 
 More environment variables can be setup in the `~/.profile` executable.
 
