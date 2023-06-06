@@ -36,25 +36,26 @@ It was initially written in ASM, but sparked the creation of C which was designe
 Environment variables are defined by the system and will be will be passed to the shell.
 
 * system path is stored in env var `PATH`, list of dirs seperated by `:`, usually contains the following paths 
-  * `/bin` 
-    * top level system commands
-    * `cat`, `echo`
-  * `/usr/bin` 
-    * system level commands that generally come with the system but may need to be installed
-    * `python`, `gcc`
-  * `/usr/local/bin` 
-    * programs that you have installed for all users of your system locally
-    * `pip3`, `ps2pdf`
-    * `~/bin` 
-      * a users programs
-    * `.`
-* `CDPATH` 
-  * all locations that cd can direct you to
-  * similar to `PATH`
-* `PS1` 
-  * shell prompt text
-* `umask 077` 
-  * permissions applied to files on creation
+	* `/bin` 
+		* top level system commands
+		* `cat`, `echo`
+	* `/usr/bin` 
+		* system level commands that generally come with the system but may need to be installed
+		* `python`, `gcc`
+	* `/usr/local/bin` 
+		* programs that you have installed for all users of your system locally
+		* `pip3`, `ps2pdf`
+	* `~/bin` 
+		- a users programs
+	* `.`
+		* current directory
+	* `CDPATH` 
+		* all locations that cd can direct you to
+		* similar to `PATH`
+	* `PS1` 
+		* shell prompt text
+	* `umask 077` 
+		* permissions applied to files on creation
 
 More environment variables can be setup in the `~/.profile` executable.
 
