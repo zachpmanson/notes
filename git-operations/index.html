@@ -250,6 +250,17 @@
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;name&quot;</span>
 git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;email&quot;</span>
 </code></pre></div>
+<p>Setting the <code>git lola</code> alias:</p>
+<p>Add the following to <code>~/.gitconfig</code>.</p>
+<div class="highlight"><pre><span></span><code>[alias]
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[color]
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
+</code></pre></div>
 <h2 id="mistakes">Mistakes</h2>
 <p>Amend last commit with current changes:</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>--amend<span class="w"> </span>--no-edit
@@ -261,6 +272,13 @@ git<span class="w"> </span>reset<span class="w"> </span>HEAD~N
 git<span class="w"> </span>reset<span class="w"> </span>HEAD~1<span class="w"> </span>--hard
 </code></pre></div></article>
 
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+          
+          <a href="/recent-changes">Recent Changes</a>
+          
+        </span>
+      </p>
       
 
       
