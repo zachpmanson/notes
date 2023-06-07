@@ -146,7 +146,7 @@ $1 == -l
 <span class="nb">echo</span><span class="w"> </span><span class="nv">$varname</span>
 <span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;some text </span><span class="nv">$varname</span><span class="s2"> some more&quot;</span>
 <span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;singlequotes $dont interpolate values&#39;</span>
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;can wrap </span><span class="si">${</span><span class="nv">varname</span><span class="si">}</span><span class="s2">in curly backets&quot;</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;can wrap </span><span class="si">${</span><span class="nv">varname</span><span class="si">}</span><span class="s2"> in curly backets&quot;</span>
 </code></pre></div>
 <p>Backslashes can be used to escape characters.</p>
 <p>To get the value of programs into text strings, wrap the commands in brackets.</p>
@@ -155,7 +155,14 @@ $1 == -l
 <p>Variables are scoped to their script by default.  They can be exported so they can accessed externally or by child processes.</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span>PS1
 </code></pre></div>
-<h3 id="if-statements"><code>if</code> statements</h3>
+<h3 id="variable-expansion">Variable Expansion</h3>
+<p>Curly brackets around a variable can be used in more complex ways:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;can wrap </span><span class="si">${</span><span class="nv">varname</span><span class="si">}</span><span class="s2"> in curly backets&quot;</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;can use hash to get </span><span class="si">${#</span><span class="nv">varname</span><span class="si">}</span><span class="s2"> in length of variable&quot;</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;can will use word instead of parameter if parameter is undefined or null </span><span class="si">${</span><span class="nv">parameter</span><span class="k">:-</span><span class="nv">word</span><span class="si">}</span><span class="s2">&quot;</span>
+</code></pre></div>
+<p>There are more of these, see <a href="https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html">here</a>.</p>
+<h2 id="if-statements"><code>if</code> statements</h2>
 <p>From <a href="https://unix.stackexchange.com/questions/306111/what-is-the-difference-between-the-bash-operators-vs-vs-vs">here</a>.</p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span>
 <span class="w">    </span>command-list1
@@ -235,7 +242,11 @@ $1 == -l
 <span class="k">done</span>
 </code></pre></div>
 <p><code>list</code> is just a list of white-space seperated strings.  Good for use with globbing and file names, or reading through textfiles, especially when used in combination with <code>$IFS</code>.</p>
-<p><code>${#name}</code> will print the length of the string <code>name</code>.</p>
+<p><code>for</code> loops can also use this format (<a href="/bash">Bash</a> only)</p>
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="o">((</span>init<span class="p">;</span><span class="w"> </span>check<span class="p">;</span><span class="w"> </span>step<span class="o">))</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">    </span>body
+<span class="k">done</span>
+</code></pre></div>
 <h3 id="while-loop"><code>while</code> loop</h3>
 <div class="highlight"><pre><span></span><code><span class="k">while</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>condition<span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
 <span class="w">   </span>&lt;command3&gt;
@@ -255,6 +266,13 @@ $1 == -l
 <p>Use $1, $2 for parameters.  $0 is the function name.</p>
 <p>All variables are global unless <code>local</code> keyword is when declaring variable.</p></article>
 
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+          
+          <a href="/recent-changes">Recent Changes</a>
+          
+        </span>
+      </p>
       
 
       
