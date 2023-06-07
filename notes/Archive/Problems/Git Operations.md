@@ -7,6 +7,20 @@ git config --global user.name "name"
 git config --global user.email "email"
 ```
 
+Setting the `git lola` alias:
+
+Add the following to `~/.gitconfig`.
+
+```
+[alias]
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+```
 
 ## Mistakes
 

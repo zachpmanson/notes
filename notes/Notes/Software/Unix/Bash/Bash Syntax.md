@@ -157,7 +157,7 @@ Pattern should be a glob pattern. `*` is used as the else statement as it will m
 
 ## Loops
 
-`break` is a keyword that would do what you'd expect.
+`break` and `continue` do what you'd expect.
 
 ### `for` loop
 
@@ -168,8 +168,6 @@ done
 ```
 
 `list` is just a list of white-space seperated strings.  Good for use with globbing and file names, or reading through textfiles, especially when used in combination with `$IFS`.
-
-`${#name}` will print the length of the string `name`.
 
 `for` loops can also use this format ([[Bash]] only)
 
