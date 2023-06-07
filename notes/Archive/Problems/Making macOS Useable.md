@@ -26,4 +26,4 @@ brew install \
 --cask caffeine
 ```
 
-Tags: #lists 
+Tags: #lists #macos

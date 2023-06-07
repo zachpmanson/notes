@@ -69,9 +69,3 @@ More on this on the [Creative Commons site](https://creativecommons.org/2004/04/
 >In Unix everything is a file. Files are files, folders are files, disks are files, your keyboard is a file, your mouth is a file, the air is a file, you can't breathe, your file lungs fill with files and you try to scream but only files come out oh god Dennis how could you do thi
 
 -- [Sy Brand](https://twitter.com/TartanLlama/status/1375045731644538882)
-
----
-
->Unix is user-friendly — it's just choosy about who its friends are.
-
--- Anonymous, but first published in _The Art of UNIX Programming_ (2003) by Eric S. Raymond
