@@ -65,6 +65,7 @@ Address variants:
 
 - regex replacements `s/<regex>/<replacement>/[g]`
 	- `g` make it global
+	- `&` in replacment means "the entire captured text"
 - delete `d`
 - print `p`
 	- must be used with `-n`

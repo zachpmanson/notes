@@ -1,3 +1,7 @@
+>Unix is user-friendly — it's just choosy about who its friends are.
+
+-- The Art of UNIX Programming (2003) by Eric S. Raymond
+
 Created in 1969 at AT&T Bell Labs to run on departmental computers for the PDP-11.  It used 16-bit words and had 64KiB/128KiB RAM.
 
 It was initially written in ASM, but sparked the creation of C which was designed to make Unix development easier.
