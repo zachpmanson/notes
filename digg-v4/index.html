@@ -32,7 +32,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: pocket veto</title>
+    <title>notes: digg v4</title>
   </head>
 
   <body>
@@ -123,7 +123,7 @@
         
           <li>
             
-            <a href="/digg-v4">Digg v4</a>
+            <a href="/digg-v4" class="activated-link">Digg v4</a>
             
           </li>
         
@@ -135,7 +135,7 @@
         
           <li>
             
-            <a href="/pocket-veto" class="activated-link">Pocket Veto</a>
+            <a href="/pocket-veto">Pocket Veto</a>
             
           </li>
         
@@ -243,44 +243,29 @@
     </nav>
     <main>
       <header>
-        <h1>Pocket Veto</h1>
+        <h1>Digg v4</h1>
       </header>
-      <article><p>Ethical dilemmas during desperate times at Twitter.</p>
-<p>The following was written by Steve Krenzel, <a href="https://twitter.com/stevekrenzel/status/1589700721121058817">posted to Twitter</a> on 2022-11-08.</p>
+      <article><p>Posted by philovivero on <a href="https://news.ycombinator.com/item?id=36217321">HN on 2023-06-06</a>.</p>
 <hr />
-<p>With Twitter's change in ownership last week, I'm probably in the clear to talk about the most unethical thing I was asked to build while working at Twitter.</p>
-<p>To set the stage, this was the 2015-2016 era. @dickc was just ousted, though he was wonderful and made us feel like family. @jack came in as part-time CEO. Twitter had been near death for a while and was desperately trying to find a buyer. Facebook and Google both refused.
-Most people don't really appreciate how close Twitter was to shutting down. The 2016 election was the only thing that saved them and made them relevant again (to the detriment of us all). But I digress...
-I worked as a software engineer on a team with a charter to make Twitter work better for people in emerging markets (Brazil, India, Nigeria, etc...). This meant a lot of mobile work. And was mostly non-visual stuff - reducing bandwidth, memory usage, battery consumption.
-Oh and app size... we fought tooth and nail to keep the app under 10MB. FB had the money to zero-rate for people in India to d/l a 100MB app, but we did not. We finally lost the 10MB battle when Twitter Video launched (iirc). After that, all discipline around app size was lost.
-One of the first areas I worked on was improving the way our mobile apps uploaded logs. Twitter, like most mobile apps, logs <em>everything</em> users do – every swipe, tap, edit, delay, etc… – for debugging, metrics, and experiments.</p>
-<p>The size of logs adds up quickly.
-In the app, HTTP responses were compressed, but requests weren't. Logs are highly compressible, so I wired up support to gzip HTTP requests, and tweaked our log ingestion server to handle these.</p>
-<p>(That reduced mobile bandwidth consumption by ~40% iirc. It was absurd.)
-So I became known as the mobile logs guy. And that sets the stage for why I was pulled into a Sales conversation. Twitter was on its death bed and was desperate for money. A large telco wanted to pay us to log signal strength data in N. America and send it to them.
-My plan was to aggregate signal strength by carrier / by location. I worked with Data Science to find a granularity – minimum area size and minimum distinct users per area – that would preserve anonymity even when combined with other sources of data (differential privacy).
-When we sent this data to the telco they said the data was useless. They switched their request and said they want to be able to tell how many of our users are entering their competitors’ stores.</p>
-<p>A bit sketchier, but maybe workable in a privacy respecting way?
-We ran an alternative by the telco. They didn’t like it and were frustrated. So was Sales. I was asked to go to telco’s HQ and figure out exactly what they want.</p>
-<p>The subsequent request was absurd.
-I wound up meeting with a Director who came in huffing and puffing.</p>
-<p>The Director said “We should know when users leave their house, their commute to work, and everywhere they go throughout the day. Anything less is useless. We get a lot more than that from other tech companies.”
-I responded with some variant of “No fucking way”.</p>
-<p>There was no universe where I was going to help sell granular identifiable user location data.</p>
-<p>This led to more internal meetings. Legal said the request was fine – none of it violated the user ToS.
-Normally they might find another engineer to do this work, but my whole team was aligned with the privacy concerns. Twitter had also just done layoffs (aside: time is a flat circle), so there were no spare engineers around.
-My team wasn’t touched by layoffs, but half of them had quit anyway. Twitter was having a mass exodus.</p>
-<p>I had done what I could, but Twitter was no longer a place to do good work. I decided to join the exodus and would pull any levers to kill this on my way out.
-One random anecdote:</p>
-<p>In the middle of this, I had gotten a new manager who, in a retention attempt I’ll never forget, said “If we filled a dump truck with money and dumped it on you, would you stay and build this?”</p>
-<p>I wasn’t really sure how to respond to that… but no dice.
-My last email written at Twitter was to Jack. To his credit, he responded quickly with something to the effect of “Let me look into that and make sure there isn’t a misunderstanding. It doesn’t seem right. We wouldn’t want to do that.”</p>
-<p>It was in his hands now.
-As far as I know, the project actually got canned. Jack genuinely didn’t like it.</p>
-<p>I don’t know if this mindset will hold true with the new owner of Twitter though. I would assume Elon will do far worse things with the data.
-And, for the any employees still at Twitter, don’t underestimate the power of a pocket veto.</p>
-<p>Sometimes it doesn’t work out, or you have to escalate and risk it back firing, but a good pocket veto is a tool to learn to wield well. </p></article>
+<p>I wasn't a Digg founder, but I worked with them from the earliest days on Digg until its downfall.</p>
+<p>The real story is probably way more interesting than anyone really would guess. I'll summarise it as so:</p>
+<p>What made Digg work really was one guy who was a machine. He would vet all the stories, infiltrate all the SEO networks, and basically keep subverting them to keep the Digg front-page usable. Digg had an algorithm, but it was basically just a simple algorithm that helped this one dude 10x his productivity and keep the quality up.</p>
+<p>Google came to buy Digg, but figured out that really it's just a dude who works 22 hours a day that keeps the quality up, and all that talk of an algorithm was smoke and mirrors to trick the SEO guys into thinking it was something they could game (they could not, which is why front page was so high quality for so many years). Google walked.</p>
+<p>Then the founders realised if they ever wanted to get any serious money out of this thing, they had to fix that. So they developed "real algorithms" that independently attempted to do what this one dude was doing, to surface good/interesting content.</p>
+<p>They thought they'd succeeded, or market pressures forced their hand, whatever. So they rolled it along with a catastrophic UI/UX and back-end tech rewrite all rolled up into one.</p>
+<p>It was a total shit-show. I was involved in the "old" MySQL stack, and watched them totally fuck it up with beta software that wasn't ready for production (Cassandra, at the time, was not what it is today).</p>
+<p>The algorithm to figure out what's cool and what isn't wasn't as good as the dude who worked 22 hours a day, and without his very heavy input, it just basically rehashed all the shit that was popular somewhere else a few days earlier.</p>
+<p>So you ended up with a site that was ugly, fuxed, no-one in the existing wanted, and with a bland boring bunch of stories on the front-page, which was not at all compelling for anyone new showing up to check stuff out.</p>
+<p>Instead of taking this massive slap to the face constructively, the founders doubled-down. And now here we are.</p>
+<p>To be clear, much of the tech behind Digg was very interesting, the work Owen and many other engineers did was very interesting. The algorithm was all smoke and mirrors, though. And Kevin and his little circle of buddies were all crap engineers that tanked the business with their hubris and inexperience.</p></article>
 
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+          
+          <a href="/recent-changes">Recent Changes</a>
+          
+        </span>
+      </p>
       
 
       
