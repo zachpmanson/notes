@@ -27,7 +27,7 @@ var2name="value with spaces"
 echo $varname
 echo "some text $varname some more"
 echo 'singlequotes $dont interpolate values'
-echo "can wrap ${varname}in curly backets"
+echo "can wrap ${varname} in curly backets"
 ```
 
 Backslashes can be used to escape characters.
@@ -44,7 +44,19 @@ Variables are scoped to their script by default.  They can be exported so they c
 export PS1
 ```
 
-### `if` statements
+### Variable Expansion
+
+Curly brackets around a variable can be used in more complex ways:
+
+```sh
+echo "can wrap ${varname} in curly backets"
+echo "can use hash to get ${#varname} in length of variable"
+echo "can will use word instead of parameter if parameter is undefined or null ${parameter:-word}"
+```
+
+There are more of these, see [here](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html).
+
+## `if` statements
 
 From [here](https://unix.stackexchange.com/questions/306111/what-is-the-difference-between-the-bash-operators-vs-vs-vs).
 
@@ -158,6 +170,14 @@ done
 `list` is just a list of white-space seperated strings.  Good for use with globbing and file names, or reading through textfiles, especially when used in combination with `$IFS`.
 
 `${#name}` will print the length of the string `name`.
+
+`for` loops can also use this format ([[Bash]] only)
+
+```sh
+for ((init; check; step)); do
+    body
+done
+```
 
 ### `while` loop
 
