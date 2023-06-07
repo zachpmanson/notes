@@ -8,7 +8,7 @@ Permissions have 3 kinds of access:
 
 - r - read access
 - w - write/modify access
-- x - execute permission
+- x - execute permission (for dirs this means access subdirs or subfiles)
 
 3 user sets:
 

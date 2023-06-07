@@ -1,9 +1,12 @@
-## Programming
+## Programming & Computers
 
 - [Magic (programming)](https://en.wikipedia.org/wiki/Magic_(programming))
 - [Digraphs and trigraphs](https://en.wikipedia.org/wiki/Digraphs_and_trigraphs#C) 
 - [Comma operator](https://en.wikipedia.org/wiki/Comma_operator#) 
 - [Evil bit](https://en.wikipedia.org/wiki/Evil_bit)
+- [Bit bucket](https://en.wikipedia.org/wiki/Bit_bucket)
+- [Zalgo Text](https://en.wikipedia.org/wiki/Zalgo_text)
+- [Eternal September](https://en.wikipedia.org/wiki/Eternal_September)
 
 ## History
 
@@ -26,7 +29,6 @@
 - [Carcinisation](https://en.wikipedia.org/wiki/Carcinisation) 
 - [Evolutionary game theory](https://en.wikipedia.org/wiki/Evolutionary_game_theory#Hawk_dove) 
 - [List of lists of lists](https://en.wikipedia.org/wiki/List_of_lists_of_lists)
-- [Eternal September](https://en.wikipedia.org/wiki/Eternal_September)
 - [Bus Factor](https://en.wikipedia.org/wiki/Bus_factor)
 
 Tags: #lists 

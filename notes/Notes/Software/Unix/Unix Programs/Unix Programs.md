@@ -83,3 +83,6 @@ A helpful resources outside of man pages:
 	- `-n` prepend numbers of matching lines
 	- `-v` invert match so only non-matching lines reported
 - [[sed]]
+- `head` and `tail`
+	- display n lines from top or bottom of
+	- `-n <number|-number>`  show `n` lines, if negative show all but final `n` lines
