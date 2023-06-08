@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/styles/colors.css" />
+    <link rel="stylesheet" href="/static/styles/global.css" />
+    <link rel="stylesheet" href="/static/styles/code.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/static/icon/site.webmanifest" />
+    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+    <meta name="theme-color" content="#282A36" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>notes: c locale braindeath</title>
+  </head>
+
+  <body>
+     <nav>
+      <div>
+        <a href="/">
+          <img src="/static/icon/icon.png" alt="notes" height="100">
+        </a>
+      </div>
+      
+
+      
+      <div>
+        
+        <ul>
+        
+          <li>
+            
+            <a href="/fiction">Fiction</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/folklore" class="activated-link">Folklore</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/lines">Lines</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/links">Links</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/problems">Problems</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/templates">Templates</a>
+            
+          </li>
+        
+        </ul>
+        
+      </div>
+      
+
+      
+      <div>
+        
+        <details><summary>23 siblings</summary>
+        
+        <ul>
+        
+          <li>
+            
+            <a href="/alice-in-modeland">Alice in Modeland</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/aliens-and-calendars">Aliens and Calendars</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/bill-gates-tries-to-install-windows-movie-maker">Bill Gates Tries To Install Windows Movie Maker</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/c-locale-braindeath" class="activated-link">C Locale Braindeath</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/competing-with-gpt">Competing with GPT</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/digg-v4">Digg v4</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/do-things-tell-people">Do Things, Tell People</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/pocket-veto">Pocket Veto</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/price-of-chatgpts-api-vs-human">Price of ChatGPT's API vs Human</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/regular-expressions-and-html">Regular Expressions and HTML</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/rob-pikes-lesson-in-shortcuts">Rob Pike's Lesson in Shortcuts</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/sre-threats">SRE Threats</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/superstitious-encoding">Superstitious Encoding</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/the-bitter-lesson">The Bitter Lesson</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/the-cab-ride-ill-never-forget">The Cab Ride I'll Never Forget</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/the-case-of-the-500-mile-email">The Case of the 500-Mile Email</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/the-crawford-principles">The Crawford Principles</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/the-damned-can-now-play-three-chords">The Damned Can Now Play Three Chords</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/the-nazi-bar-problem">The Nazi Bar Problem</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/the-bin-split">The bin Split</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/virtues-of-a-good-programmer">Virtues of a Good Programmer</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/worse-is-better">Worse is Better</a>
+            
+          </li>
+        
+          <li>
+            
+            <a href="/yak-shaving">Yak Shaving</a>
+            
+          </li>
+        
+        </ul>
+        
+        </details>
+        
+      </div>
+      
+
+
+
+      
+
+    </nav>
+    <main>
+      <header>
+        <h1>C Locale Braindeath</h1>
+      </header>
+      <article><p>MPV's <a href="https://github.com/mpv-player/mpv/commit/1e70e82baa9193f6f027338b0fab0f5078971fbe">infamous commit</a> explaining the myriad problems with C locales by contributor wm4.</p>
+<hr />
+<div class="highlight"><pre><span></span><code>commit 1e70e82baa9193f6f027338b0fab0f5078971fbe
+Author: wm4 &lt;wm4@nowhere&gt;
+Date:   Sun Nov 12 13:36:35 2017 +0100
+
+    stream_libarchive: workaround various types of locale braindeath
+
+    Fix that libarchive fails to return filenames for UTF-8/UTF-16 entries.
+    The reason is that it uses locales and all that garbage, and mpv does
+    not set a locale.
+
+    Both C locales and wchar_t are shitfucked retarded legacy braindeath. If
+    the C/POSIX standard committee had actually competent members, these
+    would have been deprecated or removed long ago. (I mean, they managed to
+    remove gets().) To justify this emotional outbreak potentially insulting
+    to unknown persons, I will write a lot of text. Those not comfortable
+    with toxic language should pretend this is a religious text.
+
+    C locales are supposed to be a way to support certain languages and
+    cultures easier. One example are character codepages. Back when UTF-8
+    was not invented yet, there were only 255 possible characters, which is
+    not enough for anything but English and some european languages. So they
+    decided to make the meaning of a character dependent on the current
+    codepage. The locale (LC_CTYPE specifically) determines what character
+    encoding is currently used.
+
+    Of course nowadays, this is legacy nonsense. Everything uses UTF-8 for
+    &quot;char&quot;, and what doesn&#39;t is broken and terrible anyway. But the old ways
+    stayed with us, and the stupidity of it as well.
+
+    C locales were utterly moronic even when they were invented. The locale
+    (via setlocale()) is global state, and global state is not a reasonable
+    way to do anything. It will break libraries, or well modularized code.
+    (The latter would be forced to strictly guard all entrypoints set
+    set/restore locales, assuming a single threaded world.)
+
+    On top of that, setting a locale randomly changes the semantics of a
+    bunch of standard functions. If a function respects locale, you suddenly
+    can&#39;t rely on it to behave the same on all systems. Some behavior can
+    come as a surprise, and of course it will be dependent on the region of
+    the user (it doesn&#39;t help that most software is US-centric, and the US
+    locale is almost like the C locale, i.e. almost what you expect).
+
+    Idiotically, locales were not just used to define the current character
+    encoding, but the concept was used for a whole lot of things, like e. g.
+    whether numbers should use &quot;,&quot; or &quot;.&quot; as decimal separaror. The latter
+    issue is actually much worse, because it breaks basic string conversion
+    or parsing of numbers for the purpose of interacting with file formats
+    and such.
+
+    Much can be said about how retarded locales are, even beyond what I just
+    wrote, or will wrote below. They are so hilariously misdesigned and
+    insufficient, I can&#39;t even fathom how this shit was _standardized_. (In
+    any case, that meant everyone was forced to implement it.) Many C
+    functions can&#39;t even do it correctly. For example, the character set
+    encoding can be a multibyte encoding (not just UTF-8, but awful garbage
+    like Shift JIS (sometimes called SHIT JIZZ), yet functions like
+    toupper() can return only 1 byte. Or just take the fact that the locale
+    API tries to define standard paper sizes (LC_PAPER) or telephone number
+    formatting (LC_TELEPHONE). Who the fuck uses this, or would ever use
+    this?
+
+    But the badness doesn&#39;t stop here. At some point, they invented threads.
+    And they put absolutely no thought into how threads should interact with
+    locales. So they kept locales as global state. Because obviously, you
+    want to be able to change the semantics of basic string processing
+    functions _while_ they&#39;re running, right? (Any thread can call
+    setlocale() at any time, and it&#39;s supposed to change the locale of all
+    other threads.)
+
+    At this point, how the fuck are you supposed to do anything correctly?
+    You can&#39;t even temporarily switch the locale with setlocale(), because
+    it would asynchronously fuckup the other threads. All you can do is to
+    enforce a convention not to set anything but the C local (this is what
+    mpv does), or to duplicate standard functions using code that doesn&#39;t
+    query locale (this is what e.g. libass does, a close dependency of mpv).
+
+    Imagine they had done this for certain other things. Like errno, with
+    all the brokenness of the locale API. This simply wouldn&#39;t have worked,
+    shit would just have been too broken. So they didn&#39;t. But locales give a
+    delicious sweet spot of brokenness, where things are broken enough to
+    cause neverending pain, but not broken enough that enough effort would
+    have spent to fix it completely.
+
+    On that note, standard C11 actually can&#39;t stringify an error value. It
+    does define strerror(), but it&#39;s not thread safe, even though C11
+    supports threads. The idiots could just have defined it to be thread
+    safe. Even if your libc is horrible enough that it can&#39;t return string
+    literals, it could just just some thread local buffer. Because C11 does
+    define thread local variables. But hey, why care about details, if you
+    can just create a shitty standard?
+
+    (POSIX defines strerror_r(), which &quot;solves&quot; this problem, while still
+    not making strerror() thread safe.)
+
+    Anyway, back to threads. The interaction of locales and threads makes no
+    sense. Why would you make locales process global? Who even wanted it to
+    work this way? Who decided that it should keep working this way, despite
+    being so broken (and certainly causing implementation difficulties in
+    libc)? Was it just a fucked up psychopath?
+
+    Several decades later, the moronic standard committees noticed that this
+    was (still is) kind of a bad situation. Instead of fixing the situation,
+    they added more garbage on top of it. (Probably for the sake of
+    &quot;compatibility&quot;). Now there is a set of new functions, which allow you
+    to override the locale for the current thread. This means you can
+    temporarily override and restore the local on all entrypoints of your
+    code (like you could with setlocale(), before threads were invented).
+
+    And of course not all operating systems or libcs implement this. For
+    example, I&#39;m pretty sure Microsoft doesn&#39;t. (Microsoft got to fuck it up
+    as usual, and only provides _configthreadlocale(). This is shitfucked on
+    its own, because it&#39;s GLOBAL STATE to configure that GLOBAL STATE should
+    not be GLOBAL STATE, i.e. completely broken garbage, because it requires
+    agreement over all modules/libraries what behavior should be used. I
+    mean, sure, makign setlocale() affect only the current thread would have
+    been the reasonable behavior. Making this behavior configurable isn&#39;t,
+    because you can&#39;t rely on what behavior is active.)
+
+    POSIX showed some minor decency by at least introducing some variations
+    of standard functions, which have a locale argument (e.g. toupper_l()).
+    You just pass the locale which you want to be used, and don&#39;t have to do
+    the set locale/call function/restore locale nonense. But OF COURSE they
+    fucked this up too. In no less than 2 ways:
+
+    - There is no statically available handle for the C locale, so you have
+      to initialize and store it somewhere, which makes it harder to make
+      utility functions safe, that call locale-affected standard functions
+      and expect C semantics. The easy solution, using pthread_once() and a
+      global variable with the created locale, will not be easily accepted
+      by pedantic assholes, because they&#39;ll worry about allocation failure,
+      or leaking the locale when using this in library code (and then
+      unloading the library). Or you could have complicated library
+      init/uninit functions, which bring a big load of their own mess.
+      Same for automagic DLL constructors/destructors.
+    - Not all functions have a variant that takes a locale argument, and
+      they missed even some important ones, like snprintf() or strtod() WHAT
+      THE FUCK WHAT THE FUCK WHAT THE FUCK WHAT THE FUCK WHAT THE FUCK WHAT
+      THE FUCK WHAT THE FUCK WHAT THE FUCK WHAT THE FUCK
+
+    I would like to know why it took so long to standardize a half-assed
+    solution, that, apart from being conceptually half-assed, is even
+    incomplete and insufficient. The obvious way to fix this would have
+    been:
+
+    - deprecate the entire locale API and their use, and make it a NOP
+    - make UTF-8 the standard character type
+    - make the C locale behavior the default
+    - add new APIs that explicitly take locale objects
+    - provide an emulation layer, that can be used to transparently build
+      legacy code without breaking them
+
+    But this wouldn&#39;t have been &quot;compatible&quot;, and the apparently incompetent
+    standard committees would have never accepted this. As if anyone
+    actually used this legacy garbage, except other legacy garbage. Oh yeah,
+    and let&#39;s care a lot about legacy compatibility, and let&#39;s not care  at
+    all about modern code that either has to suffer from this, or subtly
+    breaks when the wrong locales are active.
+
+    Last but not least, the UTF-8 locale name is apparently not even
+    standardized. At the moment I&#39;m trying to use &quot;C.UTF-8&quot;, which is
+    apparently glibc _and_ Debian specific. Got to use every opportunity to
+    make correct usage of UTF-8 harder. What luck that this commit is only
+    for some optional relatively obscure mpv feature.
+
+    Why is the C locale not UTF-8? Why did POSIX not standardize an UTF-8
+    locale? Well, according to something I heard a few years ago, they&#39;re
+    considering disallowing UTF-8 as locale, because UTF-8 would violate
+    certain ivnariants expected by C or POSIX. (But I&#39;m not sure if I
+    remember this correctly - probably better not to rage about it.)
+
+    Now, on to libarchive.
+
+    libarchive intentionally uses the locale API and all the broken crap
+    around it to &quot;convert&quot; UTF-8 or UTF-16 (as contained in reasonably sane
+    archive formats) to &quot;char*&quot;. This is a good start!
+
+    Since glibc does not think that the C locale uses UTF-8, this fails for
+    mpv. So trying to use archive_entry_pathname() to get the archive entry
+    name fails if the name contains non-ASCII characters.
+
+    Maybe use archive_entry_pathname_utf8()? Surely that should return
+    UTF-8, since its name seems to indicate that it returns UTF-8. But of
+    fucking course it doesn&#39;t! libarchive&#39;s horribly convoluted code (that
+    is full of locale API usage and other legacy shit, as well as ifdefs and
+    OS specific code, including Windows and fucking Cygwin) somehow fucks up
+    and fails if the locale is not set to UTF-8. I made a PR fixing this in
+    libarchive almost 2 years ago, but it was ignored.
+
+    So, would archive_entry_pathname_w() as fallback work? No, why would it?
+    Of course this _also_ involves shitfucked code that calls shitfucked
+    standard functions (or OS specific ifdeffed shitfuck). The truth is that
+    at least glibc changes the meaning of wchar_t depending on the locale.
+    Unlike most people think, wchar_t is not standardized to be an UTF
+    variant (or even unicode) - it&#39;s an encoding that uses basic units that
+    can be larger than 8 bit. It&#39;s an implementation defined thing. Windows
+    defines it to 2 bytes and UTF-16, and glibc defines it to 4 bytes and
+    UTF-32, but only if an UTF-8 locale is set (apparently).
+
+    Yes. Every libarchive function dealing with strings has 3 variants:
+    plain, _utf8, and _w. And none of these work if the locale is not set.
+    I cannot fathom why they even have a wchar_t variant, because it&#39;s
+    redundant and fucking useless for any modern code.
+
+    Writing a UTF-16 to UTF-8 conversion routine is maybe 3 pages of code,
+    or a few lines if you use iconv. But libarchive uses all this glorious
+    bullshit, and ends up with 3 not working API functions, and with over
+    4000 lines of its own string abstraction code with gratuitous amounts of
+    ifdefs and OS dependent code that breaks in a fairly common use case.
+
+    So what we do is:
+
+    - Use the idiotic POSIX 2008 API (uselocale() etc.) (Too bad for users
+      who try to build this on a system that doesn&#39;t have these - hopefully
+      none are left in 2017. But if there are, torturing them with obscure
+      build errors is probably justified. Might be bad for Windows though,
+      which is a very popular platform except on phones.)
+    - Use the &quot;C.UTF-8&quot; locale, which is probably not 100% standards
+      compliant, but works on my system, so it&#39;s fine.
+    - Guard every libarchive call with uselocale() + restoring the locale.
+    - Be lazy and skip some libarchive calls. Look forward to the unlikely
+      and astonishingly stupid bugs this could produce.
+
+    We could also just set a C UTF-8 local in main (since that would have no
+    known negative effects on the rest of the code), but this won&#39;t work for
+    libmpv.
+
+    We assume that uselocale() never fails. In an unexplainable stroke of
+    luck, POSIX made the semantics of uselocale() nice enough that user code
+    can fail failures without introducing crash or security bugs, even if
+    there should be an implementation fucked up enough where it&#39;s actually
+    possible that uselocale() fails even with valid input.
+
+    With all this shitty ugliness added, it finally works, without fucking
+    up other parts of the player. This is still less bad than that time when
+    libquivi fucked up OpenGL rendering, because calling a libquvi function
+    would load some proxy abstraction library, which in turn loaded a KDE
+    plugin (even if KDE was not used), which in turn called setlocale()
+    because Qt does this, and consequently made the mpv GLSL shader
+    generation code emit &quot;,&quot; instead of &quot;.&quot; for numbers, and of course only
+    for users who had that KDE plugin installed, and lived in a part of the
+    world where &quot;.&quot; is not used as decimal separator.
+
+    All in all, I believe this proves that software developers as a whole
+    and as a culture produce worse results than drug addicted butt fucked
+    monkeys randomly hacking on typewriters while inhaling the fumes of a
+    radioactive dumpster fire fueled by chinese platsic toys for children
+    and Elton John/Justin Bieber crossover CDs for all eternity.
+
+diff --git a/stream/stream_libarchive.c b/stream/stream_libarchive.c
+index b4267e6ebb..fdcc9c3ce2 100644
+--- a/stream/stream_libarchive.c
++++ b/stream/stream_libarchive.c
+@@ -150,6 +150,8 @@ static bool mp_archive_check_fatal(struct mp_archive *mpa, int r)
+ void mp_archive_free(struct mp_archive *mpa)
+ {
+     mp_archive_close(mpa);
++    if (mpa &amp;&amp; mpa-&gt;locale)
++        freelocale(mpa-&gt;locale);
+     talloc_free(mpa);
+ }
+
+@@ -229,7 +231,10 @@ static bool add_volume(struct mp_log *log, struct mp_archive *mpa,
+     vol-&gt;mpa = mpa;
+     vol-&gt;src = src;
+     vol-&gt;url = talloc_strdup(vol, url);
+-    return archive_read_append_callback_data(mpa-&gt;arch, vol) == ARCHIVE_OK;
++    locale_t oldlocale = uselocale(mpa-&gt;locale);
++    bool res = archive_read_append_callback_data(mpa-&gt;arch, vol) == ARCHIVE_OK;
++    uselocale(oldlocale);
++    return res;
+ }
+
+ struct mp_archive *mp_archive_new(struct mp_log *log, struct stream *src,
+@@ -237,6 +242,9 @@ struct mp_archive *mp_archive_new(struct mp_log *log, struct stream *src,
+ {
+     struct mp_archive *mpa = talloc_zero(NULL, struct mp_archive);
+     mpa-&gt;log = log;
++    mpa-&gt;locale = newlocale(LC_ALL_MASK, &quot;C.UTF-8&quot;, (locale_t)0);
++    if (!mpa-&gt;locale)
++        goto err;
+     mpa-&gt;arch = archive_read_new();
+     mpa-&gt;primary_src = src;
+     if (!mpa-&gt;arch)
+@@ -256,6 +264,8 @@ struct mp_archive *mp_archive_new(struct mp_log *log, struct stream *src,
+     }
+     talloc_free(volumes);
+
++    locale_t oldlocale = uselocale(mpa-&gt;locale);
++
+     archive_read_support_format_7zip(mpa-&gt;arch);
+     archive_read_support_format_iso9660(mpa-&gt;arch);
+     archive_read_support_format_rar(mpa-&gt;arch);
+@@ -275,7 +285,11 @@ struct mp_archive *mp_archive_new(struct mp_log *log, struct stream *src,
+     archive_read_set_close_callback(mpa-&gt;arch, close_cb);
+     if (mpa-&gt;primary_src-&gt;seekable)
+         archive_read_set_seek_callback(mpa-&gt;arch, seek_cb);
+-    if (archive_read_open1(mpa-&gt;arch) &lt; ARCHIVE_OK)
++    bool fail = archive_read_open1(mpa-&gt;arch) &lt; ARCHIVE_OK;
++
++    uselocale(oldlocale);
++
++    if (fail)
+         goto err;
+     return mpa;
+
+@@ -295,6 +309,9 @@ bool mp_archive_next_entry(struct mp_archive *mpa)
+     if (!mpa-&gt;arch)
+         return false;
+
++    locale_t oldlocale = uselocale(mpa-&gt;locale);
++    bool success = false;
++
+     while (!mp_cancel_test(mpa-&gt;primary_src-&gt;cancel)) {
+         struct archive_entry *entry;
+         int r = archive_read_next_header(mpa-&gt;arch, &amp;entry);
+@@ -319,10 +336,13 @@ bool mp_archive_next_entry(struct mp_archive *mpa)
+         mpa-&gt;entry = entry;
+         mpa-&gt;entry_filename = talloc_strdup(mpa, fn);
+         mpa-&gt;entry_num += 1;
+-        return true;
++        success = true;
++        break;
+     }
+
+-    return false;
++    uselocale(oldlocale);
++
++    return success;
+ }
+
+ struct priv {
+@@ -344,9 +364,11 @@ static int reopen_archive(stream_t *s)
+     struct mp_archive *mpa = p-&gt;mpa;
+     while (mp_archive_next_entry(mpa)) {
+         if (strcmp(p-&gt;entry_name, mpa-&gt;entry_filename) == 0) {
++            locale_t oldlocale = uselocale(mpa-&gt;locale);
+             p-&gt;entry_size = -1;
+             if (archive_entry_size_is_set(mpa-&gt;entry))
+                 p-&gt;entry_size = archive_entry_size(mpa-&gt;entry);
++            uselocale(oldlocale);
+             return STREAM_OK;
+         }
+     }
+@@ -362,6 +384,7 @@ static int archive_entry_fill_buffer(stream_t *s, char *buffer, int max_len)
+     struct priv *p = s-&gt;priv;
+     if (!p-&gt;mpa)
+         return 0;
++    locale_t oldlocale = uselocale(p-&gt;mpa-&gt;locale);
+     int r = archive_read_data(p-&gt;mpa-&gt;arch, buffer, max_len);
+     if (r &lt; 0) {
+         MP_ERR(s, &quot;%s\n&quot;, archive_error_string(p-&gt;mpa-&gt;arch));
+@@ -370,6 +393,7 @@ static int archive_entry_fill_buffer(stream_t *s, char *buffer, int max_len)
+             p-&gt;mpa = NULL;
+         }
+     }
++    uselocale(oldlocale);
+     return r;
+ }
+
+@@ -378,7 +402,9 @@ static int archive_entry_seek(stream_t *s, int64_t newpos)
+     struct priv *p = s-&gt;priv;
+     if (!p-&gt;mpa)
+         return -1;
++    locale_t oldlocale = uselocale(p-&gt;mpa-&gt;locale);
+     int r = archive_seek_data(p-&gt;mpa-&gt;arch, newpos, SEEK_SET);
++    uselocale(oldlocale);
+     if (r &gt;= 0)
+         return 1;
+     if (mp_archive_check_fatal(p-&gt;mpa, r)) {
+@@ -404,15 +430,18 @@ static int archive_entry_seek(stream_t *s, int64_t newpos)
+                 return -1;
+
+             int size = MPMIN(newpos - s-&gt;pos, sizeof(buffer));
++            oldlocale = uselocale(p-&gt;mpa-&gt;locale);
+             r = archive_read_data(p-&gt;mpa-&gt;arch, buffer, size);
+             if (r &lt; 0) {
+                 MP_ERR(s, &quot;%s\n&quot;, archive_error_string(p-&gt;mpa-&gt;arch));
++                uselocale(oldlocale);
+                 if (mp_archive_check_fatal(p-&gt;mpa, r)) {
+                     mp_archive_free(p-&gt;mpa);
+                     p-&gt;mpa = NULL;
+                 }
+                 return -1;
+             }
++            uselocale(oldlocale);
+             s-&gt;pos += r;
+         }
+     }
+diff --git a/stream/stream_libarchive.h b/stream/stream_libarchive.h
+index c15dc1b528..939d6fa65a 100644
+--- a/stream/stream_libarchive.h
++++ b/stream/stream_libarchive.h
+@@ -1,6 +1,9 @@
++#include &lt;locale.h&gt;
++
+ struct mp_log;
+
+ struct mp_archive {
++    locale_t locale;
+     struct mp_log *log;
+     struct archive *arch;
+     struct stream *primary_src;
+</code></pre></div></article>
+
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+          
+          <a href="/recent-changes">Recent Changes</a>
+          
+        </span>
+      </p>
+      
+
+      
+
+        
+
+
+      
+        
+      
+
+    </main>
+  </body>
+</html>
