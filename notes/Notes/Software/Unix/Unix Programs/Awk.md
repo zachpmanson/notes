@@ -81,6 +81,8 @@ for (i=0; i < 10; i++) {
 }
 ```
 
+
+
 ## Functions
 
 ### Built-in Functions
@@ -112,3 +114,23 @@ function name(arg1, arg2) {
 All awk variables are global **except function parameters.**
 
 Scalar parameters are all pass by value, arrays are pass by reference.
+
+## Conditional Rules
+
+```awk
+<condition> { <rules> }
+NF == 4 {print NF}
+
+# use ~ for regex comparison
+$3~/^8/ {print}
+```
+
+`BEGIN` and  `END` are merely special cases of this.  Standard C comparison syntax otherwise applies. `~` for regex and `!~` for inverse regex.
+
+## Arrays
+
+Arrays are actually just dictionaries.  Awk will fill in gaps with undefined if you assign to a high number.  Elements can be deleted with `delete arr[5]`.
+
+You can test key inclusion using `k in arr`.  Is equivalent to `arr[k] != ""`.
+
+Can traverse array with `for (k in arr)`.  Array order is not guaranteed.
