@@ -1,4 +1,4 @@
-Reviewing and advising Computer Science and Cyber Security at UWA.
+Reviewing and advising Computer Science/Cyber Security/Data Science at UWA.
 
 Actually fuck all this just do Coders For Causes you will learn more in that than entire semesters of this degree.
 
@@ -60,6 +60,12 @@ CITS2211 Discrete Structures
 - the theoretical basis of what a computer actually is
 - very interesting but also very hard
 - very disconnected from the rest of the degree sadly
+
+CITS2402 Introduction to Data Science
+
+- actual waste of time
+- you can learn this entire unit in a day but watching some tutorials on matplotlib, numpy and pandas
+- feels like watching a fireship video at 0.005 speed
 
 ## Third Year Units
 
