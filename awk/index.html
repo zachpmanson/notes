@@ -226,8 +226,27 @@ It has a few variants.</p>
 <span class="p">}</span>
 </code></pre></div>
 <p>All awk variables are global <strong>except function parameters.</strong></p>
-<p>Scalar parameters are all pass by value, arrays are pass by reference.</p></article>
+<p>Scalar parameters are all pass by value, arrays are pass by reference.</p>
+<h2 id="conditional-rules">Conditional Rules</h2>
+<div class="highlight"><pre><span></span><code><span class="o">&lt;</span><span class="nx">condition</span><span class="o">&gt;</span> <span class="p">{</span> <span class="o">&lt;</span><span class="nx">rules</span><span class="o">&gt;</span> <span class="p">}</span>
+<span class="nb">NF</span> <span class="o">==</span> <span class="mi">4</span> <span class="p">{</span><span class="kr">print</span> <span class="nb">NF</span><span class="p">}</span>
 
+<span class="c1"># use ~ for regex comparison</span>
+<span class="o">$</span><span class="mi">3</span><span class="o">~</span><span class="sr">/^8/</span> <span class="p">{</span><span class="kr">print</span><span class="p">}</span>
+</code></pre></div>
+<p><code>BEGIN</code> and  <code>END</code> are merely special cases of this.  Standard C comparison syntax otherwise applies. <code>~</code> for regex and <code>!~</code> for inverse regex.</p>
+<h2 id="arrays">Arrays</h2>
+<p>Arrays are actually just dictionaries.  Awk will fill in gaps with undefined if you assign to a high number.  Elements can be deleted with <code>delete arr[5]</code>.</p>
+<p>You can test key inclusion using <code>k in arr</code>.  Is equivalent to <code>arr[k] != ""</code>.</p>
+<p>Can traverse array with <code>for (k in arr)</code>.  Array order is not guaranteed.</p></article>
+
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+          
+          <a href="/recent-changes">Recent Changes</a>
+          
+        </span>
+      </p>
       
 
       
