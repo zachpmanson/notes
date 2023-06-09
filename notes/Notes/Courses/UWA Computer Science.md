@@ -24,7 +24,7 @@ CITS1401 Computational Thinking with Python:
 
 - much better intro to programming
 - weirdly speedruns 2 years of Computer Science ATAR in the first lesson for no reason
-- took 3 weeks to getto if statements in Python which is pretty poor
+- took 3 weeks to get to if statements in Python which is pretty poor
 - decent intro though
 
 CITS1402 Relational Databases
