@@ -1,6 +1,6 @@
-Reviews and advice for all Computer Science, Cyber Security, and Data Science I completed at UWA.
+Reviews and advice for all Computer Science, Cyber Security, and Data Science units I completed at UWA.
 
-Just do Coders For Causes you will learn more in that than entire semesters of this degree.
+Just do [Coders For Causes](https://codersforcauses.org/) you will learn more in that than entire semesters of this degree.  Learn how to use git as fast as possible then force all your group project members to use it.  Narrow down your problems as much as possible, then google the most generic possible description of it. If you see someone using semicolons mid-sentence regularly it's probably Chris McDonald.
 
 ![[uwa-cits.png]]
 
@@ -41,13 +41,14 @@ CITS2002 Systems Programming
 - very rewarding
 - this and CITS2200 have the highest kill rate for comsci degrees.  partially because they are hard, partially because the previous units did a pretty bad job preparing students for them
 
-CITS2003 Open Source Tools & Scripting
+[[CITS2003]] Open Source Tools & Scripting
 
-- teaches Bash and Unix which are important and only orthogonally explained in CITS2002
-- teaches sed and awk relatively well
-- includes Make for some reason, no reason literally cut this its covered in CITS2002 and is actually relevant there
+- teaches [[Bash]] and [[Unix]] which are important and only orthogonally explained in CITS2002
+- teaches [[sed]] and [[awk]] relatively well
+- includes [[Make]] for some reason, no reason literally cut this its covered in CITS2002 and is actually relevant there
 - also includes git but never actually requires its use so it feels useless even though it is most students first introduction to it.  git should be in CITS1401.
 - somehow manages to completely screw up the assessments every year
+- see [[Michael Wise Quotes]] for a taste of this uni
 
 CITS2200 Data Structures & Algorithms
 
@@ -104,31 +105,45 @@ CITS3006 Penetration Testing
 
 CITS3007 Secure Coding
 
-- the worst C unit by default because the others are just so good
+- the worst C unit by default, only because the others are just so good
 - teaches you how to write vulnerable C code, and how to turn off compiler safety checks
+- is geniunely interesting
 - Arran Stuart is great, seems like the lecturer who is most in touch with modern software engineering?
 
 CITS3401 Data Warehousing
 
 - actual trash
-- feels like I learnt 5 things about large scale data collection and nothing else
+- feels like I learnt 5 things about large scale data storage and nothing else
 - project is an arbitrary mess
 - pratical side of the unit is a joke
 - got really interesting for 2 weeks when it completely switches gears to talk about graph databases but then lets you down again
 
-CITS3403 Agile Web Development
+CITS3403 Agile [[Web Development]]
 
 - really fun and very practical
 - FIRST ACTUAL USE OF GIT (do no wait till third year, learn this in year 1 semester 1) how did it take this long
 - well taught
-- very fun project
+- [very fun project](https://minecraftle.zachmanson.com)
 
 CITS3200 Professional Computing
 
 - your capstone project with an actual client, aka gambling your marks
-- 2/10 lectures will be valuable, 3/10 will be companies hyping themselves up, 4/10 will be inane ethics bs, 1/10 will be alleged war criminals
-- teams are groups based on having an even WAM spread so get hyped for mark rubber-banding
 - if your client is chill you will do well, if not you are ruined
 	- e.g. my team shipped actual malware and got a HD
+- teams are groups based on having an even WAM spread so get hyped for mark rubber-banding
+- there are lectures
+	- 2/10 lectures will be valuable
+	- 3/10 will be companies hyping themselves up
+	- 4/10 will be inane ethics bullshit
+	- 1/10 will be alleged war criminals
 - all prior units have not adequately prepared you for this, go learn django or react because you are very likely going to need to know these.  if you are wondering if you should make a web app you should probably just make a web app
 
+## Miscellaneous Advice
+
+Labs are the only thing in the degree you can't get from youtube or the internet.  If you are bad actually do the labs, go in and ask the instructors questions.  It's annoying but they can help you bridge the gap between trash and passing.
+
+Learn how to use the command lane ASAP.  Learn git.  Seriously go learn git.  So many people I met couldn't use git in their third year.  How they made it that far sending code snippets over discord is beyond me.  Bully everyone you know into using git.  You will actually lose 20% mark if you don't use git+github for a group project because you will waste so much time trying to coordinate the project.  If git is hurting your brain try using GitHub Desktop which makes it a bit easier to use for newcomers.
+
+Have other hobbies.  Doesn't matter what they are but gaming doesn't count if it's your only hobby.
+
+Go to social events with clubs.  The specific club doesn't matter, they are all fine. Alcohol helps, if you are so inclined (science union pub crawls are great).  It's very easy in computer science to not make actually make any friends and do everything online.   But you will need friends to not be sad and die alone.

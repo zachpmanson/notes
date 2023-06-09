@@ -40,4 +40,4 @@ Things said by <cite>Michael Wise</cite> in [[CITS2003]].
 
 [[W12L02 - Exam Prep]]
 
->I'm a simple man, I'm and engineer
+>I'm a simple man, I'm an engineer
