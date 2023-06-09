@@ -48,7 +48,7 @@ CITS2002 Systems Programming
 - includes [[Make]] for some reason, no reason literally cut this its covered in CITS2002 and is actually relevant there
 - also includes git but never actually requires its use so it feels useless even though it is most students first introduction to it.  git should be in CITS1401.
 - somehow manages to completely screw up the assessments every year
-- see [[Michael Wise Quotes]] for a taste of this uni
+- see [[Michael Wise Quotes]]
 
 CITS2200 Data Structures & Algorithms
 
