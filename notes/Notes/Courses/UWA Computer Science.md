@@ -1,6 +1,6 @@
-Reviewing and advising Computer Science/Cyber Security/Data Science at UWA.
+Reviews and advice for all Computer Science, Cyber Security, and Data Science I completed at UWA.
 
-Actually fuck all this just do Coders For Causes you will learn more in that than entire semesters of this degree.
+Just do Coders For Causes you will learn more in that than entire semesters of this degree.
 
 ![[uwa-cits.png]]
 
