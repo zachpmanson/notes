@@ -6,6 +6,6 @@ The fediverse is a series of decentralised instances of social networks that are
 
 ![[fediverse-protocol-graph.png]]
 
-## Hmmmm what happened here Elon...
+## Elon & /u/spez
 
 ![[fediverse-user-graph.png]]
