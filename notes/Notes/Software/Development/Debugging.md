@@ -7,3 +7,5 @@
 	- oof
 
 >Believe what you see, not what you believe
+
+-- [[Michael Wise Quotes|Michael Wise]]
