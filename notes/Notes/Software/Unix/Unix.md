@@ -1,4 +1,4 @@
->Unix is user-friendly — it's just choosy about who its friends are.
+xp>Unix is user-friendly — it's just choosy about who its friends are.
 
 -- The Art of UNIX Programming (2003) by Eric S. Raymond
 
