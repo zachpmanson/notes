@@ -8,7 +8,7 @@ The process of making computers learn to solve problems themselves, based on exa
 
 - "weight assignment"
 	- weights are variables, assignments are the values
-	- weights are sometimes also refered to as parameters
+	- weights are sometimes also referred to as parameters
 - weight assignment has "actual performance"
 	- the model's ability achieve its goal
 	- this is distinct from the "results", meaning the output e.g. results are moves taken vs  actual performance is winning the game 
