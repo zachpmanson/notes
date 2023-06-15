@@ -16,6 +16,7 @@
 
 - [Roko's basilisk](https://en.wikipedia.org/wiki/Roko%27s_basilisk)
 - [Information hazard](https://en.wikipedia.org/wiki/Information_hazard)
+- [Interesting number paradox](https://en.wikipedia.org/wiki/Interesting_number_paradox)
 
 ## [[Language]]
 
