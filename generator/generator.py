@@ -157,7 +157,7 @@ def generate_sitemap():
     for node in tree["Index"]["children"]:
         append_bullet(node, 4)
     
-    if VERBOSE: print("Generated sitemap")
+    if VERBOSE: print("Generated sitemap\n", sitemap_md)
     return sitemap_md
 
 def generate_tags():
@@ -289,7 +289,7 @@ ochrs_vars = {
     "build-time": lambda: datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
     "md-extensions": lambda: ", ".join([e if isinstance(e, str) else str(type(e).__name__) for e in md_extensions]),
     "recent-edit": lambda i: helpers.format_recent_edit(tree, i),
-    "sitemap": generate_sitemap,
+    "sitemap": lambda: sitemap_md,
     "tags": lambda: tags_md
 }
 
@@ -341,7 +341,7 @@ if __name__=="__main__":
     get_tree()
     propagate_tags()
     generate_tags()
-
+    generate_sitemap()
     traverse_tree()
     generate_pages()
     
