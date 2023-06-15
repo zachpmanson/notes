@@ -32,7 +32,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: mastodon domain alias</title>
+    <title>notes: raw github commits</title>
   </head>
 
   <body>
@@ -159,7 +159,7 @@
         
           <li>
             
-            <a href="/mastodon-domain-alias" class="activated-link">Mastodon Domain Alias</a>
+            <a href="/mastodon-domain-alias">Mastodon Domain Alias</a>
             
           </li>
         
@@ -189,7 +189,7 @@
         
           <li>
             
-            <a href="/raw-github-commits">Raw GitHub Commits</a>
+            <a href="/raw-github-commits" class="activated-link">Raw GitHub Commits</a>
             
           </li>
         
@@ -249,40 +249,20 @@
     </nav>
     <main>
       <header>
-        <h1>Mastodon Domain Alias</h1>
+        <h1>Raw GitHub Commits</h1>
       </header>
-      <article><p>You can use your custom domain as an alias to your Mastodon handle by using Webfinger without actually having your own Mastodon instance.</p>
-<p>On your domain, set <code>GET https://&lt;your-domain.com&gt;/.well-known/webfinger?resource=acct:&lt;accountname&gt;@&lt;server&gt;</code> to be the same as <code>GET https://&lt;your-mastodon-instance.com&gt;/.well-known/webfinger?resource=acct:&lt;accountname&gt;@&lt;server&gt;</code>.</p>
-<p>If you have a static site and don't want to set up query params, serving the same file at <code>/.well-known/webfinger</code> will make all usernames <code>@&lt;any username&gt;@your-domain.com</code> forward to the same account.</p>
-<h2 id="note-for-github-pages">Note for GitHub Pages</h2>
-<p>GitHub pages doesn't just serve arbitrary files, and won't just serve the JSON file <code>/.well-known/webfinger</code> without any file extension.  To serve the JSON file, you can serve it at <code>/.well-known/webfinger/index.json</code>.  You will also need to explicitly serve the <code>.well-known</code> folder using a <code>_config.yml</code> file in the root of of your repo:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">include</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;.well-known&quot;</span><span class="p p-Indicator">]</span>
-</code></pre></div>
-<p>This is based on these two guides:</p>
-<ul>
-<li><a href="https://blog.maartenballiauw.be/post/2022/11/05/mastodon-own-donain-without-hosting-server.html">Mastodon on your own domain without hosting a server</a></li>
-<li><a href="https://blog.netnerds.net/2022/11/alias-mastodon-github-pages/">Using GitHub Pages to Setup an Alias on Mastodon</a></li>
-</ul>
-<p>Hopefully Mastodon implements BlueSky-esque domain as username features.</p>
-<p>May be able to get around the static hosting problems using <a href="https://github.com/mastodon/mastodon/issues/2668#issuecomment-1342518861">this, will need to investigate further</a>.  Or <a href="https://gist.github.com/aaronpk/5846789">this</a>.  Or <a href="https://aeracode.org/2022/11/01/fediverse-custom-domains/">this</a>, which <a href="https://til.simonwillison.net/mastodon/custom-domain-mastodon">Simon Willison used</a>.</p>
-<p>To see this in practice, search for @zach@zachmanson.com on Mastodon.</p></article>
+      <article><p>To see the full raw details of a git commit from a GitHub repo (e.g. to see the email address associated with the commit) find the commit URL and append <code>.patch</code>.</p>
+<p>E.g. <a href="https://github.com/caffo/baconmail/commit/a5143e1c9b9e77edbea252cfe774ba11fb1d6cea.patch">https://github.com/caffo/baconmail/commit/a5143e1c9b9e77edbea252cfe774ba11fb1d6cea.patch</a></p></article>
 
       
       <p class="backlinks"><span class="bold">Incoming:</span>
           
-          <a href="/fediverse">Fediverse</a>
+          <a href="/recent-changes">Recent Changes</a>
           
         </span>
       </p>
       
 
-      
-      <p class="backlinks"><span class="bold">Tags:</span>
-          
-          <a href="/tags#fediverse">#fediverse</a>
-          
-        </span>
-      </p>
       
 
         
