@@ -12,8 +12,12 @@ You can find me on mastodon at @zach@zachmanson.com (this is an [[Mastodon Domai
 
 ## Further Investigation
 
-I'd like to fully grasp Lemmy and [Kbin](https://github.com/ernestwisniewski/kbin), especially with Reddit being as conflicted as it is right now.  I would like to know how interoperable they are with Mastodon (do I need to actually make a kbin account), each other, and how split communities work.  Their potential excites me though.
+I'd like to fully grasp Lemmy and [Kbin](https://github.com/ernestwisniewski/kbin), especially with Reddit being as conflicted as it is right now.  I would like to know how interoperable they are with Mastodon (do I need to actually make a kbin account?), each other, and how split communities work.  Their potential excites me though.
 
 ## The Elon & spez Effect
 
 ![[fediverse-user-graph.png]]
+
+## Links
+
+- [FediDB](https://fedidb.org/), contains stats on server and service popularity
