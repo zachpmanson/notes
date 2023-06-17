@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/styles/colors.css" />
+    <link rel="stylesheet" href="/static/styles/global.css" />
+    <link rel="stylesheet" href="/static/styles/code.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/static/icon/site.webmanifest" />
+    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+    <meta name="theme-color" content="#282A36" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>notes: common screen commands</title>
+  </head>
+
+  <body>
+     <nav>
+      <div>
+        <a href="/">
+          <img src="/static/icon/icon.png" alt="notes" height="100">
+        </a>
+      </div>
+      
+
+      
+      <div>
+        
+        <ul>
+        
+          <li>
+            
+            <a href="/screen" class="activated-link">Screen</a>
+            
+          </li>
+        
+        </ul>
+        
+      </div>
+      
+
+      
+      <div>
+        
+        <ul>
+        
+          <li>
+            
+            <a href="/common-screen-commands" class="activated-link">Common Screen Commands</a>
+            
+          </li>
+        
+        </ul>
+        
+      </div>
+      
+
+
+
+      
+
+    </nav>
+    <main>
+      <header>
+        <h1>Common Screen Commands</h1>
+      </header>
+      <article><p>This is an <a href="/archive">archive</a> of <a href="https://gist.github.com/jctosta/af918e1618682638aa82">Carlos Tosta's Screen Quick Reference</a>.</p>
+<hr />
+<h1 id="screen-quick-reference">Screen Quick Reference</h1>
+<h2 id="basic">Basic</h2>
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Start a new session with session name</td>
+<td><code>screen -S &lt;session_name&gt;</code></td>
+</tr>
+<tr>
+<td>List running sessions / screens</td>
+<td><code>screen -ls</code></td>
+</tr>
+<tr>
+<td>Attach to a running session</td>
+<td><code>screen -x</code></td>
+</tr>
+<tr>
+<td>Attach to a running session with name</td>
+<td><code>screen -r &lt;session_name&gt;</code></td>
+</tr>
+<tr>
+<td>Detach a running session</td>
+<td><code>screen -d &lt;session_name&gt;</code></td>
+</tr>
+<tr>
+<td>Kill a running session</td>
+<td><code>screen -X -S [session # you want to kill] kill</code></td>
+</tr>
+<tr>
+<td>Accessing a screen that is already attached</td>
+<td><code>screen -r -d [session name]</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="escape-key">Escape Key</h2>
+<p>All screen commands are prefixed by an escape key, by default Ctrl-a (that's Control-a, sometimes written ^a). To send a literal Ctrl-a to the programs in screen, use Ctrl-a a. This is useful when when working with screen within screen. For example Ctrl-a a n will move screen to a new window on the screen within screen. </p>
+<h2 id="getting-out">Getting Out</h2>
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>detach</td>
+<td><code>Ctrl-a d</code></td>
+</tr>
+<tr>
+<td>detach and logout (quick exit)</td>
+<td><code>Ctrl-a D D</code></td>
+</tr>
+<tr>
+<td>exit screen</td>
+<td><code>Ctrl-a :</code> quit or exit all of the programs in screen.</td>
+</tr>
+<tr>
+<td>force-exit screen</td>
+<td><code>Ctrl-a C-\</code> (not recommended)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="help">Help</h2>
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>See help</td>
+<td><code>Ctrl-a ?</code> (Lists keybindings)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="window-management">Window Management</h2>
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create new window</td>
+<td><code>Ctrl-a c</code></td>
+</tr>
+<tr>
+<td>Change to last-visited active window</td>
+<td><code>Ctrl-a Ctrl-a</code> (commonly used to flip-flop between two windows)</td>
+</tr>
+<tr>
+<td>Change to window by number</td>
+<td><code>Ctrl-a &lt;number&gt;</code> (only for windows 0 to 9)</td>
+</tr>
+<tr>
+<td>Change to window by number or name</td>
+<td><code>Ctrl-a ' &lt;number or title&gt;</code></td>
+</tr>
+<tr>
+<td>Change to next window in list</td>
+<td><code>Ctrl-a n</code> or <code>Ctrl-a &lt;space&gt;</code></td>
+</tr>
+<tr>
+<td>Change to previous window in list</td>
+<td><code>Ctrl-a p</code> or <code>Ctrl-a &lt;backspace&gt;</code></td>
+</tr>
+<tr>
+<td>See window list</td>
+<td><code>Ctrl-a "</code> (allows you to select a window to change to)</td>
+</tr>
+<tr>
+<td>Show window bar</td>
+<td><code>Ctrl-a w</code> (if you don't have window bar)</td>
+</tr>
+<tr>
+<td>Kill current window</td>
+<td><code>Ctrl-a k</code> (not recommended)</td>
+</tr>
+<tr>
+<td>Kill all windows</td>
+<td><code>Ctrl-a \</code> (not recommended)</td>
+</tr>
+<tr>
+<td>Rename current window</td>
+<td><code>Ctrl-a A</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="split-screen">Split screen</h2>
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Split display horizontally</td>
+<td><code>Ctrl-a S</code></td>
+</tr>
+<tr>
+<td>Split display vertically</td>
+<td><code>Ctrl-a |</code> or <code>Ctrl-a V</code> (for the vanilla vertical screen patch)</td>
+</tr>
+<tr>
+<td>Jump to next display region</td>
+<td><code>Ctrl-a tab</code></td>
+</tr>
+<tr>
+<td>Remove current region</td>
+<td><code>Ctrl-a X</code></td>
+</tr>
+<tr>
+<td>Remove all regions but the current one</td>
+<td><code>Ctrl-a Q</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="misc">Misc</h2>
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Redraw window</td>
+<td><code>Ctrl-a C-l</code></td>
+</tr>
+<tr>
+<td>Enter copy mode</td>
+<td><code>Ctrl-a [</code> or <code>Ctrl-a &lt;esc&gt;</code> (also used for viewing scrollback buffer)</td>
+</tr>
+<tr>
+<td>Paste</td>
+<td><code>Ctrl-a ]</code></td>
+</tr>
+<tr>
+<td>Monitor window for activity</td>
+<td><code>Ctrl-a M</code></td>
+</tr>
+<tr>
+<td>Monitor window for silence</td>
+<td><code>Ctrl-a _</code></td>
+</tr>
+<tr>
+<td>Enter digraph (for producing non-ASCII characters)</td>
+<td><code>Ctrl-a Ctrl-v</code></td>
+</tr>
+<tr>
+<td>Lock (password protect) display</td>
+<td><code>Ctrl-a x</code></td>
+</tr>
+<tr>
+<td>Enter screen command</td>
+<td><code>Ctrl-a :</code></td>
+</tr>
+<tr>
+<td>Enable logging in the screen session</td>
+<td><code>Ctrl-a H</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="scrolling">Scrolling</h2>
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Enter scrolling mode</td>
+<td>Ctrl-a esc</td>
+</tr>
+<tr>
+<td>Scroll Up</td>
+<td>Ctrl-u</td>
+</tr>
+<tr>
+<td>Scroll Down</td>
+<td>Ctrl-d</td>
+</tr>
+<tr>
+<td>Exit scrolling mode</td>
+<td>esc esc</td>
+</tr>
+</tbody>
+</table>
+<p>This section is a contribution from: <a href="https://gist.github.com/mickpbarry">@mickpbarry</a></p></article>
+
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+          
+          <a href="/recent-changes">Recent Changes</a>
+          
+        </span>
+      </p>
+      
+
+      
+
+        
+
+
+      
+        
+      
+
+    </main>
+  </body>
+</html>
