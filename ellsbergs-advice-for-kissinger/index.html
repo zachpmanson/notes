@@ -32,7 +32,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: rob pike's lesson in shortcuts</title>
+    <title>notes: ellsberg's advice for kissinger</title>
   </head>
 
   <body>
@@ -141,7 +141,7 @@
         
           <li>
             
-            <a href="/ellsbergs-advice-for-kissinger">Ellsberg's Advice For Kissinger</a>
+            <a href="/ellsbergs-advice-for-kissinger" class="activated-link">Ellsberg's Advice For Kissinger</a>
             
           </li>
         
@@ -165,7 +165,7 @@
         
           <li>
             
-            <a href="/rob-pikes-lesson-in-shortcuts" class="activated-link">Rob Pike's Lesson in Shortcuts</a>
+            <a href="/rob-pikes-lesson-in-shortcuts">Rob Pike's Lesson in Shortcuts</a>
             
           </li>
         
@@ -261,42 +261,28 @@
     </nav>
     <main>
       <header>
-        <h1>Rob Pike's Lesson in Shortcuts</h1>
+        <h1>Ellsberg's Advice For Kissinger</h1>
       </header>
-      <article><p>As written by Rob Pike on <a href="https://web.archive.org/web/20180827160401/https://plus.google.com/+RobPikeTheHuman/posts/R58WgWwN9jp">2012-08-12 on Google Plus</a>.</p>
+      <article><p>Advice Daniel Ellsberg gave to Henry Kissinger in 1968 about the burdens of security clearance.  Taken from <a href="https://www.motherjones.com/kevin-drum/2010/02/daniel-ellsberg-limitations-knowledge/">here</a>, originally published in his book <em>Secrets</em>. </p>
 <hr />
-<p>A lesson in shortcuts.  </p>
-<p>Long ago, as the design of the Unix file system was being worked out, the entries . and .. appeared, to make navigation easier. I'm not sure but I believe .. went in during the Version 2 rewrite, when the file system became hierarchical (it had a very different structure early on).  When one typed ls, however, these files appeared, so either Ken or Dennis added a simple test to the program. It was in assembler then, but the code in question was equivalent to something like this:</p>
-<p><code>if (name[0] == '.') continue;</code></p>
-<p>This statement was a little shorter than what it should have been, which is  </p>
-<p><code>if (strcmp(name, ".") == 0 || strcmp(name, "..") == 0) continue;</code></p>
-<p>but hey, it was easy.  </p>
-<p>Two things resulted.  </p>
-<p>First, a bad precedent was set. A lot of other lazy programmers introduced bugs by making the same simplification. Actual files beginning with periods are often skipped when they should be counted.  </p>
-<p>Second, and much worse, the idea of a "hidden" or "dot" file was created. As a consequence, more lazy programmers started dropping files into everyone's home directory. I don't have all that much stuff installed on the machine I'm using to type this, but my home directory has about a hundred dot files and I don't even know what most of them are or whether they're still needed. Every file name evaluation that goes through my home directory is slowed down by this accumulated sludge.  </p>
-<p>I'm pretty sure the concept of a hidden file was an unintended consequence. It was certainly a mistake.  </p>
-<p>How many bugs and wasted CPU cycles and instances of human frustration (not to mention bad design) have resulted from that one small shortcut about  40 years ago?  </p>
-<p>Keep that in mind next time you want to cut a corner in your code.  </p>
-<p>(For those who object that dot files serve a purpose, I don't dispute that but counter that it's the files that serve the purpose, not the convention for their names. They could just as easily be in <code>$HOME/cfg</code> or <code>$HOME/lib</code>, which is what we did in Plan 9, which had no dot files. Lessons can be learned.)</p></article>
+<p>“Henry, there’s something I would like to tell you, for what it’s worth, something I wish I had been told years ago. You’ve been a consultant for a long time, and you’ve dealt a great deal with top secret information. But you’re about to receive a whole slew of special clearances, maybe fifteen or twenty of them, that are higher than top secret.</p>
+<p>“I’ve had a number of these myself, and I’ve known other people who have just acquired them, and I have a pretty good sense of what the effects of receiving these clearances are on a person who didn’t previously know they even <em>existed</em>. And the effects of reading the information that they will make available to you.</p>
+<p>“First, you’ll be exhilarated by some of this new information, and by having it all — so much! incredible! — suddenly available to you. But second, almost as fast, you will feel like a fool for having studied, written, talked about these subjects, criticized and analyzed decisions made by presidents for years without having known of the existence of all this information, which presidents and others had and you didn’t, and which must have influenced their decisions in ways you couldn’t even guess. In particular, you’ll feel foolish for having literally rubbed shoulders for over a decade with some officials and consultants who did have access to all this information you didn’t know about and didn’t know they had, and you’ll be stunned that they kept that secret from you so well.</p>
+<p>“You will feel like a fool, and that will last for about two weeks. Then, after you’ve started reading all this daily intelligence input and become used to using what amounts to whole libraries of hidden information, which is much more closely held than mere top secret data, you will forget there ever was a time when you didn’t have it, and you’ll be aware only of the fact that you have it now and most others don’t….and that all those <em>other</em> people are fools.</p>
+<p>“Over a longer period of time — not too long, but a matter of two or three years — you’ll eventually become aware of the limitations of this information. There is a great deal that it doesn’t tell you, it’s often inaccurate, and it can lead you astray just as much as the <em>New York Times</em> can. But that takes a while to learn.</p>
+<p>“In the meantime it will have become very hard for you to <em>learn</em> from anybody who doesn’t have these clearances. Because you’ll be thinking as you listen to them: ‘What would this man be telling me if he knew what I know? Would he be giving me the same advice, or would it totally change his predictions and recommendations?’ And <em>that</em> mental exercise is so torturous that after a while you give it up and just stop listening. I’ve seen this with my superiors, my colleagues….and with myself.</p>
+<p>“You will deal with a person who doesn’t have those clearances only from the point of view of what you want him to believe and what impression you want him to go away with, since you’ll have to lie carefully to him about what you know. In effect, you will have to manipulate him. You’ll give up trying to assess what he has to say. The danger is, you’ll become something like a moron. You’ll become incapable of learning from most people in the world, no matter how much experience they may have in their particular areas that may be much greater than yours.”</p>
+<p>….Kissinger hadn’t interrupted this long warning. As I’ve said, he could be a good listener, and he listened soberly. He seemed to understand that it was heartfelt, and he didn’t take it as patronizing, as I’d feared. But I knew it was too soon for him to appreciate fully what I was saying. He didn’t have the clearances yet.</p></article>
 
       
       <p class="backlinks"><span class="bold">Incoming:</span>
           
-          <a href="/dotfiles-being-hidden">Dotfiles Being Hidden</a>
+          <a href="/recent-changes">Recent Changes</a>
           
         </span>
       </p>
       
 
-      
-      <p class="backlinks"><span class="bold">Tags:</span>
-          
-          <a href="/tags#relics">#relics</a>
-          
-          <a href="/tags#unix">#unix</a>
-          
-        </span>
-      </p>
       
 
         
