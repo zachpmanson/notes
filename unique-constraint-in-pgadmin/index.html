@@ -32,7 +32,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: changing dns with systemd</title>
+    <title>notes: unique constraint in pgadmin</title>
   </head>
 
   <body>
@@ -99,7 +99,7 @@
         
           <li>
             
-            <a href="/changing-dns-with-systemd" class="activated-link">Changing DNS with systemd</a>
+            <a href="/changing-dns-with-systemd">Changing DNS with systemd</a>
             
           </li>
         
@@ -231,7 +231,7 @@
         
           <li>
             
-            <a href="/unique-constraint-in-pgadmin">Unique Constraint in pgAdmin</a>
+            <a href="/unique-constraint-in-pgadmin" class="activated-link">Unique Constraint in pgAdmin</a>
             
           </li>
         
@@ -255,36 +255,24 @@
     </nav>
     <main>
       <header>
-        <h1>Changing DNS with systemd</h1>
+        <h1>Unique Constraint in pgAdmin</h1>
       </header>
-      <article><p>On systems using systemd, <code>/etc/resolve</code> is managed by systemd. To change DNS server, you need to edit <code>/etc/systemd/resolved.conf</code>.</p>
-<div class="highlight"><pre><span></span><code>[Resolve]
-DNS=8.8.8.8
-#FallbackDNS=8.8.8.8
-#Domains=
-#DNSSEC=no
-#DNSOverTLS=no
-#MulticastDNS=no
-#LLMNR=no
-#Cache=no-negative
-#CacheFromLocalhost=no
-DNSStubListener=no
-#DNSStubListenerExtra=
-#ReadEtcHosts=yes
-#ResolveUnicastSingleLabel=no
-</code></pre></div>
-<p>Then restart services:</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>daemon-reload
-sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>systemd-networkd
-sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>systemd-resolved
-</code></pre></div></article>
+      <article><p>If you are making a table for use with Prisma, it must have a unique constraint on the primary key.  pgAdmin 4 is not capable of this, so you must write the constraint manually or write it into the <code>schema.prisma</code> file and <code>prisma db push</code> it.</p>
+<p>This functionality<a href="https://stackoverflow.com/questions/71348468/how-to-add-unique-key-constraint-on-column-in-table-in-erd-tool-in-pgadmin4"> is being added in pgAdmin 6.8</a>.</p></article>
 
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+          
+          <a href="/recent-changes">Recent Changes</a>
+          
+        </span>
+      </p>
       
 
       
       <p class="backlinks"><span class="bold">Tags:</span>
           
-          <a href="/tags#linux">#linux</a>
+          <a href="/tags#prisma">#prisma</a>
           
         </span>
       </p>
