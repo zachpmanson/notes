@@ -10,7 +10,7 @@ const schema = z.object({
 });
 type Schema = z.infer<typeof schema>;
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse<{ error: string | z.ZodError<any> }>) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse<GenericApiError>) {
   switch (req.method) {
     case "POST":
       const response = schema.safeParse(req.body);
@@ -26,4 +26,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
       return res.status(405).json({ error: "Invalid method" });
   }
 }
+```
+
+```ts
+export type GenericApiError = { error: string | z.ZodError<any> };
 ```
