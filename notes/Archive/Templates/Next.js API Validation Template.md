@@ -20,10 +20,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
         });
       }
       const body = req.body as Schema;
-    //do things
+      //do things
+      break;
     default:
       return res.status(405).json({ error: "Invalid method" });
   }
 }
-
 ```
