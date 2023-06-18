@@ -147,7 +147,8 @@
 <span class="w">        </span><span class="p">});</span>
 <span class="w">      </span><span class="p">}</span>
 <span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">body</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">req</span><span class="p">.</span><span class="nx">body</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">Schema</span><span class="p">;</span>
-<span class="w">    </span><span class="c1">//do things</span>
+<span class="w">      </span><span class="c1">//do things</span>
+<span class="w">      </span><span class="k">break</span><span class="p">;</span>
 <span class="w">    </span><span class="nx">default</span><span class="o">:</span>
 <span class="w">      </span><span class="kt">return</span><span class="w"> </span><span class="nx">res</span><span class="p">.</span><span class="nx">status</span><span class="p">(</span><span class="mf">405</span><span class="p">).</span><span class="nx">json</span><span class="p">({</span><span class="w"> </span><span class="nx">error</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Invalid method&quot;</span><span class="w"> </span><span class="p">});</span>
 <span class="w">  </span><span class="p">}</span>
