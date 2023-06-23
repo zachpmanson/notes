@@ -21,3 +21,4 @@ I'd like to fully grasp Lemmy and [Kbin](https://github.com/ernestwisniewski/kbi
 ## Links
 
 - [FediDB](https://fedidb.org/), contains stats on server and service popularity
+- [How to Kill a Decentralised Network (such as the Fediverse)](https://ploum.net/2023-06-23-how-to-kill-decentralised-networks.html)
