@@ -75,3 +75,9 @@ More on this on the [Creative Commons site](https://creativecommons.org/2004/04/
 > Users need open source projects, but open source projects do not need users.
 
 -- [Matt Holt](https://matt.life/writing/the-asymmetry-of-open-source)
+
+---
+
+>You can't _imagine_ how much harder it would be to be a JavaScript programmer in 1882
+
+-- [Zach Holman](https://zachholman.com/talk/utc-is-enough-for-everyone-right)
