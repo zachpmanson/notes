@@ -15,6 +15,7 @@ macOS is a lovely operative system except that it is missing so many basic usabi
 ## Nice to have
 
 - [Caffiene](https://intelliscapesolutions.com/apps/caffeine) - keeps screen awake while active
+- [AltTab](https://alt-tab-macos.netlify.app/) - makes alt+tab behaviour sane, more like Windows/Linux
 
 ## Do it
 
@@ -23,7 +24,8 @@ brew install \
 --cask amethyst \
 --cask --no-quarantine middleclick \
 --cask scroll-reverser \
---cask caffeine
+--cask caffeine \
+--cask alt-tab
 ```
 
 Tags: #lists #macos
