@@ -81,3 +81,9 @@ More on this on the [Creative Commons site](https://creativecommons.org/2004/04/
 >You can't _imagine_ how much harder it would be to be a JavaScript programmer in 1882
 
 -- [Zach Holman](https://zachholman.com/talk/utc-is-enough-for-everyone-right)
+
+---
+
+>Subcultures are dead. I plan to write a full obituary soon.
+
+-- [David Chapman](https://meaningness.com/geeks-mops-sociopaths)
