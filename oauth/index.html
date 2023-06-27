@@ -32,7 +32,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: date and time</title>
+    <title>notes: oauth</title>
   </head>
 
   <body>
@@ -125,7 +125,7 @@
         
           <li>
             
-            <a href="/date-and-time" class="activated-link">Date and Time</a>
+            <a href="/date-and-time">Date and Time</a>
             
           </li>
         
@@ -143,7 +143,7 @@
         
           <li>
             
-            <a href="/oauth">OAuth</a>
+            <a href="/oauth" class="activated-link">OAuth</a>
             
           </li>
         
@@ -171,12 +171,13 @@
     </nav>
     <main>
       <header>
-        <h1>Date and Time</h1>
+        <h1>OAuth</h1>
       </header>
-      <article><h2 id="links">Links</h2>
-<ul>
-<li><a href="https://zachholman.com/talk/utc-is-enough-for-everyone-right">UTC is enough for everyone... right?</a></li>
-</ul></article>
+      <article><p>OAuth (2.0) is a standard for getting authorization to access secured resources from a third party.  For example, a <em>User</em> on my <em>Website</em> could use OAuth to connect to a Facebook <em>Authorization Server</em>, which will return a token that my <em>Website</em> can use to access <em>Protected Resources</em> through their Facebook account.</p>
+<p>This four party model makes up the basis of OAuth: User,  Website,  Authorization Server, and Protected Resource.</p>
+<p>Notably, no part of this flow involved giving my <em>Website</em> any personal information about the <em>User</em>.  The token that the <em>Authorization Server</em> returns is not depedent on the <em>Website</em>, so any other application/site that implements OAuth with Facebook would be able to issue a token that is equally valid for use to access <em>Protected Resources</em> through my website if they injected into my <em>Website.  </em><em>For this reason, OAuth alone should not be used for authentication, only authorization.</em>*</p>
+<p>More on this can be read in an <a href="http://www.thread-safe.com/2012/01/problem-with-oauth-for-authentication.html">excellent article by John Bradley</a>.  A few more thoughts on this can be read in this <a href="https://security.stackexchange.com/questions/37818/why-use-openid-connect-instead-of-plain-oauth2/260519#260519">StackExchange thread</a>.</p>
+<p>Authentication should be handled by OpenID Connect, which provides an identity layer on top of OAuth 2.0.</p></article>
 
       
       <p class="backlinks"><span class="bold">Incoming:</span>
