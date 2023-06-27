@@ -1,5 +1,7 @@
 Meta's rumoured Twitter competitor Threads has caused a stir in the [[fediverse]]. Some suggesting fedi instances should preemptively block Threads, others willing to wait and see what happens.  At the time of writing (June 2023) it is unclear how this will pan out.
 
+One of the oft-touted benefits of the fediverse is that it would be resilient to It will be interesting to see how the fediverse handles real threats.
+
 ## Interesting Articles
 
 Roelant Kooij wrote an [excellent overview](https://roelant.net/en/2023/interesting-reads-on-meta-vs-fediverse/) of the arguments on either side of this debate.
