@@ -44,33 +44,37 @@
         </a>
       </div>
       
-      <div class="flex nav-links">
+      <div class="nav-segments">
         {% if piblings != None %}
-        <div>
-          {% if len(piblings) > 9 %}
+        <div class="vertical-bar"></div>
+
+        {# <div class="text-left"> #}
+          {# {% if len(piblings) > 9 %}
           <details><summary>{{len(piblings)}} piblings</summary>
-          {% endif %}
-          <div class="flex flex-col text-left">
+          {% endif %} #}
+          <div class="flex flex-col nav-links text-left">
           {% for pibling in piblings %}
             {% if pibling == parent %}
             <a href="/{{sanitize_url(pibling)|e}}" class="activated-link">{{pibling}}</a>
             {% else %}
             <a href="/{{sanitize_url(pibling)|e}}">{{pibling}}</a>
-            {%endif%}
+            {% endif %}
           {% endfor %}
           </div>
-          {% if len(piblings) > 9 %}
+          {# {% if len(piblings) > 9 %}
           </details>
-          {% endif %}
-        </div>
+          {% endif %} #}
+        {# </div> #}
         {% endif %}
 
         {% if siblings != None %}
-        <div>
-          {% if len(siblings) > 9 %}
+        <div class="vertical-bar"></div>
+
+        {# <div> #}
+          {# {% if len(siblings) > 9 %}
           <details><summary>{{len(siblings)}} siblings</summary>
-          {% endif %}
-          <div class="flex flex-col text-left">
+          {% endif %} #}
+          <div class="flex flex-col text-left nav-links">
           {% for sibling in siblings %}
             {% if sibling == title %}
             <a href="/{{sanitize_url(sibling)|e}}" class="activated-link">{{sibling}}</a>
@@ -79,26 +83,28 @@
             {%endif%}
           {% endfor %}
           </div>
-          {% if len(siblings) > 9 %}
+          {# {% if len(siblings) > 9 %}
           </details>
-          {% endif %}
-        </div>
+          {% endif %} #}
+        {# </div> #}
         {% endif %}
 
         {% if children != None and len(children) > 0 %}
-        <div>
-          {% if len(children) > 9 %}
+        <div class="vertical-bar"></div>
+
+        {# <div> #}
+          {# {% if len(children) > 9 %}
           <details><summary>{{len(children)}} children</summary>
-          {% endif %}
-          <div class="flex flex-col text-left">
+          {% endif %} #}
+          <div class="flex flex-col text-left nav-links">
           {% for child in children %}
             <a href="/{{sanitize_url(child)|e}}">{{child}}</a>
           {% endfor %}
           </div>
-          {% if len(children) > 9 %}
+          {# {% if len(children) > 9 %}
           </details>
-          {% endif %}
-        </div>
+          {% endif %} #}
+        {# </div> #}
         {% endif %}
       </div>
 
