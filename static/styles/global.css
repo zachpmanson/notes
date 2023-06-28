@@ -197,10 +197,15 @@ td:nth-last-child(1) {
   min-width: 100px;
 }
 
-.nav-links {
+.nav-segments {
   gap: 2rem;
 }
 
-.nav-links a {
+.nav-segments a {
   max-width: 30ch;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
 }
