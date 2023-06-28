@@ -31,6 +31,8 @@ video {
 
 nav {
   display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 nav ul {
@@ -44,10 +46,6 @@ nav ul li {
 
 nav details {
   text-align: left;
-}
-
-nav details summary {
-  margin-left: 40px;
 }
 
 a {
@@ -118,7 +116,7 @@ p code {
 }
 
 hr {
-  color: var(--white);
+  color: var(--dark-white);
   margin: 2rem auto;
 }
 
@@ -177,4 +175,32 @@ td:nth-child(1) {
 th:nth-last-child(1),
 td:nth-last-child(1) {
   padding-right: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.main-icon {
+  min-width: 100px;
+}
+
+.nav-links {
+  gap: 2rem;
+}
+
+.nav-links a {
+  max-width: 30ch;
 }
