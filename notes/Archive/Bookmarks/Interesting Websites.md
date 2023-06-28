@@ -1,0 +1,23 @@
+Intentionally miscellaneous.
+
+- [RAW Magazine](https://brutalistwebsites.com/raw/), interviews with brutalist designers
+- [XXIIVV](https://wiki.xxiivv.com/site/home.html), Devine Lu Linvega's wiki
+- [The Annotated Pratchett File](https://www.lspace.org/books/apf/), distilled discussions on the works of Terry Pratchett
+- [years in review](https://years.cblgh.org/), Alexander Cobleigh's years, reviewed
+- [Basilisk Collection](https://suricrasia.online/unfiction/basilisk/)
+- [DenverCoder9 on FamistForums](www.mirrorsoferis.com/forum/thread05232003a.html)
+- [freezine](https://freezine.xyz/index.html), an old kind of zine, best on a desktop browser
+- [La Jachère](https://jache.re/), Adrian Demleitner's wiki
+- [Chronophoto](https://www.chronophoto.app/game.html)
+- [New Tech Bingo](https://codepen.io/aardrian/full/YzOzKOp)
+- [How Complex Systems Fail](https://how.complexsystems.fail)
+- [L Ives](http://www.lucy-ives.com/)
+- [duskjacket](https://duskjacket.com/)
+- [DVD Screensaver](https://dvdscreensaver.net/)
+- [Floor 796](https://floor796.com)
+- [Motorcross Arts](https://motocross-arts.tumblr.com/)
+- [Loading Collection](https://loadingcollection.matoseb.com/), a collection of loading icons
+- [Ctrl+ZINE](https://ctrl-c.club/~loghead/ctrl-zine.html)
+- [Helvetica Blanc](https://helveticablanc.com/index.html)
+- [Antartica Starts Here.plan](https://drwho.virtadpt.net/drwho.plan)
+- [Galactanet](http://www.galactanet.com/), Andy Weir's actual website

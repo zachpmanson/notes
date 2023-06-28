@@ -7,6 +7,7 @@
 - [Bit bucket](https://en.wikipedia.org/wiki/Bit_bucket)
 - [Zalgo Text](https://en.wikipedia.org/wiki/Zalgo_text)
 - [Eternal September](https://en.wikipedia.org/wiki/Eternal_September)
+- [Basilisk Collection](https://suricrasia.online/unfiction/basilisk/)
 
 ## History
 
