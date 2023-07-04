@@ -115,7 +115,8 @@ a[href^="/"].activated-link:hover {
 }
 
 /* Inline monospace */
-p code {
+p code,
+li code {
   color: var(--yellow);
 }
 
