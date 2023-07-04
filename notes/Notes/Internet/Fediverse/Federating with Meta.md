@@ -23,3 +23,15 @@ Roelant Kooij wrote an [excellent overview](https://roelant.net/en/2023/interest
 	- they conclude to pre-emptively block, but leave the door open to unblocking if Meta is a decent fediverse citizen
 - [Why would Meta implement ActivityPub? 1½ reasons are compelling, another is not](https://reb00ted.org/tech/20230625-meta-why-activitypub/), Johannes Ernst's analysis of Meta's motivations
 	- suggests EEE is not worthwhile for Meta, far less important than appeasing incoming EU regulations
+- Tim Chamber's (indieweb.social admin) *First Time?* series of posts on the matter
+	- [Project92 and the Fediverse - A Smarter Battle Plan to Protect the Open Social Web](https://www.timothychambers.net/2023/06/23/project-and-the.html)
+		- suggests that pre-emptive defederation is not the most effective strategy to protect the current fediverse
+		- thinks current fediverse can win by providing a better experience, especially in areas where corporate interests conflict with this (e.g. advertising)
+	- [#Project92, the Fediverse: (First Time? Part 2)](https://www.timothychambers.net/2023/06/25/project-the-fediverse.html)
+		- 'We have the tools to protect our people, and we are stronger to "Watch like a hawk, with our fingers over the block button."'
+	- [Meta and the Fediverse (First Time? Part 3)](https://www.timothychambers.net/2023/06/30/meta-and-the.html)
+		- generally calling for calming of vitriol, promoting compassion between disagreeing groups
+		- "All sides should admit we don’t know far more than we do know right now."
+	- [Instagram Threads and the Fediverse (First Time? Part 4)](https://www.timothychambers.net/2023/07/03/instagram-threads-and.html), a summation of all his previous posts
+- [The Two Camps of Mastodon](https://heat-shield.space/mastodon_two_camps.html), on the general split between people that view the fediverse as a collection of small communities and those that view it as a distributed network where most people can talk to most others in a decetralised fashion, and how Threads' existence exacerbate this divide
+- [The horns of a dilemma](https://netwars.pelicancrossing.net/2023/06/30/the-horns-of-a-dilemma/), Wendy M. Grossman enumerating potential futures
