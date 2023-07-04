@@ -18,7 +18,7 @@ Roelant Kooij wrote an [excellent overview](https://roelant.net/en/2023/interest
 	- "Is the goal of the Fediverse to be anti-corporate/anti-commercial, or to be pro-openness? I think openness is the answer"
 - [How to Kill a Decentralised Network (such as the Fediverse)](https://ploum.net/2023-06-23-how-to-kill-decentralised-networks.html), Ploum's excellent writeup on how large companies can (sometimes maliciously) kill open/decentralised networks
 	- makes compairson to Google killing XMPP and Microsoft using OOXML to cripple open source office software
-- [**Meta on the Fediverse: to block or not to block?**](can't claim depreciation if its a rental ), SciComm admins writeup of their balanced thought process on pre-emptive blocking
+- [**Meta on the Fediverse: to block or not to block?**](https://about.scicomm.xyz/doku.php?id=blog:2023:0625_meta_on_the_fediverse_to_block_or_not_to_block), SciComm admins writeup of their balanced thought process on pre-emptive blocking
 	- they conclude to pre-emptively block, but leave the door open to unblocking if Meta is a decent fediverse citizen
 - [Why would Meta implement ActivityPub? 1½ reasons are compelling, another is not](https://reb00ted.org/tech/20230625-meta-why-activitypub/), Johannes Ernst's analysis of Meta's motivations
 	- suggests EEE is not worthwhile for Meta, far less important than appeasing incoming EU regulations
