@@ -2,10 +2,10 @@ Meta's rumoured Twitter competitor Threads has caused a stir in the [[fediverse]
 
 ![[meta-fediverse.jpeg]]
 
-Meta: "MAY I JOIN YOU?"
+Meta: "MAY I JOIN YOU?"  
 [By David Revoy](https://framapiaf.org/@davidrevoy/110583258129951932)
 
-One of the oft-touted benefits of the fediverse is that it would be resilient to It will be interesting to see how the fediverse handles real threats.
+One of the oft-touted benefits of the fediverse is that it would be resilient to corporate enshittification. It will be interesting to see how the fediverse handles real threats.
 
 ## Interesting Articles
 
