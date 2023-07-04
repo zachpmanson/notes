@@ -33,6 +33,5 @@ def usage():
 
 def format_recent_edit(tree, i):
     page_name = sorted(tree, key=lambda x:tree[x]["mod_time"], reverse=True)[int(i)]
-    date = datetime.utcfromtimestamp(tree[page_name]['mod_time']).strftime('%Y-%m-%d %H:%M:%S')
-    # return f"[[{page_name}]] - {datetime.utcfromtimestamp(tree[page_name]['mod_time']).strftime('%Y-%m-%d %H:%M:%S')}"
+    date = datetime.utcfromtimestamp(tree[page_name]['mod_time']).strftime('%Y-%m-%d')
     return f"{date} - [[{page_name}]]"
