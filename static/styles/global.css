@@ -37,6 +37,8 @@ nav {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  border-bottom: 2px solid var(--grey);
+  padding-bottom: 1rem;
 }
 
 nav ul {
@@ -200,7 +202,8 @@ td:nth-last-child(1) {
 }
 
 .main-icon {
-  min-width: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 .nav-segments-container {
