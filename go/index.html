@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/styles/colors.css" />
+    <link rel="stylesheet" href="/static/styles/global.css" />
+    <link rel="stylesheet" href="/static/styles/code.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/static/icon/site.webmanifest" />
+    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+    <meta name="theme-color" content="#282A36" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>notes: go</title>
+  </head>
+
+  <body>
+     <nav>
+
+      <div class="main-icon">
+        <a href="/">
+          <img src="/static/icon/icon.png" alt="notes" height="100">
+        </a>
+      </div>
+      
+      <div class="nav-segments-container">
+      <div class="nav-segments">
+        
+
+          <div class="flex flex-col nav-links text-left">
+          
+            
+            <a href="/date-and-time">Date and Time</a>
+            
+          
+            
+            <a href="/debugging">Debugging</a>
+            
+          
+            
+            <a href="/go">Go</a>
+            
+          
+            
+            <a href="/markdown">Markdown</a>
+            
+          
+            
+            <a href="/oauth">OAuth</a>
+            
+          
+            
+            <a href="/programming-concepts">Programming Concepts</a>
+            
+          
+            
+            <a href="/programming-languages" class="activated-link">Programming Languages</a>
+            
+          
+            
+            <a href="/web-development">Web Development</a>
+            
+          
+          </div>
+        
+
+        
+
+          <div class="flex flex-col text-left nav-links">
+          
+            
+            <a href="/go" class="activated-link">Go</a>
+            
+          
+          </div>
+        
+
+        
+      </div>
+      </div>
+
+    </nav>
+    <main>
+      <header>
+        <h1>Go</h1>
+      </header>
+      <article><p>A statically typed, compiled programming language designed by Google designed to blend high performance networking, concurrency, memory safety and readability.  It was first created in 2009 by Robert Griesemer, <a href="/rob-pikes-lesson-in-shortcuts">Rob Pike</a> (<a href="/unix">Unix</a>, Plan 9, UTF-8) and Ken Thompson (C, Unix).</p>
+<p>It was borne from criticisms in other languages being used by Google at the time, with a particular shared dislike of C++.</p>
+<h2 id="variables">Variables</h2>
+<p>Variables are 0 initialised, <code>false</code> for bool and <code>""</code> for strings.  Explicit types are used with the <code>var name type</code> </p>
+<div class="highlight"><pre><span></span><code><span class="c1">// explicit typing</span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="kt">string</span>
+<span class="nx">name</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;text&quot;</span>
+
+<span class="c1">// duck typing</span>
+<span class="nx">name2</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="s">&quot;text&quot;</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">pi</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">3.14</span>
+</code></pre></div>
+<h2 id="types">Types</h2>
+<p>Basic types:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span>
+
+<span class="kt">string</span>
+
+<span class="kt">int</span><span class="w">  </span><span class="kt">int8</span><span class="w">  </span><span class="kt">int16</span><span class="w">  </span><span class="kt">int32</span><span class="w">  </span><span class="kt">int64</span>
+<span class="kt">uint</span><span class="w"> </span><span class="kt">uint8</span><span class="w"> </span><span class="kt">uint16</span><span class="w"> </span><span class="kt">uint32</span><span class="w"> </span><span class="kt">uint64</span><span class="w"> </span><span class="kt">uintptr</span>
+
+<span class="kt">byte</span><span class="w"> </span><span class="c1">// alias for uint8</span>
+
+<span class="kt">rune</span><span class="w"> </span><span class="c1">// alias for int32</span>
+<span class="w">     </span><span class="c1">// represents a Unicode code point</span>
+
+<span class="kt">float32</span><span class="w"> </span><span class="kt">float64</span>
+
+<span class="kt">complex64</span><span class="w"> </span><span class="kt">complex128</span>
+</code></pre></div>
+<p>Casting:</p>
+<div class="highlight"><pre><span></span><code>i := 42
+f := float64(i)
+u := uint(f)
+</code></pre></div>
+<p>Type definitions:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">type</span><span class="w"> </span><span class="nx">Page</span><span class="w"> </span><span class="kd">struct</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">Title</span><span class="w"> </span><span class="kt">string</span>
+<span class="w">    </span><span class="nx">Body</span><span class="w">  </span><span class="p">[]</span><span class="kt">byte</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="control-structures">Control Structures</h2>
+<h3 id="if"><code>if</code></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">pow</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">n</span><span class="p">,</span><span class="w"> </span><span class="nx">lim</span><span class="w"> </span><span class="kt">float64</span><span class="p">)</span><span class="w"> </span><span class="kt">float64</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// if</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="p">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">sqrt</span><span class="p">(</span><span class="o">-</span><span class="nx">x</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;i&quot;</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span>
+
+<span class="w">    </span><span class="c1">// if with prefix statement</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="nx">v</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">math</span><span class="p">.</span><span class="nx">Pow</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">n</span><span class="p">);</span><span class="w"> </span><span class="nx">v</span><span class="w"> </span><span class="p">&lt;</span><span class="w"> </span><span class="nx">lim</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// v is only in if scope</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">v</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="for"><code>for</code></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">sum</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">    </span><span class="c1">// for loop</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="p">&lt;</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">sum</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nx">i</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">sum</span><span class="p">)</span>
+
+<span class="w">    </span><span class="c1">// while loop</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="nx">sum</span><span class="w"> </span><span class="p">&lt;</span><span class="w"> </span><span class="mi">1000</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">sum</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="nx">sum</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// infinite loop</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">sum</span><span class="p">)</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="switch"><code>switch</code></h3>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="nx">os</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">runtime</span><span class="p">.</span><span class="nx">GOOS</span><span class="p">;</span><span class="w"> </span><span class="nx">os</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;darwin&quot;</span><span class="p">:</span>
+<span class="w">        </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;OS X.&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;linux&quot;</span><span class="p">:</span>
+<span class="w">        </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Linux.&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="k">default</span><span class="p">:</span>
+<span class="w">        </span><span class="c1">// freebsd, openbsd,</span>
+<span class="w">        </span><span class="c1">// plan9, windows...</span>
+<span class="w">        </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;%s.\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">os</span><span class="p">)</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// conditionaless switch for clean else if chains</span>
+<span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="nx">t</span><span class="p">.</span><span class="nx">Hour</span><span class="p">()</span><span class="w"> </span><span class="p">&lt;</span><span class="w"> </span><span class="mi">12</span><span class="p">:</span>
+<span class="w">        </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Good morning!&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="nx">t</span><span class="p">.</span><span class="nx">Hour</span><span class="p">()</span><span class="w"> </span><span class="p">&lt;</span><span class="w"> </span><span class="mi">17</span><span class="p">:</span>
+<span class="w">        </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Good afternoon.&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="k">default</span><span class="p">:</span>
+<span class="w">        </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Good evening.&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="interesting-constructs">Interesting Constructs</h2>
+<p>Defer runs immediately after the function returns. The deferred call's arguments are evaluated immediately, but the function call is not executed until the surrounding function returns.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">defer</span><span class="w"> </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;world&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;hello&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></article>
+
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+          
+          <a href="/recent-changes">Recent Changes</a>
+          
+        </span>
+      </p>
+      
+
+      
+
+        
+
+
+      
+        
+      
+
+    </main>
+  </body>
+</html>
