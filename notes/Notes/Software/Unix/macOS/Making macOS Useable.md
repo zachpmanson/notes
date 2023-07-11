@@ -12,9 +12,10 @@ macOS is a lovely operative system except that it is missing so many basic usabi
    [Scroll Reverser](https://pilotmoon.com/scrollreverser/)
 - No path in Finder  
   `Cmd+Alt+P` to toggle path bar
+
 ## Nice to have
 
-- [Caffiene](https://intelliscapesolutions.com/apps/caffeine) - keeps screen awake while active
+- [Caffeine](https://intelliscapesolutions.com/apps/caffeine) - keeps screen awake while active
 - [AltTab](https://alt-tab-macos.netlify.app/) - makes alt+tab behaviour sane, more like Windows/Linux
 
 ## Do it
@@ -28,4 +29,4 @@ brew install \
 --cask alt-tab
 ```
 
-Tags: #lists #macos
+Tags: #lists #macOS

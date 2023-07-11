@@ -26,7 +26,7 @@ Roelant Kooij wrote an [excellent overview](https://roelant.net/en/2023/interest
 	- [Project92 and the Fediverse - A Smarter Battle Plan to Protect the Open Social Web](https://www.timothychambers.net/2023/06/23/project-and-the.html)
 		- suggests that pre-emptive defederation is not the most effective strategy to protect the current fediverse
 		- thinks current fediverse can win by providing a better experience, especially in areas where corporate interests conflict with this (e.g. advertising)
-	- [#Project92, the Fediverse: (First Time? Part 2)](https://www.timothychambers.net/2023/06/25/project-the-fediverse.html)
+	- [Project92, the Fediverse: (First Time? Part 2)](https://www.timothychambers.net/2023/06/25/project-the-fediverse.html)
 		- 'We have the tools to protect our people, and we are stronger to "Watch like a hawk, with our fingers over the block button."'
 	- [Meta and the Fediverse (First Time? Part 3)](https://www.timothychambers.net/2023/06/30/meta-and-the.html)
 		- generally calling for calming of vitriol, promoting compassion between disagreeing groups
