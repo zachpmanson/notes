@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/styles/colors.css" />
+    <link rel="stylesheet" href="/static/styles/global.css" />
+    <link rel="stylesheet" href="/static/styles/code.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/static/icon/site.webmanifest" />
+    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+    <meta name="theme-color" content="#282A36" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>notes: macos cli tools</title>
+  </head>
+
+  <body>
+     <nav>
+
+      <div class="main-icon">
+        <a href="/">
+          <img src="/static/icon/icon.png" alt="notes" height="100">
+        </a>
+      </div>
+      
+      <div class="nav-segments-container">
+      <div class="nav-segments">
+        
+
+          <div class="flex flex-col nav-links text-left">
+          
+            
+            <a href="/bash">Bash</a>
+            
+          
+            
+            <a href="/gecos">GECOS</a>
+            
+          
+            
+            <a href="/unix-files">Unix Files</a>
+            
+          
+            
+            <a href="/unix-processes">Unix Processes</a>
+            
+          
+            
+            <a href="/unix-programs">Unix Programs</a>
+            
+          
+            
+            <a href="/macos" class="activated-link">macOS</a>
+            
+          
+          </div>
+        
+
+        
+
+          <div class="flex flex-col text-left nav-links">
+          
+            
+            <a href="/making-macos-useable">Making macOS Useable</a>
+            
+          
+            
+            <a href="/macos-cli-tools" class="activated-link">macOS CLI Tools</a>
+            
+          
+          </div>
+        
+
+        
+      </div>
+      </div>
+
+    </nav>
+    <main>
+      <header>
+        <h1>macOS CLI Tools</h1>
+      </header>
+      <article><p>This is a list of macOS CLI tools that are variously useful, written by <a href="https://saurabhs.org/">Saurabh</a> <a href="https://saurabhs.org/advanced-macos-commands">here</a>.</p>
+<hr />
+<h1 id="advanced-macos-command-line-tools">Advanced macOS Command-Line Tools</h1>
+<p>Last updated for macOS Ventura</p>
+<p>macOS is fortunate to have access to the huge arsenal of standard Unix tools. There are also a good number of macOS-specific command-line utilities that provide unique macOS functionality. To view the full documentation for any of these commands, run <code>man &lt;command&gt;</code>.</p>
+<h4 id="caffeinate-set-mac-sleep-behavior"><code>caffeinate</code> - set Mac sleep behavior</h4>
+<p>Running <code>caffeinate</code> with no flags or arguments prevents your Mac from going to sleep as long as the command continues to run.</p>
+<p><code>caffeinate -u -t &lt;seconds&gt;</code> prevents sleep for the specified number of seconds.</p>
+<p>Adding the <code>-d</code> flag also prevents the display from going to sleep.</p>
+<p>Specifying an existing process with <code>-w &lt;pid&gt;</code> automatically exits the caffeinate command once the specified process exits.</p>
+<p>Passing a command with <code>caffeinate &lt;command&gt;</code> starts the given command in a new process and prevents sleep until that process exits.</p>
+<h4 id="pbcopy-pbpaste-interact-with-system-clipboard"><code>pbcopy</code>, <code>pbpaste</code> - interact with system clipboard</h4>
+<p><code>&lt;command&gt; | pbcopy</code> copies the output of the command to the clipboard.</p>
+<p><code>pbpaste</code> outputs the contents of the clipboard to stdout.</p>
+<h4 id="networkquality-measure-internet-speed"><code>networkQuality</code> - measure Internet speed</h4>
+<p>Run <code>networkQuality</code> to run an Internet speed test from your Mac.</p>
+<p>Add the <code>-v</code> flag to view more detailed information.</p>
+<p>Use the <code>-I</code> flag to run the network test on a specific network interface.</p>
+<h4 id="sips-image-manipulation"><code>sips</code> - image manipulation</h4>
+<p><code>sips -z &lt;height&gt; &lt;width&gt; &lt;image&gt;</code> resizes the specified image, ignoring the previous aspect ratio.</p>
+<p><code>sips -Z &lt;size&gt; &lt;image&gt;</code> resizes the largest side of the specified image, preserving the aspect ratio.</p>
+<p><code>sips -c &lt;height&gt; &lt;width&gt; &lt;image&gt;</code> crops the specified image to the given dimensions (relative to the center of the original image).</p>
+<p><code>sips -r &lt;degrees&gt; &lt;image&gt;</code> rotates the image by the specified degrees.</p>
+<p>By default, <code>sips</code> will destructively overwrite the input image. Use the <code>-o</code> flag to specify a different output file path (which must have the same file extension as the input image).</p>
+<h4 id="open-open-files-and-applications"><code>open</code> - open files and applications</h4>
+<p><code>open -a &lt;app&gt; &lt;file&gt;</code> opens the given file with the specified application.</p>
+<p>Add the <code>-g</code> flag to open the file in the background, without losing focus from the current application.</p>
+<p><code>open .</code> opens the current directory in a new Finder window.</p>
+<p><code>open -R &lt;file&gt;</code> reveals the given file in a new Finder window.</p>
+<h4 id="textutil-document-file-converter"><code>textutil</code> - document file converter</h4>
+<p><code>textutil</code> can convert files to and from Microsoft Word, plain text, rich text, and HTML formats.</p>
+<p><code>textutil -convert html journal.doc</code> converts <code>journal.doc</code> into <code>journal.html</code>.</p>
+<p>The possible values for <code>-convert</code> are: <code>txt</code>, <code>html</code>, <code>rtf</code>, <code>rtfd</code>, <code>doc</code>, <code>docx</code>.</p>
+<h4 id="mdfind-mdls-search-with-spotlight"><code>mdfind</code>, <code>mdls</code> - search with Spotlight</h4>
+<p><code>mdfind &lt;query&gt;</code> performs a keyword-based Spotlight search with the given query.</p>
+<p><code>mdfind kMDItemAppStoreHasReceipt=1</code> finds all apps installed from the Mac App Store.</p>
+<p><code>mdfind -name &lt;name&gt;</code> searches for all files matching the given name.</p>
+<p>The <code>-onlyin &lt;dir&gt;</code> flag restricts the search to the given directory.</p>
+<p><code>mdls &lt;file-path&gt;</code> prints all Spotlight metadata associated with the given file.</p>
+<h4 id="screencapture-take-screenshots"><code>screencapture</code> - take screenshots</h4>
+<p><code>screencapture -c</code> takes a screenshot and copies it to the clipboard.</p>
+<p><code>screencapture &lt;file&gt;</code> takes a screenshot and saves it to the given file.</p>
+<p>Add the <code>-T &lt;seconds&gt;</code> flag to take the screenshot after the given delay in seconds.</p>
+<h4 id="taskpolicy-control-scheduling-of-processes"><code>taskpolicy</code> - control scheduling of processes</h4>
+<p><code>taskpolicy -b &lt;command&gt;</code> starts executing the given command in the background. On Apple silicon Macs, the process will only run on the efficiency cores.</p>
+<p><code>taskpolicy -b -p &lt;pid&gt;</code> downgrades an existing process to run in the background.</p>
+<p><code>taskpolicy -B -p &lt;pid&gt;</code> removes the specified process from running in the background. On Apple silicon Macs, the process may now run on the efficiency or performance cores. Note that this only works on processes that have been downgraded to the background, and not processes that started in the background.</p>
+<p><code>taskpolicy -s &lt;command&gt;</code> starts the given command in the suspended state. This is useful to allow a debugger to attach to the process right at the start of execution.</p>
+<h4 id="say-text-to-speech-engine"><code>say</code> - text-to-speech engine</h4>
+<p><code>say &lt;message&gt;</code> announces the given message.</p>
+<p><code>say -f input.txt -o output.aiff</code> creates an audiobook from the given text file.</p>
+<h4 id="pmset-configure-power-management"><code>pmset</code> - configure power management</h4>
+<p><code>pmset -g</code> prints all available power configuration information.</p>
+<p><code>pmset -g assertions</code> displays information about power-related assertions made by other processes. This can be useful for finding a process that is preventing your Mac from going to sleep.</p>
+<p><code>pmset -g thermlog</code> displays information about any processes that have been throttled (useful when running benchmarks).</p>
+<p><code>pmset displaysleepnow</code> immediately puts the display to sleep without putting the rest of the system to sleep.</p>
+<p><code>pmset sleepnow</code> immediately puts the entire system to sleep.</p>
+<h4 id="networksetup-configure-network-settings"><code>networksetup</code> - configure network settings</h4>
+<p><code>networksetup -listnetworkserviceorder</code> prints a list of available network services.</p>
+<p><code>networksetup -getinfo &lt;networkservice&gt;</code> prints information about the specified network service.</p>
+<p><code>networksetup -getdnsservers &lt;networkservice&gt;</code> prints the DNS servers for the specified network service.</p>
+<p><code>networksetup -setairportnetwork &lt;device&gt; &lt;network&gt; [password]</code> joins the specified Wi-Fi network. (In most cases, the <code>&lt;device&gt;</code> argument should be "en0".)</p>
+<h4 id="softwareupdate-manage-os-updates"><code>softwareupdate</code> - manage OS updates</h4>
+<p><code>softwareupdate --list</code> prints out available software updates.</p>
+<p><code>sudo softwareupdate -ia</code> installs all available updates.</p>
+<p><code>softwareupdate --fetch-full-installer --full-installer-version &lt;version&gt;</code> tries to download the full installer of the specified macOS version to /Applications.</p>
+<h4 id="system_profiler-view-system-information"><code>system_profiler</code> - view system information</h4>
+<p><code>system_profiler</code> by default prints all available system information, which is usually overwhelming.</p>
+<p><code>system_profiler &lt;datatype&gt;</code> only prints information about the given sub-system.</p>
+<p><code>system_profiler -listDataTypes</code> lists all available sub-systems to get information from.</p>
+<p>Some particularly useful ones:</p>
+<p><code>system_profiler SPHardwareDataType</code> prints an overview of the hardware of the current machine, including its model name and serial number.</p>
+<p><code>system_profiler SPSoftwareDataType</code> prints an overview of the software of the current machine, including the exact macOS version number.</p>
+<p><code>system_profiler SPPowerDataType</code> prints power and battery information, including the current AC wattage and battery cycle count.</p>
+<p><code>system_profiler SPDeveloperToolsDataType</code> prints the currently active version of the Xcode developer tools and SDK.</p></article>
+
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+          
+          <a href="/recent-changes">Recent Changes</a>
+          
+        </span>
+      </p>
+      
+
+      
+      <p class="backlinks"><span class="bold">Tags:</span>
+          
+          <a href="/tags#unix">#unix</a>
+          
+        </span>
+      </p>
+      
+
+        
+
+
+      
+        
+      
+
+    </main>
+  </body>
+</html>
