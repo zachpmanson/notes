@@ -29,4 +29,4 @@ brew install \
 --cask alt-tab
 ```
 
-Tags: #lists #macOS
+Tags: #lists #macos
