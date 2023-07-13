@@ -106,5 +106,3 @@ More on this on the [Creative Commons site](https://creativecommons.org/2004/04/
 
 -- [Robin Sloan](https://www.robinsloan.com/lab/lost-thread/)
 
----
-
