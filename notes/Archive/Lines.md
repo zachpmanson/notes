@@ -99,3 +99,12 @@ More on this on the [Creative Commons site](https://creativecommons.org/2004/04/
 >Web scraping is an absolutely despicable practice and if you want to learn how to do it at an industrial scale check out this video on my second channel
 
 -- [Fireship](https://www.youtube.com/watch?v=3AS5x05XIyg)
+
+---
+
+>An industrialist might soon purchase Twitter, Inc. His substantial success launching reusable spacecraft does nothing to prepare him for the challenge of building social spaces. The latter calls on every liberal art at once, while the former is just rocket science.
+
+-- [Robin Sloan](https://www.robinsloan.com/lab/lost-thread/)
+
+---
+
