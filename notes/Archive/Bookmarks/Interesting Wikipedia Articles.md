@@ -24,6 +24,7 @@
 
 - [Dead metaphor](https://en.wikipedia.org/wiki/Dead_metaphor)
 - [Zalgo Text](https://en.wikipedia.org/wiki/Zalgo_text)
+- [Escher Sentences](https://en.wikipedia.org/wiki/Comparative_illusion)
 
 ## Miscellaneous
 
