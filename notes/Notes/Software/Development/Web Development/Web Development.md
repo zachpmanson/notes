@@ -5,3 +5,5 @@
 ## Links
 
 - [JavaScript Gom Jabbar](https://frantic.im/javascript-gom-jabbar/)
+- Frontend
+	- [The single most impor­tant factor that dif­fer­enti­ates front-end frame­works](https://themer.dev/blog/the-single-most-important-factor-that-differentiates-front-end-frameworks)

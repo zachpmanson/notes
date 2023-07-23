@@ -9,6 +9,9 @@ Notes on various LLMs and the techniques used to make them.
 ![](https://raw.githubusercontent.com/pavo-etc/llm-family-tree/master/LLMfamily.drawio.png)  
 [Source](https://github.com/pavo-etc/llm-family-tree)
 
+A more comprehensive list of models:  
+[2023 LifeArchitect.ai data (shared)](https://docs.google.com/spreadsheets/u/0/d/1O5KVQW1Hx5ZAkcg8AIRjbQLQzx2wVaLl0SqUu-ir9Fs/htmlview#gid=1158069878)
+
 ## Comparisons 
 
 >>hyperopt:  
