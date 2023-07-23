@@ -12,6 +12,7 @@
 ## History
 
 - [Kramatorsk radiological accident](https://en.wikipedia.org/wiki/Kramatorsk_radiological_accident)
+- [List of nuclear close calls](https://en.wikipedia.org/wiki/List_of_nuclear_close_calls)
 
 ## Philosophy
 
