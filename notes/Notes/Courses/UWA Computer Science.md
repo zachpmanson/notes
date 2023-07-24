@@ -1,6 +1,6 @@
 Reviews and advice for all [[Computer Science]], Cyber Security, and Data Science units I completed at UWA.
 
-Just do [Coders For Causes](https://codersforcauses.org/) you will learn more in that than entire semesters of this degree.  Learn how to use git as fast as possible then force all your group project members to use it.  Narrow down your problems as much as possible, then google the most generic possible description of it. If you see someone using semicolons mid-sentence regularly it's probably Chris McDonald.
+Just do [Coders For Causes](https://codersforcauses.org/), you will learn more in that than entire semesters of this degree.  **Learn how to use git as fast as possible** then force all your group project members to use it.  Narrow down your problems as much as possible, then google the most generic possible description of it. If you see someone using semicolons mid-sentence regularly it's probably Chris McDonald.
 
 ![[uwa-cits.png]]
 
@@ -140,7 +140,7 @@ CITS3200 Professional Computing
 
 ## Miscellaneous Advice
 
-Labs are the only thing in the degree you can't get from youtube or the internet.  If you are bad, actually do the labs, go in and ask the instructors questions.  It's annoying but they can help you bridge the gap between trash and passing.
+Labs are the only thing in the degree you can't get from youtube or the [[internet]].  If you are bad, actually do the labs, go in and ask the instructors questions.  It's annoying but they can help you bridge the gap between trash and passing.
 
 Learn how to use the command line ASAP.  Learn git.  Seriously go learn git.  So many people I met couldn't use git in their third year.  How they made it that far sending code snippets over discord is beyond me.  Bully everyone you know into using git.  You will actually lose 20% mark if you don't use git+github for a group project because you will waste so much time trying to coordinate the project.  If git is hurting your brain try using GitHub Desktop which makes it a bit easier to use for newcomers.
 
