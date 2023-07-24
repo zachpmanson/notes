@@ -39,7 +39,7 @@ CITS2002 Systems Programming
 - good introduction to C
 - challenging projects but you learn a lot
 - very rewarding
-- this and CITS2200 have the highest kill rate for comsci degrees \[citation needed].  partially because they are hard, partially because the previous units did a pretty bad job preparing students for them
+- this and CITS2200 have the highest kill rate for comsci degrees <sup>[citation needed]</sup>.  partially because they are hard, partially because the previous units did a pretty bad job preparing students for them
 
 [[CITS2003]] Open Source Tools & Scripting
 
