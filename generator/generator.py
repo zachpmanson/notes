@@ -179,10 +179,13 @@ def append_bullet(node, depth):
         append_bullet(child, depth+4)
 
 def preprocess_markdown(text):
+    # TODO: Move this to a seperate md extension
     # add ochrs vars
     text = re.sub(r"<ochrs:(.+?)>", format_ochrs_var, text)
+    
+    # TODO: Move this to a seperate md extension
     # add images backlink
-    text = re.sub(r"!\[\[([^\]]+)?\]\]", "![](/static/media/\\1)", text)
+    text = re.sub(r"!\[\[([^\]]+)?\]\]", "![](/media/\\1)", text)
 
     return text
 

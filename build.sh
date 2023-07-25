@@ -7,9 +7,8 @@ python3 ./generator/generator.py $1
 echo Generated!
 deactivate
 echo Deactivated venv
-mkdir -p ./site/static/media
-rm -r ./site/static/*
+mkdir -p ./site/media ./site/static
 cp -R ./static/* ./site/static/
-cp -R ./notes/Media/ ./site/static/media/
-echo "notes.zachmanson.com" > ./site/CNAME
+cp -R ./notes/Media/ ./site/media/
+echo "notes.zachmanson.com" >./site/CNAME
 echo Done!
