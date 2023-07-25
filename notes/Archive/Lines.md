@@ -112,4 +112,4 @@ More on this on the [Creative Commons site](https://creativecommons.org/2004/04/
 
 -- [lori](https://d-shoot.net/)
 
-Written on cohost, though I came across their [pre-emptive autopsy of cohost](https://hackers.town/@lori/110656479473125841).
+Written on cohost, though I came across it in their [pre-emptive autopsy of cohost](https://hackers.town/@lori/110656479473125841).
