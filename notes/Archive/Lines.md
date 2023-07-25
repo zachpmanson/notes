@@ -106,3 +106,10 @@ More on this on the [Creative Commons site](https://creativecommons.org/2004/04/
 
 -- [Robin Sloan](https://www.robinsloan.com/lab/lost-thread/)
 
+---
+
+>The site will live or die by how it handles its first porn of misty from Pokemon
+
+-- [lori](https://d-shoot.net/)
+
+Written on cohost, though I came across their [pre-emptive autopsy of cohost](https://hackers.town/@lori/110656479473125841).
