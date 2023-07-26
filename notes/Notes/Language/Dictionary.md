@@ -7,10 +7,12 @@ DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscu
 + **Complect**: intertwine, embrace especially; to plait together; interweave.
 + **Elided**: (of a sound or [syllable](https://www.google.com/search?client=firefox-b-d&sxsrf=APwXEdfpj5E0dTKvnkrUQ_EOoZV0ryQvpw:1683372233102&q=syllable&si=AMnBZoFm76bvId4K9j6r5bU9rVYreOeLojJkRUwAfcB1eXTZ0tYk7ry0s0UxjRTB1rAHXKoJTyfc3dW7Y89KRxQ4hfWUk9sd_A%3D%3D&expnd=1)) [omitted](https://www.google.com/search?client=firefox-b-d&sxsrf=APwXEdfpj5E0dTKvnkrUQ_EOoZV0ryQvpw:1683372233102&q=omitted&si=AMnBZoFHF1DJLZWpTBtQDK262RMpi6d6VRO_IY_6qYTPb42ohrl6iLpJDtN2QLbd1E_SVPcpuyzk1IozgzVdN5DI6V7c3stG2g%3D%3D&expnd=1) when speaking.
 + **Enshittification** ([Pluralistic](https://pluralistic.net/2023/01/21/potemkin-ai/#hey-guys)): "how platforms die: first, they are good to their users; then they abuse their users to make things better for their business customers; finally, they abuse those business customers to claw back all the value for themselves. Then, they die."
++ **Filial**: relating to or due from a son or daughter
 + **Gloaming**: twilight; dusk
 + **[[Gruntle]]**: to put in a good humor
 + **Ichor**: God's equivalent for blood
 + **Impresario**: a person who organizes and often finances concerts, plays, or operas
++ **Interlocutor**: a person who takes part in a dialogue or conversation
 + **Juvenioa** (English): The fear or hostility directed by an older generation toward a younger one, or toward youth culture in general.
 + **Kaboomlaut** ([mcculley](https://news.ycombinator.com/item?id=34461282)): a unicode character that breaks a piece of software
 + **Kenja Taimu** (Japanese): post-jerk clarity / wiseman time
@@ -28,6 +30,7 @@ DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscu
 + **Petrichor** (English): A pleasant, distinctive smell frequently accompanying the first rain after a long period of warm, dry weather in certain regions
 + **Phaneron** (English-ish): the collective total of all that is in any way or in any sense present to the mind, quite regardless of whether it corresponds to any real thing or not
 + **Prosaically** (English): in a straightforward, ordinary way
++ **Sanguine**: optimistic or positive, especially in an apparently bad or difficult situation.
 + **Schadenfreude** (German): enjoyment obtained from the troubles of others
 + **Setsunai** (Japanese): nostalgic/whistful/longing/melancholy/sad/heartache/bittersweet
 + **Shibboleth** (Hebrew): a custom, principle, or belief distinguishing a particular class or group of people, especially a long-standing one regarded as outmoded or no longer important.

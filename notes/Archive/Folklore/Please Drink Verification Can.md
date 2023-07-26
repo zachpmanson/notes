@@ -27,7 +27,7 @@ An old greentext from the wake of the Xbox One launch. I have [a screenshot](/me
 \> my mother just walked in the room  
 \> "Adding another user to your pass, this will be charged to your credit card. Do you accept?"  
 \> "NO!"  
-\> Console entering lock state!"  
+\> "Console entering lock state!"  
 \> "to unlock drink verification can"  
 \> last can  
 \> "WARNING, OUT OF VERIFICATION CANS, an order has been shipped and charged to your credit card"  
