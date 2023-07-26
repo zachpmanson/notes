@@ -113,3 +113,15 @@ More on this on the [Creative Commons site](https://creativecommons.org/2004/04/
 -- [lori](https://d-shoot.net/)
 
 Written on cohost, though I came across it in their [pre-emptive autopsy of cohost](https://hackers.town/@lori/110656479473125841).
+
+---
+
+>I never trust anyone who's more excited about success than about doing the thing they want to be successful at.
+
+-- [Randall Munroe](http://xkcd.com/874/)  
+
+---
+
+>I've found that people who are great at something are not so much convinced of their own greatness as mystified at why everyone else seems so incompetent.  
+
+-- [Paul Graham](http://www.paulgraham.com/gh.html)
