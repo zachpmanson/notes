@@ -125,3 +125,9 @@ Written on cohost, though I came across it in their [pre-emptive autopsy of coho
 >I've found that people who are great at something are not so much convinced of their own greatness as mystified at why everyone else seems so incompetent.  
 
 -- [Paul Graham](http://www.paulgraham.com/gh.html)
+
+---
+
+There is a floor on how simple the truth can be and still be the truth.  Falsehoods don't have that.
+
+-- [Ian Crosby Danskin](https://www.youtube.com/watch?v=dF98ii6r_gU)
