@@ -24,6 +24,9 @@ span.linenos.special { color: #50fa7b; background-color: #6272a4; padding-left: 
   padding: 1rem;
   overflow-x: auto;
 }
+.highlight + .highlight {
+  margin-top: 1rem;
+}
 .highlight .c { color: #6272a4 } /* Comment */
 .highlight .err { color: #f8f8f2 } /* Error */
 .highlight .g { color: #f8f8f2 } /* Generic */
