@@ -14,11 +14,11 @@
 
 **Gosling**: Yeah, so--
 
-**Hsu**: \<laughs\>
+**Hsu**: <laughs\>
 
 **Gosling**: Ah--
 
-**Hsu**: And claimed it as his own?\<laughs\>
+**Hsu**: And claimed it as his own?<laughs\>
 
 **Gosling**: Yeah. So, so what had happened was I have this, like, point in my-- in grad school where I realize I'm either Mr. Emacs for life or I graduate. So I decided I wanted to graduate so I kind of went around to all the usual suspects and said, "Is there anybody willing to take over the maintenance of Emacs?" And, and everybody said, "Well, I really love Emacs and everybody here at," you know, MIT or UCLA or whatever, "We all love Emacs, but we actually have day jobs." And they-- And so I couldn't find anybody who would do it. I even asked Stallman and his, his answer wasn't just no, it was more like a frothing hell no. And, you know, mostly because it was for Unix.
 
