@@ -128,6 +128,14 @@ Written on cohost, though I came across it in their [pre-emptive autopsy of coho
 
 ---
 
-> There is a floor on how simple the truth can be and still be the truth.  Falsehoods don't have that.
+>There is a floor on how simple the truth can be and still be the truth.  Falsehoods don't have that.
 
 -- [Ian Crosby Danskin](https://www.youtube.com/watch?v=dF98ii6r_gU)
+
+---
+
+>You can never truly arrive at or trust your own beliefs if you can't completely understand and articulate the best possible case against them
+
+-- [noduerme](https://news.ycombinator.com/item?id=36927973)
+
+
