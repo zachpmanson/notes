@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/styles/colors.css" />
+    <link rel="stylesheet" href="/static/styles/global.css" />
+    <link rel="stylesheet" href="/static/styles/code.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/static/icon/site.webmanifest" />
+    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+    <meta name="theme-color" content="#282A36" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>notes: auto keyword in c</title>
+  </head>
+
+  <body>
+     <nav>
+
+      <div class="main-icon">
+        <a href="/">
+          <img src="/static/icon/icon.png" alt="notes" height="100">
+        </a>
+      </div>
+      
+      <div class="nav-segments-container">
+      <div class="nav-segments">
+        
+
+          <div class="flex flex-col nav-links text-left">
+          
+            
+            <a href="/c" class="activated-link">C</a>
+            
+          
+            
+            <a href="/go">Go</a>
+            
+          
+          </div>
+        
+
+        
+
+          <div class="flex flex-col text-left nav-links">
+          
+            
+            <a href="/auto-keyword-in-c" class="activated-link">auto Keyword in C</a>
+            
+          
+          </div>
+        
+
+        
+      </div>
+      </div>
+
+    </nav>
+    <main>
+      <header>
+        <h1>auto Keyword in C</h1>
+      </header>
+      <article><blockquote>
+<h4 id="18-whats-the-auto-keyword-good-for">1.8: What's the <code>auto</code> keyword good for?</h4>
+<p>Declaring vehicles.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://www.seebs.net/faqs/c-iaq.html">Infrequently Asked Questions in comp.lang.c</a></cite></p>
+<p>The <code>auto</code> keyword in C is one of four storage classes a variable can have, the others being <code>register</code>, <code>static</code>, and <code>extern</code>.  Storage classes defined the scope and lifetime of variables.</p>
+<blockquote>
+<p><code>auto</code> is the default storage class for local variables. </p>
+<p><code>register</code> is used to define local variables that should be stored in a register instead of RAM</p>
+<p><code>static</code> is the default storage class for global variables</p>
+<p><code>extern</code> defines a global variable that is visible to ALL object modules</p>
+</blockquote>
+<p><cite class="standalone"><a href="http://web.archive.org/web/20130927234242/http://itee.uq.edu.au/~comp2303/Leslie_C_ref/C/CONCEPT/storage_class.html">University of Queensland COMP2303 C Reference</a></cite></p>
+<p>Since the <code>auto</code> class is the same as a local variable's default behaviour, there is no reason to use it.  All programs using the <code>auto</code> keyword would be identical if <code>auto</code> was omitted. </p>
+<h2 id="why-does-it-exist-then">Why does it exist then</h2>
+<p>It is a relic from the preceeding B language,  where the <code>auto</code> keyword was required to declare local variables.  Many B programs were ported to C so the <code>auto</code> keyword was included to improve backwards compatibility, allowing programmers at the time to avoid needing to remove all auto references in their codebases.</p></article>
+
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+          
+          <a href="/recent-changes">Recent Changes</a>
+          
+        </span>
+      </p>
+      
+
+      
+      <p class="backlinks"><span class="bold">Tags:</span>
+          
+          <a href="/tags#relics">#relics</a>
+          
+        </span>
+      </p>
+      
+
+        
+
+
+      
+        
+      
+
+    </main>
+  </body>
+</html>
