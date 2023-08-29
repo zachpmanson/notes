@@ -8,7 +8,7 @@ Intentionally miscellaneous.
 - [DenverCoder9 on FamistForums](www.mirrorsoferis.com/forum/thread05232003a.html)
 - [freezine](https://freezine.xyz/index.html), an old kind of zine, best on a desktop browser
 - [La Jachère](https://jache.re/), Adrian Demleitner's wiki
-- [Chronophoto](https://www.chronophoto.app/game.html)
+- [Chronophoto](https://www.chronophoto.app/game.html), a game of historical imagery
 - [New Tech Bingo](https://codepen.io/aardrian/full/YzOzKOp)
 - [How Complex Systems Fail](https://how.complexsystems.fail)
 - [L Ives](http://www.lucy-ives.com/)
