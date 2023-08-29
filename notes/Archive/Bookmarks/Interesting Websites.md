@@ -21,3 +21,4 @@ Intentionally miscellaneous.
 - [Helvetica Blanc](https://helveticablanc.com/index.html)
 - [Antartica Starts Here.plan](https://drwho.virtadpt.net/drwho.plan)
 - [Galactanet](http://www.galactanet.com/), Andy Weir's actual website
+- [99percentoffsale](https://www.99percentoffsale.com/)
