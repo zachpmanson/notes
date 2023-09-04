@@ -22,3 +22,4 @@ Intentionally miscellaneous.
 - [Antartica Starts Here.plan](https://drwho.virtadpt.net/drwho.plan)
 - [Galactanet](http://www.galactanet.com/), Andy Weir's actual website
 - [99percentoffsale](https://www.99percentoffsale.com/)
+- [Index of Aesthetics](https://cari.institute/aesthetics)

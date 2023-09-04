@@ -1,4 +1,4 @@
-A statically typed, compiled programming language designed by Google designed to blend high performance networking, concurrency, memory safety and readability.  It was first created in 2009 by Robert Griesemer, [[Rob Pike's Lesson in Shortcuts|Rob Pike]] ([[Unix]], Plan 9, UTF-8) and Ken Thompson (C, Unix).
+A statically typed, compiled programming language designed by Google designed to blend high performance networking, concurrency, memory safety and readability.  It was first created in 2009 by Robert Griesemer, [[Rob Pike's Lesson in Shortcuts|Rob Pike]] ([[Unix]], Plan 9, UTF-8) and Ken Thompson ([[C]], Unix).
 
 It was borne from criticisms in other languages being used by Google at the time, with a particular shared dislike of C++.
 

@@ -92,7 +92,7 @@ for (i=0; i < 10; i++) {
 - `sprintf(fmt, expr)` - like `printf` but returns rather than prints
 - `sub(r,t,s)` - sub t into s for first occurance of regex r
 - `gsub(r,t,s)` - `sub()` but global
-- `system(cmd)` - shell out, useful for things like [[bash]] `sort`
+- `system(cmd)` - shell out, useful for things like [[Bash]] `sort`
 - `printf()` - its like C
 	- `%[<output width>[.<precision>]]<format letter>`
 	- format letters:
