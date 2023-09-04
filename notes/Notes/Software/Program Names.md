@@ -12,5 +12,6 @@
 - Lebab, a transpiler from ES5 code to ES6/ES7, the opposite of Babel
 - `bat`, an advanced version of `cat`
 - [[Unix]], a play on words of a prior system called Multics
+- Rubocop, the linter for Ruby
 
 Tags: #lists
