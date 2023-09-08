@@ -25,6 +25,8 @@
 - [Dead metaphor](https://en.wikipedia.org/wiki/Dead_metaphor)
 - [Zalgo Text](https://en.wikipedia.org/wiki/Zalgo_text)
 - [Escher Sentences](https://en.wikipedia.org/wiki/Comparative_illusion)
+- [Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo](https://en.wikipedia.org/wiki/Buffalo_buffalo_Buffalo_buffalo_buffalo_buffalo_Buffalo_buffalo)
+- [James while John had had had had had had had had had had had a better effect on the teacher](https://en.wikipedia.org/wiki/James_while_John_had_had_had_had_had_had_had_had_had_had_had_a_better_effect_on_the_teacher)
 
 ## Miscellaneous
 
