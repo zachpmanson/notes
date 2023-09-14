@@ -12,3 +12,4 @@ Some resources for finding interesting things:
 - [Merveilles Webring](https://webring.xxiivv.com)
 	- and its [search engine](https://lieu.cblgh.org/)
 - [Gossip’s Café](https://gossips.cafe/)
+- [Tales from the Small Web](https://kagi.com/smallweb/)
