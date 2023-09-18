@@ -1,4 +1,4 @@
-Taken from [Southend Punkrock History](http://www.southendpunk.com/html/damnadv.html).
+Taken from [Southend Punkrock History](http://www.southendpunk.com/html/damnadv.html).  Related to [Tony Moon's *This is a Chord*](https://tumblr.austinkleon.com/post/152691534221) drawing.
 
 ---
 
