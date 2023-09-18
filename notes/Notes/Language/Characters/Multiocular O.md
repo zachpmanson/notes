@@ -2,7 +2,7 @@
 
 ![[book-of-psalms.jpg]]
 
-The character is used as a stylised version of the Cyrillic O (U+041E), and is us!ed in the phrase "серафими многоꙮчитїи", meaning "many-eyed seraphim". A seraph (plural seraphim) are a type of angel.
+The character is used as a stylised version of the Cyrillic O (U+041E), and is us!ed in the phrase "серафими многоꙮчитїи", meaning "many-eyed seraphim". A seraph (plural seraphim) is a type of angel.
 
 ## It had one recorded use and was still wrong
 
