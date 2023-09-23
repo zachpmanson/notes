@@ -91,6 +91,7 @@ def get_tree():
         
         tree[node]["body"] = body
         tree[node]["mod_time"] = mod_time
+        tree[node]["breadcrumb_path"] = path
 
         for child in tree[node]["children"]:
             if node == child:
@@ -146,6 +147,7 @@ def generate_pages():
                 "len": len,
                 "sanitize_url": helpers.sanitize_url,
                 "backlinks": tree[node]["backlinks"],
+                "breadcrumb_path": tree[node]["breadcrumb_path"],
                 "last_edit": str(datetime.utcfromtimestamp(tree[node]["mod_time"]).strftime('%Y-%m-%d %H:%M:%S'))
             }))
         if VERBOSE: print(f"Generated {grandparent}/{parent}/{helpers.sanitize_url(node)}/index.html")
@@ -302,6 +304,7 @@ ochrs_vars = {
 #   "body":""
 #   "backlinks":[]
 #   "mod_time": mod_time
+#   "breadcrump_path": path in notes folder as string
 # }
 tree = {
     "Index": {
@@ -310,6 +313,7 @@ tree = {
         "body":"",
         "backlinks":set(),
         "mod_time": 0.0,
+        "breadcrump_path":"Index.md"
     }
 }
 routes = {
