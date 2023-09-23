@@ -103,6 +103,9 @@ a[href*="zachmanson.com"]:active {
   text-decoration-color: var(--pink);
 }
 
+.activated-link:hover::after {
+  content: " (edit)";
+}
 a[href^="/"].activated-link {
   color: var(--white);
 }
@@ -110,6 +113,10 @@ a[href^="/"].activated-link {
 a[href^="/"].activated-link:hover {
   color: var(--purple);
   text-decoration-color: var(--purple);
+}
+
+a[href^="/"].activated-link:hover::after {
+  content: none;
 }
 
 .bold {

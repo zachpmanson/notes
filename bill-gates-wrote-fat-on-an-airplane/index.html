@@ -32,7 +32,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: digg v4</title>
+    <title>notes: bill gates wrote fat on an airplane</title>
   </head>
 
   <body>
@@ -102,7 +102,7 @@
             
           
             
-            <a href="/bill-gates-wrote-fat-on-an-airplane">Bill Gates Wrote FAT on an Airplane</a>
+            <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Folklore/Bill Gates Wrote FAT on an Airplane.md" class="activated-link">Bill Gates Wrote FAT on an Airplane</a>
             
           
             
@@ -114,7 +114,7 @@
             
           
             
-            <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Folklore/Digg v4.md" class="activated-link">Digg v4</a>
+            <a href="/digg-v4">Digg v4</a>
             
           
             
@@ -239,22 +239,29 @@
     </nav>
     <main>
       <header>
-        <h1>Digg v4</h1>
+        <h1>Bill Gates Wrote FAT on an Airplane</h1>
       </header>
-      <article><p>Posted by philovivero on <a href="https://news.ycombinator.com/item?id=36217321">HN on 2023-06-06</a>.</p>
+      <article><p>From <a href="https://devblogs.microsoft.com/oldnewthing/20131008-00/?p=3003">Raymond Chen's post</a> on The Old New thing on Bill Gates writing FAT on a plane, posted on 2013-10-08.</p>
 <hr />
-<p>I wasn't a Digg founder, but I worked with them from the earliest days on Digg until its downfall.</p>
-<p>The real story is probably way more interesting than anyone really would guess. I'll summarise it as so:</p>
-<p>What made Digg work really was one guy who was a machine. He would vet all the stories, infiltrate all the SEO networks, and basically keep subverting them to keep the Digg front-page usable. Digg had an algorithm, but it was basically just a simple algorithm that helped this one dude 10x his productivity and keep the quality up.</p>
-<p>Google came to buy Digg, but figured out that really it's just a dude who works 22 hours a day that keeps the quality up, and all that talk of an algorithm was smoke and mirrors to trick the SEO guys into thinking it was something they could game (they could not, which is why front page was so high quality for so many years). Google walked.</p>
-<p>Then the founders realised if they ever wanted to get any serious money out of this thing, they had to fix that. So they developed "real algorithms" that independently attempted to do what this one dude was doing, to surface good/interesting content.</p>
-<p>They thought they'd succeeded, or market pressures forced their hand, whatever. So they rolled it along with a catastrophic UI/UX and back-end tech rewrite all rolled up into one.</p>
-<p>It was a total shit-show. I was involved in the "old" MySQL stack, and watched them totally fuck it up with beta software that wasn't ready for production (Cassandra, at the time, was not what it is today).</p>
-<p>The algorithm to figure out what's cool and what isn't wasn't as good as the dude who worked 22 hours a day, and without his very heavy input, it just basically rehashed all the shit that was popular somewhere else a few days earlier.</p>
-<p>So you ended up with a site that was ugly, fuxed, no-one in the existing wanted, and with a bland boring bunch of stories on the front-page, which was not at all compelling for anyone new showing up to check stuff out.</p>
-<p>Instead of taking this massive slap to the face constructively, the founders doubled-down. And now here we are.</p>
-<p>To be clear, much of the tech behind Digg was very interesting, the work Owen and many other engineers did was very interesting. The algorithm was all smoke and mirrors, though. And Kevin and his little circle of buddies were all crap engineers that tanked the business with their hubris and inexperience.</p></article>
+<p>When you wrote code for 16-bit Windows, one of the things you spent time doing as part of performance tuning was deciding which functions should be grouped together in which segments.</p>
+<p>Code in 16-bit Windows executed out of code segments, each of which could be up to 64KB in size. When a code segment was loaded from disk, the entire segment was loaded, and when it was discarded, the entire segment was discarded. This meant that you could affect your application’s performance in significant ways by choosing which functions go in which segments.</p>
+<p>For example, it was to your advantage to keep functions that are called at the same time in the same segment, so that they would be loaded as a unit (saving I/O time). If you chose poorly and put unrelated functions in the same segment, then calling any function in the segment caused all the functions to be loaded, which was a waste of I/O since you loaded a bunch of functions you didn’t need.</p>
+<p>Even if the functions were called at the same time, you also had to keep an eye on their popularity. If you have one function that is called frequently and another that is called infrequently (but always preceded by a call to the first function), the less popular function will ride the coattails of his roommate and remain loaded in memory. This creates unnecessary memory pressure that could cause a function which is moderately-frequently-called to be discarded to make room.</p>
+<p>Creating lots of small segments allowed your memory usage to be managed with finer granularity, but it also costs you in general overhead as well as I/O, because each segment load was a new round trip to the disk. You therefore had to balance memory cost against I/O cost.</p>
+<p>The process of optimizing the grouping of functions into segments was known as <em>segment tuning</em>.</p>
+<p>During the development of Windows 3.0, it was customary to have regular meetings with Bill Gates to brief him on the status of the project. At one of the reviews, the topic was performance, and Bill complained, “You guys are spending all this time with your segment tuning tinkering. I could teach a twelve-year-old to segment-tune. I want to see some <em>real</em> optimization, not this segment tuning nonsense. I wrote FAT on an airplane, for heaven’s sake.”</p>
+<p>(I can’t believe I had to write this: This is a dramatization, not a courtroom transcript.)</p>
+<p>This “I wrote FAT on an airplane” line was apparently one Bill used when he wanted to complain that what other people was doing wasn’t Real Programming. But this time, the development manager decided she’d had enough.</p>
+<p>“Fine, Bill. We’ll set you up with a machine fully enlisted in the Windows source code, and you can help us out with some of your programming magic, why don’t you.”</p>
+<p>This shut him up.</p></article>
 
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+          
+          <a href="/recent-changes">Recent Changes</a>
+          
+        </span>
+      </p>
       
 
       
