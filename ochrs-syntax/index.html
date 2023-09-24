@@ -113,25 +113,31 @@
 <p>CiteExtention is a custom extension that turns <code>-- Name Here</code>  into <code>&lt;cite&gt;Name here&lt;/cite&gt;</code>.</p>
 <h2 id="backlinks">Backlinks</h2>
 <p>BacklinkExtension is an enhanced version of <a href="https://python-markdown.github.io/extensions/wikilinks/">WikiLinkExtension</a> that supports aliased links and can include anchor links.</p>
-<h2 id="ochrs-variables">Ochrs Variables</h2>
-<p>There are also build-time variables that you have access to on all pages.  The list of extensions above is one of these, generated at built-time by Ochrs.  The format to insert one of these variables is:</p>
+<h2 id="build-time-functions">Build-Time Functions</h2>
+<p>There are also build-time functions that you have access to on all pages.  The list of extensions above is one of these, generated at built-time by Ochrs.  The format to insert one of these functions is:</p>
 <div class="highlight"><pre><span></span><code>Some normal text &lt;ochrs:var-name:arg1:arg2&gt; some more text
 </code></pre></div>
 <p>Currently available Ochrs variables:</p>
 <p>ochrs-vars, example, page-count, build-time, md-extensions, recent-edit, sitemap, tags</p>
 <h2 id="tags">Tags</h2>
-<p>Ochrs will detect page tags in ochrs:tags if they are written in the following format:</p>
-<div class="codehilite"><pre><span></span><code>Tags: #tagname1 #tagname2
+<p>Ochrs detects array of tags in the YAML frontmatter of a Markdown file.  They should be in the following format.</p>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span>
+<span class="nt">tags</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">relics</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unix</span>
+<span class="nn">---</span>
 </code></pre></div>
-
+<p>These can be displayed in the using the <code>ochrs:tags</code> function.</p>
 <p>These will be collated on the <a href="/tags">tags</a> page.  If any tags written in the Markdown source match the name of any individual page, that page (and its children) will all be assigned to that tag.  See <a href="/unix">Unix</a> for this in action.</p></article>
 
       
       <p class="backlinks"><span class="bold">Incoming:</span>
           
+          <a href="/stylesheet">Stylesheet</a>
+          
           <a href="/ochrs">Ochrs</a>
           
-          <a href="/stylesheet">Stylesheet</a>
+          <a href="/recent-changes">Recent Changes</a>
           
         </span>
       </p>
