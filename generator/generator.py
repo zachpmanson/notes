@@ -6,6 +6,7 @@ import sys
 
 import jinja2
 import markdown
+import frontmatter
 from markdown.extensions.codehilite import CodeHiliteExtension
 
 from extensions.cite import CiteExtension
@@ -80,10 +81,11 @@ def get_tree():
             path = os.path.join(routes[node], node+".md")
             mod_time = os.path.getmtime(path)
             with open(path, "r") as src_file:
-                body = src_file.read()
-                 
-                # process tags
-                body = re.sub(r"\nTags: (.+)", format_tags, body)
+                file_sections = frontmatter.load(src_file)
+                body = file_sections.content
+
+                if "tags" in list(file_sections.keys()):
+                    format_tags(file_sections["tags"])
 
         except FileNotFoundError:
             mod_time = 0.0
@@ -210,11 +212,9 @@ def propagate_tags():
                     queue.append(child)
                 tags[helpers.sanitize_url(key)].add(page)
 
-def format_tags(matches):
+def format_tags(taglist):
     '''Formats tags and adds them to the tags object'''
     global current_node
-    tagline = matches.group(1)
-    taglist = tagline.replace("#", "").split()
     # formatted_tags = []
     for tag in taglist:
         if tag in tags.keys():
