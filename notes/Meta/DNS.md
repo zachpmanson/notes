@@ -13,23 +13,26 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	  general purpose API currently only used for serving [[Status Messenger]]  
 	  trackstar
 	- **[minecraftle.zachmanson.com](https://minecraftle.zachmanson.com)**  
-	  deployed version of [[Minecraftle]], a puzzle game based on Wordle and Minecraft crafting recipes   
+	  deployed instance of [[Minecraftle]], a puzzle game based on Wordle and Minecraft crafting recipes   
 	  trackstar
 	- **[pg.zachmanson.com](https://pg.zachmanson.com)**  
-	  deployed version of [[Penultimate Guitar]]   
+	  deployed instance of [[Penultimate Guitar]]   
 	  vercel + trackstar
 	- **[todont.zachmanson.com](https://todont.zachmanson.com)**  
 	  an extremely basic todo I built to learn React  
 	  vercel
 	- **[alculator.zachmanson.com](https://alculator.zachmanson.com)**  
-	  deployed version of [[Alculator]]  
-	  vercel + gh actions
+	  deployed instance of [[Alculator]]  
+	  vercel + gh actions + trackstar (db)
 	- **mc.zachmanson.com**  
 	  minecraft server  
 	  trenzalore
 	- **[nextcloud.zachmanson.com](https://nextcloud.zachmanson.com)**  
 	  nextcloud instance  
 	  trenzalore
+	- [**unroller.zachmanson.com**](unroller.zachmanson.com)  
+	  deployed instance of [Mastodon Thread Unroller](https://github.com/pavo-etc/mastodon-unroller)  
+	  vercel
 
 - **[manson.dev](https://manson.dev)**  
   currently a directory forward to zachmanson.com, I intend to make it an email server + subdomain forward to zachmanson.com  
