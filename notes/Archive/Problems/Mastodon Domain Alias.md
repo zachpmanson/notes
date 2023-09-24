@@ -1,3 +1,7 @@
+---
+tags:
+  - fediverse
+---
 You can use your custom domain as an alias to your Mastodon handle by using Webfinger without actually having your own Mastodon instance.
 
 On your domain, set `GET https://<your-domain.com>/.well-known/webfinger?resource=acct:<accountname>@<server>` to be the same as `GET https://<your-mastodon-instance.com>/.well-known/webfinger?resource=acct:<accountname>@<server>`.
@@ -22,5 +26,3 @@ Hopefully Mastodon implements BlueSky-esque domain as username features.
 May be able to get around the static hosting problems using [this, will need to investigate further](https://github.com/mastodon/mastodon/issues/2668#issuecomment-1342518861).  Or [this](https://gist.github.com/aaronpk/5846789).  Or [this](https://aeracode.org/2022/11/01/fediverse-custom-domains/), which [Simon Willison used](https://til.simonwillison.net/mastodon/custom-domain-mastodon).
 
 To see this in practice, search for @zach@zachmanson.com on Mastodon.
-
-Tags: #fediverse

@@ -1,3 +1,8 @@
+---
+tags:
+  - nextcloud
+  - self-hosting
+---
 To access the `occ` command when running Nextcloud through the [[Docker]] AIO.  Tested on Ubuntu 22.04.2.
 
 ```bash
@@ -9,5 +14,3 @@ For example:
 ```bash
 sudo docker exec --user www-data -it nextcloud-aio-nextcloud php occ config:app:set text rich_editing_enabled --value=0
 ```
-
-Tags: #self-hosting #nextcloud

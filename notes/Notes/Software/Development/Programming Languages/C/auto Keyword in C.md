@@ -1,3 +1,10 @@
+---
+
+tags:
+
+- relics
+
+---
 > #### 1.8: What's the `auto` keyword good for?
 >
 >Declaring vehicles.
@@ -23,7 +30,3 @@ Since the `auto` class is the same as a local variable's default behaviour, ther
 It is a relic from the preceeding B language,  where the `auto` keyword was required to declare local variables.  Many B programs were ported to C so the `auto` keyword was included to improve backwards compatibility, allowing programmers at the time to avoid needing to remove all auto references in their codebases.
 
 [This thread](https://stackoverflow.com/questions/2192547/where-is-the-c-auto-keyword-used) on StackOverflow contains more details on this.
-
-
-
-Tags: #relics 

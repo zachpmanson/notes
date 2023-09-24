@@ -1,3 +1,7 @@
+---
+tags:
+  - lists
+---
 - `less`, an improved version of `more`
 - `bash`, Bourne Again SHell, an improved version of the Bourne Shell (see: [[Bash]])
 - GIMP, the GNU Image Manipulation Program
@@ -13,5 +17,3 @@
 - `bat`, an advanced version of `cat`
 - [[Unix]], a play on words of a prior system called Multics
 - Rubocop, the linter for Ruby
-
-Tags: #lists

@@ -1,3 +1,7 @@
+---
+tags:
+  - lists
+---
 ## Technology
 
 - [ITAPPMONROBOT](https://thedailywtf.com/articles/itappmonrobot)
@@ -11,5 +15,3 @@
 ## Creativity
 
 - [Wanted: Creative work. Originality not required, inquire within.](https://howtoai.fyi/blog/originality-not-required/)
-
-Tags: #lists 

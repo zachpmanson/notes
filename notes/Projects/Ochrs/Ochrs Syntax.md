@@ -14,9 +14,9 @@ CiteExtention is a custom extension that turns `-- Name Here`  into `<cite>Name 
 
 BacklinkExtension is an enhanced version of [WikiLinkExtension](https://python-markdown.github.io/extensions/wikilinks/) that supports aliased links and can include anchor links.
 
-## Ochrs Variables
+## Build-Time Functions
 
-There are also build-time variables that you have access to on all pages.  The list of extensions above is one of these, generated at built-time by Ochrs.  The format to insert one of these variables is:
+There are also build-time functions that you have access to on all pages.  The list of extensions above is one of these, generated at built-time by Ochrs.  The format to insert one of these functions is:
 
 ```
 Some normal text <ochrs:example> some more text
@@ -28,8 +28,17 @@ Currently available Ochrs variables:
 
 ## Tags
 
-Ochrs will detect page tags in ochrs:tags if they are written in the following format:
+Ochrs detects array of tags in the YAML frontmatter of a Markdown file.  They should be in the following format.
 
-    Tags: #tagname1 #tagname2
+```yaml
+---
+tags:
+  - relics
+  - unix
+---
+```
+
+These can be displayed in the using the `ochrs:tags` function.
+
 
 These will be collated on the [[tags]] page.  If any tags written in the Markdown source match the name of any individual page, that page (and its children) will all be assigned to that tag.  See [[Unix]] for this in action.

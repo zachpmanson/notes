@@ -1,3 +1,7 @@
+---
+tags:
+  - lists
+---
 - [Apple's New Thing (iPod) (2001)](https://forums.macrumors.com/threads/apples-new-thing-ipod.500/)
 
 ## Reddit
@@ -12,5 +16,3 @@
 - [Ask HN: Most interesting tech you built for just yourself?](https://news.ycombinator.com/item?id=35729232)
 - [Ask HN: Where have you found community outside of work?](https://news.ycombinator.com/item?id=36128618)
 - [Ask HN: What topics are good for a UI/UX Primer?](https://news.ycombinator.com/item?id=36468535)
-
-Tags: #lists

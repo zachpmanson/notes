@@ -1,3 +1,8 @@
+---
+tags:
+  - nextjs
+  - prisma
+---
 Penultimate Guitar is an alternate frontend for Ultimate Guitar that focuses on mobile usability and Spotify integration.  All features are available on mobile*.
 
 It is built with TypeScript, Next.js, and Tailwind and deployed on Vercel.  It works in tandem with a Postgres instance on a DigitalOcean through Prisma.  The source code takes a lot of inspiration from [[Alculator]].
@@ -17,6 +22,4 @@ Chord tooltips are only possible through [chords-db](https://github.com/tombatos
 
 ---
 
-\* Except chord tooltip inversions, though its only because I haven't thought of a simple interface for it yet 
-
-Tags: #nextjs #prisma 
+\* Except chord tooltip inversions, though its only because I haven't thought of a simple interface for it yet

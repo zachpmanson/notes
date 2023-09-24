@@ -1,3 +1,7 @@
+---
+tags:
+  - lists
+---
 DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscuresorrows.com/).
 
 + **Accrete**: grow by accumulation or coalescence
@@ -45,5 +49,3 @@ DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscu
 + **Wonderlanding**: falling down rabbitholes
 + **[[Yak shaving]]**: "what you are doing when you're doing some stupid, fiddly little task that bears no obvious relationship to what you're supposed to be working on, but yet a chain of twelve causal relations links what you're doing to the original meta-task"
 + **Yuenyeung** (Cantonese): coffee with tea
-
-Tags: #lists 

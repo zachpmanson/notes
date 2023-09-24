@@ -1,3 +1,10 @@
+---
+
+tags:
+
+- relics
+
+---
 Vi uses hjkl for navigation as it was developed on an ADM-3A terminal which didn't have dedicated arrow keys, using hjkl for navigation.
 
 ![[ADM3A.png]]
@@ -10,5 +17,3 @@ Applying this to Ctrl-H results in BS (backspace), which is why H was chosen to 
 I first learnt of this [here](https://twitter.com/hillelogram/status/1326600125569961991), which links to [this table](https://sltls.org/ASCII) which greatly helps in visualising this property.  [Control, Escape, and Meta Tricks](https://susam.net/blog/control-escape-meta-tricks.html) by Susam Pal touches on similar topics.
 
 The Home and tilde symbols on the chevron key is potentially associated with the use of ~ to reference the user home directory in Unix. This key usage was also a first by ADM-3A.
-
-Tags: #relics 

@@ -1,6 +1,10 @@
-[Rob Landley](http://landley.net/)'s explanation of the bin, sbin, usr/bin, usr/sbin split, taken from the [busybox mailing list](http://lists.busybox.net/pipermail/busybox/2010-December/074114.html).
+---
+tags:
+  - relics
+  - unix
+---
 
-Tags: #relics
+[Rob Landley](http://landley.net/)'s explanation of the bin, sbin, usr/bin, usr/sbin split, taken from the [busybox mailing list](http://lists.busybox.net/pipermail/busybox/2010-December/074114.html).
 
 ---
 
@@ -91,5 +95,3 @@ Rob
 GPLv3: as worthy a successor as The Phantom Menace, as timely as Duke Nukem 
 Forever, and as welcome as New Coke.
 ```
-
-Tags: #unix

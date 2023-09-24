@@ -1,3 +1,9 @@
+---
+tags:
+  - self-hosting
+  - linux
+  - prisma
+---
 Learnings from setting up Postgres on a DigitalOcean droplet for [[Penultimate Guitar]].  This was done on trackstar-22, so should presumably work on any Ubuntu 22.04 instance.
 
 1. Install postgres. This will add a `postgres` user account to the system. I set up another user account to interact with the database, in this case called `pg-user`.
@@ -32,5 +38,3 @@ Learnings from setting up Postgres on a DigitalOcean droplet for [[Penultimate G
 
 8. Push the schema designed in `prisma/schema.prisma` using the command `npx prisma db push`.
 9. If this succeed, Prisma can now effectively connect to the database!
-
-Tags: #self-hosting #linux #prisma

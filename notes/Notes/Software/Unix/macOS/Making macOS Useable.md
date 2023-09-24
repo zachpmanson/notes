@@ -1,3 +1,8 @@
+---
+tags:
+  - lists
+  - macos
+---
 macOS is a lovely operative system except that it is missing so many basic usability features that macOS feels more like anemicOS.
 
 ## Must have
@@ -28,5 +33,3 @@ brew install \
 --cask caffeine \
 --cask alt-tab
 ```
-
-Tags: #lists #macos

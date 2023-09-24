@@ -1,3 +1,7 @@
+---
+tags:
+  - lists
+---
 ## Programming & Computers
 
 - [Magic (programming)](https://en.wikipedia.org/wiki/Magic_(programming))
@@ -38,5 +42,3 @@
 - [List of lists of lists](https://en.wikipedia.org/wiki/List_of_lists_of_lists)
 - [Bus Factor](https://en.wikipedia.org/wiki/Bus_factor)
 - [Letters of last resort](https://en.wikipedia.org/wiki/Letters_of_last_resort)
-
-Tags: #lists 

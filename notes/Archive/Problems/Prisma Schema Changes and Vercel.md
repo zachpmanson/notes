@@ -1,3 +1,8 @@
+---
+tags:
+  - nextjs
+  - prisma
+---
 When you change a schema using Prisma, Vercel won't automatically regenerate the Prisma client until you add a `postinstall` command to `package.json`.
 
 ```json
@@ -12,5 +17,3 @@ When you change a schema using Prisma, Vercel won't automatically regenerate the
 ```
 
 Solution found [here](https://github.com/prisma/prisma/issues/5175).
-
-Tags: #prisma #nextjs
