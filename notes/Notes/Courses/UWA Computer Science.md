@@ -130,7 +130,7 @@ CITS3200 Professional Computing
 - your capstone project with an actual client, aka gambling your marks
 - if your client is chill you will do well, if not you are ruined
 	- e.g. my team shipped actual malware and got a HD
-- teams are groups based on having an even WAM spread so get hyped for mark rubber-banding
+- teams are allocated based on having an even WAM spread so get hyped for mark rubber-banding
 - there are lectures
 	- 2/10 lectures will be valuable
 	- 3/10 will be companies hyping themselves up
