@@ -29,7 +29,7 @@ CITS1401 Computational Thinking with Python:
 
 CITS1402 Relational Databases
 
-- dead boring but theres no way not to be, its databases
+- dead boring but theres no way not to be, it's databases
 
 ## Second Year Units
 
