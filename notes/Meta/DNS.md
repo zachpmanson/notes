@@ -17,7 +17,7 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	  trackstar
 	- **[pg.zachmanson.com](https://pg.zachmanson.com)**  
 	  deployed instance of [[Penultimate Guitar]]   
-	  vercel + trackstar
+	  vercel + trackstar (db)
 	- **[todont.zachmanson.com](https://todont.zachmanson.com)**  
 	  an extremely basic todo I built to learn React  
 	  vercel
@@ -31,7 +31,7 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	  nextcloud instance  
 	  trenzalore
 	- [**unroller.zachmanson.com**](unroller.zachmanson.com)  
-	  deployed instance of [Mastodon Thread Unroller](https://github.com/pavo-etc/mastodon-unroller)  
+	  deployed instance of [[Mastodon Thread Unroller]]  
 	  vercel
 
 - **[manson.dev](https://manson.dev)**  
