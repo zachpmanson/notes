@@ -32,7 +32,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: snakeware</title>
+    <title>notes: mastodon thread unroller</title>
   </head>
 
   <body>
@@ -82,7 +82,7 @@
             
           
             
-            <a href="/mastodon-thread-unroller">Mastodon Thread Unroller</a>
+            <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Projects/Mastodon Thread Unroller.md" class="activated-link">Mastodon Thread Unroller</a>
             
           
             
@@ -106,7 +106,7 @@
             
           
             
-            <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Projects/snakeware.md" class="activated-link">snakeware</a>
+            <a href="/snakeware">snakeware</a>
             
           
           </div>
@@ -119,29 +119,21 @@
     </nav>
     <main>
       <header>
-        <h1>snakeware</h1>
+        <h1>Mastodon Thread Unroller</h1>
       </header>
-      <article><p>A Linux-based operating system with a pure Python userspace.</p>
-<p><img alt="" src="/media/snakeware.png" /></p>
-<p>snakeware is an experimental OS with developed in 2020.  Its userspace is written entirely in Python, barring a single Busybox root process.  It was created by Joshua Moore drawing inspiration from the Commodore 64.  The window manager, snakewm, is written primarily with pygame_gui.  It is not based on X11 or Wayland, instead writing directly to the framebuffer (<code>/dev/fb0</code>).</p>
-<p>On first boot, snakeware launches you directly a the Python interpreter.  From here you can run Python commands directly, launch the window manager, or launch CLI games.
-To launch snakewm from the interpreter, run the <code>snakewm</code> command.  From snakewm the aopp menu can be opened using the Super key.  From here a number of applications can be launched.</p>
-<p>To launch CLI games, enter the following commands:
-<div class="highlight"><pre><span></span><code>&gt;&gt;&gt; import snake_games
-&gt;&gt;&gt; snake_games.menu()
-</code></pre></div>
-Games included as of 2022 are snake, snakepaint, and circlez.</p>
-<h2 id="history">History</h2>
-<p>snakeware was a short-lived project and should be considered inactive, with most significant contributions ending in 2020.  It was created and maintained by Joshua Moore and had a small number of contributors.  Some of the applications included in snakeware never reached their intended goals, such as the included terminal emulator snaketerm which is extremely rudimentary.</p>
-<p>One of the goals in making the entire userspace in Python was to make it modifiable by the user with little effort.  As Python is intepreted, all code for the window manager and the interface would be visible and modifiable by any snakeware user, and would be easy to extend.  Unfortunately, the planned text editor for snakeware, CATH, was never finished.</p>
-<p>Other planned projects were networking, a chat application, and a package system built on top of PyPI called snakeoil.</p>
-<p>The project was coordinated over a Discord server, though this hasn't been active for some time.</p>
-<h2 id="links">Links</h2>
-<ul>
-<li><a href="https://github.com/joshiemoore/snakeware">snakeware source code</a></li>
-<li><a href="https://github.com/Cyppa/CATH-for-Snakeware">CATH text editor</a></li>
-</ul></article>
+      <article><p><a href="https://unroller.zachmanson.com">Mastodon Thread Unroller</a> is what it sounds likes, a basic thread unroller for Mastodon.  I built it after finding that no other similar applications existed from <a href="https://www.reddit.com/r/Mastodon/comments/1011i9s/anything_similar_to_thread_reader_for_mastodon/">this reddit thread</a>.  It is barebones, and built with SvelteKit.  SvelteKit is definitely overkill, since it only has two routes and both of them are basically static or SSR, but I wanted to learn how to use it.  It also meant I can let Vercel take care of hosting which is always nice.  Maybe I'll rebuild it with Ruby or <a href="/go">Go</a> eventually.</p>
+<p>Currently the SSR runs every pageload, with each render making 2 API requests to the host Mastodon instance.  I'm edge caching these renders using Vercel, theoretically for 24 hours, but Vercel's caching is more "asking nicely to be cached" than "guaranteed 100% predictable".  You get what you pay for.  This approach may not scale, but in turn, I may never have users.</p>
+<p>It turns out <a href="https://marioslab.io">Mario Zechner</a> (an Austrian games dev, proprietor of Badlogic Games) had come across the same thread as me and built a very similar project in the same week (<a href="https://mastoreader.io/">Masto Reader</a>).  What are the odds?</p></article>
 
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+          
+          <a href="/recent-changes">Recent Changes</a>
+          
+          <a href="/dns">DNS</a>
+          
+        </span>
+      </p>
       
 
       
