@@ -2,6 +2,6 @@ Minecraftle is a game fusing the gameplay of Wordle with crafting recipes from M
 
 We received the top mark for the project and I continued development after we submitted it.  The source code is publicly available on the [repo](https://github.com/pavo-etc/minecraftle).  Since submission I've made a number of changes, some of which are enumerated in [this blog post](https://zachmanson.com/blog/minecraftle-v1.1/).
 
-The game has daily puzzles and global leaderboards, with over 3000 total players at the time of writing, though certainly fewer MAU.
+The game has daily puzzles and global leaderboards, with player count peaking at 250k MAU.
 
 ![[minecraftle.png]]
