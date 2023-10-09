@@ -60,12 +60,6 @@ More on this on the [Creative Commons site](https://creativecommons.org/2004/04/
 
 ---
 
->Immolation is part of burning bridges
-
--- [/u/degustibus](https://www.reddit.com/r/reddit.com/comments/1octb/reddit_cofounder_aaron_swartz_discusses_how_he/c1oebd/)
-
----
-
 >In Unix everything is a file. Files are files, folders are files, disks are files, your keyboard is a file, your mouth is a file, the air is a file, you can't breathe, your file lungs fill with files and you try to scream but only files come out oh god Dennis how could you do thi
 
 -- [Sy Brand](https://twitter.com/TartanLlama/status/1375045731644538882)
@@ -138,4 +132,10 @@ Written on cohost, though I came across it in their [pre-emptive autopsy of coho
 
 -- [noduerme](https://news.ycombinator.com/item?id=36927973)
 
+---
 
+> Here is how platforms die: first, they are good to their users; then they abuse their users to make things better for their business customers; finally, they abuse those business customers to claw back all the value for themselves. Then, they die.
+
+-- Cory Doctorow
+
+From [[TikTok's Enshittification]]
