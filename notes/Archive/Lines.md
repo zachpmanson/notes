@@ -136,6 +136,10 @@ Written on cohost, though I came across it in their [pre-emptive autopsy of coho
 
 > Here is how platforms die: first, they are good to their users; then they abuse their users to make things better for their business customers; finally, they abuse those business customers to claw back all the value for themselves. Then, they die.
 
--- Cory Doctorow
+-- Cory Doctorow, [[TikTok's Enshittification]]
 
-From [[TikTok's Enshittification]]
+---
+
+> who called it object oriented programming and not class struggle
+
+-- [Elle Mundy](https://mastodon.world/@exchgr/110686507297491516)
