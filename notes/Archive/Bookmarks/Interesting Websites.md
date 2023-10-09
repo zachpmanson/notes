@@ -24,4 +24,4 @@ Intentionally miscellaneous.
 - [99percentoffsale](https://www.99percentoffsale.com/)
 - [Index of Aesthetics](https://cari.institute/aesthetics)
 - [Astronaut.io](http://astronaut.io/), random youtube videos with nearly 0 views
-- [500mile.email](https://500mile.email/), absurb bugs
+- [500mile.email](https://500mile.email/), absurd bugs
