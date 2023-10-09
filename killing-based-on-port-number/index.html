@@ -32,7 +32,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: sticky elements</title>
+    <title>notes: killing based on port number</title>
   </head>
 
   <body>
@@ -130,7 +130,7 @@
             
           
             
-            <a href="/killing-based-on-port-number">Killing based on port number</a>
+            <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Killing based on port number.md" class="activated-link">Killing based on port number</a>
             
           
             
@@ -182,7 +182,7 @@
             
           
             
-            <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Sticky Elements.md" class="activated-link">Sticky Elements</a>
+            <a href="/sticky-elements">Sticky Elements</a>
             
           
             
@@ -211,27 +211,21 @@
     </nav>
     <main>
       <header>
-        <h1>Sticky Elements</h1>
+        <h1>Killing based on port number</h1>
       </header>
-      <article><ol>
-<li>Pick element Child to be <code>position: sticky</code>.  Ensure it has a one of the following set: <code>top,bottom,left,right</code></li>
-<li>Ensure it has a parent that has <code>position: relative</code></li>
-<li>Ensure that all elements between the parent and child have <code>overflow: visible</code><ul>
-<li><strong>Next.js sets <code>overflow:disabled</code> on the entire document by default</strong></li>
-<li>Easiest to diagnose this by selecting child in Inspect Element, filter styles for "overflow" and click up repeatedly to traverse up the DOM.</li>
-</ul>
-</li>
-</ol></article>
+      <article><p>From <a href="https://stackoverflow.com/a/32592965">StackOverflow</a>.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">kill</span><span class="w"> </span><span class="k">$(</span>lsof<span class="w"> </span>-t<span class="w"> </span>-i:<span class="nv">$portnum</span><span class="k">)</span>
+</code></pre></div></article>
 
       
-
-      
-      <p class="backlinks"><span class="bold">Tags:</span>
+      <p class="backlinks"><span class="bold">Incoming:</span>
           
-          <a href="/tags#nextjs">#nextjs</a>
+          <a href="/recent-changes">Recent Changes</a>
           
         </span>
       </p>
+      
+
       
 
         
