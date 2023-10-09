@@ -1,3 +1,7 @@
+---
+tags:
+  - git
+---
 ```sh
 git remote add coworker git://path/to/coworkers/repo.git
 git fetch coworker

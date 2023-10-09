@@ -23,3 +23,4 @@ Intentionally miscellaneous.
 - [Galactanet](http://www.galactanet.com/), Andy Weir's actual website
 - [99percentoffsale](https://www.99percentoffsale.com/)
 - [Index of Aesthetics](https://cari.institute/aesthetics)
+- [Astronaut.io](http://astronaut.io/), random youtube videos with nearly 0 views

@@ -12,6 +12,7 @@ tags:
 - [Zalgo Text](https://en.wikipedia.org/wiki/Zalgo_text)
 - [Eternal September](https://en.wikipedia.org/wiki/Eternal_September)
 - [Basilisk Collection](https://suricrasia.online/unfiction/basilisk/)
+- [Andy and Bill's law](https://en.wikipedia.org/wiki/Andy_and_Bill%27s_law)
 
 ## History
 

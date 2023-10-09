@@ -1,3 +1,7 @@
+---
+tags:
+  - git
+---
 Mounting a Git branch to a subdirectory.
 
 Create an orphaned branch if it doesn't already exist, and remove any shared history with the trunk.
