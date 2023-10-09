@@ -32,7 +32,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: sticky elements</title>
+    <title>notes: git repo contributor line count</title>
   </head>
 
   <body>
@@ -110,7 +110,7 @@
             
           
             
-            <a href="/git-repo-contributor-line-count">Git Repo Contributor Line Count</a>
+            <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Git Repo Contributor Line Count.md" class="activated-link">Git Repo Contributor Line Count</a>
             
           
             
@@ -178,7 +178,7 @@
             
           
             
-            <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Sticky Elements.md" class="activated-link">Sticky Elements</a>
+            <a href="/sticky-elements">Sticky Elements</a>
             
           
             
@@ -207,24 +207,25 @@
     </nav>
     <main>
       <header>
-        <h1>Sticky Elements</h1>
+        <h1>Git Repo Contributor Line Count</h1>
       </header>
-      <article><ol>
-<li>Pick element Child to be <code>position: sticky</code>.  Ensure it has a one of the following set: <code>top,bottom,left,right</code></li>
-<li>Ensure it has a parent that has <code>position: relative</code></li>
-<li>Ensure that all elements between the parent and child have <code>overflow: visible</code><ul>
-<li><strong>Next.js sets <code>overflow:disabled</code> on the entire document by default</strong></li>
-<li>Easiest to diagnose this by selecting child in Inspect Element, filter styles for "overflow" and click up repeatedly to traverse up the DOM.</li>
-</ul>
-</li>
-</ol></article>
+      <article><div class="highlight"><pre><span></span><code>git<span class="w"> </span>log<span class="w"> </span>--no-merges<span class="w"> </span>--pretty<span class="o">=</span>format:%an<span class="w"> </span>--numstat<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;/./ &amp;&amp; !author { author = $0; next } author { ins[author] += $1; del[author] += $2 } /^$/ { author = &quot;&quot;; next } END { for (a in ins) { printf &quot;%10d %10d %10d %s\n&quot;, ins[a] - del[a], ins[a], del[a], a } }&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-rn
+</code></pre></div>
+<p>From <a href="https://stackoverflow.com/a/43147048">this StackOverflow answer</a>.</p></article>
 
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+          
+          <a href="/recent-changes">Recent Changes</a>
+          
+        </span>
+      </p>
       
 
       
       <p class="backlinks"><span class="bold">Tags:</span>
           
-          <a href="/tags#nextjs">#nextjs</a>
+          <a href="/tags#git">#git</a>
           
         </span>
       </p>
