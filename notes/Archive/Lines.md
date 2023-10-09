@@ -143,3 +143,10 @@ Written on cohost, though I came across it in their [pre-emptive autopsy of coho
 > who called it object oriented programming and not class struggle
 
 -- [Elle Mundy](https://mastodon.world/@exchgr/110686507297491516)
+
+---
+
+> We kill people based on metadata. But that's not what we do with this metadata
+
+-- [Michael Hayden](https://abcnews.go.com/blogs/headlines/2014/05/ex-nsa-chief-we-kill-people-based-on-metadata)
+
