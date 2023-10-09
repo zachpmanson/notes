@@ -32,7 +32,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: life of an oracle developer</title>
+    <title>notes: openoffice can't print on tuesdays</title>
   </head>
 
   <body>
@@ -142,7 +142,7 @@
             
           
             
-            <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Folklore/Life of an Oracle Developer.md" class="activated-link">Life of an Oracle Developer</a>
+            <a href="/life-of-an-oracle-developer">Life of an Oracle Developer</a>
             
           
             
@@ -154,7 +154,7 @@
             
           
             
-            <a href="/openoffice-cant-print-on-tuesdays">OpenOffice Can't Print on Tuesdays</a>
+            <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Folklore/OpenOffice Can't Print on Tuesdays.md" class="activated-link">OpenOffice Can't Print on Tuesdays</a>
             
           
             
@@ -263,59 +263,56 @@
     </nav>
     <main>
       <header>
-        <h1>Life of an Oracle Developer</h1>
+        <h1>OpenOffice Can't Print on Tuesdays</h1>
       </header>
-      <article><p>A <a href="">response</a> by oraguy to the thread <a href="https://news.ycombinator.com/item?id=18442637">Ask HN: What's the largest amount of bad code you have ever seen work?</a>.</p>
+      <article><p>A bizarre bug report thread on OpenOffice.  The <a href="https://bugs.launchpad.net/ubuntu/+source/cupsys/+bug/255161/">first report</a> and <a href="https://bugs.launchpad.net/ubuntu/+source/cupsys/+bug/255161/comments/28">the solution</a>.</p>
 <hr />
-<p>Oracle Database 12.2.</p>
-<p>It is close to 25 million lines of C code.</p>
-<p>What an unimaginable horror! You can't change a single line of code in the product without breaking 1000s of existing tests. Generations of programmers have worked on that code under difficult deadlines and filled the code with all kinds of crap.</p>
-<p>Very complex pieces of logic, memory management, context switching, etc. are all held together with thousands of flags. The whole code is ridden with mysterious macros that one cannot decipher without picking a notebook and expanding relevant pats of the macros by hand. It can take a day to two days to really understand what a macro does.</p>
-<p>Sometimes one needs to understand the values and the effects of 20 different flag to predict how the code would behave in different situations. Sometimes 100s too! I am not exaggerating.</p>
-<p>The only reason why this product is still surviving and still works is due to literally millions of tests!</p>
-<p>Here is how the life of an Oracle Database developer is:</p>
-<ul>
-<li>
-<p>Start working on a new bug.</p>
-</li>
-<li>
-<p>Spend two weeks trying to understand the 20 different flags that interact in mysterious ways to cause this bag.</p>
-</li>
-<li>
-<p>Add one more flag to handle the new special scenario. Add a few more lines of code that checks this flag and works around the problematic situation and avoids the bug.</p>
-</li>
-<li>
-<p>Submit the changes to a test farm consisting of about 100 to 200 servers that would compile the code, build a new Oracle DB, and run the millions of tests in a distributed fashion.</p>
-</li>
-<li>
-<p>Go home. Come the next day and work on something else. The tests can take 20 hours to 30 hours to complete.</p>
-</li>
-<li>
-<p>Go home. Come the next day and check your farm test results. On a good day, there would be about 100 failing tests. On a bad day, there would be about 1000 failing tests. Pick some of these tests randomly and try to understand what went wrong with your assumptions. Maybe there are some 10 more flags to consider to truly understand the nature of the bug.</p>
-</li>
-<li>
-<p>Add a few more flags in an attempt to fix the issue. Submit the changes again for testing. Wait another 20 to 30 hours.</p>
-</li>
-<li>
-<p>Rinse and repeat for another two weeks until you get the mysterious incantation of the combination of flags right.</p>
-</li>
-<li>
-<p>Finally one fine day you would succeed with 0 tests failing.</p>
-</li>
-<li>
-<p>Add a hundred more tests for your new change to ensure that the next developer who has the misfortune of touching this new piece of code never ends up breaking your fix.</p>
-</li>
-<li>
-<p>Submit the work for one final round of testing. Then submit it for review. The review itself may take another 2 weeks to 2 months. So now move on to the next bug to work on.</p>
-</li>
-<li>
-<p>After 2 weeks to 2 months, when everything is complete, the code would be finally merged into the main branch.</p>
-</li>
-</ul>
-<p>The above is a non-exaggerated description of the life of a programmer in Oracle fixing a bug. Now imagine what horror it is going to be to develop a new feature. It takes 6 months to a year (sometimes two years!) to develop a single small feature (say something like adding a new mode of authentication like support for AD authentication).</p>
-<p>The fact that this product even works is nothing short of a miracle!</p>
-<p>I don't work for Oracle anymore. Will never work for Oracle again!</p></article>
+<p>Bug #255161 reported by <a href="https://launchpad.net/~abrianb2003">abrianb</a> on 2008-08-05</p>
+<div class="highlight"><pre><span></span><code>I am unable to print from open office, I tried reinstalling open office but it did not work. I use a brother mfc240c printer and I am running Hardy. Printing from other apps has not been an issue.
 
+The problem is in openoffice2.4. I&#39;am running Hardy 8.04 When I click print the box opens that allows me to choose print properties. I have looked to make sure things like paper size was correct. When I click print I get nothing. Nothing lights on the printer no message. Open office behaves just like it has printed and yet nothing prints. My printer is a Brother MFC-240C. It prints fine from other apps, Firefox, Evince no problem.
+</code></pre></div>
+<p>\&lt;27 comments skipped&gt;</p>
+<p><a href="https://launchpad.net/~paddy-stevepaine">Steve (paddy-stevepaine)</a> wrote on 2009-04-28:</p>
+<div class="highlight"><pre><span></span><code>What a fascinating bug!! My wife has complained that open office will never print on Tuesdays!?! Then she demonstrated it. Sure enough, won&#39;t print on Tuesday. Other applications print. I think this is the same bug. Here is my guess:
+
+Print to a postscript file. Observe the line:  
+   %%CreationDate: (Tue Mar 3 19:47:42 2009)
+
+Change &quot;Tue&quot; to anything else:  
+   %%CreationDate: (XTue Mar 3 19:47:42 2009)
+
+Save the file and it prints. Tools like evince work because they simply omit the &quot;CreationDate&quot; tag to begin with.
+
+Now something odd happens when my cups script (I am using the Brother MFC420CN) copies the file to a temp file. Some of the code is rearranged, not sure how or why, but it uses a command called &quot;file&quot; to identify the file as &quot;PostScript&quot;. This check would work on the original file you printed, but by the time it runs the check on the temp file, it misidentifies. Normally it would return:
+
+   PostScript document text conforming at level 3.0
+
+But there is another check that happens before the PostScript check. If it finds &quot;Tue&quot; at the fourth byte of the file, it identifies it as:
+
+   Jan 22 14:32:44 MET 1991\011Erlang JAM file - version 4.2
+
+So it&#39;s not a problem w/ openoffice.org, cups, or the brother printer drivers. It is a bug in the `file` utility, and documented at [https://bugs.launchpad.net/ubuntu/+source/file/+bug/248619](https://bugs.launchpad.net/ubuntu/+source/file/+bug/248619).
+
+Now, I cannot recommend a fix, but here is my workaround hack:  
+make a change in file /usr/local/Brother/lpd/filterMFC420CN
+
+change:  
+  cat &gt; $INPUT_TEMP
+
+to:  
+  cat | sed -e &#39;s/^%%CreationDate: (Tue/%%CreationDate: (tue/&#39; &gt; $INPUT_TEMP
+
+This will identify a pattern that matches &quot;%%CreationDate: (Tue&quot; at the start of a line, and change &quot;Tue&quot; to &quot;tue&quot;.
+</code></pre></div></article>
+
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+          
+          <a href="/recent-changes">Recent Changes</a>
+          
+        </span>
+      </p>
       
 
       

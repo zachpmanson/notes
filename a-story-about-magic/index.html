@@ -32,7 +32,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: life of an oracle developer</title>
+    <title>notes: a story about 'magic'</title>
   </head>
 
   <body>
@@ -86,7 +86,7 @@
             
           
             
-            <a href="/a-story-about-magic">A Story About 'Magic'</a>
+            <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Folklore/A Story About 'Magic'.md" class="activated-link">A Story About 'Magic'</a>
             
           
             
@@ -142,7 +142,7 @@
             
           
             
-            <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Folklore/Life of an Oracle Developer.md" class="activated-link">Life of an Oracle Developer</a>
+            <a href="/life-of-an-oracle-developer">Life of an Oracle Developer</a>
             
           
             
@@ -263,59 +263,29 @@
     </nav>
     <main>
       <header>
-        <h1>Life of an Oracle Developer</h1>
+        <h1>A Story About 'Magic'</h1>
       </header>
-      <article><p>A <a href="">response</a> by oraguy to the thread <a href="https://news.ycombinator.com/item?id=18442637">Ask HN: What's the largest amount of bad code you have ever seen work?</a>.</p>
+      <article><p>A story from the <a href="http://catb.org/jargon/html/magic-story.html">Jargon File</a>.</p>
 <hr />
-<p>Oracle Database 12.2.</p>
-<p>It is close to 25 million lines of C code.</p>
-<p>What an unimaginable horror! You can't change a single line of code in the product without breaking 1000s of existing tests. Generations of programmers have worked on that code under difficult deadlines and filled the code with all kinds of crap.</p>
-<p>Very complex pieces of logic, memory management, context switching, etc. are all held together with thousands of flags. The whole code is ridden with mysterious macros that one cannot decipher without picking a notebook and expanding relevant pats of the macros by hand. It can take a day to two days to really understand what a macro does.</p>
-<p>Sometimes one needs to understand the values and the effects of 20 different flag to predict how the code would behave in different situations. Sometimes 100s too! I am not exaggerating.</p>
-<p>The only reason why this product is still surviving and still works is due to literally millions of tests!</p>
-<p>Here is how the life of an Oracle Database developer is:</p>
-<ul>
-<li>
-<p>Start working on a new bug.</p>
-</li>
-<li>
-<p>Spend two weeks trying to understand the 20 different flags that interact in mysterious ways to cause this bag.</p>
-</li>
-<li>
-<p>Add one more flag to handle the new special scenario. Add a few more lines of code that checks this flag and works around the problematic situation and avoids the bug.</p>
-</li>
-<li>
-<p>Submit the changes to a test farm consisting of about 100 to 200 servers that would compile the code, build a new Oracle DB, and run the millions of tests in a distributed fashion.</p>
-</li>
-<li>
-<p>Go home. Come the next day and work on something else. The tests can take 20 hours to 30 hours to complete.</p>
-</li>
-<li>
-<p>Go home. Come the next day and check your farm test results. On a good day, there would be about 100 failing tests. On a bad day, there would be about 1000 failing tests. Pick some of these tests randomly and try to understand what went wrong with your assumptions. Maybe there are some 10 more flags to consider to truly understand the nature of the bug.</p>
-</li>
-<li>
-<p>Add a few more flags in an attempt to fix the issue. Submit the changes again for testing. Wait another 20 to 30 hours.</p>
-</li>
-<li>
-<p>Rinse and repeat for another two weeks until you get the mysterious incantation of the combination of flags right.</p>
-</li>
-<li>
-<p>Finally one fine day you would succeed with 0 tests failing.</p>
-</li>
-<li>
-<p>Add a hundred more tests for your new change to ensure that the next developer who has the misfortune of touching this new piece of code never ends up breaking your fix.</p>
-</li>
-<li>
-<p>Submit the work for one final round of testing. Then submit it for review. The review itself may take another 2 weeks to 2 months. So now move on to the next bug to work on.</p>
-</li>
-<li>
-<p>After 2 weeks to 2 months, when everything is complete, the code would be finally merged into the main branch.</p>
-</li>
-</ul>
-<p>The above is a non-exaggerated description of the life of a programmer in Oracle fixing a bug. Now imagine what horror it is going to be to develop a new feature. It takes 6 months to a year (sometimes two years!) to develop a single small feature (say something like adding a new mode of authentication like support for AD authentication).</p>
-<p>The fact that this product even works is nothing short of a miracle!</p>
-<p>I don't work for Oracle anymore. Will never work for Oracle again!</p></article>
+<p>Some years ago, I (GLS) was snooping around in the cabinets that housed the MIT AI Lab's PDP-10, and noticed a little switch glued to the frame of one cabinet. It was obviously a homebrew job, added by one of the lab's hardware hackers (no one knows who).</p>
+<p>You don't touch an unknown switch on a computer without knowing what it does, because you might crash the computer. The switch was labeled in a most unhelpful way. It had two positions, and scrawled in pencil on the metal switch body were the words ‘magic' and ‘more magic'. The switch was in the ‘more magic' position.</p>
+<p>I called another hacker over to look at it. He had never seen the switch before either. Closer examination revealed that the switch had only one wire running to it! The other end of the wire did disappear into the maze of wires inside the computer, but it's a basic fact of electricity that a switch can't do anything unless there are two wires connected to it. This switch had a wire connected on one side and no wire on its other side.</p>
+<p>It was clear that this switch was someone's idea of a silly joke. Convinced by our reasoning that the switch was inoperative, we flipped it. The computer instantly crashed.</p>
+<p>Imagine our utter astonishment. We wrote it off as coincidence, but nevertheless restored the switch to the ‘more magic’ position before reviving the computer.</p>
+<p>A year later, I told this story to yet another hacker, David Moon as I recall. He clearly doubted my sanity, or suspected me of a supernatural belief in the power of this switch, or perhaps thought I was fooling him with a bogus saga. To prove it to him, I showed him the very switch, still glued to the cabinet frame with only one wire connected to it, still in the ‘more magic’ position. We scrutinized the switch and its lone connection, and found that the other end of the wire, though connected to the computer wiring, was connected to a ground pin. That clearly made the switch doubly useless: not only was it electrically nonoperative, but it was connected to a place that couldn't affect anything anyway. So we flipped the switch.</p>
+<p>The computer promptly crashed.</p>
+<p>This time we ran for Richard Greenblatt, a long-time MIT hacker, who was close at hand. He had never noticed the switch before, either. He inspected it, concluded it was useless, got some diagonal cutters and <a href="http://catb.org/jargon/html/D/dike.html"><em>dike</em></a>d it out. We then revived the computer and it has run fine ever since.</p>
+<p>We still don't know how the switch crashed the machine. There is a theory that some circuit near the ground pin was marginal, and flipping the switch changed the electrical capacitance enough to upset the circuit as millionth-of-a-second pulses went through it. But we'll never know for sure; all we can really say is that the switch was <a href="http://catb.org/jargon/html/M/magic.html"><em>magic</em></a>.</p>
+<p>I still have that switch in my basement. Maybe I'm silly, but I usually keep it set on ‘more magic’.</p>
+<p>1994: Another explanation of this story has since been offered. Note that the switch body was metal. Suppose that the non-connected side of the switch was connected to the switch body (usually the body is connected to a separate earth lug, but there are exceptions). The body is connected to the computer case, which is, presumably, grounded. Now the circuit ground within the machine isn't necessarily at the same potential as the case ground, so flipping the switch connected the circuit ground to the case ground, causing a voltage drop/jump which reset the machine. This was probably discovered by someone who found out the hard way that there was a potential difference between the two, and who then wired in the switch as a joke.</p></article>
 
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+          
+          <a href="/recent-changes">Recent Changes</a>
+          
+        </span>
+      </p>
       
 
       
