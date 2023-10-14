@@ -10,7 +10,7 @@ I am unable to print from open office, I tried reinstalling open office but it d
 The problem is in openoffice2.4. I'am running Hardy 8.04 When I click print the box opens that allows me to choose print properties. I have looked to make sure things like paper size was correct. When I click print I get nothing. Nothing lights on the printer no message. Open office behaves just like it has printed and yet nothing prints. My printer is a Brother MFC-240C. It prints fine from other apps, Firefox, Evince no problem.
 ```
 
-\<27 comments skipped>
+<27 comments skipped>
 
 [Steve (paddy-stevepaine)](https://launchpad.net/~paddy-stevepaine) wrote on 2009-04-28:
 

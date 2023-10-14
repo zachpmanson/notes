@@ -11,7 +11,7 @@ Yes, and it wasn't the only bad job I ever did. I have graded my separate works 
 <tr><td>Mother Night</td><td>A</td></tr>
 <tr><td>Cat's Cradle</td><td>A-plus</td></tr>
 <tr><td>God Bless You, Mr. Rosewater</td><td>A</td></tr>
-<tr><td>The Sirens of Titan</td><td>A-plus</td></tr>
+<tr><td>Slaughterhouse-Five</td><td>A-plus</td></tr>
 <tr><td>Welcome to the Monkey House</td><td>B-minus</td></tr>
 <tr><td>Happy Birthday, Wanda June</td><td>D</td></tr>
 <tr><td>Breakfast of Champions</td><td>C</td></tr>
