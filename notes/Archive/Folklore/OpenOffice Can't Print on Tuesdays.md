@@ -15,7 +15,6 @@ The problem is in openoffice2.4. I'am running Hardy 8.04 When I click print the 
 [Steve (paddy-stevepaine)](https://launchpad.net/~paddy-stevepaine) wrote on 2009-04-28:
 
 ```
-
 What a fascinating bug!! My wife has complained that open office will never print on Tuesdays!?! Then she demonstrated it. Sure enough, won't print on Tuesday. Other applications print. I think this is the same bug. Here is my guess:
 
 Print to a postscript file. Observe the line:  
@@ -46,5 +45,4 @@ to:
   cat | sed -e 's/^%%CreationDate: (Tue/%%CreationDate: (tue/' > $INPUT_TEMP
 
 This will identify a pattern that matches "%%CreationDate: (Tue" at the start of a line, and change "Tue" to "tue".
-
 ```
