@@ -1,5 +1,7 @@
 Some stories from the internet.
 
+Some are not from the internet.
+
 Minor formatting or markup changes are occasionally applied, but the text content is unchanged.
 
 Other internet folklore collections:
