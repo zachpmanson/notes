@@ -276,43 +276,34 @@
       <article><p>A bizarre bug report thread on OpenOffice.  The <a href="https://bugs.launchpad.net/ubuntu/+source/cupsys/+bug/255161/">first report</a> and <a href="https://bugs.launchpad.net/ubuntu/+source/cupsys/+bug/255161/comments/28">the solution</a>.</p>
 <hr />
 <p>Bug #255161 reported by <a href="https://launchpad.net/~abrianb2003">abrianb</a> on 2008-08-05</p>
-<div class="highlight"><pre><span></span><code>I am unable to print from open office, I tried reinstalling open office but it did not work. I use a brother mfc240c printer and I am running Hardy. Printing from other apps has not been an issue.
-
-The problem is in openoffice2.4. I&#39;am running Hardy 8.04 When I click print the box opens that allows me to choose print properties. I have looked to make sure things like paper size was correct. When I click print I get nothing. Nothing lights on the printer no message. Open office behaves just like it has printed and yet nothing prints. My printer is a Brother MFC-240C. It prints fine from other apps, Firefox, Evince no problem.
-</code></pre></div>
+<p>I am unable to print from open office, I tried reinstalling open office but it did not work. I use a brother mfc240c printer and I am running Hardy. Printing from other apps has not been an issue.</p>
+<p>The problem is in openoffice2.4. I'am running Hardy 8.04 When I click print the box opens that allows me to choose print properties. I have looked to make sure things like paper size was correct. When I click print I get nothing. Nothing lights on the printer no message. Open office behaves just like it has printed and yet nothing prints. My printer is a Brother MFC-240C. It prints fine from other apps, Firefox, Evince no problem.</p>
 <p>&lt;27 comments skipped&gt;</p>
 <p><a href="https://launchpad.net/~paddy-stevepaine">Steve (paddy-stevepaine)</a> wrote on 2009-04-28:</p>
-<div class="highlight"><pre><span></span><code>What a fascinating bug!! My wife has complained that open office will never print on Tuesdays!?! Then she demonstrated it. Sure enough, won&#39;t print on Tuesday. Other applications print. I think this is the same bug. Here is my guess:
-
-Print to a postscript file. Observe the line:  
-   %%CreationDate: (Tue Mar 3 19:47:42 2009)
-
-Change &quot;Tue&quot; to anything else:  
-   %%CreationDate: (XTue Mar 3 19:47:42 2009)
-
-Save the file and it prints. Tools like evince work because they simply omit the &quot;CreationDate&quot; tag to begin with.
-
-Now something odd happens when my cups script (I am using the Brother MFC420CN) copies the file to a temp file. Some of the code is rearranged, not sure how or why, but it uses a command called &quot;file&quot; to identify the file as &quot;PostScript&quot;. This check would work on the original file you printed, but by the time it runs the check on the temp file, it misidentifies. Normally it would return:
-
-   PostScript document text conforming at level 3.0
-
-But there is another check that happens before the PostScript check. If it finds &quot;Tue&quot; at the fourth byte of the file, it identifies it as:
-
-   Jan 22 14:32:44 MET 1991\011Erlang JAM file - version 4.2
-
-So it&#39;s not a problem w/ openoffice.org, cups, or the brother printer drivers. It is a bug in the `file` utility, and documented at [https://bugs.launchpad.net/ubuntu/+source/file/+bug/248619](https://bugs.launchpad.net/ubuntu/+source/file/+bug/248619).
-
-Now, I cannot recommend a fix, but here is my workaround hack:  
-make a change in file /usr/local/Brother/lpd/filterMFC420CN
-
-change:  
-  cat &gt; $INPUT_TEMP
-
-to:  
-  cat | sed -e &#39;s/^%%CreationDate: (Tue/%%CreationDate: (tue/&#39; &gt; $INPUT_TEMP
-
-This will identify a pattern that matches &quot;%%CreationDate: (Tue&quot; at the start of a line, and change &quot;Tue&quot; to &quot;tue&quot;.
-</code></pre></div></article>
+<p>What a fascinating bug!! My wife has complained that open office will never print on Tuesdays!?! Then she demonstrated it. Sure enough, won't print on Tuesday. Other applications print. I think this is the same bug. Here is my guess:</p>
+<p>Print to a postscript file. Observe the line:  </p>
+<div class="highlight"><pre><span></span><code>   %%CreationDate: (Tue Mar 3 19:47:42 2009)
+</code></pre></div>
+<p>Change "Tue" to anything else:  </p>
+<div class="highlight"><pre><span></span><code>   %%CreationDate: (XTue Mar 3 19:47:42 2009)
+</code></pre></div>
+<p>Save the file and it prints. Tools like evince work because they simply omit the "CreationDate" tag to begin with.</p>
+<p>Now something odd happens when my cups script (I am using the Brother MFC420CN) copies the file to a temp file. Some of the code is rearranged, not sure how or why, but it uses a command called "file" to identify the file as "PostScript". This check would work on the original file you printed, but by the time it runs the check on the temp file, it misidentifies. Normally it would return:</p>
+<div class="highlight"><pre><span></span><code>   PostScript document text conforming at level 3.0
+</code></pre></div>
+<p>But there is another check that happens before the PostScript check. If it finds "Tue" at the fourth byte of the file, it identifies it as:</p>
+<div class="highlight"><pre><span></span><code>   Jan 22 14:32:44 MET 1991\011Erlang JAM file - version 4.2
+</code></pre></div>
+<p>So it's not a problem w/ openoffice.org, cups, or the brother printer drivers. It is a bug in the <code>file</code> utility, and documented at <a href="https://bugs.launchpad.net/ubuntu/+source/file/+bug/248619">https://bugs.launchpad.net/ubuntu/+source/file/+bug/248619</a>.</p>
+<p>Now, I cannot recommend a fix, but here is my workaround hack:<br />
+make a change in file <code>/usr/local/Brother/lpd/filterMFC420CN</code></p>
+<p>change:  </p>
+<div class="highlight"><pre><span></span><code>  cat &gt; $INPUT_TEMP
+</code></pre></div>
+<p>to:  </p>
+<div class="highlight"><pre><span></span><code>  cat | sed -e &#39;s/^%%CreationDate: (Tue/%%CreationDate: (tue/&#39; &gt; $INPUT_TEMP
+</code></pre></div>
+<p>This will identify a pattern that matches <code>"%%CreationDate: (Tue"</code> at the start of a line, and change "Tue" to "tue".</p></article>
 
       
       <p class="backlinks"><span class="bold">Incoming:</span>
