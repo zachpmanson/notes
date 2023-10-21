@@ -94,7 +94,7 @@
           <div class="flex flex-col text-left nav-links">
           
             
-            <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Projects/Ochrs/Ochrs Syntax.md" class="activated-link">Ochrs Syntax</a>
+            <a href="/ochrs-syntax" class="activated-link">Ochrs Syntax</a>
             
           
           </div>
@@ -119,10 +119,11 @@
 <p>BacklinkExtension is an enhanced version of <a href="https://python-markdown.github.io/extensions/wikilinks/">WikiLinkExtension</a> that supports aliased links and can include anchor links.</p>
 <h2 id="build-time-functions">Build-Time Functions</h2>
 <p>There are also build-time functions that you have access to on all pages.  The list of extensions above is one of these, generated at built-time by Ochrs.  The format to insert one of these functions is:</p>
-<div class="highlight"><pre><span></span><code>Some normal text &lt;ochrs:var-name:arg1:arg2&gt; some more text
+<div class="highlight"><pre><span></span><code>Some normal text &lt;ochrs:func-name:arg1:arg2&gt; some more text
 </code></pre></div>
-<p>Currently available Ochrs variables:</p>
-<p>ochrs-vars, example, page-count, build-time, md-extensions, recent-edit, sitemap, tags</p>
+<p>Currently available Ochrs functions:</p>
+<p>ochrs-funcs, example, page-count, build-time, md-extensions, recent-edit, sitemap, tags</p>
+<p>This are parsed prior to Markdown generation, so will take precedence over any Markdown syntax. </p>
 <h2 id="tags">Tags</h2>
 <p>Ochrs detects array of tags in the YAML frontmatter of a Markdown file.  They should be in the following format.</p>
 <div class="highlight"><pre><span></span><code><span class="nn">---</span>
@@ -141,6 +142,8 @@
           
           <a href="/stylesheet">Stylesheet</a>
           
+          <a href="/recent-changes">Recent Changes</a>
+          
         </span>
       </p>
       
@@ -155,5 +158,13 @@
       
 
     </main>
+    <footer>
+      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Projects/Ochrs/Ochrs Syntax.md">edit</a> -
+      <a href="/programming-languages">random</a> -
+      <a href="/recent-changes">updates</a> -
+      <a href="/tags">tags</a> -
+      <a href="/sitemap">sitemap</a>
+    </footer>
+
   </body>
 </html>
