@@ -84,11 +84,11 @@ Unordered list with line breaks:
 
 ---
 
-Run-time Ochrs variables:
+Build-time Ochrs functions:
 
 Last build time: <ochrs:build-time>
 
-List of Ochrs variables: <ochrs:ochrs-vars>
+List of Ochrs functions: <ochrs:ochrs-funcs>
 
 More explanation of these can be found on [[Ochrs Syntax]].
 

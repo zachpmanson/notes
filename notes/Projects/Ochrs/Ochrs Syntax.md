@@ -22,9 +22,11 @@ There are also build-time functions that you have access to on all pages.  The l
 Some normal text <ochrs:example> some more text
 ```
 
-Currently available Ochrs variables:
+Currently available Ochrs functions:
 
-<ochrs:ochrs-vars>
+<ochrs:ochrs-funcs>
+
+This are parsed prior to Markdown generation, so will take precedence over any Markdown syntax. 
 
 ## Tags
 
@@ -39,6 +41,5 @@ tags:
 ```
 
 These can be displayed in the using the `ochrs:tags` function.
-
 
 These will be collated on the [[tags]] page.  If any tags written in the Markdown source match the name of any individual page, that page (and its children) will all be assigned to that tag.  See [[Unix]] for this in action.
