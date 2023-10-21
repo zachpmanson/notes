@@ -1,0 +1,1 @@
+To insert avoid an element being split by a pagebreak when using [wktmltopdf](https://wkhtmltopdf.org/), give the element `page-break-inside: avoid;` property.
