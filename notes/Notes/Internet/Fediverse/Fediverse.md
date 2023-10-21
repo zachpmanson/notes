@@ -17,7 +17,6 @@ I'd like to fully grasp Lemmy and [Kbin](https://github.com/ernestwisniewski/kbi
 [Voyager](https://github.com/aeharding/voyager) ([live](https://wefwef.app/)) is a well-made client for lemmy, designed to mimic the design of Apollo for Reddit.  Potentially the best react app I've ever seen?  Certainly the best emulation of iOS I've ever seen.
 
 [mlmym](https://github.com/rystaf/mlmym) is a clone of old.reddit for lemmy.  It is excellent.
-
 ## The Elon & spez Effect
 
 ![[fediverse-user-graph.png]]
@@ -26,3 +25,7 @@ I'd like to fully grasp Lemmy and [Kbin](https://github.com/ernestwisniewski/kbi
 
 - [FediDB](https://fedidb.org/), contains stats on server and service popularity
 - [How to Kill a Decentralised Network (such as the Fediverse)](https://ploum.net/2023-06-23-how-to-kill-decentralised-networks.html)
+
+![[fediverse-branches.png]]
+
+-- [Axbom](https://axbom.com/fediverse/)
