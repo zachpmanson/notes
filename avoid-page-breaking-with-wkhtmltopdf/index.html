@@ -32,7 +32,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: self-hosted postgres and prisma</title>
+    <title>notes: avoid page breaking with wkhtmltopdf</title>
   </head>
 
   <body>
@@ -82,7 +82,7 @@
           <div class="flex flex-col text-left nav-links">
           
             
-            <a href="/avoid-page-breaking-with-wkhtmltopdf">Avoid Page Breaking with wkhtmltopdf</a>
+            <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Avoid Page Breaking with wkhtmltopdf.md" class="activated-link">Avoid Page Breaking with wkhtmltopdf</a>
             
           
             
@@ -182,7 +182,7 @@
             
           
             
-            <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Self-Hosted Postgres and Prisma.md" class="activated-link">Self-Hosted Postgres and Prisma</a>
+            <a href="/self-hosted-postgres-and-prisma">Self-Hosted Postgres and Prisma</a>
             
           
             
@@ -215,57 +215,19 @@
     </nav>
     <main>
       <header>
-        <h1>Self-Hosted Postgres and Prisma</h1>
+        <h1>Avoid Page Breaking with wkhtmltopdf</h1>
       </header>
-      <article><p>Learnings from setting up Postgres on a DigitalOcean droplet for <a href="/penultimate-guitar">Penultimate Guitar</a>.  This was done on trackstar-22, so should presumably work on any Ubuntu 22.04 instance.</p>
-<ol>
-<li>Install postgres. This will add a <code>postgres</code> user account to the system. I set up another user account to interact with the database, in this case called <code>pg-user</code>.</li>
-<li>Using <code>psql</code>, create a database that will be used for your application.</li>
-<li>Whiler running <code>pg-user</code>, in <code>psql</code>, run <code>\password</code> and set a password for this account to interact with Postgres.  This password should not use an <code>@</code>, as it will conflict with the connection string later. </li>
-<li>
-<p>Grant the user account access to the database with the SQL command. </p>
-<div class="highlight"><pre><span></span><code><span class="k">GRANT</span><span class="w"> </span><span class="k">ALL</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="ss">&quot;my_db&quot;</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">my_user</span><span class="p">;</span>
-</code></pre></div>
-</li>
-<li>
-<p>Modify <code>/etc/postgresql/14/main/pg_hba.conf</code> (or equivalent). Set the <code>ADDRESS</code> field for IPv4 connections to this:</p>
-<div class="highlight"><pre><span></span><code># IPv4 local connections:
-host    all             all             0.0.0.0/0              scram-sha-256
-</code></pre></div>
-</li>
-<li>
-<p>Modify  <code>/etc/postgresql/14/main/postgresql.conf</code>.  Set <code>listening_addresses</code> to all:</p>
-<div class="highlight"><pre><span></span><code># - Connection Settings -
-listen_addresses = &#39;*&#39;
-</code></pre></div>
-</li>
-<li>
-<p>Restart Postgres <code>systemctl restart postgres</code></p>
-</li>
-<li>
-<p>In the Prisma application, set up Prisma normally.  The connection string in <code>.env</code> should be this format:</p>
-<div class="highlight"><pre><span></span><code>postgresql://pg-user:passwd@example.com:5432/db?schema=public
-</code></pre></div>
-</li>
-<li>
-<p>Push the schema designed in <code>prisma/schema.prisma</code> using the command <code>npx prisma db push</code>.</p>
-</li>
-<li>If this succeed, Prisma can now effectively connect to the database!</li>
-</ol></article>
+      <article><p>To insert avoid an element being split by a pagebreak when using <a href="https://wkhtmltopdf.org/">wktmltopdf</a>, give the element <code>page-break-inside: avoid;</code> property.</p></article>
 
       
-
-      
-      <p class="backlinks"><span class="bold">Tags:</span>
+      <p class="backlinks"><span class="bold">Incoming:</span>
           
-          <a href="/tags#prisma">#prisma</a>
-          
-          <a href="/tags#self-hosting">#self-hosting</a>
-          
-          <a href="/tags#linux">#linux</a>
+          <a href="/recent-changes">Recent Changes</a>
           
         </span>
       </p>
+      
+
       
 
         
