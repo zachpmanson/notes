@@ -172,7 +172,6 @@ def generate_random_pages():
     for i in range(len(random_pages)):
         tree[random_pages[i]]["random_page"] = random_pages[(i + 1) % len(random_pages)]
 
-
 def append_bullet(node, depth):
     global sitemap_md
     sitemap_md += f"{' ' * depth}- [{node}](/{helpers.sanitize_url(node)})\n"
@@ -193,8 +192,8 @@ def generate_tags():
 
 def preprocess_markdown(text):
     # TODO: Move this to a seperate md extension
-    # add ochrs vars
-    text = re.sub(r"<ochrs:(.+?)>", format_ochrs_var, text)
+    # add ochrs functions
+    text = re.sub(r"<ochrs:(.+?)>", format_ochrs_func, text)
     
     # TODO: Move this to a seperate md extension
     # add images backlink
@@ -232,7 +231,7 @@ def format_tags(taglist):
             tags[tag] = set()
             tags[tag].add(current_node)
 
-def format_ochrs_var(matches):
+def format_ochrs_func(matches):
     try:
         segments = matches.group(1).split(":")
         name = segments[0]
@@ -240,10 +239,10 @@ def format_ochrs_var(matches):
             args = segments[1:]
         else:
             args = []
-        value = str(ochrs_vars[name](*args))
+        value = str(ochrs_funcs[name](*args))
     except KeyError as e:
-        print("KeyError:", e)
-        value = "unknown ochrs var"
+        print("KeyError:", e, file=sys.stderr)
+        value = "unknown ochrs func"
     return value
 
 
@@ -296,9 +295,9 @@ ignore_names = [
     ".trash"
 ]
 
-ochrs_vars = {
-    "ochrs-vars": lambda: ", ".join(list(ochrs_vars.keys())),
-    "example": lambda: "<ochrs:var-name:arg1:arg2>",
+ochrs_funcs = {
+    "ochrs-funcs": lambda: ", ".join(list(ochrs_funcs.keys())),
+    "example": lambda: "<ochrs:func-name:arg1:arg2>",
     "page-count": lambda: len(tree),
     "build-time": lambda: datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
     "md-extensions": lambda: ", ".join([e if isinstance(e, str) else str(type(e).__name__) for e in md_extensions]),

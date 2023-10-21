@@ -64,7 +64,7 @@
           <div class="flex flex-col text-left nav-links">
           {% for sibling in siblings %}
             {% if sibling == title %}
-            <a href="https://github.dev/pavo-etc/notes/blob/main/{{breadcrumb_path}}" class="activated-link">{{sibling}}</a>
+            <a href="/{{sanitize_url(sibling)|e}}" class="activated-link">{{sibling}}</a>
             {% else %}
             <a href="/{{sanitize_url(sibling)|e}}">{{sibling}}</a>
             {%endif%}
