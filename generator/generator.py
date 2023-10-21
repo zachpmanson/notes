@@ -3,6 +3,7 @@ import re
 from datetime import datetime
 import getopt
 import sys
+import random
 
 import jinja2
 import markdown
@@ -150,19 +151,34 @@ def generate_pages():
                 "sanitize_url": helpers.sanitize_url,
                 "backlinks": tree[node]["backlinks"],
                 "breadcrumb_path": tree[node]["breadcrumb_path"],
-                "last_edit": str(datetime.utcfromtimestamp(tree[node]["mod_time"]).strftime('%Y-%m-%d %H:%M:%S'))
+                "last_edit": str(datetime.utcfromtimestamp(tree[node]["mod_time"]).strftime('%Y-%m-%d %H:%M:%S')),
+                "random_page": tree[node]["random_page"]
             }))
+
         if VERBOSE: print(f"Generated {grandparent}/{parent}/{helpers.sanitize_url(node)}/index.html")
 
 def generate_sitemap():
     global sitemap_md
-    # generate some markdown
-    sitemap_md += "- [Index](/)\n"
-    for node in tree["Index"]["children"]:
-        append_bullet(node, 4)
+
+    append_bullet("Index", 0)
     
     if VERBOSE: print("Generated sitemap\n", sitemap_md)
     return sitemap_md
+
+def generate_random_pages():
+    random_pages = list(tree.keys())
+    random.shuffle(random_pages)
+
+    for i in range(len(random_pages)):
+        tree[random_pages[i]]["random_page"] = random_pages[(i + 1) % len(random_pages)]
+
+
+def append_bullet(node, depth):
+    global sitemap_md
+    sitemap_md += f"{' ' * depth}- [{node}](/{helpers.sanitize_url(node)})\n"
+
+    for child in sorted(tree[node]["children"]):
+        append_bullet(child, depth+4)
 
 def generate_tags():
     global tags_md
@@ -174,13 +190,6 @@ def generate_tags():
         panel += "\n</details>\n"
 
         tags_md += panel
-
-def append_bullet(node, depth):
-    global sitemap_md
-    sitemap_md += f"{' ' * depth}- [{node}](/{helpers.sanitize_url(node)})\n"
-
-    for child in tree[node]["children"]:
-        append_bullet(child, depth+4)
 
 def preprocess_markdown(text):
     # TODO: Move this to a seperate md extension
@@ -313,7 +322,8 @@ tree = {
         "body":"",
         "backlinks":set(),
         "mod_time": 0.0,
-        "breadcrump_path":"Index.md"
+        "breadcrump_path":"Index.md",
+        "random_page": ""
     }
 }
 routes = {
@@ -350,6 +360,7 @@ if __name__=="__main__":
     generate_tags()
     generate_sitemap()
     traverse_tree()
+    generate_random_pages()
     generate_pages()
     
     # for l in tree.keys():
