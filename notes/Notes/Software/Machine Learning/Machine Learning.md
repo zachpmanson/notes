@@ -1,3 +1,7 @@
+> We may have realized it's easier to build a brain than to understand one
+
+-- [if you know who said this let me know please](https://news.ycombinator.com/item?id=34798846)
+
 The process of making computers learn to solve problems themselves, based on examples of the problem.
 
 >Suppose we arrange for some automatic means of testing the effectiveness of any current weight assignment in terms of actual performance and provide a mechanism for altering the weight assignment so as to maximize the performance. We need not go into the details of such a procedure to see that it could be made entirely automatic and to see that a machine so programmed would "learn" from its experience.
