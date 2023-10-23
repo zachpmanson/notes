@@ -8,7 +8,7 @@ In [[web development]], you sometimes come across a segment of a URL called a "s
 
 [https://stackoverflow.com/questions/4230846](https://stackoverflow.com/questions/4230846)
 
-This use of the word's use in web media comes is following the footsteps of print media, where a "slug" is an informal name give to a story before publication.  Print media takes the term from printing presses, where a slug is a line of lead cast characters.
+This use of the word's use in web media is following a convention from print media, where a "slug" is an informal name given to a story before publication.  Print media takes the term from printing presses, where a slug is a line of lead cast characters.
 
 > The term slug derives from the days of hot-metal printing, when printers set type by hand in a small form called a stick. Later huge Linotype machines turned molten lead into casts of letters, lines, sentences and paragraphs. A line of lead in both eras was known as a slug.
 
