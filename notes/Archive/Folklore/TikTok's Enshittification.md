@@ -1,4 +1,4 @@
-Cory Doctorow's excellent breakdown of how products corrode over time.  Originally posted on his site [Pluralistic](https://pluralistic.net/2023/01/21/potemkin-ai/#hey-guys) on 2023-01-21.
+Cory Doctorow's excellent breakdown of how platforms corrode over time.  Originally posted on his site [Pluralistic](https://pluralistic.net/2023/01/21/potemkin-ai/#hey-guys) on 2023-01-21.
 
 ---
 

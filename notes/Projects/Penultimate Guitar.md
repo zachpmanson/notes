@@ -18,7 +18,7 @@ Features include:
 
 The source code is available [here](https://github.com/pavo-etc/penultimate-guitar).  The deployed version can be found [here](https://pg.zachmanson.com).
 
-Chord tooltips are only possible through [chords-db](https://github.com/tombatossals/chords-db) and [react-chords](https://github.com/tombatossals/react-chords), both by  David Rubert.
+Chord tooltips are only possible through [chords-db](https://github.com/tombatossals/chords-db) and [react-chords](https://github.com/tombatossals/react-chords), both by David Rubert.
 
 ---
 
