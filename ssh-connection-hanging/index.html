@@ -32,7 +32,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: prisma schema changes and vercel</title>
+    <title>notes: ssh connection hanging</title>
   </head>
 
   <body>
@@ -162,7 +162,7 @@
             
           
             
-            <a href="/prisma-schema-changes-and-vercel" class="activated-link">Prisma Schema Changes and Vercel</a>
+            <a href="/prisma-schema-changes-and-vercel">Prisma Schema Changes and Vercel</a>
             
           
             
@@ -206,7 +206,7 @@
             
           
             
-            <a href="/ssh-connection-hanging">ssh Connection Hanging</a>
+            <a href="/ssh-connection-hanging" class="activated-link">ssh Connection Hanging</a>
             
           
           </div>
@@ -219,31 +219,29 @@
     </nav>
     <main>
       <header>
-        <h1>Prisma Schema Changes and Vercel</h1>
+        <h1>ssh Connection Hanging</h1>
       </header>
-      <article><p>When you change a schema using Prisma, Vercel won't automatically regenerate the Prisma client until you add a <code>postinstall</code> command to <code>package.json</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">&quot;scripts&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;dev&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;next dev&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;build&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;next build&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;start&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;next start&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;lint&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;next lint&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;generate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;prisma generate&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// add these two</span>
-<span class="w">    </span><span class="nt">&quot;postinstall&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;npm run generate&quot;</span>
-<span class="p">},</span>
+      <article><p>I ran into a problem on Ubuntu 22.04 where any ssh connection would hang inexplicably.  It only happened on my home wifi network, not at work.</p>
+<p>Resolved with <a href="https://serverfault.com/questions/210408/cannot-ssh-debug1-expecting-ssh2-msg-kex-dh-gex-reply/670081#670081">this thread</a>.</p>
+<blockquote>
+<p>Change the network interface MTU to solve it. This is a bug for ubuntu 14.04. This worked for me:
+<div class="highlight"><pre><span></span><code>sudo ip li set mtu 1200 dev wlan0
+</code></pre></div></p>
+<p>OR</p>
+<div class="highlight"><pre><span></span><code>sudo ifconfig wlan0 mtu 1200
 </code></pre></div>
-<p>Solution found <a href="https://github.com/prisma/prisma/issues/5175">here</a>.</p></article>
+<p>ssh fails to connect to VPN host - hangs at 'expecting SSH2_MSG_KEX_ECDH_REPLY'</p>
+</blockquote></article>
 
       
-
-      
-      <p class="backlinks"><span class="bold">Tags:</span>
+      <p class="backlinks"><span class="bold">Incoming:</span>
           
-          <a href="/tags#nextjs">#nextjs</a>
-          
-          <a href="/tags#prisma">#prisma</a>
+          <a href="/recent-changes">Recent Changes</a>
           
         </span>
       </p>
+      
+
       
 
         
@@ -255,8 +253,8 @@
 
     </main>
     <footer>
-      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Prisma Schema Changes and Vercel.md">edit</a> -
-      <a href="/status-messenger">random</a> -
+      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/ssh Connection Hanging.md">edit</a> -
+      <a href="/the-crawford-principles">random</a> -
       <a href="/recent-changes">updates</a> -
       <a href="/tags">tags</a> -
       <a href="/sitemap">sitemap</a>
