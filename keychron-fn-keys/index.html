@@ -223,9 +223,11 @@
       </header>
       <article><p>Fixing Keychron function keys on Linux machines.</p>
 <p>Tested on Keychron K2v2 on Xubuntu 20.04 and 22.04 on trenzalore.</p>
-<p>To enable Function keys on Keychron K2:
-+ Set the keyboard to Windows mode
-+ Run the following command:</p>
+<p>To enable Function keys on Keychron K2:</p>
+<ul>
+<li>Set the keyboard to Windows mode</li>
+<li>Run the following command:</li>
+</ul>
 <div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/sys/module/hid_apple/parameters/fnmode
 </code></pre></div>
 <p>To make this change persistent, add a module option for hid_apple:</p>
@@ -244,6 +246,13 @@
 <li><a href="https://github.com/pavo-etc/keychron">Other Keychron settings fork</a></li>
 </ul></article>
 
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+          
+          <a href="/recent-changes">Recent Changes</a>
+          
+        </span>
+      </p>
       
 
       
@@ -265,7 +274,7 @@
     </main>
     <footer>
       <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Keychron Fn Keys.md">edit</a> -
-      <a href="/linux">random</a> -
+      <a href="/problems">random</a> -
       <a href="/recent-changes">updates</a> -
       <a href="/tags">tags</a> -
       <a href="/sitemap">sitemap</a>
