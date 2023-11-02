@@ -4,6 +4,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> The computer disease that anybody who works with computers now knows about. It's a very serious disease and it interferes completely with the work and it was a serious problem we were trying to do. The disease with computers is that you play with them.
+
+-- Richard Feynman, [Los Alamos from Below](https://youtu.be/uY-u1qyRM5w?t=3100)
+
+---
+
 > > @jerry@infosec.exchange:  
 > > Hi all. Fedia.io is going to be offline for a while during some open heart surgery on the database. If you are a religious person, praying might be in order.
 >
