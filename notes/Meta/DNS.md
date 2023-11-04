@@ -1,3 +1,7 @@
+> Why do programmers find DNS so hard? It's just cache invalidation and naming things.
+
+-- [jbeal](https://linuxlab.sh/@jbeal/111217885686317963)
+
 This site is hosted on [zachmanson.com](https://zachmanson.com) alongside several other subdomains.
 
 - **[zachmanson.com](https://zachmanson.com)**  
