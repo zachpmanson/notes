@@ -32,7 +32,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: regular expressions and html</title>
+    <title>notes: rob pike's 5 rules of programming</title>
   </head>
 
   <body>
@@ -178,11 +178,11 @@
             
           
             
-            <a href="/regular-expressions-and-html" class="activated-link">Regular Expressions and HTML</a>
+            <a href="/regular-expressions-and-html">Regular Expressions and HTML</a>
             
           
             
-            <a href="/rob-pikes-5-rules-of-programming">Rob Pike's 5 Rules of Programming</a>
+            <a href="/rob-pikes-5-rules-of-programming" class="activated-link">Rob Pike's 5 Rules of Programming</a>
             
           
             
@@ -275,14 +275,36 @@
     </nav>
     <main>
       <header>
-        <h1>Regular Expressions and HTML</h1>
+        <h1>Rob Pike's 5 Rules of Programming</h1>
       </header>
-      <article><p>The seminal analysis of using regex to parse HTML by bobince, posted to <a href="https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags">Stack Overflow on 2009-11-03</a> by bobince.</p>
+      <article><p>From <a href="https://users.ece.utexas.edu/~adnan/pike.html">here</a>, though I don't know the origin before that.</p>
 <hr />
-<p>You can't parse [X]HTML with regex. Because HTML can't be parsed by regex. Regex is not a tool that can be used to correctly parse HTML. As I have answered in HTML-and-regex questions here so many times before, the use of regex will not allow you to consume HTML. Regular expressions are a tool that is insufficiently sophisticated to understand the constructs employed by HTML. HTML is not a regular language and hence cannot be parsed by regular expressions. Regex queries are not equipped to break down HTML into its meaningful parts. so many times but it is not getting to me. Even enhanced irregular regular expressions as used by Perl are not up to the task of parsing HTML. You will never make me crack. HTML is a language of sufficient complexity that it cannot be parsed by regular expressions. Even Jon Skeet cannot parse HTML using regular expressions. Every time you attempt to parse HTML with regular expressions, the unholy child weeps the blood of virgins, and Russian hackers pwn your webapp. Parsing HTML with regex summons tainted souls into the realm of the living. HTML and regex go together like love, marriage, and ritual infanticide. The <code>&lt;center&gt;</code> cannot hold it is too late. The force of regex and HTML together in the same conceptual space will destroy your mind like so much watery putty. If you parse HTML with regex you are giving in to Them and their blasphemous ways which doom us all to inhuman toil for the One whose Name cannot be expressed in the Basic Multilingual Plane, he comes. HTML-plus-regexp will liquify the n​erves of the sentient whilst you observe, your psyche withering in the onslaught of horror. Rege̿̔̉x-based HTML parsers are the cancer that is killing StackOverflow <em>it is too late it is too late we cannot be saved</em> the transgression of a chi͡ld ensures regex will consume all living tissue (except for HTML which it cannot, as previously prophesied) <em>dear lord help us how can anyone survive this scourge</em> using regex to parse HTML has doomed humanity to an eternity of dread torture and security holes <em>using rege_x as a tool to process HTML establishes a brea_ch between this world</em> and the dread realm of c͒ͪo͛ͫrrupt entities (like SGML entities, but <em>more corrupt) a mere glimp_se of the world of reg​<strong>ex parsers for HTML will ins</strong>​tantly transport a p_rogrammer's consciousness i_nto a w_orl_d of ceaseless screaming, he comes, the pestilent slithy regex-infection wil​<strong>l devour your HT</strong>​ML parser, application and existence for all time like Visual Basic only worse _he comes he com_es _do not fi</em>​ght h<strong>e com̡e̶s, ̕h̵i</strong>​s un̨ho͞ly radiańcé de_stro҉ying all enli̍̈́̂̈́ghtenment, HTML tags <strong>lea͠ki̧n͘g fr̶ǫm ̡yo​͟ur eye͢s̸ ̛l̕ik͏e liq</strong>​uid p_ain, the song of re̸gular exp​ression parsing will exti_​nguish the voices of mor​<strong>tal man from the sp</strong>​here I can see it can you see ̲͚̖͔̙î̩́t̲͎̩̱͔́̋̀ it is beautiful t​<em>he f<code>inal snuf</code>fing o_f the lie​<strong>s of Man ALL IS LOŚ͖̩͇̗̪̏̈́T A</strong></em><strong>LL I​S L</strong>OST th_e pon̷y he come_s he c̶̮omes he co<strong>mes t_he_ ich​</strong>or permeat_es al_l MY FAC_E MY FACE ᵒh god n<strong>o NO NOO̼</strong>_<strong>O​O N</strong>Θ stop t_he an​<em>̶͑̾̾​̅ͫ͏̙̤g͇̫͛͆̾ͫ̑͆l͖͉̗̩̳̟̍ͫͥͨ_e̠̅s <code>͎a̧͈͖r̽̾̈́͒͑e</code> n</em><em>​ot rè̑ͧ̌aͨl̘̝̙̃ͤ͂̾̆ ZA̡͊͠͝LGΌ ISͮ̂҉̯͈͕̹̘̱ T</em><em>O͇̹̺ͅƝ̴ȳ̳ TH̘</em><em>Ë͖́̉ ͠P̯͍̭O̚​N̐Y̡ H̸̡̪̯ͨ͊̽̅̾̎Ȩ̬̩̾͛ͪ̈́̀́͘ ̶̧̨̱̹̭̯ͧ̾ͬC̷̙̲̝͖ͭ̏ͥͮ͟Oͮ͏̮̪̝͍M̲̖͊̒ͪͩͬ̚̚͜Ȇ̴̟̟͙̞ͩ͌͝</em>*S̨̥̫͎̭ͯ̿̔̀ͅ</p>
-<hr />
-<p>Have you tried using an XML parser instead?</p></article>
+<ul>
+<li>
+<p><strong>Rule 1.</strong> You can't tell where a program is going to spend its time. Bottlenecks occur in surprising places, so don't try to second guess and put in a speed hack until you've proven that's where the bottleneck is.</p>
+</li>
+<li>
+<p><strong>Rule 2.</strong> Measure. Don't tune for speed until you've measured, and even then don't unless one part of the code overwhelms the rest.</p>
+</li>
+<li>
+<p><strong>Rule 3.</strong> Fancy algorithms are slow when n is small, and n is usually small. Fancy algorithms have big constants. Until you know that n is frequently going to be big, don't get fancy. (Even if n does get big, use Rule 2 first.)</p>
+</li>
+<li>
+<p><strong>Rule 4.</strong> Fancy algorithms are buggier than simple ones, and they're much harder to implement. Use simple algorithms as well as simple data structures.  </p>
+</li>
+<li>
+<p><strong>Rule 5.</strong> Data dominates. If you've chosen the right data structures and organized things well, the algorithms will almost always be self-evident. Data structures, not algorithms, are central to programming.</p>
+</li>
+</ul>
+<p>Pike's rules 1 and 2 restate Tony Hoare's famous maxim "Premature optimization is the root of all evil." Ken Thompson rephrased Pike's rules 3 and 4 as "When in doubt, use brute force.". Rules 3 and 4 are instances of the design philosophy KISS. Rule 5 was previously stated by Fred Brooks in The Mythical Man-Month. Rule 5 is often shortened to "write stupid code that uses smart objects".</p></article>
 
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+          
+          <a href="/recent-changes">Recent Changes</a>
+          
+        </span>
+      </p>
       
 
       
@@ -296,8 +318,8 @@
 
     </main>
     <footer>
-      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Folklore/Regular Expressions and HTML.md">edit</a> -
-      <a href="/web-development">random</a> -
+      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Folklore/Rob Pike's 5 Rules of Programming.md">edit</a> -
+      <a href="/minecraft-health-and-death-score-commands">random</a> -
       <a href="/recent-changes">updates</a> -
       <a href="/tags">tags</a> -
       <a href="/sitemap">sitemap</a>
