@@ -9,3 +9,4 @@
 	- Every paragraph of this has a line that could go in [[Lines]]
 	- Came upon this article through [An Occult History of Computing - Further Reading & Sources](https://porges.notion.site/An-Occult-History-of-Computing-Further-Reading-Sources-89743856980648f8b531cb870a48aacf)
 - [The Grug Brained Developer](https://grugbrain.dev/)
+- [No dogs were harmed in the making of this app](https://shmck.substack.com/p/no-dogs-were-harmed-in-the-making)
