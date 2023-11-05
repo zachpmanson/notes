@@ -2,6 +2,7 @@
 tags:
   - nextjs
   - prisma
+  - javascript
 ---
 When you change a schema using Prisma, Vercel won't automatically regenerate the Prisma client until you add a `postinstall` command to `package.json`.
 

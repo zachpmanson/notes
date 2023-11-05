@@ -1,3 +1,10 @@
+---
+tags:
+  - javascript
+---
+
+
+
 To run the latest version of an npx script:
 
 ```sh
