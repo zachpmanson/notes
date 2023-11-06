@@ -4,6 +4,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+>I think that’s the real danger, that you can do that and then nothing’s original anymore. Everything’s just a copy of something else.  The problem is, that’s what readers like.
+
+-- [Jennifer Lepp](https://www.theverge.com/c/23194235/ai-fiction-writing-amazon-kindle-sudowrite-jasper)
+
+---
+
 > The courts are like the doors to the Ritz, open to everyone!
 
 -- [monkaiju](https://news.ycombinator.com/item?id=38085197)
