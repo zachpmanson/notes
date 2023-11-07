@@ -11,3 +11,4 @@
 - [The Grug Brained Developer](https://grugbrain.dev/)
 - [No dogs were harmed in the making of this app](https://shmck.substack.com/p/no-dogs-were-harmed-in-the-making)
 - [Are We Really Engineers?](https://www.hillelwayne.com/post/are-we-really-engineers/)
+- [Software disenchantment](https://tonsky.me/blog/disenchantment/)
