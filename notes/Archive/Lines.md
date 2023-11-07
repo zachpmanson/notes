@@ -4,6 +4,14 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+>Treating Sunday as the first day of the week is a religious tradition going back thousands of years.
+>
+>However, I know only one god, and his name is ISO 8601.
+
+-- [jl6](https://news.ycombinator.com/item?id=38149243)
+
+---
+
 >I think that’s the real danger, that you can do that and then nothing’s original anymore. Everything’s just a copy of something else.  The problem is, that’s what readers like.
 
 -- [Jennifer Lepp](https://www.theverge.com/c/23194235/ai-fiction-writing-amazon-kindle-sudowrite-jasper)
