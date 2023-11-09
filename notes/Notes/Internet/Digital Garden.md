@@ -8,3 +8,5 @@ Interest writing on digital gardens:
 
 - [What are digital gardens?](https://cagrimmett.com/ideas/2020/11/08/what-are-digital-gardens/)
 - [A Brief History & Ethos of the Digital Garden](https://maggieappleton.com/garden-history)
+- [Memexes, mountain lakes, and the serendipity of old ideas](https://interconnected.org/home/2021/02/10/reservoirs)
+	- espouses the value of large bodies of notes as a tool that aides in future writing, even unorganised
