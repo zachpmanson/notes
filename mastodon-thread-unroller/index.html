@@ -121,12 +121,14 @@
       <header>
         <h1>Mastodon Thread Unroller</h1>
       </header>
-      <article><p><a href="https://unroller.zachmanson.com">Mastodon Thread Unroller</a> is what it sounds likes, a basic thread unroller for Mastodon.  I built it after finding that no other similar applications existed from <a href="https://www.reddit.com/r/Mastodon/comments/1011i9s/anything_similar_to_thread_reader_for_mastodon/">this reddit thread</a>.  It is barebones, and built with SvelteKit.  SvelteKit is definitely overkill, since it only has two routes and both of them are basically static or SSR, but I wanted to learn how to use it.  It also meant I can let Vercel take care of hosting which is always nice.  Maybe I'll rebuild it with Ruby or <a href="/go">Go</a> eventually.</p>
+      <article><p><a href="https://unroller.zachmanson.com">Mastodon Thread Unroller</a> (<a href="https://github.com/pavo-etc/mastodon-unroller">source code</a>) is what it sounds likes, a basic thread unroller for Mastodon.  I built it after finding that no other similar applications existed from <a href="https://www.reddit.com/r/Mastodon/comments/1011i9s/anything_similar_to_thread_reader_for_mastodon/">this reddit thread</a>.  It is barebones, and built with SvelteKit.  SvelteKit is definitely overkill, since it only has two routes and both of them are basically static or SSR, but I wanted to learn how to use it.  It also meant I can let Vercel take care of hosting which is always nice.  Maybe I'll rebuild it with Ruby or <a href="/go">Go</a> eventually.</p>
 <p>Currently the SSR runs every pageload, with each render making 2 API requests to the host Mastodon instance.  I'm edge caching these renders using Vercel, theoretically for 24 hours, but Vercel's caching is more "asking nicely to be cached" than "guaranteed 100% predictable".  You get what you pay for.  This approach may not scale, but in turn, I may never have users.</p>
 <p>It turns out <a href="https://marioslab.io">Mario Zechner</a> (an Austrian games dev, proprietor of Badlogic Games) had come across the same thread as me and built a very similar project in the same week (<a href="https://mastoreader.io/">Masto Reader</a>).  What are the odds?</p></article>
 
       
       <p class="backlinks"><span class="bold">Incoming:</span>
+          
+          <a href="/recent-changes">Recent Changes</a>
           
           <a href="/dns">DNS</a>
           
@@ -146,7 +148,7 @@
     </main>
     <footer>
       <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Projects/Mastodon Thread Unroller.md">edit</a> -
-      <a href="/seleniumbasic">random</a> -
+      <a href="/w03l01---files">random</a> -
       <a href="/recent-changes">updates</a> -
       <a href="/tags">tags</a> -
       <a href="/sitemap">sitemap</a>
