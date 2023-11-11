@@ -111,7 +111,7 @@
         
 
 
-      {% if children != None%}
+      {% if children != None %}
         {% for child in children %}
         <h2><a href="/{{sanitize_url(child)|e}}">{{child}}</a></h2>
         {% endfor %}
@@ -125,6 +125,10 @@
       <a href="/tags">tags</a> -
       <a href="/sitemap">sitemap</a>
     </footer>
-
+    {% if script != None %}
+    <script>
+      {{ script }}
+    </script>
+    {% endif %}
   </body>
 </html>

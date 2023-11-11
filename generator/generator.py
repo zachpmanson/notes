@@ -77,6 +77,7 @@ def get_tree():
         # (tree[node]["children"]).sort()
         # children = sorted(list(tree[node]["children"]))
         tree[node]["backlinks"] = set()
+        tree[node]["script"] = None
         tree[node]["body"] = ""
         try:
             path = os.path.join(routes[node], node+".md")
@@ -152,7 +153,8 @@ def generate_pages():
                 "backlinks": tree[node]["backlinks"],
                 "breadcrumb_path": tree[node]["breadcrumb_path"],
                 "last_edit": str(datetime.utcfromtimestamp(tree[node]["mod_time"]).strftime('%Y-%m-%d %H:%M:%S')),
-                "random_page": tree[node]["random_page"]
+                "random_page": tree[node]["random_page"],
+                "script": tree[node]["script"]
             }))
 
         if VERBOSE: print(f"Generated {grandparent}/{parent}/{helpers.sanitize_url(node)}/index.html")
@@ -166,6 +168,9 @@ def generate_sitemap():
     return sitemap_md
 
 def generate_random_pages():
+    # js dynamic random pages
+    tree["Random"]["script"] = helpers.random_js(tree)
+    # static generated random pages, currently used in footers
     random_pages = list(tree.keys())
     random.shuffle(random_pages)
 
@@ -249,7 +254,6 @@ def format_ochrs_func(matches):
 VERBOSE = False
 
 def build_backlink(label, base, end):
-    
     anchor = ""
     page = label
     if "#" in page:
@@ -303,7 +307,8 @@ ochrs_funcs = {
     "md-extensions": lambda: ", ".join([e if isinstance(e, str) else str(type(e).__name__) for e in md_extensions]),
     "recent-edit": lambda i: helpers.format_recent_edit(tree, i),
     "sitemap": lambda: sitemap_md,
-    "tags": lambda: tags_md
+    "tags": lambda: tags_md,
+    "random-js": lambda: helpers.random_js(tree)
 }
 
 # node: {
@@ -313,6 +318,8 @@ ochrs_funcs = {
 #   "backlinks":[]
 #   "mod_time": mod_time
 #   "breadcrump_path": path in notes folder as string
+#   "random_page": random page when using static random
+#   "script": js to include
 # }
 tree = {
     "Index": {
@@ -322,7 +329,8 @@ tree = {
         "backlinks":set(),
         "mod_time": 0.0,
         "breadcrump_path":"Index.md",
-        "random_page": ""
+        "random_page": "",
+        "script": None
     }
 }
 routes = {
