@@ -4,6 +4,16 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> NO MORE IDEAS
+>
+> WE HAVE ENOUGH
+>
+> (merge them instead)
+
+-- [Lu Wilson](https://www.todepond.com/wikiblogarden/my-wikiblogarden/)
+
+---
+
 >Treating Sunday as the first day of the week is a religious tradition going back thousands of years.
 >
 >However, I know only one god, *and* his name is ISO 8601.
