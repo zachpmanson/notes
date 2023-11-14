@@ -29,3 +29,4 @@ Intentionally miscellaneous.
 - [Studio Balcony](https://studiobalcony.com/), Melbourne based art studio
 - [Helvetica Blanc](https://helveticablanc.com/index.html)
 - [Appear Offline](https://appear-offline.com/), Letter distortion & other services
+- [notes art](https://notes.art/), explorations in iphone notes
