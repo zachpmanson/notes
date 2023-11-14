@@ -5,5 +5,6 @@
 ## Links
 
 - [JavaScript Gom Jabbar](https://frantic.im/javascript-gom-jabbar/)
+- [The Web's Grain](https://frankchimero.com/blog/2015/the-webs-grain/)
 - Frontend
 	- [The single most impor­tant factor that dif­fer­enti­ates front-end frame­works](https://themer.dev/blog/the-single-most-important-factor-that-differentiates-front-end-frameworks)
