@@ -10,3 +10,4 @@ Interest writing on digital gardens:
 - [A Brief History & Ethos of the Digital Garden](https://maggieappleton.com/garden-history)
 - [Memexes, mountain lakes, and the serendipity of old ideas](https://interconnected.org/home/2021/02/10/reservoirs)
 	- espouses the value of large bodies of notes as a tool that aides in future writing, even unorganised
+- [What Is A Wiki](https://garden.bouncepaw.com/hypha/what_is_a_wiki), @bouncepaw@merveilles.town's archive conversations on what counts as a wiki
