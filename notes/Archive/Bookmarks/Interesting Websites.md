@@ -1,7 +1,6 @@
 Intentionally miscellaneous.
 
 - [RAW Magazine](https://brutalistwebsites.com/raw/), interviews with brutalist designers
-- [XXIIVV](https://wiki.xxiivv.com/site/home.html), Devine Lu Linvega's wiki
 - [The Annotated Pratchett File](https://www.lspace.org/books/apf/), distilled discussions on the works of Terry Pratchett
 - [years in review](https://years.cblgh.org/), Alexander Cobleigh's years, reviewed
 - [Basilisk Collection](https://suricrasia.online/unfiction/basilisk/)
@@ -18,11 +17,15 @@ Intentionally miscellaneous.
 - [Motorcross Arts](https://motocross-arts.tumblr.com/)
 - [Loading Collection](https://loadingcollection.matoseb.com/), a collection of loading icons
 - [Ctrl+ZINE](https://ctrl-c.club/~loghead/ctrl-zine.html)
-- [Helvetica Blanc](https://helveticablanc.com/index.html)
 - [Antartica Starts Here.plan](https://drwho.virtadpt.net/drwho.plan)
 - [Galactanet](http://www.galactanet.com/), Andy Weir's actual website
 - [99percentoffsale](https://www.99percentoffsale.com/)
 - [Index of Aesthetics](https://cari.institute/aesthetics)
 - [Astronaut.io](http://astronaut.io/), random youtube videos with nearly 0 views
 - [500mile.email](https://500mile.email/), absurd bugs
+- [Flame Warriors Guide](https://www.flamewarriorsguide.com/)
+## Artists
+
 - [Studio Balcony](https://studiobalcony.com/), Melbourne based art studio
+- [Helvetica Blanc](https://helveticablanc.com/index.html)
+- [Appear Offline](https://appear-offline.com/), Letter distortion & other services
