@@ -13,7 +13,7 @@ Some of my favourites:
 - [Maggie Appleton](https://maggieappleton.com/)
 - [Gwern](https://gwern.net/)
 
-Some more interesting ones I have come across:
+Some other interesting ones I have come across:
 
 - [Fork My Brain](https://notes.nicolevanderhoeven.com/Fork+My+Brain)
 - [wiki1.mikf.pl](https://wiki1.mikf.pl/)
@@ -35,3 +35,4 @@ Some more interesting ones I have come across:
 - [Melanocarpa](https://garden.bouncepaw.com/)
 - [corvid.cafe](https://corvid.cafe/home.html)
 - [Chuck's Notes](https://notes.cagrimmett.com/)
+- [WebSeitz](http://webseitz.fluxent.com/wiki/FrontPage)
