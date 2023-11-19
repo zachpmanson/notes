@@ -2,7 +2,6 @@
 tags:
   - lists
 ---
-
 Digital gardens are sites like this one, interconnected personal wikis.  These are some that have inspired this site, or are just interesting to browse.
 
 Some of my favourites:
@@ -36,3 +35,4 @@ Some other interesting ones I have come across:
 - [corvid.cafe](https://corvid.cafe/home.html)
 - [Chuck's Notes](https://notes.cagrimmett.com/)
 - [WebSeitz](http://webseitz.fluxent.com/wiki/FrontPage)
+- [Todepond's wikiblogarden](https://www.todepond.com/wikiblogarden)
