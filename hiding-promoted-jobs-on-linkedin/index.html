@@ -32,7 +32,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: xfce screentearing</title>
+    <title>notes: hiding promoted jobs on linkedin</title>
   </head>
 
   <body>
@@ -130,7 +130,7 @@
             
           
             
-            <a href="/hiding-promoted-jobs-on-linkedin">Hiding Promoted Jobs on LinkedIn</a>
+            <a href="/hiding-promoted-jobs-on-linkedin" class="activated-link">Hiding Promoted Jobs on LinkedIn</a>
             
           
             
@@ -214,7 +214,7 @@
             
           
             
-            <a href="/xfce-screentearing" class="activated-link">Xfce Screentearing</a>
+            <a href="/xfce-screentearing">Xfce Screentearing</a>
             
           
             
@@ -231,31 +231,21 @@
     </nav>
     <main>
       <header>
-        <h1>Xfce Screentearing</h1>
+        <h1>Hiding Promoted Jobs on LinkedIn</h1>
       </header>
-      <article><p>Tested myself on Xfce 4.12 on Xubuntu 20.04 on trenzalore (Intel HD Graphics 530), allegedly works on Xubuntu 16.04.03.</p>
-<p>Create file <code>/etc/X11/xorg.conf</code> with the content:
-<div class="highlight"><pre><span></span><code>        Section &quot;Device&quot;
-            Identifier  &quot;Intel Graphics&quot;
-            Driver      &quot;intel&quot;
-            Option      &quot;AccelMethod&quot;   &quot;sna&quot;
-            Option      &quot;TearFree&quot;  &quot;true&quot;
-        EndSection
-</code></pre></div></p>
-<h2 id="links">Links</h2>
-<ul>
-<li><a href="https://forum.xfce.org/viewtopic.php?id=12019">Source</a></li>
-</ul></article>
+      <article><p>Add rule to uBlock Origin:</p>
+<div class="highlight"><pre><span></span><code>www.linkedin.com##li:has-text(Promoted)
+</code></pre></div></article>
 
       
-
-      
-      <p class="backlinks"><span class="bold">Tags:</span>
+      <p class="backlinks"><span class="bold">Incoming:</span>
           
-          <a href="/tags#linux">#linux</a>
+          <a href="/recent-changes">Recent Changes</a>
           
         </span>
       </p>
+      
+
       
 
         
@@ -267,8 +257,8 @@
 
     </main>
     <footer>
-      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Xfce Screentearing.md">edit</a> -
-      <a href="/interrobang">random</a> -
+      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Hiding Promoted Jobs on LinkedIn.md">edit</a> -
+      <a href="/stylesheet">random</a> -
       <a href="/recent-changes">updates</a> -
       <a href="/tags">tags</a> -
       <a href="/sitemap">sitemap</a>
