@@ -32,7 +32,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-    <title>notes: git repo contributor line count</title>
+    <title>notes: command line file sharing</title>
   </head>
 
   <body>
@@ -90,7 +90,7 @@
             
           
             
-            <a href="/command-line-file-sharing">Command Line File Sharing</a>
+            <a href="/command-line-file-sharing" class="activated-link">Command Line File Sharing</a>
             
           
             
@@ -114,7 +114,7 @@
             
           
             
-            <a href="/git-repo-contributor-line-count" class="activated-link">Git Repo Contributor Line Count</a>
+            <a href="/git-repo-contributor-line-count">Git Repo Contributor Line Count</a>
             
           
             
@@ -227,21 +227,36 @@
     </nav>
     <main>
       <header>
-        <h1>Git Repo Contributor Line Count</h1>
+        <h1>Command Line File Sharing</h1>
       </header>
-      <article><div class="highlight"><pre><span></span><code>git<span class="w"> </span>log<span class="w"> </span>--no-merges<span class="w"> </span>--pretty<span class="o">=</span>format:%an<span class="w"> </span>--numstat<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;/./ &amp;&amp; !author { author = $0; next } author { ins[author] += $1; del[author] += $2 } /^$/ { author = &quot;&quot;; next } END { for (a in ins) { printf &quot;%10d %10d %10d %s\n&quot;, ins[a] - del[a], ins[a], del[a], a } }&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-rn
+      <article><p>Written by <a href="https://news.ycombinator.com/user?id=dabedee">dabedee</a> on HN.</p>
+<hr />
+<p>This is great and very user-friendly. As a quick &amp; dirty alternative for people using the command line, you can easily send files by using netcat.</p>
+<p>To quickly copy file from one machine to another.</p>
+<div class="highlight"><pre><span></span><code>  # on target machine
+  $ nc -l PORT &gt; file
+
+  # on source machine
+  $ cat file | nc HOST PORT
 </code></pre></div>
-<p>From <a href="https://stackoverflow.com/a/43147048">this StackOverflow answer</a>.</p></article>
+<p>To quickly copy an entire folder:</p>
+<div class="highlight"><pre><span></span><code>  # on target machine
+  $ nc -l PORT | tar xf -
+
+  # on source machine
+  $ tar cf - FOLDER | nc HOST PORT
+</code></pre></div>
+<p>And on top of it you can add pv in pipe for progress bar</p></article>
 
       
-
-      
-      <p class="backlinks"><span class="bold">Tags:</span>
+      <p class="backlinks"><span class="bold">Incoming:</span>
           
-          <a href="/tags#git">#git</a>
+          <a href="/recent-changes">Recent Changes</a>
           
         </span>
       </p>
+      
+
       
 
         
@@ -253,8 +268,8 @@
 
     </main>
     <footer>
-      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Git Repo Contributor Line Count.md">edit</a> -
-      <a href="/yak-shaving">random</a> -
+      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Command Line File Sharing.md">edit</a> -
+      <a href="/pocket-veto">random</a> -
       <a href="/recent-changes">updates</a> -
       <a href="/tags">tags</a> -
       <a href="/sitemap">sitemap</a>
