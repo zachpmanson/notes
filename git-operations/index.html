@@ -90,10 +90,6 @@
             
           
             
-            <a href="/checkout-branch-from-github-fork">Checkout Branch from Github Fork</a>
-            
-          
-            
             <a href="/domain-based-link-colours">Domain Based Link Colours</a>
             
           
@@ -127,6 +123,10 @@
           
             
             <a href="/hacking-sagemcom-router-admin-account">Hacking Sagemcom Router Admin Account</a>
+            
+          
+            
+            <a href="/javascript-pretty-printing">JavaScript Pretty Printing</a>
             
           
             
@@ -250,8 +250,25 @@ git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"
 git<span class="w"> </span>reset<span class="w"> </span>HEAD~N
 <span class="c1"># hard</span>
 git<span class="w"> </span>reset<span class="w"> </span>HEAD~1<span class="w"> </span>--hard
-</code></pre></div></article>
+</code></pre></div>
+<h2 id="checkout-branch-from-github-fork">Checkout Branch from GitHub Fork</h2>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>coworker<span class="w"> </span>https://path/to/coworkers/repo.git
+git<span class="w"> </span>fetch<span class="w"> </span>coworker
+git<span class="w"> </span>checkout<span class="w"> </span>--track<span class="w"> </span>coworker/foo
 
+<span class="c1"># then in future</span>
+git<span class="w"> </span>checkout<span class="w"> </span>foo
+git<span class="w"> </span>pull
+</code></pre></div>
+<p>From this <a href="https://stackoverflow.com/a/5884825">answer on StackOverflow</a>.</p></article>
+
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+          
+          <a href="/recent-changes">Recent Changes</a>
+          
+        </span>
+      </p>
       
 
       
@@ -273,7 +290,7 @@ git<span class="w"> </span>reset<span class="w"> </span>HEAD~1<span class="w"> <
     </main>
     <footer>
       <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Git Operations.md">edit</a> -
-      <a href="/decision-problems">random</a> -
+      <a href="/keychron-fn-keys">random</a> -
       <a href="/recent-changes">updates</a> -
       <a href="/tags">tags</a> -
       <a href="/sitemap">sitemap</a>
