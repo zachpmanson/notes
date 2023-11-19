@@ -4,6 +4,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> A good science fiction story should be able to predict not the automobile but the traffic jam
+
+-- Frederik Pohl
+
+---
+
 > My robot girlfriend walks in with the crop, I'm already tied to the bed. "what's the safeword?", she asks. I respond by saying the letter "A" for 90 seconds straight followed by a short hex string.
 > 
 > calc.exe opens up on her eyes. Finally, a PoC!

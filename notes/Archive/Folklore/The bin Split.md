@@ -3,7 +3,6 @@ tags:
   - relics
   - unix
 ---
-
 [Rob Landley](http://landley.net/)'s explanation of the bin, sbin, usr/bin, usr/sbin split, taken from the [busybox mailing list](http://lists.busybox.net/pipermail/busybox/2010-December/074114.html).
 
 ---

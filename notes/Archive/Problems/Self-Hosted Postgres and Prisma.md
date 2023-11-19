@@ -3,6 +3,7 @@ tags:
   - self-hosting
   - linux
   - prisma
+  - postgres
 ---
 Learnings from setting up Postgres on a DigitalOcean droplet for [[Penultimate Guitar]].  This was done on trackstar-22, so should presumably work on any Ubuntu 22.04 instance.
 

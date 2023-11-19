@@ -43,3 +43,16 @@ git reset HEAD~N
 git reset HEAD~1 --hard
 ```
 
+## Checkout Branch from GitHub Fork
+
+```sh
+git remote add coworker https://path/to/coworkers/repo.git
+git fetch coworker
+git checkout --track coworker/foo
+
+# then in future
+git checkout foo
+git pull
+```
+
+From this [answer on StackOverflow](https://stackoverflow.com/a/5884825).

@@ -1,3 +1,8 @@
+---
+tags:
+  - dirty-hacks
+---
+
 Styling Firefox Proton to resemble Firefox Photon.
 
 Originally tested on Firefox 91, confirmed working on Firefox 104.

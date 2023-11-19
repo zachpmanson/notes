@@ -1,6 +1,7 @@
 ---
 tags:
   - javascript
+  - dirty-hacks
 ---
 The JavaScript [[datetime]] library is anemic.  If you need the current date in the user's locale written in YYYY-MM-DD, use this fun hack:
 

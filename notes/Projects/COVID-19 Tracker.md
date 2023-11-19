@@ -1,3 +1,8 @@
+---
+tags:
+  - dirty-hacks
+---
+
 A dashboard for COVID-19 updates in Western Australia.
 
 ![[covid19_tracker.png]]
