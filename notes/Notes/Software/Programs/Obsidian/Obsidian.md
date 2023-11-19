@@ -1,0 +1,1 @@
+Obsidian is a notes app based around folders of Markdown files.  It is excellent, and what is used to create this site.

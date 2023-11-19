@@ -2,7 +2,7 @@ Awk, named for its creators and for the animal the auk, is a little language.
 It has a few variants.
 
 - AWK - Bell Labs, 1977
-- Gawk - GNU awk, 1988
+- Gawk - [[GNU]] awk, 1988
 - Nawk - New awk, 1993
 - Mawk - Mark Brennan's awk intepreter, in Ubuntu
 
