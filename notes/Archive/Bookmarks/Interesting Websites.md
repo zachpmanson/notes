@@ -16,13 +16,11 @@ Intentionally miscellaneous.
 - [Floor 796](https://floor796.com)
 - [Motorcross Arts](https://motocross-arts.tumblr.com/)
 - [Loading Collection](https://loadingcollection.matoseb.com/), a collection of loading icons
-- [Ctrl+ZINE](https://ctrl-c.club/~loghead/ctrl-zine.html)
 - [Antartica Starts Here.plan](https://drwho.virtadpt.net/drwho.plan)
 - [Galactanet](http://www.galactanet.com/), Andy Weir's actual website
 - [99percentoffsale](https://www.99percentoffsale.com/)
 - [Index of Aesthetics](https://cari.institute/aesthetics)
 - [Astronaut.io](http://astronaut.io/), random youtube videos with nearly 0 views
-- [500mile.email](https://500mile.email/), absurd bugs
 - [Flame Warriors Guide](https://www.flamewarriorsguide.com/)
 ## Artists
 
@@ -30,3 +28,8 @@ Intentionally miscellaneous.
 - [Helvetica Blanc](https://helveticablanc.com/index.html)
 - [Appear Offline](https://appear-offline.com/), Letter distortion & other services
 - [notes art](https://notes.art/), explorations in iphone notes
+
+## Zines and Newsletters
+
+- [500mile.email](https://500mile.email/), absurd bugs
+- [Ctrl+ZINE](https://ctrl-c.club/~loghead/ctrl-zine.html)
