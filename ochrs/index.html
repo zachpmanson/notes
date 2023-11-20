@@ -156,7 +156,7 @@
 <p>This is best described as "technically functional, but unpleasant".</p>
 <p>Another issue I ran into was the requirement for all pages to be contained within a single file, <code>lexicon.ndbl</code>.  Each page had a line limit which could be mitigated by including external files using the <code>{^text filename}</code> and <code>{^html filename}</code> idioms.  There was no support for Markdown in external files, and I had no interest in writing a Markdown parser in C, or porting the existing Markdownish parser to work on external files.</p>
 <h2 id="ochrs-20">Ochrs 2.0</h2>
-<p>The first time I used Obsidian I immediately knew I wanted all my notes to be written using it, and began work on porting my Ochrs 1.0 site to be generated from an Obsidian vault.</p>
+<p>The first time I used <a href="/obsidian">Obsidian</a> I immediately knew I wanted all my notes to be written using it, and began work on porting my Ochrs 1.0 site to be generated from an Obsidian vault.</p>
 <p><a href="https://github.com/pavo-etc/notes/tree/main/generator">Ochrs 2.0</a> is a rewrite of the original in Python. While this loses the purity that C provides, it also makes it pleasant and flexible.  It has proper Markdown support, code highlighting, and is designed to use an Obsidian vault as the content source.  The appearance of the website is extremely similar to the original and is much simpler to customise using jinja templates.</p>
 <p>The code itself is similar to <a href="/ironprof">ironprof</a>, a simple static site generator script I wrote for my <a href="https://zachmanson.com">personal site</a> that recursively builds jinja templates and converts Markdown into blogposts.</p>
 <p>Ochrs 2.0 uses Python-Markdown for all parsing, and introduces a few <a href="/ochrs-syntax">custom syntax</a> behaviours on top of this.  The <a href="/stylesheet">stylesheet</a> shows how all common elements look. </p>
@@ -166,15 +166,17 @@
       
       <p class="backlinks"><span class="bold">Incoming:</span>
           
-          <a href="/stylesheet">Stylesheet</a>
+          <a href="/">Index</a>
           
           <a href="/meta">Meta</a>
           
-          <a href="/">Index</a>
+          <a href="/obsidian-plugins">Obsidian Plugins</a>
+          
+          <a href="/stylesheet">Stylesheet</a>
           
           <a href="/markdown">Markdown</a>
           
-          <a href="/obsidian-plugins">Obsidian Plugins</a>
+          <a href="/recent-changes">Recent Changes</a>
           
         </span>
       </p>
@@ -194,7 +196,7 @@
     </main>
     <footer>
       <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Projects/Ochrs/Ochrs.md">edit</a> -
-      <a href="/nextcloud-phone-photo-upload">random</a> -
+      <a href="/seleniumbasic">random</a> -
       <a href="/recent-changes">updates</a> -
       <a href="/tags">tags</a> -
       <a href="/sitemap">sitemap</a>
