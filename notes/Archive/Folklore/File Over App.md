@@ -2,8 +2,6 @@ A manifesto of sorts written by [Stephan Ango](https://stephanango.com/) (CEO of
 
 ---
 
-File over app
-
 File over app is a philosophy: if you want to create digital artefacts that last, they must be files you can control, in formats that are easy to retrieve and read. Use tools that give you this freedom.
 
 File over app is an appeal to tool makers: accept that all software is ephemeral, and give people ownership over their data.
