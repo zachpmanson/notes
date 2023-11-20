@@ -2,6 +2,6 @@ This site is an archive and collection of my personal notes. It is changing cons
 
 The [[sitemap]] shows the full wiki structure, currently containing <ochrs:page-count> pages. See the list of [[recent changes]] or the list of [[tags]].
 
-[[Domain Based Link Colours|Purple links]] are internal, [pink links](https://en.wikipedia.org/wiki/Magic_(programming)) point to sites on other domains.  The site is [open source](https://github.com/pavo-etc/notes), automatically generated with [[Ochrs]].
+[[Domain Based Link Colours|Purple links]] are internal, [pink links](<https://en.wikipedia.org/wiki/Magic_(programming)>) point to sites on other domains. The site is [open source](https://github.com/pavo-etc/notes), automatically generated with [[Ochrs]].
 
-I don't like reading things I think I could write myself, and I don't like writing things I wouldn't read myself.  Hopefully this helps me get over that.
+I don't like reading things I think I could write myself, and I don't like writing things I wouldn't read myself. Hopefully this helps me get over that.
