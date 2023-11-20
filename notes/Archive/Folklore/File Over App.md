@@ -1,4 +1,4 @@
-A manifesto of sorts written by [Stephan Ango](https://stephanango.com/) (CEO of Obsidian, the editor used to create this very website) on [his blog](https://stephanango.com/file-over-app) on the importance on users controlling how their content is stored.  Posted on 2023-07-01.
+A manifesto of sorts written by [Stephan Ango](https://stephanango.com/) (CEO of [[Obsidian]], the editor used to create this very website) on [his blog](https://stephanango.com/file-over-app) on the importance on users controlling how their content is stored.  Posted on 2023-07-01.
 
 ---
 
