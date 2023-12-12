@@ -6,6 +6,7 @@ tags:
 - [TWO HUNDRED FIFTY THINGS AN ARCHITECT SHOULD KNOW](https://www.readingdesign.org/250-things)
 - [List of lists of lists](https://en.wikipedia.org/wiki/List_of_lists_of_lists)
 - [List of nuclear close calls](https://en.wikipedia.org/wiki/List_of_nuclear_close_calls)
+- [Devine Lu Linvega's Bookmarks](https://wiki.xxiivv.com/site/bookmarks.html)
 
 Related:
 
