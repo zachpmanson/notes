@@ -1,4 +1,4 @@
-When programs conclude they return an exit status.
+When [[programs]] conclude they return an exit status.
 
  - 0 is success, else is failure
  - positive integers represent an error state, usually 1 is used

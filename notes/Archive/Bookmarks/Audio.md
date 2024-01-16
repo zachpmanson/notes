@@ -8,3 +8,4 @@ tags:
 - [lofi limo](https://lofi.limo/), simple lofi radio
 - [cafe noises](https://mynoise.net/NoiseMachines/cafeRestaurantNoiseGenerator.php)
 - [Mofi](https://mofi.loud.red/), content-aware fill and trim for music
+- [YouGlish](https://youglish.com/), a tool to learn English word pronounciations by hearing examples in existing YouTube videos

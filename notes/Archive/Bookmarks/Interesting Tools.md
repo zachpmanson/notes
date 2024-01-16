@@ -1,0 +1,1 @@
+- [YouGlish](https://youglish.com/), a tool to learn English word pronounciations by hearing examples in existing YouTube videos
