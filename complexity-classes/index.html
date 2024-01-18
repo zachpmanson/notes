@@ -1,87 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="/static/styles/colors.css" />
-    <link rel="stylesheet" href="/static/styles/global.css" />
-    <link rel="stylesheet" href="/static/styles/code.css" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/static/icon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/static/icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/static/icon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/static/icon/site.webmanifest" />
-    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
-    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#603cba" />
-    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
-    <meta name="theme-color" content="#282A36" />
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <title>notes: complexity classes</title>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: complexity classes</title>
+</head>
 
-  <body>
-     <nav>
+<body>
+  <nav>
 
-      <div class="main-icon">
-        <a href="/">
-          <img src="/static/icon/icon.png" alt="notes" height="100">
-        </a>
-      </div>
-      
-      <div class="nav-segments-container">
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
       <div class="nav-segments">
         
 
-          <div class="flex flex-col nav-links text-left">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/complexity-theory" class="activated-link">Complexity Theory</a>
-            
           
-          </div>
+          <a href="/complexity-theory" class="activated-link">Complexity Theory</a>
+          
+          
+        </div>
         
 
         
 
-          <div class="flex flex-col text-left nav-links">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/complexity-classes" class="activated-link">Complexity Classes</a>
-            
           
-            
-            <a href="/decision-problems">Decision Problems</a>
-            
+          <a href="/complexity-classes" class="activated-link">Complexity Classes</a>
           
-          </div>
+          
+          
+          <a href="/decision-problems">Decision Problems</a>
+          
+          
+        </div>
         
 
         
       </div>
-      </div>
+    </div>
 
-    </nav>
-    <main>
-      <header>
-        <h1>Complexity Classes</h1>
-      </header>
-      <article><p>Complexity classes are sets of computational problems, organised by the resources required to solve them.  Most commonly this involves <a href="/decision-problems">decision problems</a> solvable using Turing machines and the relative time and memory problems would require under that model.</p>
+  </nav>
+  <main>
+    <header>
+      <h1>Complexity Classes</h1>
+    </header>
+    <article><p>Complexity classes are sets of computational problems, organised by the resources required to solve them.  Most commonly this involves <a href="/decision-problems">decision problems</a> solvable using Turing machines and the relative time and memory problems would require under that model.</p>
 <h2 id="properties">Properties</h2>
 <h3 id="hardness">Hardness</h3>
 <p>A problem X is hard for class C is every problem in C can be polynomial-time reduced to X, meaning no problem in C is harder than X.  Any algorithm that can solve X can solve all problems in C.</p>
@@ -111,34 +98,35 @@
 <li><a href="https://en.wikipedia.org/wiki/List_of_complexity_classes">Wikipedia's list of complexity classes</a></li>
 </ul></article>
 
-      
-      <p class="backlinks"><span class="bold">Incoming:</span>
-          
-          <a href="/complexity-theory">Complexity Theory</a>
-          
-          <a href="/decision-problems">Decision Problems</a>
-          
-        </span>
-      </p>
-      
-
-      
-
-        
-
-
-      
-        
-      
-
-    </main>
-    <footer>
-      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Mathematics/Computer Science/Complexity Theory/Complexity Classes.md">edit</a> -
-      <a href="/w12l02---exam-prep">random</a> -
-      <a href="/recent-changes">updates</a> -
-      <a href="/tags">tags</a> -
-      <a href="/sitemap">sitemap</a>
-    </footer>
     
-  </body>
+    <p class="backlinks"><span class="bold">Incoming:</span>
+      
+      <a href="/complexity-theory">Complexity Theory</a>
+      
+      <a href="/decision-problems">Decision Problems</a>
+      
+      </span>
+    </p>
+    
+
+    
+
+
+
+
+    
+    
+    
+
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Mathematics/Computer Science/Complexity Theory/Complexity Classes.md">edit</a> -
+    <a href="/sitemap">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
 </html>

@@ -1,112 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="/static/styles/colors.css" />
-    <link rel="stylesheet" href="/static/styles/global.css" />
-    <link rel="stylesheet" href="/static/styles/code.css" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/static/icon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/static/icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/static/icon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/static/icon/site.webmanifest" />
-    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
-    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#603cba" />
-    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
-    <meta name="theme-color" content="#282A36" />
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <title>notes: large language models</title>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: large language models</title>
+</head>
 
-  <body>
-     <nav>
+<body>
+  <nav>
 
-      <div class="main-icon">
-        <a href="/">
-          <img src="/static/icon/icon.png" alt="notes" height="100">
-        </a>
-      </div>
-      
-      <div class="nav-segments-container">
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
       <div class="nav-segments">
         
 
-          <div class="flex flex-col nav-links text-left">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/generative-models" class="activated-link">Generative Models</a>
-            
           
-            
-            <a href="/limitations-of-machine-learning">Limitations of Machine Learning</a>
-            
+          <a href="/generative-models" class="activated-link">Generative Models</a>
           
-            
-            <a href="/machine-learning-concepts">Machine Learning Concepts</a>
-            
           
-            
-            <a href="/neural-networks">Neural Networks</a>
-            
           
-            
-            <a href="/pytorch">PyTorch</a>
-            
+          <a href="/limitations-of-machine-learning">Limitations of Machine Learning</a>
           
-          </div>
+          
+          
+          <a href="/machine-learning-concepts">Machine Learning Concepts</a>
+          
+          
+          
+          <a href="/neural-networks">Neural Networks</a>
+          
+          
+          
+          <a href="/pytorch">PyTorch</a>
+          
+          
+        </div>
         
 
         
 
-          <div class="flex flex-col text-left nav-links">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/large-language-models" class="activated-link">Large Language Models</a>
-            
           
-            
-            <a href="/stable-diffusion">Stable Diffusion</a>
-            
+          <a href="/large-language-models" class="activated-link">Large Language Models</a>
           
-          </div>
+          
+          
+          <a href="/stable-diffusion">Stable Diffusion</a>
+          
+          
+        </div>
         
 
         
 
-          <div class="flex flex-col text-left nav-links">
+        <div class="flex flex-col text-left nav-links">
           
-            <a href="/chatgpt">ChatGPT</a>
+          <a href="/chatgpt">ChatGPT</a>
           
-            <a href="/llama">LLaMA</a>
+          <a href="/llama">LLaMA</a>
           
-          </div>
+        </div>
         
       </div>
-      </div>
+    </div>
 
-    </nav>
-    <main>
-      <header>
-        <h1>Large Language Models</h1>
-      </header>
-      <article><p>Notes on various LLMs and the techniques used to make them.</p>
+  </nav>
+  <main>
+    <header>
+      <h1>Large Language Models</h1>
+    </header>
+    <article><p>Notes on various LLMs and the techniques used to make them.</p>
 <blockquote>
 <p>LLMs are better thought of as "calculators for words" - retrieval of facts is a by-product of how they are trained, but it's not their core competence at all.</p>
 </blockquote>
@@ -139,38 +126,39 @@ The simplest and quickest benchmark is to do a rap battle between GPT-4 and the 
 <li><a href="https://blog.gopenai.com/how-to-speed-up-llms-and-use-100k-context-window-all-tricks-in-one-place-ffd40577b4c">The Secret Sauce behind 100K context window in LLMs: all tricks in one place</a></li>
 </ul></article>
 
-      
-      <p class="backlinks"><span class="bold">Incoming:</span>
-          
-          <a href="/few-shot-learning">Few-Shot Learning</a>
-          
-          <a href="/pirate-libraries">Pirate Libraries</a>
-          
-        </span>
-      </p>
-      
-
-      
-
-        
-
-
-      
-        
-        <h2><a href="/chatgpt">ChatGPT</a></h2>
-        
-        <h2><a href="/llama">LLaMA</a></h2>
-        
-      
-
-    </main>
-    <footer>
-      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Machine Learning/Generative Models/Large Language Models/Large Language Models.md">edit</a> -
-      <a href="/future-changes">random</a> -
-      <a href="/recent-changes">updates</a> -
-      <a href="/tags">tags</a> -
-      <a href="/sitemap">sitemap</a>
-    </footer>
     
-  </body>
+    <p class="backlinks"><span class="bold">Incoming:</span>
+      
+      <a href="/pirate-libraries">Pirate Libraries</a>
+      
+      <a href="/few-shot-learning">Few-Shot Learning</a>
+      
+      </span>
+    </p>
+    
+
+    
+
+
+
+
+    
+    
+    <h2><a href="/chatgpt">ChatGPT</a></h2>
+    
+    <h2><a href="/llama">LLaMA</a></h2>
+    
+    
+
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Machine Learning/Generative Models/Large Language Models/Large Language Models.md">edit</a> -
+    <a href="/tags">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
 </html>

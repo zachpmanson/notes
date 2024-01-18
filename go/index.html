@@ -1,119 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="/static/styles/colors.css" />
-    <link rel="stylesheet" href="/static/styles/global.css" />
-    <link rel="stylesheet" href="/static/styles/code.css" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/static/icon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/static/icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/static/icon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/static/icon/site.webmanifest" />
-    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
-    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#603cba" />
-    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
-    <meta name="theme-color" content="#282A36" />
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <title>notes: go</title>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: go</title>
+</head>
 
-  <body>
-     <nav>
+<body>
+  <nav>
 
-      <div class="main-icon">
-        <a href="/">
-          <img src="/static/icon/icon.png" alt="notes" height="100">
-        </a>
-      </div>
-      
-      <div class="nav-segments-container">
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
       <div class="nav-segments">
         
 
-          <div class="flex flex-col nav-links text-left">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/datetime">DateTime</a>
-            
           
-            
-            <a href="/debugging">Debugging</a>
-            
+          <a href="/datetime">DateTime</a>
           
-            
-            <a href="/markdown">Markdown</a>
-            
           
-            
-            <a href="/oauth">OAuth</a>
-            
           
-            
-            <a href="/programming-concepts">Programming Concepts</a>
-            
+          <a href="/debugging">Debugging</a>
           
-            
-            <a href="/programming-languages" class="activated-link">Programming Languages</a>
-            
           
-            
-            <a href="/web-development">Web Development</a>
-            
           
-          </div>
+          <a href="/markdown">Markdown</a>
+          
+          
+          
+          <a href="/oauth">OAuth</a>
+          
+          
+          
+          <a href="/programming-concepts">Programming Concepts</a>
+          
+          
+          
+          <a href="/programming-languages" class="activated-link">Programming Languages</a>
+          
+          
+          
+          <a href="/web-development">Web Development</a>
+          
+          
+        </div>
         
 
         
 
-          <div class="flex flex-col text-left nav-links">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/bash">Bash</a>
-            
           
-            
-            <a href="/c">C</a>
-            
+          <a href="/bash">Bash</a>
           
-            
-            <a href="/go" class="activated-link">Go</a>
-            
           
-            
-            <a href="/typescript">TypeScript</a>
-            
           
-          </div>
+          <a href="/c">C</a>
+          
+          
+          
+          <a href="/go" class="activated-link">Go</a>
+          
+          
+          
+          <a href="/typescript">TypeScript</a>
+          
+          
+        </div>
         
 
         
       </div>
-      </div>
+    </div>
 
-    </nav>
-    <main>
-      <header>
-        <h1>Go</h1>
-      </header>
-      <article><p>A statically typed, compiled programming language designed by Google designed to blend high performance networking, concurrency, memory safety and readability.  It was first created in 2009 by Robert Griesemer, <a href="/rob-pikes-lesson-in-shortcuts">Rob Pike</a> (<a href="/unix">Unix</a>, Plan 9, UTF-8) and Ken Thompson (<a href="/c">C</a>, Unix).</p>
+  </nav>
+  <main>
+    <header>
+      <h1>Go</h1>
+    </header>
+    <article><p>A statically typed, compiled programming language designed by Google designed to blend high performance networking, concurrency, memory safety and readability.  It was first created in 2009 by Robert Griesemer, <a href="/rob-pikes-lesson-in-shortcuts">Rob Pike</a> (<a href="/unix">Unix</a>, Plan 9, UTF-8) and Ken Thompson (<a href="/c">C</a>, Unix).</p>
 <p>It was borne from criticisms in other languages being used by Google at the time, with a particular shared dislike of C++.</p>
 <h2 id="variables">Variables</h2>
 <p>Variables are 0 initialised, <code>false</code> for bool and <code>""</code> for strings.  Explicit types are used with the <code>var name type</code> </p>
@@ -222,32 +209,33 @@ u := uint(f)
 <span class="p">}</span>
 </code></pre></div></article>
 
-      
-      <p class="backlinks"><span class="bold">Incoming:</span>
-          
-          <a href="/mastodon-thread-unroller">Mastodon Thread Unroller</a>
-          
-        </span>
-      </p>
-      
-
-      
-
-        
-
-
-      
-        
-      
-
-    </main>
-    <footer>
-      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Development/Programming Languages/Go/Go.md">edit</a> -
-      <a href="/dictionary">random</a> -
-      <a href="/recent-changes">updates</a> -
-      <a href="/tags">tags</a> -
-      <a href="/sitemap">sitemap</a>
-    </footer>
     
-  </body>
+    <p class="backlinks"><span class="bold">Incoming:</span>
+      
+      <a href="/mastodon-thread-unroller">Mastodon Thread Unroller</a>
+      
+      </span>
+    </p>
+    
+
+    
+
+
+
+
+    
+    
+    
+
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Development/Programming Languages/Go/Go.md">edit</a> -
+    <a href="/mastodon-thread-unroller">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
 </html>

@@ -1,127 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="/static/styles/colors.css" />
-    <link rel="stylesheet" href="/static/styles/global.css" />
-    <link rel="stylesheet" href="/static/styles/code.css" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/static/icon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/static/icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/static/icon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/static/icon/site.webmanifest" />
-    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
-    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#603cba" />
-    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
-    <meta name="theme-color" content="#282A36" />
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <title>notes: snakeware</title>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: snakeware</title>
+</head>
 
-  <body>
-     <nav>
+<body>
+  <nav>
 
-      <div class="main-icon">
-        <a href="/">
-          <img src="/static/icon/icon.png" alt="notes" height="100">
-        </a>
-      </div>
-      
-      <div class="nav-segments-container">
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
       <div class="nav-segments">
         
 
-          <div class="flex flex-col nav-links text-left">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/archive">Archive</a>
-            
           
-            
-            <a href="/meta">Meta</a>
-            
+          <a href="/archive">Archive</a>
           
-            
-            <a href="/notes">Notes</a>
-            
           
-            
-            <a href="/projects" class="activated-link">Projects</a>
-            
           
-          </div>
+          <a href="/meta">Meta</a>
+          
+          
+          
+          <a href="/notes">Notes</a>
+          
+          
+          
+          <a href="/projects" class="activated-link">Projects</a>
+          
+          
+        </div>
         
 
         
 
-          <div class="flex flex-col text-left nav-links">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/alculator">Alculator</a>
-            
           
-            
-            <a href="/covid-19-tracker">COVID-19 Tracker</a>
-            
+          <a href="/alculator">Alculator</a>
           
-            
-            <a href="/mastodon-thread-unroller">Mastodon Thread Unroller</a>
-            
           
-            
-            <a href="/minecraftle">Minecraftle</a>
-            
           
-            
-            <a href="/ochrs">Ochrs</a>
-            
+          <a href="/covid-19-tracker">COVID-19 Tracker</a>
           
-            
-            <a href="/penultimate-guitar">Penultimate Guitar</a>
-            
           
-            
-            <a href="/status-messenger">Status Messenger</a>
-            
           
-            
-            <a href="/ironprof">ironprof</a>
-            
+          <a href="/mastodon-thread-unroller">Mastodon Thread Unroller</a>
           
-            
-            <a href="/snakeware" class="activated-link">snakeware</a>
-            
           
-          </div>
+          
+          <a href="/minecraftle">Minecraftle</a>
+          
+          
+          
+          <a href="/ochrs">Ochrs</a>
+          
+          
+          
+          <a href="/penultimate-guitar">Penultimate Guitar</a>
+          
+          
+          
+          <a href="/status-messenger">Status Messenger</a>
+          
+          
+          
+          <a href="/ironprof">ironprof</a>
+          
+          
+          
+          <a href="/snakeware" class="activated-link">snakeware</a>
+          
+          
+        </div>
         
 
         
       </div>
-      </div>
+    </div>
 
-    </nav>
-    <main>
-      <header>
-        <h1>snakeware</h1>
-      </header>
-      <article><p>A Linux-based operating system with a pure Python userspace.</p>
+  </nav>
+  <main>
+    <header>
+      <h1>snakeware</h1>
+    </header>
+    <article><p>A Linux-based operating system with a pure Python userspace.</p>
 <p><img alt="" src="/media/snakeware.png" /></p>
 <p>snakeware is an experimental OS with developed in 2020.  Its userspace is written entirely in Python, barring a single Busybox root process.  It was created by Joshua Moore drawing inspiration from the Commodore 64.  The window manager, snakewm, is written primarily with pygame_gui.  It is not based on X11 or Wayland, instead writing directly to the framebuffer (<code>/dev/fb0</code>).</p>
 <p>On first boot, snakeware launches you directly a the Python interpreter.  From here you can run Python commands directly, launch the window manager, or launch CLI games.
@@ -142,25 +129,26 @@ Games included as of 2022 are snake, snakepaint, and circlez.</p>
 <li><a href="https://github.com/Cyppa/CATH-for-Snakeware">CATH text editor</a></li>
 </ul></article>
 
-      
-
-      
-
-        
-
-
-      
-        
-      
-
-    </main>
-    <footer>
-      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Projects/snakeware.md">edit</a> -
-      <a href="/windows-11-without-a-microsoft-account">random</a> -
-      <a href="/recent-changes">updates</a> -
-      <a href="/tags">tags</a> -
-      <a href="/sitemap">sitemap</a>
-    </footer>
     
-  </body>
+
+    
+
+
+
+
+    
+    
+    
+
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Projects/snakeware.md">edit</a> -
+    <a href="/w12l02---exam-prep">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
 </html>

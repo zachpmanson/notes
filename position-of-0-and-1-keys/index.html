@@ -1,123 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="/static/styles/colors.css" />
-    <link rel="stylesheet" href="/static/styles/global.css" />
-    <link rel="stylesheet" href="/static/styles/code.css" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/static/icon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/static/icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/static/icon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/static/icon/site.webmanifest" />
-    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
-    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#603cba" />
-    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
-    <meta name="theme-color" content="#282A36" />
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <title>notes: position of 0 and 1 keys</title>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: position of 0 and 1 keys</title>
+</head>
 
-  <body>
-     <nav>
+<body>
+  <nav>
 
-      <div class="main-icon">
-        <a href="/">
-          <img src="/static/icon/icon.png" alt="notes" height="100">
-        </a>
-      </div>
-      
-      <div class="nav-segments-container">
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
       <div class="nav-segments">
         
 
-          <div class="flex flex-col nav-links text-left">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/development">Development</a>
-            
           
-            
-            <a href="/gnu">GNU</a>
-            
+          <a href="/development">Development</a>
           
-            
-            <a href="/machine-learning">Machine Learning</a>
-            
           
-            
-            <a href="/mistakes" class="activated-link">Mistakes</a>
-            
           
-            
-            <a href="/open-source-philosophy">Open Source Philosophy</a>
-            
+          <a href="/gnu">GNU</a>
           
-            
-            <a href="/program-names">Program Names</a>
-            
           
-            
-            <a href="/programs">Programs</a>
-            
           
-            
-            <a href="/self-hosting">Self-Hosting</a>
-            
+          <a href="/machine-learning">Machine Learning</a>
           
-            
-            <a href="/unix">Unix</a>
-            
           
-          </div>
+          
+          <a href="/mistakes" class="activated-link">Mistakes</a>
+          
+          
+          
+          <a href="/open-source-philosophy">Open Source Philosophy</a>
+          
+          
+          
+          <a href="/program-names">Program Names</a>
+          
+          
+          
+          <a href="/programs">Programs</a>
+          
+          
+          
+          <a href="/self-hosting">Self-Hosting</a>
+          
+          
+          
+          <a href="/unix">Unix</a>
+          
+          
+        </div>
         
 
         
 
-          <div class="flex flex-col text-left nav-links">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/dotfiles-being-hidden">Dotfiles Being Hidden</a>
-            
           
-            
-            <a href="/position-of-0-and-1-keys" class="activated-link">Position of 0 and 1 Keys</a>
-            
+          <a href="/dotfiles-being-hidden">Dotfiles Being Hidden</a>
           
-            
-            <a href="/referer-http-field">Referer HTTP Field</a>
-            
           
-          </div>
+          
+          <a href="/position-of-0-and-1-keys" class="activated-link">Position of 0 and 1 Keys</a>
+          
+          
+          
+          <a href="/referer-http-field">Referer HTTP Field</a>
+          
+          
+        </div>
         
 
         
       </div>
-      </div>
+    </div>
 
-    </nav>
-    <main>
-      <header>
-        <h1>Position of 0 and 1 Keys</h1>
-      </header>
-      <article><p>On modern QWERTY keyboards, <code>1</code> is positioned at on the left of the keyboard and <code>0</code> is positioned on the right.  Despite being commonplace this is actually a strange arrangement.  The reason for this is due to the design of typewriters.</p>
+  </nav>
+  <main>
+    <header>
+      <h1>Position of 0 and 1 Keys</h1>
+    </header>
+    <article><p>On modern QWERTY keyboards, <code>1</code> is positioned at on the left of the keyboard and <code>0</code> is positioned on the right.  Despite being commonplace this is actually a strange arrangement.  The reason for this is due to the design of typewriters.</p>
 <blockquote>
 <p>Keyboard layouts have evolved over time, usually alongside major technology changes. Particularly influential have been: the <a href="https://en.wikipedia.org/wiki/Sholes_and_Glidden_typewriter" title="Sholes and Glidden typewriter">Sholes and Glidden typewriter</a> (1874, also known as Remington No. 1), the first commercially successful typewriter, which introduced <a href="https://en.wikipedia.org/wiki/QWERTY" title="QWERTY">QWERTY</a> its successor, the Remington No. 2 (1878), which introduced the shift key; the <a href="https://en.wikipedia.org/wiki/IBM_Selectric" title="IBM Selectric">IBM Selectric</a> (1961), a very influential electric typewriter, which was imitated by computer keyboards and the <a href="https://en.wikipedia.org/wiki/IBM_PC" title="IBM PC">IBM PC</a> (1981), namely the <a href="https://en.wikipedia.org/wiki/Model_M" title="Model M">Model M</a> (1985), which is the basis for many modern keyboard layouts.</p>
 </blockquote>
@@ -126,32 +113,33 @@
 <p>Once the shift key was introduced, <code>l</code> was favoured as a replacement <code>1</code> as required a single keystroke rather than two for <code>I</code>.  This heralded the addition of the <code>0</code> key as <code>O</code> required a second keypress to on these machines.  <code>234567890</code> was considered better than <code>023456789</code>, so was placed at the end of the numbers row.  A <code>1</code> key was later widely added and was placed at the start, but the convention of <code>0</code> on the far right was already established.</p>
 <p>Adapted from <a href="https://www.reddit.com/r/explainlikeimfive/comments/35kfo0/eli5_why_does_0_come_after_9_on_the_keyboard_and/cr5f93y/">these</a> <a href="https://ux.stackexchange.com/questions/76446/why-is-the-0-next-to-9-not-next-to-1">posts</a>.</p></article>
 
-      
-
-      
-      <p class="backlinks"><span class="bold">Tags:</span>
-          
-          <a href="/tags#relics">#relics</a>
-          
-        </span>
-      </p>
-      
-
-        
-
-
-      
-        
-      
-
-    </main>
-    <footer>
-      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Mistakes/Position of 0 and 1 Keys.md">edit</a> -
-      <a href="/practical-deep-learning">random</a> -
-      <a href="/recent-changes">updates</a> -
-      <a href="/tags">tags</a> -
-      <a href="/sitemap">sitemap</a>
-    </footer>
     
-  </body>
+
+    
+    <p class="backlinks"><span class="bold">Tags:</span>
+      
+      <a href="/tags#relics">#relics</a>
+      
+      </span>
+    </p>
+    
+
+
+
+
+    
+    
+    
+
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Mistakes/Position of 0 and 1 Keys.md">edit</a> -
+    <a href="/windows-11-without-a-microsoft-account">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
 </html>

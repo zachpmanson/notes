@@ -1,143 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="/static/styles/colors.css" />
-    <link rel="stylesheet" href="/static/styles/global.css" />
-    <link rel="stylesheet" href="/static/styles/code.css" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/static/icon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/static/icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/static/icon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/static/icon/site.webmanifest" />
-    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
-    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#603cba" />
-    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
-    <meta name="theme-color" content="#282A36" />
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <title>notes: self-hosting</title>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: self-hosting</title>
+</head>
 
-  <body>
-     <nav>
+<body>
+  <nav>
 
-      <div class="main-icon">
-        <a href="/">
-          <img src="/static/icon/icon.png" alt="notes" height="100">
-        </a>
-      </div>
-      
-      <div class="nav-segments-container">
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
       <div class="nav-segments">
         
 
-          <div class="flex flex-col nav-links text-left">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/art">Art</a>
-            
           
-            
-            <a href="/courses">Courses</a>
-            
+          <a href="/art">Art</a>
           
-            
-            <a href="/internet">Internet</a>
-            
           
-            
-            <a href="/language">Language</a>
-            
           
-            
-            <a href="/mathematics">Mathematics</a>
-            
+          <a href="/courses">Courses</a>
           
-            
-            <a href="/miscellany">Miscellany</a>
-            
           
-            
-            <a href="/music">Music</a>
-            
           
-            
-            <a href="/software" class="activated-link">Software</a>
-            
+          <a href="/internet">Internet</a>
           
-          </div>
+          
+          
+          <a href="/language">Language</a>
+          
+          
+          
+          <a href="/mathematics">Mathematics</a>
+          
+          
+          
+          <a href="/miscellany">Miscellany</a>
+          
+          
+          
+          <a href="/music">Music</a>
+          
+          
+          
+          <a href="/software" class="activated-link">Software</a>
+          
+          
+        </div>
         
 
         
 
-          <div class="flex flex-col text-left nav-links">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/development">Development</a>
-            
           
-            
-            <a href="/gnu">GNU</a>
-            
+          <a href="/development">Development</a>
           
-            
-            <a href="/machine-learning">Machine Learning</a>
-            
           
-            
-            <a href="/mistakes">Mistakes</a>
-            
           
-            
-            <a href="/open-source-philosophy">Open Source Philosophy</a>
-            
+          <a href="/gnu">GNU</a>
           
-            
-            <a href="/program-names">Program Names</a>
-            
           
-            
-            <a href="/programs">Programs</a>
-            
           
-            
-            <a href="/self-hosting" class="activated-link">Self-Hosting</a>
-            
+          <a href="/machine-learning">Machine Learning</a>
           
-            
-            <a href="/unix">Unix</a>
-            
           
-          </div>
+          
+          <a href="/mistakes">Mistakes</a>
+          
+          
+          
+          <a href="/open-source-philosophy">Open Source Philosophy</a>
+          
+          
+          
+          <a href="/program-names">Program Names</a>
+          
+          
+          
+          <a href="/programs">Programs</a>
+          
+          
+          
+          <a href="/self-hosting" class="activated-link">Self-Hosting</a>
+          
+          
+          
+          <a href="/unix">Unix</a>
+          
+          
+        </div>
         
 
         
       </div>
-      </div>
+    </div>
 
-    </nav>
-    <main>
-      <header>
-        <h1>Self-Hosting</h1>
-      </header>
-      <article><p>Notes on the process of running services on your own machines.</p>
+  </nav>
+  <main>
+    <header>
+      <h1>Self-Hosting</h1>
+    </header>
+    <article><p>Notes on the process of running services on your own machines.</p>
 <p>Self-hosting allows you to have full control over your own data.  This comes at the cost of needing to manage your own data, a tradeoff everyone will have consider for themselves.</p>
 <p>Nextcloud is a fantastic platform you can use to self-host a number of different services.  It isn't without its hiccups but its generally quite easy to set up (see <a href="/nextcloud-phone-photo-upload">Nextcloud Phone Photo Upload</a>).  I personally run a Nextcloud instance for sharing files, backups, and managing my RSS feeds (<a href="https://github.com/nextcloud/news">Nextcloud News</a>).</p>
 <h2 id="links">Links</h2>
@@ -145,32 +132,33 @@
 <li><a href="https://github.com/awesome-selfhosted/awesome-selfhosted">Awesome Selfhosted</a>, a huge list of self-hosting resources from /r/selfhosting</li>
 </ul></article>
 
-      
-
-      
-      <p class="backlinks"><span class="bold">Tags:</span>
-          
-          <a href="/tags#self-hosting">#self-hosting</a>
-          
-        </span>
-      </p>
-      
-
-        
-
-
-      
-        
-      
-
-    </main>
-    <footer>
-      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Self-Hosting.md">edit</a> -
-      <a href="/ellsbergs-advice-for-kissinger">random</a> -
-      <a href="/recent-changes">updates</a> -
-      <a href="/tags">tags</a> -
-      <a href="/sitemap">sitemap</a>
-    </footer>
     
-  </body>
+
+    
+    <p class="backlinks"><span class="bold">Tags:</span>
+      
+      <a href="/tags#self-hosting">#self-hosting</a>
+      
+      </span>
+    </p>
+    
+
+
+
+
+    
+    
+    
+
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Self-Hosting.md">edit</a> -
+    <a href="/notes">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
 </html>

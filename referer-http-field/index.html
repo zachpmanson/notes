@@ -1,151 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="/static/styles/colors.css" />
-    <link rel="stylesheet" href="/static/styles/global.css" />
-    <link rel="stylesheet" href="/static/styles/code.css" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/static/icon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/static/icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/static/icon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/static/icon/site.webmanifest" />
-    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
-    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#603cba" />
-    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
-    <meta name="theme-color" content="#282A36" />
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <title>notes: referer http field</title>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: referer http field</title>
+</head>
 
-  <body>
-     <nav>
+<body>
+  <nav>
 
-      <div class="main-icon">
-        <a href="/">
-          <img src="/static/icon/icon.png" alt="notes" height="100">
-        </a>
-      </div>
-      
-      <div class="nav-segments-container">
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
       <div class="nav-segments">
         
 
-          <div class="flex flex-col nav-links text-left">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/development">Development</a>
-            
           
-            
-            <a href="/gnu">GNU</a>
-            
+          <a href="/development">Development</a>
           
-            
-            <a href="/machine-learning">Machine Learning</a>
-            
           
-            
-            <a href="/mistakes" class="activated-link">Mistakes</a>
-            
           
-            
-            <a href="/open-source-philosophy">Open Source Philosophy</a>
-            
+          <a href="/gnu">GNU</a>
           
-            
-            <a href="/program-names">Program Names</a>
-            
           
-            
-            <a href="/programs">Programs</a>
-            
           
-            
-            <a href="/self-hosting">Self-Hosting</a>
-            
+          <a href="/machine-learning">Machine Learning</a>
           
-            
-            <a href="/unix">Unix</a>
-            
           
-          </div>
+          
+          <a href="/mistakes" class="activated-link">Mistakes</a>
+          
+          
+          
+          <a href="/open-source-philosophy">Open Source Philosophy</a>
+          
+          
+          
+          <a href="/program-names">Program Names</a>
+          
+          
+          
+          <a href="/programs">Programs</a>
+          
+          
+          
+          <a href="/self-hosting">Self-Hosting</a>
+          
+          
+          
+          <a href="/unix">Unix</a>
+          
+          
+        </div>
         
 
         
 
-          <div class="flex flex-col text-left nav-links">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/dotfiles-being-hidden">Dotfiles Being Hidden</a>
-            
           
-            
-            <a href="/position-of-0-and-1-keys">Position of 0 and 1 Keys</a>
-            
+          <a href="/dotfiles-being-hidden">Dotfiles Being Hidden</a>
           
-            
-            <a href="/referer-http-field" class="activated-link">Referer HTTP Field</a>
-            
           
-          </div>
+          
+          <a href="/position-of-0-and-1-keys">Position of 0 and 1 Keys</a>
+          
+          
+          
+          <a href="/referer-http-field" class="activated-link">Referer HTTP Field</a>
+          
+          
+        </div>
         
 
         
       </div>
-      </div>
+    </div>
 
-    </nav>
-    <main>
-      <header>
-        <h1>Referer HTTP Field</h1>
-      </header>
-      <article><p>"Referer" is a field in the HTTP request headers that contains the previous page that linked to the requested page. This misspelling of the word "referrer" was present in the original proposal for the field in the HTTP specification, made by Phillip Hallam-Baker. This spelling was then widely implemented by the software of the time, and solidified by RFC 1945 which documented the HTTP/1.0 protocol as it was being contemporarily used.</p>
+  </nav>
+  <main>
+    <header>
+      <h1>Referer HTTP Field</h1>
+    </header>
+    <article><p>"Referer" is a field in the HTTP request headers that contains the previous page that linked to the requested page. This misspelling of the word "referrer" was present in the original proposal for the field in the HTTP specification, made by Phillip Hallam-Baker. This spelling was then widely implemented by the software of the time, and solidified by RFC 1945 which documented the HTTP/1.0 protocol as it was being contemporarily used.</p>
 <p>More details on this can be found on this field and its etymology on its <a href="https://en.wikipedia.org/wiki/HTTP_referer">Wikipedia entry</a>.</p></article>
 
-      
-
-      
-      <p class="backlinks"><span class="bold">Tags:</span>
-          
-          <a href="/tags#relics">#relics</a>
-          
-        </span>
-      </p>
-      
-
-        
-
-
-      
-        
-      
-
-    </main>
-    <footer>
-      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Mistakes/Referer HTTP Field.md">edit</a> -
-      <a href="/alculator">random</a> -
-      <a href="/recent-changes">updates</a> -
-      <a href="/tags">tags</a> -
-      <a href="/sitemap">sitemap</a>
-    </footer>
     
-  </body>
+
+    
+    <p class="backlinks"><span class="bold">Tags:</span>
+      
+      <a href="/tags#relics">#relics</a>
+      
+      </span>
+    </p>
+    
+
+
+
+
+    
+    
+    
+
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Mistakes/Referer HTTP Field.md">edit</a> -
+    <a href="/low-rank-adaptation">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
 </html>

@@ -1,127 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="/static/styles/colors.css" />
-    <link rel="stylesheet" href="/static/styles/global.css" />
-    <link rel="stylesheet" href="/static/styles/code.css" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/static/icon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/static/icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/static/icon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/static/icon/site.webmanifest" />
-    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
-    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#603cba" />
-    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
-    <meta name="theme-color" content="#282A36" />
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <title>notes: status messenger</title>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: status messenger</title>
+</head>
 
-  <body>
-     <nav>
+<body>
+  <nav>
 
-      <div class="main-icon">
-        <a href="/">
-          <img src="/static/icon/icon.png" alt="notes" height="100">
-        </a>
-      </div>
-      
-      <div class="nav-segments-container">
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
       <div class="nav-segments">
         
 
-          <div class="flex flex-col nav-links text-left">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/archive">Archive</a>
-            
           
-            
-            <a href="/meta">Meta</a>
-            
+          <a href="/archive">Archive</a>
           
-            
-            <a href="/notes">Notes</a>
-            
           
-            
-            <a href="/projects" class="activated-link">Projects</a>
-            
           
-          </div>
+          <a href="/meta">Meta</a>
+          
+          
+          
+          <a href="/notes">Notes</a>
+          
+          
+          
+          <a href="/projects" class="activated-link">Projects</a>
+          
+          
+        </div>
         
 
         
 
-          <div class="flex flex-col text-left nav-links">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/alculator">Alculator</a>
-            
           
-            
-            <a href="/covid-19-tracker">COVID-19 Tracker</a>
-            
+          <a href="/alculator">Alculator</a>
           
-            
-            <a href="/mastodon-thread-unroller">Mastodon Thread Unroller</a>
-            
           
-            
-            <a href="/minecraftle">Minecraftle</a>
-            
           
-            
-            <a href="/ochrs">Ochrs</a>
-            
+          <a href="/covid-19-tracker">COVID-19 Tracker</a>
           
-            
-            <a href="/penultimate-guitar">Penultimate Guitar</a>
-            
           
-            
-            <a href="/status-messenger" class="activated-link">Status Messenger</a>
-            
           
-            
-            <a href="/ironprof">ironprof</a>
-            
+          <a href="/mastodon-thread-unroller">Mastodon Thread Unroller</a>
           
-            
-            <a href="/snakeware">snakeware</a>
-            
           
-          </div>
+          
+          <a href="/minecraftle">Minecraftle</a>
+          
+          
+          
+          <a href="/ochrs">Ochrs</a>
+          
+          
+          
+          <a href="/penultimate-guitar">Penultimate Guitar</a>
+          
+          
+          
+          <a href="/status-messenger" class="activated-link">Status Messenger</a>
+          
+          
+          
+          <a href="/ironprof">ironprof</a>
+          
+          
+          
+          <a href="/snakeware">snakeware</a>
+          
+          
+        </div>
         
 
         
       </div>
-      </div>
+    </div>
 
-    </nav>
-    <main>
-      <header>
-        <h1>Status Messenger</h1>
-      </header>
-      <article><p>Status Messenger is an extension for VS Code (and <a href="https://vscodium.com/">VSCodium</a>) that places a message in the editor status bar that is periodically updated by a remote server.  This was built so that I could shame people at work with a counter that said how many days its been since somebody broke a prod deployment.</p>
+  </nav>
+  <main>
+    <header>
+      <h1>Status Messenger</h1>
+    </header>
+    <article><p>Status Messenger is an extension for VS Code (and <a href="https://vscodium.com/">VSCodium</a>) that places a message in the editor status bar that is periodically updated by a remote server.  This was built so that I could shame people at work with a counter that said how many days its been since somebody broke a prod deployment.</p>
 <p><img alt="" src="/media/status-messenger-1.png" /></p>
 <p>On install, the user will be prompted to enter a URL.  This URL should be an API that responds with a message with the following schema:
 <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"> </span><span class="p">[</span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">}</span>
@@ -141,34 +128,35 @@
 <p>The URL and variant is stored per workspace, so different workspaces can have different servers or variants.</p>
 <p>The extension is built with TypeScript and is available on <a href="https://marketplace.visualstudio.com/items?itemName=ZachManson.status-messenger">VS Code Marketplace</a> and <a href="https://open-vsx.org/extension/ZachManson/status-messenger">Open VSX</a>.  The source code is available on <a href="https://github.com/pavo-etc/status-messenger">GitHub</a>.</p></article>
 
-      
-      <p class="backlinks"><span class="bold">Incoming:</span>
-          
-          <a href="/dns">DNS</a>
-          
-          <a href="/projects">Projects</a>
-          
-        </span>
-      </p>
-      
-
-      
-
-        
-
-
-      
-        
-      
-
-    </main>
-    <footer>
-      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Projects/Status Messenger.md">edit</a> -
-      <a href="/firefox-photon">random</a> -
-      <a href="/recent-changes">updates</a> -
-      <a href="/tags">tags</a> -
-      <a href="/sitemap">sitemap</a>
-    </footer>
     
-  </body>
+    <p class="backlinks"><span class="bold">Incoming:</span>
+      
+      <a href="/dns">DNS</a>
+      
+      <a href="/projects">Projects</a>
+      
+      </span>
+    </p>
+    
+
+    
+
+
+
+
+    
+    
+    
+
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Projects/Status Messenger.md">edit</a> -
+    <a href="/run-latest-npx-script-version">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
 </html>

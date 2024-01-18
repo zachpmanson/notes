@@ -1,135 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="/static/styles/colors.css" />
-    <link rel="stylesheet" href="/static/styles/global.css" />
-    <link rel="stylesheet" href="/static/styles/code.css" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/static/icon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/static/icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/static/icon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/static/icon/site.webmanifest" />
-    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
-    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#603cba" />
-    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
-    <meta name="theme-color" content="#282A36" />
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <title>notes: gecos</title>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: gecos</title>
+</head>
 
-  <body>
-     <nav>
+<body>
+  <nav>
 
-      <div class="main-icon">
-        <a href="/">
-          <img src="/static/icon/icon.png" alt="notes" height="100">
-        </a>
-      </div>
-      
-      <div class="nav-segments-container">
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
       <div class="nav-segments">
         
 
-          <div class="flex flex-col nav-links text-left">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/development">Development</a>
-            
           
-            
-            <a href="/gnu">GNU</a>
-            
+          <a href="/development">Development</a>
           
-            
-            <a href="/machine-learning">Machine Learning</a>
-            
           
-            
-            <a href="/mistakes">Mistakes</a>
-            
           
-            
-            <a href="/open-source-philosophy">Open Source Philosophy</a>
-            
+          <a href="/gnu">GNU</a>
           
-            
-            <a href="/program-names">Program Names</a>
-            
           
-            
-            <a href="/programs">Programs</a>
-            
           
-            
-            <a href="/self-hosting">Self-Hosting</a>
-            
+          <a href="/machine-learning">Machine Learning</a>
           
-            
-            <a href="/unix" class="activated-link">Unix</a>
-            
           
-          </div>
+          
+          <a href="/mistakes">Mistakes</a>
+          
+          
+          
+          <a href="/open-source-philosophy">Open Source Philosophy</a>
+          
+          
+          
+          <a href="/program-names">Program Names</a>
+          
+          
+          
+          <a href="/programs">Programs</a>
+          
+          
+          
+          <a href="/self-hosting">Self-Hosting</a>
+          
+          
+          
+          <a href="/unix" class="activated-link">Unix</a>
+          
+          
+        </div>
         
 
         
 
-          <div class="flex flex-col text-left nav-links">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/gecos" class="activated-link">GECOS</a>
-            
           
-            
-            <a href="/linux">Linux</a>
-            
+          <a href="/gecos" class="activated-link">GECOS</a>
           
-            
-            <a href="/unix-files">Unix Files</a>
-            
           
-            
-            <a href="/unix-processes">Unix Processes</a>
-            
           
-            
-            <a href="/unix-programs">Unix Programs</a>
-            
+          <a href="/linux">Linux</a>
           
-            
-            <a href="/macos">macOS</a>
-            
           
-          </div>
+          
+          <a href="/unix-files">Unix Files</a>
+          
+          
+          
+          <a href="/unix-processes">Unix Processes</a>
+          
+          
+          
+          <a href="/unix-programs">Unix Programs</a>
+          
+          
+          
+          <a href="/macos">macOS</a>
+          
+          
+        </div>
         
 
         
       </div>
-      </div>
+    </div>
 
-    </nav>
-    <main>
-      <header>
-        <h1>GECOS</h1>
-      </header>
-      <article><p>When creating a new user account using the <code>adduser</code> program on Unix machines there is a field called GECOS that conventionally used to store information about the user, such as their real name or phone number.</p>
+  </nav>
+  <main>
+    <header>
+      <h1>GECOS</h1>
+    </header>
+    <article><p>When creating a new user account using the <code>adduser</code> program on Unix machines there is a field called GECOS that conventionally used to store information about the user, such as their real name or phone number.</p>
 <div class="highlight"><pre><span></span><code>adduser 
     [options] 
     [--home DIR]
@@ -151,36 +138,37 @@ information if this option is given.
 </code></pre></div>
 <p>The cryptic title is not explained in the man pages.  This field is called GECOS as it was originally used to describe the purpose of machines running the <a href="https://en.wikipedia.org/wiki/General_Comprehensive_Operating_System">General Electric Comprehensive Operating System</a> (GECOS), which had user accounts set up to access the services running on those machines, such as print spooling.  This field was added to <code>/etc/passwd</code>, and was later repurposed to contain identifying information on each user.  This anachronism has managed to persist into modern Unix and Linux system to this day.</p></article>
 
-      
-
-      
-      <p class="backlinks"><span class="bold">Tags:</span>
-          
-          <a href="/tags#linux">#linux</a>
-          
-          <a href="/tags#relics">#relics</a>
-          
-          <a href="/tags#unix">#unix</a>
-          
-        </span>
-      </p>
-      
-
-        
-
-
-      
-        
-      
-
-    </main>
-    <footer>
-      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Unix/GECOS.md">edit</a> -
-      <a href="/life-of-an-oracle-developer">random</a> -
-      <a href="/recent-changes">updates</a> -
-      <a href="/tags">tags</a> -
-      <a href="/sitemap">sitemap</a>
-    </footer>
     
-  </body>
+
+    
+    <p class="backlinks"><span class="bold">Tags:</span>
+      
+      <a href="/tags#relics">#relics</a>
+      
+      <a href="/tags#unix">#unix</a>
+      
+      <a href="/tags#linux">#linux</a>
+      
+      </span>
+    </p>
+    
+
+
+
+
+    
+    
+    
+
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Unix/GECOS.md">edit</a> -
+    <a href="/obsidian">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
 </html>

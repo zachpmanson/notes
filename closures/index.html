@@ -1,107 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="/static/styles/colors.css" />
-    <link rel="stylesheet" href="/static/styles/global.css" />
-    <link rel="stylesheet" href="/static/styles/code.css" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/static/icon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/static/icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/static/icon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/static/icon/site.webmanifest" />
-    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
-    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#603cba" />
-    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
-    <meta name="theme-color" content="#282A36" />
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <title>notes: closures</title>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: closures</title>
+</head>
 
-  <body>
-     <nav>
+<body>
+  <nav>
 
-      <div class="main-icon">
-        <a href="/">
-          <img src="/static/icon/icon.png" alt="notes" height="100">
-        </a>
-      </div>
-      
-      <div class="nav-segments-container">
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
       <div class="nav-segments">
         
 
-          <div class="flex flex-col nav-links text-left">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/datetime">DateTime</a>
-            
           
-            
-            <a href="/debugging">Debugging</a>
-            
+          <a href="/datetime">DateTime</a>
           
-            
-            <a href="/markdown">Markdown</a>
-            
           
-            
-            <a href="/oauth">OAuth</a>
-            
           
-            
-            <a href="/programming-concepts" class="activated-link">Programming Concepts</a>
-            
+          <a href="/debugging">Debugging</a>
           
-            
-            <a href="/programming-languages">Programming Languages</a>
-            
           
-            
-            <a href="/web-development">Web Development</a>
-            
           
-          </div>
+          <a href="/markdown">Markdown</a>
+          
+          
+          
+          <a href="/oauth">OAuth</a>
+          
+          
+          
+          <a href="/programming-concepts" class="activated-link">Programming Concepts</a>
+          
+          
+          
+          <a href="/programming-languages">Programming Languages</a>
+          
+          
+          
+          <a href="/web-development">Web Development</a>
+          
+          
+        </div>
         
 
         
 
-          <div class="flex flex-col text-left nav-links">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/closures" class="activated-link">Closures</a>
-            
           
-          </div>
+          <a href="/closures" class="activated-link">Closures</a>
+          
+          
+        </div>
         
 
         
       </div>
-      </div>
+    </div>
 
-    </nav>
-    <main>
-      <header>
-        <h1>Closures</h1>
-      </header>
-      <article><p>Closures are local variable scopes that can persist even after code execution has moved outside of the original block.  As long as a reference to the persisting scope is present in the external code execution context, variables from that scope can be accessed.  This allows functions to be portable and used in ways they otherwise cannot.</p>
+  </nav>
+  <main>
+    <header>
+      <h1>Closures</h1>
+    </header>
+    <article><p>Closures are local variable scopes that can persist even after code execution has moved outside of the original block.  As long as a reference to the persisting scope is present in the external code execution context, variables from that scope can be accessed.  This allows functions to be portable and used in ways they otherwise cannot.</p>
 <p>Example from <a href="https://stackoverflow.com/a/7464475">this excellent StackOverflow answer</a>.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">outer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="kd">let</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1</span><span class="p">;</span>
@@ -116,25 +103,26 @@
 </code></pre></div>
 <p>Languages that support closures usually have garbage collection, as languages that "run-time memory model allocates all automatic variables on a linear stack" (see <a href="https://en.wikipedia.org/wiki/Closure_(computer_programming)#Implementation_and_theory">Wikipedia</a>) will deallocate locally scoped pointers automatically.  Languages that support closures include JavaScript, Python and Swift.  Other languages are capable of emulating this behaviour with similar such as anonymous inner classes in Java &lt;8 (closures were added with lambda functions in Java 8).</p></article>
 
-      
-
-      
-
-        
-
-
-      
-        
-      
-
-    </main>
-    <footer>
-      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Development/Programming Concepts/Closures.md">edit</a> -
-      <a href="/gruntle">random</a> -
-      <a href="/recent-changes">updates</a> -
-      <a href="/tags">tags</a> -
-      <a href="/sitemap">sitemap</a>
-    </footer>
     
-  </body>
+
+    
+
+
+
+
+    
+    
+    
+
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Development/Programming Concepts/Closures.md">edit</a> -
+    <a href="/aliens-and-calendars">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
 </html>

@@ -1,166 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="/static/styles/colors.css" />
-    <link rel="stylesheet" href="/static/styles/global.css" />
-    <link rel="stylesheet" href="/static/styles/code.css" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/static/icon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/static/icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/static/icon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/static/icon/site.webmanifest" />
-    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
-    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#603cba" />
-    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
-    <meta name="theme-color" content="#282A36" />
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <title>notes: minecraftle</title>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: minecraftle</title>
+</head>
 
-  <body>
-     <nav>
+<body>
+  <nav>
 
-      <div class="main-icon">
-        <a href="/">
-          <img src="/static/icon/icon.png" alt="notes" height="100">
-        </a>
-      </div>
-      
-      <div class="nav-segments-container">
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
       <div class="nav-segments">
         
 
-          <div class="flex flex-col nav-links text-left">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/archive">Archive</a>
-            
           
-            
-            <a href="/meta">Meta</a>
-            
+          <a href="/archive">Archive</a>
           
-            
-            <a href="/notes">Notes</a>
-            
           
-            
-            <a href="/projects" class="activated-link">Projects</a>
-            
           
-          </div>
+          <a href="/meta">Meta</a>
+          
+          
+          
+          <a href="/notes">Notes</a>
+          
+          
+          
+          <a href="/projects" class="activated-link">Projects</a>
+          
+          
+        </div>
         
 
         
 
-          <div class="flex flex-col text-left nav-links">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/alculator">Alculator</a>
-            
           
-            
-            <a href="/covid-19-tracker">COVID-19 Tracker</a>
-            
+          <a href="/alculator">Alculator</a>
           
-            
-            <a href="/mastodon-thread-unroller">Mastodon Thread Unroller</a>
-            
           
-            
-            <a href="/minecraftle" class="activated-link">Minecraftle</a>
-            
           
-            
-            <a href="/ochrs">Ochrs</a>
-            
+          <a href="/covid-19-tracker">COVID-19 Tracker</a>
           
-            
-            <a href="/penultimate-guitar">Penultimate Guitar</a>
-            
           
-            
-            <a href="/status-messenger">Status Messenger</a>
-            
           
-            
-            <a href="/ironprof">ironprof</a>
-            
+          <a href="/mastodon-thread-unroller">Mastodon Thread Unroller</a>
           
-            
-            <a href="/snakeware">snakeware</a>
-            
           
-          </div>
+          
+          <a href="/minecraftle" class="activated-link">Minecraftle</a>
+          
+          
+          
+          <a href="/ochrs">Ochrs</a>
+          
+          
+          
+          <a href="/penultimate-guitar">Penultimate Guitar</a>
+          
+          
+          
+          <a href="/status-messenger">Status Messenger</a>
+          
+          
+          
+          <a href="/ironprof">ironprof</a>
+          
+          
+          
+          <a href="/snakeware">snakeware</a>
+          
+          
+        </div>
         
 
         
       </div>
-      </div>
+    </div>
 
-    </nav>
-    <main>
-      <header>
-        <h1>Minecraftle</h1>
-      </header>
-      <article><p>Minecraftle is a game fusing the gameplay of Wordle with crafting recipes from Minecraft.  It started as a university project I worked on in 2022 in a small team for <a href="https://teaching.csse.uwa.edu.au/units/CITS3403/">CITS3403</a> (one of the better units in <a href="/uwa-computer-science">UWA Computer Science</a>).  It is built with Vanilla JS+Flask with a SQLite database, and the <a href="https://minecraftle.zachmanson.com">live version</a> is deployed with nginx on DigitalOcean.</p>
+  </nav>
+  <main>
+    <header>
+      <h1>Minecraftle</h1>
+    </header>
+    <article><p>Minecraftle is a game fusing the gameplay of Wordle with crafting recipes from Minecraft.  It started as a university project I worked on in 2022 in a small team for <a href="https://teaching.csse.uwa.edu.au/units/CITS3403/">CITS3403</a> (one of the better units in <a href="/uwa-computer-science">UWA Computer Science</a>).  It is built with Vanilla JS+Flask with a SQLite database, and the <a href="https://minecraftle.zachmanson.com">live version</a> is deployed with nginx on DigitalOcean.</p>
 <p>We received the top mark for the project and I continued development after we submitted it.  The source code is publicly available on the <a href="https://github.com/pavo-etc/minecraftle">repo</a>.  Since submission I've made a number of changes, some of which are enumerated in <a href="https://zachmanson.com/blog/minecraftle-v1.1/">this blog post</a>.</p>
 <p>The game has daily puzzles and global leaderboards, with player count peaking at 300k MAU.</p>
 <p><img alt="" src="/media/minecraftle.png" /></p></article>
 
-      
-      <p class="backlinks"><span class="bold">Incoming:</span>
-          
-          <a href="/javascript-yyyy-mm-dd-in-local-time">JavaScript YYYY-MM-DD in Local Time</a>
-          
-          <a href="/dns">DNS</a>
-          
-        </span>
-      </p>
-      
-
-      
-      <p class="backlinks"><span class="bold">Tags:</span>
-          
-          <a href="/tags#dirty-hacks">#dirty-hacks</a>
-          
-        </span>
-      </p>
-      
-
-        
-
-
-      
-        
-      
-
-    </main>
-    <footer>
-      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Projects/Minecraftle.md">edit</a> -
-      <a href="/kurt-vonnegut-grades">random</a> -
-      <a href="/recent-changes">updates</a> -
-      <a href="/tags">tags</a> -
-      <a href="/sitemap">sitemap</a>
-    </footer>
     
-  </body>
+    <p class="backlinks"><span class="bold">Incoming:</span>
+      
+      <a href="/dns">DNS</a>
+      
+      <a href="/javascript-yyyy-mm-dd-in-local-time">JavaScript YYYY-MM-DD in Local Time</a>
+      
+      </span>
+    </p>
+    
+
+    
+    <p class="backlinks"><span class="bold">Tags:</span>
+      
+      <a href="/tags#dirty-hacks">#dirty-hacks</a>
+      
+      </span>
+    </p>
+    
+
+
+
+
+    
+    
+    
+
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Projects/Minecraftle.md">edit</a> -
+    <a href="/life-of-an-oracle-developer">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
 </html>

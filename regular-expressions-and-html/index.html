@@ -1,347 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="/static/styles/colors.css" />
-    <link rel="stylesheet" href="/static/styles/global.css" />
-    <link rel="stylesheet" href="/static/styles/code.css" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/static/icon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/static/icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/static/icon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/static/icon/site.webmanifest" />
-    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
-    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#603cba" />
-    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
-    <meta name="theme-color" content="#282A36" />
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <title>notes: regular expressions and html</title>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: regular expressions and html</title>
+</head>
 
-  <body>
-     <nav>
+<body>
+  <nav>
 
-      <div class="main-icon">
-        <a href="/">
-          <img src="/static/icon/icon.png" alt="notes" height="100">
-        </a>
-      </div>
-      
-      <div class="nav-segments-container">
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
       <div class="nav-segments">
         
 
-          <div class="flex flex-col nav-links text-left">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/bookmarks">Bookmarks</a>
-            
           
-            
-            <a href="/fiction">Fiction</a>
-            
+          <a href="/bookmarks">Bookmarks</a>
           
-            
-            <a href="/folklore" class="activated-link">Folklore</a>
-            
           
-            
-            <a href="/lines">Lines</a>
-            
           
-            
-            <a href="/problems">Problems</a>
-            
+          <a href="/fiction">Fiction</a>
           
-            
-            <a href="/templates">Templates</a>
-            
           
-          </div>
+          
+          <a href="/folklore" class="activated-link">Folklore</a>
+          
+          
+          
+          <a href="/lines">Lines</a>
+          
+          
+          
+          <a href="/problems">Problems</a>
+          
+          
+          
+          <a href="/templates">Templates</a>
+          
+          
+        </div>
         
 
         
 
-          <div class="flex flex-col text-left nav-links">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/10-rules-of-internet">10 Rules of Internet</a>
-            
           
-            
-            <a href="/a-story-about-magic">A Story About 'Magic'</a>
-            
+          <a href="/10-rules-of-internet">10 Rules of Internet</a>
           
-            
-            <a href="/alice-in-modeland">Alice in Modeland</a>
-            
           
-            
-            <a href="/aliens-and-calendars">Aliens and Calendars</a>
-            
           
-            
-            <a href="/amazons-first-job-posting">Amazon's First Job Posting</a>
-            
+          <a href="/a-story-about-magic">A Story About 'Magic'</a>
           
-            
-            <a href="/bell-labs-productivity-mystery">Bell Labs' Productivity Mystery</a>
-            
           
-            
-            <a href="/best-practices-for-time-travelers">Best Practices for Time Travelers</a>
-            
           
-            
-            <a href="/bill-gates-tries-to-install-windows-movie-maker">Bill Gates Tries To Install Windows Movie Maker</a>
-            
+          <a href="/alice-in-modeland">Alice in Modeland</a>
           
-            
-            <a href="/bill-gates-wrote-fat-on-an-airplane">Bill Gates Wrote FAT on an Airplane</a>
-            
           
-            
-            <a href="/c-locale-braindeath">C Locale Braindeath</a>
-            
           
-            
-            <a href="/cannot-simultaneously-fix-and-keep-job.-therefore-wont-fix.">Cannot simultaneously fix and keep job. Therefore, won't fix.</a>
-            
+          <a href="/aliens-and-calendars">Aliens and Calendars</a>
           
-            
-            <a href="/christ-mcdonald">Christ McDonald</a>
-            
           
-            
-            <a href="/competing-with-gpt">Competing with GPT</a>
-            
           
-            
-            <a href="/digg-v4">Digg v4</a>
-            
+          <a href="/amazons-first-job-posting">Amazon's First Job Posting</a>
           
-            
-            <a href="/dispatch-from-the-cyberpunk-city">Dispatch From the Cyberpunk City</a>
-            
           
-            
-            <a href="/do-things-tell-people">Do Things, Tell People</a>
-            
           
-            
-            <a href="/ellsbergs-advice-for-kissinger">Ellsberg's Advice For Kissinger</a>
-            
+          <a href="/bell-labs-productivity-mystery">Bell Labs' Productivity Mystery</a>
           
-            
-            <a href="/factory-factory-factory">Factory Factory Factory</a>
-            
           
-            
-            <a href="/file-over-app">File Over App</a>
-            
           
-            
-            <a href="/guerilla-open-access-manifesto">Guerilla Open Access Manifesto</a>
-            
+          <a href="/best-practices-for-time-travelers">Best Practices for Time Travelers</a>
           
-            
-            <a href="/heaven-banning">Heaven Banning</a>
-            
           
-            
-            <a href="/incomplete-list-of-mistakes-in-the-design-of-css">Incomplete List of Mistakes in the Design of CSS</a>
-            
           
-            
-            <a href="/kurt-vonnegut-grades">Kurt Vonnegut Grades</a>
-            
+          <a href="/bill-gates-tries-to-install-windows-movie-maker">Bill Gates Tries To Install Windows Movie Maker</a>
           
-            
-            <a href="/life-of-an-oracle-developer">Life of an Oracle Developer</a>
-            
           
-            
-            <a href="/man-spends-entire-career-mastering-crappy-codebase">Man Spends Entire Career Mastering Crappy Codebase</a>
-            
           
-            
-            <a href="/no-dogs-were-harmed-in-the-making-of-this-app">No dogs were harmed in the making of this app</a>
-            
+          <a href="/bill-gates-wrote-fat-on-an-airplane">Bill Gates Wrote FAT on an Airplane</a>
           
-            
-            <a href="/on-the-origins-of-emacs">On the Origins of Emacs</a>
-            
           
-            
-            <a href="/openoffice-cant-print-on-tuesdays">OpenOffice Can't Print on Tuesdays</a>
-            
           
-            
-            <a href="/originality-not-required">Originality Not Required</a>
-            
+          <a href="/c-locale-braindeath">C Locale Braindeath</a>
           
-            
-            <a href="/psd-is-not-my-favourite-file-format">PSD is not my favourite file format</a>
-            
           
-            
-            <a href="/please-drink-verification-can">Please Drink Verification Can</a>
-            
           
-            
-            <a href="/pocket-veto">Pocket Veto</a>
-            
+          <a href="/cannot-simultaneously-fix-and-keep-job.-therefore-wont-fix.">Cannot simultaneously fix and keep job. Therefore, won't fix.</a>
           
-            
-            <a href="/price-of-chatgpts-api-vs-human">Price of ChatGPT's API vs Human</a>
-            
           
-            
-            <a href="/regular-expressions-and-html" class="activated-link">Regular Expressions and HTML</a>
-            
           
-            
-            <a href="/rob-pikes-5-rules-of-programming">Rob Pike's 5 Rules of Programming</a>
-            
+          <a href="/christ-mcdonald">Christ McDonald</a>
           
-            
-            <a href="/rob-pikes-lesson-in-shortcuts">Rob Pike's Lesson in Shortcuts</a>
-            
           
-            
-            <a href="/sre-threats">SRE Threats</a>
-            
           
-            
-            <a href="/steve-yegges-tale-of-geoworks">Steve Yegge's Tale of Geoworks</a>
-            
+          <a href="/competing-with-gpt">Competing with GPT</a>
           
-            
-            <a href="/superstitious-encoding">Superstitious Encoding</a>
-            
           
-            
-            <a href="/the-bitter-lesson">The Bitter Lesson</a>
-            
           
-            
-            <a href="/the-cab-ride-ill-never-forget">The Cab Ride I'll Never Forget</a>
-            
+          <a href="/digg-v4">Digg v4</a>
           
-            
-            <a href="/the-case-of-the-500-mile-email">The Case of the 500-Mile Email</a>
-            
           
-            
-            <a href="/the-crawford-principles">The Crawford Principles</a>
-            
           
-            
-            <a href="/the-damned-can-now-play-three-chords">The Damned Can Now Play Three Chords</a>
-            
+          <a href="/dispatch-from-the-cyberpunk-city">Dispatch From the Cyberpunk City</a>
           
-            
-            <a href="/the-nazi-bar-problem">The Nazi Bar Problem</a>
-            
           
-            
-            <a href="/the-unknown-citizen">The Unknown Citizen</a>
-            
           
-            
-            <a href="/the-web-without-ad-blockers">The Web Without Ad Blockers</a>
-            
+          <a href="/do-things-tell-people">Do Things, Tell People</a>
           
-            
-            <a href="/the-bin-split">The bin Split</a>
-            
           
-            
-            <a href="/thoughts-on-flash">Thoughts On Flash</a>
-            
           
-            
-            <a href="/tiktoks-enshittification">TikTok's Enshittification</a>
-            
+          <a href="/ellsbergs-advice-for-kissinger">Ellsberg's Advice For Kissinger</a>
           
-            
-            <a href="/virtues-of-a-good-programmer">Virtues of a Good Programmer</a>
-            
           
-            
-            <a href="/we-have-no-moat-and-neither-does-openai">We Have No Moat, And Neither Does OpenAI</a>
-            
           
-            
-            <a href="/when-is-midnight">When Is Midnight</a>
-            
+          <a href="/factory-factory-factory">Factory Factory Factory</a>
           
-            
-            <a href="/worse-is-better">Worse is Better</a>
-            
           
-            
-            <a href="/yak-shaving">Yak Shaving</a>
-            
           
-            
-            <a href="/carproblems.txt">carproblems.txt</a>
-            
+          <a href="/file-over-app">File Over App</a>
           
-          </div>
+          
+          
+          <a href="/guerilla-open-access-manifesto">Guerilla Open Access Manifesto</a>
+          
+          
+          
+          <a href="/heaven-banning">Heaven Banning</a>
+          
+          
+          
+          <a href="/incomplete-list-of-mistakes-in-the-design-of-css">Incomplete List of Mistakes in the Design of CSS</a>
+          
+          
+          
+          <a href="/kurt-vonnegut-grades">Kurt Vonnegut Grades</a>
+          
+          
+          
+          <a href="/life-of-an-oracle-developer">Life of an Oracle Developer</a>
+          
+          
+          
+          <a href="/man-spends-entire-career-mastering-crappy-codebase">Man Spends Entire Career Mastering Crappy Codebase</a>
+          
+          
+          
+          <a href="/no-dogs-were-harmed-in-the-making-of-this-app">No dogs were harmed in the making of this app</a>
+          
+          
+          
+          <a href="/on-the-origins-of-emacs">On the Origins of Emacs</a>
+          
+          
+          
+          <a href="/openoffice-cant-print-on-tuesdays">OpenOffice Can't Print on Tuesdays</a>
+          
+          
+          
+          <a href="/originality-not-required">Originality Not Required</a>
+          
+          
+          
+          <a href="/psd-is-not-my-favourite-file-format">PSD is not my favourite file format</a>
+          
+          
+          
+          <a href="/please-drink-verification-can">Please Drink Verification Can</a>
+          
+          
+          
+          <a href="/pocket-veto">Pocket Veto</a>
+          
+          
+          
+          <a href="/price-of-chatgpts-api-vs-human">Price of ChatGPT's API vs Human</a>
+          
+          
+          
+          <a href="/regular-expressions-and-html" class="activated-link">Regular Expressions and HTML</a>
+          
+          
+          
+          <a href="/rob-pikes-5-rules-of-programming">Rob Pike's 5 Rules of Programming</a>
+          
+          
+          
+          <a href="/rob-pikes-lesson-in-shortcuts">Rob Pike's Lesson in Shortcuts</a>
+          
+          
+          
+          <a href="/sre-threats">SRE Threats</a>
+          
+          
+          
+          <a href="/steve-yegges-tale-of-geoworks">Steve Yegge's Tale of Geoworks</a>
+          
+          
+          
+          <a href="/superstitious-encoding">Superstitious Encoding</a>
+          
+          
+          
+          <a href="/the-bitter-lesson">The Bitter Lesson</a>
+          
+          
+          
+          <a href="/the-cab-ride-ill-never-forget">The Cab Ride I'll Never Forget</a>
+          
+          
+          
+          <a href="/the-case-of-the-500-mile-email">The Case of the 500-Mile Email</a>
+          
+          
+          
+          <a href="/the-crawford-principles">The Crawford Principles</a>
+          
+          
+          
+          <a href="/the-damned-can-now-play-three-chords">The Damned Can Now Play Three Chords</a>
+          
+          
+          
+          <a href="/the-nazi-bar-problem">The Nazi Bar Problem</a>
+          
+          
+          
+          <a href="/the-unknown-citizen">The Unknown Citizen</a>
+          
+          
+          
+          <a href="/the-web-without-ad-blockers">The Web Without Ad Blockers</a>
+          
+          
+          
+          <a href="/the-bin-split">The bin Split</a>
+          
+          
+          
+          <a href="/thoughts-on-flash">Thoughts On Flash</a>
+          
+          
+          
+          <a href="/tiktoks-enshittification">TikTok's Enshittification</a>
+          
+          
+          
+          <a href="/virtues-of-a-good-programmer">Virtues of a Good Programmer</a>
+          
+          
+          
+          <a href="/we-have-no-moat-and-neither-does-openai">We Have No Moat, And Neither Does OpenAI</a>
+          
+          
+          
+          <a href="/when-is-midnight">When Is Midnight</a>
+          
+          
+          
+          <a href="/worse-is-better">Worse is Better</a>
+          
+          
+          
+          <a href="/yak-shaving">Yak Shaving</a>
+          
+          
+          
+          <a href="/carproblems.txt">carproblems.txt</a>
+          
+          
+        </div>
         
 
         
       </div>
-      </div>
+    </div>
 
-    </nav>
-    <main>
-      <header>
-        <h1>Regular Expressions and HTML</h1>
-      </header>
-      <article><p>The seminal analysis of using regex to parse HTML by bobince, posted to <a href="https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags">Stack Overflow on 2009-11-03</a> by bobince.</p>
+  </nav>
+  <main>
+    <header>
+      <h1>Regular Expressions and HTML</h1>
+    </header>
+    <article><p>The seminal analysis of using regex to parse HTML by bobince, posted to <a href="https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags">Stack Overflow on 2009-11-03</a> by bobince.</p>
 <hr />
 <p>You can't parse [X]HTML with regex. Because HTML can't be parsed by regex. Regex is not a tool that can be used to correctly parse HTML. As I have answered in HTML-and-regex questions here so many times before, the use of regex will not allow you to consume HTML. Regular expressions are a tool that is insufficiently sophisticated to understand the constructs employed by HTML. HTML is not a regular language and hence cannot be parsed by regular expressions. Regex queries are not equipped to break down HTML into its meaningful parts. so many times but it is not getting to me. Even enhanced irregular regular expressions as used by Perl are not up to the task of parsing HTML. You will never make me crack. HTML is a language of sufficient complexity that it cannot be parsed by regular expressions. Even Jon Skeet cannot parse HTML using regular expressions. Every time you attempt to parse HTML with regular expressions, the unholy child weeps the blood of virgins, and Russian hackers pwn your webapp. Parsing HTML with regex summons tainted souls into the realm of the living. HTML and regex go together like love, marriage, and ritual infanticide. The <code>&lt;center&gt;</code> cannot hold it is too late. The force of regex and HTML together in the same conceptual space will destroy your mind like so much watery putty. If you parse HTML with regex you are giving in to Them and their blasphemous ways which doom us all to inhuman toil for the One whose Name cannot be expressed in the Basic Multilingual Plane, he comes. HTML-plus-regexp will liquify the n​erves of the sentient whilst you observe, your psyche withering in the onslaught of horror. Rege̿̔̉x-based HTML parsers are the cancer that is killing StackOverflow <em>it is too late it is too late we cannot be saved</em> the transgression of a chi͡ld ensures regex will consume all living tissue (except for HTML which it cannot, as previously prophesied) <em>dear lord help us how can anyone survive this scourge</em> using regex to parse HTML has doomed humanity to an eternity of dread torture and security holes <em>using rege_x as a tool to process HTML establishes a brea_ch between this world</em> and the dread realm of c͒ͪo͛ͫrrupt entities (like SGML entities, but <em>more corrupt) a mere glimp_se of the world of reg​<strong>ex parsers for HTML will ins</strong>​tantly transport a p_rogrammer's consciousness i_nto a w_orl_d of ceaseless screaming, he comes, the pestilent slithy regex-infection wil​<strong>l devour your HT</strong>​ML parser, application and existence for all time like Visual Basic only worse _he comes he com_es _do not fi</em>​ght h<strong>e com̡e̶s, ̕h̵i</strong>​s un̨ho͞ly radiańcé de_stro҉ying all enli̍̈́̂̈́ghtenment, HTML tags <strong>lea͠ki̧n͘g fr̶ǫm ̡yo​͟ur eye͢s̸ ̛l̕ik͏e liq</strong>​uid p_ain, the song of re̸gular exp​ression parsing will exti_​nguish the voices of mor​<strong>tal man from the sp</strong>​here I can see it can you see ̲͚̖͔̙î̩́t̲͎̩̱͔́̋̀ it is beautiful t​<em>he f<code>inal snuf</code>fing o_f the lie​<strong>s of Man ALL IS LOŚ͖̩͇̗̪̏̈́T A</strong></em><strong>LL I​S L</strong>OST th_e pon̷y he come_s he c̶̮omes he co<strong>mes t_he_ ich​</strong>or permeat_es al_l MY FAC_E MY FACE ᵒh god n<strong>o NO NOO̼</strong>_<strong>O​O N</strong>Θ stop t_he an​<em>̶͑̾̾​̅ͫ͏̙̤g͇̫͛͆̾ͫ̑͆l͖͉̗̩̳̟̍ͫͥͨ_e̠̅s <code>͎a̧͈͖r̽̾̈́͒͑e</code> n</em><em>​ot rè̑ͧ̌aͨl̘̝̙̃ͤ͂̾̆ ZA̡͊͠͝LGΌ ISͮ̂҉̯͈͕̹̘̱ T</em><em>O͇̹̺ͅƝ̴ȳ̳ TH̘</em><em>Ë͖́̉ ͠P̯͍̭O̚​N̐Y̡ H̸̡̪̯ͨ͊̽̅̾̎Ȩ̬̩̾͛ͪ̈́̀́͘ ̶̧̨̱̹̭̯ͧ̾ͬC̷̙̲̝͖ͭ̏ͥͮ͟Oͮ͏̮̪̝͍M̲̖͊̒ͪͩͬ̚̚͜Ȇ̴̟̟͙̞ͩ͌͝</em>*S̨̥̫͎̭ͯ̿̔̀ͅ</p>
 <hr />
 <p>Have you tried using an XML parser instead?</p></article>
 
-      
-
-      
-
-        
-
-
-      
-        
-      
-
-    </main>
-    <footer>
-      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Folklore/Regular Expressions and HTML.md">edit</a> -
-      <a href="/seleniumbasic">random</a> -
-      <a href="/recent-changes">updates</a> -
-      <a href="/tags">tags</a> -
-      <a href="/sitemap">sitemap</a>
-    </footer>
     
-  </body>
+
+    
+
+
+
+
+    
+    
+    
+
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Folklore/Regular Expressions and HTML.md">edit</a> -
+    <a href="/originality-not-required">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
 </html>

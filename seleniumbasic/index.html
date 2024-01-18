@@ -1,243 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="/static/styles/colors.css" />
-    <link rel="stylesheet" href="/static/styles/global.css" />
-    <link rel="stylesheet" href="/static/styles/code.css" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/static/icon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/static/icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/static/icon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/static/icon/site.webmanifest" />
-    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
-    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#603cba" />
-    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
-    <meta name="theme-color" content="#282A36" />
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <title>notes: seleniumbasic</title>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: seleniumbasic</title>
+</head>
 
-  <body>
-     <nav>
+<body>
+  <nav>
 
-      <div class="main-icon">
-        <a href="/">
-          <img src="/static/icon/icon.png" alt="notes" height="100">
-        </a>
-      </div>
-      
-      <div class="nav-segments-container">
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
       <div class="nav-segments">
         
 
-          <div class="flex flex-col nav-links text-left">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/bookmarks">Bookmarks</a>
-            
           
-            
-            <a href="/fiction">Fiction</a>
-            
+          <a href="/bookmarks">Bookmarks</a>
           
-            
-            <a href="/folklore">Folklore</a>
-            
           
-            
-            <a href="/lines">Lines</a>
-            
           
-            
-            <a href="/problems" class="activated-link">Problems</a>
-            
+          <a href="/fiction">Fiction</a>
           
-            
-            <a href="/templates">Templates</a>
-            
           
-          </div>
+          
+          <a href="/folklore">Folklore</a>
+          
+          
+          
+          <a href="/lines">Lines</a>
+          
+          
+          
+          <a href="/problems" class="activated-link">Problems</a>
+          
+          
+          
+          <a href="/templates">Templates</a>
+          
+          
+        </div>
         
 
         
 
-          <div class="flex flex-col text-left nav-links">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/avoid-page-breaking-with-wkhtmltopdf">Avoid Page Breaking with wkhtmltopdf</a>
-            
           
-            
-            <a href="/changing-dns-with-systemd">Changing DNS with systemd</a>
-            
+          <a href="/avoid-page-breaking-with-wkhtmltopdf">Avoid Page Breaking with wkhtmltopdf</a>
           
-            
-            <a href="/command-line-file-sharing">Command Line File Sharing</a>
-            
           
-            
-            <a href="/domain-based-link-colours">Domain Based Link Colours</a>
-            
           
-            
-            <a href="/firefox-photon">Firefox Photon</a>
-            
+          <a href="/changing-dns-with-systemd">Changing DNS with systemd</a>
           
-            
-            <a href="/fullscreen-firefox-on-macos">Fullscreen Firefox on macOS</a>
-            
           
-            
-            <a href="/ghidhra-hidpi">Ghidhra HiDPI</a>
-            
           
-            
-            <a href="/git-operations">Git Operations</a>
-            
+          <a href="/command-line-file-sharing">Command Line File Sharing</a>
           
-            
-            <a href="/git-repo-contributor-line-count">Git Repo Contributor Line Count</a>
-            
           
-            
-            <a href="/git-subdirectory-branch">Git Subdirectory Branch</a>
-            
           
-            
-            <a href="/github-repo-metadata">GitHub Repo Metadata</a>
-            
+          <a href="/domain-based-link-colours">Domain Based Link Colours</a>
           
-            
-            <a href="/hacking-sagemcom-router-admin-account">Hacking Sagemcom Router Admin Account</a>
-            
           
-            
-            <a href="/hiding-promoted-jobs-on-linkedin">Hiding Promoted Jobs on LinkedIn</a>
-            
           
-            
-            <a href="/javascript-pretty-printing">JavaScript Pretty Printing</a>
-            
+          <a href="/firefox-photon">Firefox Photon</a>
           
-            
-            <a href="/javascript-yyyy-mm-dd-in-local-time">JavaScript YYYY-MM-DD in Local Time</a>
-            
           
-            
-            <a href="/keychron-fn-keys">Keychron Fn Keys</a>
-            
           
-            
-            <a href="/killing-based-on-port-number">Killing based on port number</a>
-            
+          <a href="/fullscreen-firefox-on-macos">Fullscreen Firefox on macOS</a>
           
-            
-            <a href="/markdown-in-html">Markdown in HTML</a>
-            
           
-            
-            <a href="/mastodon-domain-alias">Mastodon Domain Alias</a>
-            
           
-            
-            <a href="/minecraft-health-and-death-score-commands">Minecraft Health and Death Score Commands</a>
-            
+          <a href="/ghidhra-hidpi">Ghidhra HiDPI</a>
           
-            
-            <a href="/nextcloud-aio-occ">Nextcloud AIO occ</a>
-            
           
-            
-            <a href="/nextcloud-phone-photo-upload">Nextcloud Phone Photo Upload</a>
-            
           
-            
-            <a href="/piping-to-clipboard">Piping to Clipboard</a>
-            
+          <a href="/git-operations">Git Operations</a>
           
-            
-            <a href="/prisma-schema-changes-and-vercel">Prisma Schema Changes and Vercel</a>
-            
           
-            
-            <a href="/raw-github-commits">Raw GitHub Commits</a>
-            
           
-            
-            <a href="/run-latest-npx-script-version">Run Latest npx Script Version</a>
-            
+          <a href="/git-repo-contributor-line-count">Git Repo Contributor Line Count</a>
           
-            
-            <a href="/select-decorator-depreciated">Select Decorator Depreciated</a>
-            
           
-            
-            <a href="/seleniumbasic" class="activated-link">SeleniumBasic</a>
-            
           
-            
-            <a href="/self-hosted-postgres-and-prisma">Self-Hosted Postgres and Prisma</a>
-            
+          <a href="/git-subdirectory-branch">Git Subdirectory Branch</a>
           
-            
-            <a href="/sticky-elements">Sticky Elements</a>
-            
           
-            
-            <a href="/ubuntu-server-not-filling-server-disk">Ubuntu Server Not Filling Server DIsk</a>
-            
           
-            
-            <a href="/unique-constraint-in-pgadmin">Unique Constraint in pgAdmin</a>
-            
+          <a href="/github-repo-metadata">GitHub Repo Metadata</a>
           
-            
-            <a href="/windows-11-without-a-microsoft-account">Windows 11 Without a Microsoft Account</a>
-            
           
-            
-            <a href="/xfce-screentearing">Xfce Screentearing</a>
-            
           
-            
-            <a href="/macos-recovery-in-australia">macOS Recovery in Australia</a>
-            
+          <a href="/hacking-sagemcom-router-admin-account">Hacking Sagemcom Router Admin Account</a>
           
-            
-            <a href="/ssh-connection-hanging">ssh Connection Hanging</a>
-            
           
-          </div>
+          
+          <a href="/hiding-promoted-jobs-on-linkedin">Hiding Promoted Jobs on LinkedIn</a>
+          
+          
+          
+          <a href="/javascript-pretty-printing">JavaScript Pretty Printing</a>
+          
+          
+          
+          <a href="/javascript-yyyy-mm-dd-in-local-time">JavaScript YYYY-MM-DD in Local Time</a>
+          
+          
+          
+          <a href="/keychron-fn-keys">Keychron Fn Keys</a>
+          
+          
+          
+          <a href="/killing-based-on-port-number">Killing based on port number</a>
+          
+          
+          
+          <a href="/markdown-in-html">Markdown in HTML</a>
+          
+          
+          
+          <a href="/mastodon-domain-alias">Mastodon Domain Alias</a>
+          
+          
+          
+          <a href="/minecraft-health-and-death-score-commands">Minecraft Health and Death Score Commands</a>
+          
+          
+          
+          <a href="/nextcloud-aio-occ">Nextcloud AIO occ</a>
+          
+          
+          
+          <a href="/nextcloud-phone-photo-upload">Nextcloud Phone Photo Upload</a>
+          
+          
+          
+          <a href="/piping-to-clipboard">Piping to Clipboard</a>
+          
+          
+          
+          <a href="/prisma-schema-changes-and-vercel">Prisma Schema Changes and Vercel</a>
+          
+          
+          
+          <a href="/raw-github-commits">Raw GitHub Commits</a>
+          
+          
+          
+          <a href="/run-latest-npx-script-version">Run Latest npx Script Version</a>
+          
+          
+          
+          <a href="/select-decorator-depreciated">Select Decorator Depreciated</a>
+          
+          
+          
+          <a href="/seleniumbasic" class="activated-link">SeleniumBasic</a>
+          
+          
+          
+          <a href="/self-hosted-postgres-and-prisma">Self-Hosted Postgres and Prisma</a>
+          
+          
+          
+          <a href="/sticky-elements">Sticky Elements</a>
+          
+          
+          
+          <a href="/ubuntu-server-not-filling-server-disk">Ubuntu Server Not Filling Server DIsk</a>
+          
+          
+          
+          <a href="/unique-constraint-in-pgadmin">Unique Constraint in pgAdmin</a>
+          
+          
+          
+          <a href="/windows-11-without-a-microsoft-account">Windows 11 Without a Microsoft Account</a>
+          
+          
+          
+          <a href="/xfce-screentearing">Xfce Screentearing</a>
+          
+          
+          
+          <a href="/macos-recovery-in-australia">macOS Recovery in Australia</a>
+          
+          
+          
+          <a href="/ssh-connection-hanging">ssh Connection Hanging</a>
+          
+          
+        </div>
         
 
         
       </div>
-      </div>
+    </div>
 
-    </nav>
-    <main>
-      <header>
-        <h1>SeleniumBasic</h1>
-      </header>
-      <article><p>Everything that's required to get VBA and Selenium to work together.</p>
+  </nav>
+  <main>
+    <header>
+      <h1>SeleniumBasic</h1>
+    </header>
+    <article><p>Everything that's required to get VBA and Selenium to work together.</p>
 <p>This is a cut down version of an old <a href="https://zachmanson.com/blog/basic-seleniumbasic/">blog post</a>.</p>
 <p>SeleniumBasic is a Selenium based framework for the VB family that has been unmaintained since 2016.</p>
 <h2 id="installation">Installation</h2>
@@ -287,25 +274,26 @@ End Sub
 <li>A fantastic resource for VBA+Selenium is <a href="https://youtube.com/playlist?list=PLNIs-AWhQzcl3xKvF8sVL4sWRWICj_clM">WiseOwlTutorials' series</a> on this exact thing.</li>
 </ul></article>
 
-      
-
-      
-
-        
-
-
-      
-        
-      
-
-    </main>
-    <footer>
-      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/SeleniumBasic.md">edit</a> -
-      <a href="/cits2003">random</a> -
-      <a href="/recent-changes">updates</a> -
-      <a href="/tags">tags</a> -
-      <a href="/sitemap">sitemap</a>
-    </footer>
     
-  </body>
+
+    
+
+
+
+
+    
+    
+    
+
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/SeleniumBasic.md">edit</a> -
+    <a href="/make">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
 </html>

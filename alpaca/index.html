@@ -1,95 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="/static/styles/colors.css" />
-    <link rel="stylesheet" href="/static/styles/global.css" />
-    <link rel="stylesheet" href="/static/styles/code.css" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/static/icon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/static/icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/static/icon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/static/icon/site.webmanifest" />
-    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
-    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#603cba" />
-    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
-    <meta name="theme-color" content="#282A36" />
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <title>notes: alpaca</title>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: alpaca</title>
+</head>
 
-  <body>
-     <nav>
+<body>
+  <nav>
 
-      <div class="main-icon">
-        <a href="/">
-          <img src="/static/icon/icon.png" alt="notes" height="100">
-        </a>
-      </div>
-      
-      <div class="nav-segments-container">
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
       <div class="nav-segments">
         
 
-          <div class="flex flex-col nav-links text-left">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/chatgpt">ChatGPT</a>
-            
           
-            
-            <a href="/llama" class="activated-link">LLaMA</a>
-            
+          <a href="/chatgpt">ChatGPT</a>
           
-          </div>
+          
+          
+          <a href="/llama" class="activated-link">LLaMA</a>
+          
+          
+        </div>
         
 
         
 
-          <div class="flex flex-col text-left nav-links">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/alpaca" class="activated-link">Alpaca</a>
-            
           
-            
-            <a href="/llama-family-tree">LLaMA Family Tree</a>
-            
+          <a href="/alpaca" class="activated-link">Alpaca</a>
           
-            
-            <a href="/llama-timeline">LLaMA Timeline</a>
-            
           
-          </div>
+          
+          <a href="/llama-family-tree">LLaMA Family Tree</a>
+          
+          
+          
+          <a href="/llama-timeline">LLaMA Timeline</a>
+          
+          
+        </div>
         
 
         
       </div>
-      </div>
+    </div>
 
-    </nav>
-    <main>
-      <header>
-        <h1>Alpaca</h1>
-      </header>
-      <article><p>Alpaca is a large language model fine-tuned from the <a href="/llama">LLaMA</a> 7B model on 52K instruction-following demonstrations, designed to emulate ChatGPT style instruction tuning.  It was created by researchers at Stanford.</p>
+  </nav>
+  <main>
+    <header>
+      <h1>Alpaca</h1>
+    </header>
+    <article><p>Alpaca is a large language model fine-tuned from the <a href="/llama">LLaMA</a> 7B model on 52K instruction-following demonstrations, designed to emulate ChatGPT style instruction tuning.  It was created by researchers at Stanford.</p>
 <p>The 52K instruction were generated using 175 instruction prompts entered into text-davinci-003, costing $600 in OpenAI API fees and $100 in compute for supervised training.  The initial announcement did not release their model weights as they were waiting on Meta to advise them on when and how they should do it, as at the the time the original LLaMA models were only available through leaked torrents.</p>
 <p>They did release their training set and process so the model was recreated by other developers.  <a href="https://github.com/antimatter15/alpaca.cpp">alpaca.cpp</a>, a recreation of the Stanford Alpaca model, was created using <a href="/low-rank-adaptation">Low-Rank Adaptation</a> (LoRA) instruct tuning and built on top of llama.cpp.  This was then supported within <a href="https://github.com/cocktailpeanut/dalai">Dalai</a>.</p>
 <p><a href="https://huggingface.co/chavinlo/alpaca-native">alpaca-native</a> is a recreation of Standford Alpaca, based on LLaMA 7B and the Stanford instruction training set using native fine-tuning (not LoRA).  This methodology was used by others to create similar models based the larger LLaMA models (see <a href="/llama-family-tree">LLaMA Family Tree</a>).</p>
@@ -107,36 +94,37 @@
 </li>
 </ul></article>
 
-      
-      <p class="backlinks"><span class="bold">Incoming:</span>
-          
-          <a href="/program-names">Program Names</a>
-          
-          <a href="/llama">LLaMA</a>
-          
-          <a href="/llama-family-tree">LLaMA Family Tree</a>
-          
-        </span>
-      </p>
-      
-
-      
-
-        
-
-
-      
-        
-      
-
-    </main>
-    <footer>
-      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Machine Learning/Generative Models/Large Language Models/LLaMA/Alpaca.md">edit</a> -
-      <a href="/stable-diffusion">random</a> -
-      <a href="/recent-changes">updates</a> -
-      <a href="/tags">tags</a> -
-      <a href="/sitemap">sitemap</a>
-    </footer>
     
-  </body>
+    <p class="backlinks"><span class="bold">Incoming:</span>
+      
+      <a href="/llama-family-tree">LLaMA Family Tree</a>
+      
+      <a href="/llama">LLaMA</a>
+      
+      <a href="/program-names">Program Names</a>
+      
+      </span>
+    </p>
+    
+
+    
+
+
+
+
+    
+    
+    
+
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Machine Learning/Generative Models/Large Language Models/LLaMA/Alpaca.md">edit</a> -
+    <a href="/music">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
 </html>

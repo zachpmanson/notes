@@ -1,127 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="/static/styles/colors.css" />
-    <link rel="stylesheet" href="/static/styles/global.css" />
-    <link rel="stylesheet" href="/static/styles/code.css" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/static/icon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/static/icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/static/icon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/static/icon/site.webmanifest" />
-    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
-    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#603cba" />
-    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
-    <meta name="theme-color" content="#282A36" />
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <title>notes: alculator</title>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: alculator</title>
+</head>
 
-  <body>
-     <nav>
+<body>
+  <nav>
 
-      <div class="main-icon">
-        <a href="/">
-          <img src="/static/icon/icon.png" alt="notes" height="100">
-        </a>
-      </div>
-      
-      <div class="nav-segments-container">
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
       <div class="nav-segments">
         
 
-          <div class="flex flex-col nav-links text-left">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/archive">Archive</a>
-            
           
-            
-            <a href="/meta">Meta</a>
-            
+          <a href="/archive">Archive</a>
           
-            
-            <a href="/notes">Notes</a>
-            
           
-            
-            <a href="/projects" class="activated-link">Projects</a>
-            
           
-          </div>
+          <a href="/meta">Meta</a>
+          
+          
+          
+          <a href="/notes">Notes</a>
+          
+          
+          
+          <a href="/projects" class="activated-link">Projects</a>
+          
+          
+        </div>
         
 
         
 
-          <div class="flex flex-col text-left nav-links">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/alculator" class="activated-link">Alculator</a>
-            
           
-            
-            <a href="/covid-19-tracker">COVID-19 Tracker</a>
-            
+          <a href="/alculator" class="activated-link">Alculator</a>
           
-            
-            <a href="/mastodon-thread-unroller">Mastodon Thread Unroller</a>
-            
           
-            
-            <a href="/minecraftle">Minecraftle</a>
-            
           
-            
-            <a href="/ochrs">Ochrs</a>
-            
+          <a href="/covid-19-tracker">COVID-19 Tracker</a>
           
-            
-            <a href="/penultimate-guitar">Penultimate Guitar</a>
-            
           
-            
-            <a href="/status-messenger">Status Messenger</a>
-            
           
-            
-            <a href="/ironprof">ironprof</a>
-            
+          <a href="/mastodon-thread-unroller">Mastodon Thread Unroller</a>
           
-            
-            <a href="/snakeware">snakeware</a>
-            
           
-          </div>
+          
+          <a href="/minecraftle">Minecraftle</a>
+          
+          
+          
+          <a href="/ochrs">Ochrs</a>
+          
+          
+          
+          <a href="/penultimate-guitar">Penultimate Guitar</a>
+          
+          
+          
+          <a href="/status-messenger">Status Messenger</a>
+          
+          
+          
+          <a href="/ironprof">ironprof</a>
+          
+          
+          
+          <a href="/snakeware">snakeware</a>
+          
+          
+        </div>
         
 
         
       </div>
-      </div>
+    </div>
 
-    </nav>
-    <main>
-      <header>
-        <h1>Alculator</h1>
-      </header>
-      <article><p>An alternate frontend for Dan Murphy's</p>
+  </nav>
+  <main>
+    <header>
+      <h1>Alculator</h1>
+    </header>
+    <article><p>An alternate frontend for Dan Murphy's</p>
 <p><a href="https://alculator.zachmanson.com">Alculator</a> was written in the waning days of 2022 to determine the cheapest drinks at Dan Murphy's, per standard drink. The site is build with Next.js and hosted on Vercel.</p>
 <p>If you click on the title bar there is a hidden interface used for debugging and finding data anomalies.</p>
 <h2 id="dans-api">Dan's API</h2>
@@ -133,43 +120,44 @@
 <p><a href="https://github.com/pavo-etc/alculator/blob/main/science/api.js">The final script</a> is warty and takes about 15 minutes to run, but converts the data to a sane schema.  This script is run daily via GitHub Action, and the new data is directly stored in JSON files and committed to the repo.  This is inefficient, but meant I didn't have to mess around with databases in my deployment.  I do hope to one day set up a proper database for this.</p>
 <p>The source code is available on <a href="https://github.com/pavo-etc/alculator">GitHub</a>.</p></article>
 
-      
-      <p class="backlinks"><span class="bold">Incoming:</span>
-          
-          <a href="/github-repo-metadata">GitHub Repo Metadata</a>
-          
-          <a href="/dns">DNS</a>
-          
-          <a href="/penultimate-guitar">Penultimate Guitar</a>
-          
-        </span>
-      </p>
-      
-
-      
-      <p class="backlinks"><span class="bold">Tags:</span>
-          
-          <a href="/tags#nextjs">#nextjs</a>
-          
-        </span>
-      </p>
-      
-
-        
-
-
-      
-        
-      
-
-    </main>
-    <footer>
-      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Projects/Alculator.md">edit</a> -
-      <a href="/rob-pikes-5-rules-of-programming">random</a> -
-      <a href="/recent-changes">updates</a> -
-      <a href="/tags">tags</a> -
-      <a href="/sitemap">sitemap</a>
-    </footer>
     
-  </body>
+    <p class="backlinks"><span class="bold">Incoming:</span>
+      
+      <a href="/dns">DNS</a>
+      
+      <a href="/penultimate-guitar">Penultimate Guitar</a>
+      
+      <a href="/github-repo-metadata">GitHub Repo Metadata</a>
+      
+      </span>
+    </p>
+    
+
+    
+    <p class="backlinks"><span class="bold">Tags:</span>
+      
+      <a href="/tags#nextjs">#nextjs</a>
+      
+      </span>
+    </p>
+    
+
+
+
+
+    
+    
+    
+
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Projects/Alculator.md">edit</a> -
+    <a href="/ellsbergs-advice-for-kissinger">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
 </html>

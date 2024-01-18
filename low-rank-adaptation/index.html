@@ -1,115 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="/static/styles/colors.css" />
-    <link rel="stylesheet" href="/static/styles/global.css" />
-    <link rel="stylesheet" href="/static/styles/code.css" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/static/icon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/static/icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/static/icon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/static/icon/site.webmanifest" />
-    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
-    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#603cba" />
-    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
-    <meta name="theme-color" content="#282A36" />
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <title>notes: low-rank adaptation</title>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: low-rank adaptation</title>
+</head>
 
-  <body>
-     <nav>
+<body>
+  <nav>
 
-      <div class="main-icon">
-        <a href="/">
-          <img src="/static/icon/icon.png" alt="notes" height="100">
-        </a>
-      </div>
-      
-      <div class="nav-segments-container">
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
       <div class="nav-segments">
         
 
-          <div class="flex flex-col nav-links text-left">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/generative-models">Generative Models</a>
-            
           
-            
-            <a href="/limitations-of-machine-learning">Limitations of Machine Learning</a>
-            
+          <a href="/generative-models">Generative Models</a>
           
-            
-            <a href="/machine-learning-concepts" class="activated-link">Machine Learning Concepts</a>
-            
           
-            
-            <a href="/neural-networks">Neural Networks</a>
-            
           
-            
-            <a href="/pytorch">PyTorch</a>
-            
+          <a href="/limitations-of-machine-learning">Limitations of Machine Learning</a>
           
-          </div>
+          
+          
+          <a href="/machine-learning-concepts" class="activated-link">Machine Learning Concepts</a>
+          
+          
+          
+          <a href="/neural-networks">Neural Networks</a>
+          
+          
+          
+          <a href="/pytorch">PyTorch</a>
+          
+          
+        </div>
         
 
         
 
-          <div class="flex flex-col text-left nav-links">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/few-shot-learning">Few-Shot Learning</a>
-            
           
-            
-            <a href="/flash-attention">Flash Attention</a>
-            
+          <a href="/few-shot-learning">Few-Shot Learning</a>
           
-            
-            <a href="/low-rank-adaptation" class="activated-link">Low-Rank Adaptation</a>
-            
           
-            
-            <a href="/quantization">Quantization</a>
-            
           
-            
-            <a href="/react-prompting">ReAct Prompting</a>
-            
+          <a href="/flash-attention">Flash Attention</a>
           
-          </div>
+          
+          
+          <a href="/low-rank-adaptation" class="activated-link">Low-Rank Adaptation</a>
+          
+          
+          
+          <a href="/quantization">Quantization</a>
+          
+          
+          
+          <a href="/react-prompting">ReAct Prompting</a>
+          
+          
+        </div>
         
 
         
       </div>
-      </div>
+    </div>
 
-    </nav>
-    <main>
-      <header>
-        <h1>Low-Rank Adaptation</h1>
-      </header>
-      <article><blockquote>
+  </nav>
+  <main>
+    <header>
+      <h1>Low-Rank Adaptation</h1>
+    </header>
+    <article><blockquote>
 <p>Fine-tuning enormous language models is prohibitively expensive in terms of the hardware required and the storage/switching cost for hosting independent instances for different tasks. We propose LoRA, an efficient adaptation strategy that neither introduces inference latency nor reduces input sequence length while retaining high model quality</p>
 </blockquote>
 <p><cite class="standalone">Hu et al., <a href="https://arxiv.org/abs/2106.09685">LoRA: Low-Rank Adaptation of Large Language Models</a></cite></p>
@@ -163,34 +150,35 @@
 <li><a href="https://arxiv.org/abs/2106.09685">LoRA: Low-Rank Adaptation of Large Language Models</a>, the original LoRA paper by Microsoft</li>
 </ul></article>
 
-      
-      <p class="backlinks"><span class="bold">Incoming:</span>
-          
-          <a href="/llama-family-tree">LLaMA Family Tree</a>
-          
-          <a href="/alpaca">Alpaca</a>
-          
-        </span>
-      </p>
-      
-
-      
-
-        
-
-
-      
-        
-      
-
-    </main>
-    <footer>
-      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Machine Learning/Machine Learning Concepts/Low-Rank Adaptation.md">edit</a> -
-      <a href="/obsidian">random</a> -
-      <a href="/recent-changes">updates</a> -
-      <a href="/tags">tags</a> -
-      <a href="/sitemap">sitemap</a>
-    </footer>
     
-  </body>
+    <p class="backlinks"><span class="bold">Incoming:</span>
+      
+      <a href="/llama-family-tree">LLaMA Family Tree</a>
+      
+      <a href="/alpaca">Alpaca</a>
+      
+      </span>
+    </p>
+    
+
+    
+
+
+
+
+    
+    
+    
+
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Machine Learning/Machine Learning Concepts/Low-Rank Adaptation.md">edit</a> -
+    <a href="/the-case-of-the-500-mile-email">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
 </html>

@@ -1,127 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="/static/styles/colors.css" />
-    <link rel="stylesheet" href="/static/styles/global.css" />
-    <link rel="stylesheet" href="/static/styles/code.css" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/static/icon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/static/icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/static/icon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/static/icon/site.webmanifest" />
-    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
-    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#603cba" />
-    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
-    <meta name="theme-color" content="#282A36" />
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <title>notes: penultimate guitar</title>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: penultimate guitar</title>
+</head>
 
-  <body>
-     <nav>
+<body>
+  <nav>
 
-      <div class="main-icon">
-        <a href="/">
-          <img src="/static/icon/icon.png" alt="notes" height="100">
-        </a>
-      </div>
-      
-      <div class="nav-segments-container">
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
       <div class="nav-segments">
         
 
-          <div class="flex flex-col nav-links text-left">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/archive">Archive</a>
-            
           
-            
-            <a href="/meta">Meta</a>
-            
+          <a href="/archive">Archive</a>
           
-            
-            <a href="/notes">Notes</a>
-            
           
-            
-            <a href="/projects" class="activated-link">Projects</a>
-            
           
-          </div>
+          <a href="/meta">Meta</a>
+          
+          
+          
+          <a href="/notes">Notes</a>
+          
+          
+          
+          <a href="/projects" class="activated-link">Projects</a>
+          
+          
+        </div>
         
 
         
 
-          <div class="flex flex-col text-left nav-links">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/alculator">Alculator</a>
-            
           
-            
-            <a href="/covid-19-tracker">COVID-19 Tracker</a>
-            
+          <a href="/alculator">Alculator</a>
           
-            
-            <a href="/mastodon-thread-unroller">Mastodon Thread Unroller</a>
-            
           
-            
-            <a href="/minecraftle">Minecraftle</a>
-            
           
-            
-            <a href="/ochrs">Ochrs</a>
-            
+          <a href="/covid-19-tracker">COVID-19 Tracker</a>
           
-            
-            <a href="/penultimate-guitar" class="activated-link">Penultimate Guitar</a>
-            
           
-            
-            <a href="/status-messenger">Status Messenger</a>
-            
           
-            
-            <a href="/ironprof">ironprof</a>
-            
+          <a href="/mastodon-thread-unroller">Mastodon Thread Unroller</a>
           
-            
-            <a href="/snakeware">snakeware</a>
-            
           
-          </div>
+          
+          <a href="/minecraftle">Minecraftle</a>
+          
+          
+          
+          <a href="/ochrs">Ochrs</a>
+          
+          
+          
+          <a href="/penultimate-guitar" class="activated-link">Penultimate Guitar</a>
+          
+          
+          
+          <a href="/status-messenger">Status Messenger</a>
+          
+          
+          
+          <a href="/ironprof">ironprof</a>
+          
+          
+          
+          <a href="/snakeware">snakeware</a>
+          
+          
+        </div>
         
 
         
       </div>
-      </div>
+    </div>
 
-    </nav>
-    <main>
-      <header>
-        <h1>Penultimate Guitar</h1>
-      </header>
-      <article><p>Penultimate Guitar is an alternate frontend for Ultimate Guitar that focuses on mobile usability and Spotify integration.  All features are available on mobile*.</p>
+  </nav>
+  <main>
+    <header>
+      <h1>Penultimate Guitar</h1>
+    </header>
+    <article><p>Penultimate Guitar is an alternate frontend for Ultimate Guitar that focuses on mobile usability and Spotify integration.  All features are available on mobile*.</p>
 <p>It is built with TypeScript, Next.js, and Tailwind and deployed on Vercel.  It works in tandem with a Postgres instance on a DigitalOcean through Prisma.  The source code takes a lot of inspiration from <a href="/alculator">Alculator</a>.</p>
 <p>Features include:</p>
 <ul>
@@ -137,43 +124,44 @@
 <hr />
 <p>* Except chord tooltip inversions, though its only because I haven't thought of a simple interface for it yet</p></article>
 
-      
-      <p class="backlinks"><span class="bold">Incoming:</span>
-          
-          <a href="/self-hosted-postgres-and-prisma">Self-Hosted Postgres and Prisma</a>
-          
-          <a href="/dns">DNS</a>
-          
-        </span>
-      </p>
-      
-
-      
-      <p class="backlinks"><span class="bold">Tags:</span>
-          
-          <a href="/tags#nextjs">#nextjs</a>
-          
-          <a href="/tags#prisma">#prisma</a>
-          
-        </span>
-      </p>
-      
-
-        
-
-
-      
-        
-      
-
-    </main>
-    <footer>
-      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Projects/Penultimate Guitar.md">edit</a> -
-      <a href="/file-over-app">random</a> -
-      <a href="/recent-changes">updates</a> -
-      <a href="/tags">tags</a> -
-      <a href="/sitemap">sitemap</a>
-    </footer>
     
-  </body>
+    <p class="backlinks"><span class="bold">Incoming:</span>
+      
+      <a href="/dns">DNS</a>
+      
+      <a href="/self-hosted-postgres-and-prisma">Self-Hosted Postgres and Prisma</a>
+      
+      </span>
+    </p>
+    
+
+    
+    <p class="backlinks"><span class="bold">Tags:</span>
+      
+      <a href="/tags#nextjs">#nextjs</a>
+      
+      <a href="/tags#prisma">#prisma</a>
+      
+      </span>
+    </p>
+    
+
+
+
+
+    
+    
+    
+
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Projects/Penultimate Guitar.md">edit</a> -
+    <a href="/w09l02---awk">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
 </html>

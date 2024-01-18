@@ -1,138 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="/static/styles/colors.css" />
-    <link rel="stylesheet" href="/static/styles/global.css" />
-    <link rel="stylesheet" href="/static/styles/code.css" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/static/icon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/static/icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/static/icon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/static/icon/site.webmanifest" />
-    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
-    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#603cba" />
-    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
-    <meta name="theme-color" content="#282A36" />
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <title>notes: neural networks</title>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: neural networks</title>
+</head>
 
-  <body>
-     <nav>
+<body>
+  <nav>
 
-      <div class="main-icon">
-        <a href="/">
-          <img src="/static/icon/icon.png" alt="notes" height="100">
-        </a>
-      </div>
-      
-      <div class="nav-segments-container">
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
       <div class="nav-segments">
         
 
-          <div class="flex flex-col nav-links text-left">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/development">Development</a>
-            
           
-            
-            <a href="/gnu">GNU</a>
-            
+          <a href="/development">Development</a>
           
-            
-            <a href="/machine-learning" class="activated-link">Machine Learning</a>
-            
           
-            
-            <a href="/mistakes">Mistakes</a>
-            
           
-            
-            <a href="/open-source-philosophy">Open Source Philosophy</a>
-            
+          <a href="/gnu">GNU</a>
           
-            
-            <a href="/program-names">Program Names</a>
-            
           
-            
-            <a href="/programs">Programs</a>
-            
           
-            
-            <a href="/self-hosting">Self-Hosting</a>
-            
+          <a href="/machine-learning" class="activated-link">Machine Learning</a>
           
-            
-            <a href="/unix">Unix</a>
-            
           
-          </div>
+          
+          <a href="/mistakes">Mistakes</a>
+          
+          
+          
+          <a href="/open-source-philosophy">Open Source Philosophy</a>
+          
+          
+          
+          <a href="/program-names">Program Names</a>
+          
+          
+          
+          <a href="/programs">Programs</a>
+          
+          
+          
+          <a href="/self-hosting">Self-Hosting</a>
+          
+          
+          
+          <a href="/unix">Unix</a>
+          
+          
+        </div>
         
 
         
 
-          <div class="flex flex-col text-left nav-links">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/generative-models">Generative Models</a>
-            
           
-            
-            <a href="/limitations-of-machine-learning">Limitations of Machine Learning</a>
-            
+          <a href="/generative-models">Generative Models</a>
           
-            
-            <a href="/machine-learning-concepts">Machine Learning Concepts</a>
-            
           
-            
-            <a href="/neural-networks" class="activated-link">Neural Networks</a>
-            
           
-            
-            <a href="/pytorch">PyTorch</a>
-            
+          <a href="/limitations-of-machine-learning">Limitations of Machine Learning</a>
           
-          </div>
+          
+          
+          <a href="/machine-learning-concepts">Machine Learning Concepts</a>
+          
+          
+          
+          <a href="/neural-networks" class="activated-link">Neural Networks</a>
+          
+          
+          
+          <a href="/pytorch">PyTorch</a>
+          
+          
+        </div>
         
 
         
 
-          <div class="flex flex-col text-left nav-links">
+        <div class="flex flex-col text-left nav-links">
           
-            <a href="/convolutional-neural-networks">Convolutional Neural Networks</a>
+          <a href="/convolutional-neural-networks">Convolutional Neural Networks</a>
           
-          </div>
+        </div>
         
       </div>
-      </div>
+    </div>
 
-    </nav>
-    <main>
-      <header>
-        <h1>Neural Networks</h1>
-      </header>
-      <article><p>Neural networks are a kind of <a href="/machine-learning">Machine Learning</a> model based on the biological neuron.</p>
+  </nav>
+  <main>
+    <header>
+      <h1>Neural Networks</h1>
+    </header>
+    <article><p>Neural networks are a kind of <a href="/machine-learning">Machine Learning</a> model based on the biological neuron.</p>
 <h2 id="origins">Origins</h2>
 <p>The basis of neural networks originates from Warren McCulloch and Walter Pitts research into replicating the human neuron.  The first device that used the principles was created by Frank Rosenblatt in 1958, amazingly called the <em>Mark I Perceptron</em>. It was able to recognise simple shapes using custom built hardware based around an array of 400 photocells which were randomly connected to "neurons".  Weights were encoded in potentiometers and weight updates were executed using electric motors.</p>
 <p>In 1986, the PDP Research Group released <em>Parallel Distributed Processing</em>, which defined parallel distributed processing as the following:</p>
@@ -152,27 +139,28 @@
 <h2 id="in-machine-learning">In Machine Learning</h2>
 <p>Neural networks are an extremely flexible model that can be tailored to suit many different kinds of problems (the <em>universal approximation theorem</em> proves that it can solve any problem to any level of accuracy), it is a matter of finding good weight assignments.  A general method for iteratively improving the weights of a neural network is <strong>stochastic gradient descent</strong>.</p></article>
 
-      
-
-      
-
-        
-
-
-      
-        
-        <h2><a href="/convolutional-neural-networks">Convolutional Neural Networks</a></h2>
-        
-      
-
-    </main>
-    <footer>
-      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Machine Learning/Neural Networks/Neural Networks.md">edit</a> -
-      <a href="/flash-attention">random</a> -
-      <a href="/recent-changes">updates</a> -
-      <a href="/tags">tags</a> -
-      <a href="/sitemap">sitemap</a>
-    </footer>
     
-  </body>
+
+    
+
+
+
+
+    
+    
+    <h2><a href="/convolutional-neural-networks">Convolutional Neural Networks</a></h2>
+    
+    
+
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Machine Learning/Neural Networks/Neural Networks.md">edit</a> -
+    <a href="/chords">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
 </html>

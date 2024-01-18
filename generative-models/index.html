@@ -1,140 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="/static/styles/colors.css" />
-    <link rel="stylesheet" href="/static/styles/global.css" />
-    <link rel="stylesheet" href="/static/styles/code.css" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/static/icon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/static/icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/static/icon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/static/icon/site.webmanifest" />
-    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
-    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#603cba" />
-    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
-    <meta name="theme-color" content="#282A36" />
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <title>notes: generative models</title>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: generative models</title>
+</head>
 
-  <body>
-     <nav>
+<body>
+  <nav>
 
-      <div class="main-icon">
-        <a href="/">
-          <img src="/static/icon/icon.png" alt="notes" height="100">
-        </a>
-      </div>
-      
-      <div class="nav-segments-container">
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
       <div class="nav-segments">
         
 
-          <div class="flex flex-col nav-links text-left">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/development">Development</a>
-            
           
-            
-            <a href="/gnu">GNU</a>
-            
+          <a href="/development">Development</a>
           
-            
-            <a href="/machine-learning" class="activated-link">Machine Learning</a>
-            
           
-            
-            <a href="/mistakes">Mistakes</a>
-            
           
-            
-            <a href="/open-source-philosophy">Open Source Philosophy</a>
-            
+          <a href="/gnu">GNU</a>
           
-            
-            <a href="/program-names">Program Names</a>
-            
           
-            
-            <a href="/programs">Programs</a>
-            
           
-            
-            <a href="/self-hosting">Self-Hosting</a>
-            
+          <a href="/machine-learning" class="activated-link">Machine Learning</a>
           
-            
-            <a href="/unix">Unix</a>
-            
           
-          </div>
+          
+          <a href="/mistakes">Mistakes</a>
+          
+          
+          
+          <a href="/open-source-philosophy">Open Source Philosophy</a>
+          
+          
+          
+          <a href="/program-names">Program Names</a>
+          
+          
+          
+          <a href="/programs">Programs</a>
+          
+          
+          
+          <a href="/self-hosting">Self-Hosting</a>
+          
+          
+          
+          <a href="/unix">Unix</a>
+          
+          
+        </div>
         
 
         
 
-          <div class="flex flex-col text-left nav-links">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/generative-models" class="activated-link">Generative Models</a>
-            
           
-            
-            <a href="/limitations-of-machine-learning">Limitations of Machine Learning</a>
-            
+          <a href="/generative-models" class="activated-link">Generative Models</a>
           
-            
-            <a href="/machine-learning-concepts">Machine Learning Concepts</a>
-            
           
-            
-            <a href="/neural-networks">Neural Networks</a>
-            
           
-            
-            <a href="/pytorch">PyTorch</a>
-            
+          <a href="/limitations-of-machine-learning">Limitations of Machine Learning</a>
           
-          </div>
+          
+          
+          <a href="/machine-learning-concepts">Machine Learning Concepts</a>
+          
+          
+          
+          <a href="/neural-networks">Neural Networks</a>
+          
+          
+          
+          <a href="/pytorch">PyTorch</a>
+          
+          
+        </div>
         
 
         
 
-          <div class="flex flex-col text-left nav-links">
+        <div class="flex flex-col text-left nav-links">
           
-            <a href="/large-language-models">Large Language Models</a>
+          <a href="/large-language-models">Large Language Models</a>
           
-            <a href="/stable-diffusion">Stable Diffusion</a>
+          <a href="/stable-diffusion">Stable Diffusion</a>
           
-          </div>
+        </div>
         
       </div>
-      </div>
+    </div>
 
-    </nav>
-    <main>
-      <header>
-        <h1>Generative Models</h1>
-      </header>
-      <article><h2 id="timeline">Timeline</h2>
+  </nav>
+  <main>
+    <header>
+      <h1>Generative Models</h1>
+    </header>
+    <article><h2 id="timeline">Timeline</h2>
 <p><img alt="AI model family tree" src="https://ai.v-gar.de/ml/transformer/timeline/timeline.png" /></p>
 <p>Source: <a href="https://ai.v-gar.de/ml/transformer/timeline/">AI / ML / Transformer Models Timeline</a></p>
 <h2 id="interesting-articles">Interesting Articles</h2>
@@ -147,29 +134,30 @@
 <li><a href="https://fleuret.org/public/lbdl.pdf">The Little Book of Deep Learning</a></li>
 </ul></article>
 
-      
-
-      
-
-        
-
-
-      
-        
-        <h2><a href="/large-language-models">Large Language Models</a></h2>
-        
-        <h2><a href="/stable-diffusion">Stable Diffusion</a></h2>
-        
-      
-
-    </main>
-    <footer>
-      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Machine Learning/Generative Models/Generative Models.md">edit</a> -
-      <a href="/ampersand">random</a> -
-      <a href="/recent-changes">updates</a> -
-      <a href="/tags">tags</a> -
-      <a href="/sitemap">sitemap</a>
-    </footer>
     
-  </body>
+
+    
+
+
+
+
+    
+    
+    <h2><a href="/large-language-models">Large Language Models</a></h2>
+    
+    <h2><a href="/stable-diffusion">Stable Diffusion</a></h2>
+    
+    
+
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Machine Learning/Generative Models/Generative Models.md">edit</a> -
+    <a href="/gruntle">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
 </html>

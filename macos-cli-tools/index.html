@@ -1,107 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="/static/styles/colors.css" />
-    <link rel="stylesheet" href="/static/styles/global.css" />
-    <link rel="stylesheet" href="/static/styles/code.css" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/static/icon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/static/icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/static/icon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/static/icon/site.webmanifest" />
-    <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
-    <link rel="shortcut icon" href="/static/icon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#603cba" />
-    <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
-    <meta name="theme-color" content="#282A36" />
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <title>notes: macos cli tools</title>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: macos cli tools</title>
+</head>
 
-  <body>
-     <nav>
+<body>
+  <nav>
 
-      <div class="main-icon">
-        <a href="/">
-          <img src="/static/icon/icon.png" alt="notes" height="100">
-        </a>
-      </div>
-      
-      <div class="nav-segments-container">
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
       <div class="nav-segments">
         
 
-          <div class="flex flex-col nav-links text-left">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/gecos">GECOS</a>
-            
           
-            
-            <a href="/linux">Linux</a>
-            
+          <a href="/gecos">GECOS</a>
           
-            
-            <a href="/unix-files">Unix Files</a>
-            
           
-            
-            <a href="/unix-processes">Unix Processes</a>
-            
           
-            
-            <a href="/unix-programs">Unix Programs</a>
-            
+          <a href="/linux">Linux</a>
           
-            
-            <a href="/macos" class="activated-link">macOS</a>
-            
           
-          </div>
+          
+          <a href="/unix-files">Unix Files</a>
+          
+          
+          
+          <a href="/unix-processes">Unix Processes</a>
+          
+          
+          
+          <a href="/unix-programs">Unix Programs</a>
+          
+          
+          
+          <a href="/macos" class="activated-link">macOS</a>
+          
+          
+        </div>
         
 
         
 
-          <div class="flex flex-col text-left nav-links">
+        <div class="flex flex-col text-left nav-links">
           
-            
-            <a href="/making-macos-useable">Making macOS Useable</a>
-            
           
-            
-            <a href="/macos-cli-tools" class="activated-link">macOS CLI Tools</a>
-            
+          <a href="/making-macos-useable">Making macOS Useable</a>
           
-          </div>
+          
+          
+          <a href="/macos-cli-tools" class="activated-link">macOS CLI Tools</a>
+          
+          
+        </div>
         
 
         
       </div>
-      </div>
+    </div>
 
-    </nav>
-    <main>
-      <header>
-        <h1>macOS CLI Tools</h1>
-      </header>
-      <article><p>This is a list of macOS CLI tools that are variously useful, written by <a href="https://saurabhs.org/">Saurabh</a> <a href="https://saurabhs.org/advanced-macos-commands">here</a>.</p>
+  </nav>
+  <main>
+    <header>
+      <h1>macOS CLI Tools</h1>
+    </header>
+    <article><p>This is a list of macOS CLI tools that are variously useful, written by <a href="https://saurabhs.org/">Saurabh</a> <a href="https://saurabhs.org/advanced-macos-commands">here</a>.</p>
 <hr />
 <h1 id="advanced-macos-command-line-tools">Advanced macOS Command-Line Tools</h1>
 <p>Last updated for macOS Ventura</p>
@@ -177,34 +164,35 @@
 <p><code>system_profiler SPPowerDataType</code> prints power and battery information, including the current AC wattage and battery cycle count.</p>
 <p><code>system_profiler SPDeveloperToolsDataType</code> prints the currently active version of the Xcode developer tools and SDK.</p></article>
 
-      
-
-      
-      <p class="backlinks"><span class="bold">Tags:</span>
-          
-          <a href="/tags#macos">#macos</a>
-          
-          <a href="/tags#unix">#unix</a>
-          
-        </span>
-      </p>
-      
-
-        
-
-
-      
-        
-      
-
-    </main>
-    <footer>
-      <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Unix/macOS/macOS CLI Tools.md">edit</a> -
-      <a href="/alpaca">random</a> -
-      <a href="/recent-changes">updates</a> -
-      <a href="/tags">tags</a> -
-      <a href="/sitemap">sitemap</a>
-    </footer>
     
-  </body>
+
+    
+    <p class="backlinks"><span class="bold">Tags:</span>
+      
+      <a href="/tags#unix">#unix</a>
+      
+      <a href="/tags#macos">#macos</a>
+      
+      </span>
+    </p>
+    
+
+
+
+
+    
+    
+    
+
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Unix/macOS/macOS CLI Tools.md">edit</a> -
+    <a href="/python-getopt()-template">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
 </html>
