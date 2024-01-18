@@ -232,6 +232,8 @@ def append_bullet(node, depth):
 
 
 def generate_tags():
+    tree["Tags"]["script"] = helpers.tags_js()
+
     global tags_md
     tags_md = ""
     for tag in sorted(tags.keys()):
