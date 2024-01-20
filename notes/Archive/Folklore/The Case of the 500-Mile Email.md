@@ -1,5 +1,7 @@
 The following is the 500-mile email story in [the form it originally appeared](http://www.ibiblio.org/harris/500milemail.html), in a post to sage-members on Sun, 24 Nov 2002. He later wrote an [FAQ](http://www.ibiblio.org/harris/500milemail-faq.html).
 
+---
+
 ```
 From trey@sage.org Fri Nov 29 18:00:49 2002
 Date: Sun, 24 Nov 2002 21:03:02 -0500 (EST)
