@@ -19,7 +19,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: ellsberg's advice for kissinger</title>
+  <title>notes: larry page builds a web robot</title>
 </head>
 
 <body>
@@ -133,7 +133,7 @@
           
           
           
-          <a href="/ellsbergs-advice-for-kissinger" class="activated-link">Ellsberg's Advice For Kissinger</a>
+          <a href="/ellsbergs-advice-for-kissinger">Ellsberg's Advice For Kissinger</a>
           
           
           
@@ -161,7 +161,7 @@
           
           
           
-          <a href="/larry-page-builds-a-web-robot">Larry Page Builds a Web Robot</a>
+          <a href="/larry-page-builds-a-web-robot" class="activated-link">Larry Page Builds a Web Robot</a>
           
           
           
@@ -314,19 +314,59 @@
   </nav>
   <main>
     <header>
-      <h1>Ellsberg's Advice For Kissinger</h1>
+      <h1>Larry Page Builds a Web Robot</h1>
     </header>
-    <article><p>Advice Daniel Ellsberg gave to Henry Kissinger in 1968 about the burdens of security clearance.  Taken from <a href="https://www.motherjones.com/kevin-drum/2010/02/daniel-ellsberg-limitations-knowledge/">here</a>, originally published in his book <em>Secrets</em>. </p>
+    <article><p>Lawrence Page asks about how to set the User-Agent field in the Java HTTP library.  He is building a little web robot.  Nothing to see here.  Posted to Usenet on <a href="https://groups.google.com/g/comp.lang.java/c/aSPAJO05LIU/m/ushhUIQQ-ogJ?pli=1">1996-07-01</a>.</p>
 <hr />
-<p>“Henry, there’s something I would like to tell you, for what it’s worth, something I wish I had been told years ago. You’ve been a consultant for a long time, and you’ve dealt a great deal with top secret information. But you’re about to receive a whole slew of special clearances, maybe fifteen or twenty of them, that are higher than top secret.</p>
-<p>“I’ve had a number of these myself, and I’ve known other people who have just acquired them, and I have a pretty good sense of what the effects of receiving these clearances are on a person who didn’t previously know they even <em>existed</em>. And the effects of reading the information that they will make available to you.</p>
-<p>“First, you’ll be exhilarated by some of this new information, and by having it all — so much! incredible! — suddenly available to you. But second, almost as fast, you will feel like a fool for having studied, written, talked about these subjects, criticized and analyzed decisions made by presidents for years without having known of the existence of all this information, which presidents and others had and you didn’t, and which must have influenced their decisions in ways you couldn’t even guess. In particular, you’ll feel foolish for having literally rubbed shoulders for over a decade with some officials and consultants who did have access to all this information you didn’t know about and didn’t know they had, and you’ll be stunned that they kept that secret from you so well.</p>
-<p>“You will feel like a fool, and that will last for about two weeks. Then, after you’ve started reading all this daily intelligence input and become used to using what amounts to whole libraries of hidden information, which is much more closely held than mere top secret data, you will forget there ever was a time when you didn’t have it, and you’ll be aware only of the fact that you have it now and most others don’t….and that all those <em>other</em> people are fools.</p>
-<p>“Over a longer period of time — not too long, but a matter of two or three years — you’ll eventually become aware of the limitations of this information. There is a great deal that it doesn’t tell you, it’s often inaccurate, and it can lead you astray just as much as the <em>New York Times</em> can. But that takes a while to learn.</p>
-<p>“In the meantime it will have become very hard for you to <em>learn</em> from anybody who doesn’t have these clearances. Because you’ll be thinking as you listen to them: ‘What would this man be telling me if he knew what I know? Would he be giving me the same advice, or would it totally change his predictions and recommendations?’ And <em>that</em> mental exercise is so torturous that after a while you give it up and just stop listening. I’ve seen this with my superiors, my colleagues….and with myself.</p>
-<p>“You will deal with a person who doesn’t have those clearances only from the point of view of what you want him to believe and what impression you want him to go away with, since you’ll have to lie carefully to him about what you know. In effect, you will have to manipulate him. You’ll give up trying to assess what he has to say. The danger is, you’ll become something like a moron. You’ll become incapable of learning from most people in the world, no matter how much experience they may have in their particular areas that may be much greater than yours.”</p>
-<p>….Kissinger hadn’t interrupted this long warning. As I’ve said, he could be a good listener, and he listened soberly. He seemed to understand that it was heartfelt, and he didn’t take it as patronizing, as I’d feared. But I knew it was too soon for him to appreciate fully what I was saying. He didn’t have the clearances yet.</p></article>
+<p>Lawrence Page, Jan 7, 1996, 7:00:00 PM</p>
+<div class="highlight"><pre><span></span><code>I have a web robot which is a Java app. I need to be able to set the  
+User-Agent field in the HTTP header in order to be a good net citizen (so  
+people know who is accessing their server). Anyone have any ideas?
 
+Right now, Java sends a request that includes something like:
+
+User-Agent: Java/1.0beta2
+
+I&#39;d rather not rewrite all the HTTP stuff myself. I tried just searching  
+in the JDK for the Java/1.0beta2 figuring I could just change the string,  
+but I couldn&#39;t find it. Perhaps it is stored as a unicode string?
+
+An easy method of setting the User-Agent field should probably be added to  
+Java, so people can properly identify their programs.
+
+Thanks, Larry Page
+</code></pre></div>
+<hr />
+<p>Joseph Millar, Jan 9, 1996, 7:00:00 PM</p>
+<div class="highlight"><pre><span></span><code>Larry,
+
+The User-Agent field is built in:
+
+.\javasrc\src\share\sun\sun\net\www\http\HttpClient.java
+
+It looks to be a concatentation of three items:  
+1) the system property &quot;http.agent&quot;  
+2) the word &quot;Java&quot;  
+3) the system property &quot;java.version&quot;
+
+Since the agent string that gets built has only items 2 and  
+3, perhaps that means &quot;http.agent&quot; is blank (i.e. settable)?  
+If you could set &quot;http.agent&quot; prior to establishing the URL  
+connection, you may be able to get the desired effect.
+
+Just a shot in the dark...
+
+
+Joe Millar
+</code></pre></div></article>
+
+    
+    <p class="backlinks"><span class="bold">Incoming:</span>
+      
+      <a href="/recent-changes">Recent Changes</a>
+      
+      </span>
+    </p>
     
 
     
@@ -340,8 +380,8 @@
 
   </main>
   <footer>
-    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Folklore/Ellsberg's Advice For Kissinger.md">edit</a> -
-    <a href="/web-communities">random</a> -
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Folklore/Larry Page Builds a Web Robot.md">edit</a> -
+    <a href="/we-have-no-moat-and-neither-does-openai">random</a> -
     <a href="/recent-changes">updates</a> -
     <a href="/tags">tags</a> -
     <a href="/sitemap">sitemap</a>
