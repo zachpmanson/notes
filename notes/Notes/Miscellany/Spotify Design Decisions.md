@@ -18,12 +18,12 @@ This is deeply infuriating.  I never even wanted to use Smart Shuffle in the fir
 This occurred every time I wanted to turn off  `Shuffle`.  Which is a lot.
 
 As of 2024-01-21, this loading state of the button appears to have been removed, but the button still is a 3 option cycle which I dislike.
+## Upcoming Complains
 
-%%
-## TODO Smart Shuffle popup
+Stay tuned!
 
-## TODO Rapidly toggling through Shuffle button states can cause the cycle to desync in strange ways 
-## TODO Can't swipe right to add track to queue in a Blend playlist
-
-## TODO Can swipe down to dismiss Now Playing screen but cannot swipe up to make it appear again (just skips to next track)
- %%
+- Smart Shuffle popup
+- Rapidly toggling through Shuffle button states can cause the cycle to desync in strange ways
+- Can't swipe right to add track to queue in a Blend playlist (Android)
+- Can swipe down to dismiss Now Playing screen but cannot swipe up to make it appear again (just skips to next track) (Android)
+- Spotify (regular) Shuffle algorithm has some problems
