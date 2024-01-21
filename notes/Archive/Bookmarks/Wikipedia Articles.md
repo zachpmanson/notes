@@ -14,6 +14,10 @@ tags:
 - [Basilisk Collection](https://suricrasia.online/unfiction/basilisk/)
 - [Andy and Bill's law](https://en.wikipedia.org/wiki/Andy_and_Bill%27s_law)
 
+## Maths
+
+- [Six nines in pi](https://en.wikipedia.org/wiki/Six_nines_in_pi)
+
 ## History
 
 - [Kramatorsk radiological accident](https://en.wikipedia.org/wiki/Kramatorsk_radiological_accident)
