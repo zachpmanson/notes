@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: jsx, react native, and typescript</title>
+</head>
+
+<body>
+  <nav>
+
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
+      <div class="nav-segments">
+        
+
+        <div class="flex flex-col text-left nav-links">
+          
+          
+          <a href="/bookmarks">Bookmarks</a>
+          
+          
+          
+          <a href="/fiction">Fiction</a>
+          
+          
+          
+          <a href="/folklore" class="activated-link">Folklore</a>
+          
+          
+          
+          <a href="/lines">Lines</a>
+          
+          
+          
+          <a href="/problems">Problems</a>
+          
+          
+          
+          <a href="/templates">Templates</a>
+          
+          
+        </div>
+        
+
+        
+
+        <div class="flex flex-col text-left nav-links">
+          
+          
+          <a href="/10-rules-of-internet">10 Rules of Internet</a>
+          
+          
+          
+          <a href="/a-story-about-magic">A Story About 'Magic'</a>
+          
+          
+          
+          <a href="/alice-in-modeland">Alice in Modeland</a>
+          
+          
+          
+          <a href="/aliens-and-calendars">Aliens and Calendars</a>
+          
+          
+          
+          <a href="/amazons-first-job-posting">Amazon's First Job Posting</a>
+          
+          
+          
+          <a href="/bell-labs-productivity-mystery">Bell Labs' Productivity Mystery</a>
+          
+          
+          
+          <a href="/best-practices-for-time-travelers">Best Practices for Time Travelers</a>
+          
+          
+          
+          <a href="/bill-gates-tries-to-install-windows-movie-maker">Bill Gates Tries To Install Windows Movie Maker</a>
+          
+          
+          
+          <a href="/bill-gates-wrote-fat-on-an-airplane">Bill Gates Wrote FAT on an Airplane</a>
+          
+          
+          
+          <a href="/c-locale-braindeath">C Locale Braindeath</a>
+          
+          
+          
+          <a href="/cannot-simultaneously-fix-and-keep-job.-therefore-wont-fix.">Cannot simultaneously fix and keep job. Therefore, won't fix.</a>
+          
+          
+          
+          <a href="/christ-mcdonald">Christ McDonald</a>
+          
+          
+          
+          <a href="/competing-with-gpt">Competing with GPT</a>
+          
+          
+          
+          <a href="/digg-v4">Digg v4</a>
+          
+          
+          
+          <a href="/dispatch-from-the-cyberpunk-city">Dispatch From the Cyberpunk City</a>
+          
+          
+          
+          <a href="/do-things-tell-people">Do Things, Tell People</a>
+          
+          
+          
+          <a href="/ellsbergs-advice-for-kissinger">Ellsberg's Advice For Kissinger</a>
+          
+          
+          
+          <a href="/factory-factory-factory">Factory Factory Factory</a>
+          
+          
+          
+          <a href="/file-over-app">File Over App</a>
+          
+          
+          
+          <a href="/guerilla-open-access-manifesto">Guerilla Open Access Manifesto</a>
+          
+          
+          
+          <a href="/heaven-banning">Heaven Banning</a>
+          
+          
+          
+          <a href="/incomplete-list-of-mistakes-in-the-design-of-css">Incomplete List of Mistakes in the Design of CSS</a>
+          
+          
+          
+          <a href="/jsx-react-native-and-typescript" class="activated-link">JSX, React Native, and TypeScript</a>
+          
+          
+          
+          <a href="/kurt-vonnegut-grades">Kurt Vonnegut Grades</a>
+          
+          
+          
+          <a href="/larry-page-builds-a-web-robot">Larry Page Builds a Web Robot</a>
+          
+          
+          
+          <a href="/life-of-an-oracle-developer">Life of an Oracle Developer</a>
+          
+          
+          
+          <a href="/man-spends-entire-career-mastering-crappy-codebase">Man Spends Entire Career Mastering Crappy Codebase</a>
+          
+          
+          
+          <a href="/no-dogs-were-harmed-in-the-making-of-this-app">No dogs were harmed in the making of this app</a>
+          
+          
+          
+          <a href="/not-a-real-engineer">Not a real engineer</a>
+          
+          
+          
+          <a href="/on-the-origins-of-emacs">On the Origins of Emacs</a>
+          
+          
+          
+          <a href="/openoffice-cant-print-on-tuesdays">OpenOffice Can't Print on Tuesdays</a>
+          
+          
+          
+          <a href="/oracle-as-lawnmower">Oracle as Lawnmower</a>
+          
+          
+          
+          <a href="/originality-not-required">Originality Not Required</a>
+          
+          
+          
+          <a href="/psd-is-not-my-favourite-file-format">PSD is not my favourite file format</a>
+          
+          
+          
+          <a href="/please-drink-verification-can">Please Drink Verification Can</a>
+          
+          
+          
+          <a href="/pocket-veto">Pocket Veto</a>
+          
+          
+          
+          <a href="/price-of-chatgpts-api-vs-human">Price of ChatGPT's API vs Human</a>
+          
+          
+          
+          <a href="/regular-expressions-and-html">Regular Expressions and HTML</a>
+          
+          
+          
+          <a href="/rob-pikes-5-rules-of-programming">Rob Pike's 5 Rules of Programming</a>
+          
+          
+          
+          <a href="/rob-pikes-lesson-in-shortcuts">Rob Pike's Lesson in Shortcuts</a>
+          
+          
+          
+          <a href="/sre-threats">SRE Threats</a>
+          
+          
+          
+          <a href="/steve-yegges-tale-of-geoworks">Steve Yegge's Tale of Geoworks</a>
+          
+          
+          
+          <a href="/superstitious-encoding">Superstitious Encoding</a>
+          
+          
+          
+          <a href="/the-bitter-lesson">The Bitter Lesson</a>
+          
+          
+          
+          <a href="/the-cab-ride-ill-never-forget">The Cab Ride I'll Never Forget</a>
+          
+          
+          
+          <a href="/the-case-of-the-500-mile-email">The Case of the 500-Mile Email</a>
+          
+          
+          
+          <a href="/the-crawford-principles">The Crawford Principles</a>
+          
+          
+          
+          <a href="/the-damned-can-now-play-three-chords">The Damned Can Now Play Three Chords</a>
+          
+          
+          
+          <a href="/the-nazi-bar-problem">The Nazi Bar Problem</a>
+          
+          
+          
+          <a href="/the-unknown-citizen">The Unknown Citizen</a>
+          
+          
+          
+          <a href="/the-web-without-ad-blockers">The Web Without Ad Blockers</a>
+          
+          
+          
+          <a href="/the-bin-split">The bin Split</a>
+          
+          
+          
+          <a href="/thoughts-on-flash">Thoughts On Flash</a>
+          
+          
+          
+          <a href="/tiktoks-enshittification">TikTok's Enshittification</a>
+          
+          
+          
+          <a href="/usenet-post-warning">Usenet Post Warning</a>
+          
+          
+          
+          <a href="/virtues-of-a-good-programmer">Virtues of a Good Programmer</a>
+          
+          
+          
+          <a href="/we-have-no-moat-and-neither-does-openai">We Have No Moat, And Neither Does OpenAI</a>
+          
+          
+          
+          <a href="/when-is-midnight">When Is Midnight</a>
+          
+          
+          
+          <a href="/worse-is-better">Worse is Better</a>
+          
+          
+          
+          <a href="/yak-shaving">Yak Shaving</a>
+          
+          
+          
+          <a href="/carproblems.txt">carproblems.txt</a>
+          
+          
+        </div>
+        
+
+        
+      </div>
+    </div>
+
+  </nav>
+  <main>
+    <header>
+      <h1>JSX, React Native, and TypeScript</h1>
+    </header>
+    <article><p>Why doesn't React Native use JSX?  From a <a href="https://github.com/ds300/react-native-typescript-transformer/issues/46">GitHub issue on React Native TypeScript transformer</a>.</p>
+<hr />
+<p><strong><a href="https://github.com/henrikra">henrikra</a></strong> commented <a href="https://github.com/ds300/react-native-typescript-transformer/issues/46#issue-298217181">Feb 19, 2018</a></p>
+<p>I noticed from JSX <a href="https://www.typescriptlang.org/docs/handbook/jsx.html">docs</a> that JSX has also option <code>react-native</code> for it.</p>
+<p>Here are all three different modes for JSX</p>
+<blockquote>
+<p>TypeScript ships with three JSX modes: preserve, react, and react-native. These modes only affect the emit stage - type checking is unaffected. The preserve mode will keep the JSX as part of the output to be further consumed by another transform step (e.g. Babel). Additionally the output will have a .jsx file extension. The react mode will emit React.createElement, does not need to go through a JSX transformation before use, and the output will have a .js file extension. The react-native mode is the equivalent of preserve in that it keeps all JSX, but the output will instead have a .js file extension.</p>
+</blockquote>
+<p>So why <code>react-native-typescript-transformer</code> is telling us to configure JSX to <code>react</code> instead of <code>react-native</code>. Are there some drawbacks etc? :D</p>
+<hr />
+<p><strong><a href="https://github.com/ds300">ds300</a></strong> commented <a href="https://github.com/ds300/react-native-typescript-transformer/issues/46#issuecomment-366646702">Feb 19, 2018</a> </p>
+<p>Hi Henrik,</p>
+<p>Good question! I agree, the situation is a little confusing, ~~and the reason for it is historical rather than technical.~~ the reason for it is both historical and technical.</p>
+<p>When React first appeared on the scene, most JS tooling was not compatible with the JSX syntax. To mitigate this, people would only put JSX syntax in files with the extension <code>.jsx</code>. Eventually the tooling caught up and now most of us put JSX in <code>.js</code> files as though it were part of the ECMAScript standard.</p>
+<p>When TypeScript first added support for JSX, people were still using the <code>.jsx</code> extension a lot, so the TS crew made <code>.tsx</code> files compile to <code>.jsx</code> files. This is how the <code>--jsx react</code> option works.</p>
+<p>The React Native ecosystem fully embraced the <code>.js</code> extension to the point that the bundler <code>metro</code> doesn't even support loading <code>.jsx</code> files. This posed a problem for people using TypeScript with React Native because TypeScript <em>only</em> supported <code>.jsx</code> files. I can't actually remember how people would use TypeScript with React Native back in those days, but it was probably ugly.</p>
+<p>The <code>--jsx react-native</code> option was added to let developers compile <code>.tsx</code> files to ordinary <code>.js</code> files.</p>
+<p><em>edit</em>: In addition, it leaves the <code>JSX</code> untouched, like the <code>preserve</code> option, because React Native used to provide error reports which rendered the JSX (maybe still does? I haven't seen them in forever).</p>
+<p>At the time of writing, <code>react-native-typescript-transformer</code> uses Babel as a secondary compilation step, so it shouldn't matter whether you use <code>react</code>, <code>preserve</code>, or <code>react-native</code> :)</p></article>
+
+    
+    <p class="backlinks"><span class="bold">Incoming:</span>
+      
+      <a href="/recent-changes">Recent Changes</a>
+      
+      </span>
+    </p>
+    
+
+    
+
+
+
+
+    
+    
+    
+
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Folklore/JSX, React Native, and TypeScript.md">edit</a> -
+    <a href="/best-practices-for-time-travelers">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
+</html>
