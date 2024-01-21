@@ -37,6 +37,7 @@ DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscu
 + **Phaneron** (English-ish): the collective total of all that is in any way or in any sense present to the mind, quite regardless of whether it corresponds to any real thing or not
 + **Prosaically** (English): in a straightforward, ordinary way
 + **Sanguine**: optimistic or positive, especially in an apparently bad or difficult situation.
++ **Sargable**: a query which is able to be optimised through usage of an index
 + **Schadenfreude** (German): enjoyment obtained from the troubles of others
 + **Setsunai** (Japanese): nostalgic/whistful/longing/melancholy/sad/heartache/bittersweet
 + **Shibboleth** (Hebrew): a custom, principle, or belief distinguishing a particular class or group of people, especially a long-standing one regarded as outmoded or no longer important.
