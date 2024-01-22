@@ -9,7 +9,7 @@ echo "Building..."
 ./build.sh
 cd ./site/
 git add .
-DATE=$(date --iso-8601=seconds -u)
+DATE=$(date -Iseconds)
 git commit -m "gh-pages deployment $DATE"
 echo "Uploading to webserver..."
 git push
