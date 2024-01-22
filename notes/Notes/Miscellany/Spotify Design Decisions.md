@@ -17,7 +17,8 @@ This is deeply infuriating.  I never even wanted to use Smart Shuffle in the fir
 
 This occurred every time I wanted to turn off  `Shuffle`.  Which is a lot.
 
-As of 2024-01-21, this loading state of the button appears to have been removed, but the button still is a 3 option cycle which I dislike.
+As of 2024-01-21, this loading state of the button appears to have been removed, but the button still is a 3 option cycle which I dislike (though respect the elegance of).
+
 ## Upcoming Complains
 
 Stay tuned!
