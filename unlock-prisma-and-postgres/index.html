@@ -19,7 +19,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: killing based on port number</title>
+  <title>notes: unlock prisma and postgres</title>
 </head>
 
 <body>
@@ -133,7 +133,7 @@
           
           
           
-          <a href="/killing-based-on-port-number" class="activated-link">Killing based on port number</a>
+          <a href="/killing-based-on-port-number">Killing based on port number</a>
           
           
           
@@ -201,7 +201,7 @@
           
           
           
-          <a href="/unlock-prisma-and-postgres">Unlock Prisma and Postgres</a>
+          <a href="/unlock-prisma-and-postgres" class="activated-link">Unlock Prisma and Postgres</a>
           
           
           
@@ -230,12 +230,24 @@
   </nav>
   <main>
     <header>
-      <h1>Killing based on port number</h1>
+      <h1>Unlock Prisma and Postgres</h1>
     </header>
-    <article><p>From <a href="https://stackoverflow.com/a/32592965">StackOverflow</a>.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">kill</span><span class="w"> </span><span class="k">$(</span>lsof<span class="w"> </span>-t<span class="w"> </span>-i:<span class="nv">$portnum</span><span class="k">)</span>
-</code></pre></div></article>
+    <article><p>Often after a prisma migration on a postgres instance, further migrations won't work citing some random error.  This can be fixed with this magic incantation into psql.</p>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">pg_terminate_backend</span><span class="p">(</span><span class="n">PSA</span><span class="p">.</span><span class="n">pid</span><span class="p">)</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">pg_locks</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">PL</span>
+<span class="w">    </span><span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">pg_stat_activity</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">PSA</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">PSA</span><span class="p">.</span><span class="n">pid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PL</span><span class="p">.</span><span class="n">pid</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">PSA</span><span class="p">.</span><span class="k">state</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;idle&#39;</span>
+<span class="w">    </span><span class="k">AND</span><span class="w"> </span><span class="n">PL</span><span class="p">.</span><span class="n">objid</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="mi">72707369</span><span class="p">);</span>
+</code></pre></div>
+<p><a href="https://stackoverflow.com/questions/76450818/supabase-prisma-migrate-dev-sometimes-times-out-postgres-advisory-lock/76467171#76467171">Original source</a></p></article>
 
+    
+    <p class="backlinks"><span class="bold">Incoming:</span>
+      
+      <a href="/recent-changes">Recent Changes</a>
+      
+      </span>
+    </p>
     
 
     
@@ -249,8 +261,8 @@
 
   </main>
   <footer>
-    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Killing based on port number.md">edit</a> -
-    <a href="/larry-page-builds-a-web-robot">random</a> -
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Unlock Prisma and Postgres.md">edit</a> -
+    <a href="/tags">random</a> -
     <a href="/recent-changes">updates</a> -
     <a href="/tags">tags</a> -
     <a href="/sitemap">sitemap</a>
