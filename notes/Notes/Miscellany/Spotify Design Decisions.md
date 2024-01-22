@@ -28,3 +28,4 @@ Stay tuned!
 - Can't swipe right to add track to queue in a Blend playlist (Android)
 - Can swipe down to dismiss Now Playing screen but cannot swipe up to make it appear again (just skips to next track) (Android)
 - Spotify (regular) Shuffle algorithm has some problems
+- For some god forsaken reason, clicking the overflow menu in a song sometimes fires requires a network request so it has to LOAD and can even FAIL ENTIRELY (Android)
