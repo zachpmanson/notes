@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: anything-to-number conversion table</title>
+</head>
+
+<body>
+  <nav>
+
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
+      <div class="nav-segments">
+        
+
+        <div class="flex flex-col text-left nav-links">
+          
+          
+          <a href="/bash">Bash</a>
+          
+          
+          
+          <a href="/c">C</a>
+          
+          
+          
+          <a href="/go">Go</a>
+          
+          
+          
+          <a href="/javascript" class="activated-link">JavaScript</a>
+          
+          
+        </div>
+        
+
+        
+
+        <div class="flex flex-col text-left nav-links">
+          
+          
+          <a href="/anything-to-number-conversion-table" class="activated-link">Anything-to-Number Conversion Table</a>
+          
+          
+          
+          <a href="/typescript">TypeScript</a>
+          
+          
+        </div>
+        
+
+        
+      </div>
+    </div>
+
+  </nav>
+  <main>
+    <header>
+      <h1>Anything-to-Number Conversion Table</h1>
+    </header>
+    <article><p>I found this <a href="https://stackoverflow.com/a/17106702">on StackOverflow</a> by georg.</p>
+<hr />
+<table>
+<thead>
+<tr>
+<th>x</th>
+<th>parseInt(x)</th>
+<th>parseFloat(x)</th>
+<th>Number(x)</th>
+<th>+x</th>
+<th>~~x</th>
+<th>x&gt;&gt;&gt;0</th>
+<th>isNaN(x)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"123"</td>
+<td>123</td>
+<td>123</td>
+<td>123</td>
+<td>123</td>
+<td>123</td>
+<td>123</td>
+<td>false</td>
+</tr>
+<tr>
+<td>"+123"</td>
+<td>123</td>
+<td>123</td>
+<td>123</td>
+<td>123</td>
+<td>123</td>
+<td>123</td>
+<td>false</td>
+</tr>
+<tr>
+<td>"-123"</td>
+<td>-123</td>
+<td>-123</td>
+<td>-123</td>
+<td>-123</td>
+<td>-123</td>
+<td>4294967173</td>
+<td>false</td>
+</tr>
+<tr>
+<td>"123.45"</td>
+<td>123</td>
+<td>123.45</td>
+<td>123.45</td>
+<td>123.45</td>
+<td>123</td>
+<td>123</td>
+<td>false</td>
+</tr>
+<tr>
+<td>"-123.45"</td>
+<td>-123</td>
+<td>-123.45</td>
+<td>-123.45</td>
+<td>-123.45</td>
+<td>-123</td>
+<td>4294967173</td>
+<td>false</td>
+</tr>
+<tr>
+<td>"12e5"</td>
+<td>12</td>
+<td>1200000</td>
+<td>1200000</td>
+<td>1200000</td>
+<td>1200000</td>
+<td>1200000</td>
+<td>false</td>
+</tr>
+<tr>
+<td>"12e-5"</td>
+<td>12</td>
+<td>0.00012</td>
+<td>0.00012</td>
+<td>0.00012</td>
+<td>0</td>
+<td>0</td>
+<td>false</td>
+</tr>
+<tr>
+<td>"0123"</td>
+<td>123</td>
+<td>123</td>
+<td>123</td>
+<td>123</td>
+<td>123</td>
+<td>123</td>
+<td>false</td>
+</tr>
+<tr>
+<td>"0000123"</td>
+<td>123</td>
+<td>123</td>
+<td>123</td>
+<td>123</td>
+<td>123</td>
+<td>123</td>
+<td>false</td>
+</tr>
+<tr>
+<td>"0b111"</td>
+<td>0</td>
+<td>0</td>
+<td>7</td>
+<td>7</td>
+<td>7</td>
+<td>7</td>
+<td>false</td>
+</tr>
+<tr>
+<td>"0o10"</td>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+<td>8</td>
+<td>8</td>
+<td>8</td>
+<td>false</td>
+</tr>
+<tr>
+<td>"0xBABE"</td>
+<td>47806</td>
+<td>0</td>
+<td>47806</td>
+<td>47806</td>
+<td>47806</td>
+<td>47806</td>
+<td>false</td>
+</tr>
+<tr>
+<td>"4294967295"</td>
+<td>4294967295</td>
+<td>4294967295</td>
+<td>4294967295</td>
+<td>4294967295</td>
+<td>-1</td>
+<td>4294967295</td>
+<td>false</td>
+</tr>
+<tr>
+<td>"123456789012345678"</td>
+<td>123456789012345680</td>
+<td>123456789012345680</td>
+<td>123456789012345680</td>
+<td>123456789012345680</td>
+<td>-1506741424</td>
+<td>2788225872</td>
+<td>false</td>
+</tr>
+<tr>
+<td>"12e999"</td>
+<td>12</td>
+<td>Infinity</td>
+<td>Infinity</td>
+<td>Infinity</td>
+<td>0</td>
+<td>0</td>
+<td>false</td>
+</tr>
+<tr>
+<td>""</td>
+<td><strong>NaN</strong></td>
+<td><strong>NaN</strong></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>false</td>
+</tr>
+<tr>
+<td>"123foo"</td>
+<td>123</td>
+<td>123</td>
+<td><strong>NaN</strong></td>
+<td><strong>NaN</strong></td>
+<td>0</td>
+<td>0</td>
+<td><strong>true</strong></td>
+</tr>
+<tr>
+<td>"123.45foo"</td>
+<td>123</td>
+<td>123.45</td>
+<td><strong>NaN</strong></td>
+<td><strong>NaN</strong></td>
+<td>0</td>
+<td>0</td>
+<td><strong>true</strong></td>
+</tr>
+<tr>
+<td>" 123 "</td>
+<td>123</td>
+<td>123</td>
+<td>123</td>
+<td>123</td>
+<td>123</td>
+<td>123</td>
+<td>false</td>
+</tr>
+<tr>
+<td>"foo"</td>
+<td><strong>NaN</strong></td>
+<td><strong>NaN</strong></td>
+<td><strong>NaN</strong></td>
+<td><strong>NaN</strong></td>
+<td>0</td>
+<td>0</td>
+<td><strong>true</strong></td>
+</tr>
+<tr>
+<td>"12e"</td>
+<td>12</td>
+<td>12</td>
+<td><strong>NaN</strong></td>
+<td><strong>NaN</strong></td>
+<td>0</td>
+<td>0</td>
+<td><strong>true</strong></td>
+</tr>
+<tr>
+<td>"0b567"</td>
+<td>0</td>
+<td>0</td>
+<td><strong>NaN</strong></td>
+<td><strong>NaN</strong></td>
+<td>0</td>
+<td>0</td>
+<td><strong>true</strong></td>
+</tr>
+<tr>
+<td>"0o999"</td>
+<td>0</td>
+<td>0</td>
+<td><strong>NaN</strong></td>
+<td><strong>NaN</strong></td>
+<td>0</td>
+<td>0</td>
+<td><strong>true</strong></td>
+</tr>
+<tr>
+<td>"0xFUZZ"</td>
+<td>15</td>
+<td>0</td>
+<td><strong>NaN</strong></td>
+<td><strong>NaN</strong></td>
+<td>0</td>
+<td>0</td>
+<td><strong>true</strong></td>
+</tr>
+<tr>
+<td>"+0"</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>false</td>
+</tr>
+<tr>
+<td>"-0"</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>false</td>
+</tr>
+<tr>
+<td>"Infinity"</td>
+<td><strong>NaN</strong></td>
+<td>Infinity</td>
+<td>Infinity</td>
+<td>Infinity</td>
+<td>0</td>
+<td>0</td>
+<td>false</td>
+</tr>
+<tr>
+<td>"+Infinity"</td>
+<td><strong>NaN</strong></td>
+<td>Infinity</td>
+<td>Infinity</td>
+<td>Infinity</td>
+<td>0</td>
+<td>0</td>
+<td>false</td>
+</tr>
+<tr>
+<td>"-Infinity"</td>
+<td><strong>NaN</strong></td>
+<td>-Infinity</td>
+<td>-Infinity</td>
+<td>-Infinity</td>
+<td>0</td>
+<td>0</td>
+<td>false</td>
+</tr>
+<tr>
+<td>BigInt(1)</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td><strong>Error</strong></td>
+<td>1</td>
+<td><strong>Error</strong></td>
+<td><strong>Error</strong></td>
+</tr>
+<tr>
+<td>null</td>
+<td><strong>NaN</strong></td>
+<td><strong>NaN</strong></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>false</td>
+</tr>
+<tr>
+<td>undefined</td>
+<td><strong>NaN</strong></td>
+<td><strong>NaN</strong></td>
+<td><strong>NaN</strong></td>
+<td><strong>NaN</strong></td>
+<td>0</td>
+<td>0</td>
+<td><strong>true</strong></td>
+</tr>
+<tr>
+<td>true</td>
+<td><strong>NaN</strong></td>
+<td><strong>NaN</strong></td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>false</td>
+</tr>
+<tr>
+<td>false</td>
+<td><strong>NaN</strong></td>
+<td><strong>NaN</strong></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>false</td>
+</tr>
+<tr>
+<td>Infinity</td>
+<td><strong>NaN</strong></td>
+<td>Infinity</td>
+<td>Infinity</td>
+<td>Infinity</td>
+<td>0</td>
+<td>0</td>
+<td>false</td>
+</tr>
+<tr>
+<td>NaN</td>
+<td><strong>NaN</strong></td>
+<td><strong>NaN</strong></td>
+<td><strong>NaN</strong></td>
+<td><strong>NaN</strong></td>
+<td>0</td>
+<td>0</td>
+<td><strong>true</strong></td>
+</tr>
+<tr>
+<td>{}</td>
+<td><strong>NaN</strong></td>
+<td><strong>NaN</strong></td>
+<td><strong>NaN</strong></td>
+<td><strong>NaN</strong></td>
+<td>0</td>
+<td>0</td>
+<td><strong>true</strong></td>
+</tr>
+<tr>
+<td>{valueOf: function(){return 42}}</td>
+<td><strong>NaN</strong></td>
+<td><strong>NaN</strong></td>
+<td>42</td>
+<td>42</td>
+<td>42</td>
+<td>42</td>
+<td>false</td>
+</tr>
+<tr>
+<td>{toString: function(){return "56"}}</td>
+<td>56</td>
+<td>56</td>
+<td>56</td>
+<td>56</td>
+<td>56</td>
+<td>56</td>
+<td>false</td>
+</tr>
+<tr>
+<td>And the JavaScript to generate it!</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code><span class="nx">EXPRS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s1">&#39;parseInt(x)&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;parseFloat(x)&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;Number(x)&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;+x&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;~~x&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;x&gt;&gt;&gt;0&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;isNaN(x)&#39;</span>
+
+<span class="p">];</span>
+
+<span class="nx">VALUES</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="s1">&#39;&quot;123&quot;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;&quot;+123&quot;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;&quot;-123&quot;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;&quot;123.45&quot;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;&quot;-123.45&quot;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;&quot;12e5&quot;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;&quot;12e-5&quot;&#39;</span><span class="p">,</span>
+
+<span class="w">    </span><span class="s1">&#39;&quot;0123&quot;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;&quot;0000123&quot;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;&quot;0b111&quot;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;&quot;0o10&quot;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;&quot;0xBABE&quot;&#39;</span><span class="p">,</span>
+
+<span class="w">    </span><span class="s1">&#39;&quot;4294967295&quot;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;&quot;123456789012345678&quot;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;&quot;12e999&quot;&#39;</span><span class="p">,</span>
+
+<span class="w">    </span><span class="s1">&#39;&quot;&quot;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;&quot;123foo&quot;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;&quot;123.45foo&quot;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;&quot;  123   &quot;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;&quot;foo&quot;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;&quot;12e&quot;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;&quot;0b567&quot;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;&quot;0o999&quot;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;&quot;0xFUZZ&quot;&#39;</span><span class="p">,</span>
+
+<span class="w">    </span><span class="s1">&#39;&quot;+0&quot;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;&quot;-0&quot;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;&quot;Infinity&quot;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;&quot;+Infinity&quot;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;&quot;-Infinity&quot;&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;BigInt(1)&#39;</span><span class="p">,</span>
+
+<span class="w">    </span><span class="s1">&#39;null&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;undefined&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;true&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;false&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;Infinity&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;NaN&#39;</span><span class="p">,</span>
+
+<span class="w">    </span><span class="s1">&#39;{}&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;{valueOf: function(){return 42}}&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;{toString: function(){return &quot;56&quot;}}&#39;</span><span class="p">,</span>
+
+<span class="p">];</span>
+
+<span class="c1">//////</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">wrap</span><span class="p">(</span><span class="nx">tag</span><span class="p">,</span><span class="w"> </span><span class="nx">s</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">s</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">s</span><span class="p">.</span><span class="nx">join</span><span class="p">)</span>
+<span class="w">        </span><span class="nx">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">s</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="s1">&#39;&lt;&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">tag</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;&gt;&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nb">String</span><span class="p">(</span><span class="nx">s</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;&lt;/&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">tag</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;&gt;&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">table</span><span class="p">(</span><span class="nx">head</span><span class="p">,</span><span class="w"> </span><span class="nx">rows</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">wrap</span><span class="p">(</span><span class="s1">&#39;table&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="nx">wrap</span><span class="p">(</span><span class="s1">&#39;thead&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">tr</span><span class="p">(</span><span class="nx">head</span><span class="p">)),</span>
+<span class="w">        </span><span class="nx">wrap</span><span class="p">(</span><span class="s1">&#39;tbody&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">rows</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">tr</span><span class="p">))</span>
+<span class="w">    </span><span class="p">]);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">tr</span><span class="p">(</span><span class="nx">row</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">wrap</span><span class="p">(</span><span class="s1">&#39;tr&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">row</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">s</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">wrap</span><span class="p">(</span><span class="s1">&#39;td&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">s</span><span class="p">)</span>
+<span class="w">    </span><span class="p">}));</span>
+<span class="p">}</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">val</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">Number</span><span class="p">.</span><span class="nb">isNaN</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;Error&quot;</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="nx">wrap</span><span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">n</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="nb">String</span><span class="p">(</span><span class="nx">n</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">var</span><span class="w"> </span><span class="nx">rows</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">VALUES</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">v</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">eval</span><span class="p">(</span><span class="s1">&#39;(&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">v</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;)&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">[</span><span class="nx">v</span><span class="p">].</span><span class="nx">concat</span><span class="p">(</span><span class="nx">EXPRS</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="nx">val</span><span class="p">(</span><span class="nb">eval</span><span class="p">(</span><span class="nx">e</span><span class="p">));</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="nx">val</span><span class="p">(</span><span class="s2">&quot;Error&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}));</span>
+<span class="p">});</span>
+
+<span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">table</span><span class="p">([</span><span class="s2">&quot;x&quot;</span><span class="p">].</span><span class="nx">concat</span><span class="p">(</span><span class="nx">EXPRS</span><span class="p">),</span><span class="w"> </span><span class="nx">rows</span><span class="p">);</span>
+</code></pre></div></article>
+
+    
+    <p class="backlinks"><span class="bold">Incoming:</span>
+      
+      <a href="/recent-changes">Recent Changes</a>
+      
+      </span>
+    </p>
+    
+
+    
+    <p class="backlinks"><span class="bold">Tags:</span>
+      
+      <a href="/tags#javascript">#javascript</a>
+      
+      </span>
+    </p>
+    
+
+
+
+
+    
+    
+    
+
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Development/Programming Languages/JavaScript/Anything-to-Number Conversion Table.md">edit</a> -
+    <a href="/practical-deep-learning">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
+</html>
