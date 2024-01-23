@@ -19,13 +19,35 @@ This occurred every time I wanted to turn off  `Shuffle`.  Which is a lot.
 
 As of 2024-01-21, this loading state of the button appears to have been removed, but the button still is a 3 option cycle which I dislike (though respect the elegance of).
 
-## Upcoming Complains
+## Overflow Menu Loading
 
-Stay tuned!
+For some godforsaken reason, the overflow menu for a track sometimes appears to require a network request before it can show.  If this request is slow, it will show a loading spinner in place of the menu, until the server responds.  Or in some cases, the **overflow menu will fail to load entirely**.  This is insane, since for the most part, the options on this menu are identical.  This is doubly insane since the menu can load without any issue what-so-ever in offline mode.
+
+I have only ever experienced this issue on the Android mobile app, which for many years did not support swiping on a song to queue a song.  At this time you were only able to queue a song. through the overflow menu, which often times meant waiting multiple seconds for menu to appear.  God forbid you wanting to queue multiple songs in a row. Thankfully you can now bypass the menu loading by swiping a track to the right.
+
+Oh wait!
+
+## Can't Swipe to Queue on Blend Playlists
+
+On Android you cannot swipe to queue a playlist if the playlist is a blend playlist??? Why would this screen use a different component to represent a list of songs to every other screen in the app? 
+
+![[blend-swiping.webm]]
+
+## Secret Sliding Menu
+
+This one I only just noticed now while typing this post. There is a sliding menu that appears if you click on your profile picture in the corner of any of the 3 main screens.  It seems a bit sparse, like it would be better suited to being a drop down? In any case this menu can actually be accessed from any playlist folder screen as well, despite there being no indication of this.  This only seems to work on playlist folder screens though, as it doesn't work for any other subpages.
+
+This one was annoying as I accidentally triggered in when attempting to swipe in from the left to go back a screen.
+
+![[sliding-menu.webm]]
+
+## Can't Swipe Up to Access Player
+
+On Android you can swipe down on the player interface but you cannot swipe up to reveal it.  When you attempt this you will almost definitely skip the song that is currently playing, since the minimised version of the player only detects left and right swipes.
+
+![[swipe-up.webm]]
+## Upcoming Complaints
 
 - Smart Shuffle popup
 - Rapidly toggling through Shuffle button states can cause the cycle to desync in strange ways
-- Can't swipe right to add track to queue in a Blend playlist (Android)
-- Can swipe down to dismiss Now Playing screen but cannot swipe up to make it appear again (just skips to next track) (Android)
 - Spotify (regular) Shuffle algorithm has some problems
-- For some god forsaken reason, clicking the overflow menu in a song sometimes fires requires a network request so it has to LOAD and can even FAIL ENTIRELY (Android)
