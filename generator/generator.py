@@ -253,6 +253,8 @@ def preprocess_markdown(text):
     text = re.sub(r"<ochrs:(.+?)>", format_ochrs_func, text)
 
     # TODO: Move this to a seperate md extension
+    # add webm backlink
+    text = re.sub(r"!\[\[([^\]]+\.webm)?\]\]", "<video src='/media/\\1' controls></video>", text)
     # add images backlink
     text = re.sub(r"!\[\[([^\]]+)?\]\]", "![](/media/\\1)", text)
 
