@@ -4,6 +4,18 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> Xeact remains open-source software to this day where it is used by thousands of milli-developers.
+
+-- [Xe Iaso](https://pony.social/@cadey/111808337595814449)
+
+---
+
+> Linear algebra churned through the sand in a remote data center
+
+-- [Xe Iaso](https://xeiaso.net/blog/sine/)
+
+---
+
 > A good science fiction story should be able to predict not the automobile but the traffic jam
 
 -- Frederik Pohl

@@ -46,6 +46,11 @@ This one was annoying as I accidentally triggered in when attempting to swipe in
 On Android you can swipe down on the player interface but you cannot swipe up to reveal it.  When you attempt this you will almost definitely skip the song that is currently playing, since the minimised version of the player only detects left and right swipes.
 
 ![[swipe-up.webm]]
+
+## Unable to Remove DJ Shortcut
+
+On desktop they have added a link to the DJ feature at the top of Your Library, below pinned playlists.  Despite not being a playlist (nor a feature I use), it continues to appear even when you have set the filter to only show playlists.  As far as I know it cannot be removed?  But it can be pinned.  Despite already being permalocked to the top.
+![[dj.png]]
 ## Upcoming Complaints
 
 - Smart Shuffle popup
