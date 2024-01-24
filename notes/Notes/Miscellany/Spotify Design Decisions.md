@@ -47,10 +47,12 @@ On Android you can swipe down on the player interface but you cannot swipe up to
 
 ![[swipe-up.webm]]
 
-## Unable to Remove DJ Shortcut
+## Unable to Remove DJ Shortcut On Desktop
 
 On desktop they have added a link to the DJ feature at the top of Your Library, below pinned playlists.  Despite not being a playlist (nor a feature I use), it continues to appear even when you have set the filter to only show playlists.  As far as I know it cannot be removed?  But it can be pinned.  Despite already being permalocked to the top.
 ![[dj.png]]
+The day after writing the previous paragraph, I noticed they had added the DJ to the same section in the mobile app, but long pressing the DJ icon shows you an option to hide it, which seems to have hidden it on all my devices.  Why is this option not available in the desktop client!
+
 ## Upcoming Complaints
 
 - Smart Shuffle popup
