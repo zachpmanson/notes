@@ -217,4 +217,4 @@ cat file.txt | tee >(wc -l)
 
 It's similar to using temporary files but nothing gets written to disk.
 
-I learnt of process substitution from [this thread](https://wikis.world/@LucasWerkmeister/111278908490616471) ([unrollered](https://unroller.zachmanson.com/threads/https:/toot.cafe/@LucasWerkmeister@wikis.world/111278908477654325)).
+I learnt of process substitution from [this thread](https://wikis.world/@LucasWerkmeister/111278908490616471) ([unrolled](https://unroller.zachmanson.com/threads/https:/toot.cafe/@LucasWerkmeister@wikis.world/111278908477654325)).
