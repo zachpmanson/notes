@@ -1,4 +1,3 @@
-
 Azure container instances are not built to serve docker builds created on ARM machines, like Macbooks with M-series chips.  If you attempt to run these they will immediately crash and be restarted.
 
 ```
