@@ -233,8 +233,23 @@ $1 == -l
 <span class="o">}</span>
 </code></pre></div>
 <p>Use $1, $2 for parameters.  $0 is the function name.</p>
-<p>All variables are global unless <code>local</code> keyword is when declaring variable.</p></article>
+<p>All variables are global unless <code>local</code> keyword is when declaring variable.</p>
+<h2 id="process-substitution">Process Substitution</h2>
+<p>Process substitution allows you to replace an input and output file arguments, for example.</p>
+<div class="highlight"><pre><span></span><code>diff<span class="w"> </span>&lt;<span class="o">(</span>hexdump<span class="w"> </span>file1.bin<span class="o">)</span><span class="w"> </span>&lt;<span class="o">(</span>hexdump<span class="w"> </span>file2.bin<span class="o">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>cat file.txt | tee &gt;(wc -l)
+</code></pre></div>
+<p>It's similar to using temporary files but nothing gets written to disk.</p>
+<p>I learnt of process substitution from <a href="https://wikis.world/@LucasWerkmeister/111278908490616471">this thread</a> (<a href="https://unroller.zachmanson.com/threads/https:/toot.cafe/@LucasWerkmeister@wikis.world/111278908477654325">unrollered</a>).</p></article>
 
+    
+    <p class="backlinks"><span class="bold">Incoming:</span>
+      
+      <a href="/recent-changes">Recent Changes</a>
+      
+      </span>
+    </p>
     
 
     
@@ -249,7 +264,7 @@ $1 == -l
   </main>
   <footer>
     <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Development/Programming Languages/Bash/Bash Syntax.md">edit</a> -
-    <a href="/digital-gardens">random</a> -
+    <a href="/web-communities">random</a> -
     <a href="/recent-changes">updates</a> -
     <a href="/tags">tags</a> -
     <a href="/sitemap">sitemap</a>
