@@ -202,3 +202,19 @@ function name {
 Use $1, $2 for parameters.  $0 is the function name.
 
 All variables are global unless `local` keyword is when declaring variable.
+
+## Process Substitution
+
+Process substitution allows you to replace an input and output file arguments, for example.
+
+```sh
+diff <(hexdump file1.bin) <(hexdump file2.bin)
+```
+
+```
+cat file.txt | tee >(wc -l)
+```
+
+It's similar to using temporary files but nothing gets written to disk.
+
+I learnt of process substitution from [this thread](https://wikis.world/@LucasWerkmeister/111278908490616471) ([unrollered](https://unroller.zachmanson.com/threads/https:/toot.cafe/@LucasWerkmeister@wikis.world/111278908477654325)).
