@@ -19,7 +19,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: git operations</title>
+  <title>notes: deploying docker from arm</title>
 </head>
 
 <body>
@@ -81,7 +81,7 @@
           
           
           
-          <a href="/deploying-docker-from-arm">Deploying Docker From ARM</a>
+          <a href="/deploying-docker-from-arm" class="activated-link">Deploying Docker From ARM</a>
           
           
           
@@ -101,7 +101,7 @@
           
           
           
-          <a href="/git-operations" class="activated-link">Git Operations</a>
+          <a href="/git-operations">Git Operations</a>
           
           
           
@@ -234,54 +234,26 @@
   </nav>
   <main>
     <header>
-      <h1>Git Operations</h1>
+      <h1>Deploying Docker From ARM</h1>
     </header>
-    <article><h2 id="new-computer">New Computer</h2>
-<p>Setting global git config options:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;name&quot;</span>
-git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;email&quot;</span>
+    <article><p>Azure container instances are not built to serve docker builds created on ARM machines, like Macbooks with M-series chips.  If you attempt to run these they will immediately crash and be restarted.</p>
+<div class="highlight"><pre><span></span><code>docker build -t your-image-tag --platform linux/amd64 .
 </code></pre></div>
-<p>Setting the <code>git lola</code> alias:</p>
-<p>Add the following to <code>~/.gitconfig</code>.</p>
-<div class="highlight"><pre><span></span><code>[alias]
-    lol = log --graph --decorate --pretty=oneline --abbrev-commit
-    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-[color]
-    branch = auto
-    diff = auto
-    interactive = auto
-    status = auto
-</code></pre></div>
-<h2 id="mistakes">Mistakes</h2>
-<p>Amend last commit with current changes:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>--amend<span class="w"> </span>--no-edit
-</code></pre></div>
-<p>Reset N commits:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># soft</span>
-git<span class="w"> </span>reset<span class="w"> </span>HEAD~N
-<span class="c1"># hard</span>
-git<span class="w"> </span>reset<span class="w"> </span>HEAD~1<span class="w"> </span>--hard
-</code></pre></div>
-<h2 id="checkout-branch-from-github-fork">Checkout Branch from GitHub Fork</h2>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>coworker<span class="w"> </span>https://path/to/coworkers/repo.git
-git<span class="w"> </span>fetch<span class="w"> </span>coworker
-git<span class="w"> </span>checkout<span class="w"> </span>--track<span class="w"> </span>coworker/foo
-
-<span class="c1"># then in future</span>
-git<span class="w"> </span>checkout<span class="w"> </span>foo
-git<span class="w"> </span>pull
-</code></pre></div>
-<p>From this <a href="https://stackoverflow.com/a/5884825">answer on StackOverflow</a>.</p></article>
+<p>Thank god for <a href="https://stackoverflow.com/a/77182483">this StackOverflow post</a>, I only found after hours of failure.  <a href="https://stackoverflow.com/users/3047500/dunnkers">dunnkers</a> is a hero.  The person who commented this is now my enemy for life:</p>
+<blockquote>
+<p>FYI the OP solved this on their own, 3 years ago. The question should be closed at this point. Also, fyi - this really isn't on-topic here, as it's not a programming question.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://stackoverflow.com/users/272109/david-makogon" title="69,925 reputation">David Makogon</a></cite></p></article>
 
     
-
-    
-    <p class="backlinks"><span class="bold">Tags:</span>
+    <p class="backlinks"><span class="bold">Incoming:</span>
       
-      <a href="/tags#git">#git</a>
+      <a href="/recent-changes">Recent Changes</a>
       
       </span>
     </p>
+    
+
     
 
 
@@ -293,8 +265,8 @@ git<span class="w"> </span>pull
 
   </main>
   <footer>
-    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Git Operations.md">edit</a> -
-    <a href="/git-subdirectory-branch">random</a> -
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Deploying Docker From ARM.md">edit</a> -
+    <a href="/pirate-libraries">random</a> -
     <a href="/recent-changes">updates</a> -
     <a href="/tags">tags</a> -
     <a href="/sitemap">sitemap</a>
