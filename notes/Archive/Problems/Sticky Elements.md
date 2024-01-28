@@ -2,7 +2,6 @@
 tags:
   - nextjs
 ---
-
 1. Pick element Child to be `position: sticky`.  Ensure it has a one of the following set: `top,bottom,left,right`
 2. Ensure it has a parent that has `position: relative`
 3. Ensure that all elements between the parent and child have `overflow: visible`
