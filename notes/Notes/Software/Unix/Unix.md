@@ -6,6 +6,10 @@ Created in 1969 at AT&T Bell Labs to run on departmental computers for the PDP-1
 
 It was initially written in ASM, but sparked the creation of [[C]] which was designed to make Unix development easier.
 
+> Unix gives you just enough rope to hang yourself -- and then a couple of more feet, just to be sure.
+
+-- Eric Allman
+
 ## Philosophy
 
 - smaller kernel, a master process which provides services to system and user processes
