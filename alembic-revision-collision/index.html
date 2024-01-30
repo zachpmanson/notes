@@ -19,7 +19,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: piping to clipboard</title>
+  <title>notes: alembic revision collision</title>
 </head>
 
 <body>
@@ -69,7 +69,7 @@
         <div class="flex flex-col text-left nav-links">
           
           
-          <a href="/alembic-revision-collision">Alembic Revision Collision</a>
+          <a href="/alembic-revision-collision" class="activated-link">Alembic Revision Collision</a>
           
           
           
@@ -169,7 +169,7 @@
           
           
           
-          <a href="/piping-to-clipboard" class="activated-link">Piping to Clipboard</a>
+          <a href="/piping-to-clipboard">Piping to Clipboard</a>
           
           
           
@@ -238,15 +238,21 @@
   </nav>
   <main>
     <header>
-      <h1>Piping to Clipboard</h1>
+      <h1>Alembic Revision Collision</h1>
     </header>
-    <article><p>In Git Bash and WSL on Windows:</p>
-<div class="highlight"><pre><span></span><code>date<span class="w"> </span>-u<span class="w"> </span>+%s<span class="w"> </span><span class="p">|</span><span class="w"> </span>clip.exe
+    <article><p>Sometimes alembic revisions get into a borked state.  There should only ever be one record in the alembic_version table. If there isn't, remove more recent ones</p>
+<p>The error looks vaguely like:</p>
+<div class="highlight"><pre><span></span><code>FAILED: Requested revision xxxx overlaps with other requested revisions yyyy
 </code></pre></div>
-<p>In zsh on macOS:</p>
-<div class="highlight"><pre><span></span><code>date<span class="w"> </span>-u<span class="w"> </span>+%s<span class="w"> </span><span class="p">|</span><span class="w"> </span>pbcopy
-</code></pre></div></article>
+<p><a href="https://stackoverflow.com/a/57240912">Source</a></p></article>
 
+    
+    <p class="backlinks"><span class="bold">Incoming:</span>
+      
+      <a href="/recent-changes">Recent Changes</a>
+      
+      </span>
+    </p>
     
 
     
@@ -260,8 +266,8 @@
 
   </main>
   <footer>
-    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Piping to Clipboard.md">edit</a> -
-    <a href="/themed-stylesheets">random</a> -
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Alembic Revision Collision.md">edit</a> -
+    <a href="/when-is-midnight">random</a> -
     <a href="/recent-changes">updates</a> -
     <a href="/tags">tags</a> -
     <a href="/sitemap">sitemap</a>
