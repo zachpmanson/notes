@@ -4,6 +4,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> Your standard CRUD applications and web services are largely just a rigamarole of reciting the right incantation and duct taping bits together. It's immensely non-stimulating work when done properly.
+
+-- [jacoblambda](https://news.ycombinator.com/item?id=33887808)
+
+---
+
 > Xeact remains open-source software to this day where it is used by thousands of milli-developers.
 
 -- [Xe Iaso](https://pony.social/@cadey/111808337595814449)
