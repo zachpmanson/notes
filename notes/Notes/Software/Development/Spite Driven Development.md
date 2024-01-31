@@ -1,0 +1,1 @@
+Spite Driven Development (SDD) is my favourite kind.  I have found it by far my most productive style of software engineering, and has been responsible in whole or part for most of my [[projects]] (see: [[Penultimate Guitar]], [[Minecraftle]], [[Alculator]], [[Status Messenger]]).
