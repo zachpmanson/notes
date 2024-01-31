@@ -1,7 +1,7 @@
 ---
 tags:
-  - "#prisma"
   - postgres
+  - prisma
 ---
 
 Often after a prisma migration on a postgres instance, further migrations won't work citing some random error.  This can be fixed with this magic incantation into psql.
