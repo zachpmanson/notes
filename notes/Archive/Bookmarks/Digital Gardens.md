@@ -36,3 +36,4 @@ Some other interesting ones I have come across:
 - [Chuck's Notes](https://notes.cagrimmett.com/)
 - [WebSeitz](http://webseitz.fluxent.com/wiki/FrontPage)
 - [Todepond's wikiblogarden](https://www.todepond.com/wikiblogarden)
+- [Paul Batchelor's wiki](https://pbat.ch/wiki/)
