@@ -2,6 +2,7 @@
 tags:
   - nextjs
   - prisma
+  - postgres
 ---
 Penultimate Guitar is an alternate frontend for Ultimate Guitar that focuses on mobile usability and Spotify integration.  All features are available on mobile*.
 
@@ -9,16 +10,19 @@ It is built with TypeScript, Next.js, and Tailwind and deployed on Vercel.  It w
 
 Features include:
 
-- importing Spotify playlists, will find the highest rated chords for all songs in playlist
+- saving favourite tabs to device, or to your account
+- Spotify login (alpha), allowing you to import playlists and sync saved tabs across devices
+	- when Spotify playlists, the highest rated chords for all songs in playlist will be found
 - chord tooltips
 - transposing
 - autoscrolling
 - saving tabs to home
-- organising saved tabs into folders
 
 The source code is available [here](https://github.com/pavo-etc/penultimate-guitar).  The deployed version can be found [here](https://pg.zachmanson.com).
 
 Chord tooltips are only possible through [chords-db](https://github.com/tombatossals/chords-db) and [react-chords](https://github.com/tombatossals/react-chords), both by David Rubert.
+
+I built it because I was mad at how poor Ultimate Guitar is on mobile devices.
 
 ---
 
