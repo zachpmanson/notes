@@ -8,3 +8,4 @@
 - [The Web's Grain](https://frankchimero.com/blog/2015/the-webs-grain/)
 - Frontend
 	- [The single most impor­tant factor that dif­fer­enti­ates front-end frame­works](https://themer.dev/blog/the-single-most-important-factor-that-differentiates-front-end-frameworks)
+- [Everyone Has JavaScript, Right?](https://www.kryogenix.org/code/browser/everyonehasjs.html)
