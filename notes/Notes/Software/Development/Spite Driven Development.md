@@ -19,7 +19,8 @@ I got mad at a competitor/company with shitty practices/friend/existing tool.  S
 9. see 5
 10. deploy
 11. see 5
-12. rest
+12. run it 40 times just to watch it work, analogous to injecting dopamine directly into your veins
+13. rest
 
 ## Goals
 
