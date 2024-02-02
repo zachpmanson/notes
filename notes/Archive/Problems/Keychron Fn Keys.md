@@ -2,7 +2,7 @@
 tags:
   - linux
 ---
-Fixing Keychron function keys on Linux machines.
+Fixing Keychron function keys on [[Linux]] machines.
 
 Tested on Keychron K2v2 on Xubuntu 20.04 and 22.04 on trenzalore.
 
