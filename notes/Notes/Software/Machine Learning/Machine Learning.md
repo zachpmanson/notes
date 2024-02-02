@@ -63,3 +63,7 @@ CNN | Convolutional neural network; a type of neural network that works particul
 The training loop:
 
 ![[machine-learning.png]]
+
+## Interesting Links
+
+- [The Ghosts in the Data](https://vickiboykis.com/2021/03/26/the-ghosts-in-the-data/)
