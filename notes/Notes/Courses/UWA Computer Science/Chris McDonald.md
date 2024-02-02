@@ -1,4 +1,4 @@
-Arch-lecturer of UWA computer science.
+Arch-lecturer of [[UWA computer science]].
 
 Known for teaching Systems Programming (CITS2002) and Computer Networks (CITS3002), two of the best units in the UWA CS course. Also known for beating cancer, teaching at Dartmouth College, and member of UWA's Mental Health First Aid Officer network.
 
