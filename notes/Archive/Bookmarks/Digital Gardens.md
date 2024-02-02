@@ -37,3 +37,4 @@ Some other interesting ones I have come across:
 - [WebSeitz](http://webseitz.fluxent.com/wiki/FrontPage)
 - [Todepond's wikiblogarden](https://www.todepond.com/wikiblogarden)
 - [Paul Batchelor's wiki](https://pbat.ch/wiki/)
+- [Alex Wennerberg's Garden](https://alexw.nyc/garden.html)
