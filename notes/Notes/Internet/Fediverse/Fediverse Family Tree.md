@@ -1,4 +1,5 @@
-For keeping track of software forks.
+For keeping track of software forks in the fediverse, and why they exist.
+
 - Misskey
 	- [Calckey](https://joinfirefish.org/) (later renamed to the equally bad name, firefish), more feature rich?
 	- [Sharkey](https://joinsharkey.org), generally follows upstream
