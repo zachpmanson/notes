@@ -1,3 +1,8 @@
+---
+tags:
+  - javascript
+---
+
 I found this [on StackOverflow](https://stackoverflow.com/a/17106702) by georg.
 
 ---
