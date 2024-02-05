@@ -2,6 +2,8 @@
 tags:
   - lists
 ---
+Names I like.
+
 - `less`, an improved version of `more`
 - `bash`, Bourne Again SHell, an improved version of the Bourne Shell (see: [[Bash]])
 - GIMP, the GNU Image Manipulation Program
