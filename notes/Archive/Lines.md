@@ -4,7 +4,7 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
-> The most important output of senior engineers is more senior engineers
+> The most important output of senior engineers is more senior engineers.
 
 -- [Some guy Tim Bray overheard](https://twitter.com/timbray/status/1198367676353015808)
 
