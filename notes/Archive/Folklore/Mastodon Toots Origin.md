@@ -1,8 +1,6 @@
-Why Mastodon calls posts toots.
+Why Mastodon calls posts toots.  Original thread from [2016-11-23](https://mastodon.social/@Hbomberguy/146524).
 
 ---
-
-
 
 > @Gargron@mastodon.social:  
 > Holy mother of good my Patreon shot up to $219/mo. OK to be fair I won't see this money until it's first of next month but still wtf I might be able to survive on this?
