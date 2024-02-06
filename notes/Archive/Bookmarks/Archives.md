@@ -5,6 +5,10 @@ Websites that are archives of things.
 
 General Internet Archives
 
-- [archive.today](https://archive.today)
-- [archive.is](https://archive.is) (clone of archive.today)
-- https://archive.ph (clone of archive.today)
+- [archive.today](https://archive.today) (and its mirrors)
+	- [archive.is](https://archive.is) 
+	- [archive.ph](https://archive.ph) 
+	- [archive.md](https://archive.md/)
+	- [archive.li](https://archive.li)
+	- [archive.vn](https://archive.vn)
+	- [archive.fo](https://archive.fo)
