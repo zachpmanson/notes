@@ -1,4 +1,4 @@
-As written by Dan Hon, posted to [Mastodon](https://dan.mastohon.com/@danhon/109832776316395199) 2023-02-09.
+As written by Dan Hon, [posted to](https://dan.mastohon.com/@danhon/109832776316395199) [[Mastodon]] 2023-02-09.
 
 ---
 

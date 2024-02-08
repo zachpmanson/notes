@@ -1,4 +1,9 @@
-Why Mastodon calls posts toots.  Original thread from [2016-11-23](https://mastodon.social/@Hbomberguy/146524).
+---
+tags:
+  - fediverse
+---
+
+Why [[Mastodon]] calls posts toots.  Original thread from [2016-11-23](https://mastodon.social/@Hbomberguy/146524).
 
 ---
 

@@ -2,13 +2,9 @@
 
 -- [the federation statitics hub](https://the-federation.info/)
 
-The fediverse is a series of decentralised instances of social networks that are able to communicate with one another using shared protocols.  It uses a few different protocols over the different services, but ActivityPub (and its flagship platform Mastodon) is the most popular by a considerable margin.
+The fediverse is a series of decentralised instances of social networks that are able to communicate with one another using shared protocols.  It uses a few different protocols over the different services, but ActivityPub (and its flagship platform [[Mastodon]]) is the most popular by a considerable margin.
 
 ![[fediverse-protocol-graph.png]]
-
-## Mastodon
-
-You can find me on mastodon at @zach@zachmanson.com (this is an [[Mastodon Domain Alias]] to whatever my current account is).  Mastodon is by far the most popular protocol that runs on top of ActivityPub at the time of writing.  It is somewhat interoperable with many others such as PixelFed and Lemmy, but since the message formats aren't the same this can be limited, both in content and usability within existing interfaces.
 
 ## Lemmy/Kbin
 

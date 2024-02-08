@@ -3,7 +3,7 @@ tags:
   - fediverse
   - dirty-hacks
 ---
-You can use your custom domain as an alias to your Mastodon handle by using Webfinger without actually having your own Mastodon instance.
+You can use your custom domain as an alias to your [[Mastodon]] handle by using Webfinger without actually having your own Mastodon instance.
 
 On your domain, set `GET https://<your-domain.com>/.well-known/webfinger?resource=acct:<accountname>@<server>` to be the same as `GET https://<your-mastodon-instance.com>/.well-known/webfinger?resource=acct:<accountname>@<server>`.
 
