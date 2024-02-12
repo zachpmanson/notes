@@ -18,3 +18,7 @@ tags:
 ## Creativity
 
 - [Wanted: Creative work. Originality not required, inquire within.](https://howtoai.fyi/blog/originality-not-required/)
+
+## News
+
+- [Waymo robotaxi goes up in flames in Chinatown after crowd attacks vehicle](https://sfstandard.com/2024/02/10/waymo-robotaxi-goes-up-in-flames-in-chinatown-after-crowd-attacks-vehicle/)
