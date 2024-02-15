@@ -4,6 +4,14 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> "Proof" for thousands of years was whatever was written down, and that was even easier to forge.
+>  
+> There was a brief time (maybe 100 years at the most) where photos and videos were practically proof of something happening; that is coming to an end now, but that's just a regression to the mean, not new territory.
+
+-- [thepasswordis](https://news.ycombinator.com/item?id=39386870)
+
+---
+
 > The most important output of senior engineers is more senior engineers.
 
 -- [Some guy Tim Bray overheard](https://twitter.com/timbray/status/1198367676353015808)
