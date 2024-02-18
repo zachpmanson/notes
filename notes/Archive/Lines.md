@@ -4,6 +4,14 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> A COMPUTER CAN NEVER BE HELD ACCOUNTABLE
+> 
+> THEREFORE A COMPUTER MUST NEVER MAKE A MANAGEMENT DECISION
+
+-- Internal IBM Presentation 1979 
+
+---
+
 > "Proof" for thousands of years was whatever was written down, and that was even easier to forge.
 >  
 > There was a brief time (maybe 100 years at the most) where photos and videos were practically proof of something happening; that is coming to an end now, but that's just a regression to the mean, not new territory.
