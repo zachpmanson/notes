@@ -23,3 +23,19 @@ So you ended up with a site that was ugly, fuxed, no-one in the existing wanted,
 Instead of taking this massive slap to the face constructively, the founders doubled-down. And now here we are.
 
 To be clear, much of the tech behind Digg was very interesting, the work Owen and many other engineers did was very interesting. The algorithm was all smoke and mirrors, though. And Kevin and his little circle of buddies were all crap engineers that tanked the business with their hubris and inexperience.
+
+---
+
+Replying to self to answer thread questioners. No. Owen was the engineering powerhouse. Kevin was the PR front-man (the pretty face). Ron (Gorodetzsky) was the DevOps mastermind.
+
+Who I am referring to was named Amar (his name is common enough I don't think I'm outing him). He was the SEO whisperer and "algorithm." He was literally like a spy. He would infiltrate the awful groups trying to game the front page and trick them into giving him enough info that he could identify their campaigns early, and kill them. All the while pretending to be an SEO loser like them.
+
+There were a few other amazing people behind the scenes. I'm actually leaving out myself and my group because who wants some dude to blow his own horn? But many of us did amazing things.
+
+There were also literally dozens of guys super high-up that were useless. Not because they were dumb, but they were too full of hubris and thought they had expertise where they didn't. Like Kevin Rose should have realised being a nice guy was his strength, and stay out of engineering, because he started dabbling in it, promoting the wrong people and ideas for the wrong reasons, and the next thing you know... BOOM. Implosion.
+
+I even catch myself calling some of the people who were in K.Rose's event horizon "idiots" or "stupid" but when I really think about it honestly, they were reasonably bright but just given poor incentives. Hey, this NoSQL thing is awesome! Let's replace the entire (functional) MySQL portion with Cassandra. Yeah! After seven beers and two joints, this sounds like an amazing idea. Let's do it!
+
+No.
+
+If you find yourself, or your company founder, doing things like this, sell your equity position for whatever it's worth at that moment. Do not HODL. SELL and SHORT.
