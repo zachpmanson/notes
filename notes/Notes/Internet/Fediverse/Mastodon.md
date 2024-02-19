@@ -5,3 +5,7 @@ You can find me on mastodon at @zach@zachmanson.com (this is an [[Mastodon Domai
 ## Good Criticisms of Mastodon
 
 - [Mastodon's Mastodon'ts](https://www.jwz.org/blog/2023/08/mastodons-mastodonts/)
+
+## Guides
+
+- [Migrating Servers](https://guide.cutie.city/the-fediverse/migrating-servers/), the cutie city guide to migration (it is very good)
