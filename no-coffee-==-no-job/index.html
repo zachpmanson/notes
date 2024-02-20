@@ -19,7 +19,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: jsx, react native, and typescript</title>
+  <title>notes: no coffee == no job</title>
 </head>
 
 <body>
@@ -165,7 +165,7 @@
           
           
           
-          <a href="/jsx-react-native-and-typescript" class="activated-link">JSX, React Native, and TypeScript</a>
+          <a href="/jsx-react-native-and-typescript">JSX, React Native, and TypeScript</a>
           
           
           
@@ -185,7 +185,7 @@
           
           
           
-          <a href="/no-coffee-==-no-job">No Coffee == No Job</a>
+          <a href="/no-coffee-==-no-job" class="activated-link">No Coffee == No Job</a>
           
           
           
@@ -346,27 +346,41 @@
   </nav>
   <main>
     <header>
-      <h1>JSX, React Native, and TypeScript</h1>
+      <h1>No Coffee == No Job</h1>
     </header>
-    <article><p>Why doesn't React Native use JSX?  From a <a href="https://github.com/ds300/react-native-typescript-transformer/issues/46">GitHub issue on React Native TypeScript transformer</a>.</p>
+    <article><p>Corey Quinn's great thread about getting fired, posted on 2023-10-03 amid many mass layoffs in the tech industry.</p>
 <hr />
-<p><strong><a href="https://github.com/henrikra">henrikra</a></strong> commented <a href="https://github.com/ds300/react-native-typescript-transformer/issues/46#issue-298217181">Feb 19, 2018</a></p>
-<p>I noticed from JSX <a href="https://www.typescriptlang.org/docs/handbook/jsx.html">docs</a> that JSX has also option <code>react-native</code> for it.</p>
-<p>Here are all three different modes for JSX</p>
-<blockquote>
-<p>TypeScript ships with three JSX modes: preserve, react, and react-native. These modes only affect the emit stage - type checking is unaffected. The preserve mode will keep the JSX as part of the output to be further consumed by another transform step (e.g. Babel). Additionally the output will have a .jsx file extension. The react mode will emit React.createElement, does not need to go through a JSX transformation before use, and the output will have a .js file extension. The react-native mode is the equivalent of preserve in that it keeps all JSX, but the output will instead have a .js file extension.</p>
-</blockquote>
-<p>So why <code>react-native-typescript-transformer</code> is telling us to configure JSX to <code>react</code> instead of <code>react-native</code>. Are there some drawbacks etc? :D</p>
-<hr />
-<p><strong><a href="https://github.com/ds300">ds300</a></strong> commented <a href="https://github.com/ds300/react-native-typescript-transformer/issues/46#issuecomment-366646702">Feb 19, 2018</a> </p>
-<p>Hi Henrik,</p>
-<p>Good question! I agree, the situation is a little confusing, ~~and the reason for it is historical rather than technical.~~ the reason for it is both historical and technical.</p>
-<p>When React first appeared on the scene, most JS tooling was not compatible with the JSX syntax. To mitigate this, people would only put JSX syntax in files with the extension <code>.jsx</code>. Eventually the tooling caught up and now most of us put JSX in <code>.js</code> files as though it were part of the ECMAScript standard.</p>
-<p>When TypeScript first added support for JSX, people were still using the <code>.jsx</code> extension a lot, so the TS crew made <code>.tsx</code> files compile to <code>.jsx</code> files. This is how the <code>--jsx react</code> option works.</p>
-<p>The React Native ecosystem fully embraced the <code>.js</code> extension to the point that the bundler <code>metro</code> doesn't even support loading <code>.jsx</code> files. This posed a problem for people using TypeScript with React Native because TypeScript <em>only</em> supported <code>.jsx</code> files. I can't actually remember how people would use TypeScript with React Native back in those days, but it was probably ugly.</p>
-<p>The <code>--jsx react-native</code> option was added to let developers compile <code>.tsx</code> files to ordinary <code>.js</code> files.</p>
-<p><em>edit</em>: In addition, it leaves the <code>JSX</code> untouched, like the <code>preserve</code> option, because React Native used to provide error reports which rendered the JSX (maybe still does? I haven't seen them in forever).</p>
-<p>At the time of writing, <code>react-native-typescript-transformer</code> uses Babel as a secondary compilation step, so it shouldn't matter whether you use <code>react</code>, <code>preserve</code>, or <code>react-native</code> :)</p></article>
+<p>Today's thread is about something I'm rather experienced with...  </p>
+<p>How to Get Fired With Both Grace and Aplomb</p>
+<p>Layoffs are circulating, as are PIPs, terminations, and one of those dressed up as another.  </p>
+<p>The big tell is when you're invited to a last minute meeting with no notice, someone from HR is there, and you aren't offered coffee.  </p>
+<p>No coffee == No Job in about ten minutes</p>
+<p>Stop. Breathe. Listen. Say little. There is <em>nothing</em> you can say that will alter the course of this conversation to your benefit.  </p>
+<p>Sign nothing in that meeting. Your former employer just became the adverse party; don't take legal advice from them.</p>
+<p>Anything you were working on? It's done. Handoff to your now former colleagues? It's the company's problem. All you can do is get yourself and others in trouble. Leave with your head held high--and then do nothing for the rest of the day.  </p>
+<p>I will explain.</p>
+<p>Losing a job is roughly as traumatic as a death in the family for some. You are NOT in a good head space.  </p>
+<p>If you <em>must</em> do something, update your résumé <em>but not LinkedIn yet</em>.  </p>
+<p>Find a friend. Grab a drink. Yes, bars are open at 9:30 in the morning.</p>
+<p>Run any severance offer past an employment lawyer. Initial consults should be free.  </p>
+<p>Remember, people who actually file lawsuits don't run their gums about filing suits; they do it.</p>
+<p>As far as talking publicly about it... give it a bit of time. Job hunts are about storytelling, and there are hiring managers who'll take a tweet like "WELP just got shitcanned" as a signal not to hire you. They're wrong, but they have hiring authority.</p>
+<p>You're likely in a blind panic. You don't know what you want to do next; you're freaking out about your income just taking a 100% cut. Odds are terrific that you'll undersell yourself out of desperation.  </p>
+<p>Need to freak out rant to someone? Rant to me. That's why I'm here.</p>
+<p>Don't talk shit about your former employer in public.  </p>
+<p>I'm serious.  </p>
+<p>It doesn't matter how crap they were; nobody else is going to have the context, so you'll look far worse than they will. Companies are surprisingly resilient.</p>
+<p>Instead, talk shit about them to me so I can hit them where it hurts on my annual nature walk (yes, sponsorship deals are available if you're looking to reach... well, the humans who enjoy my humor / insight).</p>
+<p>Remember that your résumé is a sales document, not a factual retelling of everything you've ever done in every job of your career. Don't confuse it for therapy.  </p>
+<p>And yes, talking to a therapist is always a good idea. Mental health matters.</p>
+<p>You can also expect that a lot of your former colleagues / work friends? Yeah, you'll never speak to most of those people again.  </p>
+<p>It's harsh but true. Suddenly you lack the shared context, and nobody wants to be reminded of their own corporate mortality.</p>
+<p>You can't love your employer, because a company can't love you back.  </p>
+<p>You'll get past it. It may take a while. But you won't die, and odds are terrific that once you move past it, you'll be better off.</p>
+<p>I promise you, you didn't find the Dumbest Company in the World as the only place that would employ you.  </p>
+<p>Excellence is situational. Amazing employees at one company are rubbish at another; it's not a reflection on you.</p>
+<p>"I sure am glad that none of this applies to me anymore." -- Me, 20 minutes before I got fired at my last job  </p>
+<p>Plan ahead. Don't keep personal stuff on the work computer that's gonna get vaporized. Set aside an emergency fund. Keep your résumé updated quarterly.</p></article>
 
     
 
@@ -381,8 +395,8 @@
 
   </main>
   <footer>
-    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Folklore/JSX, React Native, and TypeScript.md">edit</a> -
-    <a href="/ampersand-and-epershand">random</a> -
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Folklore/No Coffee == No Job.md">edit</a> -
+    <a href="/complexity-classes">random</a> -
     <a href="/recent-changes">updates</a> -
     <a href="/tags">tags</a> -
     <a href="/sitemap">sitemap</a>
