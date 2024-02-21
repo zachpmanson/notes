@@ -1,6 +1,7 @@
 ---
 tags:
   - nextjs
+  - react
 ---
 An alternate frontend for Dan Murphy's
 
