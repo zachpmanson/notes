@@ -3,7 +3,6 @@ tags:
   - javascript
   - react
 ---
-
 Just a footgun I ran into while working on the Threadlet dashboard.
 
 If you do the following it will not work as expected:
