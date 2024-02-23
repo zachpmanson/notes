@@ -106,7 +106,7 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 > The courts are like the doors to the Ritz, open to everyone!
 
--- [monkaiju](https://news.ycombinator.com/item?id=38085197)
+-- [monkaiju](https://news.ycombinator.com/item?id=38085197) (my favourite phrasing of a [much older aphorism](http://constructionblog.practicallaw.com/justice-like-the-ritz-is-open-to-all/))
 
 ---
 
