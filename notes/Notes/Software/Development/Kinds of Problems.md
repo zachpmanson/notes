@@ -1,3 +1,5 @@
+The worst kind [[problems]] have names and passports.
+
 |  | my fault | someone elses fault |
 | ---- | ---- | ---- |
 | during | angry, confused, know where to look | angry, confused, do not know where to look |
