@@ -1,3 +1,7 @@
+>Believe what you see, not what you believe
+
+-- [[Michael Wise Quotes|Michael Wise]]
+
 - Synthetic execution
 	- use your brain, pretend to be the program in execution
 - Tracing
@@ -5,7 +9,3 @@
 	- can set this up in [[Unix]] with `set -x`
 - print statements
 	- oof
-
->Believe what you see, not what you believe
-
--- [[Michael Wise Quotes|Michael Wise]]

@@ -1,4 +1,4 @@
->  Does the [[Problems|problem]] have a name and passport or is it actual issues.
+>  Does the [[Problems|problem]] have a name and passport or is it actual issues
 
 -- Dembo
 
