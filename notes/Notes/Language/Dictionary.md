@@ -29,6 +29,7 @@ DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscu
 + **Midding** (DoOS): feeling the tranquil pleasure of being near a gathering but not quite in it—hovering on the perimeter of a campfire, chatting outside a party while others dance inside, resting your head in the backseat of a car listening to your friends chatting up front—feeling blissfully invisible yet still fully included, safe in the knowledge that everyone is together and everyone is okay, with all the thrill of being there without the burden of having to be.
 + **Mojibake** (Japanese): garbled characters
 + **Moment of Tangency** (DoOS): A glimpse of what might have been.  If two lines are truly parallel, it means they’ll never actually meet.
++ **night software** ([Mr. Bandaralum](https://transjovian.org/view/web-sites/index)): _night software_ is not like that. It’s not written for the day job. It’s not written to see the light of day at all. It’s not written to be looked at and scrutinized by anybody. It’s intimate and personal, it’s messy and buggy. To take a look is to transgress.
 + **nocent** (English): guilty, antonym of innocent
 + **Obviate**: remove a difficulty
 + **Onomastic** (English from French onomastique): of or belonging to naming
