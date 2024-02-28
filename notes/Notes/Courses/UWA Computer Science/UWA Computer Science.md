@@ -123,7 +123,7 @@ CITS3403 Agile [[Web Development]]
 - really fun and very practical
 - FIRST ACTUAL USE OF GIT (do no wait till third year, learn this in year 1 semester 1) how did it take this long
 - well taught
-- [very fun project](https://minecraftle.zachmanson.com)
+- [very](https://minecraftle.zachmanson.com) [[Minecraftle|fun project]]
 
 CITS3200 Professional Computing
 
