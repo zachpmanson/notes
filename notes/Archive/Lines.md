@@ -4,6 +4,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> I do not collect your data. Stop sending it to me.
+
+-- [Tristram Oaten](https://noboilerplate.org/)
+
+---
+
 > Joyce Kilmer and most computer scientists agree: there is no poem as lovely as a tree.
 
 -- [Philip Wadler](https://homepages.inf.ed.ac.uk/wadler/papers/prettier/prettier.pdf)
