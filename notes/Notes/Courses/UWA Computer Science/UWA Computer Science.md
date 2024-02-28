@@ -36,7 +36,7 @@ CITS1402 Relational Databases
 CITS2002 Systems Programming
 
 - Chris McDonald is an excellent lecturer
-- good introduction to C
+- good introduction to [[C]]
 - challenging projects but you learn a lot
 - very rewarding
 - this and CITS2200 have the highest kill rate for comsci degrees <sup>[citation needed]</sup>.  partially because they are hard, partially because the previous units did a pretty bad job preparing students for them
