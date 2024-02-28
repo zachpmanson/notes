@@ -1,1 +1,1 @@
-Mostly in [[Notes/Software/Programs/Docker]].
+Mostly in [[Docker]].
