@@ -56,7 +56,7 @@ All screen commands are prefixed by an escape key, by default Ctrl-a (that's Con
 | Description | Command |  |
 | ---- | ---- | ---- |
 | Split display horizontally | `Ctrl-a S` |  |
-| Split display vertically | `Ctrl-a` | ` or `Ctrl-a V` (for the vanilla vertical screen patch) |
+| Split display vertically | `Ctrl-a \|` (pipe) | or `Ctrl-a V` (for the vanilla vertical screen patch) |
 | Jump to next display region | `Ctrl-a tab` |  |
 | Remove current region | `Ctrl-a X` |  |
 | Remove all regions but the current one | `Ctrl-a Q` |  |
