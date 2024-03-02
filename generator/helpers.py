@@ -1,6 +1,7 @@
-from datetime import datetime
-
 # Self contained helper functions
+
+from datetime import datetime
+import sys
 
 
 def sanitize_anchor(anchor):

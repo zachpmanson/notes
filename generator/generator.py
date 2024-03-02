@@ -254,7 +254,9 @@ def preprocess_markdown(text):
 
     # TODO: Move this to a seperate md extension
     # add webm backlink
-    text = re.sub(r"!\[\[([^\]]+\.webm)?\]\]", "<video src='/media/\\1' controls></video>", text)
+    text = re.sub(
+        r"!\[\[([^\]]+\.webm)?\]\]", "<video src='/media/\\1' controls></video>", text
+    )
     # add images backlink
     text = re.sub(r"!\[\[([^\]]+)?\]\]", "![](/media/\\1)", text)
 
@@ -304,9 +306,6 @@ def format_ochrs_func(matches):
         print("KeyError:", e, file=sys.stderr)
         value = "unknown ochrs func"
     return value
-
-
-VERBOSE = False
 
 
 def build_backlink(label, base, end):
@@ -398,6 +397,7 @@ orphans = ["404"]
 
 post_template = jinja2.Template(open("generator/template.jinja", "r").read())
 
+VERBOSE = False
 
 if __name__ == "__main__":
     try:
