@@ -1,4 +1,4 @@
->Believe what you see, not what you believe
+> Believe what you see, not what you believe
 
 -- [[Michael Wise Quotes|Michael Wise]]
 
