@@ -6,4 +6,4 @@ Computers have been used for typesetting for a long time.  Roff (runoff) predate
 
 Markdown is designed to simply the process of writing text markup, and aides generally in the creation of HTML.  HTML places the formatting instructions within the document, but it is very cumbersome to write.  Markdown moves tags and tree structure into simpler character-based syntax.
 
-Markdown is widely used in popular applications, such as Discord, Reddit, and GitHub.  Obsidian Notes uses Markdown for formatting, as does [[Ochrs|this website]].
+Markdown is widely used in popular applications, such as Discord, Reddit, and GitHub.  [[Obsidian]] Notes uses Markdown for formatting, as does [[Ochrs|this website]].
