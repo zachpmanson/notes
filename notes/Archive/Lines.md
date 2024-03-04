@@ -4,6 +4,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> Engineering is the art of finding the solution that only sucks in ways that don't matter
+
+-- [Skylar Hill](https://elk.zone/solarpunk.moe/@stellarskylark/112039397451154354)
+
+---
+
 > I do not collect your data. Stop sending it to me.
 
 -- [Tristram Oaten](https://noboilerplate.org/)
