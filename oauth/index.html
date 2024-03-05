@@ -84,12 +84,19 @@
     <header>
       <h1>OAuth</h1>
     </header>
-    <article><p>OAuth (2.0) is a standard for getting authorization to access secured resources from a third party.  For example, a <em>User</em> on my <em>Website</em> could use OAuth to connect to a Facebook <em>Authorization Server</em>, which will return a token that my <em>Website</em> can use to access <em>Protected Resources</em> through their Facebook account.</p>
-<p>This four party model makes up the basis of OAuth: User,  Website,  Authorization Server, and Protected Resource.</p>
-<p>Notably, no part of this flow involved giving my <em>Website</em> any personal information about the <em>User</em>.  The token that the <em>Authorization Server</em> returns is not depedent on the <em>Website</em>, so any other application/site that implements OAuth with Facebook would be able to issue a token that is equally valid for use to access <em>Protected Resources</em> through my website if they injected into my <em>Website.  </em><em>For this reason, OAuth alone should not be used for authentication, only authorization.</em>*</p>
+    <article><p>OAuth (2.0) is a standard for getting <a href="/authorization">authorization</a> to access secured resources from a third party.  For example, a <em>User</em> on my <em>Website</em> could use OAuth to connect to a Facebook <em>Authorization Server</em>, which will return a token that my <em>Website</em> can use to access <em>Protected Resources</em> through their Facebook account.</p>
+<p>This four party model makes up the basis of OAuth: User, Website, Authorization Server, and Protected Resource.</p>
+<p>Notably, no part of this flow involved giving my <em>Website</em> any personal information about the <em>User</em>.  The token that the <em>Authorization Server</em> returns is not depedent on the <em>Website</em>, so any other application/site that implements OAuth with Facebook would be able to issue a token that is equally valid for use to access <em>Protected Resources</em> through my website if they injected into my <em>Website.  </em><em>For this reason, OAuth alone should not be used for <a href="/authentication">authentication</a>, only authorization.</em>*</p>
 <p>More on this can be read in an <a href="http://www.thread-safe.com/2012/01/problem-with-oauth-for-authentication.html">excellent article by John Bradley</a>.  A few more thoughts on this can be read in this <a href="https://security.stackexchange.com/questions/37818/why-use-openid-connect-instead-of-plain-oauth2/260519#260519">StackExchange thread</a>.</p>
 <p>Authentication should be handled by OpenID Connect, which provides an identity layer on top of OAuth 2.0.</p></article>
 
+    
+    <p class="backlinks"><span class="bold">Incoming:</span>
+      
+      <a href="/recent-changes">Recent Changes</a>
+      
+      </span>
+    </p>
     
 
     
@@ -104,7 +111,7 @@
   </main>
   <footer>
     <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Internet/Internet Standards/OAuth/OAuth.md">edit</a> -
-    <a href="/macos-recovery-in-australia">random</a> -
+    <a href="/react">random</a> -
     <a href="/recent-changes">updates</a> -
     <a href="/tags">tags</a> -
     <a href="/sitemap">sitemap</a>
