@@ -1,0 +1,1 @@
+Authorization confirms whether or not a person has access to a resource.  It is not [[Authentication]], though proper authorization can only occur after authentication has succeeded.

@@ -4,6 +4,38 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> Girlfriends are temporary, ex-girlfriends are forever
+
+-- [/u/UnemployedTechie2021 (maybe)](https://old.reddit.com/r/Showerthoughts/comments/xa48um/girlfriends_are_temporary_exgirlfriends_are/)
+
+---
+
+> Algorithms are human-directed and humans are algorithm-directed in ways we do not fully understand.
+
+-- [John Green](https://youtu.be/kqPZg4gULaQ)
+
+---
+
+>Speaking as the most senior member of my team, nothing useful starts with that phrase
+
+-- [Sarai Rosenberg](https://infosec.exchange/@saraislet)
+
+
+---
+
+> Tom M: Entropy's #1 enemy
+
+--- [Tom M](https://tmewett.com/)
+
+
+---
+
+> Today, you're either above the API or below the API. You either tell robots what to do, or are told by robots what to do.  
+
+-- [Devine Lu Linvega]([https://wiki.xxiivv.com/site/technocracy.html](https://wiki.xxiivv.com/site/technocracy.html)  )
+
+---
+
 > Engineering is the art of finding the solution that only sucks in ways that don't matter
 
 -- [Skylar Hill](https://elk.zone/solarpunk.moe/@stellarskylark/112039397451154354)
