@@ -1,4 +1,8 @@
-To turn dates into "5 hours ago" etc. in TypeScript.
+---
+tags:
+  - javascript
+---
+To turn dates into "5 hours ago" etc. in [[TypeScript]] with only the magic of native [[DateTime]].
 
 ```typescript
 export function timeAgo(date: Date) {

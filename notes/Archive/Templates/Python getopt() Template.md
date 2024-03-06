@@ -1,3 +1,8 @@
+---
+tags:
+  - python
+---
+
 Adapted from the [getopt() docs](https://docs.python.org/3/library/getopt.html).
 
 ```python

@@ -1,10 +1,9 @@
 ---
 tags:
   - dirty-hacks
+  - python
+subtitle: A dashboard for COVID-19 updates in Western Australia.
 ---
-
-A dashboard for COVID-19 updates in Western Australia.
-
 ![[covid19_tracker.png]]
 
 [tracker.zachmanson.com](https://tracker.zachmanson.com) was written in early 2022 to serve as a simple dashboard to visualise the number of COVID-19 infections in Western Australia.

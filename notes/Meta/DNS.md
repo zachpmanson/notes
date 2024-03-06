@@ -18,8 +18,11 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	  trackstar
 	- **[minecraftle.zachmanson.com](https://minecraftle.zachmanson.com)**  
 	  deployed instance of [[Minecraftle]], a puzzle game based on Wordle and Minecraft crafting recipes   
-	  vercel + trackstar (db) + trackstar (static files)
-	- **[pg.zachmanson.com](https://pg.zachmanson.com)**  
+	  vercel + trackstar (db)
+	- **[minecraftle-public.zachmanson.com](https://minecraftle-public.zachmanson.com)** 
+	  static asset server for minecraftle so I don't overload vercel   
+	  trackstar
+	- **[pg.zachmanson.com](https://pg.zachmanson.com). **  
 	  deployed instance of [[Penultimate Guitar]]   
 	  vercel + trackstar (db)
 	- **[todont.zachmanson.com](https://todont.zachmanson.com)**  

@@ -1,5 +1,6 @@
-Things I've recently been thinking about.
-
+---
+subtitle: Things I've recently been thinking about.
+---
 <ochrs:recent-edit:0>  
 <ochrs:recent-edit:1>  
 <ochrs:recent-edit:2>  

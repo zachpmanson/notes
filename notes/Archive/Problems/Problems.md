@@ -1,5 +1,6 @@
-Wisdom of the ancients.
-
+---
+subtitle: Wisdom of the ancients.
+---
 ![[wisdom-of-the-ancients.png]]
 
 See: [xkcd 979](https://xkcd.com/979)

@@ -1,4 +1,8 @@
-Awk, named for its creators and for the animal the auk, is a little language.
+---
+subtitle: A little language
+---
+Awk, named for its creators and for the animal the auk, is a language for text processing.
+
 It has a few variants.
 
 - AWK - Bell Labs, 1977

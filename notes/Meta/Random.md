@@ -1,1 +1,4 @@
-En route to a random page!
+---
+subtitle: En route to a random page!
+---
+

@@ -1,1 +1,3 @@
-Assorted notes and research.
+---
+subtitle: Assorted notes and research.
+---

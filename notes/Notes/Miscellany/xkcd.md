@@ -1,4 +1,6 @@
-A comic strip by Randall Munroe.
+---
+subtitle: A comic strip by Randall Munroe.
+---
 ## Favourites
 
 - [Tech Support](https://xkcd.com/806/)

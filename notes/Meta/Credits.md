@@ -1,4 +1,7 @@
-Nothing I do is original.  These are sites that have influenced my websites.
+---
+subtitle: Nothing I do is original.
+---
+These are sites that have influenced my websites.
 
 This site:
 

@@ -1,8 +1,9 @@
 ---
 tags:
   - javascript
+subtitle: The library for making reactive web applications.
 ---
-The library for making web applications.  It's a whole thing.
+It's a whole thing.
 
 ## Interesting Links
 
