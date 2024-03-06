@@ -91,6 +91,8 @@ def get_tree():
 
                 if "tags" in list(file_sections.keys()):
                     format_tags(file_sections["tags"])
+                if "subtitle" in list(file_sections.keys()):
+                    tree[node]["subtitle"] = file_sections["subtitle"]
 
         except FileNotFoundError:
             mod_time = 0.0
@@ -175,6 +177,9 @@ def generate_pages():
                 post_template.render(
                     {
                         "title": node,
+                        "subtitle": (
+                            tree[node]["subtitle"] if "subtitle" in tree[node] else node
+                        ),
                         "body": tree[node]["body"],
                         "parent": parent,
                         "children": children,
