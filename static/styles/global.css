@@ -54,6 +54,19 @@ nav details {
   text-align: left;
 }
 
+h1 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
 a {
   color: var(--pink);
   text-decoration: underline;
@@ -230,10 +243,10 @@ td:nth-last-child(1) {
   display: flex;
   flex-direction: column;
   padding-bottom: 0.25rem;
-  gap: 0.5rem;
+  gap: 0;
 
   max-height: 10.5rem;
-  max-width: 25ch;
+  max-width: 35ch;
   min-width: 10ch;
   width: max-content;
 
@@ -244,10 +257,18 @@ td:nth-last-child(1) {
 
   border-left: 2px solid var(--grey);
 
+  transition: max-height 0.15s ease-out;
+
   a {
-    max-width: 25ch;
+    max-width: 35ch;
     min-width: 10ch;
+    margin: 0 0 0.5rem 0;
   }
+}
+
+nav:hover .nav-links {
+  max-height: 30rem;
+  transition: max-height 0.15s ease-in;
 }
 
 @media screen and (max-device-width: 640px) {
