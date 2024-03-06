@@ -112,5 +112,3 @@ In any case, I hope I thoroughly convinced you why Donald Knuth is the Patron Sa
 ## Extra Credits
 
 This comes out of a enjoyable discussion with [Arne from Lambda Island](https://lambdaisland.com/), who listened and said “you should totally turn this into a talk”.
-
-[top](https://yakshav.es/)
