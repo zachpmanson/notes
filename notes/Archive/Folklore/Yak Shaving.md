@@ -1,3 +1,7 @@
+---
+tags:
+  - yak-shaving
+---
 From [the MIT GSB Archive](https://projects.csail.mit.edu/gsb/old-archive/gsb-archive/gsb2000-02-11.html).
 
 ---
