@@ -19,7 +19,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: select decorator depreciated</title>
+  <title>notes: mocking functions in python</title>
 </head>
 
 <body>
@@ -153,7 +153,7 @@
           
           
           
-          <a href="/mocking-functions-in-python">Mocking Functions in Python</a>
+          <a href="/mocking-functions-in-python" class="activated-link">Mocking Functions in Python</a>
           
           
           
@@ -189,7 +189,7 @@
           
           
           
-          <a href="/select-decorator-depreciated" class="activated-link">Select Decorator Depreciated</a>
+          <a href="/select-decorator-depreciated">Select Decorator Depreciated</a>
           
           
           
@@ -242,25 +242,45 @@
   </nav>
   <main>
     <header>
-      <h1>Select Decorator Depreciated</h1>
+      <h1>Mocking Functions in Python</h1>
     </header>
-    <article><p>In NGXS the <code>@Select</code> decorator has been depreciated because of limitation Angular places putting on decorator.  The <code>this.store.select()</code> idiom should be used instead.  To convert an existing codebase to the new idiom, the following regex can be used in VS Code Find/Replace:</p>
-<div class="highlight"><pre><span></span><code>// with \n between decorator name
-@Select\((.*)\)\n(.*): Observable&lt;(.*)&gt;;$
+    <article><p>When writing unit/integration tests in Python, the general pattern is to use <code>unittest.mock.patch</code>.  This is great, but you need to be careful about the namespaces. </p>
+<div class="highlight"><pre><span></span><code><span class="c1"># tests.py</span>
+<span class="kn">from</span> <span class="nn">path.to.funcB</span>
+<span class="kn">from</span> <span class="nn">unittest.mock</span> <span class="kn">import</span> <span class="n">patch</span>
+<span class="c1"># assume funcB calls the somepypipackage.funcA</span>
 
-// single line
-@Select\((.*)\)(.*): Observable&lt;(.*)&gt;;$
+<span class="nd">@patch</span><span class="p">(</span><span class="s2">&quot;somepypipackage.funcA&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_funcB</span><span class="p">(</span><span class="n">funcA</span><span class="p">):</span>
+    <span class="n">funcA</span><span class="o">.</span><span class="n">return_value</span> <span class="o">=</span> <span class="mi">3</span>
+    <span class="k">assert</span> <span class="n">funcB</span><span class="p">()</span> <span class="o">==</span> <span class="mi">3</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>$2 = this.store.select&lt;$3&gt;($1);
-</code></pre></div>
-<p>This was taken from <a href="https://github.com/ngxs/store/issues/1854#issuecomment-1184855647">the NGXS GitHub issue comment</a> by <a href="https://github.com/lehmstedt">lehmstedt</a>.</p></article>
+<p>This will only mock <code>funcA</code> calls within the scope of  <code>tests.py</code>.  funcB is in a different namespace so calls <code>funcB</code> makes to <code>funcA</code> will not be mocked  To ensure <code>funcA</code> calls are mocked properly specifically write the namespace it needs to be mocked within</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># tests.py</span>
+<span class="kn">from</span> <span class="nn">path.to.funcBfile</span> <span class="kn">import</span> <span class="n">funcB</span>
+<span class="kn">from</span> <span class="nn">unittest.mock</span> <span class="kn">import</span> <span class="n">patch</span>
 
+<span class="c1"># assume funcB calls the somepypipackage.funcA</span>
+
+<span class="nd">@patch</span><span class="p">(</span><span class="s2">&quot;path.to.funcBfile.funcA&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_funcB</span><span class="p">(</span><span class="n">funcA</span><span class="p">):</span>
+    <span class="n">funcA</span><span class="o">.</span><span class="n">return_value</span> <span class="o">=</span> <span class="mi">3</span>
+    <span class="k">assert</span> <span class="n">funcB</span><span class="p">()</span> <span class="o">==</span> <span class="mi">3</span>
+</code></pre></div></article>
+
+    
+    <p class="backlinks"><span class="bold">Incoming:</span>
+      
+      <a href="/recent-changes">Recent Changes</a>
+      
+      </span>
+    </p>
     
 
     
     <p class="backlinks"><span class="bold">Tags:</span>
       
-      <a href="/tags#javascript">#javascript</a>
+      <a href="/tags#python">#python</a>
       
       </span>
     </p>
@@ -276,8 +296,8 @@
 
   </main>
   <footer>
-    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Select Decorator Depreciated.md">edit</a> -
-    <a href="/friendship-paradox">random</a> -
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Mocking Functions in Python.md">edit</a> -
+    <a href="/alice-in-modeland">random</a> -
     <a href="/recent-changes">updates</a> -
     <a href="/tags">tags</a> -
     <a href="/sitemap">sitemap</a>
