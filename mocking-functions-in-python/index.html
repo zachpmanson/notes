@@ -253,7 +253,7 @@
 <span class="nd">@patch</span><span class="p">(</span><span class="s2">&quot;somepypipackage.funcA&quot;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">test_funcB</span><span class="p">(</span><span class="n">funcA</span><span class="p">):</span>
     <span class="n">funcA</span><span class="o">.</span><span class="n">return_value</span> <span class="o">=</span> <span class="mi">3</span>
-    <span class="k">assert</span> <span class="n">funcB</span><span class="p">()</span> <span class="o">==</span> <span class="mi">3</span>
+    <span class="k">assert</span> <span class="n">funcB</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;correct_value&quot;</span>
 </code></pre></div>
 <p>This will only mock <code>funcA</code> calls within the scope of  <code>tests.py</code>.  funcB is in a different namespace so calls <code>funcB</code> makes to <code>funcA</code> will not be mocked  To ensure <code>funcA</code> calls are mocked properly specifically write the namespace it needs to be mocked within</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># tests.py</span>
@@ -265,7 +265,7 @@
 <span class="nd">@patch</span><span class="p">(</span><span class="s2">&quot;path.to.funcBfile.funcA&quot;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">test_funcB</span><span class="p">(</span><span class="n">funcA</span><span class="p">):</span>
     <span class="n">funcA</span><span class="o">.</span><span class="n">return_value</span> <span class="o">=</span> <span class="mi">3</span>
-    <span class="k">assert</span> <span class="n">funcB</span><span class="p">()</span> <span class="o">==</span> <span class="mi">3</span>
+    <span class="k">assert</span> <span class="n">funcB</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;correct_value&quot;</span>
 </code></pre></div></article>
 
     
@@ -297,7 +297,7 @@
   </main>
   <footer>
     <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Mocking Functions in Python.md">edit</a> -
-    <a href="/alice-in-modeland">random</a> -
+    <a href="/seleniumbasic">random</a> -
     <a href="/recent-changes">updates</a> -
     <a href="/tags">tags</a> -
     <a href="/sitemap">sitemap</a>
