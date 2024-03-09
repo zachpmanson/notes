@@ -25,6 +25,7 @@
 <body>
   <nav>
 
+  
     <div class="main-icon">
       <a href="/">
         <img src="/static/icon/icon.png" alt="notes" height="100">
@@ -36,9 +37,9 @@
         {% if piblings != None %}
 
         <div class="flex flex-col text-left nav-links">
+          <a href="/{{sanitize_url(parent)|e}}" class="activated-link">{{parent}}</a>
           {% for pibling in piblings %}
           {% if pibling == parent %}
-          <a href="/{{sanitize_url(pibling)|e}}" class="activated-link">{{pibling}}</a>
           {% else %}
           <a href="/{{sanitize_url(pibling)|e}}">{{pibling}}</a>
           {% endif %}
@@ -49,9 +50,9 @@
         {% if siblings != None %}
 
         <div class="flex flex-col text-left nav-links">
+          <a href="/{{sanitize_url(title)|e}}" class="activated-link">{{title}}</a>
           {% for sibling in siblings %}
           {% if sibling == title %}
-          <a href="/{{sanitize_url(sibling)|e}}" class="activated-link">{{sibling}}</a>
           {% else %}
           <a href="/{{sanitize_url(sibling)|e}}">{{sibling}}</a>
           {%endif%}
@@ -69,6 +70,7 @@
         {% endif %}
       </div>
     </div>
+
 
   </nav>
   <main>
@@ -94,17 +96,6 @@
       </span>
     </p>
     {% endif %}
-
-
-
-    <!--
-    {% if children != None %}
-    {% for child in children %}
-    <h2><a href="/{{sanitize_url(child)|e}}">{{child}}</a></h2>
-    {% endfor %}
-    {% endif %}
-    -->
-
   </main>
   <footer>
     <a href="https://github.dev/pavo-etc/notes/blob/main/{{breadcrumb_path}}">edit</a> -
