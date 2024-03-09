@@ -4,7 +4,7 @@ tags:
   - relics
   - linux
 ---
-When creating a new user account using the `adduser` program on [[Unix]] machines there is a field called GECOS that conventionally used to store information about the user, such as their real name or phone number.
+When creating a new user account using the `adduser` program on [[Notes/Software/Unix/Unix]] machines there is a field called GECOS that conventionally used to store information about the user, such as their real name or phone number.
 
 ```
 adduser 

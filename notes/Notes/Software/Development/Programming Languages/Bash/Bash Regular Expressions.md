@@ -1,4 +1,4 @@
-Globbing is relatively simple.  More powerful string matcing can be done with regular expressions.  In [[Unix]], modern regex style is derived from `ed` (a predecessor to `vi`).
+Globbing is relatively simple.  More powerful string matcing can be done with regular expressions.  In [[Notes/Software/Unix/Unix]], modern regex style is derived from `ed` (a predecessor to `vi`).
 
 ## Syntax
 

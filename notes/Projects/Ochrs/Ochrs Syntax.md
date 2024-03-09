@@ -42,4 +42,4 @@ tags:
 
 These can be displayed in the using the `ochrs:tags` function.
 
-These will be collated on the [[tags]] page.  If any tags written in the Markdown source match the name of any individual page, that page (and its children) will all be assigned to that tag.  See [[Unix]] for this in action.
+These will be collated on the [[tags]] page.  If any tags written in the Markdown source match the name of any individual page, that page (and its children) will all be assigned to that tag.  See [[Notes/Software/Unix/Unix]] for this in action.

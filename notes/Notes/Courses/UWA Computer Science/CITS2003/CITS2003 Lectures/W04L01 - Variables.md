@@ -1,1 +1,1 @@
-Mostly in [[Unix]] and [[Bash]].
+Mostly in [[Notes/Software/Unix/Unix]] and [[Bash]].
