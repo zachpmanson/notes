@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 mkdir site
-git worktree add site gh-pages
+git worktree add ./site gh-pages
 
 python3 -m venv venv 
 . ./venv/bin/activate
