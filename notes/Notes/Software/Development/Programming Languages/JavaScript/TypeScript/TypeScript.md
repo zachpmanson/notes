@@ -1,3 +1,3 @@
 ---
-subtitle: The JavaScript superset.
+subtitle: JavaScript but actually usable.
 ---
