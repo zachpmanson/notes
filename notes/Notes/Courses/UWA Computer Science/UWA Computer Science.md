@@ -1,6 +1,6 @@
 Reviews and advice for all [[Computer Science]], Cyber Security, and Data Science units I completed at UWA.
 
-Just do [Coders For Causes](https://codersforcauses.org/), you will learn more in that than entire semesters of this degree.  **Learn how to use git as fast as possible** then force all your group project members to use it.  Narrow down your problems as much as possible, then google the most generic possible description of it. If you see someone using semicolons mid-sentence regularly it's probably [[Christ McDonald|Chris McDonald]].
+Just do [Coders For Causes](https://codersforcauses.org/), you will learn more in that than entire semesters of this degree. **Learn how to use git as fast as possible** then force all your group project members to use it. Narrow down your problems as much as possible, then google the most generic possible description of it. If you see someone using semicolons mid-sentence regularly it's probably [[Christ McDonald|Chris McDonald]].
 
 ![[uwa-cits.png]]
 
@@ -11,12 +11,12 @@ CITS1001 Software Engineering with Java (called Object Oriented Programming when
 - serves as the introduction to programming for many students
 - actively bad introduction to programming
 - spends time describing the conceptual model of objects and encapsulation before describing variables and if statements
-- class only uses BlueJ (yuck) and as such never teaches you to use a main function.  Met students who had completed the class and were still incapable of actually running a Java program
+- class only uses BlueJ (yuck) and as such never teaches you to use a main function. Met students who had completed the class and were still incapable of actually running a Java program
 - glad that it is being replaced with CITS2005
 
 CITS1003 Intro to Cybersecurity:
 
-- extremely fun introduction to basic cybersecurity concepts 
+- extremely fun introduction to basic cybersecurity concepts
 - main project was a semester long CTF
 - perhaps a bit light on content but gives a good taste of the major
 
@@ -39,14 +39,14 @@ CITS2002 Systems Programming
 - good introduction to [[C]]
 - challenging projects but you learn a lot
 - very rewarding
-- this and CITS2200 have the highest kill rate for comsci degrees <sup>[citation needed]</sup>.  partially because they are hard, partially because the previous units did a pretty bad job preparing students for them
+- this and CITS2200 have the highest kill rate for comsci degrees <sup>[citation needed]</sup>. partially because they are hard, partially because the previous units did a pretty bad job preparing students for them
 
 [[CITS2003]] Open Source Tools & Scripting
 
-- teaches [[Bash]] and [[Notes/Software/Unix/Unix]] which are important and only orthogonally explained in CITS2002
+- teaches [[Bash]] and [[Unix]] which are important and only orthogonally explained in CITS2002
 - teaches [[sed]] and [[awk]] relatively well
 - includes [[Make]] for some reason, no reason literally cut this its covered in CITS2002 and is actually relevant there
-- also includes git but never actually requires its use so it feels useless even though it is most students first introduction to it.  git should be in CITS1401.
+- also includes git but never actually requires its use so it feels useless even though it is most students first introduction to it. git should be in CITS1401.
 - somehow manages to completely screw up the assessments every year
 - see [[Michael Wise Quotes]]
 
@@ -90,7 +90,7 @@ CITS3003 Graphics and Animation
 - abandoned
 - feels like it was really interesting in 2009, but the unit coordinator who cared about it has since left and now it wanders the optional units lists like a zombie
 - project hasn't changed majorly in 10 years, though it has gotten more convoluted
-	- there are certainly past versions of it on github if you are so inclined
+  - there are certainly past versions of it on github if you are so inclined
 - soulless, out of date, and wasted potential as it could be one of the most interesting units
 
 CITS3006 Penetration Testing
@@ -129,21 +129,21 @@ CITS3200 Professional Computing
 
 - your capstone project with an actual client, aka gambling your marks
 - if your client is chill you will do well, if not you are ruined
-	- e.g. my team shipped actual malware and got a HD
+  - e.g. my team shipped actual malware and got a HD
 - teams are allocated based on having an even WAM spread so get hyped for mark rubber-banding
 - there are lectures
-	- 2/10 lectures will be valuable
-	- 3/10 will be companies hyping themselves up
-	- 4/10 will be inane ethics bullshit
-	- 1/10 will be alleged war criminals
-- all prior units have not adequately prepared you for this, go learn django or [[react]] because you are very likely going to need to know these.  if you are wondering if you should make a web app you should probably just make a web app
+  - 2/10 lectures will be valuable
+  - 3/10 will be companies hyping themselves up
+  - 4/10 will be inane ethics bullshit
+  - 1/10 will be alleged war criminals
+- all prior units have not adequately prepared you for this, go learn django or [[react]] because you are very likely going to need to know these. if you are wondering if you should make a web app you should probably just make a web app
 
 ## Miscellaneous Advice
 
-Labs are the only thing in the degree you can't get from youtube or the [[internet]].  If you are bad, actually do the labs, go in and ask the instructors questions.  It's annoying but they can help you bridge the gap between trash and passing.
+Labs are the only thing in the degree you can't get from youtube or the [[internet]]. If you are bad, actually do the labs, go in and ask the instructors questions. It's annoying but they can help you bridge the gap between trash and passing.
 
-Learn how to use the command line ASAP.  Learn git.  Seriously go learn git.  So many people I met couldn't use git in their third year.  How they made it that far sending code snippets over discord is beyond me.  Bully everyone you know into using git.  You will actually lose 20% mark if you don't use git+github for a group project because you will waste so much time trying to coordinate the project.  If git is hurting your brain try using GitHub Desktop which makes it a bit easier to use for newcomers.
+Learn how to use the command line ASAP. Learn git. Seriously go learn git. So many people I met couldn't use git in their third year. How they made it that far sending code snippets over discord is beyond me. Bully everyone you know into using git. You will actually lose 20% mark if you don't use git+github for a group project because you will waste so much time trying to coordinate the project. If git is hurting your brain try using GitHub Desktop which makes it a bit easier to use for newcomers.
 
-Have other hobbies.  Doesn't matter what they are but gaming doesn't count if it's your only hobby.
+Have other hobbies. Doesn't matter what they are but gaming doesn't count if it's your only hobby.
 
-Go to social events with clubs.  The specific club doesn't matter, they are all fine. Alcohol helps, if you are so inclined (science union pub crawls are great).  It's very easy in computer science to not make actually make any friends and do everything online.   But you will need friends to not be sad and die alone.
+Go to social events with clubs. The specific club doesn't matter, they are all fine. Alcohol helps, if you are so inclined (science union pub crawls are great). It's very easy in computer science to not make actually make any friends and do everything online. But you will need friends to not be sad and die alone.

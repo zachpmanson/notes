@@ -5,6 +5,18 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> Collect constraints you enjoy. Unusual constraints make things more fun. You can always change them later. This is _your_ style, after all. It’s not a life commitment, it’s just the way you do things. For now.
+
+-- [Steph Ango](https://stephango.com/style)
+
+---
+
+> If you want your writing to still be readable on a computer from the 2060s or 2160s, it’s important that your notes can be read on a computer from the 1960s.
+
+-- [[File Over App|Steph Ango]]
+
+---
+
 > Girlfriends are temporary, ex-girlfriends are forever
 
 -- [/u/UnemployedTechie2021 (maybe)](https://old.reddit.com/r/Showerthoughts/comments/xa48um/girlfriends_are_temporary_exgirlfriends_are/)

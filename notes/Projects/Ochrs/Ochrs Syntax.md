@@ -1,6 +1,6 @@
 ## Markdown Extensions
 
-Ochrs has a few additions on top of normal [Python Markdown](https://python-markdown.github.io/).  These are the extensions being used by the parser:
+Ochrs has a few additions on top of normal [Python Markdown](https://python-markdown.github.io/). These are the extensions being used by the parser:
 
 <ochrs:md-extensions>
 
@@ -8,7 +8,7 @@ Most of these are officially supported, some are from [pymdownx](https://faceles
 
 ### Citations
 
-CiteExtention is a custom extension that turns `-- Name Here`  into `<cite>Name here</cite>`.
+CiteExtention is a custom extension that turns `-- Name Here` into `<cite>Name here</cite>`.
 
 ## Backlinks
 
@@ -16,7 +16,7 @@ BacklinkExtension is an enhanced version of [WikiLinkExtension](https://python-m
 
 ## Build-Time Functions
 
-There are also build-time functions that you have access to on all pages.  The list of extensions above is one of these, generated at built-time by Ochrs.  The format to insert one of these functions is:
+There are also build-time functions that you have access to on all pages. The list of extensions above is one of these, generated at built-time by Ochrs. The format to insert one of these functions is:
 
 ```
 Some normal text <ochrs:example> some more text
@@ -26,11 +26,11 @@ Currently available Ochrs functions:
 
 <ochrs:ochrs-funcs>
 
-This are parsed prior to Markdown generation, so will take precedence over any Markdown syntax. 
+This are parsed prior to Markdown generation, so will take precedence over any Markdown syntax.
 
 ## Tags
 
-Ochrs detects array of tags in the YAML frontmatter of a Markdown file.  They should be in the following format.
+Ochrs detects array of tags in the YAML frontmatter of a Markdown file. They should be in the following format.
 
 ```yaml
 ---
@@ -42,4 +42,4 @@ tags:
 
 These can be displayed in the using the `ochrs:tags` function.
 
-These will be collated on the [[tags]] page.  If any tags written in the Markdown source match the name of any individual page, that page (and its children) will all be assigned to that tag.  See [[Notes/Software/Unix/Unix]] for this in action.
+These will be collated on the [[tags]] page. If any tags written in the Markdown source match the name of any individual page, that page (and its children) will all be assigned to that tag. See [[Unix]] for this in action.

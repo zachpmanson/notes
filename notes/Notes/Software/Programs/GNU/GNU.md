@@ -1,1 +1,1 @@
-GNU is a collection of open source [[software]] packages designed initially to form an entire operating system, but is much more commonly used as a subset of utilities on non-GNU operating systems, primarily [[Linux]].  It is an acronym for GNU's Not [[Notes/Software/Unix/Unix]].
+GNU is a collection of open source [[software]] packages designed initially to form an entire operating system, but is much more commonly used as a subset of utilities on non-GNU operating systems, primarily [[Linux]]. It is an acronym for GNU's Not [[Unix]].
