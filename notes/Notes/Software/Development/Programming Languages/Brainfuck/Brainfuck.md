@@ -1,4 +1,4 @@
-Brainfuck is an esolang.  Its turing complete but only just.
+Brainfuck is an esolang.  It's Turing complete but only just.
 
 ## Resources
 
