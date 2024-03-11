@@ -5,8 +5,9 @@ tags:
   - venting
   - postgres
   - prisma
+subtitle: An alternate frontend for Dan Murphy's.
 ---
-An alternate frontend for Dan Murphy's
+
 
 [Alculator](https://alculator.zachmanson.com) was written in the waning days of 2022 to determine the cheapest drinks at Dan Murphy's, per standard drink. The site is build with Next.js and hosted on Vercel.
 
