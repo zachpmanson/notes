@@ -5,6 +5,8 @@ git worktree add -b gh-pages ./site
 git fetch
 git branch --set-upstream-to=origin/gh-pages gh-pages
 
+git config pull.ff only
+
 echo Pulling last site commit...
 cd site
 git pull --depth 1
