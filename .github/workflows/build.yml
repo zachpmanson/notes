@@ -1,0 +1,18 @@
+on:
+  push:
+    branches:
+      - main
+name: build
+jobs:
+  build:
+    name: run build script
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: run ./setup.sh
+        run: |
+          ./setup.sh
+          
+      - name: run ./deploy.sh
+        run: ./deploy.sh
+        
