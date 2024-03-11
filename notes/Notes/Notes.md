@@ -1,3 +1,4 @@
 ---
-subtitle: Assorted notes and research.
+subtitle: Notes and research.
 ---
+Mostly things I half understand.
