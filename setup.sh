@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 mkdir site
 git worktree add -b gh-pages ./site
-it branch --set-upstream-to=origin/gh-pages gh-pages
+git branch --set-upstream-to=origin/gh-pages gh-pages
 
 python3 -m venv venv 
 . ./venv/bin/activate
