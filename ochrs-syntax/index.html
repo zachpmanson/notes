@@ -99,22 +99,22 @@
       <h1>Ochrs Syntax</h1>
     </header>
     <article><h2 id="markdown-extensions">Markdown Extensions</h2>
-<p>Ochrs has a few additions on top of normal <a href="https://python-markdown.github.io/">Python Markdown</a>.  These are the extensions being used by the parser:</p>
+<p>Ochrs has a few additions on top of normal <a href="https://python-markdown.github.io/">Python Markdown</a>. These are the extensions being used by the parser:</p>
 <p>fenced_code, BacklinkExtension, CodeHiliteExtension, md_in_html, toc, tables, pymdownx.superfences, markdown_checklist.extension, CiteExtension</p>
 <p>Most of these are officially supported, some are from <a href="https://facelessuser.github.io/pymdown-extensions/">pymdownx</a>, some are from the <a href="https://github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions">third party extension list</a>, and some are custom extensions <a href="https://github.com/pavo-etc/notes/tree/main/generator/extensions">included as part of Ochrs</a>.</p>
 <h3 id="citations">Citations</h3>
-<p>CiteExtention is a custom extension that turns <code>-- Name Here</code>  into <code>&lt;cite&gt;Name here&lt;/cite&gt;</code>.</p>
+<p>CiteExtention is a custom extension that turns <code>-- Name Here</code> into <code>&lt;cite&gt;Name here&lt;/cite&gt;</code>.</p>
 <h2 id="backlinks">Backlinks</h2>
 <p>BacklinkExtension is an enhanced version of <a href="https://python-markdown.github.io/extensions/wikilinks/">WikiLinkExtension</a> that supports aliased links and can include anchor links.</p>
 <h2 id="build-time-functions">Build-Time Functions</h2>
-<p>There are also build-time functions that you have access to on all pages.  The list of extensions above is one of these, generated at built-time by Ochrs.  The format to insert one of these functions is:</p>
+<p>There are also build-time functions that you have access to on all pages. The list of extensions above is one of these, generated at built-time by Ochrs. The format to insert one of these functions is:</p>
 <div class="highlight"><pre><span></span><code>Some normal text &lt;ochrs:func-name:arg1:arg2&gt; some more text
 </code></pre></div>
 <p>Currently available Ochrs functions:</p>
 <p>ochrs-funcs, example, page-count, build-time, md-extensions, recent-edit, sitemap, tags, random-js</p>
-<p>This are parsed prior to Markdown generation, so will take precedence over any Markdown syntax. </p>
+<p>This are parsed prior to Markdown generation, so will take precedence over any Markdown syntax.</p>
 <h2 id="tags">Tags</h2>
-<p>Ochrs detects array of tags in the YAML frontmatter of a Markdown file.  They should be in the following format.</p>
+<p>Ochrs detects array of tags in the YAML frontmatter of a Markdown file. They should be in the following format.</p>
 <div class="highlight"><pre><span></span><code><span class="nn">---</span>
 <span class="nt">tags</span><span class="p">:</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">relics</span>
@@ -122,16 +122,16 @@
 <span class="nn">---</span>
 </code></pre></div>
 <p>These can be displayed in the using the <code>ochrs:tags</code> function.</p>
-<p>These will be collated on the <a href="/tags">tags</a> page.  If any tags written in the Markdown source match the name of any individual page, that page (and its children) will all be assigned to that tag.  See [[Notes/Software/Unix/Unix]] for this in action.</p></article>
+<p>These will be collated on the <a href="/tags">tags</a> page. If any tags written in the Markdown source match the name of any individual page, that page (and its children) will all be assigned to that tag. See <a href="/unix">Unix</a> for this in action.</p></article>
 
     
     <p class="backlinks"><span class="bold">Incoming:</span>
       
+      <a href="/ochrs">Ochrs</a>
+      
       <a href="/recent-changes">Recent Changes</a>
       
       <a href="/stylesheet">Stylesheet</a>
-      
-      <a href="/ochrs">Ochrs</a>
       
       </span>
     </p>
@@ -141,7 +141,7 @@
   </main>
   <footer>
     <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Projects/Ochrs/Ochrs Syntax.md">edit</a> -
-    <a href="/mocking-functions-in-python">random</a> -
+    <a href="/unix-programs">random</a> -
     <a href="/recent-changes">updates</a> -
     <a href="/tags">tags</a> -
     <a href="/sitemap">sitemap</a>
