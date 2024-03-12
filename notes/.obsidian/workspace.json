@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Programs/Git/Git Operations.md",
+                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "\" git\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Programs/Git/Git Operations.md",
+                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Programs/Git/Git Operations.md",
+                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Programs/Git/Git Operations.md"
+                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md"
               }
             }
           }
@@ -146,11 +147,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "dc1263605b40bdf7",
   "lastOpenFiles": [
-    "Notes/Software/Programs/Git/Git Bare Repositories.md",
     "Notes/Software/Programs/Git/Git Operations.md",
+    "Archive/Problems/Piping to Clipboard.md",
+    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+    "Notes/Courses/UWA Computer Science/CITS2003/CITS2003 Lectures/W09L01 - Git.md",
+    "Archive/Problems/Raw GitHub Commits.md",
+    "Notes/Software/Programs/Docker/Docker.md",
+    "Notes/Software/Programs/Obsidian/Obsidian Plugins.md",
+    "Archive/Problems/Git Subdirectory Branch.md",
     "Notes/Software/Programs/Git/Git.md",
+    "Notes/Software/Programs/Git/Git Bare Repositories.md",
     "Notes/Software/Unix/Linux/Linux.md",
     "Notes/Software/Development/Programming Languages/Bash/Bash Syntax.md",
     "Notes/Software/Development/Programming Languages/Bash/Bash Startup Scripts.md",
@@ -167,12 +175,6 @@
     "Notes/Miscellany/Process Box.md",
     "Notes/Miscellany/Pens.md",
     "Notes/Miscellany/On Taking Notes.md",
-    "Archive/Bookmarks/xkcd.md",
-    "Notes/Software/Programs/Obsidian/Obsidian Plugins.md",
-    "Notes/Software/Unix/Unix Programs/Vi(m)/Vi(m).md",
-    "Notes/Notes.md",
-    "Archive/Bookmarks/Hacks.md",
-    "Archive/Bookmarks/Bookmarks.md",
-    "Archive/Bookmarks/Digital Gardens.md"
+    "Archive/Bookmarks/xkcd.md"
   ]
 }

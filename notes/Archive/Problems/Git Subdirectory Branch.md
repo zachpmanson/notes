@@ -2,7 +2,7 @@
 tags:
   - git
 ---
-Mounting a Git branch to a subdirectory.
+Mounting a [[git]] branch to a subdirectory.
 
 Create an orphaned branch if it doesn't already exist, and remove any shared history with the trunk.
 ```sh
@@ -20,7 +20,7 @@ git worktree add site gh-pages
 
 Moving in and out of this directory should now switch branches.
 
-To set up a subdirectory branch on a cloned Git repo, only run the last two commands.
+To set up a subdirectory branch on a cloned git repo, only run the last two commands.
 
 This site uses this set up for deploying to GitHub Pages.
 

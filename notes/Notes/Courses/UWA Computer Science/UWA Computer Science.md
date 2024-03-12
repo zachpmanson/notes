@@ -1,6 +1,6 @@
 Reviews and advice for all [[Computer Science]], Cyber Security, and Data Science units I completed at UWA.
 
-Just do [Coders For Causes](https://codersforcauses.org/), you will learn more in that than entire semesters of this degree. **Learn how to use git as fast as possible** then force all your group project members to use it. Narrow down your problems as much as possible, then google the most generic possible description of it. If you see someone using semicolons mid-sentence regularly it's probably [[Christ McDonald|Chris McDonald]].
+Just do [Coders For Causes](https://codersforcauses.org/), you will learn more in that than entire semesters of this degree. **Learn how to use [[git]] as fast as possible** then force all your group project members to use it. Narrow down your problems as much as possible, then google the most generic possible description of it. If you see someone using semicolons mid-sentence regularly it's probably [[Christ McDonald|Chris McDonald]].
 
 ![[uwa-cits.png]]
 
@@ -46,7 +46,7 @@ CITS2002 Systems Programming
 - teaches [[Bash]] and [[Unix]] which are important and only orthogonally explained in CITS2002
 - teaches [[sed]] and [[awk]] relatively well
 - includes [[Make]] for some reason, no reason literally cut this its covered in CITS2002 and is actually relevant there
-- also includes git but never actually requires its use so it feels useless even though it is most students first introduction to it. git should be in CITS1401.
+- also includes [[git]] but never actually requires its use so it feels useless even though it is most students first introduction to it. git should be in CITS1401.
 - somehow manages to completely screw up the assessments every year
 - see [[Michael Wise Quotes]]
 
@@ -121,7 +121,7 @@ CITS3401 Data Warehousing
 CITS3403 Agile [[Web Development]]
 
 - really fun and very practical
-- FIRST ACTUAL USE OF GIT (do no wait till third year, learn this in year 1 semester 1) how did it take this long
+- FIRST ACTUAL USE OF [[GIT]] (do no wait till third year, learn this in year 1 semester 1) how did it take this long
 - well taught
 - [very](https://minecraftle.zachmanson.com) [[Minecraftle|fun project]]
 
