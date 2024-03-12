@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
+                "file": "Notes/Software/Programs/Git/Git Operations.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
+                "file": "Notes/Software/Programs/Git/Git Operations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
+                "file": "Notes/Software/Programs/Git/Git Operations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md"
+                "file": "Notes/Software/Programs/Git/Git Operations.md"
               }
             }
           }
@@ -148,6 +148,15 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Programs/Git/Git Bare Repositories.md",
+    "Notes/Software/Programs/Git/Git Operations.md",
+    "Notes/Software/Programs/Git/Git.md",
+    "Notes/Software/Unix/Linux/Linux.md",
+    "Notes/Software/Development/Programming Languages/Bash/Bash Syntax.md",
+    "Notes/Software/Development/Programming Languages/Bash/Bash Startup Scripts.md",
+    "Notes/Software/Development/Programming Languages/Bash/Bash.md",
+    "Untitled.canvas",
+    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
     "Notes/Software/Development/Programming Languages/C/C.md",
     "Projects/ironprof.md",
     "Projects/Alculator.md",

@@ -56,3 +56,14 @@ git pull
 ```
 
 From this [answer on StackOverflow](https://stackoverflow.com/a/5884825).
+
+## Checkout Switch
+
+Switching to `-` will switch you back to the previous branch, similar to `cd -`.
+
+```
+git checkout main
+git checkout develop
+git checkout -
+git checkout -
+```

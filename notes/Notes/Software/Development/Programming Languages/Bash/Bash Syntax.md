@@ -15,7 +15,11 @@
 - `$IFS` is the internal field seperator, which determines characters than can be used to seperate arguments
 	- By default this is `<space><tab><newline>`
 	- can be edited to change this
-
+- `cd`
+	- change directory
+	- leave blank to go to `~`
+	- `cd -` to go previous directory
+		- use this repeatedly to toggle between two dirs
 ## Variables
 
 Variable assignments must not use spaces.  `$` can be used to get values from variables.
