@@ -33,3 +33,7 @@ brew install \
 --cask caffeine \
 --cask alt-tab
 ```
+
+## Remapping
+
+I am currently trialing disabling Cmd+Q as I hit it accidentally too often. Using the System Settings Keyboard Shortcuts options, I have changed Cmd+Q to Invert Screen Colours and switched Cmd+Opt+Q to quit.
