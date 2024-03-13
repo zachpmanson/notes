@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Unix/macOS/Making macOS Useable.md",
+                "file": "Archive/Folklore/Folklore.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Unix/macOS/Making macOS Useable.md",
+                "file": "Archive/Folklore/Folklore.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Unix/macOS/Making macOS Useable.md",
+                "file": "Archive/Folklore/Folklore.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Unix/macOS/Making macOS Useable.md"
+                "file": "Archive/Folklore/Folklore.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Unix/macOS/Making macOS Useable.md",
     "Notes/Software/Unix/macOS/macOS CLI Tools.md",
     "Notes/Software/Development.md",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
@@ -173,7 +174,6 @@
     "Notes/Software/Development/Programming Languages/Brainfuck/Brainfuck.md",
     "Notes/Miscellany/Spotify Design Decisions.md",
     "Notes/Miscellany/Sewing.md",
-    "Notes/Miscellany/Process Box.md",
-    "Notes/Miscellany/Pens.md"
+    "Notes/Miscellany/Process Box.md"
   ]
 }
