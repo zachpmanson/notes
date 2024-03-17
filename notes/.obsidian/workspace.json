@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Programs/Git/Git Operations.md",
+                "file": "Archive/Problems/Git Creation and Modification Time.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Programs/Git/Git Operations.md",
+                "file": "Archive/Problems/Git Creation and Modification Time.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Programs/Git/Git Operations.md",
+                "file": "Archive/Problems/Git Creation and Modification Time.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Programs/Git/Git Operations.md"
+                "file": "Archive/Problems/Git Creation and Modification Time.md"
               }
             }
           }
@@ -146,10 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "bde0602bb8a8c5bf",
   "lastOpenFiles": [
-    "Notes/Software/Programs/Git/Git Bare Repositories.md",
     "Notes/Software/Programs/Git/Git.md",
+    "Notes/Software/Programs/Git/Git Operations.md",
+    "Notes/Software/Programs/Git/Git Bare Repositories.md",
     "Archive/Problems/Git Creation and Modification Time.md",
     "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
     "Notes/Software/Programs/Programs.md",
@@ -160,7 +161,6 @@
     "Notes/Software/Unix/macOS/macOS CLI Tools.md",
     "Notes/Software/Development.md",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
-    "Notes/Software/Programs/Git/Git Operations.md",
     "Archive/Problems/Piping to Clipboard.md",
     "Notes/Courses/UWA Computer Science/CITS2003/CITS2003 Lectures/W09L01 - Git.md",
     "Archive/Problems/Raw GitHub Commits.md",
