@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Folklore/Folklore.md",
+                "file": "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Folklore/Folklore.md",
+                "file": "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Folklore/Folklore.md",
+                "file": "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Folklore/Folklore.md"
+                "file": "Notes/Software/Programs/Spotify/Spotify Design Decisions.md"
               }
             }
           }
@@ -148,6 +148,10 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Programs/Programs.md",
+    "Notes/Software/Programs/Spotify",
+    "Notes/Software/Software.md",
+    "Archive/Folklore/Folklore.md",
     "Notes/Software/Unix/macOS/Making macOS Useable.md",
     "Notes/Software/Unix/macOS/macOS CLI Tools.md",
     "Notes/Software/Development.md",
@@ -171,9 +175,6 @@
     "Projects/ironprof.md",
     "Projects/Alculator.md",
     "Projects/Penultimate Guitar.md",
-    "Notes/Software/Development/Programming Languages/Brainfuck/Brainfuck.md",
-    "Notes/Miscellany/Spotify Design Decisions.md",
-    "Notes/Miscellany/Sewing.md",
-    "Notes/Miscellany/Process Box.md"
+    "Notes/Software/Development/Programming Languages/Brainfuck/Brainfuck.md"
   ]
 }
