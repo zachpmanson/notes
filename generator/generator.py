@@ -288,6 +288,33 @@ def format_tags(taglist):
             tags[tag].add(current_node)
 
 
+def build_feeds():
+    """Builds the rss and atom feeds"""
+    rss_template = jinja2.Template(open("generator/rss.jinja", "r").read())
+    atom_template = jinja2.Template(open("generator/atom.jinja", "r").read())
+
+    rss = rss_template.render(
+        {
+            "title": "RSS Feed",
+            "link": "https://ochrs.github.io/rss.xml",
+            "description": "RSS Feed",
+            "lastBuildDate": datetime.now().strftime("%a, %d %b %Y %H:%M:%S %z"),
+            "items": [
+                {
+                    "title": node,
+                    "link": f"https://ochrs.github.io/{helpers.sanitize_url(node)}",
+                    "description": tree[node]["body"],
+                    "pubDate": datetime.now().strftime("%a, %d %b %Y %H:%M:%S %z"),
+                }
+                for node in tree.keys()
+            ],
+        }
+    )
+
+    with open("site/rss.xml", "w") as f:
+        f.write(rss)
+
+
 def apply_creation_dates():
     with open("history.csv") as history_file:
         reader = csv.reader(history_file, delimiter=",", quotechar='"')
@@ -374,7 +401,7 @@ ochrs_funcs = {
 #   "children":[child1, child2]},
 #   "body":""
 #   "backlinks":[]
-#   "mod_date": mod_date
+#   "mod_date": "YYYY-MM-DD"
 #   "creation_date": "YYYY-MM-DD"
 #   "breadcrump_path": path in notes folder as string
 #   "random_page": random page when using static random
@@ -430,6 +457,8 @@ if __name__ == "__main__":
 
     propagate_tags()
     generate_tags()
+
+    build_feeds()
 
     generate_sitemap()
 

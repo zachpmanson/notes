@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
+                "file": "Archive/Problems/Git Creation and Modification Time.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\" git\"",
+                "query": "git creation",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
+                "file": "Archive/Problems/Git Creation and Modification Time.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
+                "file": "Archive/Problems/Git Creation and Modification Time.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Programs/Spotify/Spotify Design Decisions.md"
+                "file": "Archive/Problems/Git Creation and Modification Time.md"
               }
             }
           }
@@ -133,8 +134,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,8 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "bde0602bb8a8c5bf",
   "lastOpenFiles": [
+    "Notes/Software/Programs/Git/Git.md",
+    "Archive/Problems/Git Creation and Modification Time.md",
+    "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
     "Notes/Software/Programs/Programs.md",
     "Notes/Software/Programs/Spotify",
     "Notes/Software/Software.md",
@@ -163,7 +166,6 @@
     "Notes/Software/Programs/Docker/Docker.md",
     "Notes/Software/Programs/Obsidian/Obsidian Plugins.md",
     "Archive/Problems/Git Subdirectory Branch.md",
-    "Notes/Software/Programs/Git/Git.md",
     "Notes/Software/Programs/Git/Git Bare Repositories.md",
     "Notes/Software/Unix/Linux/Linux.md",
     "Notes/Software/Development/Programming Languages/Bash/Bash Syntax.md",
@@ -173,8 +175,6 @@
     "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
     "Notes/Software/Development/Programming Languages/C/C.md",
     "Projects/ironprof.md",
-    "Projects/Alculator.md",
-    "Projects/Penultimate Guitar.md",
-    "Notes/Software/Development/Programming Languages/Brainfuck/Brainfuck.md"
+    "Projects/Alculator.md"
   ]
 }
