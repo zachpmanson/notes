@@ -3,12 +3,11 @@ subtitle: A wiki generator.
 tags:
   - python
 ---
-
 This website is generated with Ochrs, which began as a fork of [Nchrs](https://nchrs.xyz), which itself began as a fork of [XXIIVV](https://wiki.xxiivv.com/site/home.html).
 
 ## Ochrs 1.0
 
-The initial implementation of Ochrs was forked from Nchrs since Nchrs had forked XXIIVV before XXIIVV underwent from C to Uxntal.  Uxntal is very interesting but not a language I actually know how to write or maintain. I [forked](https://github.com/pavo-etc/legacy-notes) Nchrs and maintained it for a while, but after a while its limitations started to irk me. Its implementation of [[Markdown]] was iffy at best (this led to me calling it Markdownish) and there were myriad edge cases that cropped up as I added more pages. The program was also written in C89 and had manually reimplemented many of the string functions that would become standard in later revisions of the language. This combined with the original author's allergy to comments led to things like this being the best documentation in the entire program:
+The initial implementation of Ochrs was forked from Nchrs since Nchrs had forked XXIIVV before XXIIVV underwent from [[C]] to Uxntal.  Uxntal is very interesting but not a language I actually know how to write or maintain. I [forked](https://github.com/pavo-etc/legacy-notes) Nchrs and maintained it for a while, but after a while its limitations started to irk me. Its implementation of [[Markdown]] was iffy at best (this led to me calling it Markdownish) and there were myriad edge cases that cropped up as I added more pages. The program was also written in C89 and had manually reimplemented many of the string functions that would become standard in later revisions of the language. This combined with the original author's allergy to comments led to things like this being the best documentation in the entire program:
 
 ```C
 int cisp(char c) { return c == ' ' || c == '\t' || c == '\n' || c == '\r'; } /* char is space */

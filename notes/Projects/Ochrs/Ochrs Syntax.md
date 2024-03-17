@@ -1,6 +1,6 @@
 ## Markdown Extensions
 
-Ochrs has a few additions on top of normal [Python Markdown](https://python-markdown.github.io/). These are the extensions being used by the parser:
+[[Ochrs]] has a few additions on top of normal [Python Markdown](https://python-markdown.github.io/). These are the extensions being used by the parser:
 
 <ochrs:md-extensions>
 
@@ -26,7 +26,7 @@ Currently available Ochrs functions:
 
 <ochrs:ochrs-funcs>
 
-This are parsed prior to Markdown generation, so will take precedence over any Markdown syntax.
+This are parsed prior to [[Markdown]] generation, so will take precedence over any Markdown syntax.
 
 ## Tags
 

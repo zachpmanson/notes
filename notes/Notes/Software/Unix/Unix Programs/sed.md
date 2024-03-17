@@ -16,7 +16,7 @@ Simple actions can be specified inline using `-e`.
 sed -e "s/[()]/ & /g" -e "s/ */ /g*" file.txt
 ```
 
-This places places a space around all occurances of `(` and `)`.
+This places places a space around all occurrences of `(` and `)`.
 
 `g` means global, applies to every instance on the line rather than just the first of every line.
 
@@ -46,7 +46,7 @@ Addresses are a range of lines to apply the function to. Without an address, the
 50,100p
 ```
 
-`!` inverts the seletion.
+`!` inverts the selection.
 
 ```
 !30p

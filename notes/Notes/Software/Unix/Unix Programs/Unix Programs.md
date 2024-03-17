@@ -14,16 +14,16 @@ A helpful resources outside of man pages:
 - `apropos <search>`
 	- searches man page titles
 - `cut [-d <delim>] -f <fields to remain> <files>`
-	- takes ASCII structured file seperated by a delimiter like `TAB` and cut returns the fields indicated 
+	- takes ASCII structured file separated by a delimiter like `TAB` and cut returns the fields indicated 
 	- `cut -d "," -f 1,5-7 datafile.csv`
 - `paste [-d <sep>] <files>`
 	- steps through multiple files in parallel
-	- delimiter is what seperates each line from each file e.g.
+	- delimiter is what separates each line from each file e.g.
 - `tr <options> <string1> <string>`
 	- converts characters in first string to characters in the second string
 	- takes from stdin
 	- `-c` complement the first string
-	- `-s` squeeze character repetitions of string1 characters into a single occurance ("####" -> "#")
+	- `-s` squeeze character repetitions of string1 characters into a single occurrence ("####" -> "#")
 	- `tr '[A-Z]' '[a-z]' < file.txt`
 - `comm [<output options>] <file1> <file2>`
 	- two sorted files are compared, 3 columns are produced
@@ -39,7 +39,7 @@ A helpful resources outside of man pages:
 - `sort [options] <file>`
 	- outputs to stdout
 	- `-u` removes duplicate entries
-	- `-t <char>` used as field seperator, `TAB` is default
+	- `-t <char>` used as field separator, `TAB` is default
 	- `-k` can sort on a particular column of structured file
 - `basename /path/file.txt`
 	- strips the directory and file extensions from a path
@@ -70,7 +70,7 @@ A helpful resources outside of man pages:
 	- `-type <c>` type of file is specified by `d/f/l`
 	- `-newer <file>` test file has been accessed more recently than `<file>` was modified
 	- `-print` prints the full path name of file
-	- `-exec <command>` execute command on all files found (like JS `.map()`) 
+	- `-exec <command>` execute command on all files found (like [[JavaScript]] `.map()`) 
 		- command terminated with `\;`
 		- `{}` refers to file found
 	- `-ok <command>` same as command except user is prompted first

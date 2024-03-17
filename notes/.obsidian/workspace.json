@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/Git Creation and Modification Time.md",
+                "file": "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Problems/Git Creation and Modification Time.md",
+                "file": "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Problems/Git Creation and Modification Time.md",
+                "file": "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Problems/Git Creation and Modification Time.md"
+                "file": "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md"
               }
             }
           }
@@ -148,12 +148,22 @@
   },
   "active": "bde0602bb8a8c5bf",
   "lastOpenFiles": [
+    "Notes/Software/Unix/Unix Programs/Unix Programs.md",
+    "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
+    "Notes/Software/Programs/Programs.md",
+    "Notes/Software/Unix/GECOS.md",
+    "Notes/Software/Unix/Unix Programs/sed.md",
+    "Notes/Software/Unix/Unix Programs/Make.md",
+    "Notes/Software/Unix/Unix Programs/Awk.md",
+    "Notes/Software/Unix/Unix.md",
+    "Notes/Software/Unix/Unix Files.md",
+    "Projects/Ochrs/Ochrs Syntax.md",
+    "Projects/Ochrs/Ochrs.md",
+    "Archive/Problems/Git Creation and Modification Time.md",
     "Notes/Software/Programs/Git/Git.md",
     "Notes/Software/Programs/Git/Git Operations.md",
     "Notes/Software/Programs/Git/Git Bare Repositories.md",
-    "Archive/Problems/Git Creation and Modification Time.md",
     "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
-    "Notes/Software/Programs/Programs.md",
     "Notes/Software/Programs/Spotify",
     "Notes/Software/Software.md",
     "Archive/Folklore/Folklore.md",
@@ -165,16 +175,6 @@
     "Notes/Courses/UWA Computer Science/CITS2003/CITS2003 Lectures/W09L01 - Git.md",
     "Archive/Problems/Raw GitHub Commits.md",
     "Notes/Software/Programs/Docker/Docker.md",
-    "Notes/Software/Programs/Obsidian/Obsidian Plugins.md",
-    "Archive/Problems/Git Subdirectory Branch.md",
-    "Notes/Software/Unix/Linux/Linux.md",
-    "Notes/Software/Development/Programming Languages/Bash/Bash Syntax.md",
-    "Notes/Software/Development/Programming Languages/Bash/Bash Startup Scripts.md",
-    "Notes/Software/Development/Programming Languages/Bash/Bash.md",
-    "Untitled.canvas",
-    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
-    "Notes/Software/Development/Programming Languages/C/C.md",
-    "Projects/ironprof.md",
-    "Projects/Alculator.md"
+    "Untitled.canvas"
   ]
 }
