@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meta/Tags.md",
+                "file": "Posts/Posts.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "spotify",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Meta/Tags.md",
+                "file": "Posts/Posts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Meta/Tags.md",
+                "file": "Posts/Posts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Meta/Tags.md"
+                "file": "Posts/Posts.md"
               }
             }
           }
@@ -162,9 +162,9 @@
   },
   "active": "e213816a51d768df",
   "lastOpenFiles": [
+    "Meta/Tags.md",
     "Posts/Posts.md",
     "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
-    "Meta/Tags.md",
     "Posts",
     "Blog/Blog.md",
     "Blog",
