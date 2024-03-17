@@ -19,7 +19,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: select decorator depreciated</title>
+  <title>notes: git creation and modification time</title>
 </head>
 
 <body>
@@ -68,7 +68,7 @@
         
 
         <div class="flex flex-col text-left nav-links">
-          <a href="/select-decorator-depreciated" class="activated-link">Select Decorator Depreciated</a>
+          <a href="/git-creation-and-modification-time" class="activated-link">Git Creation and Modification Time</a>
           
           
           <a href="/alembic-revision-collision">Alembic Revision Collision</a>
@@ -107,7 +107,6 @@
           
           
           
-          <a href="/git-creation-and-modification-time">Git Creation and Modification Time</a>
           
           
           
@@ -195,6 +194,7 @@
           
           
           
+          <a href="/select-decorator-depreciated">Select Decorator Depreciated</a>
           
           
           
@@ -248,33 +248,30 @@
   </nav>
   <main>
     <header>
-      <h1>Select Decorator Depreciated</h1>
+      <h1>Git Creation and Modification Time</h1>
     </header>
-    <article><p>In NGXS the <code>@Select</code> decorator has been depreciated because of limitation Angular places putting on decorator.  The <code>this.store.select()</code> idiom should be used instead.  To convert an existing codebase to the new idiom, the following regex can be used in VS Code Find/Replace:</p>
-<div class="highlight"><pre><span></span><code>// with \n between decorator name
-@Select\((.*)\)\n(.*): Observable&lt;(.*)&gt;;$
-
-// single line
-@Select\((.*)\)(.*): Observable&lt;(.*)&gt;;$
+    <article><p><a href="/git">Git</a> does not include creation time and modification time in file metadata, but you can use the git commit history to retrieve similar results.</p>
+<p>File creation date:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>log<span class="w"> </span>--pretty<span class="o">=</span>format:<span class="s2">&quot;%ad,&quot;</span><span class="w"> </span>--date<span class="o">=</span>short<span class="w"> </span>--diff-filter<span class="o">=</span>A<span class="w"> </span>--<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$file</span><span class="s2">&quot;</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>$2 = this.store.select&lt;$3&gt;($1);
-</code></pre></div>
-<p>This was taken from <a href="https://github.com/ngxs/store/issues/1854#issuecomment-1184855647">the NGXS GitHub issue comment</a> by <a href="https://github.com/lehmstedt">lehmstedt</a>.</p></article>
+<p>File update date:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>log<span class="w"> </span>-1<span class="w"> </span>--pretty<span class="o">=</span>format:<span class="s2">&quot;%ad&quot;</span><span class="w"> </span>--date<span class="o">=</span>short<span class="w"> </span>--<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$line</span><span class="s2">&quot;</span>
+</code></pre></div></article>
 
     
 
     
     <p class="backlinks"><span class="bold">Tags:</span>
       
-      <a href="/tags#javascript">#javascript</a>
+      <a href="/tags#git">#git</a>
       
       </span>
     </p>
     
   </main>
   <footer>
-    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Select Decorator Depreciated.md">edit</a> -
-    <a href="/macos-recovery-in-australia">random</a> -
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Git Creation and Modification Time.md">edit</a> -
+    <a href="/a-conspiracy-to-kill-ie6">random</a> -
     <a href="/recent-changes">updates</a> -
     <a href="/tags">tags</a> -
     <a href="/sitemap">sitemap</a>
