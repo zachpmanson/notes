@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
+                "file": "Posts/Posts.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Posts/Posts.md",
+                "file": "Projects/Ochrs/Ochrs.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -78,8 +77,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -160,11 +158,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e213816a51d768df",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Meta/Tags.md",
-    "Posts/Posts.md",
     "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
+    "Projects/Ochrs/Ochrs.md",
+    "Posts/Posts.md",
+    "Meta/Tags.md",
     "Posts",
     "Blog/Blog.md",
     "Blog",
@@ -189,7 +188,6 @@
     "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Cursed TypeScript Projects.md",
     "Notes/Software/Unix/Unix Programs/Unix Programs.md",
     "Notes/Software/Programs/Programs.md",
-    "Notes/Software/Unix/GECOS.md",
     "Notes/Software/Programs/Spotify",
     "Untitled.canvas"
   ]
