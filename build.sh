@@ -4,15 +4,15 @@ source ./venv/bin/activate
 rm -rf ./site/*
 
 # Create history index
-echo "Creating history index..."
+echo Creating history index...
 rm -f history.csv
-find notes | while read line; do
+find notes -name "*.md" | while read line; do
     echo -n "\"$line\"," >> history.csv
     git log --pretty=format:"%ad," --date=short --diff-filter=A -- "$line" | tail -n1  >> history.csv
     git log -1 --pretty=format:"%ad" --date=short -- "$line" | tail -n1  >> history.csv
     echo "" >> history.csv
 done
-echo "History index created!"
+echo History index created!
 
 echo Activated venv
 echo Generating...

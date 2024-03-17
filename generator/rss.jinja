@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+    <channel>
+        <title>notes: {{tag}}</title>
+        <link>https://notes.zachmanson.com/{{tag}}</link>
+        <description>Notes tagged #{{tag}}</description>
+        <atom:link href="https://notes.zachmanson.com/{{tag}}" rel="self" />
+        <docs>http://www.rssboard.org/rss-specification</docs>
+        <generator>ochrs</generator>
+        <image>
+            <url>https://zachmanson.com/icons/android-chrome-256x256.png</url>
+            <title>notes: {{tag}}</title>
+            <link>https://notes.zachmanson.com/{{tag}}</link>
+        </image>
+        <language>en</language>
+        <lastBuildDate>{{lastBuildDate}}</lastBuildDate>
+        {% for post in posts %}
+        <item>
+            <title>{{post.title}}</title>
+            <link>https://notes.zachmanson.com/{{sanitize_url(post.title)|e}}</link>
+            {% if post.subtitle %}
+            <description>{{post.subtitle}}</description>
+            {% endif %}
+            <content:encoded>
+                <![CDATA[{{post.body}}]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/{{sanitize_url(post.title)|e}}</guid>
+            <pubDate>{{post.post_date}}</pubDate>
+        </item>
+        {% endfor %}
+
+    </channel>
+</rss>

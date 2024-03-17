@@ -1,6 +1,8 @@
 ---
 tags:
   - venting
+  - blog
+date: 2024-03-17
 ---
 This page is a list of design decisions made by Spotify that I consider shitty.  I'm sure some of them only A/B tested, coming and going silently, but some have lingered for years. In any case I have experienced (have been subjected to) all of these personally and they piss me off greatly.
 

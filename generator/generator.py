@@ -8,6 +8,7 @@ import csv
 from pathlib import Path
 
 from dataclasses import dataclass
+from types import FunctionType
 from typing import Optional
 
 import jinja2
@@ -26,6 +27,7 @@ from pprint import pprint
 def get_tree():
     if VERBOSE:
         print("Building tree")
+
     for root, dirs, files in os.walk("./notes", topdown=True):
         if root == ".":
             continue
@@ -59,12 +61,14 @@ def get_tree():
             except KeyError:
                 tree[page_name] = Node(
                     parent=title,
+                    title=page_name,
                     subtitle=None,
                     children=set(),
                     body="",
                     backlinks=set(),
                     mod_date="2000-01-01",
                     creation_date="2000-01-01",
+                    post_date=None,
                     breadcrump_path="",
                     random_page="",
                     script=None,
@@ -85,12 +89,14 @@ def get_tree():
             except KeyError:
                 tree[dirname] = Node(
                     parent=title,
+                    title=dirname,
                     subtitle=None,
                     children=set(),
                     body="",
                     backlinks=set(),
                     mod_date="2000-01-01",
                     creation_date="2000-01-01",
+                    post_date=None,
                     breadcrump_path="",
                     random_page="",
                     script=None,
@@ -119,6 +125,8 @@ def get_tree():
                     format_tags(file_sections["tags"])
                 if "subtitle" in list(file_sections.keys()):
                     tree[node].subtitle = file_sections["subtitle"]
+                if "date" in list(file_sections.keys()):
+                    tree[node].post_date = file_sections["date"]
 
         except FileNotFoundError:
             body = "🌱"
@@ -224,12 +232,11 @@ def generate_sitemap():
 
     if VERBOSE:
         print("Generated sitemap\n", sitemap_md)
+
     return sitemap_md
 
 
 def generate_random_pages():
-    # js dynamic random pages
-    tree["Random"].script = helpers.random_js(tree)
     # static generated random pages, currently used in footers
     random_pages = list(tree.keys())
     random.shuffle(random_pages)
@@ -247,8 +254,6 @@ def append_bullet(node, depth):
 
 
 def generate_tags():
-    tree["Tags"].script = helpers.tags_js()
-
     global tags_md
     tags_md = ""
     for tag in sorted(tags.keys()):
@@ -257,6 +262,7 @@ def generate_tags():
         panel += "\n".join(
             [f"- [{page}](/{helpers.sanitize_anchor(page)})" for page in pages]
         )
+        panel += f"\n\n[rss](/{tag}.xml)"
         panel += "\n</details>\n"
 
         tags_md += panel
@@ -308,39 +314,12 @@ def format_tags(taglist):
             tags[tag].add(current_node)
 
 
-# def build_feeds():
-#     """Builds the rss and atom feeds"""
-#     rss_template = jinja2.Template(open("generator/rss.jinja", "r").read())
-#     atom_template = jinja2.Template(open("generator/atom.jinja", "r").read())
-
-#     rss = rss_template.render(
-#         {
-#             "title": "RSS Feed",
-#             "link": "https://ochrs.github.io/rss.xml",
-#             "description": "RSS Feed",
-#             "lastBuildDate": datetime.now().strftime("%a, %d %b %Y %H:%M:%S %z"),
-#             "items": [
-#                 {
-#                     "title": node,
-#                     "link": f"https://ochrs.github.io/{helpers.sanitize_url(node)}",
-#                     "description": tree[node]["body"],
-#                     "pubDate": datetime.now().strftime("%a, %d %b %Y %H:%M:%S %z"),
-#                 }
-#                 for node in tree.keys()
-#             ],
-#         }
-#     )
-
-#     with open("site/rss.xml", "w") as f:
-#         f.write(rss)
-
-
 def apply_creation_dates():
     with open("history.csv") as history_file:
         reader = csv.reader(history_file, delimiter=",", quotechar='"')
         for row in reader:
             filename = Path(row[0]).stem
-            if filename in tree.keys():
+            if filename in tree.keys() and len(row) == 3:
                 tree[filename].creation_date = row[1]
                 tree[filename].mod_date = row[2]
 
@@ -388,6 +367,34 @@ def build_backlink(label, base, end):
     return base + page + end + anchor
 
 
+def apply_js():
+    """Apply hardcosted javascript tags for certain pages"""
+    tree["Tags"].script = helpers.tags_js()
+    tree["Random"].script = helpers.random_js(tree)
+
+
+def create_feeds():
+    """Builds the rss and atom feeds from tagged pages"""
+
+    for tag_name, tag_pages in tags.items():
+
+        rss_template = jinja2.Template(open("generator/rss.jinja", "r").read())
+        rss = rss_template.render(
+            {
+                "tag": tag_name,
+                "lastBuildDate": datetime.now().strftime("%a, %d %b %Y %H:%M:%S %z"),
+                "posts": [tree[node] for node in tag_pages if tree[node].post_date],
+                "sanitize_url": helpers.sanitize_url,
+            }
+        )
+
+        with open(f"site/{tag_name}.xml", "w") as f:
+            f.write(rss)
+
+    if VERBOSE:
+        print("Generated feeds")
+
+
 md_extensions = [
     "fenced_code",
     BacklinkExtension(build_url=build_backlink, html_class="", end_url=""),
@@ -400,9 +407,9 @@ md_extensions = [
     CiteExtension(),
 ]
 
-ignore_names = [".obsidian", "Media", ".trash"]
+ignore_names: list[str] = [".obsidian", "Media", ".trash"]
 
-ochrs_funcs = {
+ochrs_funcs: dict[str, FunctionType] = {
     "ochrs-funcs": lambda: ", ".join(list(ochrs_funcs.keys())),
     "example": lambda: "<ochrs:func-name:arg1:arg2>",
     "page-count": lambda: len(tree),
@@ -414,44 +421,41 @@ ochrs_funcs = {
     "sitemap": lambda: sitemap_md,
     "tags": lambda: tags_md,
     "random-js": lambda: helpers.random_js(tree),
+    "chrono": lambda x: helpers.chronological_tag(x, tags[x], tree),
 }
-
-# node: {
-#   "parent":parentnode,
-#   "children":[child1, child2]},
-#   "body":""
-#   "backlinks":[]
-#   "mod_date": "YYYY-MM-DD"
-#   "creation_date": "YYYY-MM-DD"
-#   "breadcrump_path": path in notes folder as string
-#   "random_page": random page when using static random
-#   "script": js to include
-# }
 
 
 @dataclass
 class Node:
     parent: Optional[str]
-    subtitle: Optional[str]
     children: set[str]
+
+    title: str
+    subtitle: Optional[str]
     body: str
+
     backlinks: set[str]
-    mod_date: str
-    creation_date: str
-    breadcrump_path: str
-    random_page: str
-    script: Optional[str]
+
+    mod_date: str  # "YYYY-MM-DD"
+    creation_date: str  # "YYYY-MM-DD"
+
+    breadcrump_path: str  # path in notes folder as string
+    random_page: str  # random page when using static random
+    script: Optional[str]  # js to include
+    post_date: Optional[str]  # date used for chronological sorting
 
 
 tree: dict[str, Node] = {
     "Index": Node(
         parent=None,
+        title="Index",
         subtitle=None,
         children=set(),
         body="",
         backlinks=set(),
         mod_date="2000-01-01",
         creation_date="2000-01-01",
+        post_date=None,
         breadcrump_path="Index.md",
         random_page="",
         script=None,
@@ -460,10 +464,8 @@ tree: dict[str, Node] = {
 routes: dict[str, str] = {"Index": "./"}
 
 # { tagname: ["link1", "link3"]}
-tags = {}
+tags: dict[str, list[str]] = {}
 tags_md: str = "Tags not generated yet"
-# {node: ["link1", "link2"]}
-# backlinks = {}
 
 sitemap_md: str = ""
 current_node: str = "Index"
@@ -500,6 +502,10 @@ if __name__ == "__main__":
     generate_sitemap()
 
     traverse_tree()
+
+    create_feeds()
+
+    apply_js()
 
     generate_random_pages()
 

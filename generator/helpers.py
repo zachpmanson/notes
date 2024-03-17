@@ -1,7 +1,8 @@
 # Self contained helper functions
 
-from datetime import datetime
 import sys
+
+from generator import Node
 
 
 def sanitize_anchor(anchor):
@@ -50,5 +51,15 @@ def tags_js():
     """
 
 
-def chronological_tag(tag, tree):
-    pass
+def chronological_tag(tag: str, tag_pages: list[str], tree: dict[str, Node]):
+
+    nodes = {page: tree[page] for page in tag_pages if tree[page].post_date}
+
+    html = []
+    for page, node in nodes.items():
+        # html += [f"{node.post_date}: [{page}](/{sanitize_url(page)})"]
+        html += [
+            f"<div class='post'><a href='/{sanitize_url(page)}'>{page}</a>  <time>{node.post_date}</time></div>"
+        ]
+    html.sort(reverse=True)
+    return "\n".join(html) + f"<a href='/{tag}.xml'>RSS Feed</a>"

@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/Programming Languages.md",
+                "file": "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e213816a51d768df",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Meta/Tags.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:javascript",
+                "query": "tag:venting",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 232.50247192382812
   },
   "right": {
     "id": "b30ab2faf3f39acc",
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/Programming Languages.md",
+                "file": "Meta/Tags.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/Programming Languages.md",
+                "file": "Meta/Tags.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/Programming Languages.md"
+                "file": "Meta/Tags.md"
               }
             }
           }
@@ -146,8 +159,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bde0602bb8a8c5bf",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Blog",
+    "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
+    "Meta/Tags.md",
+    "Projects/Alculator.md",
+    "Venting.md",
+    "Blog/Blog.md",
+    "Index.md",
+    "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
+    "Notes/Software/Development/Programming Languages/C/C.md",
     "Notes/Software/Development/Programming Languages/Bash/Bash.md",
     "Notes/Software/Development/Programming Languages/Programming Languages.md",
     "programming languages.md",
@@ -158,7 +180,6 @@
     "Archive/Problems/Run Latest npx Script Version.md",
     "Notes/Software/Development/Web Development/React.md",
     "Archive/Problems/Prisma Schema Changes and Vercel.md",
-    "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
     "Notes/Software/Development/Programming Languages/JavaScript/Anything-to-Number Conversion Table.md",
     "Archive/Problems/JavaScript YYYY-MM-DD in Local Time.md",
     "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
@@ -166,14 +187,6 @@
     "Notes/Software/Unix/Unix Programs/Unix Programs.md",
     "Notes/Software/Programs/Programs.md",
     "Notes/Software/Unix/GECOS.md",
-    "Notes/Software/Unix/Unix Programs/sed.md",
-    "Notes/Software/Unix/Unix Programs/Make.md",
-    "Notes/Software/Unix/Unix Programs/Awk.md",
-    "Notes/Software/Unix/Unix.md",
-    "Notes/Software/Unix/Unix Files.md",
-    "Projects/Ochrs/Ochrs Syntax.md",
-    "Projects/Ochrs/Ochrs.md",
-    "Archive/Problems/Git Creation and Modification Time.md",
     "Notes/Software/Programs/Spotify",
     "Untitled.canvas"
   ]
