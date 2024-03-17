@@ -31,8 +31,8 @@ def usage():
 
 
 def format_recent_edit(tree, i):
-    page_name = sorted(tree, key=lambda x: tree[x]["mod_date"], reverse=True)[int(i)]
-    return f"{tree[page_name]['mod_date']}: [[{page_name}]]"
+    page_name = sorted(tree, key=lambda x: tree[x].mod_date, reverse=True)[int(i)]
+    return f"{tree[page_name].mod_date}: [[{page_name}]]"
 
 
 def random_js(tree):
@@ -48,3 +48,7 @@ def tags_js():
         let details = document.getElementById(tag).parentElement.parentElement; // id is attached to h2, not details
         details.open = true;
     """
+
+
+def chronological_tag(tag, tree):
+    pass

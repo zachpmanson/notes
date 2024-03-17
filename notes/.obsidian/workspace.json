@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/JavaScript YYYY-MM-DD in Local Time.md",
+                "file": "Notes/Software/Development/Programming Languages/Programming Languages.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Problems/JavaScript YYYY-MM-DD in Local Time.md",
+                "file": "Notes/Software/Development/Programming Languages/Programming Languages.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Problems/JavaScript YYYY-MM-DD in Local Time.md",
+                "file": "Notes/Software/Development/Programming Languages/Programming Languages.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Problems/JavaScript YYYY-MM-DD in Local Time.md"
+                "file": "Notes/Software/Development/Programming Languages/Programming Languages.md"
               }
             }
           }
@@ -149,8 +148,19 @@
   },
   "active": "bde0602bb8a8c5bf",
   "lastOpenFiles": [
+    "Notes/Software/Development/Programming Languages/Bash/Bash.md",
+    "Notes/Software/Development/Programming Languages/Programming Languages.md",
+    "programming languages.md",
+    "Archive/Problems/React useState Not Mutating Object.md",
+    "Projects/Minecraftle.md",
+    "Archive/Problems/Select Decorator Depreciated.md",
+    "Archive/Templates/Time Ago Function.md",
+    "Archive/Problems/Run Latest npx Script Version.md",
+    "Notes/Software/Development/Web Development/React.md",
+    "Archive/Problems/Prisma Schema Changes and Vercel.md",
     "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
     "Notes/Software/Development/Programming Languages/JavaScript/Anything-to-Number Conversion Table.md",
+    "Archive/Problems/JavaScript YYYY-MM-DD in Local Time.md",
     "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
     "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Cursed TypeScript Projects.md",
     "Notes/Software/Unix/Unix Programs/Unix Programs.md",
@@ -164,18 +174,7 @@
     "Projects/Ochrs/Ochrs Syntax.md",
     "Projects/Ochrs/Ochrs.md",
     "Archive/Problems/Git Creation and Modification Time.md",
-    "Notes/Software/Programs/Git/Git.md",
-    "Notes/Software/Programs/Git/Git Operations.md",
-    "Notes/Software/Programs/Git/Git Bare Repositories.md",
-    "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
     "Notes/Software/Programs/Spotify",
-    "Notes/Software/Software.md",
-    "Archive/Folklore/Folklore.md",
-    "Notes/Software/Unix/macOS/Making macOS Useable.md",
-    "Notes/Software/Unix/macOS/macOS CLI Tools.md",
-    "Notes/Software/Development.md",
-    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
-    "Archive/Problems/Piping to Clipboard.md",
     "Untitled.canvas"
   ]
 }

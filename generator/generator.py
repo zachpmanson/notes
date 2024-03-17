@@ -7,6 +7,9 @@ import random
 import csv
 from pathlib import Path
 
+from dataclasses import dataclass
+from typing import Optional
+
 import jinja2
 import markdown
 import frontmatter
@@ -52,12 +55,23 @@ def get_tree():
 
             page_name = file[:-3]
             try:
-                tree[page_name]["children"]
+                tree[page_name]
             except KeyError:
-                tree[page_name] = {"children": set()}
+                tree[page_name] = Node(
+                    parent=title,
+                    subtitle=None,
+                    children=set(),
+                    body="",
+                    backlinks=set(),
+                    mod_date="2000-01-01",
+                    creation_date="2000-01-01",
+                    breadcrump_path="",
+                    random_page="",
+                    script=None,
+                )
 
             if title != page_name:
-                tree[title]["children"].add(page_name)
+                tree[title].children.add(page_name)
 
             routes[page_name] = root
 
@@ -65,11 +79,22 @@ def get_tree():
             if dirname in ignore_names:
                 continue
 
-            tree[title]["children"].add(dirname)
+            tree[title].children.add(dirname)
             try:
-                tree[dirname]["children"]
+                tree[dirname]
             except KeyError:
-                tree[dirname] = {"children": set()}
+                tree[dirname] = Node(
+                    parent=title,
+                    subtitle=None,
+                    children=set(),
+                    body="",
+                    backlinks=set(),
+                    mod_date="2000-01-01",
+                    creation_date="2000-01-01",
+                    breadcrump_path="",
+                    random_page="",
+                    script=None,
+                )
 
             routes[dirname] = root
 
@@ -81,9 +106,9 @@ def get_tree():
         current_node = node
         # (tree[node]["children"]).sort()
         # children = sorted(list(tree[node]["children"]))
-        tree[node]["backlinks"] = set()
-        tree[node]["script"] = None
-        tree[node]["body"] = ""
+        tree[node].backlinks = set()
+        tree[node].script = None
+        tree[node].body = ""
         try:
             path = os.path.join(routes[node], node + ".md")
             with open(path, "r") as src_file:
@@ -93,21 +118,20 @@ def get_tree():
                 if "tags" in list(file_sections.keys()):
                     format_tags(file_sections["tags"])
                 if "subtitle" in list(file_sections.keys()):
-                    tree[node]["subtitle"] = file_sections["subtitle"]
+                    tree[node].subtitle = file_sections["subtitle"]
 
         except FileNotFoundError:
             body = "🌱"
 
-        tree[node]["body"] = body
-        tree[node]["breadcrumb_path"] = path
+        tree[node].body = body
+        tree[node].breadcrumb_path = path
 
-        for child in tree[node]["children"]:
+        for child in tree[node].children:
             if node == child:
                 continue
 
-            tree[child]["parent"] = node
+            tree[child].parent = node
             queue.append(child)
-    # pprint(tree)
 
 
 def traverse_tree():
@@ -116,26 +140,24 @@ def traverse_tree():
     # generate page bodies and record backlinks
     for node in tree.keys():
         current_node = node
-        tree[node]["body"] = preprocess_markdown(tree[node]["body"])
-        tree[node]["body"] = process_markdown(tree[node]["body"])
+        tree[node].body = preprocess_markdown(tree[node].body)
+        tree[node].body = process_markdown(tree[node].body)
 
 
 def generate_pages():
     # actually generate pages
     for node in tree.keys():
         children = sorted(
-            list(
-                filter(lambda x: x not in orphans or x == node, tree[node]["children"])
-            )
+            list(filter(lambda x: x not in orphans or x == node, tree[node].children))
         )
 
-        parent = tree[node]["parent"]
+        parent = tree[node].parent
         siblings = (
             sorted(
                 list(
                     filter(
                         lambda x: x not in orphans or x == node,
-                        tree[parent]["children"],
+                        tree[parent].children,
                     )
                 )
             )
@@ -143,13 +165,13 @@ def generate_pages():
             else None
         )
 
-        grandparent = tree[parent]["parent"] if parent != None else None
+        grandparent = tree[parent].parent if parent != None else None
         piblings = (
             sorted(
                 list(
                     filter(
                         lambda x: x not in orphans or x == parent,
-                        tree[grandparent]["children"],
+                        tree[grandparent].children,
                     )
                 )
             )
@@ -176,9 +198,7 @@ def generate_pages():
                 post_template.render(
                     {
                         "title": node,
-                        "subtitle": (
-                            tree[node]["subtitle"] if "subtitle" in tree[node] else node
-                        ),
+                        "subtitle": tree[node].subtitle or node,
                         "parent": parent,
                         "children": children,
                         "siblings": siblings,
@@ -209,25 +229,25 @@ def generate_sitemap():
 
 def generate_random_pages():
     # js dynamic random pages
-    tree["Random"]["script"] = helpers.random_js(tree)
+    tree["Random"].script = helpers.random_js(tree)
     # static generated random pages, currently used in footers
     random_pages = list(tree.keys())
     random.shuffle(random_pages)
 
     for i in range(len(random_pages)):
-        tree[random_pages[i]]["random_page"] = random_pages[(i + 1) % len(random_pages)]
+        tree[random_pages[i]].random_page = random_pages[(i + 1) % len(random_pages)]
 
 
 def append_bullet(node, depth):
     global sitemap_md
     sitemap_md += f"{' ' * depth}- [{node}](/{helpers.sanitize_url(node)})\n"
 
-    for child in sorted(tree[node]["children"]):
+    for child in sorted(tree[node].children):
         append_bullet(child, depth + 4)
 
 
 def generate_tags():
-    tree["Tags"]["script"] = helpers.tags_js()
+    tree["Tags"].script = helpers.tags_js()
 
     global tags_md
     tags_md = ""
@@ -267,11 +287,11 @@ def propagate_tags():
     """Apply tag to all children of a page that matches a tag name"""
     for key in tree.keys():
         if helpers.sanitize_url(key) in tags.keys():
-            queue = list(tree[key]["children"])
+            queue = list(tree[key].children)
             tags[helpers.sanitize_url(key)].add(key)
 
             for page in queue:
-                for child in tree[page]["children"]:
+                for child in tree[page].children:
                     queue.append(child)
                 tags[helpers.sanitize_url(key)].add(page)
 
@@ -321,11 +341,11 @@ def apply_creation_dates():
         for row in reader:
             filename = Path(row[0]).stem
             if filename in tree.keys():
-                tree[filename]["creation_date"] = row[1]
-                tree[filename]["mod_date"] = row[2]
+                tree[filename].creation_date = row[1]
+                tree[filename].mod_date = row[2]
 
     for page_name in tree.keys():
-        if "creation_date" not in tree[page_name].keys():
+        if not tree[page_name].creation_date:
             print(f"Error: {page_name} does not have a creation date", file=sys.stderr)
 
 
@@ -361,7 +381,7 @@ def build_backlink(label, base, end):
 
     # ignore links from lectures
     if not re.match(r"W[0-9]{2}L[0-9]{2}", current_node):
-        tree[page]["backlinks"].add(current_node)
+        tree[page].backlinks.add(current_node)
 
     page = helpers.sanitize_url(page)
 
@@ -407,31 +427,48 @@ ochrs_funcs = {
 #   "random_page": random page when using static random
 #   "script": js to include
 # }
-tree = {
-    "Index": {
-        "parent": None,
-        "children": set(),
-        "body": "",
-        "backlinks": set(),
-        "mod_date": 0.0,
-        "creation_date": None,
-        "breadcrump_path": "Index.md",
-        "random_page": "",
-        "script": None,
-    }
+
+
+@dataclass
+class Node:
+    parent: Optional[str]
+    subtitle: Optional[str]
+    children: set[str]
+    body: str
+    backlinks: set[str]
+    mod_date: str
+    creation_date: str
+    breadcrump_path: str
+    random_page: str
+    script: Optional[str]
+
+
+tree: dict[str, Node] = {
+    "Index": Node(
+        parent=None,
+        subtitle=None,
+        children=set(),
+        body="",
+        backlinks=set(),
+        mod_date="2000-01-01",
+        creation_date="2000-01-01",
+        breadcrump_path="Index.md",
+        random_page="",
+        script=None,
+    )
 }
-routes = {"Index": "./"}
+routes: dict[str, str] = {"Index": "./"}
 
 # { tagname: ["link1", "link3"]}
 tags = {}
-tags_md = "Tags not generated yet"
+tags_md: str = "Tags not generated yet"
 # {node: ["link1", "link2"]}
 # backlinks = {}
 
-sitemap_md = ""
-current_node = "Index"
+sitemap_md: str = ""
+current_node: str = "Index"
 
-orphans = ["404"]
+orphans: list[str] = ["404"]
 
 post_template = jinja2.Template(open("generator/template.jinja", "r").read())
 

@@ -15,6 +15,7 @@ done
 echo "History index created!"
 
 echo Activated venv
+echo Generating...
 python3 ./generator/generator.py $1
 echo Generated!
 deactivate
