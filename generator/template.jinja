@@ -25,7 +25,7 @@
 <body>
   <nav>
 
-  
+
     <div class="main-icon">
       <a href="/">
         <img src="/static/icon/icon.png" alt="notes" height="100">
@@ -37,7 +37,7 @@
         {% if piblings != None %}
 
         <div class="flex flex-col text-left nav-links">
-          <a href="/{{sanitize_url(parent)|e}}" class="activated-link">{{parent}}</a>
+          <a href="/{{sanitize_url(parent)|e}}" class="activated-link">{{node["parent"]}}</a>
           {% for pibling in piblings %}
           {% if pibling == parent %}
           {% else %}
@@ -77,11 +77,11 @@
     <header>
       <h1>{{subtitle}}</h1>
     </header>
-    <article>{{body}}</article>
+    <article>{{node["body"]}}</article>
 
-    {% if backlinks != None and len(backlinks) > 0 %}
+    {% if node["backlinks"] != None and len(node["backlinks"]) > 0 %}
     <p class="backlinks"><span class="bold">Incoming:</span>
-      {% for backlink in backlinks %}
+      {% for backlink in node["backlinks"] %}
       <a href="/{{sanitize_url(backlink)|e}}">{{backlink}}</a>
       {% endfor %}
       </span>
@@ -98,15 +98,15 @@
     {% endif %}
   </main>
   <footer>
-    <a href="https://github.dev/pavo-etc/notes/blob/main/{{breadcrumb_path}}">edit</a> -
-    <a href="/{{sanitize_url(random_page)|e}}">random</a> -
+    <a href="https://github.dev/pavo-etc/notes/blob/main/{{node['breadcrumb_path']}}">edit</a> -
+    <a href="/{{sanitize_url(node['random_page'])|e}}">random</a> -
     <a href="/recent-changes">updates</a> -
     <a href="/tags">tags</a> -
     <a href="/sitemap">sitemap</a>
   </footer>
-  {% if script != None %}
+  {% if node['script'] != None %}
   <script>
-    {{ script }}
+    { { node['script'] } }
   </script>
   {% endif %}
 </body>

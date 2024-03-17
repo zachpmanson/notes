@@ -31,9 +31,10 @@ def usage():
 
 
 def format_recent_edit(tree, i):
-    page_name = sorted(tree, key=lambda x: tree[x]["mod_time"], reverse=True)[int(i)]
-    date = datetime.utcfromtimestamp(tree[page_name]["mod_time"]).strftime("%Y-%m-%d")
-    return f"{date}: [[{page_name}]]"
+    page_name = sorted(tree, key=lambda x: tree[x]["mod_date"], reverse=True)[
+        int(i)
+    ]
+    return f"{tree[page_name]["mod_date"]}: [[{page_name}]]"
 
 
 def random_js(tree):

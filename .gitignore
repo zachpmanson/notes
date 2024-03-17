@@ -3,3 +3,5 @@
 venv/
 site/
 __pycache__/
+
+history.csv

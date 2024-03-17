@@ -8,6 +8,7 @@ git branch --set-upstream-to=origin/gh-pages gh-pages
 
 echo Pulling last site commit...
 cd site
+git fetch
 git reset --hard origin/gh-pages
 cd ..
 

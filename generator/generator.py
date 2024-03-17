@@ -4,6 +4,8 @@ from datetime import datetime
 import getopt
 import sys
 import random
+import csv
+from pathlib import Path
 
 import jinja2
 import markdown
@@ -84,7 +86,6 @@ def get_tree():
         tree[node]["body"] = ""
         try:
             path = os.path.join(routes[node], node + ".md")
-            mod_time = os.path.getmtime(path)
             with open(path, "r") as src_file:
                 file_sections = frontmatter.load(src_file)
                 body = file_sections.content
@@ -95,11 +96,9 @@ def get_tree():
                     tree[node]["subtitle"] = file_sections["subtitle"]
 
         except FileNotFoundError:
-            mod_time = 0.0
             body = "🌱"
 
         tree[node]["body"] = body
-        tree[node]["mod_time"] = mod_time
         tree[node]["breadcrumb_path"] = path
 
         for child in tree[node]["children"]:
@@ -180,7 +179,6 @@ def generate_pages():
                         "subtitle": (
                             tree[node]["subtitle"] if "subtitle" in tree[node] else node
                         ),
-                        "body": tree[node]["body"],
                         "parent": parent,
                         "children": children,
                         "siblings": siblings,
@@ -188,15 +186,7 @@ def generate_pages():
                         "tags": page_tags,
                         "len": len,
                         "sanitize_url": helpers.sanitize_url,
-                        "backlinks": tree[node]["backlinks"],
-                        "breadcrumb_path": tree[node]["breadcrumb_path"],
-                        "last_edit": str(
-                            datetime.utcfromtimestamp(tree[node]["mod_time"]).strftime(
-                                "%Y-%m-%d %H:%M:%S"
-                            )
-                        ),
-                        "random_page": tree[node]["random_page"],
-                        "script": tree[node]["script"],
+                        "node": tree[node],
                     }
                 )
             )
@@ -298,6 +288,20 @@ def format_tags(taglist):
             tags[tag].add(current_node)
 
 
+def apply_creation_dates():
+    with open("history.csv") as history_file:
+        reader = csv.reader(history_file, delimiter=",", quotechar='"')
+        for row in reader:
+            filename = Path(row[0]).stem
+            if filename in tree.keys():
+                tree[filename]["creation_date"] = row[1]
+                tree[filename]["mod_date"] = row[2]
+
+    for page_name in tree.keys():
+        if "creation_date" not in tree[page_name].keys():
+            print(f"Error: {page_name} does not have a creation date", file=sys.stderr)
+
+
 def format_ochrs_func(matches):
     try:
         segments = matches.group(1).split(":")
@@ -370,7 +374,8 @@ ochrs_funcs = {
 #   "children":[child1, child2]},
 #   "body":""
 #   "backlinks":[]
-#   "mod_time": mod_time
+#   "mod_date": mod_date
+#   "creation_date": "YYYY-MM-DD"
 #   "breadcrump_path": path in notes folder as string
 #   "random_page": random page when using static random
 #   "script": js to include
@@ -381,7 +386,8 @@ tree = {
         "children": set(),
         "body": "",
         "backlinks": set(),
-        "mod_time": 0.0,
+        "mod_date": 0.0,
+        "creation_date": None,
         "breadcrump_path": "Index.md",
         "random_page": "",
         "script": None,
@@ -417,12 +423,20 @@ if __name__ == "__main__":
     for o, a in opts:
         if o == "-v":
             VERBOSE = True
+
     get_tree()
+
+    apply_creation_dates()
+
     propagate_tags()
     generate_tags()
+
     generate_sitemap()
+
     traverse_tree()
+
     generate_random_pages()
+
     generate_pages()
 
     # for l in tree.keys():
