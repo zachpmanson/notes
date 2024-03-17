@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/Git Creation and Modification Time.md",
+                "file": "Notes/Software/Programs/Git/Git Operations.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Problems/Git Creation and Modification Time.md",
+                "file": "Notes/Software/Programs/Git/Git Operations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Problems/Git Creation and Modification Time.md",
+                "file": "Notes/Software/Programs/Git/Git Operations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Problems/Git Creation and Modification Time.md"
+                "file": "Notes/Software/Programs/Git/Git Operations.md"
               }
             }
           }
@@ -134,7 +133,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,8 +146,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bde0602bb8a8c5bf",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Programs/Git/Git Bare Repositories.md",
     "Notes/Software/Programs/Git/Git.md",
     "Archive/Problems/Git Creation and Modification Time.md",
     "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
@@ -166,7 +167,6 @@
     "Notes/Software/Programs/Docker/Docker.md",
     "Notes/Software/Programs/Obsidian/Obsidian Plugins.md",
     "Archive/Problems/Git Subdirectory Branch.md",
-    "Notes/Software/Programs/Git/Git Bare Repositories.md",
     "Notes/Software/Unix/Linux/Linux.md",
     "Notes/Software/Development/Programming Languages/Bash/Bash Syntax.md",
     "Notes/Software/Development/Programming Languages/Bash/Bash Startup Scripts.md",
