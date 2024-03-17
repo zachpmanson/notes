@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:venting",
+                "query": "spotify",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -159,14 +160,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "e213816a51d768df",
   "lastOpenFiles": [
-    "Blog",
+    "Posts/Posts.md",
     "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
     "Meta/Tags.md",
+    "Posts",
+    "Blog/Blog.md",
+    "Blog",
     "Projects/Alculator.md",
     "Venting.md",
-    "Blog/Blog.md",
     "Index.md",
     "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
     "Notes/Software/Development/Programming Languages/C/C.md",
