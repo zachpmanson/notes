@@ -307,3 +307,12 @@ table {
     background-attachment: local, local, scroll, scroll;
   }
 }
+
+/* Utility Classes */
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+}
