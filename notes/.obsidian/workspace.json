@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Ochrs/Ochrs.md",
+                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/Ochrs/Ochrs.md",
+                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/Ochrs/Ochrs.md",
+                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/Ochrs/Ochrs.md"
+                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md"
               }
             }
           }
@@ -147,12 +147,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "87beef5a330fbb59",
   "lastOpenFiles": [
+    "Media/uwa-cits.png",
+    "Projects/Ochrs/Ochrs.md",
     "Projects/Ochrs/Ochrs 1.0.md",
     "Projects/Ochrs/Ochrs Syntax.md",
     "Projects/Ochrs/Ochrs Deploy.md",
-    "Projects/Ochrs/Ochrs.md",
     "Projects/Ochrs/Ochrs 2.0.md",
     "Notes/Software/Unix/Unix Programs/Awk.md",
     "Notes/Software/Development/Web Development/Themed Stylesheets.md",
@@ -174,7 +175,6 @@
     "Meta/DNS.md",
     "Meta/Tags.md",
     "Meta/Stylesheet.md",
-    "Notes/Courses/UWA Computer Science/CITS2003/Michael Wise Quotes.md",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",

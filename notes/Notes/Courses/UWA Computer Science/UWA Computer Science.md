@@ -1,9 +1,10 @@
 ---
 tags:
   - posts
-date: 2023-11-19
+date: 2023-06-19
+subtitle: Reviews and advice for all Computer Science, Cyber Security, and Data Science units I completed at UWA.
 ---
-Reviews and advice for all [[Computer Science]], Cyber Security, and Data Science units I completed at UWA.
+I did my [[Computer Science]] degree from 2020 to 2023, coming out with a BSc. Computer Science, Cybersecurity, minoring in Data Science.  I have omitted statistics units because I have nothing intelligible to say about them.
 
 Just do [Coders For Causes](https://codersforcauses.org/), you will learn more in that than entire semesters of this degree. **Learn how to use [[git]] as fast as possible** then force all your group project members to use it. Narrow down your problems as much as possible, then google the most generic possible description of it. If you see someone using semicolons mid-sentence regularly it's probably [[Christ McDonald|Chris McDonald]].
 
