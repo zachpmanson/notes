@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/C/Digraphs and Trigraphs.md",
+                "file": "Notes/Internet/Fediverse/Fediverse Family Tree.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/C/Digraphs and Trigraphs.md",
+                "file": "Notes/Internet/Fediverse/Fediverse Family Tree.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/C/Digraphs and Trigraphs.md",
+                "file": "Notes/Internet/Fediverse/Fediverse Family Tree.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/C/Digraphs and Trigraphs.md"
+                "file": "Notes/Internet/Fediverse/Fediverse Family Tree.md"
               }
             }
           }
@@ -147,12 +147,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "87beef5a330fbb59",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Internet/Fediverse/Fediverse.md",
+    "Notes/Software/Development/Programming Languages/C/Digraphs and Trigraphs.md",
     "Notes/Software/Development/Programming Languages/C/& For Address.md",
     "Notes/Software/Development/Programming Languages/C/C auto Keyword.md",
     "Notes/Software/Development/Programming Languages/C/C.md",
-    "Notes/Software/Development/Programming Languages/C/Digraphs and Trigraphs.md",
     "Notes/Software/Development/Programming Concepts/Noisy Neighbour.md",
     "Archive/Folklore/Untitled.md",
     "Notes/Software/Unix/Unix Files.md",
@@ -175,7 +176,6 @@
     "Notes/Software/Development/Web Development/HTML First Development.md",
     "Notes/Software/Development/Web Development/React.md",
     "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
-    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",
