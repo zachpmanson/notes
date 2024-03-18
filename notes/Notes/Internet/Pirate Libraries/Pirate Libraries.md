@@ -1,3 +1,8 @@
+---
+tags:
+  - posts
+date: 2023-11-20
+---
 Also known as shadow libraries, are potentially the best thing humans have ever created and are illegal in most places.  They are archives human writing, some catering to particular niches and some attempting to capture *everything*.  And then distribute all of human knowledge and writing for free.
 
 They have no regard for copyright law, generally viewing them as part of a broken system or distractions to (what the pirate librarians might call) their noble goals.

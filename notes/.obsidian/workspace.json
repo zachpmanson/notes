@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Development Methologies/Spite Driven Development.md",
+                "file": "Notes/Internet/Pirate Libraries/Pirate Libraries.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Development Methologies/Spite Driven Development.md",
+                "file": "Notes/Internet/Pirate Libraries/Pirate Libraries.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Development Methologies/Spite Driven Development.md",
+                "file": "Notes/Internet/Pirate Libraries/Pirate Libraries.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Development Methologies/Spite Driven Development.md"
+                "file": "Notes/Internet/Pirate Libraries/Pirate Libraries.md"
               }
             }
           }
@@ -149,6 +149,14 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Internet/Digital Garden.md",
+    "Notes/Internet/Internet.md",
+    "Notes/Internet/Internet Standards/RSS.md",
+    "Notes/Internet/Fediverse/Mastodon.md",
+    "Notes/Internet/Fediverse/Fediverse.md",
+    "Notes/Internet/Fediverse/Federating with Meta.md",
+    "Notes/Software/Development/Development Methologies/Spite Driven Development.md",
+    "Notes/Software/Development/Development Methologies/Resume Driven Development.md",
     "Notes/Software/Software.md",
     "Notes/Software/Unix/GECOS.md",
     "Notes/Software/Unix/Unix Programs/Make.md",
@@ -167,14 +175,6 @@
     "Notes/Software/Development/Non-Programming Languages/Markdown.md",
     "Posts/Posts.md",
     "Posts/Planting a Flag in Wikipedia.md",
-    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
-    "Archive/Problems/SeleniumBasic.md",
-    "Meta/DNS.md",
-    "Projects/Minecraftle/How Minecraft Stores Crafting Recipes.md",
-    "Projects/ironprof.md",
-    "Posts/The Poor Man's Static Site Generator.md",
-    "Posts/Usernames.md",
-    "Archive/Problems/Vercel Images Optimisation.md",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",

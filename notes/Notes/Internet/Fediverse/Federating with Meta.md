@@ -1,3 +1,9 @@
+---
+tags:
+  - posts
+date: 2023-06-01
+---
+
 Meta's rumoured Twitter competitor Threads has caused a stir in the [[fediverse]]. Some suggesting fedi instances should preemptively block Threads, others willing to wait and see what happens.  At the time of writing (June 2023) it is unclear how this will pan out. Many fear the threat of [embrace, extend, extinguish](https://en.wikipedia.org/wiki/Embrace,_extend,_and_extinguish), but others are excited at the prospect of the fediverse becoming more significant.
 
 ![[meta-fediverse.jpeg]]
