@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Internet/Fediverse/Federating with Meta.md",
+                "file": "Notes/Internet/Fediverse/Fediverse Family Tree.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Internet/Fediverse/Federating with Meta.md",
+                "file": "Notes/Internet/Fediverse/Fediverse Family Tree.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Internet/Fediverse/Federating with Meta.md",
+                "file": "Notes/Internet/Fediverse/Fediverse Family Tree.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Internet/Fediverse/Federating with Meta.md"
+                "file": "Notes/Internet/Fediverse/Fediverse Family Tree.md"
               }
             }
           }
@@ -149,8 +149,8 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Notes/Internet/Fediverse/Fediverse Family Tree.md",
     "Notes/Internet/Fediverse/Federating with Meta.md",
+    "Notes/Internet/Fediverse/Fediverse Family Tree.md",
     "Notes/Courses/Courses.md",
     "Meta/Sitemap.md",
     "Meta/Recent Changes.md",
