@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+                "file": "Archive/Problems/SeleniumBasic.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+                "file": "Archive/Problems/SeleniumBasic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+                "file": "Archive/Problems/SeleniumBasic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md"
+                "file": "Archive/Problems/SeleniumBasic.md"
               }
             }
           }
@@ -151,6 +151,7 @@
   },
   "active": "87beef5a330fbb59",
   "lastOpenFiles": [
+    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Meta/DNS.md",
     "Projects/Minecraftle/How Minecraft Stores Crafting Recipes.md",
     "Projects/ironprof.md",
@@ -196,7 +197,6 @@
     "Projects/Alculator.md",
     "Venting.md",
     "Index.md",
-    "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
     "Untitled.canvas"
   ]
 }

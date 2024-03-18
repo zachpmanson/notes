@@ -1,7 +1,5 @@
 Everything that's required to get VBA and Selenium to work together.
 
-This is a cut down version of an old [blog post](https://zachmanson.com/blog/basic-seleniumbasic/).
-
 SeleniumBasic is a Selenium based framework for the VB family that has been unmaintained since 2016.
 
 ## Installation
