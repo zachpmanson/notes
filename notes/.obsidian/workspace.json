@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/Vercel Images Optimisation.md",
+                "file": "Projects/Alculator.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Problems/Vercel Images Optimisation.md",
+                "file": "Projects/Alculator.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Problems/Vercel Images Optimisation.md",
+                "file": "Projects/Alculator.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Problems/Vercel Images Optimisation.md"
+                "file": "Projects/Alculator.md"
               }
             }
           }
@@ -149,6 +149,12 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Projects/COVID-19 Tracker.md",
+    "Projects/Mastodon Thread Unroller.md",
+    "Projects/ironprof.md",
+    "Projects/Penultimate Guitar.md",
+    "Projects/Alculator.md",
+    "Archive/Problems/Vercel Images Optimisation.md",
     "Archive/Problems/Windows 11 Without a Microsoft Account.md",
     "Archive/Problems/Markdown in HTML.md",
     "Archive/Bookmarks/xkcd.md",
@@ -169,12 +175,6 @@
     "Notes/Software/Development/Development Methologies/Spite Driven Development.md",
     "Notes/Software/Development/Development Methologies/Resume Driven Development.md",
     "Notes/Software/Software.md",
-    "Notes/Software/Unix/GECOS.md",
-    "Notes/Software/Unix/Unix Programs/Make.md",
-    "Notes/Software/Unix/Unix Programs/Awk.md",
-    "Notes/Software/Unix/Linux/Linux.md",
-    "Notes/Software/Programs/Obsidian/Obsidian.md",
-    "Notes/Software/Programs/Git/Git.md",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",
