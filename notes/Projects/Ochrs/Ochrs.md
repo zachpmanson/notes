@@ -1,5 +1,5 @@
 ---
-subtitle: A open source wiki generator.
+subtitle: An open source wiki generator.
 tags:
   - python
 ---
