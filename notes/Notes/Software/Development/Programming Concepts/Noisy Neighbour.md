@@ -1,0 +1,3 @@
+Noisy neighbours are processes or tenants that are consuming enough resources to impact the performance of the other processes on the system. It can be hard to notice when this class of problem occurs to one of your tenants as the performance of the neighbour may be inconsistent and difficult to track, or correlate with measurable failures.  They can also be inconsistent, making them hard to track.
+
+[Microsoft has a good writeup on this issue.](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/noisy-neighbor/noisy-neighbor)

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Posts/LinkedIn's Ghost Text.md",
+                "file": "Notes/Software/Development/Programming Languages/C/& For Address.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "webm",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Posts/LinkedIn's Ghost Text.md",
+                "file": "Notes/Software/Development/Programming Languages/C/& For Address.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Posts/LinkedIn's Ghost Text.md",
+                "file": "Notes/Software/Development/Programming Languages/C/& For Address.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Posts/LinkedIn's Ghost Text.md"
+                "file": "Notes/Software/Development/Programming Languages/C/& For Address.md"
               }
             }
           }
@@ -147,15 +147,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "87beef5a330fbb59",
   "lastOpenFiles": [
-    "Notes/Software/Development/Programming Concepts/Currying.md",
-    "Notes/Mathematics/Mathematics.md",
-    "Posts/LinkedIn's Ghost Text.md",
-    "Posts/Collaborative Awe.md",
-    "Notes/Software/Unix/Unix Programs/Unix Programs.md",
+    "Notes/Software/Development/Programming Concepts/Noisy Neighbour.md",
+    "Notes/Software/Development/Programming Languages/C/& For Address.md",
+    "Archive/Folklore/Untitled.md",
     "Notes/Software/Unix/Unix Files.md",
     "Notes/Software/Unix/Unix.md",
+    "Notes/Software/Unix/Unix Programs/Unix Programs.md",
+    "Posts/Collaborative Awe.md",
+    "Posts/LinkedIn's Ghost Text.md",
+    "Notes/Software/Development/Programming Concepts/Currying.md",
+    "Notes/Mathematics/Mathematics.md",
     "Archive/Folklore/The bin Split.md",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Media/uwa-cits.png",
@@ -173,9 +176,6 @@
     "Notes/Software/Development/Programming Languages/Bash/Bash Startup Scripts.md",
     "Meta/Random.md",
     "Notes/Internet/Fediverse/Mastodon.md",
-    "Notes/Internet/Fediverse/Fediverse Family Tree.md",
-    "Notes/Internet/Fediverse/Federating with Meta.md",
-    "Notes/Courses/Courses.md",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",
