@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Internet/Fediverse/Fediverse Family Tree.md",
+                "file": "Notes/Software/Development/Programming Languages/C/& For Address.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 232.50247192382812
+    "width": 232.50247192382812,
+    "collapsed": true
   },
   "right": {
     "id": "b30ab2faf3f39acc",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Internet/Fediverse/Fediverse Family Tree.md",
+                "file": "Notes/Software/Development/Programming Languages/C/& For Address.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Internet/Fediverse/Fediverse Family Tree.md",
+                "file": "Notes/Software/Development/Programming Languages/C/& For Address.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Internet/Fediverse/Fediverse Family Tree.md"
+                "file": "Notes/Software/Development/Programming Languages/C/& For Address.md"
               }
             }
           }
@@ -147,8 +148,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "87beef5a330fbb59",
   "lastOpenFiles": [
+    "Notes/Internet/Fediverse/Fediverse Family Tree.md",
     "Notes/Internet/Fediverse/Fediverse.md",
     "Notes/Software/Development/Programming Languages/C/Digraphs and Trigraphs.md",
     "Notes/Software/Development/Programming Languages/C/& For Address.md",
@@ -175,7 +177,6 @@
     "Notes/Software/Development/Web Development/Themed Stylesheets.md",
     "Notes/Software/Development/Web Development/HTML First Development.md",
     "Notes/Software/Development/Web Development/React.md",
-    "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",
