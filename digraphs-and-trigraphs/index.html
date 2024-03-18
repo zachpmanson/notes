@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: digraphs and trigraphs</title>
+</head>
+
+<body>
+  <nav>
+
+
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
+      <div class="nav-segments">
+        
+
+        <div class="flex flex-col text-left nav-links">
+          <a href="/c" class="activated-link">C</a>
+          
+          
+          <a href="/bash">Bash</a>
+          
+          
+          
+          <a href="/brainfuck">Brainfuck</a>
+          
+          
+          
+          
+          
+          
+          <a href="/go">Go</a>
+          
+          
+          
+          <a href="/javascript">JavaScript</a>
+          
+          
+        </div>
+        
+
+        
+
+        <div class="flex flex-col text-left nav-links">
+          <a href="/digraphs-and-trigraphs" class="activated-link">Digraphs and Trigraphs</a>
+          
+          
+          <a href="/and-for-address">& For Address</a>
+          
+          
+          
+          <a href="/c-auto-keyword">C auto Keyword</a>
+          
+          
+          
+          
+          
+        </div>
+        
+
+        
+      </div>
+    </div>
+
+
+  </nav>
+  <main>
+    <header>
+      <h1>Digraphs and Trigraphs</h1>
+    </header>
+    <article><p><a href="/c">C</a> uses the preprocessor to substitute trigraphs for certain characters that did not appear on all keyboards in the 70s.</p>
+<table>
+<thead>
+<tr>
+<th>Trigraph</th>
+<th>Equivalent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>??=</code></td>
+<td><code>#</code></td>
+</tr>
+<tr>
+<td><code>??/</code></td>
+<td><code>\</code></td>
+</tr>
+<tr>
+<td><code>??'</code></td>
+<td><code>^</code></td>
+</tr>
+<tr>
+<td><code>??(</code></td>
+<td><code>[</code></td>
+</tr>
+<tr>
+<td><code>??)</code></td>
+<td><code>]</code></td>
+</tr>
+<tr>
+<td><code>??!</code></td>
+<td><code>\|</code></td>
+</tr>
+<tr>
+<td><code>??&lt;</code></td>
+<td><code>{</code></td>
+</tr>
+<tr>
+<td><code>??&gt;</code></td>
+<td><code>}</code></td>
+</tr>
+<tr>
+<td><code>??-</code></td>
+<td><code>~</code></td>
+</tr>
+</tbody>
+</table>
+<p>The can accidentally be triggered causing strange behaviour. </p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Will the next line be executed????????????????/</span>
+<span class="n">a</span><span class="o">++</span><span class="p">;</span>
+</code></pre></div>
+<p><code>??/</code> gets converted to <code>\</code> so the comment gets extended to the second line when trigraphs are applied.</p>
+<p>This can be used to check if trigraphs are available:</p>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="nf">trigraphsavailable</span><span class="p">()</span><span class="w"> </span><span class="c1">// returns 0 or 1; language standard C99 or later</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// are trigraphs available??/</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>C99 added some digraphs that were more readable than the original trigraphs.</p>
+<table>
+<thead>
+<tr>
+<th>Digraph</th>
+<th>Equivalent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;:</code></td>
+<td><code>[</code></td>
+</tr>
+<tr>
+<td><code>:&gt;</code></td>
+<td><code>]</code></td>
+</tr>
+<tr>
+<td><code>&lt;%</code></td>
+<td><code>{</code></td>
+</tr>
+<tr>
+<td><code>%&gt;</code></td>
+<td><code>}</code></td>
+</tr>
+<tr>
+<td><code>%:</code></td>
+<td><code>#</code></td>
+</tr>
+</tbody>
+</table>
+<p>Trigraphs were removed in C23.</p></article>
+
+    <hr />
+
+    
+
+    
+
+    
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Development/Programming Languages/C/Digraphs and Trigraphs.md">edit</a> -
+    <a href="/cits2003-lectures">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
+</html>
