@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Posts/LinkedIn's Ghost Text.md",
+                "file": "Notes/Mathematics/Mathematics.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Posts/LinkedIn's Ghost Text.md",
+                "file": "Notes/Mathematics/Mathematics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Posts/LinkedIn's Ghost Text.md",
+                "file": "Notes/Mathematics/Mathematics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Posts/LinkedIn's Ghost Text.md"
+                "file": "Notes/Mathematics/Mathematics.md"
               }
             }
           }
@@ -150,6 +149,9 @@
   },
   "active": "87beef5a330fbb59",
   "lastOpenFiles": [
+    "Notes/Software/Development/Programming Concepts/Currying.md",
+    "Notes/Mathematics/Mathematics.md",
+    "Posts/LinkedIn's Ghost Text.md",
     "Posts/Collaborative Awe.md",
     "Notes/Software/Unix/Unix Programs/Unix Programs.md",
     "Notes/Software/Unix/Unix Files.md",
@@ -174,9 +176,6 @@
     "Notes/Internet/Fediverse/Fediverse Family Tree.md",
     "Notes/Internet/Fediverse/Federating with Meta.md",
     "Notes/Courses/Courses.md",
-    "Meta/Sitemap.md",
-    "Meta/Recent Changes.md",
-    "Meta/Meta.md",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",
