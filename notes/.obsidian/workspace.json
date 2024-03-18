@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a9f60d6ff7f8f203",
+        "id": "a2334bebf56412f1",
         "type": "tabs",
         "children": [
           {
-            "id": "bde0602bb8a8c5bf",
+            "id": "87beef5a330fbb59",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Posts/Posts.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e213816a51d768df",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/Ochrs/Ochrs.md",
+                "file": "Posts/Collaborative Awe.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "citations",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Posts/Posts.md",
+                "file": "Posts/Collaborative Awe.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Posts/Posts.md",
+                "file": "Posts/Collaborative Awe.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Posts/Posts.md"
+                "file": "Posts/Collaborative Awe.md"
               }
             }
           }
@@ -160,35 +148,52 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
-    "Projects/Ochrs/Ochrs.md",
+    "Media/firehose.webm",
+    "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
+    "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",
+    "Media/fediverse-branches.png.sb-5985f2ea-SXYeoC",
+    "Media/minecraftle.png.sb-5985f2ea-ymG6uK",
+    "Media/dj.png.sb-5985f2ea-wWAWpZ",
+    "Media.zip",
+    "Projects/Minecraftle/How Minecraft Stores Crafting Recipes.md",
+    "Posts/Collaborative Awe.md",
+    "Posts/Planting a Flag in Wikipedia.md",
+    "Posts/Enhancement Proposal for the h Programming Language.md",
+    "Posts/LinkedIn's Ghost Text.md",
+    "Media/citations.jpg",
+    "Media/citations.png.sb-5985f2ea-2ezAUr",
+    "Media/swipe-up.webm",
+    "Media/status-messenger-3.png",
+    "Archive/Folklore/The Web Without Ad Blockers.md",
+    "Media/gambling-1.bmp.bmp",
+    "Media/gambling-2.bmp.bmp",
+    "Media/dall-e.jpg",
+    "Media/soldiers.jpg",
     "Posts/Posts.md",
+    "Posts/The Curse of the Last Good Day.md",
+    "Posts/The Poor Man's Static Site Generator.md",
+    "Posts/The H Chord.md",
+    "Media/gods-mistakes.png",
+    "Media/ug.png",
+    "Media/ug-rendered.png",
+    "Media/The-Flat-Sharp-And-Natural-A-Historical-Sketch.png",
+    "Archive/Problems/Jinja Components.md",
+    "Archive/Problems/Jinja Com.md",
+    "Posts/Usernames.md",
+    "Media/linkedin-duplication.webm",
+    "Projects/Ochrs/Ochrs.md",
+    "Archive/Problems/Vercel Images Optimisation.md",
+    "Projects/Minecraftle/Minecraftle v1.1.md",
+    "Projects/Minecraftle/Minecraftle.md",
+    "Projects/Minecraftle",
+    "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
     "Meta/Tags.md",
-    "Posts",
     "Blog/Blog.md",
-    "Blog",
     "Projects/Alculator.md",
     "Venting.md",
     "Index.md",
     "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
     "Notes/Software/Development/Programming Languages/C/C.md",
-    "Notes/Software/Development/Programming Languages/Bash/Bash.md",
-    "Notes/Software/Development/Programming Languages/Programming Languages.md",
-    "programming languages.md",
-    "Archive/Problems/React useState Not Mutating Object.md",
-    "Projects/Minecraftle.md",
-    "Archive/Problems/Select Decorator Depreciated.md",
-    "Archive/Templates/Time Ago Function.md",
-    "Archive/Problems/Run Latest npx Script Version.md",
-    "Notes/Software/Development/Web Development/React.md",
-    "Archive/Problems/Prisma Schema Changes and Vercel.md",
-    "Notes/Software/Development/Programming Languages/JavaScript/Anything-to-Number Conversion Table.md",
-    "Archive/Problems/JavaScript YYYY-MM-DD in Local Time.md",
-    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
-    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Cursed TypeScript Projects.md",
-    "Notes/Software/Unix/Unix Programs/Unix Programs.md",
-    "Notes/Software/Programs/Programs.md",
-    "Notes/Software/Programs/Spotify",
     "Untitled.canvas"
   ]
 }
