@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Unix/Unix Programs/Unix Programs.md",
+                "file": "Posts/LinkedIn's Ghost Text.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "webm",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Unix/Unix Programs/Unix Programs.md",
+                "file": "Posts/LinkedIn's Ghost Text.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Unix/Unix Programs/Unix Programs.md",
+                "file": "Posts/LinkedIn's Ghost Text.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Unix/Unix Programs/Unix Programs.md"
+                "file": "Posts/LinkedIn's Ghost Text.md"
               }
             }
           }
@@ -147,11 +148,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "87beef5a330fbb59",
   "lastOpenFiles": [
+    "Posts/Collaborative Awe.md",
+    "Notes/Software/Unix/Unix Programs/Unix Programs.md",
     "Notes/Software/Unix/Unix Files.md",
     "Notes/Software/Unix/Unix.md",
-    "Notes/Software/Unix/Unix Programs/Unix Programs.md",
     "Archive/Folklore/The bin Split.md",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Media/uwa-cits.png",
@@ -175,7 +177,6 @@
     "Meta/Sitemap.md",
     "Meta/Recent Changes.md",
     "Meta/Meta.md",
-    "Meta/Future Changes.md",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",
