@@ -1,7 +1,6 @@
 ---
 subtitle: Examples of all styles for CSS debugging.
 ---
-
 This is *some text* with **formatting** applied to it with Markdown.  ***This has even more formatting applied to it.***
 
 To split text  

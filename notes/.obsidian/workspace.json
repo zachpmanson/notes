@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/Vercel Images Optimisation.md",
+                "file": "Notes/Internet/Fediverse/Federating with Meta.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Problems/Vercel Images Optimisation.md",
+                "file": "Notes/Internet/Fediverse/Federating with Meta.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Problems/Vercel Images Optimisation.md",
+                "file": "Notes/Internet/Fediverse/Federating with Meta.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Problems/Vercel Images Optimisation.md"
+                "file": "Notes/Internet/Fediverse/Federating with Meta.md"
               }
             }
           }
@@ -149,6 +149,22 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Internet/Fediverse/Fediverse Family Tree.md",
+    "Notes/Internet/Fediverse/Federating with Meta.md",
+    "Notes/Courses/Courses.md",
+    "Meta/Sitemap.md",
+    "Meta/Recent Changes.md",
+    "Meta/Random.md",
+    "Meta/Meta.md",
+    "Meta/Future Changes.md",
+    "Meta/Credits.md",
+    "Meta/DNS.md",
+    "Meta/Tags.md",
+    "Meta/Stylesheet.md",
+    "Notes/Internet/Fediverse/Mastodon.md",
+    "Notes/Courses/UWA Computer Science/CITS2003/Michael Wise Quotes.md",
+    "Notes/Courses/UWA Computer Science/CITS2003/CITS2003.md",
+    "Archive/Problems/Vercel Images Optimisation.md",
     "Notes/Software/Development/Programming Languages/C/auto Keyword in C.md",
     "Notes/Software/Development/Programming Languages/Bash/Bash Regular Expressions.md",
     "Notes/Software/Development/Programming Languages/Bash/Bash Startup Scripts.md",
@@ -157,24 +173,8 @@
     "Notes/Software/Development/Development Methologies/Spite Driven Development.md",
     "Notes/Software/Development/Development Methologies/Resume Driven Development.md",
     "Notes/Internet/Internet Standards/OAuth/OAuth.md",
-    "Notes/Internet/Fediverse/Mastodon.md",
     "Notes/Internet/Internet Standards/RSS.md",
     "Notes/Internet/Digital Garden.md",
-    "Notes/Internet/Internet.md",
-    "Archive/Bookmarks/Bookmarks.md",
-    "Archive/Bookmarks/Forum Threads.md",
-    "Archive/Bookmarks/Hacks.md",
-    "Archive/Bookmarks/Lists.md",
-    "Archive/Archive.md",
-    "Archive/Lines.md",
-    "Meta/Credits.md",
-    "Meta/DNS.md",
-    "Meta/Future Changes.md",
-    "Meta/Tags.md",
-    "Meta/Sitemap.md",
-    "Meta/Stylesheet.md",
-    "Meta/Recent Changes.md",
-    "Meta/Random.md",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",
