@@ -140,6 +140,17 @@
 </ul>
 </li>
 </ul>
+<h2 id="where-should-programs-go">Where Should  Programs Go?</h2>
+<blockquote>
+<ul>
+<li><code>/usr</code> - all system-wide, read-only files installed by (or provided by) the OS</li>
+<li><code>/usr/local</code> - system-wide, read-only files installed by the local administrator (usually, you). <em>And that's why most directory names from <code>/usr</code> are duplicated here.</em></li>
+<li><code>/opt</code> - an atrocity meant for system-wide, read-only <em>and self-contained</em> software. That is, software that does not split their files over <code>bin</code>, <code>lib</code>, <code>share</code>, <code>include</code> like well-behaved software should.</li>
+<li><code>~/.local</code> - the per-user counterpart of <code>/usr/local</code>, that is: software installed by (and for) each user. Like <code>/usr</code>, it has its own <code>~/.local/share</code>, <code>~/.local/bin</code>, <code>~/.local/lib</code>.</li>
+<li><code>~/.local/opt</code> - the per-user counterpart of <code>/opt</code></li>
+</ul>
+</blockquote>
+<p><cite class="standalone"><a href="https://askubuntu.com/a/135679">MestreLion on StackOverflow</a></cite></p>
 <h2 id="useful-programs">Useful Programs</h2>
 <ul>
 <li><code>apropos &lt;search&gt;</code><ul>
@@ -270,7 +281,7 @@
   </main>
   <footer>
     <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Unix/Unix Programs/Unix Programs.md">edit</a> -
-    <a href="/kurt-vonnegut-grades">random</a> -
+    <a href="/indigos-eternal-cafe">random</a> -
     <a href="/recent-changes">updates</a> -
     <a href="/tags">tags</a> -
     <a href="/sitemap">sitemap</a>
