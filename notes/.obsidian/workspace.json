@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/C/& For Address.md",
+                "file": "Notes/Software/Development/Programming Languages/C/Digraphs and Trigraphs.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/C/& For Address.md",
+                "file": "Notes/Software/Development/Programming Languages/C/Digraphs and Trigraphs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/C/& For Address.md",
+                "file": "Notes/Software/Development/Programming Languages/C/Digraphs and Trigraphs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/C/& For Address.md"
+                "file": "Notes/Software/Development/Programming Languages/C/Digraphs and Trigraphs.md"
               }
             }
           }
@@ -149,8 +149,11 @@
   },
   "active": "87beef5a330fbb59",
   "lastOpenFiles": [
-    "Notes/Software/Development/Programming Concepts/Noisy Neighbour.md",
     "Notes/Software/Development/Programming Languages/C/& For Address.md",
+    "Notes/Software/Development/Programming Languages/C/C auto Keyword.md",
+    "Notes/Software/Development/Programming Languages/C/C.md",
+    "Notes/Software/Development/Programming Languages/C/Digraphs and Trigraphs.md",
+    "Notes/Software/Development/Programming Concepts/Noisy Neighbour.md",
     "Archive/Folklore/Untitled.md",
     "Notes/Software/Unix/Unix Files.md",
     "Notes/Software/Unix/Unix.md",
@@ -173,9 +176,6 @@
     "Notes/Software/Development/Web Development/React.md",
     "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
     "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
-    "Notes/Software/Development/Programming Languages/Bash/Bash Startup Scripts.md",
-    "Meta/Random.md",
-    "Notes/Internet/Fediverse/Mastodon.md",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",
