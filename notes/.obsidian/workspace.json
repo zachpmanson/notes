@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Internet/Fediverse/Fediverse Family Tree.md",
+                "file": "Notes/Software/Unix/Unix Programs/Awk.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Internet/Fediverse/Fediverse Family Tree.md",
+                "file": "Notes/Software/Unix/Unix Programs/Awk.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Internet/Fediverse/Fediverse Family Tree.md",
+                "file": "Notes/Software/Unix/Unix Programs/Awk.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Internet/Fediverse/Fediverse Family Tree.md"
+                "file": "Notes/Software/Unix/Unix Programs/Awk.md"
               }
             }
           }
@@ -147,34 +147,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "87beef5a330fbb59",
   "lastOpenFiles": [
-    "Notes/Internet/Fediverse/Federating with Meta.md",
+    "Notes/Software/Development/Web Development/Themed Stylesheets.md",
+    "Notes/Software/Development/Web Development/HTML First Development.md",
+    "Notes/Software/Development/Web Development/React.md",
+    "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
+    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
+    "Notes/Software/Development/Programming Languages/Bash/Bash Startup Scripts.md",
+    "Meta/Random.md",
+    "Notes/Internet/Fediverse/Mastodon.md",
     "Notes/Internet/Fediverse/Fediverse Family Tree.md",
+    "Notes/Internet/Fediverse/Federating with Meta.md",
     "Notes/Courses/Courses.md",
     "Meta/Sitemap.md",
     "Meta/Recent Changes.md",
-    "Meta/Random.md",
     "Meta/Meta.md",
     "Meta/Future Changes.md",
     "Meta/Credits.md",
     "Meta/DNS.md",
     "Meta/Tags.md",
     "Meta/Stylesheet.md",
-    "Notes/Internet/Fediverse/Mastodon.md",
     "Notes/Courses/UWA Computer Science/CITS2003/Michael Wise Quotes.md",
     "Notes/Courses/UWA Computer Science/CITS2003/CITS2003.md",
     "Archive/Problems/Vercel Images Optimisation.md",
     "Notes/Software/Development/Programming Languages/C/auto Keyword in C.md",
     "Notes/Software/Development/Programming Languages/Bash/Bash Regular Expressions.md",
-    "Notes/Software/Development/Programming Languages/Bash/Bash Startup Scripts.md",
     "Notes/Software/Development/Programming Languages/Bash/Bash.md",
     "Notes/Software/Development/Non-Programming Languages/Markdown.md",
-    "Notes/Software/Development/Development Methologies/Spite Driven Development.md",
-    "Notes/Software/Development/Development Methologies/Resume Driven Development.md",
-    "Notes/Internet/Internet Standards/OAuth/OAuth.md",
-    "Notes/Internet/Internet Standards/RSS.md",
-    "Notes/Internet/Digital Garden.md",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",
