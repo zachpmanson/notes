@@ -52,14 +52,14 @@ def tags_js():
 
 
 def chronological_tag(tag: str, tag_pages: list[str], tree: dict[str, Node]):
-
     nodes = {page: tree[page] for page in tag_pages if tree[page].post_date}
-
+    nodes = dict(
+        sorted(nodes.items(), key=lambda item: item[1].post_date, reverse=True)
+    )
     html = []
     for page, node in nodes.items():
         # html += [f"{node.post_date}: [{page}](/{sanitize_url(page)})"]
         html += [
             f"<div class='post'><a href='/{sanitize_url(page)}'>{page}</a>  <time>{node.post_date}</time></div>"
         ]
-    html.sort(reverse=True)
     return "\n".join(html) + f"<a href='/{tag}.xml'>RSS Feed</a>"

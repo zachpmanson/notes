@@ -79,6 +79,10 @@
     </header>
     <article>{{node["body"]}}</article>
 
+    {% if node["post_date"] %}
+    <p class="backlinks"><span class="bold">Posted:</span> {{node["post_date"]}}</p>
+    {% endif %}
+
     {% if node["backlinks"] != None and len(node["backlinks"]) > 0 %}
     <p class="backlinks"><span class="bold">Incoming:</span>
       {% for backlink in node["backlinks"] %}
@@ -105,7 +109,7 @@
     <a href="/sitemap">sitemap</a>
   </footer>
   {% if node["script"] != None %}
-  <script>{{ node["script"] }}</script>
+  <script>{ { node["script"] } }</script>
   {% endif %}
 </body>
 
