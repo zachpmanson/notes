@@ -5,7 +5,7 @@
 This site is hosted on [zachmanson.com](https://zachmanson.com) alongside several other subdomains.
 
 - **[zachmanson.com](https://zachmanson.com)**  
-  main home page and blog  
+  main home page  
   gh pages
 	- **[notes.zachmanson.com](https://notes.zachmanson.com)**  
 	  this site  
