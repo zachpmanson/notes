@@ -35,7 +35,7 @@ I'm using Vercel's free tier to serve the application which grants 100GB of band
 
 Over the next few hours I started receiving strongly worded alerts from Vercel:
 
-![](vercel-warnings.png)
+![[vercel-warnings.png]]
 
 Either I had gone viral or my code was a lot more inefficient than I thought. At 1am I returned home, having reached the Ballmer Peak to diagnose the problem.
 

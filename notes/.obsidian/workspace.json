@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Alculator.md",
+                "file": "Archive/Problems/Vercel Images Optimisation.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/Alculator.md",
+                "file": "Archive/Problems/Vercel Images Optimisation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/Alculator.md",
+                "file": "Archive/Problems/Vercel Images Optimisation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/Alculator.md"
+                "file": "Archive/Problems/Vercel Images Optimisation.md"
               }
             }
           }
@@ -149,32 +149,32 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Projects/COVID-19 Tracker.md",
-    "Projects/Mastodon Thread Unroller.md",
-    "Projects/ironprof.md",
-    "Projects/Penultimate Guitar.md",
-    "Projects/Alculator.md",
-    "Archive/Problems/Vercel Images Optimisation.md",
-    "Archive/Problems/Windows 11 Without a Microsoft Account.md",
-    "Archive/Problems/Markdown in HTML.md",
-    "Archive/Bookmarks/xkcd.md",
-    "Archive/Bookmarks/Websites.md",
-    "Archive/Bookmarks/Wikipedia Articles.md",
-    "Archive/Bookmarks/Web Communities.md",
-    "Notes/Courses/UWA Computer Science/CITS2003/CITS2003.md",
-    "Notes/Courses/UWA Computer Science/CITS2003/Michael Wise Quotes.md",
-    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
-    "Notes/Courses/UWA Computer Science/Chris McDonald.md",
-    "Notes/Internet/Pirate Libraries/Pirate Libraries.md",
-    "Notes/Internet/Digital Garden.md",
-    "Notes/Internet/Internet.md",
-    "Notes/Internet/Internet Standards/RSS.md",
-    "Notes/Internet/Fediverse/Mastodon.md",
-    "Notes/Internet/Fediverse/Fediverse.md",
-    "Notes/Internet/Fediverse/Federating with Meta.md",
+    "Notes/Software/Development/Programming Languages/C/auto Keyword in C.md",
+    "Notes/Software/Development/Programming Languages/Bash/Bash Regular Expressions.md",
+    "Notes/Software/Development/Programming Languages/Bash/Bash Startup Scripts.md",
+    "Notes/Software/Development/Programming Languages/Bash/Bash.md",
+    "Notes/Software/Development/Non-Programming Languages/Markdown.md",
     "Notes/Software/Development/Development Methologies/Spite Driven Development.md",
     "Notes/Software/Development/Development Methologies/Resume Driven Development.md",
-    "Notes/Software/Software.md",
+    "Notes/Internet/Internet Standards/OAuth/OAuth.md",
+    "Notes/Internet/Fediverse/Mastodon.md",
+    "Notes/Internet/Internet Standards/RSS.md",
+    "Notes/Internet/Digital Garden.md",
+    "Notes/Internet/Internet.md",
+    "Archive/Bookmarks/Bookmarks.md",
+    "Archive/Bookmarks/Forum Threads.md",
+    "Archive/Bookmarks/Hacks.md",
+    "Archive/Bookmarks/Lists.md",
+    "Archive/Archive.md",
+    "Archive/Lines.md",
+    "Meta/Credits.md",
+    "Meta/DNS.md",
+    "Meta/Future Changes.md",
+    "Meta/Tags.md",
+    "Meta/Sitemap.md",
+    "Meta/Stylesheet.md",
+    "Meta/Recent Changes.md",
+    "Meta/Random.md",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",
