@@ -13,9 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/SeleniumBasic.md",
+                "file": "Posts/Posts.md",
                 "mode": "source",
-                "backlinks": true,
                 "source": false
               }
             }
@@ -49,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "zachmanson.com",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -87,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Problems/SeleniumBasic.md",
+                "file": "Posts/Posts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Problems/SeleniumBasic.md",
+                "file": "Posts/Posts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Problems/SeleniumBasic.md"
+                "file": "Posts/Posts.md"
               }
             }
           }
@@ -151,7 +149,10 @@
   },
   "active": "87beef5a330fbb59",
   "lastOpenFiles": [
+    "Posts/Posts.md",
+    "Posts/Planting a Flag in Wikipedia.md",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+    "Archive/Problems/SeleniumBasic.md",
     "Meta/DNS.md",
     "Projects/Minecraftle/How Minecraft Stores Crafting Recipes.md",
     "Projects/ironprof.md",
@@ -161,7 +162,6 @@
     "Posts/Enhancement Proposal for the h Programming Language.md",
     "Posts/Collaborative Awe.md",
     "Posts/LinkedIn's Ghost Text.md",
-    "Posts/Planting a Flag in Wikipedia.md",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",
@@ -178,7 +178,6 @@
     "Media/gambling-2.bmp.bmp",
     "Media/dall-e.jpg",
     "Media/soldiers.jpg",
-    "Posts/Posts.md",
     "Posts/The Curse of the Last Good Day.md",
     "Posts/The H Chord.md",
     "Media/gods-mistakes.png",
@@ -196,7 +195,6 @@
     "Blog/Blog.md",
     "Projects/Alculator.md",
     "Venting.md",
-    "Index.md",
     "Untitled.canvas"
   ]
 }
