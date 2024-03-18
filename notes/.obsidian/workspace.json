@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Mathematics/Mathematics.md",
+                "file": "Posts/LinkedIn's Ghost Text.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Mathematics/Mathematics.md",
+                "file": "Posts/LinkedIn's Ghost Text.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Mathematics/Mathematics.md",
+                "file": "Posts/LinkedIn's Ghost Text.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Mathematics/Mathematics.md"
+                "file": "Posts/LinkedIn's Ghost Text.md"
               }
             }
           }
@@ -147,7 +147,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "87beef5a330fbb59",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
     "Notes/Software/Development/Programming Concepts/Currying.md",
     "Notes/Mathematics/Mathematics.md",

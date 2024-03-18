@@ -8,7 +8,7 @@ tags:
 Why does LinkedIn do this?
 
 <video autoplay loop muted>
-   <source src="/media/duplication-linkedin.webm" type="video/webm">
+   <source src="/media/linkedin-duplication.webm" type="video/webm">
 </video>
 
 If you look into the source of a LinkedIn profile page (at your own personal risk) you'll find a text element like this
