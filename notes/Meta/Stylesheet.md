@@ -103,3 +103,9 @@ Backlink image:
 External image:
 
 ![gh display pic](https://avatars.githubusercontent.com/u/24368336)
+
+---
+
+Chronologised tag:
+
+<ochrs:chrono:posts>
