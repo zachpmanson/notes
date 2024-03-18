@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/C/Pointer Operations.md",
+                "file": "Notes/Mathematics/Computer Science/Currying.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/C/Pointer Operations.md",
+                "file": "Notes/Mathematics/Computer Science/Currying.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/C/Pointer Operations.md",
+                "file": "Notes/Mathematics/Computer Science/Currying.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/C/Pointer Operations.md"
+                "file": "Notes/Mathematics/Computer Science/Currying.md"
               }
             }
           }
@@ -149,9 +149,11 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Development/Programming Concepts/Closures.md",
+    "Notes/Software/Development/Programming Concepts/Authorization.md",
+    "Notes/Software/Development/Programming Languages/C/Pointer Operations.md",
     "Notes/Software/Development/Programming Languages/C/C auto Keyword.md",
     "Notes/Software/Development/Programming Languages/C/Digraphs and Trigraphs.md",
-    "Notes/Software/Development/Programming Languages/C/Pointer Operations.md",
     "Notes/Internet/Fediverse/Fediverse Family Tree.md",
     "Notes/Internet/Fediverse/Fediverse.md",
     "Notes/Software/Development/Programming Languages/C/C.md",
@@ -162,7 +164,7 @@
     "Notes/Software/Unix/Unix Programs/Unix Programs.md",
     "Posts/Collaborative Awe.md",
     "Posts/LinkedIn's Ghost Text.md",
-    "Notes/Software/Development/Programming Concepts/Currying.md",
+    "Notes/Mathematics/Computer Science/Currying.md",
     "Notes/Mathematics/Mathematics.md",
     "Archive/Folklore/The bin Split.md",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
@@ -174,8 +176,6 @@
     "Projects/Ochrs/Ochrs 2.0.md",
     "Notes/Software/Unix/Unix Programs/Awk.md",
     "Notes/Software/Development/Web Development/Themed Stylesheets.md",
-    "Notes/Software/Development/Web Development/HTML First Development.md",
-    "Notes/Software/Development/Web Development/React.md",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",
