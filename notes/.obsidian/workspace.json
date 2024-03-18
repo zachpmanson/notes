@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Posts/Posts.md",
+                "file": "Notes/Software/Development/Development Methologies/Spite Driven Development.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Posts/Posts.md",
+                "file": "Notes/Software/Development/Development Methologies/Spite Driven Development.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Posts/Posts.md",
+                "file": "Notes/Software/Development/Development Methologies/Spite Driven Development.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Posts/Posts.md"
+                "file": "Notes/Software/Development/Development Methologies/Spite Driven Development.md"
               }
             }
           }
@@ -147,8 +147,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "87beef5a330fbb59",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Software.md",
+    "Notes/Software/Unix/GECOS.md",
+    "Notes/Software/Unix/Unix Programs/Make.md",
+    "Notes/Software/Unix/Unix Programs/Awk.md",
+    "Notes/Software/Unix/Linux/Linux.md",
+    "Notes/Software/Programs/Obsidian/Obsidian.md",
+    "Notes/Software/Programs/Git/Git.md",
+    "Notes/Software/Programs/Docker/Docker.md",
+    "Notes/Software/Mistakes/Position of 0 and 1 Keys.md",
+    "Notes/Software/Mistakes/Referer HTTP Field.md",
+    "Notes/Software/Mistakes/Dotfiles Being Hidden.md",
+    "Notes/Software/Mistakes/Mistakes.md",
+    "Notes/Software/Development/Terminals.md",
+    "Notes/Software/Development/Kinds of Problems.md",
+    "Notes/Software/Development/Programming Languages/Bash/Bash.md",
+    "Notes/Software/Development/Non-Programming Languages/Markdown.md",
     "Posts/Posts.md",
     "Posts/Planting a Flag in Wikipedia.md",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
@@ -159,9 +175,6 @@
     "Posts/The Poor Man's Static Site Generator.md",
     "Posts/Usernames.md",
     "Archive/Problems/Vercel Images Optimisation.md",
-    "Posts/Enhancement Proposal for the h Programming Language.md",
-    "Posts/Collaborative Awe.md",
-    "Posts/LinkedIn's Ghost Text.md",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",
@@ -173,28 +186,15 @@
     "Media/citations.png.sb-5985f2ea-2ezAUr",
     "Media/swipe-up.webm",
     "Media/status-messenger-3.png",
-    "Archive/Folklore/The Web Without Ad Blockers.md",
     "Media/gambling-1.bmp.bmp",
     "Media/gambling-2.bmp.bmp",
     "Media/dall-e.jpg",
     "Media/soldiers.jpg",
-    "Posts/The Curse of the Last Good Day.md",
-    "Posts/The H Chord.md",
     "Media/gods-mistakes.png",
     "Media/ug.png",
     "Media/ug-rendered.png",
     "Media/The-Flat-Sharp-And-Natural-A-Historical-Sketch.png",
-    "Archive/Problems/Jinja Components.md",
-    "Archive/Problems/Jinja Com.md",
     "Media/linkedin-duplication.webm",
-    "Projects/Ochrs/Ochrs.md",
-    "Projects/Minecraftle/Minecraftle v1.1.md",
-    "Projects/Minecraftle/Minecraftle.md",
-    "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
-    "Meta/Tags.md",
-    "Blog/Blog.md",
-    "Projects/Alculator.md",
-    "Venting.md",
     "Untitled.canvas"
   ]
 }

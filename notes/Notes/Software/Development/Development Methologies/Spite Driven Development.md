@@ -1,3 +1,8 @@
+---
+tags:
+  - posts
+date: 2024-03-18
+---
 Spite Driven Development (SDD) is my preferred development methodology.  I have found it by far my most productive style of software engineering, and has been responsible in whole or part for most of my [[projects]] (see: [[Penultimate Guitar]], [[Minecraftle]], [[Alculator]], [[Status Messenger]]).
 
 While it is extremely effective for building software quickly, it is often destructive to other aspects of one's life, such as healthy eating, relationships, and especially sleep.
