@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/C/& For Address.md",
+                "file": "Notes/Software/Development/Programming Languages/C/Pointer Operations.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 232.50247192382812,
-    "collapsed": true
+    "width": 232.50247192382812
   },
   "right": {
     "id": "b30ab2faf3f39acc",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/C/& For Address.md",
+                "file": "Notes/Software/Development/Programming Languages/C/Pointer Operations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/C/& For Address.md",
+                "file": "Notes/Software/Development/Programming Languages/C/Pointer Operations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/C/& For Address.md"
+                "file": "Notes/Software/Development/Programming Languages/C/Pointer Operations.md"
               }
             }
           }
@@ -148,13 +147,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "87beef5a330fbb59",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Development/Programming Languages/C/C auto Keyword.md",
+    "Notes/Software/Development/Programming Languages/C/Digraphs and Trigraphs.md",
+    "Notes/Software/Development/Programming Languages/C/Pointer Operations.md",
     "Notes/Internet/Fediverse/Fediverse Family Tree.md",
     "Notes/Internet/Fediverse/Fediverse.md",
-    "Notes/Software/Development/Programming Languages/C/Digraphs and Trigraphs.md",
-    "Notes/Software/Development/Programming Languages/C/& For Address.md",
-    "Notes/Software/Development/Programming Languages/C/C auto Keyword.md",
     "Notes/Software/Development/Programming Languages/C/C.md",
     "Notes/Software/Development/Programming Concepts/Noisy Neighbour.md",
     "Archive/Folklore/Untitled.md",

@@ -1,5 +1,8 @@
-Why were `*` and `&` chosen for pointer operations in [[C]]?
-
+---
+tags:
+  - relics
+subtitle: Why were * and & chosen for pointer operations in C?
+---
 [Chris Mulligan emailed Ken Thompson to find out](https://softwareengineering.stackexchange.com/a/273268).  Chris initially assumed it was because \* looked like a point and & was beside it on the keyboard.
 
 > **From: Ken Thompson < ken@google.com >**

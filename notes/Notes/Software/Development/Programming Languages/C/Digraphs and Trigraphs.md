@@ -1,3 +1,7 @@
+---
+tags:
+  - relics
+---
 [[C]] uses the preprocessor to substitute trigraphs for certain characters that did not appear on all keyboards in the 70s.
 
 |Trigraph|Equivalent|
