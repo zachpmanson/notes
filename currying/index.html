@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: currying</title>
+</head>
+
+<body>
+  <nav>
+
+
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
+      <div class="nav-segments">
+        
+
+        <div class="flex flex-col text-left nav-links">
+          <a href="/programming-concepts" class="activated-link">Programming Concepts</a>
+          
+          
+          <a href="/datetime">DateTime</a>
+          
+          
+          
+          <a href="/debugging">Debugging</a>
+          
+          
+          
+          <a href="/development-methologies">Development Methologies</a>
+          
+          
+          
+          <a href="/kinds-of-problems">Kinds of Problems</a>
+          
+          
+          
+          <a href="/non-programming-languages">Non-Programming Languages</a>
+          
+          
+          
+          
+          
+          
+          <a href="/programming-languages">Programming Languages</a>
+          
+          
+          
+          <a href="/terminals">Terminals</a>
+          
+          
+          
+          <a href="/web-development">Web Development</a>
+          
+          
+        </div>
+        
+
+        
+
+        <div class="flex flex-col text-left nav-links">
+          <a href="/currying" class="activated-link">Currying</a>
+          
+          
+          <a href="/authentication">Authentication</a>
+          
+          
+          
+          <a href="/authorization">Authorization</a>
+          
+          
+          
+          <a href="/closures">Closures</a>
+          
+          
+          
+          
+          
+        </div>
+        
+
+        
+      </div>
+    </div>
+
+
+  </nav>
+  <main>
+    <header>
+      <h1>Currying</h1>
+    </header>
+    <article><blockquote>
+<p>In <a href="/mathematics">mathematics</a> and <a href="/computer-science">computer science</a>, currying is the technique of translating a function that takes multiple arguments into a sequence of families of functions, each taking a single argument.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://en.wikipedia.org/wiki/Currying">Currying on Wikipedia</a></cite></p>
+<p>Here's some currying in Python:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span> <span class="o">*</span> <span class="n">c</span>
+
+<span class="k">def</span> <span class="nf">fA</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">fB</span><span class="p">(</span><span class="n">b</span><span class="p">):</span>
+        <span class="k">def</span> <span class="nf">fC</span><span class="p">(</span><span class="n">c</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">fC</span>
+    <span class="k">return</span> <span class="n">fB</span>
+
+
+<span class="n">fA</span><span class="p">(</span><span class="mi">1</span><span class="p">)(</span><span class="mi">2</span><span class="p">)(</span><span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="n">f</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="n">f_2</span> <span class="o">=</span> <span class="n">fA</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">f_2</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="n">f</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div>
+<p>There are many contexts where only single argument functions can be used.  Currying allows multi-argument functions to be used in these contexts.</p>
+<p>Currying is named after Haskell Curry, though the concept was first developed by Moses Schönfinkel.</p></article>
+
+    <hr />
+
+    
+
+    
+
+    
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Development/Programming Concepts/Currying.md">edit</a> -
+    <a href="/usenet-post-warning">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
+</html>
