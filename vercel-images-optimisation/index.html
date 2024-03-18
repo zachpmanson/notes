@@ -281,7 +281,7 @@
 </code></pre></div>
 <p>I'm using Vercel's free tier to serve the application which grants 100GB of bandwidth, which is magnitudes higher than any amount of users I expected to serve. I put the finishing touches on the site on December 30th, sent the link to a few people and went to the pub.</p>
 <p>Over the next few hours I started receiving strongly worded alerts from Vercel:</p>
-<p><img alt="" src="vercel-warnings.png" /></p>
+<p><img alt="" src="/media/vercel-warnings.png" /></p>
 <p>Either I had gone viral or my code was a lot more inefficient than I thought. At 1am I returned home, having reached the Ballmer Peak to diagnose the problem.</p>
 <p>On the Vercel/Dashboard/Usage page, right at the bottom is the harmless looking graph titled "Image Optimisations" which turned out to be the culprit. By default, Vercel takes all images hosted in <code>&lt;Image&gt;</code> tags and caches them all at the Edge. Vercel had optimised 1400 of these images before I discovered this and at the free tier this is capped at 1000 images. Whoops.</p>
 <p>The solution is simple:</p>
@@ -317,7 +317,7 @@
   </main>
   <footer>
     <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Vercel Images Optimisation.md">edit</a> -
-    <a href="/oauth">random</a> -
+    <a href="/internet-standards">random</a> -
     <a href="/recent-changes">updates</a> -
     <a href="/tags">tags</a> -
     <a href="/sitemap">sitemap</a>
