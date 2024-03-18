@@ -127,6 +127,8 @@ def get_tree():
                     tree[node].subtitle = file_sections["subtitle"]
                 if "date" in list(file_sections.keys()):
                     tree[node].post_date = file_sections["date"]
+                if "children" in list(file_sections.keys()):
+                    tree[node].children_visible = file_sections["children"] == "true"
 
         except FileNotFoundError:
             body = "🌱"
@@ -208,7 +210,7 @@ def generate_pages():
                         "title": node,
                         "subtitle": tree[node].subtitle or node,
                         "parent": parent,
-                        "children": children,
+                        "children": children if tree[node].children_visible else [],
                         "siblings": siblings,
                         "piblings": piblings,
                         "tags": page_tags,
@@ -443,6 +445,8 @@ class Node:
     random_page: str  # random page when using static random
     script: Optional[str]  # js to include
     post_date: Optional[str]  # date used for chronological sorting
+
+    children_visible: bool = True
 
 
 tree: dict[str, Node] = {
