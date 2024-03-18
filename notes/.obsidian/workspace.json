@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+                "file": "Notes/Software/Unix/Unix Programs/Unix Programs.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+                "file": "Notes/Software/Unix/Unix Programs/Unix Programs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+                "file": "Notes/Software/Unix/Unix Programs/Unix Programs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md"
+                "file": "Notes/Software/Unix/Unix Programs/Unix Programs.md"
               }
             }
           }
@@ -147,8 +147,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "87beef5a330fbb59",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Unix/Unix Files.md",
+    "Notes/Software/Unix/Unix.md",
+    "Notes/Software/Unix/Unix Programs/Unix Programs.md",
+    "Archive/Folklore/The bin Split.md",
+    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Media/uwa-cits.png",
     "Projects/Ochrs/Ochrs.md",
     "Projects/Ochrs/Ochrs 1.0.md",
@@ -171,10 +176,6 @@
     "Meta/Recent Changes.md",
     "Meta/Meta.md",
     "Meta/Future Changes.md",
-    "Meta/Credits.md",
-    "Meta/DNS.md",
-    "Meta/Tags.md",
-    "Meta/Stylesheet.md",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",
@@ -193,7 +194,6 @@
     "Media/gods-mistakes.png",
     "Media/ug.png",
     "Media/ug-rendered.png",
-    "Media/The-Flat-Sharp-And-Natural-A-Historical-Sketch.png",
     "Media/linkedin-duplication.webm",
     "Untitled.canvas"
   ]

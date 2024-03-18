@@ -50,7 +50,7 @@ Environment variables are defined by the system and will be will be passed to th
   - `/usr/bin`
     - system level commands that generally come with the system but may need to be installed
     - `python`, `gcc`
-    - `usr` stands for Unix System Resources
+    - `usr` stands for Unix System Resources (though it originally meant `user`, since it used to be the user's directory, see [[The bin Split]])
   - `/usr/local/bin`
     - programs that you have installed for all users of your system locally
     - `pip3`, `ps2pdf`

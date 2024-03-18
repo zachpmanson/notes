@@ -9,6 +9,16 @@ A helpful resources outside of man pages:
 - [tldr.sh](https://tldr.sh/)
 	- web client [tldr.inbrowser.app](https://tldr.inbrowser.app/)
 
+## Where Should  Programs Go?
+
+> - `/usr` - all system-wide, read-only files installed by (or provided by) the OS
+> - `/usr/local` - system-wide, read-only files installed by the local administrator (usually, you). _And that's why most directory names from `/usr` are duplicated here._
+> - `/opt` - an atrocity meant for system-wide, read-only _and self-contained_ software. That is, software that does not split their files over `bin`, `lib`, `share`, `include` like well-behaved software should.
+> - `~/.local` - the per-user counterpart of `/usr/local`, that is: software installed by (and for) each user. Like `/usr`, it has its own `~/.local/share`, `~/.local/bin`, `~/.local/lib`.
+> - `~/.local/opt` - the per-user counterpart of `/opt`
+
+-- [MestreLion on StackOverflow](https://askubuntu.com/a/135679)
+
 ## Useful Programs
  
 - `apropos <search>`
