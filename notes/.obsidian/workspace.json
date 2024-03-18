@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Unix/Unix Programs/Awk.md",
+                "file": "Projects/Ochrs/Ochrs.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Unix/Unix Programs/Awk.md",
+                "file": "Projects/Ochrs/Ochrs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Unix/Unix Programs/Awk.md",
+                "file": "Projects/Ochrs/Ochrs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Unix/Unix Programs/Awk.md"
+                "file": "Projects/Ochrs/Ochrs.md"
               }
             }
           }
@@ -147,8 +147,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "87beef5a330fbb59",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Projects/Ochrs/Ochrs 1.0.md",
+    "Projects/Ochrs/Ochrs Syntax.md",
+    "Projects/Ochrs/Ochrs Deploy.md",
+    "Projects/Ochrs/Ochrs.md",
+    "Projects/Ochrs/Ochrs 2.0.md",
+    "Notes/Software/Unix/Unix Programs/Awk.md",
     "Notes/Software/Development/Web Development/Themed Stylesheets.md",
     "Notes/Software/Development/Web Development/HTML First Development.md",
     "Notes/Software/Development/Web Development/React.md",
@@ -169,12 +175,6 @@
     "Meta/Tags.md",
     "Meta/Stylesheet.md",
     "Notes/Courses/UWA Computer Science/CITS2003/Michael Wise Quotes.md",
-    "Notes/Courses/UWA Computer Science/CITS2003/CITS2003.md",
-    "Archive/Problems/Vercel Images Optimisation.md",
-    "Notes/Software/Development/Programming Languages/C/auto Keyword in C.md",
-    "Notes/Software/Development/Programming Languages/Bash/Bash Regular Expressions.md",
-    "Notes/Software/Development/Programming Languages/Bash/Bash.md",
-    "Notes/Software/Development/Non-Programming Languages/Markdown.md",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",

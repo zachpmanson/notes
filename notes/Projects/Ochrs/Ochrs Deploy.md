@@ -1,0 +1,3 @@
+[[Ochrs]] Deploy is a simple [[Obsidian]] plugin I made to add a button to the Obsidian left panel to run the `update-notes.sh` script.  Its a bit hacky but does technically work. It isn't in the Obsidian plugin directory (yet), but can be downloaded and added from the [repo](https://github.com/pavo-etc/ochrs-deploy).
+
+I do not use Ochrs Deploy anymore, instead running my build and deployment scripts within GitHub Action and using Obsidian Git to push all changes.

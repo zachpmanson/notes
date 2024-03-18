@@ -43,3 +43,17 @@ tags:
 These can be displayed in the using the `ochrs:tags` function.
 
 These will be collated on the [[tags]] page. If any tags written in the Markdown source match the name of any individual page, that page (and its children) will all be assigned to that tag. See [[Unix]] for this in action.
+
+## Chronological Feeds
+
+Ochrs can produce chronological list of posts usings tags.  This can be used to produce a blog like interface and RSS feeds.  Any page can be included in a chronological feed by assigning it 1+ tags, and then adding a date property to the frontmatter of the Markdown.  The date will be used as the publishing date whenever it is ranked chronologically.
+
+Each tag will have an RSS feed populated with all pages with that tag and a date attribute, which can be seen on that [[Tags]] page.
+
+To show a chronological feed within a page use the `chrono` build-time function and pass in the desired tag name e.g.`ochrs:chrono:tagname`. See [[Posts]] for this in action.
+
+## Children Visibility
+
+A given page's children can be hidden by default by passing in the `children: false` in the frontmatter.  This is useful for blog-style pages where the children will be contained within the chronological feed.  See [[Posts]] for this in action.
+
+When a page is navigated to, its siblings will always appear, even if their shared parent has `children: false` set.
