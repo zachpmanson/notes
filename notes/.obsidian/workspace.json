@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Posts/Collaborative Awe.md",
+                "file": "Posts/Usernames.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "citations",
+                "query": "tag:#posts  ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Posts/Collaborative Awe.md",
+                "file": "Posts/Usernames.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Posts/Collaborative Awe.md",
+                "file": "Posts/Usernames.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Posts/Collaborative Awe.md"
+                "file": "Posts/Usernames.md"
               }
             }
           }
@@ -146,8 +147,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "87beef5a330fbb59",
   "lastOpenFiles": [
+    "Archive/Problems/Vercel Images Optimisation.md",
+    "Posts/Usernames.md",
+    "Posts/The Poor Man's Static Site Generator.md",
+    "Projects/Minecraftle/How Minecraft Stores Crafting Recipes.md",
+    "Posts/Enhancement Proposal for the h Programming Language.md",
+    "Posts/Collaborative Awe.md",
+    "Posts/LinkedIn's Ghost Text.md",
+    "Posts/Planting a Flag in Wikipedia.md",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",
@@ -155,11 +164,6 @@
     "Media/minecraftle.png.sb-5985f2ea-ymG6uK",
     "Media/dj.png.sb-5985f2ea-wWAWpZ",
     "Media.zip",
-    "Projects/Minecraftle/How Minecraft Stores Crafting Recipes.md",
-    "Posts/Collaborative Awe.md",
-    "Posts/Planting a Flag in Wikipedia.md",
-    "Posts/Enhancement Proposal for the h Programming Language.md",
-    "Posts/LinkedIn's Ghost Text.md",
     "Media/citations.jpg",
     "Media/citations.png.sb-5985f2ea-2ezAUr",
     "Media/swipe-up.webm",
@@ -171,7 +175,6 @@
     "Media/soldiers.jpg",
     "Posts/Posts.md",
     "Posts/The Curse of the Last Good Day.md",
-    "Posts/The Poor Man's Static Site Generator.md",
     "Posts/The H Chord.md",
     "Media/gods-mistakes.png",
     "Media/ug.png",
@@ -179,13 +182,10 @@
     "Media/The-Flat-Sharp-And-Natural-A-Historical-Sketch.png",
     "Archive/Problems/Jinja Components.md",
     "Archive/Problems/Jinja Com.md",
-    "Posts/Usernames.md",
     "Media/linkedin-duplication.webm",
     "Projects/Ochrs/Ochrs.md",
-    "Archive/Problems/Vercel Images Optimisation.md",
     "Projects/Minecraftle/Minecraftle v1.1.md",
     "Projects/Minecraftle/Minecraftle.md",
-    "Projects/Minecraftle",
     "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
     "Meta/Tags.md",
     "Blog/Blog.md",

@@ -1,5 +1,5 @@
 ---
-subtitle: A small footgun for beginners using Vercel
+subtitle: A small footgun for beginners using Vercel.
 date: 2023-01-02
 tags:
   - posts

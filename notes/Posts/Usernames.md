@@ -1,5 +1,4 @@
 ---
-title: Usernames
 subtitle: Why am I still surprised
 date: 2022-03-11
 tags:

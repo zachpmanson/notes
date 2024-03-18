@@ -1,5 +1,5 @@
 ---
-subtitle: Why does LinkedIn copy text twice
+subtitle: Why does LinkedIn copy text twice?
 date: 2023-04-16
 tags:
   - posts
