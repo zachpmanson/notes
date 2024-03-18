@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Internet/Pirate Libraries/Pirate Libraries.md",
+                "file": "Archive/Problems/Vercel Images Optimisation.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Internet/Pirate Libraries/Pirate Libraries.md",
+                "file": "Archive/Problems/Vercel Images Optimisation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Internet/Pirate Libraries/Pirate Libraries.md",
+                "file": "Archive/Problems/Vercel Images Optimisation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Internet/Pirate Libraries/Pirate Libraries.md"
+                "file": "Archive/Problems/Vercel Images Optimisation.md"
               }
             }
           }
@@ -149,6 +149,17 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Archive/Problems/Windows 11 Without a Microsoft Account.md",
+    "Archive/Problems/Markdown in HTML.md",
+    "Archive/Bookmarks/xkcd.md",
+    "Archive/Bookmarks/Websites.md",
+    "Archive/Bookmarks/Wikipedia Articles.md",
+    "Archive/Bookmarks/Web Communities.md",
+    "Notes/Courses/UWA Computer Science/CITS2003/CITS2003.md",
+    "Notes/Courses/UWA Computer Science/CITS2003/Michael Wise Quotes.md",
+    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+    "Notes/Courses/UWA Computer Science/Chris McDonald.md",
+    "Notes/Internet/Pirate Libraries/Pirate Libraries.md",
     "Notes/Internet/Digital Garden.md",
     "Notes/Internet/Internet.md",
     "Notes/Internet/Internet Standards/RSS.md",
@@ -164,17 +175,6 @@
     "Notes/Software/Unix/Linux/Linux.md",
     "Notes/Software/Programs/Obsidian/Obsidian.md",
     "Notes/Software/Programs/Git/Git.md",
-    "Notes/Software/Programs/Docker/Docker.md",
-    "Notes/Software/Mistakes/Position of 0 and 1 Keys.md",
-    "Notes/Software/Mistakes/Referer HTTP Field.md",
-    "Notes/Software/Mistakes/Dotfiles Being Hidden.md",
-    "Notes/Software/Mistakes/Mistakes.md",
-    "Notes/Software/Development/Terminals.md",
-    "Notes/Software/Development/Kinds of Problems.md",
-    "Notes/Software/Development/Programming Languages/Bash/Bash.md",
-    "Notes/Software/Development/Non-Programming Languages/Markdown.md",
-    "Posts/Posts.md",
-    "Posts/Planting a Flag in Wikipedia.md",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",
