@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: the h chord</title>
+</head>
+
+<body>
+  <nav>
+
+
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
+      <div class="nav-segments">
+        
+
+        <div class="flex flex-col text-left nav-links">
+          <a href="/posts" class="activated-link">Posts</a>
+          
+          
+          <a href="/archive">Archive</a>
+          
+          
+          
+          <a href="/meta">Meta</a>
+          
+          
+          
+          <a href="/notes">Notes</a>
+          
+          
+          
+          
+          
+          
+          <a href="/projects">Projects</a>
+          
+          
+        </div>
+        
+
+        
+
+        <div class="flex flex-col text-left nav-links">
+          <a href="/the-h-chord" class="activated-link">The H Chord</a>
+          
+          
+          <a href="/collaborative-awe">Collaborative Awe</a>
+          
+          
+          
+          <a href="/enhancement-proposal-for-the-h-programming-language">Enhancement Proposal for the h Programming Language</a>
+          
+          
+          
+          <a href="/linkedins-ghost-text">LinkedIn's Ghost Text</a>
+          
+          
+          
+          <a href="/planting-a-flag-in-wikipedia">Planting a Flag in Wikipedia</a>
+          
+          
+          
+          <a href="/the-curse-of-the-last-good-day">The Curse of the Last Good Day</a>
+          
+          
+          
+          
+          
+          
+          <a href="/the-poor-mans-static-site-generator">The Poor Man's Static Site Generator</a>
+          
+          
+          
+          <a href="/usernames">Usernames</a>
+          
+          
+        </div>
+        
+
+        
+      </div>
+    </div>
+
+
+  </nav>
+  <main>
+    <header>
+      <h1>How German monks broke my website</h1>
+    </header>
+    <article><p>I received a <a href="https://github.com/pavo-etc/penultimate-guitar/issues/41">strange bug report</a> on <a href="/penultimate-guitar">Penultimate Guitar</a> where the Next.js rendering would fail completely on certain songs.</p>
+<h2 id="the-error">The Error</h2>
+<p>The type error was being triggered by a chord component, where the key was undefined. The chords are pulled from Ultimate Guitar, so I inspected the JSON payload from the <a href="https://tabs.ultimate-guitar.com/tab/1684995">original source</a>.</p>
+<p><img alt="" src="/media/ug.png" /></p>
+<p>Why the hell is there a <code>[ch]H[/ch]</code> chord in there? That's definitely the cause as I never accounted for non-existent keys. Looking at Ultimate Guitar, it renders as a B chord.</p>
+<p><img alt="" src="/media/ug-rendered.png" /></p>
+<p>Huh?</p>
+<details>
+<summary>An aside on Ultimate Guitar HTML</summary>
+<p>The way Ultimate Guitar handles data is bizarre. It passes a static dehydrated HTML page to the client.  The data payload is in the HTML as well, but instead of being contained in a <code>script</code> tag it's a giant JSON payload in an escaped string within an attribute of a random <code>div</code></p>
+</details>
+<h2 id="one-google-search-later">One Google Search Later</h2>
+<p>Germany and the Netherlands ha(d/ve) their own musical key notation that include(d/s) a H chord. <a href="https://www.guitarsite.com/newsletters/010122/12.shtml">This site</a> claims it ended in "1994/1995", though I've seen <a href="https://github.com/pavo-etc/penultimate-guitar/issues/41#issuecomment-1538452351">other</a> <a href="https://www.reddit.com/r/musictheory/comments/8rn0ve">sources</a> claim its still taught this way. This comes as an artifact of the bizarre history Western music notation, which is a problem I seem to keep running into recently in my attempts to learn more about music theory.</p>
+<blockquote>
+<p>I learned in music school that the chord is called "B" (like in the rest of the world), but the note is called "H" (eg. the C Major scale would be C, D, E, F, G, A, H, C).</p>
+</blockquote>
+<p><cite>TobTobXX, who reported the bug</cite></p>
+<h2 id="western-musics-stupid-origins">Western Music's Stupid Origins</h2>
+<p>Western music is based on ecclesiastic modes used in church in the early Middle Ages, which only used the diatonic notes of the C scale (<em>natural</em> notes). The musical notation systems of the time reflected this, not accounting for notes outside of the C scale. When sharps and flats later came into more common use, the existing notation systems needed a way to distinguish them from the natural notes they sat between.</p>
+<p>This problem first arose with B natural and B flat, according to the <a href="https://www.britannica.com/art/musical-expression">Encyclopedia Britannica</a>. The first method of distinguishing B from B flat was using two different forms of the lowercase "b" character:</p>
+<p><img alt="" src="/media/The-Flat-Sharp-And-Natural-A-Historical-Sketch.png" /></p>
+<p>Niecks, Frederick. “The Flat, Sharp, and Natural. A Historical Sketch.” <em>Proceedings of the Musical Association</em>, vol. 16, 1889, pp. 79–100.</p>
+<p>Somewhere along the line in Germany, monks transcribing these square and round "b" characters confused the squared "b" for "h", and this was later assumed to be intentional. "H" became a convention for writing B natural, while the "b" character remained convention for writing B flat. "B" and "b" became amalgamated, both coming to represent modern B flat.</p>
+<p>In the rest of the world, this "H" note didn't catch on.</p>
+<p>In time, notation for sharp and flat notes other than B flat was needed. This use of square and round "b" to denote B and B flat eventually evolved into our modern notation for indicating natural and non-natural, <em>accidentals</em>. ♭ comes from the round "b", while ♯ and ♮ come from the square "b".</p>
+<p>Somehow, Germany still hasn't fully corrected this mistake, continuing to use "H" to represent B natural and many places. Including Ultimate Guitar. Ugh.</p>
+<h2 id="resolution">Resolution</h2>
+<p>I don't love dealing with problems caused by the whims of millenia dead monks, but this was an interesting rabbit hole to fall into. The issue has since been patched, and I look forward to my mistakes ruining someone's day in 3023.</p>
+<p><img alt="" src="/media/gods-mistakes.png" /></p>
+<details>
+<summary> An aside on The Flat, Sharp, and Natural. A Historical Sketch </summary>
+<p>When I first copied the text from the article, it copied that "square b" as a "h". Funny that modern OCR technology makes the same mistakes at 1000 year old monks.</p>
+<blockquote>
+<p>The first known writer who distinguished between b natural and b flat was Odo of Clugny, who died in 942 ; the b natural being indicated by a square b (h), the b flat by a round b (b)</p>
+</blockquote>
+<p>It was also a pain in the ass to find a copy of that article. It's mostly found on paywalled academic sites despite the article definitely being out of copyright. Luckily the Internet Archive <a href="https://scholar.archive.org/work/3jdud373effq3e376gqtlkxqvq">has a copy</a>.</p>
+</details></article>
+
+    
+    <p class="backlinks"><span class="bold">Posted:</span> 2023-05-08</p>
+    
+
+    
+
+    
+    <p class="backlinks"><span class="bold">Tags:</span>
+      
+      <a href="/tags#posts">#posts</a>
+      
+      </span>
+    </p>
+    
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Posts/The H Chord.md">edit</a> -
+    <a href="/federating-with-meta">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
+</html>

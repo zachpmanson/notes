@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/static/styles/colors.css" />
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
+  <link rel="manifest" href="/static/icon/site.webmanifest" />
+  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
+  <meta name="theme-color" content="#282A36" />
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: enhancement proposal for the h programming language</title>
+</head>
+
+<body>
+  <nav>
+
+
+    <div class="main-icon">
+      <a href="/">
+        <img src="/static/icon/icon.png" alt="notes" height="100">
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
+      <div class="nav-segments">
+        
+
+        <div class="flex flex-col text-left nav-links">
+          <a href="/posts" class="activated-link">Posts</a>
+          
+          
+          <a href="/archive">Archive</a>
+          
+          
+          
+          <a href="/meta">Meta</a>
+          
+          
+          
+          <a href="/notes">Notes</a>
+          
+          
+          
+          
+          
+          
+          <a href="/projects">Projects</a>
+          
+          
+        </div>
+        
+
+        
+
+        <div class="flex flex-col text-left nav-links">
+          <a href="/enhancement-proposal-for-the-h-programming-language" class="activated-link">Enhancement Proposal for the h Programming Language</a>
+          
+          
+          <a href="/collaborative-awe">Collaborative Awe</a>
+          
+          
+          
+          
+          
+          
+          <a href="/linkedins-ghost-text">LinkedIn's Ghost Text</a>
+          
+          
+          
+          <a href="/planting-a-flag-in-wikipedia">Planting a Flag in Wikipedia</a>
+          
+          
+          
+          <a href="/the-curse-of-the-last-good-day">The Curse of the Last Good Day</a>
+          
+          
+          
+          <a href="/the-h-chord">The H Chord</a>
+          
+          
+          
+          <a href="/the-poor-mans-static-site-generator">The Poor Man's Static Site Generator</a>
+          
+          
+          
+          <a href="/usernames">Usernames</a>
+          
+          
+        </div>
+        
+
+        
+      </div>
+    </div>
+
+
+  </nav>
+  <main>
+    <header>
+      <h1>hEP 001 – Mathematical 𝐡  in the Standard Implementation</h1>
+    </header>
+    <article><table>
+    <tr><td>hEP</td><td>001</td></tr>
+    <tr><td>Title</td><td>Mathematical 𝐡 in the Standard Implementation</td></tr>
+    <tr><td>Author</td><td>Zach Manson</td></tr>
+    <tr><td>Status</td><td>Proposed</td></tr>
+    <tr><td>Type</td><td>Feature</td></tr>
+    <tr><td>hlang-version</td><td>1.0</td></tr>
+</table>
+
+<h2 id="abstract">Abstract</h2>
+<p>This hEP proposes a framework for adding first-class support for additional forms of h used in mathematical contexts, and that "𝐡" be added to the h programming language standard implementation. As of version 1.0, the only supported output characters are "h" and "'".</p>
+<h2 id="motivation">Motivation</h2>
+<p>The h Programming language is borne from <a href="https://christine.website/blog/formal-grammar-of-h-2019-05-19">the conlang h</a> which was formalised in 2019 by Xe Iaso.</p>
+<p>In their unveiling of the language they exhibited how the conlang's simple syntax could be used for complex conversation, all within the use of a single written character and phone:</p>
+<div class="highlight"><pre><span></span><code>&lt;Cadey&gt; h
+&lt;DoesntGetIt&gt; h h h h
+* Cadey facepalms
+</code></pre></div>
+<p>As stated in h's formal specification, it can be used to represent all possible communications within the confines of the letter h.</p>
+<p>They later developed a syntax, compiler and runtime for <a href="https://christine.website/blog/h-language-2019-06-30">the h Programming Language</a> (hlang). This programming language was designed for the output of the h conlang, and expanded the character set in use to include both the Romanic form "h" and its Lojbanic equivalent "'".</p>
+<p>A long-standing difficulty for the programming language is expressing mathematical notation in its output. While it is entirely possible to express any and all equations in the language, for this purpose it doesn't utiltise the "h" character to its maximum capacity and as such is unnecessarily verbose.</p>
+<h2 id="goals">Goals</h2>
+<p>The primary goals of this proposal are to provide a specification for implementing additional forms of "h" in hlang to enable more terse output for use in mathematical contexts. The only additional form of "h" proposed in this hEP is "𝐡" (U+1D421).</p>
+<p>The proposal would enable programs such as this:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>cat<span class="w"> </span>new_equation.h
+𝐡<span class="w"> </span>𝐡<span class="w"> </span>h<span class="w"> </span><span class="err">&#39;</span>
+</code></pre></div>
+<p>AST this would generate during compilation:</p>
+<div class="highlight"><pre><span></span><code>H(&quot;𝐡 𝐡 h &#39;&quot;)
+</code></pre></div>
+<p>Program output:</p>
+<div class="highlight"><pre><span></span><code>𝐡 𝐡 h &#39;
+</code></pre></div>
+<p>This is an improvement over the existing implementation, which would require the much longer and more cumbersome hlang 1.0 source to produce the equivalent equation:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>cat<span class="w"> </span>old_equation.h
+h<span class="w"> </span>h<span class="w"> </span>h<span class="w"> </span><span class="s1">&#39; &#39;</span><span class="w"> </span>h<span class="w"> </span><span class="s1">&#39; h h h h h h h h h &#39;</span><span class="w"> </span>h
+</code></pre></div>
+<p>Translating this from h (conlang) to English:</p>
+<div class="highlight"><pre><span></span><code>a^2 + b^2 = c^2
+</code></pre></div>
+<h2 id="non-goals">Non-Goals</h2>
+<p>This hEP is not an attempt to sully hlang with characters outside of the formal grammar of the h conlang. The scope of the specification, while allowing for additional forms of "h" to be supported, is exclusively for forms of "h". It is not applicable to other characters, such as "g".</p>
+<p>This hEP only explicitly proposes the addition of "𝐡" (U+1D421) though is designed to allow other forms of "h" to be supported by hlang in the future, such as "𝒉" (U+1D489), "𝓱" (U+1D4F1), or "𝕙" (U+1D559). While these forms could be implemented in a near identical manner to "𝐡", that is outside of the scope of this hEP. All of these forms of "h" are UTF-8 characters designed for use in mathematical equations.</p>
+<p>The hEP is also explicitly not intending to enable support for "h" with diacritics, such as "ḧ" (U+1E27). Etymologically related forms of modern "h" are also outside the scope of this hEP.</p>
+<h2 id="semantics">Semantics</h2>
+<p>Under this proposal, "𝐡" would receive first class support by hlang. To output it would be the same as the standard "h" character:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>cat<span class="w"> </span>math_h.h
+𝐡
+</code></pre></div>
+<p>Produced AST:</p>
+<div class="highlight"><pre><span></span><code>H(𝐡)
+</code></pre></div>
+<p>Output:</p>
+<div class="highlight"><pre><span></span><code>𝐡
+</code></pre></div>
+<p>Represented with a node tree:</p>
+<div class="highlight"><pre><span></span><code>&amp;peg.Node{
+    Name: &quot;H&quot;,
+    Text: &quot;𝐡&quot;,
+    Kids: nil,
+}
+</code></pre></div>
+<p>The node tree for the earlier Pythagorean example would be:</p>
+<div class="highlight"><pre><span></span><code>&amp;peg.Node{
+    Name: &quot;H&quot;,
+    Text: &quot;𝐡 𝐡 h &#39;&quot;,
+    Kids: {
+        &amp;peg.Node{
+            Name: &quot;&quot;,
+            Text: &quot;𝐡&quot;,
+            Kids: nil,
+        },
+        &amp;peg.Node{
+            Name: &quot;&quot;,
+            Text: &quot;𝐡&quot;,
+            Kids: nil,
+        },
+        &amp;peg.Node{
+            Name: &quot;&quot;,
+            Text: &quot;h&quot;,
+            Kids: nil,
+        },
+        &amp;peg.Node{
+            Name: &quot;&quot;,
+            Text: &quot;&#39;&quot;,
+            Kids: nil,
+        },
+    },
+}
+</code></pre></div>
+<p>The "𝐡" character should be usable in all contexts where "h" and "'" are currently usable. Grammatically it should follow all the same principles and restrictions as "h" and "'".</p>
+<h2 id="dependencies">Dependencies</h2>
+<p>As with hlang v1.0, this proposal not require any dependencies, other than UTF-8 formatted source files.</p>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>Thanks to Xe Iaso for creating h and hlang, as well as all their other incredible projects.</p></article>
+
+    
+    <p class="backlinks"><span class="bold">Posted:</span> 2022-03-18</p>
+    
+
+    
+
+    
+    <p class="backlinks"><span class="bold">Tags:</span>
+      
+      <a href="/tags#posts">#posts</a>
+      
+      </span>
+    </p>
+    
+  </main>
+  <footer>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Posts/Enhancement Proposal for the h Programming Language.md">edit</a> -
+    <a href="/bash-startup-scripts">random</a> -
+    <a href="/recent-changes">updates</a> -
+    <a href="/tags">tags</a> -
+    <a href="/sitemap">sitemap</a>
+  </footer>
+  
+</body>
+
+</html>
