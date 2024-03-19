@@ -33,3 +33,7 @@ Intentionally miscellaneous.
 
 - [500mile.email](https://500mile.email/), absurd bugs
 - [Ctrl+ZINE](https://ctrl-c.club/~loghead/ctrl-zine.html)
+
+## Art
+
+- [Dialogue 3-D](https://nasser.itch.io/dialogue-3-d), Wolfenstein but it asks you if its alright to punch the nazis
