@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Language/Etymology/Em Size.md",
+                "file": "Notes/Language/Etymology/Slug.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Language/Etymology/Em Size.md",
+                "file": "Notes/Language/Etymology/Slug.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Language/Etymology/Em Size.md",
+                "file": "Notes/Language/Etymology/Slug.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Language/Etymology/Em Size.md"
+                "file": "Notes/Language/Etymology/Slug.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Language/Etymology/Em Size.md",
     "Archive/Folklore/Facing the Street.md",
     "Projects/Projects.md",
     "Archive/Bookmarks/Digital Gardens.md",
@@ -175,7 +176,6 @@
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Media/uwa-cits.png",
     "Projects/Ochrs/Ochrs.md",
-    "Projects/Ochrs/Ochrs 1.0.md",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",
