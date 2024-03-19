@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Folklore/We Do Not Break Userspace.md",
+                "file": "Notes/Language/Etymology/Slug.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Folklore/We Do Not Break Userspace.md",
+                "file": "Notes/Language/Etymology/Slug.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Folklore/We Do Not Break Userspace.md",
+                "file": "Notes/Language/Etymology/Slug.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Folklore/We Do Not Break Userspace.md"
+                "file": "Notes/Language/Etymology/Slug.md"
               }
             }
           }
@@ -147,10 +147,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "87beef5a330fbb59",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "404.md",
     "Archive/Folklore/We Do Not Break Userspace.md",
+    "404.md",
     "Notes/Language/Characters/Multiocular O.md",
     "Notes/Language/Characters/Lemniscate.md",
     "Notes/Language/Characters/Interrobang.md",
