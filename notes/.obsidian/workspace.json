@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/Websites.md",
+                "file": "Notes/Language/Etymology/Em Size.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "#reli",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/Websites.md",
+                "file": "Notes/Language/Etymology/Em Size.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/Websites.md",
+                "file": "Notes/Language/Etymology/Em Size.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/Websites.md"
+                "file": "Notes/Language/Etymology/Em Size.md"
               }
             }
           }
@@ -147,8 +148,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "87beef5a330fbb59",
   "lastOpenFiles": [
+    "Archive/Bookmarks/Digital Gardens.md",
+    "Archive/Bookmarks/Websites.md",
     "Notes/Internet/Fediverse/Fediverse Family Tree.md",
     "Archive/Folklore/We Do Not Break Userspace.md",
     "Notes/Language/Etymology/Slug.md",
@@ -160,7 +163,6 @@
     "Notes/Language/Etymology/Em Size.md",
     "Archive/Folklore/Facing the Street.md",
     "Projects/Projects.md",
-    "Archive/Bookmarks/Digital Gardens.md",
     "Archive/Lines.md",
     "Meta/Stylesheet.md",
     "Posts/Posts.md",
@@ -174,7 +176,6 @@
     "Notes/Software/Development/Programming Languages/C/C.md",
     "Notes/Software/Development/Programming Concepts/Noisy Neighbour.md",
     "Notes/Software/Unix/Unix Files.md",
-    "Notes/Software/Unix/Unix.md",
     "Media/uwa-cits.png",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
