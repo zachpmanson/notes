@@ -1,4 +1,4 @@
-ꙮ (U+A66E) is a Unicode character orginating from a single phrase from a version of the Book of Psalms written in an extict language, Old Church Slavonic.  It was written in 1429 and is in Russia.
+ꙮ (U+A66E) is a Unicode character originating from a single phrase from a version of the Book of Psalms written in an extinct language, Old Church Slavonic.  It was written in 1429 and is in Russia.
 
 ![[book-of-psalms.jpg]]
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Language/Etymology/Slug.md",
+                "file": "Notes/Language/Characters/Multiocular O.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Language/Etymology/Slug.md",
+                "file": "Notes/Language/Characters/Multiocular O.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Language/Etymology/Slug.md",
+                "file": "Notes/Language/Characters/Multiocular O.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Language/Etymology/Slug.md"
+                "file": "Notes/Language/Characters/Multiocular O.md"
               }
             }
           }
@@ -149,6 +149,11 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Language/Characters/Lemniscate.md",
+    "Notes/Language/Characters/Multiocular O.md",
+    "Notes/Language/Characters/Interrobang.md",
+    "Notes/Language/Characters/Characters.md",
+    "Notes/Language/Etymology/Slug.md",
     "Notes/Language/Etymology/Em Size.md",
     "Archive/Folklore/Facing the Street.md",
     "Projects/Projects.md",
@@ -170,12 +175,7 @@
     "Notes/Software/Unix/Unix.md",
     "Notes/Software/Unix/Unix Programs/Unix Programs.md",
     "Posts/Collaborative Awe.md",
-    "Posts/LinkedIn's Ghost Text.md",
-    "Notes/Mathematics/Mathematics.md",
-    "Archive/Folklore/The bin Split.md",
-    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Media/uwa-cits.png",
-    "Projects/Ochrs/Ochrs.md",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",
