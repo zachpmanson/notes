@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Language/Characters/Multiocular O.md",
+                "file": "Archive/Folklore/We Do Not Break Userspace.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Language/Characters/Multiocular O.md",
+                "file": "Archive/Folklore/We Do Not Break Userspace.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Language/Characters/Multiocular O.md",
+                "file": "Archive/Folklore/We Do Not Break Userspace.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Language/Characters/Multiocular O.md"
+                "file": "Archive/Folklore/We Do Not Break Userspace.md"
               }
             }
           }
@@ -147,10 +147,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "87beef5a330fbb59",
   "lastOpenFiles": [
-    "Notes/Language/Characters/Lemniscate.md",
+    "404.md",
+    "Archive/Folklore/We Do Not Break Userspace.md",
     "Notes/Language/Characters/Multiocular O.md",
+    "Notes/Language/Characters/Lemniscate.md",
     "Notes/Language/Characters/Interrobang.md",
     "Notes/Language/Characters/Characters.md",
     "Notes/Language/Etymology/Slug.md",
@@ -173,8 +175,6 @@
     "Notes/Software/Development/Programming Concepts/Noisy Neighbour.md",
     "Notes/Software/Unix/Unix Files.md",
     "Notes/Software/Unix/Unix.md",
-    "Notes/Software/Unix/Unix Programs/Unix Programs.md",
-    "Posts/Collaborative Awe.md",
     "Media/uwa-cits.png",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
