@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Folklore/Facing the Street.md",
+                "file": "Projects/Projects.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Folklore/Facing the Street.md",
+                "file": "Projects/Projects.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Folklore/Facing the Street.md",
+                "file": "Projects/Projects.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Folklore/Facing the Street.md"
+                "file": "Projects/Projects.md"
               }
             }
           }
@@ -149,8 +149,9 @@
   },
   "active": "87beef5a330fbb59",
   "lastOpenFiles": [
-    "Archive/Lines.md",
     "Archive/Folklore/Facing the Street.md",
+    "Archive/Bookmarks/Digital Gardens.md",
+    "Archive/Lines.md",
     "Meta/Stylesheet.md",
     "Posts/Posts.md",
     "Notes/Software/Development/Programming Concepts/Closures.md",
@@ -175,7 +176,6 @@
     "Projects/Ochrs/Ochrs.md",
     "Projects/Ochrs/Ochrs 1.0.md",
     "Projects/Ochrs/Ochrs Syntax.md",
-    "Projects/Ochrs/Ochrs Deploy.md",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",
