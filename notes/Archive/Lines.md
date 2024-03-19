@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> On the internet, if you stop speaking: you disappear. And, by corollary: on the internet, you only notice the people who are speaking nonstop.
+
+-- [Robin Sloan](https://notes.andymatuschak.org/Work_with_the_garage_door_up)
+
+---
+
 > Collect constraints you enjoy. Unusual constraints make things more fun. You can always change them later. This is _your_ style, after all. It’s not a life commitment, it’s just the way you do things. For now.
 
 -- [Steph Ango](https://stephango.com/style)

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meta/Stylesheet.md",
+                "file": "Archive/Folklore/Facing the Street.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Meta/Stylesheet.md",
+                "file": "Archive/Folklore/Facing the Street.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Meta/Stylesheet.md",
+                "file": "Archive/Folklore/Facing the Street.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Meta/Stylesheet.md"
+                "file": "Archive/Folklore/Facing the Street.md"
               }
             }
           }
@@ -147,8 +147,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "87beef5a330fbb59",
   "lastOpenFiles": [
+    "Archive/Lines.md",
+    "Archive/Folklore/Facing the Street.md",
+    "Meta/Stylesheet.md",
     "Posts/Posts.md",
     "Notes/Software/Development/Programming Concepts/Closures.md",
     "Notes/Mathematics/Computer Science/Currying.md",
@@ -160,7 +163,6 @@
     "Notes/Internet/Fediverse/Fediverse.md",
     "Notes/Software/Development/Programming Languages/C/C.md",
     "Notes/Software/Development/Programming Concepts/Noisy Neighbour.md",
-    "Archive/Folklore/Untitled.md",
     "Notes/Software/Unix/Unix Files.md",
     "Notes/Software/Unix/Unix.md",
     "Notes/Software/Unix/Unix Programs/Unix Programs.md",
@@ -174,8 +176,6 @@
     "Projects/Ochrs/Ochrs 1.0.md",
     "Projects/Ochrs/Ochrs Syntax.md",
     "Projects/Ochrs/Ochrs Deploy.md",
-    "Projects/Ochrs/Ochrs 2.0.md",
-    "Notes/Software/Unix/Unix Programs/Awk.md",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",
