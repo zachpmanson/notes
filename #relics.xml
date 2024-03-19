@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
     <channel>
-        <title>notes: self-hosting</title>
-        <link>https://notes.zachmanson.com/self-hosting</link>
-        <description>Notes tagged #self-hosting</description>
-        <atom:link href="https://notes.zachmanson.com/self-hosting" rel="self" />
+        <title>notes: #relics</title>
+        <link>https://notes.zachmanson.com/#relics</link>
+        <description>Notes tagged ##relics</description>
+        <atom:link href="https://notes.zachmanson.com/#relics" rel="self" />
         <docs>http://www.rssboard.org/rss-specification</docs>
         <generator>ochrs</generator>
         <image>
             <url>https://zachmanson.com/icons/android-chrome-256x256.png</url>
-            <title>notes: self-hosting</title>
-            <link>https://notes.zachmanson.com/self-hosting</link>
+            <title>notes: #relics</title>
+            <link>https://notes.zachmanson.com/#relics</link>
         </image>
         <language>en</language>
         <lastBuildDate>Tue, 19 Mar 2024 00:37:34 </lastBuildDate>
