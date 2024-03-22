@@ -4,7 +4,6 @@ tags:
 date: 2023-06-19
 subtitle: Reviews and advice for all Computer Science, Cyber Security, and Data Science units I completed at UWA.
 ---
-
 I did my [[Computer Science]] degree from 2020 to 2023, coming out with a BSc. Computer Science, Cybersecurity, minoring in Data Science. I have omitted statistics units because I have nothing intelligible to say about them.
 
 Just do [Coders For Causes](https://codersforcauses.org/), you will learn more in that than entire semesters of this degree. **Learn how to use [[Git/Git]] as fast as possible** then force all your group project members to use it. Narrow down your problems as much as possible, then google the most generic possible description of it. If you see someone using semicolons mid-sentence regularly it's probably [[Christ McDonald|Chris McDonald]].
@@ -77,7 +76,7 @@ CITS2402 Introduction to Data Science
 
 ## Third Year Units
 
-CITS3001 Algorithms, Agents & Artificial Intelligence
+CITS3001 Algorithms, [[Agents]] & Artificial Intelligence
 
 - so much wasted potential
 - could be one of the most interesting units in the whole degree, seems like it was before my time
@@ -89,7 +88,7 @@ CITS3002 Computer Networks
 - Taught by Oppy himself
 - Very interesting content, well taught
 - projects get your hands dirty with creating actual protocols and working with sockets
-- few things were more satifying in the entire degree than actually running my final project for this over the internet between me and my partners houses and watching it run
+- few things were more satisfying in the entire degree than actually running my final project for this over the internet between me and my partners houses and watching it run
 - spiritual sequel to Systems Programming
 
 CITS3003 Graphics and Animation
