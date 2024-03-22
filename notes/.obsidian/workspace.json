@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+                "file": "Notes/Software/Development/Programming Concepts/Second System Effects.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 301.5024719238281,
-    "collapsed": true
+    "width": 301.5024719238281
   },
   "right": {
     "id": "b30ab2faf3f39acc",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+                "file": "Notes/Software/Development/Programming Concepts/Second System Effects.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+                "file": "Notes/Software/Development/Programming Concepts/Second System Effects.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md"
+                "file": "Notes/Software/Development/Programming Concepts/Second System Effects.md"
               }
             }
           }
@@ -149,6 +148,8 @@
   },
   "active": "87beef5a330fbb59",
   "lastOpenFiles": [
+    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+    "Notes/Software/Development/Programming Concepts/Second System Effects.md",
     "Notes/Internet/Internet Standards/RSS.md",
     "Archive/Folklore/Interviewing for Canonical.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
@@ -176,8 +177,6 @@
     "Archive/Bookmarks/Digital Gardens.md",
     "Archive/Bookmarks/Websites.md",
     "Notes/Internet/Fediverse/Fediverse Family Tree.md",
-    "Notes/Language/Etymology/Slug.md",
-    "404.md",
     "Media/uwa-cits.png",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
