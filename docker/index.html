@@ -122,7 +122,7 @@
       <h1>Docker</h1>
     </header>
     <article><blockquote>
-<p>Docker is kinda like [[Notes/Software/Programs/Git/Git]]. A really solid core concept with just enough surface inconsistencies to be annoying but not enough for a better solution to take the crown.</p>
+<p>Docker is kinda like [[Git/Git]]. A really solid core concept with just enough surface inconsistencies to be annoying but not enough for a better solution to take the crown.</p>
 </blockquote>
 <p><cite class="standalone"><a href="https://techhub.social/@ISV_Damocles/111868958232964170">David Ellis</a></cite></p>
 <p>Docker is a system for running virtual machines called containers.</p>
@@ -136,10 +136,8 @@
 <h2 id="comparison-to-traditional-vms">Comparison to Traditional VMs</h2>
 <ul>
 <li>docker containers are stateless, container storage is erased when the container stops (mapping drives can resolve this)</li>
-<li>uses OS-level virtualisation, so containers share the host OS without needing a Hypervisor<ul>
+<li>uses OS-level virtualisation, so containers share the host OS without needing a Hypervisor</li>
 <li>smaller and faster than VM</li>
-</ul>
-</li>
 <li>docker platform can run many containers simultaneously and they can communicate with each other</li>
 <li>docker registries allows straighforward deployment of docker images</li>
 </ul>
@@ -149,24 +147,20 @@
 <li>Daemon - background service that listend for API requests and manages docker objects</li>
 <li>Docker desktop - manager for other components</li>
 <li>Docker registry - a package repo, docker hub is the default</li>
-<li>Docker objects<ul>
+<li>Docker objects</li>
 <li>image is a read only template for container</li>
 <li>container is a runnable instance of an image</li>
-</ul>
-</li>
 </ul>
 <p><img alt="" src="/media/docker-architecture.png" /></p>
 <p><img alt="" src="/media/docker-vs-vm.png" /></p>
 <h2 id="running">Running</h2>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span><span class="se">\ </span><span class="w"> </span>
---mount<span class="w"> </span><span class="nv">type</span><span class="o">=</span>bind,source<span class="o">=</span>HOST_PATH,target<span class="o">=</span>CONTAINER_PATH<span class="w"> </span><span class="se">\ </span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span><span class="se">\</span>
+--mount<span class="w"> </span><span class="nv">type</span><span class="o">=</span>bind,source<span class="o">=</span>HOST_PATH,target<span class="o">=</span>CONTAINER_PATH<span class="w"> </span><span class="se">\</span>
 -it<span class="w"> </span>IMAGE:TAG
 </code></pre></div>
 <ul>
-<li><code>mount</code> sets an folder on host to folder in container<ul>
+<li><code>mount</code> sets an folder on host to folder in container</li>
 <li>use absolute folders</li>
-</ul>
-</li>
 <li><code>it</code> allows interaction</li>
 <li><code>TAG</code> is the version of the image</li>
 </ul></article>
@@ -192,7 +186,7 @@
   </main>
   <footer>
     <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Programs/Docker/Docker.md">edit</a> -
-    <a href="/sqlite">random</a> -
+    <a href="/sticky-elements">random</a> -
     <a href="/recent-changes">updates</a> -
     <a href="/tags">tags</a> -
     <a href="/sitemap">sitemap</a>
