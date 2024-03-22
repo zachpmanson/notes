@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Programs/Docker/Docker.md",
+                "file": "Notes/Internet/Internet Standards/RSS.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Git",
+                "query": "#devre",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,12 +65,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 418.5024719238281
+    "width": 301.5024719238281
   },
   "right": {
     "id": "b30ab2faf3f39acc",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Programs/Docker/Docker.md",
+                "file": "Notes/Internet/Internet Standards/RSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Programs/Docker/Docker.md",
+                "file": "Notes/Internet/Internet Standards/RSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Programs/Docker/Docker.md"
+                "file": "Notes/Internet/Internet Standards/RSS.md"
               }
             }
           }
@@ -147,13 +146,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ae2026764fcf906e",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Git/Git.md",
+    "Archive/Folklore/Interviewing for Canonical.md",
+    "Notes/Internet/Internet Standards/RSS.md",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMI Chapter 02.md",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/Untitled.md",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 01.md",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md",
+    "Notes/Courses/Practical Deep Learning/Practical Deep Learning.md",
+    "Notes/Language/Etymology/Em Size.md",
+    "Notes/Software/Intelligent Agents",
     "Notes/Software/Programs/Docker/Docker.md",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/Untitled/Untitled.md",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/Untitled",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach",
+    "Notes/Software/Programs/Git/Git.md",
     "Archive/Folklore/Git Koans.md",
     "Meta/Credits.md",
-    "Archive/Folklore/Interviewing for Canonical.md",
     "Notes/Internet/Fediverse/Mastodon.md",
     "Archive/Bookmarks/Hacks.md",
     "Archive/Folklore/Originality Not Required.md",
@@ -161,20 +172,11 @@
     "Meta/Stylesheet.md",
     "Meta/Future Changes.md",
     "Archive/Lines.md",
-    "Notes/Language/Etymology/Em Size.md",
     "Archive/Bookmarks/Digital Gardens.md",
     "Archive/Bookmarks/Websites.md",
     "Notes/Internet/Fediverse/Fediverse Family Tree.md",
     "Notes/Language/Etymology/Slug.md",
     "404.md",
-    "Notes/Language/Characters/Multiocular O.md",
-    "Notes/Language/Characters/Lemniscate.md",
-    "Notes/Language/Characters/Interrobang.md",
-    "Notes/Language/Characters/Characters.md",
-    "Archive/Folklore/Facing the Street.md",
-    "Projects/Projects.md",
-    "Posts/Posts.md",
-    "Notes/Software/Development/Programming Concepts/Closures.md",
     "Media/uwa-cits.png",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
@@ -184,8 +186,6 @@
     "Media/dj.png.sb-5985f2ea-wWAWpZ",
     "Media.zip",
     "Media/citations.jpg",
-    "Media/citations.png.sb-5985f2ea-2ezAUr",
-    "Media/swipe-up.webm",
     "Media/status-messenger-3.png",
     "Media/gambling-1.bmp.bmp",
     "Media/gambling-2.bmp.bmp",
@@ -194,7 +194,6 @@
     "Media/gods-mistakes.png",
     "Media/ug.png",
     "Media/ug-rendered.png",
-    "Media/linkedin-duplication.webm",
     "Untitled.canvas"
   ]
 }

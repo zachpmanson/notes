@@ -203,6 +203,7 @@ def generate_pages():
             filename = os.path.join(path, "index.html")
 
         page_tags = [tagname for tagname, tagpages in tags.items() if node in tagpages]
+        tree[node].backlinks = sorted(tree[node].backlinks)
         with open(filename, "w") as f:
             f.write(
                 post_template.render(
