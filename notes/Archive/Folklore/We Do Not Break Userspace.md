@@ -6,6 +6,7 @@
 | ---- | ---- |
 | Date | Sun, 23 Dec 2012 09:36:15 -0800 |
 | Subject | Re: [Regression w/ patch] Media commit causes user space to misbahave (was: Re: Linux 3.8-rc1) |
+
 ```
 On Sun, Dec 23, 2012 at 6:08 AM, Mauro Carvalho Chehab  
 <mchehab@redhat.com> wrote:  

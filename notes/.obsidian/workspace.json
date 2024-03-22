@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meta/Stylesheet.md",
+                "file": "Archive/Folklore/We Do Not Break Userspace.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Meta/Stylesheet.md",
+                "file": "Archive/Folklore/We Do Not Break Userspace.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Meta/Stylesheet.md",
+                "file": "Archive/Folklore/We Do Not Break Userspace.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Meta/Stylesheet.md"
+                "file": "Archive/Folklore/We Do Not Break Userspace.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Meta/Stylesheet.md",
     "Meta/Future Changes.md",
     "Archive/Lines.md",
     "Notes/Language/Etymology/Em Size.md",
@@ -164,7 +165,6 @@
     "Notes/Language/Characters/Characters.md",
     "Archive/Folklore/Facing the Street.md",
     "Projects/Projects.md",
-    "Meta/Stylesheet.md",
     "Posts/Posts.md",
     "Notes/Software/Development/Programming Concepts/Closures.md",
     "Notes/Mathematics/Computer Science/Currying.md",
