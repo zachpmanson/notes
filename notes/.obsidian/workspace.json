@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meta/Credits.md",
+                "file": "Notes/Software/Programs/Docker/Docker.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "#reli",
+                "query": "Git",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,11 +65,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 232.50247192382812
+    "width": 418.5024719238281
   },
   "right": {
     "id": "b30ab2faf3f39acc",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Meta/Credits.md",
+                "file": "Notes/Software/Programs/Docker/Docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Meta/Credits.md",
+                "file": "Notes/Software/Programs/Docker/Docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,12 +126,11 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Meta/Credits.md"
+                "file": "Notes/Software/Programs/Docker/Docker.md"
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -147,9 +147,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "87beef5a330fbb59",
+  "active": "ae2026764fcf906e",
   "lastOpenFiles": [
+    "Git/Git.md",
+    "Notes/Software/Programs/Docker/Docker.md",
     "Archive/Folklore/Git Koans.md",
+    "Meta/Credits.md",
     "Archive/Folklore/Interviewing for Canonical.md",
     "Notes/Internet/Fediverse/Mastodon.md",
     "Archive/Bookmarks/Hacks.md",
@@ -172,9 +175,6 @@
     "Projects/Projects.md",
     "Posts/Posts.md",
     "Notes/Software/Development/Programming Concepts/Closures.md",
-    "Notes/Mathematics/Computer Science/Currying.md",
-    "Notes/Software/Development/Programming Concepts/Authorization.md",
-    "Notes/Software/Development/Programming Languages/C/Pointer Operations.md",
     "Media/uwa-cits.png",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",

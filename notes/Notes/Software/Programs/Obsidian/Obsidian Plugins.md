@@ -1,4 +1,4 @@
 - [[Ochrs]]-deploy, obviously
 - Advanced Tables, proper table support
 - Automatically Reveal Active File, automatically reveal the active file in the navigation when you open a file.
-- Obsidian Git a pretty great [[Notes/Software/Programs/Git/Git]] client that attaches itself to Obsidian
+- Obsidian Git a pretty great [[Git/Git]] client that attaches itself to Obsidian
