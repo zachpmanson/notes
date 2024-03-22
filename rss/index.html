@@ -24,8 +24,6 @@
 
 <body>
   <nav>
-
-
     <div class="main-icon">
       <a href="/">
         <img src="/static/icon/icon.png" alt="notes">
@@ -84,36 +82,49 @@
   </nav>
   <main>
     <header>
-      <h1>RSS</h1>
+      <h1>Really Simple Syndication.</h1>
     </header>
     <article><p>Platform agnostic way to follow anything?  Amazing.  This is what the internet was made for.</p>
 <p>I use Nextcloud News as my RSS reader since it has an Android app, is pretty straightfoward and was dead simple to add to my existing Nextcloud installation.</p>
-<h2 id="this-site">This Site</h2>
-<p>I have been asked to add RSS to this website but I'm still contemplating how to do that in a sane way, since it doesn't really have a chronological ordering.  New pages are often very short and slowly get bigger over time, which would make for very poor feed if you just get notified every time I add an undercooked page.  XXIIVV has a feed where Devine posts what they have been writing about recently, which could be interesting, thought for me this would like happen if I merged the blog into this site.  Which isn't a bad idea now that I write it down hmm.</p>
-<p>An alternate approach could be a feed that only notifies followers when a certain page gets past a certain word count.</p>
+<h2 id="digital-gardens">Digital Gardens</h2>
+<p>Digital gardens aren't a medium that obviously lends itself to use with RSS due to its strict focus on chronological ordering.  Digital gardens encourage incremental growth of pages and incomplete, living works.</p>
+<p>Potential ways of integrating RSS:</p>
+<ul>
+<li>all new pages become a feed item (<a href="metasyn.pw">metasyn.pw</a>)</li>
+<li>all pages become a feed item once they hit a certain word count</li>
+<li>all pages become a feed item when they are assigned a publish date</li>
+<li>feeds are generated from tags</li>
+<li>all edits become feed items</li>
+<li>manually written feed items (<a href="https://wiki.xxiivv.com">wiki.xxiivv.com</a>)</li>
+</ul>
+<p>Most of these aren't mutually exclusive, and a site can have many RSS feeds tracking different things. This site produces an RSS feed for each tag, but only includes pages that have a publish date.  See <a href="/tags">tags</a> for links to all of these, or <a href="/posts">posts</a> for the main feed.  See <a href="/ochrs">Ochrs</a> for more details.</p>
 <h2 id="links">Links</h2>
 <ul>
 <li><a href="https://aboutfeeds.com/">About Feeds</a>, Matt Web's great pitch of RSS</li>
 </ul></article>
 
     <hr />
-
     
-
-    
-    <p class="backlinks"><span class="bold">Incoming:</span>
+    <div class="meta">
       
-      <a href="/ironprof">ironprof</a>
-      
-      </span>
-    </p>
-    
 
-    
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        <a href="/ironprof">ironprof</a>
+        
+        </span>
+      </p>
+      
+
+      
+    </div>
   </main>
   <footer>
     <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Internet/Internet Standards/RSS.md">edit</a> -
-    <a href="/w01l01---intro">random</a> -
+    <a href="/authorization">random</a> -
     <a href="/recent-changes">updates</a> -
     <a href="/tags">tags</a> -
     <a href="/sitemap">sitemap</a>
