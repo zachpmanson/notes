@@ -19,7 +19,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: the bin split</title>
+  <title>notes: git koans</title>
 </head>
 
 <body>
@@ -68,7 +68,7 @@
         
 
         <div class="flex flex-col text-left nav-links">
-          <a href="/the-bin-split" class="activated-link">The bin Split</a>
+          <a href="/git-koans" class="activated-link">Git Koans</a>
           
           
           <a href="/10-rules-of-internet">10 Rules of Internet</a>
@@ -159,7 +159,6 @@
           
           
           
-          <a href="/git-koans">Git Koans</a>
           
           
           
@@ -311,6 +310,7 @@
           
           
           
+          <a href="/the-bin-split">The bin Split</a>
           
           
           
@@ -372,96 +372,71 @@
   </nav>
   <main>
     <header>
-      <h1>The bin Split</h1>
+      <h1>Git Koans</h1>
     </header>
-    <article><p><a href="http://landley.net/">Rob Landley</a>'s explanation of the bin, sbin, usr/bin, usr/sbin split, taken from the <a href="http://lists.busybox.net/pipermail/busybox/2010-December/074114.html">busybox mailing list</a>.</p>
+    <article><p><a href="https://stevelosh.com/blog/2013/04/git-koans/">Steve Losh's wisdom</a>.</p>
 <hr />
-<div class="highlight"><pre><span></span><code>From: Rob Landley &lt;rob at landley.net&gt;
-Subject: Understanding the bin, sbin, usr/bin , usr/sbin split 
-Date: Thu Dec 9 15:45:39 UTC 2010 
-
-On Tuesday 30 November 2010 15:58:00 David Collier wrote:
-&gt; I see that busybox spreads it&#39;s links over these 4 directories.
-&gt;
-&gt; Is there a simple rule which decides which directory each link lives
-&gt; in.....
-&gt;
-&gt; For instance I see kill is in /bin and killall in /usr/bin.... I don&#39;t
-&gt; have a grip on what might be the logic for that.
-
-You know how Ken Thompson and Dennis Ritchie created Unix on a PDP-7 in 1969?  
-Well around 1971 they upgraded to a PDP-11 with a pair of RK05 disk packs (1.5 
-megabytes each) for storage.
-
-When the operating system grew too big to fit on the first RK05 disk pack (their 
-root filesystem) they let it leak into the second one, which is where all the 
-user home directories lived (which is why the mount was called /usr).  They 
-replicated all the OS directories under there (/bin, /sbin, /lib, /tmp...) and 
-wrote files to those new directories because their original disk was out of 
-space.  When they got a third disk, they mounted it on /home and relocated all 
-the user directories to there so the OS could consume all the space on both 
-disks and grow to THREE WHOLE MEGABYTES (ooooh!).
-
-Of course they made rules about &quot;when the system first boots, it has to come up 
-enough to be able to mount the second disk on /usr, so don&#39;t put things like 
-the mount command /usr/bin or we&#39;ll have a chicken and egg problem bringing 
-the system up.&quot;  Fairly straightforward.  Also fairly specific to v6 unix of 35 
-years ago.
-
-The /bin vs /usr/bin split (and all the others) is an artifact of this, a 
-1970&#39;s implementation detail that got carried forward for decades by 
-bureaucrats who never question _why_ they&#39;re doing things.  It stopped making 
-any sense before Linux was ever invented, for multiple reasons:
-
-1) Early system bringup is the provice of initrd and initramfs, which deals 
-with the &quot;this file is needed before that file&quot; issues.  We&#39;ve already _got_ a 
-temporary system that boots the main system.
-
-2) shared libraries (introduced by the Berkeley guys) prevent you from 
-independently upgrading the /lib and /usr/bin parts.  They two partitions have 
-to _match_ or they won&#39;t work.  This wasn&#39;t the case in 1974, back then they 
-had a certain level of independence because everything was statically linked.
-
-3) Cheap retail hard drives passed the 100 megabyte mark around 1990, and 
-partition resizing software showed up somewhere around there (partition magic 
-3.0 shipped in 1997).
-
-Of course once the split existed, some people made other rules to justify it.  
-Root was for the OS stuff you got from upstream and /usr was for your site-
-local files.  Then / was for the stuff you got from AT&amp;T and /usr was for the 
-stuff that your distro like IBM AIX or Dec Ultrix or SGI Irix added to it, and 
-/usr/local was for your specific installation&#39;s files.  Then somebody decided 
-/usr/local wasn&#39;t a good place to install new packages, so let&#39;s add /opt!  
-I&#39;m still waiting for /opt/local to show up...
-
-Of course given 30 years to fester, this split made some interesting distro-
-specific rules show up and go away again, such as &quot;/tmp is cleared between 
-reboots but /usr/tmp isn&#39;t&quot;.  (Of course on Ubuntu /usr/tmp doesn&#39;t exist and 
-on Gentoo /usr/tmp is a symlink to /var/tmp which now has the &quot;not cleared 
-between reboots&quot; rule.  Yes all this predated tmpfs.  It has to do with read-
-only root filesystems, /usr is always going to be read only in that case and 
-/var is where your writable space is, / is _mostly_ read only except for bits 
-of /etc which they tried to move to /var but really symlinking /etc to 
-/var/etc happens more often than not...)
-
-Standards bureaucracies like the Linux Foundation (which consumed the Free 
-Standards Group in its&#39; ever-growing accretion disk years ago) happily 
-document and add to this sort of complexity without ever trying to understand 
-why it was there in the first place.  &#39;Ken and Dennis leaked their OS into the 
-equivalent of home because an RK05 disk pack on the PDP-11 was too small&quot; goes 
-whoosh over their heads.
-
-I&#39;m pretty sure the busybox install just puts binaries wherever other versions 
-of those binaries have historically gone.  There&#39;s no actual REASON for any of 
-it anymore.  Personally, I symlink /bin /sbin and /lib to their /usr 
-equivalents on systems I put together.  Embedded guys try to understand and 
-simplify...
-
-Rob
--- 
-GPLv3: as worthy a successor as The Phantom Menace, as timely as Duke Nukem 
-Forever, and as welcome as New Coke.
-</code></pre></div></article>
+<h2 id="silence">Silence</h2>
+<p>A Python programmer handed her <code>~/.gitconfig</code> to Master Git. Among the many lines were the following:</p>
+<div class="highlight"><pre><span></span><code>[alias]
+; Explicit is better than implicit.  If we want to merge
+; we should do so ourselves.
+pull = pull --ff-only
+</code></pre></div>
+<p>Master Git nodded. "<code>git pull origin master</code>," said the programmer.</p>
+<p>Master Git pulled down the latest changes on <code>master</code> and automatically merged them with the programmer's changes.</p>
+<p>"But Master Git, did I not say to only fast-forward in my configuration?!" she cried.</p>
+<p>Master Git looked at her, nodded, and said nothing.</p>
+<p>"Then why did you not warn me of a problem with my configuration?" she asked.</p>
+<p>Master Git replied: "there was no problem."</p>
+<p>Months later the programmer was reading <code>git --help config</code> for a different reason and found enlightenment.</p>
+<h2 id="one-thing-well">One Thing Well</h2>
+<p>A UNIX programmer was working in the cubicle farms. As she saw Master Git traveling down the path, she ran to meet him.</p>
+<p>"It is an honor to meet you, Master Git!" she said. "I have been studying the UNIX way of designing programs that each do one thing well. Surely I can learn much from you."</p>
+<p>"Surely," replied Master Git.</p>
+<p>"How should I change to a different branch?" asked the programmer.</p>
+<p>"Use <code>git checkout</code>."</p>
+<p>"And how should I create a branch?"</p>
+<p>"Use <code>git checkout</code>."</p>
+<p>"And how should I update the contents of a single file in my working directory, without involving branches at all?"</p>
+<p>"Use <code>git checkout</code>."</p>
+<p>After this third answer, the programmer was enlightened.</p>
+<h2 id="only-the-gods">Only the Gods</h2>
+<p>The great historian was trying to unravel the intricacies of an incorrect merge that had happened many months ago. He made a pilgrimage to Master Git to ask for his help.</p>
+<p>"Master Git," said the historian, "what is the nature of history?"</p>
+<p>"History is immutable. To rewrite it later is to tamper with the very fabric of existence."</p>
+<p>The historian nodded, then asked: "Is that why rebasing commits that have been pushed is discouraged?"</p>
+<p>"Indeed," said Master Git.</p>
+<p>"Splendid!" exclaimed the historian. "I have a historical record of a merge commit with two parents. How can I find out which branch each parent was originally made on?"</p>
+<p>"History is ephemeral," replied Master Git, "the knowledge you seek can be answered only by the gods."</p>
+<p>The historian hung his head as enlightenment crushed down upon him.</p>
+<h2 id="the-hobgoblin">The Hobgoblin</h2>
+<p>A novice was learning at the feet of Master Git. At the end of the lesson he looked through his notes and said, "Master, I have a few questions. May I ask them?"</p>
+<p>Master Git nodded.</p>
+<p>"How can I view a list of <em>all</em> tags?"</p>
+<p>"<code>git tag</code>", replied Master Git.</p>
+<p>"How can I view a list of <em>all</em> remotes?"</p>
+<p>"<code>git remote -v</code>", replied Master Git.</p>
+<p>"How can I view a list of <em>all</em> branches?"</p>
+<p>"<code>git branch -a</code>", replied Master Git.</p>
+<p>"And how can I view the current branch?"</p>
+<p>"<code>git rev-parse --abbrev-ref HEAD</code>", replied Master Git.</p>
+<p>"How can I delete a remote?"</p>
+<p>"<code>git remote rm</code>", replied Master Git.</p>
+<p>"And how can I delete a branch?"</p>
+<p>"<code>git branch -d</code>", replied Master Git.</p>
+<p>The novice thought for a few moments, then asked: "Surely some of these could be made more consistent, so as to be easier to remember in the heat of coding?"</p>
+<p>Master Git snapped his fingers. A hobgoblin entered the room and ate the novice alive. In the afterlife, the novice was enlightened.</p>
+<h2 id="the-long-and-short-of-it">The Long and Short of It</h2>
+<p>Master Git and a novice were walking along a bridge.</p>
+<p>The novice, wanting to partake of Master Git's vast knowledge, said: "<code>git branch --help</code>".</p>
+<p>Master Git sat down and lectured her on the seven forms of <code>git branch</code>, and their many options.</p>
+<p>They resumed walking. A few minutes later they encountered an experienced developer traveling in the opposite direction. He bowed to Master Git and said "<code>git branch -h</code>". Master Git tersely informed him of the most common <code>git branch</code> options. The developer thanked him and continued on his way.</p>
+<p>"Master," said the novice, "what is the nature of long and short options for commands? I thought they were equivalent, but when that developer used <code>-h</code> you said something different than when I said <code>--help</code>."</p>
+<p>"Perspective is everything," answered the Master.</p>
+<p>The novice was puzzled. She decided to experiment and said "<code>git -h branch</code>".</p>
+<p>Master Git turned and threw himself off the railing, falling to his death on the rocks below.</p>
+<p>Upon seeing this, the novice was enlightened.</p></article>
 
     <hr />
 
@@ -470,26 +445,17 @@ Forever, and as welcome as New Coke.
     
     <p class="backlinks"><span class="bold">Incoming:</span>
       
-      <a href="/unix">Unix</a>
+      <a href="/recent-changes">Recent Changes</a>
       
       </span>
     </p>
     
 
     
-    <p class="backlinks"><span class="bold">Tags:</span>
-      
-      <a href="/tags#relics">#relics</a>
-      
-      <a href="/tags#unix">#unix</a>
-      
-      </span>
-    </p>
-    
   </main>
   <footer>
-    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Folklore/The bin Split.md">edit</a> -
-    <a href="/run-latest-npx-script-version">random</a> -
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Folklore/Git Koans.md">edit</a> -
+    <a href="/nextcloud-aio-occ">random</a> -
     <a href="/recent-changes">updates</a> -
     <a href="/tags">tags</a> -
     <a href="/sitemap">sitemap</a>
