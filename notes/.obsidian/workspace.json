@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Folklore/We Do Not Break Userspace.md",
+                "file": "Archive/Bookmarks/Hacks.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Folklore/We Do Not Break Userspace.md",
+                "file": "Archive/Bookmarks/Hacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Folklore/We Do Not Break Userspace.md",
+                "file": "Archive/Bookmarks/Hacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Folklore/We Do Not Break Userspace.md"
+                "file": "Archive/Bookmarks/Hacks.md"
               }
             }
           }
@@ -147,8 +147,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "87beef5a330fbb59",
   "lastOpenFiles": [
+    "Archive/Folklore/Originality Not Required.md",
+    "Archive/Folklore/We Do Not Break Userspace.md",
     "Meta/Stylesheet.md",
     "Meta/Future Changes.md",
     "Archive/Lines.md",
@@ -156,7 +158,6 @@
     "Archive/Bookmarks/Digital Gardens.md",
     "Archive/Bookmarks/Websites.md",
     "Notes/Internet/Fediverse/Fediverse Family Tree.md",
-    "Archive/Folklore/We Do Not Break Userspace.md",
     "Notes/Language/Etymology/Slug.md",
     "404.md",
     "Notes/Language/Characters/Multiocular O.md",
@@ -174,7 +175,6 @@
     "Notes/Software/Development/Programming Languages/C/Digraphs and Trigraphs.md",
     "Notes/Internet/Fediverse/Fediverse.md",
     "Notes/Software/Development/Programming Languages/C/C.md",
-    "Notes/Software/Development/Programming Concepts/Noisy Neighbour.md",
     "Media/uwa-cits.png",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
