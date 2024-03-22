@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/Hacks.md",
+                "file": "Notes/Internet/Fediverse/Mastodon.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/Hacks.md",
+                "file": "Notes/Internet/Fediverse/Mastodon.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/Hacks.md",
+                "file": "Notes/Internet/Fediverse/Mastodon.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/Hacks.md"
+                "file": "Notes/Internet/Fediverse/Mastodon.md"
               }
             }
           }
@@ -147,8 +147,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "87beef5a330fbb59",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Archive/Bookmarks/Hacks.md",
     "Archive/Folklore/Originality Not Required.md",
     "Archive/Folklore/We Do Not Break Userspace.md",
     "Meta/Stylesheet.md",
@@ -174,7 +175,6 @@
     "Notes/Software/Development/Programming Languages/C/C auto Keyword.md",
     "Notes/Software/Development/Programming Languages/C/Digraphs and Trigraphs.md",
     "Notes/Internet/Fediverse/Fediverse.md",
-    "Notes/Software/Development/Programming Languages/C/C.md",
     "Media/uwa-cits.png",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
