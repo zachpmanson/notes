@@ -1,4 +1,4 @@
-> Docker is kinda like [[git]]. A really solid core concept with just enough surface inconsistencies to be annoying but not enough for a better solution to take the crown.
+> Docker is kinda like [[Notes/Software/Programs/Git/Git]]. A really solid core concept with just enough surface inconsistencies to be annoying but not enough for a better solution to take the crown.
 
 -- [David Ellis](https://techhub.social/@ISV_Damocles/111868958232964170)
 
