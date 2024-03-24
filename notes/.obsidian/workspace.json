@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Posts/Posts.md",
+                "file": "Notes/Software/Development/Kinds of Work.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Posts/Posts.md",
+                "file": "Notes/Software/Development/Kinds of Work.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Posts/Posts.md",
+                "file": "Notes/Software/Development/Kinds of Work.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Posts/Posts.md"
+                "file": "Notes/Software/Development/Kinds of Work.md"
               }
             }
           }
@@ -147,8 +146,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "87beef5a330fbb59",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Development/Kinds of Problems.md",
+    "Notes/Software/Development/Kinds of Work.md",
+    "Posts/Posts.md",
+    "Notes/Software/Development/Kinds of Work",
     "404.md",
     "Archive/Bookmarks/Websites.md",
     "Archive/Bookmarks/Bookmarks.md",
@@ -175,9 +178,6 @@
     "Notes/Internet/Fediverse/Mastodon.md",
     "Archive/Bookmarks/Hacks.md",
     "Archive/Folklore/Originality Not Required.md",
-    "Archive/Folklore/We Do Not Break Userspace.md",
-    "Meta/Stylesheet.md",
-    "Meta/Future Changes.md",
     "Media/uwa-cits.png",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
@@ -185,7 +185,6 @@
     "Media/fediverse-branches.png.sb-5985f2ea-SXYeoC",
     "Media/minecraftle.png.sb-5985f2ea-ymG6uK",
     "Media/dj.png.sb-5985f2ea-wWAWpZ",
-    "Media.zip",
     "Media/citations.jpg",
     "Media/status-messenger-3.png",
     "Media/gambling-1.bmp.bmp",
