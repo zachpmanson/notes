@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Programming Concepts/Second System Effects.md",
+                "file": "Archive/Bookmarks/Websites.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Programming Concepts/Second System Effects.md",
+                "file": "Archive/Bookmarks/Websites.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Programming Concepts/Second System Effects.md",
+                "file": "Archive/Bookmarks/Websites.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Programming Concepts/Second System Effects.md"
+                "file": "Archive/Bookmarks/Websites.md"
               }
             }
           }
@@ -146,10 +146,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "87beef5a330fbb59",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+    "Archive/Bookmarks/Bookmarks.md",
+    "Notes/Miscellany/Process Box.md",
     "Notes/Software/Development/Programming Concepts/Second System Effects.md",
+    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Notes/Internet/Internet Standards/RSS.md",
     "Archive/Folklore/Interviewing for Canonical.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
@@ -175,8 +177,6 @@
     "Meta/Future Changes.md",
     "Archive/Lines.md",
     "Archive/Bookmarks/Digital Gardens.md",
-    "Archive/Bookmarks/Websites.md",
-    "Notes/Internet/Fediverse/Fediverse Family Tree.md",
     "Media/uwa-cits.png",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",

@@ -22,6 +22,7 @@ Intentionally miscellaneous.
 - [Index of Aesthetics](https://cari.institute/aesthetics)
 - [Astronaut.io](http://astronaut.io/), random youtube videos with nearly 0 views
 - [Flame Warriors Guide](https://www.flamewarriorsguide.com/)
+- [Every Noise at Once](https://everynoise.com/)
 ## Artists
 
 - [Studio Balcony](https://studiobalcony.com/), Melbourne based art studio
@@ -34,6 +35,7 @@ Intentionally miscellaneous.
 - [500mile.email](https://500mile.email/), absurd bugs
 - [Ctrl+ZINE](https://ctrl-c.club/~loghead/ctrl-zine.html)
 
-## Art
+## Programming Art
 
 - [Dialogue 3-D](https://nasser.itch.io/dialogue-3-d), Wolfenstein but it asks you if its alright to punch the nazis
+- [game of life infinite recursion](https://oimo.io/works/life/) ([writeup](https://blog.oimo.io/2023/04/10/life-universe-en/))
