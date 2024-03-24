@@ -129,6 +129,10 @@ def get_tree():
                     tree[node].post_date = file_sections["date"]
                 if "children" in list(file_sections.keys()):
                     tree[node].children_visible = file_sections["children"] == "true"
+                if "orphan" in list(
+                    file_sections.keys() and file_sections["children"] == "true"
+                ):
+                    orphans.append(node)
 
         except FileNotFoundError:
             body = "🌱"
@@ -475,7 +479,7 @@ tags_md: str = "Tags not generated yet"
 sitemap_md: str = ""
 current_node: str = "Index"
 
-orphans: list[str] = ["404"]
+orphans: list[str] = []
 
 post_template = jinja2.Template(open("generator/template.jinja", "r").read())
 

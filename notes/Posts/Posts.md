@@ -1,5 +1,5 @@
 ---
 subtitle: Memory Leaks
-children: "false"
+children: false
 ---
 <ochrs:chrono:posts>

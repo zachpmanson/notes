@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/Websites.md",
+                "file": "Posts/Posts.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "#devre",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/Websites.md",
+                "file": "Posts/Posts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/Websites.md",
+                "file": "Posts/Posts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/Websites.md"
+                "file": "Posts/Posts.md"
               }
             }
           }
@@ -146,8 +147,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "87beef5a330fbb59",
   "lastOpenFiles": [
+    "404.md",
+    "Archive/Bookmarks/Websites.md",
     "Archive/Bookmarks/Bookmarks.md",
     "Notes/Miscellany/Process Box.md",
     "Notes/Software/Development/Programming Concepts/Second System Effects.md",
@@ -175,8 +178,6 @@
     "Archive/Folklore/We Do Not Break Userspace.md",
     "Meta/Stylesheet.md",
     "Meta/Future Changes.md",
-    "Archive/Lines.md",
-    "Archive/Bookmarks/Digital Gardens.md",
     "Media/uwa-cits.png",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
