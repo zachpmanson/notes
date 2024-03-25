@@ -25,7 +25,7 @@ Games included as of 2022 are snake, snakepaint, and circlez.
 
 snakeware was a short-lived project and should be considered inactive, with most significant contributions ending in 2020.  It was created and maintained by Joshua Moore and had a small number of contributors.  Some of the applications included in snakeware never reached their intended goals, such as the included terminal emulator snaketerm which is extremely rudimentary.
 
-One of the goals in making the entire userspace in Python was to make it modifiable by the user with little effort.  As Python is intepreted, all code for the window manager and the interface would be visible and modifiable by any snakeware user, and would be easy to extend.  Unfortunately, the planned text editor for snakeware, CATH, was never finished.
+One of the goals in making the entire userspace in Python was to make it modifiable by the user with little effort.  As Python is interpreted, all code for the window manager and the interface would be visible and modifiable by any snakeware user, and would be easy to extend.  Unfortunately, the planned text editor for snakeware, CATH, was never finished.
 
 Other planned projects were networking, a chat application, and a package system built on top of PyPI called snakeoil.
 
