@@ -1,3 +1,7 @@
+---
+tags:
+  - cursed
+---
 Assorted abuse of TypeScript's type system.
 
 - [Game of Life](https://github.com/RuyiLi/cursed-typescript/blob/master/random/game-of-life.ts)
