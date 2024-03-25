@@ -5,15 +5,9 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  /* color: var(--white);
-  background-color: var(--background); */
   text-align: center;
   line-height: 1.4;
 }
-
-/* ::selection {
-  background-color: var(--grey);
-} */
 
 main {
   text-align: left;
@@ -116,8 +110,6 @@ nav {
     overflow-y: auto;
     overflow-x: hidden;
 
-    /* border-left: 2px solid #000; */
-
     transition: max-height 0.15s ease-out;
 
     a {
@@ -152,69 +144,33 @@ h3 {
 a {
   color: black;
   text-decoration: underline;
-  /* text-decoration-style: dashed; */
-  /* text-decoration-color: transparent; */
 }
 
 a:hover {
-  /* text-decoration-color: black; */
   text-decoration-style: wavy;
-  /* color: white; */
-  /* background-color: black; */
-}
-
-a:active {
-  /* text-decoration-color: var(--external-links); */
 }
 
 a[href^="/"],
 a[href^="./"],
 a[href*="zachmanson.com"] {
-  /* color: var(--purple); */
   text-decoration-color: black;
   text-decoration-style: dotted;
-  /* text-decoration-color: transparent; */
 }
 
 a[href^="/"]:hover,
 a[href^="./"]:hover,
 a[href*="zachmanson.com"]:hover {
   text-decoration-style: wavy;
-
-  /* text-decoration-color: var(--purple); */
-}
-
-a[href^="/"]:active,
-a[href^="./"]:active,
-a[href*="zachmanson.com"]:active {
-  /* color: var(--white);
-  text-decoration-color: var(--white); */
-  /* transition: all 0s ease-in; */
 }
 
 .activated-link {
-  /* color: var(--white); */
   font-weight: bold;
   text-decoration: none;
 }
 
 .activated-link:hover {
-  /* color: var(--pink);
-  text-decoration-color: var(--pink); */
   text-decoration: underline;
   text-decoration-style: wavy;
-}
-
-.activated-link:hover::after {
-  content: " (edit)";
-}
-a[href^="/"].activated-link {
-  /* color: var(--white); */
-}
-
-a[href^="/"].activated-link:hover {
-  /* color: var(--purple);
-  text-decoration-color: var(--purple); */
 }
 
 a[href^="/"].activated-link:hover::after {
@@ -226,14 +182,7 @@ a[href^="/"].activated-link:hover::after {
 }
 
 /* Inline monospace */
-p code,
-li code {
-  /* color: var(--yellow); */
-}
-
 hr {
-  /* color: var(--dark-white); */
-  /* color: var(--grey); */
   margin: 2rem auto;
   height: 2px;
   color: black;
