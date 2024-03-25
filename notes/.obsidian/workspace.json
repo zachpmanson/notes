@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Development Methologies/Spite Driven Development.md",
+                "file": "Archive/Bookmarks/Tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Development Methologies/Spite Driven Development.md",
+                "file": "Archive/Bookmarks/Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Development Methologies/Spite Driven Development.md",
+                "file": "Archive/Bookmarks/Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Development Methologies/Spite Driven Development.md"
+                "file": "Archive/Bookmarks/Tools.md"
               }
             }
           }
@@ -146,8 +146,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "87beef5a330fbb59",
   "lastOpenFiles": [
+    "Notes/Software/Development/Development Methologies/Spite Driven Development.md",
     "Notes/Software/Development/Development Methologies/Resume Driven Development.md",
     "Notes/Miscellany/On Writing.md",
     "Notes/Software/Development/Programming Languages/C++/Cursed C++.md",
@@ -175,7 +176,6 @@
     "Notes/Internet/Internet Standards/RSS.md",
     "Archive/Folklore/Interviewing for Canonical.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMI Chapter 02.md",
     "Notes/Software/Intelligent Agents",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Untitled",
     "Notes/Courses/Artificial Intelligence - A Modern Approach",
