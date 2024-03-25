@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/snakeware.md",
+                "file": "Projects/Minecraftle/Minecraftle.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/snakeware.md",
+                "file": "Projects/Minecraftle/Minecraftle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/snakeware.md",
+                "file": "Projects/Minecraftle/Minecraftle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/snakeware.md"
+                "file": "Projects/Minecraftle/Minecraftle.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Projects/snakeware.md",
     "Meta/Credits.md",
     "Index.md",
     "Archive/Bookmarks/Tools.md",
@@ -175,7 +176,6 @@
     "Archive/Bookmarks/Bookmarks.md",
     "Notes/Miscellany/Process Box.md",
     "Notes/Software/Development/Programming Concepts/Second System Effects.md",
-    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Notes/Software/Intelligent Agents",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Untitled",
     "Notes/Courses/Artificial Intelligence - A Modern Approach",

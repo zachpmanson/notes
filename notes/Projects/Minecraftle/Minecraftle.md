@@ -14,6 +14,6 @@ It was initially built with Vanilla [[JavaScript]]+Flask with a SQLite database,
 
 We received the top mark for the project and I continued development after we submitted it.  The source code is publicly available on the [repo](https://github.com/pavo-etc/minecraftle).  Since initial submission I've made a number of changes, some of which are enumerated [[Minecraftle v1.1]].
 
-The game has daily puzzles and global leaderboards, with over 900k total players count at the time of writing.
+The game has daily puzzles and global leaderboards, with over 1M total players count at the time of writing.
 
 ![[minecraftle.png]]
