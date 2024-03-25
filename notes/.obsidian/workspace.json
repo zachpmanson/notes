@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Index.md",
+                "file": "Projects/snakeware.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Index.md",
+                "file": "Projects/snakeware.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Index.md",
+                "file": "Projects/snakeware.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Index.md"
+                "file": "Projects/snakeware.md"
               }
             }
           }
@@ -148,6 +148,8 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Meta/Credits.md",
+    "Index.md",
     "Archive/Bookmarks/Tools.md",
     "Notes/Software/Development/Development Methologies/Spite Driven Development.md",
     "Notes/Software/Development/Development Methologies/Resume Driven Development.md",
@@ -174,8 +176,6 @@
     "Notes/Miscellany/Process Box.md",
     "Notes/Software/Development/Programming Concepts/Second System Effects.md",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
-    "Notes/Internet/Internet Standards/RSS.md",
-    "Archive/Folklore/Interviewing for Canonical.md",
     "Notes/Software/Intelligent Agents",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Untitled",
     "Notes/Courses/Artificial Intelligence - A Modern Approach",

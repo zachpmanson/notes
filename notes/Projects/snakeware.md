@@ -3,6 +3,8 @@ subtitle: A Linux-based operating system with a pure Python userspace.
 tags:
   - linux
   - python
+  - posts
+date: 2024-03-26
 ---
 ![[snakeware.png]]
 
