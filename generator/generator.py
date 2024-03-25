@@ -129,9 +129,12 @@ def get_tree():
                     tree[node].post_date = file_sections["date"]
                 if "children" in list(file_sections.keys()):
                     tree[node].children_visible = file_sections["children"] == "true"
-                if "orphan" in list(
-                    file_sections.keys() and file_sections["children"] == "true"
+                if (
+                    "orphan" in list(file_sections.keys())
+                    and file_sections["orphan"] == "true"
                 ):
+                    print(f"Orphaned page: {node}")
+                    print(type(file_sections["orphan"]))
                     orphans.append(node)
 
         except FileNotFoundError:

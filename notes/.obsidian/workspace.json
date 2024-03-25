@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Kinds of Work.md",
+                "file": "Archive/Bookmarks/Websites.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Kinds of Work.md",
+                "file": "Archive/Bookmarks/Websites.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Kinds of Work.md",
+                "file": "Archive/Bookmarks/Websites.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Kinds of Work.md"
+                "file": "Archive/Bookmarks/Websites.md"
               }
             }
           }
@@ -148,8 +148,16 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Notes/Software/Development/Kinds of Problems.md",
+    "Notes/Software/Development/DateTime.md",
+    "Notes/Software/Development/Debugging.md",
+    "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
+    "Notes/Software/Development/Programming Concepts/Authorization.md",
+    "Notes/Software/Development/Programming Concepts/Authentication.md",
+    "Notes/Internet/Digital Garden.md",
+    "Archive/Bookmarks/Web Communities.md",
+    "Archive/Bookmarks/Digital Gardens.md",
     "Notes/Software/Development/Kinds of Work.md",
+    "Notes/Software/Development/Kinds of Problems.md",
     "Posts/Posts.md",
     "Notes/Software/Development/Kinds of Work",
     "404.md",
@@ -168,16 +176,8 @@
     "Notes/Courses/Practical Deep Learning/Practical Deep Learning.md",
     "Notes/Language/Etymology/Em Size.md",
     "Notes/Software/Intelligent Agents",
-    "Notes/Software/Programs/Docker/Docker.md",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/Untitled/Untitled.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Untitled",
     "Notes/Courses/Artificial Intelligence - A Modern Approach",
-    "Notes/Software/Programs/Git/Git.md",
-    "Archive/Folklore/Git Koans.md",
-    "Meta/Credits.md",
-    "Notes/Internet/Fediverse/Mastodon.md",
-    "Archive/Bookmarks/Hacks.md",
-    "Archive/Folklore/Originality Not Required.md",
     "Media/uwa-cits.png",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",

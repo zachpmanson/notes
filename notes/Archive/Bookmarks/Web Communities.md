@@ -33,3 +33,8 @@ tags:
 - [Status Cafe Forum](https://forum.status.cafe/) 
 - [kbin.social](https://kbin.social/)
 - [Webring Enthusiasts of the Fediverse](https://fediverse-webring-enthusiasts.glitch.me/)
+
+## Webrings
+
+- [Merveilles webring](https://webring.xxiivv.com)
+	- [Combined RSS feed](https://webring.chad.is/)
