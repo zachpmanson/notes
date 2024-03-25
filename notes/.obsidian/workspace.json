@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "404.md",
+                "file": "Notes/Miscellany/On Writing.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "404.md",
+                "file": "Notes/Miscellany/On Writing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "404.md",
+                "file": "Notes/Miscellany/On Writing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "404.md"
+                "file": "Notes/Miscellany/On Writing.md"
               }
             }
           }
@@ -146,9 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "87beef5a330fbb59",
   "lastOpenFiles": [
     "Notes/Software/Development/Programming Languages/C++/Cursed C++.md",
+    "Notes/Miscellany/On Writing.md",
+    "404.md",
     "4040.md",
     "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Cursed TypeScript Projects.md",
     "Notes/Software/Development/Programming Languages/C++",
@@ -165,7 +167,6 @@
     "Notes/Software/Development/Kinds of Problems.md",
     "Posts/Posts.md",
     "Notes/Software/Development/Kinds of Work",
-    "404.md",
     "Archive/Bookmarks/Bookmarks.md",
     "Notes/Miscellany/Process Box.md",
     "Notes/Software/Development/Programming Concepts/Second System Effects.md",
@@ -175,7 +176,6 @@
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMI Chapter 02.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Untitled.md",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 01.md",
     "Notes/Software/Intelligent Agents",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Untitled",
     "Notes/Courses/Artificial Intelligence - A Modern Approach",
