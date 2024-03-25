@@ -5,15 +5,15 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  color: var(--white);
-  background-color: var(--background);
+  /* color: var(--white);
+  background-color: var(--background); */
   text-align: center;
   line-height: 1.4;
 }
 
-::selection {
+/* ::selection {
   background-color: var(--grey);
-}
+} */
 
 main {
   text-align: left;
@@ -53,7 +53,7 @@ nav {
   flex-wrap: wrap;
   align-items: start;
   gap: 0 1rem;
-  border-bottom: 2px solid var(--grey);
+  border-bottom: 2px solid #000;
   padding: 1rem 1rem 0 1rem;
 
   .main-icon {
@@ -61,9 +61,16 @@ nav {
     height: 4.5rem;
     padding-bottom: 1rem;
 
-    img {
-      width: 3.5rem;
-      height: 3.5rem;
+    a,
+    a:hover {
+      text-decoration: none;
+      text-decoration-color: transparent;
+
+      img,
+      svg {
+        width: 3.5rem;
+        height: 3.5rem;
+      }
     }
   }
 
@@ -109,14 +116,13 @@ nav {
     overflow-y: auto;
     overflow-x: hidden;
 
-    border-left: 2px solid var(--grey);
+    /* border-left: 2px solid #000; */
 
     transition: max-height 0.15s ease-out;
 
     a {
-      max-width: 35ch;
-      min-width: 10ch;
       margin: 0 0 0.5rem 0;
+      width: fit-content;
     }
   }
 }
@@ -144,64 +150,71 @@ h3 {
 }
 
 a {
-  color: var(--pink);
+  color: black;
   text-decoration: underline;
-  text-decoration-color: transparent;
-  transition: all 0.1s ease-in;
+  /* text-decoration-style: dashed; */
+  /* text-decoration-color: transparent; */
 }
 
 a:hover {
-  text-decoration-color: var(--pink);
+  /* text-decoration-color: black; */
+  text-decoration-style: wavy;
+  /* color: white; */
+  /* background-color: black; */
 }
 
 a:active {
-  color: var(--white);
-  text-decoration-color: var(--white);
-  transition: all 0s ease-in;
+  /* text-decoration-color: var(--external-links); */
 }
 
 a[href^="/"],
 a[href^="./"],
 a[href*="zachmanson.com"] {
-  color: var(--purple);
-  text-decoration: underline;
-  text-decoration-color: transparent;
-  transition: all 0.1s ease-in;
+  /* color: var(--purple); */
+  text-decoration-color: black;
+  text-decoration-style: dotted;
+  /* text-decoration-color: transparent; */
 }
 
 a[href^="/"]:hover,
 a[href^="./"]:hover,
 a[href*="zachmanson.com"]:hover {
-  text-decoration-color: var(--purple);
+  text-decoration-style: wavy;
+
+  /* text-decoration-color: var(--purple); */
 }
 
 a[href^="/"]:active,
 a[href^="./"]:active,
 a[href*="zachmanson.com"]:active {
-  color: var(--white);
-  text-decoration-color: var(--white);
-  transition: all 0s ease-in;
+  /* color: var(--white);
+  text-decoration-color: var(--white); */
+  /* transition: all 0s ease-in; */
 }
 
 .activated-link {
-  color: var(--white);
+  /* color: var(--white); */
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .activated-link:hover {
-  color: var(--pink);
-  text-decoration-color: var(--pink);
+  /* color: var(--pink);
+  text-decoration-color: var(--pink); */
+  text-decoration: underline;
+  text-decoration-style: wavy;
 }
 
 .activated-link:hover::after {
   content: " (edit)";
 }
 a[href^="/"].activated-link {
-  color: var(--white);
+  /* color: var(--white); */
 }
 
 a[href^="/"].activated-link:hover {
-  color: var(--purple);
-  text-decoration-color: var(--purple);
+  /* color: var(--purple);
+  text-decoration-color: var(--purple); */
 }
 
 a[href^="/"].activated-link:hover::after {
@@ -215,13 +228,17 @@ a[href^="/"].activated-link:hover::after {
 /* Inline monospace */
 p code,
 li code {
-  color: var(--yellow);
+  /* color: var(--yellow); */
 }
 
 hr {
   /* color: var(--dark-white); */
-  color: var(--grey);
+  /* color: var(--grey); */
   margin: 2rem auto;
+  height: 2px;
+  color: black;
+  border-color: transparent;
+  background-color: black;
 }
 
 footer {
@@ -236,7 +253,7 @@ summary h2 {
 blockquote {
   margin: 1rem;
   padding: 0 1rem;
-  border-left: 2px solid var(--dark-blue);
+  border-left: 2px solid #000;
 }
 
 blockquote + p > cite {
@@ -266,7 +283,7 @@ table {
 
   td,
   th {
-    border-bottom: 0.1rem solid var(--dark-blue);
+    border-bottom: 2px solid #000;
     padding: 0.5rem;
   }
 
@@ -295,40 +312,6 @@ table {
 
 .text-left {
   text-align: left;
-}
-
-@media screen and (max-device-width: 640px) {
-  .nav-links {
-    -webkit-overflow-scrolling: touch;
-    overflow-scrolling: touch;
-    background:
-      /* Shadow Cover TOP */ linear-gradient(
-          var(--background) 30%,
-          rgba(255, 255, 255, 0)
-        )
-        center top,
-      /* Shadow Cover BOTTOM */
-        linear-gradient(rgba(255, 255, 255, 0), var(--background) 70%) center
-        bottom,
-      /* Shadow TOP */
-        radial-gradient(
-          farthest-side at 50% 0,
-          rgba(0, 0, 0, 0.5),
-          rgba(0, 0, 0, 0)
-        )
-        center top,
-      /* Shadow BOTTOM */
-        radial-gradient(
-          farthest-side at 50% 100%,
-          rgba(0, 0, 0, 0.5),
-          rgba(0, 0, 0, 0)
-        )
-        center bottom;
-
-    background-repeat: no-repeat;
-    background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
-    background-attachment: local, local, scroll, scroll;
-  }
 }
 
 /* Utility Classes */

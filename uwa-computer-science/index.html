@@ -6,16 +6,9 @@
   <link rel="stylesheet" href="/static/styles/global.css" />
   <link rel="stylesheet" href="/static/styles/code.css" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/static/icon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/static/icon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/static/icon/favicon-16x16.png" />
-  <link rel="manifest" href="/static/icon/site.webmanifest" />
-  <link rel="mask-icon" href="/static/icon/safari-pinned-tab.svg" color="#bd93f9" />
-  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
-  <meta name="msapplication-TileColor" content="#603cba" />
-  <meta name="msapplication-config" content="/static/icon/browserconfig.xml" />
-  <meta name="theme-color" content="#282A36" />
 
+  <link rel="icon" href="/static/icon/icon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
@@ -26,7 +19,7 @@
   <nav>
     <div class="main-icon">
       <a href="/">
-        <img src="/static/icon/icon.png" alt="notes">
+        <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;" viewBox="26.88 56.87 216.25 156.27">    <path style="stroke-width: 15px; stroke-linecap: butt; stroke-linejoin: round; stroke: rgb(10, 10, 10); fill: none;" d="M135,75 A60,60 0 0,0 75,135 A60,60 0 0,0 135,195 A60,60 0 0,0 195,135 A60,60 0 0,0 135,75 M45,90 A15,15 0 0,1 60,75 A15,15 0 0,1 75,90 L75,135 L75,180 A15,15 0 0,1 60,195 A15,15 0 0,1 45,180 M225,90 A15,15 0 0,0 210,75 A15,15 0 0,0 195,90 L195,135 L195,180 A15,15 0 0,0 210,195 L210,195 A15,15 0 0,0 225,180 M135,105 A30,30 0 0,1 165,135 A30,30 0 0,1 135,165 A30,30 0 0,1 105,135 A30,30 0 0,1 135,105 M45,105 L45,105 L45,165 M225,105 L225,105 L225,165 "></path></svg>
       </a>
     </div>
 
@@ -110,7 +103,7 @@
       <h1>Reviews and advice for all Computer Science, Cyber Security, and Data Science units I completed at UWA.</h1>
     </header>
     <article><p>I did my <a href="/computer-science">Computer Science</a> degree from 2020 to 2023, coming out with a BSc. Computer Science, Cybersecurity, minoring in Data Science. I have omitted statistics units because I have nothing intelligible to say about them.</p>
-<p>Just do <a href="https://codersforcauses.org/">Coders For Causes</a>, you will learn more in that than entire semesters of this degree. <strong>Learn how to use [[Git/Git]] as fast as possible</strong> then force all your group project members to use it. Narrow down your problems as much as possible, then google the most generic possible description of it. If you see someone using semicolons mid-sentence regularly it's probably <a href="/christ-mcdonald">Chris McDonald</a>.</p>
+<p>Just do <a href="https://codersforcauses.org/">Coders For Causes</a>, you will learn more in that than entire semesters of this degree. <strong>Learn how to use <a href="/git">Git</a> as fast as possible</strong> then force all your group project members to use it. Narrow down your problems as much as possible, then google the most generic possible description of it. If you see someone using semicolons mid-sentence regularly it's probably <a href="/christ-mcdonald">Chris McDonald</a>.</p>
 <p><img alt="" src="/media/uwa-cits.png" /></p>
 <h2 id="first-year-units">First Year Units</h2>
 <p>CITS1001 Software Engineering with Java (called Object Oriented Programming when I took it in 2020):</p>
@@ -152,7 +145,7 @@
 <li>teaches <a href="/bash">Bash</a> and <a href="/unix">Unix</a> which are important and only orthogonally explained in CITS2002</li>
 <li>teaches <a href="/sed">sed</a> and <a href="/awk">awk</a> relatively well</li>
 <li>includes <a href="/make">Make</a> for some reason, no reason literally cut this its covered in CITS2002 and is actually relevant there</li>
-<li>also includes [[Git/Git]] but never actually requires its use so it feels useless even though it is most students first introduction to it. git should be in CITS1401.</li>
+<li>also includes <a href="/git">Git</a> but never actually requires its use so it feels useless even though it is most students first introduction to it. git should be in CITS1401.</li>
 <li>somehow manages to completely screw up the assessments every year</li>
 <li>see <a href="/michael-wise-quotes">Michael Wise Quotes</a></li>
 </ul>
@@ -226,7 +219,7 @@
 <p>CITS3403 Agile <a href="/web-development">Web Development</a></p>
 <ul>
 <li>really fun and very practical</li>
-<li>FIRST ACTUAL USE OF [[Git/Git]] (do no wait till third year, learn this in year 1 semester 1) how did it take this long</li>
+<li>FIRST ACTUAL USE OF <a href="/git">Git</a> (do no wait till third year, learn this in year 1 semester 1) how did it take this long</li>
 <li>well taught</li>
 <li><a href="https://minecraftle.zachmanson.com">very</a> <a href="/minecraftle">fun project</a></li>
 </ul>
@@ -265,6 +258,8 @@
         
         <a href="/pirate-libraries">Pirate Libraries</a>
         
+        <a href="/recent-changes">Recent Changes</a>
+        
         </span>
       </p>
       
@@ -281,7 +276,7 @@
   </main>
   <footer>
     <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Courses/UWA Computer Science/UWA Computer Science.md">edit</a> -
-    <a href="/w05l01---conditionals">random</a> -
+    <a href="/w04l01---variables">random</a> -
     <a href="/recent-changes">updates</a> -
     <a href="/tags">tags</a> -
     <a href="/sitemap">sitemap</a>
