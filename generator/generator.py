@@ -120,21 +120,16 @@ def get_tree():
             with open(path, "r") as src_file:
                 file_sections = frontmatter.load(src_file)
                 body = file_sections.content
-
-                if "tags" in list(file_sections.keys()):
+                props = list(file_sections.keys())
+                if "tags" in props:
                     format_tags(file_sections["tags"])
-                if "subtitle" in list(file_sections.keys()):
+                if "subtitle" in props:
                     tree[node].subtitle = file_sections["subtitle"]
-                if "date" in list(file_sections.keys()):
+                if "date" in props:
                     tree[node].post_date = file_sections["date"]
-                if "children" in list(file_sections.keys()):
-                    tree[node].children_visible = file_sections["children"] == "true"
-                if (
-                    "orphan" in list(file_sections.keys())
-                    and file_sections["orphan"] == "true"
-                ):
-                    print(f"Orphaned page: {node}")
-                    print(type(file_sections["orphan"]))
+                if "children" in props:
+                    tree[node].children_visible = file_sections["children"]
+                if "orphan" in props and file_sections["orphan"]:
                     orphans.append(node)
 
         except FileNotFoundError:

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/C++/Cursed C++.md",
+                "file": "404.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/C++/Cursed C++.md",
+                "file": "404.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/C++/Cursed C++.md",
+                "file": "404.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/C++/Cursed C++.md"
+                "file": "404.md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Cursed TypeScript Projects.md",
     "Notes/Software/Development/Programming Languages/C++/Cursed C++.md",
+    "4040.md",
+    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Cursed TypeScript Projects.md",
     "Notes/Software/Development/Programming Languages/C++",
     "Archive/Bookmarks/Websites.md",
     "Notes/Software/Development/DateTime.md",
@@ -175,7 +176,6 @@
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMI Chapter 02.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Untitled.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 01.md",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md",
     "Notes/Software/Intelligent Agents",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Untitled",
     "Notes/Courses/Artificial Intelligence - A Modern Approach",
