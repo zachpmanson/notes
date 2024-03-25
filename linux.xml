@@ -13,7 +13,7 @@
             <link>https://notes.zachmanson.com/linux</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Mon, 25 Mar 2024 22:32:23 </lastBuildDate>
+        <lastBuildDate>Mon, 25 Mar 2024 22:32:40 </lastBuildDate>
         
         <item>
             <title>snakeware</title>
@@ -33,7 +33,7 @@
 Games included as of 2022 are snake, snakepaint, and circlez.</p>
 <h2 id="history">History</h2>
 <p>snakeware was a short-lived project and should be considered inactive, with most significant contributions ending in 2020.  It was created and maintained by Joshua Moore and had a small number of contributors.  Some of the applications included in snakeware never reached their intended goals, such as the included terminal emulator snaketerm which is extremely rudimentary.</p>
-<p>One of the goals in making the entire userspace in Python was to make it modifiable by the user with little effort.  As Python is intepreted, all code for the window manager and the interface would be visible and modifiable by any snakeware user, and would be easy to extend.  Unfortunately, the planned text editor for snakeware, CATH, was never finished.</p>
+<p>One of the goals in making the entire userspace in Python was to make it modifiable by the user with little effort.  As Python is interpreted, all code for the window manager and the interface would be visible and modifiable by any snakeware user, and would be easy to extend.  Unfortunately, the planned text editor for snakeware, CATH, was never finished.</p>
 <p>Other planned projects were networking, a chat application, and a package system built on top of PyPI called snakeoil.</p>
 <p>The project was coordinated over a Discord server, though this hasn't been active for some time.</p>
 <h2 id="links">Links</h2>
