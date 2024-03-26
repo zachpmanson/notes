@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Index.md",
+                "file": "Notes/Language/Etymology/Gruntle.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Index.md",
+                "file": "Notes/Language/Etymology/Gruntle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Index.md",
+                "file": "Notes/Language/Etymology/Gruntle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Index.md"
+                "file": "Notes/Language/Etymology/Gruntle.md"
               }
             }
           }
@@ -146,11 +146,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "87beef5a330fbb59",
   "lastOpenFiles": [
+    "Media/fedi.png",
+    "Notes/Language/Etymology/Gruntle.md",
+    "Notes/Internet/Fediverse/Fediverse.md",
+    "Index.md",
     "Archive/Bookmarks/Websites.md",
     "Archive/Bookmarks/Bookmarks.md",
-    "Index.md",
     "Meta/Stylesheet.md",
     "Meta/Sitemap.md",
     "Meta/Recent Changes.md",
@@ -172,9 +175,6 @@
     "Notes/Software/Development/DateTime.md",
     "Notes/Software/Development/Debugging.md",
     "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
-    "Notes/Software/Development/Programming Concepts/Authorization.md",
-    "Notes/Software/Development/Programming Concepts/Authentication.md",
-    "Notes/Internet/Digital Garden.md",
     "Notes/Software/Development/Kinds of Work",
     "Notes/Software/Intelligent Agents",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Untitled",
@@ -193,7 +193,6 @@
     "Media/soldiers.jpg",
     "Media/gods-mistakes.png",
     "Media/ug.png",
-    "Media/ug-rendered.png",
     "Untitled.canvas"
   ]
 }
