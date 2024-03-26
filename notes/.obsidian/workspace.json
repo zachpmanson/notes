@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Internet/Fediverse/Fediverse.md",
+                "file": "Meta/Meta.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Internet/Fediverse/Fediverse.md",
+                "file": "Meta/Meta.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Internet/Fediverse/Fediverse.md",
+                "file": "Meta/Meta.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Internet/Fediverse/Fediverse.md"
+                "file": "Meta/Meta.md"
               }
             }
           }
@@ -148,17 +148,21 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Media/fedi.png",
+    "Index.md",
+    "Meta/Meta.md",
+    "Meta/About.md",
     "Notes/Internet/Fediverse/Fediverse.md",
+    "Notes/Software/Development/Web Development/React.md",
+    "Posts/Posts.md",
+    "Meta/Future Changes.md",
+    "Media/fedi.png",
     "Media/fediverse.svg",
     "Notes/Language/Etymology/Gruntle.md",
-    "Index.md",
     "Archive/Bookmarks/Websites.md",
     "Archive/Bookmarks/Bookmarks.md",
     "Meta/Stylesheet.md",
     "Meta/Sitemap.md",
     "Meta/Recent Changes.md",
-    "Meta/Meta.md",
     "Meta/Random.md",
     "Projects/Minecraftle/How Minecraft Stores Crafting Recipes.md",
     "Projects/Minecraftle/Minecraftle.md",
@@ -173,9 +177,6 @@
     "4040.md",
     "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Cursed TypeScript Projects.md",
     "Notes/Software/Development/Programming Languages/C++",
-    "Notes/Software/Development/DateTime.md",
-    "Notes/Software/Development/Debugging.md",
-    "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
     "Notes/Software/Development/Kinds of Work",
     "Notes/Software/Intelligent Agents",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Untitled",

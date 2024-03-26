@@ -2,6 +2,6 @@ This site consists of my personal [[notes]] and [[archive]]. It is changing cons
 
 There are currently <ochrs:page-count> pages.  See what I've been working on in [[recent changes]] or the [[sitemap]] for the full structure.  You can also navigate using [[tags]].
 
-The site is [open source](https://github.com/pavo-etc/notes), automatically generated with [[Ochrs]].
+It is a part of the [XXIIVV webring](https://webring.xxiivv.com/#notes.zachmanson.com).
 
 I don't like reading things I think I could write myself, and I don't like writing things I wouldn't read myself. Hopefully this helps me get over that.
