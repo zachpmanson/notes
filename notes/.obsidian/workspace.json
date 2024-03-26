@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meta/Meta.md",
+                "file": "Meta/About.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Meta/Meta.md",
+                "file": "Meta/About.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Meta/Meta.md",
+                "file": "Meta/About.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Meta/Meta.md"
+                "file": "Meta/About.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Index.md",
     "Meta/Meta.md",
+    "Index.md",
     "Meta/About.md",
     "Notes/Internet/Fediverse/Fediverse.md",
     "Notes/Software/Development/Web Development/React.md",

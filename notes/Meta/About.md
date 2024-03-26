@@ -8,5 +8,3 @@ I have been a software engineer since 2022, currently helping businesses lower t
 I've built a few software [[projects]] for myself (primarily out of [[Spite Driven Development|anger]]) and I occasionally write [[posts]] on this site.
 
 Sometimes you might see me under the name pavo online.  You can reach me by [email](mailto:zachpmanson@gmail.com) or on [[Fediverse|fedi]] at `@zach@zachmanson.com`. 
-
-I don't like reading things I think I could write myself, and I don't like writing things I wouldn't read myself.  This is a problem.
