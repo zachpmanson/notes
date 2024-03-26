@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a2334bebf56412f1",
+        "id": "2c7f48d4ddb64752",
         "type": "tabs",
         "children": [
           {
-            "id": "87beef5a330fbb59",
+            "id": "f022ea03489a2abe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Language/Etymology/Gruntle.md",
+                "file": "Notes/Internet/Fediverse/Fediverse.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Language/Etymology/Gruntle.md",
+                "file": "Notes/Internet/Fediverse/Fediverse.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Language/Etymology/Gruntle.md",
+                "file": "Notes/Internet/Fediverse/Fediverse.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Language/Etymology/Gruntle.md"
+                "file": "Notes/Internet/Fediverse/Fediverse.md"
               }
             }
           }
@@ -146,11 +146,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "87beef5a330fbb59",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Media/fedi.png",
-    "Notes/Language/Etymology/Gruntle.md",
+    "Media/fediverse.svg",
     "Notes/Internet/Fediverse/Fediverse.md",
+    "Notes/Language/Etymology/Gruntle.md",
+    "Media/fedi.png",
     "Index.md",
     "Archive/Bookmarks/Websites.md",
     "Archive/Bookmarks/Bookmarks.md",
@@ -192,7 +193,6 @@
     "Media/dall-e.jpg",
     "Media/soldiers.jpg",
     "Media/gods-mistakes.png",
-    "Media/ug.png",
     "Untitled.canvas"
   ]
 }
