@@ -8,7 +8,7 @@ tags:
   - react
   - python
 ---
-![[dotgrid-24G03-011888.svg]]
+![[blocks.svg]]
 
 Minecraftle is a game fusing the gameplay of Wordle with crafting recipes from Minecraft.  It started as a university project I worked on in 2022 in a small team for [CITS3403](https://teaching.csse.uwa.edu.au/units/CITS3403/) (one of the better units in [[UWA Computer Science]]).
 
