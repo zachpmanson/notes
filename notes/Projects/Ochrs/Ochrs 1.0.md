@@ -1,4 +1,4 @@
-The initial implementation of [[Ochrs]] was forked from Nchrs since Nchrs had forked XXIIVV before XXIIVV underwent from [[C]] to Uxntal.  Uxntal is very interesting but not a language I actually know how to write or maintain. I [forked](https://github.com/pavo-etc/legacy-notes) Nchrs and maintained it for a while, but after a while its limitations started to irk me. Its implementation of [[Markdown]] was iffy at best (this led to me calling it Markdownish) and there were myriad edge cases that cropped up as I added more pages. The program was also written in C89 and had manually reimplemented many of the string functions that would become standard in later revisions of the language. This combined with the original author's allergy to comments led to things like this being the best documentation in the entire program:
+The initial implementation of [[Ochrs]] was forked from Nchrs since Nchrs had forked XXIIVV before XXIIVV underwent from [[C]] to Uxntal.  Uxntal is very interesting but not a language I actually know how to write or maintain. I [forked](https://github.com/pavo-etc/legacy-notes) Nchrs and maintained it for a while, but after a while its limitations started to irk me. Its implementation of [[Markdown]] was iffy at best (this led to me calling it Markdownish) and there were myriad edge cases that cropped up as I added more pages. The program was also written in C89 and had manually reimplemented many of the string functions that would become standard in later revisions of the language. This led to a lot of this:
 
 ```C
 int cisp(char c) { return c == ' ' || c == '\t' || c == '\n' || c == '\r'; } /* char is space */
@@ -23,7 +23,5 @@ char *sstr(char *src, char *dst, int from, int to) { int i; char *a = (char *)sr
 char *ccat(char *dst, char c) { int len = slen(dst); dst[len] = c; dst[len + 1] = '\0'; return dst; }
 char *scat(char *dst, const char *src) { char *ptr = dst + slen(dst); while (*src) { *ptr++ = *src++; } *ptr = '\0'; return dst; }
 ```
-
-This is best described as "technically functional, but unpleasant".
 
 Another issue I ran into was the requirement for all pages to be contained within a single file, `lexicon.ndbl`.  Each page had a line limit which could be mitigated by including external files using the `{^text filename}` and `{^html filename}` idioms.  There was no support for Markdown in external files, and I had no interest in writing a Markdown parser in C, or porting the existing Markdownish parser to work on external files.

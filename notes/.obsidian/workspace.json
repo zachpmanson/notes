@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meta/About.md",
+                "file": "Projects/Ochrs/Ochrs 1.0.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Meta/About.md",
+                "file": "Projects/Ochrs/Ochrs 1.0.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Meta/About.md",
+                "file": "Projects/Ochrs/Ochrs 1.0.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Meta/About.md"
+                "file": "Projects/Ochrs/Ochrs 1.0.md"
               }
             }
           }
@@ -148,9 +148,10 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Projects/Ochrs/Ochrs.md",
+    "Meta/About.md",
     "Meta/Meta.md",
     "Index.md",
-    "Meta/About.md",
     "Notes/Internet/Fediverse/Fediverse.md",
     "Notes/Software/Development/Web Development/React.md",
     "Posts/Posts.md",
@@ -175,7 +176,6 @@
     "Notes/Software/Development/Programming Languages/C++/Cursed C++.md",
     "404.md",
     "4040.md",
-    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Cursed TypeScript Projects.md",
     "Notes/Software/Development/Programming Languages/C++",
     "Notes/Software/Development/Kinds of Work",
     "Notes/Software/Intelligent Agents",
