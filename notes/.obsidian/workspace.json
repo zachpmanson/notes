@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meta/About.md",
+                "file": "Notes/Software/Development/Programming Languages/Programming Languages.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Meta/About.md",
+                "file": "Notes/Software/Development/Programming Languages/Programming Languages.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Meta/About.md",
+                "file": "Notes/Software/Development/Programming Languages/Programming Languages.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Meta/About.md"
+                "file": "Notes/Software/Development/Programming Languages/Programming Languages.md"
               }
             }
           }
@@ -148,6 +148,8 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Programs/GNU/Bash/Bash.md",
+    "Meta/About.md",
     "Index.md",
     "Notes/Software/Development/Terminals.md",
     "Notes/Software/Development/Debugging.md",
@@ -157,7 +159,6 @@
     "Projects/Minecraftle/Minecraftle.md",
     "dotgrid-24G03-011513.svg",
     "dotgrid-24G03-010922.png",
-    "Meta/About.md",
     "Projects/Ochrs/Ochrs 1.0.md",
     "Projects/Ochrs/Ochrs.md",
     "Meta/Meta.md",
@@ -178,7 +179,6 @@
     "Projects/snakeware.md",
     "Meta/Credits.md",
     "Archive/Bookmarks/Tools.md",
-    "Notes/Software/Development/Development Methologies/Spite Driven Development.md",
     "Notes/Software/Development/Programming Languages/C++",
     "Notes/Software/Development/Kinds of Work",
     "Notes/Software/Intelligent Agents",
