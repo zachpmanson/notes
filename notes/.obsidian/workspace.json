@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/Automatic Dark Mode.md",
+                "file": "Meta/About.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Problems/Automatic Dark Mode.md",
+                "file": "Meta/About.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Problems/Automatic Dark Mode.md",
+                "file": "Meta/About.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Problems/Automatic Dark Mode.md"
+                "file": "Meta/About.md"
               }
             }
           }
@@ -146,10 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f022ea03489a2abe",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Posts/Hidden Post.md",
     "Archive/Problems/Automatic Dark Mode.md",
+    "Posts/Hidden Post.md",
     "Projects/snakeware.md",
     "Notes/Internet/Digital Garden.md",
     "Notes/Software/Programs/GNU/Bash/Bash.md",
