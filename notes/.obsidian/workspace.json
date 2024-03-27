@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Internet/Digital Garden.md",
+                "file": "Posts/Hidden Post.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Internet/Digital Garden.md",
+                "file": "Posts/Hidden Post.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Internet/Digital Garden.md",
+                "file": "Posts/Hidden Post.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Internet/Digital Garden.md"
+                "file": "Posts/Hidden Post.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   },
   "active": "f022ea03489a2abe",
   "lastOpenFiles": [
+    "Notes/Internet/Digital Garden.md",
     "Notes/Software/Programs/GNU/Bash/Bash.md",
     "Notes/Software/Programs/GNU/Bash/Bash Startup Scripts.md",
     "Posts/Hidden Post.md",
@@ -179,7 +180,6 @@
     "Meta/Sitemap.md",
     "Meta/Recent Changes.md",
     "Meta/Random.md",
-    "Projects/Minecraftle/How Minecraft Stores Crafting Recipes.md",
     "Notes/Software/Development/Programming Languages/C++",
     "Notes/Software/Development/Kinds of Work",
     "Notes/Software/Intelligent Agents",
