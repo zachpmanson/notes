@@ -11,9 +11,11 @@
             "id": "f022ea03489a2abe",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Media/blocks.svg"
+                "file": "Meta/About.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Media/blocks.svg",
+                "file": "Meta/About.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Media/blocks.svg",
+                "file": "Meta/About.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Media/blocks.svg"
+                "file": "Meta/About.md"
               }
             }
           }
@@ -146,13 +148,16 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Index.md",
+    "Notes/Software/Development/Terminals.md",
+    "Notes/Software/Development/Debugging.md",
+    "Notes/Software/Development/Kinds of Problems.md",
+    "Media/blocks.svg",
     "404.md",
     "Projects/Minecraftle/Minecraftle.md",
-    "Media/blocks.svg",
     "dotgrid-24G03-011513.svg",
     "dotgrid-24G03-010922.png",
     "Meta/About.md",
-    "Index.md",
     "Projects/Ochrs/Ochrs 1.0.md",
     "Projects/Ochrs/Ochrs.md",
     "Meta/Meta.md",
@@ -174,9 +179,6 @@
     "Meta/Credits.md",
     "Archive/Bookmarks/Tools.md",
     "Notes/Software/Development/Development Methologies/Spite Driven Development.md",
-    "Notes/Software/Development/Development Methologies/Resume Driven Development.md",
-    "Notes/Miscellany/On Writing.md",
-    "Notes/Software/Development/Programming Languages/C++/Cursed C++.md",
     "Notes/Software/Development/Programming Languages/C++",
     "Notes/Software/Development/Kinds of Work",
     "Notes/Software/Intelligent Agents",
