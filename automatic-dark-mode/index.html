@@ -10,7 +10,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: javascript yyyy-mm-dd in local time</title>
+  <title>notes: automatic dark mode</title>
 </head>
 
 <body>
@@ -63,14 +63,13 @@
         
 
         <div class="flex flex-col text-left nav-links">
-          <a href="/javascript-yyyy-mm-dd-in-local-time" class="activated-link">JavaScript YYYY-MM-DD in Local Time</a>
+          <a href="/automatic-dark-mode" class="activated-link">Automatic Dark Mode</a>
           
           
           <a href="/alembic-revision-collision">Alembic Revision Collision</a>
           
           
           
-          <a href="/automatic-dark-mode">Automatic Dark Mode</a>
           
           
           
@@ -134,6 +133,7 @@
           
           
           
+          <a href="/javascript-yyyy-mm-dd-in-local-time">JavaScript YYYY-MM-DD in Local Time</a>
           
           
           
@@ -255,13 +255,24 @@
   </nav>
   <main>
     <header>
-      <h1>JavaScript YYYY-MM-DD in Local Time</h1>
+      <h1>Automatic Dark Mode</h1>
     </header>
-    <article><p>The <a href="/javascript">JavaScript</a> <a href="/datetime">datetime</a> library is anemic.  If you need the current date in the user's locale written in YYYY-MM-DD, use this fun hack:</p>
-<div class="highlight"><pre><span></span><code>let currentDate = new Date().toLocaleString(&quot;sv&quot;).slice(0, 10);
+    <article><p>CSS has an automatic dark mode, which works well if you use mostly unstyled HTML.</p>
+<div class="highlight"><pre><span></span><code><span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">color-scheme</span><span class="p">:</span><span class="w"> </span><span class="n">light</span><span class="w"> </span><span class="n">dark</span><span class="p">;</span><span class="w"> </span><span class="c">/* follows system theme */</span>
+<span class="w">  </span><span class="nv">--primary</span><span class="p">:</span><span class="w"> </span><span class="nf">light-dark</span><span class="p">(</span><span class="mh">#lightv</span><span class="n">alue</span><span class="p">,</span><span class="w"> </span><span class="mh">#darkva</span><span class="n">lue</span><span class="p">);</span><span class="w"> </span><span class="c">/* var that switches based on theme */</span>
+<span class="p">}</span>
+
+<span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">prefers-color-scheme</span><span class="o">:</span><span class="w"> </span><span class="nt">dark</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nt">svg</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">filter</span><span class="p">:</span><span class="w"> </span><span class="nb">invert</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="nt">img</span><span class="o">[</span><span class="nt">src</span><span class="o">$=</span><span class="s2">&quot;.svg&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">filter</span><span class="p">:</span><span class="w"> </span><span class="nb">invert</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div>
-<p>"sv" means Sweden, and in Sweden the locale string is formatted "2023-11-05 00:18:41".</p>
-<p>Found this solution on <a href="https://stackoverflow.com/a/58614322">StackOverflow by Tom</a> when making <a href="/minecraftle">Minecraftle</a> work across timezones.</p></article>
+<p>Can be used in combination with <code>prefers-color-scheme</code> very simply.  I found out about this from <a href="https://www.htmhell.dev/adventcalendar/2022/19/">this site</a> from <a href="https://merveilles.town/@thomasorus/112152071343936480">this post</a>.</p></article>
 
     <hr />
 
@@ -269,26 +280,24 @@
       
 
       
-
-      
-      <p class="backlinks"><span class="bold">Tags:</span>
+      <p class="backlinks"><span class="bold">Incoming:</span>
         
-        <a href="/tags#dirty-hacks">#dirty-hacks</a>
-        
-        <a href="/tags#javascript">#javascript</a>
+        <a href="/recent-changes">Recent Changes</a>
         
         </span>
       </p>
       
+
+      
     </div>
   </main>
   <footer>
-    <a href="mailto:zachpmanson@gmail.com?subject=On 'JavaScript YYYY-MM-DD in Local Time'">reply</a>
-    <a href="/non-programming-languages">random</a>
+    <a href="mailto:zachpmanson@gmail.com?subject=On 'Automatic Dark Mode'">reply</a>
+    <a href="/windows-11-without-a-microsoft-account">random</a>
     <a href="/recent-changes">updates</a>
     <a href="/tags">tags</a>
     <a href="/sitemap">sitemap</a>
-    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/JavaScript YYYY-MM-DD in Local Time.md">edit</a>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Automatic Dark Mode.md">edit</a>
   </footer>
   
 </body>
