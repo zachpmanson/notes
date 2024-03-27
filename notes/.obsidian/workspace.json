@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/snakeware.md",
+                "file": "Archive/Problems/Automatic Dark Mode.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/snakeware.md",
+                "file": "Archive/Problems/Automatic Dark Mode.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/snakeware.md",
+                "file": "Archive/Problems/Automatic Dark Mode.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/snakeware.md"
+                "file": "Archive/Problems/Automatic Dark Mode.md"
               }
             }
           }
@@ -146,9 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "f022ea03489a2abe",
   "lastOpenFiles": [
     "Posts/Hidden Post.md",
+    "Archive/Problems/Automatic Dark Mode.md",
+    "Projects/snakeware.md",
     "Notes/Internet/Digital Garden.md",
     "Notes/Software/Programs/GNU/Bash/Bash.md",
     "Notes/Software/Programs/GNU/Bash/Bash Startup Scripts.md",
@@ -177,8 +179,6 @@
     "Archive/Bookmarks/Bookmarks.md",
     "Meta/Stylesheet.md",
     "Meta/Sitemap.md",
-    "Meta/Recent Changes.md",
-    "Meta/Random.md",
     "Notes/Software/Development/Programming Languages/C++",
     "Notes/Software/Development/Kinds of Work",
     "Notes/Software/Intelligent Agents",
