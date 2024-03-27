@@ -1,3 +1,8 @@
+:root {
+  color-scheme: light dark;
+  --primary: light-dark(black, white);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -47,7 +52,7 @@ nav {
   flex-wrap: wrap;
   align-items: start;
   gap: 0 1rem;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--primary);
   padding: 0 1rem 0 1rem;
 
   .main-icon {
@@ -141,7 +146,7 @@ h3 {
 }
 
 a {
-  color: black;
+  color: var(--primary);
   text-decoration: underline;
 }
 
@@ -152,7 +157,6 @@ a:hover {
 a[href^="/"],
 a[href^="./"],
 a[href*="zachmanson.com"] {
-  text-decoration-color: black;
   text-decoration-style: dotted;
 }
 
@@ -184,9 +188,9 @@ a[href^="/"].activated-link:hover::after {
 hr {
   margin: 2rem auto;
   height: 1px;
-  color: black;
+  color: var(--primary);
   border-width: 0;
-  background-color: black;
+  background-color: var(--primary);
 }
 
 footer {
@@ -205,7 +209,7 @@ summary h2 {
 blockquote {
   margin: 1rem;
   padding: 0 1rem;
-  border-left: 2px solid #000;
+  border-left: 2px solid var(--primary);
 }
 
 blockquote + p > cite {
@@ -235,7 +239,7 @@ table {
 
   td,
   th {
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid var(--primary);
     padding: 0.5rem;
   }
 
@@ -273,4 +277,16 @@ table {
   justify-content: space-between;
   align-items: center;
   margin: 0.5rem 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  svg {
+    filter: invert(1);
+  }
+  img[src$=".svg"] {
+    filter: invert(1);
+  }
+  /* body {
+    background-color: black;
+  } */
 }
