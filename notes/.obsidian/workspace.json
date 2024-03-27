@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/Programming Languages.md",
+                "file": "Posts/Hidden Post.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/Programming Languages.md",
+                "file": "Posts/Hidden Post.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/Programming Languages.md",
+                "file": "Posts/Hidden Post.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/Programming Languages.md"
+                "file": "Posts/Hidden Post.md"
               }
             }
           }
@@ -146,8 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "f022ea03489a2abe",
   "lastOpenFiles": [
+    "Posts/Posts.md",
+    "Posts/Hidden Post.md",
+    "Notes/Software/Development/Programming Languages/Programming Languages.md",
     "Notes/Software/Programs/GNU/Bash/Bash.md",
     "Meta/About.md",
     "Index.md",
@@ -164,7 +167,6 @@
     "Meta/Meta.md",
     "Notes/Internet/Fediverse/Fediverse.md",
     "Notes/Software/Development/Web Development/React.md",
-    "Posts/Posts.md",
     "Meta/Future Changes.md",
     "Media/fedi.png",
     "Media/fediverse.svg",
@@ -177,8 +179,6 @@
     "Meta/Random.md",
     "Projects/Minecraftle/How Minecraft Stores Crafting Recipes.md",
     "Projects/snakeware.md",
-    "Meta/Credits.md",
-    "Archive/Bookmarks/Tools.md",
     "Notes/Software/Development/Programming Languages/C++",
     "Notes/Software/Development/Kinds of Work",
     "Notes/Software/Intelligent Agents",
