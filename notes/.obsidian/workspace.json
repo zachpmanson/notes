@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Posts/Hidden Post.md",
+                "file": "Projects/snakeware.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Posts/Hidden Post.md",
+                "file": "Projects/snakeware.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Posts/Hidden Post.md",
+                "file": "Projects/snakeware.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Posts/Hidden Post.md"
+                "file": "Projects/snakeware.md"
               }
             }
           }
@@ -147,12 +146,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f022ea03489a2abe",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Posts/Hidden Post.md",
     "Notes/Internet/Digital Garden.md",
     "Notes/Software/Programs/GNU/Bash/Bash.md",
     "Notes/Software/Programs/GNU/Bash/Bash Startup Scripts.md",
-    "Posts/Hidden Post.md",
     "Posts/Posts.md",
     "Notes/Software/Development/Programming Languages/Programming Languages.md",
     "Meta/About.md",

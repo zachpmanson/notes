@@ -15,10 +15,12 @@ On first boot, snakeware launches you directly a the Python interpreter.  From h
 To launch snakewm from the interpreter, run the `snakewm` command.  From snakewm the aopp menu can be opened using the Super key.  From here a number of applications can be launched.
 
 To launch CLI games, enter the following commands:
+
 ```
 >>> import snake_games
 >>> snake_games.menu()
 ```
+
 Games included as of 2022 are snake, snakepaint, and circlez.
 
 ## History
