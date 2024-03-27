@@ -2,7 +2,7 @@
 
 -- [Chuck Grimmet](https://cagrimmett.com/ideas/2020/11/08/what-are-digital-gardens/)
 
-Some of the most fascinating places on the web.  I have collected a list of interesting [[digital gardens]].
+Some of the most fascinating places on the [[internet]].  I have collected a list of interesting [[digital gardens]].
 
 Interest writing on digital gardens:
 
