@@ -11,3 +11,5 @@ Interest writing on digital gardens:
 - [Memexes, mountain lakes, and the serendipity of old ideas](https://interconnected.org/home/2021/02/10/reservoirs)
 	- espouses the value of large bodies of notes as a tool that aides in future writing, even unorganised
 - [What Is A Wiki](https://garden.bouncepaw.com/hypha/what_is_a_wiki), @bouncepaw@merveilles.town's archive conversations on what counts as a wiki
+- [My blog is a digital garden, not a blog](https://joelhooks.com/digital-garden)
+- [Building a digital garden](https://tomcritchlow.com/2019/02/17/building-digital-garden)

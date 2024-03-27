@@ -1,4 +1,4 @@
-Bash has a number of different startup scripts depending on what context you use it.
+[[Bash]] has a number of different startup scripts depending on what context you use it.
 
 ![[bash.jpg]]
 
