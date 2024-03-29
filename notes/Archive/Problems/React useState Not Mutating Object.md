@@ -17,7 +17,6 @@ function f() {
 }
 ```
 
-
 You should always return a wholly new object.
 
 ```ts

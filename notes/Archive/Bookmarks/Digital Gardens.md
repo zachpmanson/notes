@@ -8,12 +8,12 @@ Some of my favourites:
 
 - [XXIIVV](https://wiki.xxiivv.com/site/home.html)
 - [Andy Matuschak's Notes](https://notes.andymatuschak.org/About_these_notes)
-- [CSpace](https://utcc.utoronto.ca/~cks/space/FrontPage)
 - [Maggie Appleton](https://maggieappleton.com/)
 - [Gwern](https://gwern.net/)
 
 Some other interesting ones I have come across:
 
+- [CSpace](https://utcc.utoronto.ca/~cks/space/FrontPage)
 - [Fork My Brain](https://notes.nicolevanderhoeven.com/Fork+My+Brain)
 - [wiki1.mikf.pl](https://wiki1.mikf.pl/)
 - [articles written by Joel Hooks](https://joelhooks.com/)

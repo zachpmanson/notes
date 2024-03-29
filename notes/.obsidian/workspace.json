@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Posts/GitHub Pages Redirection.md",
+                "file": "Notes/Mathematics/Computer Science/Currying.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Posts/GitHub Pages Redirection.md",
+                "file": "Notes/Mathematics/Computer Science/Currying.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Posts/GitHub Pages Redirection.md",
+                "file": "Notes/Mathematics/Computer Science/Currying.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Posts/GitHub Pages Redirection.md"
+                "file": "Notes/Mathematics/Computer Science/Currying.md"
               }
             }
           }
@@ -133,8 +133,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,39 +145,39 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f022ea03489a2abe",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Posts/Posts.md",
-    "Posts/GitHub Pages Redirection.md",
-    "Projects/Ochrs/Ochrs Syntax.md",
-    "Projects/Ochrs/Ochrs.md",
-    "Projects/Ochrs/Ochrs 2.0.md",
-    "Meta/About.md",
-    "Archive/Problems/Automatic Dark Mode.md",
-    "Posts/Hidden Post.md",
-    "Projects/snakeware.md",
+    "Notes/Mathematics/Computer Science/Computer Science.md",
+    "Notes/Language/Dictionary.md",
+    "Notes/Language/Linguistic Concepts/Rebracketing.md",
+    "Notes/Language/Etymology/Thou.md",
+    "Notes/Language/Etymology/Slug.md",
+    "Notes/Language/Etymology/Pejorative.md",
+    "Notes/Language/Etymology/Inspire, Expire, and Conspire.md",
+    "Notes/Language/Etymology/Figment.md",
+    "Notes/Language/Etymology/Etymology.md",
+    "Notes/Language/Etymology/Em Size.md",
+    "Notes/Language/Diacritics/Diaeresis.md",
+    "Notes/Language/Characters/Interrobang.md",
+    "Notes/Language/Characters/Lemniscate.md",
+    "Notes/Language/Characters/Multiocular O.md",
+    "Notes/Language/Characters/Characters.md",
+    "Notes/Language/Characters/Ampersand.md",
+    "Notes/Internet/Internet.md",
     "Notes/Internet/Digital Garden.md",
-    "Notes/Software/Programs/GNU/Bash/Bash.md",
-    "Notes/Software/Programs/GNU/Bash/Bash Startup Scripts.md",
-    "Notes/Software/Development/Programming Languages/Programming Languages.md",
-    "Index.md",
-    "Notes/Software/Development/Terminals.md",
-    "Notes/Software/Development/Debugging.md",
-    "Notes/Software/Development/Kinds of Problems.md",
+    "Notes/Internet/Pirate Libraries/Pirate Libraries.md",
+    "Notes/Internet/Internet Standards/OAuth/OAuth.md",
+    "Notes/Internet/Internet Standards/RSS.md",
+    "Notes/Internet/Internet Standards/ActivityPub.md",
+    "Notes/Internet/Fediverse/Fediverse.md",
+    "Notes/Internet/Fediverse/Federating with Meta.md",
+    "Archive/Problems/Self-Hosted Postgres and Prisma.md",
+    "Archive/Problems/Sticky Elements.md",
     "Media/blocks.svg",
-    "404.md",
-    "Projects/Minecraftle/Minecraftle.md",
     "dotgrid-24G03-011513.svg",
     "dotgrid-24G03-010922.png",
-    "Projects/Ochrs/Ochrs 1.0.md",
-    "Meta/Meta.md",
-    "Notes/Internet/Fediverse/Fediverse.md",
-    "Notes/Software/Development/Web Development/React.md",
-    "Meta/Future Changes.md",
     "Media/fedi.png",
     "Media/fediverse.svg",
-    "Notes/Language/Etymology/Gruntle.md",
-    "Archive/Bookmarks/Websites.md",
     "Notes/Software/Development/Programming Languages/C++",
     "Notes/Software/Development/Kinds of Work",
     "Notes/Software/Intelligent Agents",

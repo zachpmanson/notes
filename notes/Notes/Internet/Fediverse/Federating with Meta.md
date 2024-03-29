@@ -22,7 +22,7 @@ Roelant Kooij wrote an [excellent overview](https://roelant.net/en/2023/interest
 	- suggests that if Facebook is federated, they should start with "two strikes against it"
 	- "Is the goal of the Fediverse to be anti-corporate/anti-commercial, or to be pro-openness? I think openness is the answer"
 - [How to Kill a Decentralised Network (such as the Fediverse)](https://ploum.net/2023-06-23-how-to-kill-decentralised-networks.html), Ploum's excellent writeup on how large companies can (sometimes maliciously) kill open/decentralised networks
-	- makes compairson to Google killing XMPP and Microsoft using OOXML to cripple open source office software
+	- makes comparison to Google killing XMPP and Microsoft using OOXML to cripple open source office software
 - ⭐️ [**Meta on the Fediverse: to block or not to block?**](https://about.scicomm.xyz/doku.php?id=blog:2023:0625_meta_on_the_fediverse_to_block_or_not_to_block), SciComm admins writeup of their balanced thought process on pre-emptive blocking
 	- they conclude to pre-emptively block, but leave the door open to unblocking if Meta is a decent fediverse citizen
 - [Why would Meta implement ActivityPub? 1½ reasons are compelling, another is not](https://reb00ted.org/tech/20230625-meta-why-activitypub/), Johannes Ernst's analysis of Meta's motivations
@@ -40,7 +40,7 @@ Roelant Kooij wrote an [excellent overview](https://roelant.net/en/2023/interest
  - ⭐️ [**The Two Camps of Mastodon**](https://heat-shield.space/mastodon_two_camps.html), on the general split between people that view the fediverse as a collection of small communities and those that view it as a distributed network where most people can talk to most others in a decentralised fashion, and how Threads' existence exacerbate this divide
 - [The horns of a dilemma](https://netwars.pelicancrossing.net/2023/06/30/the-horns-of-a-dilemma/), Wendy M. Grossman enumerating potential futures
 - ⭐️ [**Meta and the fediverse: sorting heat from light**](https://blog.bloonface.com/2023/07/03/meta-and-the-fediverse-sorting-heat-from-light/), a fantastic rebuke to many of Meta's alleged nefarious motivations
-	- meta gains little in terms of data collection ability since activitypub lacks privacy anyway, and what it does gain isn't very useful, and the current fediverse population size is not large enough to be worth pursuing for data collection
+	- meta gains little in terms of data collection ability since [[activitypub]] lacks privacy anyway, and what it does gain isn't very useful, and the current fediverse population size is not large enough to be worth pursuing for data collection
 	- its seems unlikely that Meta actually sees the fediverse as a threat
 	- the Gchat/XMPP embrace/extend/extinguish example is flawed
 	- Meta isn't evil without motivation

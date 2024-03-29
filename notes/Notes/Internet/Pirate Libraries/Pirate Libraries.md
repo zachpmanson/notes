@@ -3,7 +3,7 @@ tags:
   - posts
 date: 2023-11-20
 ---
-Also known as shadow libraries, are potentially the best thing humans have ever created and are illegal in most places.  They are archives human writing, some catering to particular niches and some attempting to capture *everything*.  And then distribute all of human knowledge and writing for free.
+Also known as shadow libraries, are potentially the best thing humans have ever created and are illegal in most places.  They are [[archives]] human writing, some catering to particular niches and some attempting to capture *everything*.  And then distribute all of human knowledge and writing for free.
 
 They have no regard for copyright law, generally viewing them as part of a broken system or distractions to (what the pirate librarians might call) their noble goals.
 
@@ -11,7 +11,7 @@ Library Genesis (libgen) and Sci-Hub (a superset of libgen) focus primarily on a
 
 Books3 is another pirate library, containing ≈196000 books sourced from Bibliotik.  It is named in the spirit of OpenAI's dubiously sourced collections of books, Books1 and Books2.  Books3 has become well known for its use in training [[large language models]] like [[LLaMA]].
 
-The Internet Archive is pirate library adjacent.  It contains and redistributes (without permission) countless copyrighted works, but will respond to takedown requests.
+The [[Internet]] Archive is pirate library adjacent.  It contains and redistributes (without permission) countless copyrighted works, but will respond to takedown requests.
 
 During [[UWA Computer Science|my time at university]], use of Library Genesis and Sci-Hub was rife. While not everyone knew of these sites directly, everyone knew someone who knew someone who did, and textbook PDFs propagated on the sneakernet.
 

@@ -1,13 +1,13 @@
 ---
 subtitle: Really Simple Syndication.
 ---
-Platform agnostic way to follow anything?  Amazing.  This is what the internet was made for.
+Platform agnostic way to follow anything?  Amazing.  This is what the [[internet]] was made for.
 
 I use Nextcloud News as my RSS reader since it has an Android app, is pretty straightfoward and was dead simple to add to my existing Nextcloud installation.
 
 ## Digital Gardens
 
-Digital gardens aren't a medium that obviously lends itself to use with RSS due to its strict focus on chronological ordering.  Digital gardens encourage incremental growth of pages and incomplete, living works.
+[[Digital gardens]] aren't a medium that obviously lends itself to use with RSS due to its strict focus on chronological ordering.  Digital gardens encourage incremental growth of pages and incomplete, living works.
 
 Potential ways of integrating RSS:
 
