@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Ochrs/Ochrs Syntax.md",
+                "file": "Posts/GitHub Pages Redirection.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/Ochrs/Ochrs Syntax.md",
+                "file": "Posts/GitHub Pages Redirection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/Ochrs/Ochrs Syntax.md",
+                "file": "Posts/GitHub Pages Redirection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/Ochrs/Ochrs Syntax.md"
+                "file": "Posts/GitHub Pages Redirection.md"
               }
             }
           }
@@ -146,10 +146,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "f022ea03489a2abe",
   "lastOpenFiles": [
-    "Projects/Ochrs/Ochrs.md",
+    "Posts/Posts.md",
+    "Posts/GitHub Pages Redirection.md",
     "Projects/Ochrs/Ochrs Syntax.md",
+    "Projects/Ochrs/Ochrs.md",
     "Projects/Ochrs/Ochrs 2.0.md",
     "Meta/About.md",
     "Archive/Problems/Automatic Dark Mode.md",
@@ -158,7 +160,6 @@
     "Notes/Internet/Digital Garden.md",
     "Notes/Software/Programs/GNU/Bash/Bash.md",
     "Notes/Software/Programs/GNU/Bash/Bash Startup Scripts.md",
-    "Posts/Posts.md",
     "Notes/Software/Development/Programming Languages/Programming Languages.md",
     "Index.md",
     "Notes/Software/Development/Terminals.md",
@@ -178,7 +179,6 @@
     "Media/fediverse.svg",
     "Notes/Language/Etymology/Gruntle.md",
     "Archive/Bookmarks/Websites.md",
-    "Archive/Bookmarks/Bookmarks.md",
     "Notes/Software/Development/Programming Languages/C++",
     "Notes/Software/Development/Kinds of Work",
     "Notes/Software/Intelligent Agents",
