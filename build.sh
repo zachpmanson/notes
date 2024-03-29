@@ -14,7 +14,7 @@ else
     rm -f history.csv
     find notes -name "*.md" | while read line; do
         echo -n "\"$line\"," >> history.csv
-        git log --pretty=format:"%ai" --date=short --diff-filter=A -- "$line" | tail -n1  >> history.csv
+        git log --pretty=format:"%ai," --date=short --diff-filter=A -- "$line" | tail -n1  >> history.csv
         git log -1 --pretty=format:"%ai" --date=short -- "$line" | tail -n1  >> history.csv
         echo "" >> history.csv
     done

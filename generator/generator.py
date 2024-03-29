@@ -441,8 +441,8 @@ class Node:
 
     backlinks: set[str]
 
-    mod_date: str  # "YYYY-MM-DD"
-    creation_date: str  # "YYYY-MM-DD"
+    mod_date: str  # "2023-02-23 20:54:42 +0800%"
+    creation_date: str  # "2023-02-23 20:54:42 +0800%"
 
     breadcrump_path: str  # path in notes folder as string
     random_page: str  # random page when using static random
