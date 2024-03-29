@@ -13,7 +13,7 @@
             <link>https://notes.zachmanson.com/fediverse</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Fri, 29 Mar 2024 10:12:01 </lastBuildDate>
+        <lastBuildDate>Fri, 29 Mar 2024 10:51:52 </lastBuildDate>
         
         <item>
             <title>Federating with Meta</title>
@@ -38,7 +38,7 @@
 </ul>
 </li>
 <li><a href="https://ploum.net/2023-06-23-how-to-kill-decentralised-networks.html">How to Kill a Decentralised Network (such as the Fediverse)</a>, Ploum's excellent writeup on how large companies can (sometimes maliciously) kill open/decentralised networks<ul>
-<li>makes compairson to Google killing XMPP and Microsoft using OOXML to cripple open source office software</li>
+<li>makes comparison to Google killing XMPP and Microsoft using OOXML to cripple open source office software</li>
 </ul>
 </li>
 <li>⭐️ <a href="https://about.scicomm.xyz/doku.php?id=blog:2023:0625_meta_on_the_fediverse_to_block_or_not_to_block"><strong>Meta on the Fediverse: to block or not to block?</strong></a>, SciComm admins writeup of their balanced thought process on pre-emptive blocking<ul>
@@ -70,7 +70,7 @@
 <li>⭐️ <a href="https://heat-shield.space/mastodon_two_camps.html"><strong>The Two Camps of Mastodon</strong></a>, on the general split between people that view the fediverse as a collection of small communities and those that view it as a distributed network where most people can talk to most others in a decentralised fashion, and how Threads' existence exacerbate this divide</li>
 <li><a href="https://netwars.pelicancrossing.net/2023/06/30/the-horns-of-a-dilemma/">The horns of a dilemma</a>, Wendy M. Grossman enumerating potential futures</li>
 <li>⭐️ <a href="https://blog.bloonface.com/2023/07/03/meta-and-the-fediverse-sorting-heat-from-light/"><strong>Meta and the fediverse: sorting heat from light</strong></a>, a fantastic rebuke to many of Meta's alleged nefarious motivations<ul>
-<li>meta gains little in terms of data collection ability since activitypub lacks privacy anyway, and what it does gain isn't very useful, and the current fediverse population size is not large enough to be worth pursuing for data collection</li>
+<li>meta gains little in terms of data collection ability since <a href="/activitypub">activitypub</a> lacks privacy anyway, and what it does gain isn't very useful, and the current fediverse population size is not large enough to be worth pursuing for data collection</li>
 <li>its seems unlikely that Meta actually sees the fediverse as a threat</li>
 <li>the Gchat/XMPP embrace/extend/extinguish example is flawed</li>
 <li>Meta isn't evil without motivation</li>
