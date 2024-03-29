@@ -46,7 +46,7 @@ These will be collated on the [[tags]] page. If any tags written in the Markdown
 
 ## Chronological Feeds
 
-Ochrs can produce chronological list of posts usings tags.  This can be used to produce a blog like interface and RSS feeds.  Any page can be included in a chronological feed by assigning it 1+ tags, and then adding a date property to the frontmatter of the Markdown.  The date will be used as the publishing date whenever it is ranked chronologically.
+Ochrs can produce chronological list of posts using tags.  This can be used to produce a blog like interface and RSS feeds.  Any page can be included in a chronological feed by assigning it 1+ tags, and then adding a date property to the frontmatter of the Markdown.  The date will be used as the publishing date whenever it is ranked chronologically.
 
 Each tag will have an RSS feed populated with all pages with that tag and a date attribute, which can be seen on that [[Tags]] page.
 

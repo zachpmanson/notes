@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meta/About.md",
+                "file": "Projects/Ochrs/Ochrs Syntax.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Meta/About.md",
+                "file": "Projects/Ochrs/Ochrs Syntax.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Meta/About.md",
+                "file": "Projects/Ochrs/Ochrs Syntax.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Meta/About.md"
+                "file": "Projects/Ochrs/Ochrs Syntax.md"
               }
             }
           }
@@ -148,6 +148,10 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Projects/Ochrs/Ochrs.md",
+    "Projects/Ochrs/Ochrs Syntax.md",
+    "Projects/Ochrs/Ochrs 2.0.md",
+    "Meta/About.md",
     "Archive/Problems/Automatic Dark Mode.md",
     "Posts/Hidden Post.md",
     "Projects/snakeware.md",
@@ -156,7 +160,6 @@
     "Notes/Software/Programs/GNU/Bash/Bash Startup Scripts.md",
     "Posts/Posts.md",
     "Notes/Software/Development/Programming Languages/Programming Languages.md",
-    "Meta/About.md",
     "Index.md",
     "Notes/Software/Development/Terminals.md",
     "Notes/Software/Development/Debugging.md",
@@ -167,7 +170,6 @@
     "dotgrid-24G03-011513.svg",
     "dotgrid-24G03-010922.png",
     "Projects/Ochrs/Ochrs 1.0.md",
-    "Projects/Ochrs/Ochrs.md",
     "Meta/Meta.md",
     "Notes/Internet/Fediverse/Fediverse.md",
     "Notes/Software/Development/Web Development/React.md",
@@ -177,8 +179,6 @@
     "Notes/Language/Etymology/Gruntle.md",
     "Archive/Bookmarks/Websites.md",
     "Archive/Bookmarks/Bookmarks.md",
-    "Meta/Stylesheet.md",
-    "Meta/Sitemap.md",
     "Notes/Software/Development/Programming Languages/C++",
     "Notes/Software/Development/Kinds of Work",
     "Notes/Software/Intelligent Agents",
