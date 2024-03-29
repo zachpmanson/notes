@@ -10,7 +10,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: hidden post</title>
+  <title>notes: github pages redirection</title>
 </head>
 
 <body>
@@ -59,7 +59,7 @@
         
 
         <div class="flex flex-col text-left nav-links">
-          <a href="/hidden-post" class="activated-link">Hidden Post</a>
+          <a href="/github-pages-redirection" class="activated-link">GitHub Pages Redirection</a>
           
           
           <a href="/collaborative-awe">Collaborative Awe</a>
@@ -70,10 +70,10 @@
           
           
           
-          <a href="/github-pages-redirection">GitHub Pages Redirection</a>
           
           
           
+          <a href="/hidden-post">Hidden Post</a>
           
           
           
@@ -111,13 +111,21 @@
   </nav>
   <main>
     <header>
-      <h1>You found a secret!</h1>
+      <h1>This feed has moved and GitHub Pages won't let me redirect you automatically.</h1>
     </header>
-    <article><p>This page should be marked as a child of post, but not actually accessible from the posts page.  This is because it doesn't have a publish date.  It won't appear in RSS feeds either.  This could be good for drafts.</p></article>
+    <article><p>(This was written as to tell people to move from my old RSS feed to my new RSS feed on notes.zachmanson.com.  If you are reading this on notes.zachmanson.com you are in the right place.)<br />
+I haven't written on here in a while, but I have been writing on my <a href="/">public notes</a>. At this point I've got over 300 pages on there, far more than I ever wrote on here but in a format that looks a lot more like a wiki. This is mostly a factor of convenience, the format of the <a href="/notes">notes</a> means I can iteratively add whatever I am thinking about, without the expectation of the writing being complete and canonical. The writing is organised into a hierarchy of folders, with <a href="/tags">tags</a> and backlinks. I find this format much better for wiki-style writing but doesn't lend itself well to chronological feeds like this one.</p>
+<p>Occasionally I would write a note on there that would fit well into the blog format, or was long and more story based. Some of my posts on this blog worked much better as wiki pages than as blog posts. I have wanted to unify these two sites for a long time now. Last week I finally got around to it!</p>
+<p>The <a href="/ochrs">Ochrs</a> site generator that I wrote to build the wiki can now generate chronological feeds of posts and RSS feeds. Feeds are generated based on tags, where each tag has its own <a href="/rss">RSS</a> feed. A note can be added to a chronological feed by adding a publish date (<code>date</code> field in the frontmatter), which will then be used as the publish date in all feeds that the note is a part of. This approach is great since it allows each note to exist anywhere in the wiki hierarchy while also being a part of many feeds. The RSS feed will be at <code>notes.zachmanson.com/&lt;tagname&gt;.xml</code>, and the list of notes in a chronological feed can be shown on a page using the <code>ochrs:chrono:&lt;tagname&gt;</code> build function (see <a href="/ochrs-syntax">Ochrs Syntax</a> for more on how this works), which will results in all the posts being displayed in blog-style HTML.</p>
+<p>To succeed <code>zachmanson.com/blog/</code> I have created the posts tag. The feeds can be seen at [[posts|notes.zachmanson.com/posts]] and using <a href="/posts.xml">RSS</a>. I have moved the existing posts here over to the this new feed.</p>
+<p>If you are reading this using RSS then I would like to apologise that you will have to subscribe to a new feed. I would have like to automatically redirect your feed reader, but <strong>GitHub Pages doesn't let you create 301 redirects</strong>. The <code>redirect-from</code> plugin is capable of meta tag redirects, but those are soft and not followed by feed readers. This is very frustrating.</p>
+<p>I've marked a bunch of longer notes I've made as posts, so the new feed already has 7 new posts. Hopefully more will come soon!</p></article>
 
     <hr />
 
     <div class="meta">
+      
+      <p class="backlinks"><span class="bold">Posted:</span> 2024-03-29</p>
       
 
       
@@ -140,12 +148,12 @@
     </div>
   </main>
   <footer>
-    <a href="mailto:zachpmanson@gmail.com?subject=On 'Hidden Post'">reply</a>
-    <a href="/ochrs">random</a>
+    <a href="mailto:zachpmanson@gmail.com?subject=On 'GitHub Pages Redirection'">reply</a>
+    <a href="/tags">random</a>
     <a href="/recent-changes">updates</a>
     <a href="/tags">tags</a>
     <a href="/sitemap">sitemap</a>
-    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Posts/Hidden Post.md">edit</a>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Posts/GitHub Pages Redirection.md">edit</a>
   </footer>
   
 </body>
