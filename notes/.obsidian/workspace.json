@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Mathematics/Computer Science/Currying.md",
+                "file": "Notes/Miscellany/On Writing.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Mathematics/Computer Science/Currying.md",
+                "file": "Notes/Miscellany/On Writing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Mathematics/Computer Science/Currying.md",
+                "file": "Notes/Miscellany/On Writing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Mathematics/Computer Science/Currying.md"
+                "file": "Notes/Miscellany/On Writing.md"
               }
             }
           }
@@ -147,6 +147,8 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Miscellany/On Taking Notes.md",
+    "Notes/Mathematics/Computer Science/Currying.md",
     "Notes/Mathematics/Computer Science/Computer Science.md",
     "Notes/Language/Dictionary.md",
     "Notes/Language/Linguistic Concepts/Rebracketing.md",
@@ -171,8 +173,6 @@
     "Notes/Internet/Internet Standards/ActivityPub.md",
     "Notes/Internet/Fediverse/Fediverse.md",
     "Notes/Internet/Fediverse/Federating with Meta.md",
-    "Archive/Problems/Self-Hosted Postgres and Prisma.md",
-    "Archive/Problems/Sticky Elements.md",
     "Media/blocks.svg",
     "dotgrid-24G03-011513.svg",
     "dotgrid-24G03-010922.png",
