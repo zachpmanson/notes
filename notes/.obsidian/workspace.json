@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Miscellany/On Writing.md",
+                "file": "Posts/GitHub Pages Redirection.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Miscellany/On Writing.md",
+                "file": "Posts/GitHub Pages Redirection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Miscellany/On Writing.md",
+                "file": "Posts/GitHub Pages Redirection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Miscellany/On Writing.md"
+                "file": "Posts/GitHub Pages Redirection.md"
               }
             }
           }
@@ -147,6 +147,9 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Internet/Fediverse/Fediverse Family Tree.md",
+    "Notes/Internet/Fediverse/Fediverse.md",
+    "Notes/Miscellany/On Writing.md",
     "Notes/Miscellany/On Taking Notes.md",
     "Notes/Mathematics/Computer Science/Currying.md",
     "Notes/Mathematics/Computer Science/Computer Science.md",
@@ -170,9 +173,6 @@
     "Notes/Internet/Pirate Libraries/Pirate Libraries.md",
     "Notes/Internet/Internet Standards/OAuth/OAuth.md",
     "Notes/Internet/Internet Standards/RSS.md",
-    "Notes/Internet/Internet Standards/ActivityPub.md",
-    "Notes/Internet/Fediverse/Fediverse.md",
-    "Notes/Internet/Fediverse/Federating with Meta.md",
     "Media/blocks.svg",
     "dotgrid-24G03-011513.svg",
     "dotgrid-24G03-010922.png",

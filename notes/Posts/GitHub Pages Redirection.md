@@ -11,6 +11,6 @@ The [[Ochrs]] site generator that I wrote to build the wiki can now generate chr
 
 To succeed `zachmanson.com/blog/` I have created the posts tag. The feeds can be seen at [[posts|notes.zachmanson.com/posts]] and using [RSS](/posts.xml). I have moved the existing posts here over to the this new feed.
 
-If you are reading this using RSS then I would like to apologise that you will have to subscribe to a new feed. I would have like to automatically redirect your feed reader, but **GitHub Pages doesn't let you create 301 redirects**. The `redirect-from` plugin is capable of meta tag redirects, but those are soft and not followed by feed readers. This is very frustrating.
+If you are reading this using RSS then I would like to apologise that you will have to subscribe to a new feed. I would have liked to automatically redirect your feed reader, but **GitHub Pages doesn't let you create 301 redirects**. The `redirect-from` plugin is capable of meta tag redirects, but those are soft and not followed by feed readers. This is very frustrating.
 
 I've marked a bunch of longer notes I've made as posts, so the new feed already has 7 new posts. Hopefully more will come soon!
