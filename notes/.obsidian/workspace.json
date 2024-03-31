@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Exploits/Exploits.md",
+                "file": "Notes/Software/Exploits/XZ/XZ.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Exploits/Exploits.md",
+                "file": "Notes/Software/Exploits/XZ/XZ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Exploits/Exploits.md",
+                "file": "Notes/Software/Exploits/XZ/XZ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Exploits/Exploits.md"
+                "file": "Notes/Software/Exploits/XZ/XZ.md"
               }
             }
           }
@@ -157,10 +157,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f022ea03489a2abe",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Notes/Software/Exploits/XZ/XZ.md",
     "Notes/Software/Exploits/Exploits.md",
+    "Notes/Software/Exploits/XZ/XZ.md",
     "Archive/Lines.md",
     "Archive/Folklore/Aliens and Calendars.md",
     "Posts/GitHub Pages Redirection.md",
