@@ -13,7 +13,7 @@
             <link>https://notes.zachmanson.com/postgres</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Sun, 31 Mar 2024 05:33:53 </lastBuildDate>
+        <lastBuildDate>Sun, 31 Mar 2024 08:31:13 </lastBuildDate>
         
         <item>
             <title>XZ</title>
@@ -34,6 +34,13 @@
 <ul>
 <li><a href="https://robmensching.com/blog/posts/2024/03/30/a-microcosm-of-the-interactions-in-open-source-projects/">A Microcosm of the interactions in Open Source projects</a>, and interesting analysis of mailing list discussions about Jia Tan's contributions to the XZ project before Tan was made maintainer</li>
 <li><a href="https://tukaani.org/xz-backdoor/">Lasse Collin's page</a> tracking the vulnerability</li>
+</ul>
+<h2 id="features">Features</h2>
+<ul>
+<li>kill switch based on <a href="https://piaille.fr/@zeno/112185928685603910">environment variable</a><ul>
+<li><code>yolAbejyiejuvnup=Evjtgvsh5okmkAvj</code> is hardcoded (and then obfuscated)</li>
+</ul>
+</li>
 </ul>
 <h2 id="oddities">Oddities</h2>
 <ul>
