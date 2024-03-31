@@ -13,7 +13,7 @@
             <link>https://notes.zachmanson.com/postgres</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Sun, 31 Mar 2024 08:31:13 </lastBuildDate>
+        <lastBuildDate>Sun, 31 Mar 2024 08:36:28 </lastBuildDate>
         
         <item>
             <title>XZ</title>
@@ -63,6 +63,7 @@
 <p>Really required a lot of coincidences.</p>
 </blockquote>
 <p><cite class="standalone"><a href="https://mastodon.social/@AndresFreundTec/112180083704606941">Andres Freund (a Postgres developer at Microsoft)</a></cite></p>
+<p>As noted by <a href="https://news.ycombinator.com/item?id=39879960">nurple</a> on HN, this exploit was found for similar reasons to Ken Thompson's supply chain exploit was detected.  Strange performance sparking curiosity.</p>
 <h2 id="links">Links</h2>
 <ul>
 <li><a href="https://gist.github.com/thesamesam/223949d5a074ebc3dce9ee78baad9e27">FAQ on the exploit</a> by Sam James</li>
