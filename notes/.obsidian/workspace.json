@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Exploits/XZ/XZ.md",
+                "file": "Notes/Software/Exploits/Exploits.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "unix",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Exploits/XZ/XZ.md",
+                "file": "Notes/Software/Exploits/Exploits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Exploits/XZ/XZ.md",
+                "file": "Notes/Software/Exploits/Exploits.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Exploits/XZ/XZ.md"
+                "file": "Notes/Software/Exploits/Exploits.md"
               }
             }
           }
@@ -157,11 +157,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "f022ea03489a2abe",
   "lastOpenFiles": [
+    "Notes/Software/Exploits/XZ/XZ.md",
+    "Notes/Software/Exploits/Exploits.md",
     "Archive/Lines.md",
     "Archive/Folklore/Aliens and Calendars.md",
-    "Notes/Software/Exploits/XZ/XZ.md",
     "Posts/GitHub Pages Redirection.md",
     "Notes/Software/Exploits/XZ",
     "Notes/Software/Exploits",
@@ -186,7 +187,6 @@
     "Notes/Language/Characters/Multiocular O.md",
     "Notes/Language/Characters/Characters.md",
     "Notes/Language/Characters/Ampersand.md",
-    "Notes/Internet/Internet.md",
     "Media/blocks.svg",
     "dotgrid-24G03-011513.svg",
     "dotgrid-24G03-010922.png",
