@@ -13,7 +13,7 @@
             <link>https://notes.zachmanson.com/linux</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Sun, 31 Mar 2024 02:56:24 </lastBuildDate>
+        <lastBuildDate>Sun, 31 Mar 2024 03:03:34 </lastBuildDate>
         
         <item>
             <title>snakeware</title>
@@ -44,6 +44,62 @@
             </content:encoded>
             <guid isPermaLink="false">https://notes.zachmanson.com/snakeware</guid>
             <pubDate>2024-03-26</pubDate>
+        </item>
+        
+        <item>
+            <title>XZ</title>
+            <link>https://notes.zachmanson.com/xz</link>
+            
+            <description>The most advanced supply chain attack ever found.</description>
+            
+            <content:encoded>
+                <![CDATA[<p>The XZ exploit is a clever supply chain attack, placing a RCE in sshd using a vulnerability in XZ, a compression library that many <a href="/linux">Linux</a> distributions call when running OpenSSH (sshd -&gt; libsystemd (for logging) -&gt; liblzma).  It was discovered by Andres Freund when he noticed that sshd was running with abnormally high CPU usage.</p>
+<p>The vulnerability was submitted by Jia Tan, one of two maintainers of XZ.   The vulnerability was extremely obfuscated.  <a href="https://www.openwall.com/lists/oss-security/2024/03/29/4">Read the original backdoor report by Andres Freund for more details on this</a>.</p>
+<h2 id="maintainers">Maintainers</h2>
+<p>There are two maintainers of the XZ projects, Jia Tan and Lasse Collin.  Lasse Collin is the original author of the XZ Utils library, whereas Jia Tan has only been a maintainer since 2022.</p>
+<p>Tan appears so have little to no online footprint prior to 2021 when they started making useful contributions to XZ.  It is speculated that Jia Tan is an invented persona.</p>
+<blockquote>
+<p>He has been part of the xz project for 2 years, adding all sorts of binary test files, and to be honest with this level of sophistication I would be suspicious of even older versions of xz until proven otherwise.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=39866275">Richard Jones</a></cite></p>
+<ul>
+<li><a href="https://robmensching.com/blog/posts/2024/03/30/a-microcosm-of-the-interactions-in-open-source-projects/">A Microcosm of the interactions in Open Source projects</a>, and interesting analysis of mailing list discussions about Jia Tan's contributions to the XZ project before Tan was made maintainer</li>
+<li><a href="https://tukaani.org/xz-backdoor/">Lasse Collin's page</a> tracking the vulnerability</li>
+</ul>
+<h2 id="oddities">Oddities</h2>
+<ul>
+<li>In 2022 <a href="https://www.mail-archive.com/xz-devel@tukaani.org/msg00566.html">there were other suspected sock puppet accounts pushing Collin to introduce new maintainers</a></li>
+<li>Tan disabled a function in <a href="https://github.com/google/oss-fuzz/pull/10667">oss-fuzzer</a> in 2023 that the exploit relied on that may have revealed the exploit (<a href="https://social.treehouse.systems/@Aissen/112180302735030319">source</a>)</li>
+<li>the day before the exploit was found the xz-java project added a SECURITY.md file </li>
+</ul>
+<blockquote>
+<p>If you discover a security vulnerability in this project please report it privately. <em>Do not disclose it as a public issue.</em> This gives us time to work with you to fix the issue before public exposure, reducing the chance that the exploit will be used before a patch is released.</p>
+</blockquote>
+<ul>
+<li>It disabled Linux landlock?<ul>
+<li><a href="https://git.tukaani.org/?p=xz.git;a=blobdiff;f=CMakeLists.txt;h=d2b1af7ab0ab759b6805ced3dff2555e2a4b3f8e;hp=76700591059711e3a4da5b45cf58474dac4e12a7;hb=328c52da8a2bbb81307644efdb58db2c422d9ba7;hpb=eb8ad59e9bab32a8d655796afd39597ea6dcc64d">This commit</a> introduces a syntax error that prevents Linux landlock from being activated.  The test program designed to test if landlock was supported would always fail due to this errant <code>.</code>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="discovery">Discovery</h2>
+<blockquote>
+<p>I was doing some micro-benchmarking at the time, needed to quiesce the system to reduce noise. Saw sshd processes were using a surprising amount of CPU, despite immediately failing because of wrong usernames etc. Profiled sshd, showing lots of cpu time in liblzma, with perf unable to attribute it to a symbol. Got suspicious. Recalled that I had seen an odd valgrind complaint in automated testing of postgres, a few weeks earlier, after package updates.</p>
+<p>Really required a lot of coincidences.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://mastodon.social/@AndresFreundTec/112180083704606941">Andres Freund (a Postgres developer at Microsoft)</a></cite></p>
+<h2 id="links">Links</h2>
+<ul>
+<li><a href="https://gist.github.com/thesamesam/223949d5a074ebc3dce9ee78baad9e27">FAQ on the exploit</a> by Sam James</li>
+<li><a href="https://news.ycombinator.com/item?id=39865810">Initial discussion on hn</a></li>
+<li><a href="https://www.cve.org/CVERecord?id=CVE-2024-3094">CVE Report</a></li>
+<li><a href="https://www.openwall.com/lists/oss-security/2024/03/29/4">Original backdoor report by Freund</a></li>
+<li><a href="https://bsky.app/profile/did:plc:x2nsupeeo52oznrmplwapppl/post/3kowjkx2njy2b">Discovery of RCE</a></li>
+<li><a href="https://lcamtuf.substack.com/p/technologist-vs-spy-the-xz-backdoor">Technologist vs Spy</a>, making the case that based on the behaviour and circumstances surrounding the bug were that of organised actors</li>
+<li><a href="https://github.com/Midar/xz-backdoor-documentation/wiki">XZ Backdoor Documentation</a></li>
+</ul>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/xz</guid>
+            <pubDate>2024-03-13</pubDate>
         </item>
         
 
