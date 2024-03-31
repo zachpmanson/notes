@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Posts/GitHub Pages Redirection.md",
+                "file": "Notes/Software/Exploits/XZ/XZ.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ed51b6cee718740c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Archive/Lines.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Posts/GitHub Pages Redirection.md",
+                "file": "Notes/Software/Exploits/XZ/XZ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Posts/GitHub Pages Redirection.md",
+                "file": "Notes/Software/Exploits/XZ/XZ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Posts/GitHub Pages Redirection.md"
+                "file": "Notes/Software/Exploits/XZ/XZ.md"
               }
             }
           }
@@ -147,6 +159,12 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Archive/Lines.md",
+    "Archive/Folklore/Aliens and Calendars.md",
+    "Notes/Software/Exploits/XZ/XZ.md",
+    "Posts/GitHub Pages Redirection.md",
+    "Notes/Software/Exploits/XZ",
+    "Notes/Software/Exploits",
     "Notes/Internet/Fediverse/Fediverse Family Tree.md",
     "Notes/Internet/Fediverse/Fediverse.md",
     "Notes/Miscellany/On Writing.md",
@@ -169,10 +187,6 @@
     "Notes/Language/Characters/Characters.md",
     "Notes/Language/Characters/Ampersand.md",
     "Notes/Internet/Internet.md",
-    "Notes/Internet/Digital Garden.md",
-    "Notes/Internet/Pirate Libraries/Pirate Libraries.md",
-    "Notes/Internet/Internet Standards/OAuth/OAuth.md",
-    "Notes/Internet/Internet Standards/RSS.md",
     "Media/blocks.svg",
     "dotgrid-24G03-011513.svg",
     "dotgrid-24G03-010922.png",
@@ -187,8 +201,6 @@
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",
-    "Media/fediverse-branches.png.sb-5985f2ea-SXYeoC",
-    "Media/minecraftle.png.sb-5985f2ea-ymG6uK",
     "Media/citations.jpg",
     "Media/status-messenger-3.png",
     "Media/gambling-1.bmp.bmp",
