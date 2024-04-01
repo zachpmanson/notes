@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Folklore/I No Longer Built Software.md",
+                "file": "Meta/DNS.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Folklore/I No Longer Built Software.md",
+                "file": "Meta/DNS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Folklore/I No Longer Built Software.md",
+                "file": "Meta/DNS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Folklore/I No Longer Built Software.md"
+                "file": "Meta/DNS.md"
               }
             }
           }
@@ -147,18 +147,18 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Exploits/XZ/XZ.md",
+    "Archive/Folklore/I No Longer Built Software.md",
     "Notes/Mathematics/Computer Science/Currying.md",
     "Notes/Miscellany/On Taking Notes.md",
     "Notes/Miscellany/On Writing.md",
     "Notes/Internet/Fediverse/Fediverse.md",
     "Notes/Internet/Fediverse/Fediverse Family Tree.md",
     "Posts/GitHub Pages Redirection.md",
-    "Notes/Software/Exploits/XZ/XZ.md",
     "Notes/Miscellany/IKEA Hacks.md",
     "Archive/Folklore/Originality Not Required.md",
     "Notes/Software/Development/Non-Programming Languages/Markdown.md",
     "Archive/Folklore/PSD is not my favourite file format.md",
-    "Archive/Folklore/I No Longer Built Software.md",
     "Archive/Lines.md",
     "Archive/Folklore/The Patron Saint of Yak Shaves.md",
     "Notes/Software/Programs/GNU/Screen/Common Screen Commands.md",
