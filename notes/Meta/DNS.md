@@ -1,7 +1,6 @@
 ---
 subtitle: Domains of mine.
 ---
-
 > Why do programmers find DNS so hard? It's just cache invalidation and naming things.
 
 -- [jbeal](https://linuxlab.sh/@jbeal/111217885686317963)
