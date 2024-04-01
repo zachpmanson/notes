@@ -127,6 +127,7 @@
 <li><a href="https://git.tukaani.org/?p=xz.git;a=blobdiff;f=CMakeLists.txt;h=d2b1af7ab0ab759b6805ced3dff2555e2a4b3f8e;hp=76700591059711e3a4da5b45cf58474dac4e12a7;hb=328c52da8a2bbb81307644efdb58db2c422d9ba7;hpb=eb8ad59e9bab32a8d655796afd39597ea6dcc64d">This commit</a> introduces a syntax error that prevents Linux landlock from being activated.  The test program designed to test if landlock was supported would always fail due to this errant <code>.</code>.</li>
 </ul>
 </li>
+<li>Tan's first GitHub PR is to libarchive and is suspect as it subtly replaces <code>safe_printf</code> calls with unsafe <code>fprintf</code></li>
 </ul>
 <h2 id="discovery">Discovery</h2>
 <blockquote>
@@ -145,6 +146,7 @@
 <li><a href="https://lcamtuf.substack.com/p/technologist-vs-spy-the-xz-backdoor">Technologist vs Spy</a>, making the case that based on the behaviour and circumstances surrounding the bug were that of organised actors</li>
 <li><a href="https://github.com/Midar/xz-backdoor-documentation/wiki">XZ Backdoor Documentation</a></li>
 <li><a href="https://gynvael.coldwind.pl/?lang=en&amp;id=782">XZ Bash-Stage Obfuscation Explained</a></li>
+<li><a href="https://arstechnica.com/security/2024/04/what-we-know-about-the-xz-utils-backdoor-that-almost-infected-the-world/"><strong>Ars Technica Overview</strong></a></li>
 </ul></article>
 
     <hr />
@@ -179,7 +181,7 @@
   </main>
   <footer>
     <a href="mailto:zachpmanson@gmail.com?subject=On 'XZ'">reply</a>
-    <a href="/activitypub">random</a>
+    <a href="/projects">random</a>
     <a href="/recent-changes">updates</a>
     <a href="/tags">tags</a>
     <a href="/sitemap">sitemap</a>
