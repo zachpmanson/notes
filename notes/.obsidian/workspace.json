@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meta/DNS.md",
+                "file": "Notes/Software/Open Source Philosophy.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Meta/DNS.md",
+                "file": "Notes/Software/Open Source Philosophy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Meta/DNS.md",
+                "file": "Notes/Software/Open Source Philosophy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Meta/DNS.md"
+                "file": "Notes/Software/Open Source Philosophy.md"
               }
             }
           }
@@ -147,6 +147,7 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Meta/DNS.md",
     "Notes/Software/Exploits/XZ/XZ.md",
     "Archive/Folklore/I No Longer Built Software.md",
     "Notes/Mathematics/Computer Science/Currying.md",
@@ -177,7 +178,6 @@
     "Notes/Language/Linguistic Concepts/Rebracketing.md",
     "Notes/Language/Etymology/Thou.md",
     "Notes/Language/Etymology/Slug.md",
-    "Notes/Language/Etymology/Pejorative.md",
     "Media/blocks.svg",
     "dotgrid-24G03-011513.svg",
     "dotgrid-24G03-010922.png",
