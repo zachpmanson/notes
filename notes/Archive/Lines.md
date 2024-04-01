@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> With woodworking you actually get to hold your creations.
+
+-- [Zain Rizvi in  *Why Software Engineers like Woodworking*](https://www.zainrizvi.io/blog/why-software-engineers-like-woodworking/)
+
+---
+
 > its study break, and just like its name suggests we study till we break
 
 -- [@randomtako.](https://discord.com/channels/586127025228742656/586575812455563269/1223648851475304479) on [[UWA Computer Science]] discord

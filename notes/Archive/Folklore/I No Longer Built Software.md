@@ -1,4 +1,6 @@
+[Eric Driven's belated reply](https://github.com/docker/cli/issues/267#issuecomment-695149477) on a GitHub issue he created 3 years prior.
 
+---
 
 @solvaholic: Sorry I missed your comment of many months ago. I no longer build software; I now make furniture out of wood. The hours are long, the pay sucks, and there's always the opportunity to remove my finger with a table saw, but nobody asks me if I can add an RSS feed to a DBMS, so there's that :-)
 
