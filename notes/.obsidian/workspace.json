@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Exploits/XZ/XZ.md",
+                "file": "Posts/GitHub Pages Redirection.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Exploits/XZ/XZ.md",
+                "file": "Posts/GitHub Pages Redirection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Exploits/XZ/XZ.md",
+                "file": "Posts/GitHub Pages Redirection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Exploits/XZ/XZ.md"
+                "file": "Posts/GitHub Pages Redirection.md"
               }
             }
           }
@@ -145,11 +145,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "ed51b6cee718740c",
   "lastOpenFiles": [
+    "Notes/Software/Design/Fun Design.md",
+    "Notes/Software/Exploits/XZ/XZ.md",
+    "Notes/Software/Design",
     "Notes/Software/Open Source.md",
     "Meta/DNS.md",
-    "Notes/Software/Exploits/XZ/XZ.md",
     "Archive/Folklore/I No Longer Built Software.md",
     "Notes/Mathematics/Computer Science/Currying.md",
     "Notes/Miscellany/On Taking Notes.md",
@@ -177,7 +179,6 @@
     "Notes/Mathematics/Computer Science/Computer Science.md",
     "Notes/Language/Dictionary.md",
     "Notes/Language/Linguistic Concepts/Rebracketing.md",
-    "Notes/Language/Etymology/Thou.md",
     "Media/blocks.svg",
     "dotgrid-24G03-011513.svg",
     "dotgrid-24G03-010922.png",
@@ -191,7 +192,6 @@
     "Media/uwa-cits.png",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
-    "Media/wikipedia-popup.png.sb-5985f2ea-RmJapL",
     "Media/citations.jpg",
     "Untitled.canvas"
   ]
