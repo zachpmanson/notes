@@ -1,5 +1,5 @@
 ---
-subtitle: Some IKEA hacks I have built.
+subtitle: It's nice building things I can hold.
 ---
 Planter box made made of 7 bed slats.  It's a bit dodgy since I was still getting used to all the new tools.
 
