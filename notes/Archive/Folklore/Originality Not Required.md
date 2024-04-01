@@ -1,8 +1,9 @@
+---
+subtitle: "Wanted: Creative work. Originality not required, inquire within."
+---
 One of my favourite essays of all time.  Written by [Sam Vente](https://sam-vente.com/) on [their blog](https://howtoai.fyi/blog/originality-not-required/).
 
 ---
-
-# Wanted: Creative work. Originality not required, inquire within.
 
 Stop me if this sounds familiar to you. You're in a conversation with someone about a topic that you know quite a lot about. Perhaps you're a hobbyist, maybe it's part of your profession, or you just like watching a really specific type of youtube show about this topic because you find them soothing and vaguely interesting for some reason. In any case, this is your jam, you love talking about this stuff! However, after a while, your conversation partner says something along the lines of "wow, you know so much about this, you should write about it." This kinda takes you by surprise. Sure, you know a bit about this, but no way you could write something serious about it right? After thinking it over for a split second you respond with "Oh, that's really sweet of you but I don't think I have anything _new_ to say about it."
 

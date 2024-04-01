@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Miscellany/IKEA Hacks.md",
+                "file": "Archive/Folklore/I No Longer Built Software.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,13 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Archive/Folklore/The Patron Saint of Yak Shaves.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -60,11 +61,11 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "path:",
                 "matchingCase": false,
-                "explainSearch": false,
+                "explainSearch": true,
                 "collapseAll": false,
-                "extraContext": false,
+                "extraContext": true,
                 "sortOrder": "alphabetical"
               }
             }
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Miscellany/IKEA Hacks.md",
+                "file": "Archive/Folklore/The Patron Saint of Yak Shaves.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Miscellany/IKEA Hacks.md",
+                "file": "Archive/Folklore/The Patron Saint of Yak Shaves.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Miscellany/IKEA Hacks.md"
+                "file": "Archive/Folklore/The Patron Saint of Yak Shaves.md"
               }
             }
           }
@@ -157,15 +158,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f022ea03489a2abe",
+  "active": "ed51b6cee718740c",
   "lastOpenFiles": [
-    "Media/box.jpg",
+    "Archive/Folklore/The Patron Saint of Yak Shaves.md",
+    "Archive/Folklore/Originality Not Required.md",
+    "Notes/Software/Programs/GNU/Screen/Common Screen Commands.md",
+    "Notes/Software/Programs/GNU/Screen/Screen.md",
+    "Archive/Folklore/I No Longer Built Software.md",
+    "Archive/Folklore/Worse is Better.md",
+    "Archive/Folklore/The Damned Can Now Play Three Chords.md",
+    "Archive/Lines.md",
+    "Archive/Folklore/PSD is not my favourite file format.md",
+    "Notes/Software/Development/Non-Programming Languages/Markdown.md",
     "Notes/Miscellany/IKEA Hacks.md",
+    "Media/box.jpg",
     "Media/box 1.jpg",
     "Notes/Software/Exploits/XZ/XZ.md",
     "Media/bookshelf.jpg",
     "Notes/Software/Exploits/Exploits.md",
-    "Archive/Lines.md",
     "Archive/Folklore/Aliens and Calendars.md",
     "Posts/GitHub Pages Redirection.md",
     "Notes/Software/Exploits/XZ",
@@ -181,14 +191,6 @@
     "Notes/Language/Etymology/Thou.md",
     "Notes/Language/Etymology/Slug.md",
     "Notes/Language/Etymology/Pejorative.md",
-    "Notes/Language/Etymology/Inspire, Expire, and Conspire.md",
-    "Notes/Language/Etymology/Figment.md",
-    "Notes/Language/Etymology/Etymology.md",
-    "Notes/Language/Etymology/Em Size.md",
-    "Notes/Language/Diacritics/Diaeresis.md",
-    "Notes/Language/Characters/Interrobang.md",
-    "Notes/Language/Characters/Lemniscate.md",
-    "Notes/Language/Characters/Multiocular O.md",
     "Media/blocks.svg",
     "dotgrid-24G03-011513.svg",
     "dotgrid-24G03-010922.png",
