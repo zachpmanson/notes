@@ -4,7 +4,7 @@
 
 Libre != Free
 
-## Virtues of OSS
+## Virtues of Open Source Software
 
 - transparency and (potentially) greater security
 - flexibility
