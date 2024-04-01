@@ -385,7 +385,7 @@
 <hr />
 <p><strong><a href="https://github.com/ds300">ds300</a></strong> commented <a href="https://github.com/ds300/react-native-typescript-transformer/issues/46#issuecomment-366646702">Feb 19, 2018</a> </p>
 <p>Hi Henrik,</p>
-<p>Good question! I agree, the situation is a little confusing, ~~and the reason for it is historical rather than technical.~~ the reason for it is both historical and technical.</p>
+<p>Good question! I agree, the situation is a little confusing, <del>and the reason for it is historical rather than technical.</del> the reason for it is both historical and technical.</p>
 <p>When React first appeared on the scene, most JS tooling was not compatible with the JSX syntax. To mitigate this, people would only put JSX syntax in files with the extension <code>.jsx</code>. Eventually the tooling caught up and now most of us put JSX in <code>.js</code> files as though it were part of the ECMAScript standard.</p>
 <p>When TypeScript first added support for JSX, people were still using the <code>.jsx</code> extension a lot, so the TS crew made <code>.tsx</code> files compile to <code>.jsx</code> files. This is how the <code>--jsx react</code> option works.</p>
 <p>The React Native ecosystem fully embraced the <code>.js</code> extension to the point that the bundler <code>metro</code> doesn't even support loading <code>.jsx</code> files. This posed a problem for people using TypeScript with React Native because TypeScript <em>only</em> supported <code>.jsx</code> files. I can't actually remember how people would use TypeScript with React Native back in those days, but it was probably ugly.</p>
@@ -414,7 +414,7 @@
   </main>
   <footer>
     <a href="mailto:zachpmanson@gmail.com?subject=On 'JSX, React Native, and TypeScript'">reply</a>
-    <a href="/linkedins-ghost-text">random</a>
+    <a href="/stable-diffusion">random</a>
     <a href="/recent-changes">updates</a>
     <a href="/tags">tags</a>
     <a href="/sitemap">sitemap</a>
