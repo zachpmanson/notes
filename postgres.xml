@@ -13,7 +13,7 @@
             <link>https://notes.zachmanson.com/postgres</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Mon, 01 Apr 2024 22:36:14 </lastBuildDate>
+        <lastBuildDate>Mon, 01 Apr 2024 22:40:58 </lastBuildDate>
         
         <item>
             <title>XZ</title>
@@ -39,6 +39,10 @@
 <ul>
 <li>kill switch based on <a href="https://piaille.fr/@zeno/112185928685603910">environment variable</a><ul>
 <li><code>yolAbejyiejuvnup=Evjtgvsh5okmkAvj</code> is hardcoded (and then obfuscated)</li>
+</ul>
+</li>
+<li>backdoor itself is secured as it checks for a private key<ul>
+<li>this is an interesting argument against "when you make a backdoor for good guys you also make a backdoor for bad guys" though that's another conversation entirely</li>
 </ul>
 </li>
 </ul>
