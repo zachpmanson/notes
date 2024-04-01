@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Archive/Folklore/Originality Not Required.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Archive/Folklore/Originality Not Required.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Archive/Folklore/Originality Not Required.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Lines.md"
+                "file": "Archive/Folklore/Originality Not Required.md"
               }
             }
           }
@@ -159,17 +159,17 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Miscellany/IKEA Hacks.md",
+    "Notes/Software/Development/Non-Programming Languages/Markdown.md",
+    "Archive/Folklore/PSD is not my favourite file format.md",
     "Archive/Folklore/I No Longer Built Software.md",
+    "Archive/Lines.md",
     "Archive/Folklore/The Patron Saint of Yak Shaves.md",
     "Archive/Folklore/Originality Not Required.md",
     "Notes/Software/Programs/GNU/Screen/Common Screen Commands.md",
     "Notes/Software/Programs/GNU/Screen/Screen.md",
     "Archive/Folklore/Worse is Better.md",
     "Archive/Folklore/The Damned Can Now Play Three Chords.md",
-    "Archive/Lines.md",
-    "Archive/Folklore/PSD is not my favourite file format.md",
-    "Notes/Software/Development/Non-Programming Languages/Markdown.md",
-    "Notes/Miscellany/IKEA Hacks.md",
     "Media/box.jpg",
     "Media/box 1.jpg",
     "Notes/Software/Exploits/XZ/XZ.md",

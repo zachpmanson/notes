@@ -1,7 +1,7 @@
 ---
 subtitle: "Wanted: Creative work. Originality not required, inquire within."
 ---
-One of my favourite essays of all time.  Written by [Sam Vente](https://sam-vente.com/) on [their blog](https://howtoai.fyi/blog/originality-not-required/).
+One of my favourite essays of all time.  Written by [Sam Vente](https://sam-vente.com/) on [their blog](https://slowcoder.org/blog/originality-not-required/).
 
 ---
 
