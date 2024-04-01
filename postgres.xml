@@ -13,7 +13,7 @@
             <link>https://notes.zachmanson.com/postgres</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Mon, 01 Apr 2024 22:45:59 </lastBuildDate>
+        <lastBuildDate>Mon, 01 Apr 2024 23:22:40 </lastBuildDate>
         
         <item>
             <title>XZ</title>
@@ -23,7 +23,7 @@
             
             <content:encoded>
                 <![CDATA[<p>The XZ exploit is a clever supply chain attack, placing a RCE in sshd using a vulnerability in XZ, a compression library that many <a href="/linux">Linux</a> distributions call when running OpenSSH (sshd -&gt; libsystemd (for systemd notifications) -&gt; liblzma (for logging)).  It was discovered by Andres Freund when he noticed that sshd was running with abnormally high CPU usage.</p>
-<p>The vulnerability was submitted by Jia Tan, one of two maintainers of XZ.   The vulnerability was extremely obfuscated.  <a href="https://www.openwall.com/lists/oss-security/2024/03/29/4">Read the original backdoor report by Andres Freund for more details on this</a>.</p>
+<p>The vulnerability was submitted by Jia Tan, a maintainer of XZ project who had been an active contributor since 2021.   The vulnerability was extremely obfuscated.  <a href="https://www.openwall.com/lists/oss-security/2024/03/29/4">Read the original backdoor report by Andres Freund for more details on this</a>.</p>
 <h2 id="maintainers">Maintainers</h2>
 <p>There are two maintainers of the XZ projects, Jia Tan and Lasse Collin.  Lasse Collin is the original author of the XZ Utils library, whereas Jia Tan has only been a maintainer since 2022.</p>
 <p>Tan appears so have little to no online footprint prior to 2021 when they started making useful contributions to XZ.  It is speculated that Jia Tan is an invented persona.</p>
@@ -80,6 +80,7 @@
 <li><a href="https://github.com/Midar/xz-backdoor-documentation/wiki">XZ Backdoor Documentation</a></li>
 <li><a href="https://gynvael.coldwind.pl/?lang=en&amp;id=782">XZ Bash-Stage Obfuscation Explained</a></li>
 <li><a href="https://arstechnica.com/security/2024/04/what-we-know-about-the-xz-utils-backdoor-that-almost-infected-the-world/"><strong>Ars Technica Overview</strong></a></li>
+<li><a href="https://github.com/amlweems/xzbot">PoC</a> with substituted public key</li>
 </ul>]]>
             </content:encoded>
             <guid isPermaLink="false">https://notes.zachmanson.com/xz</guid>
