@@ -13,7 +13,7 @@
             <link>https://notes.zachmanson.com/postgres</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Sun, 31 Mar 2024 08:36:28 </lastBuildDate>
+        <lastBuildDate>Mon, 01 Apr 2024 00:04:43 </lastBuildDate>
         
         <item>
             <title>XZ</title>
@@ -22,7 +22,7 @@
             <description>The most advanced supply chain attack ever found.</description>
             
             <content:encoded>
-                <![CDATA[<p>The XZ exploit is a clever supply chain attack, placing a RCE in sshd using a vulnerability in XZ, a compression library that many <a href="/linux">Linux</a> distributions call when running OpenSSH (sshd -&gt; libsystemd (for logging) -&gt; liblzma).  It was discovered by Andres Freund when he noticed that sshd was running with abnormally high CPU usage.</p>
+                <![CDATA[<p>The XZ exploit is a clever supply chain attack, placing a RCE in sshd using a vulnerability in XZ, a compression library that many <a href="/linux">Linux</a> distributions call when running OpenSSH (sshd -&gt; libsystemd (for systemd notifications) -&gt; liblzma (for logging)).  It was discovered by Andres Freund when he noticed that sshd was running with abnormally high CPU usage.</p>
 <p>The vulnerability was submitted by Jia Tan, one of two maintainers of XZ.   The vulnerability was extremely obfuscated.  <a href="https://www.openwall.com/lists/oss-security/2024/03/29/4">Read the original backdoor report by Andres Freund for more details on this</a>.</p>
 <h2 id="maintainers">Maintainers</h2>
 <p>There are two maintainers of the XZ projects, Jia Tan and Lasse Collin.  Lasse Collin is the original author of the XZ Utils library, whereas Jia Tan has only been a maintainer since 2022.</p>
