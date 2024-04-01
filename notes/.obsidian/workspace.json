@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Open Source.md",
+                "file": "Notes/Software/Exploits/XZ/XZ.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Open Source.md",
+                "file": "Notes/Software/Exploits/XZ/XZ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Open Source.md",
+                "file": "Notes/Software/Exploits/XZ/XZ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Open Source.md"
+                "file": "Notes/Software/Exploits/XZ/XZ.md"
               }
             }
           }
@@ -145,8 +145,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ed51b6cee718740c",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Open Source.md",
     "Meta/DNS.md",
     "Notes/Software/Exploits/XZ/XZ.md",
     "Archive/Folklore/I No Longer Built Software.md",
@@ -177,7 +178,6 @@
     "Notes/Language/Dictionary.md",
     "Notes/Language/Linguistic Concepts/Rebracketing.md",
     "Notes/Language/Etymology/Thou.md",
-    "Notes/Language/Etymology/Slug.md",
     "Media/blocks.svg",
     "dotgrid-24G03-011513.svg",
     "dotgrid-24G03-010922.png",
