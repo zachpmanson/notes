@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Exploits/XZ/XZ.md",
+                "file": "Notes/Internet/Fediverse/Fediverse.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Exploits/XZ/XZ.md",
+                "file": "Notes/Internet/Fediverse/Fediverse.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Exploits/XZ/XZ.md",
+                "file": "Notes/Internet/Fediverse/Fediverse.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Exploits/XZ/XZ.md"
+                "file": "Notes/Internet/Fediverse/Fediverse.md"
               }
             }
           }
@@ -147,9 +147,9 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Exploits/XZ/XZ.md",
     "Posts/GitHub Pages Redirection.md",
     "Notes/Software/Design/Fun Design.md",
-    "Notes/Software/Exploits/XZ/XZ.md",
     "Notes/Software/Design",
     "Notes/Software/Open Source.md",
     "Meta/DNS.md",

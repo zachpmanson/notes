@@ -20,6 +20,7 @@ I'd like to fully grasp Lemmy and [Kbin](https://github.com/ernestwisniewski/kbi
 
 - [FediDB](https://fedidb.org/), contains stats on server and service popularity
 - [How to Kill a Decentralised Network (such as the Fediverse)](https://ploum.net/2023-06-23-how-to-kill-decentralised-networks.html)
+- [The Fediverse Report](https://fediversereport.com/) a regular news update on fedi
 
 ![[fediverse-branches.png]]
 
