@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/Digital Gardens.md",
+                "file": "Notes/Software/Design/Fun Design.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/Digital Gardens.md",
+                "file": "Notes/Software/Design/Fun Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/Digital Gardens.md",
+                "file": "Notes/Software/Design/Fun Design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/Digital Gardens.md"
+                "file": "Notes/Software/Design/Fun Design.md"
               }
             }
           }
@@ -145,8 +145,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "ed51b6cee718740c",
   "lastOpenFiles": [
+    "Notes/Courses/Courses.md",
+    "Archive/Bookmarks/Digital Gardens.md",
     "Notes/Internet/Digital Garden.md",
     "Notes/Software/Exploits/XZ/XZ.md",
     "Notes/Internet/Fediverse/Lemmy.md",
@@ -172,8 +174,6 @@
     "Archive/Folklore/The Patron Saint of Yak Shaves.md",
     "Notes/Software/Programs/GNU/Screen/Common Screen Commands.md",
     "Notes/Software/Programs/GNU/Screen/Screen.md",
-    "Archive/Folklore/Worse is Better.md",
-    "Archive/Folklore/The Damned Can Now Play Three Chords.md",
     "Media/box.jpg",
     "Media/box 1.jpg",
     "Media/bookshelf.jpg",
