@@ -42,4 +42,3 @@ Intentionally miscellaneous.
 
 - [Dialogue 3-D](https://nasser.itch.io/dialogue-3-d), Wolfenstein but it asks you if its alright to punch the nazis
 - [game of life infinite recursion](https://oimo.io/works/life/) ([writeup](https://blog.oimo.io/2023/04/10/life-universe-en/))
-- 

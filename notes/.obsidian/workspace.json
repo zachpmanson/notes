@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/Websites.md",
+                "file": "Notes/Software/Exploits/XZ/XZ.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/Websites.md",
+                "file": "Notes/Software/Exploits/XZ/XZ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/Websites.md",
+                "file": "Notes/Software/Exploits/XZ/XZ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/Websites.md"
+                "file": "Notes/Software/Exploits/XZ/XZ.md"
               }
             }
           }
@@ -147,6 +147,8 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Archive/Bookmarks/Websites.md",
+    "Media/xz-analysis.png",
     "Archive/Lines.md",
     "Archive/Folklore/Feminist Server Manifesto.md",
     "Notes/Software/Design/Fun Design.md",
@@ -173,7 +175,6 @@
     "Notes/Software/Development/Non-Programming Languages/Markdown.md",
     "Archive/Folklore/PSD is not my favourite file format.md",
     "Archive/Folklore/The Patron Saint of Yak Shaves.md",
-    "Notes/Software/Programs/GNU/Screen/Common Screen Commands.md",
     "Media/box.jpg",
     "Media/box 1.jpg",
     "Media/bookshelf.jpg",
@@ -192,7 +193,6 @@
     "Media/uwa-cits.png",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
-    "Media/citations.jpg",
     "Untitled.canvas"
   ]
 }
