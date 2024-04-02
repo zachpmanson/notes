@@ -8,14 +8,6 @@ The fediverse is a series of social networks that are able to communicate with o
 
 ![[fediverse-protocol-graph.png]]
 
-## Lemmy/Kbin
-
-I'd like to fully grasp Lemmy and [Kbin](https://github.com/ernestwisniewski/kbin), especially with Reddit being as conflicted as it is right now.  I would like to know how interoperable they are with Mastodon (do I need to actually make a kbin account?), each other, and how split communities work.  Their potential excites me though.
-
-[Voyager](https://github.com/aeharding/voyager) ([live](https://wefwef.app/)) is a well-made client for lemmy, designed to mimic the design of Apollo for Reddit.  Potentially the best [[react]] app I've ever seen?  Certainly the best emulation of iOS I've ever seen.
-
-[mlmym](https://github.com/rystaf/mlmym) is a clone of old.reddit for lemmy.  It is excellent.
-****
 ## Links
 
 - [FediDB](https://fedidb.org/), contains stats on server and service popularity

@@ -41,3 +41,4 @@ Some other interesting ones I have come across:
 - [Alex Schroeder’s Diary](https://alexschroeder.ch/view/index)
 - [Anh's Garden](https://anhvn.com/garden/)
 - [Steph Ango's website](https://stephango.com/)
+- [antoinejaunard.com](https://antoinejaunard.com/content.html)
