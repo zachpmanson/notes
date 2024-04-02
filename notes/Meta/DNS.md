@@ -40,7 +40,7 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	- **[nextcloud.zachmanson.com](https://nextcloud.zachmanson.com)**  
 	  nextcloud instance  
 	  trenzalore
-	- [**unroller.zachmanson.com**](unroller.zachmanson.com)  
+	- [**unroller.zachmanson.com**](https://unroller.zachmanson.com)  
 	  deployed instance of [[Mastodon Thread Unroller]]  
 	  vercel
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Internet/Fediverse/Fediverse.md",
+                "file": "Meta/DNS.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Internet/Fediverse/Fediverse.md",
+                "file": "Meta/DNS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Internet/Fediverse/Fediverse.md",
+                "file": "Meta/DNS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Internet/Fediverse/Fediverse.md"
+                "file": "Meta/DNS.md"
               }
             }
           }
@@ -147,6 +147,8 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Untitled.md",
+    "Notes/Internet/Fediverse/Fediverse.md",
     "Notes/Software/Exploits/XZ/XZ.md",
     "Posts/GitHub Pages Redirection.md",
     "Notes/Software/Design/Fun Design.md",
@@ -157,7 +159,6 @@
     "Notes/Mathematics/Computer Science/Currying.md",
     "Notes/Miscellany/On Taking Notes.md",
     "Notes/Miscellany/On Writing.md",
-    "Notes/Internet/Fediverse/Fediverse.md",
     "Notes/Internet/Fediverse/Fediverse Family Tree.md",
     "Notes/Miscellany/IKEA Hacks.md",
     "Archive/Folklore/Originality Not Required.md",
@@ -178,7 +179,6 @@
     "Notes/Software/Exploits",
     "Notes/Mathematics/Computer Science/Computer Science.md",
     "Notes/Language/Dictionary.md",
-    "Notes/Language/Linguistic Concepts/Rebracketing.md",
     "Media/blocks.svg",
     "dotgrid-24G03-011513.svg",
     "dotgrid-24G03-010922.png",
