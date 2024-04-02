@@ -13,7 +13,7 @@
             <link>https://notes.zachmanson.com/linux</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Tue, 02 Apr 2024 01:00:20 </lastBuildDate>
+        <lastBuildDate>Tue, 02 Apr 2024 02:04:41 </lastBuildDate>
         
         <item>
             <title>XZ</title>
@@ -81,6 +81,7 @@
 <li><a href="https://gynvael.coldwind.pl/?lang=en&amp;id=782">XZ Bash-Stage Obfuscation Explained</a></li>
 <li><a href="https://arstechnica.com/security/2024/04/what-we-know-about-the-xz-utils-backdoor-that-almost-infected-the-world/"><strong>Ars Technica Overview</strong></a></li>
 <li><a href="https://github.com/amlweems/xzbot">PoC</a> with substituted public key</li>
+<li><a href="https://shellsharks.com/xz-compromise-link-roundup">Even more links</a></li>
 </ul>]]>
             </content:encoded>
             <guid isPermaLink="false">https://notes.zachmanson.com/xz</guid>
