@@ -25,6 +25,7 @@ Intentionally miscellaneous.
 - [Every Noise at Once](https://everynoise.com/)
 - [Spacetime Maps](https://spacetime-maps.vercel.app)
 - [Ugly Avatar Generator](https://txstc55.github.io/ugly-avatar/)
+- [Constant](https://constantvzw.org/site/)
 ## Artists
 
 - [Studio Balcony](https://studiobalcony.com/), Melbourne based art studio
