@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Folklore/Feminist Server Manifesto.md",
+                "file": "Archive/Lines.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Folklore/Feminist Server Manifesto.md",
+                "file": "Archive/Lines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Folklore/Feminist Server Manifesto.md",
+                "file": "Archive/Lines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Folklore/Feminist Server Manifesto.md"
+                "file": "Archive/Lines.md"
               }
             }
           }
@@ -147,8 +147,8 @@
   },
   "active": "ed51b6cee718740c",
   "lastOpenFiles": [
-    "Archive/Lines.md",
     "Archive/Folklore/Feminist Server Manifesto.md",
+    "Archive/Lines.md",
     "Notes/Software/Design/Fun Design.md",
     "Notes/Courses/Courses.md",
     "Archive/Bookmarks/Digital Gardens.md",
