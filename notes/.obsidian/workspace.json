@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Design/Fun Design.md",
+                "file": "Archive/Folklore/Feminist Server Manifesto.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Design/Fun Design.md",
+                "file": "Archive/Folklore/Feminist Server Manifesto.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Design/Fun Design.md",
+                "file": "Archive/Folklore/Feminist Server Manifesto.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Design/Fun Design.md"
+                "file": "Archive/Folklore/Feminist Server Manifesto.md"
               }
             }
           }
@@ -147,6 +147,9 @@
   },
   "active": "ed51b6cee718740c",
   "lastOpenFiles": [
+    "Archive/Lines.md",
+    "Archive/Folklore/Feminist Server Manifesto.md",
+    "Notes/Software/Design/Fun Design.md",
     "Notes/Courses/Courses.md",
     "Archive/Bookmarks/Digital Gardens.md",
     "Notes/Internet/Digital Garden.md",
@@ -159,7 +162,6 @@
     "Meta/DNS.md",
     "Untitled.md",
     "Posts/GitHub Pages Redirection.md",
-    "Notes/Software/Design/Fun Design.md",
     "Notes/Software/Design",
     "Notes/Software/Open Source.md",
     "Archive/Folklore/I No Longer Built Software.md",
@@ -170,10 +172,8 @@
     "Archive/Folklore/Originality Not Required.md",
     "Notes/Software/Development/Non-Programming Languages/Markdown.md",
     "Archive/Folklore/PSD is not my favourite file format.md",
-    "Archive/Lines.md",
     "Archive/Folklore/The Patron Saint of Yak Shaves.md",
     "Notes/Software/Programs/GNU/Screen/Common Screen Commands.md",
-    "Notes/Software/Programs/GNU/Screen/Screen.md",
     "Media/box.jpg",
     "Media/box 1.jpg",
     "Media/bookshelf.jpg",

@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> networking is actually an awkward, promiscuous and parasitic practice
+
+-- [Feminist Server Manifesto](https://areyoubeingserved.constantvzw.org/Summit_afterlife.xhtml)
+
+---
+
 > With woodworking you actually get to hold your creations.
 
 -- [Zain Rizvi in  *Why Software Engineers like Woodworking*](https://www.zainrizvi.io/blog/why-software-engineers-like-woodworking/)
