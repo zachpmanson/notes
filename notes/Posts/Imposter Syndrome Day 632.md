@@ -11,23 +11,23 @@ Either because
 - I tricked a floundering company in to hiring me between waves of layoffs for obscene amounts of money
 	- more money than most of the people I worked along side who were far smarter than me
 	- and who got laid off with me as if we equally deserved it
-- I tricked a company into hiring me because they liked my minecraft game
-- software engineers aren't real engineers
-- web development isn't even real software engineering
+- I tricked a company into hiring me because they liked my [[Minecraftle|minecraft]] game
+- [[software]] engineers aren't real engineers
+- [[web development]] isn't even real software engineering
 - I couldn't write a compiler if you held me at gun point
-- all I do is glue work and waste time
+- all I do is [[glue work]] and waste time
 - all I do is build "dashboard for x company to monitor y"
 - I don't really understand how half the tools I use work, I just know the buttons I need to press
 - when I say "backend" I mean "write db query and write some trivial transformation into JSON"
-- when I say "frontend" I mean "tailwind and knowing how react rendering work"
-- pipelines are just VendorOps 
+- when I say "frontend" I mean "tailwind and knowing how [[react]] rendering work"
+- pipelines are just [[VendorOps]]
 - I spend all day in baby languages
 - all my technical opinions are stolen or surface level
-- I feel like I knew more in university even though this is obviously not true
-	- I just don't have to write C anymore
+- I feel like I knew more in [[UWA Computer Science|university]] even though this is obviously not true
+	- I just don't have to write [[C]] anymore
 - nothing I make has an interesting or novel explanation behind it
 - when I say "system administration" I mean "apt install nginx and google"
-- when I say "open source" I mean "I chuck my worthless repetitive shit under MIT"
+- when I say "[[open source]]" I mean "I chuck my worthless repetitive shit under MIT"
 - for every ounce of power and efficiency the laptop I write this on has, my code still runs slow because I am so high up the stack I've never had to see the bottom
 - all I do is write tomorrow's legacy code
 

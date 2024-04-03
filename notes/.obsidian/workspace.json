@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Design/Fun Design.md",
+                "file": "Posts/Imposter Syndrome Day 632.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:",
+                "query": "\"open source\"",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Design/Fun Design.md",
+                "file": "Posts/Imposter Syndrome Day 632.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Design/Fun Design.md",
+                "file": "Posts/Imposter Syndrome Day 632.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Design/Fun Design.md"
+                "file": "Posts/Imposter Syndrome Day 632.md"
               }
             }
           }
@@ -148,12 +148,21 @@
   },
   "active": "ed51b6cee718740c",
   "lastOpenFiles": [
-    "Media/sqiggle.png",
+    "Notes/Software/Development/Kinds of Work/VendorOps.md",
+    "Notes/Software/Development/Kinds of Problems.md",
+    "Notes/Software/Development/Kinds of Work/Glue Work.md",
+    "Notes/Software/Development/Kinds of Work.md",
+    "Notes/Software/Development/Kinds of Work",
+    "Posts/The Curse of the Last Good Day.md",
+    "Untitled",
+    "Posts/Imposter Syndrome Day 632.md",
+    "Notes/Software/Open Source.md",
+    "Archive/Folklore/The Future of Open Source.md",
+    "Notes/Software/Exploits/XZ/XZ.md",
     "Notes/Software/Design/Fun Design.md",
+    "Media/sqiggle.png",
     "Media/dark-mode.png",
     "Media/cat.png",
-    "Posts/Imposter Syndrome Day 632.md",
-    "Notes/Software/Exploits/XZ/XZ.md",
     "Archive/Bookmarks/Websites.md",
     "Media/xz-analysis.png",
     "Archive/Lines.md",
@@ -170,14 +179,8 @@
     "Untitled.md",
     "Posts/GitHub Pages Redirection.md",
     "Notes/Software/Design",
-    "Notes/Software/Open Source.md",
     "Archive/Folklore/I No Longer Built Software.md",
     "Notes/Mathematics/Computer Science/Currying.md",
-    "Notes/Miscellany/On Taking Notes.md",
-    "Notes/Miscellany/On Writing.md",
-    "Notes/Miscellany/IKEA Hacks.md",
-    "Archive/Folklore/Originality Not Required.md",
-    "Notes/Software/Development/Non-Programming Languages/Markdown.md",
     "Media/box.jpg",
     "Media/box 1.jpg",
     "Media/bookshelf.jpg",
@@ -191,8 +194,6 @@
     "Notes/Software/Intelligent Agents",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Untitled",
     "Notes/Courses/Artificial Intelligence - A Modern Approach",
-    "Media/firehose.webm",
-    "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Untitled.canvas"
   ]
 }
