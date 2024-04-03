@@ -11,7 +11,7 @@ Either because
 - I tricked a floundering company in to hiring me between waves of layoffs for obscene amounts of money
 	- more money than most of the people I worked along side who were far smarter than me
 	- and who got laid off with me as if we equally deserved it
-- I tricked a company into hiring me because they liked my [[Minecraftle|minecraft]] game
+- I tricked a company into hiring me because they liked my [[Minecraftle|minecraft]] game (twice)
 - [[software]] engineers aren't real engineers
 - [[web development]] isn't even real software engineering
 - I couldn't write a compiler if you held me at gun point
