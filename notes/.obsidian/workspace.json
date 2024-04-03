@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Exploits/XZ/XZ.md",
+                "file": "Posts/Imposter Syndrome Day 632.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Exploits/XZ/XZ.md",
+                "file": "Posts/Imposter Syndrome Day 632.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Exploits/XZ/XZ.md",
+                "file": "Posts/Imposter Syndrome Day 632.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Exploits/XZ/XZ.md"
+                "file": "Posts/Imposter Syndrome Day 632.md"
               }
             }
           }
@@ -133,7 +133,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -145,8 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "ed51b6cee718740c",
   "lastOpenFiles": [
+    "Notes/Software/Exploits/XZ/XZ.md",
+    "Posts/Imposter Syndrome Day 632.md",
     "Archive/Bookmarks/Websites.md",
     "Media/xz-analysis.png",
     "Archive/Lines.md",
@@ -155,7 +158,6 @@
     "Notes/Courses/Courses.md",
     "Archive/Bookmarks/Digital Gardens.md",
     "Notes/Internet/Digital Garden.md",
-    "Notes/Software/Exploits/XZ/XZ.md",
     "Notes/Internet/Fediverse/Lemmy.md",
     "Notes/Internet/Fediverse/Fediverse.md",
     "Notes/Internet/Fediverse/Fediverse Family Tree.md",
@@ -174,7 +176,6 @@
     "Archive/Folklore/Originality Not Required.md",
     "Notes/Software/Development/Non-Programming Languages/Markdown.md",
     "Archive/Folklore/PSD is not my favourite file format.md",
-    "Archive/Folklore/The Patron Saint of Yak Shaves.md",
     "Media/box.jpg",
     "Media/box 1.jpg",
     "Media/bookshelf.jpg",
