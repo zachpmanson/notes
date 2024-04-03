@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Posts/Imposter Syndrome Day 632.md",
+                "file": "Notes/Software/Design/Fun Design.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Posts/Imposter Syndrome Day 632.md",
+                "file": "Notes/Software/Design/Fun Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Posts/Imposter Syndrome Day 632.md",
+                "file": "Notes/Software/Design/Fun Design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Posts/Imposter Syndrome Day 632.md"
+                "file": "Notes/Software/Design/Fun Design.md"
               }
             }
           }
@@ -148,13 +148,16 @@
   },
   "active": "ed51b6cee718740c",
   "lastOpenFiles": [
-    "Notes/Software/Exploits/XZ/XZ.md",
+    "Media/sqiggle.png",
+    "Notes/Software/Design/Fun Design.md",
+    "Media/dark-mode.png",
+    "Media/cat.png",
     "Posts/Imposter Syndrome Day 632.md",
+    "Notes/Software/Exploits/XZ/XZ.md",
     "Archive/Bookmarks/Websites.md",
     "Media/xz-analysis.png",
     "Archive/Lines.md",
     "Archive/Folklore/Feminist Server Manifesto.md",
-    "Notes/Software/Design/Fun Design.md",
     "Notes/Courses/Courses.md",
     "Archive/Bookmarks/Digital Gardens.md",
     "Notes/Internet/Digital Garden.md",
@@ -175,7 +178,6 @@
     "Notes/Miscellany/IKEA Hacks.md",
     "Archive/Folklore/Originality Not Required.md",
     "Notes/Software/Development/Non-Programming Languages/Markdown.md",
-    "Archive/Folklore/PSD is not my favourite file format.md",
     "Media/box.jpg",
     "Media/box 1.jpg",
     "Media/bookshelf.jpg",
@@ -184,14 +186,11 @@
     "Media/blocks.svg",
     "dotgrid-24G03-011513.svg",
     "dotgrid-24G03-010922.png",
-    "Media/fedi.png",
-    "Media/fediverse.svg",
     "Notes/Software/Development/Programming Languages/C++",
     "Notes/Software/Development/Kinds of Work",
     "Notes/Software/Intelligent Agents",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Untitled",
     "Notes/Courses/Artificial Intelligence - A Modern Approach",
-    "Media/uwa-cits.png",
     "Media/firehose.webm",
     "Media/proper-popup.png.sb-5985f2ea-YQZCQn",
     "Untitled.canvas"
