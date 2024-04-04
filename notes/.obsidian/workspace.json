@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Index.md",
+                "file": "Notes/Software/Programs/Obsidian/Obsidian Plugins.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Index.md",
+                "file": "Notes/Software/Programs/Obsidian/Obsidian Plugins.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Index.md",
+                "file": "Notes/Software/Programs/Obsidian/Obsidian Plugins.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Index.md"
+                "file": "Notes/Software/Programs/Obsidian/Obsidian Plugins.md"
               }
             }
           }
@@ -148,6 +148,10 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Programs/Obsidian/Obsidian.md",
+    "Archive/Bookmarks/Digital Gardens.md",
+    "Notes/Internet/Digital Garden.md",
+    "Index.md",
     "Notes/Language/Dictionary.md",
     "Notes/Language/Etymology/Gruntle.md",
     "Notes/Language/Language.md",
@@ -177,10 +181,6 @@
     "Media/xz-analysis.png",
     "Archive/Lines.md",
     "Archive/Folklore/Feminist Server Manifesto.md",
-    "Notes/Courses/Courses.md",
-    "Archive/Bookmarks/Digital Gardens.md",
-    "Notes/Internet/Digital Garden.md",
-    "Notes/Internet/Fediverse/Lemmy.md",
     "Notes/Software/Design",
     "Media/box.jpg",
     "Media/box 1.jpg",
