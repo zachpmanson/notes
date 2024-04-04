@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Programs/Obsidian/Obsidian Plugins.md",
+                "file": "Archive/Folklore/Put yourself in Jia Tan's shoes.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Programs/Obsidian/Obsidian Plugins.md",
+                "file": "Archive/Folklore/Put yourself in Jia Tan's shoes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Programs/Obsidian/Obsidian Plugins.md",
+                "file": "Archive/Folklore/Put yourself in Jia Tan's shoes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Programs/Obsidian/Obsidian Plugins.md"
+                "file": "Archive/Folklore/Put yourself in Jia Tan's shoes.md"
               }
             }
           }
@@ -146,8 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "ed51b6cee718740c",
   "lastOpenFiles": [
+    "Notes/Software/Programs/Obsidian/Obsidian Plugins.md",
+    "Archive/Folklore/Put yourself in Jia Tan's shoes.md",
     "Notes/Software/Programs/Obsidian/Obsidian.md",
     "Archive/Bookmarks/Digital Gardens.md",
     "Notes/Internet/Digital Garden.md",
@@ -179,8 +181,6 @@
     "Media/cat.png",
     "Archive/Bookmarks/Websites.md",
     "Media/xz-analysis.png",
-    "Archive/Lines.md",
-    "Archive/Folklore/Feminist Server Manifesto.md",
     "Notes/Software/Design",
     "Media/box.jpg",
     "Media/box 1.jpg",
