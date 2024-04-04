@@ -30,10 +30,10 @@ When React first appeared on the scene, most JS tooling was not compatible with 
 
 When TypeScript first added support for JSX, people were still using the `.jsx` extension a lot, so the TS crew made `.tsx` files compile to `.jsx` files. This is how the `--jsx react` option works.
 
-The React Native ecosystem fully embraced the `.js` extension to the point that the bundler `metro` doesn't even support loading `.jsx` files. This posed a problem for people using TypeScript with React Native because TypeScript _only_ supported `.jsx` files. I can't actually remember how people would use TypeScript with React Native back in those days, but it was probably ugly.
+The React Native ecosystem fully embraced the `.js` extension to the point that the bundler `metro` doesn't even support loading `.jsx` files. This posed a problem for people using TypeScript with React Native because TypeScript *only* supported `.jsx` files. I can't actually remember how people would use TypeScript with React Native back in those days, but it was probably ugly.
 
 The `--jsx react-native` option was added to let developers compile `.tsx` files to ordinary `.js` files.
 
-_edit_: In addition, it leaves the `JSX` untouched, like the `preserve` option, because React Native used to provide error reports which rendered the JSX (maybe still does? I haven't seen them in forever).
+*edit*: In addition, it leaves the `JSX` untouched, like the `preserve` option, because React Native used to provide error reports which rendered the JSX (maybe still does? I haven't seen them in forever).
 
 At the time of writing, `react-native-typescript-transformer` uses Babel as a secondary compilation step, so it shouldn't matter whether you use `react`, `preserve`, or `react-native` :)

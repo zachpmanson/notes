@@ -1,6 +1,6 @@
 Notes on various LLMs and the techniques used to make them.
 
->LLMs are better thought of as "calculators for words" - retrieval of facts is a by-product of how they are trained, but it's not their core competence at all.
+> LLMs are better thought of as "calculators for words" - retrieval of facts is a by-product of how they are trained, but it's not their core competence at all.
 
 --[Simon Willison](https://news.ycombinator.com/item?id=35396372) on HN, which he later [expanded on](https://simonwillison.net/2023/Apr/2/calculator-for-words/)
 
@@ -14,13 +14,13 @@ A more comprehensive list of models:
 
 ## Comparisons 
 
->>hyperopt:  
->>Does anyone know of any good test suites we can use to benchmark these local models? \[...\]
->
->aiappreciator:  
->The simplest and quickest benchmark is to do a rap battle between GPT-4 and the local models. \[...\]
->
->It is instantly clear how strong the model is relative to GPT-4.
+> > hyperopt:  
+> > Does anyone know of any good test suites we can use to benchmark these local models? \[...\]
+> 
+> aiappreciator:  
+> The simplest and quickest benchmark is to do a rap battle between GPT-4 and the local models. \[...\]
+> 
+> It is instantly clear how strong the model is relative to GPT-4.
 
 --[this HN thread](https://news.ycombinator.com/item?id=35349853)
 

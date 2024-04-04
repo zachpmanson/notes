@@ -22,7 +22,7 @@ Simon Willison has interesting writeups on LLaMA and early responses to it:
 
 ## Impact
 
->Paradoxically, the one clear winner in all of this is Meta. Because the leaked model was theirs, they have effectively garnered an entire planet's worth of free labor. Since most open source innovation is happening on top of their architecture, there is nothing stopping them from directly incorporating it into their products.
+> Paradoxically, the one clear winner in all of this is Meta. Because the leaked model was theirs, they have effectively garnered an entire planet's worth of free labor. Since most open source innovation is happening on top of their architecture, there is nothing stopping them from directly incorporating it into their products.
 
 -- [Leaked Internal Google Document](https://www.semianalysis.com/p/google-we-have-no-moat-and-neither) on open source LLM progress
 

@@ -18,7 +18,7 @@ This use of the word's use in web media is following a convention from print med
 
 Screenplays have a similar concept, where a "slug line" is a heading at the start of each scene containing important general information about the following scene.
 
-> A _slug line_, also called a _master scene heading_, occurs at the start of each scene and typically contains 3 pieces of information: whether the scene is set inside or outside (INT. or EXT.; interior or exterior), the specific location, and the time of day. Each slug line begins a new scene. In a "[shooting script](https://en.wikipedia.org/wiki/Shooting_script "Shooting script")" the slug lines are numbered consecutively for ease of reference.
+> A *slug line*, also called a *master scene heading*, occurs at the start of each scene and typically contains 3 pieces of information: whether the scene is set inside or outside (INT. or EXT.; interior or exterior), the specific location, and the time of day. Each slug line begins a new scene. In a "[shooting script](https://en.wikipedia.org/wiki/Shooting_script "Shooting script")" the slug lines are numbered consecutively for ease of reference.
 
 -- [Screenplay, Wikipedia](https://en.wikipedia.org/wiki/Screenplay#Format_and_style)
 

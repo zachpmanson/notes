@@ -12,8 +12,8 @@ A helpful resources outside of man pages:
 ## Where Should  Programs Go?
 
 > - `/usr` - all system-wide, read-only files installed by (or provided by) the OS
-> - `/usr/local` - system-wide, read-only files installed by the local administrator (usually, you). _And that's why most directory names from `/usr` are duplicated here._
-> - `/opt` - an atrocity meant for system-wide, read-only _and self-contained_ software. That is, software that does not split their files over `bin`, `lib`, `share`, `include` like well-behaved software should.
+> - `/usr/local` - system-wide, read-only files installed by the local administrator (usually, you). *And that's why most directory names from `/usr` are duplicated here.*
+> - `/opt` - an atrocity meant for system-wide, read-only *and self-contained* software. That is, software that does not split their files over `bin`, `lib`, `share`, `include` like well-behaved software should.
 > - `~/.local` - the per-user counterpart of `/usr/local`, that is: software installed by (and for) each user. Like `/usr`, it has its own `~/.local/share`, `~/.local/bin`, `~/.local/lib`.
 > - `~/.local/opt` - the per-user counterpart of `/opt`
 

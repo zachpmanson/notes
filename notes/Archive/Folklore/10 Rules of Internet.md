@@ -6,7 +6,7 @@ In my years working in technology, I have learned a few things. These lessons ha
 
 1. Given enough time, any object which can generate musical notes will be used to play the Super Mario Brothers theme on YouTube.
 2. Judging by their response, the meanest thing you can do to people on the Internet is to give them really good software for free.
-3. Three things _never_ work: Voice chat, printers and projectors.
+3. Three things *never* work: Voice chat, printers and projectors.
 4. Once a web community has decided to dislike a person, topic, or idea, the conversation will shift from criticizing the idea to become a competition about who can be most scathing in their condemnation. (See [The Law of Fail](https://web.archive.org/web/20130721030627/http://dashes.com/anil/2009/06/the-end-of-fail.html).)
 5. Any new form of electronic communication will first be dismissed as trivial and worthless until it produces a profound result, after which it will be described as obvious and boring.
 6. If your website's full of assholes, it's your fault. (See the [post on this topic](https://web.archive.org/web/20130721030627/http://dashes.com/anil/2011/07/if-your-websites-full-of-assholes-its-your-fault.html).)

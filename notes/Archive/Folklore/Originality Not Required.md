@@ -5,7 +5,7 @@ One of my favourite essays of all time.  Written by [Sam Vente](https://sam-vent
 
 ---
 
-Stop me if this sounds familiar to you. You're in a conversation with someone about a topic that you know quite a lot about. Perhaps you're a hobbyist, maybe it's part of your profession, or you just like watching a really specific type of youtube show about this topic because you find them soothing and vaguely interesting for some reason. In any case, this is your jam, you love talking about this stuff! However, after a while, your conversation partner says something along the lines of "wow, you know so much about this, you should write about it." This kinda takes you by surprise. Sure, you know a bit about this, but no way you could write something serious about it right? After thinking it over for a split second you respond with "Oh, that's really sweet of you but I don't think I have anything _new_ to say about it."
+Stop me if this sounds familiar to you. You're in a conversation with someone about a topic that you know quite a lot about. Perhaps you're a hobbyist, maybe it's part of your profession, or you just like watching a really specific type of youtube show about this topic because you find them soothing and vaguely interesting for some reason. In any case, this is your jam, you love talking about this stuff! However, after a while, your conversation partner says something along the lines of "wow, you know so much about this, you should write about it." This kinda takes you by surprise. Sure, you know a bit about this, but no way you could write something serious about it right? After thinking it over for a split second you respond with "Oh, that's really sweet of you but I don't think I have anything *new* to say about it."
 
 This happens to me all the time. I do like to try and involve people in projects I'm working on or have an interest in but whenever I ask someone to talk about something they know a lot about there's at least a 50/50 chance they will try to dismiss themselves like in the previous paragraph.
 
@@ -64,15 +64,15 @@ It's a well-known advice to aspiring creatives to simply copy styles they like f
 
 Even though it is a bit long I think it is germane to share one of my favourite quotes here:
 
-> _All of us who do creative work, we get into it because we have good taste. But it's like there is this gap. For the first couple years that you're making stuff, what you're making isn't so good. It’s not that great. It’s trying to be good, it has ambition to be good, but it’s not that good._
+> *All of us who do creative work, we get into it because we have good taste. But it's like there is this gap. For the first couple years that you're making stuff, what you're making isn't so good. It’s not that great. It’s trying to be good, it has ambition to be good, but it’s not that good.*
 > 
-> _But your taste, the thing that got you into the game, is still killer. And your taste is good enough that you can tell that what you're making is kind of a disappointment to you. A lot of people never get past that phase. They quit._
+> *But your taste, the thing that got you into the game, is still killer. And your taste is good enough that you can tell that what you're making is kind of a disappointment to you. A lot of people never get past that phase. They quit.*
 > 
-> _Everybody I know who does interesting, creative work they went through years where they had really good taste and they could tell that what they were making wasn't as good as they wanted it to be. They knew it fell short. Everybody goes through that._
+> *Everybody I know who does interesting, creative work they went through years where they had really good taste and they could tell that what they were making wasn't as good as they wanted it to be. They knew it fell short. Everybody goes through that.*
 > 
-> _And if you are just starting out or if you are still in this phase, you gotta know its normal and the most important thing you can do is do a lot of work. Do a huge volume of work. Put yourself on a deadline so that every week or every month you know you're going to finish one story. It is only by going through a volume of work that you're going to catch up and close that gap. And the work you're making will be as good as your ambitions._
+> *And if you are just starting out or if you are still in this phase, you gotta know its normal and the most important thing you can do is do a lot of work. Do a huge volume of work. Put yourself on a deadline so that every week or every month you know you're going to finish one story. It is only by going through a volume of work that you're going to catch up and close that gap. And the work you're making will be as good as your ambitions.*
 > 
-> _I took longer to figure out how to do this than anyone I’ve ever met. It takes awhile. It’s gonna take you a while. It’s normal to take a while. You just have to fight your way through that._
+> *I took longer to figure out how to do this than anyone I’ve ever met. It takes awhile. It’s gonna take you a while. It’s normal to take a while. You just have to fight your way through that.*
 
 -- Ira Glass
 

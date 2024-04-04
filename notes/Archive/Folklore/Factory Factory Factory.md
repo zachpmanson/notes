@@ -1,4 +1,4 @@
-Originally titled _Why I Hate Frameworks_ by [Benji Smith](http://www.benjismith.net/), posted to the Joel on Software forums ([mirror](https://gwern.net/doc/cs/2005-09-30-smith-whyihateframeworks.html)).
+Originally titled *Why I Hate Frameworks* by [Benji Smith](http://www.benjismith.net/), posted to the Joel on Software forums ([mirror](https://gwern.net/doc/cs/2005-09-30-smith-whyihateframeworks.html)).
 
 ---
 

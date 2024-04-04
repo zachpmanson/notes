@@ -4,12 +4,12 @@ Elsewhere in this thread referenced [[The Bitter Lesson]], which touches on simi
 
 ---
 
->> /u/redlow0992:
->>
->> Panic inside NLP orgs of big tech companies? What about the panic at NLP departments in universities? I have witnessed my friends putting their work on PhDs go into despair after ChatGPT and now GPT-4. Quite literally, majority of the research topics in NLP are slowly becoming obsolete in front of our eyes.
->
+> > /u/redlow0992:
+> > 
+> > Panic inside NLP orgs of big tech companies? What about the panic at NLP departments in universities? I have witnessed my friends putting their work on PhDs go into despair after ChatGPT and now GPT-4. Quite literally, majority of the research topics in NLP are slowly becoming obsolete in front of our eyes.
+> 
 > /u/ChatumTannin:
->
+> 
 > Could someone knowledgeable explain this to me? Why isn't it an exciting new basis for further research, rather than a dead end?
 
 /u/500_Shames:

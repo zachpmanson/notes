@@ -12,9 +12,9 @@ Even if the functions were called at the same time, you also had to keep an eye 
 
 Creating lots of small segments allowed your memory usage to be managed with finer granularity, but it also costs you in general overhead as well as I/O, because each segment load was a new round trip to the disk. You therefore had to balance memory cost against I/O cost.
 
-The process of optimizing the grouping of functions into segments was known as _segment tuning_.
+The process of optimizing the grouping of functions into segments was known as *segment tuning*.
 
-During the development of Windows 3.0, it was customary to have regular meetings with Bill Gates to brief him on the status of the project. At one of the reviews, the topic was performance, and Bill complained, “You guys are spending all this time with your segment tuning tinkering. I could teach a twelve-year-old to segment-tune. I want to see some _real_ optimization, not this segment tuning nonsense. I wrote FAT on an airplane, for heaven’s sake.”
+During the development of Windows 3.0, it was customary to have regular meetings with Bill Gates to brief him on the status of the project. At one of the reviews, the topic was performance, and Bill complained, “You guys are spending all this time with your segment tuning tinkering. I could teach a twelve-year-old to segment-tune. I want to see some *real* optimization, not this segment tuning nonsense. I wrote FAT on an airplane, for heaven’s sake.”
 
 (I can’t believe I had to write this: This is a dramatization, not a courtroom transcript.)
 

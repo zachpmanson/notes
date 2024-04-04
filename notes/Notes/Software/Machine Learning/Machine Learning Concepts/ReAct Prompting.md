@@ -19,24 +19,24 @@ Here is an example flow by Simon Willison:
 > > **Thought:** I should look up the population of paris and then multiply it
 > > 
 > > **Action:** search_wikipedia: Paris
->
->Then it stops. Your code harness for the model reads that last line, sees the action and goes and executes an API call against Wikipedia. It continues the dialog with the model like this:
->
+> 
+> Then it stops. Your code harness for the model reads that last line, sees the action and goes and executes an API call against Wikipedia. It continues the dialog with the model like this:
+> 
 > > **Observation:** <truncated content from the Wikipedia page, including the 2,248,780 population figure>
 > 
 > The model continues:
->
->> **Thought:** Paris population is 2,248,780 I should square that
->> 
->> **Action:** calculator: 2248780 ** 2
->
->Control is handed back to the harness, which passes that to a calculator and returns:
->
->> **Observation:** 5057011488400
->
->The model then provides the answer:
->
->> **Answer:** The population of Paris squared is 5,057,011,488,400
+> 
+> > **Thought:** Paris population is 2,248,780 I should square that
+> > 
+> > **Action:** calculator: 2248780 ** 2
+> 
+> Control is handed back to the harness, which passes that to a calculator and returns:
+> 
+> > **Observation:** 5057011488400
+> 
+> The model then provides the answer:
+> 
+> > **Answer:** The population of Paris squared is 5,057,011,488,400
 
 This allows the capabilities of the LLM to be expanded extremely easily.  This is Willison's  example prompt to set up this user flow for a [toy implementation](https://til.simonwillison.net/llms/python-react-pattern):
 

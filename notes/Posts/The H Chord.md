@@ -34,19 +34,19 @@ Germany and the Netherlands ha(d/ve) their own musical key notation that include
 
 ## Western Music's Stupid Origins
 
-Western music is based on ecclesiastic modes used in church in the early Middle Ages, which only used the diatonic notes of the C scale (_natural_ notes). The musical notation systems of the time reflected this, not accounting for notes outside of the C scale. When sharps and flats later came into more common use, the existing notation systems needed a way to distinguish them from the natural notes they sat between.
+Western music is based on ecclesiastic modes used in church in the early Middle Ages, which only used the diatonic notes of the C scale (*natural* notes). The musical notation systems of the time reflected this, not accounting for notes outside of the C scale. When sharps and flats later came into more common use, the existing notation systems needed a way to distinguish them from the natural notes they sat between.
 
 This problem first arose with B natural and B flat, according to the [Encyclopedia Britannica](https://www.britannica.com/art/musical-expression). The first method of distinguishing B from B flat was using two different forms of the lowercase "b" character:
 
 ![[The-Flat-Sharp-And-Natural-A-Historical-Sketch.png]]
 
-Niecks, Frederick. “The Flat, Sharp, and Natural. A Historical Sketch.” _Proceedings of the Musical Association_, vol. 16, 1889, pp. 79–100.
+Niecks, Frederick. “The Flat, Sharp, and Natural. A Historical Sketch.” *Proceedings of the Musical Association*, vol. 16, 1889, pp. 79–100.
 
 Somewhere along the line in Germany, monks transcribing these square and round "b" characters confused the squared "b" for "h", and this was later assumed to be intentional. "H" became a convention for writing B natural, while the "b" character remained convention for writing B flat. "B" and "b" became amalgamated, both coming to represent modern B flat.
 
 In the rest of the world, this "H" note didn't catch on.
 
-In time, notation for sharp and flat notes other than B flat was needed. This use of square and round "b" to denote B and B flat eventually evolved into our modern notation for indicating natural and non-natural, _accidentals_. ♭ comes from the round "b", while ♯ and ♮ come from the square "b".
+In time, notation for sharp and flat notes other than B flat was needed. This use of square and round "b" to denote B and B flat eventually evolved into our modern notation for indicating natural and non-natural, *accidentals*. ♭ comes from the round "b", while ♯ and ♮ come from the square "b".
 
 Somehow, Germany still hasn't fully corrected this mistake, continuing to use "H" to represent B natural and many places. Including Ultimate Guitar. Ugh.
 

@@ -6,19 +6,19 @@ tags:
 
 ---
 > #### 1.8: What's the `auto` keyword good for?
->
->Declaring vehicles.
+> 
+> Declaring vehicles.
 
 -- [Infrequently Asked Questions in comp.lang.c](https://www.seebs.net/faqs/c-iaq.html)
 
 The `auto` keyword in C is one of four storage classes a variable can have, the others being `register`, `static`, and `extern`.  Storage classes defined the scope and lifetime of variables.
 
->  `auto` is the default storage class for local variables. 
->  
+> `auto` is the default storage class for local variables. 
+> 
 > `register` is used to define local variables that should be stored in a register instead of RAM
->
+> 
 > `static` is the default storage class for global variables
->
+> 
 > `extern` defines a global variable that is visible to ALL object modules
 
 -- [University of Queensland COMP2303 C Reference](http://web.archive.org/web/20130927234242/http://itee.uq.edu.au/~comp2303/Leslie_C_ref/C/CONCEPT/storage_class.html)

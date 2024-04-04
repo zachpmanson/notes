@@ -29,7 +29,7 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
-> Collect constraints you enjoy. Unusual constraints make things more fun. You can always change them later. This is _your_ style, after all. It’s not a life commitment, it’s just the way you do things. For now.
+> Collect constraints you enjoy. Unusual constraints make things more fun. You can always change them later. This is *your* style, after all. It’s not a life commitment, it’s just the way you do things. For now.
 
 -- [Steph Ango](https://stephango.com/style)
 
@@ -53,7 +53,7 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
->Speaking as the most senior member of my team, nothing useful starts with that phrase
+> Speaking as the most senior member of my team, nothing useful starts with that phrase
 
 -- [Sarai Rosenberg](https://infosec.exchange/@saraislet)
 
@@ -100,7 +100,7 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 ---
 
 > "Proof" for thousands of years was whatever was written down, and that was even easier to forge.
->  
+> 
 > There was a brief time (maybe 100 years at the most) where photos and videos were practically proof of something happening; that is coming to an end now, but that's just a regression to the mean, not new territory.
 
 -- [thepasswordis](https://news.ycombinator.com/item?id=39386870)
@@ -114,7 +114,7 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 ---
 
 > security budget:
->
+> 
 > - $1 looking into languages that don’t trivially buffer overflow  
 > - 50¢ looking into enabling exploit mitigation features  
 > - 1¢ research into things like compile-time diversity
@@ -162,24 +162,24 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 ---
 
 > NO MORE IDEAS
->
+> 
 > WE HAVE ENOUGH
->
+> 
 > (merge them instead)
 
 -- [Lu Wilson](https://www.todepond.com/wikiblogarden/my-wikiblogarden/)
 
 ---
 
->Treating Sunday as the first day of the week is a religious tradition going back thousands of years.
->
->However, I know only one god, *and* his name is ISO 8601.
+> Treating Sunday as the first day of the week is a religious tradition going back thousands of years.
+> 
+> However, I know only one god, *and* his name is ISO 8601.
 
 -- [jl6](https://news.ycombinator.com/item?id=38149243)
 
 ---
 
->I think that’s the real danger, that you can do that and then nothing’s original anymore. Everything’s just a copy of something else.  The problem is, that’s what readers like.
+> I think that’s the real danger, that you can do that and then nothing’s original anymore. Everything’s just a copy of something else.  The problem is, that’s what readers like.
 
 -- [Jennifer Lepp](https://www.theverge.com/c/23194235/ai-fiction-writing-amazon-kindle-sudowrite-jasper)
 
@@ -199,7 +199,7 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 > > @jerry@infosec.exchange:  
 > > Hi all. Fedia.io is going to be offline for a while during some open heart surgery on the database. If you are a religious person, praying might be in order.
->
+> 
 > @sehugg@infosec.exchange:  
 > ALTAR TABLE
 
@@ -225,31 +225,31 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
->You can never truly arrive at or trust your own beliefs if you can't completely understand and articulate the best possible case against them
+> You can never truly arrive at or trust your own beliefs if you can't completely understand and articulate the best possible case against them
 
 -- [noduerme](https://news.ycombinator.com/item?id=36927973)
 
 ---
 
->There is a floor on how simple the truth can be and still be the truth.  Falsehoods don't have that.
+> There is a floor on how simple the truth can be and still be the truth.  Falsehoods don't have that.
 
 -- [Ian Crosby Danskin](https://www.youtube.com/watch?v=dF98ii6r_gU)
 
 ---
 
->I've found that people who are great at something are not so much convinced of their own greatness as mystified at why everyone else seems so incompetent.  
+> I've found that people who are great at something are not so much convinced of their own greatness as mystified at why everyone else seems so incompetent.  
 
 -- [Paul Graham](http://www.paulgraham.com/gh.html)
 
 ---
 
->I never trust anyone who's more excited about success than about doing the thing they want to be successful at.
+> I never trust anyone who's more excited about success than about doing the thing they want to be successful at.
 
 -- [Randall Munroe](http://xkcd.com/874/)  
 
 ---
 
->The site will live or die by how it handles its first porn of misty from Pokemon
+> The site will live or die by how it handles its first porn of misty from Pokemon
 
 -- [lori](https://d-shoot.net/)
 
@@ -257,31 +257,31 @@ Written on cohost, though I came across it in their [pre-emptive autopsy of coho
 
 ---
 
->An industrialist might soon purchase Twitter, Inc. His substantial success launching reusable spacecraft does nothing to prepare him for the challenge of building social spaces. The latter calls on every liberal art at once, while the former is just rocket science.
+> An industrialist might soon purchase Twitter, Inc. His substantial success launching reusable spacecraft does nothing to prepare him for the challenge of building social spaces. The latter calls on every liberal art at once, while the former is just rocket science.
 
 -- [Robin Sloan](https://www.robinsloan.com/lab/lost-thread/)
 
 ---
 
->Web scraping is an absolutely despicable practice and if you want to learn how to do it at an industrial scale check out this video on my second channel
+> Web scraping is an absolutely despicable practice and if you want to learn how to do it at an industrial scale check out this video on my second channel
 
 -- [Fireship](https://www.youtube.com/watch?v=3AS5x05XIyg)
 
 ---
 
->It is really not so repulsive to see the poor asking for money as to see the rich asking for more money.  And advertisement is the rich asking for more money.  A man would be annoyed if he found himself in a mob of millionaires, all holding out their silk hats for a penny; or all shouting with one voice, “Give me money.” Yet advertisement does really assault the eye very much as such a shout would assault the ear.  “Budge’s Boots are the Best” simply means “Give me money”; “Use Seraphic Soap” simply means “Give me money.” It is a complete mistake to suppose that common people make our towns commonplace, with unsightly things like advertisements.  Most of those whose wares are thus placarded everywhere are very wealthy gentlemen with coronets and country seats, men who are probably very particular about the artistic adornment of their own homes.  They disfigure their towns in order to decorate their houses.
+> It is really not so repulsive to see the poor asking for money as to see the rich asking for more money.  And advertisement is the rich asking for more money.  A man would be annoyed if he found himself in a mob of millionaires, all holding out their silk hats for a penny; or all shouting with one voice, “Give me money.” Yet advertisement does really assault the eye very much as such a shout would assault the ear.  “Budge’s Boots are the Best” simply means “Give me money”; “Use Seraphic Soap” simply means “Give me money.” It is a complete mistake to suppose that common people make our towns commonplace, with unsightly things like advertisements.  Most of those whose wares are thus placarded everywhere are very wealthy gentlemen with coronets and country seats, men who are probably very particular about the artistic adornment of their own homes.  They disfigure their towns in order to decorate their houses.
 
 -- G. K. Chesterton, [The New Jerusalem](http://www.gkc.org.uk/gkc/books/GKC_New_Jerusalem.html)
 
 ---
 
->Subcultures are dead. I plan to write a full obituary soon.
+> Subcultures are dead. I plan to write a full obituary soon.
 
 -- [David Chapman](https://meaningness.com/geeks-mops-sociopaths)
 
 ---
 
->You can't _imagine_ how much harder it would be to be a JavaScript programmer in 1882
+> You can't *imagine* how much harder it would be to be a JavaScript programmer in 1882
 
 -- [Zach Holman](https://zachholman.com/talk/utc-is-enough-for-everyone-right)
 
@@ -293,55 +293,55 @@ Written on cohost, though I came across it in their [pre-emptive autopsy of coho
 
 ---
 
->In Unix everything is a file. Files are files, folders are files, disks are files, your keyboard is a file, your mouth is a file, the air is a file, you can't breathe, your file lungs fill with files and you try to scream but only files come out oh god Dennis how could you do thi
+> In Unix everything is a file. Files are files, folders are files, disks are files, your keyboard is a file, your mouth is a file, the air is a file, you can't breathe, your file lungs fill with files and you try to scream but only files come out oh god Dennis how could you do thi
 
 -- [Sy Brand](https://twitter.com/TartanLlama/status/1375045731644538882)
 
 ---
 
->The only technology that you need is deadlines.
+> The only technology that you need is deadlines.
 
 -- Paul Ford, [here](https://aboard.com/podcast-episode-2-failure/) (allegedly, I came across the quote [here](https://blog.jim-nielsen.com/2023/deadlines-as-technology/))
 
 ---
 
->You can't have art without resistance in the materials
+> You can't have art without resistance in the materials
 
 -- William Morris
 
 ---
 
->In ISO C, file handles (of type FILE) cannot be safely copied as their addresses may be magic
+> In ISO C, file handles (of type FILE) cannot be safely copied as their addresses may be magic
 
 -- [Wikipedia - Magic (programming)](https://en.wikipedia.org/wiki/Magic_(programming))
 
 ---
 
->Miyazaki said he can feel it every day, the limit of his ability, and he was talking about getting older but I think that's something a lot of us have experienced. Personally I can feel myself straining against the limit of my ability as though it were a brick fucking wall and my true potential, whatever the hell that is, is some amorphous shape on the other side that I can't quite reach.
+> Miyazaki said he can feel it every day, the limit of his ability, and he was talking about getting older but I think that's something a lot of us have experienced. Personally I can feel myself straining against the limit of my ability as though it were a brick fucking wall and my true potential, whatever the hell that is, is some amorphous shape on the other side that I can't quite reach.
 
 -- [Savannah Brown](https://youtu.be/jKV-cym4QfQ)
 
 ---
 
->Look I'm an atheist, but when God sends me to hell I want him to hesitate
+> Look I'm an atheist, but when God sends me to hell I want him to hesitate
 
 -- Technoblade
 
 ---
 
->`lambda` has the benefit of making the code compact and foreboding. Plus, it prevents people from trying to add meaningful names, documentation or type-hints to the thing that is about to unfold.
+> `lambda` has the benefit of making the code compact and foreboding. Plus, it prevents people from trying to add meaningful names, documentation or type-hints to the thing that is about to unfold.
 
 -- [David Beasley](https://github.com/dabeaz/blog/blob/main/2023/three-problems.md)
 
 ---
 
->This code is free as in mattress. If you decide to use it, it's your problem.
+> This code is free as in mattress. If you decide to use it, it's your problem.
 
 -- [Xe Iaso](https://xeiaso.net/blog/GraphicalEmoji)
 
 ---
 
->This song is Copyrighted in U.S., under Seal of Copyright # 154085, for a period of 28 years, and anybody caught singin it without our permission, will be mighty good friends of ourn, cause we don’t give a dern. Publish it. Write it. Sing it. Swing to it. Yodel it. We wrote it, that’s all we wanted to do.  
+> This song is Copyrighted in U.S., under Seal of Copyright # 154085, for a period of 28 years, and anybody caught singin it without our permission, will be mighty good friends of ourn, cause we don’t give a dern. Publish it. Write it. Sing it. Swing to it. Yodel it. We wrote it, that’s all we wanted to do.  
 
 -- Woodie Guthrie's [Anti-copyright notice](https://en.wikipedia.org/wiki/Anti-copyright_notice).
 
@@ -349,6 +349,6 @@ More on this on the [Creative Commons site](https://creativecommons.org/2004/04/
 
 ---
 
->It's easy to say with hindsight that NFTs are a stupid scam but it was also easy at the beginning to say that and through the middle too
+> It's easy to say with hindsight that NFTs are a stupid scam but it was also easy at the beginning to say that and through the middle too
 
 -- @IlllllllllllllI [on 2022-06-14](https://twitter.com/IlllllllllllllI/status/1536632345972944897) 

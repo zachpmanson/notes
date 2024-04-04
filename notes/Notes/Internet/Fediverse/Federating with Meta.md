@@ -44,7 +44,7 @@ Roelant Kooij wrote an [excellent overview](https://roelant.net/en/2023/interest
 	- its seems unlikely that Meta actually sees the fediverse as a threat
 	- the Gchat/XMPP embrace/extend/extinguish example is flawed
 	- Meta isn't evil without motivation
-	- "So why _is_ Meta going to use ActivityPub?  Here’s the thing; _I haven’t the faintest fucking clue_.  It does not obviously help Meta in any way to have interoperability with ActivityPub"
+	- "So why *is* Meta going to use ActivityPub?  Here’s the thing; *I haven’t the faintest fucking clue*.  It does not obviously help Meta in any way to have interoperability with ActivityPub"
 - [You’re So Vain, You Probably Think This App Is About You](https://tracks.ranea.org/post/722507935765397504/youre-so-vain-you-probably-think-this-app-is), an argument against the idea that Meta actually wants to EEE the fediverse
 	- suggests that there is little monetary reason to federate from Meta's perspective, other than regulatory pressure
 	- particularly posits that defederating from servers that refuse to defederate Meta is particularly short-sighted

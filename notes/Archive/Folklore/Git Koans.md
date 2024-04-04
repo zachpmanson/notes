@@ -73,15 +73,15 @@ A novice was learning at the feet of Master Git. At the end of the lesson he loo
 
 Master Git nodded.
 
-"How can I view a list of _all_ tags?"
+"How can I view a list of *all* tags?"
 
 "`git tag`", replied Master Git.
 
-"How can I view a list of _all_ remotes?"
+"How can I view a list of *all* remotes?"
 
 "`git remote -v`", replied Master Git.
 
-"How can I view a list of _all_ branches?"
+"How can I view a list of *all* branches?"
 
 "`git branch -a`", replied Master Git.
 

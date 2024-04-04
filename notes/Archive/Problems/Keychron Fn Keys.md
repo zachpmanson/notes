@@ -8,8 +8,8 @@ Tested on Keychron K2v2 on Xubuntu 20.04 and 22.04 on trenzalore.
 
 To enable Function keys on Keychron K2:
 
-+ Set the keyboard to Windows mode
-+ Run the following command:
+- Set the keyboard to Windows mode
+- Run the following command:
 
 ```sh
 echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode

@@ -4,7 +4,7 @@ A leaked internal memo from Google.
 
 We’ve done a lot of looking over our shoulders at OpenAI. Who will cross the next milestone? What will the next move be?
 
-But the uncomfortable truth is, _we aren’t positioned to win this arms race and neither is OpenAI_. While we’ve been squabbling, a third faction has been quietly eating our lunch.
+But the uncomfortable truth is, *we aren’t positioned to win this arms race and neither is OpenAI*. While we’ve been squabbling, a third faction has been quietly eating our lunch.
 
 I’m talking, of course, about open source. Plainly put, they are lapping us. **Things we consider “major open problems” are solved and in people’s hands today.** Just to name a few:
 
@@ -48,7 +48,7 @@ The innovations that powered open source’s recent successes directly solve pro
 
 #### LoRA is an incredibly powerful technique we should probably be paying more attention to
 
-[LoRA](https://arxiv.org/abs/2106.09685) works by representing model updates as low-rank factorizations, which reduces the size of the update matrices by a factor of up to several thousand. This allows model fine-tuning at a fraction of the cost and time. Being able to personalize a language model in a few hours on consumer hardware is a big deal, _particularly_ for [aspirations that involve incorporating new and diverse knowledge in near real-time](http://www.internalgooglesitescrubbedbyus.com). The fact that this technology exists is underexploited inside Google, even though it directly impacts some of our most ambitious projects.
+[LoRA](https://arxiv.org/abs/2106.09685) works by representing model updates as low-rank factorizations, which reduces the size of the update matrices by a factor of up to several thousand. This allows model fine-tuning at a fraction of the cost and time. Being able to personalize a language model in a few hours on consumer hardware is a big deal, *particularly* for [aspirations that involve incorporating new and diverse knowledge in near real-time](http://www.internalgooglesitescrubbedbyus.com). The fact that this technology exists is underexploited inside Google, even though it directly impacts some of our most ambitious projects.
 
 ## Retraining models from scratch is the hard path
 
@@ -102,7 +102,7 @@ Google should establish itself a leader in the open source community, taking the
 
 All this talk of open source can feel unfair given OpenAI’s current closed policy. Why do we have to share, if they won’t? But the fact of the matter is, we are already sharing everything with them in the form of the steady flow of poached senior researchers. Until we stem that tide, secrecy is a moot point.
 
-And in the end, _OpenAI doesn’t matter_. They are making the same mistakes we are in their posture relative to open source, and their ability to maintain an edge is necessarily in question. Open source alternatives can and will eventually eclipse them unless they change their stance. In this respect, at least, we can make the first move.
+And in the end, *OpenAI doesn’t matter*. They are making the same mistakes we are in their posture relative to open source, and their ability to maintain an edge is necessarily in question. Open source alternatives can and will eventually eclipse them unless they change their stance. In this respect, at least, we can make the first move.
 
 # The Timeline
 

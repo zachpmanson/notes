@@ -35,7 +35,7 @@ A list of useful **Prompt** Engineering **tools** and **resources** for text-to-
 -   [Ponzu Logos](https://www.ponzu.ai/?t=&p=colorful&w=feed)
 -   [Phraser](https://phraser.tech/compare): Create and search. Paid subscription.
 -   [Histre](https://histre.com/integrations/generative/): **Create** and share prompts.
--   [PromptRush](https://promptrush.com): Prompt keyword research tool & [analyzer](https://promptrush.com/prompt-analyzer) (**_Down?_**)
+-   [PromptRush](https://promptrush.com): Prompt keyword research tool & [analyzer](https://promptrush.com/prompt-analyzer) (***Down?***)
 -   **NSFW**:
 -   [booru.plus/+stablediffusion](https://booru.plus/+stablediffusion) Search NSFW
 -   [NastyPrompts](https://nastyprompts.com): Search NSFW. Model **Seed.**

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Language/Dictionary.md",
+                "file": "Index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Language/Dictionary.md",
+                "file": "Index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Language/Dictionary.md",
+                "file": "Index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Language/Dictionary.md"
+                "file": "Index.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Notes/Language/Etymology/Gruntle.md",
     "Notes/Language/Dictionary.md",
+    "Notes/Language/Etymology/Gruntle.md",
     "Notes/Language/Language.md",
     "Archive/Problems/Markdown in HTML.md",
     "Notes/Internet/Internet Standards/RSS.md",

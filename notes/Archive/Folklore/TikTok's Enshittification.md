@@ -6,23 +6,23 @@ Here is how platforms die: first, they are good to their users; then they abuse 
 
 I call this enshittification, and it is a seemingly inevitable consequence arising from the combination of the ease of changing how a platform allocates value, combined with the nature of a "two sided market," where a platform sits between buyers and sellers, holding each hostage to the other, raking off an ever-larger share of the value that passes between them.
 
-When a platform starts, it needs users, so it makes itself valuable to users. Think of Amazon: for many years, it operated at a loss, using its access to the capital markets to subsidize everything you bought. It sold goods below cost _and_ shipped them below cost. It operated a clean and useful search. If you searched for a product, Amazon tried its damndest to put it at the top of the search results.
+When a platform starts, it needs users, so it makes itself valuable to users. Think of Amazon: for many years, it operated at a loss, using its access to the capital markets to subsidize everything you bought. It sold goods below cost *and* shipped them below cost. It operated a clean and useful search. If you searched for a product, Amazon tried its damndest to put it at the top of the search results.
 
 This was a hell of a good deal for Amazon's customers. Lots of us piled in, and lots of brick-and-mortar retailers withered and died, making it hard to go elsewhere. Amazon sold us ebooks and audiobooks that were permanently locked to its platform with DRM, so that every dollar we spent on media was a dollar we'd have to give up if we deleted Amazon and its apps. And Amazon sold us Prime, getting us to pre-pay for a year's worth of shipping. Prime customers start their shopping on Amazon, and 90% of the time, they don't search anywhere else.
 
 That tempted in lots of business customers – Marketplace sellers who turned Amazon into the "everything store" it had promised from the beginning. As these sellers piled in, Amazon shifted to subsidizing suppliers. Kindle and Audible creators got generous packages. Marketplace sellers reached huge audiences and Amazon took low commissions from them.
 
-This strategy meant that it became progressively harder for shoppers to find things anywhere except Amazon, which meant that they only searched on Amazon, which meant that sellers _had_ to sell on Amazon.
+This strategy meant that it became progressively harder for shoppers to find things anywhere except Amazon, which meant that they only searched on Amazon, which meant that sellers *had* to sell on Amazon.
 
 That's when Amazon started to harvest the surplus from its business customers and send it to Amazon's shareholders. Today, Marketplace sellers are handing 45%+ of the sale price to Amazon in junk fees. The company's $31b "advertising" program is really a payola scheme that pits sellers against each other, forcing them to bid on the chance to be at the top of your search.
 
-Searching Amazon doesn't produce a list of the products that most closely match your search, it brings up a list of products whose sellers have paid the most to be at the top of that search. Those fees are built into the cost you pay for the product, and Amazon's "Most Favored Nation" requirement sellers means that they can't sell more cheaply elsewhere, so Amazon has driven prices at _every_ retailer.
+Searching Amazon doesn't produce a list of the products that most closely match your search, it brings up a list of products whose sellers have paid the most to be at the top of that search. Those fees are built into the cost you pay for the product, and Amazon's "Most Favored Nation" requirement sellers means that they can't sell more cheaply elsewhere, so Amazon has driven prices at *every* retailer.
 
 Search Amazon for "cat beds" and the entire first screen is ads, including ads for products Amazon cloned from its own sellers, putting them out of business (third parties have to pay 45% in junk fees to Amazon, but Amazon doesn't charge itself these fees). All told, the first five screens of results for "cat bed" are 50% ads.
 
 [https://pluralistic.net/2022/11/28/enshittification/#relentless-payola](https://pluralistic.net/2022/11/28/enshittification/#relentless-payola)
 
-This is enshittification: surpluses are first directed to users; then, once they're locked in, surpluses go to suppliers; then once _they're_ locked in, the surplus is handed to shareholders and the platform becomes a useless pile of shit. From mobile app stores to Steam, from Facebook to Twitter, this is the enshittification lifecycle.
+This is enshittification: surpluses are first directed to users; then, once they're locked in, surpluses go to suppliers; then once *they're* locked in, the surplus is handed to shareholders and the platform becomes a useless pile of shit. From mobile app stores to Steam, from Facebook to Twitter, this is the enshittification lifecycle.
 
 This is why – as Cat Valente wrote in her magesterial pre-Christmas essay – platforms like Prodigy transformed themselves overnight, from a place where you went for social connection to a place where you were expected to "stop talking to each other and start buying things":
 
@@ -34,7 +34,7 @@ Then, it started to cram your feed full of posts from accounts you didn't follow
 
 Then, once those publications were dependent on Facebook for their traffic, it dialed down their traffic. First, it choked off traffic to publications that used Facebook to run excerpts with links to their own sites, as a way of driving publications into supplying fulltext feeds inside Facebook's walled garden.
 
-This made publications truly dependent on Facebook – their readers no longer visited the publications' websites, they just tuned into them on Facebook. The publications were hostage to those readers, who were hostage to each other. Facebook stopped showing readers the articles publications ran, tuning The Algorithm to suppress posts from publications unless they paid to "boost" their articles to the readers who had _explicitly subscribed to them and asked Facebook to put them in their feeds._
+This made publications truly dependent on Facebook – their readers no longer visited the publications' websites, they just tuned into them on Facebook. The publications were hostage to those readers, who were hostage to each other. Facebook stopped showing readers the articles publications ran, tuning The Algorithm to suppress posts from publications unless they paid to "boost" their articles to the readers who had *explicitly subscribed to them and asked Facebook to put them in their feeds.*
 
 Now, Facebook started to cram more ads into the feed, mixing payola from people you wanted to hear from with payola from strangers who wanted to commandeer your eyeballs. It gave those advertisers a great deal, charging a pittance to target their ads based on the dossiers of nonconsensually harvested personal data they'd stolen from you.
 
@@ -42,7 +42,7 @@ Sellers became dependent on Facebook, too, unable to carry on business without a
 
 [https://en.wikipedia.org/wiki/Jedi_Blue](https://en.wikipedia.org/wiki/Jedi_Blue)
 
-Today, Facebook is terminally enshittified, a terrible place to be whether you're a user, a media company, _or_ an advertiser. It's a company that deliberately _demolished_ a huge fraction of the publishers it relied on, defrauding them into a "pivot to video" based on false claims of the popularity of video among Facebook users. Companies threw billions into the pivot, but the viewers never materialized, and media outlets folded in droves:
+Today, Facebook is terminally enshittified, a terrible place to be whether you're a user, a media company, *or* an advertiser. It's a company that deliberately *demolished* a huge fraction of the publishers it relied on, defrauding them into a "pivot to video" based on false claims of the popularity of video among Facebook users. Companies threw billions into the pivot, but the viewers never materialized, and media outlets folded in droves:
 
 [https://slate.com/technology/2018/10/facebook-online-video-pivot-metrics-false.html](https://slate.com/technology/2018/10/facebook-online-video-pivot-metrics-false.html)
 
@@ -72,7 +72,7 @@ The situation is so dire that organizations like Tracking Exposed have enlisted 
 
 But what if there is no underlying logic? Or, more to the point, what if the logic shifts based on the platform's priorities? If you go down to the midway at your county fair, you'll spot some poor sucker walking around all day with a giant teddy bear that they won by throwing three balls in a peach basket.
 
-The peach-basket is a rigged game. The carny can use a hidden switch to force the balls to bounce out of the basket. No one wins a giant teddy bear unless the carny _wants_ them to win it. Why did the carny let the sucker win the giant teddy bear? So that he'd carry it around all day, convincing other suckers to put down five bucks for their chance to win one:
+The peach-basket is a rigged game. The carny can use a hidden switch to force the balls to bounce out of the basket. No one wins a giant teddy bear unless the carny *wants* them to win it. Why did the carny let the sucker win the giant teddy bear? So that he'd carry it around all day, convincing other suckers to put down five bucks for their chance to win one:
 
 [https://boingboing.net/2006/08/27/rigged-carny-game.html](https://boingboing.net/2006/08/27/rigged-carny-game.html)
 
@@ -82,7 +82,7 @@ Which brings me to Tiktok. Tiktok is many different things, including "a free Ad
 
 [https://www.garbageday.email/p/the-fragments-of-media-you-consume](https://www.garbageday.email/p/the-fragments-of-media-you-consume)
 
-But what made it such a success early on was the power of its recommendation system. From the start, Tiktok was really, really good at recommending things to its users. _Eerily_ good:
+But what made it such a success early on was the power of its recommendation system. From the start, Tiktok was really, really good at recommending things to its users. *Eerily* good:
 
 [https://www.npr.org/transcripts/1093882880](https://www.npr.org/transcripts/1093882880)
 
@@ -104,7 +104,7 @@ But Tiktok is not in the business of giving away giant teddy bears. Tiktok, for 
 
 In the case of cryptos, the main monetization strategy was deception-based. Exchanges and "projects" handed out a bunch of giant teddy-bears, creating an army of true-believer Judas goats who convinced their peers to hand the carny their money and try to get some balls into the peach-basket themselves.
 
-But deception only produces so much "liquidity provision." Eventually, you run out of suckers. To get _lots_ of people to try the ball-toss, you need coercion, not persuasion. Think of how US companies ended the defined benefits pension that guaranteed you a dignified retirement, replacing it with market-based 401(k) pensions that forced you to gamble your savings in a rigged casino, making you the sucker at the table, ripe for the picking:
+But deception only produces so much "liquidity provision." Eventually, you run out of suckers. To get *lots* of people to try the ball-toss, you need coercion, not persuasion. Think of how US companies ended the defined benefits pension that guaranteed you a dignified retirement, replacing it with market-based 401(k) pensions that forced you to gamble your savings in a rigged casino, making you the sucker at the table, ripe for the picking:
 
 [https://pluralistic.net/2020/07/25/derechos-humanos/#are-there-no-poorhouses](https://pluralistic.net/2020/07/25/derechos-humanos/#are-there-no-poorhouses)
 
@@ -118,7 +118,7 @@ For Tiktok, handing out free teddy-bears by "heating" the videos posted by skept
 
 Once those performers and media companies are hooked, the next phase will begin: Tiktok will withdraw the "heating" that sticks their videos in front of people who never heard of them and haven't asked to see their videos. Tiktok is performing a delicate dance here: there's only so much enshittification they can visit upon their users' feeds, and Tiktok has lots of other performers they want to give giant teddy-bears to.
 
-Tiktok won't just starve performers of the "free" attention by depreferencing them in the algorithm, it will actively punish them by failing to deliver their videos to the users who subscribed to them. After all, every time Tiktok shows you a video you _asked_ to see, it loses a chance to show you a video _it wants you to see_, because your attention is a giant teddy-bear it can give away to a performer it is wooing.
+Tiktok won't just starve performers of the "free" attention by depreferencing them in the algorithm, it will actively punish them by failing to deliver their videos to the users who subscribed to them. After all, every time Tiktok shows you a video you *asked* to see, it loses a chance to show you a video *it wants you to see*, because your attention is a giant teddy-bear it can give away to a performer it is wooing.
 
 This is just what Twitter has done as part of its march to enshittification: thanks to its "monetization" changes, the majority of people who follow you will never see the things you post. I have ~500k followers on Twitter and my threads used to routinely get hundreds of thousands or even millions of reads. Today, it's hundreds, perhaps thousands.
 
@@ -128,15 +128,15 @@ I just handed Twitter $8 for Twitter Blue, because the company has strongly impl
 
 In the beginning, there were Bellheads and Netheads. The Bellheads worked for big telcos, and they believed that all the value of the network rightly belonged to the carrier. If someone invented a new feature – say, Caller ID – it should only be rolled out in a way that allows the carrier to charge you every month for its use. This is Software-As-a-Service, Ma Bell style.
 
-The Netheads, by contrast, believed that value should move to the edges of the network – spread out, pluralized. In theory, Compuserve _could_ have "monetized" its own version of Caller ID by making you pay $2.99 extra to see the "From:" line on email before you opened the message – charging you to know who was speaking before you started listening – but they didn't.
+The Netheads, by contrast, believed that value should move to the edges of the network – spread out, pluralized. In theory, Compuserve *could* have "monetized" its own version of Caller ID by making you pay $2.99 extra to see the "From:" line on email before you opened the message – charging you to know who was speaking before you started listening – but they didn't.
 
 The Netheads wanted to build diverse networks with lots of offers, lots of competition, and easy, low-cost switching between competitors (thanks to interoperability). Some wanted this because they believed that the net would someday be woven into the world, and they didn't want to live in a world of rent-seeking landlords. Others were true believers in market competition as a source of innovation. Some believed both things. Either way, they saw the risk of network capture, the drive to monetization through trickery and coercion, and they wanted to head it off.
 
-They conceived of the end-to-end principle: the idea that networks should be designed so that willing speakers' messages would be delivered to willing listeners' end-points as quickly and reliably as they could be. That is, irrespective of whether a network operator could make money by sending you the data _it_ wanted to receive, its duty would be to provide you with the data _you_ wanted to see.
+They conceived of the end-to-end principle: the idea that networks should be designed so that willing speakers' messages would be delivered to willing listeners' end-points as quickly and reliably as they could be. That is, irrespective of whether a network operator could make money by sending you the data *it* wanted to receive, its duty would be to provide you with the data *you* wanted to see.
 
 The end-to-end principle is dead at the service level today. Useful idiots on the right were tricked into thinking that the risk of Twitter mismanagement was "woke shadowbanning," whereby the things you said wouldn't reach the people who asked to hear them because Twitter's deep state didn't like your opinions. The real risk, of course, is that the things you say won't reach the people who asked to hear them because Twitter can make more money by enshittifying their feeds and charging you ransom for the privilege to be included in them.
 
-As I said at the start of this essay, enshittification exerts a nearly irresistible gravity on platform capitalism. It's just too easy to turn the enshittification dial up to eleven. Twitter was able to fire the majority of its skilled staff and _still_ crank the dial all the way over, even with a skeleton crew of desperate, demoralized H1B workers who are shackled to Twitter's sinking ship by the threat of deportation.
+As I said at the start of this essay, enshittification exerts a nearly irresistible gravity on platform capitalism. It's just too easy to turn the enshittification dial up to eleven. Twitter was able to fire the majority of its skilled staff and *still* crank the dial all the way over, even with a skeleton crew of desperate, demoralized H1B workers who are shackled to Twitter's sinking ship by the threat of deportation.
 
 The temptation to enshittify is magnified by the blocks on interoperability: when Twitter bans interoperable clients, nerfs its APIs, and periodically terrorizes its users by suspending them for including their Mastodon handles in their bios, it makes it harder to leave Twitter, and thus increases the amount of enshittification users can be force-fed without risking their departure.
 
@@ -170,13 +170,13 @@ Enshittification kills. Google just laid off 12,000 employees, and the company i
 
 [https://www.theverge.com/2023/1/20/23563851/google-search-ai-chatbot-demo-chatgpt](https://www.theverge.com/2023/1/20/23563851/google-search-ai-chatbot-demo-chatgpt)
 
-Now, it's possible to imagine that such a tool will produce _good_ recommendations, like Tiktok's pre-enshittified algorithm did. But it's hard to see how Google will be able to design a non-enshittified chatbot front-end to search, given the strong incentives for product managers, executives, and shareholders to enshittify results to the precise threshold at which users are _nearly_ pissed off enough to leave, but not quite.
+Now, it's possible to imagine that such a tool will produce *good* recommendations, like Tiktok's pre-enshittified algorithm did. But it's hard to see how Google will be able to design a non-enshittified chatbot front-end to search, given the strong incentives for product managers, executives, and shareholders to enshittify results to the precise threshold at which users are *nearly* pissed off enough to leave, but not quite.
 
 Even if it manages the trick, this-almost-but-not-quite-unusuable equilibrium is fragile. Any exogenous shock – a new competitor like Tiktok that penetrates the anticompetitive "moats and walls" of Big Tech, a privacy scandal, a worker uprising – can send it into wild oscillations:
 
 [https://pluralistic.net/2023/01/08/watch-the-surpluses/#exogenous-shocks](https://pluralistic.net/2023/01/08/watch-the-surpluses/#exogenous-shocks)
 
-Enshittification truly is how platforms die. That's fine, actually. We don't need eternal rulers of the internet. It's okay for new ideas and new ways of working to emerge. The emphasis of lawmakers and policymakers shouldn't be preserving the crepuscular senescence of dying platforms. Rather, our policy focus should be on minimizing the cost to _users_ when these firms reach their expiry date: enshrining rights like end-to-end would mean that no matter how autocannibalistic a zombie platform became, willing speakers and willing listeners would still connect with each other:
+Enshittification truly is how platforms die. That's fine, actually. We don't need eternal rulers of the internet. It's okay for new ideas and new ways of working to emerge. The emphasis of lawmakers and policymakers shouldn't be preserving the crepuscular senescence of dying platforms. Rather, our policy focus should be on minimizing the cost to *users* when these firms reach their expiry date: enshrining rights like end-to-end would mean that no matter how autocannibalistic a zombie platform became, willing speakers and willing listeners would still connect with each other:
 
 [https://doctorow.medium.com/end-to-end-d6046dca366f](https://doctorow.medium.com/end-to-end-d6046dca366f)
 
@@ -186,6 +186,6 @@ And policymakers should focus on freedom of exit – the right to leave a sinkin
 
 The Netheads were right: technological self-determination is at odds with the natural imperatives of tech businesses. They make more money when they take away our freedom – our freedom to speak, to leave, to connect.
 
-For many years, even Tiktok's critics grudgingly admitted that no matter how surveillant and creepy it was, it was really good at guessing what you wanted to see. But Tiktok couldn't resist the temptation to show you the things _it_ wants you to see, rather than what _you_ want to see. The enshittification has begun, and now it is unlikely to stop.
+For many years, even Tiktok's critics grudgingly admitted that no matter how surveillant and creepy it was, it was really good at guessing what you wanted to see. But Tiktok couldn't resist the temptation to show you the things *it* wants you to see, rather than what *you* want to see. The enshittification has begun, and now it is unlikely to stop.
 
 It's too late to save Tiktok. Now that it has been infected by enshittifcation, the only thing left is to kill it with fire.

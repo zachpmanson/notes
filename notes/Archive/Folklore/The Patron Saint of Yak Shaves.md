@@ -45,7 +45,7 @@ It’s still considered good and has a huge factor in the recognisable look of T
 
 Yak shave 3: Invent your own layout algorithm for it
 
-Which brings us to the next problem: _what_ does this thing lay out? Generically speaking: objects and clusters of objects of varying sizes. Interestingly, that’s what TeX deals with, it has no concept of a character other then dimensions.
+Which brings us to the next problem: *what* does this thing lay out? Generically speaking: objects and clusters of objects of varying sizes. Interestingly, that’s what TeX deals with, it has no concept of a character other then dimensions.
 
 Nevertheless, these are usually characters and characters are provided by fonts. Fonts must usually be licensed at a fee and free fonts weren’t so available in the 70s.
 
@@ -55,7 +55,7 @@ I’m trying to make this whole thing a bit more thrilling, so I will let you gu
 
 Yak shave 4: Design a font
 
-Fonts need to be authored. Usually, they are described in some vector description, often Bézier curves. This is fairly standard and not an innovation of Knuth. _But_, he wrote a description language for that, along with an interpreter to turn this descriptions into proper font files. This is [METAFONT](https://en.wikipedia.org/wiki/Metafont). It’s not strictly part of TeX, it’s just that the Yak happened to stand close.
+Fonts need to be authored. Usually, they are described in some vector description, often Bézier curves. This is fairly standard and not an innovation of Knuth. *But*, he wrote a description language for that, along with an interpreter to turn this descriptions into proper font files. This is [METAFONT](https://en.wikipedia.org/wiki/Metafont). It’s not strictly part of TeX, it’s just that the Yak happened to stand close.
 
 Yak shave 5: Write an authoring tool for fonts
 
@@ -100,7 +100,7 @@ Community yak shave 3: Build a lot of tooling around that
 
 ## The Moral of the Story
 
-Whenever you feel like “can’t we just replace this whole thing, it can’t be so hard” when handling TeX, don’t forget how many years of work and especially knowledge were poured into that system. Typesetting isn’t the _most_ popular knowledge around programmers. Especially see it in the context of the space it is in: they can’t remove legacy. Ever. That would break documents.
+Whenever you feel like “can’t we just replace this whole thing, it can’t be so hard” when handling TeX, don’t forget how many years of work and especially knowledge were poured into that system. Typesetting isn’t the *most* popular knowledge around programmers. Especially see it in the context of the space it is in: they can’t remove legacy. Ever. That would break documents.
 
 TeX is also not a programming language. It might resemble one, but mostly, it should be approached as a typesetting system first. A lot of its confusing lingo gets much better then. It’s not programming lingo.
 

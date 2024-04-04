@@ -122,12 +122,12 @@ This runs the command as a subshell, which can limit side effects.
 - `$((<expression>))` will evaluate the expression and return result to stdout
 
 Operations
-- + plus  
+- - plus  
 - - minus  
-- * multiplication  
+- - multiplication  
 - / integer division  
 - % remainder  
-- >> right shift (/2 N )  
+- > > right shift (/2 N )  
 - << left shift (*2 N )  
 - & bitwise AND  
 - | bitwise OR  
