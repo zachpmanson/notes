@@ -79,17 +79,6 @@
     <hr />
 
     <div class="meta">
-      {% if node["post_date"] %}
-      <p class="backlinks"><span class="bold">Posted:</span> {{node["post_date"]}}</p>
-      {% endif %}
-
-      {% if node["mod_date"] %}
-      <p class="backlinks"><span class="bold">Last update:</span> {{node["mod_date"]}}</p>
-      {% endif %}
-      {% if node["creation_date"] %}
-      <p class="backlinks"><span class="bold">Created:</span> {{node["creation_date"]}}</p>
-      {% endif %}
-
       {% if node["backlinks"] != None and len(node["backlinks"]) > 0 %}
       <p class="backlinks"><span class="bold">Incoming:</span>
         {% for backlink in node["backlinks"] %}
@@ -107,6 +96,23 @@
         </span>
       </p>
       {% endif %}
+
+      {% if node["post_date"] %}
+      <p class="backlinks"><span class="bold">Posted:</span> {{node["post_date"]}}</p>
+      {% endif %}
+
+      <p>
+        {% if node["mod_date"] %}
+        <span class="backlinks">
+          <span class="bold">Last update:</span> {{node["mod_date"]}}
+        </span><br />
+        {% endif %}
+        {% if node["creation_date"] %}
+        <span class="backlinks">
+          <span class="bold">Created:</span> {{node["creation_date"]}}
+        </span>
+        {% endif %}
+      </p>
     </div>
   </main>
   <footer>
