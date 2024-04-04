@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Index.md",
+                "file": "Archive/Problems/Deploying Elk on Vercel.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Index.md",
+                "file": "Archive/Problems/Deploying Elk on Vercel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Index.md",
+                "file": "Archive/Problems/Deploying Elk on Vercel.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Index.md"
+                "file": "Archive/Problems/Deploying Elk on Vercel.md"
               }
             }
           }
@@ -146,10 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "ed51b6cee718740c",
   "lastOpenFiles": [
-    "Projects/Minecraftle/Minecraftle v1.1.md",
     "Index.md",
+    "Archive/Problems/Deploying Elk on Vercel.md",
+    "Projects/Minecraftle/Minecraftle v1.1.md",
     "Notes/Software/Exploits/XZ/XZ.md",
     "Archive/Folklore/Put yourself in Jia Tan's shoes.md",
     "Notes/Software/Programs/Obsidian/Obsidian Plugins.md",
@@ -175,7 +176,6 @@
     "Notes/Software/Development/Kinds of Work/Glue Work.md",
     "Notes/Software/Development/Kinds of Work.md",
     "Notes/Software/Development/Kinds of Work",
-    "Posts/The Curse of the Last Good Day.md",
     "Untitled",
     "Media/sqiggle.png",
     "Media/dark-mode.png",
