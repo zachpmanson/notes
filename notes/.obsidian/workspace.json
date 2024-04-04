@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Non-Programming Languages/Markdown.md",
+                "file": "Notes/Internet/Internet Standards/RSS.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Non-Programming Languages/Markdown.md",
+                "file": "Notes/Internet/Internet Standards/RSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Non-Programming Languages/Markdown.md",
+                "file": "Notes/Internet/Internet Standards/RSS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Non-Programming Languages/Markdown.md"
+                "file": "Notes/Internet/Internet Standards/RSS.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Development/Non-Programming Languages/Markdown.md",
     "Notes/Software/Development/Debugging.md",
     "Notes/Software/Development/DateTime.md",
     "Notes/Software/Development/Kinds of Problems.md",
@@ -180,7 +181,6 @@
     "Notes/Internet/Fediverse/Federating with Meta.md",
     "Notes/Internet/Fediverse/Mastodon.md",
     "Meta/DNS.md",
-    "Untitled.md",
     "Notes/Software/Design",
     "Media/box.jpg",
     "Media/box 1.jpg",

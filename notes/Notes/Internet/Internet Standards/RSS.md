@@ -11,7 +11,7 @@ I use Nextcloud News as my RSS reader since it has an Android app, is pretty str
 
 Potential ways of integrating RSS:
 
-- all new pages become a feed item ([metasyn.pw](metasyn.pw))
+- all new pages become a feed item ([metasyn.pw](https://metasyn.pw))
 - all pages become a feed item once they hit a certain word count
 - all pages become a feed item when they are assigned a publish date
 - feeds are generated from tags
