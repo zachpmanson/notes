@@ -12,7 +12,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: javascript pretty printing</title>
+  <title>notes: deploying elk on vercel</title>
 </head>
 
 <body>
@@ -65,7 +65,7 @@
         
 
         <div class="flex flex-col text-left nav-links">
-          <a href="/javascript-pretty-printing" class="activated-link">JavaScript Pretty Printing</a>
+          <a href="/deploying-elk-on-vercel" class="activated-link">Deploying Elk on Vercel</a>
           
           
           <a href="/alembic-revision-collision">Alembic Revision Collision</a>
@@ -92,7 +92,6 @@
           
           
           
-          <a href="/deploying-elk-on-vercel">Deploying Elk on Vercel</a>
           
           
           
@@ -136,6 +135,7 @@
           
           
           
+          <a href="/javascript-pretty-printing">JavaScript Pretty Printing</a>
           
           
           
@@ -261,16 +261,25 @@
   </nav>
   <main>
     <header>
-      <h1>JavaScript Pretty Printing</h1>
+      <h1>Deploying Elk on Vercel</h1>
     </header>
-    <article><p><code>JSON.stringify()</code> has pretty printing built in!</p>
-<div class="highlight"><pre><span></span><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">o</span><span class="p">,</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">));</span>
-</code></pre></div>
-<p>Learnt this <a href="https://stackoverflow.com/questions/4810841/pretty-print-json-using-javascript/7220510#7220510">here</a>.</p></article>
+    <article><p>The <a href="https://github.com/elk-zone/elk">Elk</a> <a href="/mastodon">Mastodon</a> client is my preferred frontend, written in Nuxt. It has support for deploying seamlessly on Vercel but it needs access to a caching database.  By default it expects Cloudflare but it also supports Vercel KV (Redis) which is included in Vercel's free tier (hobby plan).</p>
+<p>You will need to activate <a href="https://vercel.com/docs/storage/vercel-kv">Vercel KV</a>, start a db project and and get the <code>KV_REST_API_URL</code> and <code>KV_REST_API_TOKEN</code> values it provides. Then set these values for your deployment env.</p>
+<div class="highlight"><pre><span></span><code>NUXT_STORAGE_DRIVER=vercel
+KV_REST_API_URL=...
+KV_REST_API_TOKEN=...
+</code></pre></div></article>
 
     <hr />
 
     <div class="meta">
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
       
 
       
@@ -279,13 +288,13 @@
     </div>
   </main>
   <footer>
-    <a href="mailto:zachpmanson@gmail.com?subject=On 'JavaScript Pretty Printing'">reply</a>
-    <a href="/w12l01---markdown">random</a>
+    <a href="mailto:zachpmanson@gmail.com?subject=On 'Deploying Elk on Vercel'">reply</a>
+    <a href="/penultimate-guitar">random</a>
     <a href="/recent-changes">updates</a>
     <a href="/tags">tags</a>
     <a href="/sitemap">sitemap</a>
-    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/JavaScript Pretty Printing.md" class="desktop">edit</a>
-    <a href="https://github.com/pavo-etc/notes/edit/main/./notes/Archive/Problems/JavaScript Pretty Printing.md" class="mobile">edit</a>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Deploying Elk on Vercel.md" class="desktop">edit</a>
+    <a href="https://github.com/pavo-etc/notes/edit/main/./notes/Archive/Problems/Deploying Elk on Vercel.md" class="mobile">edit</a>
   </footer>
   
 </body>
