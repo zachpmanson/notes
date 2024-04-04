@@ -1,4 +1,5 @@
 [
   "obsidian-git",
-  "obsidian-reveal-active-file"
+  "obsidian-reveal-active-file",
+  "obsidian-linter"
 ]

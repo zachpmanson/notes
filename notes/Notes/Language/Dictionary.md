@@ -57,3 +57,4 @@ DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscu
 + **[[Yak Shaving]]**: "what you are doing when you're doing some stupid, fiddly little task that bears no obvious relationship to what you're supposed to be working on, but yet a chain of twelve causal relations links what you're doing to the original meta-task"
 + **Yuenyeung** (Cantonese): coffee with tea
 + **Zipper blues**: A depressed feeling one gets from constantly having to move around or not being able to stay in one place. Comes from having to always zip up ones jacket because they always have to leave. Depression caused by successive movement and not being able to settle in one place. Frustration caused by constant mobility and inability to maintain a residence.
+
