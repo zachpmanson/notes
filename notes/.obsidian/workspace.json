@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Internet/Internet Standards/RSS.md",
+                "file": "Notes/Language/Dictionary.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Internet/Internet Standards/RSS.md",
+                "file": "Notes/Language/Dictionary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Internet/Internet Standards/RSS.md",
+                "file": "Notes/Language/Dictionary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Internet/Internet Standards/RSS.md"
+                "file": "Notes/Language/Dictionary.md"
               }
             }
           }
@@ -146,8 +146,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "ed51b6cee718740c",
   "lastOpenFiles": [
+    "Notes/Internet/Internet Standards/RSS.md",
     "Notes/Software/Development/Non-Programming Languages/Markdown.md",
     "Notes/Software/Development/Debugging.md",
     "Notes/Software/Development/DateTime.md",
@@ -180,7 +181,6 @@
     "Notes/Internet/Fediverse/Fediverse Family Tree.md",
     "Notes/Internet/Fediverse/Federating with Meta.md",
     "Notes/Internet/Fediverse/Mastodon.md",
-    "Meta/DNS.md",
     "Notes/Software/Design",
     "Media/box.jpg",
     "Media/box 1.jpg",

@@ -11,7 +11,7 @@ DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscu
 + **Bikeshedding**: arguing about unimportant details, at the cost of working on important details
 + **Bus Factor**: the risk that a project will die if certain people get hit by bus
 + **Complect**: intertwine, embrace especially; to plait together; interweave.
-+ **Elided**: (of a sound or [syllable](https://www.google.com/search?client=firefox-b-d&sxsrf=APwXEdfpj5E0dTKvnkrUQ_EOoZV0ryQvpw:1683372233102&q=syllable&si=AMnBZoFm76bvId4K9j6r5bU9rVYreOeLojJkRUwAfcB1eXTZ0tYk7ry0s0UxjRTB1rAHXKoJTyfc3dW7Y89KRxQ4hfWUk9sd_A%3D%3D&expnd=1)) [omitted](https://www.google.com/search?client=firefox-b-d&sxsrf=APwXEdfpj5E0dTKvnkrUQ_EOoZV0ryQvpw:1683372233102&q=omitted&si=AMnBZoFHF1DJLZWpTBtQDK262RMpi6d6VRO_IY_6qYTPb42ohrl6iLpJDtN2QLbd1E_SVPcpuyzk1IozgzVdN5DI6V7c3stG2g%3D%3D&expnd=1) when speaking.
++ **Elided**: (of a sound or syllable) omitted when speaking.
 + **Enshittification** ([Pluralistic](https://pluralistic.net/2023/01/21/potemkin-ai/#hey-guys)): "how platforms die: first, they are good to their users; then they abuse their users to make things better for their business customers; finally, they abuse those business customers to claw back all the value for themselves. Then, they die."
 + **Eucatastrophe** (Tolkien): "is a sudden turn of events in a story which ensures that the protagonist does not meet some terrible, impending, and very plausible and probable doom"
 + **Filial**: relating to or due from a son or daughter
