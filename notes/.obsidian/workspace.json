@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Posts/Imposter Syndrome Day 632.md",
+                "file": "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Posts/Imposter Syndrome Day 632.md",
+                "file": "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Posts/Imposter Syndrome Day 632.md",
+                "file": "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Posts/Imposter Syndrome Day 632.md"
+                "file": "Notes/Software/Programs/Spotify/Spotify Design Decisions.md"
               }
             }
           }
@@ -146,13 +146,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "ed51b6cee718740c",
   "lastOpenFiles": [
+    "Media/spotify-top-bar.png",
+    "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
+    "Posts/Imposter Syndrome Day 632.md",
     "Notes/Software/Open Source.md",
     "Archive/Folklore/The Future of Open Source.md",
     "Notes/Software/Exploits/XZ/XZ.md",
     "Notes/Software/Design/Fun Design.md",
-    "Posts/Imposter Syndrome Day 632.md",
     "Notes/Software/Development/Kinds of Work/VendorOps.md",
     "Notes/Software/Development/Kinds of Problems.md",
     "Notes/Software/Development/Kinds of Work/Glue Work.md",
@@ -179,8 +181,6 @@
     "Untitled.md",
     "Posts/GitHub Pages Redirection.md",
     "Notes/Software/Design",
-    "Archive/Folklore/I No Longer Built Software.md",
-    "Notes/Mathematics/Computer Science/Currying.md",
     "Media/box.jpg",
     "Media/box 1.jpg",
     "Media/bookshelf.jpg",
@@ -188,7 +188,6 @@
     "Notes/Software/Exploits",
     "Media/blocks.svg",
     "dotgrid-24G03-011513.svg",
-    "dotgrid-24G03-010922.png",
     "Notes/Software/Development/Programming Languages/C++",
     "Notes/Software/Development/Kinds of Work",
     "Notes/Software/Intelligent Agents",

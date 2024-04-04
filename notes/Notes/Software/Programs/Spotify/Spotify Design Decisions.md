@@ -7,6 +7,7 @@ date: 2024-03-17
 This page is a list of design decisions made by Spotify that I consider shitty.  I'm sure some of them only A/B tested, coming and going silently, but some have lingered for years. In any case I have experienced (have been subjected to) all of these personally and they piss me off greatly.
 
 See also: [Dear spotify product manager](https://www.todepond.com/wikiblogarden/work/dear-spotify/) by Lu Wilson
+
 ## Smart Shuffle Button Cycle Lock
 
 Spotify has added a feature called Smart Shuffle that works like normal shuffling, but also added recommended songs in-between ever few tracks in the queue.  On paper I like this feature, though I have never found myself actually using it. I was introduced to it through the following infuriating UX.
@@ -66,6 +67,14 @@ Spotify seems to hate this use case.  To my knowledge its never been possible to
 When you attempt to add a song to playlist on mobile, there isn't even an option to sort by recently played anymore.  This is diametrically opposed to desktop, where the right click menu will ONLY allow you to sort by custom order. 
 
 ![[no-custom-order.png]]
+
+
+## Top Bar Alignment
+
+This is a screenshot of the top bar.  Who the fuck let this happen.
+
+![[spotify-top-bar.png]]
+
 ## Upcoming Complaints
 
 - Smart Shuffle popup
