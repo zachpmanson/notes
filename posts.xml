@@ -13,177 +13,7 @@
             <link>https://notes.zachmanson.com/posts</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Wed, 03 Apr 2024 23:58:11 </lastBuildDate>
-        
-        <item>
-            <title>Usernames</title>
-            <link>https://notes.zachmanson.com/usernames</link>
-            
-            <description>Why am I still surprised</description>
-            
-            <content:encoded>
-                <![CDATA[<p>I spend an inordinate amount of time reading arguments on the internet. Every now and then I'll find one that is actually thoughtful and in-depth. One with more kindness than usual, with genuine attempts to understand the perspectives of each other.</p>
-<p>And after the arguing has concluded, the fighting parties express that they respect the other.</p>
-<p>These are rare. But it isn't rare that upon finding one of these I will glance at the usernames.</p>
-<p>Today I glanced at the usernames of two people having a beautiful argument on a forum:</p>
-<p>"euronforpresident"</p>
-<p>And their opponent:</p>
-<p>"Hitleresque"</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/usernames</guid>
-            <pubDate>2022-03-11</pubDate>
-        </item>
-        
-        <item>
-            <title>UWA Computer Science</title>
-            <link>https://notes.zachmanson.com/uwa-computer-science</link>
-            
-            <description>Reviews and advice for all Computer Science, Cyber Security, and Data Science units I completed at UWA.</description>
-            
-            <content:encoded>
-                <![CDATA[<p>I did my <a href="/computer-science">Computer Science</a> degree from 2020 to 2023, coming out with a BSc. Computer Science, Cybersecurity, minoring in Data Science. I have omitted statistics units because I have nothing intelligible to say about them.</p>
-<p>Just do <a href="https://codersforcauses.org/">Coders For Causes</a>, you will learn more in that than entire semesters of this degree. <strong>Learn how to use <a href="/git">Git</a> as fast as possible</strong> then force all your group project members to use it. Narrow down your problems as much as possible, then google the most generic possible description of it. If you see someone using semicolons mid-sentence regularly it's probably <a href="/christ-mcdonald">Chris McDonald</a>.</p>
-<p><img alt="" src="/media/uwa-cits.png" /></p>
-<h2 id="first-year-units">First Year Units</h2>
-<p>CITS1001 Software Engineering with Java (called Object Oriented Programming when I took it in 2020):</p>
-<ul>
-<li>serves as the introduction to programming for many students</li>
-<li>actively bad introduction to programming</li>
-<li>spends time describing the conceptual model of objects and encapsulation before describing variables and if statements</li>
-<li>class only uses BlueJ (yuck) and as such never teaches you to use a main function. Met students who had completed the class and were still incapable of actually running a Java program</li>
-<li>glad that it is being replaced with CITS2005</li>
-</ul>
-<p>CITS1003 Intro to Cybersecurity:</p>
-<ul>
-<li>extremely fun introduction to basic cybersecurity concepts</li>
-<li>main project was a semester long CTF</li>
-<li>perhaps a bit light on content but gives a good taste of the major</li>
-</ul>
-<p>CITS1401 Computational Thinking with Python:</p>
-<ul>
-<li>much better intro to programming</li>
-<li>weirdly speedruns 2 years of Computer Science ATAR in the first lesson for no reason</li>
-<li>took 3 weeks to get to if statements in Python which is pretty poor</li>
-<li>decent intro though</li>
-</ul>
-<p>CITS1402 Relational Databases</p>
-<ul>
-<li>dead boring but theres no way not to be, it's databases</li>
-</ul>
-<h2 id="second-year-units">Second Year Units</h2>
-<p>CITS2002 Systems Programming</p>
-<ul>
-<li>Chris McDonald is an excellent lecturer</li>
-<li>good introduction to <a href="/c">C</a></li>
-<li>challenging projects but you learn a lot</li>
-<li>very rewarding</li>
-<li>this and CITS2200 have the highest kill rate for comsci degrees <sup>[citation needed]</sup>. partially because they are hard, partially because the previous units did a pretty bad job preparing students for them</li>
-</ul>
-<p><a href="/cits2003">CITS2003</a> Open Source Tools &amp; Scripting</p>
-<ul>
-<li>teaches <a href="/bash">Bash</a> and <a href="/unix">Unix</a> which are important and only orthogonally explained in CITS2002</li>
-<li>teaches <a href="/sed">sed</a> and <a href="/awk">awk</a> relatively well</li>
-<li>includes <a href="/make">Make</a> for some reason, no reason literally cut this its covered in CITS2002 and is actually relevant there</li>
-<li>also includes <a href="/git">Git</a> but never actually requires its use so it feels useless even though it is most students first introduction to it. git should be in CITS1401.</li>
-<li>somehow manages to completely screw up the assessments every year</li>
-<li>see <a href="/michael-wise-quotes">Michael Wise Quotes</a></li>
-</ul>
-<p>CITS2200 Data Structures &amp; Algorithms</p>
-<ul>
-<li>necessary evil</li>
-<li>teaches important concepts effectively, relatively dry though</li>
-<li>assessments are done in Java and this leads to many stupid problems</li>
-</ul>
-<p>CITS2211 Discrete Structures</p>
-<ul>
-<li>the theoretical basis of what a computer actually is</li>
-<li>very interesting but also very hard</li>
-<li>very disconnected from the rest of the degree sadly</li>
-</ul>
-<p>CITS2402 Introduction to Data Science</p>
-<ul>
-<li>actual waste of time</li>
-<li>you can learn this entire unit in a day but watching some tutorials on matplotlib, numpy and pandas</li>
-<li>feels like watching a fireship video at 0.005 speed</li>
-</ul>
-<h2 id="third-year-units">Third Year Units</h2>
-<p>CITS3001 Algorithms, <a href="/agents">Agents</a> &amp; Artificial Intelligence</p>
-<ul>
-<li>so much wasted potential</li>
-<li>could be one of the most interesting units in the whole degree, seems like it was before my time</li>
-<li>tries to cover so much but ends up covering very little effectively</li>
-<li>main project was a disaster in 2022</li>
-</ul>
-<p>CITS3002 Computer Networks</p>
-<ul>
-<li>Taught by Oppy himself</li>
-<li>Very interesting content, well taught</li>
-<li>projects get your hands dirty with creating actual protocols and working with sockets</li>
-<li>few things were more satisfying in the entire degree than actually running my final project for this over the internet between me and my partners houses and watching it run</li>
-<li>spiritual sequel to Systems Programming</li>
-</ul>
-<p>CITS3003 Graphics and Animation</p>
-<ul>
-<li>abandoned</li>
-<li>feels like it was really interesting in 2009, but the unit coordinator who cared about it has since left and now it wanders the optional units lists like a zombie</li>
-<li>project hasn't changed majorly in 10 years, though it has gotten more convoluted</li>
-<li>there are certainly past versions of it on github if you are so inclined</li>
-<li>soulless, out of date, and wasted potential as it could be one of the most interesting units</li>
-</ul>
-<p>CITS3006 Penetration Testing</p>
-<ul>
-<li>amazing</li>
-<li>final assessment is literally break into this VM, then secure it and swap with other groups</li>
-<li>good balance of pratical and theoretical</li>
-<li>Jin Hong is fantastic</li>
-<li>lab instructors are all great</li>
-<li>had one lecture that wasn't allowed to be recorded because it taught actual live vulnerabilities in UWA systems, excellent, all units should have one of these</li>
-<li>best unit in the whole course</li>
-</ul>
-<p>CITS3007 Secure Coding</p>
-<ul>
-<li>the worst C unit by default, only because the others are just so good</li>
-<li>teaches you how to write vulnerable C code, and how to turn off compiler safety checks</li>
-<li>is geniunely interesting</li>
-<li>Arran Stuart is great, seems like the lecturer who is most in touch with modern software engineering?</li>
-</ul>
-<p>CITS3401 Data Warehousing</p>
-<ul>
-<li>actual trash</li>
-<li>feels like I learnt 5 things about large scale data storage and nothing else</li>
-<li>project is an arbitrary mess</li>
-<li>pratical side of the unit is a joke</li>
-<li>got really interesting for 2 weeks when it completely switches gears to talk about graph databases but then lets you down again</li>
-</ul>
-<p>CITS3403 Agile <a href="/web-development">Web Development</a></p>
-<ul>
-<li>really fun and very practical</li>
-<li>FIRST ACTUAL USE OF <a href="/git">Git</a> (do no wait till third year, learn this in year 1 semester 1) how did it take this long</li>
-<li>well taught</li>
-<li><a href="https://minecraftle.zachmanson.com">very</a> <a href="/minecraftle">fun project</a></li>
-</ul>
-<p>CITS3200 Professional Computing</p>
-<ul>
-<li>your capstone project with an actual client, aka gambling your marks</li>
-<li>if your client is chill you will do well, if not you are ruined</li>
-<li>e.g. my team shipped actual malware and got a HD</li>
-<li>teams are allocated based on having an even WAM spread so get hyped for mark rubber-banding</li>
-<li>there are lectures</li>
-<li>2/10 lectures will be valuable</li>
-<li>3/10 will be companies hyping themselves up</li>
-<li>4/10 will be inane ethics bullshit</li>
-<li>1/10 will be alleged war criminals</li>
-<li>all prior units have not adequately prepared you for this, go learn django or <a href="/react">react</a> because you are very likely going to need to know these. if you are wondering if you should make a web app you should probably just make a web app</li>
-</ul>
-<h2 id="miscellaneous-advice">Miscellaneous Advice</h2>
-<p>Labs are the only thing in the degree you can't get from youtube or the <a href="/internet">internet</a>. If you are bad, actually do the labs, go in and ask the instructors questions. It's annoying but they can help you bridge the gap between trash and passing.</p>
-<p>Learn how to use the command line ASAP. Learn git. Seriously go learn git. So many people I met couldn't use git in their third year. How they made it that far sending code snippets over discord is beyond me. Bully everyone you know into using git. You will actually lose 20% mark if you don't use git+github for a group project because you will waste so much time trying to coordinate the project. If git is hurting your brain try using GitHub Desktop which makes it a bit easier to use for newcomers.</p>
-<p>Have other hobbies. Doesn't matter what they are but gaming doesn't count if it's your only hobby.</p>
-<p>Go to social events with clubs. The specific club doesn't matter, they are all fine. Alcohol helps, if you are so inclined (science union pub crawls are great). It's very easy in computer science to not make actually make any friends and do everything online. But you will need friends to not be sad and die alone.</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/uwa-computer-science</guid>
-            <pubDate>2023-06-19</pubDate>
-        </item>
+        <lastBuildDate>Thu, 04 Apr 2024 01:24:48 </lastBuildDate>
         
         <item>
             <title>Slug</title>
@@ -213,56 +43,146 @@
         </item>
         
         <item>
-            <title>LinkedIn's Ghost Text</title>
-            <link>https://notes.zachmanson.com/linkedins-ghost-text</link>
-            
-            <description>Why does LinkedIn copy text twice?</description>
+            <title>Federating with Meta</title>
+            <link>https://notes.zachmanson.com/federating-with-meta</link>
             
             <content:encoded>
-                <![CDATA[<p>Why does LinkedIn do this?</p>
-<video autoplay loop muted>
-   <source src="/media/linkedin-duplication.webm" type="video/webm">
-</video>
-
-<p>If you look into the source of a LinkedIn profile page (at your own personal risk) you'll find a text element like this</p>
-<p><img alt="" src="/media/linkedin-element.png" /></p>
-<p>will have HTML like this</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;display-flex flex-row justify-space-between&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;</span>
-<span class="s">          display-flex flex-column full-width&quot;</span><span class="p">&gt;</span>
-
-        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;display-flex flex-wrap align-items-center full-height&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mr1 t-bold&quot;</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Product manager, Creative coder<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Product manager, Creative coder<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="cm">&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Freelancer/Consultant<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Freelancer/Consultant<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal t-black--light&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>2009 - 2018 · 9 yrs<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>2009 - 2018 · 9 yrs<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal t-black--light&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Europe<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Europe<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-
-    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-
-    <span class="cm">&lt;!----&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pvs-entity__action-container&quot;</span><span class="p">&gt;</span>
-        <span class="cm">&lt;!----&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></div>
-<p>Gross.  Why the hidden duplicated text?  Why the empty comments?  Why seperate aria versions of text?  Is this related to using Ember?  LinkedIn has so many little unpleasantries like this.</p>]]>
+                <![CDATA[<p>Meta's rumoured Twitter competitor Threads has caused a stir in the <a href="/fediverse">fediverse</a>. Some suggesting fedi instances should preemptively block Threads, others willing to wait and see what happens.  At the time of writing (June 2023) it is unclear how this will pan out. Many fear the threat of <a href="https://en.wikipedia.org/wiki/Embrace,_extend,_and_extinguish">embrace, extend, extinguish</a>, but others are excited at the prospect of the fediverse becoming more significant.</p>
+<p><img alt="" src="/media/meta-fediverse.jpeg" /></p>
+<p>Meta: "MAY I JOIN YOU?"<br />
+<a href="https://framapiaf.org/@davidrevoy/110583258129951932">By David Revoy</a></p>
+<p>One of the oft-touted benefits of the fediverse is that it would be resilient to corporate <a href="/tiktoks-enshittification">enshittification</a>. It will be interesting to see how the fediverse handles real threats.  </p>
+<h2 id="interesting-articles">Interesting Articles</h2>
+<p>Roelant Kooij wrote an <a href="https://roelant.net/en/2023/interesting-reads-on-meta-vs-fediverse/">excellent overview</a> of the arguments on either side of this debate.  The Fediverse Report also has a <a href="https://fediversereport.com/last-week-in-the-fediverse-episode-24/">good timeline</a> of the news.  These are sorted in the order I have found them, with my <strong>strongest recommendations in bold</strong>.</p>
+<ul>
+<li><a href="https://fedipact.online/">Not That Kind of ‘Open’</a>, John Gruber on the debate <ul>
+<li>suggests that the pre-emptive block may be "petty and deliberately insular"</li>
+</ul>
+</li>
+<li><a href="https://daringfireball.net/2023/06/more_on_preemptively_blocking">More on Preemptively Blocking Facebook’s Imminent ActivityPub Entry</a>, John Gruber's follow-up<ul>
+<li>suggests that if Facebook is federated, they should start with "two strikes against it"</li>
+<li>"Is the goal of the Fediverse to be anti-corporate/anti-commercial, or to be pro-openness? I think openness is the answer"</li>
+</ul>
+</li>
+<li><a href="https://ploum.net/2023-06-23-how-to-kill-decentralised-networks.html">How to Kill a Decentralised Network (such as the Fediverse)</a>, Ploum's excellent writeup on how large companies can (sometimes maliciously) kill open/decentralised networks<ul>
+<li>makes comparison to Google killing XMPP and Microsoft using OOXML to cripple open source office software</li>
+</ul>
+</li>
+<li>⭐️ <a href="https://about.scicomm.xyz/doku.php?id=blog:2023:0625_meta_on_the_fediverse_to_block_or_not_to_block"><strong>Meta on the Fediverse: to block or not to block?</strong></a>, SciComm admins writeup of their balanced thought process on pre-emptive blocking<ul>
+<li>they conclude to pre-emptively block, but leave the door open to unblocking if Meta is a decent fediverse citizen</li>
+</ul>
+</li>
+<li><a href="https://reb00ted.org/tech/20230625-meta-why-activitypub/">Why would Meta implement ActivityPub? 1½ reasons are compelling, another is not</a>, Johannes Ernst's analysis of Meta's motivations<ul>
+<li>suggests EEE is not worthwhile for Meta, far less important than appeasing incoming EU regulations</li>
+</ul>
+</li>
+<li>Tim Chamber's (indieweb.social admin) <em>First Time?</em> series of posts on the matter<ul>
+<li><a href="https://www.timothychambers.net/2023/06/23/project-and-the.html">Project92 and the Fediverse - A Smarter Battle Plan to Protect the Open Social Web</a><ul>
+<li>suggests that pre-emptive defederation is not the most effective strategy to protect the current fediverse</li>
+<li>thinks current fediverse can win by providing a better experience, especially in areas where corporate interests conflict with this (e.g. advertising)</li>
+</ul>
+</li>
+<li><a href="https://www.timothychambers.net/2023/06/25/project-the-fediverse.html">Project92, the Fediverse: (First Time? Part 2)</a><ul>
+<li>'We have the tools to protect our people, and we are stronger to "Watch like a hawk, with our fingers over the block button."'</li>
+</ul>
+</li>
+<li><a href="https://www.timothychambers.net/2023/06/30/meta-and-the.html">Meta and the Fediverse (First Time? Part 3)</a><ul>
+<li>generally calling for calming of vitriol, promoting compassion between disagreeing groups</li>
+<li>"All sides should admit we don’t know far more than we do know right now."</li>
+</ul>
+</li>
+<li><a href="https://www.timothychambers.net/2023/07/03/instagram-threads-and.html">Instagram Threads and the Fediverse (First Time? Part 4)</a>, a summation of all his previous posts</li>
+</ul>
+</li>
+<li>⭐️ <a href="https://heat-shield.space/mastodon_two_camps.html"><strong>The Two Camps of Mastodon</strong></a>, on the general split between people that view the fediverse as a collection of small communities and those that view it as a distributed network where most people can talk to most others in a decentralised fashion, and how Threads' existence exacerbate this divide</li>
+<li><a href="https://netwars.pelicancrossing.net/2023/06/30/the-horns-of-a-dilemma/">The horns of a dilemma</a>, Wendy M. Grossman enumerating potential futures</li>
+<li>⭐️ <a href="https://blog.bloonface.com/2023/07/03/meta-and-the-fediverse-sorting-heat-from-light/"><strong>Meta and the fediverse: sorting heat from light</strong></a>, a fantastic rebuke to many of Meta's alleged nefarious motivations<ul>
+<li>meta gains little in terms of data collection ability since <a href="/activitypub">activitypub</a> lacks privacy anyway, and what it does gain isn't very useful, and the current fediverse population size is not large enough to be worth pursuing for data collection</li>
+<li>its seems unlikely that Meta actually sees the fediverse as a threat</li>
+<li>the Gchat/XMPP embrace/extend/extinguish example is flawed</li>
+<li>Meta isn't evil without motivation</li>
+<li>"So why <em>is</em> Meta going to use ActivityPub?  Here’s the thing; <em>I haven’t the faintest fucking clue</em>.  It does not obviously help Meta in any way to have interoperability with ActivityPub"</li>
+</ul>
+</li>
+<li><a href="https://tracks.ranea.org/post/722507935765397504/youre-so-vain-you-probably-think-this-app-is">You’re So Vain, You Probably Think This App Is About You</a>, an argument against the idea that Meta actually wants to EEE the fediverse<ul>
+<li>suggests that there is little monetary reason to federate from Meta's perspective, other than regulatory pressure</li>
+<li>particularly posits that defederating from servers that refuse to defederate Meta is particularly short-sighted</li>
+</ul>
+</li>
+</ul>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/linkedins-ghost-text</guid>
-            <pubDate>2023-04-16</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/federating-with-meta</guid>
+            <pubDate>2023-06-01</pubDate>
+        </item>
+        
+        <item>
+            <title>Vercel Images Optimisation</title>
+            <link>https://notes.zachmanson.com/vercel-images-optimisation</link>
+            
+            <description>A small footgun for beginners using Vercel.</description>
+            
+            <content:encoded>
+                <![CDATA[<p>TLDR: If you are using Vercel and display a lot of images hosted on someone else's server, you probably want to turn off <a href="https://vercel.com/docs/concepts/image-optimization">Image Optimisation</a>.</p>
+<p>Over the last week I built <a href="https://alculator.zachmanson.com">Alculator</a> using Next.js and hosted on Vercel. The site uses data lovingly freebooted from the Dan Murphy's public API to rank products by the ratio of price to standard drinks, and displaying this data in a card.</p>
+<p><img alt="" src="/media/alculator-cards.png" /></p>
+<p>The images for these cards are hosted on a Dan Murphy's server (media.danmurphys.com.au), and I am simply using Next.js <code>&lt;Image&gt;</code> tags to point to them.</p>
+<div class="highlight"><pre><span></span><code>...
+    &lt;div className=&quot;card center&quot;&gt;
+      &lt;div
+        className=&quot;flex center-aligned&quot;
+        onClick={() =&gt; (window.location.href = `https://www.danmurphys.com.au/product/${item.stockcode}`)}
+      &gt;
+        &lt;Image
+          alt=&quot;Image of drink&quot;
+          height=&quot;100&quot;
+          width=&quot;80&quot;
+          src={`https://media.danmurphys.com.au/dmo/product/${item.stockcode}-1.png`}
+        /&gt;
+        &lt;div className=&quot;fill-width&quot;&gt;
+          &lt;div className=&quot;flex space-between align-center&quot;&gt;
+            &lt;h3&gt;{item.name}&lt;/h3&gt;
+...
+</code></pre></div>
+<p>I'm using Vercel's free tier to serve the application which grants 100GB of bandwidth, which is magnitudes higher than any amount of users I expected to serve. I put the finishing touches on the site on December 30th, sent the link to a few people and went to the pub.</p>
+<p>Over the next few hours I started receiving strongly worded alerts from Vercel:</p>
+<p><img alt="" src="/media/vercel-warnings.png" /></p>
+<p>Either I had gone viral or my code was a lot more inefficient than I thought. At 1am I returned home, having reached the Ballmer Peak to diagnose the problem.</p>
+<p>On the Vercel/Dashboard/Usage page, right at the bottom is the harmless looking graph titled "Image Optimisations" which turned out to be the culprit. By default, Vercel takes all images hosted in <code>&lt;Image&gt;</code> tags and caches them all at the Edge. Vercel had optimised 1400 of these images before I discovered this and at the free tier this is capped at 1000 images. Whoops.</p>
+<p>The solution is simple:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// next-config.js</span>
+
+<span class="cm">/** @type {import(&#39;next&#39;).NextConfig} */</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">nextConfig</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">reactStrictMode</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">images</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">unoptimized</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="p">};</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">nextConfig</span><span class="p">;</span>
+</code></pre></div>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/vercel-images-optimisation</guid>
+            <pubDate>2023-01-02</pubDate>
+        </item>
+        
+        <item>
+            <title>Usernames</title>
+            <link>https://notes.zachmanson.com/usernames</link>
+            
+            <description>Why am I still surprised</description>
+            
+            <content:encoded>
+                <![CDATA[<p>I spend an inordinate amount of time reading arguments on the internet. Every now and then I'll find one that is actually thoughtful and in-depth. One with more kindness than usual, with genuine attempts to understand the perspectives of each other.</p>
+<p>And after the arguing has concluded, the fighting parties express that they respect the other.</p>
+<p>These are rare. But it isn't rare that upon finding one of these I will glance at the usernames.</p>
+<p>Today I glanced at the usernames of two people having a beautiful argument on a forum:</p>
+<p>"euronforpresident"</p>
+<p>And their opponent:</p>
+<p>"Hitleresque"</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/usernames</guid>
+            <pubDate>2022-03-11</pubDate>
         </item>
         
         <item>
@@ -370,6 +290,78 @@ h<span class="w"> </span>h<span class="w"> </span>h<span class="w"> </span><span
             </content:encoded>
             <guid isPermaLink="false">https://notes.zachmanson.com/enhancement-proposal-for-the-h-programming-language</guid>
             <pubDate>2022-03-18</pubDate>
+        </item>
+        
+        <item>
+            <title>LinkedIn's Ghost Text</title>
+            <link>https://notes.zachmanson.com/linkedins-ghost-text</link>
+            
+            <description>Why does LinkedIn copy text twice?</description>
+            
+            <content:encoded>
+                <![CDATA[<p>Why does LinkedIn do this?</p>
+<video autoplay loop muted>
+   <source src="/media/linkedin-duplication.webm" type="video/webm">
+</video>
+
+<p>If you look into the source of a LinkedIn profile page (at your own personal risk) you'll find a text element like this</p>
+<p><img alt="" src="/media/linkedin-element.png" /></p>
+<p>will have HTML like this</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;display-flex flex-row justify-space-between&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;</span>
+<span class="s">          display-flex flex-column full-width&quot;</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;display-flex flex-wrap align-items-center full-height&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mr1 t-bold&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Product manager, Creative coder<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Product manager, Creative coder<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="cm">&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Freelancer/Consultant<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Freelancer/Consultant<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal t-black--light&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>2009 - 2018 · 9 yrs<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>2009 - 2018 · 9 yrs<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal t-black--light&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Europe<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Europe<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+    <span class="cm">&lt;!----&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pvs-entity__action-container&quot;</span><span class="p">&gt;</span>
+        <span class="cm">&lt;!----&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Gross.  Why the hidden duplicated text?  Why the empty comments?  Why seperate aria versions of text?  Is this related to using Ember?  LinkedIn has so many little unpleasantries like this.</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/linkedins-ghost-text</guid>
+            <pubDate>2023-04-16</pubDate>
+        </item>
+        
+        <item>
+            <title>GitHub Pages Redirection</title>
+            <link>https://notes.zachmanson.com/github-pages-redirection</link>
+            
+            <description>This feed has moved and GitHub Pages won't let me redirect you automatically.</description>
+            
+            <content:encoded>
+                <![CDATA[<p>(This was written as to tell people to move from my old RSS feed to my new RSS feed on notes.zachmanson.com.  If you are reading this on notes.zachmanson.com you are in the right place.) </p>
+<p>I haven't written on here in a while, but I have been writing on my <a href="/">public notes</a>. At this point I've got over 300 pages on there, far more than I ever wrote on here but in a format that looks a lot more like a wiki. This is mostly a factor of convenience, the format of the <a href="/notes">notes</a> means I can iteratively add whatever I am thinking about, without the expectation of the writing being complete and canonical. The writing is organised into a hierarchy of folders, with <a href="/tags">tags</a> and backlinks. I find this format much better for wiki-style writing but doesn't lend itself well to chronological feeds like this one.</p>
+<p>Occasionally I would write a note on there that would fit well into the blog format, or was long and more story based. Some of my posts on this blog worked much better as wiki pages than as blog posts. I have wanted to unify these two sites for a long time now. Last week I finally got around to it!</p>
+<p>The <a href="/ochrs">Ochrs</a> site generator that I wrote to build the wiki can now generate chronological feeds of posts and RSS feeds. Feeds are generated based on tags, where each tag has its own <a href="/rss">RSS</a> feed. A note can be added to a chronological feed by adding a publish date (<code>date</code> field in the frontmatter), which will then be used as the publish date in all feeds that the note is a part of. This approach is great since it allows each note to exist anywhere in the wiki hierarchy while also being a part of many feeds. The RSS feed will be at <code>notes.zachmanson.com/&lt;tagname&gt;.xml</code>, and the list of notes in a chronological feed can be shown on a page using the <code>ochrs:chrono:&lt;tagname&gt;</code> build function (see <a href="/ochrs-syntax">Ochrs Syntax</a> for more on how this works), which will results in all the posts being displayed in blog-style HTML.</p>
+<p>To succeed <code>zachmanson.com/blog/</code> I have created the posts tag. The feeds can be seen at <a href="/posts">notes.zachmanson.com/posts</a> and using <a href="/posts.xml">RSS</a>. I have moved the existing posts here over to the this new feed.</p>
+<p>If you are reading this using RSS then I would like to apologise that you will have to subscribe to a new feed. I would have liked to automatically redirect your feed reader, but <strong>GitHub Pages doesn't let you create 301 redirects</strong>. The <code>redirect-from</code> plugin is capable of meta tag redirects, but those are soft and not followed by feed readers. This is very frustrating.</p>
+<p>I've marked a bunch of longer notes I've made as posts, so the new feed already has 7 new posts. Hopefully more will come soon!</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/github-pages-redirection</guid>
+            <pubDate>2024-03-29</pubDate>
         </item>
         
         <item>
@@ -710,238 +702,6 @@ yellow_bed.json:<span class="w">      </span><span class="s2">&quot;tag&quot;</s
         </item>
         
         <item>
-            <title>Spite Driven Development</title>
-            <link>https://notes.zachmanson.com/spite-driven-development</link>
-            
-            <content:encoded>
-                <![CDATA[<p>Spite Driven Development (SDD) is my preferred development methodology.  I have found it by far my most productive style of software engineering, and has been responsible in whole or part for most of my <a href="/projects">projects</a> (see: <a href="/penultimate-guitar">Penultimate Guitar</a>, <a href="/minecraftle">Minecraftle</a>, <a href="/alculator">Alculator</a>, <a href="/status-messenger">Status Messenger</a>).</p>
-<p>While it is extremely effective for building software quickly, it is often destructive to other aspects of one's life, such as healthy eating, relationships, and especially sleep.</p>
-<h2 id="history">History</h2>
-<p>I got mad at a competitor/company with shitty practices/friend/existing tool.  Spend multiple days (likely straight) writing code to spite them.  Spited them. <code>git push</code></p>
-<h2 id="spite-driven-development-cycle">Spite Driven Development Cycle</h2>
-<ol>
-<li>get mad</li>
-<li>think you can do it better yourself</li>
-<li>feel the need to prove you can do better</li>
-<li><code>git init</code></li>
-<li>design feature with a scope exactly commensurate to your anger</li>
-<li>forgo loved ones and human interaction</li>
-<li>finish feature</li>
-<li><code>git commit</code></li>
-<li>see 5</li>
-<li>deploy</li>
-<li>see 5</li>
-<li>run it 40 times just to watch it work, analogous to injecting dopamine directly into your veins</li>
-<li>rest</li>
-</ol>
-<h2 id="goals">Goals</h2>
-<p>Victory.</p>
-<h2 id="non-goals">Non Goals</h2>
-<p>Sustenance, testing, clean code.</p>
-<h2 id="development-frameworks">Development Frameworks</h2>
-<p>Much like how ruby+rspec is very well suited to test driven development, many frameworks are well suited to SDD.  Whichever framework you know is the ideal framework for SDD.  Time is of the essence and you have no-one to please but yourself.  Spite burns hot but it burns dirty, and it is not a renewable resource.  Your must strike while the iron is hot and complete the project before you are sapped of the hatred that caused you to start the project.</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/spite-driven-development</guid>
-            <pubDate>2024-03-18</pubDate>
-        </item>
-        
-        <item>
-            <title>Vercel Images Optimisation</title>
-            <link>https://notes.zachmanson.com/vercel-images-optimisation</link>
-            
-            <description>A small footgun for beginners using Vercel.</description>
-            
-            <content:encoded>
-                <![CDATA[<p>TLDR: If you are using Vercel and display a lot of images hosted on someone else's server, you probably want to turn off <a href="https://vercel.com/docs/concepts/image-optimization">Image Optimisation</a>.</p>
-<p>Over the last week I built <a href="https://alculator.zachmanson.com">Alculator</a> using Next.js and hosted on Vercel. The site uses data lovingly freebooted from the Dan Murphy's public API to rank products by the ratio of price to standard drinks, and displaying this data in a card.</p>
-<p><img alt="" src="/media/alculator-cards.png" /></p>
-<p>The images for these cards are hosted on a Dan Murphy's server (media.danmurphys.com.au), and I am simply using Next.js <code>&lt;Image&gt;</code> tags to point to them.</p>
-<div class="highlight"><pre><span></span><code>...
-    &lt;div className=&quot;card center&quot;&gt;
-      &lt;div
-        className=&quot;flex center-aligned&quot;
-        onClick={() =&gt; (window.location.href = `https://www.danmurphys.com.au/product/${item.stockcode}`)}
-      &gt;
-        &lt;Image
-          alt=&quot;Image of drink&quot;
-          height=&quot;100&quot;
-          width=&quot;80&quot;
-          src={`https://media.danmurphys.com.au/dmo/product/${item.stockcode}-1.png`}
-        /&gt;
-        &lt;div className=&quot;fill-width&quot;&gt;
-          &lt;div className=&quot;flex space-between align-center&quot;&gt;
-            &lt;h3&gt;{item.name}&lt;/h3&gt;
-...
-</code></pre></div>
-<p>I'm using Vercel's free tier to serve the application which grants 100GB of bandwidth, which is magnitudes higher than any amount of users I expected to serve. I put the finishing touches on the site on December 30th, sent the link to a few people and went to the pub.</p>
-<p>Over the next few hours I started receiving strongly worded alerts from Vercel:</p>
-<p><img alt="" src="/media/vercel-warnings.png" /></p>
-<p>Either I had gone viral or my code was a lot more inefficient than I thought. At 1am I returned home, having reached the Ballmer Peak to diagnose the problem.</p>
-<p>On the Vercel/Dashboard/Usage page, right at the bottom is the harmless looking graph titled "Image Optimisations" which turned out to be the culprit. By default, Vercel takes all images hosted in <code>&lt;Image&gt;</code> tags and caches them all at the Edge. Vercel had optimised 1400 of these images before I discovered this and at the free tier this is capped at 1000 images. Whoops.</p>
-<p>The solution is simple:</p>
-<div class="highlight"><pre><span></span><code><span class="c1">// next-config.js</span>
-
-<span class="cm">/** @type {import(&#39;next&#39;).NextConfig} */</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">nextConfig</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">reactStrictMode</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-<span class="w">  </span><span class="nx">images</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">unoptimized</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="p">};</span>
-
-<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">nextConfig</span><span class="p">;</span>
-</code></pre></div>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/vercel-images-optimisation</guid>
-            <pubDate>2023-01-02</pubDate>
-        </item>
-        
-        <item>
-            <title>The Curse of the Last Good Day</title>
-            <link>https://notes.zachmanson.com/the-curse-of-the-last-good-day</link>
-            
-            <description>Spoilers for The Fault in Our Stars, I guess</description>
-            
-            <content:encoded>
-                <![CDATA[<p><em>The Fault in Our Stars</em> describes the phenomenon of the Last Good Day, a concept that has been echoing in my head ever since I read the book in high school. In the novel, the Last Good Day is the final time a person who is slowly deteriorating has a peaceful and pleasant moment with those around them.</p>
-<blockquote>
-<p>There's no way of knowing that your last good day is Your Last Good Day. At the time, it is just another good day.</p>
-</blockquote>
-<p>The story presents this in the context of Augustus' worsening condition and eventual death.</p>
-<p>So far, I've been lucky enough to be free of facing slow health declines in myself and those close to me, but the concept of the Last Good Day has sat quietly in the back of my mind since first encountering it. Whenever I have some kind of impending loss, no matter how small, my thoughts tend to orbit around it.</p>
-<p>With my bachelor's degree coming to a close soon, lots of my friends are moving away for careers or further study in other countries. The groups that have formed won't continue to exist in the way the have for the last 3 years. Not everyone is leaving of course and no one person is single load-bearing pillar of the group, but buildings tend not to handle losing half their supports.</p>
-<p>I've been aware that this will happen for months, and at every group event in my head I'm constantly thinking <em>Is this going to be the Last Good Day? Is this Good enough? Can I make this better?</em> This is definitely not healthy and definitely doesn't help me enjoy the limited time left with my friends. This line of thinking is something I hesitate to even talk about with my friends in fear of inspiring the same kind of thought spirals in their minds.</p>
-<p>Time has gone on and the erosion has begun. As I write this, another will be flying to Sydney tomorrow morning. Enough friends have left now that the Last Good Day has certainly passed, and yet I'm still not 100% sure which day it was. There's some strong contenders though.</p>
-<p>That's life, I know I'll make more friends and there's no need to be melodramatic. Regardless, I'm going to miss this period and the people I've spent it with.</p>
-<p>Cheers and auld lang syne and so on.</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/the-curse-of-the-last-good-day</guid>
-            <pubDate>2023-01-27</pubDate>
-        </item>
-        
-        <item>
-            <title>Federating with Meta</title>
-            <link>https://notes.zachmanson.com/federating-with-meta</link>
-            
-            <content:encoded>
-                <![CDATA[<p>Meta's rumoured Twitter competitor Threads has caused a stir in the <a href="/fediverse">fediverse</a>. Some suggesting fedi instances should preemptively block Threads, others willing to wait and see what happens.  At the time of writing (June 2023) it is unclear how this will pan out. Many fear the threat of <a href="https://en.wikipedia.org/wiki/Embrace,_extend,_and_extinguish">embrace, extend, extinguish</a>, but others are excited at the prospect of the fediverse becoming more significant.</p>
-<p><img alt="" src="/media/meta-fediverse.jpeg" /></p>
-<p>Meta: "MAY I JOIN YOU?"<br />
-<a href="https://framapiaf.org/@davidrevoy/110583258129951932">By David Revoy</a></p>
-<p>One of the oft-touted benefits of the fediverse is that it would be resilient to corporate <a href="/tiktoks-enshittification">enshittification</a>. It will be interesting to see how the fediverse handles real threats.  </p>
-<h2 id="interesting-articles">Interesting Articles</h2>
-<p>Roelant Kooij wrote an <a href="https://roelant.net/en/2023/interesting-reads-on-meta-vs-fediverse/">excellent overview</a> of the arguments on either side of this debate.  The Fediverse Report also has a <a href="https://fediversereport.com/last-week-in-the-fediverse-episode-24/">good timeline</a> of the news.  These are sorted in the order I have found them, with my <strong>strongest recommendations in bold</strong>.</p>
-<ul>
-<li><a href="https://fedipact.online/">Not That Kind of ‘Open’</a>, John Gruber on the debate <ul>
-<li>suggests that the pre-emptive block may be "petty and deliberately insular"</li>
-</ul>
-</li>
-<li><a href="https://daringfireball.net/2023/06/more_on_preemptively_blocking">More on Preemptively Blocking Facebook’s Imminent ActivityPub Entry</a>, John Gruber's follow-up<ul>
-<li>suggests that if Facebook is federated, they should start with "two strikes against it"</li>
-<li>"Is the goal of the Fediverse to be anti-corporate/anti-commercial, or to be pro-openness? I think openness is the answer"</li>
-</ul>
-</li>
-<li><a href="https://ploum.net/2023-06-23-how-to-kill-decentralised-networks.html">How to Kill a Decentralised Network (such as the Fediverse)</a>, Ploum's excellent writeup on how large companies can (sometimes maliciously) kill open/decentralised networks<ul>
-<li>makes comparison to Google killing XMPP and Microsoft using OOXML to cripple open source office software</li>
-</ul>
-</li>
-<li>⭐️ <a href="https://about.scicomm.xyz/doku.php?id=blog:2023:0625_meta_on_the_fediverse_to_block_or_not_to_block"><strong>Meta on the Fediverse: to block or not to block?</strong></a>, SciComm admins writeup of their balanced thought process on pre-emptive blocking<ul>
-<li>they conclude to pre-emptively block, but leave the door open to unblocking if Meta is a decent fediverse citizen</li>
-</ul>
-</li>
-<li><a href="https://reb00ted.org/tech/20230625-meta-why-activitypub/">Why would Meta implement ActivityPub? 1½ reasons are compelling, another is not</a>, Johannes Ernst's analysis of Meta's motivations<ul>
-<li>suggests EEE is not worthwhile for Meta, far less important than appeasing incoming EU regulations</li>
-</ul>
-</li>
-<li>Tim Chamber's (indieweb.social admin) <em>First Time?</em> series of posts on the matter<ul>
-<li><a href="https://www.timothychambers.net/2023/06/23/project-and-the.html">Project92 and the Fediverse - A Smarter Battle Plan to Protect the Open Social Web</a><ul>
-<li>suggests that pre-emptive defederation is not the most effective strategy to protect the current fediverse</li>
-<li>thinks current fediverse can win by providing a better experience, especially in areas where corporate interests conflict with this (e.g. advertising)</li>
-</ul>
-</li>
-<li><a href="https://www.timothychambers.net/2023/06/25/project-the-fediverse.html">Project92, the Fediverse: (First Time? Part 2)</a><ul>
-<li>'We have the tools to protect our people, and we are stronger to "Watch like a hawk, with our fingers over the block button."'</li>
-</ul>
-</li>
-<li><a href="https://www.timothychambers.net/2023/06/30/meta-and-the.html">Meta and the Fediverse (First Time? Part 3)</a><ul>
-<li>generally calling for calming of vitriol, promoting compassion between disagreeing groups</li>
-<li>"All sides should admit we don’t know far more than we do know right now."</li>
-</ul>
-</li>
-<li><a href="https://www.timothychambers.net/2023/07/03/instagram-threads-and.html">Instagram Threads and the Fediverse (First Time? Part 4)</a>, a summation of all his previous posts</li>
-</ul>
-</li>
-<li>⭐️ <a href="https://heat-shield.space/mastodon_two_camps.html"><strong>The Two Camps of Mastodon</strong></a>, on the general split between people that view the fediverse as a collection of small communities and those that view it as a distributed network where most people can talk to most others in a decentralised fashion, and how Threads' existence exacerbate this divide</li>
-<li><a href="https://netwars.pelicancrossing.net/2023/06/30/the-horns-of-a-dilemma/">The horns of a dilemma</a>, Wendy M. Grossman enumerating potential futures</li>
-<li>⭐️ <a href="https://blog.bloonface.com/2023/07/03/meta-and-the-fediverse-sorting-heat-from-light/"><strong>Meta and the fediverse: sorting heat from light</strong></a>, a fantastic rebuke to many of Meta's alleged nefarious motivations<ul>
-<li>meta gains little in terms of data collection ability since <a href="/activitypub">activitypub</a> lacks privacy anyway, and what it does gain isn't very useful, and the current fediverse population size is not large enough to be worth pursuing for data collection</li>
-<li>its seems unlikely that Meta actually sees the fediverse as a threat</li>
-<li>the Gchat/XMPP embrace/extend/extinguish example is flawed</li>
-<li>Meta isn't evil without motivation</li>
-<li>"So why <em>is</em> Meta going to use ActivityPub?  Here’s the thing; <em>I haven’t the faintest fucking clue</em>.  It does not obviously help Meta in any way to have interoperability with ActivityPub"</li>
-</ul>
-</li>
-<li><a href="https://tracks.ranea.org/post/722507935765397504/youre-so-vain-you-probably-think-this-app-is">You’re So Vain, You Probably Think This App Is About You</a>, an argument against the idea that Meta actually wants to EEE the fediverse<ul>
-<li>suggests that there is little monetary reason to federate from Meta's perspective, other than regulatory pressure</li>
-<li>particularly posits that defederating from servers that refuse to defederate Meta is particularly short-sighted</li>
-</ul>
-</li>
-</ul>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/federating-with-meta</guid>
-            <pubDate>2023-06-01</pubDate>
-        </item>
-        
-        <item>
-            <title>The H Chord</title>
-            <link>https://notes.zachmanson.com/the-h-chord</link>
-            
-            <description>How German monks broke my website</description>
-            
-            <content:encoded>
-                <![CDATA[<p>I received a <a href="https://github.com/pavo-etc/penultimate-guitar/issues/41">strange bug report</a> on <a href="/penultimate-guitar">Penultimate Guitar</a> where the Next.js rendering would fail completely on certain songs.</p>
-<h2 id="the-error">The Error</h2>
-<p>The type error was being triggered by a chord component, where the key was undefined. The chords are pulled from Ultimate Guitar, so I inspected the JSON payload from the <a href="https://tabs.ultimate-guitar.com/tab/1684995">original source</a>.</p>
-<p><img alt="" src="/media/ug.png" /></p>
-<p>Why the hell is there a <code>[ch]H[/ch]</code> chord in there? That's definitely the cause as I never accounted for non-existent keys. Looking at Ultimate Guitar, it renders as a B chord.</p>
-<p><img alt="" src="/media/ug-rendered.png" /></p>
-<p>Huh?</p>
-<details>
-<summary>An aside on Ultimate Guitar HTML</summary>
-<p>The way Ultimate Guitar handles data is bizarre. It passes a static dehydrated HTML page to the client.  The data payload is in the HTML as well, but instead of being contained in a <code>script</code> tag it's a giant JSON payload in an escaped string within an attribute of a random <code>div</code></p>
-</details>
-<h2 id="one-google-search-later">One Google Search Later</h2>
-<p>Germany and the Netherlands ha(d/ve) their own musical key notation that include(d/s) a H chord. <a href="https://www.guitarsite.com/newsletters/010122/12.shtml">This site</a> claims it ended in "1994/1995", though I've seen <a href="https://github.com/pavo-etc/penultimate-guitar/issues/41#issuecomment-1538452351">other</a> <a href="https://www.reddit.com/r/musictheory/comments/8rn0ve">sources</a> claim its still taught this way. This comes as an artifact of the bizarre history Western music notation, which is a problem I seem to keep running into recently in my attempts to learn more about music theory.</p>
-<blockquote>
-<p>I learned in music school that the chord is called "B" (like in the rest of the world), but the note is called "H" (eg. the C Major scale would be C, D, E, F, G, A, H, C).</p>
-</blockquote>
-<p><cite>TobTobXX, who reported the bug</cite></p>
-<h2 id="western-musics-stupid-origins">Western Music's Stupid Origins</h2>
-<p>Western music is based on ecclesiastic modes used in church in the early Middle Ages, which only used the diatonic notes of the C scale (<em>natural</em> notes). The musical notation systems of the time reflected this, not accounting for notes outside of the C scale. When sharps and flats later came into more common use, the existing notation systems needed a way to distinguish them from the natural notes they sat between.</p>
-<p>This problem first arose with B natural and B flat, according to the <a href="https://www.britannica.com/art/musical-expression">Encyclopedia Britannica</a>. The first method of distinguishing B from B flat was using two different forms of the lowercase "b" character:</p>
-<p><img alt="" src="/media/The-Flat-Sharp-And-Natural-A-Historical-Sketch.png" /></p>
-<p>Niecks, Frederick. “The Flat, Sharp, and Natural. A Historical Sketch.” <em>Proceedings of the Musical Association</em>, vol. 16, 1889, pp. 79–100.</p>
-<p>Somewhere along the line in Germany, monks transcribing these square and round "b" characters confused the squared "b" for "h", and this was later assumed to be intentional. "H" became a convention for writing B natural, while the "b" character remained convention for writing B flat. "B" and "b" became amalgamated, both coming to represent modern B flat.</p>
-<p>In the rest of the world, this "H" note didn't catch on.</p>
-<p>In time, notation for sharp and flat notes other than B flat was needed. This use of square and round "b" to denote B and B flat eventually evolved into our modern notation for indicating natural and non-natural, <em>accidentals</em>. ♭ comes from the round "b", while ♯ and ♮ come from the square "b".</p>
-<p>Somehow, Germany still hasn't fully corrected this mistake, continuing to use "H" to represent B natural and many places. Including Ultimate Guitar. Ugh.</p>
-<h2 id="resolution">Resolution</h2>
-<p>I don't love dealing with problems caused by the whims of millenia dead monks, but this was an interesting rabbit hole to fall into. The issue has since been patched, and I look forward to my mistakes ruining someone's day in 3023.</p>
-<p><img alt="" src="/media/gods-mistakes.png" /></p>
-<details>
-<summary> An aside on The Flat, Sharp, and Natural. A Historical Sketch </summary>
-<p>When I first copied the text from the article, it copied that "square b" as a "h". Funny that modern OCR technology makes the same mistakes at 1000 year old monks.</p>
-<blockquote>
-<p>The first known writer who distinguished between b natural and b flat was Odo of Clugny, who died in 942 ; the b natural being indicated by a square b (h), the b flat by a round b (b)</p>
-</blockquote>
-<p>It was also a pain in the ass to find a copy of that article. It's mostly found on paywalled academic sites despite the article definitely being out of copyright. Luckily the Internet Archive <a href="https://scholar.archive.org/work/3jdud373effq3e376gqtlkxqvq">has a copy</a>.</p>
-</details>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/the-h-chord</guid>
-            <pubDate>2023-05-08</pubDate>
-        </item>
-        
-        <item>
             <title>XZ</title>
             <link>https://notes.zachmanson.com/xz</link>
             
@@ -1016,23 +776,26 @@ yellow_bed.json:<span class="w">      </span><span class="s2">&quot;tag&quot;</s
         </item>
         
         <item>
-            <title>Planting a Flag in Wikipedia</title>
-            <link>https://notes.zachmanson.com/planting-a-flag-in-wikipedia</link>
-            
-            <description>LibKey Nomad's Stolen Valour</description>
+            <title>Collaborative Awe</title>
+            <link>https://notes.zachmanson.com/collaborative-awe</link>
             
             <content:encoded>
-                <![CDATA[<p>There is a wonderful browser extension with an awful name made by Third Iron called <a href="https://thirdiron.com/products/libkey-nomad/">LibKey Nomad</a>. It allows university staff and students gain access to academic journals that your univesity is subscribed to without logging in or requesting access. You install the extension, sign in with your university credentials, and then it just works. Whenever you are on a site that LibKey Nomad is automatically allowing you access to, it displays this little banner in the corner of the page.</p>
-<p><img alt="" src="/media/proper-popup.png" /></p>
-<p>You click it and you are taken direct to the paper. It really streamlines the process for a lot of sites.</p>
-<p><img alt="" src="/media/wikipedia-popup.png" /></p>
-<p>It hilariously appears on Wikipedia articles, as if the University of Western Australia has been incredibly gracious by allowing me to see Wikipedia. The reasoning here is that access to (at least one of) the citations is being provided through LibKey Nomad, but this makes the banner no less obnoxious.</p>
-<p>The banner doesn't even have a function like it does on other journals, clicking it just takes you to the references list.</p>
-<p><img alt="" src="/media/citations.png" /></p>
-<p>Wikipedia is one of the most impressive things humans have created. Keep your banners to yourself, Third Iron.</p>]]>
+                <![CDATA[<p>I recently received access to DALL-E and played around with it for a while. The interface is simple, just a textbox and a few curated images to give you some inspiration.</p>
+<p><img alt="" src="/media/dall-e.jpg" /></p>
+<p>Once you submit a prompt to DALL-E, you are shown more curated images and their corresponding prompts while your request is processed.</p>
+<p>DALL-E is capable of producing some amazing images. It takes a bit of warming up, but after little practice I was able to create wonderful and bizarre generative art. Despite this, I felt I didn't know how to produce something as interesting or engaging as their curated images the presented to me when using DALL-E. I could logically understand that the tool had potential, but I felt separated from it.</p>
+<p>Using Midjourney is completely a different experience. Midjourney currently runs its generative art AI through a bot on their company Discord server. You generate images by typing in a command in certain channels, and all the images produced are visible to everyone on the server simultaneously. Before you can even type something you are assaulted by an unfiltered, non-curated array of incredible images, all diffusing right before your eyes.</p>
+<video autoplay loop muted>
+   <source src="/media/firehose.webm" type="video/webm">
+</video>
+
+<p>While both generators are impressive, using Midjourney was a visceral experience for me in a way that DALL-E was not. DALL-E is sipping a glass of water, Midjourney is a firehose blasting your face. I was immediately in awe.</p>
+<p>The design of Midjourney makes it abundantly clear how big an impact this technology will have on the world. Watching hundreds of strangers generate images in real-time is jaw dropping. I was mesmerised, and within minutes saw images that moved me, despite being created by an AI without any intention behind them.</p>
+<p>While I am sure both of these are the future, only one made me feel it.</p>
+<p><img alt="" src="/media/soldiers.jpg" /></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/planting-a-flag-in-wikipedia</guid>
-            <pubDate>2023-02-06</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/collaborative-awe</guid>
+            <pubDate>2022-08-06</pubDate>
         </item>
         
         <item>
@@ -1114,22 +877,26 @@ After:
         </item>
         
         <item>
-            <title>GitHub Pages Redirection</title>
-            <link>https://notes.zachmanson.com/github-pages-redirection</link>
+            <title>The Curse of the Last Good Day</title>
+            <link>https://notes.zachmanson.com/the-curse-of-the-last-good-day</link>
             
-            <description>This feed has moved and GitHub Pages won't let me redirect you automatically.</description>
+            <description>Spoilers for The Fault in Our Stars, I guess</description>
             
             <content:encoded>
-                <![CDATA[<p>(This was written as to tell people to move from my old RSS feed to my new RSS feed on notes.zachmanson.com.  If you are reading this on notes.zachmanson.com you are in the right place.) </p>
-<p>I haven't written on here in a while, but I have been writing on my <a href="/">public notes</a>. At this point I've got over 300 pages on there, far more than I ever wrote on here but in a format that looks a lot more like a wiki. This is mostly a factor of convenience, the format of the <a href="/notes">notes</a> means I can iteratively add whatever I am thinking about, without the expectation of the writing being complete and canonical. The writing is organised into a hierarchy of folders, with <a href="/tags">tags</a> and backlinks. I find this format much better for wiki-style writing but doesn't lend itself well to chronological feeds like this one.</p>
-<p>Occasionally I would write a note on there that would fit well into the blog format, or was long and more story based. Some of my posts on this blog worked much better as wiki pages than as blog posts. I have wanted to unify these two sites for a long time now. Last week I finally got around to it!</p>
-<p>The <a href="/ochrs">Ochrs</a> site generator that I wrote to build the wiki can now generate chronological feeds of posts and RSS feeds. Feeds are generated based on tags, where each tag has its own <a href="/rss">RSS</a> feed. A note can be added to a chronological feed by adding a publish date (<code>date</code> field in the frontmatter), which will then be used as the publish date in all feeds that the note is a part of. This approach is great since it allows each note to exist anywhere in the wiki hierarchy while also being a part of many feeds. The RSS feed will be at <code>notes.zachmanson.com/&lt;tagname&gt;.xml</code>, and the list of notes in a chronological feed can be shown on a page using the <code>ochrs:chrono:&lt;tagname&gt;</code> build function (see <a href="/ochrs-syntax">Ochrs Syntax</a> for more on how this works), which will results in all the posts being displayed in blog-style HTML.</p>
-<p>To succeed <code>zachmanson.com/blog/</code> I have created the posts tag. The feeds can be seen at <a href="/posts">notes.zachmanson.com/posts</a> and using <a href="/posts.xml">RSS</a>. I have moved the existing posts here over to the this new feed.</p>
-<p>If you are reading this using RSS then I would like to apologise that you will have to subscribe to a new feed. I would have liked to automatically redirect your feed reader, but <strong>GitHub Pages doesn't let you create 301 redirects</strong>. The <code>redirect-from</code> plugin is capable of meta tag redirects, but those are soft and not followed by feed readers. This is very frustrating.</p>
-<p>I've marked a bunch of longer notes I've made as posts, so the new feed already has 7 new posts. Hopefully more will come soon!</p>]]>
+                <![CDATA[<p><em>The Fault in Our Stars</em> describes the phenomenon of the Last Good Day, a concept that has been echoing in my head ever since I read the book in high school. In the novel, the Last Good Day is the final time a person who is slowly deteriorating has a peaceful and pleasant moment with those around them.</p>
+<blockquote>
+<p>There's no way of knowing that your last good day is Your Last Good Day. At the time, it is just another good day.</p>
+</blockquote>
+<p>The story presents this in the context of Augustus' worsening condition and eventual death.</p>
+<p>So far, I've been lucky enough to be free of facing slow health declines in myself and those close to me, but the concept of the Last Good Day has sat quietly in the back of my mind since first encountering it. Whenever I have some kind of impending loss, no matter how small, my thoughts tend to orbit around it.</p>
+<p>With my bachelor's degree coming to a close soon, lots of my friends are moving away for careers or further study in other countries. The groups that have formed won't continue to exist in the way the have for the last 3 years. Not everyone is leaving of course and no one person is single load-bearing pillar of the group, but buildings tend not to handle losing half their supports.</p>
+<p>I've been aware that this will happen for months, and at every group event in my head I'm constantly thinking <em>Is this going to be the Last Good Day? Is this Good enough? Can I make this better?</em> This is definitely not healthy and definitely doesn't help me enjoy the limited time left with my friends. This line of thinking is something I hesitate to even talk about with my friends in fear of inspiring the same kind of thought spirals in their minds.</p>
+<p>Time has gone on and the erosion has begun. As I write this, another will be flying to Sydney tomorrow morning. Enough friends have left now that the Last Good Day has certainly passed, and yet I'm still not 100% sure which day it was. There's some strong contenders though.</p>
+<p>That's life, I know I'll make more friends and there's no need to be melodramatic. Regardless, I'm going to miss this period and the people I've spent it with.</p>
+<p>Cheers and auld lang syne and so on.</p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/github-pages-redirection</guid>
-            <pubDate>2024-03-29</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/the-curse-of-the-last-good-day</guid>
+            <pubDate>2023-01-27</pubDate>
         </item>
         
         <item>
@@ -1185,67 +952,270 @@ The day after writing the previous paragraph, I noticed they had added the DJ to
         </item>
         
         <item>
-            <title>Pirate Libraries</title>
-            <link>https://notes.zachmanson.com/pirate-libraries</link>
+            <title>snakeware</title>
+            <link>https://notes.zachmanson.com/snakeware</link>
+            
+            <description>A Linux-based operating system with a pure Python userspace.</description>
             
             <content:encoded>
-                <![CDATA[<p>Also known as shadow libraries, are potentially the best thing humans have ever created and are illegal in most places.  They are <a href="/archives">archives</a> human writing, some catering to particular niches and some attempting to capture <em>everything</em>.  And then distribute all of human knowledge and writing for free.</p>
-<p>They have no regard for copyright law, generally viewing them as part of a broken system or distractions to (what the pirate librarians might call) their noble goals.</p>
-<p>Library Genesis (libgen) and Sci-Hub (a superset of libgen) focus primarily on academic materials, textbooks and journal publications.  The projects are borne from the goal of allowing access to documents that would normally only be accessible through expensive journals.</p>
-<p>Books3 is another pirate library, containing ≈196000 books sourced from Bibliotik.  It is named in the spirit of OpenAI's dubiously sourced collections of books, Books1 and Books2.  Books3 has become well known for its use in training <a href="/large-language-models">large language models</a> like <a href="/llama">LLaMA</a>.</p>
-<p>The <a href="/internet">Internet</a> Archive is pirate library adjacent.  It contains and redistributes (without permission) countless copyrighted works, but will respond to takedown requests.</p>
-<p>During <a href="/uwa-computer-science">my time at university</a>, use of Library Genesis and Sci-Hub was rife. While not everyone knew of these sites directly, everyone knew someone who knew someone who did, and textbook PDFs propagated on the sneakernet.</p>
-<p>Pirate libraries:</p>
-<ul>
-<li>Library Genesis</li>
-<li>Sci-Hub</li>
-<li>Bibliotik</li>
-<li>Books3</li>
-<li>Gigapedia</li>
-<li>Kolkhoz</li>
-<li>Librusec</li>
-</ul>
-<p>An adjacent concept is preservation of media, where pirated copies are seen as a defence against permanent loss. This is the thinking behind the Internet Archive and the sites it has inspired.  This kind of thinking is also prevalent in the world of video games, a medium where many works are rendered unavailable by missing online services, changing hardware landscape or lost source code. There are many cases where old games have been recovered or restored through pirated versions.</p>
-<p>Web archives:</p>
-<ul>
-<li><a href="https://archive.org">Internet Archive</a></li>
-<li><a href="https://archive.is">archive.is</a></li>
-<li><a href="https://archive.today">archive.today</a></li>
-</ul>
+                <![CDATA[<p><img alt="" src="/media/snakeware.png" /></p>
+<p>snakeware is an experimental <a href="/linux">Linux</a>-based OS with developed in 2020.  Its userspace is written entirely in Python, barring a single Busybox root process.  It was created by Joshua Moore drawing inspiration from the Commodore 64.  The window manager, snakewm, is written primarily with pygame_gui.  It is not based on X11 or Wayland, instead writing directly to the framebuffer (<code>/dev/fb0</code>).</p>
+<p>On first boot, snakeware launches you directly a the Python interpreter.  From here you can run Python commands directly, launch the window manager, or launch CLI games.</p>
+<p>To launch snakewm from the interpreter, run the <code>snakewm</code> command.  From snakewm the aopp menu can be opened using the Super key.  From here a number of applications can be launched.</p>
+<p>To launch CLI games, enter the following commands:</p>
+<div class="highlight"><pre><span></span><code>&gt;&gt;&gt; import snake_games
+&gt;&gt;&gt; snake_games.menu()
+</code></pre></div>
+<p>Games included as of 2022 are snake, snakepaint, and circlez.</p>
+<h2 id="history">History</h2>
+<p>snakeware was a short-lived project and should be considered inactive, with most significant contributions ending in 2020.  It was created and maintained by Joshua Moore and had a small number of contributors.  Some of the applications included in snakeware never reached their intended goals, such as the included terminal emulator snaketerm which is extremely rudimentary.</p>
+<p>One of the goals in making the entire userspace in Python was to make it modifiable by the user with little effort.  As Python is interpreted, all code for the window manager and the interface would be visible and modifiable by any snakeware user, and would be easy to extend.  Unfortunately, the planned text editor for snakeware, CATH, was never finished.</p>
+<p>Other planned projects were networking, a chat application, and a package system built on top of PyPI called snakeoil.</p>
+<p>The project was coordinated over a Discord server, though this hasn't been active for some time.</p>
 <h2 id="links">Links</h2>
 <ul>
-<li><a href="https://www.atlasobscura.com/articles/the-rise-of-illegal-pirate-libraries">The Rise of Pirate Libraries</a></li>
-<li><a href="https://www.wired.com/story/battle-over-books3/">The Battle Over Books3</a></li>
-<li><a href="https://reason.com/2022/07/24/you-cant-stop-pirate-libraries/">You Can't Stop Pirate Libraries</a></li>
-<li><a href="https://publiclibrariesonline.org/2016/06/the-pirate-library-controversy/">The Pirate Library Controversy</a></li>
-<li><a href="https://lostmediawiki.com/Home">Lost Media Wiki</a></li>
+<li><a href="https://github.com/joshiemoore/snakeware">snakeware source code</a></li>
+<li><a href="https://github.com/Cyppa/CATH-for-Snakeware">CATH text editor</a></li>
 </ul>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/pirate-libraries</guid>
-            <pubDate>2023-11-20</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/snakeware</guid>
+            <pubDate>2024-03-26</pubDate>
         </item>
         
         <item>
-            <title>Collaborative Awe</title>
-            <link>https://notes.zachmanson.com/collaborative-awe</link>
+            <title>UWA Computer Science</title>
+            <link>https://notes.zachmanson.com/uwa-computer-science</link>
+            
+            <description>Reviews and advice for all Computer Science, Cyber Security, and Data Science units I completed at UWA.</description>
             
             <content:encoded>
-                <![CDATA[<p>I recently received access to DALL-E and played around with it for a while. The interface is simple, just a textbox and a few curated images to give you some inspiration.</p>
-<p><img alt="" src="/media/dall-e.jpg" /></p>
-<p>Once you submit a prompt to DALL-E, you are shown more curated images and their corresponding prompts while your request is processed.</p>
-<p>DALL-E is capable of producing some amazing images. It takes a bit of warming up, but after little practice I was able to create wonderful and bizarre generative art. Despite this, I felt I didn't know how to produce something as interesting or engaging as their curated images the presented to me when using DALL-E. I could logically understand that the tool had potential, but I felt separated from it.</p>
-<p>Using Midjourney is completely a different experience. Midjourney currently runs its generative art AI through a bot on their company Discord server. You generate images by typing in a command in certain channels, and all the images produced are visible to everyone on the server simultaneously. Before you can even type something you are assaulted by an unfiltered, non-curated array of incredible images, all diffusing right before your eyes.</p>
-<video autoplay loop muted>
-   <source src="/media/firehose.webm" type="video/webm">
-</video>
-
-<p>While both generators are impressive, using Midjourney was a visceral experience for me in a way that DALL-E was not. DALL-E is sipping a glass of water, Midjourney is a firehose blasting your face. I was immediately in awe.</p>
-<p>The design of Midjourney makes it abundantly clear how big an impact this technology will have on the world. Watching hundreds of strangers generate images in real-time is jaw dropping. I was mesmerised, and within minutes saw images that moved me, despite being created by an AI without any intention behind them.</p>
-<p>While I am sure both of these are the future, only one made me feel it.</p>
-<p><img alt="" src="/media/soldiers.jpg" /></p>]]>
+                <![CDATA[<p>I did my <a href="/computer-science">Computer Science</a> degree from 2020 to 2023, coming out with a BSc. Computer Science, Cybersecurity, minoring in Data Science. I have omitted statistics units because I have nothing intelligible to say about them.</p>
+<p>Just do <a href="https://codersforcauses.org/">Coders For Causes</a>, you will learn more in that than entire semesters of this degree. <strong>Learn how to use <a href="/git">Git</a> as fast as possible</strong> then force all your group project members to use it. Narrow down your problems as much as possible, then google the most generic possible description of it. If you see someone using semicolons mid-sentence regularly it's probably <a href="/christ-mcdonald">Chris McDonald</a>.</p>
+<p><img alt="" src="/media/uwa-cits.png" /></p>
+<h2 id="first-year-units">First Year Units</h2>
+<p>CITS1001 Software Engineering with Java (called Object Oriented Programming when I took it in 2020):</p>
+<ul>
+<li>serves as the introduction to programming for many students</li>
+<li>actively bad introduction to programming</li>
+<li>spends time describing the conceptual model of objects and encapsulation before describing variables and if statements</li>
+<li>class only uses BlueJ (yuck) and as such never teaches you to use a main function. Met students who had completed the class and were still incapable of actually running a Java program</li>
+<li>glad that it is being replaced with CITS2005</li>
+</ul>
+<p>CITS1003 Intro to Cybersecurity:</p>
+<ul>
+<li>extremely fun introduction to basic cybersecurity concepts</li>
+<li>main project was a semester long CTF</li>
+<li>perhaps a bit light on content but gives a good taste of the major</li>
+</ul>
+<p>CITS1401 Computational Thinking with Python:</p>
+<ul>
+<li>much better intro to programming</li>
+<li>weirdly speedruns 2 years of Computer Science ATAR in the first lesson for no reason</li>
+<li>took 3 weeks to get to if statements in Python which is pretty poor</li>
+<li>decent intro though</li>
+</ul>
+<p>CITS1402 Relational Databases</p>
+<ul>
+<li>dead boring but theres no way not to be, it's databases</li>
+</ul>
+<h2 id="second-year-units">Second Year Units</h2>
+<p>CITS2002 Systems Programming</p>
+<ul>
+<li>Chris McDonald is an excellent lecturer</li>
+<li>good introduction to <a href="/c">C</a></li>
+<li>challenging projects but you learn a lot</li>
+<li>very rewarding</li>
+<li>this and CITS2200 have the highest kill rate for comsci degrees <sup>[citation needed]</sup>. partially because they are hard, partially because the previous units did a pretty bad job preparing students for them</li>
+</ul>
+<p><a href="/cits2003">CITS2003</a> Open Source Tools &amp; Scripting</p>
+<ul>
+<li>teaches <a href="/bash">Bash</a> and <a href="/unix">Unix</a> which are important and only orthogonally explained in CITS2002</li>
+<li>teaches <a href="/sed">sed</a> and <a href="/awk">awk</a> relatively well</li>
+<li>includes <a href="/make">Make</a> for some reason, no reason literally cut this its covered in CITS2002 and is actually relevant there</li>
+<li>also includes <a href="/git">Git</a> but never actually requires its use so it feels useless even though it is most students first introduction to it. git should be in CITS1401.</li>
+<li>somehow manages to completely screw up the assessments every year</li>
+<li>see <a href="/michael-wise-quotes">Michael Wise Quotes</a></li>
+</ul>
+<p>CITS2200 Data Structures &amp; Algorithms</p>
+<ul>
+<li>necessary evil</li>
+<li>teaches important concepts effectively, relatively dry though</li>
+<li>assessments are done in Java and this leads to many stupid problems</li>
+</ul>
+<p>CITS2211 Discrete Structures</p>
+<ul>
+<li>the theoretical basis of what a computer actually is</li>
+<li>very interesting but also very hard</li>
+<li>very disconnected from the rest of the degree sadly</li>
+</ul>
+<p>CITS2402 Introduction to Data Science</p>
+<ul>
+<li>actual waste of time</li>
+<li>you can learn this entire unit in a day but watching some tutorials on matplotlib, numpy and pandas</li>
+<li>feels like watching a fireship video at 0.005 speed</li>
+</ul>
+<h2 id="third-year-units">Third Year Units</h2>
+<p>CITS3001 Algorithms, <a href="/agents">Agents</a> &amp; Artificial Intelligence</p>
+<ul>
+<li>so much wasted potential</li>
+<li>could be one of the most interesting units in the whole degree, seems like it was before my time</li>
+<li>tries to cover so much but ends up covering very little effectively</li>
+<li>main project was a disaster in 2022</li>
+</ul>
+<p>CITS3002 Computer Networks</p>
+<ul>
+<li>Taught by Oppy himself</li>
+<li>Very interesting content, well taught</li>
+<li>projects get your hands dirty with creating actual protocols and working with sockets</li>
+<li>few things were more satisfying in the entire degree than actually running my final project for this over the internet between me and my partners houses and watching it run</li>
+<li>spiritual sequel to Systems Programming</li>
+</ul>
+<p>CITS3003 Graphics and Animation</p>
+<ul>
+<li>abandoned</li>
+<li>feels like it was really interesting in 2009, but the unit coordinator who cared about it has since left and now it wanders the optional units lists like a zombie</li>
+<li>project hasn't changed majorly in 10 years, though it has gotten more convoluted</li>
+<li>there are certainly past versions of it on github if you are so inclined</li>
+<li>soulless, out of date, and wasted potential as it could be one of the most interesting units</li>
+</ul>
+<p>CITS3006 Penetration Testing</p>
+<ul>
+<li>amazing</li>
+<li>final assessment is literally break into this VM, then secure it and swap with other groups</li>
+<li>good balance of pratical and theoretical</li>
+<li>Jin Hong is fantastic</li>
+<li>lab instructors are all great</li>
+<li>had one lecture that wasn't allowed to be recorded because it taught actual live vulnerabilities in UWA systems, excellent, all units should have one of these</li>
+<li>best unit in the whole course</li>
+</ul>
+<p>CITS3007 Secure Coding</p>
+<ul>
+<li>the worst C unit by default, only because the others are just so good</li>
+<li>teaches you how to write vulnerable C code, and how to turn off compiler safety checks</li>
+<li>is geniunely interesting</li>
+<li>Arran Stuart is great, seems like the lecturer who is most in touch with modern software engineering?</li>
+</ul>
+<p>CITS3401 Data Warehousing</p>
+<ul>
+<li>actual trash</li>
+<li>feels like I learnt 5 things about large scale data storage and nothing else</li>
+<li>project is an arbitrary mess</li>
+<li>pratical side of the unit is a joke</li>
+<li>got really interesting for 2 weeks when it completely switches gears to talk about graph databases but then lets you down again</li>
+</ul>
+<p>CITS3403 Agile <a href="/web-development">Web Development</a></p>
+<ul>
+<li>really fun and very practical</li>
+<li>FIRST ACTUAL USE OF <a href="/git">Git</a> (do no wait till third year, learn this in year 1 semester 1) how did it take this long</li>
+<li>well taught</li>
+<li><a href="https://minecraftle.zachmanson.com">very</a> <a href="/minecraftle">fun project</a></li>
+</ul>
+<p>CITS3200 Professional Computing</p>
+<ul>
+<li>your capstone project with an actual client, aka gambling your marks</li>
+<li>if your client is chill you will do well, if not you are ruined</li>
+<li>e.g. my team shipped actual malware and got a HD</li>
+<li>teams are allocated based on having an even WAM spread so get hyped for mark rubber-banding</li>
+<li>there are lectures</li>
+<li>2/10 lectures will be valuable</li>
+<li>3/10 will be companies hyping themselves up</li>
+<li>4/10 will be inane ethics bullshit</li>
+<li>1/10 will be alleged war criminals</li>
+<li>all prior units have not adequately prepared you for this, go learn django or <a href="/react">react</a> because you are very likely going to need to know these. if you are wondering if you should make a web app you should probably just make a web app</li>
+</ul>
+<h2 id="miscellaneous-advice">Miscellaneous Advice</h2>
+<p>Labs are the only thing in the degree you can't get from youtube or the <a href="/internet">internet</a>. If you are bad, actually do the labs, go in and ask the instructors questions. It's annoying but they can help you bridge the gap between trash and passing.</p>
+<p>Learn how to use the command line ASAP. Learn git. Seriously go learn git. So many people I met couldn't use git in their third year. How they made it that far sending code snippets over discord is beyond me. Bully everyone you know into using git. You will actually lose 20% mark if you don't use git+github for a group project because you will waste so much time trying to coordinate the project. If git is hurting your brain try using GitHub Desktop which makes it a bit easier to use for newcomers.</p>
+<p>Have other hobbies. Doesn't matter what they are but gaming doesn't count if it's your only hobby.</p>
+<p>Go to social events with clubs. The specific club doesn't matter, they are all fine. Alcohol helps, if you are so inclined (science union pub crawls are great). It's very easy in computer science to not make actually make any friends and do everything online. But you will need friends to not be sad and die alone.</p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/collaborative-awe</guid>
-            <pubDate>2022-08-06</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/uwa-computer-science</guid>
+            <pubDate>2023-06-19</pubDate>
+        </item>
+        
+        <item>
+            <title>Spite Driven Development</title>
+            <link>https://notes.zachmanson.com/spite-driven-development</link>
+            
+            <content:encoded>
+                <![CDATA[<p>Spite Driven Development (SDD) is my preferred development methodology.  I have found it by far my most productive style of software engineering, and has been responsible in whole or part for most of my <a href="/projects">projects</a> (see: <a href="/penultimate-guitar">Penultimate Guitar</a>, <a href="/minecraftle">Minecraftle</a>, <a href="/alculator">Alculator</a>, <a href="/status-messenger">Status Messenger</a>).</p>
+<p>While it is extremely effective for building software quickly, it is often destructive to other aspects of one's life, such as healthy eating, relationships, and especially sleep.</p>
+<h2 id="history">History</h2>
+<p>I got mad at a competitor/company with shitty practices/friend/existing tool.  Spend multiple days (likely straight) writing code to spite them.  Spited them. <code>git push</code></p>
+<h2 id="spite-driven-development-cycle">Spite Driven Development Cycle</h2>
+<ol>
+<li>get mad</li>
+<li>think you can do it better yourself</li>
+<li>feel the need to prove you can do better</li>
+<li><code>git init</code></li>
+<li>design feature with a scope exactly commensurate to your anger</li>
+<li>forgo loved ones and human interaction</li>
+<li>finish feature</li>
+<li><code>git commit</code></li>
+<li>see 5</li>
+<li>deploy</li>
+<li>see 5</li>
+<li>run it 40 times just to watch it work, analogous to injecting dopamine directly into your veins</li>
+<li>rest</li>
+</ol>
+<h2 id="goals">Goals</h2>
+<p>Victory.</p>
+<h2 id="non-goals">Non Goals</h2>
+<p>Sustenance, testing, clean code.</p>
+<h2 id="development-frameworks">Development Frameworks</h2>
+<p>Much like how ruby+rspec is very well suited to test driven development, many frameworks are well suited to SDD.  Whichever framework you know is the ideal framework for SDD.  Time is of the essence and you have no-one to please but yourself.  Spite burns hot but it burns dirty, and it is not a renewable resource.  Your must strike while the iron is hot and complete the project before you are sapped of the hatred that caused you to start the project.</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/spite-driven-development</guid>
+            <pubDate>2024-03-18</pubDate>
+        </item>
+        
+        <item>
+            <title>The H Chord</title>
+            <link>https://notes.zachmanson.com/the-h-chord</link>
+            
+            <description>How German monks broke my website</description>
+            
+            <content:encoded>
+                <![CDATA[<p>I received a <a href="https://github.com/pavo-etc/penultimate-guitar/issues/41">strange bug report</a> on <a href="/penultimate-guitar">Penultimate Guitar</a> where the Next.js rendering would fail completely on certain songs.</p>
+<h2 id="the-error">The Error</h2>
+<p>The type error was being triggered by a chord component, where the key was undefined. The chords are pulled from Ultimate Guitar, so I inspected the JSON payload from the <a href="https://tabs.ultimate-guitar.com/tab/1684995">original source</a>.</p>
+<p><img alt="" src="/media/ug.png" /></p>
+<p>Why the hell is there a <code>[ch]H[/ch]</code> chord in there? That's definitely the cause as I never accounted for non-existent keys. Looking at Ultimate Guitar, it renders as a B chord.</p>
+<p><img alt="" src="/media/ug-rendered.png" /></p>
+<p>Huh?</p>
+<details>
+<summary>An aside on Ultimate Guitar HTML</summary>
+<p>The way Ultimate Guitar handles data is bizarre. It passes a static dehydrated HTML page to the client.  The data payload is in the HTML as well, but instead of being contained in a <code>script</code> tag it's a giant JSON payload in an escaped string within an attribute of a random <code>div</code></p>
+</details>
+<h2 id="one-google-search-later">One Google Search Later</h2>
+<p>Germany and the Netherlands ha(d/ve) their own musical key notation that include(d/s) a H chord. <a href="https://www.guitarsite.com/newsletters/010122/12.shtml">This site</a> claims it ended in "1994/1995", though I've seen <a href="https://github.com/pavo-etc/penultimate-guitar/issues/41#issuecomment-1538452351">other</a> <a href="https://www.reddit.com/r/musictheory/comments/8rn0ve">sources</a> claim its still taught this way. This comes as an artifact of the bizarre history Western music notation, which is a problem I seem to keep running into recently in my attempts to learn more about music theory.</p>
+<blockquote>
+<p>I learned in music school that the chord is called "B" (like in the rest of the world), but the note is called "H" (eg. the C Major scale would be C, D, E, F, G, A, H, C).</p>
+</blockquote>
+<p><cite>TobTobXX, who reported the bug</cite></p>
+<h2 id="western-musics-stupid-origins">Western Music's Stupid Origins</h2>
+<p>Western music is based on ecclesiastic modes used in church in the early Middle Ages, which only used the diatonic notes of the C scale (<em>natural</em> notes). The musical notation systems of the time reflected this, not accounting for notes outside of the C scale. When sharps and flats later came into more common use, the existing notation systems needed a way to distinguish them from the natural notes they sat between.</p>
+<p>This problem first arose with B natural and B flat, according to the <a href="https://www.britannica.com/art/musical-expression">Encyclopedia Britannica</a>. The first method of distinguishing B from B flat was using two different forms of the lowercase "b" character:</p>
+<p><img alt="" src="/media/The-Flat-Sharp-And-Natural-A-Historical-Sketch.png" /></p>
+<p>Niecks, Frederick. “The Flat, Sharp, and Natural. A Historical Sketch.” <em>Proceedings of the Musical Association</em>, vol. 16, 1889, pp. 79–100.</p>
+<p>Somewhere along the line in Germany, monks transcribing these square and round "b" characters confused the squared "b" for "h", and this was later assumed to be intentional. "H" became a convention for writing B natural, while the "b" character remained convention for writing B flat. "B" and "b" became amalgamated, both coming to represent modern B flat.</p>
+<p>In the rest of the world, this "H" note didn't catch on.</p>
+<p>In time, notation for sharp and flat notes other than B flat was needed. This use of square and round "b" to denote B and B flat eventually evolved into our modern notation for indicating natural and non-natural, <em>accidentals</em>. ♭ comes from the round "b", while ♯ and ♮ come from the square "b".</p>
+<p>Somehow, Germany still hasn't fully corrected this mistake, continuing to use "H" to represent B natural and many places. Including Ultimate Guitar. Ugh.</p>
+<h2 id="resolution">Resolution</h2>
+<p>I don't love dealing with problems caused by the whims of millenia dead monks, but this was an interesting rabbit hole to fall into. The issue has since been patched, and I look forward to my mistakes ruining someone's day in 3023.</p>
+<p><img alt="" src="/media/gods-mistakes.png" /></p>
+<details>
+<summary> An aside on The Flat, Sharp, and Natural. A Historical Sketch </summary>
+<p>When I first copied the text from the article, it copied that "square b" as a "h". Funny that modern OCR technology makes the same mistakes at 1000 year old monks.</p>
+<blockquote>
+<p>The first known writer who distinguished between b natural and b flat was Odo of Clugny, who died in 942 ; the b natural being indicated by a square b (h), the b flat by a round b (b)</p>
+</blockquote>
+<p>It was also a pain in the ass to find a copy of that article. It's mostly found on paywalled academic sites despite the article definitely being out of copyright. Luckily the Internet Archive <a href="https://scholar.archive.org/work/3jdud373effq3e376gqtlkxqvq">has a copy</a>.</p>
+</details>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/the-h-chord</guid>
+            <pubDate>2023-05-08</pubDate>
         </item>
         
         <item>
@@ -1432,6 +1402,47 @@ Lorem ipsum amirite.  Hey look a fenced code block:
         </item>
         
         <item>
+            <title>Pirate Libraries</title>
+            <link>https://notes.zachmanson.com/pirate-libraries</link>
+            
+            <content:encoded>
+                <![CDATA[<p>Also known as shadow libraries, are potentially the best thing humans have ever created and are illegal in most places.  They are <a href="/archives">archives</a> human writing, some catering to particular niches and some attempting to capture <em>everything</em>.  And then distribute all of human knowledge and writing for free.</p>
+<p>They have no regard for copyright law, generally viewing them as part of a broken system or distractions to (what the pirate librarians might call) their noble goals.</p>
+<p>Library Genesis (libgen) and Sci-Hub (a superset of libgen) focus primarily on academic materials, textbooks and journal publications.  The projects are borne from the goal of allowing access to documents that would normally only be accessible through expensive journals.</p>
+<p>Books3 is another pirate library, containing ≈196000 books sourced from Bibliotik.  It is named in the spirit of OpenAI's dubiously sourced collections of books, Books1 and Books2.  Books3 has become well known for its use in training <a href="/large-language-models">large language models</a> like <a href="/llama">LLaMA</a>.</p>
+<p>The <a href="/internet">Internet</a> Archive is pirate library adjacent.  It contains and redistributes (without permission) countless copyrighted works, but will respond to takedown requests.</p>
+<p>During <a href="/uwa-computer-science">my time at university</a>, use of Library Genesis and Sci-Hub was rife. While not everyone knew of these sites directly, everyone knew someone who knew someone who did, and textbook PDFs propagated on the sneakernet.</p>
+<p>Pirate libraries:</p>
+<ul>
+<li>Library Genesis</li>
+<li>Sci-Hub</li>
+<li>Bibliotik</li>
+<li>Books3</li>
+<li>Gigapedia</li>
+<li>Kolkhoz</li>
+<li>Librusec</li>
+</ul>
+<p>An adjacent concept is preservation of media, where pirated copies are seen as a defence against permanent loss. This is the thinking behind the Internet Archive and the sites it has inspired.  This kind of thinking is also prevalent in the world of video games, a medium where many works are rendered unavailable by missing online services, changing hardware landscape or lost source code. There are many cases where old games have been recovered or restored through pirated versions.</p>
+<p>Web archives:</p>
+<ul>
+<li><a href="https://archive.org">Internet Archive</a></li>
+<li><a href="https://archive.is">archive.is</a></li>
+<li><a href="https://archive.today">archive.today</a></li>
+</ul>
+<h2 id="links">Links</h2>
+<ul>
+<li><a href="https://www.atlasobscura.com/articles/the-rise-of-illegal-pirate-libraries">The Rise of Pirate Libraries</a></li>
+<li><a href="https://www.wired.com/story/battle-over-books3/">The Battle Over Books3</a></li>
+<li><a href="https://reason.com/2022/07/24/you-cant-stop-pirate-libraries/">You Can't Stop Pirate Libraries</a></li>
+<li><a href="https://publiclibrariesonline.org/2016/06/the-pirate-library-controversy/">The Pirate Library Controversy</a></li>
+<li><a href="https://lostmediawiki.com/Home">Lost Media Wiki</a></li>
+</ul>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/pirate-libraries</guid>
+            <pubDate>2023-11-20</pubDate>
+        </item>
+        
+        <item>
             <title>Imposter Syndrome Day 632</title>
             <link>https://notes.zachmanson.com/imposter-syndrome-day-632</link>
             
@@ -1474,34 +1485,23 @@ Lorem ipsum amirite.  Hey look a fenced code block:
         </item>
         
         <item>
-            <title>snakeware</title>
-            <link>https://notes.zachmanson.com/snakeware</link>
+            <title>Planting a Flag in Wikipedia</title>
+            <link>https://notes.zachmanson.com/planting-a-flag-in-wikipedia</link>
             
-            <description>A Linux-based operating system with a pure Python userspace.</description>
+            <description>LibKey Nomad's Stolen Valour</description>
             
             <content:encoded>
-                <![CDATA[<p><img alt="" src="/media/snakeware.png" /></p>
-<p>snakeware is an experimental <a href="/linux">Linux</a>-based OS with developed in 2020.  Its userspace is written entirely in Python, barring a single Busybox root process.  It was created by Joshua Moore drawing inspiration from the Commodore 64.  The window manager, snakewm, is written primarily with pygame_gui.  It is not based on X11 or Wayland, instead writing directly to the framebuffer (<code>/dev/fb0</code>).</p>
-<p>On first boot, snakeware launches you directly a the Python interpreter.  From here you can run Python commands directly, launch the window manager, or launch CLI games.</p>
-<p>To launch snakewm from the interpreter, run the <code>snakewm</code> command.  From snakewm the aopp menu can be opened using the Super key.  From here a number of applications can be launched.</p>
-<p>To launch CLI games, enter the following commands:</p>
-<div class="highlight"><pre><span></span><code>&gt;&gt;&gt; import snake_games
-&gt;&gt;&gt; snake_games.menu()
-</code></pre></div>
-<p>Games included as of 2022 are snake, snakepaint, and circlez.</p>
-<h2 id="history">History</h2>
-<p>snakeware was a short-lived project and should be considered inactive, with most significant contributions ending in 2020.  It was created and maintained by Joshua Moore and had a small number of contributors.  Some of the applications included in snakeware never reached their intended goals, such as the included terminal emulator snaketerm which is extremely rudimentary.</p>
-<p>One of the goals in making the entire userspace in Python was to make it modifiable by the user with little effort.  As Python is interpreted, all code for the window manager and the interface would be visible and modifiable by any snakeware user, and would be easy to extend.  Unfortunately, the planned text editor for snakeware, CATH, was never finished.</p>
-<p>Other planned projects were networking, a chat application, and a package system built on top of PyPI called snakeoil.</p>
-<p>The project was coordinated over a Discord server, though this hasn't been active for some time.</p>
-<h2 id="links">Links</h2>
-<ul>
-<li><a href="https://github.com/joshiemoore/snakeware">snakeware source code</a></li>
-<li><a href="https://github.com/Cyppa/CATH-for-Snakeware">CATH text editor</a></li>
-</ul>]]>
+                <![CDATA[<p>There is a wonderful browser extension with an awful name made by Third Iron called <a href="https://thirdiron.com/products/libkey-nomad/">LibKey Nomad</a>. It allows university staff and students gain access to academic journals that your univesity is subscribed to without logging in or requesting access. You install the extension, sign in with your university credentials, and then it just works. Whenever you are on a site that LibKey Nomad is automatically allowing you access to, it displays this little banner in the corner of the page.</p>
+<p><img alt="" src="/media/proper-popup.png" /></p>
+<p>You click it and you are taken direct to the paper. It really streamlines the process for a lot of sites.</p>
+<p><img alt="" src="/media/wikipedia-popup.png" /></p>
+<p>It hilariously appears on Wikipedia articles, as if the University of Western Australia has been incredibly gracious by allowing me to see Wikipedia. The reasoning here is that access to (at least one of) the citations is being provided through LibKey Nomad, but this makes the banner no less obnoxious.</p>
+<p>The banner doesn't even have a function like it does on other journals, clicking it just takes you to the references list.</p>
+<p><img alt="" src="/media/citations.png" /></p>
+<p>Wikipedia is one of the most impressive things humans have created. Keep your banners to yourself, Third Iron.</p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/snakeware</guid>
-            <pubDate>2024-03-26</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/planting-a-flag-in-wikipedia</guid>
+            <pubDate>2023-02-06</pubDate>
         </item>
         
 
