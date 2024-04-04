@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Folklore/Put yourself in Jia Tan's shoes.md",
+                "file": "Index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Folklore/Put yourself in Jia Tan's shoes.md",
+                "file": "Index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Folklore/Put yourself in Jia Tan's shoes.md",
+                "file": "Index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Folklore/Put yourself in Jia Tan's shoes.md"
+                "file": "Index.md"
               }
             }
           }
@@ -146,10 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ed51b6cee718740c",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Notes/Software/Programs/Obsidian/Obsidian Plugins.md",
+    "Notes/Software/Exploits/XZ/XZ.md",
     "Archive/Folklore/Put yourself in Jia Tan's shoes.md",
+    "Notes/Software/Programs/Obsidian/Obsidian Plugins.md",
     "Notes/Software/Programs/Obsidian/Obsidian.md",
     "Archive/Bookmarks/Digital Gardens.md",
     "Notes/Internet/Digital Garden.md",
@@ -168,7 +169,6 @@
     "Posts/Imposter Syndrome Day 632.md",
     "Notes/Software/Open Source.md",
     "Archive/Folklore/The Future of Open Source.md",
-    "Notes/Software/Exploits/XZ/XZ.md",
     "Notes/Software/Design/Fun Design.md",
     "Notes/Software/Development/Kinds of Work/VendorOps.md",
     "Notes/Software/Development/Kinds of Work/Glue Work.md",
