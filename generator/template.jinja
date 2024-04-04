@@ -117,10 +117,11 @@
     <a href="/recent-changes">updates</a>
     <a href="/tags">tags</a>
     <a href="/sitemap">sitemap</a>
-    <a href="https://github.dev/pavo-etc/notes/blob/main/{{node['breadcrumb_path']}}">edit</a>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/{{node['breadcrumb_path']}}" class="desktop">edit</a>
+    <a href="https://github.com/pavo-etc/notes/edit/main/{{node['breadcrumb_path']}}" class="mobile">edit</a>
   </footer>
   {% if node["script"] != None %}
-  <script>{{ node["script"] }}</script>
+  <script>{ { node["script"] } }</script>
   {% endif %}
 </body>
 
