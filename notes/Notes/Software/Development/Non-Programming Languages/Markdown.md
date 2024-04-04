@@ -1,4 +1,4 @@
-Markdown is a markup language created by [John Gruber](https://daringfireball.net) (with contributions from Aaron Swartz) in 2004. There is no "official" specification other than Gruber's [original syntax release](https://daringfireball.net/projects/markdown/), but there are formalised variants of it. Two notable specifications are [CommonMark](https://commonmark.org/) and its superset [GitHub Flavored Markdown](https://github.github.com/gfm/).
+Markdown is a markup language created by [John Gruber](https://daringfireball.net) (with contributions from Aaron Swartz) in 2004. There is no "official" specification other than Gruber's [original syntax release](https://daringfireball.net/projects/markdown/), but there are formalised variants of it. Two notable specifications are [CommonMark](https://commonmark.org/) and its superset [GitHub Flavored Markdown](https://github.github.com/gfm/).  The [[Ochrs]] generator used for this site uses Python-Markdown which is "almost completely compliant" with Gruber's syntax, plus a number of extensions to add features from CommonMark (such as fenced code blocks).
 
 ## Background
 

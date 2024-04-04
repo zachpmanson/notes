@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Kinds of Problems.md",
+                "file": "Notes/Software/Development/Non-Programming Languages/Markdown.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Kinds of Problems.md",
+                "file": "Notes/Software/Development/Non-Programming Languages/Markdown.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Kinds of Problems.md",
+                "file": "Notes/Software/Development/Non-Programming Languages/Markdown.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Kinds of Problems.md"
+                "file": "Notes/Software/Development/Non-Programming Languages/Markdown.md"
               }
             }
           }
@@ -148,6 +148,9 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Development/Debugging.md",
+    "Notes/Software/Development/DateTime.md",
+    "Notes/Software/Development/Kinds of Problems.md",
     "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
     "Media/spotify-top-bar.png",
     "Posts/Imposter Syndrome Day 632.md",
@@ -156,7 +159,6 @@
     "Notes/Software/Exploits/XZ/XZ.md",
     "Notes/Software/Design/Fun Design.md",
     "Notes/Software/Development/Kinds of Work/VendorOps.md",
-    "Notes/Software/Development/Kinds of Problems.md",
     "Notes/Software/Development/Kinds of Work/Glue Work.md",
     "Notes/Software/Development/Kinds of Work.md",
     "Notes/Software/Development/Kinds of Work",
@@ -179,7 +181,6 @@
     "Notes/Internet/Fediverse/Mastodon.md",
     "Meta/DNS.md",
     "Untitled.md",
-    "Posts/GitHub Pages Redirection.md",
     "Notes/Software/Design",
     "Media/box.jpg",
     "Media/box 1.jpg",
