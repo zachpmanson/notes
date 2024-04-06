@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/Deploying Elk on Vercel.md",
+                "file": "Archive/Bookmarks/Forum Threads.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Problems/Deploying Elk on Vercel.md",
+                "file": "Archive/Bookmarks/Forum Threads.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Problems/Deploying Elk on Vercel.md",
+                "file": "Archive/Bookmarks/Forum Threads.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Problems/Deploying Elk on Vercel.md"
+                "file": "Archive/Bookmarks/Forum Threads.md"
               }
             }
           }
@@ -146,10 +146,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ed51b6cee718740c",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Index.md",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 01.md",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMI Chapter 02.md",
+    "Archive/Bookmarks/Articles.md",
+    "Archive/Bookmarks/Websites.md",
     "Archive/Problems/Deploying Elk on Vercel.md",
+    "Index.md",
     "Projects/Minecraftle/Minecraftle v1.1.md",
     "Notes/Software/Exploits/XZ/XZ.md",
     "Archive/Folklore/Put yourself in Jia Tan's shoes.md",
@@ -170,11 +175,6 @@
     "Media/spotify-top-bar.png",
     "Posts/Imposter Syndrome Day 632.md",
     "Notes/Software/Open Source.md",
-    "Archive/Folklore/The Future of Open Source.md",
-    "Notes/Software/Design/Fun Design.md",
-    "Notes/Software/Development/Kinds of Work/VendorOps.md",
-    "Notes/Software/Development/Kinds of Work/Glue Work.md",
-    "Notes/Software/Development/Kinds of Work.md",
     "Notes/Software/Development/Kinds of Work",
     "Untitled",
     "Media/sqiggle.png",

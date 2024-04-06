@@ -23,3 +23,7 @@ tags:
 ## News
 
 - [Waymo robotaxi goes up in flames in Chinatown after crowd attacks vehicle](https://sfstandard.com/2024/02/10/waymo-robotaxi-goes-up-in-flames-in-chinatown-after-crowd-attacks-vehicle/)
+
+## Misc
+
+- [Optimal Mario Kart 8 Builds Along the Pareto Frontier](https://www.mayerowitz.io/blog/mario-meets-pareto)
