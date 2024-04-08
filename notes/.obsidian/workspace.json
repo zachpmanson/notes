@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Design/Fun Design.md",
+                "file": "Notes/Software/Development.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Design/Fun Design.md",
+                "file": "Notes/Software/Development.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Design/Fun Design.md",
+                "file": "Notes/Software/Development.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Design/Fun Design.md"
+                "file": "Notes/Software/Development.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "ed51b6cee718740c",
   "lastOpenFiles": [
-    "Media/ahnvn.png",
     "Notes/Software/Design/Fun Design.md",
+    "Media/ahnvn.png",
     "Archive/Lines.md",
     "Notes/Software/Development/Web Development/React.md",
     "Notes/Software/Development/Web Development/Web Development.md",
