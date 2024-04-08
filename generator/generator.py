@@ -214,7 +214,11 @@ def generate_pages():
                         "subtitle": tree[node].subtitle or node,
                         "parent": parent,
                         "children": children if tree[node].children_visible else [],
-                        "siblings": siblings,
+                        "siblings": (
+                            siblings
+                            if parent is None or tree[parent].children_visible
+                            else []
+                        ),
                         "piblings": piblings,
                         "tags": page_tags,
                         "len": len,

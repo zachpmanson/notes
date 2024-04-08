@@ -1,0 +1,3 @@
+Elk is a web client for Mastodon that I prefer to the default frontend. It is [open source](https://github.com/elk-zone/elk) and is built with Nuxt.  It also supports glitch-soc (a [[Fediverse Family Tree|Mastodon fork]]) and [GoToSocial](https://gotosocial.org/) (a lightweight [[ActivityPub]] server).
+
+I use a patched version of Elk with a few of my own tweaks at [elk.zachmanson.com](https://elk.zachmanson.com).

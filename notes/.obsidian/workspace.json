@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development.md",
+                "file": "Meta/DNS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "68f7566c71bafca9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Internet/Fediverse/Mastodon/Elk.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development.md",
+                "file": "Notes/Internet/Fediverse/Mastodon/Elk.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development.md",
+                "file": "Notes/Internet/Fediverse/Mastodon/Elk.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development.md"
+                "file": "Notes/Internet/Fediverse/Mastodon/Elk.md"
               }
             }
           }
@@ -146,8 +159,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ed51b6cee718740c",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Posts/Untitled.md",
+    "Notes/Internet/Fediverse/Mastodon/Elk.md",
+    "Meta/DNS.md",
+    "Notes/Internet/Fediverse/Mastodon/Mastodon.md",
+    "Notes/Internet/Fediverse/Mastodon",
+    "Notes/Software/Development.md",
     "Notes/Software/Design/Fun Design.md",
     "Media/ahnvn.png",
     "Archive/Lines.md",
@@ -170,10 +189,6 @@
     "Notes/Software/Programs/Obsidian/Obsidian.md",
     "Archive/Bookmarks/Digital Gardens.md",
     "Notes/Internet/Digital Garden.md",
-    "Notes/Language/Dictionary.md",
-    "Notes/Language/Etymology/Gruntle.md",
-    "Notes/Language/Language.md",
-    "Archive/Problems/Markdown in HTML.md",
     "Media/spotify-top-bar.png",
     "Notes/Software/Development/Kinds of Work",
     "Untitled",
@@ -192,7 +207,6 @@
     "Notes/Software/Development/Kinds of Work",
     "Notes/Software/Intelligent Agents",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Untitled",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach",
     "Untitled.canvas"
   ]
 }
