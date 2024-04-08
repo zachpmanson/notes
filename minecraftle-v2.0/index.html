@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="icon" href="/static/icon/icon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+
+  <link rel="alternate" type="application/rss+xml" href="https://notes.zachmanson.com/posts.xml" title="notes: posts" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: minecraftle v2.0</title>
+</head>
+
+<body>
+  <nav>
+    <div class="main-icon">
+      <a href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
+          viewBox="26.88 56.87 216.25 156.27">
+          <path
+            style="stroke-width: 15px; stroke-linecap: butt; stroke-linejoin: round; stroke: rgb(10, 10, 10); fill: none;"
+            d="M135,75 A60,60 0 0,0 75,135 A60,60 0 0,0 135,195 A60,60 0 0,0 195,135 A60,60 0 0,0 135,75 M45,90 A15,15 0 0,1 60,75 A15,15 0 0,1 75,90 L75,135 L75,180 A15,15 0 0,1 60,195 A15,15 0 0,1 45,180 M225,90 A15,15 0 0,0 210,75 A15,15 0 0,0 195,90 L195,135 L195,180 A15,15 0 0,0 210,195 L210,195 A15,15 0 0,0 225,180 M135,105 A30,30 0 0,1 165,135 A30,30 0 0,1 135,165 A30,30 0 0,1 105,135 A30,30 0 0,1 135,105 M45,105 L45,105 L45,165 M225,105 L225,105 L225,165 ">
+          </path>
+        </svg>
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
+      <div class="nav-segments">
+        
+
+        <div class="flex flex-col text-left nav-links">
+          <a href="/minecraftle" class="activated-link">Minecraftle</a>
+          
+          
+          <a href="/alculator">Alculator</a>
+          
+          
+          
+          <a href="/covid-19-tracker">COVID-19 Tracker</a>
+          
+          
+          
+          <a href="/mastodon-thread-unroller">Mastodon Thread Unroller</a>
+          
+          
+          
+          
+          
+          
+          <a href="/ochrs">Ochrs</a>
+          
+          
+          
+          <a href="/penultimate-guitar">Penultimate Guitar</a>
+          
+          
+          
+          <a href="/status-messenger">Status Messenger</a>
+          
+          
+          
+          <a href="/ironprof">ironprof</a>
+          
+          
+          
+          <a href="/snakeware">snakeware</a>
+          
+          
+        </div>
+        
+
+        
+
+        <div class="flex flex-col text-left nav-links">
+          <a href="/minecraftle-v2.0" class="activated-link">Minecraftle v2.0</a>
+          
+          
+          <a href="/how-minecraft-stores-crafting-recipes">How Minecraft Stores Crafting Recipes</a>
+          
+          
+          
+          <a href="/minecraftle-v1.1">Minecraftle v1.1</a>
+          
+          
+          
+          
+          
+        </div>
+        
+
+        
+      </div>
+    </div>
+
+
+  </nav>
+  <main>
+    <header>
+      <h1>Minecraftle v2.0</h1>
+    </header>
+    <article><p><a href="/minecraftle">Minecraftle</a> blew up!  At the time of writing it has had over 1 million players and seems to still be increasing.  Seems like it became popular thanks to a few YouTube videos and TikToks. This huge spike in players revealed how poorly made it all was.</p>
+<p>The stats page in particular was poorly done.  Originally I had made the schema as simple as possible and only stored the record of each game in one big table. This worked for small player counts, but meant calculating rankings was quadratic so the stats page eventually 10+ seconds to load.  I only discovered this was happening when the database for <a href="/penultimate-guitar">Penultimate Guitar</a> would be killed to allocate more resources every time someone loaded the stats page.  </p>
+<p>Since rewriting the database meant I'd need to get rid of the entire backend, I decided this was the time to move away from Flask and static JavaScript and port it to Next.js.  I had been meaning to do this for a while.  The Vanilla JS I had been using prior was very janky and poorly made.  I was still unemployed at this time and had plenty of free time since most of my friends had left Melbourne to see their families for Christmas.</p>
+<p>The new version of Minecraftle is deployed now on Vercel with a proper instance of Postgres for storing user scores. Rankings are still slow to calculate since all million+ players must be ordered, but they are calculated once per hour via a cronjob that refreshes a materialised view so the pageload is fast.  I'm sure I could do something clever here, chunking the calculations or having them incrementally calculated when a new game score is submitted, but this works for now.</p>
+<p>Alongside this rewrite I was able to add a few long requested features, like a clear button.</p>
+<h2 id="mistakes">Mistakes</h2>
+<h3 id="database-broke">Database Broke</h3>
+<p>I accidentally ran the migration script twice, once a few weeks prior to deployment to generate some test data and once on the day I deployed.  I forgot about the initial run in the intervening weeks.  Making matters worse, the second run used the old dump of the database, meaning that all scores were double what they were 3 weeks prior.  This was painful to diagnose as some scores had gone up while others had gone down.  I was eventually able to figure out what had happened thanks to <a href="https://github.com/zachpmanson/minecraftle/issues/34">this bug report</a> which contained a screenshot of the scores the day before.  Thank you very much <a href="https://github.com/suppergerrie2">suppergerrie2</a>!</p>
+<h3 id="cdn-vs-audio-files">CDN vs Audio Files</h3>
+<p>Back when Minecraftle was just a uni project, one of my teammates, Harrison Oates, added a button that would play in game audio from Minecraft.  This was cute and insignificant, to the point where I forgot it existed.  When I deployed on Vercel this became a problem since almost all my bandwidth (100GiB) was used by this single mp3 file! I removed this feature, but other static assets were going to use my remaining bandwidth.  I had to switch to running it on a new DigitalOcean droplet for the rest of the month.</p>
+<p>Hopefully this are the last updates Minecraftle will need for a long time!</p></article>
+
+    <hr />
+
+    <div class="meta">
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
+      
+
+      
+      <p class="backlinks"><span class="bold">Tags:</span>
+        
+        <a href="/tags#posts">#posts</a>
+        
+        </span>
+      </p>
+      
+
+      
+      <p>
+        <span class="backlinks">
+          <span class="bold">Posted:</span> 2024-04-08
+        </span>
+        
+        <span class="backlinks">
+          <span class="bold">Last update:</span> 2024-04-08 15:37:56 +1000
+        </span>
+        
+      </p>
+      
+    </div>
+  </main>
+  <footer>
+    <a href="mailto:zachpmanson@gmail.com?subject=On 'Minecraftle v2.0'">reply</a>
+    <a href="/cannot-simultaneously-fix-and-keep-job.-therefore-wont-fix.">random</a>
+    <a href="/recent-changes">updates</a>
+    <a href="/tags">tags</a>
+    <a href="/sitemap">sitemap</a>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Projects/Minecraftle/Minecraftle v2.0.md" class="desktop">edit</a>
+    <a href="https://github.com/pavo-etc/notes/edit/main/./notes/Projects/Minecraftle/Minecraftle v2.0.md" class="mobile">edit</a>
+  </footer>
+  
+</body>
+
+</html>
