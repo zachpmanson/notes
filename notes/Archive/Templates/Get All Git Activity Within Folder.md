@@ -8,5 +8,4 @@ for dir in "$repo_folder"/*/; do
         git log --after="$day 00:00" --before="$day 23:59?" --author="Zach"
     fi
 done
-
 ```
