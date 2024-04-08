@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Internet/Fediverse/Mastodon/Elk.md",
+                "file": "Projects/Minecraftle/Minecraftle v2.0.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Internet/Fediverse/Mastodon/Elk.md",
+                "file": "Projects/Minecraftle/Minecraftle v2.0.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Internet/Fediverse/Mastodon/Elk.md",
+                "file": "Projects/Minecraftle/Minecraftle v2.0.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Internet/Fediverse/Mastodon/Elk.md"
+                "file": "Projects/Minecraftle/Minecraftle v2.0.md"
               }
             }
           }
@@ -159,11 +159,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "68f7566c71bafca9",
   "lastOpenFiles": [
-    "Posts/Untitled.md",
-    "Notes/Internet/Fediverse/Mastodon/Elk.md",
+    "Posts/Planting a Flag in Wikipedia.md",
+    "Projects/Minecraftle/Minecraftle v2.0.md",
     "Meta/DNS.md",
+    "Projects/Minecraftle/Minecraftle v1.1.md",
+    "Notes/Internet/Fediverse/Mastodon/Elk.md",
+    "Posts/Untitled.md",
     "Notes/Internet/Fediverse/Mastodon/Mastodon.md",
     "Notes/Internet/Fediverse/Mastodon",
     "Notes/Software/Development.md",
@@ -182,13 +185,10 @@
     "Archive/Bookmarks/Articles.md",
     "Archive/Problems/Deploying Elk on Vercel.md",
     "Index.md",
-    "Projects/Minecraftle/Minecraftle v1.1.md",
     "Notes/Software/Exploits/XZ/XZ.md",
     "Archive/Folklore/Put yourself in Jia Tan's shoes.md",
     "Notes/Software/Programs/Obsidian/Obsidian Plugins.md",
     "Notes/Software/Programs/Obsidian/Obsidian.md",
-    "Archive/Bookmarks/Digital Gardens.md",
-    "Notes/Internet/Digital Garden.md",
     "Media/spotify-top-bar.png",
     "Notes/Software/Development/Kinds of Work",
     "Untitled",
