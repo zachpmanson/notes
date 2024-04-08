@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Templates/Get All Git Activity Within Folder.md",
+                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Templates/Get All Git Activity Within Folder.md",
+                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Templates/Get All Git Activity Within Folder.md",
+                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Templates/Get All Git Activity Within Folder.md"
+                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md"
               }
             }
           }
@@ -159,10 +159,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "68f7566c71bafca9",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Archive/Templates/Templates.md",
+    "Notes/Courses/UWA Computer Science/Chris McDonald.md",
+    "Archive/Lines.md",
     "Archive/Templates/Get All Git Activity Within Folder.md",
+    "Archive/Templates/Templates.md",
     "Projects/Minecraftle/Minecraftle v2.0.md",
     "Projects/Minecraftle/Minecraftle.md",
     "Posts/Planting a Flag in Wikipedia.md",
@@ -175,7 +177,6 @@
     "Notes/Software/Development.md",
     "Notes/Software/Design/Fun Design.md",
     "Media/ahnvn.png",
-    "Archive/Lines.md",
     "Notes/Software/Development/Web Development/React.md",
     "Notes/Software/Development/Web Development/Web Development.md",
     "Archive/Bookmarks/Websites.md",
@@ -188,7 +189,6 @@
     "Archive/Bookmarks/Articles.md",
     "Archive/Problems/Deploying Elk on Vercel.md",
     "Index.md",
-    "Notes/Software/Exploits/XZ/XZ.md",
     "Media/spotify-top-bar.png",
     "Notes/Software/Development/Kinds of Work",
     "Untitled",

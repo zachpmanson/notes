@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> Yea as long as you do all the work and watch all the lectures you’ll be chilling
+
+-- [seph](https://discord.com/channels/586127025228742656/586575812455563269/783525026573451334)
+
+---
+
 > XML is dead, the millennials’ best kill so far.
 
 -- [varjag](XML is dead, the millennials’ best kill so far.)
