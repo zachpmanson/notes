@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/Forum Threads.md",
+                "file": "Notes/Software/Design/Fun Design.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/Forum Threads.md",
+                "file": "Notes/Software/Design/Fun Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/Forum Threads.md",
+                "file": "Notes/Software/Design/Fun Design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/Forum Threads.md"
+                "file": "Notes/Software/Design/Fun Design.md"
               }
             }
           }
@@ -146,13 +146,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "ed51b6cee718740c",
   "lastOpenFiles": [
+    "Media/ahnvn.png",
+    "Notes/Software/Design/Fun Design.md",
+    "Archive/Lines.md",
+    "Notes/Software/Development/Web Development/React.md",
+    "Notes/Software/Development/Web Development/Web Development.md",
+    "Archive/Bookmarks/Websites.md",
+    "Projects/Projects.md",
+    "Projects/COVID-19 Tracker.md",
+    "Archive/Bookmarks/Forum Threads.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 01.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMI Chapter 02.md",
     "Archive/Bookmarks/Articles.md",
-    "Archive/Bookmarks/Websites.md",
     "Archive/Problems/Deploying Elk on Vercel.md",
     "Index.md",
     "Projects/Minecraftle/Minecraftle v1.1.md",
@@ -166,15 +174,7 @@
     "Notes/Language/Etymology/Gruntle.md",
     "Notes/Language/Language.md",
     "Archive/Problems/Markdown in HTML.md",
-    "Notes/Internet/Internet Standards/RSS.md",
-    "Notes/Software/Development/Non-Programming Languages/Markdown.md",
-    "Notes/Software/Development/Debugging.md",
-    "Notes/Software/Development/DateTime.md",
-    "Notes/Software/Development/Kinds of Problems.md",
-    "Notes/Software/Programs/Spotify/Spotify Design Decisions.md",
     "Media/spotify-top-bar.png",
-    "Posts/Imposter Syndrome Day 632.md",
-    "Notes/Software/Open Source.md",
     "Notes/Software/Development/Kinds of Work",
     "Untitled",
     "Media/sqiggle.png",
@@ -188,7 +188,6 @@
     "Notes/Software/Exploits/XZ",
     "Notes/Software/Exploits",
     "Media/blocks.svg",
-    "dotgrid-24G03-011513.svg",
     "Notes/Software/Development/Programming Languages/C++",
     "Notes/Software/Development/Kinds of Work",
     "Notes/Software/Intelligent Agents",

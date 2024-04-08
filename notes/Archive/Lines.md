@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> XML is dead, the millennials’ best kill so far.
+
+-- [varjag](XML is dead, the millennials’ best kill so far.)
+
+---
+
 > networking is actually an awkward, promiscuous and parasitic practice
 
 -- [[Feminist Server Manifesto]]

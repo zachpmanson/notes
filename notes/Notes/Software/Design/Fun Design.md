@@ -13,3 +13,7 @@ subtitle: Some little details I enjoy.
 the squiggle links on this site
 
 ![[sqiggle.png]]
+
+the comic strip design of [anhvn.com](https://anhvn.com/)
+
+![[ahnvn.png]]
