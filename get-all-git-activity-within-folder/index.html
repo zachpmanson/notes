@@ -12,7 +12,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: templates</title>
+  <title>notes: get all git activity within folder</title>
 </head>
 
 <body>
@@ -31,33 +31,6 @@
 
     <div class="nav-segments-container">
       <div class="nav-segments">
-        
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/archive" class="activated-link">Archive</a>
-          
-          
-          
-          
-          
-          <a href="/meta">Meta</a>
-          
-          
-          
-          <a href="/notes">Notes</a>
-          
-          
-          
-          <a href="/posts">Posts</a>
-          
-          
-          
-          <a href="/projects">Projects</a>
-          
-          
-        </div>
-        
-
         
 
         <div class="flex flex-col text-left nav-links">
@@ -92,18 +65,30 @@
         
 
         <div class="flex flex-col text-left nav-links">
+          <a href="/get-all-git-activity-within-folder" class="activated-link">Get All Git Activity Within Folder</a>
           
-          <a href="/get-all-git-activity-within-folder">Get All Git Activity Within Folder</a>
+          
+          
+          
           
           <a href="/next.js-api-validation-template">Next.js API Validation Template</a>
           
+          
+          
           <a href="/python-getopt()-template">Python getopt() Template</a>
+          
+          
           
           <a href="/reset-css-rules">Reset CSS Rules</a>
           
+          
+          
           <a href="/time-ago-function">Time Ago Function</a>
           
+          
         </div>
+        
+
         
       </div>
     </div>
@@ -112,13 +97,29 @@
   </nav>
   <main>
     <header>
-      <h1>Things I never want to write again.</h1>
+      <h1>Get All Git Activity Within Folder</h1>
     </header>
-    <article><p>A place for me to dump common idioms and templates, whether that be programming or otherwise.</p></article>
+    <article><div class="highlight"><pre><span></span><code><span class="nv">day</span><span class="o">=</span><span class="nv">$1</span>
+<span class="nv">repo_folder</span><span class="o">=</span>~/projects
+<span class="k">for</span><span class="w"> </span>dir<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$repo_folder</span><span class="s2">&quot;</span>/*/<span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">    </span><span class="c1"># Check if the directory is a git repository</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$dir</span><span class="s2">/.git&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">        </span><span class="nb">cd</span><span class="w"> </span><span class="nv">$dir</span>
+<span class="w">        </span>git<span class="w"> </span>log<span class="w"> </span>--after<span class="o">=</span><span class="s2">&quot;</span><span class="nv">$day</span><span class="s2"> 00:00&quot;</span><span class="w"> </span>--before<span class="o">=</span><span class="s2">&quot;</span><span class="nv">$day</span><span class="s2"> 23:59?&quot;</span><span class="w"> </span>--author<span class="o">=</span><span class="s2">&quot;Zach&quot;</span>
+<span class="w">    </span><span class="k">fi</span>
+<span class="k">done</span>
+</code></pre></div></article>
 
     <hr />
 
     <div class="meta">
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
       
 
       
@@ -127,13 +128,13 @@
     </div>
   </main>
   <footer>
-    <a href="mailto:zachpmanson@gmail.com?subject=On 'Templates'">reply</a>
-    <a href="/artificial-intelligence---a-modern-approach">random</a>
+    <a href="mailto:zachpmanson@gmail.com?subject=On 'Get All Git Activity Within Folder'">reply</a>
+    <a href="/spite-driven-development">random</a>
     <a href="/recent-changes">updates</a>
     <a href="/tags">tags</a>
     <a href="/sitemap">sitemap</a>
-    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Templates/Templates.md" class="desktop">edit</a>
-    <a href="https://github.com/pavo-etc/notes/edit/main/./notes/Archive/Templates/Templates.md" class="mobile">edit</a>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Templates/Get All Git Activity Within Folder.md" class="desktop">edit</a>
+    <a href="https://github.com/pavo-etc/notes/edit/main/./notes/Archive/Templates/Get All Git Activity Within Folder.md" class="mobile">edit</a>
   </footer>
   
 </body>
