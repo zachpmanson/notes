@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "2c7f48d4ddb64752",
+        "id": "652e510e7c02ee6a",
         "type": "tabs",
         "children": [
           {
-            "id": "ed51b6cee718740c",
+            "id": "350a7d7448786a51",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meta/DNS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "68f7566c71bafca9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Meta/DNS.md",
+                "file": "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/void vs. never.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Meta/DNS.md",
+                "file": "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/void vs. never.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Meta/DNS.md",
+                "file": "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/void vs. never.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Meta/DNS.md"
+                "file": "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/void vs. never.md"
               }
             }
           }
@@ -159,8 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "350a7d7448786a51",
   "lastOpenFiles": [
+    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
+    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/void vs. never.md",
+    "Archive/Archive.md",
     "Notes/Software/Programs/Elk.md",
     "Meta/DNS.md",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
@@ -186,9 +176,6 @@
     "Archive/Bookmarks/Forum Threads.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 01.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMI Chapter 02.md",
-    "Archive/Bookmarks/Articles.md",
-    "Archive/Problems/Deploying Elk on Vercel.md",
     "Media/spotify-top-bar.png",
     "Notes/Software/Development/Kinds of Work",
     "Untitled",
