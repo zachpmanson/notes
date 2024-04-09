@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "652e510e7c02ee6a",
+        "id": "a4c7ef6dfb7b72b5",
         "type": "tabs",
         "children": [
           {
-            "id": "350a7d7448786a51",
+            "id": "0f54fb57ceebefa5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Minecraftle/Minecraftle v2.0.md",
+                "file": "Notes/Miscellany/IKEA Hacks.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/Minecraftle/Minecraftle v2.0.md",
+                "file": "Notes/Miscellany/IKEA Hacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/Minecraftle/Minecraftle v2.0.md",
+                "file": "Notes/Miscellany/IKEA Hacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/Minecraftle/Minecraftle v2.0.md"
+                "file": "Notes/Miscellany/IKEA Hacks.md"
               }
             }
           }
@@ -146,8 +146,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "350a7d7448786a51",
+  "active": "0f54fb57ceebefa5",
   "lastOpenFiles": [
+    "Projects/Minecraftle/Minecraftle v2.0.md",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",
     "Notes/Software/Design/Fun Design.md",
@@ -162,7 +163,6 @@
     "Archive/Lines.md",
     "Archive/Templates/Get All Git Activity Within Folder.md",
     "Archive/Templates/Templates.md",
-    "Projects/Minecraftle/Minecraftle v2.0.md",
     "Projects/Minecraftle/Minecraftle.md",
     "Posts/Planting a Flag in Wikipedia.md",
     "Projects/Minecraftle/Minecraftle v1.1.md",
@@ -187,7 +187,6 @@
     "Notes/Software/Design",
     "Media/box.jpg",
     "Media/box 1.jpg",
-    "Media/bookshelf.jpg",
     "Notes/Software/Exploits/XZ",
     "Notes/Software/Exploits",
     "Notes/Software/Development/Programming Languages/C++",
