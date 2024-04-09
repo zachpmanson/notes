@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+                "file": "Meta/DNS.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+                "file": "Meta/DNS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+                "file": "Meta/DNS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md"
+                "file": "Meta/DNS.md"
               }
             }
           }
@@ -161,6 +161,7 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Notes/Courses/UWA Computer Science/Chris McDonald.md",
     "Archive/Lines.md",
     "Archive/Templates/Get All Git Activity Within Folder.md",
@@ -188,7 +189,6 @@
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMI Chapter 02.md",
     "Archive/Bookmarks/Articles.md",
     "Archive/Problems/Deploying Elk on Vercel.md",
-    "Index.md",
     "Media/spotify-top-bar.png",
     "Notes/Software/Development/Kinds of Work",
     "Untitled",
