@@ -47,7 +47,7 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	deployed instance. of my patched version of [[Elk]]
 
 
-- **[manson.de. ](https://manson.dev)**  
+- **[manson.dev](https://manson.dev)**  
   currently a directory forward to zachmanson.com, I intend to make it an email server + subdomain forward to zachmanson.com  
   trackstar
 
