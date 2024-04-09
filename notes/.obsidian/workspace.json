@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Design/Fun Design.md",
+                "file": "Projects/Minecraftle/Minecraftle v2.0.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Design/Fun Design.md",
+                "file": "Projects/Minecraftle/Minecraftle v2.0.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Design/Fun Design.md",
+                "file": "Projects/Minecraftle/Minecraftle v2.0.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Design/Fun Design.md"
+                "file": "Projects/Minecraftle/Minecraftle v2.0.md"
               }
             }
           }
@@ -146,8 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "350a7d7448786a51",
   "lastOpenFiles": [
+    "Media/mctl-routes.png",
+    "Media/ahnvn.png",
+    "Notes/Software/Design/Fun Design.md",
     "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/void vs. never.md",
     "Media/ahnvn.jpg",
     "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
@@ -167,8 +170,6 @@
     "Notes/Internet/Fediverse/Mastodon/Mastodon.md",
     "Notes/Internet/Fediverse/Mastodon",
     "Notes/Software/Development.md",
-    "Notes/Software/Design/Fun Design.md",
-    "Media/ahnvn.png",
     "Notes/Software/Development/Web Development/React.md",
     "Notes/Software/Development/Web Development/Web Development.md",
     "Archive/Bookmarks/Websites.md",

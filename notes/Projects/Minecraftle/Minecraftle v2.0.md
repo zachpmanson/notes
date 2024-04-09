@@ -21,6 +21,8 @@ I accidentally ran the migration script twice, once a few weeks prior to deploym
 
 ### CDN vs Audio Files
 
+![[mctl-routes.png]]
+
 Back when Minecraftle was just a uni project, one of my teammates, Harrison Oates, added a button that would play in game audio from Minecraft.  This was cute and insignificant, to the point where I forgot it existed.  When I deployed on Vercel this became a problem since almost all my bandwidth (100GiB) was used by this single mp3 file! I removed this feature, but other static assets were going to use my remaining bandwidth.  I had to switch to running it on a new DigitalOcean droplet for the rest of the month.
 
 Hopefully this are the last updates Minecraftle will need for a long time!
