@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/void vs. never.md",
+                "file": "Notes/Software/Design/Fun Design.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/void vs. never.md",
+                "file": "Notes/Software/Design/Fun Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/void vs. never.md",
+                "file": "Notes/Software/Design/Fun Design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/void vs. never.md"
+                "file": "Notes/Software/Design/Fun Design.md"
               }
             }
           }
@@ -146,10 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "350a7d7448786a51",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
     "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/void vs. never.md",
+    "Media/ahnvn.jpg",
+    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
     "Archive/Archive.md",
     "Notes/Software/Programs/Elk.md",
     "Meta/DNS.md",
@@ -175,7 +176,6 @@
     "Projects/COVID-19 Tracker.md",
     "Archive/Bookmarks/Forum Threads.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 01.md",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
     "Media/spotify-top-bar.png",
     "Notes/Software/Development/Kinds of Work",
     "Untitled",
@@ -189,7 +189,6 @@
     "Media/bookshelf.jpg",
     "Notes/Software/Exploits/XZ",
     "Notes/Software/Exploits",
-    "Media/blocks.svg",
     "Notes/Software/Development/Programming Languages/C++",
     "Notes/Software/Development/Kinds of Work",
     "Notes/Software/Intelligent Agents",

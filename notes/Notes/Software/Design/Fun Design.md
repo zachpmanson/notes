@@ -16,4 +16,4 @@ the squiggle links on this site
 
 the comic strip design of [anhvn.com](https://anhvn.com/)
 
-![[ahnvn.png]]
+![[ahnvn.jpg]]
