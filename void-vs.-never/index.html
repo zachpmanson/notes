@@ -12,7 +12,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: cursed typescript projects</title>
+  <title>notes: void vs. never</title>
 </head>
 
 <body>
@@ -49,13 +49,13 @@
         
 
         <div class="flex flex-col text-left nav-links">
-          <a href="/cursed-typescript-projects" class="activated-link">Cursed TypeScript Projects</a>
+          <a href="/void-vs.-never" class="activated-link">void vs. never</a>
+          
+          
+          <a href="/cursed-typescript-projects">Cursed TypeScript Projects</a>
           
           
           
-          
-          
-          <a href="/void-vs.-never">void vs. never</a>
           
           
         </div>
@@ -69,25 +69,36 @@
   </nav>
   <main>
     <header>
-      <h1>Cursed TypeScript Projects</h1>
+      <h1>void vs. never</h1>
     </header>
-    <article><p>Assorted abuse of TypeScript's type system.</p>
+    <article><blockquote>
 <ul>
-<li><a href="https://github.com/RuyiLi/cursed-typescript/blob/master/random/game-of-life.ts">Game of Life</a></li>
-<li><a href="https://www.richard-towers.com/2023/03/11/typescripting-the-technical-interview.html">N-Queens (TypeScripting the technical interview)</a></li>
-</ul></article>
+<li>A function that doesn't explicitly return a value <strong>implicitly returns</strong> the value <code>undefined</code> in JavaScript. Although we typically say that such a function "doesn't return anything", it returns. We usually ignore the return value in these cases. Such a function is inferred to have a <code>void</code> return type in TypeScript.</li>
+<li>A function that has a <code>never</code> return type <strong>never returns</strong>. It doesn't return <code>undefined</code>, either. The function doesn't have a normal completion, which means it throws an error or never finishes running at all.</li>
+</ul>
+</blockquote>
+<p><cite class="standalone"><a href="https://mariusschulz.com/blog/the-never-type-in-typescript#the-difference-between-never-and-void">Marius Shulz</a></cite></p>
+<blockquote>
+<p>Another important difference between <code>void</code> and <code>never</code> is how they interact with other types. <code>void</code> can be used as the return type for functions that return <code>undefined</code>, while <code>never</code> can be used as the return type for functions that throw errors or have infinite loops. However, <code>void</code> cannot be used as a subtype of other types, while <code>never</code> can be used as a subtype of all types.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://designtechworld.medium.com/never-vs-void-in-typescript-understanding-key-differences-1e5e22c57ea8">Sumit Kumar Singh</a></cite></p></article>
 
     <hr />
 
     <div class="meta">
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
       
 
       
       <p class="backlinks"><span class="bold">Tags:</span>
         
         <a href="/tags#javascript">#javascript</a>
-        
-        <a href="/tags#cursed">#cursed</a>
         
         </span>
       </p>
@@ -97,13 +108,13 @@
     </div>
   </main>
   <footer>
-    <a href="mailto:zachpmanson@gmail.com?subject=On 'Cursed TypeScript Projects'">reply</a>
-    <a href="/kinds-of-problems">random</a>
+    <a href="mailto:zachpmanson@gmail.com?subject=On 'void vs. never'">reply</a>
+    <a href="/deploying-elk-on-vercel">random</a>
     <a href="/recent-changes">updates</a>
     <a href="/tags">tags</a>
     <a href="/sitemap">sitemap</a>
-    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Cursed TypeScript Projects.md" class="desktop">edit</a>
-    <a href="https://github.com/pavo-etc/notes/edit/main/./notes/Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Cursed TypeScript Projects.md" class="mobile">edit</a>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Notes/Software/Development/Programming Languages/JavaScript/TypeScript/void vs. never.md" class="desktop">edit</a>
+    <a href="https://github.com/pavo-etc/notes/edit/main/./notes/Notes/Software/Development/Programming Languages/JavaScript/TypeScript/void vs. never.md" class="mobile">edit</a>
   </footer>
   
 </body>
