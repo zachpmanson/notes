@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
+                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,8 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 301.5024719238281,
-    "collapsed": true
+    "width": 301.5024719238281
   },
   "right": {
     "id": "b30ab2faf3f39acc",
@@ -123,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
+                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
+                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md"
+                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md"
               }
             }
           }
@@ -184,15 +183,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "584460885e2a8080",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Notes/Software/Programs/Docker/Docker.md",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMI Chapter 02.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 01.md",
+    "Notes/Software/Programs/Docker/Docker.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Notes/Courses/Courses.md",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMI Chapter 02.md",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 01.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Task Environments.md",
     "Notes/Miscellany/Process Box.md",
     "Notes/Miscellany/Things I Can Hold.md",
