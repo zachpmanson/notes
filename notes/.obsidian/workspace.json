@@ -13,13 +13,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Miscellany/IKEA Hacks.md",
+                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Task Environments.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "640461010d720df4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 01.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "584460885e2a8080",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "17b8778021ed477c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Software/Programs/Docker/Docker.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -48,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"open source\"",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -69,7 +106,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 301.5024719238281
+    "width": 301.5024719238281,
+    "collapsed": true
   },
   "right": {
     "id": "b30ab2faf3f39acc",
@@ -85,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Miscellany/IKEA Hacks.md",
+                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Miscellany/IKEA Hacks.md",
+                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Miscellany/IKEA Hacks.md"
+                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md"
               }
             }
           }
@@ -146,8 +184,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0f54fb57ceebefa5",
+  "active": "584460885e2a8080",
   "lastOpenFiles": [
+    "Notes/Software/Programs/Docker/Docker.md",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md",
+    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+    "Notes/Courses/Courses.md",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMI Chapter 02.md",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 01.md",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/Task Environments.md",
+    "Notes/Miscellany/Process Box.md",
+    "Notes/Miscellany/Things I Can Hold.md",
     "Projects/Minecraftle/Minecraftle v2.0.md",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",
@@ -158,7 +206,6 @@
     "Archive/Archive.md",
     "Notes/Software/Programs/Elk.md",
     "Meta/DNS.md",
-    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Notes/Courses/UWA Computer Science/Chris McDonald.md",
     "Archive/Lines.md",
     "Archive/Templates/Get All Git Activity Within Folder.md",
@@ -169,14 +216,6 @@
     "Posts/Untitled.md",
     "Notes/Internet/Fediverse/Mastodon/Mastodon.md",
     "Notes/Internet/Fediverse/Mastodon",
-    "Notes/Software/Development.md",
-    "Notes/Software/Development/Web Development/React.md",
-    "Notes/Software/Development/Web Development/Web Development.md",
-    "Archive/Bookmarks/Websites.md",
-    "Projects/Projects.md",
-    "Projects/COVID-19 Tracker.md",
-    "Archive/Bookmarks/Forum Threads.md",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 01.md",
     "Media/spotify-top-bar.png",
     "Notes/Software/Development/Kinds of Work",
     "Untitled",
