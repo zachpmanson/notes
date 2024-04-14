@@ -4,59 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "a4c7ef6dfb7b72b5",
+        "id": "a451622acd3d46be",
         "type": "tabs",
         "children": [
           {
-            "id": "0f54fb57ceebefa5",
+            "id": "ab7b06057169dc2a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Task Environments.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "640461010d720df4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 01.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "584460885e2a8080",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "17b8778021ed477c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Software/Programs/Docker/Docker.md",
+                "file": "Notes/Miscellany/Pens.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md",
+                "file": "Notes/Miscellany/Pens.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md",
+                "file": "Notes/Miscellany/Pens.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md"
+                "file": "Notes/Miscellany/Pens.md"
               }
             }
           }
@@ -183,13 +146,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "ab7b06057169dc2a",
   "lastOpenFiles": [
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMI Chapter 02.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 01.md",
     "Notes/Software/Programs/Docker/Docker.md",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Notes/Courses/Courses.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Task Environments.md",
