@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Miscellany/Pens.md",
+                "file": "Archive/Problems/Update Params without Scrolling To Top in Next.js.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Miscellany/Pens.md",
+                "file": "Archive/Problems/Update Params without Scrolling To Top in Next.js.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Miscellany/Pens.md",
+                "file": "Archive/Problems/Update Params without Scrolling To Top in Next.js.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Miscellany/Pens.md"
+                "file": "Archive/Problems/Update Params without Scrolling To Top in Next.js.md"
               }
             }
           }
@@ -148,6 +148,8 @@
   },
   "active": "ab7b06057169dc2a",
   "lastOpenFiles": [
+    "Notes/Miscellany/Pens.md",
+    "Archive/Problems/Update Params without Scrolling To Top in Next.js.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMI Chapter 02.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
@@ -175,8 +177,6 @@
     "Projects/Minecraftle/Minecraftle.md",
     "Posts/Planting a Flag in Wikipedia.md",
     "Projects/Minecraftle/Minecraftle v1.1.md",
-    "Posts/Untitled.md",
-    "Notes/Internet/Fediverse/Mastodon/Mastodon.md",
     "Notes/Internet/Fediverse/Mastodon",
     "Media/spotify-top-bar.png",
     "Notes/Software/Development/Kinds of Work",
