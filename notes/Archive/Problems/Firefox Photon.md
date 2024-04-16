@@ -2,7 +2,6 @@
 tags:
   - dirty-hacks
 ---
-
 Styling Firefox Proton to resemble Firefox Photon.
 
 Originally tested on Firefox 91, confirmed working on Firefox 104.
@@ -37,3 +36,4 @@ Firefox Proton brought many lovely features, but I deeply prefer the Photon tab 
 
 ## Links
  - [Source](https://superuser.com/questions/1653533/how-to-switch-back-to-firefox-old-style-of-tabs/1669549#1669549)
+ - [Someone doing it even better](https://github.com/black7375/Firefox-UI-Fix)
