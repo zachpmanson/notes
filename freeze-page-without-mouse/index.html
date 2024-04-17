@@ -12,7 +12,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: sticky elements</title>
+  <title>notes: freeze page without mouse</title>
 </head>
 
 <body>
@@ -65,7 +65,7 @@
         
 
         <div class="flex flex-col text-left nav-links">
-          <a href="/sticky-elements" class="activated-link">Sticky Elements</a>
+          <a href="/freeze-page-without-mouse" class="activated-link">Freeze Page without Mouse</a>
           
           
           <a href="/alembic-revision-collision">Alembic Revision Collision</a>
@@ -104,7 +104,6 @@
           
           
           
-          <a href="/freeze-page-without-mouse">Freeze Page without Mouse</a>
           
           
           
@@ -220,6 +219,7 @@
           
           
           
+          <a href="/sticky-elements">Sticky Elements</a>
           
           
           
@@ -269,43 +269,39 @@
   </nav>
   <main>
     <header>
-      <h1>Sticky Elements</h1>
+      <h1>Freeze Page without Mouse</h1>
     </header>
-    <article><ol>
-<li>Pick element Child to be <code>position: sticky</code>.  Ensure it has a one of the following set: <code>top,bottom,left,right</code></li>
-<li>Ensure it has a parent that has <code>position: relative</code></li>
-<li>Ensure that all elements between the parent and child have <code>overflow: visible</code><ul>
-<li><strong>Next.js sets <code>overflow:disabled</code> on the entire document by default</strong></li>
-<li>Easiest to diagnose this by selecting child in Inspect Element, filter styles for "overflow" and click up repeatedly to traverse up the DOM.</li>
-</ul>
-</li>
-</ol></article>
+    <article><p>For selected finnicky elements in a HTML page.</p>
+<p>Put this in the console:</p>
+<div class="highlight"><pre><span></span><code>setTimeout( ()=&gt;{ debugger }, 3000)
+</code></pre></div>
+<p>From <a href="https://old.reddit.com/r/webdev/comments/17r6tpi/is_it_possible_to_freeze_the_web_page_before/">this reddit thread</a>. ^d94112</p></article>
 
     <hr />
 
     <div class="meta">
       
-
-      
-      <p class="backlinks"><span class="bold">Tags:</span>
+      <p class="backlinks"><span class="bold">Incoming:</span>
         
-        <a href="/tags#nextjs">#nextjs</a>
+        <a href="/recent-changes">Recent Changes</a>
         
         </span>
       </p>
       
 
       
+
+      
     </div>
   </main>
   <footer>
-    <a href="mailto:zachpmanson@gmail.com?subject=On 'Sticky Elements'">reply</a>
-    <a href="/run-latest-npx-script-version">random</a>
+    <a href="mailto:zachpmanson@gmail.com?subject=On 'Freeze Page without Mouse'">reply</a>
+    <a href="/macos-recovery-in-australia">random</a>
     <a href="/recent-changes">updates</a>
     <a href="/tags">tags</a>
     <a href="/sitemap">sitemap</a>
-    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Sticky Elements.md" class="desktop">edit</a>
-    <a href="https://github.com/pavo-etc/notes/edit/main/./notes/Archive/Problems/Sticky Elements.md" class="mobile">edit</a>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Freeze Page without Mouse.md" class="desktop">edit</a>
+    <a href="https://github.com/pavo-etc/notes/edit/main/./notes/Archive/Problems/Freeze Page without Mouse.md" class="mobile">edit</a>
   </footer>
   
 </body>
