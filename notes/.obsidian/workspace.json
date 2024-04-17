@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/Firefox Photon.md",
+                "file": "Archive/Problems/Freeze Page without Mouse.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Problems/Firefox Photon.md",
+                "file": "Archive/Problems/Freeze Page without Mouse.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Problems/Firefox Photon.md",
+                "file": "Archive/Problems/Freeze Page without Mouse.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Problems/Firefox Photon.md"
+                "file": "Archive/Problems/Freeze Page without Mouse.md"
               }
             }
           }
@@ -148,6 +148,8 @@
   },
   "active": "ab7b06057169dc2a",
   "lastOpenFiles": [
+    "Archive/Problems/Firefox Photon.md",
+    "Archive/Problems/Freeze Page without Mouse.md",
     "Archive/Problems/Update Params without Scrolling To Top in Next.js.md",
     "Notes/Miscellany/Pens.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md",
@@ -175,8 +177,6 @@
     "Archive/Templates/Get All Git Activity Within Folder.md",
     "Archive/Templates/Templates.md",
     "Projects/Minecraftle/Minecraftle.md",
-    "Posts/Planting a Flag in Wikipedia.md",
-    "Projects/Minecraftle/Minecraftle v1.1.md",
     "Notes/Internet/Fediverse/Mastodon",
     "Media/spotify-top-bar.png",
     "Notes/Software/Development/Kinds of Work",
