@@ -37,3 +37,4 @@ Firefox Proton brought many lovely features, but I deeply prefer the Photon tab 
 ## Links
  - [Source](https://superuser.com/questions/1653533/how-to-switch-back-to-firefox-old-style-of-tabs/1669549#1669549)
  - [Someone doing it even better](https://github.com/black7375/Firefox-UI-Fix)
+ - [Firefox UI History](https://github.com/black7375/Firefox-UI-Fix/wiki/%5BArticle%5D-0.-Firefox-UI-UX-history)
