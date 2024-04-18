@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Internet/Fediverse/Fediverse Family Tree.md",
+                "file": "Archive/Bookmarks/Archives.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Internet/Fediverse/Fediverse Family Tree.md",
+                "file": "Archive/Bookmarks/Archives.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Internet/Fediverse/Fediverse Family Tree.md",
+                "file": "Archive/Bookmarks/Archives.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Internet/Fediverse/Fediverse Family Tree.md"
+                "file": "Archive/Bookmarks/Archives.md"
               }
             }
           }
@@ -148,6 +148,9 @@
   },
   "active": "ab7b06057169dc2a",
   "lastOpenFiles": [
+    "Archive/Archive.md",
+    "Notes/Internet/Digital Garden.md",
+    "Notes/Internet/Fediverse/Fediverse Family Tree.md",
     "Archive/Problems/Freeze Page without Mouse.md",
     "Archive/Problems/Firefox Photon.md",
     "Archive/Problems/Update Params without Scrolling To Top in Next.js.md",
@@ -169,14 +172,11 @@
     "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/void vs. never.md",
     "Media/ahnvn.jpg",
     "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
-    "Archive/Archive.md",
     "Notes/Software/Programs/Elk.md",
     "Meta/DNS.md",
     "Notes/Courses/UWA Computer Science/Chris McDonald.md",
     "Archive/Lines.md",
     "Archive/Templates/Get All Git Activity Within Folder.md",
-    "Archive/Templates/Templates.md",
-    "Projects/Minecraftle/Minecraftle.md",
     "Notes/Internet/Fediverse/Mastodon",
     "Media/spotify-top-bar.png",
     "Notes/Software/Development/Kinds of Work",
