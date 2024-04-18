@@ -2,6 +2,7 @@ For keeping track of [[software]] forks in the [[fediverse]], and why they exist
 
 - Misskey
 	- [Calckey](https://joinfirefish.org/) (later renamed to the equally bad name, firefish), more feature rich?
+		- [IceShrimp](https://iceshrimp.dev/iceshrimp/iceshrimp), Yet Another Misskey Fork with the "goal of increasing stability and performance"
 	- [Sharkey](https://joinsharkey.org), generally follows upstream
 - Pleroma
 	- [Akkoma](https://akkoma.social/), "is a specialised fork of Pleroma. It is faster-paced in development and aligns itself more closely with Misskey than Pleroma mainline"
