@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Folklore/Stevey's Google Platforms Rant.md",
+                "file": "Notes/Internet/Internet.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Folklore/Stevey's Google Platforms Rant.md",
+                "file": "Notes/Internet/Internet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Folklore/Stevey's Google Platforms Rant.md",
+                "file": "Notes/Internet/Internet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Folklore/Stevey's Google Platforms Rant.md"
+                "file": "Notes/Internet/Internet.md"
               }
             }
           }
@@ -146,10 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ab7b06057169dc2a",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Archive/Bookmarks/Archives.md",
     "Archive/Folklore/Stevey's Google Platforms Rant.md",
+    "Archive/Bookmarks/Archives.md",
     "Archive/Archive.md",
     "Notes/Internet/Digital Garden.md",
     "Notes/Internet/Fediverse/Fediverse Family Tree.md",
