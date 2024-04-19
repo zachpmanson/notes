@@ -1,4 +1,4 @@
-Steve Yegge's internal memo about Google's development culture versus Amazon's.  I find the part about Bezos' big mandate the most interesting.  I came across this reading [Vicki Boykis' post on AWS](https://vickiboykis.com/2018/01/28/working-with-aws/), which links to this [Google+ post](https://web.archive.org/web/20180519183200/https://plus.google.com/+RipRowan/posts/eVeouesvaVX). I think it was posted on 2011-10-11.
+Steve Yegge's internal memo about Google's development culture versus Amazon's.  He wrote it intending it to be only visible to Google employees, but accidentally made it public.  I find the part about Bezos' big mandate the most interesting.  I came across this reading [Vicki Boykis' post on AWS](https://vickiboykis.com/2018/01/28/working-with-aws/), which links to this [Google+ post](https://web.archive.org/web/20180519183200/https://plus.google.com/+RipRowan/posts/eVeouesvaVX). I think it was posted on 2011-10-11.
 
 ---
 
