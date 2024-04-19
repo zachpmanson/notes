@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/Archives.md",
+                "file": "Archive/Folklore/Stevey's Google Platforms Rant.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/Archives.md",
+                "file": "Archive/Folklore/Stevey's Google Platforms Rant.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/Archives.md",
+                "file": "Archive/Folklore/Stevey's Google Platforms Rant.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/Archives.md"
+                "file": "Archive/Folklore/Stevey's Google Platforms Rant.md"
               }
             }
           }
@@ -148,6 +148,8 @@
   },
   "active": "ab7b06057169dc2a",
   "lastOpenFiles": [
+    "Archive/Bookmarks/Archives.md",
+    "Archive/Folklore/Stevey's Google Platforms Rant.md",
     "Archive/Archive.md",
     "Notes/Internet/Digital Garden.md",
     "Notes/Internet/Fediverse/Fediverse Family Tree.md",
@@ -175,8 +177,6 @@
     "Notes/Software/Programs/Elk.md",
     "Meta/DNS.md",
     "Notes/Courses/UWA Computer Science/Chris McDonald.md",
-    "Archive/Lines.md",
-    "Archive/Templates/Get All Git Activity Within Folder.md",
     "Notes/Internet/Fediverse/Mastodon",
     "Media/spotify-top-bar.png",
     "Notes/Software/Development/Kinds of Work",
