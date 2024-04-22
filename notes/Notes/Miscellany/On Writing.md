@@ -12,4 +12,4 @@
 
 -- [George Orwell, Politics and the English Language](https://gutenberg.net.au/ebooks02/0200151h.html)
 
-I'd like to make an editor mode that doesn't allow backspace. Fully seperate editing and writing processes.  I do recognise I could just use paper and [[pens]].
+I'd like to make an editor mode that doesn't allow backspace. Fully seperate editing and writing processes.  I do recognise I could just use paper and [[pens]].  This idea is somewhat inspired by the [DocWriter](https://jsomers.net/blog/docwriter), a wonderful [[Hacks|hack]].
