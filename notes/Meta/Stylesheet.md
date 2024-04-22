@@ -45,6 +45,8 @@ This is an untyped codeblock
 let codeblock: TypeScript = "this should have code highlighting"
 ```
 
+This text has some [^1] footnotes[^2].
+
 ---
 
 Ordered list:
@@ -109,3 +111,6 @@ External image:
 Chronologised tag:
 
 <ochrs:chrono:posts>
+
+[^1]: This is a footnote.
+[^2]: This is also a footnote.

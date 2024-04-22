@@ -415,6 +415,7 @@ md_extensions = [
     "pymdownx.tilde",
     "markdown_checklist.extension",
     CiteExtension(),
+    "footnotes",
 ]
 
 ignore_names: list[str] = [".obsidian", "Media", ".trash"]

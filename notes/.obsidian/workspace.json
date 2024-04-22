@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Templates/Git Activity in Multiple Folders.md",
+                "file": "Meta/Stylesheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Templates/Git Activity in Multiple Folders.md",
+                "file": "Meta/Stylesheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Templates/Git Activity in Multiple Folders.md",
+                "file": "Meta/Stylesheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Templates/Git Activity in Multiple Folders.md"
+                "file": "Meta/Stylesheet.md"
               }
             }
           }
@@ -147,8 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ab7b06057169dc2a",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Projects/Ochrs/Ochrs.md",
+    "Archive/Templates/Git Activity in Multiple Folders.md",
     "Notes/Internet/Internet.md",
     "Archive/Folklore/Stevey's Google Platforms Rant.md",
     "Archive/Bookmarks/Archives.md",
@@ -176,8 +177,6 @@
     "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/void vs. never.md",
     "Media/ahnvn.jpg",
     "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
-    "Notes/Software/Programs/Elk.md",
-    "Meta/DNS.md",
     "Notes/Internet/Fediverse/Mastodon",
     "Media/spotify-top-bar.png",
     "Notes/Software/Development/Kinds of Work",
