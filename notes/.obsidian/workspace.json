@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Development Methologies/Development Methodologies.md",
+                "file": "Notes/Software/Development/Development Methodologies/Development Methodologies.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Development Methologies/Development Methodologies.md",
+                "file": "Notes/Software/Development/Development Methodologies/Development Methodologies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Development Methologies/Development Methodologies.md",
+                "file": "Notes/Software/Development/Development Methodologies/Development Methodologies.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Development Methologies/Development Methodologies.md"
+                "file": "Notes/Software/Development/Development Methodologies/Development Methodologies.md"
               }
             }
           }
@@ -145,15 +145,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "ab7b06057169dc2a",
   "lastOpenFiles": [
     "Projects/Minecraftle/Minecraftle.md",
     "Projects/Minecraftle/How Minecraft Stores Crafting Recipes.md",
     "Notes/Software/Programs/Git/Git Bare Repositories.md",
     "Archive/Folklore/No dogs were harmed in the making of this app.md",
-    "Notes/Software/Development/Development Methologies/Resume Driven Development.md",
+    "Notes/Software/Development/Development Methodologies/Resume Driven Development.md",
     "Notes/Language/Etymology/Slug.md",
-    "Notes/Software/Development/Development Methologies/Spite Driven Development.md",
+    "Notes/Software/Development/Development Methodologies/Spite Driven Development.md",
     "Archive/Folklore/Stevey's Google Platforms Rant.md",
     "Archive/Folklore/The Case of the 500-Mile Email.md",
     "Archive/Folklore/Thoughts On Flash.md",
@@ -167,7 +167,7 @@
     "Notes/Software/Development/Programming Languages/C/C.md",
     "Archive/Folklore/A Conspiracy To Kill IE6.md",
     "Notes/Software/Programs/Docker/Docker.md",
-    "Notes/Software/Development/Development Methologies/Development Methodologies.md",
+    "Notes/Software/Development/Development Methodologies/Development Methodologies.md",
     "Meta/Stylesheet.md",
     "Projects/Ochrs/Ochrs.md",
     "Archive/Templates/Git Activity in Multiple Folders.md",
