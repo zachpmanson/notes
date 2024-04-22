@@ -111,6 +111,13 @@
 <p><a href="/ochrs">Ochrs</a> has a few additions on top of normal <a href="https://python-markdown.github.io/">Python Markdown</a>. These are the extensions being used by the parser:</p>
 <p>fenced_code, BacklinkExtension, CodeHiliteExtension, md_in_html, toc, tables, pymdownx.superfences, pymdownx.tilde, markdown_checklist.extension, CiteExtension, footnotes</p>
 <p>Most of these are officially supported, some are from <a href="https://facelessuser.github.io/pymdown-extensions/">pymdownx</a>, some are from the <a href="https://github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions">third party extension list</a>, and some are custom extensions <a href="https://github.com/pavo-etc/notes/tree/main/generator/extensions">included as part of Ochrs</a>.</p>
+<h2 id="footnotes">Footnotes</h2>
+<p>The footnotes extension allows plain HTML style footnotes to be automatically generated, and hopefully parsed by <a href="/rss">RSS</a> readers.  The syntax is:</p>
+<div class="highlight"><pre><span></span><code>Some text with a footnote[^1] and a footnote with a label [^label]
+
+[^1]: The footnote
+[^label]: Footnote with label
+</code></pre></div>
 <h3 id="citations">Citations</h3>
 <p>CiteExtention is a custom extension that turns <code>-- Name Here</code> into <code>&lt;cite&gt;Name here&lt;/cite&gt;</code>.</p>
 <h2 id="backlinks">Backlinks</h2>
@@ -150,6 +157,8 @@
         
         <a href="/ochrs-2.0">Ochrs 2.0</a>
         
+        <a href="/recent-changes">Recent Changes</a>
+        
         <a href="/stylesheet">Stylesheet</a>
         
         </span>
@@ -163,7 +172,7 @@
   </main>
   <footer>
     <a href="mailto:zachpmanson@gmail.com?subject=On 'Ochrs Syntax'">reply</a>
-    <a href="/techaro">random</a>
+    <a href="/price-of-chatgpts-api-vs-human">random</a>
     <a href="/recent-changes">updates</a>
     <a href="/posts">posts</a>
     <a href="/tags">tags</a>
