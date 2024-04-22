@@ -28,7 +28,6 @@
         </svg>
       </a>
     </div>
-
     <div class="nav-segments-container">
       <div class="nav-segments">
         
@@ -97,27 +96,6 @@
       </div>
     </div>
 
-
-  </nav>
-  <main>
-    <header>
-      <h1>Minecraftle v2.0</h1>
-    </header>
-    <article><p><a href="/minecraftle">Minecraftle</a> blew up!  At the time of writing it has had over 1 million players and seems to still be increasing.  Seems like it became popular thanks to a few YouTube videos and TikToks. This huge spike in players revealed how poorly made it all was.</p>
-<p>The stats page in particular was poorly done.  Originally I had made the schema as simple as possible and only stored the record of each game in one big table. This worked for small player counts, but meant calculating rankings was quadratic so the stats page eventually 10+ seconds to load.  I only discovered this was happening when the database for <a href="/penultimate-guitar">Penultimate Guitar</a> would be killed to allocate more resources every time someone loaded the stats page.  </p>
-<p>Since rewriting the database meant I'd need to get rid of the entire backend, I decided this was the time to move away from Flask and static JavaScript and port it to Next.js.  I had been meaning to do this for a while.  The Vanilla JS I had been using prior was very janky and poorly made.  I was still unemployed at this time and had plenty of free time since most of my friends had left Melbourne to see their families for Christmas.</p>
-<p>The new version of Minecraftle is deployed now on Vercel with a proper instance of Postgres for storing user scores. Rankings are still slow to calculate since all million+ players must be ordered, but they are calculated once per hour via a cronjob that refreshes a materialised view so the pageload is fast.  I'm sure I could do something clever here, chunking the calculations or having them incrementally calculated when a new game score is submitted, but this works for now.</p>
-<p>Alongside this rewrite I was able to add a few long requested features, like a clear button.</p>
-<h2 id="mistakes">Mistakes</h2>
-<h3 id="database-broke">Database Broke</h3>
-<p>I accidentally ran the migration script twice, once a few weeks prior to deployment to generate some test data and once on the day I deployed.  I forgot about the initial run in the intervening weeks.  Making matters worse, the second run used the old dump of the database, meaning that all scores were double what they were 3 weeks prior.  This was painful to diagnose as some scores had gone up while others had gone down.  I was eventually able to figure out what had happened thanks to <a href="https://github.com/zachpmanson/minecraftle/issues/34">this bug report</a> which contained a screenshot of the scores the day before.  Thank you very much <a href="https://github.com/suppergerrie2">suppergerrie2</a>!</p>
-<h3 id="cdn-vs-audio-files">CDN vs Audio Files</h3>
-<p><img alt="" src="/media/mctl-routes.png" /></p>
-<p>Back when Minecraftle was just a uni project, one of my teammates, Harrison Oates, added a button that would play in game audio from Minecraft.  This was cute and insignificant, to the point where I forgot it existed.  When I deployed on Vercel this became a problem since almost all my bandwidth (100GiB) was used by this single mp3 file! I removed this feature, but other static assets were going to use my remaining bandwidth.  I had to switch to running it on a new DigitalOcean droplet for the rest of the month.</p>
-<p>Hopefully this are the last updates Minecraftle will need for a long time!</p></article>
-
-    <hr />
-
     <div class="meta">
       
       <p class="backlinks"><span class="bold">Incoming:</span>
@@ -150,10 +128,31 @@
       </p>
       
     </div>
+  </nav>
+  <main>
+    <header>
+      <h1>Minecraftle v2.0</h1>
+    </header>
+    <article><p><a href="/minecraftle">Minecraftle</a> blew up!  At the time of writing it has had over 1 million players and seems to still be increasing.  Seems like it became popular thanks to a few YouTube videos and TikToks. This huge spike in players revealed how poorly made it all was.</p>
+<p>The stats page in particular was poorly done.  Originally I had made the schema as simple as possible and only stored the record of each game in one big table. This worked for small player counts, but meant calculating rankings was quadratic so the stats page eventually 10+ seconds to load.  I only discovered this was happening when the database for <a href="/penultimate-guitar">Penultimate Guitar</a> would be killed to allocate more resources every time someone loaded the stats page.  </p>
+<p>Since rewriting the database meant I'd need to get rid of the entire backend, I decided this was the time to move away from Flask and static JavaScript and port it to Next.js.  I had been meaning to do this for a while.  The Vanilla JS I had been using prior was very janky and poorly made.  I was still unemployed at this time and had plenty of free time since most of my friends had left Melbourne to see their families for Christmas.</p>
+<p>The new version of Minecraftle is deployed now on Vercel with a proper instance of Postgres for storing user scores. Rankings are still slow to calculate since all million+ players must be ordered, but they are calculated once per hour via a cronjob that refreshes a materialised view so the pageload is fast.  I'm sure I could do something clever here, chunking the calculations or having them incrementally calculated when a new game score is submitted, but this works for now.</p>
+<p>Alongside this rewrite I was able to add a few long requested features, like a clear button.</p>
+<h2 id="mistakes">Mistakes</h2>
+<h3 id="database-broke">Database Broke</h3>
+<p>I accidentally ran the migration script twice, once a few weeks prior to deployment to generate some test data and once on the day I deployed.  I forgot about the initial run in the intervening weeks.  Making matters worse, the second run used the old dump of the database, meaning that all scores were double what they were 3 weeks prior.  This was painful to diagnose as some scores had gone up while others had gone down.  I was eventually able to figure out what had happened thanks to <a href="https://github.com/zachpmanson/minecraftle/issues/34">this bug report</a> which contained a screenshot of the scores the day before.  Thank you very much <a href="https://github.com/suppergerrie2">suppergerrie2</a>!</p>
+<h3 id="cdn-vs-audio-files">CDN vs Audio Files</h3>
+<p><img alt="" src="/media/mctl-routes.png" /></p>
+<p>Back when Minecraftle was just a uni project, one of my teammates, Harrison Oates, added a button that would play in game audio from Minecraft.  This was cute and insignificant, to the point where I forgot it existed.  When I deployed on Vercel this became a problem since almost all my bandwidth (100GiB) was used by this single mp3 file! I removed this feature, but other static assets were going to use my remaining bandwidth.  I had to switch to running it on a new DigitalOcean droplet for the rest of the month.</p>
+<p>Hopefully this are the last updates Minecraftle will need for a long time!</p></article>
+
+    <hr />
+
+
   </main>
   <footer>
     <a href="mailto:zachpmanson@gmail.com?subject=On 'Minecraftle v2.0'">reply</a>
-    <a href="/life-of-an-oracle-developer">random</a>
+    <a href="/fediverse">random</a>
     <a href="/recent-changes">updates</a>
     <a href="/tags">tags</a>
     <a href="/sitemap">sitemap</a>

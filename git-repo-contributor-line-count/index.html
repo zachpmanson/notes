@@ -28,7 +28,6 @@
         </svg>
       </a>
     </div>
-
     <div class="nav-segments-container">
       <div class="nav-segments">
         
@@ -265,18 +264,6 @@
       </div>
     </div>
 
-
-  </nav>
-  <main>
-    <header>
-      <h1>Git Repo Contributor Line Count</h1>
-    </header>
-    <article><div class="highlight"><pre><span></span><code>git<span class="w"> </span>log<span class="w"> </span>--no-merges<span class="w"> </span>--pretty<span class="o">=</span>format:%an<span class="w"> </span>--numstat<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;/./ &amp;&amp; !author { author = $0; next } author { ins[author] += $1; del[author] += $2 } /^$/ { author = &quot;&quot;; next } END { for (a in ins) { printf &quot;%10d %10d %10d %s\n&quot;, ins[a] - del[a], ins[a], del[a], a } }&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-rn
-</code></pre></div>
-<p>From <a href="https://stackoverflow.com/a/43147048">this StackOverflow answer</a>.</p></article>
-
-    <hr />
-
     <div class="meta">
       
 
@@ -291,10 +278,22 @@
 
       
     </div>
+  </nav>
+  <main>
+    <header>
+      <h1>Git Repo Contributor Line Count</h1>
+    </header>
+    <article><div class="highlight"><pre><span></span><code>git<span class="w"> </span>log<span class="w"> </span>--no-merges<span class="w"> </span>--pretty<span class="o">=</span>format:%an<span class="w"> </span>--numstat<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;/./ &amp;&amp; !author { author = $0; next } author { ins[author] += $1; del[author] += $2 } /^$/ { author = &quot;&quot;; next } END { for (a in ins) { printf &quot;%10d %10d %10d %s\n&quot;, ins[a] - del[a], ins[a], del[a], a } }&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-rn
+</code></pre></div>
+<p>From <a href="https://stackoverflow.com/a/43147048">this StackOverflow answer</a>.</p></article>
+
+    <hr />
+
+
   </main>
   <footer>
     <a href="mailto:zachpmanson@gmail.com?subject=On 'Git Repo Contributor Line Count'">reply</a>
-    <a href="/interviewing-for-canonical">random</a>
+    <a href="/a-conspiracy-to-kill-ie6">random</a>
     <a href="/recent-changes">updates</a>
     <a href="/tags">tags</a>
     <a href="/sitemap">sitemap</a>
