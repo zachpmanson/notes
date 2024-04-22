@@ -54,8 +54,6 @@ nav {
   gap: 0 1rem;
   border-bottom: 1px solid var(--primary);
   padding: 0 1rem 0 1rem;
-  max-height: 5.5rem;
-  overflow: scroll;
 
   .main-icon {
     width: 3.5rem;
@@ -107,6 +105,7 @@ nav {
     padding-bottom: 0.25rem;
     gap: 0.5rem;
 
+    max-height: 5.5rem;
     max-width: 35ch;
     min-width: 10ch;
     width: max-content;
@@ -124,19 +123,13 @@ nav {
   }
 }
 
-nav:hover {
+nav:hover .nav-links {
   max-height: 30rem;
   transition: max-height 0.15s ease-in;
 }
 
 .meta {
   padding: 0 1rem;
-  flex-grow: 1;
-  text-align: right;
-
-  .backlinks {
-    justify-content: flex-end;
-  }
 }
 
 h1 {
