@@ -2,4 +2,4 @@
 
 -- [James Somers](https://jsomers.net/i-should-have-loved-biology/)
 
-I love the phrase "thin deep slices" for learning.  This is also in [[Lines]].  This page exists so I can come back to it later.
+I love the phrase "thin deep slices" for learning.  This is also in [[Lines]].  This page exists so I can come back to it later, I want to think about this more.

@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Miscellany/Thin Deep Slices.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Miscellany/Thin Deep Slices.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Miscellany/Thin Deep Slices.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Lines.md"
+                "file": "Notes/Miscellany/Thin Deep Slices.md"
               }
             }
           }
@@ -158,10 +158,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "590d758b92c79bf8",
   "lastOpenFiles": [
-    "Notes/Miscellany/Thin Deep Slices.md",
     "Archive/Lines.md",
+    "Notes/Miscellany/Thin Deep Slices.md",
     "Notes/Software/Development/Development Methodologies/Development Methodologies.md",
     "Notes/Software/Development/Kinds of Work/Glue Work.md",
     "Projects/Minecraftle/Minecraftle.md",
