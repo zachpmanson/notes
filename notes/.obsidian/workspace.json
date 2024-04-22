@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Internet/Internet Standards/RSS.md",
+                "file": "Projects/Ochrs/Ochrs Syntax.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Internet/Internet Standards/RSS.md",
+                "file": "Projects/Ochrs/Ochrs Syntax.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Internet/Internet Standards/RSS.md",
+                "file": "Projects/Ochrs/Ochrs Syntax.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Internet/Internet Standards/RSS.md"
+                "file": "Projects/Ochrs/Ochrs Syntax.md"
               }
             }
           }
@@ -160,6 +160,7 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Internet/Internet Standards/RSS.md",
     "Notes/Miscellany/On Writing.md",
     "Archive/Bookmarks/Hacks.md",
     "Notes/Language/Language.md",
@@ -185,7 +186,6 @@
     "Notes/Software/Programs/Git/Git.md",
     "Archive/Folklore/Folklore.md",
     "Archive/Folklore/Factory Factory Factory.md",
-    "Archive/Folklore/Cannot simultaneously fix and keep job. Therefore, won't fix..md",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",
     "Media/ahnvn.jpg",

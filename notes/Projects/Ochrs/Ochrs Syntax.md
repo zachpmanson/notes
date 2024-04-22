@@ -6,6 +6,17 @@
 
 Most of these are officially supported, some are from [pymdownx](https://facelessuser.github.io/pymdown-extensions/), some are from the [third party extension list](https://github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions), and some are custom extensions [included as part of Ochrs](https://github.com/pavo-etc/notes/tree/main/generator/extensions).
 
+## Footnotes
+
+The footnotes extension allows plain HTML style footnotes to be automatically generated, and hopefully parsed by [[RSS]] readers.  The syntax is:
+
+```
+Some text with a footnote[^1] and a footnote with a label [^label]
+
+[^1]: The footnote
+[^label]: Footnote with label
+```
+
 ### Citations
 
 CiteExtention is a custom extension that turns `-- Name Here` into `<cite>Name here</cite>`.
