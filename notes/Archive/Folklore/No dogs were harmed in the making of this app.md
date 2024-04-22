@@ -1,4 +1,4 @@
-An essay on the pressures of software engineering compared to other fields, written by [Shawn McKay](https://shmck.substack.com/p/no-dogs-were-harmed-in-the-making), posted to Substack on 2023-11-03.
+An essay on the pressures of [[software]] engineering compared to other fields, written by [Shawn McKay](https://shmck.substack.com/p/no-dogs-were-harmed-in-the-making), posted to Substack on 2023-11-03.
 
 --- 
 # No dogs were harmed in the making of this app

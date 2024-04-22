@@ -8,7 +8,7 @@ Docker is a system for running virtual machines called containers.
 
 - provides consistent, contained environment on your local machine
 - containers are lightweight, portable, and boot fast
-- useful for hardware agnostic software [[development]]
+- useful for hardware agnostic software [[Development]]
 - can be used for non-interactive application execution
 
 ## Comparison to Traditional VMs

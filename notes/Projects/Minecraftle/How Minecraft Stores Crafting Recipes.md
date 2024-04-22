@@ -4,7 +4,7 @@ date: 2022-03-31
 tags:
   - posts
 ---
-As of Minecraft version 1.18.1, there are 739 crafting recipes in the game...depending on how you count. This little rabbithole is something I fell into during a meeting for a group project this week. The project tasks us with building a "daily puzzle game" in vein of Wordle, as my web development unit likes the idea of looking anachronistic in a few years.
+As of Minecraft version 1.18.1, there are 739 crafting recipes in the game...depending on how you count. This little rabbithole is something I fell into during a meeting for a group project this week. The project tasks us with building a "daily puzzle game" in vein of Wordle, as my [[web development]] unit likes the idea of looking anachronistic in a few years.
 
 The meeting was very preliminary, essentially just getting to know one another and bounce some ideas off each other. One idea I had been mulling over was "Wordle but with for Minecraft crafting recipes", which requires no explanation for players of these two games (which among my peers includes everyone). My group immediately latched onto the idea, but acknowledged the scope of including all Minecraft recipes would be challenge, both in terms of game design and actually acquiring them.
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meta/Stylesheet.md",
+                "file": "Notes/Software/Development/Development Methologies/Development Methodologies.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Check if the directory is a git repository",
+                "query": "development",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Meta/Stylesheet.md",
+                "file": "Notes/Software/Development/Development Methologies/Development Methodologies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Meta/Stylesheet.md",
+                "file": "Notes/Software/Development/Development Methologies/Development Methodologies.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Meta/Stylesheet.md"
+                "file": "Notes/Software/Development/Development Methologies/Development Methodologies.md"
               }
             }
           }
@@ -133,8 +133,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -148,35 +147,35 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Projects/Minecraftle/Minecraftle.md",
+    "Projects/Minecraftle/How Minecraft Stores Crafting Recipes.md",
+    "Notes/Software/Programs/Git/Git Bare Repositories.md",
+    "Archive/Folklore/No dogs were harmed in the making of this app.md",
+    "Notes/Software/Development/Development Methologies/Resume Driven Development.md",
+    "Notes/Language/Etymology/Slug.md",
+    "Notes/Software/Development/Development Methologies/Spite Driven Development.md",
+    "Archive/Folklore/Stevey's Google Platforms Rant.md",
+    "Archive/Folklore/The Case of the 500-Mile Email.md",
+    "Archive/Folklore/Thoughts On Flash.md",
+    "Notes/Software/Unix/Unix.md",
+    "Notes/Software/Development/Web Development/Web Development.md",
+    "Notes/Software/Programs/Git/Git.md",
+    "Notes/Software/Development/Development.md",
+    "Archive/Folklore/Folklore.md",
+    "Archive/Folklore/Factory Factory Factory.md",
+    "Archive/Folklore/Cannot simultaneously fix and keep job. Therefore, won't fix..md",
+    "Notes/Software/Development/Programming Languages/C/C.md",
+    "Archive/Folklore/A Conspiracy To Kill IE6.md",
+    "Notes/Software/Programs/Docker/Docker.md",
+    "Notes/Software/Development/Development Methologies/Development Methodologies.md",
+    "Meta/Stylesheet.md",
     "Projects/Ochrs/Ochrs.md",
     "Archive/Templates/Git Activity in Multiple Folders.md",
     "Notes/Internet/Internet.md",
-    "Archive/Folklore/Stevey's Google Platforms Rant.md",
     "Archive/Bookmarks/Archives.md",
-    "Archive/Archive.md",
-    "Notes/Internet/Digital Garden.md",
-    "Notes/Internet/Fediverse/Fediverse Family Tree.md",
-    "Archive/Problems/Freeze Page without Mouse.md",
-    "Archive/Problems/Firefox Photon.md",
-    "Archive/Problems/Update Params without Scrolling To Top in Next.js.md",
-    "Notes/Miscellany/Pens.md",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMI Chapter 02.md",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 01.md",
-    "Notes/Software/Programs/Docker/Docker.md",
-    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
-    "Notes/Courses/Courses.md",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/Task Environments.md",
-    "Notes/Miscellany/Process Box.md",
-    "Notes/Miscellany/Things I Can Hold.md",
-    "Projects/Minecraftle/Minecraftle v2.0.md",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",
-    "Notes/Software/Design/Fun Design.md",
-    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/void vs. never.md",
     "Media/ahnvn.jpg",
-    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
     "Notes/Internet/Fediverse/Mastodon",
     "Media/spotify-top-bar.png",
     "Notes/Software/Development/Kinds of Work",
