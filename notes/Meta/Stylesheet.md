@@ -45,7 +45,7 @@ This is an untyped codeblock
 let codeblock: TypeScript = "this should have code highlighting"
 ```
 
-This text has some [^1] footnotes[^2].
+This text has some [^1] footnotes[^2]. This footnote could even have a name[^citation needed]
 
 ---
 
@@ -114,3 +114,4 @@ Chronologised tag:
 
 [^1]: This is a footnote.
 [^2]: This is also a footnote.
+[^citation needed]: this needs citation
