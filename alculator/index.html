@@ -28,6 +28,7 @@
         </svg>
       </a>
     </div>
+
     <div class="nav-segments-container">
       <div class="nav-segments">
         
@@ -104,6 +105,25 @@
       </div>
     </div>
 
+
+  </nav>
+  <main>
+    <header>
+      <h1>An alternate frontend for Dan Murphy's.</h1>
+    </header>
+    <article><p><a href="https://alculator.zachmanson.com">Alculator</a> was written in the waning days of 2022 to determine the cheapest drinks at Dan Murphy's, per standard drink. The site is build with Next.js and hosted on Vercel.</p>
+<p>If you click on the title bar there is a hidden interface used for debugging and finding data anomalies.</p>
+<h2 id="dans-api">Dan's API</h2>
+<p>Dan Murphy's website is a bloated Angular project but the public APIs used by the site have little to no security. After some mild poking around I was able to determine the routes needed and the general schema in use. Annoyingly, their APIs seemed designed around serving data that the frontend could display with almost no modification, rather than serving data in a logical format.</p>
+<p>For example, for any given product, the site will send a JSON object.  This will contain 3 different prices for the product for the different pack sizes you can purchase them in.  These are labelled <code>caseprice</code>, <code>singleprice</code>, and <code>inanysixprice</code>. Case price, understably, represents the price of a case.  A case of Gage Roads Pipe Dreams Coastal Lager Bottles may have a caseprice of $31.55, but the only way to know how many bottles are in this case are in a field called <code>caseprice.Message</code>.  This is actually a string, that <em>usually</em> says something like "case (24)", when it should obviously just be an associated int called something like <code>caseprice.units</code>.</p>
+<p><code>singleprice</code> and <code>inanysixprice</code> are even worse, as they are used semi-interchangably. <code>singleprice</code> tends to represent the price of a single bottle, and <code>inanysixprice</code> tends to represent the price of a single bottle in a pack of 6.  Althought sometimes it's a pack of 4.  Or 8.  When <code>singleprice</code> isn't undefined, <code>singleprice</code> sometimes refers to the price of a pack of 6.  The only way to know for sure is by checking if <code>singleprice?.PackType === "Pack"</code> or <code>singleprice?.PackType === "Bottle"</code>.  And of course, when <code>singleprice</code> does mean a pack, the number of units is <em>usually</em> stored in a string.</p>
+<p>This is all in service of avoiding frontend rendering logic as much as possible.  Perhaps this is why their API server is so horrendously slow. It can take minutes to return a list of 500 drinks, and times out easily.  To get all of their products (1000+ beers, 6000+ red wines) in my script I needed to sequentially chain queries in batches of 100 drinks.</p>
+<p>The data itself is riddled with mistakes an inconsistencies. "Standard Drinks" is inconsistently used in packs, where usually it represents a single unit and <a href="https://www.danmurphys.com.au/product/808932">occasionally it represents the sum of all the units</a>.  Sometimes fields are just completely wrong (<a href="https://www.danmurphys.com.au/product/194571">White Bay Brewing Alcohol Volume especially bad</a>), or use values for bottles of different sizes (<a href="https://www.danmurphys.com.au/product/907223">350mL bottle with 11 standards</a>). These products are collected in the <a href="https://github.com/pavo-etc/alculator/blob/main/science/blacklist.json"><code>blacklist.json</code></a> file and ignored by the script that downloads the catalogue.</p>
+<p><a href="https://github.com/pavo-etc/alculator/blob/main/science/api.js">The final script</a> is warty and takes about 15 minutes to run, but converts the data to a sane schema.  This script is run daily via GitHub Action, and the new data is directly stored in JSON files and committed to the repo.  This is inefficient, but meant I didn't have to mess around with databases in my deployment.  I do hope to one day set up a proper database for this.</p>
+<p>The source code is available on <a href="https://github.com/pavo-etc/alculator">GitHub</a>.</p></article>
+
+    <hr />
+
     <div class="meta">
       
       <p class="backlinks"><span class="bold">Incoming:</span>
@@ -139,29 +159,10 @@
 
       
     </div>
-  </nav>
-  <main>
-    <header>
-      <h1>An alternate frontend for Dan Murphy's.</h1>
-    </header>
-    <article><p><a href="https://alculator.zachmanson.com">Alculator</a> was written in the waning days of 2022 to determine the cheapest drinks at Dan Murphy's, per standard drink. The site is build with Next.js and hosted on Vercel.</p>
-<p>If you click on the title bar there is a hidden interface used for debugging and finding data anomalies.</p>
-<h2 id="dans-api">Dan's API</h2>
-<p>Dan Murphy's website is a bloated Angular project but the public APIs used by the site have little to no security. After some mild poking around I was able to determine the routes needed and the general schema in use. Annoyingly, their APIs seemed designed around serving data that the frontend could display with almost no modification, rather than serving data in a logical format.</p>
-<p>For example, for any given product, the site will send a JSON object.  This will contain 3 different prices for the product for the different pack sizes you can purchase them in.  These are labelled <code>caseprice</code>, <code>singleprice</code>, and <code>inanysixprice</code>. Case price, understably, represents the price of a case.  A case of Gage Roads Pipe Dreams Coastal Lager Bottles may have a caseprice of $31.55, but the only way to know how many bottles are in this case are in a field called <code>caseprice.Message</code>.  This is actually a string, that <em>usually</em> says something like "case (24)", when it should obviously just be an associated int called something like <code>caseprice.units</code>.</p>
-<p><code>singleprice</code> and <code>inanysixprice</code> are even worse, as they are used semi-interchangably. <code>singleprice</code> tends to represent the price of a single bottle, and <code>inanysixprice</code> tends to represent the price of a single bottle in a pack of 6.  Althought sometimes it's a pack of 4.  Or 8.  When <code>singleprice</code> isn't undefined, <code>singleprice</code> sometimes refers to the price of a pack of 6.  The only way to know for sure is by checking if <code>singleprice?.PackType === "Pack"</code> or <code>singleprice?.PackType === "Bottle"</code>.  And of course, when <code>singleprice</code> does mean a pack, the number of units is <em>usually</em> stored in a string.</p>
-<p>This is all in service of avoiding frontend rendering logic as much as possible.  Perhaps this is why their API server is so horrendously slow. It can take minutes to return a list of 500 drinks, and times out easily.  To get all of their products (1000+ beers, 6000+ red wines) in my script I needed to sequentially chain queries in batches of 100 drinks.</p>
-<p>The data itself is riddled with mistakes an inconsistencies. "Standard Drinks" is inconsistently used in packs, where usually it represents a single unit and <a href="https://www.danmurphys.com.au/product/808932">occasionally it represents the sum of all the units</a>.  Sometimes fields are just completely wrong (<a href="https://www.danmurphys.com.au/product/194571">White Bay Brewing Alcohol Volume especially bad</a>), or use values for bottles of different sizes (<a href="https://www.danmurphys.com.au/product/907223">350mL bottle with 11 standards</a>). These products are collected in the <a href="https://github.com/pavo-etc/alculator/blob/main/science/blacklist.json"><code>blacklist.json</code></a> file and ignored by the script that downloads the catalogue.</p>
-<p><a href="https://github.com/pavo-etc/alculator/blob/main/science/api.js">The final script</a> is warty and takes about 15 minutes to run, but converts the data to a sane schema.  This script is run daily via GitHub Action, and the new data is directly stored in JSON files and committed to the repo.  This is inefficient, but meant I didn't have to mess around with databases in my deployment.  I do hope to one day set up a proper database for this.</p>
-<p>The source code is available on <a href="https://github.com/pavo-etc/alculator">GitHub</a>.</p></article>
-
-    <hr />
-
-
   </main>
   <footer>
     <a href="mailto:zachpmanson@gmail.com?subject=On 'Alculator'">reply</a>
-    <a href="/forum-threads">random</a>
+    <a href="/bash">random</a>
     <a href="/recent-changes">updates</a>
     <a href="/tags">tags</a>
     <a href="/sitemap">sitemap</a>

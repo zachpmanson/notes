@@ -28,6 +28,7 @@
         </svg>
       </a>
     </div>
+
     <div class="nav-segments-container">
       <div class="nav-segments">
         
@@ -264,6 +265,20 @@
       </div>
     </div>
 
+
+  </nav>
+  <main>
+    <header>
+      <h1>JavaScript YYYY-MM-DD in Local Time</h1>
+    </header>
+    <article><p>The <a href="/javascript">JavaScript</a> <a href="/datetime">datetime</a> library is anemic.  If you need the current date in the user's locale written in YYYY-MM-DD, use this fun hack:</p>
+<div class="highlight"><pre><span></span><code>let currentDate = new Date().toLocaleString(&quot;sv&quot;).slice(0, 10);
+</code></pre></div>
+<p>"sv" means Sweden, and in Sweden the locale string is formatted "2023-11-05 00:18:41".</p>
+<p>Found this solution on <a href="https://stackoverflow.com/a/58614322">StackOverflow by Tom</a> when making <a href="/minecraftle">Minecraftle</a> work across timezones.</p></article>
+
+    <hr />
+
     <div class="meta">
       
 
@@ -280,24 +295,10 @@
 
       
     </div>
-  </nav>
-  <main>
-    <header>
-      <h1>JavaScript YYYY-MM-DD in Local Time</h1>
-    </header>
-    <article><p>The <a href="/javascript">JavaScript</a> <a href="/datetime">datetime</a> library is anemic.  If you need the current date in the user's locale written in YYYY-MM-DD, use this fun hack:</p>
-<div class="highlight"><pre><span></span><code>let currentDate = new Date().toLocaleString(&quot;sv&quot;).slice(0, 10);
-</code></pre></div>
-<p>"sv" means Sweden, and in Sweden the locale string is formatted "2023-11-05 00:18:41".</p>
-<p>Found this solution on <a href="https://stackoverflow.com/a/58614322">StackOverflow by Tom</a> when making <a href="/minecraftle">Minecraftle</a> work across timezones.</p></article>
-
-    <hr />
-
-
   </main>
   <footer>
     <a href="mailto:zachpmanson@gmail.com?subject=On 'JavaScript YYYY-MM-DD in Local Time'">reply</a>
-    <a href="/pejorative">random</a>
+    <a href="/linguistic-concepts">random</a>
     <a href="/recent-changes">updates</a>
     <a href="/tags">tags</a>
     <a href="/sitemap">sitemap</a>

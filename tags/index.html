@@ -28,6 +28,7 @@
         </svg>
       </a>
     </div>
+
     <div class="nav-segments-container">
       <div class="nav-segments">
         
@@ -104,30 +105,7 @@
       </div>
     </div>
 
-    <div class="meta">
-      
-      <p class="backlinks"><span class="bold">Incoming:</span>
-        
-        <a href="/github-pages-redirection">GitHub Pages Redirection</a>
-        
-        <a href="/">Index</a>
-        
-        <a href="/markdown">Markdown</a>
-        
-        <a href="/ochrs">Ochrs</a>
-        
-        <a href="/ochrs-syntax">Ochrs Syntax</a>
-        
-        <a href="/rss">RSS</a>
-        
-        </span>
-      </p>
-      
 
-      
-
-      
-    </div>
   </nav>
   <main>
     <header>
@@ -467,11 +445,34 @@
 
     <hr />
 
+    <div class="meta">
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+        
+        <a href="/github-pages-redirection">GitHub Pages Redirection</a>
+        
+        <a href="/">Index</a>
+        
+        <a href="/markdown">Markdown</a>
+        
+        <a href="/ochrs">Ochrs</a>
+        
+        <a href="/ochrs-syntax">Ochrs Syntax</a>
+        
+        <a href="/rss">RSS</a>
+        
+        </span>
+      </p>
+      
 
+      
+
+      
+    </div>
   </main>
   <footer>
     <a href="mailto:zachpmanson@gmail.com?subject=On 'Tags'">reply</a>
-    <a href="/christ-mcdonald">random</a>
+    <a href="/ochrs-syntax">random</a>
     <a href="/recent-changes">updates</a>
     <a href="/tags">tags</a>
     <a href="/sitemap">sitemap</a>
@@ -479,7 +480,11 @@
     <a href="https://github.com/pavo-etc/notes/edit/main/./notes/Meta/Tags.md" class="mobile">edit</a>
   </footer>
   
-  <script>{ { node["script"] } }</script>
+  <script>
+        let tag = window.location.hash.slice(1);
+        let details = document.getElementById(tag).parentElement.parentElement; // id is attached to h2, not details
+        details.open = true;
+    </script>
   
 </body>
 
