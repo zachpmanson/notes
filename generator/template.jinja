@@ -28,7 +28,6 @@
         </svg>
       </a>
     </div>
-
     <div class="nav-segments-container">
       <div class="nav-segments">
         {% if piblings != None %}
@@ -68,16 +67,6 @@
       </div>
     </div>
 
-
-  </nav>
-  <main>
-    <header>
-      <h1>{{subtitle}}</h1>
-    </header>
-    <article>{{node["body"]}}</article>
-
-    <hr />
-
     <div class="meta">
       {% if node["backlinks"] != None and len(node["backlinks"]) > 0 %}
       <p class="backlinks"><span class="bold">Incoming:</span>
@@ -110,6 +99,16 @@
       </p>
       {% endif %}
     </div>
+  </nav>
+  <main>
+    <header>
+      <h1>{{subtitle}}</h1>
+    </header>
+    <article>{{node["body"]}}</article>
+
+    <hr />
+
+
   </main>
   <footer>
     <a href="mailto:zachpmanson@gmail.com?subject=On '{{title}}'">reply</a>
@@ -121,7 +120,7 @@
     <a href="https://github.com/pavo-etc/notes/edit/main/{{node['breadcrumb_path']}}" class="mobile">edit</a>
   </footer>
   {% if node["script"] != None %}
-  <script>{{ node["script"] }}</script>
+  <script>{ { node["script"] } }</script>
   {% endif %}
 </body>
 

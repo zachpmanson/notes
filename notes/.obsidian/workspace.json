@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Internet/Internet.md",
+                "file": "Archive/Templates/Git Activity in Multiple Folders.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Check if the directory is a git repository",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Internet/Internet.md",
+                "file": "Archive/Templates/Git Activity in Multiple Folders.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Internet/Internet.md",
+                "file": "Archive/Templates/Git Activity in Multiple Folders.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Internet/Internet.md"
+                "file": "Archive/Templates/Git Activity in Multiple Folders.md"
               }
             }
           }
@@ -146,8 +147,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "ab7b06057169dc2a",
   "lastOpenFiles": [
+    "Notes/Internet/Internet.md",
     "Archive/Folklore/Stevey's Google Platforms Rant.md",
     "Archive/Bookmarks/Archives.md",
     "Archive/Archive.md",
@@ -176,7 +178,6 @@
     "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
     "Notes/Software/Programs/Elk.md",
     "Meta/DNS.md",
-    "Notes/Courses/UWA Computer Science/Chris McDonald.md",
     "Notes/Internet/Fediverse/Mastodon",
     "Media/spotify-top-bar.png",
     "Notes/Software/Development/Kinds of Work",

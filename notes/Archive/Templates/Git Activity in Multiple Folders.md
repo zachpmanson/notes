@@ -1,3 +1,11 @@
+---
+subtitle: A template for listing all the commits you did on a certain date.
+date: 2024-04-22
+tags:
+  - posts
+---
+A script I like to drop into my projects folders to see what I was working on for a given day.
+
 ```sh
 day=$1
 repo_folder=~/projects
