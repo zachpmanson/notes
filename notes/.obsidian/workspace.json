@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Language/Language.md",
+                "file": "Notes/Miscellany/On Writing.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Language/Language.md",
+                "file": "Notes/Miscellany/On Writing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Language/Language.md",
+                "file": "Notes/Miscellany/On Writing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Language/Language.md"
+                "file": "Notes/Miscellany/On Writing.md"
               }
             }
           }
@@ -160,6 +160,7 @@
   },
   "active": "590d758b92c79bf8",
   "lastOpenFiles": [
+    "Notes/Language/Language.md",
     "Notes/Software/Development/Development.md",
     "Notes/Software/Development/DateTime.md",
     "Notes/Software/Machine Learning/Generative Models/Generative Models.md",
@@ -185,7 +186,6 @@
     "Archive/Folklore/Cannot simultaneously fix and keep job. Therefore, won't fix..md",
     "Notes/Software/Development/Programming Languages/C/C.md",
     "Archive/Folklore/A Conspiracy To Kill IE6.md",
-    "Notes/Software/Programs/Docker/Docker.md",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",
     "Media/ahnvn.jpg",
