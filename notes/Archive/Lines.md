@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> a physicist stares at the ceiling while an undergraduate, high off internet forums, explains that Buddhism anticipated quantum theory
+
+-- [Paul Ford](https://www.wired.com/story/own-future-artificial-intelligence-read-shakespeare/)
+
+---
+
 > I am an English major to death. (You know us not by what we’ve read but by what we are ashamed not to have read.)
 
 -- [Paul Ford](https://www.wired.com/story/own-future-artificial-intelligence-read-shakespeare/)
