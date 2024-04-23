@@ -13,3 +13,7 @@
 -- [George Orwell, Politics and the English Language](https://gutenberg.net.au/ebooks02/0200151h.html)
 
 I'd like to make an editor mode that doesn't allow backspace. Fully seperate editing and writing processes.  I do recognise I could just use paper and [[pens]].  This idea is somewhat inspired by the [DocWriter](https://jsomers.net/blog/docwriter), a wonderful [[Hacks|hack]].
+
+> Tellers of stories with ink on paper, not that they matter any more, have been either swoopers or bashers. Swoopers write a story quickly, higgledy-piggledy, crinkum-crankum, any which way. Then they go over it again painstakingly, fixing everything that is just plain awful or doesn’t work. Bashers go one sentence at a time, getting it exactly right before they go on to the next one. When they’re done they’re done.
+
+-- Kurt Vonnegut
