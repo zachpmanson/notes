@@ -4,3 +4,4 @@
 - Obsidian Git, a pretty great [[Git]] client that attaches itself to Obsidian
 - Obsidian Linter, provides a very customisable linter
 - Obsidian Commander, allows any palette command to be added as a shortcut to any panel
+	- Currently I only use this to add a shortcut to the `Git: Create Backup` command
