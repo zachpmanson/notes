@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> I am an English major to death. (You know us not by what we’ve read but by what we are ashamed not to have read.)
+
+-- [Paul Ford](https://www.wired.com/story/own-future-artificial-intelligence-read-shakespeare/)
+
+---
+
 > Everyone falls into creative ruts, but two people rarely do so at the same time.
 
 -- [James Somers](https://www.newyorker.com/magazine/2018/12/10/the-friendship-that-made-google-huge)

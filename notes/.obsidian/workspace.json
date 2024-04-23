@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/Articles.md",
+                "file": "Archive/Lines.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/Articles.md",
+                "file": "Archive/Lines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/Articles.md",
+                "file": "Archive/Lines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/Articles.md"
+                "file": "Archive/Lines.md"
               }
             }
           }
@@ -159,8 +159,9 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "eb96d36141d38637",
   "lastOpenFiles": [
+    "Archive/Bookmarks/Articles.md",
     "Archive/Lines.md",
     "Notes/Software/Development/Non-Programming Languages/Markdown.md",
     "Archive/Bookmarks/Hacks.md",
@@ -186,7 +187,6 @@
     "Notes/Software/Development/Development Methodologies/Development Methodologies.md",
     "Notes/Software/Development/Kinds of Work/Glue Work.md",
     "Projects/Minecraftle/Minecraftle.md",
-    "Projects/Minecraftle/How Minecraft Stores Crafting Recipes.md",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",
     "Media/ahnvn.jpg",
