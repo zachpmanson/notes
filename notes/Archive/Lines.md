@@ -5,6 +5,14 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> Imagine a flashy spaceship lands in your backyard. The door opens and you are invited to investigate everything to see what you can learn. The technology is clearly millions of years beyond what we can make.
+> 
+> This is biology.
+
+-- Bert Hubert, [“Our Amazing Immune System”](https://berthub.eu/articles/posts/immune-system/)
+
+---
+
 > The world of computing, I came to learn, is vast but organized almost geologically, as if deposited in layers
 
 -- [James Somers](https://www.newyorker.com/magazine/2023/11/20/a-coder-considers-the-waning-days-of-the-craft)

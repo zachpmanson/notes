@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/Hacks.md",
+                "file": "Notes/Software/Development/Non-Programming Languages/Markdown.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/Hacks.md",
+                "file": "Archive/Lines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/Hacks.md",
+                "file": "Archive/Lines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/Hacks.md"
+                "file": "Archive/Lines.md"
               }
             }
           }
@@ -160,6 +161,8 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Development/Non-Programming Languages/Markdown.md",
+    "Archive/Bookmarks/Hacks.md",
     "Archive/Problems/Hacking Sagemcom Router Admin Account.md",
     "Notes/Miscellany/Thin Deep Slices.md",
     "hacks].md",
@@ -176,7 +179,6 @@
     "Untitled.md",
     "Projects/Ochrs/Ochrs Syntax.md",
     "Notes/Internet/Internet Standards/RSS.md",
-    "Archive/Bookmarks/Hacks.md",
     "Notes/Language/Language.md",
     "Notes/Software/Development/Development.md",
     "Notes/Software/Development/DateTime.md",
@@ -185,7 +187,6 @@
     "Notes/Software/Development/Kinds of Work/Glue Work.md",
     "Projects/Minecraftle/Minecraftle.md",
     "Projects/Minecraftle/How Minecraft Stores Crafting Recipes.md",
-    "Notes/Software/Programs/Git/Git Bare Repositories.md",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",
     "Media/ahnvn.jpg",
