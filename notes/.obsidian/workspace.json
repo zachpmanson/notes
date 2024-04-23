@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Miscellany/Thin Deep Slices.md",
+                "file": "Archive/Bookmarks/Hacks.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Programs/Obsidian/Obsidian Plugins.md",
+                "file": "Archive/Lines.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "development",
+                "query": "N",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Programs/Obsidian/Obsidian Plugins.md",
+                "file": "Archive/Bookmarks/Hacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Programs/Obsidian/Obsidian Plugins.md",
+                "file": "Archive/Bookmarks/Hacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Programs/Obsidian/Obsidian Plugins.md"
+                "file": "Archive/Bookmarks/Hacks.md"
               }
             }
           }
@@ -161,7 +160,10 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Archive/Problems/Hacking Sagemcom Router Admin Account.md",
     "Notes/Miscellany/Thin Deep Slices.md",
+    "hacks].md",
+    "Archive/Lines.md",
     "Notes/Software/Programs/Obsidian/Obsidian Plugins.md",
     "Notes/Software/Unix/macOS/Making macOS Useable.md",
     "Notes/Software/Unix/macOS/macOS CLI Tools.md",
@@ -179,14 +181,11 @@
     "Notes/Software/Development/Development.md",
     "Notes/Software/Development/DateTime.md",
     "Notes/Software/Machine Learning/Generative Models/Generative Models.md",
-    "Archive/Lines.md",
     "Notes/Software/Development/Development Methodologies/Development Methodologies.md",
     "Notes/Software/Development/Kinds of Work/Glue Work.md",
     "Projects/Minecraftle/Minecraftle.md",
     "Projects/Minecraftle/How Minecraft Stores Crafting Recipes.md",
     "Notes/Software/Programs/Git/Git Bare Repositories.md",
-    "Archive/Folklore/No dogs were harmed in the making of this app.md",
-    "Notes/Software/Development/Development Methodologies/Resume Driven Development.md",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",
     "Media/ahnvn.jpg",
