@@ -10,6 +10,7 @@ tags:
 - [Glow](https://macwright.com/2018/08/28/glow)
 - [The Ultimate Retaliation: Pranking My Roommate With Targeted Facebook Ads](https://ghostinfluence.com/the-ultimate-retaliation-pranking-my-roommate-with-targeted-facebook-ads/)
 - [An Unbelievable Demo](https://www.brendangregg.com/blog/2021-06-04/an-unbelievable-demo.html)
+- [The Friendship That Made Google Huge](https://www.newyorker.com/magazine/2018/12/10/the-friendship-that-made-google-huge)
 
 ## Relationships
 
