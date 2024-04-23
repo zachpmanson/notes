@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Ochrs/Ochrs Syntax.md",
+                "file": "Notes/Miscellany/Miscellany.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/Ochrs/Ochrs Syntax.md",
+                "file": "Notes/Miscellany/Miscellany.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/Ochrs/Ochrs Syntax.md",
+                "file": "Notes/Miscellany/Miscellany.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/Ochrs/Ochrs Syntax.md"
+                "file": "Notes/Miscellany/Miscellany.md"
               }
             }
           }
@@ -158,8 +158,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "590d758b92c79bf8",
   "lastOpenFiles": [
+    "Notes/Miscellany/Sewing.md",
+    "Notes/Miscellany/Miscellany.md",
+    "Notes/Miscellany/Thin Deep Slices.md",
+    "Untitled.md",
+    "Projects/Ochrs/Ochrs Syntax.md",
     "Notes/Internet/Internet Standards/RSS.md",
     "Notes/Miscellany/On Writing.md",
     "Archive/Bookmarks/Hacks.md",
@@ -167,7 +172,6 @@
     "Notes/Software/Development/Development.md",
     "Notes/Software/Development/DateTime.md",
     "Notes/Software/Machine Learning/Generative Models/Generative Models.md",
-    "Notes/Miscellany/Thin Deep Slices.md",
     "Archive/Lines.md",
     "Notes/Software/Development/Development Methodologies/Development Methodologies.md",
     "Notes/Software/Development/Kinds of Work/Glue Work.md",
@@ -182,10 +186,6 @@
     "Archive/Folklore/The Case of the 500-Mile Email.md",
     "Archive/Folklore/Thoughts On Flash.md",
     "Notes/Software/Unix/Unix.md",
-    "Notes/Software/Development/Web Development/Web Development.md",
-    "Notes/Software/Programs/Git/Git.md",
-    "Archive/Folklore/Folklore.md",
-    "Archive/Folklore/Factory Factory Factory.md",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",
     "Media/ahnvn.jpg",
