@@ -1,0 +1,15 @@
+Facebooks announcing that its metrics were flawed and hugely over-inflating video engagement on its platform, a change that caused many publications to pivot their businesses towards video and leading [many to ruin](https://slate.com/technology/2018/10/facebook-online-video-pivot-metrics-false.html?ref=wheresyoured.at).  I am keeping a copy of the [original website](https://www.facebook.com/business/news/facebook-video-metrics-update) because it is already beginning to decay.
+
+---
+
+Many of you may have seen the reports about our video metric miscalculation – I want to provide further clarity on the issue.
+
+About a month ago, we found an error in the way we calculate one of the video metrics on our dashboard – average duration of video viewed. The metric should have reflected the total time spent watching a video divided by the total number of people who played the video. But it didn’t – it reflected the total time spent watching a video divided by only the number of “views” of a video (that is, when the video was watched for three or more seconds). And so the miscalculation overstated this metric. While this is only one of the many metrics marketers look at, we take any mistake seriously.
+
+As soon as we discovered the discrepancy, we fixed it. We informed our partners and made sure to put a notice in the product itself so that anyone who went into their dashboard could understand our error. We have also reviewed our other video metrics on the dashboard and have found that this has no impact on video numbers we have shared in the past, such as time spent watching video or the number of video views. We want our clients to know that this miscalculation has not and will not going forward have an impact on billing or how media mix models value their Facebook video investments.
+
+But this isn’t just about this error. This is about how seriously we take our partners’ commitment to our platform, and how their investments with us wholly depend on the transparency with which we communicate. We know we can’t have true partnerships with our clients unless we are upfront and honest with them, including when we make mistakes like this one. Our clients’ trust and belief in our metrics is essential to us and we have to earn that trust. That is why we also give marketers choice by offering third-party video verification options with companies like Nielsen and Moat. We want marketers to measure video with us in the way they feel most comfortable.
+
+We sincerely apologize for the issues this has created for our clients. This error should not stand in the way of our ultimate goal, which is to do what’s in the best interest of our partners and their business growth. We can only be successful if we’re providing clients with the tools to drive their business forward, and we’ll continue to deliver on that promise.
+
+_David Fischer - VP, Business and Marketing Partnerships_
