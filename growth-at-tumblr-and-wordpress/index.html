@@ -12,7 +12,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: jsx, react native, and typescript</title>
+  <title>notes: growth at tumblr and wordpress</title>
 </head>
 
 <body>
@@ -65,7 +65,7 @@
         
 
         <div class="flex flex-col text-left nav-links">
-          <a href="/jsx-react-native-and-typescript" class="activated-link">JSX, React Native, and TypeScript</a>
+          <a href="/growth-at-tumblr-and-wordpress" class="activated-link">Growth at Tumblr and Wordpress</a>
           
           
           <a href="/10-rules-of-internet">10 Rules of Internet</a>
@@ -164,7 +164,6 @@
           
           
           
-          <a href="/growth-at-tumblr-and-wordpress">Growth at Tumblr and Wordpress</a>
           
           
           
@@ -188,6 +187,7 @@
           
           
           
+          <a href="/jsx-react-native-and-typescript">JSX, React Native, and TypeScript</a>
           
           
           
@@ -393,56 +393,48 @@
   </nav>
   <main>
     <header>
-      <h1>JSX, React Native, and TypeScript</h1>
+      <h1>Growth at Tumblr and Wordpress</h1>
     </header>
-    <article><p>Why doesn't React Native use JSX?  From a <a href="https://github.com/ds300/react-native-typescript-transformer/issues/46">GitHub issue on React Native TypeScript transformer</a>.</p>
+    <article><p>Written by <a href="https://goblin.band/@javi">@javi@goblin.band</a> (the creator of Goblin) about their experience of <a href="/tiktoks-enshittification">enshittification</a> at Wordpress.com abd Tumblr</p>
 <hr />
-<p><strong><a href="https://github.com/henrikra">henrikra</a></strong> commented <a href="https://github.com/ds300/react-native-typescript-transformer/issues/46#issue-298217181">Feb 19, 2018</a></p>
-<p>I noticed from JSX <a href="https://www.typescriptlang.org/docs/handbook/jsx.html">docs</a> that JSX has also option <code>react-native</code> for it.</p>
-<p>Here are all three different modes for JSX</p>
-<blockquote>
-<p>TypeScript ships with three JSX modes: preserve, react, and react-native. These modes only affect the emit stage - type checking is unaffected. The preserve mode will keep the JSX as part of the output to be further consumed by another transform step (e.g. Babel). Additionally the output will have a .jsx file extension. The react mode will emit React.createElement, does not need to go through a JSX transformation before use, and the output will have a .js file extension. The react-native mode is the equivalent of preserve in that it keeps all JSX, but the output will instead have a .js file extension.</p>
-</blockquote>
-<p>So why <code>react-native-typescript-transformer</code> is telling us to configure JSX to <code>react</code> instead of <code>react-native</code>. Are there some drawbacks etc? :D</p>
-<hr />
-<p><strong><a href="https://github.com/ds300">ds300</a></strong> commented <a href="https://github.com/ds300/react-native-typescript-transformer/issues/46#issuecomment-366646702">Feb 19, 2018</a> </p>
-<p>Hi Henrik,</p>
-<p>Good question! I agree, the situation is a little confusing, <del>and the reason for it is historical rather than technical.</del> the reason for it is both historical and technical.</p>
-<p>When React first appeared on the scene, most JS tooling was not compatible with the JSX syntax. To mitigate this, people would only put JSX syntax in files with the extension <code>.jsx</code>. Eventually the tooling caught up and now most of us put JSX in <code>.js</code> files as though it were part of the ECMAScript standard.</p>
-<p>When TypeScript first added support for JSX, people were still using the <code>.jsx</code> extension a lot, so the TS crew made <code>.tsx</code> files compile to <code>.jsx</code> files. This is how the <code>--jsx react</code> option works.</p>
-<p>The React Native ecosystem fully embraced the <code>.js</code> extension to the point that the bundler <code>metro</code> doesn't even support loading <code>.jsx</code> files. This posed a problem for people using TypeScript with React Native because TypeScript <em>only</em> supported <code>.jsx</code> files. I can't actually remember how people would use TypeScript with React Native back in those days, but it was probably ugly.</p>
-<p>The <code>--jsx react-native</code> option was added to let developers compile <code>.tsx</code> files to ordinary <code>.js</code> files.</p>
-<p><em>edit</em>: In addition, it leaves the <code>JSX</code> untouched, like the <code>preserve</code> option, because React Native used to provide error reports which rendered the JSX (maybe still does? I haven't seen them in forever).</p>
-<p>At the time of writing, <code>react-native-typescript-transformer</code> uses Babel as a secondary compilation step, so it shouldn't matter whether you use <code>react</code>, <code>preserve</code>, or <code>react-native</code> :)</p></article>
+<p>offf, this story about how Google made google search into a pile of seagull shit hits me hard:</p>
+<p><a href="https://www.wheresyoured.at/the-men-who-killed-google/">wheresyoured.at/the-men-who-ki</a></p>
+<p>Around the time of this story, I was living through a similar situation in my work life (on a much smaller scope, of course, WordPress.com first, Tumblr later).</p>
+<p>Back in 2019, working on WordPress, I started finding myself, almost weekly, arguing against people who wanted to take the product we were working at and made it worse if that mean they could squeeze 0.1% more revenue from it</p>
+<p>The 0.1% figure is not even a random number: I remember this speciffic A/B test on WordPress.com that was declared a success and shipped to 100% of the users because it increased the free-to-paid conversion by 0.1%. Soon after it was released, I found out that as a side effect, it increased the churn of free users by 20 something %,so I called for an urgent rollback and removal of the change. So I was promptly explained that we didn't care about free-users churn, because finance had calculated the average long-term value of the free users to be something like $2 per year, and the increase in conversion was bigger than what we could get from them.</p>
+<p>Everything became about growth hacking. Everything became thinly-veiled dark patterns. In our private dev slack channels, we joked that since it was impossible to make it smaller or less conspicuous, the next thing the growth team was going to ask us to do was to make the 'free plan' button flee away from the mouse pointer when the user tried to click it. We kept making our product worse, we kept consciously crippling the cheaper versions so we could force people to move to the more expensive options.</p>
+<p>Back then I was the lead of one of the two dev divisions working on WordPress.com, so my job was mainly to discuss what we were going to be doing, when and how. And I was getting drained by a constant state of fight against a constant wave of shit they wanted us to build. So much than by the end of 2020, the CEO quietly told me to follow the growth team plans and shut up or step down.</p>
+<p>So I requested to move to tumblr, because I thought the pastures were greener over there. But it was all the same: Adding login walls to what we were pretending to be "the last bastion of the free internet", cramping in embarrasingly obvious money-making schemes disguised as features, and making them silently opt-out instead of opt-in so the less people the possible would deactivate them, having to fend off the pressure from the CEO to make everything algorithmic timelines because, you know, tiktok makes a lot of money and why aren't we, etc etc.</p>
+<p>I found myself in a place where building something good that people enjoy using was no longer a priority, but tricking people into generating more money for the company was. And when I looked around me, I could see that happening everywhere else, not only in my company. Experiencing the start of the enshittification years from inside wasn't easy.</p>
+<p>And, as in the article, the people who decided to turn the shit-metter up to 200%, have a name, in every case. And these people, no matter if they are called Sundar and Prabhakar or Matt and Mark, are destroying the internet. These people are milllionaires, or billionaries, and are destroying our shared, common spaces to squeeze some extra cash from us.</p>
+<p>That's why the fediverse and its principles are important. Because that's how we take back internet from their dirty hands. That's how we make internet resilient against them. That's how we build the commons.</p></article>
 
     <hr />
 
     <div class="meta">
       
-
-      
-      <p class="backlinks"><span class="bold">Tags:</span>
+      <p class="backlinks"><span class="bold">Incoming:</span>
         
-        <a href="/tags#javascript">#javascript</a>
-        
-        <a href="/tags#react">#react</a>
+        <a href="/recent-changes">Recent Changes</a>
         
         </span>
       </p>
       
 
       
+
+      
     </div>
   </main>
   <footer>
-    <a href="mailto:zachpmanson@gmail.com?subject=On 'JSX, React Native, and TypeScript'">reply</a>
-    <a href="/christ-mcdonald">random</a>
+    <a href="mailto:zachpmanson@gmail.com?subject=On 'Growth at Tumblr and Wordpress'">reply</a>
+    <a href="/we-do-not-break-userspace">random</a>
     <a href="/recent-changes">updates</a>
     <a href="/posts">posts</a>
     <a href="/tags">tags</a>
     <a href="/sitemap">sitemap</a>
-    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Folklore/JSX, React Native, and TypeScript.md" class="desktop">edit</a>
-    <a href="https://github.com/pavo-etc/notes/edit/main/./notes/Archive/Folklore/JSX, React Native, and TypeScript.md" class="mobile">edit</a>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Folklore/Growth at Tumblr and Wordpress.md" class="desktop">edit</a>
+    <a href="https://github.com/pavo-etc/notes/edit/main/./notes/Archive/Folklore/Growth at Tumblr and Wordpress.md" class="mobile">edit</a>
   </footer>
   
 </body>
