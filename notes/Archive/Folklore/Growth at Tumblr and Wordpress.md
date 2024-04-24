@@ -1,4 +1,4 @@
-Written by [@javi@goblin.band](https://goblin.band/@javi) (the creator of Goblin) about their experience of [[TikTok's Enshittification|enshittification]] at Wordpress.com and Tumblr while working at Automattic.
+Written by [@javi@goblin.band](https://goblin.band/@javi) (the creator of Goblin) on [2024-04-24](https://goblin.band/notes/9sgki9pdru7i8p9y) about their experience of [[TikTok's Enshittification|enshittification]] at Wordpress.com and Tumblr while working at Automattic.
 
 ---
 
