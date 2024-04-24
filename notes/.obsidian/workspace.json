@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Internet/Fediverse/Fediverse Family Tree.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e4c56bc37059a96f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Archive/Folklore/Growth at Tumblr and Wordpress.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Archive/Folklore/Growth at Tumblr and Wordpress.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Archive/Folklore/Growth at Tumblr and Wordpress.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Lines.md"
+                "file": "Archive/Folklore/Growth at Tumblr and Wordpress.md"
               }
             }
           }
@@ -159,10 +171,14 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "eb96d36141d38637",
+  "active": "e4c56bc37059a96f",
   "lastOpenFiles": [
-    "Archive/Bookmarks/Articles.md",
+    "Notes/Internet/Fediverse/Fediverse Family Tree.md",
+    "Archive/Folklore/Growth at Tumblr and Wordpress.md",
+    "Notes/Internet/Fediverse/Fediverse.md",
+    "Archive/Folklore/A Conspiracy To Kill IE6.md",
     "Archive/Lines.md",
+    "Archive/Bookmarks/Articles.md",
     "Notes/Software/Development/Non-Programming Languages/Markdown.md",
     "Archive/Bookmarks/Hacks.md",
     "Archive/Problems/Hacking Sagemcom Router Admin Account.md",
@@ -183,10 +199,6 @@
     "Notes/Language/Language.md",
     "Notes/Software/Development/Development.md",
     "Notes/Software/Development/DateTime.md",
-    "Notes/Software/Machine Learning/Generative Models/Generative Models.md",
-    "Notes/Software/Development/Development Methodologies/Development Methodologies.md",
-    "Notes/Software/Development/Kinds of Work/Glue Work.md",
-    "Projects/Minecraftle/Minecraftle.md",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",
     "Media/ahnvn.jpg",
