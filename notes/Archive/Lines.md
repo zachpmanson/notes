@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> Inspiration can convince you something is interesting or worth doing, or from time to time get you some really good sentences. But by the time you're, say, 80% of the way into something, it's kind of like an old relationship
+
+-- [Zach Weinersmith](https://mastodon.social/@ZachWeinersmith/112329077414080736)
+
+---
+
 > a physicist stares at the ceiling while an undergraduate, high off internet forums, explains that Buddhism anticipated quantum theory
 
 -- [Paul Ford](https://www.wired.com/story/own-future-artificial-intelligence-read-shakespeare/)
