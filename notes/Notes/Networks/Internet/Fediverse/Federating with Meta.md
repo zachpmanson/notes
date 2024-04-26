@@ -3,7 +3,7 @@ tags:
   - posts
 date: 2023-06-01
 ---
-Meta's rumoured Twitter competitor Threads has caused a stir in the [[fediverse]]. Some suggesting fedi instances should preemptively block Threads, others willing to wait and see what happens.  At the time of writing (June 2023) it is unclear how this will pan out. Many fear the threat of [embrace, extend, extinguish](https://en.wikipedia.org/wiki/Embrace,_extend,_and_extinguish), but others are excited at the prospect of the fediverse becoming more significant.
+Meta's rumoured Twitter competitor Threads has caused a stir in the [[Fediverse]]. Some suggesting fedi instances should preemptively block Threads, others willing to wait and see what happens.  At the time of writing (June 2023) it is unclear how this will pan out. Many fear the threat of [embrace, extend, extinguish](https://en.wikipedia.org/wiki/Embrace,_extend,_and_extinguish), but others are excited at the prospect of the fediverse becoming more significant.
 
 ![[meta-fediverse.jpeg]]
 
@@ -40,7 +40,7 @@ Roelant Kooij wrote an [excellent overview](https://roelant.net/en/2023/interest
  - ⭐️ [**The Two Camps of Mastodon**](https://heat-shield.space/mastodon_two_camps.html), on the general split between people that view the fediverse as a collection of small communities and those that view it as a distributed network where most people can talk to most others in a decentralised fashion, and how Threads' existence exacerbate this divide
 - [The horns of a dilemma](https://netwars.pelicancrossing.net/2023/06/30/the-horns-of-a-dilemma/), Wendy M. Grossman enumerating potential futures
 - ⭐️ [**Meta and the fediverse: sorting heat from light**](https://blog.bloonface.com/2023/07/03/meta-and-the-fediverse-sorting-heat-from-light/), a fantastic rebuke to many of Meta's alleged nefarious motivations
-	- meta gains little in terms of data collection ability since [[activitypub]] lacks privacy anyway, and what it does gain isn't very useful, and the current fediverse population size is not large enough to be worth pursuing for data collection
+	- meta gains little in terms of data collection ability since [[ActivityPub]] lacks privacy anyway, and what it does gain isn't very useful, and the current fediverse population size is not large enough to be worth pursuing for data collection
 	- its seems unlikely that Meta actually sees the fediverse as a threat
 	- the Gchat/XMPP embrace/extend/extinguish example is flawed
 	- Meta isn't evil without motivation

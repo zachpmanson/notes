@@ -3,7 +3,7 @@
 ## Uses
 
 - Logo for the State Library of New South Wales
-- Logo for Pearson, the textbook company who's nightmarish software I was subjected to in highschool to read my textbooks and for which I will never forgive them
+- Logo for Pearson, the textbook company who's nightmarish [[software]] I was subjected to in highschool to read my textbooks and for which I will never forgive them
 - Used in chess to represent a dubious move
 
 ## Related Characters

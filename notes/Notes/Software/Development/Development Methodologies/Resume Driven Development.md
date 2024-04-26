@@ -1,4 +1,4 @@
-Resume Driven Development (RDD) is a methodology focused on producing effective, clean resumes through software.
+Resume Driven Development (RDD) is a methodology focused on producing effective, clean resumes through [[software]].
 
 > We value specific technologies over working solutions, hiring buzzwords over proven track records, creative job titles over technical experience, and reacting to trends over more pragmatic options.  
 

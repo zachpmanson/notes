@@ -1,5 +1,6 @@
-Everything that's required to get VBA and Selenium to work together.
-
+---
+subtitle: Everything that's required to get VBA and Selenium to work together.
+---
 SeleniumBasic is a Selenium based framework for the VB family that has been unmaintained since 2016.
 
 ## Installation
@@ -11,13 +12,13 @@ SeleniumBasic is a Selenium based framework for the VB family that has been unma
 
 Given that the VBA interface in Excel hasn't been updated since...1832...I am going to assume Excel version will not have any major impacts, but for reference I used Version 2201.
 
-Each of the major web browsers provides a WebDriver, which is a piece of software that allows a browser to be controlled and automated by external programs. The SeleniumBasic installer includes a number of WebDrivers which you can choose to include, but these all appear to be wildly out of date and will cause Excel to crash if you have a recent browser installed.
+Each of the major web browsers provides a WebDriver, which is a piece of [[software]] that allows a browser to be controlled and automated by external programs. The SeleniumBasic installer includes a number of WebDrivers which you can choose to include, but these all appear to be wildly out of date and will cause Excel to crash if you have a recent browser installed.
 
 ![[seleniumbasic-installer.png]]
 
 To fix this you will need to manually replace the WebDrivers you intend to use. Each of the major browser vendors distribute up to date versions of their own WebDrivers ([Edge](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/), [Chrome](https://chromedriver.chromium.org/downloads), [Firefox](https://github.com/mozilla/geckodriver/releases)). Within each of these zip archive you'll find an executable, e.g. `msedgedriver.exe` for everyone's fifth favourite browser. To replace driver included with SeleniumBasic, you need to place the up to date executable in `C:\Users\<username>\AppData\Local\SeleniumBasic`. The up to date WebDriver will need to have the same name as the original outdated WebDriver, so `msedgedriver.exe` needs to be renamed `edgedriver.exe`. Irritatingly, it's probable that eventually automatic browser updates will render even these updated WebDrivers outdated, and these executables will need to be replaced again.
 
-.NET Framework versions annoyingly don't show up as installed programs, so if you want to find out what versions you already have installed, you must use one of several annoying ways. The least annoying of these is to look in the `C:\Windows\Microsoft.NET\Framework` directory.
+.NET Framework versions annoyingly don't show up as installed [[programs]], so if you want to find out what versions you already have installed, you must use one of several annoying ways. The least annoying of these is to look in the `C:\Windows\Microsoft.NET\Framework` directory.
 
 ![[dotnet-frameworks.png]]
 

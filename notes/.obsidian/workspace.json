@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Non-Programming Languages/Markdown.md",
+                "file": "Archive/Bookmarks/Articles.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,19 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Internet/Fediverse/Fediverse Family Tree.md",
+                "file": "Archive/Folklore/C Locale Braindeath.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e4c56bc37059a96f",
+            "id": "cc4f0f067d5f8f94",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Networks/Maximum Transmission Unit.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "google sear",
+                "query": " software ",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -94,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 301.5024719238281
+    "width": 253.50247192382812
   },
   "right": {
     "id": "b30ab2faf3f39acc",
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Networks/Maximum Transmission Unit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Networks/Maximum Transmission Unit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Lines.md"
+                "file": "Notes/Networks/Maximum Transmission Unit.md"
               }
             }
           }
@@ -158,7 +158,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,38 +172,39 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "cc4f0f067d5f8f94",
   "lastOpenFiles": [
-    "Archive/Bookmarks/Articles.md",
-    "Archive/Folklore/Growth at Tumblr and Wordpress.md",
-    "Archive/Folklore/An Update on Facebook Video Marketing Metrics.md",
-    "Notes/Internet/Fediverse/Fediverse Family Tree.md",
-    "Notes/Internet/Fediverse/Fediverse.md",
-    "Archive/Folklore/A Conspiracy To Kill IE6.md",
-    "Archive/Lines.md",
-    "Notes/Software/Development/Non-Programming Languages/Markdown.md",
-    "Archive/Bookmarks/Hacks.md",
-    "Archive/Problems/Hacking Sagemcom Router Admin Account.md",
-    "Notes/Miscellany/Thin Deep Slices.md",
-    "hacks].md",
-    "Notes/Software/Programs/Obsidian/Obsidian Plugins.md",
-    "Notes/Software/Unix/macOS/Making macOS Useable.md",
+    "Archive/Problems/Untitled.md",
+    "Notes/Networks/Maximum Transmission Unit.md",
+    "Archive/Problems/SeleniumBasic.md",
+    "Notes/Networks",
+    "Notes/Software/Programs/Programs.md",
+    "Notes/Software/Development/Development Methodologies/Resume Driven Development.md",
+    "Notes/Software/Mistakes/Referer HTTP Field.md",
+    "Notes/Software/Machine Learning/Generative Models/Stable Diffusion/Prompt Resources.md",
+    "Archive/Problems/Problems.md",
+    "Projects/Projects.md",
+    "Notes/Software/Software.md",
+    "Notes/Software/Development/Programming Languages/C/Pointer Operations.md",
+    "Archive/Folklore/Pocket Veto.md",
+    "Archive/Folklore/Originality Not Required.md",
+    "Archive/Folklore/On the Origin of Emacs.md",
+    "Archive/Folklore/No dogs were harmed in the making of this app.md",
+    "Archive/Folklore/Man Spends Entire Career Mastering Crappy Codebase.md",
+    "Notes/Software/Unix/Linux/Linux.md",
     "Notes/Software/Unix/macOS/macOS CLI Tools.md",
-    "Notes/Software/Unix/Unix Programs/Unix Programs.md",
-    "Notes/Miscellany/On Writing.md",
-    "Notes/Miscellany/Pens.md",
-    "Notes/Miscellany/On Taking Notes.md",
-    "Notes/Miscellany/Miscellany.md",
-    "Notes/Miscellany/Sewing.md",
-    "Untitled.md",
-    "Projects/Ochrs/Ochrs Syntax.md",
-    "Notes/Internet/Internet Standards/RSS.md",
-    "Notes/Language/Language.md",
-    "Notes/Software/Development/Development.md",
+    "Archive/Lines.md",
+    "Notes/Language/Characters/Interrobang.md",
+    "Archive/Bookmarks/Hacks.md",
+    "Archive/Folklore/Folklore.md",
+    "Archive/Folklore/File Over App.md",
+    "Archive/Folklore/Feminist Server Manifesto.md",
+    "Meta/About.md",
+    "Archive/Folklore/10 Rules of Internet.md",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",
     "Media/ahnvn.jpg",
-    "Notes/Internet/Fediverse/Mastodon",
+    "Notes/Networks/Internet/Fediverse/Mastodon",
     "Media/spotify-top-bar.png",
     "Notes/Software/Development/Kinds of Work",
     "Untitled",
@@ -218,7 +220,6 @@
     "Notes/Software/Development/Programming Languages/C++",
     "Notes/Software/Development/Kinds of Work",
     "Notes/Software/Intelligent Agents",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/Untitled",
     "Untitled.canvas"
   ]
 }

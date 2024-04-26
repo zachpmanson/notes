@@ -1,4 +1,4 @@
-For keeping track of [[software]] forks in the [[fediverse]], and why they exist.
+For keeping track of [[software]] forks in the [[Fediverse]], and why they exist.
 
 - Misskey
 	- [Calckey](https://joinfirefish.org/) (later renamed to the equally bad name, firefish), more feature rich?
@@ -12,5 +12,5 @@ For keeping track of [[software]] forks in the [[fediverse]], and why they exist
 - [[Lemmy]], a reddit-like fediverse server
 - Kbin, a reddit-like fediverse server with some masto-style microblogging aspects?  It is interoperable with Lemmy allegedly
 	- Mbin, a "community focused" fork of mbin that will.  Is apparently much more open to community input and PRs.
-- [Goblin](https://github.com/johnHackworth/goblin), a tumblr style [[activitypub]] server
+- [Goblin](https://github.com/johnHackworth/goblin), a tumblr style [[ActivityPub]] server
 

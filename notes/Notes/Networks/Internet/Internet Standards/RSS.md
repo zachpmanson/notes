@@ -1,7 +1,7 @@
 ---
 subtitle: Really Simple Syndication.
 ---
-Platform agnostic way to follow anything?  Amazing.  This is what the [[internet]] was made for.
+Platform agnostic way to follow anything?  Amazing.  This is what the [[Internet]] was made for.
 
 I use Nextcloud News as my RSS reader since it has an Android app, is pretty straightfoward and was dead simple to add to my existing Nextcloud installation.  NetNewsWire is also extremely good if you are on macOS.
 
