@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/View Deleted File in Git.md",
+                "file": "Notes/Software/Programs/Git/Git.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,12 +73,12 @@
             "state": {
               "type": "search",
               "state": {
-                "query": " software ",
+                "query": " \"git \"",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
                 "extraContext": true,
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabeticalReverse"
               }
             }
           },
@@ -90,7 +90,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -110,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Problems/View Deleted File in Git.md",
+                "file": "Notes/Software/Programs/Git/Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Problems/View Deleted File in Git.md",
+                "file": "Notes/Software/Programs/Git/Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Problems/View Deleted File in Git.md"
+                "file": "Notes/Software/Programs/Git/Git.md"
               }
             }
           }
@@ -174,8 +175,17 @@
   },
   "active": "cc4f0f067d5f8f94",
   "lastOpenFiles": [
-    "Notes/Software/Development/Web Development/Web Development.md",
+    "Archive/Folklore/C Locale Braindeath.md",
+    "Notes/Software/Programs/Git/Git.md",
+    "Archive/Templates/Git Activity in Multiple Folders.md",
+    "Notes/Software/Programs/Git/Git Bare Repositories.md",
+    "Archive/Problems/Git Creation and Modification Time.md",
+    "Archive/Folklore/Git Koans.md",
+    "Notes/Software/Programs/Git/Git Operations.md",
+    "Archive/Problems/Git Repo Contributor Line Count.md",
+    "Archive/Problems/Git Subdirectory Branch.md",
     "Archive/Problems/View Deleted File in Git.md",
+    "Notes/Software/Development/Web Development/Web Development.md",
     "Notes/Software/Development/Web Development/Themed Stylesheets.md",
     "Archive/Bookmarks/Websites.md",
     "Notes/Networks/Internet/Internet.md",
@@ -192,15 +202,6 @@
     "Notes/Software/Development/Programming Languages/C/Pointer Operations.md",
     "Archive/Folklore/Pocket Veto.md",
     "Archive/Folklore/Originality Not Required.md",
-    "Archive/Folklore/On the Origin of Emacs.md",
-    "Archive/Folklore/No dogs were harmed in the making of this app.md",
-    "Archive/Folklore/Man Spends Entire Career Mastering Crappy Codebase.md",
-    "Notes/Software/Unix/Linux/Linux.md",
-    "Notes/Software/Unix/macOS/macOS CLI Tools.md",
-    "Archive/Lines.md",
-    "Notes/Language/Characters/Interrobang.md",
-    "Archive/Bookmarks/Hacks.md",
-    "Archive/Folklore/Folklore.md",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",
     "Media/ahnvn.jpg",

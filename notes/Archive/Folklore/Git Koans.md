@@ -1,3 +1,9 @@
+---
+tags:
+  - git
+---
+
+
 [Steve Losh's wisdom](https://stevelosh.com/blog/2013/04/git-koans/).
 
 ---
