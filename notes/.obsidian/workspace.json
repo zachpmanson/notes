@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Networks/Maximum Transmission Unit.md",
+                "file": "Notes/Software/Development/Web Development/Web Development.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Networks/Maximum Transmission Unit.md",
+                "file": "Notes/Software/Development/Web Development/Web Development.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Networks/Maximum Transmission Unit.md",
+                "file": "Notes/Software/Development/Web Development/Web Development.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Networks/Maximum Transmission Unit.md"
+                "file": "Notes/Software/Development/Web Development/Web Development.md"
               }
             }
           }
@@ -174,8 +174,12 @@
   },
   "active": "cc4f0f067d5f8f94",
   "lastOpenFiles": [
-    "Archive/Problems/Untitled.md",
+    "Notes/Software/Development/Web Development/Themed Stylesheets.md",
+    "Notes/Software/Development/Web Development/Web Development.md",
+    "Archive/Bookmarks/Websites.md",
+    "Notes/Networks/Internet/Internet.md",
     "Notes/Networks/Maximum Transmission Unit.md",
+    "Archive/Problems/Untitled.md",
     "Archive/Problems/SeleniumBasic.md",
     "Notes/Networks",
     "Notes/Software/Programs/Programs.md",
@@ -197,10 +201,6 @@
     "Notes/Language/Characters/Interrobang.md",
     "Archive/Bookmarks/Hacks.md",
     "Archive/Folklore/Folklore.md",
-    "Archive/Folklore/File Over App.md",
-    "Archive/Folklore/Feminist Server Manifesto.md",
-    "Meta/About.md",
-    "Archive/Folklore/10 Rules of Internet.md",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",
     "Media/ahnvn.jpg",
