@@ -13,7 +13,30 @@
             <link>https://notes.zachmanson.com/git</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Fri, 26 Apr 2024 02:47:40 </lastBuildDate>
+        <lastBuildDate>Fri, 26 Apr 2024 02:48:45 </lastBuildDate>
+        
+        <item>
+            <title>Git Activity in Multiple Folders</title>
+            <link>https://notes.zachmanson.com/git-activity-in-multiple-folders</link>
+            
+            <description>A template for listing all the commits you did on a certain date.</description>
+            
+            <content:encoded>
+                <![CDATA[<p>A script I like to drop into my projects folders to see what I was working on for a given day.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">day</span><span class="o">=</span><span class="nv">$1</span>
+<span class="nv">repo_folder</span><span class="o">=</span>~/projects
+<span class="k">for</span><span class="w"> </span>dir<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$repo_folder</span><span class="s2">&quot;</span>/*/<span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">    </span><span class="c1"># Check if the directory is a git repository</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$dir</span><span class="s2">/.git&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">        </span><span class="nb">cd</span><span class="w"> </span><span class="nv">$dir</span>
+<span class="w">        </span>git<span class="w"> </span>log<span class="w"> </span>--after<span class="o">=</span><span class="s2">&quot;</span><span class="nv">$day</span><span class="s2"> 00:00&quot;</span><span class="w"> </span>--before<span class="o">=</span><span class="s2">&quot;</span><span class="nv">$day</span><span class="s2"> 23:59?&quot;</span><span class="w"> </span>--author<span class="o">=</span><span class="s2">&quot;Zach&quot;</span>
+<span class="w">    </span><span class="k">fi</span>
+<span class="k">done</span>
+</code></pre></div>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/git-activity-in-multiple-folders</guid>
+            <pubDate>2024-04-22</pubDate>
+        </item>
         
 
     </channel>
