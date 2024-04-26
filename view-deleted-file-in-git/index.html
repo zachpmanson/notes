@@ -12,7 +12,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: keychron fn keys</title>
+  <title>notes: view deleted file in git</title>
 </head>
 
 <body>
@@ -65,7 +65,7 @@
         
 
         <div class="flex flex-col text-left nav-links">
-          <a href="/keychron-fn-keys" class="activated-link">Keychron Fn Keys</a>
+          <a href="/view-deleted-file-in-git" class="activated-link">View Deleted File in Git</a>
           
           
           <a href="/alembic-revision-collision">Alembic Revision Collision</a>
@@ -152,6 +152,7 @@
           
           
           
+          <a href="/keychron-fn-keys">Keychron Fn Keys</a>
           
           
           
@@ -243,7 +244,6 @@
           
           
           
-          <a href="/view-deleted-file-in-git">View Deleted File in Git</a>
           
           
           
@@ -273,42 +273,29 @@
   </nav>
   <main>
     <header>
-      <h1>Keychron Fn Keys</h1>
+      <h1>View Deleted File in Git</h1>
     </header>
-    <article><p>Fixing Keychron function keys on <a href="/linux">Linux</a> machines.</p>
-<p>Tested on Keychron K2v2 on Xubuntu 20.04 and 22.04 on trenzalore.</p>
-<p>To enable Function keys on Keychron K2:</p>
-<ul>
-<li>Set the keyboard to Windows mode</li>
-<li>Run the following command:</li>
-</ul>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/sys/module/hid_apple/parameters/fnmode
+    <article><p>This displays a file and pipes it into VS Code.</p>
+<div class="highlight"><pre><span></span><code>git show $(git rev-list --max-count=1 --all -- src/components/overview/ComparisonSearchBar.tsx)^:src/components/overview/ComparisonSearchBar.tsx | code -
 </code></pre></div>
-<p>To make this change persistent, add a module option for hid_apple:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;options hid_apple fnmode=0&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>-a<span class="w"> </span>/etc/modprobe.d/hid_apple.conf
-</code></pre></div>
-<p>To toggle function mode, hold Fn + X + L for 4 seconds.</p>
-<p>If this all fails, set it back to 1:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/sys/module/hid_apple/parameters/fnmode
-</code></pre></div>
-<h2 id="links">Links</h2>
-<ul>
-<li><a href="https://www.reddit.com/r/MechanicalKeyboards/comments/d5io49/keychron_k2_f_keys_dont_work_w_linux_help/">Original post</a></li>
-<li><a href="https://mikeshade.com/posts/keychron-linux-function-keys/">Adding persistency</a></li>
-<li><a href="https://web.archive.org/web/20220721020355/https://mikeshade.com/posts/keychron-linux-function-keys/">Archived Adding persistency</a></li>
-<li><a href="https://github.com/Kurgol/keychron/blob/master/k2.md">Other Keychron settings</a></li>
-<li><a href="https://github.com/pavo-etc/keychron">Other Keychron settings fork</a></li>
-</ul></article>
+<p><a href="https://stackoverflow.com/a/19727752">From this</a>.</p></article>
 
     <hr />
 
     <div class="meta">
       
+      <p class="backlinks"><span class="bold">Incoming:</span>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
+      
 
       
       <p class="backlinks"><span class="bold">Tags:</span>
         
-        <a href="/tags#linux">#linux</a>
+        <a href="/tags#git">#git</a>
         
         </span>
       </p>
@@ -318,14 +305,14 @@
     </div>
   </main>
   <footer>
-    <a href="mailto:zachpmanson@gmail.com?subject=On 'Keychron Fn Keys'">reply</a>
-    <a href="/meta">random</a>
+    <a href="mailto:zachpmanson@gmail.com?subject=On 'View Deleted File in Git'">reply</a>
+    <a href="/w08l01---sed">random</a>
     <a href="/recent-changes">updates</a>
     <a href="/posts">posts</a>
     <a href="/tags">tags</a>
     <a href="/sitemap">sitemap</a>
-    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Keychron Fn Keys.md" class="desktop">edit</a>
-    <a href="https://github.com/pavo-etc/notes/edit/main/./notes/Archive/Problems/Keychron Fn Keys.md" class="mobile">edit</a>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/View Deleted File in Git.md" class="desktop">edit</a>
+    <a href="https://github.com/pavo-etc/notes/edit/main/./notes/Archive/Problems/View Deleted File in Git.md" class="mobile">edit</a>
   </footer>
   
 </body>
