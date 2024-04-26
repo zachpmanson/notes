@@ -269,10 +269,9 @@
   </nav>
   <main>
     <header>
-      <h1>SeleniumBasic</h1>
+      <h1>Everything that's required to get VBA and Selenium to work together.</h1>
     </header>
-    <article><p>Everything that's required to get VBA and Selenium to work together.</p>
-<p>SeleniumBasic is a Selenium based framework for the VB family that has been unmaintained since 2016.</p>
+    <article><p>SeleniumBasic is a Selenium based framework for the VB family that has been unmaintained since 2016.</p>
 <h2 id="installation">Installation</h2>
 <ul>
 <li>Excel</li>
@@ -281,10 +280,10 @@
 <li><a href="https://www.microsoft.com/en-au/download/details.aspx?id=21">.NET Framework 3.5</a></li>
 </ul>
 <p>Given that the VBA interface in Excel hasn't been updated since...1832...I am going to assume Excel version will not have any major impacts, but for reference I used Version 2201.</p>
-<p>Each of the major web browsers provides a WebDriver, which is a piece of software that allows a browser to be controlled and automated by external programs. The SeleniumBasic installer includes a number of WebDrivers which you can choose to include, but these all appear to be wildly out of date and will cause Excel to crash if you have a recent browser installed.</p>
+<p>Each of the major web browsers provides a WebDriver, which is a piece of <a href="/software">software</a> that allows a browser to be controlled and automated by external programs. The SeleniumBasic installer includes a number of WebDrivers which you can choose to include, but these all appear to be wildly out of date and will cause Excel to crash if you have a recent browser installed.</p>
 <p><img alt="" src="/media/seleniumbasic-installer.png" /></p>
 <p>To fix this you will need to manually replace the WebDrivers you intend to use. Each of the major browser vendors distribute up to date versions of their own WebDrivers (<a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/">Edge</a>, <a href="https://chromedriver.chromium.org/downloads">Chrome</a>, <a href="https://github.com/mozilla/geckodriver/releases">Firefox</a>). Within each of these zip archive you'll find an executable, e.g. <code>msedgedriver.exe</code> for everyone's fifth favourite browser. To replace driver included with SeleniumBasic, you need to place the up to date executable in <code>C:\Users\&lt;username&gt;\AppData\Local\SeleniumBasic</code>. The up to date WebDriver will need to have the same name as the original outdated WebDriver, so <code>msedgedriver.exe</code> needs to be renamed <code>edgedriver.exe</code>. Irritatingly, it's probable that eventually automatic browser updates will render even these updated WebDrivers outdated, and these executables will need to be replaced again.</p>
-<p>.NET Framework versions annoyingly don't show up as installed programs, so if you want to find out what versions you already have installed, you must use one of several annoying ways. The least annoying of these is to look in the <code>C:\Windows\Microsoft.NET\Framework</code> directory.</p>
+<p>.NET Framework versions annoyingly don't show up as installed <a href="/programs">programs</a>, so if you want to find out what versions you already have installed, you must use one of several annoying ways. The least annoying of these is to look in the <code>C:\Windows\Microsoft.NET\Framework</code> directory.</p>
 <p><img alt="" src="/media/dotnet-frameworks.png" /></p>
 <h2 id="actual-use">Actual Use</h2>
 <p>Now you can actually use it as you'd expect. Open the VBA IDE in Excel start using some of the gorgeous syntax and best in-class tools that Microsoft so kindly allows you to purchase.</p>
@@ -324,6 +323,13 @@ End Sub
 
     <div class="meta">
       
+      <p class="backlinks"><span class="bold">Incoming:</span>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
+      
 
       
 
@@ -332,7 +338,7 @@ End Sub
   </main>
   <footer>
     <a href="mailto:zachpmanson@gmail.com?subject=On 'SeleniumBasic'">reply</a>
-    <a href="/sewing">random</a>
+    <a href="/w12l01---markdown">random</a>
     <a href="/recent-changes">updates</a>
     <a href="/posts">posts</a>
     <a href="/tags">tags</a>

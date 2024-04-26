@@ -13,14 +13,14 @@
             <link>https://notes.zachmanson.com/fediverse</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Thu, 25 Apr 2024 01:40:39 </lastBuildDate>
+        <lastBuildDate>Fri, 26 Apr 2024 01:12:30 </lastBuildDate>
         
         <item>
             <title>Federating with Meta</title>
             <link>https://notes.zachmanson.com/federating-with-meta</link>
             
             <content:encoded>
-                <![CDATA[<p>Meta's rumoured Twitter competitor Threads has caused a stir in the <a href="/fediverse">fediverse</a>. Some suggesting fedi instances should preemptively block Threads, others willing to wait and see what happens.  At the time of writing (June 2023) it is unclear how this will pan out. Many fear the threat of <a href="https://en.wikipedia.org/wiki/Embrace,_extend,_and_extinguish">embrace, extend, extinguish</a>, but others are excited at the prospect of the fediverse becoming more significant.</p>
+                <![CDATA[<p>Meta's rumoured Twitter competitor Threads has caused a stir in the <a href="/fediverse">Fediverse</a>. Some suggesting fedi instances should preemptively block Threads, others willing to wait and see what happens.  At the time of writing (June 2023) it is unclear how this will pan out. Many fear the threat of <a href="https://en.wikipedia.org/wiki/Embrace,_extend,_and_extinguish">embrace, extend, extinguish</a>, but others are excited at the prospect of the fediverse becoming more significant.</p>
 <p><img alt="" src="/media/meta-fediverse.jpeg" /></p>
 <p>Meta: "MAY I JOIN YOU?"<br />
 <a href="https://framapiaf.org/@davidrevoy/110583258129951932">By David Revoy</a></p>
@@ -70,7 +70,7 @@
 <li>⭐️ <a href="https://heat-shield.space/mastodon_two_camps.html"><strong>The Two Camps of Mastodon</strong></a>, on the general split between people that view the fediverse as a collection of small communities and those that view it as a distributed network where most people can talk to most others in a decentralised fashion, and how Threads' existence exacerbate this divide</li>
 <li><a href="https://netwars.pelicancrossing.net/2023/06/30/the-horns-of-a-dilemma/">The horns of a dilemma</a>, Wendy M. Grossman enumerating potential futures</li>
 <li>⭐️ <a href="https://blog.bloonface.com/2023/07/03/meta-and-the-fediverse-sorting-heat-from-light/"><strong>Meta and the fediverse: sorting heat from light</strong></a>, a fantastic rebuke to many of Meta's alleged nefarious motivations<ul>
-<li>meta gains little in terms of data collection ability since <a href="/activitypub">activitypub</a> lacks privacy anyway, and what it does gain isn't very useful, and the current fediverse population size is not large enough to be worth pursuing for data collection</li>
+<li>meta gains little in terms of data collection ability since <a href="/activitypub">ActivityPub</a> lacks privacy anyway, and what it does gain isn't very useful, and the current fediverse population size is not large enough to be worth pursuing for data collection</li>
 <li>its seems unlikely that Meta actually sees the fediverse as a threat</li>
 <li>the Gchat/XMPP embrace/extend/extinguish example is flawed</li>
 <li>Meta isn't evil without motivation</li>
