@@ -4,7 +4,7 @@ A rational agent is one that is able to operate when there is uncertainty.
 
 > For each possible percept sequence, a rational agent should select an action that is ex- pected to maximize its performance measure, given the evidence provided by the percept sequence and whatever built-in knowledge the agent has.
 
--- [[AIMI Chapter 02]]
+-- [[AIMA Chapter 02]]
 
 An agent can perceive its environment with sensors and act upon the environment with actuators. Sensors perceive percepts. A percept sequence is everything an agent has ever perceived.  An agents behaviour can be described with agent function that maps any percept sequence to an action.
 

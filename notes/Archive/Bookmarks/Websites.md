@@ -32,6 +32,7 @@ Intentionally miscellaneous.
 - [Helvetica Blanc](https://helveticablanc.com/index.html)
 - [Appear Offline](https://appear-offline.com/), Letter distortion & other services
 - [notes art](https://notes.art/), explorations in iphone notes
+- [billwurtz.com](https://billwurtz.com/)
 
 ## Zines and Newsletters
 

@@ -5,6 +5,30 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> The age of humans compared to the earth, now that's some nothing shit
+
+-- [Bill Wurtz](https://billwurtz.com/reality/201606202210.mp4)
+
+---
+
+> yes, i understand you can't buy happiness. but can you sell it
+
+-- [Bill Wurtz](https://billwurtz.com/note201410032021.html)
+
+---
+
+> being human is about to come back in style
+
+-- [Bill Wurtz](https://billwurtz.com/201407210945.html)
+
+---
+
+> For another thing, as a document this is very incomplete: I am only too aware of the fact that it ends in mid-air. Yet I have decided to have these notes duplicated, besides some practical considerations mainly to show what I have thought to those who expressed interest in it or to those whose comments I would welcome.
+
+-- Prof.dr. Edsger W. Dijkstra, Introduction to *Notes on Structured Programming*
+
+---
+
 > Inspiration can convince you something is interesting or worth doing, or from time to time get you some really good sentences. But by the time you're, say, 80% of the way into something, it's kind of like an old relationship
 
 -- [Zach Weinersmith](https://mastodon.social/@ZachWeinersmith/112329077414080736)
