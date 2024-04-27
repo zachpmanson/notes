@@ -32,6 +32,30 @@
             }
           },
           {
+            "id": "45aa1791f8bf26d0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Problem Solving Agents.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f96f7527ab08cce7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Search Algorithms.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "cc4f0f067d5f8f94",
             "type": "leaf",
             "state": {
@@ -44,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Search Algorithms.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Search Algorithms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Lines.md"
+                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Search Algorithms.md"
               }
             }
           }
@@ -172,17 +196,19 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "cc4f0f067d5f8f94",
+  "active": "f96f7527ab08cce7",
   "lastOpenFiles": [
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/Problem Solving Agents.md",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/Search Algorithms.md",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/Task Environments.md",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 03.md",
+    "Archive/Lines.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 01.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 02.md",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/Task Environments.md",
-    "Archive/Lines.md",
     "Archive/Bookmarks/Websites.md",
     "Archive/Folklore/C Locale Braindeath.md",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
     "Archive/Bookmarks/Articles.md",
     "Notes/Software/Programs/Git/Git.md",
     "Archive/Templates/Git Activity in Multiple Folders.md",
@@ -199,8 +225,6 @@
     "Notes/Networks/Maximum Transmission Unit.md",
     "Archive/Problems/SeleniumBasic.md",
     "Notes/Networks",
-    "Notes/Software/Programs/Programs.md",
-    "Notes/Software/Development/Development Methodologies/Resume Driven Development.md",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",
     "Media/ahnvn.jpg",
