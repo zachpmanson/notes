@@ -105,13 +105,21 @@
 <p>Discrete or continuous, which applies to the state mode, to time, to percepts, and to actions of the agent.</p>
 <p>Known or unknown "laws of physics" of the environment.  E.g. does the chess model actually know the rules of chess.</p>
 <h2 id="representations-of-task-environments">Representations of Task Environments</h2>
-<p>In order of increasing expressiveness:
-- atomic, black box, not internal structure, only have a single discrete piece of information about the world
-    - used by many standard search algorithms, hidden markov-models, markov decision processes
-- factored, vector of attributes
-    - used by constraint satisfaction algorithms, propositional logic, planning, Bayesian Networks
-- structured, state has objects which have attributes and relationships with other objects
-    - used by first-order logic, first-order probability models, NLP</p>
+<p>In order of increasing expressiveness:</p>
+<ul>
+<li>atomic, black box, not internal structure, only have a single discrete piece of information about the world<ul>
+<li>used by many standard search algorithms, hidden markov-models, markov decision processes</li>
+</ul>
+</li>
+<li>factored, vector of attributes<ul>
+<li>used by constraint satisfaction algorithms, propositional logic, planning, Bayesian Networks</li>
+</ul>
+</li>
+<li>structured, state has objects which have attributes and relationships with other objects<ul>
+<li>used by first-order logic, first-order probability models, NLP</li>
+</ul>
+</li>
+</ul>
 <p>More expressiveness means can capture complexity more concisely.</p>
 <p>Representations can also be ranked on the distance between the concepts being represented and memory locations.  A localist representation is a 1:1 mapping of these, and a distributed representation is has the concepts spread over many variables and memory locations.  Distributed representations tend to be more robust if erroneous data comes in.</p></article>
 
@@ -140,7 +148,7 @@
   </main>
   <footer>
     <a href="mailto:zachpmanson@gmail.com?subject=On 'Task Environments'">reply</a>
-    <a href="/file-over-app">random</a>
+    <a href="/ironprof">random</a>
     <a href="/recent-changes">updates</a>
     <a href="/posts">posts</a>
     <a href="/tags">tags</a>
