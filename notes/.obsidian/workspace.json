@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Search Algorithms.md",
+                "file": "Archive/Lines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Search Algorithms.md",
+                "file": "Archive/Lines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Search Algorithms.md"
+                "file": "Archive/Lines.md"
               }
             }
           }
@@ -196,15 +196,15 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "f96f7527ab08cce7",
+  "active": "cc4f0f067d5f8f94",
   "lastOpenFiles": [
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/Problem Solving Agents.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Search Algorithms.md",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/Problem Solving Agents.md",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Task Environments.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 03.md",
     "Archive/Lines.md",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 01.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 02.md",
     "Archive/Bookmarks/Websites.md",

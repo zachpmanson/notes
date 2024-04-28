@@ -19,6 +19,7 @@ Known or unknown "laws of physics" of the environment.  E.g. does the chess mode
 ## Representations of Task Environments
 
 In order of increasing expressiveness:
+
 - atomic, black box, not internal structure, only have a single discrete piece of information about the world
 	- used by many standard search algorithms, hidden markov-models, markov decision processes
 - factored, vector of attributes

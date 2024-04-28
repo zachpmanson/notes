@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> If you've never seen it before, Evangelion is a terribly depressing anime. It is the kind of thing that disturbs the comforted and comforts the disturbed.
+
+-- [Xe Iaso](https://xeiaso.net/blog/2024/much-ado-about-nothing/)
+
+---
+
 > The age of humans compared to the earth, now that's some nothing shit
 
 -- [Bill Wurtz](https://billwurtz.com/reality/201606202210.mp4)
