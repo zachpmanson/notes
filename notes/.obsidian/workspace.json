@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Task Environments.md",
+                "file": "Archive/Problems/Nextcloud Phone Photo Upload.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Task Environments.md",
+                "file": "Archive/Problems/Nextcloud Phone Photo Upload.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Task Environments.md",
+                "file": "Archive/Problems/Nextcloud Phone Photo Upload.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Task Environments.md"
+                "file": "Archive/Problems/Nextcloud Phone Photo Upload.md"
               }
             }
           }
@@ -159,8 +159,10 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "ab7b06057169dc2a",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Archive/Problems/Nextcloud AIO occ.md",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/Task Environments.md",
     "Meta/Meta.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Problem Solving Agents.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md",
@@ -168,7 +170,6 @@
     "Archive/Bookmarks/Archives.md",
     "Archive/Lines.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 03.md",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/Task Environments.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 01.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 02.md",
@@ -186,7 +187,6 @@
     "Archive/Problems/View Deleted File in Git.md",
     "Notes/Software/Development/Web Development/Web Development.md",
     "Notes/Software/Development/Web Development/Themed Stylesheets.md",
-    "Notes/Networks/Internet/Internet.md",
     "Notes/Networks",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",
