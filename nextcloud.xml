@@ -13,13 +13,13 @@
             <link>https://notes.zachmanson.com/nextcloud</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Tue, 30 Apr 2024 23:45:59 </lastBuildDate>
+        <lastBuildDate>Tue, 30 Apr 2024 23:46:18 </lastBuildDate>
         
         <item>
             <title>Nextcloud Phone Photo Upload</title>
             <link>https://notes.zachmanson.com/nextcloud-phone-photo-upload</link>
             
-            <description>Folders are better.</description>
+            <description>Just use FolderSync.</description>
             
             <content:encoded>
                 <![CDATA[<p>Nextcloud is excellent, and its Android app is great.  I found the app's Auto-Upload feature to be nigh unusable.</p>
