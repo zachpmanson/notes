@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> as a slow-witted human being I have a very small head
+
+-- Prof.dr. Edsger W. Dijkstra, *Notes on Structured Programming* Ch. 1
+
+---
+
 > If you've never seen it before, Evangelion is a terribly depressing anime. It is the kind of thing that disturbs the comforted and comforts the disturbed.
 
 -- [Xe Iaso](https://xeiaso.net/blog/2024/much-ado-about-nothing/)

@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md",
+                "file": "Meta/Meta.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Search Algorithms.md",
+                "file": "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,14 +61,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Archive/Bookmarks/Archives.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -198,11 +198,13 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 03.md",
-    "Archive/Lines.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Search Algorithms.md",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/Problem Solving Agents.md",
+    "Archive/Bookmarks/Archives.md",
+    "Archive/Lines.md",
+    "Meta/Meta.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 03.md",
+    "Notes/Courses/Artificial Intelligence - A Modern Approach/Problem Solving Agents.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Task Environments.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 01.md",
@@ -222,8 +224,6 @@
     "Notes/Software/Development/Web Development/Web Development.md",
     "Notes/Software/Development/Web Development/Themed Stylesheets.md",
     "Notes/Networks/Internet/Internet.md",
-    "Notes/Networks/Maximum Transmission Unit.md",
-    "Archive/Problems/SeleniumBasic.md",
     "Notes/Networks",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",
