@@ -4,7 +4,7 @@ tags:
   - self-hosting
   - posts
 date: 2024-05-01
-subtitle: Folders are better.
+subtitle: Just use FolderSync.
 ---
 Nextcloud is excellent, and its Android app is great.  I found the app's Auto-Upload feature to be nigh unusable.
 
