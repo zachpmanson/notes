@@ -3,6 +3,7 @@ tags:
   - nextcloud
   - self-hosting
   - posts
+  - venting
 date: 2024-05-01
 subtitle: Just use FolderSync.
 ---
