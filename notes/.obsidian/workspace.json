@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/Nextcloud Phone Photo Upload.md",
+                "file": "Archive/Folklore/Blinkenlichten.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Problems/Nextcloud Phone Photo Upload.md",
+                "file": "Archive/Folklore/Blinkenlichten.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Problems/Nextcloud Phone Photo Upload.md",
+                "file": "Archive/Folklore/Blinkenlichten.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Problems/Nextcloud Phone Photo Upload.md"
+                "file": "Archive/Folklore/Blinkenlichten.md"
               }
             }
           }
@@ -159,8 +159,10 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "ab7b06057169dc2a",
   "lastOpenFiles": [
+    "Archive/Problems/Nextcloud Phone Photo Upload.md",
+    "Archive/Folklore/Blinkenlichten.md",
     "Archive/Problems/Nextcloud AIO occ.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Task Environments.md",
     "Meta/Meta.md",
@@ -185,8 +187,6 @@
     "Archive/Problems/Git Repo Contributor Line Count.md",
     "Archive/Problems/Git Subdirectory Branch.md",
     "Archive/Problems/View Deleted File in Git.md",
-    "Notes/Software/Development/Web Development/Web Development.md",
-    "Notes/Software/Development/Web Development/Themed Stylesheets.md",
     "Notes/Networks",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",
