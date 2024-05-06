@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Folklore/Blinkenlichten.md",
+                "file": "Archive/Bookmarks/Websites.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Folklore/Blinkenlichten.md",
+                "file": "Archive/Bookmarks/Websites.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Folklore/Blinkenlichten.md",
+                "file": "Archive/Bookmarks/Websites.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Folklore/Blinkenlichten.md"
+                "file": "Archive/Bookmarks/Websites.md"
               }
             }
           }
@@ -159,10 +159,10 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "ab7b06057169dc2a",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Archive/Problems/Nextcloud Phone Photo Upload.md",
     "Archive/Folklore/Blinkenlichten.md",
+    "Archive/Problems/Nextcloud Phone Photo Upload.md",
     "Archive/Problems/Nextcloud AIO occ.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Task Environments.md",
     "Meta/Meta.md",
