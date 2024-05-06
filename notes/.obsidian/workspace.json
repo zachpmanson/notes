@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ab7b06057169dc2a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Archive/Bookmarks/Websites.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "cc4f0f067d5f8f94",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/Archives.md",
+                "file": "Archive/Lines.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/Websites.md",
+                "file": "Archive/Lines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/Websites.md",
+                "file": "Archive/Lines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/Websites.md"
+                "file": "Archive/Lines.md"
               }
             }
           }
@@ -159,8 +147,12 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "cc4f0f067d5f8f94",
   "lastOpenFiles": [
+    "Archive/Bookmarks/Archives.md",
+    "Notes/Software/Program Names.md",
+    "Notes/Software/Software.md",
+    "Archive/Bookmarks/Websites.md",
     "Archive/Folklore/Blinkenlichten.md",
     "Archive/Problems/Nextcloud Phone Photo Upload.md",
     "Archive/Problems/Nextcloud AIO occ.md",
@@ -169,13 +161,11 @@
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Problem Solving Agents.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Search Algorithms.md",
-    "Archive/Bookmarks/Archives.md",
     "Archive/Lines.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 03.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 01.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 02.md",
-    "Archive/Bookmarks/Websites.md",
     "Archive/Folklore/C Locale Braindeath.md",
     "Archive/Bookmarks/Articles.md",
     "Notes/Software/Programs/Git/Git.md",
@@ -185,8 +175,6 @@
     "Archive/Folklore/Git Koans.md",
     "Notes/Software/Programs/Git/Git Operations.md",
     "Archive/Problems/Git Repo Contributor Line Count.md",
-    "Archive/Problems/Git Subdirectory Branch.md",
-    "Archive/Problems/View Deleted File in Git.md",
     "Notes/Networks",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",

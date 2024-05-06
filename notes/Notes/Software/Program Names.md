@@ -19,3 +19,7 @@ subtitle: Names I like.
 - `bat`, an advanced version of `cat`
 - [[Unix]], a play on words of a prior system called Multics
 - Rubocop, the linter for Ruby
+
+Interesting articles:
+
+- [Naming Things](https://breckyunits.com/naming-things.html)

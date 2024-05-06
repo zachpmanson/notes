@@ -5,6 +5,18 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> And these kind of conflicts is how you end up with the microservices pattern. Your backend gets carved up into parts maintained by different teams. In an ideal spherical cow reading of microservices, every microservice has a well-defined API that it uses to communicate with other services to help a user request turn into a response. Does this happen? Scholars continue to debate to this day.
+
+-- [Xe Iaso](https://xeiaso.net/talks/2024/shashin/)
+
+---
+
+> In programming, everything we do is a special case of something more general -- and often we know it too quickly.
+
+-- [Alan Perlis](http://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+
+---
+
 > as a slow-witted human being I have a very small head
 
 -- Prof.dr. Edsger W. Dijkstra, *Notes on Structured Programming* Ch. 1
