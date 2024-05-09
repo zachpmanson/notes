@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Archive/Problems/Problems.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "972ae6a738ec3df1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Archive/Problems/React and blur().md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Archive/Problems/React and blur().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Archive/Problems/React and blur().md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Lines.md"
+                "file": "Archive/Problems/React and blur().md"
               }
             }
           }
@@ -147,8 +160,12 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "cc4f0f067d5f8f94",
+  "active": "972ae6a738ec3df1",
   "lastOpenFiles": [
+    "Archive/Problems/Problems.md",
+    "Archive/Problems/React and blur().md",
+    "Notes/Networks/Internet/Fediverse/Fediverse Family Tree.md",
+    "Archive/Lines.md",
     "Archive/Bookmarks/Archives.md",
     "Notes/Software/Program Names.md",
     "Notes/Software/Software.md",
@@ -161,7 +178,6 @@
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Problem Solving Agents.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Search Algorithms.md",
-    "Archive/Lines.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 03.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 01.md",
@@ -172,9 +188,6 @@
     "Archive/Templates/Git Activity in Multiple Folders.md",
     "Notes/Software/Programs/Git/Git Bare Repositories.md",
     "Archive/Problems/Git Creation and Modification Time.md",
-    "Archive/Folklore/Git Koans.md",
-    "Notes/Software/Programs/Git/Git Operations.md",
-    "Archive/Problems/Git Repo Contributor Line Count.md",
     "Notes/Networks",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",
