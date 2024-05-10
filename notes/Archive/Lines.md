@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> Software isn’t a thing, it’s a craft. A chair maker doesn’t develop a single chair for years on end. They make more and more chairs, better chairs. And they don’t pass on _chairs_ to future generations. They pass on skills and knowledge and experience and expertise. We should see software the same way.
+
+-- [Lu Wilson](https://www.todepond.com/wikiblogarden/my-wikiblogarden/pictures/serious/)
+
+---
+
 > And these kind of conflicts is how you end up with the microservices pattern. Your backend gets carved up into parts maintained by different teams. In an ideal spherical cow reading of microservices, every microservice has a well-defined API that it uses to communicate with other services to help a user request turn into a response. Does this happen? Scholars continue to debate to this day.
 
 -- [Xe Iaso](https://xeiaso.net/talks/2024/shashin/)
