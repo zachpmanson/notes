@@ -12,7 +12,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: command line file sharing</title>
+  <title>notes: react and blur()</title>
 </head>
 
 <body>
@@ -65,7 +65,7 @@
         
 
         <div class="flex flex-col text-left nav-links">
-          <a href="/command-line-file-sharing" class="activated-link">Command Line File Sharing</a>
+          <a href="/react-and-blur()" class="activated-link">React and blur()</a>
           
           
           <a href="/alembic-revision-collision">Alembic Revision Collision</a>
@@ -84,6 +84,7 @@
           
           
           
+          <a href="/command-line-file-sharing">Command Line File Sharing</a>
           
           
           
@@ -199,7 +200,6 @@
           
           
           
-          <a href="/react-and-blur()">React and blur()</a>
           
           
           
@@ -277,30 +277,25 @@
   </nav>
   <main>
     <header>
-      <h1>Command Line File Sharing</h1>
+      <h1>React and blur()</h1>
     </header>
-    <article><p>Written by <a href="https://news.ycombinator.com/user?id=dabedee">dabedee</a> on HN.</p>
-<hr />
-<p>This is great and very user-friendly. As a quick &amp; dirty alternative for people using the command line, you can easily send files by using netcat.</p>
-<p>To quickly copy file from one machine to another.</p>
-<div class="highlight"><pre><span></span><code>  # on target machine
-  $ nc -l PORT &gt; file
-
-  # on source machine
-  $ cat file | nc HOST PORT
+    <article><p>In TypeScript, for some reason, <code>event.target</code> doesn't natively have a <code>blur()</code> method.  You need to ensure that is a <code>HTMLElement</code> type.</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">element</span><span class="p">.</span><span class="nx">target</span><span class="w"> </span><span class="ow">instanceof</span><span class="w"> </span><span class="nx">HTMLElement</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">element</span><span class="p">.</span><span class="nx">activeElement</span><span class="p">.</span><span class="nx">blur</span><span class="p">();</span>
+<span class="p">}</span>
 </code></pre></div>
-<p>To quickly copy an entire folder:</p>
-<div class="highlight"><pre><span></span><code>  # on target machine
-  $ nc -l PORT | tar xf -
-
-  # on source machine
-  $ tar cf - FOLDER | nc HOST PORT
-</code></pre></div>
-<p>And on top of it you can add pv in pipe for progress bar</p></article>
+<p><a href="https://github.com/Microsoft/TypeScript/issues/5901#issuecomment-431649653">Source</a></p></article>
 
     <hr />
 
     <div class="meta">
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
       
 
       
@@ -309,14 +304,14 @@
     </div>
   </main>
   <footer>
-    <a href="mailto:zachpmanson@gmail.com?subject=On 'Command Line File Sharing'">reply</a>
-    <a href="/react-and-blur()">random</a>
+    <a href="mailto:zachpmanson@gmail.com?subject=On 'React and blur()'">reply</a>
+    <a href="/convolutional-neural-networks">random</a>
     <a href="/recent-changes">updates</a>
     <a href="/posts">posts</a>
     <a href="/tags">tags</a>
     <a href="/sitemap">sitemap</a>
-    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Command Line File Sharing.md" class="desktop">edit</a>
-    <a href="https://github.com/pavo-etc/notes/edit/main/./notes/Archive/Problems/Command Line File Sharing.md" class="mobile">edit</a>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/React and blur().md" class="desktop">edit</a>
+    <a href="https://github.com/pavo-etc/notes/edit/main/./notes/Archive/Problems/React and blur().md" class="mobile">edit</a>
   </footer>
   
 </body>
