@@ -5,7 +5,13 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
-> Software isn’t a thing, it’s a craft. A chair maker doesn’t develop a single chair for years on end. They make more and more chairs, better chairs. And they don’t pass on _chairs_ to future generations. They pass on skills and knowledge and experience and expertise. We should see software the same way.
+> Any idiot can build a bridge that stands, but it takes an engineer to build a bridge that barely stands.
+
+-- couldn't actually find a good source, [first saw here](Any fool can build a bridge that stands. It takes an engineer to build a bridge that barely stands) but appears in many other places
+
+---
+
+> Software isn’t a thing, it’s a craft. A chair maker doesn’t develop a single chair for years on end. They make more and more chairs, better chairs. And they don’t pass on *chairs* to future generations. They pass on skills and knowledge and experience and expertise. We should see software the same way.
 
 -- [Lu Wilson](https://www.todepond.com/wikiblogarden/my-wikiblogarden/pictures/serious/)
 

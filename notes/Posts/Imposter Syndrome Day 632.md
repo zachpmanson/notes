@@ -19,7 +19,7 @@ Either because
 - all I do is build "dashboard for x company to monitor y"
 - I don't really understand how half the tools I use work, I just know the buttons I need to press
 - when I say "backend" I mean "write db query and write some trivial transformation into JSON"
-- when I say "frontend" I mean "tailwind and knowing how [[Notes/Software/Development/Web Development/React]] rendering work"
+- when I say "frontend" I mean "tailwind and knowing how [[React]] rendering work"
 - pipelines are just [[VendorOps]]
 - I spend all day in baby languages
 - all my technical opinions are stolen or surface level

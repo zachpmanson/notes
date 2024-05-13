@@ -160,12 +160,13 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "972ae6a738ec3df1",
   "lastOpenFiles": [
+    "Notes/Software/Development/Web Development/React.md",
+    "Archive/Lines.md",
     "Archive/Problems/React and blur().md",
     "Archive/Problems/Problems.md",
     "Notes/Networks/Internet/Fediverse/Fediverse Family Tree.md",
-    "Archive/Lines.md",
     "Archive/Bookmarks/Archives.md",
     "Notes/Software/Program Names.md",
     "Notes/Software/Software.md",
@@ -187,7 +188,6 @@
     "Notes/Software/Programs/Git/Git.md",
     "Archive/Templates/Git Activity in Multiple Folders.md",
     "Notes/Software/Programs/Git/Git Bare Repositories.md",
-    "Archive/Problems/Git Creation and Modification Time.md",
     "Notes/Networks",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",
