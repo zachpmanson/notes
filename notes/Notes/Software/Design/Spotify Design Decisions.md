@@ -28,7 +28,7 @@ When you attempt to add a song to playlist on mobile, there isn't even an option
 
 Spotify has added a feature called Smart Shuffle that works like normal shuffling, but also adds recommended songs in-between ever few tracks in the queue.  On paper I like this feature, though I have never found myself actually using it. I was introduced to it through the following infuriating UX.
 
-I go the the Now Playing screen on the Android Spotify client. The playlist I am listening to is currently set to shuffle (regular shuffle), but I would like to turn off regular shuffle.  I press the button with a shuffle icon, which has for 10+ years been a single toggle that would instantly take effect.  Instead of a simple 2 option toggle, I find that it has been converted in to a 3 option cycle button, where pressing it cycles through the options of `Linear -> Shuffle -> Smart Shuffle -> Linear`.  I can see the thinking behind this decision though I don't like it since it breaks muscle memory established by this app for a decade and all other music playing applications.  That is not my issue though.
+I go the the Now Playing screen on the Android Spotify client. The playlist I am listening to is currently set to shuffle (regular shuffle), but I would like to turn off regular shuffle.  I press the button with a shuffle icon, which has for 10+ years been a single toggle that would instantly take effect.  Instead of a simple 2 option toggle, I find that it has been converted in to a 3 option cycle button, where pressing it cycles through the options of `Linear -> Shuffle -> Smart Shuffle -> Linear`. I can see the thinking behind this decision, but it breaks muscle memory established all other music players for decades.  That is not my issue though.
 
 When you click the button and move the state from `Shuffle` to `Smart Shuffle`, the application begins loading the Smart Shuffle recommendations which means it must query Spotify servers, which is an operation that takes multiple seconds.  While this occurs, the button with a Shuffle icon becomes a button with a loading spinner, and becomes unclickable. I must wait multiple seconds before I can turn off Smart Shuffle.
 
@@ -38,7 +38,7 @@ This is deeply infuriating.  I never even wanted to use Smart Shuffle in the fir
 
 This occurred every time I wanted to turn off  `Shuffle`.  Which is a lot.
 
-As of 2024-01-21, this loading state of the button appears to have been removed, but the button still is a 3 option cycle which I dislike (though respect the elegance of).
+As of 2024-01-21, this loading state of the button appears to have been removed, thankfully.
 
 ## Overflow Menu Loading
 
@@ -73,6 +73,17 @@ On Android you can swipe down on the player interface but you cannot swipe up to
 This is a screenshot of the top bar.  Who the fuck let this happen.
 
 ![[spotify-top-bar.png]]
+
+## Liked Songs Filters Are Actually a Playlist
+
+For years, if you used the text filter on your Liked Songs and then played one of the songs, the queue would only populate with songs that matched that filter.  This could be useful for only listening to a particular artist within your Liked Songs, but was usually just annoying.
+
+As of 2023 it appears this behaviour has been removed.
+## Search Results Are Actually a Playlist
+
+Similar to the previous issue, if you searched for a song using the search tab, and then played one of the results, the queue would populate with all the other search results meaning you would hear the same song repeated several times, or covers, or random other tracks with similar names.
+
+As of 2023 it appears this behaviour has been removed.
 
 ## Upcoming Complaints
 
