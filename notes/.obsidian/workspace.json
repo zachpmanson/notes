@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/Problems.md",
+                "file": "Notes/Software/Software.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,8 +89,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -111,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Design/Spotify Design Decisions.md",
+                "file": "Notes/Software/Software.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Design/Spotify Design Decisions.md",
+                "file": "Notes/Software/Software.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Design/Spotify Design Decisions.md"
+                "file": "Notes/Software/Software.md"
               }
             }
           }
@@ -173,17 +171,18 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "543be1c4015da078",
+  "active": "cc4f0f067d5f8f94",
   "lastOpenFiles": [
+    "Notes/Mathematics/Computer Science/Computer Science.md",
+    "Archive/Lines.md",
+    "Archive/Problems/Problems.md",
+    "Notes/Software/Design/Spotify Design Decisions.md",
     "Media/spotify-top-bar.png",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
-    "Notes/Software/Design/Spotify Design Decisions.md",
     "Archive/Problems/Git Deleted Branch Recovery.md",
     "Archive/Problems/Sticky Elements.md",
-    "Archive/Lines.md",
     "Notes/Software/Development/Web Development/React.md",
     "Archive/Problems/React and blur().md",
-    "Archive/Problems/Problems.md",
     "Notes/Networks/Internet/Fediverse/Fediverse Family Tree.md",
     "Archive/Bookmarks/Archives.md",
     "Notes/Software/Program Names.md",
