@@ -4,13 +4,14 @@ tags:
 date: 2023-06-19
 subtitle: Reviews and advice for all Computer Science, Cyber Security, and Data Science units I completed at UWA.
 ---
+
 > Yea as long as you do all the work and watch all the lectures you’ll be chilling
 
 -- [seph](https://discord.com/channels/586127025228742656/586575812455563269/783525026573451334)
 
 I did my [[Computer Science]] degree from 2020 to 2023, coming out with a BSc. Computer Science, Cybersecurity, minoring in Data Science. I have omitted statistics units because I have nothing intelligible to say about them.
 
-Just do [Coders For Causes](https://codersforcauses.org/), you will learn more in that than entire semesters of this degree. **Learn how to use [[Notes/Software/Programs/Git/Git]] as fast as possible** then force all your group project members to use it. Narrow down your problems as much as possible, then google the most generic possible description of it. If you see someone using semicolons mid-sentence regularly it's probably [[Christ McDonald|Chris McDonald]].
+Just do [Coders For Causes](https://codersforcauses.org/), you will learn more in that than entire semesters of this degree. **Learn how to use [[Git]] as fast as possible** then force all your group project members to use it. Narrow down your problems as much as possible, then google the most generic possible description of it. If you see someone using semicolons mid-sentence regularly it's probably [[Christ McDonald|Chris McDonald]].
 
 ![[uwa-cits.png]]
 
@@ -56,7 +57,7 @@ CITS2002 Systems Programming
 - teaches [[Bash]] and [[Unix]] which are important and only orthogonally explained in CITS2002
 - teaches [[sed]] and [[awk]] relatively well
 - includes [[Make]] for some reason, no reason literally cut this its covered in CITS2002 and is actually relevant there
-- also includes [[Notes/Software/Programs/Git/Git]] but never actually requires its use so it feels useless even though it is most students first introduction to it. git should be in CITS1401.
+- also includes [[Git]] but never actually requires its use so it feels useless even though it is most students first introduction to it. git should be in CITS1401.
 - somehow manages to completely screw up the assessments every year
 - see [[Michael Wise Quotes]]
 
@@ -131,7 +132,7 @@ CITS3401 Data Warehousing
 CITS3403 Agile [[Web Development]]
 
 - really fun and very practical
-- FIRST ACTUAL USE OF [[Notes/Software/Programs/Git/Git]] (do no wait till third year, learn this in year 1 semester 1) how did it take this long
+- FIRST ACTUAL USE OF [[Git]] (do no wait till third year, learn this in year 1 semester 1) how did it take this long
 - well taught
 - [very](https://minecraftle.zachmanson.com) [[Minecraftle|fun project]]
 

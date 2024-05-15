@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Design/Spotify Design Decisions.md",
+                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": " \"git \"",
+                "query": "git/git",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -90,7 +90,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -110,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Design/Spotify Design Decisions.md",
+                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Design/Spotify Design Decisions.md",
+                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Design/Spotify Design Decisions.md"
+                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md"
               }
             }
           }
@@ -172,8 +173,9 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "543be1c4015da078",
   "lastOpenFiles": [
+    "Notes/Software/Design/Spotify Design Decisions.md",
     "Archive/Problems/Git Deleted Branch Recovery.md",
     "Archive/Problems/Sticky Elements.md",
     "Archive/Lines.md",
@@ -199,7 +201,6 @@
     "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 02.md",
     "Archive/Folklore/C Locale Braindeath.md",
     "Archive/Bookmarks/Articles.md",
-    "Notes/Software/Programs/Git/Git.md",
     "Notes/Networks",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",
