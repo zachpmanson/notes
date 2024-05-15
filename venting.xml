@@ -13,7 +13,7 @@
             <link>https://notes.zachmanson.com/venting</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Mon, 13 May 2024 01:47:24 </lastBuildDate>
+        <lastBuildDate>Wed, 15 May 2024 01:41:29 </lastBuildDate>
         
         <item>
             <title>Spotify Design Decisions</title>
@@ -22,8 +22,17 @@
             <content:encoded>
                 <![CDATA[<p>This page is a list of design decisions made by Spotify that I consider shitty.  I'm sure some of them only A/B tested, coming and going silently, but some have lingered for years. In any case I have experienced (have been subjected to) all of these personally and they piss me off greatly.</p>
 <p>See also: <a href="https://www.todepond.com/wikiblogarden/work/dear-spotify/">Dear spotify product manager</a> by Lu Wilson</p>
+<h2 id="unable-to-remove-dj-shortcut-on-desktop">Unable to Remove DJ Shortcut On Desktop</h2>
+<p>On desktop they have added a link to the DJ feature at the top of Your Library, below pinned playlists.  Despite not being a playlist (nor a feature I use), it continues to appear even when you have set the filter to only show playlists.  As far as I know it cannot be removed?  But it can be pinned.  Despite already being permalocked to the top.
+<img alt="" src="/media/dj.png" />
+The day after writing the previous paragraph, I noticed they had added the DJ to the same section in the mobile app, but long pressing the DJ icon shows you an option to hide it, which seems to have hidden it on all my devices.  Why is this option not available in the desktop client!</p>
+<h2 id="custom-playlist-sorting">Custom Playlist Sorting</h2>
+<p>For as long as I can remember you can order the playlists you have created or followed in any order along the left side of the desktop app. You can even put them in nested folders which is fantastic.  I have many playlists organised into folders in particular orders.  I know how to get to the playlist I want quickly because I have put it in a particular place. This order and "Recently played" are the only two i would ever want.</p>
+<p>Spotify seems to hate this use case.  To my knowledge its never been possible to rearrange order of playlists on the mobile app, only the desktop client.</p>
+<p>When you attempt to add a song to playlist on mobile, there isn't even an option to sort by recently played anymore.  This is diametrically opposed to desktop, where the right click menu will ONLY allow you to sort by custom order. </p>
+<p><img alt="" src="/media/no-custom-order.png" /></p>
 <h2 id="smart-shuffle-button-cycle-lock">Smart Shuffle Button Cycle Lock</h2>
-<p>Spotify has added a feature called Smart Shuffle that works like normal shuffling, but also added recommended songs in-between ever few tracks in the queue.  On paper I like this feature, though I have never found myself actually using it. I was introduced to it through the following infuriating UX.</p>
+<p>Spotify has added a feature called Smart Shuffle that works like normal shuffling, but also adds recommended songs in-between ever few tracks in the queue.  On paper I like this feature, though I have never found myself actually using it. I was introduced to it through the following infuriating UX.</p>
 <p>I go the the Now Playing screen on the Android Spotify client. The playlist I am listening to is currently set to shuffle (regular shuffle), but I would like to turn off regular shuffle.  I press the button with a shuffle icon, which has for 10+ years been a single toggle that would instantly take effect.  Instead of a simple 2 option toggle, I find that it has been converted in to a 3 option cycle button, where pressing it cycles through the options of <code>Linear -&gt; Shuffle -&gt; Smart Shuffle -&gt; Linear</code>.  I can see the thinking behind this decision though I don't like it since it breaks muscle memory established by this app for a decade and all other music playing applications.  That is not my issue though.</p>
 <p>When you click the button and move the state from <code>Shuffle</code> to <code>Smart Shuffle</code>, the application begins loading the Smart Shuffle recommendations which means it must query Spotify servers, which is an operation that takes multiple seconds.  While this occurs, the button with a Shuffle icon becomes a button with a loading spinner, and becomes unclickable. I must wait multiple seconds before I can turn off Smart Shuffle.</p>
 <p><code>Linear -&gt; Shuffle -&gt; Loading (multiple seconds) -&gt; Smart Shuffle -&gt; Linear</code></p>
@@ -47,15 +56,6 @@
 <p>On Android you can swipe down on the player interface but you cannot swipe up to reveal it.  When you attempt this you will almost definitely skip the song that is currently playing, since the minimised version of the player only detects left and right swipes.</p>
 <video src='/media/swipe-up.webm' controls></video>
 
-<h2 id="unable-to-remove-dj-shortcut-on-desktop">Unable to Remove DJ Shortcut On Desktop</h2>
-<p>On desktop they have added a link to the DJ feature at the top of Your Library, below pinned playlists.  Despite not being a playlist (nor a feature I use), it continues to appear even when you have set the filter to only show playlists.  As far as I know it cannot be removed?  But it can be pinned.  Despite already being permalocked to the top.
-<img alt="" src="/media/dj.png" />
-The day after writing the previous paragraph, I noticed they had added the DJ to the same section in the mobile app, but long pressing the DJ icon shows you an option to hide it, which seems to have hidden it on all my devices.  Why is this option not available in the desktop client!</p>
-<h2 id="custom-playlist-sorting">Custom Playlist Sorting</h2>
-<p>For as long as I can remember you can order the playlists you have created or followed in any order along the left side of the desktop app. You can even put them in nested folders which is fantastic.  I have many playlists organised into folders in particular orders.  I know how to get to the playlist I want quickly because I have put it in a particular place. This order and "Recently played" are the only two i would ever want.</p>
-<p>Spotify seems to hate this use case.  To my knowledge its never been possible to rearrange order of playlists on the mobile app, only the desktop client.</p>
-<p>When you attempt to add a song to playlist on mobile, there isn't even an option to sort by recently played anymore.  This is diametrically opposed to desktop, where the right click menu will ONLY allow you to sort by custom order. </p>
-<p><img alt="" src="/media/no-custom-order.png" /></p>
 <h2 id="top-bar-alignment">Top Bar Alignment</h2>
 <p>This is a screenshot of the top bar.  Who the fuck let this happen.</p>
 <p><img alt="" src="/media/spotify-top-bar.png" /></p>

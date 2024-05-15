@@ -12,7 +12,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: domain based link colours</title>
+  <title>notes: git deleted branch recovery</title>
 </head>
 
 <body>
@@ -65,7 +65,7 @@
         
 
         <div class="flex flex-col text-left nav-links">
-          <a href="/domain-based-link-colours" class="activated-link">Domain Based Link Colours</a>
+          <a href="/git-deleted-branch-recovery" class="activated-link">Git Deleted Branch Recovery</a>
           
           
           <a href="/alembic-revision-collision">Alembic Revision Collision</a>
@@ -96,6 +96,7 @@
           
           
           
+          <a href="/domain-based-link-colours">Domain Based Link Colours</a>
           
           
           
@@ -119,7 +120,6 @@
           
           
           
-          <a href="/git-deleted-branch-recovery">Git Deleted Branch Recovery</a>
           
           
           
@@ -281,23 +281,36 @@
   </nav>
   <main>
     <header>
-      <h1>Domain Based Link Colours</h1>
+      <h1>Git Deleted Branch Recovery</h1>
     </header>
-    <article><p>To make <code>&lt;a&gt;</code> tag colour depend on the domain the <code>href</code> attribute points to, you can use a CSS selector that checks from the start of the element.</p>
-<div class="highlight"><pre><span></span><code><span class="c">/* Internal links */</span>
-<span class="nt">a</span><span class="o">[</span><span class="nt">href</span><span class="o">^=</span><span class="s2">&quot;/&quot;</span><span class="o">]</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">purple</span><span class="p">;</span>
-<span class="p">}</span>
+    <article><p><a href="https://gist.github.com/umayr/b95e11d5f22c24a872ef95d215ba2ab1">Written by a true hero</a>.</p>
+<div class="highlight"><pre><span></span><code>## Pre-requisite: You have to know your last commit message from your deleted branch.
+git reflog
+# Search for message in the list
+# a901eda HEAD@{18}: commit: &lt;last commit message&gt;
 
-<span class="c">/* Other Links */</span>
-<span class="nt">a</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span>
-<span class="p">}</span>
+# Now you have two options, either checkout revision or HEAD
+git checkout a901eda 
+# Or
+git checkout HEAD@{18}
+
+# Create branch
+git branch recovered-branch
+
+# You may want to push that back to remote
+git push origin recovered-branch:recovered-branch
 </code></pre></div></article>
 
     <hr />
 
     <div class="meta">
+      
+      <p class="backlinks"><span class="bold">Incoming:</span>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
       
 
       
@@ -306,14 +319,14 @@
     </div>
   </main>
   <footer>
-    <a href="mailto:zachpmanson@gmail.com?subject=On 'Domain Based Link Colours'">reply</a>
-    <a href="/flash-attention">random</a>
+    <a href="mailto:zachpmanson@gmail.com?subject=On 'Git Deleted Branch Recovery'">reply</a>
+    <a href="/interrobang">random</a>
     <a href="/recent-changes">updates</a>
     <a href="/posts">posts</a>
     <a href="/tags">tags</a>
     <a href="/sitemap">sitemap</a>
-    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Domain Based Link Colours.md" class="desktop">edit</a>
-    <a href="https://github.com/pavo-etc/notes/edit/main/./notes/Archive/Problems/Domain Based Link Colours.md" class="mobile">edit</a>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Git Deleted Branch Recovery.md" class="desktop">edit</a>
+    <a href="https://github.com/pavo-etc/notes/edit/main/./notes/Archive/Problems/Git Deleted Branch Recovery.md" class="mobile">edit</a>
   </footer>
   
 </body>
