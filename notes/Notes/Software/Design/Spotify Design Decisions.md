@@ -70,7 +70,7 @@ On Android you can swipe down on the player interface but you cannot swipe up to
 
 ## Top Bar Alignment
 
-This is a screenshot of the top bar.  Who the fuck let this happen.
+Who the fuck let this happen.
 
 ![[spotify-top-bar.png]]
 
