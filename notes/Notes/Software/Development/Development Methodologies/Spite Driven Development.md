@@ -9,7 +9,7 @@ While it is extremely effective for building software quickly, it is often destr
 
 ## History
 
-I got mad at a competitor/company with shitty practices/friend/existing tool.  Spend multiple days (likely straight) writing code to spite them.  Spited them. `git push`
+I got mad at a competitor/company/friend with shitty practices/existing tool.  Spend multiple days (likely straight) writing code to spite them.  Spited them. `git push`
 
 ## Spite Driven Development Cycle
 

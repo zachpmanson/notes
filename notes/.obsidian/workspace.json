@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Software.md",
+                "file": "Notes/Software/Development/Development Methodologies/Spite Driven Development.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Software.md",
+                "file": "Notes/Software/Development/Development Methodologies/Spite Driven Development.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Software.md",
+                "file": "Notes/Software/Development/Development Methodologies/Spite Driven Development.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Software.md"
+                "file": "Notes/Software/Development/Development Methodologies/Spite Driven Development.md"
               }
             }
           }
@@ -171,8 +171,13 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "cc4f0f067d5f8f94",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Projects/Minecraftle/Minecraftle.md",
+    "Notes/Software/Development/Development Methodologies/Spite Driven Development.md",
+    "Notes/Software/Development/Development Methodologies/Resume Driven Development.md",
+    "Notes/Software/Development/Development Methodologies/Development Methodologies.md",
+    "Notes/Software/Software.md",
     "Notes/Mathematics/Computer Science/Computer Science.md",
     "Archive/Lines.md",
     "Archive/Problems/Problems.md",
@@ -186,7 +191,6 @@
     "Notes/Networks/Internet/Fediverse/Fediverse Family Tree.md",
     "Archive/Bookmarks/Archives.md",
     "Notes/Software/Program Names.md",
-    "Notes/Software/Software.md",
     "Archive/Bookmarks/Websites.md",
     "Archive/Folklore/Blinkenlichten.md",
     "Archive/Problems/Nextcloud Phone Photo Upload.md",
@@ -196,10 +200,6 @@
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Problem Solving Agents.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md",
     "Notes/Courses/Artificial Intelligence - A Modern Approach/Search Algorithms.md",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 03.md",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/Agents.md",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 01.md",
-    "Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 02.md",
     "Notes/Networks",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",
