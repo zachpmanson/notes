@@ -37,4 +37,4 @@ Sustenance, testing, clean code.
 
 ## Development Frameworks
 
-Much like how ruby+rspec is very well suited to test driven development, many frameworks are well suited to SDD.  Whichever framework you know is the ideal framework for SDD.  Time is of the essence and you have no-one to please but yourself.  Spite burns hot but it burns dirty, and it is not a renewable resource.  Your must strike while the iron is hot and complete the project before you are sapped of the hatred that caused you to start the project.
+Much like how ruby+rspec is very well suited to test driven development, many frameworks are well suited to SDD.  Whichever framework you know is the ideal framework for SDD.  Time is of the essence and you have no-one to please but yourself.  Spite burns hot but it burns dirty, and it is not a renewable resource.  Your must strike while the iron is hot and complete the project before you are sapped of the hatred that started all this.
