@@ -15,7 +15,7 @@ On desktop they have added a link to the DJ feature at the top of Your Library, 
 The day after writing the previous paragraph, I noticed they added the DJ to the same section in the mobile app. In the movile app a long press on the DJ icon does shows you an option to hide it, which seems to sync across all my devices.  Why is this option not available in the desktop client!
 ## Custom Playlist Sorting
 
-For as long as I can remember you can order the playlists you have created or followed in any order along the left side of the desktop app. You can even put them in nested folders which is fantastic.  I have many playlists organised into folders in particular orders.  I know how to get to the playlist I want quickly because I have put it in a particular place. This order and "Recently played" are the only two i would ever want.
+For as long as I can remember you can order the playlists you have created/followed in any order along the left side of the desktop app. You can even put them in nested folders which is fantastic.  I have many playlists organised into folders in particular orders.  I know how to get to the playlist I want quickly because I have put it in a particular place. This custom order and "Recently played" are the only two i would ever want.
 
 Spotify seems to hate this use case.  To my knowledge its never been possible to rearrange order of playlists on the mobile app, only the desktop client.
 
