@@ -13,7 +13,7 @@
             <link>https://notes.zachmanson.com/venting</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Wed, 15 May 2024 01:58:10 </lastBuildDate>
+        <lastBuildDate>Wed, 15 May 2024 02:05:06 </lastBuildDate>
         
         <item>
             <title>Nextcloud Phone Photo Upload</title>
@@ -73,7 +73,7 @@ The day after writing the previous paragraph, I noticed they added the DJ to the
 <video src='/media/swipe-up.webm' controls></video>
 
 <h2 id="top-bar-alignment">Top Bar Alignment</h2>
-<p>This is a screenshot of the top bar.  Who the fuck let this happen.</p>
+<p>Who the fuck let this happen.</p>
 <p><img alt="" src="/media/spotify-top-bar.png" /></p>
 <h2 id="liked-songs-filters-are-actually-a-playlist">Liked Songs Filters Are Actually a Playlist</h2>
 <p>For years, if you used the text filter on your Liked Songs and then played one of the songs, the queue would only populate with songs that matched that filter.  This could be useful for only listening to a particular artist within your Liked Songs, but was usually just annoying.</p>
