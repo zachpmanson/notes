@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/Git Deleted Branch Recovery.md",
+                "file": "Notes/Software/Design/Spotify Design Decisions.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Problems/Git Deleted Branch Recovery.md",
+                "file": "Notes/Software/Design/Spotify Design Decisions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Problems/Git Deleted Branch Recovery.md",
+                "file": "Notes/Software/Design/Spotify Design Decisions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Problems/Git Deleted Branch Recovery.md"
+                "file": "Notes/Software/Design/Spotify Design Decisions.md"
               }
             }
           }
@@ -172,10 +172,10 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "543be1c4015da078",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Archive/Problems/Sticky Elements.md",
     "Archive/Problems/Git Deleted Branch Recovery.md",
+    "Archive/Problems/Sticky Elements.md",
     "Archive/Lines.md",
     "Notes/Software/Development/Web Development/React.md",
     "Archive/Problems/React and blur().md",

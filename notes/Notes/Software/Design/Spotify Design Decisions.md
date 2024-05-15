@@ -10,7 +10,7 @@ See also: [Dear spotify product manager](https://www.todepond.com/wikiblogarden/
 
 ## Smart Shuffle Button Cycle Lock
 
-Spotify has added a feature called Smart Shuffle that works like normal shuffling, but also added recommended songs in-between ever few tracks in the queue.  On paper I like this feature, though I have never found myself actually using it. I was introduced to it through the following infuriating UX.
+Spotify has added a feature called Smart Shuffle that works like normal shuffling, but also adds recommended songs in-between ever few tracks in the queue.  On paper I like this feature, though I have never found myself actually using it. I was introduced to it through the following infuriating UX.
 
 I go the the Now Playing screen on the Android Spotify client. The playlist I am listening to is currently set to shuffle (regular shuffle), but I would like to turn off regular shuffle.  I press the button with a shuffle icon, which has for 10+ years been a single toggle that would instantly take effect.  Instead of a simple 2 option toggle, I find that it has been converted in to a 3 option cycle button, where pressing it cycles through the options of `Linear -> Shuffle -> Smart Shuffle -> Linear`.  I can see the thinking behind this decision though I don't like it since it breaks muscle memory established by this app for a decade and all other music playing applications.  That is not my issue though.
 
