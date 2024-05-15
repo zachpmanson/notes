@@ -13,7 +13,126 @@
             <link>https://notes.zachmanson.com/posts</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Wed, 15 May 2024 01:47:05 </lastBuildDate>
+        <lastBuildDate>Wed, 15 May 2024 01:48:41 </lastBuildDate>
+        
+        <item>
+            <title>Git Activity in Multiple Folders</title>
+            <link>https://notes.zachmanson.com/git-activity-in-multiple-folders</link>
+            
+            <description>A template for listing all the commits you did on a certain date.</description>
+            
+            <content:encoded>
+                <![CDATA[<p>A script I like to drop into my projects folders to see what I was working on for a given day.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">day</span><span class="o">=</span><span class="nv">$1</span>
+<span class="nv">repo_folder</span><span class="o">=</span>~/projects
+<span class="k">for</span><span class="w"> </span>dir<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$repo_folder</span><span class="s2">&quot;</span>/*/<span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">    </span><span class="c1"># Check if the directory is a git repository</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$dir</span><span class="s2">/.git&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">        </span><span class="nb">cd</span><span class="w"> </span><span class="nv">$dir</span>
+<span class="w">        </span>git<span class="w"> </span>log<span class="w"> </span>--after<span class="o">=</span><span class="s2">&quot;</span><span class="nv">$day</span><span class="s2"> 00:00&quot;</span><span class="w"> </span>--before<span class="o">=</span><span class="s2">&quot;</span><span class="nv">$day</span><span class="s2"> 23:59?&quot;</span><span class="w"> </span>--author<span class="o">=</span><span class="s2">&quot;Zach&quot;</span>
+<span class="w">    </span><span class="k">fi</span>
+<span class="k">done</span>
+</code></pre></div>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/git-activity-in-multiple-folders</guid>
+            <pubDate>2024-04-22</pubDate>
+        </item>
+        
+        <item>
+            <title>XZ</title>
+            <link>https://notes.zachmanson.com/xz</link>
+            
+            <description>The most advanced supply chain attack ever found.</description>
+            
+            <content:encoded>
+                <![CDATA[<p>The XZ exploit is a clever supply chain attack, placing a RCE in sshd using a vulnerability in XZ, a compression library that many <a href="/linux">Linux</a> distributions call when running OpenSSH (sshd -&gt; libsystemd (for systemd notifications) -&gt; liblzma (for logging)).  It was discovered by Andres Freund when he noticed that sshd was running with abnormally high CPU usage.</p>
+<p>The vulnerability was submitted by Jia Tan, a maintainer of XZ project who had been an active contributor since 2021.   The vulnerability was extremely obfuscated.  <a href="https://www.openwall.com/lists/oss-security/2024/03/29/4">Read the original backdoor report by Andres Freund for more details on this</a>.</p>
+<h2 id="maintainers">Maintainers</h2>
+<p>There are two maintainers of the XZ projects, Jia Tan and Lasse Collin.  Lasse Collin is the original author of the XZ Utils library, whereas Jia Tan has only been a maintainer since 2022.</p>
+<p>Tan appears so have little to no online footprint prior to 2021 when they started making useful contributions to XZ.  It is speculated that Jia Tan is an invented persona.</p>
+<blockquote>
+<p>He has been part of the xz project for 2 years, adding all sorts of binary test files, and to be honest with this level of sophistication I would be suspicious of even older versions of xz until proven otherwise.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=39866275">Richard Jones</a></cite></p>
+<ul>
+<li><a href="https://robmensching.com/blog/posts/2024/03/30/a-microcosm-of-the-interactions-in-open-source-projects/">A Microcosm of the interactions in Open Source projects</a>, and interesting analysis of mailing list discussions about Jia Tan's contributions to the XZ project before Tan was made maintainer</li>
+<li><a href="https://tukaani.org/xz-backdoor/">Lasse Collin's page</a> tracking the vulnerability</li>
+</ul>
+<h2 id="features">Features</h2>
+<ul>
+<li>kill switch based on <a href="https://piaille.fr/@zeno/112185928685603910">environment variable</a><ul>
+<li><code>yolAbejyiejuvnup=Evjtgvsh5okmkAvj</code> is hardcoded (and then obfuscated)</li>
+</ul>
+</li>
+<li>backdoor itself is secured as it checks for a private key<ul>
+<li>this is an interesting argument against "when you make a backdoor for good guys you also make a backdoor for bad guys" though that's another conversation entirely</li>
+</ul>
+</li>
+</ul>
+<h2 id="oddities">Oddities</h2>
+<ul>
+<li>In 2022 <a href="https://www.mail-archive.com/xz-devel@tukaani.org/msg00566.html">there were other suspected sock puppet accounts pushing Collin to introduce new maintainers</a></li>
+<li>Tan disabled a function in <a href="https://github.com/google/oss-fuzz/pull/10667">oss-fuzzer</a> in 2023 that the exploit relied on that may have revealed the exploit (<a href="https://social.treehouse.systems/@Aissen/112180302735030319">source</a>)</li>
+<li>the day before the exploit was found the xz-java project added a SECURITY.md file </li>
+</ul>
+<blockquote>
+<p>If you discover a security vulnerability in this project please report it privately. <em>Do not disclose it as a public issue.</em> This gives us time to work with you to fix the issue before public exposure, reducing the chance that the exploit will be used before a patch is released.</p>
+</blockquote>
+<ul>
+<li>It disabled Linux landlock?<ul>
+<li><a href="https://git.tukaani.org/?p=xz.git;a=blobdiff;f=CMakeLists.txt;h=d2b1af7ab0ab759b6805ced3dff2555e2a4b3f8e;hp=76700591059711e3a4da5b45cf58474dac4e12a7;hb=328c52da8a2bbb81307644efdb58db2c422d9ba7;hpb=eb8ad59e9bab32a8d655796afd39597ea6dcc64d">This commit</a> introduces a syntax error that prevents Linux landlock from being activated.  The test program designed to test if landlock was supported would always fail due to this errant <code>.</code>.</li>
+</ul>
+</li>
+<li>Tan's first GitHub PR is to libarchive and is suspect as it subtly replaces <code>safe_printf</code> calls with unsafe <code>fprintf</code></li>
+</ul>
+<h2 id="discovery">Discovery</h2>
+<blockquote>
+<p>I was doing some micro-benchmarking at the time, needed to quiesce the system to reduce noise. Saw sshd processes were using a surprising amount of CPU, despite immediately failing because of wrong usernames etc. Profiled sshd, showing lots of cpu time in liblzma, with perf unable to attribute it to a symbol. Got suspicious. Recalled that I had seen an odd valgrind complaint in automated testing of postgres, a few weeks earlier, after package updates.</p>
+<p>Really required a lot of coincidences.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://mastodon.social/@AndresFreundTec/112180083704606941">Andres Freund (a Postgres developer at Microsoft)</a></cite></p>
+<p>As noted by <a href="https://news.ycombinator.com/item?id=39879960">nurple</a> on HN, this exploit was found for similar reasons to Ken Thompson's supply chain exploit was detected.  Strange performance sparking curiosity.</p>
+<h2 id="links">Links</h2>
+<ul>
+<li><a href="https://gist.github.com/thesamesam/223949d5a074ebc3dce9ee78baad9e27">FAQ on the exploit</a> by Sam James</li>
+<li><a href="https://news.ycombinator.com/item?id=39865810">Initial discussion on hn</a></li>
+<li><a href="https://www.cve.org/CVERecord?id=CVE-2024-3094">CVE-2024-3094 Report</a></li>
+<li><a href="https://www.openwall.com/lists/oss-security/2024/03/29/4">Original backdoor report by Freund</a></li>
+<li><a href="https://bsky.app/profile/did:plc:x2nsupeeo52oznrmplwapppl/post/3kowjkx2njy2b">Discovery of RCE</a></li>
+<li><a href="https://lcamtuf.substack.com/p/technologist-vs-spy-the-xz-backdoor">Technologist vs Spy</a>, making the case that based on the behaviour and circumstances surrounding the bug were that of organised actors</li>
+<li><a href="https://github.com/Midar/xz-backdoor-documentation/wiki">XZ Backdoor Documentation</a></li>
+<li><a href="https://gynvael.coldwind.pl/?lang=en&amp;id=782">XZ Bash-Stage Obfuscation Explained</a></li>
+<li><a href="https://arstechnica.com/security/2024/04/what-we-know-about-the-xz-utils-backdoor-that-almost-infected-the-world/"><strong>Ars Technica Overview</strong></a></li>
+<li><a href="https://github.com/amlweems/xzbot">PoC</a> with substituted public key</li>
+<li><a href="https://shellsharks.com/xz-compromise-link-roundup">Even more links</a></li>
+</ul>
+<p><img alt="" src="/media/xz-analysis.png" /></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/xz</guid>
+            <pubDate>2024-03-31</pubDate>
+        </item>
+        
+        <item>
+            <title>Minecraftle v2.0</title>
+            <link>https://notes.zachmanson.com/minecraftle-v2.0</link>
+            
+            <content:encoded>
+                <![CDATA[<p><a href="/minecraftle">Minecraftle</a> blew up!  At the time of writing it has had over 1 million players and seems to still be increasing.  Seems like it became popular thanks to a few YouTube videos and TikToks. This huge spike in players revealed how poorly made it all was.</p>
+<p>The stats page in particular was poorly done.  Originally I had made the schema as simple as possible and only stored the record of each game in one big table. This worked for small player counts, but meant calculating rankings was quadratic so the stats page eventually 10+ seconds to load.  I only discovered this was happening when the database for <a href="/penultimate-guitar">Penultimate Guitar</a> would be killed to allocate more resources every time someone loaded the stats page.  </p>
+<p>Since rewriting the database meant I'd need to get rid of the entire backend, I decided this was the time to move away from Flask and static JavaScript and port it to Next.js.  I had been meaning to do this for a while.  The Vanilla JS I had been using prior was very janky and poorly made.  I was still unemployed at this time and had plenty of free time since most of my friends had left Melbourne to see their families for Christmas.</p>
+<p>The new version of Minecraftle is deployed now on Vercel with a proper instance of Postgres for storing user scores. Rankings are still slow to calculate since all million+ players must be ordered, but they are calculated once per hour via a cronjob that refreshes a materialised view so the pageload is fast.  I'm sure I could do something clever here, chunking the calculations or having them incrementally calculated when a new game score is submitted, but this works for now.</p>
+<p>Alongside this rewrite I was able to add a few long requested features, like a clear button.</p>
+<h2 id="mistakes">Mistakes</h2>
+<h3 id="database-broke">Database Broke</h3>
+<p>I accidentally ran the migration script twice, once a few weeks prior to deployment to generate some test data and once on the day I deployed.  I forgot about the initial run in the intervening weeks.  Making matters worse, the second run used the old dump of the database, meaning that all scores were double what they were 3 weeks prior.  This was painful to diagnose as some scores had gone up while others had gone down.  I was eventually able to figure out what had happened thanks to <a href="https://github.com/zachpmanson/minecraftle/issues/34">this bug report</a> which contained a screenshot of the scores the day before.  Thank you very much <a href="https://github.com/suppergerrie2">suppergerrie2</a>!</p>
+<h3 id="cdn-vs-audio-files">CDN vs Audio Files</h3>
+<p><img alt="" src="/media/mctl-routes.png" /></p>
+<p>Back when Minecraftle was just a uni project, one of my teammates, Harrison Oates, added a button that would play in game audio from Minecraft.  This was cute and insignificant, to the point where I forgot it existed.  When I deployed on Vercel this became a problem since almost all my bandwidth (100GiB) was used by this single mp3 file! I removed this feature, but other static assets were going to use my remaining bandwidth.  I had to switch to running it on a new DigitalOcean droplet for the rest of the month.</p>
+<p>Hopefully this are the last updates Minecraftle will need for a long time!</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/minecraftle-v2.0</guid>
+            <pubDate>2024-04-08</pubDate>
+        </item>
         
         <item>
             <title>Planting a Flag in Wikipedia</title>
@@ -33,146 +152,6 @@
             </content:encoded>
             <guid isPermaLink="false">https://notes.zachmanson.com/planting-a-flag-in-wikipedia</guid>
             <pubDate>2023-02-06</pubDate>
-        </item>
-        
-        <item>
-            <title>Pirate Libraries</title>
-            <link>https://notes.zachmanson.com/pirate-libraries</link>
-            
-            <content:encoded>
-                <![CDATA[<p>Also known as shadow libraries, are potentially the best thing humans have ever created and are illegal in most places.  They are <a href="/archives">archives</a> human writing, some catering to particular niches and some attempting to capture <em>everything</em>.  And then distribute all of human knowledge and writing for free.</p>
-<p>They have no regard for copyright law, generally viewing them as part of a broken system or distractions to (what the pirate librarians might call) their noble goals.</p>
-<p>Library Genesis (libgen) and Sci-Hub (a superset of libgen) focus primarily on academic materials, textbooks and journal publications.  The projects are borne from the goal of allowing access to documents that would normally only be accessible through expensive journals.</p>
-<p>Books3 is another pirate library, containing ≈196000 books sourced from Bibliotik.  It is named in the spirit of OpenAI's dubiously sourced collections of books, Books1 and Books2.  Books3 has become well known for its use in training <a href="/large-language-models">large language models</a> like <a href="/llama">LLaMA</a>.</p>
-<p>The <a href="/internet">Internet</a> Archive is pirate library adjacent.  It contains and redistributes (without permission) countless copyrighted works, but will respond to takedown requests.</p>
-<p>During <a href="/uwa-computer-science">my time at university</a>, use of Library Genesis and Sci-Hub was rife. While not everyone knew of these sites directly, everyone knew someone who knew someone who did, and textbook PDFs propagated on the sneakernet.</p>
-<p>Pirate libraries:</p>
-<ul>
-<li>Library Genesis</li>
-<li>Sci-Hub</li>
-<li>Bibliotik</li>
-<li>Books3</li>
-<li>Gigapedia</li>
-<li>Kolkhoz</li>
-<li>Librusec</li>
-</ul>
-<p>An adjacent concept is preservation of media, where pirated copies are seen as a defence against permanent loss. This is the thinking behind the Internet Archive and the sites it has inspired.  This kind of thinking is also prevalent in the world of video games, a medium where many works are rendered unavailable by missing online services, changing hardware landscape or lost source code. There are many cases where old games have been recovered or restored through pirated versions.</p>
-<p>Web archives:</p>
-<ul>
-<li><a href="https://archive.org">Internet Archive</a></li>
-<li><a href="https://archive.is">archive.is</a></li>
-<li><a href="https://archive.today">archive.today</a></li>
-</ul>
-<h2 id="links">Links</h2>
-<ul>
-<li><a href="https://www.atlasobscura.com/articles/the-rise-of-illegal-pirate-libraries">The Rise of Pirate Libraries</a></li>
-<li><a href="https://www.wired.com/story/battle-over-books3/">The Battle Over Books3</a></li>
-<li><a href="https://reason.com/2022/07/24/you-cant-stop-pirate-libraries/">You Can't Stop Pirate Libraries</a></li>
-<li><a href="https://publiclibrariesonline.org/2016/06/the-pirate-library-controversy/">The Pirate Library Controversy</a></li>
-<li><a href="https://lostmediawiki.com/Home">Lost Media Wiki</a></li>
-</ul>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/pirate-libraries</guid>
-            <pubDate>2023-11-20</pubDate>
-        </item>
-        
-        <item>
-            <title>Collaborative Awe</title>
-            <link>https://notes.zachmanson.com/collaborative-awe</link>
-            
-            <content:encoded>
-                <![CDATA[<p>I recently received access to DALL-E and played around with it for a while. The interface is simple, just a textbox and a few curated images to give you some inspiration.</p>
-<p><img alt="" src="/media/dall-e.jpg" /></p>
-<p>Once you submit a prompt to DALL-E, you are shown more curated images and their corresponding prompts while your request is processed.</p>
-<p>DALL-E is capable of producing some amazing images. It takes a bit of warming up, but after little practice I was able to create wonderful and bizarre generative art. Despite this, I felt I didn't know how to produce something as interesting or engaging as their curated images the presented to me when using DALL-E. I could logically understand that the tool had potential, but I felt separated from it.</p>
-<p>Using Midjourney is completely a different experience. Midjourney currently runs its generative art AI through a bot on their company Discord server. You generate images by typing in a command in certain channels, and all the images produced are visible to everyone on the server simultaneously. Before you can even type something you are assaulted by an unfiltered, non-curated array of incredible images, all diffusing right before your eyes.</p>
-<video autoplay loop muted>
-   <source src="/media/firehose.webm" type="video/webm">
-</video>
-
-<p>While both generators are impressive, using Midjourney was a visceral experience for me in a way that DALL-E was not. DALL-E is sipping a glass of water, Midjourney is a firehose blasting your face. I was immediately in awe.</p>
-<p>The design of Midjourney makes it abundantly clear how big an impact this technology will have on the world. Watching hundreds of strangers generate images in real-time is jaw dropping. I was mesmerised, and within minutes saw images that moved me, despite being created by an AI without any intention behind them.</p>
-<p>While I am sure both of these are the future, only one made me feel it.</p>
-<p><img alt="" src="/media/soldiers.jpg" /></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/collaborative-awe</guid>
-            <pubDate>2022-08-06</pubDate>
-        </item>
-        
-        <item>
-            <title>The Curse of the Last Good Day</title>
-            <link>https://notes.zachmanson.com/the-curse-of-the-last-good-day</link>
-            
-            <description>Spoilers for The Fault in Our Stars, I guess</description>
-            
-            <content:encoded>
-                <![CDATA[<p><em>The Fault in Our Stars</em> describes the phenomenon of the Last Good Day, a concept that has been echoing in my head ever since I read the book in high school. In the novel, the Last Good Day is the final time a person who is slowly deteriorating has a peaceful and pleasant moment with those around them.</p>
-<blockquote>
-<p>There's no way of knowing that your last good day is Your Last Good Day. At the time, it is just another good day.</p>
-</blockquote>
-<p>The story presents this in the context of Augustus' worsening condition and eventual death.</p>
-<p>So far, I've been lucky enough to be free of facing slow health declines in myself and those close to me, but the concept of the Last Good Day has sat quietly in the back of my mind since first encountering it. Whenever I have some kind of impending loss, no matter how small, my thoughts tend to orbit around it.</p>
-<p>With my bachelor's degree coming to a close soon, lots of my friends are moving away for careers or further study in other countries. The groups that have formed won't continue to exist in the way the have for the last 3 years. Not everyone is leaving of course and no one person is single load-bearing pillar of the group, but buildings tend not to handle losing half their supports.</p>
-<p>I've been aware that this will happen for months, and at every group event in my head I'm constantly thinking <em>Is this going to be the Last Good Day? Is this Good enough? Can I make this better?</em> This is definitely not healthy and definitely doesn't help me enjoy the limited time left with my friends. This line of thinking is something I hesitate to even talk about with my friends in fear of inspiring the same kind of thought spirals in their minds.</p>
-<p>Time has gone on and the erosion has begun. As I write this, another will be flying to Sydney tomorrow morning. Enough friends have left now that the Last Good Day has certainly passed, and yet I'm still not 100% sure which day it was. There's some strong contenders though.</p>
-<p>That's life, I know I'll make more friends and there's no need to be melodramatic. Regardless, I'm going to miss this period and the people I've spent it with.</p>
-<p>Cheers and auld lang syne and so on.</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/the-curse-of-the-last-good-day</guid>
-            <pubDate>2023-01-27</pubDate>
-        </item>
-        
-        <item>
-            <title>LinkedIn's Ghost Text</title>
-            <link>https://notes.zachmanson.com/linkedins-ghost-text</link>
-            
-            <description>Why does LinkedIn copy text twice?</description>
-            
-            <content:encoded>
-                <![CDATA[<p>Why does LinkedIn do this?</p>
-<video autoplay loop muted>
-   <source src="/media/linkedin-duplication.webm" type="video/webm">
-</video>
-
-<p>If you look into the source of a LinkedIn profile page (at your own personal risk) you'll find a text element like this</p>
-<p><img alt="" src="/media/linkedin-element.png" /></p>
-<p>will have HTML like this</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;display-flex flex-row justify-space-between&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;</span>
-<span class="s">          display-flex flex-column full-width&quot;</span><span class="p">&gt;</span>
-
-        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;display-flex flex-wrap align-items-center full-height&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mr1 t-bold&quot;</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Product manager, Creative coder<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Product manager, Creative coder<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="cm">&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Freelancer/Consultant<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Freelancer/Consultant<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal t-black--light&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>2009 - 2018 · 9 yrs<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>2009 - 2018 · 9 yrs<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal t-black--light&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Europe<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Europe<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-
-    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-
-    <span class="cm">&lt;!----&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pvs-entity__action-container&quot;</span><span class="p">&gt;</span>
-        <span class="cm">&lt;!----&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></div>
-<p>Gross.  Why the hidden duplicated text?  Why the empty comments?  Why seperate aria versions of text?  Is this related to using Ember?  LinkedIn has so many little unpleasantries like this.</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/linkedins-ghost-text</guid>
-            <pubDate>2023-04-16</pubDate>
         </item>
         
         <item>
@@ -513,119 +492,30 @@ yellow_bed.json:<span class="w">      </span><span class="s2">&quot;tag&quot;</s
         </item>
         
         <item>
-            <title>XZ</title>
-            <link>https://notes.zachmanson.com/xz</link>
-            
-            <description>The most advanced supply chain attack ever found.</description>
+            <title>Slug</title>
+            <link>https://notes.zachmanson.com/slug</link>
             
             <content:encoded>
-                <![CDATA[<p>The XZ exploit is a clever supply chain attack, placing a RCE in sshd using a vulnerability in XZ, a compression library that many <a href="/linux">Linux</a> distributions call when running OpenSSH (sshd -&gt; libsystemd (for systemd notifications) -&gt; liblzma (for logging)).  It was discovered by Andres Freund when he noticed that sshd was running with abnormally high CPU usage.</p>
-<p>The vulnerability was submitted by Jia Tan, a maintainer of XZ project who had been an active contributor since 2021.   The vulnerability was extremely obfuscated.  <a href="https://www.openwall.com/lists/oss-security/2024/03/29/4">Read the original backdoor report by Andres Freund for more details on this</a>.</p>
-<h2 id="maintainers">Maintainers</h2>
-<p>There are two maintainers of the XZ projects, Jia Tan and Lasse Collin.  Lasse Collin is the original author of the XZ Utils library, whereas Jia Tan has only been a maintainer since 2022.</p>
-<p>Tan appears so have little to no online footprint prior to 2021 when they started making useful contributions to XZ.  It is speculated that Jia Tan is an invented persona.</p>
+                <![CDATA[<p>In <a href="/web-development">web development</a>, you sometimes come across a segment of a URL called a "slug", which is human readable string of text appended to a URL to make easier to determine the content the URL points to.  The slug itself if usually not actually necessary for web server to serve the correct page.  For example, these two links point to the same page:</p>
+<p><a href="https://stackoverflow.com/questions/4230846/what-is-the-etymology-of-slug-in-a-url">https://stackoverflow.com/questions/4230846/what-is-the-etymology-of-slug-in-a-url</a></p>
+<p><a href="https://stackoverflow.com/questions/4230846">https://stackoverflow.com/questions/4230846</a></p>
+<p>This use of the word's use in web media is following a convention from print media, where a "slug" is an informal name given to a story before publication.  Print media takes the term from printing presses, where a slug is a line of lead cast characters.</p>
 <blockquote>
-<p>He has been part of the xz project for 2 years, adding all sorts of binary test files, and to be honest with this level of sophistication I would be suspicious of even older versions of xz until proven otherwise.</p>
+<p>The term slug derives from the days of hot-metal printing, when printers set type by hand in a small form called a stick. Later huge Linotype machines turned molten lead into casts of letters, lines, sentences and paragraphs. A line of lead in both eras was known as a slug.</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=39866275">Richard Jones</a></cite></p>
-<ul>
-<li><a href="https://robmensching.com/blog/posts/2024/03/30/a-microcosm-of-the-interactions-in-open-source-projects/">A Microcosm of the interactions in Open Source projects</a>, and interesting analysis of mailing list discussions about Jia Tan's contributions to the XZ project before Tan was made maintainer</li>
-<li><a href="https://tukaani.org/xz-backdoor/">Lasse Collin's page</a> tracking the vulnerability</li>
-</ul>
-<h2 id="features">Features</h2>
-<ul>
-<li>kill switch based on <a href="https://piaille.fr/@zeno/112185928685603910">environment variable</a><ul>
-<li><code>yolAbejyiejuvnup=Evjtgvsh5okmkAvj</code> is hardcoded (and then obfuscated)</li>
-</ul>
-</li>
-<li>backdoor itself is secured as it checks for a private key<ul>
-<li>this is an interesting argument against "when you make a backdoor for good guys you also make a backdoor for bad guys" though that's another conversation entirely</li>
-</ul>
-</li>
-</ul>
-<h2 id="oddities">Oddities</h2>
-<ul>
-<li>In 2022 <a href="https://www.mail-archive.com/xz-devel@tukaani.org/msg00566.html">there were other suspected sock puppet accounts pushing Collin to introduce new maintainers</a></li>
-<li>Tan disabled a function in <a href="https://github.com/google/oss-fuzz/pull/10667">oss-fuzzer</a> in 2023 that the exploit relied on that may have revealed the exploit (<a href="https://social.treehouse.systems/@Aissen/112180302735030319">source</a>)</li>
-<li>the day before the exploit was found the xz-java project added a SECURITY.md file </li>
-</ul>
+<p><cite class="standalone"><a href="https://archive.nytimes.com/www.nytimes.com/times-insider/2014/11/24/whats-in-a-slug/">Kyle Massey</a></cite></p>
+<p>Screenplays have a similar concept, where a "slug line" is a heading at the start of each scene containing important general information about the following scene.</p>
 <blockquote>
-<p>If you discover a security vulnerability in this project please report it privately. <em>Do not disclose it as a public issue.</em> This gives us time to work with you to fix the issue before public exposure, reducing the chance that the exploit will be used before a patch is released.</p>
+<p>A <em>slug line</em>, also called a <em>master scene heading</em>, occurs at the start of each scene and typically contains 3 pieces of information: whether the scene is set inside or outside (INT. or EXT.; interior or exterior), the specific location, and the time of day. Each slug line begins a new scene. In a "<a href="https://en.wikipedia.org/wiki/Shooting_script" title="Shooting script">shooting script</a>" the slug lines are numbered consecutively for ease of reference.</p>
 </blockquote>
-<ul>
-<li>It disabled Linux landlock?<ul>
-<li><a href="https://git.tukaani.org/?p=xz.git;a=blobdiff;f=CMakeLists.txt;h=d2b1af7ab0ab759b6805ced3dff2555e2a4b3f8e;hp=76700591059711e3a4da5b45cf58474dac4e12a7;hb=328c52da8a2bbb81307644efdb58db2c422d9ba7;hpb=eb8ad59e9bab32a8d655796afd39597ea6dcc64d">This commit</a> introduces a syntax error that prevents Linux landlock from being activated.  The test program designed to test if landlock was supported would always fail due to this errant <code>.</code>.</li>
-</ul>
-</li>
-<li>Tan's first GitHub PR is to libarchive and is suspect as it subtly replaces <code>safe_printf</code> calls with unsafe <code>fprintf</code></li>
-</ul>
-<h2 id="discovery">Discovery</h2>
-<blockquote>
-<p>I was doing some micro-benchmarking at the time, needed to quiesce the system to reduce noise. Saw sshd processes were using a surprising amount of CPU, despite immediately failing because of wrong usernames etc. Profiled sshd, showing lots of cpu time in liblzma, with perf unable to attribute it to a symbol. Got suspicious. Recalled that I had seen an odd valgrind complaint in automated testing of postgres, a few weeks earlier, after package updates.</p>
-<p>Really required a lot of coincidences.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://mastodon.social/@AndresFreundTec/112180083704606941">Andres Freund (a Postgres developer at Microsoft)</a></cite></p>
-<p>As noted by <a href="https://news.ycombinator.com/item?id=39879960">nurple</a> on HN, this exploit was found for similar reasons to Ken Thompson's supply chain exploit was detected.  Strange performance sparking curiosity.</p>
+<p><cite class="standalone"><a href="https://en.wikipedia.org/wiki/Screenplay#Format_and_style">Screenplay, Wikipedia</a></cite></p>
 <h2 id="links">Links</h2>
 <ul>
-<li><a href="https://gist.github.com/thesamesam/223949d5a074ebc3dce9ee78baad9e27">FAQ on the exploit</a> by Sam James</li>
-<li><a href="https://news.ycombinator.com/item?id=39865810">Initial discussion on hn</a></li>
-<li><a href="https://www.cve.org/CVERecord?id=CVE-2024-3094">CVE-2024-3094 Report</a></li>
-<li><a href="https://www.openwall.com/lists/oss-security/2024/03/29/4">Original backdoor report by Freund</a></li>
-<li><a href="https://bsky.app/profile/did:plc:x2nsupeeo52oznrmplwapppl/post/3kowjkx2njy2b">Discovery of RCE</a></li>
-<li><a href="https://lcamtuf.substack.com/p/technologist-vs-spy-the-xz-backdoor">Technologist vs Spy</a>, making the case that based on the behaviour and circumstances surrounding the bug were that of organised actors</li>
-<li><a href="https://github.com/Midar/xz-backdoor-documentation/wiki">XZ Backdoor Documentation</a></li>
-<li><a href="https://gynvael.coldwind.pl/?lang=en&amp;id=782">XZ Bash-Stage Obfuscation Explained</a></li>
-<li><a href="https://arstechnica.com/security/2024/04/what-we-know-about-the-xz-utils-backdoor-that-almost-infected-the-world/"><strong>Ars Technica Overview</strong></a></li>
-<li><a href="https://github.com/amlweems/xzbot">PoC</a> with substituted public key</li>
-<li><a href="https://shellsharks.com/xz-compromise-link-roundup">Even more links</a></li>
-</ul>
-<p><img alt="" src="/media/xz-analysis.png" /></p>]]>
+<li><a href="https://en.wikipedia.org/wiki/Slug_(publishing)">Slug (publishing), Wikipedia</a></li>
+</ul>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/xz</guid>
-            <pubDate>2024-03-31</pubDate>
-        </item>
-        
-        <item>
-            <title>Imposter Syndrome Day 632</title>
-            <link>https://notes.zachmanson.com/imposter-syndrome-day-632</link>
-            
-            <content:encoded>
-                <![CDATA[<p>I have had the job title "Software Engineer" for 632 days now and it still feels like a lie most of the time.  </p>
-<p>Either because</p>
-<ul>
-<li>it's prefixed by "graduate"</li>
-<li>I tricked a floundering company in to hiring me between waves of layoffs for obscene amounts of money<ul>
-<li>more money than most of the people I worked along side who were far smarter than me</li>
-<li>and who got laid off with me as if we equally deserved it</li>
-</ul>
-</li>
-<li>I tricked a company into hiring me because they liked my <a href="/minecraftle">minecraft</a> game (twice)</li>
-<li><a href="/software">software</a> engineers aren't real engineers</li>
-<li><a href="/web-development">web development</a> isn't even real software engineering</li>
-<li>I couldn't write a compiler if you held me at gun point</li>
-<li>all I do is <a href="/glue-work">glue work</a> and waste time</li>
-<li>all I do is build "dashboard for x company to monitor y"</li>
-<li>I don't really understand how half the tools I use work, I just know the buttons I need to press</li>
-<li>when I say "backend" I mean "write db query and write some trivial transformation into JSON"</li>
-<li>when I say "frontend" I mean "tailwind and knowing how <a href="/react">React</a> rendering work"</li>
-<li>pipelines are just <a href="/vendorops">VendorOps</a></li>
-<li>I spend all day in baby languages</li>
-<li>all my technical opinions are stolen or surface level</li>
-<li>I feel like I knew more in <a href="/uwa-computer-science">university</a> even though this is obviously not true<ul>
-<li>I just don't have to write <a href="/c">C</a> anymore</li>
-</ul>
-</li>
-<li>nothing I make has an interesting or novel explanation behind it</li>
-<li>when I say "system administration" I mean "apt install nginx and google"</li>
-<li>when I say "<a href="/open-source">open source</a>" I mean "I chuck my worthless repetitive shit under MIT"</li>
-<li>for every ounce of power and efficiency the laptop I write this on has, my code still runs slow because I am so high up the stack I've never had to see the bottom</li>
-<li>all I do is write tomorrow's legacy code</li>
-</ul>
-<p>Obviously much of this is silly and wrong and I'm doing better than most of the people I know, but all I ever do is realise how much higher the Dunning-Kruger rollercoaster ride goes.</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/imposter-syndrome-day-632</guid>
-            <pubDate>2024-04-03</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/slug</guid>
+            <pubDate>2023-10-21</pubDate>
         </item>
         
         <item>
@@ -677,6 +567,440 @@ yellow_bed.json:<span class="w">      </span><span class="s2">&quot;tag&quot;</s
             </content:encoded>
             <guid isPermaLink="false">https://notes.zachmanson.com/vercel-images-optimisation</guid>
             <pubDate>2023-01-02</pubDate>
+        </item>
+        
+        <item>
+            <title>Imposter Syndrome Day 632</title>
+            <link>https://notes.zachmanson.com/imposter-syndrome-day-632</link>
+            
+            <content:encoded>
+                <![CDATA[<p>I have had the job title "Software Engineer" for 632 days now and it still feels like a lie most of the time.  </p>
+<p>Either because</p>
+<ul>
+<li>it's prefixed by "graduate"</li>
+<li>I tricked a floundering company in to hiring me between waves of layoffs for obscene amounts of money<ul>
+<li>more money than most of the people I worked along side who were far smarter than me</li>
+<li>and who got laid off with me as if we equally deserved it</li>
+</ul>
+</li>
+<li>I tricked a company into hiring me because they liked my <a href="/minecraftle">minecraft</a> game (twice)</li>
+<li><a href="/software">software</a> engineers aren't real engineers</li>
+<li><a href="/web-development">web development</a> isn't even real software engineering</li>
+<li>I couldn't write a compiler if you held me at gun point</li>
+<li>all I do is <a href="/glue-work">glue work</a> and waste time</li>
+<li>all I do is build "dashboard for x company to monitor y"</li>
+<li>I don't really understand how half the tools I use work, I just know the buttons I need to press</li>
+<li>when I say "backend" I mean "write db query and write some trivial transformation into JSON"</li>
+<li>when I say "frontend" I mean "tailwind and knowing how <a href="/react">React</a> rendering work"</li>
+<li>pipelines are just <a href="/vendorops">VendorOps</a></li>
+<li>I spend all day in baby languages</li>
+<li>all my technical opinions are stolen or surface level</li>
+<li>I feel like I knew more in <a href="/uwa-computer-science">university</a> even though this is obviously not true<ul>
+<li>I just don't have to write <a href="/c">C</a> anymore</li>
+</ul>
+</li>
+<li>nothing I make has an interesting or novel explanation behind it</li>
+<li>when I say "system administration" I mean "apt install nginx and google"</li>
+<li>when I say "<a href="/open-source">open source</a>" I mean "I chuck my worthless repetitive shit under MIT"</li>
+<li>for every ounce of power and efficiency the laptop I write this on has, my code still runs slow because I am so high up the stack I've never had to see the bottom</li>
+<li>all I do is write tomorrow's legacy code</li>
+</ul>
+<p>Obviously much of this is silly and wrong and I'm doing better than most of the people I know, but all I ever do is realise how much higher the Dunning-Kruger rollercoaster ride goes.</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/imposter-syndrome-day-632</guid>
+            <pubDate>2024-04-03</pubDate>
+        </item>
+        
+        <item>
+            <title>LinkedIn's Ghost Text</title>
+            <link>https://notes.zachmanson.com/linkedins-ghost-text</link>
+            
+            <description>Why does LinkedIn copy text twice?</description>
+            
+            <content:encoded>
+                <![CDATA[<p>Why does LinkedIn do this?</p>
+<video autoplay loop muted>
+   <source src="/media/linkedin-duplication.webm" type="video/webm">
+</video>
+
+<p>If you look into the source of a LinkedIn profile page (at your own personal risk) you'll find a text element like this</p>
+<p><img alt="" src="/media/linkedin-element.png" /></p>
+<p>will have HTML like this</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;display-flex flex-row justify-space-between&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;</span>
+<span class="s">          display-flex flex-column full-width&quot;</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;display-flex flex-wrap align-items-center full-height&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mr1 t-bold&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Product manager, Creative coder<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Product manager, Creative coder<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="cm">&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Freelancer/Consultant<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Freelancer/Consultant<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal t-black--light&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>2009 - 2018 · 9 yrs<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>2009 - 2018 · 9 yrs<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal t-black--light&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Europe<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Europe<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+    <span class="cm">&lt;!----&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pvs-entity__action-container&quot;</span><span class="p">&gt;</span>
+        <span class="cm">&lt;!----&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Gross.  Why the hidden duplicated text?  Why the empty comments?  Why seperate aria versions of text?  Is this related to using Ember?  LinkedIn has so many little unpleasantries like this.</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/linkedins-ghost-text</guid>
+            <pubDate>2023-04-16</pubDate>
+        </item>
+        
+        <item>
+            <title>Collaborative Awe</title>
+            <link>https://notes.zachmanson.com/collaborative-awe</link>
+            
+            <content:encoded>
+                <![CDATA[<p>I recently received access to DALL-E and played around with it for a while. The interface is simple, just a textbox and a few curated images to give you some inspiration.</p>
+<p><img alt="" src="/media/dall-e.jpg" /></p>
+<p>Once you submit a prompt to DALL-E, you are shown more curated images and their corresponding prompts while your request is processed.</p>
+<p>DALL-E is capable of producing some amazing images. It takes a bit of warming up, but after little practice I was able to create wonderful and bizarre generative art. Despite this, I felt I didn't know how to produce something as interesting or engaging as their curated images the presented to me when using DALL-E. I could logically understand that the tool had potential, but I felt separated from it.</p>
+<p>Using Midjourney is completely a different experience. Midjourney currently runs its generative art AI through a bot on their company Discord server. You generate images by typing in a command in certain channels, and all the images produced are visible to everyone on the server simultaneously. Before you can even type something you are assaulted by an unfiltered, non-curated array of incredible images, all diffusing right before your eyes.</p>
+<video autoplay loop muted>
+   <source src="/media/firehose.webm" type="video/webm">
+</video>
+
+<p>While both generators are impressive, using Midjourney was a visceral experience for me in a way that DALL-E was not. DALL-E is sipping a glass of water, Midjourney is a firehose blasting your face. I was immediately in awe.</p>
+<p>The design of Midjourney makes it abundantly clear how big an impact this technology will have on the world. Watching hundreds of strangers generate images in real-time is jaw dropping. I was mesmerised, and within minutes saw images that moved me, despite being created by an AI without any intention behind them.</p>
+<p>While I am sure both of these are the future, only one made me feel it.</p>
+<p><img alt="" src="/media/soldiers.jpg" /></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/collaborative-awe</guid>
+            <pubDate>2022-08-06</pubDate>
+        </item>
+        
+        <item>
+            <title>Minecraftle v1.1</title>
+            <link>https://notes.zachmanson.com/minecraftle-v1.1</link>
+            
+            <description>Enumerating some small usability changes</description>
+            
+            <content:encoded>
+                <![CDATA[<p><a href="https://minecraftle.zachmanson.com">Minecraftle</a> is a simple game written for my introductory web development unit (CITS3403 with Tim French, would recommend) in 2022 Semester 1. The project was submitted (and completed) on May 23, but since then I have been periodically updating it with "nice to have" features that we didn't manage to get in before the deadline. After 8 months I am happy to label this <a href="/minecraftle">Minecraftle</a> version 1.1, with changes stemming from three main motivations: usability, optimisation, and revenge.</p>
+<p><img alt="" src="/media/git-log.png" /></p>
+<h2 id="usability">Usability</h2>
+<p><code>537c928</code>: Made the emoji summary more vague, so a correct guess shows up as 9 green squares no matter what, rather than giving away the shape of the final solution.</p>
+<details>
+<summary>Before and after comparison</summary>
+Before:
+
+<div class="highlight"><pre><span></span><code>Minecraftle 24/05/2022
+
+⬜⬜⬜
+⬜⬜⬜
+⬜⬜⬜
+
+🟩🟩🟨
+⬜🟩⬜
+⬜🟩⬜
+
+🟩🟩⬜
+🟩🟩⬜
+⬜🟩⬜
+</code></pre></div>
+
+After:
+
+<div class="highlight"><pre><span></span><code>Minecraftle 25/05/2022 3/10
+⬜🟩⬜
+⬜⬜⬜
+⬜⬜⬜
+
+⬜⬜⬜
+🟩🟩⬜
+🟨⬜⬜
+
+🟩🟩🟩
+🟩🟩🟩
+🟩🟩🟩
+</code></pre></div>
+
+</details>
+
+<p><code>23dc225</code>: Added check so that only valid Minecraft recipes could be submitted as guesses.</p>
+<p><code>bc40b98</code>: Added proper support for horizontal reflections of recipes.</p>
+<p><code>f3295d7</code> &amp; <code>36386df</code>: Made end-of-game popup display different text for Random games.</p>
+<p><code>fef189d</code>: Changed the given items for a more interesting set of possible recipes.</p>
+<p><code>30a3829</code>: Made end-of-game popup togglable.</p>
+<p><code>f43b062</code>: Added loading indicator to initial pageload.</p>
+<p><code>8a842d9</code>: Added slot highlighting to the ingredients panel to help keep track of which items have been used before.</p>
+<p><img alt="" src="/media/mc-panel.png" /></p>
+<h2 id="optimisation">Optimisation</h2>
+<p><code>c502eb2</code>: Rewrote the entire script that turned the 600+ Minecraft crafting recipe JSON files into single file with a usable schema. Previous implementation was very messy, future modifications will be much easier.</p>
+<p><code>172b3f2</code>: Optimised recipes validation, still relatively inefficient though.</p>
+<p><code>cd0c61e</code>: Made game submission API a seperate endpoint to user stats endpoint, rather than being a hacky overload of the stats endpoint.</p>
+<p><code>007865b</code>: Significantly reduced size of <code>recipes.json</code> to only include recipes that are actually possible to create with the given ingredients. This reduces initial pageload time and reduces load on my server.</p>
+<p><code>007865b</code>: Set <code>init.js</code> to store <code>recipes.json</code> and <code>items.json</code> in local storage, and only request them if they don't exist there. This makes pageloading much faster, and reduces load on my server.</p>
+<h2 id="revenge">Revenge</h2>
+<p>Since initial release 2500+ people have played the game. From what I can tell this primary originated from popularity at a local primary school and the now-defunct <a href="https://web.archive.org/web/20220927035303/https://likewordle.com/">LikeWordle.com</a>. Most of these players haven't become regular users though, only playing one or two games. Really its just me and my ex competing for the number one spot on the leaderboard. After months of hard work she overtook me as number 1 and I have been clawing my way back ever since. Obviously I could cheat since I'm the admin but where's the fun in that? Despite that, I'm not opposed to adding features to help me take back the crown.</p>
+<p><code>309a557</code>: Added indicators to the stats page to show users how far behind and ahead they are of their neighbours on the leaderboard.</p>
+<p><code>5dca9d2</code>: Added an account recovery button since I accidentally deleted my account the day after taking back the crown (I swear). This does expose a prexisting security flaw, but does enable it to be used in a positive way. For reference, clearing your browser data will make your device forget which account is it associated with.</p>
+<h2 id="bugfixes">Bugfixes</h2>
+<p><code>23dc225</code>: Fixed bug caused by the use of item tags in Minecraft source files. Item tags represent groups of items that are effectively interchangable in crafting recipes, such as coal and charcoal. Minecraftle conversion scripts have been updated to expect this, and will replace these with the preferred variant e.g. coal/charcoal group will be replaced with coal.</p>
+<p><code>d98e83a</code>: Forced game to be set to Perth timezone. Deployment VPS is in North America, so the server-side calculation of the current recipes wasn't changing at midnight in Perth, where most of the player base is.</p>
+<p><code>c0ce8c2</code>: Fixed stick recipe being overwritten by second stick recipes that uses bamboo.</p>
+<hr />
+<p>It was some of the first <a href="/javascript">JavaScript</a> I ever wrote and it reflects that, much of the old code makes me want to cringe. With the benefit of 6 months professionally working on large <a href="/typescript">TypeScript</a> projects, Minecraftle seems quaint (and somewhat shocking that it even works).</p>
+<p>Regardless, it holds a place in my heart as my first <a href="/web-development">web development</a> project with any complexity and is likely responsible for getting my foot in the door at my current job. For this reason I am willing to continue tending the garden it occupies.</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/minecraftle-v1.1</guid>
+            <pubDate>2023-01-26</pubDate>
+        </item>
+        
+        <item>
+            <title>The Curse of the Last Good Day</title>
+            <link>https://notes.zachmanson.com/the-curse-of-the-last-good-day</link>
+            
+            <description>Spoilers for The Fault in Our Stars, I guess</description>
+            
+            <content:encoded>
+                <![CDATA[<p><em>The Fault in Our Stars</em> describes the phenomenon of the Last Good Day, a concept that has been echoing in my head ever since I read the book in high school. In the novel, the Last Good Day is the final time a person who is slowly deteriorating has a peaceful and pleasant moment with those around them.</p>
+<blockquote>
+<p>There's no way of knowing that your last good day is Your Last Good Day. At the time, it is just another good day.</p>
+</blockquote>
+<p>The story presents this in the context of Augustus' worsening condition and eventual death.</p>
+<p>So far, I've been lucky enough to be free of facing slow health declines in myself and those close to me, but the concept of the Last Good Day has sat quietly in the back of my mind since first encountering it. Whenever I have some kind of impending loss, no matter how small, my thoughts tend to orbit around it.</p>
+<p>With my bachelor's degree coming to a close soon, lots of my friends are moving away for careers or further study in other countries. The groups that have formed won't continue to exist in the way the have for the last 3 years. Not everyone is leaving of course and no one person is single load-bearing pillar of the group, but buildings tend not to handle losing half their supports.</p>
+<p>I've been aware that this will happen for months, and at every group event in my head I'm constantly thinking <em>Is this going to be the Last Good Day? Is this Good enough? Can I make this better?</em> This is definitely not healthy and definitely doesn't help me enjoy the limited time left with my friends. This line of thinking is something I hesitate to even talk about with my friends in fear of inspiring the same kind of thought spirals in their minds.</p>
+<p>Time has gone on and the erosion has begun. As I write this, another will be flying to Sydney tomorrow morning. Enough friends have left now that the Last Good Day has certainly passed, and yet I'm still not 100% sure which day it was. There's some strong contenders though.</p>
+<p>That's life, I know I'll make more friends and there's no need to be melodramatic. Regardless, I'm going to miss this period and the people I've spent it with.</p>
+<p>Cheers and auld lang syne and so on.</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/the-curse-of-the-last-good-day</guid>
+            <pubDate>2023-01-27</pubDate>
+        </item>
+        
+        <item>
+            <title>Federating with Meta</title>
+            <link>https://notes.zachmanson.com/federating-with-meta</link>
+            
+            <content:encoded>
+                <![CDATA[<p>Meta's rumoured Twitter competitor Threads has caused a stir in the <a href="/fediverse">Fediverse</a>. Some suggesting fedi instances should preemptively block Threads, others willing to wait and see what happens.  At the time of writing (June 2023) it is unclear how this will pan out. Many fear the threat of <a href="https://en.wikipedia.org/wiki/Embrace,_extend,_and_extinguish">embrace, extend, extinguish</a>, but others are excited at the prospect of the fediverse becoming more significant.</p>
+<p><img alt="" src="/media/meta-fediverse.jpeg" /></p>
+<p>Meta: "MAY I JOIN YOU?"<br />
+<a href="https://framapiaf.org/@davidrevoy/110583258129951932">By David Revoy</a></p>
+<p>One of the oft-touted benefits of the fediverse is that it would be resilient to corporate <a href="/tiktoks-enshittification">enshittification</a>. It will be interesting to see how the fediverse handles real threats.  </p>
+<h2 id="interesting-articles">Interesting Articles</h2>
+<p>Roelant Kooij wrote an <a href="https://roelant.net/en/2023/interesting-reads-on-meta-vs-fediverse/">excellent overview</a> of the arguments on either side of this debate.  The Fediverse Report also has a <a href="https://fediversereport.com/last-week-in-the-fediverse-episode-24/">good timeline</a> of the news.  These are sorted in the order I have found them, with my <strong>strongest recommendations in bold</strong>.</p>
+<ul>
+<li><a href="https://fedipact.online/">Not That Kind of ‘Open’</a>, John Gruber on the debate <ul>
+<li>suggests that the pre-emptive block may be "petty and deliberately insular"</li>
+</ul>
+</li>
+<li><a href="https://daringfireball.net/2023/06/more_on_preemptively_blocking">More on Preemptively Blocking Facebook’s Imminent ActivityPub Entry</a>, John Gruber's follow-up<ul>
+<li>suggests that if Facebook is federated, they should start with "two strikes against it"</li>
+<li>"Is the goal of the Fediverse to be anti-corporate/anti-commercial, or to be pro-openness? I think openness is the answer"</li>
+</ul>
+</li>
+<li><a href="https://ploum.net/2023-06-23-how-to-kill-decentralised-networks.html">How to Kill a Decentralised Network (such as the Fediverse)</a>, Ploum's excellent writeup on how large companies can (sometimes maliciously) kill open/decentralised networks<ul>
+<li>makes comparison to Google killing XMPP and Microsoft using OOXML to cripple open source office software</li>
+</ul>
+</li>
+<li>⭐️ <a href="https://about.scicomm.xyz/doku.php?id=blog:2023:0625_meta_on_the_fediverse_to_block_or_not_to_block"><strong>Meta on the Fediverse: to block or not to block?</strong></a>, SciComm admins writeup of their balanced thought process on pre-emptive blocking<ul>
+<li>they conclude to pre-emptively block, but leave the door open to unblocking if Meta is a decent fediverse citizen</li>
+</ul>
+</li>
+<li><a href="https://reb00ted.org/tech/20230625-meta-why-activitypub/">Why would Meta implement ActivityPub? 1½ reasons are compelling, another is not</a>, Johannes Ernst's analysis of Meta's motivations<ul>
+<li>suggests EEE is not worthwhile for Meta, far less important than appeasing incoming EU regulations</li>
+</ul>
+</li>
+<li>Tim Chamber's (indieweb.social admin) <em>First Time?</em> series of posts on the matter<ul>
+<li><a href="https://www.timothychambers.net/2023/06/23/project-and-the.html">Project92 and the Fediverse - A Smarter Battle Plan to Protect the Open Social Web</a><ul>
+<li>suggests that pre-emptive defederation is not the most effective strategy to protect the current fediverse</li>
+<li>thinks current fediverse can win by providing a better experience, especially in areas where corporate interests conflict with this (e.g. advertising)</li>
+</ul>
+</li>
+<li><a href="https://www.timothychambers.net/2023/06/25/project-the-fediverse.html">Project92, the Fediverse: (First Time? Part 2)</a><ul>
+<li>'We have the tools to protect our people, and we are stronger to "Watch like a hawk, with our fingers over the block button."'</li>
+</ul>
+</li>
+<li><a href="https://www.timothychambers.net/2023/06/30/meta-and-the.html">Meta and the Fediverse (First Time? Part 3)</a><ul>
+<li>generally calling for calming of vitriol, promoting compassion between disagreeing groups</li>
+<li>"All sides should admit we don’t know far more than we do know right now."</li>
+</ul>
+</li>
+<li><a href="https://www.timothychambers.net/2023/07/03/instagram-threads-and.html">Instagram Threads and the Fediverse (First Time? Part 4)</a>, a summation of all his previous posts</li>
+</ul>
+</li>
+<li>⭐️ <a href="https://heat-shield.space/mastodon_two_camps.html"><strong>The Two Camps of Mastodon</strong></a>, on the general split between people that view the fediverse as a collection of small communities and those that view it as a distributed network where most people can talk to most others in a decentralised fashion, and how Threads' existence exacerbate this divide</li>
+<li><a href="https://netwars.pelicancrossing.net/2023/06/30/the-horns-of-a-dilemma/">The horns of a dilemma</a>, Wendy M. Grossman enumerating potential futures</li>
+<li>⭐️ <a href="https://blog.bloonface.com/2023/07/03/meta-and-the-fediverse-sorting-heat-from-light/"><strong>Meta and the fediverse: sorting heat from light</strong></a>, a fantastic rebuke to many of Meta's alleged nefarious motivations<ul>
+<li>meta gains little in terms of data collection ability since <a href="/activitypub">ActivityPub</a> lacks privacy anyway, and what it does gain isn't very useful, and the current fediverse population size is not large enough to be worth pursuing for data collection</li>
+<li>its seems unlikely that Meta actually sees the fediverse as a threat</li>
+<li>the Gchat/XMPP embrace/extend/extinguish example is flawed</li>
+<li>Meta isn't evil without motivation</li>
+<li>"So why <em>is</em> Meta going to use ActivityPub?  Here’s the thing; <em>I haven’t the faintest fucking clue</em>.  It does not obviously help Meta in any way to have interoperability with ActivityPub"</li>
+</ul>
+</li>
+<li><a href="https://tracks.ranea.org/post/722507935765397504/youre-so-vain-you-probably-think-this-app-is">You’re So Vain, You Probably Think This App Is About You</a>, an argument against the idea that Meta actually wants to EEE the fediverse<ul>
+<li>suggests that there is little monetary reason to federate from Meta's perspective, other than regulatory pressure</li>
+<li>particularly posits that defederating from servers that refuse to defederate Meta is particularly short-sighted</li>
+</ul>
+</li>
+</ul>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/federating-with-meta</guid>
+            <pubDate>2023-06-01</pubDate>
+        </item>
+        
+        <item>
+            <title>GitHub Pages Redirection</title>
+            <link>https://notes.zachmanson.com/github-pages-redirection</link>
+            
+            <description>This feed has moved and GitHub Pages won't let me redirect you automatically.</description>
+            
+            <content:encoded>
+                <![CDATA[<p>(This was written as to tell people to move from my old RSS feed to my new RSS feed on notes.zachmanson.com.  If you are reading this on notes.zachmanson.com you are in the right place.) </p>
+<p>I haven't written on here in a while, but I have been writing on my <a href="/">public notes</a>. At this point I've got over 300 pages on there, far more than I ever wrote on here but in a format that looks a lot more like a wiki. This is mostly a factor of convenience, the format of the <a href="/notes">notes</a> means I can iteratively add whatever I am thinking about, without the expectation of the writing being complete and canonical. The writing is organised into a hierarchy of folders, with <a href="/tags">tags</a> and backlinks. I find this format much better for wiki-style writing but doesn't lend itself well to chronological feeds like this one.</p>
+<p>Occasionally I would write a note on there that would fit well into the blog format, or was long and more story based. Some of my posts on this blog worked much better as wiki pages than as blog posts. I have wanted to unify these two sites for a long time now. Last week I finally got around to it!</p>
+<p>The <a href="/ochrs">Ochrs</a> site generator that I wrote to build the wiki can now generate chronological feeds of posts and RSS feeds. Feeds are generated based on tags, where each tag has its own <a href="/rss">RSS</a> feed. A note can be added to a chronological feed by adding a publish date (<code>date</code> field in the frontmatter), which will then be used as the publish date in all feeds that the note is a part of. This approach is great since it allows each note to exist anywhere in the wiki hierarchy while also being a part of many feeds. The RSS feed will be at <code>notes.zachmanson.com/&lt;tagname&gt;.xml</code>, and the list of notes in a chronological feed can be shown on a page using the <code>ochrs:chrono:&lt;tagname&gt;</code> build function (see <a href="/ochrs-syntax">Ochrs Syntax</a> for more on how this works), which will results in all the posts being displayed in blog-style HTML.</p>
+<p>To succeed <code>zachmanson.com/blog/</code> I have created the posts tag. The feeds can be seen at <a href="/posts">notes.zachmanson.com/posts</a> and using <a href="/posts.xml">RSS</a>. I have moved the existing posts here over to the this new feed.</p>
+<p>If you are reading this using RSS then I would like to apologise that you will have to subscribe to a new feed. I would have liked to automatically redirect your feed reader, but <strong>GitHub Pages doesn't let you create 301 redirects</strong>. The <code>redirect-from</code> plugin is capable of meta tag redirects, but those are soft and not followed by feed readers. This is very frustrating.</p>
+<p>I've marked a bunch of longer notes I've made as posts, so the new feed already has 7 new posts. Hopefully more will come soon!</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/github-pages-redirection</guid>
+            <pubDate>2024-03-29</pubDate>
+        </item>
+        
+        <item>
+            <title>Spotify Design Decisions</title>
+            <link>https://notes.zachmanson.com/spotify-design-decisions</link>
+            
+            <content:encoded>
+                <![CDATA[<p>This page is a list of design decisions made by Spotify that I consider shitty.  I'm sure some of them were only A/B tested, coming and going silently, but some have lingered for years. In any case I have been subjected to) all of these personally.</p>
+<p>See also: <a href="https://www.todepond.com/wikiblogarden/work/dear-spotify/">Dear spotify product manager</a> by Lu Wilson</p>
+<h2 id="unable-to-remove-dj-shortcut-on-desktop">Unable to Remove DJ Shortcut On Desktop</h2>
+<p>On desktop they have added a link to the DJ feature at the top of Your Library, below pinned playlists.  Despite not being a playlist (nor a feature I use), it continues to appear even when you have set the filter to only show playlists.  As far as I know it cannot be removed?  But it can be pinned.  Despite already being permalocked to the top.
+<img alt="" src="/media/dj.png" />
+The day after writing the previous paragraph, I noticed they added the DJ to the same section in the mobile app. In the movile app a long press on the DJ icon does shows you an option to hide it, which seems to sync across all my devices.  Why is this option not available in the desktop client!</p>
+<h2 id="custom-playlist-sorting">Custom Playlist Sorting</h2>
+<p>For as long as I can remember you can order the playlists you have created/followed in any order along the left side of the desktop app. You can even put them in nested folders which is fantastic.  I have many playlists organised into folders in particular orders.  I know how to get to the playlist I want quickly because I have put it in a particular place. This custom order and "Recently played" are the only two i would ever want.</p>
+<p>Spotify seems to hate this use case.  To my knowledge its never been possible to rearrange order of playlists on the mobile app, only the desktop client.</p>
+<p>When you attempt to add a song to playlist on mobile, there isn't even an option to sort by recently played anymore.  This is diametrically opposed to desktop, where the right click menu will ONLY allow you to sort by custom order. </p>
+<p><img alt="" src="/media/no-custom-order.png" /></p>
+<h2 id="smart-shuffle-button-cycle-lock">Smart Shuffle Button Cycle Lock</h2>
+<p>Spotify has added a feature called Smart Shuffle that works like normal shuffling, but also adds recommended songs in-between ever few tracks in the queue.  On paper I like this feature, though I have never found myself actually using it. I was introduced to it through the following infuriating UX.</p>
+<p>I go the the Now Playing screen on the Android Spotify client. The playlist I am listening to is currently set to shuffle (regular shuffle), but I would like to turn off regular shuffle.  I press the button with a shuffle icon, which has for 10+ years been a single toggle that would instantly take effect.  Instead of a simple 2 option toggle, I find that it has been converted in to a 3 option cycle button, where pressing it cycles through the options of <code>Linear -&gt; Shuffle -&gt; Smart Shuffle -&gt; Linear</code>.  I can see the thinking behind this decision though I don't like it since it breaks muscle memory established by this app for a decade and all other music playing applications.  That is not my issue though.</p>
+<p>When you click the button and move the state from <code>Shuffle</code> to <code>Smart Shuffle</code>, the application begins loading the Smart Shuffle recommendations which means it must query Spotify servers, which is an operation that takes multiple seconds.  While this occurs, the button with a Shuffle icon becomes a button with a loading spinner, and becomes unclickable. I must wait multiple seconds before I can turn off Smart Shuffle.</p>
+<p><code>Linear -&gt; Shuffle -&gt; Loading (multiple seconds) -&gt; Smart Shuffle -&gt; Linear</code></p>
+<p>This is deeply infuriating.  I never even wanted to use Smart Shuffle in the first place and now I must wait for it.</p>
+<p>This occurred every time I wanted to turn off  <code>Shuffle</code>.  Which is a lot.</p>
+<p>As of 2024-01-21, this loading state of the button appears to have been removed, but the button still is a 3 option cycle which I dislike (though respect the elegance of).</p>
+<h2 id="overflow-menu-loading">Overflow Menu Loading</h2>
+<p>For some godforsaken reason, the overflow menu for a track sometimes appears to require a network request before it can show.  If this request is slow, it will show a loading spinner in place of the menu, until the server responds.  Or in some cases, the <strong>overflow menu will fail to load entirely</strong>.  This is insane, since for the most part, the options on this menu are identical.  This is doubly insane since the menu can load without any issue what-so-ever in offline mode.</p>
+<p>I have only ever experienced this issue on the Android mobile app, which for many years did not support swiping on a song to queue a song.  At this time you were only able to queue a song. through the overflow menu, which often times meant waiting multiple seconds for menu to appear.  God forbid you wanting to queue multiple songs in a row. Thankfully you can now bypass the menu loading by swiping a track to the right.</p>
+<p>Oh wait!</p>
+<h2 id="cant-swipe-to-queue-on-blend-playlists">Can't Swipe to Queue on Blend Playlists</h2>
+<p>On Android you cannot swipe to queue a playlist if the playlist is a blend playlist??? Why would this screen use a different component to represent a list of songs to every other screen in the app? </p>
+<video src='/media/blend-swiping.webm' controls></video>
+
+<h2 id="secret-sliding-menu">Secret Sliding Menu</h2>
+<p>This one I only just noticed now while typing this post. There is a sliding menu that appears if you click on your profile picture in the corner of any of the 3 main screens.  It seems a bit sparse, like it would be better suited to being a drop down? In any case this menu can actually be accessed from any playlist folder screen as well, despite there being no indication of this.  This only seems to work on playlist folder screens though, as it doesn't work for any other subpages.</p>
+<p>This one was annoying as I accidentally triggered in when attempting to swipe in from the left to go back a screen.</p>
+<video src='/media/sliding-menu.webm' controls></video>
+
+<h2 id="cant-swipe-up-to-access-player">Can't Swipe Up to Access Player</h2>
+<p>On Android you can swipe down on the player interface but you cannot swipe up to reveal it.  When you attempt this you will almost definitely skip the song that is currently playing, since the minimised version of the player only detects left and right swipes.</p>
+<video src='/media/swipe-up.webm' controls></video>
+
+<h2 id="top-bar-alignment">Top Bar Alignment</h2>
+<p>This is a screenshot of the top bar.  Who the fuck let this happen.</p>
+<p><img alt="" src="/media/spotify-top-bar.png" /></p>
+<h2 id="upcoming-complaints">Upcoming Complaints</h2>
+<ul>
+<li>Smart Shuffle popup</li>
+<li>Rapidly toggling through Shuffle button states can cause the cycle to desync in strange ways</li>
+<li>Spotify (regular) Shuffle algorithm has some problems</li>
+</ul>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/spotify-design-decisions</guid>
+            <pubDate>2024-03-17</pubDate>
+        </item>
+        
+        <item>
+            <title>Usernames</title>
+            <link>https://notes.zachmanson.com/usernames</link>
+            
+            <description>Why am I still surprised</description>
+            
+            <content:encoded>
+                <![CDATA[<p>I spend an inordinate amount of time reading arguments on the internet. Every now and then I'll find one that is actually thoughtful and in-depth. One with more kindness than usual, with genuine attempts to understand the perspectives of each other.</p>
+<p>And after the arguing has concluded, the fighting parties express that they respect the other.</p>
+<p>These are rare. But it isn't rare that upon finding one of these I will glance at the usernames.</p>
+<p>Today I glanced at the usernames of two people having a beautiful argument on a forum:</p>
+<p>"euronforpresident"</p>
+<p>And their opponent:</p>
+<p>"Hitleresque"</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/usernames</guid>
+            <pubDate>2022-03-11</pubDate>
+        </item>
+        
+        <item>
+            <title>The H Chord</title>
+            <link>https://notes.zachmanson.com/the-h-chord</link>
+            
+            <description>How German monks broke my website</description>
+            
+            <content:encoded>
+                <![CDATA[<p>I received a <a href="https://github.com/pavo-etc/penultimate-guitar/issues/41">strange bug report</a> on <a href="/penultimate-guitar">Penultimate Guitar</a> where the Next.js rendering would fail completely on certain songs.</p>
+<h2 id="the-error">The Error</h2>
+<p>The type error was being triggered by a chord component, where the key was undefined. The chords are pulled from Ultimate Guitar, so I inspected the JSON payload from the <a href="https://tabs.ultimate-guitar.com/tab/1684995">original source</a>.</p>
+<p><img alt="" src="/media/ug.png" /></p>
+<p>Why the hell is there a <code>[ch]H[/ch]</code> chord in there? That's definitely the cause as I never accounted for non-existent keys. Looking at Ultimate Guitar, it renders as a B chord.</p>
+<p><img alt="" src="/media/ug-rendered.png" /></p>
+<p>Huh?</p>
+<details>
+<summary>An aside on Ultimate Guitar HTML</summary>
+<p>The way Ultimate Guitar handles data is bizarre. It passes a static dehydrated HTML page to the client.  The data payload is in the HTML as well, but instead of being contained in a <code>script</code> tag it's a giant JSON payload in an escaped string within an attribute of a random <code>div</code></p>
+</details>
+<h2 id="one-google-search-later">One Google Search Later</h2>
+<p>Germany and the Netherlands ha(d/ve) their own musical key notation that include(d/s) a H chord. <a href="https://www.guitarsite.com/newsletters/010122/12.shtml">This site</a> claims it ended in "1994/1995", though I've seen <a href="https://github.com/pavo-etc/penultimate-guitar/issues/41#issuecomment-1538452351">other</a> <a href="https://www.reddit.com/r/musictheory/comments/8rn0ve">sources</a> claim its still taught this way. This comes as an artifact of the bizarre history Western music notation, which is a problem I seem to keep running into recently in my attempts to learn more about music theory.</p>
+<blockquote>
+<p>I learned in music school that the chord is called "B" (like in the rest of the world), but the note is called "H" (eg. the C Major scale would be C, D, E, F, G, A, H, C).</p>
+</blockquote>
+<p><cite>TobTobXX, who reported the bug</cite></p>
+<h2 id="western-musics-stupid-origins">Western Music's Stupid Origins</h2>
+<p>Western music is based on ecclesiastic modes used in church in the early Middle Ages, which only used the diatonic notes of the C scale (<em>natural</em> notes). The musical notation systems of the time reflected this, not accounting for notes outside of the C scale. When sharps and flats later came into more common use, the existing notation systems needed a way to distinguish them from the natural notes they sat between.</p>
+<p>This problem first arose with B natural and B flat, according to the <a href="https://www.britannica.com/art/musical-expression">Encyclopedia Britannica</a>. The first method of distinguishing B from B flat was using two different forms of the lowercase "b" character:</p>
+<p><img alt="" src="/media/The-Flat-Sharp-And-Natural-A-Historical-Sketch.png" /></p>
+<p>Niecks, Frederick. “The Flat, Sharp, and Natural. A Historical Sketch.” <em>Proceedings of the Musical Association</em>, vol. 16, 1889, pp. 79–100.</p>
+<p>Somewhere along the line in Germany, monks transcribing these square and round "b" characters confused the squared "b" for "h", and this was later assumed to be intentional. "H" became a convention for writing B natural, while the "b" character remained convention for writing B flat. "B" and "b" became amalgamated, both coming to represent modern B flat.</p>
+<p>In the rest of the world, this "H" note didn't catch on.</p>
+<p>In time, notation for sharp and flat notes other than B flat was needed. This use of square and round "b" to denote B and B flat eventually evolved into our modern notation for indicating natural and non-natural, <em>accidentals</em>. ♭ comes from the round "b", while ♯ and ♮ come from the square "b".</p>
+<p>Somehow, Germany still hasn't fully corrected this mistake, continuing to use "H" to represent B natural and many places. Including Ultimate Guitar. Ugh.</p>
+<h2 id="resolution">Resolution</h2>
+<p>I don't love dealing with problems caused by the whims of millenia dead monks, but this was an interesting rabbit hole to fall into. The issue has since been patched, and I look forward to my mistakes ruining someone's day in 3023.</p>
+<p><img alt="" src="/media/gods-mistakes.png" /></p>
+<details>
+<summary> An aside on The Flat, Sharp, and Natural. A Historical Sketch </summary>
+<p>When I first copied the text from the article, it copied that "square b" as a "h". Funny that modern OCR technology makes the same mistakes at 1000 year old monks.</p>
+<blockquote>
+<p>The first known writer who distinguished between b natural and b flat was Odo of Clugny, who died in 942 ; the b natural being indicated by a square b (h), the b flat by a round b (b)</p>
+</blockquote>
+<p>It was also a pain in the ass to find a copy of that article. It's mostly found on paywalled academic sites despite the article definitely being out of copyright. Luckily the Internet Archive <a href="https://scholar.archive.org/work/3jdud373effq3e376gqtlkxqvq">has a copy</a>.</p>
+</details>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/the-h-chord</guid>
+            <pubDate>2023-05-08</pubDate>
         </item>
         
         <item>
@@ -787,123 +1111,70 @@ h<span class="w"> </span>h<span class="w"> </span>h<span class="w"> </span><span
         </item>
         
         <item>
-            <title>GitHub Pages Redirection</title>
-            <link>https://notes.zachmanson.com/github-pages-redirection</link>
-            
-            <description>This feed has moved and GitHub Pages won't let me redirect you automatically.</description>
+            <title>Spite Driven Development</title>
+            <link>https://notes.zachmanson.com/spite-driven-development</link>
             
             <content:encoded>
-                <![CDATA[<p>(This was written as to tell people to move from my old RSS feed to my new RSS feed on notes.zachmanson.com.  If you are reading this on notes.zachmanson.com you are in the right place.) </p>
-<p>I haven't written on here in a while, but I have been writing on my <a href="/">public notes</a>. At this point I've got over 300 pages on there, far more than I ever wrote on here but in a format that looks a lot more like a wiki. This is mostly a factor of convenience, the format of the <a href="/notes">notes</a> means I can iteratively add whatever I am thinking about, without the expectation of the writing being complete and canonical. The writing is organised into a hierarchy of folders, with <a href="/tags">tags</a> and backlinks. I find this format much better for wiki-style writing but doesn't lend itself well to chronological feeds like this one.</p>
-<p>Occasionally I would write a note on there that would fit well into the blog format, or was long and more story based. Some of my posts on this blog worked much better as wiki pages than as blog posts. I have wanted to unify these two sites for a long time now. Last week I finally got around to it!</p>
-<p>The <a href="/ochrs">Ochrs</a> site generator that I wrote to build the wiki can now generate chronological feeds of posts and RSS feeds. Feeds are generated based on tags, where each tag has its own <a href="/rss">RSS</a> feed. A note can be added to a chronological feed by adding a publish date (<code>date</code> field in the frontmatter), which will then be used as the publish date in all feeds that the note is a part of. This approach is great since it allows each note to exist anywhere in the wiki hierarchy while also being a part of many feeds. The RSS feed will be at <code>notes.zachmanson.com/&lt;tagname&gt;.xml</code>, and the list of notes in a chronological feed can be shown on a page using the <code>ochrs:chrono:&lt;tagname&gt;</code> build function (see <a href="/ochrs-syntax">Ochrs Syntax</a> for more on how this works), which will results in all the posts being displayed in blog-style HTML.</p>
-<p>To succeed <code>zachmanson.com/blog/</code> I have created the posts tag. The feeds can be seen at <a href="/posts">notes.zachmanson.com/posts</a> and using <a href="/posts.xml">RSS</a>. I have moved the existing posts here over to the this new feed.</p>
-<p>If you are reading this using RSS then I would like to apologise that you will have to subscribe to a new feed. I would have liked to automatically redirect your feed reader, but <strong>GitHub Pages doesn't let you create 301 redirects</strong>. The <code>redirect-from</code> plugin is capable of meta tag redirects, but those are soft and not followed by feed readers. This is very frustrating.</p>
-<p>I've marked a bunch of longer notes I've made as posts, so the new feed already has 7 new posts. Hopefully more will come soon!</p>]]>
+                <![CDATA[<p>Spite Driven Development (SDD) is my preferred development methodology.  I have found it by far my most productive style of software engineering, and has been responsible in whole or part for most of my <a href="/projects">projects</a> (see: <a href="/penultimate-guitar">Penultimate Guitar</a>, <a href="/minecraftle">Minecraftle</a>, <a href="/alculator">Alculator</a>, <a href="/status-messenger">Status Messenger</a>).</p>
+<p>While it is extremely effective for building software quickly, it is often destructive to other aspects of one's life, such as healthy eating, relationships, and especially sleep.</p>
+<h2 id="history">History</h2>
+<p>I got mad at a competitor/company with shitty practices/friend/existing tool.  Spend multiple days (likely straight) writing code to spite them.  Spited them. <code>git push</code></p>
+<h2 id="spite-driven-development-cycle">Spite Driven Development Cycle</h2>
+<ol>
+<li>get mad</li>
+<li>think you can do it better yourself</li>
+<li>feel the need to prove you can do better</li>
+<li><code>git init</code></li>
+<li>design feature with a scope exactly commensurate to your anger</li>
+<li>forgo loved ones and human interaction</li>
+<li>finish feature</li>
+<li><code>git commit</code></li>
+<li>see 5</li>
+<li>deploy</li>
+<li>see 5</li>
+<li>run it 40 times just to watch it work, analogous to injecting dopamine directly into your veins</li>
+<li>rest</li>
+</ol>
+<h2 id="goals">Goals</h2>
+<p>Victory.</p>
+<h2 id="non-goals">Non Goals</h2>
+<p>Sustenance, testing, clean code.</p>
+<h2 id="development-frameworks">Development Frameworks</h2>
+<p>Much like how ruby+rspec is very well suited to test driven development, many frameworks are well suited to SDD.  Whichever framework you know is the ideal framework for SDD.  Time is of the essence and you have no-one to please but yourself.  Spite burns hot but it burns dirty, and it is not a renewable resource.  Your must strike while the iron is hot and complete the project before you are sapped of the hatred that caused you to start the project.</p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/github-pages-redirection</guid>
-            <pubDate>2024-03-29</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/spite-driven-development</guid>
+            <pubDate>2024-03-18</pubDate>
         </item>
         
         <item>
-            <title>Minecraftle v1.1</title>
-            <link>https://notes.zachmanson.com/minecraftle-v1.1</link>
+            <title>snakeware</title>
+            <link>https://notes.zachmanson.com/snakeware</link>
             
-            <description>Enumerating some small usability changes</description>
-            
-            <content:encoded>
-                <![CDATA[<p><a href="https://minecraftle.zachmanson.com">Minecraftle</a> is a simple game written for my introductory web development unit (CITS3403 with Tim French, would recommend) in 2022 Semester 1. The project was submitted (and completed) on May 23, but since then I have been periodically updating it with "nice to have" features that we didn't manage to get in before the deadline. After 8 months I am happy to label this <a href="/minecraftle">Minecraftle</a> version 1.1, with changes stemming from three main motivations: usability, optimisation, and revenge.</p>
-<p><img alt="" src="/media/git-log.png" /></p>
-<h2 id="usability">Usability</h2>
-<p><code>537c928</code>: Made the emoji summary more vague, so a correct guess shows up as 9 green squares no matter what, rather than giving away the shape of the final solution.</p>
-<details>
-<summary>Before and after comparison</summary>
-Before:
-
-<div class="highlight"><pre><span></span><code>Minecraftle 24/05/2022
-
-⬜⬜⬜
-⬜⬜⬜
-⬜⬜⬜
-
-🟩🟩🟨
-⬜🟩⬜
-⬜🟩⬜
-
-🟩🟩⬜
-🟩🟩⬜
-⬜🟩⬜
-</code></pre></div>
-
-After:
-
-<div class="highlight"><pre><span></span><code>Minecraftle 25/05/2022 3/10
-⬜🟩⬜
-⬜⬜⬜
-⬜⬜⬜
-
-⬜⬜⬜
-🟩🟩⬜
-🟨⬜⬜
-
-🟩🟩🟩
-🟩🟩🟩
-🟩🟩🟩
-</code></pre></div>
-
-</details>
-
-<p><code>23dc225</code>: Added check so that only valid Minecraft recipes could be submitted as guesses.</p>
-<p><code>bc40b98</code>: Added proper support for horizontal reflections of recipes.</p>
-<p><code>f3295d7</code> &amp; <code>36386df</code>: Made end-of-game popup display different text for Random games.</p>
-<p><code>fef189d</code>: Changed the given items for a more interesting set of possible recipes.</p>
-<p><code>30a3829</code>: Made end-of-game popup togglable.</p>
-<p><code>f43b062</code>: Added loading indicator to initial pageload.</p>
-<p><code>8a842d9</code>: Added slot highlighting to the ingredients panel to help keep track of which items have been used before.</p>
-<p><img alt="" src="/media/mc-panel.png" /></p>
-<h2 id="optimisation">Optimisation</h2>
-<p><code>c502eb2</code>: Rewrote the entire script that turned the 600+ Minecraft crafting recipe JSON files into single file with a usable schema. Previous implementation was very messy, future modifications will be much easier.</p>
-<p><code>172b3f2</code>: Optimised recipes validation, still relatively inefficient though.</p>
-<p><code>cd0c61e</code>: Made game submission API a seperate endpoint to user stats endpoint, rather than being a hacky overload of the stats endpoint.</p>
-<p><code>007865b</code>: Significantly reduced size of <code>recipes.json</code> to only include recipes that are actually possible to create with the given ingredients. This reduces initial pageload time and reduces load on my server.</p>
-<p><code>007865b</code>: Set <code>init.js</code> to store <code>recipes.json</code> and <code>items.json</code> in local storage, and only request them if they don't exist there. This makes pageloading much faster, and reduces load on my server.</p>
-<h2 id="revenge">Revenge</h2>
-<p>Since initial release 2500+ people have played the game. From what I can tell this primary originated from popularity at a local primary school and the now-defunct <a href="https://web.archive.org/web/20220927035303/https://likewordle.com/">LikeWordle.com</a>. Most of these players haven't become regular users though, only playing one or two games. Really its just me and my ex competing for the number one spot on the leaderboard. After months of hard work she overtook me as number 1 and I have been clawing my way back ever since. Obviously I could cheat since I'm the admin but where's the fun in that? Despite that, I'm not opposed to adding features to help me take back the crown.</p>
-<p><code>309a557</code>: Added indicators to the stats page to show users how far behind and ahead they are of their neighbours on the leaderboard.</p>
-<p><code>5dca9d2</code>: Added an account recovery button since I accidentally deleted my account the day after taking back the crown (I swear). This does expose a prexisting security flaw, but does enable it to be used in a positive way. For reference, clearing your browser data will make your device forget which account is it associated with.</p>
-<h2 id="bugfixes">Bugfixes</h2>
-<p><code>23dc225</code>: Fixed bug caused by the use of item tags in Minecraft source files. Item tags represent groups of items that are effectively interchangable in crafting recipes, such as coal and charcoal. Minecraftle conversion scripts have been updated to expect this, and will replace these with the preferred variant e.g. coal/charcoal group will be replaced with coal.</p>
-<p><code>d98e83a</code>: Forced game to be set to Perth timezone. Deployment VPS is in North America, so the server-side calculation of the current recipes wasn't changing at midnight in Perth, where most of the player base is.</p>
-<p><code>c0ce8c2</code>: Fixed stick recipe being overwritten by second stick recipes that uses bamboo.</p>
-<hr />
-<p>It was some of the first <a href="/javascript">JavaScript</a> I ever wrote and it reflects that, much of the old code makes me want to cringe. With the benefit of 6 months professionally working on large <a href="/typescript">TypeScript</a> projects, Minecraftle seems quaint (and somewhat shocking that it even works).</p>
-<p>Regardless, it holds a place in my heart as my first <a href="/web-development">web development</a> project with any complexity and is likely responsible for getting my foot in the door at my current job. For this reason I am willing to continue tending the garden it occupies.</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/minecraftle-v1.1</guid>
-            <pubDate>2023-01-26</pubDate>
-        </item>
-        
-        <item>
-            <title>Git Activity in Multiple Folders</title>
-            <link>https://notes.zachmanson.com/git-activity-in-multiple-folders</link>
-            
-            <description>A template for listing all the commits you did on a certain date.</description>
+            <description>A Linux-based operating system with a pure Python userspace.</description>
             
             <content:encoded>
-                <![CDATA[<p>A script I like to drop into my projects folders to see what I was working on for a given day.</p>
-<div class="highlight"><pre><span></span><code><span class="nv">day</span><span class="o">=</span><span class="nv">$1</span>
-<span class="nv">repo_folder</span><span class="o">=</span>~/projects
-<span class="k">for</span><span class="w"> </span>dir<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$repo_folder</span><span class="s2">&quot;</span>/*/<span class="p">;</span><span class="w"> </span><span class="k">do</span>
-<span class="w">    </span><span class="c1"># Check if the directory is a git repository</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$dir</span><span class="s2">/.git&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
-<span class="w">        </span><span class="nb">cd</span><span class="w"> </span><span class="nv">$dir</span>
-<span class="w">        </span>git<span class="w"> </span>log<span class="w"> </span>--after<span class="o">=</span><span class="s2">&quot;</span><span class="nv">$day</span><span class="s2"> 00:00&quot;</span><span class="w"> </span>--before<span class="o">=</span><span class="s2">&quot;</span><span class="nv">$day</span><span class="s2"> 23:59?&quot;</span><span class="w"> </span>--author<span class="o">=</span><span class="s2">&quot;Zach&quot;</span>
-<span class="w">    </span><span class="k">fi</span>
-<span class="k">done</span>
-</code></pre></div>]]>
+                <![CDATA[<p><img alt="" src="/media/snakeware.png" /></p>
+<p>snakeware is an experimental <a href="/linux">Linux</a>-based OS with developed in 2020.  Its userspace is written entirely in Python, barring a single Busybox root process.  It was created by Joshua Moore drawing inspiration from the Commodore 64.  The window manager, snakewm, is written primarily with pygame_gui.  It is not based on X11 or Wayland, instead writing directly to the framebuffer (<code>/dev/fb0</code>).</p>
+<p>On first boot, snakeware launches you directly a the Python interpreter.  From here you can run Python commands directly, launch the window manager, or launch CLI games.</p>
+<p>To launch snakewm from the interpreter, run the <code>snakewm</code> command.  From snakewm the aopp menu can be opened using the Super key.  From here a number of applications can be launched.</p>
+<p>To launch CLI games, enter the following commands:</p>
+<div class="highlight"><pre><span></span><code>&gt;&gt;&gt; import snake_games
+&gt;&gt;&gt; snake_games.menu()
+</code></pre></div>
+<p>Games included as of 2022 are snake, snakepaint, and circlez.</p>
+<h2 id="history">History</h2>
+<p>snakeware was a short-lived project and should be considered inactive, with most significant contributions ending in 2020.  It was created and maintained by Joshua Moore and had a small number of contributors.  Some of the applications included in snakeware never reached their intended goals, such as the included terminal emulator snaketerm which is extremely rudimentary.</p>
+<p>One of the goals in making the entire userspace in Python was to make it modifiable by the user with little effort.  As Python is interpreted, all code for the window manager and the interface would be visible and modifiable by any snakeware user, and would be easy to extend.  Unfortunately, the planned text editor for snakeware, CATH, was never finished.</p>
+<p>Other planned projects were networking, a chat application, and a package system built on top of PyPI called snakeoil.</p>
+<p>The project was coordinated over a Discord server, though this hasn't been active for some time.</p>
+<h2 id="links">Links</h2>
+<ul>
+<li><a href="https://github.com/joshiemoore/snakeware">snakeware source code</a></li>
+<li><a href="https://github.com/Cyppa/CATH-for-Snakeware">CATH text editor</a></li>
+</ul>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/git-activity-in-multiple-folders</guid>
-            <pubDate>2024-04-22</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/snakeware</guid>
+            <pubDate>2024-03-26</pubDate>
         </item>
         
         <item>
@@ -1090,34 +1361,44 @@ Lorem ipsum amirite.  Hey look a fenced code block:
         </item>
         
         <item>
-            <title>snakeware</title>
-            <link>https://notes.zachmanson.com/snakeware</link>
-            
-            <description>A Linux-based operating system with a pure Python userspace.</description>
+            <title>Pirate Libraries</title>
+            <link>https://notes.zachmanson.com/pirate-libraries</link>
             
             <content:encoded>
-                <![CDATA[<p><img alt="" src="/media/snakeware.png" /></p>
-<p>snakeware is an experimental <a href="/linux">Linux</a>-based OS with developed in 2020.  Its userspace is written entirely in Python, barring a single Busybox root process.  It was created by Joshua Moore drawing inspiration from the Commodore 64.  The window manager, snakewm, is written primarily with pygame_gui.  It is not based on X11 or Wayland, instead writing directly to the framebuffer (<code>/dev/fb0</code>).</p>
-<p>On first boot, snakeware launches you directly a the Python interpreter.  From here you can run Python commands directly, launch the window manager, or launch CLI games.</p>
-<p>To launch snakewm from the interpreter, run the <code>snakewm</code> command.  From snakewm the aopp menu can be opened using the Super key.  From here a number of applications can be launched.</p>
-<p>To launch CLI games, enter the following commands:</p>
-<div class="highlight"><pre><span></span><code>&gt;&gt;&gt; import snake_games
-&gt;&gt;&gt; snake_games.menu()
-</code></pre></div>
-<p>Games included as of 2022 are snake, snakepaint, and circlez.</p>
-<h2 id="history">History</h2>
-<p>snakeware was a short-lived project and should be considered inactive, with most significant contributions ending in 2020.  It was created and maintained by Joshua Moore and had a small number of contributors.  Some of the applications included in snakeware never reached their intended goals, such as the included terminal emulator snaketerm which is extremely rudimentary.</p>
-<p>One of the goals in making the entire userspace in Python was to make it modifiable by the user with little effort.  As Python is interpreted, all code for the window manager and the interface would be visible and modifiable by any snakeware user, and would be easy to extend.  Unfortunately, the planned text editor for snakeware, CATH, was never finished.</p>
-<p>Other planned projects were networking, a chat application, and a package system built on top of PyPI called snakeoil.</p>
-<p>The project was coordinated over a Discord server, though this hasn't been active for some time.</p>
+                <![CDATA[<p>Also known as shadow libraries, are potentially the best thing humans have ever created and are illegal in most places.  They are <a href="/archives">archives</a> human writing, some catering to particular niches and some attempting to capture <em>everything</em>.  And then distribute all of human knowledge and writing for free.</p>
+<p>They have no regard for copyright law, generally viewing them as part of a broken system or distractions to (what the pirate librarians might call) their noble goals.</p>
+<p>Library Genesis (libgen) and Sci-Hub (a superset of libgen) focus primarily on academic materials, textbooks and journal publications.  The projects are borne from the goal of allowing access to documents that would normally only be accessible through expensive journals.</p>
+<p>Books3 is another pirate library, containing ≈196000 books sourced from Bibliotik.  It is named in the spirit of OpenAI's dubiously sourced collections of books, Books1 and Books2.  Books3 has become well known for its use in training <a href="/large-language-models">large language models</a> like <a href="/llama">LLaMA</a>.</p>
+<p>The <a href="/internet">Internet</a> Archive is pirate library adjacent.  It contains and redistributes (without permission) countless copyrighted works, but will respond to takedown requests.</p>
+<p>During <a href="/uwa-computer-science">my time at university</a>, use of Library Genesis and Sci-Hub was rife. While not everyone knew of these sites directly, everyone knew someone who knew someone who did, and textbook PDFs propagated on the sneakernet.</p>
+<p>Pirate libraries:</p>
+<ul>
+<li>Library Genesis</li>
+<li>Sci-Hub</li>
+<li>Bibliotik</li>
+<li>Books3</li>
+<li>Gigapedia</li>
+<li>Kolkhoz</li>
+<li>Librusec</li>
+</ul>
+<p>An adjacent concept is preservation of media, where pirated copies are seen as a defence against permanent loss. This is the thinking behind the Internet Archive and the sites it has inspired.  This kind of thinking is also prevalent in the world of video games, a medium where many works are rendered unavailable by missing online services, changing hardware landscape or lost source code. There are many cases where old games have been recovered or restored through pirated versions.</p>
+<p>Web archives:</p>
+<ul>
+<li><a href="https://archive.org">Internet Archive</a></li>
+<li><a href="https://archive.is">archive.is</a></li>
+<li><a href="https://archive.today">archive.today</a></li>
+</ul>
 <h2 id="links">Links</h2>
 <ul>
-<li><a href="https://github.com/joshiemoore/snakeware">snakeware source code</a></li>
-<li><a href="https://github.com/Cyppa/CATH-for-Snakeware">CATH text editor</a></li>
+<li><a href="https://www.atlasobscura.com/articles/the-rise-of-illegal-pirate-libraries">The Rise of Pirate Libraries</a></li>
+<li><a href="https://www.wired.com/story/battle-over-books3/">The Battle Over Books3</a></li>
+<li><a href="https://reason.com/2022/07/24/you-cant-stop-pirate-libraries/">You Can't Stop Pirate Libraries</a></li>
+<li><a href="https://publiclibrariesonline.org/2016/06/the-pirate-library-controversy/">The Pirate Library Controversy</a></li>
+<li><a href="https://lostmediawiki.com/Home">Lost Media Wiki</a></li>
 </ul>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/snakeware</guid>
-            <pubDate>2024-03-26</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/pirate-libraries</guid>
+            <pubDate>2023-11-20</pubDate>
         </item>
         
         <item>
@@ -1276,164 +1557,6 @@ Lorem ipsum amirite.  Hey look a fenced code block:
         </item>
         
         <item>
-            <title>Slug</title>
-            <link>https://notes.zachmanson.com/slug</link>
-            
-            <content:encoded>
-                <![CDATA[<p>In <a href="/web-development">web development</a>, you sometimes come across a segment of a URL called a "slug", which is human readable string of text appended to a URL to make easier to determine the content the URL points to.  The slug itself if usually not actually necessary for web server to serve the correct page.  For example, these two links point to the same page:</p>
-<p><a href="https://stackoverflow.com/questions/4230846/what-is-the-etymology-of-slug-in-a-url">https://stackoverflow.com/questions/4230846/what-is-the-etymology-of-slug-in-a-url</a></p>
-<p><a href="https://stackoverflow.com/questions/4230846">https://stackoverflow.com/questions/4230846</a></p>
-<p>This use of the word's use in web media is following a convention from print media, where a "slug" is an informal name given to a story before publication.  Print media takes the term from printing presses, where a slug is a line of lead cast characters.</p>
-<blockquote>
-<p>The term slug derives from the days of hot-metal printing, when printers set type by hand in a small form called a stick. Later huge Linotype machines turned molten lead into casts of letters, lines, sentences and paragraphs. A line of lead in both eras was known as a slug.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://archive.nytimes.com/www.nytimes.com/times-insider/2014/11/24/whats-in-a-slug/">Kyle Massey</a></cite></p>
-<p>Screenplays have a similar concept, where a "slug line" is a heading at the start of each scene containing important general information about the following scene.</p>
-<blockquote>
-<p>A <em>slug line</em>, also called a <em>master scene heading</em>, occurs at the start of each scene and typically contains 3 pieces of information: whether the scene is set inside or outside (INT. or EXT.; interior or exterior), the specific location, and the time of day. Each slug line begins a new scene. In a "<a href="https://en.wikipedia.org/wiki/Shooting_script" title="Shooting script">shooting script</a>" the slug lines are numbered consecutively for ease of reference.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://en.wikipedia.org/wiki/Screenplay#Format_and_style">Screenplay, Wikipedia</a></cite></p>
-<h2 id="links">Links</h2>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Slug_(publishing)">Slug (publishing), Wikipedia</a></li>
-</ul>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/slug</guid>
-            <pubDate>2023-10-21</pubDate>
-        </item>
-        
-        <item>
-            <title>Federating with Meta</title>
-            <link>https://notes.zachmanson.com/federating-with-meta</link>
-            
-            <content:encoded>
-                <![CDATA[<p>Meta's rumoured Twitter competitor Threads has caused a stir in the <a href="/fediverse">Fediverse</a>. Some suggesting fedi instances should preemptively block Threads, others willing to wait and see what happens.  At the time of writing (June 2023) it is unclear how this will pan out. Many fear the threat of <a href="https://en.wikipedia.org/wiki/Embrace,_extend,_and_extinguish">embrace, extend, extinguish</a>, but others are excited at the prospect of the fediverse becoming more significant.</p>
-<p><img alt="" src="/media/meta-fediverse.jpeg" /></p>
-<p>Meta: "MAY I JOIN YOU?"<br />
-<a href="https://framapiaf.org/@davidrevoy/110583258129951932">By David Revoy</a></p>
-<p>One of the oft-touted benefits of the fediverse is that it would be resilient to corporate <a href="/tiktoks-enshittification">enshittification</a>. It will be interesting to see how the fediverse handles real threats.  </p>
-<h2 id="interesting-articles">Interesting Articles</h2>
-<p>Roelant Kooij wrote an <a href="https://roelant.net/en/2023/interesting-reads-on-meta-vs-fediverse/">excellent overview</a> of the arguments on either side of this debate.  The Fediverse Report also has a <a href="https://fediversereport.com/last-week-in-the-fediverse-episode-24/">good timeline</a> of the news.  These are sorted in the order I have found them, with my <strong>strongest recommendations in bold</strong>.</p>
-<ul>
-<li><a href="https://fedipact.online/">Not That Kind of ‘Open’</a>, John Gruber on the debate <ul>
-<li>suggests that the pre-emptive block may be "petty and deliberately insular"</li>
-</ul>
-</li>
-<li><a href="https://daringfireball.net/2023/06/more_on_preemptively_blocking">More on Preemptively Blocking Facebook’s Imminent ActivityPub Entry</a>, John Gruber's follow-up<ul>
-<li>suggests that if Facebook is federated, they should start with "two strikes against it"</li>
-<li>"Is the goal of the Fediverse to be anti-corporate/anti-commercial, or to be pro-openness? I think openness is the answer"</li>
-</ul>
-</li>
-<li><a href="https://ploum.net/2023-06-23-how-to-kill-decentralised-networks.html">How to Kill a Decentralised Network (such as the Fediverse)</a>, Ploum's excellent writeup on how large companies can (sometimes maliciously) kill open/decentralised networks<ul>
-<li>makes comparison to Google killing XMPP and Microsoft using OOXML to cripple open source office software</li>
-</ul>
-</li>
-<li>⭐️ <a href="https://about.scicomm.xyz/doku.php?id=blog:2023:0625_meta_on_the_fediverse_to_block_or_not_to_block"><strong>Meta on the Fediverse: to block or not to block?</strong></a>, SciComm admins writeup of their balanced thought process on pre-emptive blocking<ul>
-<li>they conclude to pre-emptively block, but leave the door open to unblocking if Meta is a decent fediverse citizen</li>
-</ul>
-</li>
-<li><a href="https://reb00ted.org/tech/20230625-meta-why-activitypub/">Why would Meta implement ActivityPub? 1½ reasons are compelling, another is not</a>, Johannes Ernst's analysis of Meta's motivations<ul>
-<li>suggests EEE is not worthwhile for Meta, far less important than appeasing incoming EU regulations</li>
-</ul>
-</li>
-<li>Tim Chamber's (indieweb.social admin) <em>First Time?</em> series of posts on the matter<ul>
-<li><a href="https://www.timothychambers.net/2023/06/23/project-and-the.html">Project92 and the Fediverse - A Smarter Battle Plan to Protect the Open Social Web</a><ul>
-<li>suggests that pre-emptive defederation is not the most effective strategy to protect the current fediverse</li>
-<li>thinks current fediverse can win by providing a better experience, especially in areas where corporate interests conflict with this (e.g. advertising)</li>
-</ul>
-</li>
-<li><a href="https://www.timothychambers.net/2023/06/25/project-the-fediverse.html">Project92, the Fediverse: (First Time? Part 2)</a><ul>
-<li>'We have the tools to protect our people, and we are stronger to "Watch like a hawk, with our fingers over the block button."'</li>
-</ul>
-</li>
-<li><a href="https://www.timothychambers.net/2023/06/30/meta-and-the.html">Meta and the Fediverse (First Time? Part 3)</a><ul>
-<li>generally calling for calming of vitriol, promoting compassion between disagreeing groups</li>
-<li>"All sides should admit we don’t know far more than we do know right now."</li>
-</ul>
-</li>
-<li><a href="https://www.timothychambers.net/2023/07/03/instagram-threads-and.html">Instagram Threads and the Fediverse (First Time? Part 4)</a>, a summation of all his previous posts</li>
-</ul>
-</li>
-<li>⭐️ <a href="https://heat-shield.space/mastodon_two_camps.html"><strong>The Two Camps of Mastodon</strong></a>, on the general split between people that view the fediverse as a collection of small communities and those that view it as a distributed network where most people can talk to most others in a decentralised fashion, and how Threads' existence exacerbate this divide</li>
-<li><a href="https://netwars.pelicancrossing.net/2023/06/30/the-horns-of-a-dilemma/">The horns of a dilemma</a>, Wendy M. Grossman enumerating potential futures</li>
-<li>⭐️ <a href="https://blog.bloonface.com/2023/07/03/meta-and-the-fediverse-sorting-heat-from-light/"><strong>Meta and the fediverse: sorting heat from light</strong></a>, a fantastic rebuke to many of Meta's alleged nefarious motivations<ul>
-<li>meta gains little in terms of data collection ability since <a href="/activitypub">ActivityPub</a> lacks privacy anyway, and what it does gain isn't very useful, and the current fediverse population size is not large enough to be worth pursuing for data collection</li>
-<li>its seems unlikely that Meta actually sees the fediverse as a threat</li>
-<li>the Gchat/XMPP embrace/extend/extinguish example is flawed</li>
-<li>Meta isn't evil without motivation</li>
-<li>"So why <em>is</em> Meta going to use ActivityPub?  Here’s the thing; <em>I haven’t the faintest fucking clue</em>.  It does not obviously help Meta in any way to have interoperability with ActivityPub"</li>
-</ul>
-</li>
-<li><a href="https://tracks.ranea.org/post/722507935765397504/youre-so-vain-you-probably-think-this-app-is">You’re So Vain, You Probably Think This App Is About You</a>, an argument against the idea that Meta actually wants to EEE the fediverse<ul>
-<li>suggests that there is little monetary reason to federate from Meta's perspective, other than regulatory pressure</li>
-<li>particularly posits that defederating from servers that refuse to defederate Meta is particularly short-sighted</li>
-</ul>
-</li>
-</ul>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/federating-with-meta</guid>
-            <pubDate>2023-06-01</pubDate>
-        </item>
-        
-        <item>
-            <title>Spite Driven Development</title>
-            <link>https://notes.zachmanson.com/spite-driven-development</link>
-            
-            <content:encoded>
-                <![CDATA[<p>Spite Driven Development (SDD) is my preferred development methodology.  I have found it by far my most productive style of software engineering, and has been responsible in whole or part for most of my <a href="/projects">projects</a> (see: <a href="/penultimate-guitar">Penultimate Guitar</a>, <a href="/minecraftle">Minecraftle</a>, <a href="/alculator">Alculator</a>, <a href="/status-messenger">Status Messenger</a>).</p>
-<p>While it is extremely effective for building software quickly, it is often destructive to other aspects of one's life, such as healthy eating, relationships, and especially sleep.</p>
-<h2 id="history">History</h2>
-<p>I got mad at a competitor/company with shitty practices/friend/existing tool.  Spend multiple days (likely straight) writing code to spite them.  Spited them. <code>git push</code></p>
-<h2 id="spite-driven-development-cycle">Spite Driven Development Cycle</h2>
-<ol>
-<li>get mad</li>
-<li>think you can do it better yourself</li>
-<li>feel the need to prove you can do better</li>
-<li><code>git init</code></li>
-<li>design feature with a scope exactly commensurate to your anger</li>
-<li>forgo loved ones and human interaction</li>
-<li>finish feature</li>
-<li><code>git commit</code></li>
-<li>see 5</li>
-<li>deploy</li>
-<li>see 5</li>
-<li>run it 40 times just to watch it work, analogous to injecting dopamine directly into your veins</li>
-<li>rest</li>
-</ol>
-<h2 id="goals">Goals</h2>
-<p>Victory.</p>
-<h2 id="non-goals">Non Goals</h2>
-<p>Sustenance, testing, clean code.</p>
-<h2 id="development-frameworks">Development Frameworks</h2>
-<p>Much like how ruby+rspec is very well suited to test driven development, many frameworks are well suited to SDD.  Whichever framework you know is the ideal framework for SDD.  Time is of the essence and you have no-one to please but yourself.  Spite burns hot but it burns dirty, and it is not a renewable resource.  Your must strike while the iron is hot and complete the project before you are sapped of the hatred that caused you to start the project.</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/spite-driven-development</guid>
-            <pubDate>2024-03-18</pubDate>
-        </item>
-        
-        <item>
-            <title>Minecraftle v2.0</title>
-            <link>https://notes.zachmanson.com/minecraftle-v2.0</link>
-            
-            <content:encoded>
-                <![CDATA[<p><a href="/minecraftle">Minecraftle</a> blew up!  At the time of writing it has had over 1 million players and seems to still be increasing.  Seems like it became popular thanks to a few YouTube videos and TikToks. This huge spike in players revealed how poorly made it all was.</p>
-<p>The stats page in particular was poorly done.  Originally I had made the schema as simple as possible and only stored the record of each game in one big table. This worked for small player counts, but meant calculating rankings was quadratic so the stats page eventually 10+ seconds to load.  I only discovered this was happening when the database for <a href="/penultimate-guitar">Penultimate Guitar</a> would be killed to allocate more resources every time someone loaded the stats page.  </p>
-<p>Since rewriting the database meant I'd need to get rid of the entire backend, I decided this was the time to move away from Flask and static JavaScript and port it to Next.js.  I had been meaning to do this for a while.  The Vanilla JS I had been using prior was very janky and poorly made.  I was still unemployed at this time and had plenty of free time since most of my friends had left Melbourne to see their families for Christmas.</p>
-<p>The new version of Minecraftle is deployed now on Vercel with a proper instance of Postgres for storing user scores. Rankings are still slow to calculate since all million+ players must be ordered, but they are calculated once per hour via a cronjob that refreshes a materialised view so the pageload is fast.  I'm sure I could do something clever here, chunking the calculations or having them incrementally calculated when a new game score is submitted, but this works for now.</p>
-<p>Alongside this rewrite I was able to add a few long requested features, like a clear button.</p>
-<h2 id="mistakes">Mistakes</h2>
-<h3 id="database-broke">Database Broke</h3>
-<p>I accidentally ran the migration script twice, once a few weeks prior to deployment to generate some test data and once on the day I deployed.  I forgot about the initial run in the intervening weeks.  Making matters worse, the second run used the old dump of the database, meaning that all scores were double what they were 3 weeks prior.  This was painful to diagnose as some scores had gone up while others had gone down.  I was eventually able to figure out what had happened thanks to <a href="https://github.com/zachpmanson/minecraftle/issues/34">this bug report</a> which contained a screenshot of the scores the day before.  Thank you very much <a href="https://github.com/suppergerrie2">suppergerrie2</a>!</p>
-<h3 id="cdn-vs-audio-files">CDN vs Audio Files</h3>
-<p><img alt="" src="/media/mctl-routes.png" /></p>
-<p>Back when Minecraftle was just a uni project, one of my teammates, Harrison Oates, added a button that would play in game audio from Minecraft.  This was cute and insignificant, to the point where I forgot it existed.  When I deployed on Vercel this became a problem since almost all my bandwidth (100GiB) was used by this single mp3 file! I removed this feature, but other static assets were going to use my remaining bandwidth.  I had to switch to running it on a new DigitalOcean droplet for the rest of the month.</p>
-<p>Hopefully this are the last updates Minecraftle will need for a long time!</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/minecraftle-v2.0</guid>
-            <pubDate>2024-04-08</pubDate>
-        </item>
-        
-        <item>
             <title>Nextcloud Phone Photo Upload</title>
             <link>https://notes.zachmanson.com/nextcloud-phone-photo-upload</link>
             
@@ -1447,129 +1570,6 @@ Lorem ipsum amirite.  Hey look a fenced code block:
             </content:encoded>
             <guid isPermaLink="false">https://notes.zachmanson.com/nextcloud-phone-photo-upload</guid>
             <pubDate>2024-05-01</pubDate>
-        </item>
-        
-        <item>
-            <title>Spotify Design Decisions</title>
-            <link>https://notes.zachmanson.com/spotify-design-decisions</link>
-            
-            <content:encoded>
-                <![CDATA[<p>This page is a list of design decisions made by Spotify that I consider shitty.  I'm sure some of them were only A/B tested, coming and going silently, but some have lingered for years. In any case I have been subjected to) all of these personally.</p>
-<p>See also: <a href="https://www.todepond.com/wikiblogarden/work/dear-spotify/">Dear spotify product manager</a> by Lu Wilson</p>
-<h2 id="unable-to-remove-dj-shortcut-on-desktop">Unable to Remove DJ Shortcut On Desktop</h2>
-<p>On desktop they have added a link to the DJ feature at the top of Your Library, below pinned playlists.  Despite not being a playlist (nor a feature I use), it continues to appear even when you have set the filter to only show playlists.  As far as I know it cannot be removed?  But it can be pinned.  Despite already being permalocked to the top.
-<img alt="" src="/media/dj.png" />
-The day after writing the previous paragraph, I noticed they added the DJ to the same section in the mobile app. In the movile app a long press on the DJ icon does shows you an option to hide it, which seems to sync across all my devices.  Why is this option not available in the desktop client!</p>
-<h2 id="custom-playlist-sorting">Custom Playlist Sorting</h2>
-<p>For as long as I can remember you can order the playlists you have created or followed in any order along the left side of the desktop app. You can even put them in nested folders which is fantastic.  I have many playlists organised into folders in particular orders.  I know how to get to the playlist I want quickly because I have put it in a particular place. This order and "Recently played" are the only two i would ever want.</p>
-<p>Spotify seems to hate this use case.  To my knowledge its never been possible to rearrange order of playlists on the mobile app, only the desktop client.</p>
-<p>When you attempt to add a song to playlist on mobile, there isn't even an option to sort by recently played anymore.  This is diametrically opposed to desktop, where the right click menu will ONLY allow you to sort by custom order. </p>
-<p><img alt="" src="/media/no-custom-order.png" /></p>
-<h2 id="smart-shuffle-button-cycle-lock">Smart Shuffle Button Cycle Lock</h2>
-<p>Spotify has added a feature called Smart Shuffle that works like normal shuffling, but also adds recommended songs in-between ever few tracks in the queue.  On paper I like this feature, though I have never found myself actually using it. I was introduced to it through the following infuriating UX.</p>
-<p>I go the the Now Playing screen on the Android Spotify client. The playlist I am listening to is currently set to shuffle (regular shuffle), but I would like to turn off regular shuffle.  I press the button with a shuffle icon, which has for 10+ years been a single toggle that would instantly take effect.  Instead of a simple 2 option toggle, I find that it has been converted in to a 3 option cycle button, where pressing it cycles through the options of <code>Linear -&gt; Shuffle -&gt; Smart Shuffle -&gt; Linear</code>.  I can see the thinking behind this decision though I don't like it since it breaks muscle memory established by this app for a decade and all other music playing applications.  That is not my issue though.</p>
-<p>When you click the button and move the state from <code>Shuffle</code> to <code>Smart Shuffle</code>, the application begins loading the Smart Shuffle recommendations which means it must query Spotify servers, which is an operation that takes multiple seconds.  While this occurs, the button with a Shuffle icon becomes a button with a loading spinner, and becomes unclickable. I must wait multiple seconds before I can turn off Smart Shuffle.</p>
-<p><code>Linear -&gt; Shuffle -&gt; Loading (multiple seconds) -&gt; Smart Shuffle -&gt; Linear</code></p>
-<p>This is deeply infuriating.  I never even wanted to use Smart Shuffle in the first place and now I must wait for it.</p>
-<p>This occurred every time I wanted to turn off  <code>Shuffle</code>.  Which is a lot.</p>
-<p>As of 2024-01-21, this loading state of the button appears to have been removed, but the button still is a 3 option cycle which I dislike (though respect the elegance of).</p>
-<h2 id="overflow-menu-loading">Overflow Menu Loading</h2>
-<p>For some godforsaken reason, the overflow menu for a track sometimes appears to require a network request before it can show.  If this request is slow, it will show a loading spinner in place of the menu, until the server responds.  Or in some cases, the <strong>overflow menu will fail to load entirely</strong>.  This is insane, since for the most part, the options on this menu are identical.  This is doubly insane since the menu can load without any issue what-so-ever in offline mode.</p>
-<p>I have only ever experienced this issue on the Android mobile app, which for many years did not support swiping on a song to queue a song.  At this time you were only able to queue a song. through the overflow menu, which often times meant waiting multiple seconds for menu to appear.  God forbid you wanting to queue multiple songs in a row. Thankfully you can now bypass the menu loading by swiping a track to the right.</p>
-<p>Oh wait!</p>
-<h2 id="cant-swipe-to-queue-on-blend-playlists">Can't Swipe to Queue on Blend Playlists</h2>
-<p>On Android you cannot swipe to queue a playlist if the playlist is a blend playlist??? Why would this screen use a different component to represent a list of songs to every other screen in the app? </p>
-<video src='/media/blend-swiping.webm' controls></video>
-
-<h2 id="secret-sliding-menu">Secret Sliding Menu</h2>
-<p>This one I only just noticed now while typing this post. There is a sliding menu that appears if you click on your profile picture in the corner of any of the 3 main screens.  It seems a bit sparse, like it would be better suited to being a drop down? In any case this menu can actually be accessed from any playlist folder screen as well, despite there being no indication of this.  This only seems to work on playlist folder screens though, as it doesn't work for any other subpages.</p>
-<p>This one was annoying as I accidentally triggered in when attempting to swipe in from the left to go back a screen.</p>
-<video src='/media/sliding-menu.webm' controls></video>
-
-<h2 id="cant-swipe-up-to-access-player">Can't Swipe Up to Access Player</h2>
-<p>On Android you can swipe down on the player interface but you cannot swipe up to reveal it.  When you attempt this you will almost definitely skip the song that is currently playing, since the minimised version of the player only detects left and right swipes.</p>
-<video src='/media/swipe-up.webm' controls></video>
-
-<h2 id="top-bar-alignment">Top Bar Alignment</h2>
-<p>This is a screenshot of the top bar.  Who the fuck let this happen.</p>
-<p><img alt="" src="/media/spotify-top-bar.png" /></p>
-<h2 id="upcoming-complaints">Upcoming Complaints</h2>
-<ul>
-<li>Smart Shuffle popup</li>
-<li>Rapidly toggling through Shuffle button states can cause the cycle to desync in strange ways</li>
-<li>Spotify (regular) Shuffle algorithm has some problems</li>
-</ul>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/spotify-design-decisions</guid>
-            <pubDate>2024-03-17</pubDate>
-        </item>
-        
-        <item>
-            <title>The H Chord</title>
-            <link>https://notes.zachmanson.com/the-h-chord</link>
-            
-            <description>How German monks broke my website</description>
-            
-            <content:encoded>
-                <![CDATA[<p>I received a <a href="https://github.com/pavo-etc/penultimate-guitar/issues/41">strange bug report</a> on <a href="/penultimate-guitar">Penultimate Guitar</a> where the Next.js rendering would fail completely on certain songs.</p>
-<h2 id="the-error">The Error</h2>
-<p>The type error was being triggered by a chord component, where the key was undefined. The chords are pulled from Ultimate Guitar, so I inspected the JSON payload from the <a href="https://tabs.ultimate-guitar.com/tab/1684995">original source</a>.</p>
-<p><img alt="" src="/media/ug.png" /></p>
-<p>Why the hell is there a <code>[ch]H[/ch]</code> chord in there? That's definitely the cause as I never accounted for non-existent keys. Looking at Ultimate Guitar, it renders as a B chord.</p>
-<p><img alt="" src="/media/ug-rendered.png" /></p>
-<p>Huh?</p>
-<details>
-<summary>An aside on Ultimate Guitar HTML</summary>
-<p>The way Ultimate Guitar handles data is bizarre. It passes a static dehydrated HTML page to the client.  The data payload is in the HTML as well, but instead of being contained in a <code>script</code> tag it's a giant JSON payload in an escaped string within an attribute of a random <code>div</code></p>
-</details>
-<h2 id="one-google-search-later">One Google Search Later</h2>
-<p>Germany and the Netherlands ha(d/ve) their own musical key notation that include(d/s) a H chord. <a href="https://www.guitarsite.com/newsletters/010122/12.shtml">This site</a> claims it ended in "1994/1995", though I've seen <a href="https://github.com/pavo-etc/penultimate-guitar/issues/41#issuecomment-1538452351">other</a> <a href="https://www.reddit.com/r/musictheory/comments/8rn0ve">sources</a> claim its still taught this way. This comes as an artifact of the bizarre history Western music notation, which is a problem I seem to keep running into recently in my attempts to learn more about music theory.</p>
-<blockquote>
-<p>I learned in music school that the chord is called "B" (like in the rest of the world), but the note is called "H" (eg. the C Major scale would be C, D, E, F, G, A, H, C).</p>
-</blockquote>
-<p><cite>TobTobXX, who reported the bug</cite></p>
-<h2 id="western-musics-stupid-origins">Western Music's Stupid Origins</h2>
-<p>Western music is based on ecclesiastic modes used in church in the early Middle Ages, which only used the diatonic notes of the C scale (<em>natural</em> notes). The musical notation systems of the time reflected this, not accounting for notes outside of the C scale. When sharps and flats later came into more common use, the existing notation systems needed a way to distinguish them from the natural notes they sat between.</p>
-<p>This problem first arose with B natural and B flat, according to the <a href="https://www.britannica.com/art/musical-expression">Encyclopedia Britannica</a>. The first method of distinguishing B from B flat was using two different forms of the lowercase "b" character:</p>
-<p><img alt="" src="/media/The-Flat-Sharp-And-Natural-A-Historical-Sketch.png" /></p>
-<p>Niecks, Frederick. “The Flat, Sharp, and Natural. A Historical Sketch.” <em>Proceedings of the Musical Association</em>, vol. 16, 1889, pp. 79–100.</p>
-<p>Somewhere along the line in Germany, monks transcribing these square and round "b" characters confused the squared "b" for "h", and this was later assumed to be intentional. "H" became a convention for writing B natural, while the "b" character remained convention for writing B flat. "B" and "b" became amalgamated, both coming to represent modern B flat.</p>
-<p>In the rest of the world, this "H" note didn't catch on.</p>
-<p>In time, notation for sharp and flat notes other than B flat was needed. This use of square and round "b" to denote B and B flat eventually evolved into our modern notation for indicating natural and non-natural, <em>accidentals</em>. ♭ comes from the round "b", while ♯ and ♮ come from the square "b".</p>
-<p>Somehow, Germany still hasn't fully corrected this mistake, continuing to use "H" to represent B natural and many places. Including Ultimate Guitar. Ugh.</p>
-<h2 id="resolution">Resolution</h2>
-<p>I don't love dealing with problems caused by the whims of millenia dead monks, but this was an interesting rabbit hole to fall into. The issue has since been patched, and I look forward to my mistakes ruining someone's day in 3023.</p>
-<p><img alt="" src="/media/gods-mistakes.png" /></p>
-<details>
-<summary> An aside on The Flat, Sharp, and Natural. A Historical Sketch </summary>
-<p>When I first copied the text from the article, it copied that "square b" as a "h". Funny that modern OCR technology makes the same mistakes at 1000 year old monks.</p>
-<blockquote>
-<p>The first known writer who distinguished between b natural and b flat was Odo of Clugny, who died in 942 ; the b natural being indicated by a square b (h), the b flat by a round b (b)</p>
-</blockquote>
-<p>It was also a pain in the ass to find a copy of that article. It's mostly found on paywalled academic sites despite the article definitely being out of copyright. Luckily the Internet Archive <a href="https://scholar.archive.org/work/3jdud373effq3e376gqtlkxqvq">has a copy</a>.</p>
-</details>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/the-h-chord</guid>
-            <pubDate>2023-05-08</pubDate>
-        </item>
-        
-        <item>
-            <title>Usernames</title>
-            <link>https://notes.zachmanson.com/usernames</link>
-            
-            <description>Why am I still surprised</description>
-            
-            <content:encoded>
-                <![CDATA[<p>I spend an inordinate amount of time reading arguments on the internet. Every now and then I'll find one that is actually thoughtful and in-depth. One with more kindness than usual, with genuine attempts to understand the perspectives of each other.</p>
-<p>And after the arguing has concluded, the fighting parties express that they respect the other.</p>
-<p>These are rare. But it isn't rare that upon finding one of these I will glance at the usernames.</p>
-<p>Today I glanced at the usernames of two people having a beautiful argument on a forum:</p>
-<p>"euronforpresident"</p>
-<p>And their opponent:</p>
-<p>"Hitleresque"</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/usernames</guid>
-            <pubDate>2022-03-11</pubDate>
         </item>
         
 
