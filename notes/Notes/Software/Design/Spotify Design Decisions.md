@@ -8,6 +8,22 @@ This page is a list of design decisions made by Spotify that I consider shitty. 
 
 See also: [Dear spotify product manager](https://www.todepond.com/wikiblogarden/work/dear-spotify/) by Lu Wilson
 
+## Unable to Remove DJ Shortcut On Desktop
+
+On desktop they have added a link to the DJ feature at the top of Your Library, below pinned playlists.  Despite not being a playlist (nor a feature I use), it continues to appear even when you have set the filter to only show playlists.  As far as I know it cannot be removed?  But it can be pinned.  Despite already being permalocked to the top.
+![[dj.png]]
+The day after writing the previous paragraph, I noticed they had added the DJ to the same section in the mobile app, but long pressing the DJ icon shows you an option to hide it, which seems to have hidden it on all my devices.  Why is this option not available in the desktop client!
+## Custom Playlist Sorting
+
+For as long as I can remember you can order the playlists you have created or followed in any order along the left side of the desktop app. You can even put them in nested folders which is fantastic.  I have many playlists organised into folders in particular orders.  I know how to get to the playlist I want quickly because I have put it in a particular place. This order and "Recently played" are the only two i would ever want.
+
+Spotify seems to hate this use case.  To my knowledge its never been possible to rearrange order of playlists on the mobile app, only the desktop client.
+
+When you attempt to add a song to playlist on mobile, there isn't even an option to sort by recently played anymore.  This is diametrically opposed to desktop, where the right click menu will ONLY allow you to sort by custom order. 
+
+![[no-custom-order.png]]
+
+
 ## Smart Shuffle Button Cycle Lock
 
 Spotify has added a feature called Smart Shuffle that works like normal shuffling, but also adds recommended songs in-between ever few tracks in the queue.  On paper I like this feature, though I have never found myself actually using it. I was introduced to it through the following infuriating UX.
@@ -51,23 +67,6 @@ This one was annoying as I accidentally triggered in when attempting to swipe in
 On Android you can swipe down on the player interface but you cannot swipe up to reveal it.  When you attempt this you will almost definitely skip the song that is currently playing, since the minimised version of the player only detects left and right swipes.
 
 ![[swipe-up.webm]]
-
-## Unable to Remove DJ Shortcut On Desktop
-
-On desktop they have added a link to the DJ feature at the top of Your Library, below pinned playlists.  Despite not being a playlist (nor a feature I use), it continues to appear even when you have set the filter to only show playlists.  As far as I know it cannot be removed?  But it can be pinned.  Despite already being permalocked to the top.
-![[dj.png]]
-The day after writing the previous paragraph, I noticed they had added the DJ to the same section in the mobile app, but long pressing the DJ icon shows you an option to hide it, which seems to have hidden it on all my devices.  Why is this option not available in the desktop client!
-
-## Custom Playlist Sorting
-
-For as long as I can remember you can order the playlists you have created or followed in any order along the left side of the desktop app. You can even put them in nested folders which is fantastic.  I have many playlists organised into folders in particular orders.  I know how to get to the playlist I want quickly because I have put it in a particular place. This order and "Recently played" are the only two i would ever want.
-
-Spotify seems to hate this use case.  To my knowledge its never been possible to rearrange order of playlists on the mobile app, only the desktop client.
-
-When you attempt to add a song to playlist on mobile, there isn't even an option to sort by recently played anymore.  This is diametrically opposed to desktop, where the right click menu will ONLY allow you to sort by custom order. 
-
-![[no-custom-order.png]]
-
 
 ## Top Bar Alignment
 
