@@ -5,7 +5,7 @@ tags:
 
 ## New Computer
 
-Setting global [[Git]] config options:
+Setting global [[Notes/Software/Programs/Git/Git]] config options:
 
 ```sh
 git config --global user.name "name"
