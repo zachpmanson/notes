@@ -1,6 +1,8 @@
 ---
 subtitle: The information superhighway.
 ---
+![[dialup-handshake-audio.png]]
+
 ## Interesting Links
 
 - [Internet Artifacts](https://neal.fun/internet-artifacts/)

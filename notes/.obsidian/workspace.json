@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Web Development/Web Development.md",
+                "file": "Notes/Networks/Internet/Internet.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Web Development/Web Development.md",
+                "file": "Notes/Networks/Internet/Internet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Web Development/Web Development.md",
+                "file": "Notes/Networks/Internet/Internet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Web Development/Web Development.md"
+                "file": "Notes/Networks/Internet/Internet.md"
               }
             }
           }
@@ -184,8 +184,9 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "0022b4552b3c4298",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Development/Web Development/Web Development.md",
     "Notes/Software/Design/Fun Design.md",
     "Notes/Software/Development/Programming Languages/C/C.md",
     "Media/dialup-handshake-audio.png",
@@ -214,7 +215,6 @@
     "Archive/Bookmarks/Archives.md",
     "Notes/Software/Program Names.md",
     "Archive/Bookmarks/Websites.md",
-    "Archive/Folklore/Blinkenlichten.md",
     "Notes/Networks",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",
