@@ -7,6 +7,7 @@ subtitle: A comic strip by Randall Munroe.
 - [Wisdom of the Ancients](https://xkcd.com/979/) (the inspiration for [[Problems]])
 - [Voting Software](https://xkcd.com/2030/)
 - [Standards](https://xkcd.com/927/)
+- [Citogenesis](https://xkcd.com/978/)
 
 ## Other Links
 

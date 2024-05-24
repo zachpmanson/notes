@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Networks/Internet/Internet.md",
+                "file": "Archive/Bookmarks/xkcd.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Networks/Internet/Internet.md",
+                "file": "Archive/Bookmarks/xkcd.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Networks/Internet/Internet.md",
+                "file": "Archive/Bookmarks/xkcd.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Networks/Internet/Internet.md"
+                "file": "Archive/Bookmarks/xkcd.md"
               }
             }
           }
@@ -184,15 +184,16 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "0022b4552b3c4298",
   "lastOpenFiles": [
+    "Notes/Language/Dictionary.md",
+    "Notes/Software/Development/Programming Languages/C/Archaic Syntax/Archaic Syntax.md",
     "Notes/Software/Development/Web Development/Web Development.md",
     "Notes/Software/Design/Fun Design.md",
     "Notes/Software/Development/Programming Languages/C/C.md",
     "Media/dialup-handshake-audio.png",
     "Notes/Software/Development/Programming Languages/C/Pointer Operations.md",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax/Comma Operator.md",
-    "Notes/Software/Development/Programming Languages/C/Archaic Syntax/Archaic Syntax.md",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax/Digraphs and Trigraphs.md",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax/C auto Keyword.md",
@@ -214,7 +215,6 @@
     "Notes/Networks/Internet/Fediverse/Fediverse Family Tree.md",
     "Archive/Bookmarks/Archives.md",
     "Notes/Software/Program Names.md",
-    "Archive/Bookmarks/Websites.md",
     "Notes/Networks",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",

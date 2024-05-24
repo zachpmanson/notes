@@ -10,6 +10,7 @@ DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscu
 - **Avuncular**: kind and friendly towards a younger or less experienced person.
 - **Bikeshedding**: arguing about unimportant details, at the cost of working on important details
 - **Bus Factor**: the risk that a project will die if certain people get hit by bus
+- **Citogenesis** ([xkcd](https://xkcd.com/978/)): when misinformation it put on wikipedia, taken as fact by another author in their article, and later that article is added as a citation to the   
 - **Complect**: intertwine, embrace especially; to plait together; interweave.
 - **Elided**: (of a sound or syllable) omitted when speaking.
 - **Enshittification** ([Pluralistic](https://pluralistic.net/2023/01/21/potemkin-ai/#hey-guys)): "how platforms die: first, they are good to their users; then they abuse their users to make things better for their business customers; finally, they abuse those business customers to claw back all the value for themselves. Then, they die."
