@@ -20,18 +20,6 @@
             }
           },
           {
-            "id": "0022b4552b3c4298",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Software/Design/Spotify Design Decisions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "972ae6a738ec3df1",
             "type": "leaf",
             "state": {
@@ -55,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Design/Spotify Design Decisions.md",
+                "file": "Notes/Software/Development/Programming Languages/C/Archaic Syntax/Archaic Syntax.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Design/Spotify Design Decisions.md",
+                "file": "Notes/Software/Development/Programming Languages/C/Archaic Syntax/Archaic Syntax.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Design/Spotify Design Decisions.md"
+                "file": "Notes/Software/Development/Programming Languages/C/Archaic Syntax/Archaic Syntax.md"
               }
             }
           }
@@ -186,10 +173,12 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Archive/Problems/Sticky Elements.md",
+    "Notes/Software/Development/Programming Languages/C/Archaic Syntax/Archaic Syntax.md",
+    "Notes/Software/Design/Spotify Design Decisions.md",
     "Archive/Lines.md",
     "Archive/Bookmarks/xkcd.md",
     "Notes/Language/Dictionary.md",
-    "Notes/Software/Development/Programming Languages/C/Archaic Syntax/Archaic Syntax.md",
     "Notes/Software/Development/Web Development/Web Development.md",
     "Notes/Software/Design/Fun Design.md",
     "Notes/Software/Development/Programming Languages/C/C.md",
@@ -199,7 +188,6 @@
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax/Digraphs and Trigraphs.md",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax/C auto Keyword.md",
-    "Archive/Problems/Sticky Elements.md",
     "Notes/Software/Development/Development Methodologies/Spite Driven Development.md",
     "Projects/Minecraftle/Minecraftle.md",
     "Notes/Software/Development/Development Methodologies/Resume Driven Development.md",
@@ -207,7 +195,6 @@
     "Notes/Software/Software.md",
     "Notes/Mathematics/Computer Science/Computer Science.md",
     "Archive/Problems/Problems.md",
-    "Notes/Software/Design/Spotify Design Decisions.md",
     "Media/spotify-top-bar.png",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Archive/Problems/Git Deleted Branch Recovery.md",
