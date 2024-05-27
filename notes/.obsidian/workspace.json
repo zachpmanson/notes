@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/xkcd.md",
+                "file": "Archive/Lines.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/xkcd.md",
+                "file": "Archive/Lines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/xkcd.md",
+                "file": "Archive/Lines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/xkcd.md"
+                "file": "Archive/Lines.md"
               }
             }
           }
@@ -186,6 +186,7 @@
   },
   "active": "0022b4552b3c4298",
   "lastOpenFiles": [
+    "Archive/Bookmarks/xkcd.md",
     "Notes/Language/Dictionary.md",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax/Archaic Syntax.md",
     "Notes/Software/Development/Web Development/Web Development.md",
@@ -214,7 +215,6 @@
     "Archive/Problems/React and blur().md",
     "Notes/Networks/Internet/Fediverse/Fediverse Family Tree.md",
     "Archive/Bookmarks/Archives.md",
-    "Notes/Software/Program Names.md",
     "Notes/Networks",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",

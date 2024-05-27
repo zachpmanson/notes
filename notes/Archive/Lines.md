@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> Test what you detest
+
+-- ughh idk [this video](https://www.youtube.com/watch?v=MbU-PKukdMw)
+
+---
+
 > Any idiot can build a bridge that stands, but it takes an engineer to build a bridge that barely stands.
 
 -- couldn't actually find a good source, [first saw here](Any fool can build a bridge that stands. It takes an engineer to build a bridge that barely stands) but appears in many other places
