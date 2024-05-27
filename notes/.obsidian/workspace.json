@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Software/Design/Spotify Design Decisions.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Software/Design/Spotify Design Decisions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Software/Design/Spotify Design Decisions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Lines.md"
+                "file": "Notes/Software/Design/Spotify Design Decisions.md"
               }
             }
           }
@@ -184,8 +184,9 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "0022b4552b3c4298",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Archive/Lines.md",
     "Archive/Bookmarks/xkcd.md",
     "Notes/Language/Dictionary.md",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax/Archaic Syntax.md",
@@ -205,7 +206,6 @@
     "Notes/Software/Development/Development Methodologies/Development Methodologies.md",
     "Notes/Software/Software.md",
     "Notes/Mathematics/Computer Science/Computer Science.md",
-    "Archive/Lines.md",
     "Archive/Problems/Problems.md",
     "Notes/Software/Design/Spotify Design Decisions.md",
     "Media/spotify-top-bar.png",

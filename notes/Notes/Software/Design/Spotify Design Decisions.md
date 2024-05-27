@@ -40,6 +40,9 @@ This occurred every time I wanted to turn off  `Shuffle`.  Which is a lot.
 
 As of 2024-01-21, this loading state of the button appears to have been removed, thankfully.
 
+## Smart Shuffle Cycle Order
+
+Oh sorry did I say the order was `Linear -> Shuffle -> Smart Shuffle`?  Its actually `Linear -> Smart Shuffle -> Shuffle`.  Wait no go back.  Wait... it's a different order on my phone vs on desktop? This is real wtf.
 ## Overflow Menu Loading
 
 For some godforsaken reason, the overflow menu for a track sometimes appears to require a network request before it can show.  If this request is slow, it will show a loading spinner in place of the menu, until the server responds.  Or in some cases, the **overflow menu will fail to load entirely**.  This is insane, since for the most part, the options on this menu are identical.  This is doubly insane since the menu can load without any issue what-so-ever in offline mode.
