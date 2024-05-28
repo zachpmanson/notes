@@ -12,7 +12,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: git creation and modification time</title>
+  <title>notes: rtk query sending form data</title>
 </head>
 
 <body>
@@ -65,7 +65,7 @@
         
 
         <div class="flex flex-col text-left nav-links">
-          <a href="/git-creation-and-modification-time" class="activated-link">Git Creation and Modification Time</a>
+          <a href="/rtk-query-sending-form-data" class="activated-link">RTK Query Sending Form Data</a>
           
           
           <a href="/alembic-revision-collision">Alembic Revision Collision</a>
@@ -116,6 +116,7 @@
           
           
           
+          <a href="/git-creation-and-modification-time">Git Creation and Modification Time</a>
           
           
           
@@ -199,7 +200,6 @@
           
           
           
-          <a href="/rtk-query-sending-form-data">RTK Query Sending Form Data</a>
           
           
           
@@ -285,25 +285,44 @@
   </nav>
   <main>
     <header>
-      <h1>Git Creation and Modification Time</h1>
+      <h1>RTK Query Sending Form Data</h1>
     </header>
-    <article><p><a href="/git">Git</a> does not include creation time and modification time in file metadata, but you can use the git commit history to retrieve similar results.</p>
-<p>File creation date:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>log<span class="w"> </span>--pretty<span class="o">=</span>format:<span class="s2">&quot;%ad,&quot;</span><span class="w"> </span>--date<span class="o">=</span>short<span class="w"> </span>--diff-filter<span class="o">=</span>A<span class="w"> </span>--<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$file</span><span class="s2">&quot;</span>
+    <article><p>To send define a mutation in RTK Query that uses form data rather than a JSON payload, you need to use the <strong>undocumented</strong> <code>formData</code> attribute.  This is useful for sending files to endpoints.</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">uploadSiteDocuments</span><span class="o">:</span><span class="w"> </span><span class="kt">build.mutation</span><span class="o">&lt;</span><span class="p">{</span><span class="w"> </span><span class="nx">file</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span><span class="w"> </span><span class="nx">uri</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="p">}[],</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">files</span><span class="o">:</span><span class="w"> </span><span class="kt">File</span><span class="p">[]</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">({</span>
+<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">body</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="nx">formData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">FormData</span><span class="p">();</span>
+<span class="w">        </span><span class="nx">body</span><span class="p">.</span><span class="nx">files</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">file</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nx">formData</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">file</span><span class="p">.</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">file</span><span class="p">);</span>
+<span class="w">        </span><span class="p">});</span>
+
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;site/documents&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nx">method</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;POST&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nx">body</span><span class="o">:</span><span class="w"> </span><span class="kt">formData</span><span class="p">,</span>
+<span class="w">          </span><span class="nx">formData</span><span class="o">:</span><span class="w"> </span><span class="kt">true</span><span class="p">,</span>
+<span class="w">        </span><span class="p">};</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nx">transformResponse</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
+<span class="w">    </span><span class="p">}),</span>
 </code></pre></div>
-<p>File update date:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>log<span class="w"> </span>-1<span class="w"> </span>--pretty<span class="o">=</span>format:<span class="s2">&quot;%ad&quot;</span><span class="w"> </span>--date<span class="o">=</span>short<span class="w"> </span>--<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$line</span><span class="s2">&quot;</span>
-</code></pre></div></article>
+<p>Do not change the encoding header as this is done automatically.</p></article>
 
     <hr />
 
     <div class="meta">
       
+      <p class="backlinks"><span class="bold">Incoming:</span>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
+      
 
       
       <p class="backlinks"><span class="bold">Tags:</span>
         
-        <a href="/tags#git">#git</a>
+        <a href="/tags#javascript">#javascript</a>
         
         </span>
       </p>
@@ -313,14 +332,14 @@
     </div>
   </main>
   <footer>
-    <a href="mailto:zachpmanson@gmail.com?subject=On 'Git Creation and Modification Time'">reply</a>
-    <a href="/xfce-screentearing">random</a>
+    <a href="mailto:zachpmanson@gmail.com?subject=On 'RTK Query Sending Form Data'">reply</a>
+    <a href="/aliens-and-calendars">random</a>
     <a href="/recent-changes">updates</a>
     <a href="/posts">posts</a>
     <a href="/tags">tags</a>
     <a href="/sitemap">sitemap</a>
-    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/Git Creation and Modification Time.md" class="desktop">edit</a>
-    <a href="https://github.com/pavo-etc/notes/edit/main/./notes/Archive/Problems/Git Creation and Modification Time.md" class="mobile">edit</a>
+    <a href="https://github.dev/pavo-etc/notes/blob/main/./notes/Archive/Problems/RTK Query Sending Form Data.md" class="desktop">edit</a>
+    <a href="https://github.com/pavo-etc/notes/edit/main/./notes/Archive/Problems/RTK Query Sending Form Data.md" class="mobile">edit</a>
   </footer>
   
 </body>
