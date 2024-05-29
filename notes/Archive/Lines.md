@@ -129,7 +129,7 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 > XML is dead, the millennials’ best kill so far.
 
--- [varjag](XML is dead, the millennials’ best kill so far.)
+-- [varjag](https://lobste.rs/s/czzkxt/how_is_computer_programming_different#c_gdznjc)
 
 ---
 
