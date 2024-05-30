@@ -8,36 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "cc4f0f067d5f8f94",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Archive/Lines.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "972ae6a738ec3df1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/Sticky Elements.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "543be1c4015da078",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Software/Design/Spotify Design Decisions.md",
+                "file": "Notes/Software/Program Names.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Software/Program Names.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Software/Program Names.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Lines.md"
+                "file": "Notes/Software/Program Names.md"
               }
             }
           }
@@ -171,14 +147,16 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "cc4f0f067d5f8f94",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Microsoft Product Names.md",
+    "Notes/Software/Design/Spotify Design Decisions.md",
+    "Notes/Software/Program Names.md",
+    "Archive/Problems/Sticky Elements.md",
+    "Archive/Lines.md",
     "Archive/Problems/RTK Query Sending Form Data.md",
     "Notes/Software/Development/DateTime.md",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax/Archaic Syntax.md",
-    "Archive/Problems/Sticky Elements.md",
-    "Notes/Software/Design/Spotify Design Decisions.md",
-    "Archive/Lines.md",
     "Archive/Bookmarks/xkcd.md",
     "Notes/Language/Dictionary.md",
     "Notes/Software/Development/Web Development/Web Development.md",
@@ -200,8 +178,6 @@
     "Media/spotify-top-bar.png",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Archive/Problems/Git Deleted Branch Recovery.md",
-    "Notes/Software/Development/Web Development/React.md",
-    "Archive/Problems/React and blur().md",
     "Notes/Networks",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",
