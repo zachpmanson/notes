@@ -95,9 +95,11 @@
           <a href="mailto:zachpmanson@gmail.com?subject=On '{{title}}'">reply</a>
         </div>
       </summary>
-      <div class="footer-row extra-small">
-        <a href="/sitemap">sitemap</a>
-        <a href="/{{sanitize_url(node['random_page'])|e}}">random</a>
+      <div class="extra-small">
+        <div class="footer-row">
+          <a href="/sitemap">sitemap</a>
+          <a href="/{{sanitize_url(node['random_page'])|e}}">random</a>
+        </div>
       </div>
 
       {% if node["backlinks"] != None and len(node["backlinks"]) > 0 %}
