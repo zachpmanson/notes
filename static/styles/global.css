@@ -318,8 +318,7 @@ table {
   display: none;
 }
 
-.extra-small,
-.extra-small * {
+.extra-small {
   display: none;
 }
 
