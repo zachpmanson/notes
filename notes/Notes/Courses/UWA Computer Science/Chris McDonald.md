@@ -10,3 +10,5 @@ Known aliases:
 - GOAT
 - Oppy (allegedly)
 - [[Christ McDonald|Christ]]
+
+![[chris-vs-cits.png]]

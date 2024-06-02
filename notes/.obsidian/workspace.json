@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meta/DNS.md",
+                "file": "Notes/Courses/UWA Computer Science/Chris McDonald.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Meta/DNS.md",
+                "file": "Notes/Courses/UWA Computer Science/Chris McDonald.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Meta/DNS.md",
+                "file": "Notes/Courses/UWA Computer Science/Chris McDonald.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Meta/DNS.md"
+                "file": "Notes/Courses/UWA Computer Science/Chris McDonald.md"
               }
             }
           }
@@ -150,6 +149,10 @@
   },
   "active": "972ae6a738ec3df1",
   "lastOpenFiles": [
+    "Media/chris-vs-cits.png",
+    "Notes/Courses/UWA Computer Science/Chris McDonald.md",
+    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+    "Meta/DNS.md",
     "Notes/Software/Programs/Git/Git Operations.md",
     "Archive/Problems/Git Repo Contributor Line Count.md",
     "Archive/Problems/Git Subdirectory Branch.md",
@@ -174,10 +177,6 @@
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax/Digraphs and Trigraphs.md",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax/C auto Keyword.md",
-    "Notes/Software/Development/Development Methodologies/Spite Driven Development.md",
-    "Projects/Minecraftle/Minecraftle.md",
-    "Notes/Software/Development/Development Methodologies/Resume Driven Development.md",
-    "Notes/Software/Development/Development Methodologies/Development Methodologies.md",
     "Media/spotify-top-bar.png",
     "Notes/Networks",
     "Media/mctl-routes.png",
@@ -191,7 +190,6 @@
     "Media/cat.png",
     "Media/xz-analysis.png",
     "Notes/Software/Design",
-    "Media/box.jpg",
     "Notes/Software/Exploits/XZ",
     "Notes/Software/Exploits",
     "Notes/Software/Development/Programming Languages/C++",
