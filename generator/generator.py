@@ -330,7 +330,9 @@ def apply_creation_dates():
             filename = Path(row[0]).stem
             if filename in tree.keys() and len(row) == 3:
                 tree[filename].creation_date = row[1]
-                tree[filename].mod_date = row[2]
+                tree[filename].mod_date = datetime.strptime(
+                    row[2], "%Y-%m-%d %H:%M:%S %z"
+                ).strftime("%Y-%m-%d")
 
     for page_name in tree.keys():
         if not tree[page_name].creation_date:

@@ -67,18 +67,42 @@
         {% endif %}
       </div>
     </div>
-
-
   </nav>
+
   <main>
     <header>
       <h1>{{subtitle}}</h1>
     </header>
-    <article>{{node["body"]}}</article>
 
-    <div class="meta">
+    <article>{{node["body"]}}</article>
+  </main>
+
+  <footer>
+    <details>
+      <summary>
+        <div class="footer-row">
+          {% if node["post_date"] %}
+          {{node["post_date"]}}
+          {% else %}
+          meta
+          {% endif %}
+          <a href="/recent-changes">recent</a>
+          <a href="/{{sanitize_url(node['random_page'])|e}}" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/{{node['breadcrumb_path']}}" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/{{node['breadcrumb_path']}}" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On '{{title}}'">reply</a>
+        </div>
+      </summary>
+      <div class="footer-row extra-small">
+        <a href="/sitemap">sitemap</a>
+        <a href="/{{sanitize_url(node['random_page'])|e}}">random</a>
+      </div>
+
       {% if node["backlinks"] != None and len(node["backlinks"]) > 0 %}
-      <p class="backlinks"><span class="bold">Incoming:</span>
+
+      <p class="backlinks"><strong>Incoming:</strong>
         {% for backlink in node["backlinks"] %}
         <a href="/{{sanitize_url(backlink)|e}}">{{backlink}}</a>
         {% endfor %}
@@ -87,39 +111,37 @@
       {% endif %}
 
       {% if tags != None and len(tags) > 0 %}
-      <p class="backlinks"><span class="bold"> <a href="/tags">Tags:</a></span>
+      <p class="backlinks"><strong> <a href="/tags">Tags:</a></strong>
         {% for tag in tags %}
         <a href="/tags#{{tag}}">#{{tag}}</a>
         {% endfor %}
         </span>
       </p>
       {% endif %}
-
       {% if node["post_date"] %}
       <p>
         <span class="backlinks">
-          <span class="bold">Posted:</span> {{node["post_date"]}}
+          <strong>
+            Posted:
+          </strong>
+          {{node["post_date"]}}
+
         </span>
-        {% if node["mod_date"] %}
+
         <span class="backlinks">
-          <span class="bold">Last update:</span> {{node["mod_date"]}}
+          <strong>
+            Updated:
+          </strong>
+          {{node["mod_date"]}}
         </span>
-        {% endif %}
+
       </p>
       {% endif %}
-    </div>
-  </main>
-  <footer>
-    <a href="mailto:zachpmanson@gmail.com?subject=On '{{title}}'">reply</a>
-    <a href="/recent-changes">recent</a>
-    <a href="/{{sanitize_url(node['random_page'])|e}}">random</a>
-    <a href="/posts">posts</a>
-    <a href="/sitemap">sitemap</a>
-    <a href="https://github.dev/zachpmanson/notes/blob/main/{{node['breadcrumb_path']}}" class="desktop">edit</a>
-    <a href="https://github.com/zachpmanson/notes/edit/main/{{node['breadcrumb_path']}}" class="mobile">edit</a>
+    </details>
+
   </footer>
   {% if node["script"] != None %}
-  <script>{{ node["script"] }}</script>
+  <script>{ { node["script"] } }</script>
   {% endif %}
 </body>
 
