@@ -2,7 +2,6 @@
 tags:
   - git
 ---
-
 ## New Computer
 
 Setting global [[Git]] config options:

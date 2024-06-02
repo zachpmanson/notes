@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Microsoft Product Names.md",
+                "file": "Meta/DNS.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "git/git",
+                "query": "tag:#git ",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Microsoft Product Names.md",
+                "file": "Meta/DNS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Microsoft Product Names.md",
+                "file": "Meta/DNS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Microsoft Product Names.md"
+                "file": "Meta/DNS.md"
               }
             }
           }
@@ -149,8 +150,13 @@
   },
   "active": "972ae6a738ec3df1",
   "lastOpenFiles": [
-    "Notes/Software/Program Names.md",
+    "Notes/Software/Programs/Git/Git Operations.md",
+    "Archive/Problems/Git Repo Contributor Line Count.md",
+    "Archive/Problems/Git Subdirectory Branch.md",
+    "Archive/Problems/Raw GitHub Commits.md",
+    "Archive/Problems/View Deleted File in Git.md",
     "Notes/Software/Microsoft Product Names.md",
+    "Notes/Software/Program Names.md",
     "Notes/Software/Design/Spotify Design Decisions.md",
     "Archive/Problems/Sticky Elements.md",
     "Archive/Lines.md",
@@ -172,12 +178,7 @@
     "Projects/Minecraftle/Minecraftle.md",
     "Notes/Software/Development/Development Methodologies/Resume Driven Development.md",
     "Notes/Software/Development/Development Methodologies/Development Methodologies.md",
-    "Notes/Software/Software.md",
-    "Notes/Mathematics/Computer Science/Computer Science.md",
-    "Archive/Problems/Problems.md",
     "Media/spotify-top-bar.png",
-    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
-    "Archive/Problems/Git Deleted Branch Recovery.md",
     "Notes/Networks",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",
