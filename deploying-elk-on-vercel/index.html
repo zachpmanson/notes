@@ -280,36 +280,48 @@
         
       </div>
     </div>
-
-
   </nav>
+
   <main>
     <header>
       <h1>Deploying Elk on Vercel</h1>
     </header>
+
     <article><p>The <a href="https://github.com/elk-zone/elk">Elk</a> <a href="/mastodon">Mastodon</a> client is my preferred frontend, written in Nuxt. It has support for deploying seamlessly on Vercel but it needs access to a caching database.  By default it expects Cloudflare but it also supports Vercel KV (Redis) which is included in Vercel's free tier (hobby plan).</p>
 <p>You will need to activate <a href="https://vercel.com/docs/storage/vercel-kv">Vercel KV</a>, start a db project and and get the <code>KV_REST_API_URL</code> and <code>KV_REST_API_TOKEN</code> values it provides. Then set these values for your deployment env.</p>
 <div class="highlight"><pre><span></span><code>NUXT_STORAGE_DRIVER=vercel
 KV_REST_API_URL=...
 KV_REST_API_TOKEN=...
 </code></pre></div></article>
-
-    <div class="meta">
-      
-
-      
-
-      
-    </div>
   </main>
+
   <footer>
-    <a href="mailto:zachpmanson@gmail.com?subject=On 'Deploying Elk on Vercel'">reply</a>
-    <a href="/recent-changes">recent</a>
-    <a href="/referer-http-field">random</a>
-    <a href="/posts">posts</a>
-    <a href="/sitemap">sitemap</a>
-    <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Deploying Elk on Vercel.md" class="desktop">edit</a>
-    <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Problems/Deploying Elk on Vercel.md" class="mobile">edit</a>
+    <details>
+      <summary>
+        <div class="footer-row">
+          
+          meta
+          
+          <a href="/recent-changes">recent</a>
+          <a href="/internet" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Deploying Elk on Vercel.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Problems/Deploying Elk on Vercel.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'Deploying Elk on Vercel'">reply</a>
+        </div>
+      </summary>
+      <div class="footer-row extra-small">
+        <a href="/sitemap">sitemap</a>
+        <a href="/internet">random</a>
+      </div>
+
+      
+
+      
+      
+    </details>
+
   </footer>
   
 </body>

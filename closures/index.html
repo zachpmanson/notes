@@ -108,13 +108,13 @@
         
       </div>
     </div>
-
-
   </nav>
+
   <main>
     <header>
       <h1>Closures</h1>
     </header>
+
     <article><p>Closures are local variable scopes that can persist even after code execution has moved outside of the original block.  As long as a reference to the persisting scope is present in the external code execution context, variables from that scope can be accessed.  This allows functions to be portable and used in ways they otherwise cannot.</p>
 <p>Example from <a href="https://stackoverflow.com/a/7464475">this excellent StackOverflow answer</a>.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">outer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
@@ -129,23 +129,35 @@
 <span class="nx">fnc</span><span class="p">();</span>
 </code></pre></div>
 <p>Languages that support closures usually have garbage collection, as languages that "run-time memory model allocates all automatic variables on a linear stack" (see <a href="https://en.wikipedia.org/wiki/Closure_(computer_programming)#Implementation_and_theory">Wikipedia</a>) will deallocate locally scoped pointers automatically.  Languages that support closures include JavaScript, Python and Swift.  Other languages are capable of emulating this behaviour with similar such as anonymous inner classes in Java &lt;8 (closures were added with lambda functions in Java 8).</p></article>
-
-    <div class="meta">
-      
-
-      
-
-      
-    </div>
   </main>
+
   <footer>
-    <a href="mailto:zachpmanson@gmail.com?subject=On 'Closures'">reply</a>
-    <a href="/recent-changes">recent</a>
-    <a href="/dotfiles-being-hidden">random</a>
-    <a href="/posts">posts</a>
-    <a href="/sitemap">sitemap</a>
-    <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Programming Concepts/Closures.md" class="desktop">edit</a>
-    <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Software/Development/Programming Concepts/Closures.md" class="mobile">edit</a>
+    <details>
+      <summary>
+        <div class="footer-row">
+          
+          meta
+          
+          <a href="/recent-changes">recent</a>
+          <a href="/latin-phrases" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Programming Concepts/Closures.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Software/Development/Programming Concepts/Closures.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'Closures'">reply</a>
+        </div>
+      </summary>
+      <div class="footer-row extra-small">
+        <a href="/sitemap">sitemap</a>
+        <a href="/latin-phrases">random</a>
+      </div>
+
+      
+
+      
+      
+    </details>
+
   </footer>
   
 </body>

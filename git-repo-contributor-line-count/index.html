@@ -280,40 +280,52 @@
         
       </div>
     </div>
-
-
   </nav>
+
   <main>
     <header>
       <h1>Git Repo Contributor Line Count</h1>
     </header>
+
     <article><div class="highlight"><pre><span></span><code>git<span class="w"> </span>log<span class="w"> </span>--no-merges<span class="w"> </span>--pretty<span class="o">=</span>format:%an<span class="w"> </span>--numstat<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;/./ &amp;&amp; !author { author = $0; next } author { ins[author] += $1; del[author] += $2 } /^$/ { author = &quot;&quot;; next } END { for (a in ins) { printf &quot;%10d %10d %10d %s\n&quot;, ins[a] - del[a], ins[a], del[a], a } }&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-rn
 </code></pre></div>
 <p>From <a href="https://stackoverflow.com/a/43147048">this StackOverflow answer</a>.</p></article>
+  </main>
 
-    <div class="meta">
+  <footer>
+    <details>
+      <summary>
+        <div class="footer-row">
+          
+          meta
+          
+          <a href="/recent-changes">recent</a>
+          <a href="/program-names" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Git Repo Contributor Line Count.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Problems/Git Repo Contributor Line Count.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'Git Repo Contributor Line Count'">reply</a>
+        </div>
+      </summary>
+      <div class="footer-row extra-small">
+        <a href="/sitemap">sitemap</a>
+        <a href="/program-names">random</a>
+      </div>
+
       
 
       
-      <p class="backlinks"><span class="bold"> <a href="/tags">Tags:</a></span>
+      <p class="backlinks"><strong> <a href="/tags">Tags:</a></strong>
         
         <a href="/tags#git">#git</a>
         
         </span>
       </p>
       
-
       
-    </div>
-  </main>
-  <footer>
-    <a href="mailto:zachpmanson@gmail.com?subject=On 'Git Repo Contributor Line Count'">reply</a>
-    <a href="/recent-changes">recent</a>
-    <a href="/internet-standards">random</a>
-    <a href="/posts">posts</a>
-    <a href="/sitemap">sitemap</a>
-    <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Git Repo Contributor Line Count.md" class="desktop">edit</a>
-    <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Problems/Git Repo Contributor Line Count.md" class="mobile">edit</a>
+    </details>
+
   </footer>
   
 </body>

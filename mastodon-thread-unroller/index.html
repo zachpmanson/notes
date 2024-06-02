@@ -104,20 +104,42 @@
         
       </div>
     </div>
-
-
   </nav>
+
   <main>
     <header>
       <h1>Mastodon Thread Unroller</h1>
     </header>
+
     <article><p><a href="https://unroller.zachmanson.com">Mastodon Thread Unroller</a> (<a href="https://github.com/pavo-etc/mastodon-unroller">source code</a>) is what it sounds likes, a basic thread unroller for <a href="/mastodon">Mastodon</a>.  I built it after finding that no other similar applications existed from <a href="https://www.reddit.com/r/Mastodon/comments/1011i9s/anything_similar_to_thread_reader_for_mastodon/">this reddit thread</a>.  It is barebones, and built with SvelteKit.  SvelteKit is definitely overkill, since it only has two routes and both of them are basically static or SSR, but I wanted to learn how to use it.  It also meant I can let Vercel take care of hosting which is always nice.  Maybe I'll rebuild it with Ruby or <a href="/go">Go</a> eventually.</p>
 <p>Currently the SSR runs every pageload, with each render making 2 API requests to the host Mastodon instance.  I'm edge caching these renders using Vercel, theoretically for 24 hours, but Vercel's caching is more "asking nicely to be cached" than "guaranteed 100% predictable".  You get what you pay for.  This approach may not scale, but in turn, I may never have users.</p>
 <p>It turns out <a href="https://marioslab.io">Mario Zechner</a> (an Austrian games dev, proprietor of Badlogic Games) had come across the same thread as me and built a very similar project in the same week (<a href="https://mastoreader.io/">Masto Reader</a>).  What are the odds?</p></article>
+  </main>
 
-    <div class="meta">
+  <footer>
+    <details>
+      <summary>
+        <div class="footer-row">
+          
+          meta
+          
+          <a href="/recent-changes">recent</a>
+          <a href="/ochrs-deploy" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Projects/Mastodon Thread Unroller.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Projects/Mastodon Thread Unroller.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'Mastodon Thread Unroller'">reply</a>
+        </div>
+      </summary>
+      <div class="footer-row extra-small">
+        <a href="/sitemap">sitemap</a>
+        <a href="/ochrs-deploy">random</a>
+      </div>
+
       
-      <p class="backlinks"><span class="bold">Incoming:</span>
+
+      <p class="backlinks"><strong>Incoming:</strong>
         
         <a href="/dns">DNS</a>
         
@@ -126,18 +148,9 @@
       
 
       
-
       
-    </div>
-  </main>
-  <footer>
-    <a href="mailto:zachpmanson@gmail.com?subject=On 'Mastodon Thread Unroller'">reply</a>
-    <a href="/recent-changes">recent</a>
-    <a href="/digg-v4">random</a>
-    <a href="/posts">posts</a>
-    <a href="/sitemap">sitemap</a>
-    <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Projects/Mastodon Thread Unroller.md" class="desktop">edit</a>
-    <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Projects/Mastodon Thread Unroller.md" class="mobile">edit</a>
+    </details>
+
   </footer>
   
 </body>

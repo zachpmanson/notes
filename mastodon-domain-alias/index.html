@@ -280,13 +280,13 @@
         
       </div>
     </div>
-
-
   </nav>
+
   <main>
     <header>
       <h1>Mastodon Domain Alias</h1>
     </header>
+
     <article><p>You can use your custom domain as an alias to your <a href="/mastodon">Mastodon</a> handle by using Webfinger without actually having your own Mastodon instance.</p>
 <p>On your domain, set <code>GET https://&lt;your-domain.com&gt;/.well-known/webfinger?resource=acct:&lt;accountname&gt;@&lt;server&gt;</code> to be the same as <code>GET https://&lt;your-mastodon-instance.com&gt;/.well-known/webfinger?resource=acct:&lt;accountname&gt;@&lt;server&gt;</code>.</p>
 <p>If you have a static site and don't want to set up query params, serving the same file at <code>/.well-known/webfinger</code> will make all usernames <code>@&lt;any username&gt;@your-domain.com</code> forward to the same account.</p>
@@ -302,10 +302,32 @@
 <p>Hopefully Mastodon implements BlueSky-esque domain as username features.</p>
 <p>May be able to get around the static hosting problems using <a href="https://github.com/mastodon/mastodon/issues/2668#issuecomment-1342518861">this, will need to investigate further</a>.  Or <a href="https://gist.github.com/aaronpk/5846789">this</a>.  Or <a href="https://aeracode.org/2022/11/01/fediverse-custom-domains/">this</a>, which <a href="https://til.simonwillison.net/mastodon/custom-domain-mastodon">Simon Willison used</a>.</p>
 <p>To see this in practice, search for @zach@zachmanson.com on Mastodon.</p></article>
+  </main>
 
-    <div class="meta">
+  <footer>
+    <details>
+      <summary>
+        <div class="footer-row">
+          
+          meta
+          
+          <a href="/recent-changes">recent</a>
+          <a href="/bill-gates-tries-to-install-windows-movie-maker" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Mastodon Domain Alias.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Problems/Mastodon Domain Alias.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'Mastodon Domain Alias'">reply</a>
+        </div>
+      </summary>
+      <div class="footer-row extra-small">
+        <a href="/sitemap">sitemap</a>
+        <a href="/bill-gates-tries-to-install-windows-movie-maker">random</a>
+      </div>
+
       
-      <p class="backlinks"><span class="bold">Incoming:</span>
+
+      <p class="backlinks"><strong>Incoming:</strong>
         
         <a href="/mastodon">Mastodon</a>
         
@@ -314,7 +336,7 @@
       
 
       
-      <p class="backlinks"><span class="bold"> <a href="/tags">Tags:</a></span>
+      <p class="backlinks"><strong> <a href="/tags">Tags:</a></strong>
         
         <a href="/tags#dirty-hacks">#dirty-hacks</a>
         
@@ -323,18 +345,9 @@
         </span>
       </p>
       
-
       
-    </div>
-  </main>
-  <footer>
-    <a href="mailto:zachpmanson@gmail.com?subject=On 'Mastodon Domain Alias'">reply</a>
-    <a href="/recent-changes">recent</a>
-    <a href="/low-rank-adaptation">random</a>
-    <a href="/posts">posts</a>
-    <a href="/sitemap">sitemap</a>
-    <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Mastodon Domain Alias.md" class="desktop">edit</a>
-    <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Problems/Mastodon Domain Alias.md" class="mobile">edit</a>
+    </details>
+
   </footer>
   
 </body>

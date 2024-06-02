@@ -280,13 +280,13 @@
         
       </div>
     </div>
-
-
   </nav>
+
   <main>
     <header>
       <h1>Changing DNS with systemd</h1>
     </header>
+
     <article><p>On systems using systemd, <code>/etc/resolve</code> is managed by systemd. To change DNS server, you need to edit <code>/etc/systemd/resolved.conf</code>.</p>
 <div class="highlight"><pre><span></span><code>[Resolve]
 DNS=8.8.8.8
@@ -308,30 +308,42 @@ DNSStubListener=no
 sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>systemd-networkd
 sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>systemd-resolved
 </code></pre></div></article>
+  </main>
 
-    <div class="meta">
+  <footer>
+    <details>
+      <summary>
+        <div class="footer-row">
+          
+          meta
+          
+          <a href="/recent-changes">recent</a>
+          <a href="/ochrs-1.0" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Changing DNS with systemd.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Problems/Changing DNS with systemd.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'Changing DNS with systemd'">reply</a>
+        </div>
+      </summary>
+      <div class="footer-row extra-small">
+        <a href="/sitemap">sitemap</a>
+        <a href="/ochrs-1.0">random</a>
+      </div>
+
       
 
       
-      <p class="backlinks"><span class="bold"> <a href="/tags">Tags:</a></span>
+      <p class="backlinks"><strong> <a href="/tags">Tags:</a></strong>
         
         <a href="/tags#linux">#linux</a>
         
         </span>
       </p>
       
-
       
-    </div>
-  </main>
-  <footer>
-    <a href="mailto:zachpmanson@gmail.com?subject=On 'Changing DNS with systemd'">reply</a>
-    <a href="/recent-changes">recent</a>
-    <a href="/collaborative-awe">random</a>
-    <a href="/posts">posts</a>
-    <a href="/sitemap">sitemap</a>
-    <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Changing DNS with systemd.md" class="desktop">edit</a>
-    <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Problems/Changing DNS with systemd.md" class="mobile">edit</a>
+    </details>
+
   </footer>
   
 </body>

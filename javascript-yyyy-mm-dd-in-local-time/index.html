@@ -280,24 +280,45 @@
         
       </div>
     </div>
-
-
   </nav>
+
   <main>
     <header>
       <h1>JavaScript YYYY-MM-DD in Local Time</h1>
     </header>
+
     <article><p>The <a href="/javascript">JavaScript</a> <a href="/datetime">datetime</a> library is anemic.  If you need the current date in the user's locale written in YYYY-MM-DD, use this fun hack:</p>
 <div class="highlight"><pre><span></span><code>let currentDate = new Date().toLocaleString(&quot;sv&quot;).slice(0, 10);
 </code></pre></div>
 <p>"sv" means Sweden, and in Sweden the locale string is formatted "2023-11-05 00:18:41".</p>
 <p>Found this solution on <a href="https://stackoverflow.com/a/58614322">StackOverflow by Tom</a> when making <a href="/minecraftle">Minecraftle</a> work across timezones.</p></article>
+  </main>
 
-    <div class="meta">
+  <footer>
+    <details>
+      <summary>
+        <div class="footer-row">
+          
+          meta
+          
+          <a href="/recent-changes">recent</a>
+          <a href="/git-repo-contributor-line-count" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/JavaScript YYYY-MM-DD in Local Time.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Problems/JavaScript YYYY-MM-DD in Local Time.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'JavaScript YYYY-MM-DD in Local Time'">reply</a>
+        </div>
+      </summary>
+      <div class="footer-row extra-small">
+        <a href="/sitemap">sitemap</a>
+        <a href="/git-repo-contributor-line-count">random</a>
+      </div>
+
       
 
       
-      <p class="backlinks"><span class="bold"> <a href="/tags">Tags:</a></span>
+      <p class="backlinks"><strong> <a href="/tags">Tags:</a></strong>
         
         <a href="/tags#dirty-hacks">#dirty-hacks</a>
         
@@ -306,18 +327,9 @@
         </span>
       </p>
       
-
       
-    </div>
-  </main>
-  <footer>
-    <a href="mailto:zachpmanson@gmail.com?subject=On 'JavaScript YYYY-MM-DD in Local Time'">reply</a>
-    <a href="/recent-changes">recent</a>
-    <a href="/jsx-react-native-and-typescript">random</a>
-    <a href="/posts">posts</a>
-    <a href="/sitemap">sitemap</a>
-    <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/JavaScript YYYY-MM-DD in Local Time.md" class="desktop">edit</a>
-    <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Problems/JavaScript YYYY-MM-DD in Local Time.md" class="mobile">edit</a>
+    </details>
+
   </footer>
   
 </body>

@@ -96,13 +96,13 @@
         
       </div>
     </div>
-
-
   </nav>
+
   <main>
     <header>
       <h1>Things noticed while stealing Mojang's work for marks</h1>
     </header>
+
     <article><p>As of Minecraft version 1.18.1, there are 739 crafting recipes in the game...depending on how you count. This little rabbithole is something I fell into during a meeting for a group project this week. The project tasks us with building a "daily puzzle game" in vein of Wordle, as my <a href="/web-development">web development</a> unit likes the idea of looking anachronistic in a few years.</p>
 <p>The meeting was very preliminary, essentially just getting to know one another and bounce some ideas off each other. One idea I had been mulling over was "Wordle but with for Minecraft crafting recipes", which requires no explanation for players of these two games (which among my peers includes everyone). My group immediately latched onto the idea, but acknowledged the scope of including all Minecraft recipes would be challenge, both in terms of game design and actually acquiring them.</p>
 <p>Transcribing by hand was possible but likely impractical, as was automatically scraping the <a href="https://minecraft.fandom.com/wiki/Minecraft_Wiki">wiki</a>. Luckily, the thousands of modders before us had poured through Minecraft's source file and through <a href="https://gaming.stackexchange.com/questions/382431/list-of-all-minecraft-crafting-recipes-for-crafting-web">cursory googling</a> we were able to get to <code>.minecraft/versions/1.18.1.jar/data/minecraft/recipes/</code>, where all crafting recipes in the game are stored as lovely little JSON files. Perfect!</p>
@@ -428,41 +428,60 @@ yellow_bed.json:<span class="w">      </span><span class="s2">&quot;tag&quot;</s
 </code></pre></div>
 <p>I theorize that the torch was older method of achieving this goal and just hasn't been updated to use the new system (though I am again too lazy and won't check old versions), unless there is some other difference I am not aware of between the two methods. Maybe I should send Mojang a pull request.</p>
 <p>Recipe validation was the final feature I really felt was necessary for my own sense of completion. That said, we never added shapeless recipe support... or varying difficulties... or hardcore mode. Oh well.</p></article>
+  </main>
 
-    <div class="meta">
+  <footer>
+    <details>
+      <summary>
+        <div class="footer-row">
+          
+          2022-03-31
+          
+          <a href="/recent-changes">recent</a>
+          <a href="/hacks" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Projects/Minecraftle/How Minecraft Stores Crafting Recipes.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Projects/Minecraftle/How Minecraft Stores Crafting Recipes.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'How Minecraft Stores Crafting Recipes'">reply</a>
+        </div>
+      </summary>
+      <div class="footer-row extra-small">
+        <a href="/sitemap">sitemap</a>
+        <a href="/hacks">random</a>
+      </div>
+
       
 
       
-      <p class="backlinks"><span class="bold"> <a href="/tags">Tags:</a></span>
+      <p class="backlinks"><strong> <a href="/tags">Tags:</a></strong>
         
         <a href="/tags#posts">#posts</a>
         
         </span>
       </p>
       
-
       
       <p>
         <span class="backlinks">
-          <span class="bold">Posted:</span> 2022-03-31
+          <strong>
+            Posted:
+          </strong>
+          2022-03-31
+
         </span>
-        
+
         <span class="backlinks">
-          <span class="bold">Last update:</span> 2024-04-22 12:25:25 +1000
+          <strong>
+            Updated:
+          </strong>
+          2024-04-22
         </span>
-        
+
       </p>
       
-    </div>
-  </main>
-  <footer>
-    <a href="mailto:zachpmanson@gmail.com?subject=On 'How Minecraft Stores Crafting Recipes'">reply</a>
-    <a href="/recent-changes">recent</a>
-    <a href="/carproblems.txt">random</a>
-    <a href="/posts">posts</a>
-    <a href="/sitemap">sitemap</a>
-    <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Projects/Minecraftle/How Minecraft Stores Crafting Recipes.md" class="desktop">edit</a>
-    <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Projects/Minecraftle/How Minecraft Stores Crafting Recipes.md" class="mobile">edit</a>
+    </details>
+
   </footer>
   
 </body>

@@ -280,13 +280,13 @@
         
       </div>
     </div>
-
-
   </nav>
+
   <main>
     <header>
       <h1>Select Decorator Depreciated</h1>
     </header>
+
     <article><p>In NGXS the <code>@Select</code> decorator has been depreciated because of limitation Angular places putting on decorator.  The <code>this.store.select()</code> idiom should be used instead.  To convert an existing codebase to the new idiom, the following regex can be used in VS Code Find/Replace:</p>
 <div class="highlight"><pre><span></span><code>// with \n between decorator name
 @Select\((.*)\)\n(.*): Observable&lt;(.*)&gt;;$
@@ -297,30 +297,42 @@
 <div class="highlight"><pre><span></span><code>$2 = this.store.select&lt;$3&gt;($1);
 </code></pre></div>
 <p>This was taken from <a href="https://github.com/ngxs/store/issues/1854#issuecomment-1184855647">the NGXS GitHub issue comment</a> by <a href="https://github.com/lehmstedt">lehmstedt</a>.</p></article>
+  </main>
 
-    <div class="meta">
+  <footer>
+    <details>
+      <summary>
+        <div class="footer-row">
+          
+          meta
+          
+          <a href="/recent-changes">recent</a>
+          <a href="/hidden-post" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Select Decorator Depreciated.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Problems/Select Decorator Depreciated.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'Select Decorator Depreciated'">reply</a>
+        </div>
+      </summary>
+      <div class="footer-row extra-small">
+        <a href="/sitemap">sitemap</a>
+        <a href="/hidden-post">random</a>
+      </div>
+
       
 
       
-      <p class="backlinks"><span class="bold"> <a href="/tags">Tags:</a></span>
+      <p class="backlinks"><strong> <a href="/tags">Tags:</a></strong>
         
         <a href="/tags#javascript">#javascript</a>
         
         </span>
       </p>
       
-
       
-    </div>
-  </main>
-  <footer>
-    <a href="mailto:zachpmanson@gmail.com?subject=On 'Select Decorator Depreciated'">reply</a>
-    <a href="/recent-changes">recent</a>
-    <a href="/vendorops">random</a>
-    <a href="/posts">posts</a>
-    <a href="/sitemap">sitemap</a>
-    <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Select Decorator Depreciated.md" class="desktop">edit</a>
-    <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Problems/Select Decorator Depreciated.md" class="mobile">edit</a>
+    </details>
+
   </footer>
   
 </body>

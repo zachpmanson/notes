@@ -96,13 +96,13 @@
         
       </div>
     </div>
-
-
   </nav>
+
   <main>
     <header>
       <h1>Minecraftle v2.0</h1>
     </header>
+
     <article><p><a href="/minecraftle">Minecraftle</a> blew up!  At the time of writing it has had over 1 million players and seems to still be increasing.  Seems like it became popular thanks to a few YouTube videos and TikToks. This huge spike in players revealed how poorly made it all was.</p>
 <p>The stats page in particular was poorly done.  Originally I had made the schema as simple as possible and only stored the record of each game in one big table. This worked for small player counts, but meant calculating rankings was quadratic so the stats page eventually 10+ seconds to load.  I only discovered this was happening when the database for <a href="/penultimate-guitar">Penultimate Guitar</a> would be killed to allocate more resources every time someone loaded the stats page.  </p>
 <p>Since rewriting the database meant I'd need to get rid of the entire backend, I decided this was the time to move away from Flask and static JavaScript and port it to Next.js.  I had been meaning to do this for a while.  The Vanilla JS I had been using prior was very janky and poorly made.  I was still unemployed at this time and had plenty of free time since most of my friends had left Melbourne to see their families for Christmas.</p>
@@ -115,41 +115,60 @@
 <p><img alt="" src="/media/mctl-routes.png" /></p>
 <p>Back when Minecraftle was just a uni project, one of my teammates, Harrison Oates, added a button that would play in game audio from Minecraft.  This was cute and insignificant, to the point where I forgot it existed.  When I deployed on Vercel this became a problem since almost all my bandwidth (100GiB) was used by this single mp3 file! I removed this feature, but other static assets were going to use my remaining bandwidth.  I had to switch to running it on a new DigitalOcean droplet for the rest of the month.</p>
 <p>Hopefully this are the last updates Minecraftle will need for a long time!</p></article>
+  </main>
 
-    <div class="meta">
+  <footer>
+    <details>
+      <summary>
+        <div class="footer-row">
+          
+          2024-04-08
+          
+          <a href="/recent-changes">recent</a>
+          <a href="/no-dogs-were-harmed-in-the-making-of-this-app" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Projects/Minecraftle/Minecraftle v2.0.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Projects/Minecraftle/Minecraftle v2.0.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'Minecraftle v2.0'">reply</a>
+        </div>
+      </summary>
+      <div class="footer-row extra-small">
+        <a href="/sitemap">sitemap</a>
+        <a href="/no-dogs-were-harmed-in-the-making-of-this-app">random</a>
+      </div>
+
       
 
       
-      <p class="backlinks"><span class="bold"> <a href="/tags">Tags:</a></span>
+      <p class="backlinks"><strong> <a href="/tags">Tags:</a></strong>
         
         <a href="/tags#posts">#posts</a>
         
         </span>
       </p>
       
-
       
       <p>
         <span class="backlinks">
-          <span class="bold">Posted:</span> 2024-04-08
+          <strong>
+            Posted:
+          </strong>
+          2024-04-08
+
         </span>
-        
+
         <span class="backlinks">
-          <span class="bold">Last update:</span> 2024-04-09 15:14:41 +1000
+          <strong>
+            Updated:
+          </strong>
+          2024-04-09
         </span>
-        
+
       </p>
       
-    </div>
-  </main>
-  <footer>
-    <a href="mailto:zachpmanson@gmail.com?subject=On 'Minecraftle v2.0'">reply</a>
-    <a href="/recent-changes">recent</a>
-    <a href="/unix-programs">random</a>
-    <a href="/posts">posts</a>
-    <a href="/sitemap">sitemap</a>
-    <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Projects/Minecraftle/Minecraftle v2.0.md" class="desktop">edit</a>
-    <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Projects/Minecraftle/Minecraftle v2.0.md" class="mobile">edit</a>
+    </details>
+
   </footer>
   
 </body>

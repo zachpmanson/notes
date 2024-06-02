@@ -104,13 +104,13 @@
         
       </div>
     </div>
-
-
   </nav>
+
   <main>
     <header>
       <h1>An alternate frontend for Dan Murphy's.</h1>
     </header>
+
     <article><p><a href="https://alculator.zachmanson.com">Alculator</a> was written in the waning days of 2022 to determine the cheapest drinks at Dan Murphy's, per standard drink. The site is build with Next.js and hosted on Vercel.</p>
 <p>If you click on the title bar there is a hidden interface used for debugging and finding data anomalies.</p>
 <h2 id="dans-api">Dan's API</h2>
@@ -121,10 +121,32 @@
 <p>The data itself is riddled with mistakes an inconsistencies. "Standard Drinks" is inconsistently used in packs, where usually it represents a single unit and <a href="https://www.danmurphys.com.au/product/808932">occasionally it represents the sum of all the units</a>.  Sometimes fields are just completely wrong (<a href="https://www.danmurphys.com.au/product/194571">White Bay Brewing Alcohol Volume especially bad</a>), or use values for bottles of different sizes (<a href="https://www.danmurphys.com.au/product/907223">350mL bottle with 11 standards</a>). These products are collected in the <a href="https://github.com/pavo-etc/alculator/blob/main/science/blacklist.json"><code>blacklist.json</code></a> file and ignored by the script that downloads the catalogue.</p>
 <p><a href="https://github.com/pavo-etc/alculator/blob/main/science/api.js">The final script</a> is warty and takes about 15 minutes to run, but converts the data to a sane schema.  This script is run daily via GitHub Action, and the new data is directly stored in JSON files and committed to the repo.  This is inefficient, but meant I didn't have to mess around with databases in my deployment.  I do hope to one day set up a proper database for this.</p>
 <p>The source code is available on <a href="https://github.com/pavo-etc/alculator">GitHub</a>.</p></article>
+  </main>
 
-    <div class="meta">
+  <footer>
+    <details>
+      <summary>
+        <div class="footer-row">
+          
+          meta
+          
+          <a href="/recent-changes">recent</a>
+          <a href="/collaborative-awe" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Projects/Alculator.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Projects/Alculator.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'Alculator'">reply</a>
+        </div>
+      </summary>
+      <div class="footer-row extra-small">
+        <a href="/sitemap">sitemap</a>
+        <a href="/collaborative-awe">random</a>
+      </div>
+
       
-      <p class="backlinks"><span class="bold">Incoming:</span>
+
+      <p class="backlinks"><strong>Incoming:</strong>
         
         <a href="/dns">DNS</a>
         
@@ -139,7 +161,7 @@
       
 
       
-      <p class="backlinks"><span class="bold"> <a href="/tags">Tags:</a></span>
+      <p class="backlinks"><strong> <a href="/tags">Tags:</a></strong>
         
         <a href="/tags#nextjs">#nextjs</a>
         
@@ -154,18 +176,9 @@
         </span>
       </p>
       
-
       
-    </div>
-  </main>
-  <footer>
-    <a href="mailto:zachpmanson@gmail.com?subject=On 'Alculator'">reply</a>
-    <a href="/recent-changes">recent</a>
-    <a href="/fun-design">random</a>
-    <a href="/posts">posts</a>
-    <a href="/sitemap">sitemap</a>
-    <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Projects/Alculator.md" class="desktop">edit</a>
-    <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Projects/Alculator.md" class="mobile">edit</a>
+    </details>
+
   </footer>
   
 </body>

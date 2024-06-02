@@ -104,13 +104,13 @@
         
       </div>
     </div>
-
-
   </nav>
+
   <main>
     <header>
       <h1>Status Messenger</h1>
     </header>
+
     <article><p>Status Messenger is an extension for VS Code (and <a href="https://vscodium.com/">VSCodium</a>) that places a message in the editor status bar that is periodically updated by a remote server.  This was built so that I could shame people at work with a counter that said how many days its been since somebody broke a prod deployment.</p>
 <p><img alt="" src="/media/status-messenger-1.png" /></p>
 <p>On install, the user will be prompted to enter a URL.  This URL should be an API that responds with a message with the following schema:
@@ -130,10 +130,32 @@
 <p>The extension will automatically pull messages from the server every 20 minutes after opening VS Code.  It will stop displaying and updating the message if the <strong>Hide Status Bar Message</strong> command is used.  It can be brought back using the <strong>Set Status Message Variant</strong>.</p>
 <p>The URL and variant is stored per workspace, so different workspaces can have different servers or variants.</p>
 <p>The extension is built with TypeScript and is available on <a href="https://marketplace.visualstudio.com/items?itemName=ZachManson.status-messenger">VS Code Marketplace</a> and <a href="https://open-vsx.org/extension/ZachManson/status-messenger">Open VSX</a>.  The source code is available on <a href="https://github.com/pavo-etc/status-messenger">GitHub</a>.</p></article>
+  </main>
 
-    <div class="meta">
+  <footer>
+    <details>
+      <summary>
+        <div class="footer-row">
+          
+          meta
+          
+          <a href="/recent-changes">recent</a>
+          <a href="/agents" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Projects/Status Messenger.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Projects/Status Messenger.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'Status Messenger'">reply</a>
+        </div>
+      </summary>
+      <div class="footer-row extra-small">
+        <a href="/sitemap">sitemap</a>
+        <a href="/agents">random</a>
+      </div>
+
       
-      <p class="backlinks"><span class="bold">Incoming:</span>
+
+      <p class="backlinks"><strong>Incoming:</strong>
         
         <a href="/dns">DNS</a>
         
@@ -146,18 +168,9 @@
       
 
       
-
       
-    </div>
-  </main>
-  <footer>
-    <a href="mailto:zachpmanson@gmail.com?subject=On 'Status Messenger'">reply</a>
-    <a href="/recent-changes">recent</a>
-    <a href="/spotify-design-decisions">random</a>
-    <a href="/posts">posts</a>
-    <a href="/sitemap">sitemap</a>
-    <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Projects/Status Messenger.md" class="desktop">edit</a>
-    <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Projects/Status Messenger.md" class="mobile">edit</a>
+    </details>
+
   </footer>
   
 </body>
