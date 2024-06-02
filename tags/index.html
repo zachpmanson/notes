@@ -461,7 +461,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/hiding-promoted-jobs-on-linkedin" class="not-extra-small">random</a>
+          <a href="/ghidhra-hidpi" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Meta/Tags.md" class="desktop">edit</a>
@@ -472,7 +472,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/hiding-promoted-jobs-on-linkedin">random</a>
+          <a href="/ghidhra-hidpi">random</a>
         </div>
       </div>
 
@@ -502,7 +502,11 @@
 
   </footer>
   
-  <script>{ { node["script"] } }</script>
+  <script>
+        let tag = window.location.hash.slice(1);
+        let details = document.getElementById(tag).parentElement.parentElement; // id is attached to h2, not details
+        details.open = true;
+    </script>
   
 </body>
 
