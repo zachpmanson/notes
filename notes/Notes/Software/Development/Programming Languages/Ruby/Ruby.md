@@ -1,12 +1,14 @@
 ## Variables
 
 Uses sigils for scoping.   This is just a language convention, but libraries often provide names based on these patterns so they are effectively language features.
+
 - `x` is a local variable (or something other than a variable).
 - `$x` is a global variable.
 - `@x` is an instance variable.
 - `@@x` is a class variable.
 
 Uses sigils for typing sometimes. This is just a convention I think.
+
 - `varname?` means boolean
 - `action!` means potentially dangerous?
 
