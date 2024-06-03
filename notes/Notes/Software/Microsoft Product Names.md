@@ -1,6 +1,7 @@
 ---
 tags:
   - lists
+  - venting
 ---
 Microsoft somehow manages to have constantly terrible names.
 

@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/Ruby/Ruby.md",
+                "file": "Notes/Software/Microsoft Product Names.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/Ruby/Ruby.md",
+                "file": "Notes/Software/Microsoft Product Names.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/Ruby/Ruby.md",
+                "file": "Notes/Software/Microsoft Product Names.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/Ruby/Ruby.md"
+                "file": "Notes/Software/Microsoft Product Names.md"
               }
             }
           }
@@ -172,8 +172,9 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "0b585c71d7f4a4b9",
   "lastOpenFiles": [
+    "Notes/Software/Development/Programming Languages/Ruby/Ruby.md",
     "Posts/LinkedIn's Ghost Text.md",
     "Media/pal.jpg",
     "Archive/Fiction/Maple Cybernetics Teledex.md",
@@ -182,7 +183,6 @@
     "Media/linkedin-duplication-2.webm",
     "Posts/Untitled.md",
     "Index.md",
-    "Notes/Software/Development/Programming Languages/Ruby/Ruby.md",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
     "Meta/Future Changes.md",
