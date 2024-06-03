@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
+                "file": "Meta/Meta.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
+                "file": "Meta/Meta.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
+                "file": "Meta/Meta.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Problems/RTK Query vs. Infinite Scrolling.md"
+                "file": "Meta/Meta.md"
               }
             }
           }
@@ -159,13 +159,14 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "972ae6a738ec3df1",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Index.md",
+    "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
     "Meta/DNS.md",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Notes/Networks/Internet/Fediverse/Lemmy.md",
     "Posts/Imposter Syndrome Day 632.md",
-    "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
     "Archive/Bookmarks/xkcd.md",
     "Archive/Lines.md",
     "Meta/Stylesheet.md",
@@ -187,7 +188,6 @@
     "Notes/Language/Dictionary.md",
     "Notes/Software/Development/Web Development/Web Development.md",
     "Notes/Software/Design/Fun Design.md",
-    "Notes/Software/Development/Programming Languages/C/C.md",
     "Media/dialup-handshake-audio.png",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax",
     "Media/spotify-top-bar.png",
