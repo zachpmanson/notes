@@ -13,14 +13,14 @@
             <link>https://notes.zachmanson.com/react</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Mon, 03 Jun 2024 04:12:07 </lastBuildDate>
+        <lastBuildDate>Mon, 03 Jun 2024 04:21:35 </lastBuildDate>
         
         <item>
             <title>RTK Query vs. Infinite Scrolling</title>
             <link>https://notes.zachmanson.com/rtk-query-vs.-infinite-scrolling</link>
             
             <content:encoded>
-                <![CDATA[<p>RTK Query with React is pretty great! The primary pattern you find yourself using with it is: </p>
+                <![CDATA[<p>RTK Query with <a href="/react">React</a> is pretty great! The primary pattern you find yourself using with it is: </p>
 <ol>
 <li>writing a small API definition that provides <ol>
 <li>the endpoint url </li>
