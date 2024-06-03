@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/xkcd.md",
+                "file": "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/xkcd.md",
+                "file": "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/xkcd.md",
+                "file": "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/xkcd.md"
+                "file": "Archive/Problems/RTK Query vs. Infinite Scrolling.md"
               }
             }
           }
@@ -162,6 +162,8 @@
   },
   "active": "1fc0657640fc5ae0",
   "lastOpenFiles": [
+    "Archive/Bookmarks/xkcd.md",
+    "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
     "Archive/Lines.md",
     "Meta/Stylesheet.md",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
@@ -181,7 +183,6 @@
     "Archive/Problems/RTK Query Sending Form Data.md",
     "Notes/Software/Development/DateTime.md",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax/Archaic Syntax.md",
-    "Archive/Bookmarks/xkcd.md",
     "Notes/Language/Dictionary.md",
     "Notes/Software/Development/Web Development/Web Development.md",
     "Notes/Software/Design/Fun Design.md",
@@ -189,7 +190,6 @@
     "Media/dialup-handshake-audio.png",
     "Notes/Software/Development/Programming Languages/C/Pointer Operations.md",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax/Comma Operator.md",
-    "Notes/Software/Development/Programming Languages/C/Archaic Syntax/Digraphs and Trigraphs.md",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax",
     "Media/spotify-top-bar.png",
     "Notes/Networks",
