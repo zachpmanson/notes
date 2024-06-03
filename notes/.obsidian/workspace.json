@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Archive/Bookmarks/xkcd.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Archive/Bookmarks/xkcd.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Archive/Bookmarks/xkcd.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Lines.md"
+                "file": "Archive/Bookmarks/xkcd.md"
               }
             }
           }
@@ -162,6 +162,7 @@
   },
   "active": "1fc0657640fc5ae0",
   "lastOpenFiles": [
+    "Archive/Lines.md",
     "Meta/Stylesheet.md",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Notes/Courses/UWA Computer Science/Untitled.md",
@@ -177,7 +178,6 @@
     "Notes/Software/Program Names.md",
     "Notes/Software/Design/Spotify Design Decisions.md",
     "Archive/Problems/Sticky Elements.md",
-    "Archive/Lines.md",
     "Archive/Problems/RTK Query Sending Form Data.md",
     "Notes/Software/Development/DateTime.md",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax/Archaic Syntax.md",

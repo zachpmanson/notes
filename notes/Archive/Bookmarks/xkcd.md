@@ -8,7 +8,7 @@ subtitle: A comic strip by Randall Munroe.
 - [Voting Software](https://xkcd.com/2030/)
 - [Standards](https://xkcd.com/927/)
 - [Citogenesis](https://xkcd.com/978/)
-
+- [Academia vs. Business](https://xkcd.com/664/)
 ## Other Links
 
 - [How Random is xkcd?](https://hardmath123.github.io/xkcd-random.html)
