@@ -269,7 +269,7 @@ def generate_tags():
         pages = sorted(tags[tag])
         panel = f"<details markdown='1'><summary>\n## {tag}\n</summary>\n\n"
         panel += "\n".join(
-            [f"- [{page}](/{helpers.sanitize_anchor(page)})" for page in pages]
+            [f"- [{page}](/{helpers.sanitize_url(page)})" for page in pages]
         )
         panel += f"\n\n[rss](/{tag}.xml)"
         panel += "\n</details>\n"
@@ -360,7 +360,7 @@ def build_backlink(label, base, end):
     if "#" in page:
         segments = page.split("#")
         page = segments[0]
-        anchor = f"#{helpers.sanitize_anchor(segments[1])}"
+        anchor = f"#{helpers.sanitize_url(segments[1])}"
 
     # if they are capitalised differently, fix it
     if page not in routes.keys():

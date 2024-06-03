@@ -5,12 +5,6 @@ import sys
 from generator import Node
 
 
-def sanitize_anchor(anchor):
-    clean_anchor = anchor.lower()
-    clean_anchor = clean_anchor.replace(" ", "-")
-    return clean_anchor
-
-
 def sanitize_url(url):
     """Converts page name to usable URL"""
     clean_url = url.lower()
