@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/Chris McDonald.md",
+                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1fc0657640fc5ae0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Meta/Stylesheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/Chris McDonald.md",
+                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/Chris McDonald.md",
+                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/Chris McDonald.md"
+                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md"
               }
             }
           }
@@ -149,9 +161,11 @@
   },
   "active": "972ae6a738ec3df1",
   "lastOpenFiles": [
-    "Media/chris-vs-cits.png",
-    "Notes/Courses/UWA Computer Science/Chris McDonald.md",
+    "Notes/Courses/UWA Computer Science/Untitled.md",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+    "Meta/Stylesheet.md",
+    "Notes/Courses/UWA Computer Science/Chris McDonald.md",
+    "Media/chris-vs-cits.png",
     "Meta/DNS.md",
     "Notes/Software/Programs/Git/Git Operations.md",
     "Archive/Problems/Git Repo Contributor Line Count.md",
@@ -176,7 +190,6 @@
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax/Comma Operator.md",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax/Digraphs and Trigraphs.md",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax",
-    "Notes/Software/Development/Programming Languages/C/Archaic Syntax/C auto Keyword.md",
     "Media/spotify-top-bar.png",
     "Notes/Networks",
     "Media/mctl-routes.png",
