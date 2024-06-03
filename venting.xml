@@ -13,7 +13,7 @@
             <link>https://notes.zachmanson.com/venting</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Mon, 03 Jun 2024 11:18:57 </lastBuildDate>
+        <lastBuildDate>Mon, 03 Jun 2024 11:48:08 </lastBuildDate>
         
         <item>
             <title>Spotify Design Decisions</title>
@@ -41,6 +41,9 @@ The day after writing the previous paragraph, I noticed they added the DJ to the
 <p>As of 2024-01-21, this loading state of the button appears to have been removed, thankfully.</p>
 <h2 id="smart-shuffle-cycle-order">Smart Shuffle Cycle Order</h2>
 <p>Oh sorry did I say the order was <code>Linear -&gt; Shuffle -&gt; Smart Shuffle</code>?  Its actually <code>Linear -&gt; Smart Shuffle -&gt; Shuffle</code>.  Wait no go back.  Wait... it's a different order on my phone vs on desktop? This is real wtf.</p>
+<h2 id="smart-shuffle-popup">Smart Shuffle Popup</h2>
+<p>I clicked shuffle once and this came up. Thankfully it only ever appeared once on 2023-11-14, but it never should have in the first place. </p>
+<p><img alt="" src="/media/smart-shuffle-popup.png" /></p>
 <h2 id="overflow-menu-loading">Overflow Menu Loading</h2>
 <p>For some godforsaken reason, the overflow menu for a track sometimes appears to require a network request before it can show.  If this request is slow, it will show a loading spinner in place of the menu, until the server responds.  Or in some cases, the <strong>overflow menu will fail to load entirely</strong>.  This is insane, since for the most part, the options on this menu are identical.  This is doubly insane since the menu can load without any issue what-so-ever in offline mode.</p>
 <p>I have only ever experienced this issue on the Android mobile app, which for many years did not support swiping on a song to queue a song.  At this time you were only able to queue a song. through the overflow menu, which often times meant waiting multiple seconds for menu to appear.  God forbid you wanting to queue multiple songs in a row. Thankfully you can now bypass the menu loading by swiping a track to the right.</p>
@@ -69,7 +72,6 @@ The day after writing the previous paragraph, I noticed they added the DJ to the
 <p>As of 2023 it appears this behaviour has been removed.</p>
 <h2 id="upcoming-complaints">Upcoming Complaints</h2>
 <ul>
-<li>Smart Shuffle popup</li>
 <li>Rapidly toggling through Shuffle button states can cause the cycle to desync in strange ways</li>
 <li>Spotify (regular) Shuffle algorithm has some problems</li>
 </ul>]]>
