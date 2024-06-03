@@ -120,8 +120,8 @@
         </span>
       </p>
       {% endif %}
-      {% if node["post_date"] %}
       <p>
+        {% if node["post_date"] %}
         <span class="backlinks">
           <strong>
             Posted:
@@ -129,6 +129,7 @@
           {{node["post_date"]}}
 
         </span>
+        {% endif %}
 
         <span class="backlinks">
           <strong>
@@ -138,7 +139,6 @@
         </span>
 
       </p>
-      {% endif %}
     </details>
 
   </footer>
