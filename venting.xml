@@ -13,23 +13,7 @@
             <link>https://notes.zachmanson.com/venting</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Mon, 03 Jun 2024 03:12:26 </lastBuildDate>
-        
-        <item>
-            <title>Nextcloud Phone Photo Upload</title>
-            <link>https://notes.zachmanson.com/nextcloud-phone-photo-upload</link>
-            
-            <description>Just use FolderSync.</description>
-            
-            <content:encoded>
-                <![CDATA[<p>Nextcloud is excellent, and its Android app is great.  I found the app's Auto-Upload feature to be nigh unusable.</p>
-<p>I have 20GiB+ of photos on my phone and would like a backup.  My primary Nextcloud account is synced to my PCs, so any file added to it will be downloaded to all devices.  I don't need local access to these photos on all my PCs, so I created a seperate Nextcloud account just for camera roll uploads. If I needed to access these photos from a PC I could log in to the Nextcloud web interface with the camera roll account.</p>
-<p>Attempting to use Auto-Upload on my phone's Camera folder was messy.  It kept uploading photos to the wrong Nextcloud account, incorrectly counting how many files there were, and did not supporting bidirectional sync.  It was unpredictable how long it would take to actually trigger an upload, not having a manual way of starting one.  It also limited automatic uploads to a single folder. These issues were all seperate from the fact that the UI was extremely glitchy as it tried to show 20GiB of photos.</p>
-<p>I found using <a href="https://www.tacit.dk/foldersync">FolderSync</a> a much better experience.  It let me set up bidirectional sync between custom Nextcloud folders and local folders, let me choose cadence for syncing (with many configuration options like only allowing upload when charging) and allowed me to manually trigger a sync.  The premium version is absolutely worth it.  I'm only scratching the surface of what it can do here, but for my needs it's perfect.</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/nextcloud-phone-photo-upload</guid>
-            <pubDate>2024-05-01</pubDate>
-        </item>
+        <lastBuildDate>Mon, 03 Jun 2024 04:12:07 </lastBuildDate>
         
         <item>
             <title>Spotify Design Decisions</title>
@@ -92,6 +76,251 @@ The day after writing the previous paragraph, I noticed they added the DJ to the
             </content:encoded>
             <guid isPermaLink="false">https://notes.zachmanson.com/spotify-design-decisions</guid>
             <pubDate>2024-03-17</pubDate>
+        </item>
+        
+        <item>
+            <title>RTK Query vs. Infinite Scrolling</title>
+            <link>https://notes.zachmanson.com/rtk-query-vs.-infinite-scrolling</link>
+            
+            <content:encoded>
+                <![CDATA[<p>RTK Query with React is pretty great! The primary pattern you find yourself using with it is: </p>
+<ol>
+<li>writing a small API definition that provides <ol>
+<li>the endpoint url </li>
+<li>type definitions for request args and response schema</li>
+<li>(usually) simply logic for converting passed argument type into request params/body</li>
+<li>(usually) simple logic for converting response payload into the response schema</li>
+</ol>
+</li>
+<li>importing a hook that RTK Query automatically generates for you</li>
+<li>reuse the same hook across multiple components</li>
+</ol>
+<p>RTK Query handles loading states, stale while revalidate states, error states, type safety, and caching.</p>
+<p>When writing React components, the caching is the most impactful of these.   You can just call the same hook in many different components, and as long as the params are the same the same it will only be a single network request. This removes the need for many invocations <code>useState</code> and Redux state calls, since you can just feign a call to the backend every time you need that data.</p>
+<p>There is a little boilerplate you have to write, but the meat of a basic RTK Query definition will look something like this:</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">getLocation</span><span class="o">:</span><span class="w"> </span><span class="kt">build.query</span><span class="o">&lt;</span><span class="nx">Location</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">({</span>
+<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">ids</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
+<span class="w">        </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;api/v1/location&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">params</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="w"> </span><span class="p">},</span>
+<span class="w">      </span><span class="p">}),</span>
+<span class="w">      </span><span class="nx">transformResponse</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
+<span class="w">    </span><span class="p">}),</span>
+</code></pre></div>
+<p>This will generate a hook called <code>useGetLocation</code> which will be cached.  Suddenly you never need to store a <code>Location</code> object in state to share it across components and you can just call <code>useGetLocation({id:5})</code> every time you need it. It also provides a lazy version of the hook that returns a normal function you can use to retrieve the data, which is good for APIs that need to be called multiple times.</p>
+<div class="highlight"><pre><span></span><code>function LocationCard({id}: {id:number}) {
+    const {data: location, isLoading} = useGetLocation({id:id});
+    const [getLocationsLazy] = useLazyGetLocation();
+    ...
+    return (
+        &lt;div&gt;
+            {location.address}
+        &lt;/div&gt;
+    );
+}
+</code></pre></div>
+<p>For straightforward GET requests this pattern stellar.  RTK Query encourages you to put all the API definitions into a single file (<code>src/api/api.ts</code>), or into a small number files with particular scopes.  For small-medium applications this works well, if you know the URL of an endpoint you want to hit you can just search within the <code>api.ts</code> file, use the accompanying hook and you are good to go, type safety and all.  I'm sure this single file approach would breakdown for big applications but its very pleasant at smaller scales.</p>
+<p>RTK Query also lets you do POST/PUT/PATCH requests with a similar definition style. Instead of using <code>build.query</code>, you use <code>build.mutation</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">addLocation</span><span class="o">:</span><span class="w"> </span><span class="kt">build.mutation</span><span class="o">&lt;</span>
+<span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="nx">location_id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">site_id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">address</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span><span class="w"> </span><span class="nx">abn</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span><span class="w"> </span><span class="nx">user_id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">},</span>
+<span class="w">      </span><span class="nx">NewLocation</span>
+<span class="w">    </span><span class="o">&gt;</span><span class="p">({</span>
+<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">body</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
+<span class="w">        </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;api/v1/location&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">method</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;POST&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">body</span><span class="o">:</span><span class="w"> </span><span class="kt">body</span><span class="p">,</span>
+<span class="w">      </span><span class="p">}),</span>
+<span class="w">    </span><span class="p">}),</span>
+<span class="w">    </span><span class="nx">patchLocation</span><span class="o">:</span><span class="w"> </span><span class="kt">build.mutation</span><span class="o">&lt;</span><span class="ow">void</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="kt">Partial</span><span class="o">&lt;</span><span class="nx">Location</span><span class="o">&gt;</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">({</span>
+<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">id</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nx">method</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;PATCH&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="sb">`api/v1/location/</span><span class="si">${</span><span class="nx">primaryKey</span><span class="si">}</span><span class="sb">`</span><span class="p">,</span>
+<span class="w">          </span><span class="nx">body</span><span class="o">:</span><span class="w"> </span><span class="kt">data</span><span class="p">,</span>
+<span class="w">        </span><span class="p">};</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nx">transformResponse</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
+<span class="w">    </span><span class="p">}),</span>
+</code></pre></div>
+<p>The hooks generated here will return a function that can be used to send requests.</p>
+<div class="highlight"><pre><span></span><code>function LocationCard({id}: {id:number}) {
+    const {data: location, isLoading} = useGetLocationQuery({id:id})
+    const [patchLocation, isPatchLoading] = usePatchLocationMutation()
+
+    function onUpdate(locationUpdate:Partial&lt;Location&gt;) {
+        patchLocation(locationUpdate)
+    }
+    ...
+    return (
+        &lt;div&gt;
+            {location.address}
+            ...
+            {/* some input that calls onUpdate on change */}
+        &lt;/div&gt;
+    )
+}
+</code></pre></div>
+<p>But wait! If I patch a location, how will the useGetLocation hook know that it's cache is invalid?</p>
+<h2 id="cache-invalidation">Cache Invalidation</h2>
+<p>RTK Query uses a tag system for cache invalidation, where a tag represents a kind of query.  Queries can assign themselves tags, and mutations can provide a list of tags they will invalidate. </p>
+<p>These can be static</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">getLocation</span><span class="o">:</span><span class="w"> </span><span class="kt">build.query</span><span class="o">&lt;</span><span class="nx">Location</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">({</span>
+<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">ids</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
+<span class="w">        </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;api/v1/location&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">params</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="w"> </span><span class="p">},</span>
+<span class="w">      </span><span class="p">}),</span>
+<span class="w">      </span><span class="nx">transformResponse</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">providesTags</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Location&#39;</span><span class="p">],</span>
+<span class="w">    </span><span class="p">}),</span>
+</code></pre></div>
+<p>or dynamic, based on the params given</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">getLocation</span><span class="o">:</span><span class="w"> </span><span class="kt">build.query</span><span class="o">&lt;</span><span class="nx">Location</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">({</span>
+<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">ids</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
+<span class="w">        </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;api/v1/location&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">params</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="w"> </span><span class="p">},</span>
+<span class="w">      </span><span class="p">}),</span>
+<span class="w">      </span><span class="nx">transformResponse</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">providesTags</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">result</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">,</span><span class="w"> </span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">[{</span><span class="kr">type</span><span class="o">:</span><span class="s2">&quot;Location&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">id</span><span class="p">}]</span>
+<span class="w">    </span><span class="p">}),</span>
+</code></pre></div>
+<p>And similarly for mutations</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">patchLocation</span><span class="o">:</span><span class="w"> </span><span class="kt">build.mutation</span><span class="o">&lt;</span><span class="ow">void</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="kt">Partial</span><span class="o">&lt;</span><span class="nx">Location</span><span class="o">&gt;</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">({</span>
+<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">id</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nx">method</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;PATCH&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="sb">`api/v1/location/</span><span class="si">${</span><span class="nx">primaryKey</span><span class="si">}</span><span class="sb">`</span><span class="p">,</span>
+<span class="w">          </span><span class="nx">body</span><span class="o">:</span><span class="w"> </span><span class="kt">data</span><span class="p">,</span>
+<span class="w">        </span><span class="p">};</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nx">transformResponse</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">invalidatesTags</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">result</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">,</span><span class="w"> </span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Location&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">arg.id</span><span class="w"> </span><span class="p">}]</span><span class="w"> </span><span class="c1">// or just [&quot;Location&quot;] to invalidate the whole category</span>
+<span class="w">    </span><span class="p">}),</span>
+</code></pre></div>
+<p>Where you can, dynamic tags are generally better since you have much more granular control.  Again, this works pretty well for straightforward queries.</p>
+<h2 id="pagination">Pagination</h2>
+<p>RTK Query doesn't include a mechanism for paging data, but passing a page number as a param works fine if you have discrete pages.</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">getLocations</span><span class="o">:</span><span class="w"> </span><span class="kt">build.query</span><span class="o">&lt;</span><span class="nx">Location</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">page</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">({</span>
+<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">page</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
+<span class="w">        </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;api/v1/locations&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">params</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">page</span><span class="w"> </span><span class="p">}</span>
+<span class="w">      </span><span class="p">}),</span>
+<span class="w">      </span><span class="nx">transformResponse</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">providesTags</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">result</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">,</span><span class="w"> </span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">[...</span><span class="nx">result</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">location</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="kr">type</span><span class="o">:</span><span class="s2">&quot;Location&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">location.id</span><span class="p">}),</span><span class="w"> </span><span class="p">{</span><span class="kr">type</span><span class="o">:</span><span class="s2">&quot;Location&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;LIST&quot;</span><span class="p">}],</span>
+<span class="w">    </span><span class="p">}),</span>
+</code></pre></div>
+<h2 id="but-what-about-infinite-scroll">But what about infinite scroll?</h2>
+<p>When infinitely scrolling, normally you'd have an array that stores all the results that have been loaded so far, and then you'd append new results to the end of this list when they are loaded in (maybe even dropping some entries from the start if you are memory constrained).  The hook generated by the previous example will only ever let you access one page's entries at a time. </p>
+<p>RTK Query doesn't have any special functions for infinite scrolling, but the pieces it gives you are enough to make it work. When writing a query definition you can explicitly set which params contribute are used to define unique cache entries, and another function to say how old cache entries should be overwritten by new ones.</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">getLocations</span><span class="o">:</span><span class="w"> </span><span class="kt">build.query</span><span class="o">&lt;</span><span class="nx">Location</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">page</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">({</span>
+<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
+<span class="w">        </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;api/v1/locations&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">params</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">page</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">      </span><span class="p">}),</span>
+<span class="w">      </span><span class="nx">transformResponse</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">providesTags</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">result</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">,</span><span class="w"> </span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">[...</span><span class="nx">result</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">location</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="kr">type</span><span class="o">:</span><span class="s2">&quot;Location&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">location.id</span><span class="p">}),</span><span class="w"> </span><span class="p">{</span><span class="kr">type</span><span class="o">:</span><span class="s2">&quot;Location&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;LIST&quot;</span><span class="p">}],</span>
+
+<span class="w">      </span><span class="c1">// overwrite cached value when page value changes, treat page</span>
+<span class="w">      </span><span class="nx">serializeQueryArgs</span><span class="o">:</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">queryArgs</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="p">...</span><span class="nx">queryArgs</span><span class="p">,</span><span class="w"> </span><span class="nx">page</span><span class="o">:</span><span class="w"> </span><span class="kt">undefined</span><span class="w"> </span><span class="p">}),</span>
+
+<span class="w">      </span><span class="c1">// when overwriting cache value, append new data to old list</span>
+<span class="w">      </span><span class="nx">merge</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">currentCache</span><span class="p">,</span><span class="w"> </span><span class="nx">newData</span><span class="p">,</span><span class="w"> </span><span class="nx">otherArgs</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nx">currentCache</span><span class="p">.</span><span class="nx">items</span><span class="p">.</span><span class="nx">push</span><span class="p">(...</span><span class="nx">newData</span><span class="p">);</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">    </span><span class="p">}),</span>
+</code></pre></div>
+<p>This works riiiiight until you need to invalidate the cache. Say you have a page with infinite scroll via pressing a load more button at the bottom, and the user has pressed it 3 times. At this stage, the hook will look like <code>const {data} = useGetLocationsQuery({page: 4});</code>. If page size is 20, data, will contain 80 entries. Then you edit an entry that appears on page 3. Or you add a new location.  Both of these operation will invalidate the cache, but the merge strategy provided will simply add the new cache to the end of the previous cache, so  <code>const {data} = useGetLocationsQuery({page: 4});</code> will now have 100 entries, 80 from the original 4 pages and 20 from the 4th page repeated again.  <strong>Ideally the merge function would have a way of distinguishing cache updates that are due to tag invalidation from cache updates due to parameter changes, but there is currently no way to do this</strong>.</p>
+<h2 id="workarounds">Workarounds</h2>
+<p>There are a <a href="https://github.com/reduxjs/redux-toolkit/discussions/1163">number</a> <a href="https://github.com/reduxjs/redux-toolkit/issues/3733">of</a> <a href="https://github.com/reduxjs/redux-toolkit/discussions/3174">discussion</a> of how to mitigate this.  The solution I went with looks like this.</p>
+<p>Firstly, the response payload must include the page number metadata.  This is usually the case with paginated endpoints, but this data now needs to be included in the cached result in the query definition.</p>
+<p>When merging the cache, only append the new data if the new data page number is greater than the old value:</p>
+<div class="highlight"><pre><span></span><code><span class="kr">type</span><span class="w"> </span><span class="nx">PaginatedData</span><span class="o">&lt;</span><span class="nx">ItemType</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">page</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">pages</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">per_page</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">total</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">items</span><span class="o">:</span><span class="w"> </span><span class="kt">ItemType</span><span class="p">[];</span>
+<span class="p">};</span>
+<span class="p">...</span>
+
+<span class="w">    </span><span class="nx">getLocations</span><span class="o">:</span><span class="w"> </span><span class="kt">build.query</span><span class="o">&lt;</span><span class="nx">PaginatedData</span><span class="o">&lt;</span><span class="nx">Location</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">page</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">({</span>
+<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
+<span class="w">        </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;api/v1/locations&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">params</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">page</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">      </span><span class="p">}),</span>
+<span class="w">      </span><span class="nx">transformResponse</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">providesTags</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">result</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">,</span><span class="w"> </span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">[...</span><span class="nx">result</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">location</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="kr">type</span><span class="o">:</span><span class="s2">&quot;Location&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">location.id</span><span class="p">}),</span><span class="w"> </span><span class="p">{</span><span class="kr">type</span><span class="o">:</span><span class="s2">&quot;Location&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;LIST&quot;</span><span class="p">}],</span>
+
+<span class="w">      </span><span class="c1">// overwrite cached value when page value changes, treat page</span>
+<span class="w">      </span><span class="nx">serializeQueryArgs</span><span class="o">:</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">queryArgs</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="p">...</span><span class="nx">queryArgs</span><span class="p">,</span><span class="w"> </span><span class="nx">page</span><span class="o">:</span><span class="w"> </span><span class="kt">undefined</span><span class="w"> </span><span class="p">}),</span>
+
+<span class="w">      </span><span class="c1">// when overwriting cache value, append new data to old list if page value increases</span>
+<span class="w">      </span><span class="nx">merge</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">currentCache</span><span class="p">,</span><span class="w"> </span><span class="nx">newData</span><span class="p">,</span><span class="w"> </span><span class="nx">otherArgs</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">newData</span><span class="p">.</span><span class="nx">page</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">currentCache</span><span class="p">.</span><span class="nx">page</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nx">currentCache</span><span class="p">.</span><span class="nx">items</span><span class="p">.</span><span class="nx">push</span><span class="p">(...</span><span class="nx">newData</span><span class="p">.</span><span class="nx">items</span><span class="p">);</span>
+<span class="w">          </span><span class="nx">currentCache</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="nx">newData</span><span class="p">,</span><span class="w"> </span><span class="nx">items</span><span class="o">:</span><span class="w"> </span><span class="kt">currentCache.items</span><span class="w"> </span><span class="p">};</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="k">return</span><span class="w"> </span><span class="nx">newData</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">    </span><span class="p">}),</span>
+</code></pre></div>
+<p>Then in the component where the hook is called, ensure that the page number is reset to 1 whenever a mutation occurs that will invalidate the <code>useGetLocationsQuery</code> data.  Since this page isn't an increase from the previous, the old cache will be discarded. This can be annoying since the component that triggers the mutation and invalidates the data may be completely seperate from the component that queries for the data.  </p>
+<div class="highlight"><pre><span></span><code>function EditLocationAddress({id}: {id:number}) {
+    const [patchLocation, isPatchLoading] = usePatchLocationMutation();
+
+    function onUpdate(locationUpdate:Partial&lt;Location&gt;) {
+        patchLocation(locationUpdate);
+        // TODO somehow reset the page number to 0 in all relevant places
+    }
+    ...
+    return (
+        &lt;div&gt;
+            {/* some input that calls onUpdate on change */}
+        &lt;/div&gt;
+    );
+}
+</code></pre></div>
+<p>There is probably a clever way of doing this where the cached page number is used as the canonical page number across all components, and then you could force a reset back to one from any component, but I haven't needed to implement this just yet in any applications.</p>
+<p>Maybe something like this? I haven't tried it yet.</p>
+<div class="highlight"><pre><span></span><code>function EditLocationAddress({id}: {id:number}) {
+    const [patchLocation, isPatchLoading] = usePatchLocationMutation();
+    const [getLocationsLazy] = useLazyGetLocationsQuery();
+
+    function onUpdate(locationUpdate:Partial&lt;Location&gt;) {
+        patchLocation(locationUpdate);
+        getLocationsLazy(
+            { page: 1 },
+            true // lazy queries ignore cache by default, true overrides this
+        );
+    }
+    ...
+    return (
+        &lt;div&gt;
+            {/* some input that calls onUpdate on change */}
+        &lt;/div&gt;
+    );
+}
+</code></pre></div>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/rtk-query-vs.-infinite-scrolling</guid>
+            <pubDate>2024-06-03</pubDate>
+        </item>
+        
+        <item>
+            <title>Nextcloud Phone Photo Upload</title>
+            <link>https://notes.zachmanson.com/nextcloud-phone-photo-upload</link>
+            
+            <description>Just use FolderSync.</description>
+            
+            <content:encoded>
+                <![CDATA[<p>Nextcloud is excellent, and its Android app is great.  I found the app's Auto-Upload feature to be nigh unusable.</p>
+<p>I have 20GiB+ of photos on my phone and would like a backup.  My primary Nextcloud account is synced to my PCs, so any file added to it will be downloaded to all devices.  I don't need local access to these photos on all my PCs, so I created a seperate Nextcloud account just for camera roll uploads. If I needed to access these photos from a PC I could log in to the Nextcloud web interface with the camera roll account.</p>
+<p>Attempting to use Auto-Upload on my phone's Camera folder was messy.  It kept uploading photos to the wrong Nextcloud account, incorrectly counting how many files there were, and did not supporting bidirectional sync.  It was unpredictable how long it would take to actually trigger an upload, not having a manual way of starting one.  It also limited automatic uploads to a single folder. These issues were all seperate from the fact that the UI was extremely glitchy as it tried to show 20GiB of photos.</p>
+<p>I found using <a href="https://www.tacit.dk/foldersync">FolderSync</a> a much better experience.  It let me set up bidirectional sync between custom Nextcloud folders and local folders, let me choose cadence for syncing (with many configuration options like only allowing upload when charging) and allowed me to manually trigger a sync.  The premium version is absolutely worth it.  I'm only scratching the surface of what it can do here, but for my needs it's perfect.</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/nextcloud-phone-photo-upload</guid>
+            <pubDate>2024-05-01</pubDate>
         </item>
         
 
