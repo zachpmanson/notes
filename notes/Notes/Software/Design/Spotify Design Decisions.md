@@ -43,6 +43,13 @@ As of 2024-01-21, this loading state of the button appears to have been removed,
 ## Smart Shuffle Cycle Order
 
 Oh sorry did I say the order was `Linear -> Shuffle -> Smart Shuffle`?  Its actually `Linear -> Smart Shuffle -> Shuffle`.  Wait no go back.  Wait... it's a different order on my phone vs on desktop? This is real wtf.
+
+## Smart Shuffle Popup
+
+I clicked shuffle once and this came up. Thankfully it only ever appeared once on 2023-11-14, but it never should have in the first place. 
+
+![[smart-shuffle-popup.png]]
+
 ## Overflow Menu Loading
 
 For some godforsaken reason, the overflow menu for a track sometimes appears to require a network request before it can show.  If this request is slow, it will show a loading spinner in place of the menu, until the server responds.  Or in some cases, the **overflow menu will fail to load entirely**.  This is insane, since for the most part, the options on this menu are identical.  This is doubly insane since the menu can load without any issue what-so-ever in offline mode.
@@ -90,6 +97,5 @@ As of 2023 it appears this behaviour has been removed.
 
 ## Upcoming Complaints
 
-- Smart Shuffle popup
 - Rapidly toggling through Shuffle button states can cause the cycle to desync in strange ways
 - Spotify (regular) Shuffle algorithm has some problems
