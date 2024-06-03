@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> Sure, if you’re based in San Francisco and you go to your adult daycare—sorry, I mean startup office
+
+-- [Andy Bell](https://andy-bell.co.uk/speed-for-who/)
+
+---
+
 > Test what you detest
 
 -- ughh idk [this video](https://www.youtube.com/watch?v=MbU-PKukdMw)

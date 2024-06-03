@@ -25,13 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meta/Stylesheet.md",
+                "file": "Archive/Lines.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+                "file": "Archive/Lines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+                "file": "Archive/Lines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md"
+                "file": "Archive/Lines.md"
               }
             }
           }
@@ -159,11 +160,11 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "972ae6a738ec3df1",
+  "active": "1fc0657640fc5ae0",
   "lastOpenFiles": [
-    "Notes/Courses/UWA Computer Science/Untitled.md",
-    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Meta/Stylesheet.md",
+    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+    "Notes/Courses/UWA Computer Science/Untitled.md",
     "Notes/Courses/UWA Computer Science/Chris McDonald.md",
     "Media/chris-vs-cits.png",
     "Meta/DNS.md",
