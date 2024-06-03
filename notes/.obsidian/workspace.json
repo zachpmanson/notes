@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meta/Meta.md",
+                "file": "Index.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "nt/react",
+                "query": "about",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Meta/Meta.md",
+                "file": "Index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Meta/Meta.md",
+                "file": "Index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Meta/Meta.md"
+                "file": "Index.md"
               }
             }
           }
@@ -161,6 +161,8 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Meta/Meta.md",
+    "Meta/About.md",
     "Index.md",
     "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
     "Meta/DNS.md",
@@ -186,8 +188,6 @@
     "Notes/Software/Development/DateTime.md",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax/Archaic Syntax.md",
     "Notes/Language/Dictionary.md",
-    "Notes/Software/Development/Web Development/Web Development.md",
-    "Notes/Software/Design/Fun Design.md",
     "Media/dialup-handshake-audio.png",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax",
     "Media/spotify-top-bar.png",
