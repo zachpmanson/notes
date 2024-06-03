@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> It's okay to half-ass something, when all you need is half an ass
+
+-- [Who knows](https://news.ycombinator.com/item?id=40557662)
+
+---
+
 > We work in a field of people who envision themselves as artists, when all that is wanted are painters.
 
 -- [projectileboy's friend](https://news.ycombinator.com/item?id=40558212)
