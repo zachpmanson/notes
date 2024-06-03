@@ -147,7 +147,7 @@ CITS3200 Professional Computing
   - 3/10 will be companies hyping themselves up
   - 4/10 will be inane ethics bullshit
   - 1/10 will be alleged war criminals
-- all prior units have not adequately prepared you for this, go learn django or [[Notes/Software/Development/Web Development/React]] because you are very likely going to need to know these. if you are wondering if you should make a web app you should probably just make a web app
+- all prior units have not adequately prepared you for this, go learn django or [[React]] because you are very likely going to need to know these. if you are wondering if you should make a web app you should probably just make a web app
 
 ## Miscellaneous Advice
 

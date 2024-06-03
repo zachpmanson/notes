@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
+                "file": "Posts/Imposter Syndrome Day 632.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#git ",
+                "query": "nt/react",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -78,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
+                "file": "Posts/Imposter Syndrome Day 632.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
+                "file": "Posts/Imposter Syndrome Day 632.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Problems/RTK Query vs. Infinite Scrolling.md"
+                "file": "Posts/Imposter Syndrome Day 632.md"
               }
             }
           }
@@ -162,11 +163,12 @@
   },
   "active": "1fc0657640fc5ae0",
   "lastOpenFiles": [
-    "Archive/Bookmarks/xkcd.md",
+    "Notes/Networks/Internet/Fediverse/Lemmy.md",
+    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
+    "Archive/Bookmarks/xkcd.md",
     "Archive/Lines.md",
     "Meta/Stylesheet.md",
-    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Notes/Courses/UWA Computer Science/Untitled.md",
     "Notes/Courses/UWA Computer Science/Chris McDonald.md",
     "Media/chris-vs-cits.png",
@@ -189,7 +191,6 @@
     "Notes/Software/Development/Programming Languages/C/C.md",
     "Media/dialup-handshake-audio.png",
     "Notes/Software/Development/Programming Languages/C/Pointer Operations.md",
-    "Notes/Software/Development/Programming Languages/C/Archaic Syntax/Comma Operator.md",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax",
     "Media/spotify-top-bar.png",
     "Notes/Networks",
