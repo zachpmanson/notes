@@ -56,7 +56,7 @@ Gross.  Why the hidden duplicated text?  Why the empty comments?  Why seperate a
 
 ---
 
-## 2024 Update: LinkedIn is Still Shit
+## 2024 Update: LinkedIn Still Shit
 
 Still here.  Still broken. Still annoying
 
