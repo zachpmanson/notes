@@ -3,6 +3,7 @@ subtitle: Why does LinkedIn copy text twice?
 date: 2023-04-16
 tags:
   - posts
+  - venting
 ---
 
 Why does LinkedIn do this?
@@ -52,3 +53,13 @@ will have HTML like this
 ```
 
 Gross.  Why the hidden duplicated text?  Why the empty comments?  Why seperate aria versions of text?  Is this related to using Ember?  LinkedIn has so many little unpleasantries like this.
+
+---
+
+## 2024 Update: LinkedIn is Still Shit
+
+Still here.  Still broken. Still annoying
+
+<video autoplay loop muted>
+   <source src="/media/linkedin-duplication-2.webm" type="video/webm">
+</video>

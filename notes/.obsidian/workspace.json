@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
+                "file": "Posts/LinkedIn's Ghost Text.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
+                "file": "Posts/LinkedIn's Ghost Text.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
+                "file": "Posts/LinkedIn's Ghost Text.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Problems/RTK Query vs. Infinite Scrolling.md"
+                "file": "Posts/LinkedIn's Ghost Text.md"
               }
             }
           }
@@ -174,21 +174,25 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Meta/Future Changes.md",
-    "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
+    "Posts/LinkedIn's Ghost Text Part II.md",
+    "Posts/LinkedIn's Ghost Text.md",
     "Archive/Problems/Cobertura Not Allow on GitLab.md",
+    "Media/linkedin-duplication-2.webm",
+    "Posts/Untitled.md",
+    "Index.md",
+    "Notes/Software/Development/Programming Languages/Ruby/Ruby.md",
+    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+    "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
+    "Meta/Future Changes.md",
     "Archive/Problems/Problems.md",
     "Notes/Software/Development/Programming Languages/Ruby/Ruby on Rails.md",
-    "Notes/Software/Development/Programming Languages/Ruby/Ruby.md",
     "Notes/Software/Development/Programming Languages/Programming Languages.md",
     "Notes/Software/Development/Programming Languages/Ruby",
     "Notes/Software/Design/Spotify Design Decisions.md",
     "Media/smart-shuffle-popup.png",
-    "Index.md",
     "Meta/Meta.md",
     "Meta/About.md",
     "Meta/DNS.md",
-    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Notes/Networks/Internet/Fediverse/Lemmy.md",
     "Posts/Imposter Syndrome Day 632.md",
     "Archive/Bookmarks/xkcd.md",
@@ -199,10 +203,6 @@
     "Media/chris-vs-cits.png",
     "Notes/Software/Programs/Git/Git Operations.md",
     "Archive/Problems/Git Repo Contributor Line Count.md",
-    "Archive/Problems/Git Subdirectory Branch.md",
-    "Archive/Problems/Raw GitHub Commits.md",
-    "Archive/Problems/View Deleted File in Git.md",
-    "Notes/Software/Microsoft Product Names.md",
     "Media/dialup-handshake-audio.png",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax",
     "Media/spotify-top-bar.png",
@@ -219,7 +219,6 @@
     "Notes/Software/Design",
     "Notes/Software/Exploits/XZ",
     "Notes/Software/Exploits",
-    "Notes/Software/Development/Programming Languages/C++",
     "Untitled.canvas"
   ]
 }
