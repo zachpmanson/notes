@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "a451622acd3d46be",
+        "id": "8f37294129f19bb3",
         "type": "tabs",
         "children": [
           {
-            "id": "972ae6a738ec3df1",
+            "id": "3e1ec611ed63d34a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/Problems.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c5390cac352f5c55",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Archive/Problems/Cobertura Not Allow on GitLab.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0b585c71d7f4a4b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Software/Microsoft Product Names.md",
+                "file": "Notes/Software/Development/Programming Languages/R/R.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Microsoft Product Names.md",
+                "file": "Notes/Software/Development/Programming Languages/R/R.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Microsoft Product Names.md",
+                "file": "Notes/Software/Development/Programming Languages/R/R.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Microsoft Product Names.md"
+                "file": "Notes/Software/Development/Programming Languages/R/R.md"
               }
             }
           }
@@ -172,14 +147,18 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "3e1ec611ed63d34a",
   "lastOpenFiles": [
+    "Notes/Software/Development/Programming Languages/Programming Languages.md",
+    "Notes/Software/Development/Programming Languages/R/R.md",
+    "Notes/Software/Development/Programming Languages/R",
+    "Archive/Problems/Cobertura Not Allow on GitLab.md",
+    "Notes/Software/Microsoft Product Names.md",
     "Notes/Software/Development/Programming Languages/Ruby/Ruby.md",
     "Posts/LinkedIn's Ghost Text.md",
     "Media/pal.jpg",
     "Archive/Fiction/Maple Cybernetics Teledex.md",
     "Posts/LinkedIn's Ghost Text Part II.md",
-    "Archive/Problems/Cobertura Not Allow on GitLab.md",
     "Media/linkedin-duplication-2.webm",
     "Posts/Untitled.md",
     "Index.md",
@@ -188,7 +167,6 @@
     "Meta/Future Changes.md",
     "Archive/Problems/Problems.md",
     "Notes/Software/Development/Programming Languages/Ruby/Ruby on Rails.md",
-    "Notes/Software/Development/Programming Languages/Programming Languages.md",
     "Notes/Software/Development/Programming Languages/Ruby",
     "Notes/Software/Design/Spotify Design Decisions.md",
     "Media/smart-shuffle-popup.png",
@@ -203,7 +181,6 @@
     "Notes/Courses/UWA Computer Science/Untitled.md",
     "Notes/Courses/UWA Computer Science/Chris McDonald.md",
     "Media/chris-vs-cits.png",
-    "Notes/Software/Programs/Git/Git Operations.md",
     "Media/dialup-handshake-audio.png",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax",
     "Media/spotify-top-bar.png",
@@ -218,7 +195,6 @@
     "Media/dark-mode.png",
     "Notes/Software/Design",
     "Notes/Software/Exploits/XZ",
-    "Notes/Software/Exploits",
     "Untitled.canvas"
   ]
 }
