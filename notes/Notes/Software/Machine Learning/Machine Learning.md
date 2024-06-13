@@ -67,3 +67,4 @@ The training loop:
 ## Interesting Links
 
 - [The Ghosts in the Data](https://vickiboykis.com/2021/03/26/the-ghosts-in-the-data/)
+- [Knowing Machines](https://knowingmachines.org)
