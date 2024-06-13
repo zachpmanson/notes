@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/R/R.md",
+                "file": "Archive/Lines.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/R/R.md",
+                "file": "Archive/Lines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/R/R.md",
+                "file": "Archive/Lines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/R/R.md"
+                "file": "Archive/Lines.md"
               }
             }
           }
@@ -147,10 +147,11 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "3e1ec611ed63d34a",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Notes/Software/Development/Programming Languages/Programming Languages.md",
+    "Index.md",
     "Notes/Software/Development/Programming Languages/R/R.md",
+    "Notes/Software/Development/Programming Languages/Programming Languages.md",
     "Notes/Software/Development/Programming Languages/R",
     "Archive/Problems/Cobertura Not Allow on GitLab.md",
     "Notes/Software/Microsoft Product Names.md",
@@ -161,7 +162,6 @@
     "Posts/LinkedIn's Ghost Text Part II.md",
     "Media/linkedin-duplication-2.webm",
     "Posts/Untitled.md",
-    "Index.md",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
     "Meta/Future Changes.md",

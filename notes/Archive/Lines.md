@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> First, that algorithmic curation commonly depends on numeric thresholds which are very often poorly understood.
+
+-- [Christo Buschek & Jer Thorp](https://knowingmachines.org/models-all-the-way#section2)
+
+---
+
 > It's okay to half-ass something, when all you need is half an ass
 
 -- [Who knows](https://news.ycombinator.com/item?id=40557662)
