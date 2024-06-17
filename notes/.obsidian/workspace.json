@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Programs/GNU/Screen/Screen.md",
+                "file": "Notes/Software/Exploits/XZ/XZ.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Programs/GNU/Screen/Screen.md",
+                "file": "Notes/Software/Exploits/XZ/XZ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Programs/GNU/Screen/Screen.md",
+                "file": "Notes/Software/Exploits/XZ/XZ.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Programs/GNU/Screen/Screen.md"
+                "file": "Notes/Software/Exploits/XZ/XZ.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   },
   "active": "3e1ec611ed63d34a",
   "lastOpenFiles": [
+    "Notes/Software/Programs/GNU/Screen/Screen.md",
     "Notes/Software/Machine Learning/Machine Learning.md",
     "Archive/Lines.md",
     "Index.md",
@@ -179,7 +180,6 @@
     "Posts/Imposter Syndrome Day 632.md",
     "Archive/Bookmarks/xkcd.md",
     "Meta/Stylesheet.md",
-    "Notes/Courses/UWA Computer Science/Untitled.md",
     "Media/chris-vs-cits.png",
     "Media/dialup-handshake-audio.png",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax",
