@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="icon" href="/static/icon/icon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+
+  <link rel="alternate" type="application/rss+xml" href="https://notes.zachmanson.com/posts.xml" title="notes: posts" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: wikipedia and anti-elitism</title>
+</head>
+
+<body>
+  <nav>
+    <div class="main-icon">
+      <a href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
+          viewBox="26.88 56.87 216.25 156.27">
+          <path
+            style="stroke-width: 15px; stroke-linecap: butt; stroke-linejoin: round; stroke: rgb(10, 10, 10); fill: none;"
+            d="M135,75 A60,60 0 0,0 75,135 A60,60 0 0,0 135,195 A60,60 0 0,0 195,135 A60,60 0 0,0 135,75 M45,90 A15,15 0 0,1 60,75 A15,15 0 0,1 75,90 L75,135 L75,180 A15,15 0 0,1 60,195 A15,15 0 0,1 45,180 M225,90 A15,15 0 0,0 210,75 A15,15 0 0,0 195,90 L195,135 L195,180 A15,15 0 0,0 210,195 L210,195 A15,15 0 0,0 225,180 M135,105 A30,30 0 0,1 165,135 A30,30 0 0,1 135,165 A30,30 0 0,1 105,135 A30,30 0 0,1 135,105 M45,105 L45,105 L45,165 M225,105 L225,105 L225,165 ">
+          </path>
+        </svg>
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
+      <div class="nav-segments">
+        
+
+        <div class="flex flex-col text-left nav-links">
+          <a href="/folklore" class="activated-link">Folklore</a>
+          
+          
+          <a href="/bookmarks">Bookmarks</a>
+          
+          
+          
+          <a href="/fiction">Fiction</a>
+          
+          
+          
+          
+          
+          
+          <a href="/lines">Lines</a>
+          
+          
+          
+          <a href="/problems">Problems</a>
+          
+          
+          
+          <a href="/templates">Templates</a>
+          
+          
+        </div>
+        
+
+        
+
+        <div class="flex flex-col text-left nav-links">
+          <a href="/wikipedia-and-anti-elitism" class="activated-link">Wikipedia and Anti-Elitism</a>
+          
+          
+          <a href="/10-rules-of-internet">10 Rules of Internet</a>
+          
+          
+          
+          <a href="/a-conspiracy-to-kill-ie6">A Conspiracy To Kill IE6</a>
+          
+          
+          
+          <a href="/a-story-about-magic">A Story About 'Magic'</a>
+          
+          
+          
+          <a href="/alice-in-modeland">Alice in Modeland</a>
+          
+          
+          
+          <a href="/aliens-and-calendars">Aliens and Calendars</a>
+          
+          
+          
+          <a href="/amazons-first-job-posting">Amazon's First Job Posting</a>
+          
+          
+          
+          <a href="/an-update-on-facebook-video-marketing-metrics">An Update on Facebook Video Marketing Metrics</a>
+          
+          
+          
+          <a href="/bell-labs-productivity-mystery">Bell Labs' Productivity Mystery</a>
+          
+          
+          
+          <a href="/best-practices-for-time-travellers">Best Practices for Time Travellers</a>
+          
+          
+          
+          <a href="/bill-gates-tries-to-install-windows-movie-maker">Bill Gates Tries To Install Windows Movie Maker</a>
+          
+          
+          
+          <a href="/bill-gates-wrote-fat-on-an-airplane">Bill Gates Wrote FAT on an Airplane</a>
+          
+          
+          
+          <a href="/blinkenlichten">Blinkenlichten</a>
+          
+          
+          
+          <a href="/c-locale-braindeath">C Locale Braindeath</a>
+          
+          
+          
+          <a href="/cannot-simultaneously-fix-and-keep-job.-therefore-wont-fix.">Cannot simultaneously fix and keep job. Therefore, won't fix.</a>
+          
+          
+          
+          <a href="/christ-mcdonald">Christ McDonald</a>
+          
+          
+          
+          <a href="/competing-with-gpt">Competing with GPT</a>
+          
+          
+          
+          <a href="/context-menu-hell">Context Menu Hell</a>
+          
+          
+          
+          <a href="/digg-v4">Digg v4</a>
+          
+          
+          
+          <a href="/dispatch-from-the-cyberpunk-city">Dispatch From the Cyberpunk City</a>
+          
+          
+          
+          <a href="/do-things-tell-people">Do Things, Tell People</a>
+          
+          
+          
+          <a href="/ellsbergs-advice-for-kissinger">Ellsberg's Advice For Kissinger</a>
+          
+          
+          
+          <a href="/facing-the-street">Facing the Street</a>
+          
+          
+          
+          <a href="/factory-factory-factory">Factory Factory Factory</a>
+          
+          
+          
+          <a href="/feminist-server-manifesto">Feminist Server Manifesto</a>
+          
+          
+          
+          <a href="/file-over-app">File Over App</a>
+          
+          
+          
+          <a href="/git-koans">Git Koans</a>
+          
+          
+          
+          <a href="/growth-at-tumblr-and-wordpress">Growth at Tumblr and Wordpress</a>
+          
+          
+          
+          <a href="/guerilla-open-access-manifesto">Guerilla Open Access Manifesto</a>
+          
+          
+          
+          <a href="/heaven-banning">Heaven Banning</a>
+          
+          
+          
+          <a href="/i-no-longer-built-software">I No Longer Built Software</a>
+          
+          
+          
+          <a href="/incomplete-list-of-mistakes-in-the-design-of-css">Incomplete List of Mistakes in the Design of CSS</a>
+          
+          
+          
+          <a href="/interviewing-for-canonical">Interviewing for Canonical</a>
+          
+          
+          
+          <a href="/jsx-react-native-and-typescript">JSX, React Native, and TypeScript</a>
+          
+          
+          
+          <a href="/kurt-vonnegut-grades">Kurt Vonnegut Grades</a>
+          
+          
+          
+          <a href="/larry-page-builds-a-web-robot">Larry Page Builds a Web Robot</a>
+          
+          
+          
+          <a href="/life-of-an-oracle-developer">Life of an Oracle Developer</a>
+          
+          
+          
+          <a href="/man-spends-entire-career-mastering-crappy-codebase">Man Spends Entire Career Mastering Crappy Codebase</a>
+          
+          
+          
+          <a href="/no-coffee-==-no-job">No Coffee == No Job</a>
+          
+          
+          
+          <a href="/no-dogs-were-harmed-in-the-making-of-this-app">No dogs were harmed in the making of this app</a>
+          
+          
+          
+          <a href="/not-a-real-engineer">Not a real engineer</a>
+          
+          
+          
+          <a href="/on-the-origin-of-emacs">On the Origin of Emacs</a>
+          
+          
+          
+          <a href="/on-the-origin-of-toots">On the Origin of Toots</a>
+          
+          
+          
+          <a href="/openoffice-cant-print-on-tuesdays">OpenOffice Can't Print on Tuesdays</a>
+          
+          
+          
+          <a href="/oracle-as-lawnmower">Oracle as Lawnmower</a>
+          
+          
+          
+          <a href="/originality-not-required">Originality Not Required</a>
+          
+          
+          
+          <a href="/psd-is-not-my-favourite-file-format">PSD is not my favourite file format</a>
+          
+          
+          
+          <a href="/please-drink-verification-can">Please Drink Verification Can</a>
+          
+          
+          
+          <a href="/pocket-veto">Pocket Veto</a>
+          
+          
+          
+          <a href="/price-of-chatgpts-api-vs-human">Price of ChatGPT's API vs Human</a>
+          
+          
+          
+          <a href="/put-yourself-in-jia-tans-shoes">Put yourself in Jia Tan's shoes</a>
+          
+          
+          
+          <a href="/regular-expressions-and-html">Regular Expressions and HTML</a>
+          
+          
+          
+          <a href="/rob-pikes-5-rules-of-programming">Rob Pike's 5 Rules of Programming</a>
+          
+          
+          
+          <a href="/rob-pikes-lesson-in-shortcuts">Rob Pike's Lesson in Shortcuts</a>
+          
+          
+          
+          <a href="/sre-threats">SRE Threats</a>
+          
+          
+          
+          <a href="/steve-yegges-tale-of-geoworks">Steve Yegge's Tale of Geoworks</a>
+          
+          
+          
+          <a href="/steveys-google-platforms-rant">Stevey's Google Platforms Rant</a>
+          
+          
+          
+          <a href="/superstitious-encoding">Superstitious Encoding</a>
+          
+          
+          
+          <a href="/the-bitter-lesson">The Bitter Lesson</a>
+          
+          
+          
+          <a href="/the-cab-ride-ill-never-forget">The Cab Ride I'll Never Forget</a>
+          
+          
+          
+          <a href="/the-case-of-the-500-mile-email">The Case of the 500-Mile Email</a>
+          
+          
+          
+          <a href="/the-crawford-principles">The Crawford Principles</a>
+          
+          
+          
+          <a href="/the-damned-can-now-play-three-chords">The Damned Can Now Play Three Chords</a>
+          
+          
+          
+          <a href="/the-future-of-open-source">The Future of Open Source</a>
+          
+          
+          
+          <a href="/the-nazi-bar-problem">The Nazi Bar Problem</a>
+          
+          
+          
+          <a href="/the-patron-saint-of-yak-shaves">The Patron Saint of Yak Shaves</a>
+          
+          
+          
+          <a href="/the-reddit-long-con">The Reddit Long Con</a>
+          
+          
+          
+          <a href="/the-smallest-quine">The Smallest Quine</a>
+          
+          
+          
+          <a href="/the-unknown-citizen">The Unknown Citizen</a>
+          
+          
+          
+          <a href="/the-bin-split">The bin Split</a>
+          
+          
+          
+          <a href="/thoughts-on-flash">Thoughts On Flash</a>
+          
+          
+          
+          <a href="/tiktoks-enshittification">TikTok's Enshittification</a>
+          
+          
+          
+          <a href="/time-traveller-on-irc">Time Traveller on IRC</a>
+          
+          
+          
+          <a href="/unix-recovery-legend">Unix Recovery Legend</a>
+          
+          
+          
+          <a href="/usenet-post-warning">Usenet Post Warning</a>
+          
+          
+          
+          <a href="/virtues-of-a-good-programmer">Virtues of a Good Programmer</a>
+          
+          
+          
+          <a href="/we-do-not-break-userspace">We Do Not Break Userspace</a>
+          
+          
+          
+          <a href="/we-have-no-moat-and-neither-does-openai">We Have No Moat, And Neither Does OpenAI</a>
+          
+          
+          
+          <a href="/when-is-midnight">When Is Midnight</a>
+          
+          
+          
+          
+          
+          
+          <a href="/worse-is-better">Worse is Better</a>
+          
+          
+          
+          <a href="/yak-shaving">Yak Shaving</a>
+          
+          
+          
+          <a href="/carproblems.txt">carproblems.txt</a>
+          
+          
+        </div>
+        
+
+        
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header>
+      <h1>Why Wikipedia Must Jettison Its Anti-Elitism</h1>
+    </header>
+
+    <article><p>One of the founders of Wikipedia, Larry Sanger on its early attitudes, <a href="https://web.archive.org/web/20050301000315/http://www.kuro5hin.org/story/2004/12/30/142458/25">written in 2004</a>
+. </p>
+<hr />
+<p>Wikipedia has started to hit the big time. Accordingly, several critical articles have come out, including "The Faith-Based Encyclopedia" by a former editor-in-chief of Britannica and a very widely-syndicated AP article that was given such titles as "When Information Access Is So Easy, Truth Can Be Elusive".</p>
+<p>These articles are written by people who appear not to appreciate the merits of Wikipedia fully. I do, however; I co-founded Wikipedia. (I have since left the project.)</p>
+<p>Wikipedia does have two big problems, and attention to them is long overdue. These problems could be eliminated by eliminating a single root problem. If the project's managers are not willing to solve it, I fear a fork (a new edition under new management, for the non-techies reading this) will probably be necessary.</p>
+<hr />
+<p>Let me preface this by saying that I know Wikipedia is very cool. A lot of people do not think so, but of course they are wrong. So the following must be taken in the spirit of someone who knows and supports the mission and broad policy outlines of Wikipedia very well.</p>
+<p>First problem: lack of public perception of credibility, particularly in areas of detail. The problem I would like to point out is not that Wikipedia is unreliable. The alleged unreliability of Wikipedia is something that the above (TechCentralStation and AP) articles make much of, but that is not my point, and I am not interested in discussing that point per se.</p>
+<p>My point is that, regardless of whether Wikipedia actually is more or less reliable than the average encyclopedia, it is not perceived as adequately reliable by many librarians, teachers, and academics. The reason for this is not far to seek: those librarians etc. note that anybody can contribute and that there are no traditional review processes. You might hasten to reply that it does work nonetheless, and I would agree with you to a large extent, but your assurances will not put this concern to rest.</p>
+<p>You might maintain that people are already using Wikipedia a lot, and that that implies a great deal of trust. This is true, as far as it goes; but people use many sources that they themselves believe to be unreliable, via Google searches, for example. (I do so all the time, though perhaps I shouldn't.) Perhaps Wikipedia is better described as one of those sources regarded as unreliable which people read anyway. And in this case, one might say, there's no problem: Wikipedia is being read, and it is of minimally adequate and increasing reliability. What more could you ask? In other words, why does a perception of unreliability matter?</p>
+<p>I am willing to grant much of this reply. I think merely that there are a great many benefits that accrue from robust credibility to the public. One benefit, but only one, is support and participation by academia. I am on the academic job market now and I felt it was necessary to explain my views about Wikipedia's credibility for potential employers. A great many of my colleagues are not at all impressed with the project; but more about that in a bit.</p>
+<p>Another benefit accruing from robust public credibility is even more widespread use and support by teachers, schools, libraries, and the general public--precisely the people who want to use what they believe to be a credible encyclopedia. To the extent that the project is not reaching, and being supported by, these people, it is not succeeding as well as it might.</p>
+<p>Perhaps you might also maintain that, while Wikipedia does not now have a reputation for reliability, it will eventually, once enough studies proving its reliability are done, and once people are more familiar with the concept behind the project. This is hard to argue with; but it is also hard to support, because it involves predicting the future, and the future, when it comes to public opinion, is extremely unpredictable. It would be better to do something to help guarantee a reputation for reliability.</p>
+<p>Wikipedia has another sort of credibility problem, mentioned in passing above, and I fear that time is not a solution to this problem, the way it might be to the foregoing one. Namely, one can make a good case that, when it comes to relatively specialized topics (outside of the interests of most of the contributors), the project's credibility is very uneven. If the project was lucky enough to have a writer or two well-informed about some specialized subject, and if their work was not degraded in quality by the majority of people, whose knowledge of the subject is based on paragraphs in books and mere mentions in college classes, then there might be a good, credible article on that specialized subject. Otherwise, there will be no article at all, a very amateurish-sounding article, or an article that looks like it might once have been pretty good, but which has been hacked to bits by hoi polloi. (Am I sounding elitist enough for you yet? Just wait.) One has only to compare the excellent Stanford Encyclopedia of Philosophy or The Internet Encyclopedia of Philosophy to Wikipedia's Philosophy section. From the point of view of a specialist, let's just say that Wikipedia needs a lot of work.</p>
+<p>Second problem: the dominance of difficult people, trolls, and their enablers. I stopped participating in Wikipedia when funding for my position ran out. That does not mean that I am merely mercenary; I might have continued to participate, were it not for a certain poisonous social or political atmosphere in the project.</p>
+<p>There are many ways to explain this problem, and I will start with just one. Far too much credence and respect accorded to people who in other Internet contexts would be labelled "trolls." There is a certain mindset associated with unmoderated Usenet groups and mailing lists that infects the collectively-managed Wikipedia project: if you react strongly to trolling, that reflects poorly on you, not (necessarily) on the troll. If you attempt to take trolls to task or demand that something be done about constant disruption by trollish behavior, the other listmembers will cry "censorship," attack you, and even come to the defense of the troll. This drama has played out thousands of times over the years on unmoderated Internet groups, and since about the fall of 2001 on the unmoderated Wikipedia.</p>
+<p>Wikipedia has, to its credit, done something about the most serious trolling and other kinds of abuse: there is an Arbitration Committee that provides a process whereby the most disruptive users of Wikipedia can be ejected from the project.</p>
+<p>But there are myriad abuses and problems that never make it to mediation, let alone arbitration. A few of the project's participants can be, not to put a nice word on it, pretty nasty. And this is tolerated. So, for any person who can and wants to work politely with well-meaning, rational, reasonably well-informed people--which is to say, to be sure, most people working on Wikipedia--the constant fighting can be so off-putting as to drive them away from the project. This explains why I am gone; it also explains why many others, including some extremely knowledgeable and helpful people, have left the project.</p>
+<p>The root problem: anti-elitism, or lack of respect for expertise. There is a deeper problem--or I, at least, regard it as a problem--which explains both of the above-elaborated problems. Namely, as a community, Wikipedia lacks the habit or tradition of respect for expertise. As a community, far from being elitist (which would, in this context, mean excluding the unwashed masses), it is anti-elitist (which, in this context, means that expertise is not accorded any special respect, and snubs and disrespect of expertise is tolerated). This is one of my failures: a policy that I attempted to institute in Wikipedia's first year, but for which I did not muster adequate support, was the policy of respecting and deferring politely to experts. (Those who were there will, I hope, remember that I tried very hard.)</p>
+<p>I need not recount the history of how this nascent policy eventually withered and died. Ultimately, it became very clear that the most active and influential members of the project--beginning with Jimmy Wales, who hired me to start a free encyclopedia project and who now manages Wikipedia and Wikimedia--were decidedly anti-elitist in the above-described sense.</p>
+<p>Consequently, nearly everyone with much expertise but little patience will avoid editing Wikipedia, because they will--at least if they are editing articles on articles that are subject to any sort of controversy--be forced to defend their edits on article discussion pages against attacks by nonexperts. This is not perhaps so bad in itself. But if the expert should have the gall to complain to the community about the problem, he or she will be shouted down (at worst) or politely asked to "work with" persons who have proven themselves to be unreasonable (at best).</p>
+<p>This lack of respect for expertise explains the first problem, because if the project participants had greater respect for expertise, they would have long since invited a board of academics and researchers to manage a culled version of Wikipedia (one that, I think, would not directly affect the way the main project is run). But because project participants have such a horror of the traditional deference to expertise, this sort of proposal has never been taken very seriously by most Wikipedians leading the project now. And so much the worse for Wikipedia and its reputation.</p>
+<p>This lack of respect for expertise and authority also explains the second problem, because again if the project participants had greater respect for expertise, there would necessarily be very little patience for those who deliberately disrupt the project. This is perhaps not obvious, so let me explain. To attact and retain the participation of experts, there would have to be little patience for those who do not understand or agree with Wikipedia's mission, or even for those pretentious mediocrities who are not able to work with others constructively and recognize when there are holes in their knowledge (collectively, probably the most disruptive group of all). A less tolerant attitude toward disruption would make the project more polite, welcoming, and indeed open to the vast majority of intelligent, well-meaning people on the Internet. As it is, there are far fewer genuine experts involved in the project (though there are some, of course) than there could and should be.</p>
+<p>It will probably be objected by some that, since I am not 100% committed to the most radical sort of openness, I do not understand why the project that I founded works: it works, I will be told, precisely because it is radically open--even anarchical.</p>
+<p>I know, of course, that Wikipedia works because it is radically open. I recognized that as soon as anyone; indeed, it was part of the original plan. But I firmly disagree with the notion that that Wikipedia-fertilizing openness requires disrespect toward expertise. The project can both prize and praise its most knowledgeable contributors, and permit contribution by persons with no credentials whatsoever. That, in fact, was my original conception of the project. It is sad that the project did not go in that direction.</p>
+<p>One thing that Wikipedia could do now, although I doubt that it is possible in the current atmosphere and with the current management, is to adopt an official policy of respect of and deference to expertise. Wikipedia's "key policies" have not changed since I was associated with the project; but if a policy of respect of and deference to expertise were adopted at that level, and if it were enforced somehow, perhaps the project would solve the problems described above.</p>
+<p>But don't hold your breath. Unless there is the equivalent of a revolution in the ranks of Wikipedia, the project will not adopt this sort of policy and make it a "key policy"; or if it does, the policy will probably be not be enforced. I certainly do not expect Jimmy Wales to change his mind. I have known him since 1994 and he is a smart and thoughtful guy; I am sure he has thought through his support of radical openness and his (what I call) anti-elitism. I doubt he will change his mind about these things. And unless he does change his mind, the project itself will probably not change.</p>
+<p>Nevertheless, everyone familiar with Wikipedia can now see the power of the basic Wikipedia idea and the crying need to get more experts on board and a publicly credible review process in place (so that there is a subset of "approved" articles--not a heavy-handed, complicated process, of course). The only way Wikipedia can achieve these things is to jettison its anti-elitism and to moderate its openness to trolls and fools; but it will almost certainly not do these things. Consequently, as Wikipedia increases in popularity and strength, I do not see how there can not be a more academic fork of the project in the future.</p>
+<p>I hope that a university, academic consortium, or thinktank can be found to pursue a project to release vetted versions of Wikipedia articles, and I hope that the new project's managers will understand very well what has made Wikipedia work as well as it has, before they adopt any policies.</p>
+<p><cite class="standalone">Larry Sanger</cite></p></article>
+  </main>
+
+  <footer>
+    <details>
+      <summary>
+        <div class="footer-row">
+          
+          meta
+          
+          <a href="/recent-changes">recent</a>
+          <a href="/complexity-classes" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Folklore/Wikipedia and Anti-Elitism.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Folklore/Wikipedia and Anti-Elitism.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'Wikipedia and Anti-Elitism'">reply</a>
+        </div>
+      </summary>
+      <div class="extra-small">
+        <div class="footer-row">
+          <a href="/sitemap">sitemap</a>
+          <a href="/complexity-classes">random</a>
+        </div>
+      </div>
+
+      
+
+      <p class="backlinks"><strong>Incoming:</strong>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
+      
+
+      
+      <p>
+        
+
+        <span class="backlinks">
+          <strong>
+            Updated:
+          </strong>
+          2024-06-17
+        </span>
+
+      </p>
+    </details>
+
+  </footer>
+  
+</body>
+
+</html>
