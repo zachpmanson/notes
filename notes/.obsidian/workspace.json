@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Machine Learning/Machine Learning.md",
+                "file": "Notes/Software/Programs/GNU/Screen/Screen.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Machine Learning/Machine Learning.md",
+                "file": "Notes/Software/Programs/GNU/Screen/Screen.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Machine Learning/Machine Learning.md",
+                "file": "Notes/Software/Programs/GNU/Screen/Screen.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Machine Learning/Machine Learning.md"
+                "file": "Notes/Software/Programs/GNU/Screen/Screen.md"
               }
             }
           }
@@ -147,8 +147,9 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "3e1ec611ed63d34a",
   "lastOpenFiles": [
+    "Notes/Software/Machine Learning/Machine Learning.md",
     "Archive/Lines.md",
     "Index.md",
     "Notes/Software/Development/Programming Languages/R/R.md",
@@ -179,7 +180,6 @@
     "Archive/Bookmarks/xkcd.md",
     "Meta/Stylesheet.md",
     "Notes/Courses/UWA Computer Science/Untitled.md",
-    "Notes/Courses/UWA Computer Science/Chris McDonald.md",
     "Media/chris-vs-cits.png",
     "Media/dialup-handshake-audio.png",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax",
