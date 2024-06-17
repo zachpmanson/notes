@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Exploits/XZ/XZ.md",
+                "file": "Archive/Folklore/Wikipedia and Anti-Elitism.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Exploits/XZ/XZ.md",
+                "file": "Archive/Folklore/Wikipedia and Anti-Elitism.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Exploits/XZ/XZ.md",
+                "file": "Archive/Folklore/Wikipedia and Anti-Elitism.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Exploits/XZ/XZ.md"
+                "file": "Archive/Folklore/Wikipedia and Anti-Elitism.md"
               }
             }
           }
@@ -149,6 +149,9 @@
   },
   "active": "3e1ec611ed63d34a",
   "lastOpenFiles": [
+    "Archive/Folklore/Originality Not Required.md",
+    "Archive/Folklore/Wikipedia and Anti-Elitism.md",
+    "Notes/Software/Exploits/XZ/XZ.md",
     "Notes/Software/Programs/GNU/Screen/Screen.md",
     "Notes/Software/Machine Learning/Machine Learning.md",
     "Archive/Lines.md",
@@ -177,9 +180,6 @@
     "Meta/About.md",
     "Meta/DNS.md",
     "Notes/Networks/Internet/Fediverse/Lemmy.md",
-    "Posts/Imposter Syndrome Day 632.md",
-    "Archive/Bookmarks/xkcd.md",
-    "Meta/Stylesheet.md",
     "Media/chris-vs-cits.png",
     "Media/dialup-handshake-audio.png",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax",
