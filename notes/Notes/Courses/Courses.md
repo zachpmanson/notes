@@ -11,3 +11,4 @@ subtitle: Notes on courses I have taken or textbooks I have read.
 	- [Cornell Advanced Compilers](https://www.cs.cornell.edu/courses/cs6120/2023fa/self-guided/)
 - Structure and Interpretation of Computer Programs
 - Crafting Interpreters
+- [CITS3005 Knowledge Graphs](https://teaching.csse.uwa.edu.au/units/CITS3005/) ([[UWA Computer Science]])

@@ -1,8 +1,6 @@
 ---
 subtitle: Why Wikipedia Must Jettison Its Anti-Elitism
 ---
-
-
 One of the founders of Wikipedia, Larry Sanger on its early attitudes, [written in 2004](https://web.archive.org/web/20050301000315/http://www.kuro5hin.org/story/2004/12/30/142458/25)
 . 
 
