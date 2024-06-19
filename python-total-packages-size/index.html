@@ -12,7 +12,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: macos recovery in australia</title>
+  <title>notes: python total packages size</title>
 </head>
 
 <body>
@@ -65,7 +65,7 @@
         
 
         <div class="flex flex-col text-left nav-links">
-          <a href="/macos-recovery-in-australia" class="activated-link">macOS Recovery in Australia</a>
+          <a href="/python-total-packages-size" class="activated-link">Python Total Packages Size</a>
           
           
           <a href="/alembic-revision-collision">Alembic Revision Collision</a>
@@ -204,7 +204,6 @@
           
           
           
-          <a href="/python-total-packages-size">Python Total Packages Size</a>
           
           
           
@@ -280,6 +279,7 @@
           
           
           
+          <a href="/macos-recovery-in-australia">macOS Recovery in Australia</a>
           
           
           
@@ -296,11 +296,21 @@
 
   <main>
     <header>
-      <h1>macOS Recovery in Australia</h1>
+      <h1>Python Total Packages Size</h1>
     </header>
 
-    <article><p>Apparently macOS <a href="/internet">Internet</a> recovery is fucked in Australia.  Holding Cmd+R while booting takes you into internet recovery.  Log into a Wi-Fi network, and then a spinning globe will appear.  Wait a while, around 20 min and it should show a loading bar and say that its "Starting Internet Recovery".  If this fails with error <code>2002F</code> and you are in Australia, try switching your <a href="/dns">DNS</a> to Google DNS, and then restart and try again.</p>
-<p>Found this solution in <a href="https://discussions.apple.com/thread/5219221?answerId=30613626022#30613626022">this thread</a>.</p></article>
+    <article><p>To get the total size of all the Python packages in a certain environment run this:</p>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>list<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="p">|</span><span class="w"> </span>tail<span class="w"> </span>-n<span class="w"> </span>+3<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{print $1}&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>pip<span class="w"> </span>show<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;Location:|Name:&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="p">|</span><span class="w"> </span>cut<span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39; &#39;</span><span class="w"> </span>-f<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="p">|</span><span class="w"> </span>paste<span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39; &#39;</span><span class="w"> </span>-<span class="w"> </span>-<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{print $2 &quot;/&quot; tolower($1)}&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="p">|</span><span class="w"> </span>xargs<span class="w"> </span>du<span class="w"> </span>-sh<span class="w"> </span><span class="m">2</span>&gt;<span class="w"> </span>/dev/null<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-hr
+</code></pre></div></article>
   </main>
 
   <footer>
@@ -311,27 +321,35 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/chords" class="not-extra-small">random</a>
+          <a href="/inspire-expire-and-conspire" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
-          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/macOS Recovery in Australia.md" class="desktop">edit</a>
-          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Problems/macOS Recovery in Australia.md" class="mobile">edit</a>
-          <a href="mailto:zachpmanson@gmail.com?subject=On 'macOS Recovery in Australia'">reply</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Python Total Packages Size.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Problems/Python Total Packages Size.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'Python Total Packages Size'">reply</a>
         </div>
       </summary>
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/chords">random</a>
+          <a href="/inspire-expire-and-conspire">random</a>
         </div>
       </div>
 
       
 
+      <p class="backlinks"><strong>Incoming:</strong>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
+      
+
       
       <p class="backlinks"><strong> <a href="/tags">Tags:</a></strong>
         
-        <a href="/tags#macos">#macos</a>
+        <a href="/tags#python">#python</a>
         
         </span>
       </p>
@@ -343,7 +361,7 @@
           <strong>
             Updated:
           </strong>
-          2024-04-26
+          2024-06-19
         </span>
 
       </p>
