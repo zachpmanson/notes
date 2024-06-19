@@ -18,3 +18,4 @@ pip list \
   | sort -hr
 ```
 
+Found this [here](https://stackoverflow.com/a/60850841).
