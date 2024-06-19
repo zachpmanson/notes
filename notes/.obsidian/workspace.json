@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Courses/Courses.md",
+                "file": "Archive/Problems/Python Total Packages Size.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Courses/Courses.md",
+                "file": "Archive/Problems/Python Total Packages Size.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Courses/Courses.md",
+                "file": "Archive/Problems/Python Total Packages Size.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Courses/Courses.md"
+                "file": "Archive/Problems/Python Total Packages Size.md"
               }
             }
           }
@@ -147,8 +147,11 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "3e1ec611ed63d34a",
   "lastOpenFiles": [
+    "Archive/Problems/Problems.md",
+    "Archive/Problems/Python Total Packages Size.md",
+    "Notes/Courses/Courses.md",
     "Archive/Folklore/Wikipedia and Anti-Elitism.md",
     "Archive/Folklore/Originality Not Required.md",
     "Notes/Software/Exploits/XZ/XZ.md",
@@ -171,15 +174,12 @@
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
     "Meta/Future Changes.md",
-    "Archive/Problems/Problems.md",
     "Notes/Software/Development/Programming Languages/Ruby/Ruby on Rails.md",
     "Notes/Software/Development/Programming Languages/Ruby",
     "Notes/Software/Design/Spotify Design Decisions.md",
     "Media/smart-shuffle-popup.png",
     "Meta/Meta.md",
     "Meta/About.md",
-    "Meta/DNS.md",
-    "Notes/Networks/Internet/Fediverse/Lemmy.md",
     "Media/chris-vs-cits.png",
     "Media/dialup-handshake-audio.png",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax",
