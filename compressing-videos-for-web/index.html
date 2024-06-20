@@ -320,10 +320,10 @@
 <span class="nv">output</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">2</span><span class="si">}</span><span class="s2">&quot;</span>
 
 
-ffmpeg<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">input</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span>-vf<span class="w"> </span><span class="nv">fps</span><span class="o">=</span><span class="m">30</span>,scale<span class="o">=</span><span class="s1">&#39;if(gt(iw,800),800,iw)&#39;</span>:<span class="s1">&#39;if(gt(iw,800),-2,ih)&#39;</span><span class="s2">&quot; -c:v pam -f image2pipe - | \</span>
-<span class="s2">    convert -delay 3 - -loop 0 -layers optimize gif:- | \</span>
-<span class="s2">    ffmpeg -i - -movflags faststart -pix_fmt yuv420p \</span>
-<span class="s2">    -vf &quot;</span><span class="nv">scale</span><span class="o">=</span>trunc<span class="o">(</span>iw/2<span class="o">)</span>*2:trunc<span class="o">(</span>ih/2<span class="o">)</span>*2<span class="s2">&quot; &quot;</span><span class="si">${</span><span class="nv">output</span><span class="si">}</span><span class="s2">&quot;</span>
+ffmpeg<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">input</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span>-vf<span class="w"> </span><span class="s2">&quot;fps=30,scale=&#39;if(gt(iw,800),800,iw)&#39;:&#39;if(gt(iw,800),-2,ih)&#39;&quot;</span><span class="w"> </span>-c:v<span class="w"> </span>pam<span class="w"> </span>-f<span class="w"> </span>image2pipe<span class="w"> </span>-<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>convert<span class="w"> </span>-delay<span class="w"> </span><span class="m">3</span><span class="w"> </span>-<span class="w"> </span>-loop<span class="w"> </span><span class="m">0</span><span class="w"> </span>-layers<span class="w"> </span>optimize<span class="w"> </span>gif:-<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>ffmpeg<span class="w"> </span>-i<span class="w"> </span>-<span class="w"> </span>-movflags<span class="w"> </span>faststart<span class="w"> </span>-pix_fmt<span class="w"> </span>yuv420p<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-vf<span class="w"> </span><span class="s2">&quot;scale=trunc(iw/2)*2:trunc(ih/2)*2&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">output</span><span class="si">}</span><span class="s2">&quot;</span>
 </code></pre></div></article>
   </main>
 
@@ -335,7 +335,7 @@ ffmpeg<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;<
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/prompt-cheatsheet" class="not-extra-small">random</a>
+          <a href="/thoughts-on-flash" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Compressing Videos For Web.md" class="desktop">edit</a>
@@ -346,7 +346,7 @@ ffmpeg<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;<
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/prompt-cheatsheet">random</a>
+          <a href="/thoughts-on-flash">random</a>
         </div>
       </div>
 
