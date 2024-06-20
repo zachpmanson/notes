@@ -13,19 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Programs/Programs.md",
+                "file": "Archive/Lines.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f7ddea7754afff0b",
+            "id": "4ce1f6fe8c6c3c1b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Programs/tmux.md",
+                "file": "Notes/Software/Development/Web Development/Web Development.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Programs/tmux.md",
+                "file": "Notes/Software/Development/Web Development/Web Development.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Programs/tmux.md",
+                "file": "Notes/Software/Development/Web Development/Web Development.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Programs/tmux.md"
+                "file": "Notes/Software/Development/Web Development/Web Development.md"
               }
             }
           }
@@ -160,16 +160,17 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "f7ddea7754afff0b",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Archive/Lines.md",
     "Notes/Software/Programs/Programs.md",
+    "Notes/Software/Programs/Git/Git.md",
     "Notes/Software/Programs/tmux.md",
     "Notes/Software/Programs/SQLite.md",
     "Notes/Software/Programs/GNU/Screen/Screen.md",
     "Archive/Problems/Problems.md",
     "Notes/Software/Development/Debugging.md",
     "Notes/Courses/UWA Computer Science/CITS2003/Michael Wise Quotes.md",
-    "Archive/Lines.md",
     "Archive/Problems/Compressing Videos For Web.md",
     "Media/sliding-menu.mp4",
     "Media/sr.mp4",
@@ -194,7 +195,6 @@
     "Posts/LinkedIn's Ghost Text Part II.md",
     "Media/linkedin-duplication-2.webm",
     "Posts/Untitled.md",
-    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Notes/Software/Development/Programming Languages/Ruby",
     "Media/smart-shuffle-popup.png",
     "Media/chris-vs-cits.png",

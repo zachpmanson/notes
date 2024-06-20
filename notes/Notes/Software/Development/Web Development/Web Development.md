@@ -2,6 +2,15 @@
 
 -- [Pablo Meier](https://morepablo.com/2022/11/programming-culture-in-the-late-aughts.html)
 
+Web development is an exercise in distributed execution of program, where some parts of your program execute in a (mostly) trusted environment on the server and some execute on a untrusted environment on the client.  Almost all problems in web development can be derived from this breakdown, and the limitations of each of these environments.
+
+1. How can these two environments communicate efficiently, securely, and effectively
+2. Which processing is better handled on the server and which is better handled on the client
+3. Half of your program runs in an untrusted environment
+4. Half of your program has a limited set of system resources that are shared between all users, performance of the server can impact all users simultaneously
+
+None of this has even gotten to JavaScript and CSS, each of which are their own rabbit-holes.
+
 ## Links
 
 - [JavaScript Gom Jabbar](https://frantic.im/javascript-gom-jabbar/)

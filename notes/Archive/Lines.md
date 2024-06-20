@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> as well-detailed in Hazel's memoir (and mercilessly abbreviated here),
+
+-- [Joe Brockmeier](https://lwn.net/SubscriberLink/978463/608c876c1153fd31/)
+
+---
+
 > This is a _hack_ and if you use it and something breaks, you get to keep both pieces.
 
 -- [Xe Iaso](https://xeiaso.net/notes/2024/cronchgif/)
