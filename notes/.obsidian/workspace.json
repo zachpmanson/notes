@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/Python Total Packages Size.md",
+                "file": "Archive/Problems/Problems.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c9846ec8e1a0c706",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Archive/Problems/Compressing Videos For Web.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "baa15ac8b6cb3d49",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Archive/Lines.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Problems/Python Total Packages Size.md",
+                "file": "Archive/Lines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Problems/Python Total Packages Size.md",
+                "file": "Archive/Lines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Problems/Python Total Packages Size.md"
+                "file": "Archive/Lines.md"
               }
             }
           }
@@ -147,8 +172,14 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "3e1ec611ed63d34a",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Archive/Problems/Compressing Videos For Web.md",
+    "Archive/Lines.md",
+    "Media/sliding-menu.mp4",
+    "Media/sr.mp4",
+    "Media/Screen Recording 2024-06-20 at 10.58.57.mov",
+    "Media/cronsh.sh",
     "Archive/Problems/Problems.md",
     "Archive/Problems/Python Total Packages Size.md",
     "Notes/Courses/Courses.md",
@@ -157,7 +188,6 @@
     "Notes/Software/Exploits/XZ/XZ.md",
     "Notes/Software/Programs/GNU/Screen/Screen.md",
     "Notes/Software/Machine Learning/Machine Learning.md",
-    "Archive/Lines.md",
     "Index.md",
     "Notes/Software/Development/Programming Languages/R/R.md",
     "Notes/Software/Development/Programming Languages/Programming Languages.md",
@@ -178,8 +208,6 @@
     "Notes/Software/Development/Programming Languages/Ruby",
     "Notes/Software/Design/Spotify Design Decisions.md",
     "Media/smart-shuffle-popup.png",
-    "Meta/Meta.md",
-    "Meta/About.md",
     "Media/chris-vs-cits.png",
     "Media/dialup-handshake-audio.png",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax",
@@ -189,12 +217,8 @@
     "Media/ahnvn.png",
     "Media/ahnvn.jpg",
     "Notes/Networks/Internet/Fediverse/Mastodon",
-    "Notes/Software/Development/Kinds of Work",
-    "Untitled",
     "Media/sqiggle.png",
     "Media/dark-mode.png",
-    "Notes/Software/Design",
-    "Notes/Software/Exploits/XZ",
     "Untitled.canvas"
   ]
 }
