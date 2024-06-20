@@ -13,7 +13,66 @@
             <link>https://notes.zachmanson.com/venting</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Thu, 20 Jun 2024 07:03:16 </lastBuildDate>
+        <lastBuildDate>Thu, 20 Jun 2024 07:04:36 </lastBuildDate>
+        
+        <item>
+            <title>LinkedIn's Ghost Text</title>
+            <link>https://notes.zachmanson.com/linkedins-ghost-text</link>
+            
+            <description>Why does LinkedIn copy text twice?</description>
+            
+            <content:encoded>
+                <![CDATA[<p>Why does LinkedIn do this?</p>
+<video autoplay loop muted>
+   <source src="/media/linkedin-duplication.webm" type="video/webm">
+</video>
+
+<p>If you look into the source of a LinkedIn profile page (at your own personal risk) you'll find a text element like this</p>
+<p><img alt="" src="/media/linkedin-element.png" /></p>
+<p>will have HTML like this</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;display-flex flex-row justify-space-between&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;</span>
+<span class="s">          display-flex flex-column full-width&quot;</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;display-flex flex-wrap align-items-center full-height&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mr1 t-bold&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Product manager, Creative coder<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Product manager, Creative coder<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="cm">&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Freelancer/Consultant<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Freelancer/Consultant<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal t-black--light&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>2009 - 2018 · 9 yrs<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>2009 - 2018 · 9 yrs<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal t-black--light&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Europe<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Europe<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+    <span class="cm">&lt;!----&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pvs-entity__action-container&quot;</span><span class="p">&gt;</span>
+        <span class="cm">&lt;!----&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Gross.  Why the hidden duplicated text?  Why the empty comments?  Why seperate aria versions of text?  Is this related to using Ember?  LinkedIn has so many little unpleasantries like this.</p>
+<hr />
+<h2 id="2024-update-linkedin-still-shit">2024 Update: LinkedIn Still Shit</h2>
+<p>Still here.  Still broken. Still annoying</p>
+<video autoplay loop muted>
+   <source src="/media/linkedin-duplication-2.webm" type="video/webm">
+</video>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/linkedins-ghost-text</guid>
+            <pubDate>2023-04-16</pubDate>
+        </item>
         
         <item>
             <title>RTK Query vs. Infinite Scrolling</title>
@@ -242,65 +301,6 @@
             </content:encoded>
             <guid isPermaLink="false">https://notes.zachmanson.com/rtk-query-vs.-infinite-scrolling</guid>
             <pubDate>2024-06-03</pubDate>
-        </item>
-        
-        <item>
-            <title>LinkedIn's Ghost Text</title>
-            <link>https://notes.zachmanson.com/linkedins-ghost-text</link>
-            
-            <description>Why does LinkedIn copy text twice?</description>
-            
-            <content:encoded>
-                <![CDATA[<p>Why does LinkedIn do this?</p>
-<video autoplay loop muted>
-   <source src="/media/linkedin-duplication.webm" type="video/webm">
-</video>
-
-<p>If you look into the source of a LinkedIn profile page (at your own personal risk) you'll find a text element like this</p>
-<p><img alt="" src="/media/linkedin-element.png" /></p>
-<p>will have HTML like this</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;display-flex flex-row justify-space-between&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;</span>
-<span class="s">          display-flex flex-column full-width&quot;</span><span class="p">&gt;</span>
-
-        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;display-flex flex-wrap align-items-center full-height&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mr1 t-bold&quot;</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Product manager, Creative coder<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Product manager, Creative coder<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="cm">&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Freelancer/Consultant<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Freelancer/Consultant<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal t-black--light&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>2009 - 2018 · 9 yrs<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>2009 - 2018 · 9 yrs<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal t-black--light&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Europe<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Europe<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-
-    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-
-    <span class="cm">&lt;!----&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pvs-entity__action-container&quot;</span><span class="p">&gt;</span>
-        <span class="cm">&lt;!----&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></div>
-<p>Gross.  Why the hidden duplicated text?  Why the empty comments?  Why seperate aria versions of text?  Is this related to using Ember?  LinkedIn has so many little unpleasantries like this.</p>
-<hr />
-<h2 id="2024-update-linkedin-still-shit">2024 Update: LinkedIn Still Shit</h2>
-<p>Still here.  Still broken. Still annoying</p>
-<video autoplay loop muted>
-   <source src="/media/linkedin-duplication-2.webm" type="video/webm">
-</video>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/linkedins-ghost-text</guid>
-            <pubDate>2023-04-16</pubDate>
         </item>
         
         <item>
