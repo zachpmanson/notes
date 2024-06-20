@@ -13,50 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/Problems.md",
+                "file": "Notes/Software/Programs/Programs.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c9846ec8e1a0c706",
+            "id": "f7ddea7754afff0b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/Compressing Videos For Web.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "baa15ac8b6cb3d49",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Software/Development/Debugging.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7f5aad1373306d4f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Courses/UWA Computer Science/CITS2003/Michael Wise Quotes.md",
+                "file": "Notes/Software/Programs/Tmux.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -122,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Debugging.md",
+                "file": "Notes/Software/Programs/Tmux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Debugging.md",
+                "file": "Notes/Software/Programs/Tmux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Debugging.md"
+                "file": "Notes/Software/Programs/Tmux.md"
               }
             }
           }
@@ -184,13 +160,17 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "f7ddea7754afff0b",
   "lastOpenFiles": [
-    "Notes/Courses/UWA Computer Science/CITS2003/Michael Wise Quotes.md",
+    "Notes/Software/Programs/Programs.md",
+    "Notes/Software/Programs/Tmux.md",
+    "Notes/Software/Programs/SQLite.md",
+    "Notes/Software/Programs/GNU/Screen/Screen.md",
+    "Archive/Problems/Problems.md",
     "Notes/Software/Development/Debugging.md",
+    "Notes/Courses/UWA Computer Science/CITS2003/Michael Wise Quotes.md",
     "Archive/Lines.md",
     "Archive/Problems/Compressing Videos For Web.md",
-    "Archive/Problems/Problems.md",
     "Media/sliding-menu.mp4",
     "Media/sr.mp4",
     "Media/Screen Recording 2024-06-20 at 10.58.57.mov",
@@ -200,7 +180,6 @@
     "Archive/Folklore/Wikipedia and Anti-Elitism.md",
     "Archive/Folklore/Originality Not Required.md",
     "Notes/Software/Exploits/XZ/XZ.md",
-    "Notes/Software/Programs/GNU/Screen/Screen.md",
     "Notes/Software/Machine Learning/Machine Learning.md",
     "Index.md",
     "Notes/Software/Development/Programming Languages/R/R.md",
@@ -216,9 +195,6 @@
     "Media/linkedin-duplication-2.webm",
     "Posts/Untitled.md",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
-    "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
-    "Meta/Future Changes.md",
-    "Notes/Software/Development/Programming Languages/Ruby/Ruby on Rails.md",
     "Notes/Software/Development/Programming Languages/Ruby",
     "Media/smart-shuffle-popup.png",
     "Media/chris-vs-cits.png",
