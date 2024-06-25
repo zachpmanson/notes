@@ -9,6 +9,7 @@ subtitle: A comic strip by Randall Munroe.
 - [Standards](https://xkcd.com/927/)
 - [Citogenesis](https://xkcd.com/978/)
 - [Academia vs. Business](https://xkcd.com/664/)
+- [Is It Worth the Time?](https://xkcd.com/1205/)
 ## Other Links
 
 - [How Random is xkcd?](https://hardmath123.github.io/xkcd-random.html)

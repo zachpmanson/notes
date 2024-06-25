@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Web Development/Web Development.md",
+                "file": "Archive/Problems/Problems.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4a73dc3492cf54cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Archive/Problems/Android File Transfer on macOS.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Web Development/Web Development.md",
+                "file": "Archive/Problems/Android File Transfer on macOS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Web Development/Web Development.md",
+                "file": "Archive/Problems/Android File Transfer on macOS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Web Development/Web Development.md"
+                "file": "Archive/Problems/Android File Transfer on macOS.md"
               }
             }
           }
@@ -160,15 +172,21 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "4a73dc3492cf54cf",
   "lastOpenFiles": [
+    "Archive/Problems/Problems.md",
+    "Archive/Problems/Android File Transfer on macOS.md",
+    "Archive/Bookmarks/xkcd.md",
     "Archive/Lines.md",
+    "Notes/Software/Development/Web Development/Web Development.md",
+    "Notes/Software/Development/Web Development/Themed Stylesheets.md",
+    "Notes/Software/Development/Web Development/React.md",
+    "Notes/Software/Development/Web Development/HTML First Development.md",
     "Notes/Software/Programs/Programs.md",
     "Notes/Software/Programs/Git/Git.md",
     "Notes/Software/Programs/tmux.md",
     "Notes/Software/Programs/SQLite.md",
     "Notes/Software/Programs/GNU/Screen/Screen.md",
-    "Archive/Problems/Problems.md",
     "Notes/Software/Development/Debugging.md",
     "Notes/Courses/UWA Computer Science/CITS2003/Michael Wise Quotes.md",
     "Archive/Problems/Compressing Videos For Web.md",
@@ -187,14 +205,8 @@
     "Notes/Software/Development/Programming Languages/Programming Languages.md",
     "Notes/Software/Development/Programming Languages/R",
     "Archive/Problems/Cobertura Not Allow on GitLab.md",
-    "Notes/Software/Microsoft Product Names.md",
-    "Notes/Software/Development/Programming Languages/Ruby/Ruby.md",
-    "Posts/LinkedIn's Ghost Text.md",
     "Media/pal.jpg",
-    "Archive/Fiction/Maple Cybernetics Teledex.md",
-    "Posts/LinkedIn's Ghost Text Part II.md",
     "Media/linkedin-duplication-2.webm",
-    "Posts/Untitled.md",
     "Notes/Software/Development/Programming Languages/Ruby",
     "Media/smart-shuffle-popup.png",
     "Media/chris-vs-cits.png",
