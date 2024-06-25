@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> Existential crisis aren't funny but aren't they... comedy flavoured?
+
+-- [Afterthoughts](https://www.youtube.com/watch?v=LhZxoKNopJQ)
+
+---
+
 > Resources are limited, but resources are less limited than they have ever been before.
 
 -- [Paul Farmer](https://youtu.be/qYQhweyczaw?si=WcUT568f28y8FddP&t=395)

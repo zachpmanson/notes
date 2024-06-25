@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Programs/GNU/Bash/Bash Syntax.md",
+                "file": "Archive/Lines.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Programs/GNU/Bash/Bash Syntax.md",
+                "file": "Archive/Lines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Programs/GNU/Bash/Bash Syntax.md",
+                "file": "Archive/Lines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Programs/GNU/Bash/Bash Syntax.md"
+                "file": "Archive/Lines.md"
               }
             }
           }
@@ -172,8 +172,9 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "4a73dc3492cf54cf",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Programs/GNU/Bash/Bash Syntax.md",
     "Archive/Problems/Android File Transfer on macOS.md",
     "Archive/Problems/Problems.md",
     "Archive/Bookmarks/xkcd.md",
@@ -204,7 +205,6 @@
     "Notes/Software/Development/Programming Languages/R/R.md",
     "Notes/Software/Development/Programming Languages/Programming Languages.md",
     "Notes/Software/Development/Programming Languages/R",
-    "Archive/Problems/Cobertura Not Allow on GitLab.md",
     "Media/pal.jpg",
     "Media/linkedin-duplication-2.webm",
     "Notes/Software/Development/Programming Languages/Ruby",
