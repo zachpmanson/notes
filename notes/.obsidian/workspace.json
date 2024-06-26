@@ -25,14 +25,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Design/Spotify Design Decisions.md",
+                "file": "Notes/Software/Unix/macOS/macOS CLI Tools.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3e64f50bc8ee7620",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Archive/Archive.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "23daa6c20e3662c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Archive/On the Origins of Rust.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -98,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Design/Spotify Design Decisions.md",
+                "file": "Archive/On the Origins of Rust.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Design/Spotify Design Decisions.md",
+                "file": "Archive/On the Origins of Rust.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Design/Spotify Design Decisions.md"
+                "file": "Archive/On the Origins of Rust.md"
               }
             }
           }
@@ -160,8 +184,13 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "4ce1f6fe8c6c3c1b",
+  "active": "23daa6c20e3662c3",
   "lastOpenFiles": [
+    "Archive/Archive.md",
+    "Archive/On the Origins of Rust.md",
+    "Notes/Software/Unix/macOS/macOS Problems.md",
+    "Notes/Software/Unix/macOS/macOS CLI Tools.md",
+    "Notes/Software/Design/Spotify Design Decisions.md",
     "Archive/Problems/Problems.md",
     "Archive/Lines.md",
     "Notes/Software/Programs/GNU/Bash/Bash Syntax.md",
@@ -187,11 +216,6 @@
     "Notes/Courses/Courses.md",
     "Archive/Folklore/Wikipedia and Anti-Elitism.md",
     "Archive/Folklore/Originality Not Required.md",
-    "Notes/Software/Exploits/XZ/XZ.md",
-    "Notes/Software/Machine Learning/Machine Learning.md",
-    "Index.md",
-    "Notes/Software/Development/Programming Languages/R/R.md",
-    "Notes/Software/Development/Programming Languages/Programming Languages.md",
     "Notes/Software/Development/Programming Languages/R",
     "Media/pal.jpg",
     "Media/linkedin-duplication-2.webm",
