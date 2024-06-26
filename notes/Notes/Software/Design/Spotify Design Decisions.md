@@ -88,12 +88,12 @@ Who the fuck let this happen.
 
 For years, if you used the text filter on your Liked Songs and then played one of the songs, the queue would only populate with songs that matched that filter.  This could be useful for only listening to a particular artist within your Liked Songs, but was usually just annoying.
 
-As of 2023 it appears this behaviour has been removed.
+As of 2024 it appears this behaviour has been removed.
 ## Search Results Are Actually a Playlist
 
 Similar to the previous issue, if you searched for a song using the search tab, and then played one of the results, the queue would populate with all the other search results meaning you would hear the same song repeated several times, or covers, or random other tracks with similar names.
 
-As of 2023 it appears this behaviour has been removed.
+As of 2024 it appears this behaviour has been removed.
 
 ## Upcoming Complaints
 
