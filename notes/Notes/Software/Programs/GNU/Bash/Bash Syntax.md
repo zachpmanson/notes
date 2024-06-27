@@ -141,6 +141,7 @@ Operations
 ## Globbing
 
 A method of wildcard matching.
+
 - `*`
 	- matches any number of characters
 - `?`
