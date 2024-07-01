@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Programs/GNU/Bash/Bash Syntax.md",
+                "file": "Notes/Software/Design/Kinde Design Decisions.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Programs/GNU/Bash/Bash Syntax.md",
+                "file": "Notes/Software/Design/Kinde Design Decisions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Programs/GNU/Bash/Bash Syntax.md",
+                "file": "Notes/Software/Design/Kinde Design Decisions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Programs/GNU/Bash/Bash Syntax.md"
+                "file": "Notes/Software/Design/Kinde Design Decisions.md"
               }
             }
           }
@@ -184,15 +184,24 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "4ce1f6fe8c6c3c1b",
   "lastOpenFiles": [
+    "Media/Screenshot 2024-07-01 at 10.24.48.png",
+    "Media/kinde-2.png",
+    "Notes/Software/Design/Kinde Design Decisions.md",
+    "Media/kinde-1.png",
+    "Notes/Software/Design/Fun Design.md",
+    "Archive/Bookmarks/Websites.md",
+    "Archive/Bookmarks/Wikipedia Articles.md",
+    "Archive/Bookmarks/Site Directories.md",
+    "Archive/Bookmarks/Lists.md",
+    "Archive/Lines.md",
     "Notes/Software/Unix/macOS/macOS Problems.md",
     "Notes/Software/Unix/macOS/macOS CLI Tools.md",
     "Archive/On the Origin of Rust.md",
     "Archive/Archive.md",
     "Notes/Software/Design/Spotify Design Decisions.md",
     "Archive/Problems/Problems.md",
-    "Archive/Lines.md",
     "Notes/Software/Programs/GNU/Bash/Bash Syntax.md",
     "Archive/Problems/Android File Transfer on macOS.md",
     "Archive/Bookmarks/xkcd.md",
@@ -205,17 +214,10 @@
     "Notes/Software/Programs/tmux.md",
     "Notes/Software/Programs/SQLite.md",
     "Notes/Software/Programs/GNU/Screen/Screen.md",
-    "Notes/Software/Development/Debugging.md",
-    "Notes/Courses/UWA Computer Science/CITS2003/Michael Wise Quotes.md",
-    "Archive/Problems/Compressing Videos For Web.md",
     "Media/sliding-menu.mp4",
     "Media/sr.mp4",
     "Media/Screen Recording 2024-06-20 at 10.58.57.mov",
     "Media/cronsh.sh",
-    "Archive/Problems/Python Total Packages Size.md",
-    "Notes/Courses/Courses.md",
-    "Archive/Folklore/Wikipedia and Anti-Elitism.md",
-    "Archive/Folklore/Originality Not Required.md",
     "Notes/Software/Development/Programming Languages/R",
     "Media/pal.jpg",
     "Media/linkedin-duplication-2.webm",
@@ -230,8 +232,6 @@
     "Media/ahnvn.png",
     "Media/ahnvn.jpg",
     "Notes/Networks/Internet/Fediverse/Mastodon",
-    "Media/sqiggle.png",
-    "Media/dark-mode.png",
     "Untitled.canvas"
   ]
 }
