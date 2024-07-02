@@ -1,8 +1,6 @@
 ---
 subtitle: Freezefun Footgun
 ---
-
-
 Freezegun is a python library designed to override datetime so that tests can run with consistent timestamps.  This works great in most cases, but can break when used with SQLAlchemy relationships.
 
 If you use `func.current_date()` or `func.now()` from SQLAlchemy func, they will be generated in the database so won't respect the frozen datetime used by freezegun.
