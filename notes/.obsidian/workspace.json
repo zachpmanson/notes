@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Design/Kinde Design Decisions.md",
+                "file": "Archive/Problems/Git Ignore Changes to a File.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Design/Kinde Design Decisions.md",
+                "file": "Archive/Problems/Git Ignore Changes to a File.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Design/Kinde Design Decisions.md",
+                "file": "Archive/Problems/Git Ignore Changes to a File.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Design/Kinde Design Decisions.md"
+                "file": "Archive/Problems/Git Ignore Changes to a File.md"
               }
             }
           }
@@ -186,9 +186,11 @@
   },
   "active": "4ce1f6fe8c6c3c1b",
   "lastOpenFiles": [
+    "Notes/Software/Programs/Git/Git.md",
+    "Archive/Problems/Git Ignore Changes to a File.md",
+    "Notes/Software/Design/Kinde Design Decisions.md",
     "Media/Screenshot 2024-07-01 at 10.24.48.png",
     "Media/kinde-2.png",
-    "Notes/Software/Design/Kinde Design Decisions.md",
     "Media/kinde-1.png",
     "Notes/Software/Design/Fun Design.md",
     "Archive/Bookmarks/Websites.md",
@@ -210,7 +212,6 @@
     "Notes/Software/Development/Web Development/React.md",
     "Notes/Software/Development/Web Development/HTML First Development.md",
     "Notes/Software/Programs/Programs.md",
-    "Notes/Software/Programs/Git/Git.md",
     "Notes/Software/Programs/tmux.md",
     "Notes/Software/Programs/SQLite.md",
     "Notes/Software/Programs/GNU/Screen/Screen.md",
@@ -230,7 +231,6 @@
     "Notes/Networks",
     "Media/mctl-routes.png",
     "Media/ahnvn.png",
-    "Media/ahnvn.jpg",
     "Notes/Networks/Internet/Fediverse/Mastodon",
     "Untitled.canvas"
   ]
