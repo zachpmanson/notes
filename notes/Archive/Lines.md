@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> Write to please just one person. If you open a window and make love to the world, so to speak, your story will get pneumonia.
+
+-- [Kurt Vonnegut ](https://www.goodreads.com/quotes/231652-write-to-please-just-one-person-if-you-open-a)
+
+---
+
 > Your soul might occasionally emit statements that are legally actionable,
 
 -- [Steve Yegge](https://sites.google.com/site/steveyegge2/you-should-write-blogs)
