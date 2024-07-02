@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> Your soul might occasionally emit statements that are legally actionable,
+
+-- [Steve Yegge](https://sites.google.com/site/steveyegge2/you-should-write-blogs)
+
+---
+
 > Existential crisis aren't funny but aren't they... comedy flavoured?
 
 -- [Afterthoughts](https://www.youtube.com/watch?v=LhZxoKNopJQ)

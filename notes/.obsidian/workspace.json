@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/Git Ignore Changes to a File.md",
+                "file": "Archive/Lines.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Problems/Git Ignore Changes to a File.md",
+                "file": "Archive/Lines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Problems/Git Ignore Changes to a File.md",
+                "file": "Archive/Lines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Problems/Git Ignore Changes to a File.md"
+                "file": "Archive/Lines.md"
               }
             }
           }
@@ -186,8 +186,8 @@
   },
   "active": "4ce1f6fe8c6c3c1b",
   "lastOpenFiles": [
-    "Notes/Software/Programs/Git/Git.md",
     "Archive/Problems/Git Ignore Changes to a File.md",
+    "Notes/Software/Programs/Git/Git.md",
     "Notes/Software/Design/Kinde Design Decisions.md",
     "Media/Screenshot 2024-07-01 at 10.24.48.png",
     "Media/kinde-2.png",
