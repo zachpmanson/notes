@@ -1,3 +1,7 @@
+---
+tags:
+  - relics
+---
 XML has the concept of self-closing tags, where a tag can end with a `/` and then omit its closing tag, containing no content beyond the tag name and attributes. While it share a lot of DNA with XML, HTML doesn't actually support self closing tags, ignoring any slash at the end of a tag. These pairs are all semantically identical.
 
 ```html
@@ -13,7 +17,7 @@ XML has the concept of self-closing tags, where a tag can end with a `/` and the
 
 That the first two are HTML void tags, meaning that they do not need a closing tag, so self-closing the tag is just a style choice. The last one is a problem, since `div` is not a void tag.  This is the problem that was discovered by Rich Harris in his issue [[Svelte parses HTML all wrong]].
 
-I cannot imagine a sane human who would intent for `<div />` to mean "the start of a div", and I don't not think we should enable this.  Ideally I would want warnings or errors to appear in all cases where this would matter.
+I cannot imagine a sane human who would intend for `<div />` to mean "the start of a div", and I don't not think we should enable this.  Ideally I would want warnings or errors to appear in all cases where this would matter.
 
 An interesting detail is that the general way self-closing tags are used in HTML is slightly different from in XML. XML traditionally does not put a space before the closing tag.
 
