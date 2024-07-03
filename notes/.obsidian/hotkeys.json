@@ -19,5 +19,21 @@
       "key": "F1"
     }
   ],
-  "app:open-help": []
+  "app:open-help": [],
+  "editor:swap-line-down": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "ArrowDown"
+    }
+  ],
+  "editor:swap-line-up": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "ArrowUp"
+    }
+  ]
 }

@@ -37,14 +37,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Folklore/Svelte parses HTML all wrong.md",
+                "file": "Notes/Software/Development/Web Development/HTML First Development.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4c4d976b54479052",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Software/Development/Web Development/HTML Self-Closing Tags.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Folklore/Svelte parses HTML all wrong.md",
+                "file": "Notes/Software/Development/Web Development/HTML Self-Closing Tags.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Folklore/Svelte parses HTML all wrong.md",
+                "file": "Notes/Software/Development/Web Development/HTML Self-Closing Tags.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Folklore/Svelte parses HTML all wrong.md"
+                "file": "Notes/Software/Development/Web Development/HTML Self-Closing Tags.md"
               }
             }
           }
@@ -172,10 +184,12 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "7beccd52b777de74",
+  "active": "4c4d976b54479052",
   "lastOpenFiles": [
-    "Archive/Folklore/The Descent to C.md",
+    "Notes/Software/Development/Web Development/HTML First Development.md",
+    "Notes/Software/Development/Web Development/HTML Self-Closing Tags.md",
     "Archive/Folklore/Svelte parses HTML all wrong.md",
+    "Archive/Folklore/The Descent to C.md",
     "Archive/Problems/Android File Transfer on macOS.md",
     "Archive/Problems/Python Freezegun vs SQLAlchemy.md",
     "Archive/Problems/Git Ignore Changes to a File.md",
@@ -201,8 +215,6 @@
     "Notes/Software/Development/Web Development/Web Development.md",
     "Notes/Software/Development/Web Development/Themed Stylesheets.md",
     "Notes/Software/Development/Web Development/React.md",
-    "Notes/Software/Development/Web Development/HTML First Development.md",
-    "Notes/Software/Programs/Programs.md",
     "Media/sliding-menu.mp4",
     "Media/sr.mp4",
     "Media/Screen Recording 2024-06-20 at 10.58.57.mov",
