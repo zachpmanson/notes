@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Archive/Problems/Git Subdirectory Branch.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "about",
+                "query": "Notes/Software/Programs/Git/Git",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -102,7 +102,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -122,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Archive/Problems/Git Subdirectory Branch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Archive/Problems/Git Subdirectory Branch.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Lines.md"
+                "file": "Archive/Problems/Git Subdirectory Branch.md"
               }
             }
           }
@@ -184,8 +185,9 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "4c4d976b54479052",
+  "active": "ae2026764fcf906e",
   "lastOpenFiles": [
+    "Archive/Lines.md",
     "Notes/Software/Development/Web Development/HTML Self-Closing Tags.md",
     "Notes/Software/Development/Web Development/HTML First Development.md",
     "Archive/Folklore/Svelte parses HTML all wrong.md",
@@ -194,7 +196,6 @@
     "Archive/Problems/Python Freezegun vs SQLAlchemy.md",
     "Archive/Problems/Git Ignore Changes to a File.md",
     "Notes/Software/Programs/Git/Git.md",
-    "Archive/Lines.md",
     "Notes/Software/Design/Kinde Design Decisions.md",
     "Media/Screenshot 2024-07-01 at 10.24.48.png",
     "Media/kinde-2.png",
