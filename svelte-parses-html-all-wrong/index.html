@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="icon" href="/static/icon/icon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+
+  <link rel="alternate" type="application/rss+xml" href="https://notes.zachmanson.com/posts.xml" title="notes: posts" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: svelte parses html all wrong</title>
+</head>
+
+<body>
+  <nav>
+    <div class="main-icon">
+      <a href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
+          viewBox="26.88 56.87 216.25 156.27">
+          <path
+            style="stroke-width: 15px; stroke-linecap: butt; stroke-linejoin: round; stroke: rgb(10, 10, 10); fill: none;"
+            d="M135,75 A60,60 0 0,0 75,135 A60,60 0 0,0 135,195 A60,60 0 0,0 195,135 A60,60 0 0,0 135,75 M45,90 A15,15 0 0,1 60,75 A15,15 0 0,1 75,90 L75,135 L75,180 A15,15 0 0,1 60,195 A15,15 0 0,1 45,180 M225,90 A15,15 0 0,0 210,75 A15,15 0 0,0 195,90 L195,135 L195,180 A15,15 0 0,0 210,195 L210,195 A15,15 0 0,0 225,180 M135,105 A30,30 0 0,1 165,135 A30,30 0 0,1 135,165 A30,30 0 0,1 105,135 A30,30 0 0,1 135,105 M45,105 L45,105 L45,165 M225,105 L225,105 L225,165 ">
+          </path>
+        </svg>
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
+      <div class="nav-segments">
+        
+
+        <div class="flex flex-col text-left nav-links">
+          <a href="/folklore" class="activated-link">Folklore</a>
+          
+          
+          <a href="/bookmarks">Bookmarks</a>
+          
+          
+          
+          <a href="/fiction">Fiction</a>
+          
+          
+          
+          
+          
+          
+          <a href="/lines">Lines</a>
+          
+          
+          
+          <a href="/on-the-origin-of-rust">On the Origin of Rust</a>
+          
+          
+          
+          <a href="/problems">Problems</a>
+          
+          
+          
+          <a href="/templates">Templates</a>
+          
+          
+        </div>
+        
+
+        
+
+        <div class="flex flex-col text-left nav-links">
+          <a href="/svelte-parses-html-all-wrong" class="activated-link">Svelte parses HTML all wrong</a>
+          
+          
+          <a href="/10-rules-of-internet">10 Rules of Internet</a>
+          
+          
+          
+          <a href="/a-conspiracy-to-kill-ie6">A Conspiracy To Kill IE6</a>
+          
+          
+          
+          <a href="/a-story-about-magic">A Story About 'Magic'</a>
+          
+          
+          
+          <a href="/alice-in-modeland">Alice in Modeland</a>
+          
+          
+          
+          <a href="/aliens-and-calendars">Aliens and Calendars</a>
+          
+          
+          
+          <a href="/amazons-first-job-posting">Amazon's First Job Posting</a>
+          
+          
+          
+          <a href="/an-update-on-facebook-video-marketing-metrics">An Update on Facebook Video Marketing Metrics</a>
+          
+          
+          
+          <a href="/bell-labs-productivity-mystery">Bell Labs' Productivity Mystery</a>
+          
+          
+          
+          <a href="/best-practices-for-time-travellers">Best Practices for Time Travellers</a>
+          
+          
+          
+          <a href="/bill-gates-tries-to-install-windows-movie-maker">Bill Gates Tries To Install Windows Movie Maker</a>
+          
+          
+          
+          <a href="/bill-gates-wrote-fat-on-an-airplane">Bill Gates Wrote FAT on an Airplane</a>
+          
+          
+          
+          <a href="/blinkenlichten">Blinkenlichten</a>
+          
+          
+          
+          <a href="/c-locale-braindeath">C Locale Braindeath</a>
+          
+          
+          
+          <a href="/cannot-simultaneously-fix-and-keep-job.-therefore-wont-fix.">Cannot simultaneously fix and keep job. Therefore, won't fix.</a>
+          
+          
+          
+          <a href="/christ-mcdonald">Christ McDonald</a>
+          
+          
+          
+          <a href="/competing-with-gpt">Competing with GPT</a>
+          
+          
+          
+          <a href="/context-menu-hell">Context Menu Hell</a>
+          
+          
+          
+          <a href="/digg-v4">Digg v4</a>
+          
+          
+          
+          <a href="/dispatch-from-the-cyberpunk-city">Dispatch From the Cyberpunk City</a>
+          
+          
+          
+          <a href="/do-things-tell-people">Do Things, Tell People</a>
+          
+          
+          
+          <a href="/ellsbergs-advice-for-kissinger">Ellsberg's Advice For Kissinger</a>
+          
+          
+          
+          <a href="/facing-the-street">Facing the Street</a>
+          
+          
+          
+          <a href="/factory-factory-factory">Factory Factory Factory</a>
+          
+          
+          
+          <a href="/feminist-server-manifesto">Feminist Server Manifesto</a>
+          
+          
+          
+          <a href="/file-over-app">File Over App</a>
+          
+          
+          
+          <a href="/git-koans">Git Koans</a>
+          
+          
+          
+          <a href="/growth-at-tumblr-and-wordpress">Growth at Tumblr and Wordpress</a>
+          
+          
+          
+          <a href="/guerilla-open-access-manifesto">Guerilla Open Access Manifesto</a>
+          
+          
+          
+          <a href="/heaven-banning">Heaven Banning</a>
+          
+          
+          
+          <a href="/i-no-longer-built-software">I No Longer Built Software</a>
+          
+          
+          
+          <a href="/incomplete-list-of-mistakes-in-the-design-of-css">Incomplete List of Mistakes in the Design of CSS</a>
+          
+          
+          
+          <a href="/interviewing-for-canonical">Interviewing for Canonical</a>
+          
+          
+          
+          <a href="/jsx-react-native-and-typescript">JSX, React Native, and TypeScript</a>
+          
+          
+          
+          <a href="/kurt-vonnegut-grades">Kurt Vonnegut Grades</a>
+          
+          
+          
+          <a href="/larry-page-builds-a-web-robot">Larry Page Builds a Web Robot</a>
+          
+          
+          
+          <a href="/life-of-an-oracle-developer">Life of an Oracle Developer</a>
+          
+          
+          
+          <a href="/man-spends-entire-career-mastering-crappy-codebase">Man Spends Entire Career Mastering Crappy Codebase</a>
+          
+          
+          
+          <a href="/no-coffee-==-no-job">No Coffee == No Job</a>
+          
+          
+          
+          <a href="/no-dogs-were-harmed-in-the-making-of-this-app">No dogs were harmed in the making of this app</a>
+          
+          
+          
+          <a href="/not-a-real-engineer">Not a real engineer</a>
+          
+          
+          
+          <a href="/on-the-origin-of-emacs">On the Origin of Emacs</a>
+          
+          
+          
+          <a href="/on-the-origin-of-toots">On the Origin of Toots</a>
+          
+          
+          
+          <a href="/openoffice-cant-print-on-tuesdays">OpenOffice Can't Print on Tuesdays</a>
+          
+          
+          
+          <a href="/oracle-as-lawnmower">Oracle as Lawnmower</a>
+          
+          
+          
+          <a href="/originality-not-required">Originality Not Required</a>
+          
+          
+          
+          <a href="/psd-is-not-my-favourite-file-format">PSD is not my favourite file format</a>
+          
+          
+          
+          <a href="/please-drink-verification-can">Please Drink Verification Can</a>
+          
+          
+          
+          <a href="/pocket-veto">Pocket Veto</a>
+          
+          
+          
+          <a href="/price-of-chatgpts-api-vs-human">Price of ChatGPT's API vs Human</a>
+          
+          
+          
+          <a href="/put-yourself-in-jia-tans-shoes">Put yourself in Jia Tan's shoes</a>
+          
+          
+          
+          <a href="/regular-expressions-and-html">Regular Expressions and HTML</a>
+          
+          
+          
+          <a href="/rob-pikes-5-rules-of-programming">Rob Pike's 5 Rules of Programming</a>
+          
+          
+          
+          <a href="/rob-pikes-lesson-in-shortcuts">Rob Pike's Lesson in Shortcuts</a>
+          
+          
+          
+          <a href="/sre-threats">SRE Threats</a>
+          
+          
+          
+          <a href="/steve-yegges-tale-of-geoworks">Steve Yegge's Tale of Geoworks</a>
+          
+          
+          
+          <a href="/steveys-google-platforms-rant">Stevey's Google Platforms Rant</a>
+          
+          
+          
+          <a href="/superstitious-encoding">Superstitious Encoding</a>
+          
+          
+          
+          
+          
+          
+          <a href="/the-bitter-lesson">The Bitter Lesson</a>
+          
+          
+          
+          <a href="/the-cab-ride-ill-never-forget">The Cab Ride I'll Never Forget</a>
+          
+          
+          
+          <a href="/the-case-of-the-500-mile-email">The Case of the 500-Mile Email</a>
+          
+          
+          
+          <a href="/the-crawford-principles">The Crawford Principles</a>
+          
+          
+          
+          <a href="/the-damned-can-now-play-three-chords">The Damned Can Now Play Three Chords</a>
+          
+          
+          
+          <a href="/the-descent-to-c">The Descent to C</a>
+          
+          
+          
+          <a href="/the-future-of-open-source">The Future of Open Source</a>
+          
+          
+          
+          <a href="/the-nazi-bar-problem">The Nazi Bar Problem</a>
+          
+          
+          
+          <a href="/the-patron-saint-of-yak-shaves">The Patron Saint of Yak Shaves</a>
+          
+          
+          
+          <a href="/the-reddit-long-con">The Reddit Long Con</a>
+          
+          
+          
+          <a href="/the-smallest-quine">The Smallest Quine</a>
+          
+          
+          
+          <a href="/the-unknown-citizen">The Unknown Citizen</a>
+          
+          
+          
+          <a href="/the-bin-split">The bin Split</a>
+          
+          
+          
+          <a href="/thoughts-on-flash">Thoughts On Flash</a>
+          
+          
+          
+          <a href="/tiktoks-enshittification">TikTok's Enshittification</a>
+          
+          
+          
+          <a href="/time-traveller-on-irc">Time Traveller on IRC</a>
+          
+          
+          
+          <a href="/unix-recovery-legend">Unix Recovery Legend</a>
+          
+          
+          
+          <a href="/usenet-post-warning">Usenet Post Warning</a>
+          
+          
+          
+          <a href="/virtues-of-a-good-programmer">Virtues of a Good Programmer</a>
+          
+          
+          
+          <a href="/we-do-not-break-userspace">We Do Not Break Userspace</a>
+          
+          
+          
+          <a href="/we-have-no-moat-and-neither-does-openai">We Have No Moat, And Neither Does OpenAI</a>
+          
+          
+          
+          <a href="/when-is-midnight">When Is Midnight</a>
+          
+          
+          
+          <a href="/wikipedia-and-anti-elitism">Wikipedia and Anti-Elitism</a>
+          
+          
+          
+          <a href="/worse-is-better">Worse is Better</a>
+          
+          
+          
+          <a href="/yak-shaving">Yak Shaving</a>
+          
+          
+          
+          <a href="/carproblems.txt">carproblems.txt</a>
+          
+          
+        </div>
+        
+
+        
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header>
+      <h1>Svelte parses HTML all wrong</h1>
+    </header>
+
+    <article><p><a href="https://github.com/sveltejs/svelte/issues/11052">Rich Harris' bug report</a> on his own framework.</p>
+<hr />
+<h3 id="describe-the-bug">Describe the bug</h3>
+<p>I'm a little shaken up. For as long as I've been programming, I thought that this...</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="p">/&gt;</span>
+</code></pre></div>
+<p>...was shorthand for this:</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<p><a href="https://jakearchibald.com/2023/against-self-closing-tags-in-html/">It turns out it's not.</a> Self-closing tags just aren't a thing in HTML — the <code>/&gt;</code> is simply ignored by browsers altogether. In other words, this...</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="p">/&gt;</span>hello!
+</code></pre></div>
+<p>...is equivalent to this — the <code>hello!</code> is <em>inside</em> the div, not outside it:</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>hello!<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Svelte, however, treats <code>&lt;div /&gt;</code> as <code>&lt;div&gt;&lt;/div&gt;</code>. For a framework that prides itself on being a superset of HTML, this is a glaring error.</p>
+<h2 id="what-should-we-do">What should we do?</h2>
+<p>I think the right thing to do is <del>disallow</del> (<em>edit</em>: warn on) self-closing non-void HTML tags (this only applies to HTML, not other namespaces). This is a breaking change, but the alternatives are:</p>
+<ol>
+<li>Continue to parse HTML incorrectly</li>
+<li>Parse HTML correctly, treating <code>&lt;div /&gt;</code> as <code>&lt;div&gt;</code>, which is also a breaking change but one that would be nightmarish to debug</li>
+</ol>
+<p>Ideally we would also disallow self-closing void elements (i.e. <code>&lt;input&gt;</code> rather than <code>&lt;input /&gt;</code>), but whether or not this is realistic depends on whether Prettier's current habit of adding an unnecessary <code>/&gt;</code> to void elements prevents us from doing that.</p>
+<h3 id="reproduction">Reproduction</h3>
+<p>Navigate to <code>about:blank</code>, and do this:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`&lt;div /&gt;hello!`</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">).</span><span class="nx">textContent</span><span class="p">);</span>
+</code></pre></div>
+<p>Then, in a Svelte component, do this:</p>
+<div class="highlight"><pre><span></span><code>&lt;script&gt;
+  import { onMount } from &#39;svelte&#39;;
+
+  let div;
+
+  onMount(() =&gt; {
+    console.log(div.textContent);
+  });
+&lt;/script&gt;
+
+&lt;div bind:this={div} /&gt;hello!
+</code></pre></div>
+<p>In the first case, 'hello!' is logged. In the second case, the empty string is logged.</p>
+<h3 id="logs">Logs</h3>
+<p><em>No response</em></p>
+<h3 id="system-info">System Info</h3>
+<div class="highlight"><pre><span></span><code>This<span class="w"> </span>currently<span class="w"> </span>applies<span class="w"> </span>to<span class="w"> </span>all<span class="w"> </span>versions<span class="w"> </span>of<span class="w"> </span>Svelte
+</code></pre></div>
+<h3 id="severity">Severity</h3>
+<p>annoyance</p></article>
+  </main>
+
+  <footer>
+    <details>
+      <summary>
+        <div class="footer-row">
+          
+          meta
+          
+          <a href="/recent-changes">recent</a>
+          <a href="/templates" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Folklore/Svelte parses HTML all wrong.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Folklore/Svelte parses HTML all wrong.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'Svelte parses HTML all wrong'">reply</a>
+        </div>
+      </summary>
+      <div class="extra-small">
+        <div class="footer-row">
+          <a href="/sitemap">sitemap</a>
+          <a href="/templates">random</a>
+        </div>
+      </div>
+
+      
+
+      <p class="backlinks"><strong>Incoming:</strong>
+        
+        <a href="/html-self-closing-tags">HTML Self-Closing Tags</a>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
+      
+
+      
+      <p>
+        
+
+        <span class="backlinks">
+          <strong>
+            Updated:
+          </strong>
+          2024-07-03
+        </span>
+
+      </p>
+    </details>
+
+  </footer>
+  
+</body>
+
+</html>
