@@ -1,3 +1,12 @@
+---
+tags:
+  - nextjs
+  - javascript
+  - posts
+date: 2024-07-04
+---
+
+
 An interesting type error arises if you use the standard advice for installing tRPC on an existing Next.js project that already has a layout applied.
 
 Normally the advice for creating an app with a layout is to do this in your `src/pages/_app.tsx`:
