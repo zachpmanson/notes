@@ -49,26 +49,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Folklore/On the Origins of Rust.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "67c5885ad9de12a2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Meta/Meta.md",
+                "file": "Archive/Problems/Next.js with tRPC and Layouts.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -118,7 +106,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.50247192382812
+    "width": 253.50247192382812,
+    "collapsed": true
   },
   "right": {
     "id": "b30ab2faf3f39acc",
@@ -134,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Meta/Meta.md",
+                "file": "Archive/Problems/Next.js with tRPC and Layouts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Meta/Meta.md",
+                "file": "Archive/Problems/Next.js with tRPC and Layouts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Meta/Meta.md"
+                "file": "Archive/Problems/Next.js with tRPC and Layouts.md"
               }
             }
           }
@@ -196,10 +185,15 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "4c4d976b54479052",
   "lastOpenFiles": [
-    "Posts/Posts.md",
+    "Media/trpc-typeerror.png",
+    "Media/kinde-3.png",
+    "Archive/Problems/Next.js with tRPC and Layouts.md",
+    "Archive/Problems/Android File Transfer on macOS.md",
+    "Archive/Folklore/Put yourself in Jia Tan's shoes.md",
     "Meta/Meta.md",
+    "Posts/Posts.md",
     "Projects/Ochrs/Ochrs.md",
     "Projects/Ochrs/Ochrs 2.0.md",
     "Projects/Ochrs/Ochrs Syntax.md",
@@ -210,7 +204,6 @@
     "Archive/Folklore/On the Origin of Emacs.md",
     "Archive/Folklore/On the Origin of Toots.md",
     "Archive/Problems/Git Subdirectory Branch.md",
-    "Archive/Problems/Android File Transfer on macOS.md",
     "Archive/Lines.md",
     "Notes/Software/Development/Web Development/HTML Self-Closing Tags.md",
     "Archive/Folklore/Svelte parses HTML all wrong.md",
@@ -219,14 +212,10 @@
     "Archive/Problems/Git Ignore Changes to a File.md",
     "Notes/Software/Programs/Git/Git.md",
     "Notes/Software/Design/Kinde Design Decisions.md",
-    "Media/Screenshot 2024-07-01 at 10.24.48.png",
     "Media/kinde-2.png",
     "Media/kinde-1.png",
     "Notes/Software/Design/Fun Design.md",
     "Archive/Bookmarks/Websites.md",
-    "Archive/Bookmarks/Wikipedia Articles.md",
-    "Archive/Bookmarks/Site Directories.md",
-    "Archive/Bookmarks/Lists.md",
     "Media/sliding-menu.mp4",
     "Media/sr.mp4",
     "Media/Screen Recording 2024-06-20 at 10.58.57.mov",
@@ -242,7 +231,6 @@
     "Media/spotify-top-bar.png",
     "Notes/Networks",
     "Media/mctl-routes.png",
-    "Media/ahnvn.png",
     "Notes/Networks/Internet/Fediverse/Mastodon",
     "Untitled.canvas"
   ]

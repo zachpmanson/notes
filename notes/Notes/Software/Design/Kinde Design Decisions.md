@@ -26,7 +26,7 @@ When you go to the "Users Profile" screen, the top left back icon doesn't take y
 
 The only way to navigate back is the the small grey "User" text above the user's name.
 
-![[Screenshot 2024-07-01 at 10.24.48.png]]
+![[kinde-3.png]]
 
 This is something that almost all basic websites can get right.  Breadcrumb navigation or consistent back behaviour would be vastly preferable here.
 
