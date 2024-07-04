@@ -34,6 +34,7 @@ There is:
 	- basing this on tags means that any page can be included anywhere in the directory structure, and any page can be included in many feeds simultaneously
 
 How I want to use these:
+
 - Tree directory structure
 	- says what a page is
 	- e.g. pages in [[Archive]]>[[Problems]] are archived solutions to problems I've had, no matter their topic
