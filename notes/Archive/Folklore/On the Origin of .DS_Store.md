@@ -1,3 +1,8 @@
+---
+tags:
+  - relics
+---
+
 An explanation of the existence of .DS_Store files in macOS by Arno Gourdol [posted on 2006-10-01](https://www.arno.org/on-the-origins-of-ds-store).
 
 ---
