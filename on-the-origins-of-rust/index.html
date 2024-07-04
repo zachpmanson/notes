@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="icon" href="/static/icon/icon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+
+  <link rel="alternate" type="application/rss+xml" href="https://notes.zachmanson.com/posts.xml" title="notes: posts" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: on the origins of rust</title>
+</head>
+
+<body>
+  <nav>
+    <div class="main-icon">
+      <a href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
+          viewBox="26.88 56.87 216.25 156.27">
+          <path
+            style="stroke-width: 15px; stroke-linecap: butt; stroke-linejoin: round; stroke: rgb(10, 10, 10); fill: none;"
+            d="M135,75 A60,60 0 0,0 75,135 A60,60 0 0,0 135,195 A60,60 0 0,0 195,135 A60,60 0 0,0 135,75 M45,90 A15,15 0 0,1 60,75 A15,15 0 0,1 75,90 L75,135 L75,180 A15,15 0 0,1 60,195 A15,15 0 0,1 45,180 M225,90 A15,15 0 0,0 210,75 A15,15 0 0,0 195,90 L195,135 L195,180 A15,15 0 0,0 210,195 L210,195 A15,15 0 0,0 225,180 M135,105 A30,30 0 0,1 165,135 A30,30 0 0,1 135,165 A30,30 0 0,1 105,135 A30,30 0 0,1 135,105 M45,105 L45,105 L45,165 M225,105 L225,105 L225,165 ">
+          </path>
+        </svg>
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
+      <div class="nav-segments">
+        
+
+        <div class="flex flex-col text-left nav-links">
+          <a href="/folklore" class="activated-link">Folklore</a>
+          
+          
+          <a href="/bookmarks">Bookmarks</a>
+          
+          
+          
+          <a href="/fiction">Fiction</a>
+          
+          
+          
+          
+          
+          
+          <a href="/lines">Lines</a>
+          
+          
+          
+          <a href="/problems">Problems</a>
+          
+          
+          
+          <a href="/templates">Templates</a>
+          
+          
+        </div>
+        
+
+        
+
+        <div class="flex flex-col text-left nav-links">
+          <a href="/on-the-origins-of-rust" class="activated-link">On the Origins of Rust</a>
+          
+          
+          <a href="/10-rules-of-internet">10 Rules of Internet</a>
+          
+          
+          
+          <a href="/a-conspiracy-to-kill-ie6">A Conspiracy To Kill IE6</a>
+          
+          
+          
+          <a href="/a-story-about-magic">A Story About 'Magic'</a>
+          
+          
+          
+          <a href="/alice-in-modeland">Alice in Modeland</a>
+          
+          
+          
+          <a href="/aliens-and-calendars">Aliens and Calendars</a>
+          
+          
+          
+          <a href="/amazons-first-job-posting">Amazon's First Job Posting</a>
+          
+          
+          
+          <a href="/an-update-on-facebook-video-marketing-metrics">An Update on Facebook Video Marketing Metrics</a>
+          
+          
+          
+          <a href="/bell-labs-productivity-mystery">Bell Labs' Productivity Mystery</a>
+          
+          
+          
+          <a href="/best-practices-for-time-travellers">Best Practices for Time Travellers</a>
+          
+          
+          
+          <a href="/bill-gates-tries-to-install-windows-movie-maker">Bill Gates Tries To Install Windows Movie Maker</a>
+          
+          
+          
+          <a href="/bill-gates-wrote-fat-on-an-airplane">Bill Gates Wrote FAT on an Airplane</a>
+          
+          
+          
+          <a href="/blinkenlichten">Blinkenlichten</a>
+          
+          
+          
+          <a href="/c-locale-braindeath">C Locale Braindeath</a>
+          
+          
+          
+          <a href="/cannot-simultaneously-fix-and-keep-job.-therefore-wont-fix.">Cannot simultaneously fix and keep job. Therefore, won't fix.</a>
+          
+          
+          
+          <a href="/christ-mcdonald">Christ McDonald</a>
+          
+          
+          
+          <a href="/competing-with-gpt">Competing with GPT</a>
+          
+          
+          
+          <a href="/context-menu-hell">Context Menu Hell</a>
+          
+          
+          
+          <a href="/digg-v4">Digg v4</a>
+          
+          
+          
+          <a href="/dispatch-from-the-cyberpunk-city">Dispatch From the Cyberpunk City</a>
+          
+          
+          
+          <a href="/do-things-tell-people">Do Things, Tell People</a>
+          
+          
+          
+          <a href="/ellsbergs-advice-for-kissinger">Ellsberg's Advice For Kissinger</a>
+          
+          
+          
+          <a href="/facing-the-street">Facing the Street</a>
+          
+          
+          
+          <a href="/factory-factory-factory">Factory Factory Factory</a>
+          
+          
+          
+          <a href="/feminist-server-manifesto">Feminist Server Manifesto</a>
+          
+          
+          
+          <a href="/file-over-app">File Over App</a>
+          
+          
+          
+          <a href="/git-koans">Git Koans</a>
+          
+          
+          
+          <a href="/growth-at-tumblr-and-wordpress">Growth at Tumblr and Wordpress</a>
+          
+          
+          
+          <a href="/guerilla-open-access-manifesto">Guerilla Open Access Manifesto</a>
+          
+          
+          
+          <a href="/heaven-banning">Heaven Banning</a>
+          
+          
+          
+          <a href="/i-no-longer-built-software">I No Longer Built Software</a>
+          
+          
+          
+          <a href="/incomplete-list-of-mistakes-in-the-design-of-css">Incomplete List of Mistakes in the Design of CSS</a>
+          
+          
+          
+          <a href="/interviewing-for-canonical">Interviewing for Canonical</a>
+          
+          
+          
+          <a href="/jsx-react-native-and-typescript">JSX, React Native, and TypeScript</a>
+          
+          
+          
+          <a href="/kurt-vonnegut-grades">Kurt Vonnegut Grades</a>
+          
+          
+          
+          <a href="/larry-page-builds-a-web-robot">Larry Page Builds a Web Robot</a>
+          
+          
+          
+          <a href="/life-of-an-oracle-developer">Life of an Oracle Developer</a>
+          
+          
+          
+          <a href="/man-spends-entire-career-mastering-crappy-codebase">Man Spends Entire Career Mastering Crappy Codebase</a>
+          
+          
+          
+          <a href="/no-coffee-==-no-job">No Coffee == No Job</a>
+          
+          
+          
+          <a href="/no-dogs-were-harmed-in-the-making-of-this-app">No dogs were harmed in the making of this app</a>
+          
+          
+          
+          <a href="/not-a-real-engineer">Not a real engineer</a>
+          
+          
+          
+          <a href="/on-the-origin-of-.ds_store">On the Origin of .DS_Store</a>
+          
+          
+          
+          <a href="/on-the-origin-of-emacs">On the Origin of Emacs</a>
+          
+          
+          
+          <a href="/on-the-origin-of-toots">On the Origin of Toots</a>
+          
+          
+          
+          
+          
+          
+          <a href="/openoffice-cant-print-on-tuesdays">OpenOffice Can't Print on Tuesdays</a>
+          
+          
+          
+          <a href="/oracle-as-lawnmower">Oracle as Lawnmower</a>
+          
+          
+          
+          <a href="/originality-not-required">Originality Not Required</a>
+          
+          
+          
+          <a href="/psd-is-not-my-favourite-file-format">PSD is not my favourite file format</a>
+          
+          
+          
+          <a href="/please-drink-verification-can">Please Drink Verification Can</a>
+          
+          
+          
+          <a href="/pocket-veto">Pocket Veto</a>
+          
+          
+          
+          <a href="/price-of-chatgpts-api-vs-human">Price of ChatGPT's API vs Human</a>
+          
+          
+          
+          <a href="/put-yourself-in-jia-tans-shoes">Put yourself in Jia Tan's shoes</a>
+          
+          
+          
+          <a href="/regular-expressions-and-html">Regular Expressions and HTML</a>
+          
+          
+          
+          <a href="/rob-pikes-5-rules-of-programming">Rob Pike's 5 Rules of Programming</a>
+          
+          
+          
+          <a href="/rob-pikes-lesson-in-shortcuts">Rob Pike's Lesson in Shortcuts</a>
+          
+          
+          
+          <a href="/sre-threats">SRE Threats</a>
+          
+          
+          
+          <a href="/steve-yegges-tale-of-geoworks">Steve Yegge's Tale of Geoworks</a>
+          
+          
+          
+          <a href="/steveys-google-platforms-rant">Stevey's Google Platforms Rant</a>
+          
+          
+          
+          <a href="/superstitious-encoding">Superstitious Encoding</a>
+          
+          
+          
+          <a href="/svelte-parses-html-all-wrong">Svelte parses HTML all wrong</a>
+          
+          
+          
+          <a href="/the-bitter-lesson">The Bitter Lesson</a>
+          
+          
+          
+          <a href="/the-cab-ride-ill-never-forget">The Cab Ride I'll Never Forget</a>
+          
+          
+          
+          <a href="/the-case-of-the-500-mile-email">The Case of the 500-Mile Email</a>
+          
+          
+          
+          <a href="/the-crawford-principles">The Crawford Principles</a>
+          
+          
+          
+          <a href="/the-damned-can-now-play-three-chords">The Damned Can Now Play Three Chords</a>
+          
+          
+          
+          <a href="/the-descent-to-c">The Descent to C</a>
+          
+          
+          
+          <a href="/the-future-of-open-source">The Future of Open Source</a>
+          
+          
+          
+          <a href="/the-nazi-bar-problem">The Nazi Bar Problem</a>
+          
+          
+          
+          <a href="/the-patron-saint-of-yak-shaves">The Patron Saint of Yak Shaves</a>
+          
+          
+          
+          <a href="/the-reddit-long-con">The Reddit Long Con</a>
+          
+          
+          
+          <a href="/the-smallest-quine">The Smallest Quine</a>
+          
+          
+          
+          <a href="/the-unknown-citizen">The Unknown Citizen</a>
+          
+          
+          
+          <a href="/the-bin-split">The bin Split</a>
+          
+          
+          
+          <a href="/thoughts-on-flash">Thoughts On Flash</a>
+          
+          
+          
+          <a href="/tiktoks-enshittification">TikTok's Enshittification</a>
+          
+          
+          
+          <a href="/time-traveller-on-irc">Time Traveller on IRC</a>
+          
+          
+          
+          <a href="/unix-recovery-legend">Unix Recovery Legend</a>
+          
+          
+          
+          <a href="/usenet-post-warning">Usenet Post Warning</a>
+          
+          
+          
+          <a href="/virtues-of-a-good-programmer">Virtues of a Good Programmer</a>
+          
+          
+          
+          <a href="/we-do-not-break-userspace">We Do Not Break Userspace</a>
+          
+          
+          
+          <a href="/we-have-no-moat-and-neither-does-openai">We Have No Moat, And Neither Does OpenAI</a>
+          
+          
+          
+          <a href="/when-is-midnight">When Is Midnight</a>
+          
+          
+          
+          <a href="/wikipedia-and-anti-elitism">Wikipedia and Anti-Elitism</a>
+          
+          
+          
+          <a href="/worse-is-better">Worse is Better</a>
+          
+          
+          
+          <a href="/yak-shaving">Yak Shaving</a>
+          
+          
+          
+          <a href="/carproblems.txt">carproblems.txt</a>
+          
+          
+        </div>
+        
+
+        
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header>
+      <h1>On the Origins of Rust</h1>
+    </header>
+
+    <article><p><a href="https://www.reddit.com/r/rust/comments/27jvdt/internet_archaeology_the_definitive_endall_source/">Why is rust called rust?</a></p>
+<hr />
+<p>March 31, 2012</p>
+<p>http://irclog.gr/#show/irc.mozilla.org/rust/127558</p>
+<div class="highlight"><pre><span></span><code>&lt;jonanin&gt; any history behind the name?
+&lt;graydon&gt; jonanin: &quot;rust&quot;?
+&lt;jonanin&gt; yeah
+&lt;graydon&gt; people keep asking and I keep making up different explanations.
+&lt;graydon&gt; from an email exchange with an early private reviewer of rustboot:
+&lt;graydon&gt; &gt;&gt; I love the name. I take it that it refers to your scavenging the
+&lt;graydon&gt; &gt;&gt; skeletal hulks of dead languages, now covered in vines...?
+&lt;graydon&gt; &gt;
+&lt;graydon&gt; &gt; A little. Also big metallic things. And rusts and smuts, fungi. And it&#39;s a
+&lt;graydon&gt; &gt; nice substring of &quot;robust&quot;.
+&lt;jonanin&gt; hah
+&lt;jonanin&gt; interesting
+&lt;graydon&gt; IOW I don&#39;t have a really good explanation. it seemed like a good name. (also a substring
+          of &quot;trust&quot;, &quot;frustrating&quot;, &quot;rustic&quot; and ... &quot;thrust&quot;?)
+&lt;graydon&gt; I think I named it after fungi. rusts are amazing creatures.
+&lt;graydon&gt; Five-lifecycle-phase heteroecious parasites. I mean, that&#39;s just _crazy_.
+&lt;graydon&gt; talk about over-engineered for survival
+&lt;jonanin&gt; what does that mean? :]
+&lt;graydon&gt; fungi are amazingly robust
+&lt;graydon&gt; to start, they are distributed organisms. not single cellular, but also no single point of
+          failure.
+&lt;graydon&gt; then depending on the fungi, they have more than just the usual 2 lifecycle phases of
+          critters like us (somatic and gamete)
+&lt;jonanin&gt; ohhh 
+&lt;jonanin&gt; those kind of phases
+&lt;graydon&gt; they might have 3, 4, or 5 lifecycle stages. several of which might cross back on one
+          another (meet and reproduce, restart the lineage) and/or self-reproduce or reinfect
+&lt;jonanin&gt; but i mean
+&lt;jonanin&gt; you have haploid gametes and diploid somatic cells right? what else could there be?
+&lt;graydon&gt; and in rusts, some of them actually alternate between multiple different hosts. so a crop
+          failure or host death of one sort doesn&#39;t kill off the line.
+&lt;graydon&gt; they can double up!
+&lt;graydon&gt; http://en.wikipedia.org/wiki/Dikaryon
+&lt;graydon&gt; it&#39;s madness. basically like someone was looking at sexual reproduction and said &quot;nah, way
+          too failure-prone, let&#39;s see how many other variations we can do in parallel&quot;
+&lt;jonanin&gt; I can&#39;t really understand that lol. I&#39;m only 3/4 the way through my *highschool* bio class
+&lt;jonanin&gt; which is not much
+&lt;graydon&gt; ! 
+&lt;jonanin&gt; I  understood maybe half the words on that page
+&lt;evanmcc&gt; that&#39;s totally insane
+&lt;jonanin&gt; so a gamete becomes two different organisms in parallel?
+&lt;graydon&gt; highschool? gosh. I ... definitely was not landing patches on other people&#39;s compilers in
+          highscool. precocious! you have a bright future in programming
+&lt;rumbleca&gt; rust never sleeps...
+&lt;graydon&gt; jonanin: something like this, yeah. I think basically they have lifecycle phases that are
+          part of two separate reproduction cycles at the same time or something. it&#39;s very
+          confusing. I took a mycology course trying to understand all this and it got far too
+          complex for me to follow
+&lt;graydon&gt; anyway, I remember being kinda into them back when I was picking the name.
+&lt;graydon&gt; but then everyone thinks it&#39;s a pun on &quot;chrome&quot; so maybe we should stick with that
+&lt;jonanin&gt; hahahha
+</code></pre></div></article>
+  </main>
+
+  <footer>
+    <details>
+      <summary>
+        <div class="footer-row">
+          
+          meta
+          
+          <a href="/recent-changes">recent</a>
+          <a href="/prompt-resources" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Folklore/On the Origins of Rust.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Folklore/On the Origins of Rust.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'On the Origins of Rust'">reply</a>
+        </div>
+      </summary>
+      <div class="extra-small">
+        <div class="footer-row">
+          <a href="/sitemap">sitemap</a>
+          <a href="/prompt-resources">random</a>
+        </div>
+      </div>
+
+      
+
+      <p class="backlinks"><strong>Incoming:</strong>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
+      
+
+      
+      <p>
+        
+
+        <span class="backlinks">
+          <strong>
+            Updated:
+          </strong>
+          2024-07-04
+        </span>
+
+      </p>
+    </details>
+
+  </footer>
+  
+</body>
+
+</html>
