@@ -49,14 +49,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/Git Subdirectory Branch.md",
+                "file": "Archive/Folklore/On the Origins of Rust.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "67c5885ad9de12a2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Archive/Folklore/On the Origin of .DS_Store.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -85,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Notes/Software/Programs/Git/Git",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -102,8 +114,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -123,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Problems/Git Subdirectory Branch.md",
+                "file": "Archive/Folklore/On the Origin of .DS_Store.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Problems/Git Subdirectory Branch.md",
+                "file": "Archive/Folklore/On the Origin of .DS_Store.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Problems/Git Subdirectory Branch.md"
+                "file": "Archive/Folklore/On the Origin of .DS_Store.md"
               }
             }
           }
@@ -185,14 +196,19 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "ae2026764fcf906e",
+  "active": "67c5885ad9de12a2",
   "lastOpenFiles": [
+    "Archive/Folklore/On the Origin of Emacs.md",
+    "Archive/Folklore/On the Origin of Toots.md",
+    "Archive/Folklore/On the Origin of .DS_Store.md",
+    "Archive/Folklore/On the Origins of Rust.md",
+    "Archive/Problems/Git Subdirectory Branch.md",
+    "Archive/Problems/Android File Transfer on macOS.md",
     "Archive/Lines.md",
     "Notes/Software/Development/Web Development/HTML Self-Closing Tags.md",
     "Notes/Software/Development/Web Development/HTML First Development.md",
     "Archive/Folklore/Svelte parses HTML all wrong.md",
     "Archive/Folklore/The Descent to C.md",
-    "Archive/Problems/Android File Transfer on macOS.md",
     "Archive/Problems/Python Freezegun vs SQLAlchemy.md",
     "Archive/Problems/Git Ignore Changes to a File.md",
     "Notes/Software/Programs/Git/Git.md",
@@ -207,15 +223,10 @@
     "Archive/Bookmarks/Lists.md",
     "Notes/Software/Unix/macOS/macOS Problems.md",
     "Notes/Software/Unix/macOS/macOS CLI Tools.md",
-    "Archive/On the Origin of Rust.md",
     "Archive/Archive.md",
     "Notes/Software/Design/Spotify Design Decisions.md",
     "Archive/Problems/Problems.md",
     "Notes/Software/Programs/GNU/Bash/Bash Syntax.md",
-    "Archive/Bookmarks/xkcd.md",
-    "Notes/Software/Development/Web Development/Web Development.md",
-    "Notes/Software/Development/Web Development/Themed Stylesheets.md",
-    "Notes/Software/Development/Web Development/React.md",
     "Media/sliding-menu.mp4",
     "Media/sr.mp4",
     "Media/Screen Recording 2024-06-20 at 10.58.57.mov",
