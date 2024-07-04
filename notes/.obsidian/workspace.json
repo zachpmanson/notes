@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Folklore/On the Origin of .DS_Store.md",
+                "file": "Meta/Meta.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Folklore/On the Origin of .DS_Store.md",
+                "file": "Meta/Meta.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Folklore/On the Origin of .DS_Store.md",
+                "file": "Meta/Meta.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Folklore/On the Origin of .DS_Store.md"
+                "file": "Meta/Meta.md"
               }
             }
           }
@@ -196,17 +196,23 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "67c5885ad9de12a2",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Posts/Posts.md",
+    "Meta/Meta.md",
+    "Projects/Ochrs/Ochrs.md",
+    "Projects/Ochrs/Ochrs 2.0.md",
+    "Projects/Ochrs/Ochrs Syntax.md",
+    "Archive/Folklore/On the Origins of Rust.md",
+    "Notes/Software/Development/Web Development/HTML First Development.md",
+    "tags.md",
+    "Archive/Folklore/On the Origin of .DS_Store.md",
     "Archive/Folklore/On the Origin of Emacs.md",
     "Archive/Folklore/On the Origin of Toots.md",
-    "Archive/Folklore/On the Origin of .DS_Store.md",
-    "Archive/Folklore/On the Origins of Rust.md",
     "Archive/Problems/Git Subdirectory Branch.md",
     "Archive/Problems/Android File Transfer on macOS.md",
     "Archive/Lines.md",
     "Notes/Software/Development/Web Development/HTML Self-Closing Tags.md",
-    "Notes/Software/Development/Web Development/HTML First Development.md",
     "Archive/Folklore/Svelte parses HTML all wrong.md",
     "Archive/Folklore/The Descent to C.md",
     "Archive/Problems/Python Freezegun vs SQLAlchemy.md",
@@ -221,12 +227,6 @@
     "Archive/Bookmarks/Wikipedia Articles.md",
     "Archive/Bookmarks/Site Directories.md",
     "Archive/Bookmarks/Lists.md",
-    "Notes/Software/Unix/macOS/macOS Problems.md",
-    "Notes/Software/Unix/macOS/macOS CLI Tools.md",
-    "Archive/Archive.md",
-    "Notes/Software/Design/Spotify Design Decisions.md",
-    "Archive/Problems/Problems.md",
-    "Notes/Software/Programs/GNU/Bash/Bash Syntax.md",
     "Media/sliding-menu.mp4",
     "Media/sr.mp4",
     "Media/Screen Recording 2024-06-20 at 10.58.57.mov",
