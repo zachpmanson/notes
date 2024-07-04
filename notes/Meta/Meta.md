@@ -17,7 +17,7 @@ There is:
 	- in the [[Obsidian]] vault this site is written in, this is the directory structure of the [[Markdown]] files
 	- in the HTML version of this site, this is the navigation that can be done using the links in the header
 - Backlinks
-	- these these are the network of arbitrary links between pairs of pages within the wiki
+	- these are arbitrary bidirectional links that form a network of pages within the wiki
 	- work the same in Obsidian and HTML
 - Tags
 	- e.g. [#relics](/tags#relics), [#venting](/tags#venting)
@@ -47,3 +47,5 @@ How I want to use these:
 - Chronological feeds
 	- only to elevate tags to create a blog-style interface
 	- e.g. [[Posts]]
+
+Yes I know that [all you need is links](https://www.kevinslin.com/notes/kugez1yd9e5frboplescdvd/).
