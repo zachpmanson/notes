@@ -10,3 +10,6 @@ Finder:
 
 - No simple way to set snap to grid as the default at all times
 - No way to shift select multiple options when using the grid layout, even when they have been arrange into a grid
+- Insane that the default keybind for opening a file is Cmd+O and not Enter.  I know its always been like this and the Enter key is used for renaming in many places on the operating system, but making the most common operation (opening a file) take 2 keys is crazy.  This may qualify as a relic since the decision to make Enter the rename shortcut was rushed according to [this story](https://www.folklore.org/A_Floppy_named_lsadkfjalhkjh.html).  See some severe cope in this [thread on the topic](https://www.folklore.org/A_Floppy_named_lsadkfjalhkjh.html).
+
+When macOS starts running out of resources (I am assuming RAM) and you have audio playing, the audio will cut out and loop in a way I've never seen any other operating system do. I have heard this kind of effect in movies when a glitch happens or a computer starts breaking down, and I don't think its a leap to guess that this is because the people making movies have been influenced by a higher-than-average usage of macOS.
