@@ -1,3 +1,9 @@
+---
+tags:
+  - relics
+  - venting
+---
+
 General desktop environment
 
 - Windows don't snap, and there is no sane option to do this without external tools. This is insane an unacceptable. Finally seems to be changing in next macOS update.
