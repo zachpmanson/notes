@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Notes.md",
+                "file": "Archive/Lines.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Notes.md",
+                "file": "Archive/Lines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Notes.md",
+                "file": "Archive/Lines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Notes.md"
+                "file": "Archive/Lines.md"
               }
             }
           }
@@ -184,8 +184,9 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "4c4d976b54479052",
   "lastOpenFiles": [
+    "Notes/Notes.md",
     "Notes/Software/Unix/macOS/macOS Problems.md",
     "Archive/Problems/Next.js with tRPC and Layouts.md",
     "Media/trpc-typeerror.png",
@@ -215,7 +216,6 @@
     "Media/kinde-2.png",
     "Media/kinde-1.png",
     "Notes/Software/Design/Fun Design.md",
-    "Archive/Bookmarks/Websites.md",
     "Media/sliding-menu.mp4",
     "Media/sr.mp4",
     "Media/Screen Recording 2024-06-20 at 10.58.57.mov",
