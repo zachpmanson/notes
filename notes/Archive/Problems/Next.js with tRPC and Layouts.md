@@ -130,12 +130,12 @@ function App({
   pageProps: { session, ...pageProps },
 }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page) => page);
-  const layout = (
+  const layout = getLayout(
 	<Layout>
 	  <Component {...pageProps} />
 	</Layout>
   );
-  return getLayout(
+  return (
     <SessionProvider session={session}>
       <GlobalProvider>
 	    {layout}
