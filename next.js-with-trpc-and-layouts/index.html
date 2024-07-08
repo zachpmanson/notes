@@ -420,12 +420,12 @@ A <a href="https://github.com/DefinitelyTyped/DefinitelyTyped/blob/9f855c408dac3
 <span class="w">  </span><span class="nx">pageProps</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">session</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="nx">pageProps</span><span class="w"> </span><span class="p">},</span>
 <span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="nx">AppPropsWithLayout</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">getLayout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Component</span><span class="p">.</span><span class="nx">getLayout</span><span class="w"> </span><span class="o">??</span><span class="w"> </span><span class="p">((</span><span class="nx">page</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">page</span><span class="p">);</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">layout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">layout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">getLayout</span><span class="p">(</span>
 <span class="w">    </span><span class="o">&lt;</span><span class="nx">Layout</span><span class="o">&gt;</span>
 <span class="w">      </span><span class="o">&lt;</span><span class="nx">Component</span><span class="w"> </span><span class="p">{...</span><span class="nx">pageProps</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span>
 <span class="w">    </span><span class="o">&lt;</span><span class="err">/Layout&gt;</span>
 <span class="w">  </span><span class="p">);</span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">getLayout</span><span class="p">(</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
 <span class="w">    </span><span class="o">&lt;</span><span class="nx">SessionProvider</span><span class="w"> </span><span class="nx">session</span><span class="o">=</span><span class="p">{</span><span class="nx">session</span><span class="p">}</span><span class="o">&gt;</span>
 <span class="w">      </span><span class="o">&lt;</span><span class="nx">GlobalProvider</span><span class="o">&gt;</span>
 <span class="w">        </span><span class="p">{</span><span class="nx">layout</span><span class="p">}</span>
@@ -447,7 +447,7 @@ A <a href="https://github.com/DefinitelyTyped/DefinitelyTyped/blob/9f855c408dac3
           2024-07-04
           
           <a href="/recent-changes">recent</a>
-          <a href="/reset-css-rules" class="not-extra-small">random</a>
+          <a href="/audio" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Next.js with tRPC and Layouts.md" class="desktop">edit</a>
@@ -458,7 +458,7 @@ A <a href="https://github.com/DefinitelyTyped/DefinitelyTyped/blob/9f855c408dac3
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/reset-css-rules">random</a>
+          <a href="/audio">random</a>
         </div>
       </div>
 

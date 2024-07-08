@@ -13,7 +13,7 @@
             <link>https://notes.zachmanson.com/nextjs</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Mon, 08 Jul 2024 04:21:42 </lastBuildDate>
+        <lastBuildDate>Mon, 08 Jul 2024 04:22:02 </lastBuildDate>
         
         <item>
             <title>Vercel Images Optimisation</title>
@@ -172,12 +172,12 @@ A <a href="https://github.com/DefinitelyTyped/DefinitelyTyped/blob/9f855c408dac3
 <span class="w">  </span><span class="nx">pageProps</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">session</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="nx">pageProps</span><span class="w"> </span><span class="p">},</span>
 <span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="nx">AppPropsWithLayout</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">getLayout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Component</span><span class="p">.</span><span class="nx">getLayout</span><span class="w"> </span><span class="o">??</span><span class="w"> </span><span class="p">((</span><span class="nx">page</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">page</span><span class="p">);</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">layout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">layout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">getLayout</span><span class="p">(</span>
 <span class="w">    </span><span class="o">&lt;</span><span class="nx">Layout</span><span class="o">&gt;</span>
 <span class="w">      </span><span class="o">&lt;</span><span class="nx">Component</span><span class="w"> </span><span class="p">{...</span><span class="nx">pageProps</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span>
 <span class="w">    </span><span class="o">&lt;</span><span class="err">/Layout&gt;</span>
 <span class="w">  </span><span class="p">);</span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">getLayout</span><span class="p">(</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
 <span class="w">    </span><span class="o">&lt;</span><span class="nx">SessionProvider</span><span class="w"> </span><span class="nx">session</span><span class="o">=</span><span class="p">{</span><span class="nx">session</span><span class="p">}</span><span class="o">&gt;</span>
 <span class="w">      </span><span class="o">&lt;</span><span class="nx">GlobalProvider</span><span class="o">&gt;</span>
 <span class="w">        </span><span class="p">{</span><span class="nx">layout</span><span class="p">}</span>
