@@ -118,7 +118,7 @@ What's the difference between a `ReactNode` and a `ReactElement`?
 
 So  `ReactElement`  can be cast to `ReactNode`, but not the other way around.
 
-There is an lovely simple fix.  If you move the get layout call inside another React component, it will go back to being a `ReactElement`.
+There is a simple fix.  If you move the get layout call inside another React component, it will go back to being a `ReactElement`.
 
 ```ts
 type AppPropsWithLayout = AppProps & {
