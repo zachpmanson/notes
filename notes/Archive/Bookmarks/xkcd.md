@@ -10,6 +10,7 @@ subtitle: A comic strip by Randall Munroe.
 - [Citogenesis](https://xkcd.com/978/)
 - [Academia vs. Business](https://xkcd.com/664/)
 - [Is It Worth the Time?](https://xkcd.com/1205/)
+- [Python Environment](https://xkcd.com/1987/)
 ## Other Links
 
 - [How Random is xkcd?](https://hardmath123.github.io/xkcd-random.html)

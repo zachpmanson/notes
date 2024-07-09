@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Archive/Bookmarks/xkcd.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Archive/Bookmarks/xkcd.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Archive/Bookmarks/xkcd.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Lines.md"
+                "file": "Archive/Bookmarks/xkcd.md"
               }
             }
           }
@@ -186,6 +186,7 @@
   },
   "active": "4c4d976b54479052",
   "lastOpenFiles": [
+    "Archive/Lines.md",
     "Notes/Notes.md",
     "Notes/Software/Unix/macOS/macOS Problems.md",
     "Archive/Problems/Next.js with tRPC and Layouts.md",
@@ -205,7 +206,6 @@
     "Archive/Folklore/On the Origin of Emacs.md",
     "Archive/Folklore/On the Origin of Toots.md",
     "Archive/Problems/Git Subdirectory Branch.md",
-    "Archive/Lines.md",
     "Notes/Software/Development/Web Development/HTML Self-Closing Tags.md",
     "Archive/Folklore/Svelte parses HTML all wrong.md",
     "Archive/Folklore/The Descent to C.md",
