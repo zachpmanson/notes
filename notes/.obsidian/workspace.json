@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/Blogs.md",
+                "file": "Archive/Lines.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/Blogs.md",
+                "file": "Archive/Lines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/Blogs.md",
+                "file": "Archive/Lines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/Blogs.md"
+                "file": "Archive/Lines.md"
               }
             }
           }
@@ -184,10 +184,11 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "4c4d976b54479052",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Archive/Bookmarks/Websites.md",
+    "Notes/Software/Programs/Git/Git.md",
     "Archive/Bookmarks/Blogs.md",
+    "Archive/Bookmarks/Websites.md",
     "Notes/Software/Development/Development Methodologies/Development Methodologies.md",
     "Archive/Bookmarks/Technology Gibberish.md",
     "Archive/Bookmarks/Lists.md",
@@ -213,7 +214,6 @@
     "Archive/Folklore/On the Origin of Toots.md",
     "Archive/Problems/Git Subdirectory Branch.md",
     "Notes/Software/Development/Web Development/HTML Self-Closing Tags.md",
-    "Archive/Folklore/Svelte parses HTML all wrong.md",
     "Media/kinde-2.png",
     "Media/kinde-1.png",
     "Media/sliding-menu.mp4",
