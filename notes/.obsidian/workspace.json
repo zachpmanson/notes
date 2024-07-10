@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Development Methodologies/Development Methodologies.md",
+                "file": "Archive/Bookmarks/Blogs.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Development Methodologies/Development Methodologies.md",
+                "file": "Archive/Bookmarks/Blogs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Development Methodologies/Development Methodologies.md",
+                "file": "Archive/Bookmarks/Blogs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Development Methodologies/Development Methodologies.md"
+                "file": "Archive/Bookmarks/Blogs.md"
               }
             }
           }
@@ -186,6 +186,9 @@
   },
   "active": "4c4d976b54479052",
   "lastOpenFiles": [
+    "Archive/Bookmarks/Websites.md",
+    "Archive/Bookmarks/Blogs.md",
+    "Notes/Software/Development/Development Methodologies/Development Methodologies.md",
     "Archive/Bookmarks/Technology Gibberish.md",
     "Archive/Bookmarks/Lists.md",
     "Archive/Bookmarks/xkcd.md",
@@ -211,9 +214,6 @@
     "Archive/Problems/Git Subdirectory Branch.md",
     "Notes/Software/Development/Web Development/HTML Self-Closing Tags.md",
     "Archive/Folklore/Svelte parses HTML all wrong.md",
-    "Archive/Folklore/The Descent to C.md",
-    "Archive/Problems/Python Freezegun vs SQLAlchemy.md",
-    "Archive/Problems/Git Ignore Changes to a File.md",
     "Media/kinde-2.png",
     "Media/kinde-1.png",
     "Media/sliding-menu.mp4",
