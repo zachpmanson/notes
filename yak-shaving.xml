@@ -13,13 +13,13 @@
             <link>https://notes.zachmanson.com/yak-shaving</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Mon, 15 Jul 2024 07:12:27 </lastBuildDate>
+        <lastBuildDate>Mon, 15 Jul 2024 09:45:56 </lastBuildDate>
         
         <item>
-            <title>Poetry, Dependencies and Python Versions</title>
-            <link>https://notes.zachmanson.com/poetry-dependencies-and-python-versions</link>
+            <title>Poetry Showing Dependencies it Refuses to Install</title>
+            <link>https://notes.zachmanson.com/poetry-showing-dependencies-it-refuses-to-install</link>
             
-            <description>Poetry doesn't show Python versions when reporting dependency version ranges, but it does respect them when locking</description>
+            <description>Poetry</description>
             
             <content:encoded>
                 <![CDATA[<p>When Poetry lists the dependencies for a package it doesn't show the Python versions that those ranges are valid for.  For example, <a href="https://github.com/boto/botocore/blob/develop/setup.py">this</a> <code>setup.py</code>:</p>
@@ -123,7 +123,7 @@ required<span class="w"> </span>by
 <p>Another important detail to note is that <strong>this is all dependent on the Python version specified in <code>pyproject.toml</code>.  The Python version you are actually running does not change the behaviour of Poetry.</strong>  I ran into all of these problems when running Python 3.11, so was confused for hours.</p>
 <p><code>poetry show</code> should report the Python versions that each package dependency range is valid for, since this turned a relatively simple dependency conflict into a multi-hour dependency conflict.  I was only able to figure out the exact cause by reading the setup script for <code>botocore</code>.</p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/poetry-dependencies-and-python-versions</guid>
+            <guid isPermaLink="false">https://notes.zachmanson.com/poetry-showing-dependencies-it-refuses-to-install</guid>
             <pubDate>2024-07-15</pubDate>
         </item>
         
