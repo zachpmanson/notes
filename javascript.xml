@@ -13,7 +13,135 @@
             <link>https://notes.zachmanson.com/javascript</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Thu, 11 Jul 2024 03:39:57 </lastBuildDate>
+        <lastBuildDate>Mon, 15 Jul 2024 07:12:27 </lastBuildDate>
+        
+        <item>
+            <title>Next.js with tRPC and Layouts</title>
+            <link>https://notes.zachmanson.com/next.js-with-trpc-and-layouts</link>
+            
+            <content:encoded>
+                <![CDATA[<p>An interesting type error arises if you use the standard advice for installing tRPC on an existing Next.js project that already has a layout applied.</p>
+<p>Normally the advice for creating an app with a layout is to do this in your <code>src/pages/_app.tsx</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// src/pages/_app.tsx</span>
+
+<span class="c1">// ... imports go here</span>
+
+<span class="k">export</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="nx">NextPageWithLayout</span><span class="o">&lt;</span><span class="nx">P</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{},</span><span class="w"> </span><span class="nx">IP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">P</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">NextPage</span><span class="o">&lt;</span><span class="nx">P</span><span class="p">,</span><span class="w"> </span><span class="nx">IP</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">getLayout</span><span class="o">?:</span><span class="w"> </span><span class="p">(</span><span class="nx">page</span><span class="o">:</span><span class="w"> </span><span class="kt">ReactElement</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">ReactNode</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="kr">type</span><span class="w"> </span><span class="nx">AppPropsWithLayout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">AppProps</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">Component</span><span class="o">:</span><span class="w"> </span><span class="kt">NextPageWithLayout</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">App</span><span class="p">({</span>
+<span class="w">  </span><span class="nx">Component</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">pageProps</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">session</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="nx">pageProps</span><span class="w"> </span><span class="p">},</span>
+<span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="nx">AppPropsWithLayout</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">getLayout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Component</span><span class="p">.</span><span class="nx">getLayout</span><span class="w"> </span><span class="o">??</span><span class="w"> </span><span class="p">((</span><span class="nx">page</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">page</span><span class="p">);</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">getLayout</span><span class="p">(</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">SessionProvider</span><span class="w"> </span><span class="nx">session</span><span class="o">=</span><span class="p">{</span><span class="nx">session</span><span class="p">}</span><span class="o">&gt;</span>
+<span class="w">      </span><span class="o">&lt;</span><span class="nx">GlobalProvider</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="nx">Layout</span><span class="o">&gt;</span>
+<span class="w">          </span><span class="o">&lt;</span><span class="nx">Component</span><span class="w"> </span><span class="p">{...</span><span class="nx">pageProps</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="err">/Layout&gt;</span>
+<span class="w">      </span><span class="o">&lt;</span><span class="err">/GlobalProvider&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="err">/SessionProvider&gt;</span>
+<span class="w">  </span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">App</span>
+</code></pre></div>
+<p>This works pretty well.</p>
+<p>The docs for tRPC suggest wrapping that export:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// src/pages/_app.tsx</span>
+<span class="k">import</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">AppType</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;next/app&#39;</span><span class="p">;</span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">trpc</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;../utils/trpc&#39;</span><span class="p">;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">MyApp</span><span class="o">:</span><span class="w"> </span><span class="kt">AppType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">Component</span><span class="p">,</span><span class="w"> </span><span class="nx">pageProps</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="o">&lt;</span><span class="nx">Component</span><span class="w"> </span><span class="p">{...</span><span class="nx">pageProps</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">trpc</span><span class="p">.</span><span class="nx">withTRPC</span><span class="p">(</span><span class="nx">MyApp</span><span class="p">);</span>
+</code></pre></div>
+<p>Combining these seems simple:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// src/pages/_app.tsx</span>
+
+<span class="c1">// ... imports go here</span>
+
+<span class="k">export</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="nx">NextPageWithLayout</span><span class="o">&lt;</span><span class="nx">P</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{},</span><span class="w"> </span><span class="nx">IP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">P</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">NextPage</span><span class="o">&lt;</span><span class="nx">P</span><span class="p">,</span><span class="w"> </span><span class="nx">IP</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">getLayout</span><span class="o">?:</span><span class="w"> </span><span class="p">(</span><span class="nx">page</span><span class="o">:</span><span class="w"> </span><span class="kt">ReactElement</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">ReactNode</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="kr">type</span><span class="w"> </span><span class="nx">AppPropsWithLayout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">AppProps</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">Component</span><span class="o">:</span><span class="w"> </span><span class="kt">NextPageWithLayout</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">App</span><span class="p">({</span>
+<span class="w">  </span><span class="nx">Component</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">pageProps</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">session</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="nx">pageProps</span><span class="w"> </span><span class="p">},</span>
+<span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="nx">AppPropsWithLayout</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">getLayout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Component</span><span class="p">.</span><span class="nx">getLayout</span><span class="w"> </span><span class="o">??</span><span class="w"> </span><span class="p">((</span><span class="nx">page</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">page</span><span class="p">);</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">getLayout</span><span class="p">(</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">SessionProvider</span><span class="w"> </span><span class="nx">session</span><span class="o">=</span><span class="p">{</span><span class="nx">session</span><span class="p">}</span><span class="o">&gt;</span>
+<span class="w">      </span><span class="o">&lt;</span><span class="nx">GlobalProvider</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="nx">Layout</span><span class="o">&gt;</span>
+<span class="w">          </span><span class="o">&lt;</span><span class="nx">Component</span><span class="w"> </span><span class="p">{...</span><span class="nx">pageProps</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span>
+<span class="w">        </span><span class="o">&lt;</span><span class="err">/Layout&gt;</span>
+<span class="w">      </span><span class="o">&lt;</span><span class="err">/GlobalProvider&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="err">/SessionProvider&gt;</span>
+<span class="w">  </span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">trpc</span><span class="p">.</span><span class="nx">withTRPC</span><span class="p">(</span><span class="nx">App</span><span class="p">)</span>
+</code></pre></div>
+<p>But this will throw a type error</p>
+<p><img alt="" src="/media/trpc-typeerror.png" /></p>
+<div class="highlight"><pre><span></span><code><span class="nx">Argument</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="s1">&#39;({ Component, pageProps }: AppPropsWithLayout) =&gt; ReactNode&#39;</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">not</span><span class="w"> </span><span class="nx">assignable</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">parameter</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="s1">&#39;NextComponentType&lt;any, any, any&gt;&#39;</span><span class="p">.</span>
+<span class="w">  </span><span class="nx">Type</span><span class="w"> </span><span class="s1">&#39;({ Component, pageProps }: AppPropsWithLayout) =&gt; ReactNode&#39;</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">not</span><span class="w"> </span><span class="nx">assignable</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="s1">&#39;FunctionComponent&lt;any&gt; &amp; { getInitialProps?(context: any): any; }&#39;</span><span class="p">.</span>
+<span class="w">    </span><span class="nx">Type</span><span class="w"> </span><span class="s1">&#39;({ Component, pageProps }: AppPropsWithLayout) =&gt; ReactNode&#39;</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">not</span><span class="w"> </span><span class="nx">assignable</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="s1">&#39;FunctionComponent&lt;any&gt;&#39;</span><span class="p">.</span>
+<span class="w">      </span><span class="nx">Type</span><span class="w"> </span><span class="s1">&#39;ReactNode&#39;</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">not</span><span class="w"> </span><span class="nx">assignable</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="s1">&#39;ReactElement&lt;any, any&gt; | null&#39;</span><span class="p">.</span>
+<span class="w">        </span><span class="nx">Type</span><span class="w"> </span><span class="s1">&#39;undefined&#39;</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">not</span><span class="w"> </span><span class="nx">assignable</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="s1">&#39;ReactElement&lt;any, any&gt; | null&#39;</span><span class="p">.</span><span class="nx">ts</span><span class="p">(</span><span class="mf">2345</span><span class="p">)</span>
+</code></pre></div>
+<p>This is because <code>getLayout</code> returns a <code>ReactNode</code>,  the tRPC wrapper expects <code>NextComponentType</code>, which means it expects a <code>ReactElement</code> to be returned?</p>
+<p>What's the difference between a <code>ReactNode</code> and a <code>ReactElement</code>?</p>
+<p><a href="https://stackoverflow.com/a/58123882">This StackOverflow post</a> has a great explanation.</p>
+<blockquote>
+<p>A <a href="https://github.com/DefinitelyTyped/DefinitelyTyped/blob/9f855c408dac3c7b3bf0ed9d78242ce073c7aaf1/types/react/index.d.ts#L327"><code>ReactElement</code></a> is an object with <code>type</code>, <code>props</code>, and <code>key</code> properties:<br />
+...<br />
+A <a href="https://github.com/DefinitelyTyped/DefinitelyTyped/blob/9f855c408dac3c7b3bf0ed9d78242ce073c7aaf1/types/react/index.d.ts#L478"><code>ReactNode</code></a> is a <code>ReactElement</code>, <code>string</code>, <code>number</code>, <code>Iterable&lt;ReactNode&gt;</code>, <code>ReactPortal</code>, <code>boolean</code>, <code>null</code>, or <code>undefined</code>:</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://stackoverflow.com/users/2326961/g%c3%a9ry-ogam">Géry Ogam</a></cite></p>
+<p>So  <code>ReactElement</code>  can be cast to <code>ReactNode</code>, but not the other way around.</p>
+<p>There is a simple fix.  If you move the get layout call inside another React component, it will go back to being a <code>ReactElement</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="kr">type</span><span class="w"> </span><span class="nx">AppPropsWithLayout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">AppProps</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">Component</span><span class="o">:</span><span class="w"> </span><span class="kt">NextPageWithLayout</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">App</span><span class="p">({</span>
+<span class="w">  </span><span class="nx">Component</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">pageProps</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">session</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="nx">pageProps</span><span class="w"> </span><span class="p">},</span>
+<span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="nx">AppPropsWithLayout</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">getLayout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Component</span><span class="p">.</span><span class="nx">getLayout</span><span class="w"> </span><span class="o">??</span><span class="w"> </span><span class="p">((</span><span class="nx">page</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">page</span><span class="p">);</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">layout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">getLayout</span><span class="p">(</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">Layout</span><span class="o">&gt;</span>
+<span class="w">      </span><span class="o">&lt;</span><span class="nx">Component</span><span class="w"> </span><span class="p">{...</span><span class="nx">pageProps</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="err">/Layout&gt;</span>
+<span class="w">  </span><span class="p">);</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="nx">SessionProvider</span><span class="w"> </span><span class="nx">session</span><span class="o">=</span><span class="p">{</span><span class="nx">session</span><span class="p">}</span><span class="o">&gt;</span>
+<span class="w">      </span><span class="o">&lt;</span><span class="nx">GlobalProvider</span><span class="o">&gt;</span>
+<span class="w">        </span><span class="p">{</span><span class="nx">layout</span><span class="p">}</span>
+<span class="w">      </span><span class="o">&lt;</span><span class="err">/GlobalProvider&gt;</span>
+<span class="w">    </span><span class="o">&lt;</span><span class="err">/SessionProvider&gt;</span>
+<span class="w">  </span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">trpc</span><span class="p">.</span><span class="nx">withTRPC</span><span class="p">(</span><span class="nx">App</span><span class="p">)</span>
+</code></pre></div>
+<p>Lucky I was able to find <a href="https://brockherion.dev/blog/posts/creating-per-page-layouts-with-nextjs-typescript-trcp-and-nextauth/">this tutorial</a> which mentions this exact footgun while I was working on adding tRPC to <a href="/penultimate-guitar">Penultimate Guitar</a>.</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/next.js-with-trpc-and-layouts</guid>
+            <pubDate>2024-07-04</pubDate>
+        </item>
         
         <item>
             <title>RTK Query vs. Infinite Scrolling</title>
@@ -242,134 +370,6 @@
             </content:encoded>
             <guid isPermaLink="false">https://notes.zachmanson.com/rtk-query-vs.-infinite-scrolling</guid>
             <pubDate>2024-06-03</pubDate>
-        </item>
-        
-        <item>
-            <title>Next.js with tRPC and Layouts</title>
-            <link>https://notes.zachmanson.com/next.js-with-trpc-and-layouts</link>
-            
-            <content:encoded>
-                <![CDATA[<p>An interesting type error arises if you use the standard advice for installing tRPC on an existing Next.js project that already has a layout applied.</p>
-<p>Normally the advice for creating an app with a layout is to do this in your <code>src/pages/_app.tsx</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="c1">// src/pages/_app.tsx</span>
-
-<span class="c1">// ... imports go here</span>
-
-<span class="k">export</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="nx">NextPageWithLayout</span><span class="o">&lt;</span><span class="nx">P</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{},</span><span class="w"> </span><span class="nx">IP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">P</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">NextPage</span><span class="o">&lt;</span><span class="nx">P</span><span class="p">,</span><span class="w"> </span><span class="nx">IP</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">getLayout</span><span class="o">?:</span><span class="w"> </span><span class="p">(</span><span class="nx">page</span><span class="o">:</span><span class="w"> </span><span class="kt">ReactElement</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">ReactNode</span><span class="p">;</span>
-<span class="p">};</span>
-
-<span class="kr">type</span><span class="w"> </span><span class="nx">AppPropsWithLayout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">AppProps</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">Component</span><span class="o">:</span><span class="w"> </span><span class="kt">NextPageWithLayout</span><span class="p">;</span>
-<span class="p">};</span>
-
-<span class="kd">function</span><span class="w"> </span><span class="nx">App</span><span class="p">({</span>
-<span class="w">  </span><span class="nx">Component</span><span class="p">,</span>
-<span class="w">  </span><span class="nx">pageProps</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">session</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="nx">pageProps</span><span class="w"> </span><span class="p">},</span>
-<span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="nx">AppPropsWithLayout</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">getLayout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Component</span><span class="p">.</span><span class="nx">getLayout</span><span class="w"> </span><span class="o">??</span><span class="w"> </span><span class="p">((</span><span class="nx">page</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">page</span><span class="p">);</span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">getLayout</span><span class="p">(</span>
-<span class="w">    </span><span class="o">&lt;</span><span class="nx">SessionProvider</span><span class="w"> </span><span class="nx">session</span><span class="o">=</span><span class="p">{</span><span class="nx">session</span><span class="p">}</span><span class="o">&gt;</span>
-<span class="w">      </span><span class="o">&lt;</span><span class="nx">GlobalProvider</span><span class="o">&gt;</span>
-<span class="w">        </span><span class="o">&lt;</span><span class="nx">Layout</span><span class="o">&gt;</span>
-<span class="w">          </span><span class="o">&lt;</span><span class="nx">Component</span><span class="w"> </span><span class="p">{...</span><span class="nx">pageProps</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span>
-<span class="w">        </span><span class="o">&lt;</span><span class="err">/Layout&gt;</span>
-<span class="w">      </span><span class="o">&lt;</span><span class="err">/GlobalProvider&gt;</span>
-<span class="w">    </span><span class="o">&lt;</span><span class="err">/SessionProvider&gt;</span>
-<span class="w">  </span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">App</span>
-</code></pre></div>
-<p>This works pretty well.</p>
-<p>The docs for tRPC suggest wrapping that export:</p>
-<div class="highlight"><pre><span></span><code><span class="c1">// src/pages/_app.tsx</span>
-<span class="k">import</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">AppType</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;next/app&#39;</span><span class="p">;</span>
-<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">trpc</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;../utils/trpc&#39;</span><span class="p">;</span>
-<span class="kd">const</span><span class="w"> </span><span class="nx">MyApp</span><span class="o">:</span><span class="w"> </span><span class="kt">AppType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">Component</span><span class="p">,</span><span class="w"> </span><span class="nx">pageProps</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="o">&lt;</span><span class="nx">Component</span><span class="w"> </span><span class="p">{...</span><span class="nx">pageProps</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span><span class="p">;</span>
-<span class="p">};</span>
-<span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">trpc</span><span class="p">.</span><span class="nx">withTRPC</span><span class="p">(</span><span class="nx">MyApp</span><span class="p">);</span>
-</code></pre></div>
-<p>Combining these seems simple:</p>
-<div class="highlight"><pre><span></span><code><span class="c1">// src/pages/_app.tsx</span>
-
-<span class="c1">// ... imports go here</span>
-
-<span class="k">export</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="nx">NextPageWithLayout</span><span class="o">&lt;</span><span class="nx">P</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{},</span><span class="w"> </span><span class="nx">IP</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">P</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">NextPage</span><span class="o">&lt;</span><span class="nx">P</span><span class="p">,</span><span class="w"> </span><span class="nx">IP</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">getLayout</span><span class="o">?:</span><span class="w"> </span><span class="p">(</span><span class="nx">page</span><span class="o">:</span><span class="w"> </span><span class="kt">ReactElement</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">ReactNode</span><span class="p">;</span>
-<span class="p">};</span>
-
-<span class="kr">type</span><span class="w"> </span><span class="nx">AppPropsWithLayout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">AppProps</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">Component</span><span class="o">:</span><span class="w"> </span><span class="kt">NextPageWithLayout</span><span class="p">;</span>
-<span class="p">};</span>
-
-<span class="kd">function</span><span class="w"> </span><span class="nx">App</span><span class="p">({</span>
-<span class="w">  </span><span class="nx">Component</span><span class="p">,</span>
-<span class="w">  </span><span class="nx">pageProps</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">session</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="nx">pageProps</span><span class="w"> </span><span class="p">},</span>
-<span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="nx">AppPropsWithLayout</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">getLayout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Component</span><span class="p">.</span><span class="nx">getLayout</span><span class="w"> </span><span class="o">??</span><span class="w"> </span><span class="p">((</span><span class="nx">page</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">page</span><span class="p">);</span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">getLayout</span><span class="p">(</span>
-<span class="w">    </span><span class="o">&lt;</span><span class="nx">SessionProvider</span><span class="w"> </span><span class="nx">session</span><span class="o">=</span><span class="p">{</span><span class="nx">session</span><span class="p">}</span><span class="o">&gt;</span>
-<span class="w">      </span><span class="o">&lt;</span><span class="nx">GlobalProvider</span><span class="o">&gt;</span>
-<span class="w">        </span><span class="o">&lt;</span><span class="nx">Layout</span><span class="o">&gt;</span>
-<span class="w">          </span><span class="o">&lt;</span><span class="nx">Component</span><span class="w"> </span><span class="p">{...</span><span class="nx">pageProps</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span>
-<span class="w">        </span><span class="o">&lt;</span><span class="err">/Layout&gt;</span>
-<span class="w">      </span><span class="o">&lt;</span><span class="err">/GlobalProvider&gt;</span>
-<span class="w">    </span><span class="o">&lt;</span><span class="err">/SessionProvider&gt;</span>
-<span class="w">  </span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">trpc</span><span class="p">.</span><span class="nx">withTRPC</span><span class="p">(</span><span class="nx">App</span><span class="p">)</span>
-</code></pre></div>
-<p>But this will throw a type error</p>
-<p><img alt="" src="/media/trpc-typeerror.png" /></p>
-<div class="highlight"><pre><span></span><code><span class="nx">Argument</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="s1">&#39;({ Component, pageProps }: AppPropsWithLayout) =&gt; ReactNode&#39;</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">not</span><span class="w"> </span><span class="nx">assignable</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">parameter</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="s1">&#39;NextComponentType&lt;any, any, any&gt;&#39;</span><span class="p">.</span>
-<span class="w">  </span><span class="nx">Type</span><span class="w"> </span><span class="s1">&#39;({ Component, pageProps }: AppPropsWithLayout) =&gt; ReactNode&#39;</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">not</span><span class="w"> </span><span class="nx">assignable</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="s1">&#39;FunctionComponent&lt;any&gt; &amp; { getInitialProps?(context: any): any; }&#39;</span><span class="p">.</span>
-<span class="w">    </span><span class="nx">Type</span><span class="w"> </span><span class="s1">&#39;({ Component, pageProps }: AppPropsWithLayout) =&gt; ReactNode&#39;</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">not</span><span class="w"> </span><span class="nx">assignable</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="s1">&#39;FunctionComponent&lt;any&gt;&#39;</span><span class="p">.</span>
-<span class="w">      </span><span class="nx">Type</span><span class="w"> </span><span class="s1">&#39;ReactNode&#39;</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">not</span><span class="w"> </span><span class="nx">assignable</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="s1">&#39;ReactElement&lt;any, any&gt; | null&#39;</span><span class="p">.</span>
-<span class="w">        </span><span class="nx">Type</span><span class="w"> </span><span class="s1">&#39;undefined&#39;</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">not</span><span class="w"> </span><span class="nx">assignable</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="s1">&#39;ReactElement&lt;any, any&gt; | null&#39;</span><span class="p">.</span><span class="nx">ts</span><span class="p">(</span><span class="mf">2345</span><span class="p">)</span>
-</code></pre></div>
-<p>This is because <code>getLayout</code> returns a <code>ReactNode</code>,  the tRPC wrapper expects <code>NextComponentType</code>, which means it expects a <code>ReactElement</code> to be returned?</p>
-<p>What's the difference between a <code>ReactNode</code> and a <code>ReactElement</code>?</p>
-<p><a href="https://stackoverflow.com/a/58123882">This StackOverflow post</a> has a great explanation.</p>
-<blockquote>
-<p>A <a href="https://github.com/DefinitelyTyped/DefinitelyTyped/blob/9f855c408dac3c7b3bf0ed9d78242ce073c7aaf1/types/react/index.d.ts#L327"><code>ReactElement</code></a> is an object with <code>type</code>, <code>props</code>, and <code>key</code> properties:<br />
-...<br />
-A <a href="https://github.com/DefinitelyTyped/DefinitelyTyped/blob/9f855c408dac3c7b3bf0ed9d78242ce073c7aaf1/types/react/index.d.ts#L478"><code>ReactNode</code></a> is a <code>ReactElement</code>, <code>string</code>, <code>number</code>, <code>Iterable&lt;ReactNode&gt;</code>, <code>ReactPortal</code>, <code>boolean</code>, <code>null</code>, or <code>undefined</code>:</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://stackoverflow.com/users/2326961/g%c3%a9ry-ogam">Géry Ogam</a></cite></p>
-<p>So  <code>ReactElement</code>  can be cast to <code>ReactNode</code>, but not the other way around.</p>
-<p>There is a simple fix.  If you move the get layout call inside another React component, it will go back to being a <code>ReactElement</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="kr">type</span><span class="w"> </span><span class="nx">AppPropsWithLayout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">AppProps</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">Component</span><span class="o">:</span><span class="w"> </span><span class="kt">NextPageWithLayout</span><span class="p">;</span>
-<span class="p">};</span>
-
-<span class="kd">function</span><span class="w"> </span><span class="nx">App</span><span class="p">({</span>
-<span class="w">  </span><span class="nx">Component</span><span class="p">,</span>
-<span class="w">  </span><span class="nx">pageProps</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">session</span><span class="p">,</span><span class="w"> </span><span class="p">...</span><span class="nx">pageProps</span><span class="w"> </span><span class="p">},</span>
-<span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="nx">AppPropsWithLayout</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">getLayout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Component</span><span class="p">.</span><span class="nx">getLayout</span><span class="w"> </span><span class="o">??</span><span class="w"> </span><span class="p">((</span><span class="nx">page</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">page</span><span class="p">);</span>
-<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">layout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">getLayout</span><span class="p">(</span>
-<span class="w">    </span><span class="o">&lt;</span><span class="nx">Layout</span><span class="o">&gt;</span>
-<span class="w">      </span><span class="o">&lt;</span><span class="nx">Component</span><span class="w"> </span><span class="p">{...</span><span class="nx">pageProps</span><span class="p">}</span><span class="w"> </span><span class="o">/&gt;</span>
-<span class="w">    </span><span class="o">&lt;</span><span class="err">/Layout&gt;</span>
-<span class="w">  </span><span class="p">);</span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
-<span class="w">    </span><span class="o">&lt;</span><span class="nx">SessionProvider</span><span class="w"> </span><span class="nx">session</span><span class="o">=</span><span class="p">{</span><span class="nx">session</span><span class="p">}</span><span class="o">&gt;</span>
-<span class="w">      </span><span class="o">&lt;</span><span class="nx">GlobalProvider</span><span class="o">&gt;</span>
-<span class="w">        </span><span class="p">{</span><span class="nx">layout</span><span class="p">}</span>
-<span class="w">      </span><span class="o">&lt;</span><span class="err">/GlobalProvider&gt;</span>
-<span class="w">    </span><span class="o">&lt;</span><span class="err">/SessionProvider&gt;</span>
-<span class="w">  </span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">trpc</span><span class="p">.</span><span class="nx">withTRPC</span><span class="p">(</span><span class="nx">App</span><span class="p">)</span>
-</code></pre></div>
-<p>Lucky I was able to find <a href="https://brockherion.dev/blog/posts/creating-per-page-layouts-with-nextjs-typescript-trcp-and-nextauth/">this tutorial</a> which mentions this exact footgun while I was working on adding tRPC to <a href="/penultimate-guitar">Penultimate Guitar</a>.</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/next.js-with-trpc-and-layouts</guid>
-            <pubDate>2024-07-04</pubDate>
         </item>
         
 
