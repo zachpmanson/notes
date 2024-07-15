@@ -1,5 +1,5 @@
 ---
-subtitle: Poetry doesn't show Python versions when reporting dependency version ranges, but it does respect them when locking
+subtitle: Poetry
 tags:
   - venting
   - yak-shaving
