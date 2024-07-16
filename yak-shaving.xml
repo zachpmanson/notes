@@ -13,13 +13,11 @@
             <link>https://notes.zachmanson.com/yak-shaving</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Mon, 15 Jul 2024 09:45:56 </lastBuildDate>
+        <lastBuildDate>Tue, 16 Jul 2024 11:48:04 </lastBuildDate>
         
         <item>
             <title>Poetry Showing Dependencies it Refuses to Install</title>
             <link>https://notes.zachmanson.com/poetry-showing-dependencies-it-refuses-to-install</link>
-            
-            <description>Poetry</description>
             
             <content:encoded>
                 <![CDATA[<p>When Poetry lists the dependencies for a package it doesn't show the Python versions that those ranges are valid for.  For example, <a href="https://github.com/boto/botocore/blob/develop/setup.py">this</a> <code>setup.py</code>:</p>
