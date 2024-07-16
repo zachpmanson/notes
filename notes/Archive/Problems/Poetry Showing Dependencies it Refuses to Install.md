@@ -1,5 +1,4 @@
 ---
-subtitle: Poetry
 tags:
   - venting
   - yak-shaving
