@@ -18,23 +18,25 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	  trackstar
 	- **[api.zachmanson.com](https://api.zachmanson.com)**  
 	  general purpose API currently only used for serving [[Status Messenger]]  
-	  trackstar
+	  vercel
 	- **[minecraftle.zachmanson.com](https://minecraftle.zachmanson.com)**  
 	  deployed instance of [[Minecraftle]], a puzzle game based on Wordle and Minecraft crafting recipes   
-	  ~~vercel + trackstar (db)~~  
-	  trackstar (db + public asset serving (probably should migrate to mctl)) + mctl (digitalocean)
+	  mctl (digitalocean)  
 	- **[minecraftle-public.zachmanson.com](https://minecraftle-public.zachmanson.com)** 
 	  static asset server for minecraftle so I don't overload vercel   
+	  trackstar (public asset serving (probably should migrate to mctl))
+	- **[db.zachmanson.com](db.zachmanson.com)**  
+	  postgres databases for Penultimate Guitar, Minecraftle, Alculator, api   
 	  trackstar
-	- **[pg.zachmanson.com](https://pg.zachmanson.com). **  
+	- **[pg.zachmanson.com](https://pg.zachmanson.com)** 
 	  deployed instance of [[Penultimate Guitar]]   
-	  vercel + trackstar (db)
+	  vercel
 	- **[todont.zachmanson.com](https://todont.zachmanson.com)**  
 	  an extremely basic todo I built to learn React  
 	  vercel
 	- **[alculator.zachmanson.com](https://alculator.zachmanson.com)**  
 	  deployed instance of [[Alculator]]  
-	  vercel + gh actions + trackstar (db)
+	  vercel + gh actions
 	- **mc.zachmanson.com**  
 	  minecraft server  
 	  trenzalore
@@ -44,9 +46,8 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	- [**unroller.zachmanson.com**](https://unroller.zachmanson.com)  
 	  deployed instance of [[Mastodon Thread Unroller]]  
 	  vercel
-	  - **[elk.zachmanson.com](https://elk.zachmanson.com)**  
-	deployed instance. of my patched version of [[Elk]]
-
+	- **[elk.zachmanson.com](https://elk.zachmanson.com)**  
+	  deployed instance. of my patched version of [[Elk]]
 
 - **[manson.dev](https://manson.dev)**  
   currently a directory forward to zachmanson.com, I intend to make it an email server + subdomain forward to zachmanson.com  
