@@ -12,7 +12,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: firefox photon</title>
+  <title>notes: zod datestrings</title>
 </head>
 
 <body>
@@ -65,7 +65,7 @@
         
 
         <div class="flex flex-col text-left nav-links">
-          <a href="/firefox-photon" class="activated-link">Firefox Photon</a>
+          <a href="/zod-datestrings" class="activated-link">Zod Datestrings</a>
           
           
           <a href="/alembic-revision-collision">Alembic Revision Collision</a>
@@ -112,6 +112,7 @@
           
           
           
+          <a href="/firefox-photon">Firefox Photon</a>
           
           
           
@@ -303,7 +304,6 @@
           
           
           
-          <a href="/zod-datestrings">Zod Datestrings</a>
           
           
           
@@ -324,40 +324,14 @@
 
   <main>
     <header>
-      <h1>Firefox Photon</h1>
+      <h1>Zod Datestrings</h1>
     </header>
 
-    <article><p>Styling Firefox Proton to resemble Firefox Photon.</p>
-<p>Originally tested on Firefox 91, confirmed working on Firefox 104.</p>
-<p>Firefox Proton
-<img alt="" src="/media/firefox-proton.png" /></p>
-<p>Firefox Photon
-<img alt="" src="/media/firefox-photon.png" /></p>
-<p>Firefox Proton brought many lovely features, but I deeply prefer the Photon tab design.  Luckily, Proton supports applying CSS styling to window elements like the tab bar.</p>
-<ol>
-<li>Open <code>about:config</code></li>
-<li>Find for <code>toolkit.legacyUserProfileCustomizations.stylesheets</code>, set its value to true.</li>
-<li>Open <code>about:support</code> and go to the directory marked "Profile Directory" or "Profile Folder".</li>
-<li>Create file <code>&lt;profile directory&gt;/chrome/userChrome.css</code> with custom stylesheet, e.g.
-<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">tab-background</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="kt">px</span><span class="w"> </span><span class="mi">0</span><span class="kt">px</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
-<span class="w">    </span><span class="k">margin-bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="kt">px</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
-<span class="w">    </span><span class="k">margin-top</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="kt">px</span><span class="w"> </span><span class="cp">!important</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="p">.</span><span class="nc">tabbrowser-tab</span><span class="p">:</span><span class="nd">not</span><span class="o">([</span><span class="nt">selected</span><span class="o">=</span><span class="nt">true</span><span class="o">])</span><span class="p">:</span><span class="nd">not</span><span class="o">([</span><span class="nt">multiselected</span><span class="o">=</span><span class="nt">true</span><span class="o">])</span><span class="w"> </span><span class="p">.</span><span class="nc">tab-background</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="nf">color-mix</span><span class="p">(</span><span class="n">in</span><span class="w"> </span><span class="n">srgb</span><span class="p">,</span><span class="w"> </span><span class="kc">currentColor</span><span class="w"> </span><span class="mi">0</span><span class="kt">%</span><span class="p">,</span><span class="w"> </span><span class="kc">transparent</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div></li>
-<li>Restart Firefox</li>
-</ol>
-<p><img alt="" src="/media/firefox-proton-modded.png" /></p>
-<h2 id="links">Links</h2>
-<ul>
-<li><a href="https://superuser.com/questions/1653533/how-to-switch-back-to-firefox-old-style-of-tabs/1669549#1669549">Source</a></li>
-<li><a href="https://github.com/black7375/Firefox-UI-Fix">Someone doing it even better</a></li>
-<li><a href="https://github.com/black7375/Firefox-UI-Fix/wiki/%5BArticle%5D-0.-Firefox-UI-UX-history">Firefox UI History</a></li>
-</ul></article>
+    <article><p>To make zod only accept valid datestrings (YYYY-MM-DD), use:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">schema</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">z</span><span class="p">.</span><span class="nx">object</span><span class="p">({</span>
+<span class="w">  </span><span class="nx">date</span><span class="o">:</span><span class="w"> </span><span class="nx">z</span><span class="p">.</span><span class="nx">string</span><span class="p">().</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">z</span><span class="p">.</span><span class="nx">coerce</span><span class="p">.</span><span class="nx">date</span><span class="p">()),</span>
+<span class="p">})</span>
+</code></pre></div></article>
   </main>
 
   <footer>
@@ -368,30 +342,31 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/xfce-screentearing" class="not-extra-small">random</a>
+          <a href="/non-programming-languages" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
-          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Firefox Photon.md" class="desktop">edit</a>
-          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Problems/Firefox Photon.md" class="mobile">edit</a>
-          <a href="mailto:zachpmanson@gmail.com?subject=On 'Firefox Photon'">reply</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Zod Datestrings.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Problems/Zod Datestrings.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'Zod Datestrings'">reply</a>
         </div>
       </summary>
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/xfce-screentearing">random</a>
+          <a href="/non-programming-languages">random</a>
         </div>
       </div>
 
       
 
-      
-      <p class="backlinks"><strong> <a href="/tags">Tags:</a></strong>
+      <p class="backlinks"><strong>Incoming:</strong>
         
-        <a href="/tags#dirty-hacks">#dirty-hacks</a>
+        <a href="/recent-changes">Recent Changes</a>
         
         </span>
       </p>
+      
+
       
       <p>
         
@@ -400,7 +375,7 @@
           <strong>
             Updated:
           </strong>
-          2024-04-17
+          2024-07-23
         </span>
 
       </p>
