@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meta/DNS.md",
+                "file": "Archive/Problems/Zod Datestrings.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Meta/DNS.md",
+                "file": "Archive/Problems/Zod Datestrings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Meta/DNS.md",
+                "file": "Archive/Problems/Zod Datestrings.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Meta/DNS.md"
+                "file": "Archive/Problems/Zod Datestrings.md"
               }
             }
           }
@@ -198,6 +198,9 @@
   },
   "active": "adc7dcb4baea5bd4",
   "lastOpenFiles": [
+    "Archive/Templates/Next.js API Validation Template.md",
+    "Archive/Problems/Zod Datestrings.md",
+    "Meta/DNS.md",
     "Archive/Bookmarks/Chatrooms.md",
     "Archive/Bookmarks/Bookmarks.md",
     "Archive/Problems/Poetry Showing Dependencies it Refuses to Install.md",
@@ -223,9 +226,6 @@
     "Projects/Ochrs/Ochrs.md",
     "Projects/Ochrs/Ochrs 2.0.md",
     "Projects/Ochrs/Ochrs Syntax.md",
-    "Archive/Folklore/On the Origins of Rust.md",
-    "Notes/Software/Development/Web Development/HTML First Development.md",
-    "tags.md",
     "Media/kinde-2.png",
     "Media/kinde-1.png",
     "Media/sliding-menu.mp4",
