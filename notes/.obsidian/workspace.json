@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "4a6854f08fe89511",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Archive/Problems/Git Restoring Deleted Files From Past Commits.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "973a0349f1700dea",
             "type": "leaf",
             "state": {
@@ -61,14 +73,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/Zod Datestrings.md",
+                "file": "Projects/Penultimate Guitar.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -134,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Problems/Zod Datestrings.md",
+                "file": "Archive/Problems/Git Restoring Deleted Files From Past Commits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Problems/Zod Datestrings.md",
+                "file": "Archive/Problems/Git Restoring Deleted Files From Past Commits.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Problems/Zod Datestrings.md"
+                "file": "Archive/Problems/Git Restoring Deleted Files From Past Commits.md"
               }
             }
           }
@@ -196,10 +208,13 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "adc7dcb4baea5bd4",
+  "active": "4a6854f08fe89511",
   "lastOpenFiles": [
-    "Archive/Templates/Next.js API Validation Template.md",
+    "Archive/Problems/Android File Transfer on macOS.md",
+    "Archive/Problems/Git Restoring Deleted Files From Past Commits.md",
+    "Projects/Penultimate Guitar.md",
     "Archive/Problems/Zod Datestrings.md",
+    "Archive/Templates/Next.js API Validation Template.md",
     "Meta/DNS.md",
     "Archive/Bookmarks/Chatrooms.md",
     "Archive/Bookmarks/Bookmarks.md",
@@ -218,14 +233,11 @@
     "Notes/Software/Unix/macOS/macOS Problems.md",
     "Archive/Problems/Next.js with tRPC and Layouts.md",
     "Media/trpc-typeerror.png",
-    "Archive/Problems/Android File Transfer on macOS.md",
     "Media/kinde-3.png",
     "Archive/Folklore/Put yourself in Jia Tan's shoes.md",
     "Meta/Meta.md",
     "Posts/Posts.md",
     "Projects/Ochrs/Ochrs.md",
-    "Projects/Ochrs/Ochrs 2.0.md",
-    "Projects/Ochrs/Ochrs Syntax.md",
     "Media/kinde-2.png",
     "Media/kinde-1.png",
     "Media/sliding-menu.mp4",

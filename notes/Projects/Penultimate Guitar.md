@@ -8,13 +8,13 @@ subtitle: Penultimate Guitar is an alternate frontend for Ultimate Guitar.
 ---
 It focuses on mobile usability and Spotify integration.  All features are available on mobile*.
 
-It is built with TypeScript, Next.js, and Tailwind and deployed on Vercel.  It works in tandem with a Postgres instance on a DigitalOcean through Prisma.  The source code takes a lot of inspiration from [[Alculator]].
+It is built with TypeScript, Next.js, and Tailwind and deployed on Vercel. It works in tandem with a Postgres instance on a DigitalOcean through Prisma.  The source code takes a lot of inspiration from [[Alculator]]. Over time I've added account syncing with Spotify OAuth using NextAuth, and migrated the backend to tRPC.
 
 Features include:
 
 - saving favourite tabs to device, or to your account
 - Spotify login (alpha), allowing you to import playlists and sync saved tabs across devices
-	- when Spotify playlists, the highest rated chords for all songs in playlist will be found
+	- when Spotify playlist are imported, the highest rated chords for all songs in playlist will be found
 - chord tooltips
 - transposing
 - autoscrolling

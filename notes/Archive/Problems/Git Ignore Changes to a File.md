@@ -1,4 +1,4 @@
-To tell [[Git]] to ignore changes to a file, set the skip worktree option.
+To tell [[Notes/Software/Programs/Git/Git]] to ignore changes to a file, set the skip worktree option.
 
 ```sh
 git update-index --skip-worktree filename
