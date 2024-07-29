@@ -208,10 +208,12 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "4a6854f08fe89511",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Notes/Mathematics/Computer Science/Computer Science.md",
+    "Notes/Mathematics/Mathematics.md",
+    "Notes/Mathematics/Power Set.md",
     "Notes/Mathematics/Arity.md",
+    "Notes/Mathematics/Computer Science/Computer Science.md",
     "Archive/Problems/Git Restoring Deleted Files From Past Commits.md",
     "Archive/Problems/Android File Transfer on macOS.md",
     "Projects/Penultimate Guitar.md",
@@ -236,8 +238,6 @@
     "Archive/Problems/Next.js with tRPC and Layouts.md",
     "Media/trpc-typeerror.png",
     "Media/kinde-3.png",
-    "Archive/Folklore/Put yourself in Jia Tan's shoes.md",
-    "Meta/Meta.md",
     "Media/kinde-2.png",
     "Media/kinde-1.png",
     "Media/sliding-menu.mp4",
