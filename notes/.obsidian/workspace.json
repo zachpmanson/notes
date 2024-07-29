@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/Git Restoring Deleted Files From Past Commits.md",
+                "file": "Notes/Mathematics/Arity.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Problems/Git Restoring Deleted Files From Past Commits.md",
+                "file": "Notes/Mathematics/Arity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Problems/Git Restoring Deleted Files From Past Commits.md",
+                "file": "Notes/Mathematics/Arity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Problems/Git Restoring Deleted Files From Past Commits.md"
+                "file": "Notes/Mathematics/Arity.md"
               }
             }
           }
@@ -210,8 +210,10 @@
   },
   "active": "4a6854f08fe89511",
   "lastOpenFiles": [
-    "Archive/Problems/Android File Transfer on macOS.md",
+    "Notes/Mathematics/Computer Science/Computer Science.md",
+    "Notes/Mathematics/Arity.md",
     "Archive/Problems/Git Restoring Deleted Files From Past Commits.md",
+    "Archive/Problems/Android File Transfer on macOS.md",
     "Projects/Penultimate Guitar.md",
     "Archive/Problems/Zod Datestrings.md",
     "Archive/Templates/Next.js API Validation Template.md",
@@ -236,8 +238,6 @@
     "Media/kinde-3.png",
     "Archive/Folklore/Put yourself in Jia Tan's shoes.md",
     "Meta/Meta.md",
-    "Posts/Posts.md",
-    "Projects/Ochrs/Ochrs.md",
     "Media/kinde-2.png",
     "Media/kinde-1.png",
     "Media/sliding-menu.mp4",
