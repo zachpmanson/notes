@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> Blog posts are written, not defecated
+
+-- [Merlin Mann](http://www.43folders.com/2008/08/19/good-blogs)
+
+---
+
 > As if I were a self-styled Moses, coming down from the mountain all alone, carrying the stone tablets bearing the Ten Commandments carved in immutable stone--the original command-line interface
 
 -- Neal Stephenson, [[In the Beginning was the Command Line]]

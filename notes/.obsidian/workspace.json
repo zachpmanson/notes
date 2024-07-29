@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/Tools.md",
+                "file": "Archive/Bookmarks/Digital Gardens.md",
                 "mode": "source",
                 "source": false
               }
@@ -47,11 +47,16 @@
             "id": "97802b600a1d3ce3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Software/Design/Spotify Design Decisions.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -117,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/Tools.md",
+                "file": "Notes/Software/Design/Spotify Design Decisions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/Tools.md",
+                "file": "Notes/Software/Design/Spotify Design Decisions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/Tools.md"
+                "file": "Notes/Software/Design/Spotify Design Decisions.md"
               }
             }
           }
@@ -179,8 +184,12 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "4a6854f08fe89511",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Archive/Lines.md",
+    "Archive/Bookmarks/Digital Gardens.md",
+    "Index.md",
+    "Archive/Bookmarks/Tools.md",
     "Archive/Bookmarks/Websites.md",
     "Archive/Folklore/In the Beginning was the Command Line.md",
     "Archive/Folklore/Cool URIs Don't Change.md",
@@ -193,7 +202,6 @@
     "Notes/Cybersecurity",
     "Notes/Software/Microsoft Product Names.md",
     "Notes/Courses/Courses.md",
-    "Archive/Lines.md",
     "Archive/Folklore/The Descent to C.md",
     "Archive/Folklore/Blinkenlichten.md",
     "Archive/Folklore/Folklore.md",
@@ -205,9 +213,6 @@
     "Notes/Mathematics/Mathematics.md",
     "Notes/Mathematics/Power Set.md",
     "Notes/Mathematics/Computer Science/Computer Science.md",
-    "Archive/Problems/Git Restoring Deleted Files From Past Commits.md",
-    "Archive/Problems/Zod Datestrings.md",
-    "Archive/Templates/Next.js API Validation Template.md",
     "Media/trpc-typeerror.png",
     "Media/kinde-3.png",
     "Media/kinde-2.png",
