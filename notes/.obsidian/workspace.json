@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Design/Spotify Design Decisions.md",
+                "file": "Notes/Miscellany/On Writing.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Design/Spotify Design Decisions.md",
+                "file": "Notes/Miscellany/On Writing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Design/Spotify Design Decisions.md",
+                "file": "Notes/Miscellany/On Writing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Design/Spotify Design Decisions.md"
+                "file": "Notes/Miscellany/On Writing.md"
               }
             }
           }
@@ -186,6 +186,7 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Design/Spotify Design Decisions.md",
     "Archive/Lines.md",
     "Archive/Bookmarks/Digital Gardens.md",
     "Index.md",
@@ -212,7 +213,6 @@
     "Notes/Mathematics/Arity.md",
     "Notes/Mathematics/Mathematics.md",
     "Notes/Mathematics/Power Set.md",
-    "Notes/Mathematics/Computer Science/Computer Science.md",
     "Media/trpc-typeerror.png",
     "Media/kinde-3.png",
     "Media/kinde-2.png",

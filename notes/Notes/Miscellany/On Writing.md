@@ -17,3 +17,7 @@ I'd like to make an editor mode that doesn't allow backspace. Fully seperate edi
 > Tellers of stories with ink on paper, not that they matter any more, have been either swoopers or bashers. Swoopers write a story quickly, higgledy-piggledy, crinkum-crankum, any which way. Then they go over it again painstakingly, fixing everything that is just plain awful or doesn’t work. Bashers go one sentence at a time, getting it exactly right before they go on to the next one. When they’re done they’re done.
 
 -- Kurt Vonnegut
+
+## Links 
+
+- Merlin Mann [on writer's block](http://www.43folders.com/2004/11/18/hack-your-way-out-of-writers-block)
