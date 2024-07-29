@@ -1,4 +1,3 @@
-
 A writeup for those learning [[C]] after learning more modern languages, by [Simon Tatham](https://www.chiark.greenend.org.uk/~sgtatham/cdescent/).
 
 ---

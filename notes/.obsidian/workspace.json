@@ -8,72 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "26831c95b7447af0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Archive/Problems/Android File Transfer on macOS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "4a6854f08fe89511",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Mathematics/Arity.md",
+                "file": "Archive/Folklore/In the Beginning was the Command Line.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "973a0349f1700dea",
+            "id": "8e7a621afa3add62",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Folklore/The Descent to C.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7beccd52b777de74",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Software/Development/Web Development/HTML First Development.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4c4d976b54479052",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Archive/Problems/Problems.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "adc7dcb4baea5bd4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/Penultimate Guitar.md",
+                "file": "Notes/Courses/Courses.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Mathematics/Arity.md",
+                "file": "Notes/Courses/Courses.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Mathematics/Arity.md",
+                "file": "Notes/Courses/Courses.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Mathematics/Arity.md"
+                "file": "Notes/Courses/Courses.md"
               }
             }
           }
@@ -210,13 +162,19 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Notes/Mathematics/Mathematics.md",
-    "Notes/Mathematics/Power Set.md",
-    "Notes/Mathematics/Arity.md",
-    "Notes/Mathematics/Computer Science/Computer Science.md",
-    "Archive/Problems/Git Restoring Deleted Files From Past Commits.md",
+    "Archive/Folklore/In the Beginning was the Command Line.md",
+    "Archive/Folklore/The Descent to C.md",
+    "Archive/Folklore/Blinkenlichten.md",
+    "Archive/Folklore/Folklore.md",
     "Archive/Problems/Android File Transfer on macOS.md",
     "Projects/Penultimate Guitar.md",
+    "Archive/Problems/Problems.md",
+    "Notes/Software/Development/Web Development/HTML First Development.md",
+    "Notes/Mathematics/Arity.md",
+    "Notes/Mathematics/Mathematics.md",
+    "Notes/Mathematics/Power Set.md",
+    "Notes/Mathematics/Computer Science/Computer Science.md",
+    "Archive/Problems/Git Restoring Deleted Files From Past Commits.md",
     "Archive/Problems/Zod Datestrings.md",
     "Archive/Templates/Next.js API Validation Template.md",
     "Meta/DNS.md",
@@ -224,18 +182,12 @@
     "Archive/Bookmarks/Bookmarks.md",
     "Archive/Problems/Poetry Showing Dependencies it Refuses to Install.md",
     "Archive/Folklore/Interviewing for Canonical.md",
-    "Archive/Problems/Problems.md",
     "Archive/Bookmarks/xkcd.md",
     "Archive/Lines.md",
     "Notes/Software/Programs/Git/Git.md",
     "Archive/Bookmarks/Blogs.md",
     "Archive/Bookmarks/Websites.md",
     "Notes/Software/Development/Development Methodologies/Development Methodologies.md",
-    "Archive/Bookmarks/Technology Gibberish.md",
-    "Archive/Bookmarks/Lists.md",
-    "Notes/Notes.md",
-    "Notes/Software/Unix/macOS/macOS Problems.md",
-    "Archive/Problems/Next.js with tRPC and Layouts.md",
     "Media/trpc-typeerror.png",
     "Media/kinde-3.png",
     "Media/kinde-2.png",
