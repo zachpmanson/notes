@@ -49,11 +49,12 @@ Intentionally miscellaneous.
 ## Regular Art
 
 - [RAPIDLY PRESS X TO REFUSE TO COME TO TERMS WITH YOUR OWN MORTALITY](https://guzey.com/x/)
-- [Guzey vibes website](https://guzey.com/vibe_screenshots/), inspired by [girl.surgery's vibe website](https://girl.surgery/website_vibes/)
+- [Guzey vibes website](https://guzey.com/vibe_screenshots/), inspired by [girl.surgery's vibe website](https://girl.surgery/website_vibes/) (TODO make one of these this looks fun)
 
 ## Site Directories
 
 - [ooh.directory](https://ooh.directory/)
+- [slash.pages](https://slashpages.net/), list of directories for sites that contain different kinds of slash pages
 
 ## Games
 

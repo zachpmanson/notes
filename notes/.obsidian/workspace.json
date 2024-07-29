@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/Websites.md",
+                "file": "Notes/Software/Development/Web Development/HTML First Development.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/Websites.md",
+                "file": "Notes/Software/Development/Web Development/HTML First Development.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/Websites.md",
+                "file": "Notes/Software/Development/Web Development/HTML First Development.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/Websites.md"
+                "file": "Notes/Software/Development/Web Development/HTML First Development.md"
               }
             }
           }
@@ -162,11 +162,13 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Development/Web Development/Web Design/Web Design.md",
+    "Notes/Software/Design/Spotify Design Decisions.md",
+    "Notes/Software/Development/Web Development/Web Design",
+    "Archive/Bookmarks/Websites.md",
     "Notes/Software/Design/Fun Design.md",
     "Archive/Bookmarks/Digital Gardens.md",
     "Posts/Hidden Post.md",
-    "Archive/Bookmarks/Websites.md",
-    "Notes/Software/Design/Spotify Design Decisions.md",
     "Archive/Lines.md",
     "Index.md",
     "Archive/Bookmarks/Tools.md",
@@ -188,7 +190,6 @@
     "Notes/Software/Development/Web Development/HTML First Development.md",
     "Notes/Mathematics/Arity.md",
     "Notes/Mathematics/Mathematics.md",
-    "Notes/Mathematics/Power Set.md",
     "Media/trpc-typeerror.png",
     "Media/kinde-3.png",
     "Media/kinde-2.png",
@@ -206,7 +207,6 @@
     "Media/dialup-handshake-audio.png",
     "Notes/Software/Development/Programming Languages/C/Archaic Syntax",
     "Media/spotify-top-bar.png",
-    "Notes/Networks",
     "Media/mctl-routes.png",
     "Untitled.canvas"
   ]
