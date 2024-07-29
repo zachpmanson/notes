@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Folklore/In the Beginning was the Command Line.md",
+                "file": "Archive/Lines.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Courses/Courses.md",
+                "file": "Archive/Lines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Courses/Courses.md",
+                "file": "Archive/Lines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Courses/Courses.md"
+                "file": "Archive/Lines.md"
               }
             }
           }
@@ -163,6 +162,7 @@
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
     "Archive/Folklore/In the Beginning was the Command Line.md",
+    "Notes/Courses/Courses.md",
     "Archive/Folklore/The Descent to C.md",
     "Archive/Folklore/Blinkenlichten.md",
     "Archive/Folklore/Folklore.md",
@@ -187,7 +187,6 @@
     "Notes/Software/Programs/Git/Git.md",
     "Archive/Bookmarks/Blogs.md",
     "Archive/Bookmarks/Websites.md",
-    "Notes/Software/Development/Development Methodologies/Development Methodologies.md",
     "Media/trpc-typeerror.png",
     "Media/kinde-3.png",
     "Media/kinde-2.png",

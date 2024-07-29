@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> As if I were a self-styled Moses, coming down from the mountain all alone, carrying the stone tablets bearing the Ten Commandments carved in immutable stone--the original command-line interface
+
+-- Neal Stephenson, [[In the Beginning was the Command Line]]
+
+---
+
 > Don't let OpenAI steal the art for you, steal the damn work for yourself
 
 -- [Tristram Oaten](https://www.youtube.com/watch?v=qjPAWy_2FL0&t=306s)
