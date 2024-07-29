@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Miscellany/On Writing.md",
+                "file": "Archive/Bookmarks/Websites.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,8 +85,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "#devrel",
-                "matchingCase": false,
+                "query": "Art",
+                "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
                 "extraContext": true,
@@ -102,7 +102,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -122,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Miscellany/On Writing.md",
+                "file": "Archive/Bookmarks/Websites.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Miscellany/On Writing.md",
+                "file": "Archive/Bookmarks/Websites.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Miscellany/On Writing.md"
+                "file": "Archive/Bookmarks/Websites.md"
               }
             }
           }
@@ -184,11 +185,11 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "ae2026764fcf906e",
   "lastOpenFiles": [
+    "Archive/Bookmarks/Digital Gardens.md",
     "Notes/Software/Design/Spotify Design Decisions.md",
     "Archive/Lines.md",
-    "Archive/Bookmarks/Digital Gardens.md",
     "Index.md",
     "Archive/Bookmarks/Tools.md",
     "Archive/Bookmarks/Websites.md",

@@ -1,4 +1,4 @@
-Intentionally miscellaneous.
+aIntentionally miscellaneous.
 
 - [RAW Magazine](https://brutalistwebsites.com/raw/), interviews with brutalist designers
 - [The Annotated Pratchett File](https://www.lspace.org/books/apf/), distilled discussions on the works of Terry Pratchett
@@ -44,6 +44,10 @@ Intentionally miscellaneous.
 
 - [Dialogue 3-D](https://nasser.itch.io/dialogue-3-d), Wolfenstein but it asks you if its alright to punch the nazis
 - [game of life infinite recursion](https://oimo.io/works/life/) ([writeup](https://blog.oimo.io/2023/04/10/life-universe-en/))
+
+## Regular Art
+
+- [RAPIDLY PRESS X TO REFUSE TO COME TO TERMS WITH YOUR OWN MORTALITY](https://guzey.com/x/)
 
 ## Site Directories
 
