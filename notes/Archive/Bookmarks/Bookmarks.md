@@ -14,3 +14,7 @@ Some resources for finding interesting things:
 	- and its [search engine](https://lieu.cblgh.org/)
 - [Gossip’s Café](https://gossips.cafe/)
 - [Tales from the Small Web](https://kagi.com/smallweb/)
+
+Some other people's bookmarks:
+
+- [Luke Mitchell's bookmarks](https://www.interroban.gg/bookmarks/)

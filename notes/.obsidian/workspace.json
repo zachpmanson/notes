@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Web Development/HTML First Development.md",
+                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Web Development/HTML First Development.md",
+                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Web Development/HTML First Development.md",
+                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Web Development/HTML First Development.md"
+                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md"
               }
             }
           }
@@ -162,7 +162,10 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Archive/Bookmarks/Bookmarks.md",
     "Notes/Software/Development/Web Development/Web Design/Web Design.md",
+    "Notes/Software/Development/Web Development/Web Design/Themed Stylesheets.md",
+    "Notes/Software/Development/Web Development/HTML First Development.md",
     "Notes/Software/Design/Spotify Design Decisions.md",
     "Notes/Software/Development/Web Development/Web Design",
     "Archive/Bookmarks/Websites.md",
@@ -187,9 +190,6 @@
     "Archive/Problems/Android File Transfer on macOS.md",
     "Projects/Penultimate Guitar.md",
     "Archive/Problems/Problems.md",
-    "Notes/Software/Development/Web Development/HTML First Development.md",
-    "Notes/Mathematics/Arity.md",
-    "Notes/Mathematics/Mathematics.md",
     "Media/trpc-typeerror.png",
     "Media/kinde-3.png",
     "Media/kinde-2.png",
