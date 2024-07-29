@@ -1,4 +1,4 @@
-aIntentionally miscellaneous.
+Intentionally miscellaneous.
 
 - [RAW Magazine](https://brutalistwebsites.com/raw/), interviews with brutalist designers
 - [The Annotated Pratchett File](https://www.lspace.org/books/apf/), distilled discussions on the works of Terry Pratchett

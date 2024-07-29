@@ -102,8 +102,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -185,7 +184,7 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "ae2026764fcf906e",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
     "Archive/Bookmarks/Digital Gardens.md",
     "Notes/Software/Design/Spotify Design Decisions.md",
