@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Web Development/Web Design/Web Design.md",
+                "file": "Archive/Bookmarks/Technology Gibberish.md",
                 "mode": "source",
                 "source": false
               }
@@ -78,8 +78,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Web Development/Web Design/Web Design.md",
+                "file": "Archive/Bookmarks/Technology Gibberish.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Web Development/Web Design/Web Design.md",
+                "file": "Archive/Bookmarks/Technology Gibberish.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Web Development/Web Design/Web Design.md"
+                "file": "Archive/Bookmarks/Technology Gibberish.md"
               }
             }
           }
@@ -163,11 +162,11 @@
   },
   "active": "97802b600a1d3ce3",
   "lastOpenFiles": [
+    "Notes/Software/Development/Web Development/Web Design/Web Design.md",
     "Archive/Lines.md",
     "Archive/Bookmarks/Digital Gardens.md",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Archive/Bookmarks/Bookmarks.md",
-    "Notes/Software/Development/Web Development/Web Design/Web Design.md",
     "Notes/Software/Development/Web Development/Web Design/Themed Stylesheets.md",
     "Notes/Software/Development/Web Development/HTML First Development.md",
     "Notes/Software/Design/Spotify Design Decisions.md",
