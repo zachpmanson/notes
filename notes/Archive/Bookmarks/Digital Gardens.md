@@ -22,7 +22,7 @@ Some other interesting ones I have come across:
 - [paritybit.ca](https://www.paritybit.ca/garden/)
 - [anagora.org](https://anagora.org/index)
 - [mrshll.com](https://mrshll.com/index.html)
-- [nchrs.xyz](https://nchrs.xyz)
+- [nchrs.xyz](https://nchrs.xyz), the ancestor of this wiki (see [[Ochrs 1.0]])
 - [exobrain](https://beepb00p.xyz/exobrain/)
 - [WebSeitz/wiki](http://webseitz.fluxent.com/wiki/FrontPage)
 - [c2](https://wiki.c2.com/), more of a normal wiki, the first
@@ -30,7 +30,7 @@ Some other interesting ones I have come across:
 - [~jakintosh](http://jakintosh.com/)
 - [Caffeine's Wiki](https://caffeine.wiki/)
 - [Vít Baisa](https://vit.baisa.cz/)
-- [metasyn's memex](https://metasyn.pw/memex)
+- [metasyn's memex](https://metasyn.pw/memex), one from the XXIIVV school of wiki's (like this one)
 - [Melanocarpa](https://garden.bouncepaw.com/)
 - [corvid.cafe](https://corvid.cafe/home.html)
 - [Chuck's Notes](https://notes.cagrimmett.com/)
@@ -39,7 +39,6 @@ Some other interesting ones I have come across:
 - [Paul Batchelor's wiki](https://pbat.ch/wiki/)
 - [Alex Wennerberg's Garden](https://alexw.nyc/garden.html)
 - [Alex Schroeder’s Diary](https://alexschroeder.ch/view/index)
-- [Anh's Garden](https://anhvn.com/garden/)
-- [Steph Ango's website](https://stephango.com/)
+- [Anh's Garden](https://anhvn.com/garden/), gorgeous design
 - [antoinejaunard.com](https://antoinejaunard.com/content.html)
 - [Chase McCoy's notes](https://chasem.co/notes)

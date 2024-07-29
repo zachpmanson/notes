@@ -27,6 +27,7 @@ Intentionally miscellaneous.
 - [Ugly Avatar Generator](https://txstc55.github.io/ugly-avatar/)
 - [Constant](https://constantvzw.org/site/)
 - [WTF Happened In 1971?](https://wtfhappenedin1971.com/)
+- [girl.surgery](https://girl.surgery/)
 ## Artists
 
 - [Studio Balcony](https://studiobalcony.com/), Melbourne based art studio
@@ -48,7 +49,13 @@ Intentionally miscellaneous.
 ## Regular Art
 
 - [RAPIDLY PRESS X TO REFUSE TO COME TO TERMS WITH YOUR OWN MORTALITY](https://guzey.com/x/)
+- [Guzey vibes website](https://guzey.com/vibe_screenshots/), inspired by [girl.surgery's vibe website](https://girl.surgery/website_vibes/)
 
 ## Site Directories
 
 - [ooh.directory](https://ooh.directory/)
+
+## Games
+
+- [Chrome trex](http://wayou.github.io/t-rex-runner/) ([source](https://github.com/wayou/t-rex-runner))
+	- [with leaderboards](https://chromedino.com/)

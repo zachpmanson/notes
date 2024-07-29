@@ -8,36 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4a6854f08fe89511",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Archive/Bookmarks/Digital Gardens.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "8e7a621afa3add62",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Notes/Software/Design/Fun Design.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5dce406111ac5882",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Posts/Hidden Post.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +32,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -186,17 +162,17 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Design/Fun Design.md",
     "Archive/Bookmarks/Digital Gardens.md",
+    "Posts/Hidden Post.md",
+    "Archive/Bookmarks/Websites.md",
     "Notes/Software/Design/Spotify Design Decisions.md",
     "Archive/Lines.md",
     "Index.md",
     "Archive/Bookmarks/Tools.md",
-    "Archive/Bookmarks/Websites.md",
     "Archive/Folklore/In the Beginning was the Command Line.md",
     "Archive/Folklore/Cool URIs Don't Change.md",
     "Posts/Untitled.md",
-    "Posts/Hidden Post.md",
-    "Notes/Software/Design/Fun Design.md",
     "Posts/GitHub Action Abuse.md",
     "Notes/Cybersecurity/Cybersecurity.md",
     "Notes/Notes.md",
