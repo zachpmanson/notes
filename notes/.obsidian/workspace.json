@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+                "file": "Notes/Software/Development/Web Development/Web Design/Web Design.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Art",
+                "query": "gwern",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -78,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+                "file": "Notes/Software/Development/Web Development/Web Design/Web Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+                "file": "Notes/Software/Development/Web Development/Web Design/Web Design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Courses/UWA Computer Science/UWA Computer Science.md"
+                "file": "Notes/Software/Development/Web Development/Web Design/Web Design.md"
               }
             }
           }
@@ -160,8 +161,11 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "97802b600a1d3ce3",
   "lastOpenFiles": [
+    "Archive/Lines.md",
+    "Archive/Bookmarks/Digital Gardens.md",
+    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Archive/Bookmarks/Bookmarks.md",
     "Notes/Software/Development/Web Development/Web Design/Web Design.md",
     "Notes/Software/Development/Web Development/Web Design/Themed Stylesheets.md",
@@ -170,9 +174,7 @@
     "Notes/Software/Development/Web Development/Web Design",
     "Archive/Bookmarks/Websites.md",
     "Notes/Software/Design/Fun Design.md",
-    "Archive/Bookmarks/Digital Gardens.md",
     "Posts/Hidden Post.md",
-    "Archive/Lines.md",
     "Index.md",
     "Archive/Bookmarks/Tools.md",
     "Archive/Folklore/In the Beginning was the Command Line.md",
@@ -189,7 +191,6 @@
     "Archive/Folklore/Folklore.md",
     "Archive/Problems/Android File Transfer on macOS.md",
     "Projects/Penultimate Guitar.md",
-    "Archive/Problems/Problems.md",
     "Media/trpc-typeerror.png",
     "Media/kinde-3.png",
     "Media/kinde-2.png",

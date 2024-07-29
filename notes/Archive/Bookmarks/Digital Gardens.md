@@ -10,6 +10,7 @@ Some of my favourites:
 - [Andy Matuschak's Notes](https://notes.andymatuschak.org/About_these_notes)
 - [Maggie Appleton](https://maggieappleton.com/)
 - [Gwern](https://gwern.net/)
+	- [best Gwern excerpts](https://guzey.com/favorite/gwern/)
 
 Some other interesting ones I have come across:
 
