@@ -10,3 +10,4 @@ subtitle: Writeups and mods.
 ## Software
 
 - [Lossy Text Compression](https://hackaday.io/project/5689-lossy-text-compression)
+- [Humans in Minecraft](https://www.youtube.com/watch?v=YHGMfQ1TDPA)

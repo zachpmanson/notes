@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/Technology Gibberish.md",
+                "file": "Archive/Bookmarks/Hacks.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/Technology Gibberish.md",
+                "file": "Archive/Bookmarks/Hacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/Technology Gibberish.md",
+                "file": "Archive/Bookmarks/Hacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/Technology Gibberish.md"
+                "file": "Archive/Bookmarks/Hacks.md"
               }
             }
           }
@@ -160,13 +160,16 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "97802b600a1d3ce3",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Archive/Bookmarks/Bookmarks.md",
+    "Notes/Software/Programs/GNU/Screen/Common Screen Commands.md",
+    "Notes/Software/Programs/GNU/Screen/Screen.md",
+    "Archive/Bookmarks/Technology Gibberish.md",
     "Notes/Software/Development/Web Development/Web Design/Web Design.md",
     "Archive/Lines.md",
     "Archive/Bookmarks/Digital Gardens.md",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
-    "Archive/Bookmarks/Bookmarks.md",
     "Notes/Software/Development/Web Development/Web Design/Themed Stylesheets.md",
     "Notes/Software/Development/Web Development/HTML First Development.md",
     "Notes/Software/Design/Spotify Design Decisions.md",
@@ -187,9 +190,6 @@
     "Notes/Courses/Courses.md",
     "Archive/Folklore/The Descent to C.md",
     "Archive/Folklore/Blinkenlichten.md",
-    "Archive/Folklore/Folklore.md",
-    "Archive/Problems/Android File Transfer on macOS.md",
-    "Projects/Penultimate Guitar.md",
     "Media/trpc-typeerror.png",
     "Media/kinde-3.png",
     "Media/kinde-2.png",
