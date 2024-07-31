@@ -15,4 +15,4 @@ It has few uses, such as:
 - being passed into macro function substitutions to allow multiple expressions where only 1 would normally be usable
 - in a `for`/`if` block condition where a preceding operation is necessary and block scoping is desired 
 
-Thanks to its inclusion in C, is persists in C++ and [[JavaScript]]
+Thanks to its inclusion in C, is persists in C++ and [[Notes/Software/Development/Programming Languages/JavaScript/JavaScript]]

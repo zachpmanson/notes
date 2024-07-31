@@ -80,7 +80,7 @@ A helpful resources outside of man pages:
 	- `-type <c>` type of file is specified by `d/f/l`
 	- `-newer <file>` test file has been accessed more recently than `<file>` was modified
 	- `-print` prints the full path name of file
-	- `-exec <command>` execute command on all files found (like [[JavaScript]] `.map()`) 
+	- `-exec <command>` execute command on all files found (like [[Notes/Software/Development/Programming Languages/JavaScript/JavaScript]] `.map()`) 
 		- command terminated with `\;`
 		- `{}` refers to file found
 	- `-ok <command>` same as command except user is prompted first
