@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/JavaScript Math Not Defined.md",
+                "file": "Notes/Software/Development/Non-Programming Languages/HTML/HTML.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Problems/JavaScript Math Not Defined.md",
+                "file": "Notes/Software/Development/Non-Programming Languages/HTML/HTML.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Problems/JavaScript Math Not Defined.md",
+                "file": "Notes/Software/Development/Non-Programming Languages/HTML/HTML.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Problems/JavaScript Math Not Defined.md"
+                "file": "Notes/Software/Development/Non-Programming Languages/HTML/HTML.md"
               }
             }
           }
@@ -162,8 +162,17 @@
   },
   "active": "dc9d1c3f54322ec4",
   "lastOpenFiles": [
-    "Archive/Problems/Automatic Dark Mode.md",
+    "Notes/Software/Development/Non-Programming Languages/Markdown.md",
+    "Notes/Software/Development/Non-Programming Languages/HTML/HTML.md",
+    "Notes/Software/Development/Web Development/HTML First Development.md",
+    "Notes/Software/Development/Non-Programming Languages/HTML/HTML Self-Closing Tags.md",
+    "Notes/Software/Development/Non-Programming Languages/HTML",
+    "Notes/Software/Development/Web Development/Web Design/Web Design.md",
+    "Notes/Software/Development/Non-Programming Languages/CSS/Themed Stylesheets.md",
+    "Notes/Software/Development/Non-Programming Languages/CSS",
+    "Notes/Software/Development/Non-Programming Languages/CSS/CSS.md",
     "Archive/Problems/JavaScript Math Not Defined.md",
+    "Archive/Problems/Automatic Dark Mode.md",
     "Notes/Software/Programs/GNU/Screen/Screen Commands.md",
     "Notes/Software/Programs/GNU/Screen/Screen.md",
     "Archive/Lines.md",
@@ -172,11 +181,8 @@
     "Archive/Bookmarks/Hacks.md",
     "Archive/Bookmarks/Bookmarks.md",
     "Archive/Bookmarks/Technology Gibberish.md",
-    "Notes/Software/Development/Web Development/Web Design/Web Design.md",
     "Archive/Bookmarks/Digital Gardens.md",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
-    "Notes/Software/Development/Web Development/Web Design/Themed Stylesheets.md",
-    "Notes/Software/Development/Web Development/HTML First Development.md",
     "Notes/Software/Development/Web Development/Web Design",
     "Archive/Bookmarks/Websites.md",
     "Posts/Hidden Post.md",
@@ -185,11 +191,7 @@
     "Archive/Folklore/In the Beginning was the Command Line.md",
     "Archive/Folklore/Cool URIs Don't Change.md",
     "Posts/Untitled.md",
-    "Posts/GitHub Action Abuse.md",
-    "Notes/Cybersecurity/Cybersecurity.md",
-    "Notes/Notes.md",
     "Notes/Cybersecurity",
-    "Notes/Software/Microsoft Product Names.md",
     "Media/trpc-typeerror.png",
     "Media/kinde-3.png",
     "Media/kinde-2.png",
@@ -201,11 +203,9 @@
     "Notes/Software/Development/Programming Languages/R",
     "Media/pal.jpg",
     "Media/linkedin-duplication-2.webm",
-    "Notes/Software/Development/Programming Languages/Ruby",
     "Media/smart-shuffle-popup.png",
     "Media/chris-vs-cits.png",
     "Media/dialup-handshake-audio.png",
-    "Notes/Software/Development/Programming Languages/C/Archaic Syntax",
     "Media/spotify-top-bar.png",
     "Media/mctl-routes.png",
     "Untitled.canvas"
