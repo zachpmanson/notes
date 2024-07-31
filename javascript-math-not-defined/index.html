@@ -12,7 +12,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: old pixel live wallpapers on new pixels</title>
+  <title>notes: javascript math not defined</title>
 </head>
 
 <body>
@@ -65,7 +65,7 @@
         
 
         <div class="flex flex-col text-left nav-links">
-          <a href="/old-pixel-live-wallpapers-on-new-pixels" class="activated-link">Old Pixel Live Wallpapers On New Pixels</a>
+          <a href="/javascript-math-not-defined" class="activated-link">JavaScript Math Not Defined</a>
           
           
           <a href="/alembic-revision-collision">Alembic Revision Collision</a>
@@ -164,7 +164,6 @@
           
           
           
-          <a href="/javascript-math-not-defined">JavaScript Math Not Defined</a>
           
           
           
@@ -216,6 +215,7 @@
           
           
           
+          <a href="/old-pixel-live-wallpapers-on-new-pixels">Old Pixel Live Wallpapers On New Pixels</a>
           
           
           
@@ -332,12 +332,28 @@
 
   <main>
     <header>
-      <h1>Old Pixel Live Wallpapers On New Pixels</h1>
+      <h1>JavaScript Math Not Defined</h1>
     </header>
 
-    <article><p>The <a href="https://www.reddit.com/r/GooglePixel/comments/162zbet/can_i_get_pixel_3_live_wallpaper_on_the_pixel_7/">original thread</a> is for Pixel 3 wallpapers on a Pixel 7 Pro, but I used it to take a Pixel 4a (5G) wallpaper to a Pixel 8.</p>
-<p>Install WallMan (<a href="https://apt.izzysoft.de/fdroid/index/apk/com.colorata.wallman">site</a>).  Alleges it is also available on F-Droid.  <a href="https://gitlab.com/colorata/wallman">Source code</a>.  Wallpapers should remain even after uninstalling wallpapers.</p>
-<p>I have saved a copy of the APK onto the Internet Archive, <a href="https://web.archive.org/web/20240121080337/https://apt.izzysoft.de/fdroid/repo/com.colorata.wallman_6.apk">here</a>.</p></article>
+    <article><p>When building Next@14.0.3 application, for some reason the application would work fine in <code>yarn dev</code>, build successfully but show up completely blank when running.</p>
+<p>One of the errors in console that appeared is that <code>Math.sqrt</code> was undefined? What?</p>
+<p>Turns out something in crypto-js@4.1.1 is broken in the normal packing process, and it only shows up client-side after build.</p>
+<p>This can be solved by letting crypto-js be transpiled by Next.js.</p>
+<div class="highlight"><pre><span></span><code><span class="cm">/** @type {import(&#39;next&#39;).NextConfig} */</span>
+
+<span class="c1">// eslint-disable-next-line import/no-extraneous-dependencies</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">withBundleAnalyzer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s2">&quot;@next/bundle-analyzer&quot;</span><span class="p">)({</span>
+<span class="w">  </span><span class="nx">enabled</span><span class="o">:</span><span class="w"> </span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">ANALYZE</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;true&quot;</span><span class="p">,</span>
+<span class="p">});</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">nextConfig</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">withBundleAnalyzer</span><span class="p">({</span>
+<span class="w">  </span><span class="nx">reactStrictMode</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">output</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;standalone&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">transpilePackages</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;crypto-js&quot;</span><span class="p">],</span>
+<span class="p">});</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">nextConfig</span><span class="p">;</span>
+</code></pre></div></article>
   </main>
 
   <footer>
@@ -348,23 +364,42 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/facing-the-street" class="not-extra-small">random</a>
+          <a href="/things-i-can-hold" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
-          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Old Pixel Live Wallpapers On New Pixels.md" class="desktop">edit</a>
-          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Problems/Old Pixel Live Wallpapers On New Pixels.md" class="mobile">edit</a>
-          <a href="mailto:zachpmanson@gmail.com?subject=On 'Old Pixel Live Wallpapers On New Pixels'">reply</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/JavaScript Math Not Defined.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Problems/JavaScript Math Not Defined.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'JavaScript Math Not Defined'">reply</a>
         </div>
       </summary>
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/facing-the-street">random</a>
+          <a href="/things-i-can-hold">random</a>
         </div>
       </div>
 
       
 
+      <p class="backlinks"><strong>Incoming:</strong>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
+      
+
+      
+      <p class="backlinks"><strong> <a href="/tags">Tags:</a></strong>
+        
+        <a href="/tags#venting">#venting</a>
+        
+        <a href="/tags#nextjs">#nextjs</a>
+        
+        <a href="/tags#javascript">#javascript</a>
+        
+        </span>
+      </p>
       
       <p>
         
@@ -373,7 +408,7 @@
           <strong>
             Updated:
           </strong>
-          2024-01-21
+          2024-07-31
         </span>
 
       </p>
