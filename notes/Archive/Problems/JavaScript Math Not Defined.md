@@ -28,3 +28,5 @@ const nextConfig = withBundleAnalyzer({
 
 module.exports = nextConfig;
 ```
+
+I found this [solution here](https://github.com/brix/crypto-js/issues/477#issuecomment-1835435744).
