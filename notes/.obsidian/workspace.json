@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Programs/GNU/Screen/Common Screen Commands.md",
+                "file": "Notes/Software/Programs/GNU/Screen/Screen Commands.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Programs/GNU/Screen/Common Screen Commands.md",
+                "file": "Notes/Software/Programs/GNU/Screen/Screen Commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Programs/GNU/Screen/Common Screen Commands.md",
+                "file": "Notes/Software/Programs/GNU/Screen/Screen Commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Programs/GNU/Screen/Common Screen Commands.md"
+                "file": "Notes/Software/Programs/GNU/Screen/Screen Commands.md"
               }
             }
           }
@@ -156,7 +156,7 @@
     "Notes/Software/Design/Fun Design.md",
     "Archive/Bookmarks/Hacks.md",
     "Archive/Bookmarks/Bookmarks.md",
-    "Notes/Software/Programs/GNU/Screen/Common Screen Commands.md",
+    "Notes/Software/Programs/GNU/Screen/Screen Commands.md",
     "Archive/Bookmarks/Technology Gibberish.md",
     "Notes/Software/Development/Web Development/Web Design/Web Design.md",
     "Archive/Bookmarks/Digital Gardens.md",
