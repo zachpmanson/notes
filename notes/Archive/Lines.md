@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> DJs are not even close to fungible
+
+-- [ska](https://news.ycombinator.com/item?id=41113201)
+
+---
+
 > Blog posts are written, not defecated
 
 -- [Merlin Mann](http://www.43folders.com/2008/08/19/good-blogs)

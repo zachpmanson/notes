@@ -6,7 +6,7 @@ date: 2024-03-17
 ---
 This page is a list of design decisions made by Spotify that I consider shitty.  I'm sure some of them were only A/B tested, coming and going silently, but some have lingered for years. In any case I have been subjected to all of these personally.
 
-See also: [Dear spotify product manager](https://www.todepond.com/wikiblogarden/work/dear-spotify/) by Lu Wilson
+See also: [Dear spotify product manager](https://www.todepond.com/wikiblogarden/work/dear-spotify/) by Lu Wilson, [Redesigning Spotify](https://www.youtube.com/watch?v=suhEIUapSJQ) by Juxtopposed
 
 ## Unable to Remove DJ Shortcut On Desktop
 

@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Design/Fun Design.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "97802b600a1d3ce3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Archive/Bookmarks/Hacks.md",
+                "file": "Notes/Software/Programs/GNU/Screen/Common Screen Commands.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/Hacks.md",
+                "file": "Notes/Software/Programs/GNU/Screen/Common Screen Commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/Hacks.md",
+                "file": "Notes/Software/Programs/GNU/Screen/Common Screen Commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/Hacks.md"
+                "file": "Notes/Software/Programs/GNU/Screen/Common Screen Commands.md"
               }
             }
           }
@@ -160,22 +147,23 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "8e7a621afa3add62",
   "lastOpenFiles": [
+    "Notes/Software/Programs/GNU/Screen/Screen.md",
+    "Archive/Lines.md",
+    "Notes/Software/Design/Spotify Design Decisions.md",
+    "Notes/Software/Design/Fun Design.md",
+    "Archive/Bookmarks/Hacks.md",
     "Archive/Bookmarks/Bookmarks.md",
     "Notes/Software/Programs/GNU/Screen/Common Screen Commands.md",
-    "Notes/Software/Programs/GNU/Screen/Screen.md",
     "Archive/Bookmarks/Technology Gibberish.md",
     "Notes/Software/Development/Web Development/Web Design/Web Design.md",
-    "Archive/Lines.md",
     "Archive/Bookmarks/Digital Gardens.md",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Notes/Software/Development/Web Development/Web Design/Themed Stylesheets.md",
     "Notes/Software/Development/Web Development/HTML First Development.md",
-    "Notes/Software/Design/Spotify Design Decisions.md",
     "Notes/Software/Development/Web Development/Web Design",
     "Archive/Bookmarks/Websites.md",
-    "Notes/Software/Design/Fun Design.md",
     "Posts/Hidden Post.md",
     "Index.md",
     "Archive/Bookmarks/Tools.md",
@@ -189,7 +177,6 @@
     "Notes/Software/Microsoft Product Names.md",
     "Notes/Courses/Courses.md",
     "Archive/Folklore/The Descent to C.md",
-    "Archive/Folklore/Blinkenlichten.md",
     "Media/trpc-typeerror.png",
     "Media/kinde-3.png",
     "Media/kinde-2.png",
