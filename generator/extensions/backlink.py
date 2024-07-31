@@ -62,12 +62,11 @@ class BacklinkInlineProcessor(InlineProcessor):
             segments = m.group(1).strip().split("|")
             if len(segments) == 2:
                 alias = segments[1]
-                url_segment = segments[0]
+                url_segment = segments[0].split("/")[-1]
             else:
-                alias = segments[0]
-                url_segment = segments[0]
+                url_segment = segments[0].split("/")[-1]
+                alias = url_segment
 
-            url_segment = url_segment.split("/")[-1]
             url = self.config["build_url"](url_segment, base_url, end_url)
             a = etree.Element("a")
             a.text = alias
