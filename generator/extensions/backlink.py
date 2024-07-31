@@ -67,7 +67,8 @@ class BacklinkInlineProcessor(InlineProcessor):
                 alias = segments[0]
                 url_segment = segments[0]
 
-            url = self.config["build_url"](url_segment, base_url, end_url)
+            last_url_part = url_segment.split("/")[-1]
+            url = self.config["build_url"](last_url_part, base_url, end_url)
             a = etree.Element("a")
             a.text = alias
             a.set("href", url)

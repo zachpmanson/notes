@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "gwern",
+                "query": "Notes/Software/Programs/Git/Git",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
