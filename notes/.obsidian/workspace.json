@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Programming Concepts/Authentication.md",
+                "file": "Archive/Bookmarks/Hacks.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Programming Concepts/Authentication.md",
+                "file": "Archive/Bookmarks/Hacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Programming Concepts/Authentication.md",
+                "file": "Archive/Bookmarks/Hacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Programming Concepts/Authentication.md"
+                "file": "Archive/Bookmarks/Hacks.md"
               }
             }
           }
@@ -161,8 +161,8 @@
   },
   "active": "d8dca474af79738e",
   "lastOpenFiles": [
-    "Notes/Software/Development/Programming Concepts/Authorization.md",
     "Notes/Software/Development/Programming Concepts/Authentication.md",
+    "Notes/Software/Development/Programming Concepts/Authorization.md",
     "Archive/Problems/JavaScript Math Not Defined.md",
     "Archive/Bookmarks/Tools.md",
     "Archive/Bookmarks/Websites.md",

@@ -11,3 +11,4 @@ subtitle: Writeups and mods.
 
 - [Lossy Text Compression](https://hackaday.io/project/5689-lossy-text-compression)
 - [Humans in Minecraft](https://www.youtube.com/watch?v=YHGMfQ1TDPA)
+- [find + mkdir is Turing complete](https://ogiekako.vercel.app/blog/find_mkdir_tc)
