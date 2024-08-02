@@ -304,7 +304,7 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 > Tom M: Entropy's #1 enemy
 
---- [Tom M](https://tmewett.com/)
+-- [Tom M](https://tmewett.com/)
 
 
 ---

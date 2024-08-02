@@ -61,8 +61,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Notes/Software/Programs/Git/Git",
-                "matchingCase": true,
+                "query": "\"TOM M\"",
+                "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
                 "extraContext": true,
@@ -78,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
