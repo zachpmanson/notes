@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> fandom is a wiki website (allegedly)
+
+-- [Jes Olsen](https://j3s.sh/thought/stop-using-fandom.html)
+
+---
+
 > DJs are not even close to fungible
 
 -- [ska](https://news.ycombinator.com/item?id=41113201)

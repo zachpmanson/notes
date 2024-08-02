@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/Hacks.md",
+                "file": "Archive/Lines.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/Hacks.md",
+                "file": "Archive/Lines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/Hacks.md",
+                "file": "Archive/Lines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/Hacks.md"
+                "file": "Archive/Lines.md"
               }
             }
           }
@@ -146,7 +146,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -161,6 +162,7 @@
   },
   "active": "d8dca474af79738e",
   "lastOpenFiles": [
+    "Archive/Bookmarks/Hacks.md",
     "Notes/Software/Development/Programming Concepts/Authentication.md",
     "Notes/Software/Development/Programming Concepts/Authorization.md",
     "Archive/Problems/JavaScript Math Not Defined.md",
@@ -182,7 +184,6 @@
     "Archive/Lines.md",
     "Notes/Software/Design/Spotify Design Decisions.md",
     "Notes/Software/Design/Fun Design.md",
-    "Archive/Bookmarks/Hacks.md",
     "Archive/Bookmarks/Bookmarks.md",
     "Archive/Bookmarks/Technology Gibberish.md",
     "Archive/Bookmarks/Digital Gardens.md",
