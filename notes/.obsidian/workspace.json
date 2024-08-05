@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Design/Fun Design.md",
+                "file": "Notes/Software/Design/Design.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Design/Fun Design.md",
+                "file": "Notes/Software/Design/Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Design/Fun Design.md",
+                "file": "Notes/Software/Design/Design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Design/Fun Design.md"
+                "file": "Notes/Software/Design/Design.md"
               }
             }
           }
@@ -162,13 +162,16 @@
   },
   "active": "d8dca474af79738e",
   "lastOpenFiles": [
+    "Notes/Software/Design/Spotify Design Decisions.md",
+    "Notes/Software/Design/Design.md",
     "Notes/Software/Design/Web Design/Web Design.md",
+    "Notes/Software/Design/Kinde Design Decisions.md",
+    "Notes/Software/Design/Fun Design.md",
     "Notes/Software/Development/Web Development/Web Development.md",
     "Notes/Software/Development/Programming Languages/Go/Go.md",
     "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
     "Notes/Software/Development/Web Development/HTML First Development.md",
     "Notes/Software/Development/Non-Programming Languages/CSS/Themed Stylesheets.md",
-    "Notes/Software/Design/Kinde Design Decisions.md",
     "Archive/Bookmarks/Hacks.md",
     "Archive/Bookmarks/Tools.md",
     "Notes/Software/Development/Programming Concepts/Authentication.md",
@@ -186,10 +189,7 @@
     "Notes/Software/Programs/GNU/Screen/Screen Commands.md",
     "Notes/Software/Programs/GNU/Screen/Screen.md",
     "Archive/Lines.md",
-    "Notes/Software/Design/Spotify Design Decisions.md",
-    "Notes/Software/Design/Fun Design.md",
     "Archive/Bookmarks/Bookmarks.md",
-    "Archive/Bookmarks/Technology Gibberish.md",
     "Notes/Software/Design/Web Design",
     "Notes/Cybersecurity",
     "Media/trpc-typeerror.png",
