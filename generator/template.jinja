@@ -82,7 +82,7 @@
       <summary>
         <div class="footer-row">
           {% if node["post_date"] %}
-          {{node["post_date"]}}
+          <date>{{node["post_date"]}}</date>
           {% else %}
           meta
           {% endif %}
@@ -126,7 +126,7 @@
           <strong>
             Posted:
           </strong>
-          {{node["post_date"]}}
+          <date>{{node["post_date"]}}</date>
 
         </span>
         {% endif %}
@@ -135,7 +135,7 @@
           <strong>
             Updated:
           </strong>
-          {{node["mod_date"]}}
+          <date>{{node["mod_date"]}}</date>
         </span>
 
       </p>
