@@ -9,7 +9,7 @@ Web development is an exercise in distributed execution of program, where some p
 3. Half of your program runs in an untrusted environment
 4. Half of your program has a limited set of system resources that are shared between all users, performance of the server can impact all users simultaneously
 
-None of this has even gotten to JavaScript and CSS, each of which are their own rabbit-holes.
+None of this has even gotten to [[JavaScript]] and [[CSS]], each of which are their own rabbit-holes.
 
 ## Links
 
