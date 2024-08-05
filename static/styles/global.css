@@ -196,6 +196,10 @@ hr {
   background-color: var(--primary);
 }
 
+date {
+  font-family: monospace;
+}
+
 footer {
   max-width: 80ch;
   margin: auto;
