@@ -300,10 +300,43 @@ table {
 /* Utility Classes */
 
 .post {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 0.3rem;
   margin: 0.5rem 0;
+  align-items: end;
+
+  /* :nth-child(1)::after {
+    content: "";
+    border-bottom: 1px dotted var(--primary);
+    flex: 1;
+    margin: 0 0.5em;
+  } */
+
+  hr {
+    margin: 0 0 0.3rem;
+    align-self: end;
+    height: 1px;
+    border: 0;
+    border-bottom-width: 0px;
+    border-bottom-style: none;
+    border-bottom-color: var(--primary);
+    border-bottom: 1px dotted var(--primary);
+    opacity: 0.25;
+    min-width: 1rem;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  /* hr {
+    margin: 0;
+    flex: 1;
+    border: none;
+    border-bottom: 1px dotted var(--primary);
+    height: 1px;
+    color: transparent;
+    background-color: transparent;
+  } */
 }
 
 @media (prefers-color-scheme: dark) {

@@ -54,6 +54,6 @@ def chronological_tag(tag: str, tag_pages: list[str], tree: dict[str, Node]):
     for page, node in nodes.items():
         # html += [f"{node.post_date}: [{page}](/{sanitize_url(page)})"]
         html += [
-            f"<div class='post'><a href='/{sanitize_url(page)}'>{page}</a>  <time>{node.post_date}</time></div>"
+            f"<div class='post'><a href='/{sanitize_url(page)}'>{page}</a><hr /><time>{node.post_date}</time></div>"
         ]
-    return "\n".join(html) + f"<a href='/{tag}.xml'>RSS Feed</a>"
+    return "</p>" + "\n".join(html) + f"<a href='/{tag}.xml'>RSS Feed</a>"
