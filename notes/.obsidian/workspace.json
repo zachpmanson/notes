@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/Wikipedia Articles.md",
+                "file": "Archive/Lines.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/Wikipedia Articles.md",
+                "file": "Archive/Lines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/Wikipedia Articles.md",
+                "file": "Archive/Lines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/Wikipedia Articles.md"
+                "file": "Archive/Lines.md"
               }
             }
           }
@@ -160,8 +160,9 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "d8dca474af79738e",
   "lastOpenFiles": [
+    "Archive/Bookmarks/Wikipedia Articles.md",
     "Archive/Bookmarks/Tools.md",
     "Notes/Software/Design/Design.md",
     "Notes/Software/Design/Spotify Design Decisions.md",
@@ -189,7 +190,6 @@
     "Notes/Software/Programs/GNU/Screen/Screen Commands.md",
     "Notes/Software/Programs/GNU/Screen/Screen.md",
     "Archive/Lines.md",
-    "Archive/Bookmarks/Bookmarks.md",
     "Notes/Software/Design/Web Design",
     "Notes/Cybersecurity",
     "Media/trpc-typeerror.png",

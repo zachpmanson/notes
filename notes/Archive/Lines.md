@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> Go is not much fun but that is by design
+
+-- [Tom Delalande](https://youtu.be/-MbTj8DGOP0?si=KzoWGuRY2SIMw5yu&t=181)
+
+---
+
 > fandom is a wiki website (allegedly)
 
 -- [Jes Olsen](https://j3s.sh/thought/stop-using-fandom.html)
