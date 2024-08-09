@@ -135,3 +135,7 @@ func main() {
 	fmt.Println("hello")
 }
 ```
+
+## Resources
+
+- [100 Go Mistakes](https://100go.co/)

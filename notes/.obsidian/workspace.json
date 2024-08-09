@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Software/Development/Programming Languages/Go/Go.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Software/Development/Programming Languages/Go/Go.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Software/Development/Programming Languages/Go/Go.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Lines.md"
+                "file": "Notes/Software/Development/Programming Languages/Go/Go.md"
               }
             }
           }
@@ -160,10 +160,10 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "d8dca474af79738e",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Archive/Bookmarks/Wikipedia Articles.md",
     "Archive/Bookmarks/Tools.md",
+    "Archive/Bookmarks/Wikipedia Articles.md",
     "Notes/Software/Design/Design.md",
     "Notes/Software/Design/Spotify Design Decisions.md",
     "Notes/Software/Design/Web Design/Web Design.md",
