@@ -47,7 +47,10 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	  deployed instance of [[Mastodon Thread Unroller]]  
 	  vercel
 	- **[elk.zachmanson.com](https://elk.zachmanson.com)**  
-	  deployed instance. of my patched version of [[Elk]]
+	  deployed instance. of my patched version of [[Elk]] (should retire this since I've moved to using phanpy)
+	- [**mates.zachmanson.com**](https://mates.zachmanson.com)
+	  deployment for experimental mates project
+	  vercel
 
 - **[manson.dev](https://manson.dev)**  
   currently a directory forward to zachmanson.com, I intend to make it an email server + subdomain forward to zachmanson.com  

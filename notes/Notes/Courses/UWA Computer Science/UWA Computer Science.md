@@ -96,7 +96,7 @@ CITS3002 Computer Networks
 - few things were more satisfying in the entire degree than actually running my final project for this over the internet between me and my partners houses and watching it run
 - spiritual sequel to Systems Programming
 
-CITS3003 Graphics and Animation
+CITS3003 Graphics and Animation[^2]
 
 - abandoned
 - feels like it was really interesting in 2009, but the unit coordinator who cared about it has since left and now it wanders the optional units lists like a zombie
@@ -162,3 +162,5 @@ Go to social events with clubs. The specific club doesn't matter, they are all f
 If you've made it this far, here's [another opinionated essay on university](https://guzey.com/college).
 
 [^1]: When I started my degree I was enrolled in Computer Science and Data Science as my majors. Data Science units come in two forms at UWA, the computer science ones and the statistics ones. The computer science ones were a somewhat random grab-bag of CITS units, all in Python.  They tended to be relatively easy coding and not very deep.  The STAT units, to me, were HARD. The code was all in R, which is a language made by mathematicians not computer scientists and it shows. You can use it to do some very powerful data manipulation very easily, it has incredible libraries for data processing and visualisation, but holy shit writing it breaks my brain and all I did was remember the 8 functions we had been taught in labs and remember which params needed to be switched out. Every two weeks there would be a "lab report" which was a worksheet based on the lessons where you do some data processing in R.  These would **always** take me a full week to complete, which mostly consisted of trial and erroring the functions we had been taught until I had some data that kinda looked like it could mean something if you squinted just right (just like actual data scientists I suppose).  I felt like the classes were taught poorly by angry men. The time spent on the foundational concepts never made sense to me, and did not make sense to any of the other students in my class that I spoke to.  Inexplicably, I did well in pretty much all of the STAT units despite never understanding what I was doing or the underlying mathematical concepts. **Being able to do well while understanding nothing, to me, is the biggest indicator a class is worthless.**  I came to feel that these classes only provided me stress and drew time away from other classes that I actually cared about. At least they were cheap.
+
+[^2]: This unit is so decrepit that as of 2024-08-09 the [course website](https://teaching.csse.uwa.edu.au/units/CITS3003/) doesn't even have CSS anymore
