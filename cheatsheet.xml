@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
     <channel>
-        <title>notes: cursed</title>
-        <link>https://notes.zachmanson.com/cursed</link>
-        <description>Notes tagged #cursed</description>
-        <atom:link href="https://notes.zachmanson.com/cursed" rel="self" />
+        <title>notes: cheatsheet</title>
+        <link>https://notes.zachmanson.com/cheatsheet</link>
+        <description>Notes tagged #cheatsheet</description>
+        <atom:link href="https://notes.zachmanson.com/cheatsheet" rel="self" />
         <docs>http://www.rssboard.org/rss-specification</docs>
         <generator>ochrs</generator>
         <image>
             <url>https://zachmanson.com/icons/android-chrome-256x256.png</url>
-            <title>notes: cursed</title>
-            <link>https://notes.zachmanson.com/cursed</link>
+            <title>notes: cheatsheet</title>
+            <link>https://notes.zachmanson.com/cheatsheet</link>
         </image>
         <language>en</language>
         <lastBuildDate>Sun, 18 Aug 2024 13:49:12 </lastBuildDate>
