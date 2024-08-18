@@ -1,1 +1,1 @@
-Mostly in [[Awk]].
+Mostly in [[AWK]].

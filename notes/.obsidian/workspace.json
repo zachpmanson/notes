@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Language/Dictionary.md",
+                "file": "Notes/Software/Self-Hosting.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Language/Dictionary.md",
+                "file": "Notes/Software/Self-Hosting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Language/Dictionary.md",
+                "file": "Notes/Software/Self-Hosting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Language/Dictionary.md"
+                "file": "Notes/Software/Self-Hosting.md"
               }
             }
           }
@@ -162,32 +162,32 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Open Source.md",
+    "Notes/Software/Program Names.md",
+    "Notes/Software/Microsoft Product Names.md",
+    "Notes/Software/Unix/Unix.md",
+    "Notes/Software/Unix/GECOS.md",
+    "Notes/Software/Unix/Unix Programs/AWK.md",
+    "Notes/Software/Unix/Unix Programs/sed.md",
+    "Notes/Software/Unix/macOS/macOS CLI Tools.md",
+    "Notes/Software/Unix/macOS/Making macOS Useable.md",
+    "Notes/Software/Unix/macOS/macOS Problems.md",
+    "Notes/Software/Programs/tmux.md",
+    "Notes/Software/Programs/SQLite.md",
     "Archive/Bookmarks/Tools.md",
-    "Archive/Bookmarks/Bookmarks.md",
-    "Archive/Lines.md",
-    "Archive/Bookmarks/Hacks.md",
-    "Archive/Bookmarks/Archives.md",
-    "Archive/Archive.md",
-    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
-    "Meta/DNS.md",
-    "Notes/Software/Development/Programming Languages/Go/Go.md",
-    "Archive/Bookmarks/Wikipedia Articles.md",
-    "Notes/Software/Design/Design.md",
-    "Notes/Software/Design/Spotify Design Decisions.md",
-    "Notes/Software/Design/Web Design/Web Design.md",
-    "Notes/Software/Design/Kinde Design Decisions.md",
-    "Notes/Software/Design/Fun Design.md",
+    "Notes/Software/Programs/GNU/Screen/Screen Commands.md",
+    "Notes/Software/Programs/Programs.md",
+    "Notes/Software/Programs/Elk.md",
+    "Notes/Software/Programs/GNU/GNU.md",
+    "Notes/Software/Unix/Linux/Linux.md",
+    "Notes/Software/Terminals.md",
+    "Notes/Software/Development/Kinds of Problems.md",
+    "Notes/Software/Development/Development.md",
+    "Notes/Software/Development/Debugging.md",
+    "Notes/Software/Development/DateTime.md",
     "Notes/Software/Development/Web Development/Web Development.md",
-    "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
-    "Notes/Software/Development/Web Development/HTML First Development.md",
-    "Notes/Software/Development/Non-Programming Languages/CSS/Themed Stylesheets.md",
-    "Notes/Software/Development/Programming Concepts/Authentication.md",
-    "Notes/Software/Development/Programming Concepts/Authorization.md",
-    "Archive/Problems/JavaScript Math Not Defined.md",
-    "Archive/Bookmarks/Websites.md",
-    "Archive/Problems/Automatic Dark Mode.md",
     "Notes/Software/Development/Web Development/React.md",
-    "Notes/Software/Development/Non-Programming Languages/HTML/HTML.md",
+    "Notes/Software/Development/Web Development/HTML First Development.md",
     "Notes/Software/Development/Non-Programming Languages/HTML",
     "Notes/Software/Development/Non-Programming Languages/CSS",
     "Notes/Software/Design/Web Design",

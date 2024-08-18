@@ -55,7 +55,7 @@ CITS2002 Systems Programming
 [[CITS2003]] Open Source Tools & Scripting
 
 - teaches [[Bash]] and [[Unix]] which are important and only orthogonally explained in CITS2002
-- teaches [[sed]] and [[awk]] relatively well
+- teaches [[sed]] and [[AWK]] relatively well
 - includes [[Make]] for some reason, no reason literally cut this its covered in CITS2002 and is actually relevant there
 - also includes [[Notes/Software/Programs/Git/Git]] but never actually requires its use so it feels useless even though it is most students first introduction to it. git should be in CITS1401.
 - somehow manages to completely screw up the assessments every year

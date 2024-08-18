@@ -1,4 +1,4 @@
-Guess where! ([[Awk]])
+Guess where! ([[AWK]])
 
 He finally realised how big a problem [[ChatGPT]] is!
 

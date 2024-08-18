@@ -1,3 +1,8 @@
+---
+tags:
+  - cheatsheet
+---
+
 ## Common SQLite Commands
 
 ```sh

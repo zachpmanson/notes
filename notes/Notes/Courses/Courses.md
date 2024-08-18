@@ -9,7 +9,7 @@ subtitle: Notes on courses I have taken or textbooks I have read.
 - [How to make (almost) anything](https://ocw.mit.edu/courses/mas-863-how-to-make-almost-anything-fall-2002/)
 - [Cornell Intro to Compilers](https://www.cs.cornell.edu/courses/cs4120/2022sp/)
 	- [Cornell Advanced Compilers](https://www.cs.cornell.edu/courses/cs6120/2023fa/self-guided/)
-- Structure and Interpretation of Computer Programs
+- Structure and Interpretation of Computer [[Programs]]
 - Crafting Interpreters
 - [CITS3005 Knowledge Graphs](https://teaching.csse.uwa.edu.au/units/CITS3005/) ([[UWA Computer Science]])
 - [Stanford Hackers and Heroes](https://web.stanford.edu/class/cs81n/), more of a literary class on seminal hacker texts
