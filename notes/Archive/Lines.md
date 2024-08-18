@@ -1,7 +1,13 @@
 ---
 subtitle: Some lines worth noting, but not worth their own page.
 ---
-ÆThis page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://drwho.virtadpt.net/drwho.plan.txt). See also [Gwern's page on epigrams](https://gwern.net/epigram).
+This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://drwho.virtadpt.net/drwho.plan.txt). See also [Gwern's page on epigrams](https://gwern.net/epigram).
+
+---
+
+> A story is essentially just a rather entitled hypothesis
+
+-- [James Wood](https://www.newyorker.com/magazine/2024/08/12/devils-contract-the-history-of-the-faustian-bargain-ed-simon-book-review)
 
 ---
 

@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/Hacks.md",
+                "file": "Notes/Language/Dictionary.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/Hacks.md",
+                "file": "Notes/Language/Dictionary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/Hacks.md",
+                "file": "Notes/Language/Dictionary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/Hacks.md"
+                "file": "Notes/Language/Dictionary.md"
               }
             }
           }
@@ -160,14 +160,17 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "d8dca474af79738e",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Archive/Bookmarks/Tools.md",
+    "Archive/Bookmarks/Bookmarks.md",
+    "Archive/Lines.md",
+    "Archive/Bookmarks/Hacks.md",
     "Archive/Bookmarks/Archives.md",
     "Archive/Archive.md",
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Meta/DNS.md",
     "Notes/Software/Development/Programming Languages/Go/Go.md",
-    "Archive/Bookmarks/Tools.md",
     "Archive/Bookmarks/Wikipedia Articles.md",
     "Notes/Software/Design/Design.md",
     "Notes/Software/Design/Spotify Design Decisions.md",
@@ -178,7 +181,6 @@
     "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
     "Notes/Software/Development/Web Development/HTML First Development.md",
     "Notes/Software/Development/Non-Programming Languages/CSS/Themed Stylesheets.md",
-    "Archive/Bookmarks/Hacks.md",
     "Notes/Software/Development/Programming Concepts/Authentication.md",
     "Notes/Software/Development/Programming Concepts/Authorization.md",
     "Archive/Problems/JavaScript Math Not Defined.md",
@@ -186,8 +188,6 @@
     "Archive/Problems/Automatic Dark Mode.md",
     "Notes/Software/Development/Web Development/React.md",
     "Notes/Software/Development/Non-Programming Languages/HTML/HTML.md",
-    "Notes/Software/Development/Non-Programming Languages/Markdown.md",
-    "Notes/Software/Development/Non-Programming Languages/HTML/HTML Self-Closing Tags.md",
     "Notes/Software/Development/Non-Programming Languages/HTML",
     "Notes/Software/Development/Non-Programming Languages/CSS",
     "Notes/Software/Design/Web Design",
