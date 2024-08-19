@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Self-Hosting.md",
+                "file": "Notes/Software/Development/Web Development/Web Development.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Self-Hosting.md",
+                "file": "Notes/Software/Development/Web Development/Web Development.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Self-Hosting.md",
+                "file": "Notes/Software/Development/Web Development/Web Development.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Self-Hosting.md"
+                "file": "Notes/Software/Development/Web Development/Web Development.md"
               }
             }
           }
@@ -160,8 +160,9 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "d8dca474af79738e",
   "lastOpenFiles": [
+    "Archive/Bookmarks/Tools.md",
     "Notes/Software/Open Source.md",
     "Notes/Software/Program Names.md",
     "Notes/Software/Microsoft Product Names.md",
@@ -174,7 +175,6 @@
     "Notes/Software/Unix/macOS/macOS Problems.md",
     "Notes/Software/Programs/tmux.md",
     "Notes/Software/Programs/SQLite.md",
-    "Archive/Bookmarks/Tools.md",
     "Notes/Software/Programs/GNU/Screen/Screen Commands.md",
     "Notes/Software/Programs/Programs.md",
     "Notes/Software/Programs/Elk.md",

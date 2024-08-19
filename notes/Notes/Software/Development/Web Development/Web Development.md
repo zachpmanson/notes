@@ -20,3 +20,4 @@ None of this has even gotten to [[JavaScript]] and [[CSS]], each of which are th
 - [Everyone Has JavaScript, Right?](https://www.kryogenix.org/code/browser/everyonehasjs.html)
 - [Old CSS, new CSS](https://eev.ee/blog/2020/02/01/old-css-new-css/)
 - [The Web's Grain](https://frankchimero.com/blog/2015/the-webs-grain/)
+- [My love letter to front-end web development](https://bower.sh/my-love-letter-to-front-end-web-development)
