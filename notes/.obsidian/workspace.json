@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Web Development/Web Development.md",
+                "file": "Notes/Software/Design/Web Design/Web Design.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Web Development/Web Development.md",
+                "file": "Notes/Software/Design/Web Design/Web Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Web Development/Web Development.md",
+                "file": "Notes/Software/Design/Web Design/Web Design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Web Development/Web Development.md"
+                "file": "Notes/Software/Design/Web Design/Web Design.md"
               }
             }
           }
@@ -160,8 +160,9 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "d8dca474af79738e",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Development/Web Development/Web Development.md",
     "Archive/Bookmarks/Tools.md",
     "Notes/Software/Open Source.md",
     "Notes/Software/Program Names.md",
@@ -185,7 +186,6 @@
     "Notes/Software/Development/Development.md",
     "Notes/Software/Development/Debugging.md",
     "Notes/Software/Development/DateTime.md",
-    "Notes/Software/Development/Web Development/Web Development.md",
     "Notes/Software/Development/Web Development/React.md",
     "Notes/Software/Development/Web Development/HTML First Development.md",
     "Notes/Software/Development/Non-Programming Languages/HTML",
