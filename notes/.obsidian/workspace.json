@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Design/Web Design/Web Design.md",
+                "file": "Notes/Software/Programs/Git/Git.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Design/Web Design/Web Design.md",
+                "file": "Notes/Software/Programs/Git/Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Design/Web Design/Web Design.md",
+                "file": "Notes/Software/Programs/Git/Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Design/Web Design/Web Design.md"
+                "file": "Notes/Software/Programs/Git/Git.md"
               }
             }
           }
@@ -160,10 +160,11 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "d8dca474af79738e",
   "lastOpenFiles": [
-    "Notes/Software/Development/Web Development/Web Development.md",
+    "Notes/Software/Design/Web Design/Web Design.md",
     "Archive/Bookmarks/Tools.md",
+    "Notes/Software/Development/Web Development/Web Development.md",
     "Notes/Software/Open Source.md",
     "Notes/Software/Program Names.md",
     "Notes/Software/Microsoft Product Names.md",
@@ -187,7 +188,6 @@
     "Notes/Software/Development/Debugging.md",
     "Notes/Software/Development/DateTime.md",
     "Notes/Software/Development/Web Development/React.md",
-    "Notes/Software/Development/Web Development/HTML First Development.md",
     "Notes/Software/Development/Non-Programming Languages/HTML",
     "Notes/Software/Development/Non-Programming Languages/CSS",
     "Notes/Software/Design/Web Design",
