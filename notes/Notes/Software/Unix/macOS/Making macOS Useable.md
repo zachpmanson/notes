@@ -13,8 +13,8 @@ macOS is a lovely operative system except that it is missing so many basic usabi
    [Amethyst](https://ianyh.com/amethyst/) tiling window manager
 - Can't set  3 finger tap on touchpad to middle click  
    [MiddleClick](https://github.com/artginzburg/MiddleClick-Ventura)
-- Setting trackpad scrolling direction and mouse scroll-wheel scrolling direction independently  
-   [Scroll Reverser](https://pilotmoon.com/scrollreverser/)
+- Setting trackpad scrolling direction and mouse scroll-wheel scrolling direction independently, as well as independently setting pointer acceleration per device  
+   [linearmouse](https://linearmouse.app/)
 - No path in Finder  
   `Cmd+Alt+P` to toggle path bar
 
@@ -29,7 +29,7 @@ macOS is a lovely operative system except that it is missing so many basic usabi
 brew install \
 --cask amethyst \
 --cask --no-quarantine middleclick \
---cask scroll-reverser \
+--cask linearmouse \
 --cask alt-tab
 ```
 
