@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/Wikipedia Articles.md",
+                "file": "Archive/Bookmarks/Wikis.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"TOM M\"",
+                "query": "c2",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -78,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/Wikipedia Articles.md",
+                "file": "Archive/Bookmarks/Wikis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/Wikipedia Articles.md",
+                "file": "Archive/Bookmarks/Wikis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/Wikipedia Articles.md"
+                "file": "Archive/Bookmarks/Wikis.md"
               }
             }
           }
@@ -162,6 +163,10 @@
   },
   "active": "d8dca474af79738e",
   "lastOpenFiles": [
+    "Archive/Bookmarks/Digital Gardens.md",
+    "Archive/Bookmarks/Wikis.md",
+    "Archive/Bookmarks/Archives.md",
+    "Archive/Bookmarks/Wikipedia Articles.md",
     "Archive/Bookmarks/xkcd.md",
     "Archive/Bookmarks/Websites.md",
     "Archive/Bookmarks/Bookmarks.md",
@@ -184,10 +189,6 @@
     "Notes/Software/Programs/Programs.md",
     "Notes/Software/Programs/Elk.md",
     "Notes/Software/Programs/GNU/GNU.md",
-    "Notes/Software/Unix/Linux/Linux.md",
-    "Notes/Software/Terminals.md",
-    "Notes/Software/Development/Kinds of Problems.md",
-    "Notes/Software/Development/Development.md",
     "Notes/Software/Development/Non-Programming Languages/HTML",
     "Notes/Software/Development/Non-Programming Languages/CSS",
     "Notes/Software/Design/Web Design",

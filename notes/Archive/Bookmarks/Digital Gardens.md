@@ -26,7 +26,6 @@ Some other interesting ones I have come across:
 - [nchrs.xyz](https://nchrs.xyz), the ancestor of this wiki (see [[Ochrs 1.0]])
 - [exobrain](https://beepb00p.xyz/exobrain/)
 - [WebSeitz/wiki](http://webseitz.fluxent.com/wiki/FrontPage)
-- [c2](https://wiki.c2.com/), more of a normal wiki, the first
 - [m15o's wiki](https://lipu.li/?u=m15o)
 - [~jakintosh](http://jakintosh.com/)
 - [Caffeine's Wiki](https://caffeine.wiki/)
