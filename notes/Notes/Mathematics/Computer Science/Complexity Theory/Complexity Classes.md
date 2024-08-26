@@ -40,4 +40,5 @@ There are many important NP-complete problems.  Famous examples include the trav
 
 ## Links
 - [Wikipedia's list of complexity classes](https://en.wikipedia.org/wiki/List_of_complexity_classes)
+- [Complexity Zoo](https://complexityzoo.net/Complexity_Zoo), a wiki on complexity classes
 

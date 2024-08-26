@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Folklore/Group Chats Rule the World.md",
+                "file": "Notes/Language/Words/Lukewarm.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7f6ecfe0932b88f6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Mathematics/Computer Science/Complexity Theory/Complexity Classes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "023d4b0ff8eea6c0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Archive/Folklore/Sleep Sort.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Folklore/Group Chats Rule the World.md",
+                "file": "Archive/Folklore/Sleep Sort.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Folklore/Group Chats Rule the World.md",
+                "file": "Archive/Folklore/Sleep Sort.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Folklore/Group Chats Rule the World.md"
+                "file": "Archive/Folklore/Sleep Sort.md"
               }
             }
           }
@@ -147,35 +172,36 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "38379b1215cba47a",
+  "active": "023d4b0ff8eea6c0",
   "lastOpenFiles": [
-    "Notes/Language/Etymology/Podcast.md",
+    "Notes/Language/Eponyms.md",
+    "Archive/Folklore/Sleep Sort.md",
+    "Notes/Language/Words/Nocent.md",
+    "Notes/Mathematics/Computer Science/Complexity Theory/Complexity Classes.md",
+    "Notes/Mathematics/Computer Science/Complexity Theory/Complexity Theory.md",
+    "Notes/Software/Terminals/Terminals.md",
+    "Notes/Language/Nononyms.md",
+    "Notes/Language/Words/Lukewarm.md",
+    "Notes/Language/Words/Gruntle.md",
+    "Notes/Language/Etymology.md",
+    "Notes/Language/Language.md",
+    "Notes/Language/Latin Phrases.md",
+    "Notes/Language/Dictionary.md",
+    "Notes/Language/Words/Em Size.md",
+    "Notes/Language/Words/Ampersand & Epershand.md",
+    "Notes/Language/Words/Thou.md",
+    "Notes/Language/Words",
+    "Notes/Language/Words/Slug.md",
+    "Notes/Language/Words/Figment.md",
+    "Notes/Language/Words/Inspire, Expire, and Conspire.md",
+    "Notes/Language/Words/Podcast.md",
     "Archive/Folklore/Group Chats Rule the World.md",
     "Notes/Networks/Internet/Internet Standards/RSS.md",
-    "Notes/Language/Etymology/Etymology.md",
     "Archive/Bookmarks/Digital Gardens.md",
     "Notes/Software/Programs/GNU/Bash/Bash.md",
     "Notes/Software/Terminals/80 Columns.md",
-    "Notes/Software/Terminals/Terminals.md",
     "Notes/Software/Terminals",
     "Notes/Language/Diacritics/Diaeresis.md",
-    "Archive/Bookmarks/Wikis.md",
-    "Archive/Bookmarks/Tools.md",
-    "Archive/Bookmarks/Archives.md",
-    "Archive/Bookmarks/Wikipedia Articles.md",
-    "Archive/Bookmarks/xkcd.md",
-    "Archive/Bookmarks/Websites.md",
-    "Archive/Bookmarks/Bookmarks.md",
-    "Notes/Software/Unix/macOS/Making macOS Useable.md",
-    "Notes/Software/Unix/macOS/macOS Problems.md",
-    "Notes/Software/Design/Web Design/Web Design.md",
-    "Notes/Software/Development/Web Development/Web Development.md",
-    "Notes/Software/Open Source.md",
-    "Notes/Software/Program Names.md",
-    "Notes/Software/Microsoft Product Names.md",
-    "Notes/Software/Unix/Unix.md",
-    "Notes/Software/Unix/GECOS.md",
-    "Notes/Software/Unix/Unix Programs/AWK.md",
     "Notes/Software/Development/Non-Programming Languages/HTML",
     "Notes/Software/Development/Non-Programming Languages/CSS",
     "Notes/Software/Design/Web Design",
@@ -188,7 +214,6 @@
     "Media/sr.mp4",
     "Media/Screen Recording 2024-06-20 at 10.58.57.mov",
     "Media/cronsh.sh",
-    "Notes/Software/Development/Programming Languages/R",
     "Media/pal.jpg",
     "Media/smart-shuffle-popup.png",
     "Media/chris-vs-cits.png",

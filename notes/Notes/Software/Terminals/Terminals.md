@@ -20,3 +20,7 @@ tags:
 ```
 
 -- [/u/lookmeat](https://www.reddit.com/r/programming/comments/41u5hw/what_is_the_exact_difference_between_a_terminal_a/cz5mgts/)
+
+## Links
+
+- [A Terminal Case of Linux](https://fasterthanli.me/articles/a-terminal-case-of-linux)

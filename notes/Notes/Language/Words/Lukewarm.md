@@ -1,0 +1,3 @@
+*Lukewarm*, meaning moderately warm, is a portmanteau of *luke* and *warm*. Originally *luke* alone already meant moderately warm, and the suffix *warm* only added for further emphasis. This usage of *luke* can be found [at least as early as 1200 in _Layamon’s Brut_](https://www.grammarphobia.com/blog/2021/07/lukewarm-lukecool.html).
+
+Despite being semantically non-sensical, *lukecool* feels like it should exist and so is occasionally used. It is generally not accepted as a word.
