@@ -13,31 +13,7 @@
             <link>https://notes.zachmanson.com/venting</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Mon, 26 Aug 2024 13:16:20 </lastBuildDate>
-        
-        <item>
-            <title>Kinde Design Decisions</title>
-            <link>https://notes.zachmanson.com/kinde-design-decisions</link>
-            
-            <content:encoded>
-                <![CDATA[<p>This is a list of problems with the Kinde interface.</p>
-<h2 id="useless-dropdowns">Useless Dropdowns</h2>
-<p>This dropdown should list the environments instead of revealing a button to take you to a page that lists the environments. This is an unnecessary second click.</p>
-<p><img alt="" src="/media/kinde-1.png" /></p>
-<p>This also means you are unable to switch environment without losing the page you are on.</p>
-<h2 id="unclickable-icons">Unclickable Icons</h2>
-<p>For some reason the left facing chevron is not clickable, only the word "Home" is.</p>
-<p><img alt="" src="/media/kinde-2.png" /></p>
-<h2 id="bizarre-breadcrumbs">Bizarre Breadcrumbs</h2>
-<p>When you go to the "Users Profile" screen, the top left back icon doesn't take you back to the "Users" screen, but remains a "Home" button.</p>
-<p>The only way to navigate back is the the small grey "User" text above the user's name.</p>
-<p><img alt="" src="/media/kinde-3.png" /></p>
-<p>This is something that almost all basic websites can get right.  Breadcrumb navigation or consistent back behaviour would be vastly preferable here.</p>
-<p>There is little consistency between parts of the interface that are clickable and those that are not.  This makes navigating quite difficult.</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/kinde-design-decisions</guid>
-            <pubDate>2024-07-01</pubDate>
-        </item>
+        <lastBuildDate>Mon, 26 Aug 2024 15:02:48 </lastBuildDate>
         
         <item>
             <title>RTK Query vs. Infinite Scrolling</title>
@@ -347,6 +323,30 @@ The day after writing the previous paragraph, I noticed they added the DJ to the
             </content:encoded>
             <guid isPermaLink="false">https://notes.zachmanson.com/nextcloud-phone-photo-upload</guid>
             <pubDate>2024-05-01</pubDate>
+        </item>
+        
+        <item>
+            <title>Kinde Design Decisions</title>
+            <link>https://notes.zachmanson.com/kinde-design-decisions</link>
+            
+            <content:encoded>
+                <![CDATA[<p>This is a list of problems with the Kinde interface.</p>
+<h2 id="useless-dropdowns">Useless Dropdowns</h2>
+<p>This dropdown should list the environments instead of revealing a button to take you to a page that lists the environments. This is an unnecessary second click.</p>
+<p><img alt="" src="/media/kinde-1.png" /></p>
+<p>This also means you are unable to switch environment without losing the page you are on.</p>
+<h2 id="unclickable-icons">Unclickable Icons</h2>
+<p>For some reason the left facing chevron is not clickable, only the word "Home" is.</p>
+<p><img alt="" src="/media/kinde-2.png" /></p>
+<h2 id="bizarre-breadcrumbs">Bizarre Breadcrumbs</h2>
+<p>When you go to the "Users Profile" screen, the top left back icon doesn't take you back to the "Users" screen, but remains a "Home" button.</p>
+<p>The only way to navigate back is the the small grey "User" text above the user's name.</p>
+<p><img alt="" src="/media/kinde-3.png" /></p>
+<p>This is something that almost all basic websites can get right.  Breadcrumb navigation or consistent back behaviour would be vastly preferable here.</p>
+<p>There is little consistency between parts of the interface that are clickable and those that are not.  This makes navigating quite difficult.</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/kinde-design-decisions</guid>
+            <pubDate>2024-07-01</pubDate>
         </item>
         
         <item>
