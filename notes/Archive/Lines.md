@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> It used to be the case that people were admonished to "not re-invent the wheel". We now live in an age that spends a lot of time "reinventing the flat tire!"
+
+-- [Alan Kay](https://news.ycombinator.com/item?id=11941199)
+
+---
+
 > A story is essentially just a rather entitled hypothesis
 
 -- [James Wood](https://www.newyorker.com/magazine/2024/08/12/devils-contract-the-history-of-the-faustian-bargain-ed-simon-book-review)
