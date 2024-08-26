@@ -42,3 +42,4 @@ Some other interesting ones I have come across:
 - [Anh's Garden](https://anhvn.com/garden/), gorgeous design
 - [antoinejaunard.com](https://antoinejaunard.com/content.html)
 - [Chase McCoy's notes](https://chasem.co/notes)
+- [notes.billmill.org](https://notes.billmill.org/)

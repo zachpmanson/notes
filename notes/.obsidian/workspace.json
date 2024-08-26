@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Programs/GNU/Bash/Bash.md",
+                "file": "Archive/Bookmarks/Digital Gardens.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Programs/GNU/Bash/Bash.md",
+                "file": "Archive/Bookmarks/Digital Gardens.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Programs/GNU/Bash/Bash.md",
+                "file": "Archive/Bookmarks/Digital Gardens.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Programs/GNU/Bash/Bash.md"
+                "file": "Archive/Bookmarks/Digital Gardens.md"
               }
             }
           }
@@ -147,8 +147,9 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "38379b1215cba47a",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Programs/GNU/Bash/Bash.md",
     "Notes/Software/Terminals/80 Columns.md",
     "Notes/Software/Terminals/Terminals.md",
     "Notes/Software/Terminals",
@@ -175,7 +176,6 @@
     "Notes/Software/Unix/macOS/macOS CLI Tools.md",
     "Notes/Software/Programs/tmux.md",
     "Notes/Software/Programs/SQLite.md",
-    "Notes/Software/Programs/GNU/Screen/Screen Commands.md",
     "Notes/Software/Development/Non-Programming Languages/HTML",
     "Notes/Software/Development/Non-Programming Languages/CSS",
     "Notes/Software/Design/Web Design",
