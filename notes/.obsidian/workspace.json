@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/Digital Gardens.md",
+                "file": "Notes/Language/Etymology/Podcast.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/Digital Gardens.md",
+                "file": "Notes/Language/Etymology/Podcast.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/Digital Gardens.md",
+                "file": "Notes/Language/Etymology/Podcast.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/Digital Gardens.md"
+                "file": "Notes/Language/Etymology/Podcast.md"
               }
             }
           }
@@ -147,8 +147,12 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "38379b1215cba47a",
   "lastOpenFiles": [
+    "Notes/Networks/Internet/Internet Standards/RSS.md",
+    "Notes/Language/Etymology/Podcast.md",
+    "Notes/Language/Etymology/Etymology.md",
+    "Archive/Bookmarks/Digital Gardens.md",
     "Notes/Software/Programs/GNU/Bash/Bash.md",
     "Notes/Software/Terminals/80 Columns.md",
     "Notes/Software/Terminals/Terminals.md",
@@ -156,7 +160,6 @@
     "Notes/Language/Diacritics/Diaeresis.md",
     "Archive/Bookmarks/Wikis.md",
     "Archive/Bookmarks/Tools.md",
-    "Archive/Bookmarks/Digital Gardens.md",
     "Archive/Bookmarks/Archives.md",
     "Archive/Bookmarks/Wikipedia Articles.md",
     "Archive/Bookmarks/xkcd.md",
@@ -173,9 +176,6 @@
     "Notes/Software/Unix/GECOS.md",
     "Notes/Software/Unix/Unix Programs/AWK.md",
     "Notes/Software/Unix/Unix Programs/sed.md",
-    "Notes/Software/Unix/macOS/macOS CLI Tools.md",
-    "Notes/Software/Programs/tmux.md",
-    "Notes/Software/Programs/SQLite.md",
     "Notes/Software/Development/Non-Programming Languages/HTML",
     "Notes/Software/Development/Non-Programming Languages/CSS",
     "Notes/Software/Design/Web Design",
