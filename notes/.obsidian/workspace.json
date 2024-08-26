@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Language/Etymology/Podcast.md",
+                "file": "Archive/Folklore/Group Chats Rule the World.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Language/Etymology/Podcast.md",
+                "file": "Archive/Folklore/Group Chats Rule the World.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Language/Etymology/Podcast.md",
+                "file": "Archive/Folklore/Group Chats Rule the World.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Language/Etymology/Podcast.md"
+                "file": "Archive/Folklore/Group Chats Rule the World.md"
               }
             }
           }
@@ -149,8 +149,9 @@
   },
   "active": "38379b1215cba47a",
   "lastOpenFiles": [
-    "Notes/Networks/Internet/Internet Standards/RSS.md",
     "Notes/Language/Etymology/Podcast.md",
+    "Archive/Folklore/Group Chats Rule the World.md",
+    "Notes/Networks/Internet/Internet Standards/RSS.md",
     "Notes/Language/Etymology/Etymology.md",
     "Archive/Bookmarks/Digital Gardens.md",
     "Notes/Software/Programs/GNU/Bash/Bash.md",
@@ -175,7 +176,6 @@
     "Notes/Software/Unix/Unix.md",
     "Notes/Software/Unix/GECOS.md",
     "Notes/Software/Unix/Unix Programs/AWK.md",
-    "Notes/Software/Unix/Unix Programs/sed.md",
     "Notes/Software/Development/Non-Programming Languages/HTML",
     "Notes/Software/Development/Non-Programming Languages/CSS",
     "Notes/Software/Design/Web Design",
