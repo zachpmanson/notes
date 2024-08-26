@@ -12,7 +12,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: kinde design decisions</title>
+  <title>notes: 80 columns</title>
 </head>
 
 <body>
@@ -34,9 +34,10 @@
         
 
         <div class="flex flex-col text-left nav-links">
-          <a href="/design" class="activated-link">Design</a>
+          <a href="/terminals" class="activated-link">Terminals</a>
           
           
+          <a href="/design">Design</a>
           
           
           
@@ -76,7 +77,6 @@
           
           
           
-          <a href="/terminals">Terminals</a>
           
           
           
@@ -89,21 +89,9 @@
         
 
         <div class="flex flex-col text-left nav-links">
-          <a href="/kinde-design-decisions" class="activated-link">Kinde Design Decisions</a>
+          <a href="/80-columns" class="activated-link">80 Columns</a>
           
           
-          <a href="/fun-design">Fun Design</a>
-          
-          
-          
-          
-          
-          
-          <a href="/spotify-design-decisions">Spotify Design Decisions</a>
-          
-          
-          
-          <a href="/web-design">Web Design</a>
           
           
         </div>
@@ -116,23 +104,17 @@
 
   <main>
     <header>
-      <h1>Kinde Design Decisions</h1>
+      <h1>Why do terminals use 80 columns?</h1>
     </header>
 
-    <article><p>This is a list of problems with the Kinde interface.</p>
-<h2 id="useless-dropdowns">Useless Dropdowns</h2>
-<p>This dropdown should list the environments instead of revealing a button to take you to a page that lists the environments. This is an unnecessary second click.</p>
-<p><img alt="" src="/media/kinde-1.png" /></p>
-<p>This also means you are unable to switch environment without losing the page you are on.</p>
-<h2 id="unclickable-icons">Unclickable Icons</h2>
-<p>For some reason the left facing chevron is not clickable, only the word "Home" is.</p>
-<p><img alt="" src="/media/kinde-2.png" /></p>
-<h2 id="bizarre-breadcrumbs">Bizarre Breadcrumbs</h2>
-<p>When you go to the "Users Profile" screen, the top left back icon doesn't take you back to the "Users" screen, but remains a "Home" button.</p>
-<p>The only way to navigate back is the the small grey "User" text above the user's name.</p>
-<p><img alt="" src="/media/kinde-3.png" /></p>
-<p>This is something that almost all basic websites can get right.  Breadcrumb navigation or consistent back behaviour would be vastly preferable here.</p>
-<p>There is little consistency between parts of the interface that are clickable and those that are not.  This makes navigating quite difficult.</p></article>
+    <article><p>Modern terminal applications default to having a maximum width of 80 characters per line. This is because most <a href="https://en.wikipedia.org/wiki/IBM_3270">physical terminals</a> in the early days of computers had screens that were 80 characters wide. These devices used 80 column screens to remain compatible with punched card based systems, the most popular of which used cards with 80 columns and 12 rows. IBM was the dominant computer manufacturer and their cards were all this size, so other companies would use the same size cards to remain IBM compatible.</p>
+<p>IBM had been using 80 column cards since 1928 (originally 10 rows high, extended to 12 in 1930). Why 80 columns?</p>
+<blockquote>
+<p>Because that’s how many of the rectangular holes IBM engineers could reliably punch and read back on a card that size…carried over from the existing 45-column cards of Hollerith’s Tabulating Machine Company, a precursor to IBM around the turn of the century</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://twitter.com/PaintYourDragon/status/1493477959184781315">@PaintYourDragon</a></cite></p>
+<p>The 45 columns cards were designed to match the size of the USA's paper currency, since there were already lots of containers designed for that size. The size that was in use when Hollerith’s cards were designed had been that size officially since 1862 and unofficially since the 1820s. US notes were this size because it allowed them to fit 8 notes in a single sheet of <a href="https://en.wikipedia.org/wiki/Foolscap_folio">British Imperial foolscap paper</a>.</p>
+<p>The earliest known foolscap paper was made in Germany in 1479.</p></article>
   </main>
 
   <footer>
@@ -140,52 +122,50 @@
       <summary>
         <div class="footer-row">
           
-          <date>2024-07-01</date>
+          meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/no-dogs-were-harmed-in-the-making-of-this-app" class="not-extra-small">random</a>
+          <a href="/aliens-and-calendars" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
-          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Design/Kinde Design Decisions.md" class="desktop">edit</a>
-          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Software/Design/Kinde Design Decisions.md" class="mobile">edit</a>
-          <a href="mailto:zachpmanson@gmail.com?subject=On 'Kinde Design Decisions'">reply</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Terminals/80 Columns.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Software/Terminals/80 Columns.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On '80 Columns'">reply</a>
         </div>
       </summary>
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/no-dogs-were-harmed-in-the-making-of-this-app">random</a>
+          <a href="/aliens-and-calendars">random</a>
         </div>
       </div>
 
       
 
+      <p class="backlinks"><strong>Incoming:</strong>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
+      
+
       
       <p class="backlinks"><strong> <a href="/tags">Tags:</a></strong>
         
-        <a href="/tags#posts">#posts</a>
-        
-        <a href="/tags#venting">#venting</a>
+        <a href="/tags#relics">#relics</a>
         
         </span>
       </p>
       
       <p>
         
-        <span class="backlinks">
-          <strong>
-            Posted:
-          </strong>
-          <date>2024-07-01</date>
-
-        </span>
-        
 
         <span class="backlinks">
           <strong>
             Updated:
           </strong>
-          <date>2024-07-04</date>
+          <date>2024-08-26</date>
         </span>
 
       </p>
