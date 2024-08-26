@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Terminals/80 Columns.md",
+                "file": "Notes/Software/Programs/GNU/Bash/Bash.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.50247192382812,
-    "collapsed": true
+    "width": 253.50247192382812
   },
   "right": {
     "id": "b30ab2faf3f39acc",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Terminals/80 Columns.md",
+                "file": "Notes/Software/Programs/GNU/Bash/Bash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Terminals/80 Columns.md",
+                "file": "Notes/Software/Programs/GNU/Bash/Bash.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Terminals/80 Columns.md"
+                "file": "Notes/Software/Programs/GNU/Bash/Bash.md"
               }
             }
           }
@@ -150,8 +149,8 @@
   },
   "active": "38379b1215cba47a",
   "lastOpenFiles": [
-    "Notes/Software/Terminals/Terminals.md",
     "Notes/Software/Terminals/80 Columns.md",
+    "Notes/Software/Terminals/Terminals.md",
     "Notes/Software/Terminals",
     "Notes/Language/Diacritics/Diaeresis.md",
     "Archive/Bookmarks/Wikis.md",
