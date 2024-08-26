@@ -5,5 +5,20 @@ Some surprising name origins.
 - Shrapnel, named after Henry Shrapnel
 - Taco Bell, named after Glen Bell
 - Lake Mountain, named after George Lake
-- Nachos, named after Ignacio "Ncho" Anaya
+- Nachos, named after Ignacio "Nacho" Anaya
 - Jacuzzi, named after Candido Jacuzzi
+- Guppy, named after Robert John Lechmere Guppy
+- Silhouette, named after Étienne de Silhouette
+- Bluetooth, named after Harald Bluetooth
+- Algorithms, named after Muhammad ibn Musa al-Khwarizmi
+	- and algebra, named after his book Al-Jabr
+- Pap test, named after Georgios Papanikolaou
+- MySQL, named after creator Michael Windenius' duaghter, My Widenius
+- Burpee, named after Royal Huddleston Burpee Sr.
+- Pilates, named after Joe Pilates
+- Mesmerize, named after Franz Mesmer
+- Saxophone, named after Adolphe Sax
+- Elo, named after Arpad Elo
+- America, named after Amerigo Vespucci
+- PageRank, named after Larry Page
+- 

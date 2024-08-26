@@ -37,14 +37,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Folklore/Sleep Sort.md",
+                "file": "Notes/Language/Etymology.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6ebe00d2d84e8f22",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Software/Development/Programming Languages/R/R Variable Assignment.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Folklore/Sleep Sort.md",
+                "file": "Notes/Software/Development/Programming Languages/R/R Variable Assignment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Folklore/Sleep Sort.md",
+                "file": "Notes/Software/Development/Programming Languages/R/R Variable Assignment.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Folklore/Sleep Sort.md"
+                "file": "Notes/Software/Development/Programming Languages/R/R Variable Assignment.md"
               }
             }
           }
@@ -172,8 +184,14 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "023d4b0ff8eea6c0",
+  "active": "6ebe00d2d84e8f22",
   "lastOpenFiles": [
+    "Notes/Language/Words/Dude.md",
+    "Notes/Software/Development/Programming Languages/R/R Variable Assignment.md",
+    "Notes/Language/Etymology.md",
+    "Archive/Bookmarks/Websites.md",
+    "Archive/Folklore/Leaving LinkedIn.md",
+    "Notes/Miscellany/On Writing.md",
     "Notes/Language/Eponyms.md",
     "Archive/Folklore/Sleep Sort.md",
     "Notes/Language/Words/Nocent.md",
@@ -183,7 +201,6 @@
     "Notes/Language/Nononyms.md",
     "Notes/Language/Words/Lukewarm.md",
     "Notes/Language/Words/Gruntle.md",
-    "Notes/Language/Etymology.md",
     "Notes/Language/Language.md",
     "Notes/Language/Latin Phrases.md",
     "Notes/Language/Dictionary.md",
@@ -196,12 +213,7 @@
     "Notes/Language/Words/Inspire, Expire, and Conspire.md",
     "Notes/Language/Words/Podcast.md",
     "Archive/Folklore/Group Chats Rule the World.md",
-    "Notes/Networks/Internet/Internet Standards/RSS.md",
-    "Archive/Bookmarks/Digital Gardens.md",
-    "Notes/Software/Programs/GNU/Bash/Bash.md",
-    "Notes/Software/Terminals/80 Columns.md",
     "Notes/Software/Terminals",
-    "Notes/Language/Diacritics/Diaeresis.md",
     "Notes/Software/Development/Non-Programming Languages/HTML",
     "Notes/Software/Development/Non-Programming Languages/CSS",
     "Notes/Software/Design/Web Design",

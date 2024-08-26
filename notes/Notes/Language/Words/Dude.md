@@ -1,0 +1,5 @@
+> In fact, the word “dude” is thought to have originally been a shortening of “Yankee Doodle.” In the original, [British-penned lyrics](https://www.mountvernon.org/library/digitalhistory/colonial-music-institute/essays/real-words-to-yankee-doodle/) of the song, which were written to poke fun at American troops during the French and Indian War, you’ll note that Yankee Doodle is described as a dandy who is a fabulous dancer and wears a dashing feather in his cap. The term _doodle_ is thought to be from a German word meaning “fool” or “simpleton” (though this sense is unrelated to that seen in “labradoodle” and the like, which is a rebracketing from “poodle”).
+> 
+> Thus, “dude” wasn’t exactly a flattering term in its early years.
+
+-- [Jess Zafarris](https://uselessetymology.com/2024/04/22/the-etymology-of-dude/)
