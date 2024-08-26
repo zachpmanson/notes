@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="icon" href="/static/icon/icon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+
+  <link rel="alternate" type="application/rss+xml" href="https://notes.zachmanson.com/posts.xml" title="notes: posts" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: r variable assignment</title>
+</head>
+
+<body>
+  <nav>
+    <div class="main-icon">
+      <a href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
+          viewBox="26.88 56.87 216.25 156.27">
+          <path
+            style="stroke-width: 15px; stroke-linecap: butt; stroke-linejoin: round; stroke: rgb(10, 10, 10); fill: none;"
+            d="M135,75 A60,60 0 0,0 75,135 A60,60 0 0,0 135,195 A60,60 0 0,0 195,135 A60,60 0 0,0 135,75 M45,90 A15,15 0 0,1 60,75 A15,15 0 0,1 75,90 L75,135 L75,180 A15,15 0 0,1 60,195 A15,15 0 0,1 45,180 M225,90 A15,15 0 0,0 210,75 A15,15 0 0,0 195,90 L195,135 L195,180 A15,15 0 0,0 210,195 L210,195 A15,15 0 0,0 225,180 M135,105 A30,30 0 0,1 165,135 A30,30 0 0,1 135,165 A30,30 0 0,1 105,135 A30,30 0 0,1 135,105 M45,105 L45,105 L45,165 M225,105 L225,105 L225,165 ">
+          </path>
+        </svg>
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
+      <div class="nav-segments">
+        
+
+        <div class="flex flex-col text-left nav-links">
+          <a href="/r" class="activated-link">R</a>
+          
+          
+          <a href="/brainfuck">Brainfuck</a>
+          
+          
+          
+          <a href="/c">C</a>
+          
+          
+          
+          <a href="/c++">C++</a>
+          
+          
+          
+          <a href="/go">Go</a>
+          
+          
+          
+          <a href="/javascript">JavaScript</a>
+          
+          
+          
+          
+          
+          
+          <a href="/ruby">Ruby</a>
+          
+          
+        </div>
+        
+
+        
+
+        <div class="flex flex-col text-left nav-links">
+          <a href="/r-variable-assignment" class="activated-link">R Variable Assignment</a>
+          
+          
+          
+          
+        </div>
+        
+
+        
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header>
+      <h1>Arrow Assignment vs. Equals Assignment</h1>
+    </header>
+
+    <article><p>A post by 2011-09-02 on the differences between assignment syntax in <a href="/r">R</a>.</p>
+<hr />
+<p>A recent <a href="https://stat.ethz.ch/pipermail/r-help/2008-December/182730.html">thread</a> on the r-help mailing list raises a common question for beginning R users: should you use = (equals) or &lt;- (back arrow) for assignments?  In R, both of the following statements have the effect of assigning the value 3 to the variable x:</p>
+<div class="highlight"><pre><span></span><code>x = 3  
+
+x &lt;- 3
+</code></pre></div>
+<p>So if they have the same effect, does it matter which you use?</p>
+<p>A little history before we continue: when the R language (and S before it) was first created, &lt;- was the only choice of assignment operator.  This is a hangover from the language <a href="https://en.wikipedia.org/wiki/APL_%28programming_language%29">APL</a>, where the arrow notation was used to distinguish assignment (assign the value 3 to x) from equality (is x equal to 3?). (Professor Ripley reminds me that on APL keyboards there was an actual key on the keyboard with the arrow symbol on it, so the arrow was a single keystroke back then. The same was true of the AT&amp;T terminals first used for the predecessors of S as described in the <a href="https://www.amazon.com/New-Language-Programming-Environment-Analysis/dp/0534091938/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1236786811&amp;sr=8-1">Blue Book</a>.) However many modern languages (such as C, for example) use = for assignment, so beginners using R often found the arrow notation cumbersome, and were prone to use = by mistake.  But R uses = for yet another purpose: associating function arguments with values (as in pnorm(1, sd=2), to set the standard deviation to 2).</p>
+<p>To make things easier for new users familiar with languages like C, R <a href="http://developer.r-project.org/equalAssign.html">added the capability in 2001</a> to also allow = be used as an assignment operator, on the basis that the intent (assignment or association) is usually clear by context.  So,</p>
+<div class="highlight"><pre><span></span><code>x = 3
+</code></pre></div>
+<p>clearly means "assign 3 to x", whereas</p>
+<div class="highlight"><pre><span></span><code>f(x = 3)
+</code></pre></div>
+<p>clearly means "call function f, setting the argument x to 3".</p>
+<p>There is one case where ambiguity might occur: if you wanted to assign a variable during a function call. The only way to do this in modern versions of R is:</p>
+<div class="highlight"><pre><span></span><code>f(x &lt;- 3)
+</code></pre></div>
+<p>which means "assign 3 to x, and call f with the first argument set to the value 3".  This is a contrived example though, and never really occurs in real-world programming.  [UPDATE: In fact, constructs like this are best avoided for reasons given in the comments below.]</p>
+<p>So, back to the original question: should you use = or &lt;- for assignment?  It really boils down to preference.  Many people are more used to using = for assignment, and it's one less keystroke if you want to save on typing.  On the other hand, many R traditionalists prefer &lt;- for clarity, and if you plan to share or publish your code, other might find code using = for assignment hard to read. Personally, I prefer the arrow notation, with a space on either side.</p>
+<p>So, long story short: it's really up to you.</p></article>
+  </main>
+
+  <footer>
+    <details>
+      <summary>
+        <div class="footer-row">
+          
+          meta
+          
+          <a href="/recent-changes">recent</a>
+          <a href="/unix" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Programming Languages/R/R Variable Assignment.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Software/Development/Programming Languages/R/R Variable Assignment.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'R Variable Assignment'">reply</a>
+        </div>
+      </summary>
+      <div class="extra-small">
+        <div class="footer-row">
+          <a href="/sitemap">sitemap</a>
+          <a href="/unix">random</a>
+        </div>
+      </div>
+
+      
+
+      <p class="backlinks"><strong>Incoming:</strong>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
+      
+
+      
+      <p class="backlinks"><strong> <a href="/tags">Tags:</a></strong>
+        
+        <a href="/tags#relics">#relics</a>
+        
+        </span>
+      </p>
+      
+      <p>
+        
+
+        <span class="backlinks">
+          <strong>
+            Updated:
+          </strong>
+          <date>2024-08-27</date>
+        </span>
+
+      </p>
+    </details>
+
+  </footer>
+  
+</body>
+
+</html>
