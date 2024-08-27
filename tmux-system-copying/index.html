@@ -12,7 +12,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: python freezegun vs sqlalchemy</title>
+  <title>notes: tmux system copying</title>
 </head>
 
 <body>
@@ -65,7 +65,7 @@
         
 
         <div class="flex flex-col text-left nav-links">
-          <a href="/python-freezegun-vs-sqlalchemy" class="activated-link">Python Freezegun vs SQLAlchemy</a>
+          <a href="/tmux-system-copying" class="activated-link">tmux System Copying</a>
           
           
           <a href="/alembic-revision-collision">Alembic Revision Collision</a>
@@ -232,6 +232,7 @@
           
           
           
+          <a href="/python-freezegun-vs-sqlalchemy">Python Freezegun vs SQLAlchemy</a>
           
           
           
@@ -323,7 +324,6 @@
           
           
           
-          <a href="/tmux-system-copying">tmux System Copying</a>
           
           
         </div>
@@ -336,26 +336,13 @@
 
   <main>
     <header>
-      <h1>Freezefun Footgun</h1>
+      <h1>tmux System Copying</h1>
     </header>
 
-    <article><p>Freezegun is a python library designed to override datetime so that tests can run with consistent timestamps.  This works great in most cases, but can break when used with SQLAlchemy relationships.</p>
-<p>If you use <code>func.current_date()</code> or <code>func.now()</code> from SQLAlchemy func, they will be generated in the database so won't respect the frozen datetime used by freezegun.</p>
-<p>If you use datetime.now() an ORM model relationship like this:</p>
-<div class="highlight"><pre><span></span><code>    <span class="n">user</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">relationship</span><span class="p">(</span>
-        <span class="s2">&quot;User&quot;</span><span class="p">,</span>
-        <span class="n">secondary</span><span class="o">=</span><span class="n">SiteOwnership</span><span class="o">.</span><span class="n">__table__</span><span class="p">,</span>
-        <span class="n">primaryjoin</span><span class="o">=</span><span class="k">lambda</span><span class="p">:</span> <span class="n">and_</span><span class="p">(</span>
-            <span class="n">BaseSite</span><span class="o">.</span><span class="n">id</span> <span class="o">==</span> <span class="n">SiteOwnership</span><span class="o">.</span><span class="n">site_id</span><span class="p">,</span>
-            <span class="n">SiteOwnership</span><span class="o">.</span><span class="n">start_date</span> <span class="o">&lt;=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">date</span><span class="p">,</span>
-            <span class="p">((</span><span class="n">SiteOwnership</span><span class="o">.</span><span class="n">end_date</span> <span class="o">&gt;</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">date</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">SiteOwnership</span><span class="o">.</span><span class="n">end_date</span><span class="o">.</span><span class="n">is_</span><span class="p">(</span><span class="kc">None</span><span class="p">))),</span>
-        <span class="p">),</span>
-        <span class="n">order_by</span><span class="o">=</span><span class="p">(</span><span class="n">desc</span><span class="p">(</span><span class="n">SiteOwnership</span><span class="o">.</span><span class="n">updated_on</span><span class="p">)),</span>
-        <span class="n">uselist</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-        <span class="n">overlaps</span><span class="o">=</span><span class="s2">&quot;site_ownerships,user,site&quot;</span><span class="p">,</span>
-    <span class="p">)</span>
-</code></pre></div>
-<p>the datetime will not be respected either. I wonder if this is because the <code>datetime.now().date</code> is invoked before freezegun is activated (during server setup).</p></article>
+    <article><p><a href="/tmux-system-copying">tmux System Copying</a> is dogshit at copying by default.</p>
+<p>To allow it to pipe to the normal system clipboard:</p>
+<div class="highlight"><pre><span></span><code>bind -T copy-mode-vi y send-keys -X copy-pipe-and-cancel &#39;pbcopy&#39;
+</code></pre></div></article>
   </main>
 
   <footer>
@@ -366,21 +353,31 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/rob-pikes-5-rules-of-programming" class="not-extra-small">random</a>
+          <a href="/closures" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
-          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Python Freezegun vs SQLAlchemy.md" class="desktop">edit</a>
-          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Problems/Python Freezegun vs SQLAlchemy.md" class="mobile">edit</a>
-          <a href="mailto:zachpmanson@gmail.com?subject=On 'Python Freezegun vs SQLAlchemy'">reply</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/tmux System Copying.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Problems/tmux System Copying.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'tmux System Copying'">reply</a>
         </div>
       </summary>
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/rob-pikes-5-rules-of-programming">random</a>
+          <a href="/closures">random</a>
         </div>
       </div>
 
+      
+
+      <p class="backlinks"><strong>Incoming:</strong>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        <a href="/tmux-system-copying">tmux System Copying</a>
+        
+        </span>
+      </p>
       
 
       
@@ -391,7 +388,7 @@
           <strong>
             Updated:
           </strong>
-          <date>2024-07-03</date>
+          <date>2024-08-27</date>
         </span>
 
       </p>
