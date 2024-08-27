@@ -1,4 +1,4 @@
-[[tmux System Copying]] is dogshit at copying by default.
+[[tmux]] is dogshit at copying by default.
 
 To allow it to pipe to the normal system clipboard:
 
