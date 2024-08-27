@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> I write the above in pencil, not pen
+
+-- [Justin Duke](https://jmduke.com/posts/microblog/why-buttondown-isnt-oss/)
+
+---
+
 > It used to be the case that people were admonished to "not re-invent the wheel". We now live in an age that spends a lot of time "reinventing the flat tire!"
 
 -- [Alan Kay](https://news.ycombinator.com/item?id=11941199)

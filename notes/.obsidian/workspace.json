@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Programs/AWK.md",
+                "file": "Archive/Lines.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Programs/AWK.md",
+                "file": "Archive/Lines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Programs/AWK.md",
+                "file": "Archive/Lines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Programs/AWK.md"
+                "file": "Archive/Lines.md"
               }
             }
           }
@@ -184,34 +184,34 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "023d4b0ff8eea6c0",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Notes.md",
+    "Notes/Software/Unix/Linux/Linux.md",
+    "Notes/Software/Unix/Unix Programs.md",
+    "Notes/Software/Unix/Unix.md",
+    "Notes/Software/Unix/GECOS.md",
+    "Notes/Software/Unix/Unix Files.md",
+    "Notes/Software/Exploits/XZ/XZ.md",
+    "Notes/Software/Mistakes/Referer HTTP Field.md",
+    "Notes/Software/Mistakes/Position of 0 and 1 Keys.md",
+    "Notes/Software/Mistakes/Mistakes.md",
+    "Notes/Software/Mistakes/Dotfiles Being Hidden.md",
+    "Notes/Software/Machine Learning/Machine Learning.md",
+    "Notes/Software/Terminals/Terminals.md",
+    "Notes/Software/Programs/AWK.md",
     "Notes/Software/Programs/sed.md",
     "Notes/Software/Programs/Programs.md",
     "Notes/Software/Programs/Make.md",
     "Notes/Software/Programs/Elk.md",
-    "Notes/Software/Programs/AWK.md",
     "Notes/Software/Programs/Vi(m)/Vi(m) Movement Origins.md",
     "Notes/Software/Programs/Vi(m)/Vi(m).md",
-    "Notes/Software/Unix/Unix Programs.md",
-    "Notes/Software/Unix/Unix.md",
     "Notes/Networks/Maximum Transmission Unit.md",
     "Notes/Networks/Internet/Digital Garden.md",
     "Notes/Language/Etymology.md",
     "Archive/Problems/tmux System Copying.md",
     "Notes/Software/Programs/tmux.md",
     "Notes/Software/Development/Programming Languages/R/R Variable Assignment.md",
-    "Notes/Language/Words/Dude.md",
-    "Archive/Bookmarks/Websites.md",
-    "Archive/Folklore/Leaving LinkedIn.md",
-    "Notes/Miscellany/On Writing.md",
-    "Notes/Language/Eponyms.md",
-    "Archive/Folklore/Sleep Sort.md",
-    "Notes/Language/Words/Nocent.md",
-    "Notes/Mathematics/Computer Science/Complexity Theory/Complexity Classes.md",
-    "Notes/Mathematics/Computer Science/Complexity Theory/Complexity Theory.md",
-    "Notes/Software/Terminals/Terminals.md",
-    "Notes/Language/Nononyms.md",
     "Notes/Language/Words",
     "Notes/Software/Terminals",
     "Notes/Software/Development/Non-Programming Languages/HTML",
