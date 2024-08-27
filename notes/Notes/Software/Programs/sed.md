@@ -1,4 +1,4 @@
-sed (stream editor) is an editing language for manipulating text files.  It performs editing on the fly, intended to work as part of Unix pipelines that reads lines one by one from files.  It performs functions on lines and sending the lines to stdout. Functions are applied sequentially, and they accumulate in complexity quickly.  Breaking it up into smaller scripts can keep the complexity down.
+sed (stream editor) is an editing language for manipulating text files.  It performs editing on the fly, intended to work as part of [[Unix]] pipelines that reads lines one by one from files.  It performs functions on lines and sending the lines to stdout. Functions are applied sequentially, and they accumulate in complexity quickly.  Breaking it up into smaller scripts can keep the complexity down.
 
 ## Syntax
 
