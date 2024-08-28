@@ -13,50 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Language/Words/Lukewarm.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7f6ecfe0932b88f6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Mathematics/Computer Science/Complexity Theory/Complexity Classes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "023d4b0ff8eea6c0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Archive/Lines.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6ebe00d2d84e8f22",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Archive/Problems/tmux System Copying.md",
+                "file": "Notes/Software/Programs/Vi(m)/Vim Plugins/Vim Plugins.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Software/Programs/Vi(m)/Vim Plugins/Vim Plugins.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Software/Programs/Vi(m)/Vim Plugins/Vim Plugins.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Lines.md"
+                "file": "Notes/Software/Programs/Vi(m)/Vim Plugins/Vim Plugins.md"
               }
             }
           }
@@ -184,8 +147,16 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "38379b1215cba47a",
   "lastOpenFiles": [
+    "Notes/Software/Programs/Vi(m)/Vi(m).md",
+    "Notes/Software/Programs/Vi(m)/Vim Plugins/Vim Plugins.md",
+    "Notes/Software/Programs/Vi(m)/Vim Plugins/vim-easymotion.md",
+    "Notes/Software/Open Source.md",
+    "Notes/Software/Programs/Vi(m)/Vim Plugins",
+    "Notes/Language/Nononyms.md",
+    "Archive/Problems/tmux System Copying.md",
+    "Notes/Language/Words/Lukewarm.md",
     "Notes/Notes.md",
     "Notes/Software/Unix/Linux/Linux.md",
     "Notes/Software/Unix/Unix Programs.md",
@@ -205,13 +176,6 @@
     "Notes/Software/Programs/Make.md",
     "Notes/Software/Programs/Elk.md",
     "Notes/Software/Programs/Vi(m)/Vi(m) Movement Origins.md",
-    "Notes/Software/Programs/Vi(m)/Vi(m).md",
-    "Notes/Networks/Maximum Transmission Unit.md",
-    "Notes/Networks/Internet/Digital Garden.md",
-    "Notes/Language/Etymology.md",
-    "Archive/Problems/tmux System Copying.md",
-    "Notes/Software/Programs/tmux.md",
-    "Notes/Software/Development/Programming Languages/R/R Variable Assignment.md",
     "Notes/Language/Words",
     "Notes/Software/Terminals",
     "Notes/Software/Development/Non-Programming Languages/HTML",
@@ -225,7 +189,6 @@
     "Media/sliding-menu.mp4",
     "Media/sr.mp4",
     "Media/Screen Recording 2024-06-20 at 10.58.57.mov",
-    "Media/cronsh.sh",
     "Media/pal.jpg",
     "Media/smart-shuffle-popup.png",
     "Media/chris-vs-cits.png",
