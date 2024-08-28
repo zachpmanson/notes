@@ -1,6 +1,6 @@
 ## That I Use
 
-- vim-easymotion
+- vim-easymotion (with \<Leader>\<Leader> mapped to \<Leader>)
 
 ## That I Love
 
