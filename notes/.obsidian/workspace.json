@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Programs/Vi(m)/Vim Plugins/Vim Plugins.md",
+                "file": "Notes/Courses/Courses.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Programs/Vi(m)/Vim Plugins/Vim Plugins.md",
+                "file": "Notes/Courses/Courses.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Programs/Vi(m)/Vim Plugins/Vim Plugins.md",
+                "file": "Notes/Courses/Courses.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Programs/Vi(m)/Vim Plugins/Vim Plugins.md"
+                "file": "Notes/Courses/Courses.md"
               }
             }
           }
@@ -147,10 +147,10 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "38379b1215cba47a",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Notes/Software/Programs/Vi(m)/Vi(m).md",
     "Notes/Software/Programs/Vi(m)/Vim Plugins/Vim Plugins.md",
+    "Notes/Software/Programs/Vi(m)/Vi(m).md",
     "Notes/Software/Programs/Vi(m)/Vim Plugins/vim-easymotion.md",
     "Notes/Software/Open Source.md",
     "Notes/Software/Programs/Vi(m)/Vim Plugins",
