@@ -2,7 +2,6 @@
 tags:
   - relics
 ---
-
 A maximum transmission unit is the max size a given protocol can transmit in a single transaction in network.
 
 To this day, the Ethernet MTU is 1500 bytes.  This is a relic of the Xerox Alto computer.

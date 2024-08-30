@@ -3,7 +3,7 @@ subtitle: Why do terminals use 80 columns?
 tags:
   - relics
 ---
-Modern terminal applications default to having a maximum width of 80 characters per line. This is because most [physical terminals](https://en.wikipedia.org/wiki/IBM_3270) in the early days of computers had screens that were 80 characters wide. These devices used 80 column screens to remain compatible with punched card based systems, the most popular of which used cards with 80 columns and 12 rows. IBM was the dominant computer manufacturer and their cards were all this size, so other companies would use the same size cards to remain IBM compatible.
+Modern [[Terminals|terminal]] applications default to having a maximum width of 80 characters per line. This is because most [physical terminals](https://en.wikipedia.org/wiki/IBM_3270) in the early days of computers had screens that were 80 characters wide. These devices used 80 column [[Screen|screens]] to remain compatible with punched card based systems, the most popular of which used cards with 80 columns and 12 rows. IBM was the dominant computer manufacturer and their cards were all this size, so other companies would use the same size cards to remain IBM compatible.
 
 IBM had been using 80 column cards since 1928 (originally 10 rows high, extended to 12 in 1930). Why 80 columns?
 

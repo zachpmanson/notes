@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Courses/Courses.md",
+                "file": "Archive/Bookmarks/Web Communities.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "c2",
+                "query": "tag:relics",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Courses/Courses.md",
+                "file": "Archive/Bookmarks/Web Communities.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Courses/Courses.md",
+                "file": "Archive/Bookmarks/Web Communities.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Courses/Courses.md"
+                "file": "Archive/Bookmarks/Web Communities.md"
               }
             }
           }
@@ -149,6 +149,19 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Terminals/80 Columns.md",
+    "Notes/Software/Programs/GNU/Screen/Screen.md",
+    "Notes/Networks/Maximum Transmission Unit.md",
+    "Notes/Networks/Internet/Internet Standards/ActivityPub.md",
+    "Notes/Networks/Internet/Pirate Libraries/Pirate Libraries.md",
+    "Notes/Miscellany/Sewing.md",
+    "Notes/Miscellany/Thin Deep Slices.md",
+    "Notes/Miscellany/Process Box.md",
+    "Notes/Miscellany/On Taking Notes.md",
+    "Notes/Miscellany/Miscellany.md",
+    "Notes/Mathematics/Computer Science/Computer Science.md",
+    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+    "Notes/Courses/Courses.md",
     "Notes/Software/Programs/Vi(m)/Vim Plugins/Vim Plugins.md",
     "Notes/Software/Programs/Vi(m)/Vi(m).md",
     "Notes/Software/Programs/Vi(m)/Vim Plugins/vim-easymotion.md",
@@ -163,19 +176,6 @@
     "Notes/Software/Unix/Unix.md",
     "Notes/Software/Unix/GECOS.md",
     "Notes/Software/Unix/Unix Files.md",
-    "Notes/Software/Exploits/XZ/XZ.md",
-    "Notes/Software/Mistakes/Referer HTTP Field.md",
-    "Notes/Software/Mistakes/Position of 0 and 1 Keys.md",
-    "Notes/Software/Mistakes/Mistakes.md",
-    "Notes/Software/Mistakes/Dotfiles Being Hidden.md",
-    "Notes/Software/Machine Learning/Machine Learning.md",
-    "Notes/Software/Terminals/Terminals.md",
-    "Notes/Software/Programs/AWK.md",
-    "Notes/Software/Programs/sed.md",
-    "Notes/Software/Programs/Programs.md",
-    "Notes/Software/Programs/Make.md",
-    "Notes/Software/Programs/Elk.md",
-    "Notes/Software/Programs/Vi(m)/Vi(m) Movement Origins.md",
     "Notes/Language/Words",
     "Notes/Software/Terminals",
     "Notes/Software/Development/Non-Programming Languages/HTML",
