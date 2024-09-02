@@ -13,7 +13,7 @@
             <link>https://notes.zachmanson.com/python</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Mon, 02 Sep 2024 01:23:53 </lastBuildDate>
+        <lastBuildDate>Mon, 02 Sep 2024 02:44:13 </lastBuildDate>
         
         <item>
             <title>snakeware</title>
@@ -44,116 +44,6 @@
             </content:encoded>
             <guid isPermaLink="false">https://notes.zachmanson.com/snakeware</guid>
             <pubDate>2024-03-26</pubDate>
-        </item>
-        
-        <item>
-            <title>Poetry Showing Dependencies it Refuses to Install</title>
-            <link>https://notes.zachmanson.com/poetry-showing-dependencies-it-refuses-to-install</link>
-            
-            <content:encoded>
-                <![CDATA[<p>When Poetry lists the dependencies for a package it doesn't show the Python versions that those ranges are valid for.  For example, <a href="https://github.com/boto/botocore/blob/develop/setup.py">this</a> <code>setup.py</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="n">requires</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s1">&#39;jmespath&gt;=0.7.1,&lt;2.0.0&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;python-dateutil&gt;=2.1,&lt;3.0.0&#39;</span><span class="p">,</span>
-    <span class="c1"># Prior to Python 3.10, Python doesn&#39;t require openssl 1.1.1</span>
-    <span class="c1"># but urllib3 2.0+ does. This means all botocore users will be</span>
-    <span class="c1"># broken by default on Amazon Linux 2 and AWS Lambda without this pin.</span>
-    <span class="s1">&#39;urllib3&gt;=1.25.4,&lt;1.27 ; python_version &lt; &quot;3.10&quot;&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;urllib3&gt;=1.25.4,!=2.2.0,&lt;3 ; python_version &gt;= &quot;3.10&quot;&#39;</span><span class="p">,</span>
-<span class="p">]</span>
-</code></pre></div>
-<p>will not have the Python version shown when running <code>poetry show</code>, despite some the package ranges depending on the Python version of the project.  On a Python project where the <code>pyproject.toml</code> specifies Python 3.9, <code>poetry show</code> will only return the urllib3 version range that is valid for Python 3.9.</p>
-<div class="highlight"><pre><span></span><code><span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
-&gt;<span class="w"> </span>head<span class="w"> </span>pyproject.toml
-<span class="o">[</span>tool.poetry<span class="o">]</span>
-<span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;prosebit&quot;</span>
-<span class="nv">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span>
-<span class="nv">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
-<span class="nv">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;Your Name &lt;you@example.com&gt;&quot;</span><span class="o">]</span>
-<span class="nv">readme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;README.md&quot;</span>
-
-<span class="o">[</span>tool.poetry.dependencies<span class="o">]</span>
-<span class="nv">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;3.9&quot;</span>
-
-<span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
-&gt;<span class="w"> </span>poetry<span class="w"> </span>show<span class="w"> </span>botocore
-<span class="w"> </span>name<span class="w">         </span>:<span class="w"> </span>botocore<span class="w">                               </span>
-<span class="w"> </span>version<span class="w">      </span>:<span class="w"> </span><span class="m">1</span>.34.144<span class="w">                               </span>
-<span class="w"> </span>description<span class="w">  </span>:<span class="w"> </span>Low-level,<span class="w"> </span>data-driven<span class="w"> </span>core<span class="w"> </span>of<span class="w"> </span>boto<span class="w"> </span><span class="m">3</span>.<span class="w"> </span>
-
-dependencies
-<span class="w"> </span>-<span class="w"> </span>jmespath<span class="w"> </span>&gt;<span class="o">=</span><span class="m">0</span>.7.1,&lt;<span class="m">2</span>.0.0
-<span class="w"> </span>-<span class="w"> </span>python-dateutil<span class="w"> </span>&gt;<span class="o">=</span><span class="m">2</span>.1,&lt;<span class="m">3</span>.0.0
-<span class="w"> </span>-<span class="w"> </span>urllib3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.25.4,&lt;<span class="m">1</span>.27
-
-required<span class="w"> </span>by
-<span class="w"> </span>-<span class="w"> </span>boto3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.34.144,&lt;<span class="m">1</span>.35.0
-<span class="w"> </span>-<span class="w"> </span>s3transfer<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.33.2,&lt;<span class="m">2</span>.0a.0
-</code></pre></div>
-<p>On a Python project where the <code>pyproject.toml</code> specifies Python 3.10, <code>poetry show</code> will only return the urllib3 version range that is valid for Python 3.10.</p>
-<div class="highlight"><pre><span></span><code><span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
-&gt;<span class="w"> </span>head<span class="w"> </span>pyproject.toml
-<span class="o">[</span>tool.poetry<span class="o">]</span>
-<span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;prosebit&quot;</span>
-<span class="nv">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span>
-<span class="nv">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
-<span class="nv">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;Your Name &lt;you@example.com&gt;&quot;</span><span class="o">]</span>
-<span class="nv">readme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;README.md&quot;</span>
-
-<span class="o">[</span>tool.poetry.dependencies<span class="o">]</span>
-<span class="nv">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;3.10&quot;</span>
-
-<span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
-&gt;<span class="w"> </span>poetry<span class="w"> </span>show<span class="w"> </span>botocore
-<span class="w"> </span>name<span class="w">         </span>:<span class="w"> </span>botocore<span class="w">                               </span>
-<span class="w"> </span>version<span class="w">      </span>:<span class="w"> </span><span class="m">1</span>.34.144<span class="w">                               </span>
-<span class="w"> </span>description<span class="w">  </span>:<span class="w"> </span>Low-level,<span class="w"> </span>data-driven<span class="w"> </span>core<span class="w"> </span>of<span class="w"> </span>boto<span class="w"> </span><span class="m">3</span>.<span class="w"> </span>
-
-dependencies
-<span class="w"> </span>-<span class="w"> </span>jmespath<span class="w"> </span>&gt;<span class="o">=</span><span class="m">0</span>.7.1,&lt;<span class="m">2</span>.0.0
-<span class="w"> </span>-<span class="w"> </span>python-dateutil<span class="w"> </span>&gt;<span class="o">=</span><span class="m">2</span>.1,&lt;<span class="m">3</span>.0.0
-<span class="w"> </span>-<span class="w"> </span>urllib3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.25.4,&lt;<span class="m">2</span>.2.0<span class="w"> </span><span class="o">||</span><span class="w"> </span>&gt;2.2.0,&lt;<span class="m">3</span>
-
-required<span class="w"> </span>by
-<span class="w"> </span>-<span class="w"> </span>boto3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.34.144,&lt;<span class="m">1</span>.35.0
-<span class="w"> </span>-<span class="w"> </span>s3transfer<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.33.2,&lt;<span class="m">2</span>.0a.0
-</code></pre></div>
-<p>On a Python project where a range is specified that covers multiple urllib3 package ranges, <strong><code>poetry show</code> will show both ranges without specifying that the ranges apply to different Python versions</strong>.</p>
-<div class="highlight"><pre><span></span><code><span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
-&gt;<span class="w"> </span>head<span class="w"> </span>pyproject.toml
-<span class="o">[</span>tool.poetry<span class="o">]</span>
-<span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;prosebit&quot;</span>
-<span class="nv">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span>
-<span class="nv">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
-<span class="nv">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;Your Name &lt;you@example.com&gt;&quot;</span><span class="o">]</span>
-<span class="nv">readme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;README.md&quot;</span>
-
-<span class="o">[</span>tool.poetry.dependencies<span class="o">]</span>
-<span class="nv">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&gt;=3.9,&lt;3.12&quot;</span>
-
-<span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
-&gt;<span class="w"> </span>poetry<span class="w"> </span>show<span class="w"> </span>botocore
-<span class="w"> </span>name<span class="w">         </span>:<span class="w"> </span>botocore<span class="w">                               </span>
-<span class="w"> </span>version<span class="w">      </span>:<span class="w"> </span><span class="m">1</span>.34.144<span class="w">                               </span>
-<span class="w"> </span>description<span class="w">  </span>:<span class="w"> </span>Low-level,<span class="w"> </span>data-driven<span class="w"> </span>core<span class="w"> </span>of<span class="w"> </span>boto<span class="w"> </span><span class="m">3</span>.<span class="w"> </span>
-
-dependencies
-<span class="w"> </span>-<span class="w"> </span>jmespath<span class="w"> </span>&gt;<span class="o">=</span><span class="m">0</span>.7.1,&lt;<span class="m">2</span>.0.0
-<span class="w"> </span>-<span class="w"> </span>python-dateutil<span class="w"> </span>&gt;<span class="o">=</span><span class="m">2</span>.1,&lt;<span class="m">3</span>.0.0
-<span class="w"> </span>-<span class="w"> </span>urllib3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.25.4,&lt;<span class="m">1</span>.27
-<span class="w"> </span>-<span class="w"> </span>urllib3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.25.4,&lt;<span class="m">2</span>.2.0<span class="w"> </span><span class="o">||</span><span class="w"> </span>&gt;2.2.0,&lt;<span class="m">3</span>
-
-required<span class="w"> </span>by
-<span class="w"> </span>-<span class="w"> </span>boto3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.34.144,&lt;<span class="m">1</span>.35.0
-<span class="w"> </span>-<span class="w"> </span>s3transfer<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.33.2,&lt;<span class="m">2</span>.0a.0
-</code></pre></div>
-<p>Despite displaying both ranges in <code>poetry show</code>, <strong>Poetry will only use the oldest range when running <code>poetry lock</code> or <code>poetry install</code></strong> .  This can lead to a disconnect between the package ranges that Poetry is reporting as valid and the package ranges that Poetry will actually attempt to use when running.</p>
-<p>I discovered this the hard way when trying to install <code>kinde-python-sdk</code> and <code>boto3</code> within the same project. <code>boto3</code> requires <code>botocore</code> which requires <code>urllib3</code>.  <code>kinde-python-sdk</code> also requires <code>urllib3</code>. Since my project was set to use <code>python = "&gt;=3.9,&lt;3.12"</code>, Poetry was listing both ranges in <code>poetry show</code>, but only using the range <code>urllib3 &gt;=1.25.4,&lt;1.27</code> when installing <code>botocore</code>. This resulted in headaches because <code>kinde-python-sdk</code> requires <code>urllib3 &gt;=2.2.1,&lt;2.3.0</code>, so it appeared like <code>botocore</code> and <code>kinde-python-sdk</code> could coexist when I ran <code>poetry show</code>, but failed to install every time I tried.</p>
-<p>Another important detail to note is that <strong>this is all dependent on the Python version specified in <code>pyproject.toml</code>.  The Python version you are actually running does not change the behaviour of Poetry.</strong>  I ran into all of these problems when running Python 3.11, so was confused for hours.</p>
-<p><code>poetry show</code> should report the Python versions that each package dependency range is valid for, since this turned a relatively simple dependency conflict into a multi-hour dependency conflict.  I was only able to figure out the exact cause by reading the setup script for <code>botocore</code>.</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/poetry-showing-dependencies-it-refuses-to-install</guid>
-            <pubDate>2024-07-15</pubDate>
         </item>
         
         <item>
@@ -297,6 +187,116 @@ required<span class="w"> </span>by
             </content:encoded>
             <guid isPermaLink="false">https://notes.zachmanson.com/jinja-components</guid>
             <pubDate>2022-11-17</pubDate>
+        </item>
+        
+        <item>
+            <title>Poetry Showing Dependencies it Refuses to Install</title>
+            <link>https://notes.zachmanson.com/poetry-showing-dependencies-it-refuses-to-install</link>
+            
+            <content:encoded>
+                <![CDATA[<p>When Poetry lists the dependencies for a package it doesn't show the Python versions that those ranges are valid for.  For example, <a href="https://github.com/boto/botocore/blob/develop/setup.py">this</a> <code>setup.py</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="n">requires</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;jmespath&gt;=0.7.1,&lt;2.0.0&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;python-dateutil&gt;=2.1,&lt;3.0.0&#39;</span><span class="p">,</span>
+    <span class="c1"># Prior to Python 3.10, Python doesn&#39;t require openssl 1.1.1</span>
+    <span class="c1"># but urllib3 2.0+ does. This means all botocore users will be</span>
+    <span class="c1"># broken by default on Amazon Linux 2 and AWS Lambda without this pin.</span>
+    <span class="s1">&#39;urllib3&gt;=1.25.4,&lt;1.27 ; python_version &lt; &quot;3.10&quot;&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;urllib3&gt;=1.25.4,!=2.2.0,&lt;3 ; python_version &gt;= &quot;3.10&quot;&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+</code></pre></div>
+<p>will not have the Python version shown when running <code>poetry show</code>, despite some the package ranges depending on the Python version of the project.  On a Python project where the <code>pyproject.toml</code> specifies Python 3.9, <code>poetry show</code> will only return the urllib3 version range that is valid for Python 3.9.</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
+&gt;<span class="w"> </span>head<span class="w"> </span>pyproject.toml
+<span class="o">[</span>tool.poetry<span class="o">]</span>
+<span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;prosebit&quot;</span>
+<span class="nv">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span>
+<span class="nv">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="nv">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;Your Name &lt;you@example.com&gt;&quot;</span><span class="o">]</span>
+<span class="nv">readme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;README.md&quot;</span>
+
+<span class="o">[</span>tool.poetry.dependencies<span class="o">]</span>
+<span class="nv">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;3.9&quot;</span>
+
+<span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
+&gt;<span class="w"> </span>poetry<span class="w"> </span>show<span class="w"> </span>botocore
+<span class="w"> </span>name<span class="w">         </span>:<span class="w"> </span>botocore<span class="w">                               </span>
+<span class="w"> </span>version<span class="w">      </span>:<span class="w"> </span><span class="m">1</span>.34.144<span class="w">                               </span>
+<span class="w"> </span>description<span class="w">  </span>:<span class="w"> </span>Low-level,<span class="w"> </span>data-driven<span class="w"> </span>core<span class="w"> </span>of<span class="w"> </span>boto<span class="w"> </span><span class="m">3</span>.<span class="w"> </span>
+
+dependencies
+<span class="w"> </span>-<span class="w"> </span>jmespath<span class="w"> </span>&gt;<span class="o">=</span><span class="m">0</span>.7.1,&lt;<span class="m">2</span>.0.0
+<span class="w"> </span>-<span class="w"> </span>python-dateutil<span class="w"> </span>&gt;<span class="o">=</span><span class="m">2</span>.1,&lt;<span class="m">3</span>.0.0
+<span class="w"> </span>-<span class="w"> </span>urllib3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.25.4,&lt;<span class="m">1</span>.27
+
+required<span class="w"> </span>by
+<span class="w"> </span>-<span class="w"> </span>boto3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.34.144,&lt;<span class="m">1</span>.35.0
+<span class="w"> </span>-<span class="w"> </span>s3transfer<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.33.2,&lt;<span class="m">2</span>.0a.0
+</code></pre></div>
+<p>On a Python project where the <code>pyproject.toml</code> specifies Python 3.10, <code>poetry show</code> will only return the urllib3 version range that is valid for Python 3.10.</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
+&gt;<span class="w"> </span>head<span class="w"> </span>pyproject.toml
+<span class="o">[</span>tool.poetry<span class="o">]</span>
+<span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;prosebit&quot;</span>
+<span class="nv">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span>
+<span class="nv">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="nv">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;Your Name &lt;you@example.com&gt;&quot;</span><span class="o">]</span>
+<span class="nv">readme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;README.md&quot;</span>
+
+<span class="o">[</span>tool.poetry.dependencies<span class="o">]</span>
+<span class="nv">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;3.10&quot;</span>
+
+<span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
+&gt;<span class="w"> </span>poetry<span class="w"> </span>show<span class="w"> </span>botocore
+<span class="w"> </span>name<span class="w">         </span>:<span class="w"> </span>botocore<span class="w">                               </span>
+<span class="w"> </span>version<span class="w">      </span>:<span class="w"> </span><span class="m">1</span>.34.144<span class="w">                               </span>
+<span class="w"> </span>description<span class="w">  </span>:<span class="w"> </span>Low-level,<span class="w"> </span>data-driven<span class="w"> </span>core<span class="w"> </span>of<span class="w"> </span>boto<span class="w"> </span><span class="m">3</span>.<span class="w"> </span>
+
+dependencies
+<span class="w"> </span>-<span class="w"> </span>jmespath<span class="w"> </span>&gt;<span class="o">=</span><span class="m">0</span>.7.1,&lt;<span class="m">2</span>.0.0
+<span class="w"> </span>-<span class="w"> </span>python-dateutil<span class="w"> </span>&gt;<span class="o">=</span><span class="m">2</span>.1,&lt;<span class="m">3</span>.0.0
+<span class="w"> </span>-<span class="w"> </span>urllib3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.25.4,&lt;<span class="m">2</span>.2.0<span class="w"> </span><span class="o">||</span><span class="w"> </span>&gt;2.2.0,&lt;<span class="m">3</span>
+
+required<span class="w"> </span>by
+<span class="w"> </span>-<span class="w"> </span>boto3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.34.144,&lt;<span class="m">1</span>.35.0
+<span class="w"> </span>-<span class="w"> </span>s3transfer<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.33.2,&lt;<span class="m">2</span>.0a.0
+</code></pre></div>
+<p>On a Python project where a range is specified that covers multiple urllib3 package ranges, <strong><code>poetry show</code> will show both ranges without specifying that the ranges apply to different Python versions</strong>.</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
+&gt;<span class="w"> </span>head<span class="w"> </span>pyproject.toml
+<span class="o">[</span>tool.poetry<span class="o">]</span>
+<span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;prosebit&quot;</span>
+<span class="nv">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span>
+<span class="nv">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="nv">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;Your Name &lt;you@example.com&gt;&quot;</span><span class="o">]</span>
+<span class="nv">readme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;README.md&quot;</span>
+
+<span class="o">[</span>tool.poetry.dependencies<span class="o">]</span>
+<span class="nv">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&gt;=3.9,&lt;3.12&quot;</span>
+
+<span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
+&gt;<span class="w"> </span>poetry<span class="w"> </span>show<span class="w"> </span>botocore
+<span class="w"> </span>name<span class="w">         </span>:<span class="w"> </span>botocore<span class="w">                               </span>
+<span class="w"> </span>version<span class="w">      </span>:<span class="w"> </span><span class="m">1</span>.34.144<span class="w">                               </span>
+<span class="w"> </span>description<span class="w">  </span>:<span class="w"> </span>Low-level,<span class="w"> </span>data-driven<span class="w"> </span>core<span class="w"> </span>of<span class="w"> </span>boto<span class="w"> </span><span class="m">3</span>.<span class="w"> </span>
+
+dependencies
+<span class="w"> </span>-<span class="w"> </span>jmespath<span class="w"> </span>&gt;<span class="o">=</span><span class="m">0</span>.7.1,&lt;<span class="m">2</span>.0.0
+<span class="w"> </span>-<span class="w"> </span>python-dateutil<span class="w"> </span>&gt;<span class="o">=</span><span class="m">2</span>.1,&lt;<span class="m">3</span>.0.0
+<span class="w"> </span>-<span class="w"> </span>urllib3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.25.4,&lt;<span class="m">1</span>.27
+<span class="w"> </span>-<span class="w"> </span>urllib3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.25.4,&lt;<span class="m">2</span>.2.0<span class="w"> </span><span class="o">||</span><span class="w"> </span>&gt;2.2.0,&lt;<span class="m">3</span>
+
+required<span class="w"> </span>by
+<span class="w"> </span>-<span class="w"> </span>boto3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.34.144,&lt;<span class="m">1</span>.35.0
+<span class="w"> </span>-<span class="w"> </span>s3transfer<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.33.2,&lt;<span class="m">2</span>.0a.0
+</code></pre></div>
+<p>Despite displaying both ranges in <code>poetry show</code>, <strong>Poetry will only use the oldest range when running <code>poetry lock</code> or <code>poetry install</code></strong> .  This can lead to a disconnect between the package ranges that Poetry is reporting as valid and the package ranges that Poetry will actually attempt to use when running.</p>
+<p>I discovered this the hard way when trying to install <code>kinde-python-sdk</code> and <code>boto3</code> within the same project. <code>boto3</code> requires <code>botocore</code> which requires <code>urllib3</code>.  <code>kinde-python-sdk</code> also requires <code>urllib3</code>. Since my project was set to use <code>python = "&gt;=3.9,&lt;3.12"</code>, Poetry was listing both ranges in <code>poetry show</code>, but only using the range <code>urllib3 &gt;=1.25.4,&lt;1.27</code> when installing <code>botocore</code>. This resulted in headaches because <code>kinde-python-sdk</code> requires <code>urllib3 &gt;=2.2.1,&lt;2.3.0</code>, so it appeared like <code>botocore</code> and <code>kinde-python-sdk</code> could coexist when I ran <code>poetry show</code>, but failed to install every time I tried.</p>
+<p>Another important detail to note is that <strong>this is all dependent on the Python version specified in <code>pyproject.toml</code>.  The Python version you are actually running does not change the behaviour of Poetry.</strong>  I ran into all of these problems when running Python 3.11, so was confused for hours.</p>
+<p><code>poetry show</code> should report the Python versions that each package dependency range is valid for, since this turned a relatively simple dependency conflict into a multi-hour dependency conflict.  I was only able to figure out the exact cause by reading the setup script for <code>botocore</code>.</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/poetry-showing-dependencies-it-refuses-to-install</guid>
+            <pubDate>2024-07-15</pubDate>
         </item>
         
 
