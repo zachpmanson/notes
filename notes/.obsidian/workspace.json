@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Unix/Linux/Linux.md",
+                "file": "Notes/Cybersecurity/Cybersecurity.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Unix/Linux/Linux.md",
+                "file": "Notes/Cybersecurity/Cybersecurity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Unix/Linux/Linux.md",
+                "file": "Notes/Cybersecurity/Cybersecurity.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Unix/Linux/Linux.md"
+                "file": "Notes/Cybersecurity/Cybersecurity.md"
               }
             }
           }
@@ -147,8 +147,9 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "38379b1215cba47a",
   "lastOpenFiles": [
+    "Notes/Software/Unix/Linux/Linux.md",
     "Archive/Bookmarks/Web Communities.md",
     "Notes/Software/Terminals/80 Columns.md",
     "Notes/Software/Programs/GNU/Screen/Screen.md",
@@ -172,7 +173,6 @@
     "Archive/Problems/tmux System Copying.md",
     "Notes/Language/Words/Lukewarm.md",
     "Notes/Notes.md",
-    "Notes/Software/Unix/Linux/Linux.md",
     "Notes/Software/Unix/Unix Programs.md",
     "Notes/Software/Unix/Unix.md",
     "Notes/Software/Unix/GECOS.md",
