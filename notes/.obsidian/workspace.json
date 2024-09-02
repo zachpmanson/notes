@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Cybersecurity/Cybersecurity.md",
+                "file": "Archive/Bookmarks/Web Communities.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Cybersecurity/Cybersecurity.md",
+                "file": "Archive/Bookmarks/Web Communities.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Cybersecurity/Cybersecurity.md",
+                "file": "Archive/Bookmarks/Web Communities.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Cybersecurity/Cybersecurity.md"
+                "file": "Archive/Bookmarks/Web Communities.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   },
   "active": "38379b1215cba47a",
   "lastOpenFiles": [
+    "Notes/Cybersecurity/Cybersecurity.md",
     "Notes/Software/Unix/Linux/Linux.md",
     "Archive/Bookmarks/Web Communities.md",
     "Notes/Software/Terminals/80 Columns.md",
@@ -175,7 +176,6 @@
     "Notes/Notes.md",
     "Notes/Software/Unix/Unix Programs.md",
     "Notes/Software/Unix/Unix.md",
-    "Notes/Software/Unix/GECOS.md",
     "Notes/Language/Words",
     "Notes/Software/Terminals",
     "Notes/Software/Development/Non-Programming Languages/HTML",
