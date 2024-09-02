@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/Web Communities.md",
+                "file": "Notes/Software/Unix/Linux/Linux.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/Web Communities.md",
+                "file": "Notes/Software/Unix/Linux/Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/Web Communities.md",
+                "file": "Notes/Software/Unix/Linux/Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/Web Communities.md"
+                "file": "Notes/Software/Unix/Linux/Linux.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Archive/Bookmarks/Web Communities.md",
     "Notes/Software/Terminals/80 Columns.md",
     "Notes/Software/Programs/GNU/Screen/Screen.md",
     "Notes/Networks/Maximum Transmission Unit.md",
@@ -175,7 +176,6 @@
     "Notes/Software/Unix/Unix Programs.md",
     "Notes/Software/Unix/Unix.md",
     "Notes/Software/Unix/GECOS.md",
-    "Notes/Software/Unix/Unix Files.md",
     "Notes/Language/Words",
     "Notes/Software/Terminals",
     "Notes/Software/Development/Non-Programming Languages/HTML",
