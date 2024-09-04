@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Web Development/Interbrowser Development.md",
+                "file": "Archive/Lines.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Web Development/Interbrowser Development.md",
+                "file": "Archive/Lines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Web Development/Interbrowser Development.md",
+                "file": "Archive/Lines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Web Development/Interbrowser Development.md"
+                "file": "Archive/Lines.md"
               }
             }
           }
@@ -147,10 +147,10 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "38379b1215cba47a",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Notes/Software/Development/Web Development/Web Development.md",
     "Notes/Software/Development/Web Development/Interbrowser Development.md",
+    "Notes/Software/Development/Web Development/Web Development.md",
     "Archive/Bookmarks/Web Communities.md",
     "Notes/Cybersecurity/Cybersecurity.md",
     "Notes/Software/Unix/Linux/Linux.md",

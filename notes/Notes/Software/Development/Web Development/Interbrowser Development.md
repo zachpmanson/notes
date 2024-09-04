@@ -1,6 +1,5 @@
 For the most part browsers and their APIs are cross compatible, but there are a few differences that need to be paid attention to.
 
-
 ## Clipboard API
 
 *As of 2024-09-04*
