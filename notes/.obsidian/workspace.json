@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Software/Programs/GNU/Bash/Bash.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Software/Programs/GNU/Bash/Bash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Software/Programs/GNU/Bash/Bash.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Lines.md"
+                "file": "Notes/Software/Programs/GNU/Bash/Bash.md"
               }
             }
           }
@@ -147,8 +147,9 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "38379b1215cba47a",
   "lastOpenFiles": [
+    "Archive/Lines.md",
     "Notes/Software/Development/Web Development/Interbrowser Development.md",
     "Notes/Software/Development/Web Development/Web Development.md",
     "Archive/Bookmarks/Web Communities.md",
@@ -175,7 +176,6 @@
     "Notes/Language/Nononyms.md",
     "Archive/Problems/tmux System Copying.md",
     "Notes/Language/Words/Lukewarm.md",
-    "Notes/Notes.md",
     "Notes/Language/Words",
     "Notes/Software/Terminals",
     "Notes/Software/Development/Non-Programming Languages/HTML",
