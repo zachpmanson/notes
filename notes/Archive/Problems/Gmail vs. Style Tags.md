@@ -1,0 +1,3 @@
+Gmail cannot send email with `<style>` tags. As far as I can tell. If you do send one using Gmail, it will automatically inline all styles. This is a problem as some styles cannot be inlined, such as `@media` queries. Other email clients are capable of sending `<style>` tags, so Gmail is capable of receiving these, but if you attempt to forward one of these Gmail will strip away the `<style>` tag and inline everything it can.
+
+This includes the examples given on the [Gmail CSS style](https://developers.google.com/gmail/design/css) support page.
