@@ -7,3 +7,7 @@ Notably, no part of this flow involved giving my *Website* any personal informat
 More on this can be read in an [excellent article by John Bradley](http://www.thread-safe.com/2012/01/problem-with-oauth-for-authentication.html).  A few more thoughts on this can be read in this [StackExchange thread](https://security.stackexchange.com/questions/37818/why-use-openid-connect-instead-of-plain-oauth2/260519#260519).
 
 Authentication should be handled by OpenID Connect, which provides an identity layer on top of OAuth 2.0.
+
+## Links
+
+- [OAuth From First Principles](https://stack-auth.com/blog/oauth-from-first-principles)

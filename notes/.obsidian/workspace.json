@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Language/Nomenclature/Program Names.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4ac61b166fd74537",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Language/Nomenclature/Nomenclature.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Language/Nomenclature/Nomenclature.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Language/Nomenclature/Nomenclature.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Lines.md"
+                "file": "Notes/Language/Nomenclature/Nomenclature.md"
               }
             }
           }
@@ -147,10 +160,16 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "4ac61b166fd74537",
   "lastOpenFiles": [
-    "Notes/Software/Programs/GNU/Bash/Bash.md",
+    "Notes/Language/Nomenclature/Microsoft Product Names.md",
+    "Notes/Language/Nomenclature/Names To Avoid.md",
+    "Notes/Language/Nomenclature/Nomenclature.md",
+    "Notes/Language/Nomenclature/Program Names.md",
+    "Notes/Language/Nomenclature",
+    "Notes/Networks/Internet/Internet Standards/OAuth/OAuth.md",
     "Archive/Lines.md",
+    "Notes/Software/Programs/GNU/Bash/Bash.md",
     "Notes/Software/Development/Web Development/Interbrowser Development.md",
     "Notes/Software/Development/Web Development/Web Development.md",
     "Archive/Bookmarks/Web Communities.md",
@@ -170,12 +189,7 @@
     "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Notes/Courses/Courses.md",
     "Notes/Software/Programs/Vi(m)/Vim Plugins/Vim Plugins.md",
-    "Notes/Software/Programs/Vi(m)/Vi(m).md",
-    "Notes/Software/Programs/Vi(m)/Vim Plugins/vim-easymotion.md",
-    "Notes/Software/Open Source.md",
     "Notes/Software/Programs/Vi(m)/Vim Plugins",
-    "Notes/Language/Nononyms.md",
-    "Archive/Problems/tmux System Copying.md",
     "Notes/Language/Words",
     "Notes/Software/Terminals",
     "Notes/Software/Development/Non-Programming Languages/HTML",
@@ -188,7 +202,6 @@
     "Media/kinde-1.png",
     "Media/sliding-menu.mp4",
     "Media/sr.mp4",
-    "Media/Screen Recording 2024-06-20 at 10.58.57.mov",
     "Media/pal.jpg",
     "Media/smart-shuffle-popup.png",
     "Media/chris-vs-cits.png",
