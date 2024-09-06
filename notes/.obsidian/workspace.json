@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Programming Concepts/Footguns.md",
+                "file": "Archive/Problems/ssh Connection Hanging.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Programming Concepts/Footguns.md",
+                "file": "Archive/Problems/ssh Connection Hanging.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Programming Concepts/Footguns.md",
+                "file": "Archive/Problems/ssh Connection Hanging.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Programming Concepts/Footguns.md"
+                "file": "Archive/Problems/ssh Connection Hanging.md"
               }
             }
           }
@@ -160,11 +160,12 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "4ac61b166fd74537",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Notes/Software/Development/Programming Languages/C/Archaic Syntax/C auto Keyword.md",
-    "Notes/Software/Development/Programming Concepts/Footguns.md",
+    "Archive/Problems/Sticky Elements.md",
     "Archive/Problems/Gmail vs. Style Tags.md",
+    "Notes/Software/Development/Programming Concepts/Footguns.md",
+    "Notes/Software/Development/Programming Languages/C/Archaic Syntax/C auto Keyword.md",
     "Notes/Language/Nomenclature/Nomenclature.md",
     "Notes/Language/Nomenclature/Microsoft Product Names.md",
     "Notes/Language/Nomenclature/Names To Avoid.md",
@@ -188,7 +189,6 @@
     "Notes/Miscellany/Process Box.md",
     "Notes/Miscellany/On Taking Notes.md",
     "Notes/Miscellany/Miscellany.md",
-    "Notes/Mathematics/Computer Science/Computer Science.md",
     "Notes/Software/Programs/Vi(m)/Vim Plugins",
     "Notes/Language/Words",
     "Notes/Software/Terminals",

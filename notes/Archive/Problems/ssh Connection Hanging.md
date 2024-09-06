@@ -4,6 +4,7 @@ Resolved with [this thread](https://serverfault.com/questions/210408/cannot-ssh-
 
 
 > Change the network interface MTU to solve it. This is a bug for ubuntu 14.04. This worked for me:
+> 
 > ```
 > sudo ip li set mtu 1200 dev wlan0
 > ```
