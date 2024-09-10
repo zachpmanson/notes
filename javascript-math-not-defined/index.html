@@ -346,7 +346,7 @@
     <article><p>When building Next@14.0.3 application, for some reason the application would work fine in <code>yarn dev</code>, build successfully but show up completely blank when running.</p>
 <p>One of the errors in console that appeared is that <code>Math.sqrt</code> was undefined? What?</p>
 <p>Turns out something in crypto-js@4.1.1 is broken in the normal packing process, and it only shows up client-side after build.</p>
-<p>This can be solved by letting crypto-js be transpiled by Next.js.</p>
+<p>This can be solved by letting crypto-js be transpiled by <a href="/next.js">Next.js</a>.</p>
 <div class="highlight"><pre><span></span><code><span class="cm">/** @type {import(&#39;next&#39;).NextConfig} */</span>
 
 <span class="c1">// eslint-disable-next-line import/no-extraneous-dependencies</span>
@@ -373,7 +373,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/deploying-elk-on-vercel" class="not-extra-small">random</a>
+          <a href="/w05l01---conditionals" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/JavaScript Math Not Defined.md" class="desktop">edit</a>
@@ -384,7 +384,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/deploying-elk-on-vercel">random</a>
+          <a href="/w05l01---conditionals">random</a>
         </div>
       </div>
 
@@ -402,8 +402,6 @@
       <p class="backlinks"><strong> <a href="/tags">Tags:</a></strong>
         
         <a href="/tags#venting">#venting</a>
-        
-        <a href="/tags#nextjs">#nextjs</a>
         
         </span>
       </p>
