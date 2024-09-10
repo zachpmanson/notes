@@ -1,11 +1,9 @@
 ---
 tags:
-  - nextjs
   - venting
-  - prisma
 subtitle: An alternate frontend for Dan Murphy's.
 ---
-[Alculator](https://alculator.zachmanson.com) was written in the waning days of 2022 to determine the cheapest drinks at Dan Murphy's, per standard drink. The site is build with Next.js and hosted on Vercel.
+[Alculator](https://alculator.zachmanson.com) was written in the waning days of 2022 to determine the cheapest drinks at Dan Murphy's, per standard drink. The site is build with [[Next.js]] and hosted on Vercel.
 
 If you click on the title bar there is a hidden interface used for debugging and finding data anomalies.
 

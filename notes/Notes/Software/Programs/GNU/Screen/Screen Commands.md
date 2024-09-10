@@ -1,9 +1,3 @@
----
-tags:
-  - cheatsheet
----
-
-
 This is an [[Archive]] of [Carlos Tosta's Screen Quick Reference](https://gist.github.com/jctosta/af918e1618682638aa82).
 
 ---

@@ -6,3 +6,4 @@
 - [[Self-Hosted Postgres and Prisma]]
 - [[Penultimate Guitar]]
 - [[Minecraftle]]
+- [[Unlock Prisma and Postgres]]

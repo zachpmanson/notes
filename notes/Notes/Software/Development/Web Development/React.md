@@ -16,3 +16,4 @@ It's a whole thing.
 - [[Minecraftle]]
 - [[JSX, React Native, and TypeScript]]
 - [[Alculator]]
+- [[Next.js]]

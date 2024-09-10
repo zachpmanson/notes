@@ -1,7 +1,3 @@
----
-tags:
-  - cheatsheet
----
 
 ## Common SQLite Commands
 

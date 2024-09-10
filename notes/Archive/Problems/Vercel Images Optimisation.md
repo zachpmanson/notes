@@ -3,7 +3,6 @@ subtitle: A small footgun for beginners using Vercel.
 date: 2023-01-02
 tags:
   - posts
-  - nextjs
 ---
 TLDR: If you are using Vercel and display a lot of images hosted on someone else's server, you probably want to turn off [Image Optimisation](https://vercel.com/docs/concepts/image-optimization).
 
