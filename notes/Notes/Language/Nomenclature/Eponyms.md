@@ -1,8 +1,3 @@
----
-tags:
-  - lists
----
-
 Some surprising name origins.
 
 - Brown noise, named after Robert Brown

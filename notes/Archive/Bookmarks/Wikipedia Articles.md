@@ -1,7 +1,3 @@
----
-tags:
-  - lists
----
 ## Alternate Wikipedia Interfaces
 - [Steezeburger Horizontal Navigation](https://steezeburger.com/wikipedia-browser/), Wikipedia in the style of Andy Matsuschak's notes
 - [Wikiscroll](https://wikiscroll.blankenship.io/), Wikipedia but infinitely scrolling

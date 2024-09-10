@@ -1,7 +1,3 @@
----
-tags:
-  - macos
----
 This is a list of macOS CLI tools that are variously useful, written by [Saurabh](https://saurabhs.org/) [here](https://saurabhs.org/advanced-macos-commands).
 
 ---

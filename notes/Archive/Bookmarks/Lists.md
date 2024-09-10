@@ -1,7 +1,3 @@
----
-tags:
-  - lists
----
 - [A HUNDRED AND SIXTY SEVEN THINGS A PUNKIST SHOULD KNOW](http://www.punk.ist/)
 - [TWO HUNDRED FIFTY THINGS AN ARCHITECT SHOULD KNOW](https://www.readingdesign.org/250-things)
 - [List of lists of lists](https://en.wikipedia.org/wiki/List_of_lists_of_lists)
@@ -13,3 +9,18 @@ Related:
 
 - [enumerations](https://metasyn.pw/enumerations), metasyn's musings on lists as a concept
 
+## On this site
+
+- [[Wikipedia Articles]]
+- [[Web Communities]]
+- [[Prompt Resources]]
+- [[Program Names]]
+- [[Microsoft Product Names]]
+- [[Making macOS Useable]]
+- [[Forum Threads]]
+- [[Eponyms]]
+- pretty much everything in [[Bookmarks]]
+- [[Digital Gardens]]
+- [[Dictionary]]
+- [[Audio]]
+- [[Articles]]

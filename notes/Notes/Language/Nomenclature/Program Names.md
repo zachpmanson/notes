@@ -1,6 +1,4 @@
 ---
-tags:
-  - lists
 subtitle: Names I like.
 ---
 

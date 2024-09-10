@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Templates/Time Ago Function.md",
+                "file": "Notes/Language/Nomenclature/Eponyms.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#javascript  ",
+                "query": "tag:#lists",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Templates/Time Ago Function.md",
+                "file": "Notes/Language/Nomenclature/Eponyms.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Templates/Time Ago Function.md",
+                "file": "Notes/Language/Nomenclature/Eponyms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Templates/Time Ago Function.md"
+                "file": "Notes/Language/Nomenclature/Eponyms.md"
               }
             }
           }
@@ -199,6 +199,24 @@
   },
   "active": "e2b9400dfe65f9ca",
   "lastOpenFiles": [
+    "Archive/Bookmarks/Forum Threads.md",
+    "Archive/Bookmarks/Lists.md",
+    "Notes/Software/Unix/macOS/Making macOS Useable.md",
+    "Notes/Language/Nomenclature/Microsoft Product Names.md",
+    "Notes/Language/Nomenclature/Program Names.md",
+    "Notes/Software/Machine Learning/Generative Models/Stable Diffusion/Prompt Resources.md",
+    "Notes/Software/Development/Non-Programming Languages/CSS/Themed Stylesheets.md",
+    "Archive/Bookmarks/Web Communities.md",
+    "Archive/Bookmarks/Wikipedia Articles.md",
+    "Notes/Language/Dictionary.md",
+    "Archive/Problems/Xfce Screentearing.md",
+    "Archive/Bookmarks/Digital Gardens.md",
+    "Archive/Bookmarks/Audio.md",
+    "Archive/Bookmarks/Articles.md",
+    "Notes/Software/Unix/macOS/macOS.md",
+    "Archive/Problems/macOS Recovery in Australia.md",
+    "Notes/Software/Unix/macOS/macOS CLI Tools.md",
+    "Archive/Templates/Time Ago Function.md",
     "Archive/Problems/Select Decorator Depreciated.md",
     "Archive/Problems/Run Latest npx Script Version.md",
     "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
@@ -207,24 +225,6 @@
     "Notes/Software/Development/Web Development/React.md",
     "Archive/Problems/Prisma Schema Changes and Vercel.md",
     "Archive/Problems/Next.js with tRPC and Layouts.md",
-    "Projects/Minecraftle/Minecraftle.md",
-    "Archive/Folklore/JSX, React Native, and TypeScript.md",
-    "Archive/Problems/JavaScript YYYY-MM-DD in Local Time.md",
-    "Archive/Problems/JavaScript Math Not Defined.md",
-    "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
-    "Notes/Software/Development/Programming Languages/JavaScript/Anything-to-Number Conversion Table.md",
-    "Projects/Alculator.md",
-    "Projects/Penultimate Guitar.md",
-    "Archive/Problems/Self-Hosted Postgres and Prisma.md",
-    "Archive/Problems/Unique Constraint in pgAdmin.md",
-    "Archive/Problems/Unlock Prisma and Postgres.md",
-    "Notes/Software/Exploits/XZ/XZ.md",
-    "Notes/Software/Programs/Postgres.md",
-    "Archive/Problems/Xfce Screentearing.md",
-    "Notes/Software/Development/Kinds of Problems.md",
-    "Projects/snakeware.md",
-    "Meta/Meta.md",
-    "Notes/Language/Nomenclature/Program Names.md",
     "Notes/Language/Nomenclature",
     "Notes/Software/Programs/Vi(m)/Vim Plugins",
     "Notes/Language/Words",

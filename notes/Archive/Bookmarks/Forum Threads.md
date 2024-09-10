@@ -1,7 +1,3 @@
----
-tags:
-  - lists
----
 - [Apple's New Thing (iPod) (2001)](https://forums.macrumors.com/threads/apples-new-thing-ipod.500/)
 
 ## Reddit

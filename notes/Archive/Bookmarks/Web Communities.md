@@ -1,7 +1,3 @@
----
-tags:
-  - lists
----
 - [Museum of Alexandria](https://xandra.cc/)
 - [Nightfall City](https://nightfall.city/)
 - [Midnight Pub](https://midnight.pub/)

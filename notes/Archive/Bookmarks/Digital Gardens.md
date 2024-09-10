@@ -1,7 +1,3 @@
----
-tags:
-  - lists
----
 Digital gardens are sites like this one, interconnected personal wikis.  These are some that have inspired this site, or are just interesting to browse.  What counts as a [[Digital Garden]] is a blurry line, but they are share a certain vibe.
 
 Some of my favourites:

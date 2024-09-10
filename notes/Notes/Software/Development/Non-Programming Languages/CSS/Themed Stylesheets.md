@@ -1,7 +1,3 @@
----
-tags:
-  - lists
----
 A list of stylesheets that emulate different kinds of interfaces.
 
 - [TheSims.css](https://thesimscss.inbn.dev/), for emulating The Sims

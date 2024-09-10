@@ -1,7 +1,3 @@
----
-tags:
-  - lists
----
 DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscuresorrows.com/).
 
 - **Accrete**: grow by accumulation or coalescence
@@ -23,15 +19,15 @@ DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscu
 - **Interlocutor**: a person who takes part in a dialogue or conversation
 - **Jugaad** (Indo-Aryan): a non-conventional, frugal innovation, often termed a "hack"
 - **Juvenioa** (English): The fear or hostility directed by an older generation toward a younger one, or toward youth culture in general.
-- **Kaboomlaut** ([mcculley](https://news.ycombinator.com/item?id=34461282)): a unicode character that breaks a piece of software
+- **Kaboomlaut** ([mcculley](https://news.ycombinator.com/item?id=34461282)): a unicode [[Characters|character]] that breaks a piece of software
 - **Kenja Taimu** (Japanese): post-jerk clarity / wiseman time
 - **Loquacious** (English): tending to talk a great deal; talkative.
 - **Lurid** (English): unpleasantly bright in colour, especially so as to create a harsh or unnatural effect; presented in vividly shocking or sensational terms.
-- **Mesa** (as prefix): the opposite of **meta** (as prefix)
+- **Mesa** (as prefix): the opposite of **[[meta]]** (as prefix)
 - **Midding** (DoOS): feeling the tranquil pleasure of being near a gathering but not quite in it—hovering on the perimeter of a campfire, chatting outside a party while others dance inside, resting your head in the backseat of a car listening to your friends chatting up front—feeling blissfully invisible yet still fully included, safe in the knowledge that everyone is together and everyone is okay, with all the thrill of being there without the burden of having to be.
 - **Mojibake** (Japanese): garbled characters
 - **Moment of Tangency** (DoOS): A glimpse of what might have been.  If two lines are truly parallel, it means they’ll never actually meet.
-- **night software** ([Mr. Bandaralum](https://transjovian.org/view/web-sites/index)): *night software* is not like that. It’s not written for the day job. It’s not written to see the light of day at all. It’s not written to be looked at and scrutinized by anybody. It’s intimate and personal, it’s messy and buggy. To take a look is to transgress.
+- **night software** ([Mr. Bandaralum](https://transjovian.org/view/web-sites/index)): *night [[software]]* is not like that. It’s not written for the day job. It’s not written to see the light of day at all. It’s not written to be looked at and scrutinized by anybody. It’s intimate and personal, it’s messy and buggy. To take a look is to transgress.
 - **nocent** (English): guilty, antonym of innocent
 - **Obviate**: remove a difficulty
 - **Onomastic** (English from French onomastique): of or belonging to naming
