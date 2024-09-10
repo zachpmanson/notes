@@ -8,60 +8,36 @@
         "type": "tabs",
         "children": [
           {
-            "id": "38379b1215cba47a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Language/Nomenclature/Program Names.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4ac61b166fd74537",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Meta/Meta.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "e2b9400dfe65f9ca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Language/Nomenclature/Eponyms.md",
+                "file": "Notes/Software/Programs/Programs.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "219aa596661b6050",
+            "id": "00523359997287b3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/Xfce Screentearing.md",
+                "file": "Notes/Software/Programs/Nextcloud.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f928b11ef1890509",
+            "id": "af3510d4953bf3ef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Alculator.md",
+                "file": "Archive/Problems/Nextcloud Phone Photo Upload.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#lists",
+                "query": "tag:#nextcloud  ",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -135,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Language/Nomenclature/Eponyms.md",
+                "file": "Archive/Problems/Nextcloud Phone Photo Upload.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Language/Nomenclature/Eponyms.md",
+                "file": "Archive/Problems/Nextcloud Phone Photo Upload.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Language/Nomenclature/Eponyms.md"
+                "file": "Archive/Problems/Nextcloud Phone Photo Upload.md"
               }
             }
           }
@@ -197,8 +173,19 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "e2b9400dfe65f9ca",
+  "active": "af3510d4953bf3ef",
   "lastOpenFiles": [
+    "Archive/Problems/Nextcloud AIO occ.md",
+    "Notes/Software/Programs/Nextcloud.md",
+    "Notes/Software/Programs/Programs.md",
+    "Notes/Software/Software.md",
+    "Notes/Software/Unix/Linux/Linux.md",
+    "Archive/Problems/Ubuntu Server Not Filling Server DIsk.md",
+    "Meta/Meta.md",
+    "Archive/Folklore/On the Origin of Toots.md",
+    "Archive/Problems/Mastodon Domain Alias.md",
+    "Notes/Networks/Internet/Fediverse/Fediverse.md",
+    "Notes/Language/Nomenclature/Eponyms.md",
     "Archive/Bookmarks/Forum Threads.md",
     "Archive/Bookmarks/Lists.md",
     "Notes/Software/Unix/macOS/Making macOS Useable.md",
@@ -214,17 +201,6 @@
     "Archive/Bookmarks/Audio.md",
     "Archive/Bookmarks/Articles.md",
     "Notes/Software/Unix/macOS/macOS.md",
-    "Archive/Problems/macOS Recovery in Australia.md",
-    "Notes/Software/Unix/macOS/macOS CLI Tools.md",
-    "Archive/Templates/Time Ago Function.md",
-    "Archive/Problems/Select Decorator Depreciated.md",
-    "Archive/Problems/Run Latest npx Script Version.md",
-    "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
-    "Archive/Problems/RTK Query Sending Form Data.md",
-    "Archive/Problems/React useState Not Mutating Object.md",
-    "Notes/Software/Development/Web Development/React.md",
-    "Archive/Problems/Prisma Schema Changes and Vercel.md",
-    "Archive/Problems/Next.js with tRPC and Layouts.md",
     "Notes/Language/Nomenclature",
     "Notes/Software/Programs/Vi(m)/Vim Plugins",
     "Notes/Language/Words",

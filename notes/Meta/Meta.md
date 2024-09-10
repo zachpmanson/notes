@@ -44,7 +44,7 @@ How I want to use these:
 - Tags
 	- says what topics a page covers
 	- any topic that is common enough that a person may want to see all of the writing on a particular topic no matter what the page is
-	- e.g. the [#venting](/tags#venting) tag contains all pages that contain venting, the [#unix](/tags#unix) tag contains all pages that are related to Unix including notes, problems+solutions, essays
+	- e.g. the [#venting](/tags#venting) tag contains all pages that contain venting
 - Chronological feeds
 	- only to elevate tags to create a blog-style interface
 	- e.g. [[Posts]]

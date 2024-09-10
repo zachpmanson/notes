@@ -17,3 +17,11 @@ The fediverse is a series of social networks that are able to communicate with o
 ![[fediverse-branches.png]]
 
 -- [Axbom](https://axbom.com/fediverse/)
+
+## Related
+
+- [[Mastodon]]
+- [[Mastodon Domain Alias]]
+- [[Mastodon Thread Unroller]]
+- [[On the Origin of Toots]]
+- [[Fediverse Family Tree]]

@@ -1,7 +1,3 @@
----
-tags:
-  - linux
----
 For when Ubuntu server only takes up 98GiB for some reason, despite the HDD being much larger.
 
 ```bash

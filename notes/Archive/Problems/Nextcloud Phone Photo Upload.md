@@ -1,6 +1,5 @@
 ---
 tags:
-  - nextcloud
   - self-hosting
   - posts
   - venting

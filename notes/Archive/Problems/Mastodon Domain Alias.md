@@ -1,6 +1,5 @@
 ---
 tags:
-  - fediverse
   - dirty-hacks
 ---
 You can use your custom domain as an alias to your [[Mastodon]] handle by using Webfinger without actually having your own Mastodon instance.
