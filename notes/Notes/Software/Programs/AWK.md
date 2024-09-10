@@ -1,7 +1,5 @@
 ---
 subtitle: A little language.
-tags:
-  - unix
 ---
 Awk, named for its creators and for the animal the auk, is a language for text processing created for [[Unix]].
 

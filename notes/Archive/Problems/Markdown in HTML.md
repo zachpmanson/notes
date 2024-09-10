@@ -1,7 +1,3 @@
----
-tags:
-  - python
----
 To include [[Markdown]] components within HTML elements within a Markdown file in Python Markdown you need to add the (official) extension [Markdown in HTML](https://python-markdown.github.io/extensions/md_in_html/#markdown-in-html "Permanent link") and an attribute.
 
 ```python

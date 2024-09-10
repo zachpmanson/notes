@@ -1,7 +1,3 @@
----
-tags:
-  - git
----
 From [this StackOverflow answer](https://stackoverflow.com/a/1113140).
 
 ---

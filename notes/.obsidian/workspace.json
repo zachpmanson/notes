@@ -25,14 +25,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/ssh Connection Hanging.md",
+                "file": "Meta/Meta.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e2b9400dfe65f9ca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/snakeware.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "219aa596661b6050",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Archive/Problems/Xfce Screentearing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f928b11ef1890509",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Software/Programs/Git/Git.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -61,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#python  ",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -78,7 +114,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -98,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Problems/ssh Connection Hanging.md",
+                "file": "Projects/snakeware.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Problems/ssh Connection Hanging.md",
+                "file": "Projects/snakeware.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Problems/ssh Connection Hanging.md"
+                "file": "Projects/snakeware.md"
               }
             }
           }
@@ -160,35 +197,35 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "e2b9400dfe65f9ca",
   "lastOpenFiles": [
-    "Archive/Problems/Sticky Elements.md",
-    "Archive/Problems/Gmail vs. Style Tags.md",
-    "Notes/Software/Development/Programming Concepts/Footguns.md",
-    "Notes/Software/Development/Programming Languages/C/Archaic Syntax/C auto Keyword.md",
-    "Notes/Language/Nomenclature/Nomenclature.md",
-    "Notes/Language/Nomenclature/Microsoft Product Names.md",
-    "Notes/Language/Nomenclature/Names To Avoid.md",
-    "Notes/Language/Nomenclature/Program Names.md",
-    "Notes/Language/Nomenclature",
-    "Notes/Networks/Internet/Internet Standards/OAuth/OAuth.md",
-    "Archive/Lines.md",
-    "Notes/Software/Programs/GNU/Bash/Bash.md",
-    "Notes/Software/Development/Web Development/Interbrowser Development.md",
-    "Notes/Software/Development/Web Development/Web Development.md",
-    "Archive/Bookmarks/Web Communities.md",
-    "Notes/Cybersecurity/Cybersecurity.md",
+    "Archive/Templates/Python getopt() Template.md",
+    "Archive/Problems/Python Total Packages Size.md",
+    "Archive/Problems/Poetry Showing Dependencies it Refuses to Install.md",
+    "Projects/Ochrs/Ochrs 2.0.md",
+    "Projects/Ochrs/Ochrs.md",
+    "Archive/Problems/Mocking Functions in Python.md",
+    "Projects/Minecraftle/Minecraftle.md",
+    "Archive/Problems/Markdown in HTML.md",
+    "Archive/Problems/Jinja Components.md",
+    "Projects/ironprof.md",
+    "Projects/COVID-19 Tracker.md",
+    "Notes/Software/Development/Programming Languages/Python.md",
+    "Notes/Software/Programs/Git/Git.md",
+    "Archive/Templates/Git Activity in Multiple Folders.md",
+    "Archive/Problems/Git Creation and Modification Time.md",
+    "Archive/Folklore/Git Koans.md",
+    "Notes/Software/Programs/Git/Git Operations.md",
+    "Archive/Problems/Git Repo Contributor Line Count.md",
+    "Archive/Problems/Git Restoring Deleted Files From Past Commits.md",
+    "Archive/Problems/Git Subdirectory Branch.md",
+    "Archive/Problems/Raw GitHub Commits.md",
+    "Archive/Problems/View Deleted File in Git.md",
+    "Notes/Software/Exploits/XZ/XZ.md",
+    "Archive/Problems/Xfce Screentearing.md",
+    "Projects/snakeware.md",
     "Notes/Software/Unix/Linux/Linux.md",
-    "Notes/Software/Terminals/80 Columns.md",
-    "Notes/Software/Programs/GNU/Screen/Screen.md",
-    "Notes/Networks/Maximum Transmission Unit.md",
-    "Notes/Networks/Internet/Internet Standards/ActivityPub.md",
-    "Notes/Networks/Internet/Pirate Libraries/Pirate Libraries.md",
-    "Notes/Miscellany/Sewing.md",
-    "Notes/Miscellany/Thin Deep Slices.md",
-    "Notes/Miscellany/Process Box.md",
-    "Notes/Miscellany/On Taking Notes.md",
-    "Notes/Miscellany/Miscellany.md",
+    "Notes/Language/Nomenclature",
     "Notes/Software/Programs/Vi(m)/Vim Plugins",
     "Notes/Language/Words",
     "Notes/Software/Terminals",

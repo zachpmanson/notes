@@ -2,7 +2,6 @@
 tags:
   - venting
   - yak-shaving
-  - python
   - posts
 date: 2024-07-15
 ---

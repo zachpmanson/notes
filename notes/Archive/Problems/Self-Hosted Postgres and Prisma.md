@@ -1,7 +1,6 @@
 ---
 tags:
   - self-hosting
-  - linux
   - prisma
   - postgres
 ---

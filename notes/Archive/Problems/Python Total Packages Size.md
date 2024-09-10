@@ -1,7 +1,3 @@
----
-tags:
-  - python
----
 
 To get the total size of all the Python packages in a certain environment run this:
 

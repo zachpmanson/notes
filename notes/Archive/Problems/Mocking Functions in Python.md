@@ -1,7 +1,3 @@
----
-tags:
-  - python
----
 When writing unit/integration tests in Python, the general pattern is to use `unittest.mock.patch`.  This is great, but you need to be careful about the namespaces. 
 
 ```python

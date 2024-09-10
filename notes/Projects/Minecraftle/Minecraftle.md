@@ -6,7 +6,6 @@ tags:
   - prisma
   - postgres
   - react
-  - python
 ---
 ![[blocks.svg]]
 

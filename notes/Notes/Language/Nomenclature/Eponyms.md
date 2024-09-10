@@ -1,3 +1,8 @@
+---
+tags:
+  - lists
+---
+
 Some surprising name origins.
 
 - Brown noise, named after Robert Brown
@@ -21,4 +26,3 @@ Some surprising name origins.
 - Elo, named after Arpad Elo
 - America, named after Amerigo Vespucci
 - PageRank, named after Larry Page
-- 

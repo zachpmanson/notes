@@ -1,7 +1,3 @@
----
-tags:
-  - git
----
 
 Mounting a [[Notes/Software/Programs/Git/Git]] branch to a subdirectory.
 

@@ -12,3 +12,4 @@ tags:
 Related:
 
 - [enumerations](https://metasyn.pw/enumerations), metasyn's musings on lists as a concept
+

@@ -1,7 +1,5 @@
 ---
 subtitle: An open source wiki generator.
-tags:
-  - python
 ---
 This website is generated with Ochrs, which began as a fork of [Nchrs](https://nchrs.xyz), which itself began as a fork of [XXIIVV](https://wiki.xxiivv.com/site/home.html).
 

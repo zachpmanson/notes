@@ -1,7 +1,3 @@
----
-tags:
-  - linux
----
 On systems using systemd, `/etc/resolve` is managed by systemd. To change DNS server, you need to edit `/etc/systemd/resolved.conf`.
 
 

@@ -1,7 +1,3 @@
----
-tags:
-  - git
----
 This displays a file and pipes it into VS Code.
 
 ```

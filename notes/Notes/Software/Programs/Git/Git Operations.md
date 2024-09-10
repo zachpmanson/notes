@@ -1,7 +1,3 @@
----
-tags:
-  - git
----
 ## New Computer
 
 Setting global [[Notes/Software/Programs/Git/Git]] config options:

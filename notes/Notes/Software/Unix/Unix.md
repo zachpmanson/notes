@@ -67,3 +67,14 @@ Environment variables are defined by the system and will be will be passed to th
   - permissions applied to files on creation
 
 More environment variables can be setup in the `~/.profile` executable.
+
+## Related
+
+- [[Vi(m)]]
+- [[The bin Split]]
+- [[Rob Pike's Lesson in Shortcuts]]
+- [[GECOS]]
+- [[Dotfiles Being Hidden]]
+- [[C]]
+- [[Bash]]
+- [[AWK]]
