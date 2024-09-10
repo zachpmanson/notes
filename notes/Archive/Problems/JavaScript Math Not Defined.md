@@ -1,6 +1,5 @@
 ---
 tags:
-  - javascript
   - nextjs
   - venting
 ---

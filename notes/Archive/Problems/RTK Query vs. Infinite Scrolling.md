@@ -4,8 +4,6 @@ tags:
   - posts
   - venting
   - dirty-hacks
-  - javascript
-  - react
 ---
 RTK Query with [[React]] is pretty great! The primary pattern you find yourself using with it is: 
 

@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/snakeware.md",
+                "file": "Archive/Templates/Time Ago Function.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Programs/Git/Git.md",
+                "file": "Projects/Alculator.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#python  ",
+                "query": "tag:#javascript  ",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/snakeware.md",
+                "file": "Archive/Templates/Time Ago Function.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/snakeware.md",
+                "file": "Archive/Templates/Time Ago Function.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/snakeware.md"
+                "file": "Archive/Templates/Time Ago Function.md"
               }
             }
           }
@@ -199,32 +199,32 @@
   },
   "active": "e2b9400dfe65f9ca",
   "lastOpenFiles": [
-    "Archive/Templates/Python getopt() Template.md",
-    "Archive/Problems/Python Total Packages Size.md",
-    "Archive/Problems/Poetry Showing Dependencies it Refuses to Install.md",
-    "Projects/Ochrs/Ochrs 2.0.md",
-    "Projects/Ochrs/Ochrs.md",
-    "Archive/Problems/Mocking Functions in Python.md",
+    "Archive/Problems/Select Decorator Depreciated.md",
+    "Archive/Problems/Run Latest npx Script Version.md",
+    "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
+    "Archive/Problems/RTK Query Sending Form Data.md",
+    "Archive/Problems/React useState Not Mutating Object.md",
+    "Notes/Software/Development/Web Development/React.md",
+    "Archive/Problems/Prisma Schema Changes and Vercel.md",
+    "Archive/Problems/Next.js with tRPC and Layouts.md",
     "Projects/Minecraftle/Minecraftle.md",
-    "Archive/Problems/Markdown in HTML.md",
-    "Archive/Problems/Jinja Components.md",
-    "Projects/ironprof.md",
-    "Projects/COVID-19 Tracker.md",
-    "Notes/Software/Development/Programming Languages/Python.md",
-    "Notes/Software/Programs/Git/Git.md",
-    "Archive/Templates/Git Activity in Multiple Folders.md",
-    "Archive/Problems/Git Creation and Modification Time.md",
-    "Archive/Folklore/Git Koans.md",
-    "Notes/Software/Programs/Git/Git Operations.md",
-    "Archive/Problems/Git Repo Contributor Line Count.md",
-    "Archive/Problems/Git Restoring Deleted Files From Past Commits.md",
-    "Archive/Problems/Git Subdirectory Branch.md",
-    "Archive/Problems/Raw GitHub Commits.md",
-    "Archive/Problems/View Deleted File in Git.md",
+    "Archive/Folklore/JSX, React Native, and TypeScript.md",
+    "Archive/Problems/JavaScript YYYY-MM-DD in Local Time.md",
+    "Archive/Problems/JavaScript Math Not Defined.md",
+    "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
+    "Notes/Software/Development/Programming Languages/JavaScript/Anything-to-Number Conversion Table.md",
+    "Projects/Alculator.md",
+    "Projects/Penultimate Guitar.md",
+    "Archive/Problems/Self-Hosted Postgres and Prisma.md",
+    "Archive/Problems/Unique Constraint in pgAdmin.md",
+    "Archive/Problems/Unlock Prisma and Postgres.md",
     "Notes/Software/Exploits/XZ/XZ.md",
+    "Notes/Software/Programs/Postgres.md",
     "Archive/Problems/Xfce Screentearing.md",
+    "Notes/Software/Development/Kinds of Problems.md",
     "Projects/snakeware.md",
-    "Notes/Software/Unix/Linux/Linux.md",
+    "Meta/Meta.md",
+    "Notes/Language/Nomenclature/Program Names.md",
     "Notes/Language/Nomenclature",
     "Notes/Software/Programs/Vi(m)/Vim Plugins",
     "Notes/Language/Words",

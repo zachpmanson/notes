@@ -1,8 +1,3 @@
----
-tags:
-  - react
-  - javascript
----
 
 Why doesn't React Native use JSX?  From a [GitHub issue on React Native TypeScript transformer](https://github.com/ds300/react-native-typescript-transformer/issues/46).
 

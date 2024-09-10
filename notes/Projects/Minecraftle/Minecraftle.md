@@ -1,11 +1,8 @@
 ---
 tags:
   - dirty-hacks
-  - javascript
   - nextjs
   - prisma
-  - postgres
-  - react
 ---
 ![[blocks.svg]]
 

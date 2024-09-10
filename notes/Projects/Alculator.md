@@ -1,9 +1,7 @@
 ---
 tags:
   - nextjs
-  - react
   - venting
-  - postgres
   - prisma
 subtitle: An alternate frontend for Dan Murphy's.
 ---

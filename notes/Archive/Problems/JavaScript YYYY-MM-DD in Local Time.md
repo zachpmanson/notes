@@ -1,6 +1,5 @@
 ---
 tags:
-  - javascript
   - dirty-hacks
 ---
 The [[Notes/Software/Development/Programming Languages/JavaScript/JavaScript]] [[datetime]] library is anemic.  If you need the current date in the user's locale written in YYYY-MM-DD, use this fun hack:

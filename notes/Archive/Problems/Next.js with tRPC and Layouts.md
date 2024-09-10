@@ -1,7 +1,6 @@
 ---
 tags:
   - nextjs
-  - javascript
   - posts
 date: 2024-07-04
 ---

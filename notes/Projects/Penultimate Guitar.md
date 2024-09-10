@@ -2,8 +2,6 @@
 tags:
   - nextjs
   - prisma
-  - postgres
-  - react
 subtitle: Penultimate Guitar is an alternate frontend for Ultimate Guitar.
 ---
 It focuses on mobile usability and Spotify integration.  All features are available on mobile*.
