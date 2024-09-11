@@ -1,6 +1,5 @@
 ---
 tags:
-  - self-hosting
   - posts
   - venting
 date: 2024-05-01

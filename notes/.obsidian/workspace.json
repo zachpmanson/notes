@@ -13,25 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Programs/GNU/Screen/Screen Commands.md",
+                "file": "Archive/Problems/Nextcloud AIO occ.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e462c10cf952461b",
+            "id": "257303aa73ac8c1f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Web Development/React.md",
+                "file": "Archive/Problems/Nextcloud AIO occ.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f79b93d4d6eeed87",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Archive/Problems/Poetry Showing Dependencies it Refuses to Install.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -60,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#cheatsheet",
+                "query": "tag:#yak-shaving  ",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -77,8 +90,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Programs/GNU/Screen/Screen Commands.md",
+                "file": "Archive/Problems/Poetry Showing Dependencies it Refuses to Install.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Programs/GNU/Screen/Screen Commands.md",
+                "file": "Archive/Problems/Poetry Showing Dependencies it Refuses to Install.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Programs/GNU/Screen/Screen Commands.md"
+                "file": "Archive/Problems/Poetry Showing Dependencies it Refuses to Install.md"
               }
             }
           }
@@ -159,10 +171,19 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "af3510d4953bf3ef",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Notes/Software/Programs/SQLite.md",
+    "Archive/Folklore/The Patron Saint of Yak Shaves.md",
+    "Archive/Folklore/Yak Shaving.md",
+    "Archive/Problems/Nextcloud AIO occ.md",
+    "Notes/Software/Development/Web Development/React.md",
+    "Archive/Problems/Nextcloud Phone Photo Upload.md",
+    "Archive/Problems/Self-Hosted Postgres and Prisma.md",
+    "Notes/Software/Self-Hosting.md",
+    "Notes/Networks/Internet/Fediverse/Fediverse Family Tree.md",
+    "Notes/Networks/Internet/Fediverse/Fediverse.md",
     "Notes/Software/Programs/GNU/Screen/Screen Commands.md",
+    "Notes/Software/Programs/SQLite.md",
     "Archive/Bookmarks/Bookmarks.md",
     "Archive/Bookmarks/Cheatsheets.md",
     "Notes/Software/Programs/Programs.md",
@@ -172,21 +193,12 @@
     "Archive/Problems/Prisma Schema Changes and Vercel.md",
     "Archive/Problems/Unique Constraint in pgAdmin.md",
     "Archive/Problems/Unlock Prisma and Postgres.md",
-    "Archive/Problems/Self-Hosted Postgres and Prisma.md",
     "Notes/Software/Development/Programming Languages/JavaScript/Prisma.md",
-    "Notes/Software/Development/Web Development/React.md",
     "Notes/Software/Programs/Postgres.md",
     "Notes/Software/Development/Programming Languages/JavaScript/Next.js.md",
     "Archive/Problems/JavaScript Math Not Defined.md",
     "Archive/Problems/Next.js with tRPC and Layouts.md",
     "Archive/Problems/Sticky Elements.md",
-    "Archive/Problems/Update Params without Scrolling To Top in Next.js.md",
-    "Archive/Problems/Vercel Images Optimisation.md",
-    "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
-    "Notes/Software/Programs/Nextcloud.md",
-    "Archive/Problems/Nextcloud Phone Photo Upload.md",
-    "Archive/Problems/Nextcloud AIO occ.md",
-    "Notes/Software/Software.md",
     "Notes/Language/Nomenclature",
     "Notes/Software/Programs/Vi(m)/Vim Plugins",
     "Notes/Language/Words",

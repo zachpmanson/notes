@@ -1,7 +1,3 @@
----
-tags:
-  - self-hosting
----
 To access the `occ` command when running [[Nextcloud]] through the [[Docker]] AIO.  Tested on Ubuntu 22.04.2.
 
 ```bash

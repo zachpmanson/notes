@@ -13,4 +13,5 @@ For keeping track of [[software]] forks in the [[Fediverse]], and why they exist
 - Kbin, a reddit-like fediverse server with some masto-style microblogging aspects?  It is interoperable with Lemmy allegedly
 	- Mbin, a "community focused" fork of mbin that will.  Is apparently much more open to community input and PRs.
 - [Goblin](https://github.com/johnHackworth/goblin), a tumblr style [[ActivityPub]] server
+- [Wafrm](https://app.wafrn.net), another tumblr style ActivityPub server
 
