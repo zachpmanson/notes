@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Web Development/React.md",
+                "file": "Archive/Lines.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Web Development/React.md",
+                "file": "Archive/Lines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Web Development/React.md",
+                "file": "Archive/Lines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Web Development/React.md"
+                "file": "Archive/Lines.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   },
   "active": "da0b71a6b0e2718a",
   "lastOpenFiles": [
+    "Notes/Software/Development/Web Development/React.md",
     "Meta/Credits.md",
     "Archive/Problems/Nextcloud AIO occ.md",
     "Notes/Software/Mistakes/Position of 0 and 1 Keys.md",
@@ -157,7 +158,6 @@
     "Archive/Problems/Poetry Showing Dependencies it Refuses to Install.md",
     "Archive/Folklore/The Patron Saint of Yak Shaves.md",
     "Archive/Folklore/Yak Shaving.md",
-    "Notes/Software/Development/Web Development/React.md",
     "Archive/Problems/Nextcloud Phone Photo Upload.md",
     "Archive/Problems/Self-Hosted Postgres and Prisma.md",
     "Notes/Software/Self-Hosting.md",
