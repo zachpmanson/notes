@@ -7,6 +7,10 @@ It's a whole thing.
 
 - [A Historical Reference of React Criticism](https://www.zachleat.com/web/react-criticism/)
 
+## Interesting Library
+
+- [React Geiger](https://github.com/kristiandupont/react-geiger), geiger counter for rerenders
+
 ## Related
 
 - [[Update Params without Scrolling To Top in Next.js]]
