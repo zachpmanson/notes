@@ -13,3 +13,9 @@ Interest writing on digital gardens:
 - [What Is A Wiki](https://garden.bouncepaw.com/hypha/what_is_a_wiki), @bouncepaw@merveilles.town's archive conversations on what counts as a wiki
 - [My blog is a digital garden, not a blog](https://joelhooks.com/digital-garden)
 - [Building a digital garden](https://tomcritchlow.com/2019/02/17/building-digital-garden)
+
+Some adjacent projects:
+
+- [maximevaillancourt/digital-garden-jekyll-template](https://github.com/maximevaillancourt/digital-garden-jekyll-template)
+- [[Ochrs]]
+- [[Obsidian]]
