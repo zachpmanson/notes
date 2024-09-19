@@ -13,7 +13,200 @@
             <link>https://notes.zachmanson.com/venting</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Thu, 19 Sep 2024 06:57:14 </lastBuildDate>
+        <lastBuildDate>Thu, 19 Sep 2024 23:58:54 </lastBuildDate>
+        
+        <item>
+            <title>LinkedIn's Ghost Text</title>
+            <link>https://notes.zachmanson.com/linkedins-ghost-text</link>
+            
+            <description>Why does LinkedIn copy text twice?</description>
+            
+            <content:encoded>
+                <![CDATA[<p>Why does LinkedIn do this?</p>
+<video autoplay loop muted>
+   <source src="/media/linkedin-duplication.webm" type="video/webm">
+</video>
+
+<p>If you look into the source of a LinkedIn profile page (at your own personal risk) you'll find a text element like this</p>
+<p><img alt="" src="/media/linkedin-element.png" /></p>
+<p>will have HTML like this</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;display-flex flex-row justify-space-between&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;</span>
+<span class="s">          display-flex flex-column full-width&quot;</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;display-flex flex-wrap align-items-center full-height&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mr1 t-bold&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Product manager, Creative coder<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Product manager, Creative coder<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="cm">&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Freelancer/Consultant<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Freelancer/Consultant<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal t-black--light&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>2009 - 2018 · 9 yrs<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>2009 - 2018 · 9 yrs<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal t-black--light&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Europe<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Europe<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+    <span class="cm">&lt;!----&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pvs-entity__action-container&quot;</span><span class="p">&gt;</span>
+        <span class="cm">&lt;!----&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Gross.  Why the hidden duplicated text?  Why the empty comments?  Why seperate aria versions of text?  Is this related to using Ember?  LinkedIn has so many little unpleasantries like this.</p>
+<hr />
+<h2 id="2024-update-linkedin-still-shit">2024 Update: LinkedIn Still Shit</h2>
+<p>Still here.  Still broken. Still annoying</p>
+<video autoplay loop muted>
+   <source src="/media/linkedin-duplication-2.webm" type="video/webm">
+</video>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/linkedins-ghost-text</guid>
+            <pubDate>2023-04-16</pubDate>
+        </item>
+        
+        <item>
+            <title>Poetry Showing Dependencies it Refuses to Install</title>
+            <link>https://notes.zachmanson.com/poetry-showing-dependencies-it-refuses-to-install</link>
+            
+            <content:encoded>
+                <![CDATA[<p>When Poetry lists the dependencies for a package it doesn't show the Python versions that those ranges are valid for.  For example, <a href="https://github.com/boto/botocore/blob/develop/setup.py">this</a> <code>setup.py</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="n">requires</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;jmespath&gt;=0.7.1,&lt;2.0.0&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;python-dateutil&gt;=2.1,&lt;3.0.0&#39;</span><span class="p">,</span>
+    <span class="c1"># Prior to Python 3.10, Python doesn&#39;t require openssl 1.1.1</span>
+    <span class="c1"># but urllib3 2.0+ does. This means all botocore users will be</span>
+    <span class="c1"># broken by default on Amazon Linux 2 and AWS Lambda without this pin.</span>
+    <span class="s1">&#39;urllib3&gt;=1.25.4,&lt;1.27 ; python_version &lt; &quot;3.10&quot;&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;urllib3&gt;=1.25.4,!=2.2.0,&lt;3 ; python_version &gt;= &quot;3.10&quot;&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+</code></pre></div>
+<p>will not have the Python version shown when running <code>poetry show</code>, despite some the package ranges depending on the Python version of the project.  On a Python project where the <code>pyproject.toml</code> specifies Python 3.9, <code>poetry show</code> will only return the urllib3 version range that is valid for Python 3.9.</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
+&gt;<span class="w"> </span>head<span class="w"> </span>pyproject.toml
+<span class="o">[</span>tool.poetry<span class="o">]</span>
+<span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;prosebit&quot;</span>
+<span class="nv">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span>
+<span class="nv">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="nv">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;Your Name &lt;you@example.com&gt;&quot;</span><span class="o">]</span>
+<span class="nv">readme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;README.md&quot;</span>
+
+<span class="o">[</span>tool.poetry.dependencies<span class="o">]</span>
+<span class="nv">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;3.9&quot;</span>
+
+<span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
+&gt;<span class="w"> </span>poetry<span class="w"> </span>show<span class="w"> </span>botocore
+<span class="w"> </span>name<span class="w">         </span>:<span class="w"> </span>botocore<span class="w">                               </span>
+<span class="w"> </span>version<span class="w">      </span>:<span class="w"> </span><span class="m">1</span>.34.144<span class="w">                               </span>
+<span class="w"> </span>description<span class="w">  </span>:<span class="w"> </span>Low-level,<span class="w"> </span>data-driven<span class="w"> </span>core<span class="w"> </span>of<span class="w"> </span>boto<span class="w"> </span><span class="m">3</span>.<span class="w"> </span>
+
+dependencies
+<span class="w"> </span>-<span class="w"> </span>jmespath<span class="w"> </span>&gt;<span class="o">=</span><span class="m">0</span>.7.1,&lt;<span class="m">2</span>.0.0
+<span class="w"> </span>-<span class="w"> </span>python-dateutil<span class="w"> </span>&gt;<span class="o">=</span><span class="m">2</span>.1,&lt;<span class="m">3</span>.0.0
+<span class="w"> </span>-<span class="w"> </span>urllib3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.25.4,&lt;<span class="m">1</span>.27
+
+required<span class="w"> </span>by
+<span class="w"> </span>-<span class="w"> </span>boto3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.34.144,&lt;<span class="m">1</span>.35.0
+<span class="w"> </span>-<span class="w"> </span>s3transfer<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.33.2,&lt;<span class="m">2</span>.0a.0
+</code></pre></div>
+<p>On a Python project where the <code>pyproject.toml</code> specifies Python 3.10, <code>poetry show</code> will only return the urllib3 version range that is valid for Python 3.10.</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
+&gt;<span class="w"> </span>head<span class="w"> </span>pyproject.toml
+<span class="o">[</span>tool.poetry<span class="o">]</span>
+<span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;prosebit&quot;</span>
+<span class="nv">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span>
+<span class="nv">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="nv">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;Your Name &lt;you@example.com&gt;&quot;</span><span class="o">]</span>
+<span class="nv">readme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;README.md&quot;</span>
+
+<span class="o">[</span>tool.poetry.dependencies<span class="o">]</span>
+<span class="nv">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;3.10&quot;</span>
+
+<span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
+&gt;<span class="w"> </span>poetry<span class="w"> </span>show<span class="w"> </span>botocore
+<span class="w"> </span>name<span class="w">         </span>:<span class="w"> </span>botocore<span class="w">                               </span>
+<span class="w"> </span>version<span class="w">      </span>:<span class="w"> </span><span class="m">1</span>.34.144<span class="w">                               </span>
+<span class="w"> </span>description<span class="w">  </span>:<span class="w"> </span>Low-level,<span class="w"> </span>data-driven<span class="w"> </span>core<span class="w"> </span>of<span class="w"> </span>boto<span class="w"> </span><span class="m">3</span>.<span class="w"> </span>
+
+dependencies
+<span class="w"> </span>-<span class="w"> </span>jmespath<span class="w"> </span>&gt;<span class="o">=</span><span class="m">0</span>.7.1,&lt;<span class="m">2</span>.0.0
+<span class="w"> </span>-<span class="w"> </span>python-dateutil<span class="w"> </span>&gt;<span class="o">=</span><span class="m">2</span>.1,&lt;<span class="m">3</span>.0.0
+<span class="w"> </span>-<span class="w"> </span>urllib3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.25.4,&lt;<span class="m">2</span>.2.0<span class="w"> </span><span class="o">||</span><span class="w"> </span>&gt;2.2.0,&lt;<span class="m">3</span>
+
+required<span class="w"> </span>by
+<span class="w"> </span>-<span class="w"> </span>boto3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.34.144,&lt;<span class="m">1</span>.35.0
+<span class="w"> </span>-<span class="w"> </span>s3transfer<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.33.2,&lt;<span class="m">2</span>.0a.0
+</code></pre></div>
+<p>On a Python project where a range is specified that covers multiple urllib3 package ranges, <strong><code>poetry show</code> will show both ranges without specifying that the ranges apply to different Python versions</strong>.</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
+&gt;<span class="w"> </span>head<span class="w"> </span>pyproject.toml
+<span class="o">[</span>tool.poetry<span class="o">]</span>
+<span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;prosebit&quot;</span>
+<span class="nv">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span>
+<span class="nv">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="nv">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;Your Name &lt;you@example.com&gt;&quot;</span><span class="o">]</span>
+<span class="nv">readme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;README.md&quot;</span>
+
+<span class="o">[</span>tool.poetry.dependencies<span class="o">]</span>
+<span class="nv">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&gt;=3.9,&lt;3.12&quot;</span>
+
+<span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
+&gt;<span class="w"> </span>poetry<span class="w"> </span>show<span class="w"> </span>botocore
+<span class="w"> </span>name<span class="w">         </span>:<span class="w"> </span>botocore<span class="w">                               </span>
+<span class="w"> </span>version<span class="w">      </span>:<span class="w"> </span><span class="m">1</span>.34.144<span class="w">                               </span>
+<span class="w"> </span>description<span class="w">  </span>:<span class="w"> </span>Low-level,<span class="w"> </span>data-driven<span class="w"> </span>core<span class="w"> </span>of<span class="w"> </span>boto<span class="w"> </span><span class="m">3</span>.<span class="w"> </span>
+
+dependencies
+<span class="w"> </span>-<span class="w"> </span>jmespath<span class="w"> </span>&gt;<span class="o">=</span><span class="m">0</span>.7.1,&lt;<span class="m">2</span>.0.0
+<span class="w"> </span>-<span class="w"> </span>python-dateutil<span class="w"> </span>&gt;<span class="o">=</span><span class="m">2</span>.1,&lt;<span class="m">3</span>.0.0
+<span class="w"> </span>-<span class="w"> </span>urllib3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.25.4,&lt;<span class="m">1</span>.27
+<span class="w"> </span>-<span class="w"> </span>urllib3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.25.4,&lt;<span class="m">2</span>.2.0<span class="w"> </span><span class="o">||</span><span class="w"> </span>&gt;2.2.0,&lt;<span class="m">3</span>
+
+required<span class="w"> </span>by
+<span class="w"> </span>-<span class="w"> </span>boto3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.34.144,&lt;<span class="m">1</span>.35.0
+<span class="w"> </span>-<span class="w"> </span>s3transfer<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.33.2,&lt;<span class="m">2</span>.0a.0
+</code></pre></div>
+<p>Despite displaying both ranges in <code>poetry show</code>, <strong>Poetry will only use the oldest range when running <code>poetry lock</code> or <code>poetry install</code></strong> .  This can lead to a disconnect between the package ranges that Poetry is reporting as valid and the package ranges that Poetry will actually attempt to use when running.</p>
+<p>I discovered this the hard way when trying to install <code>kinde-python-sdk</code> and <code>boto3</code> within the same project. <code>boto3</code> requires <code>botocore</code> which requires <code>urllib3</code>.  <code>kinde-python-sdk</code> also requires <code>urllib3</code>. Since my project was set to use <code>python = "&gt;=3.9,&lt;3.12"</code>, Poetry was listing both ranges in <code>poetry show</code>, but only using the range <code>urllib3 &gt;=1.25.4,&lt;1.27</code> when installing <code>botocore</code>. This resulted in headaches because <code>kinde-python-sdk</code> requires <code>urllib3 &gt;=2.2.1,&lt;2.3.0</code>, so it appeared like <code>botocore</code> and <code>kinde-python-sdk</code> could coexist when I ran <code>poetry show</code>, but failed to install every time I tried.</p>
+<p>Another important detail to note is that <strong>this is all dependent on the Python version specified in <code>pyproject.toml</code>.  The Python version you are actually running does not change the behaviour of Poetry.</strong>  I ran into all of these problems when running Python 3.11, so was confused for hours.</p>
+<p><code>poetry show</code> should report the Python versions that each package dependency range is valid for, since this turned a relatively simple dependency conflict into a multi-hour dependency conflict.  I was only able to figure out the exact cause by reading the setup script for <code>botocore</code>.</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/poetry-showing-dependencies-it-refuses-to-install</guid>
+            <pubDate>2024-07-15</pubDate>
+        </item>
+        
+        <item>
+            <title>Kinde Design Decisions</title>
+            <link>https://notes.zachmanson.com/kinde-design-decisions</link>
+            
+            <content:encoded>
+                <![CDATA[<p>This is a list of problems with the Kinde interface.</p>
+<h2 id="useless-dropdowns">Useless Dropdowns</h2>
+<p>This dropdown should list the environments instead of revealing a button to take you to a page that lists the environments. This is an unnecessary second click.</p>
+<p><img alt="" src="/media/kinde-1.png" /></p>
+<p>This also means you are unable to switch environment without losing the page you are on.</p>
+<h2 id="unclickable-icons">Unclickable Icons</h2>
+<p>For some reason the left facing chevron is not clickable, only the word "Home" is.</p>
+<p><img alt="" src="/media/kinde-2.png" /></p>
+<h2 id="bizarre-breadcrumbs">Bizarre Breadcrumbs</h2>
+<p>When you go to the "Users Profile" screen, the top left back icon doesn't take you back to the "Users" screen, but remains a "Home" button.</p>
+<p>The only way to navigate back is the the small grey "User" text above the user's name.</p>
+<p><img alt="" src="/media/kinde-3.png" /></p>
+<p>This is something that almost all basic websites can get right.  Breadcrumb navigation or consistent back behaviour would be vastly preferable here.</p>
+<p>There is little consistency between parts of the interface that are clickable and those that are not.  This makes navigating quite difficult.</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/kinde-design-decisions</guid>
+            <pubDate>2024-07-01</pubDate>
+        </item>
         
         <item>
             <title>Nextcloud Phone Photo Upload</title>
@@ -258,199 +451,6 @@
             </content:encoded>
             <guid isPermaLink="false">https://notes.zachmanson.com/rtk-query-vs.-infinite-scrolling</guid>
             <pubDate>2024-06-03</pubDate>
-        </item>
-        
-        <item>
-            <title>Poetry Showing Dependencies it Refuses to Install</title>
-            <link>https://notes.zachmanson.com/poetry-showing-dependencies-it-refuses-to-install</link>
-            
-            <content:encoded>
-                <![CDATA[<p>When Poetry lists the dependencies for a package it doesn't show the Python versions that those ranges are valid for.  For example, <a href="https://github.com/boto/botocore/blob/develop/setup.py">this</a> <code>setup.py</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="n">requires</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s1">&#39;jmespath&gt;=0.7.1,&lt;2.0.0&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;python-dateutil&gt;=2.1,&lt;3.0.0&#39;</span><span class="p">,</span>
-    <span class="c1"># Prior to Python 3.10, Python doesn&#39;t require openssl 1.1.1</span>
-    <span class="c1"># but urllib3 2.0+ does. This means all botocore users will be</span>
-    <span class="c1"># broken by default on Amazon Linux 2 and AWS Lambda without this pin.</span>
-    <span class="s1">&#39;urllib3&gt;=1.25.4,&lt;1.27 ; python_version &lt; &quot;3.10&quot;&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;urllib3&gt;=1.25.4,!=2.2.0,&lt;3 ; python_version &gt;= &quot;3.10&quot;&#39;</span><span class="p">,</span>
-<span class="p">]</span>
-</code></pre></div>
-<p>will not have the Python version shown when running <code>poetry show</code>, despite some the package ranges depending on the Python version of the project.  On a Python project where the <code>pyproject.toml</code> specifies Python 3.9, <code>poetry show</code> will only return the urllib3 version range that is valid for Python 3.9.</p>
-<div class="highlight"><pre><span></span><code><span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
-&gt;<span class="w"> </span>head<span class="w"> </span>pyproject.toml
-<span class="o">[</span>tool.poetry<span class="o">]</span>
-<span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;prosebit&quot;</span>
-<span class="nv">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span>
-<span class="nv">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
-<span class="nv">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;Your Name &lt;you@example.com&gt;&quot;</span><span class="o">]</span>
-<span class="nv">readme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;README.md&quot;</span>
-
-<span class="o">[</span>tool.poetry.dependencies<span class="o">]</span>
-<span class="nv">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;3.9&quot;</span>
-
-<span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
-&gt;<span class="w"> </span>poetry<span class="w"> </span>show<span class="w"> </span>botocore
-<span class="w"> </span>name<span class="w">         </span>:<span class="w"> </span>botocore<span class="w">                               </span>
-<span class="w"> </span>version<span class="w">      </span>:<span class="w"> </span><span class="m">1</span>.34.144<span class="w">                               </span>
-<span class="w"> </span>description<span class="w">  </span>:<span class="w"> </span>Low-level,<span class="w"> </span>data-driven<span class="w"> </span>core<span class="w"> </span>of<span class="w"> </span>boto<span class="w"> </span><span class="m">3</span>.<span class="w"> </span>
-
-dependencies
-<span class="w"> </span>-<span class="w"> </span>jmespath<span class="w"> </span>&gt;<span class="o">=</span><span class="m">0</span>.7.1,&lt;<span class="m">2</span>.0.0
-<span class="w"> </span>-<span class="w"> </span>python-dateutil<span class="w"> </span>&gt;<span class="o">=</span><span class="m">2</span>.1,&lt;<span class="m">3</span>.0.0
-<span class="w"> </span>-<span class="w"> </span>urllib3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.25.4,&lt;<span class="m">1</span>.27
-
-required<span class="w"> </span>by
-<span class="w"> </span>-<span class="w"> </span>boto3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.34.144,&lt;<span class="m">1</span>.35.0
-<span class="w"> </span>-<span class="w"> </span>s3transfer<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.33.2,&lt;<span class="m">2</span>.0a.0
-</code></pre></div>
-<p>On a Python project where the <code>pyproject.toml</code> specifies Python 3.10, <code>poetry show</code> will only return the urllib3 version range that is valid for Python 3.10.</p>
-<div class="highlight"><pre><span></span><code><span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
-&gt;<span class="w"> </span>head<span class="w"> </span>pyproject.toml
-<span class="o">[</span>tool.poetry<span class="o">]</span>
-<span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;prosebit&quot;</span>
-<span class="nv">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span>
-<span class="nv">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
-<span class="nv">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;Your Name &lt;you@example.com&gt;&quot;</span><span class="o">]</span>
-<span class="nv">readme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;README.md&quot;</span>
-
-<span class="o">[</span>tool.poetry.dependencies<span class="o">]</span>
-<span class="nv">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;3.10&quot;</span>
-
-<span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
-&gt;<span class="w"> </span>poetry<span class="w"> </span>show<span class="w"> </span>botocore
-<span class="w"> </span>name<span class="w">         </span>:<span class="w"> </span>botocore<span class="w">                               </span>
-<span class="w"> </span>version<span class="w">      </span>:<span class="w"> </span><span class="m">1</span>.34.144<span class="w">                               </span>
-<span class="w"> </span>description<span class="w">  </span>:<span class="w"> </span>Low-level,<span class="w"> </span>data-driven<span class="w"> </span>core<span class="w"> </span>of<span class="w"> </span>boto<span class="w"> </span><span class="m">3</span>.<span class="w"> </span>
-
-dependencies
-<span class="w"> </span>-<span class="w"> </span>jmespath<span class="w"> </span>&gt;<span class="o">=</span><span class="m">0</span>.7.1,&lt;<span class="m">2</span>.0.0
-<span class="w"> </span>-<span class="w"> </span>python-dateutil<span class="w"> </span>&gt;<span class="o">=</span><span class="m">2</span>.1,&lt;<span class="m">3</span>.0.0
-<span class="w"> </span>-<span class="w"> </span>urllib3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.25.4,&lt;<span class="m">2</span>.2.0<span class="w"> </span><span class="o">||</span><span class="w"> </span>&gt;2.2.0,&lt;<span class="m">3</span>
-
-required<span class="w"> </span>by
-<span class="w"> </span>-<span class="w"> </span>boto3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.34.144,&lt;<span class="m">1</span>.35.0
-<span class="w"> </span>-<span class="w"> </span>s3transfer<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.33.2,&lt;<span class="m">2</span>.0a.0
-</code></pre></div>
-<p>On a Python project where a range is specified that covers multiple urllib3 package ranges, <strong><code>poetry show</code> will show both ranges without specifying that the ranges apply to different Python versions</strong>.</p>
-<div class="highlight"><pre><span></span><code><span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
-&gt;<span class="w"> </span>head<span class="w"> </span>pyproject.toml
-<span class="o">[</span>tool.poetry<span class="o">]</span>
-<span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;prosebit&quot;</span>
-<span class="nv">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span>
-<span class="nv">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
-<span class="nv">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;Your Name &lt;you@example.com&gt;&quot;</span><span class="o">]</span>
-<span class="nv">readme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;README.md&quot;</span>
-
-<span class="o">[</span>tool.poetry.dependencies<span class="o">]</span>
-<span class="nv">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&gt;=3.9,&lt;3.12&quot;</span>
-
-<span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
-&gt;<span class="w"> </span>poetry<span class="w"> </span>show<span class="w"> </span>botocore
-<span class="w"> </span>name<span class="w">         </span>:<span class="w"> </span>botocore<span class="w">                               </span>
-<span class="w"> </span>version<span class="w">      </span>:<span class="w"> </span><span class="m">1</span>.34.144<span class="w">                               </span>
-<span class="w"> </span>description<span class="w">  </span>:<span class="w"> </span>Low-level,<span class="w"> </span>data-driven<span class="w"> </span>core<span class="w"> </span>of<span class="w"> </span>boto<span class="w"> </span><span class="m">3</span>.<span class="w"> </span>
-
-dependencies
-<span class="w"> </span>-<span class="w"> </span>jmespath<span class="w"> </span>&gt;<span class="o">=</span><span class="m">0</span>.7.1,&lt;<span class="m">2</span>.0.0
-<span class="w"> </span>-<span class="w"> </span>python-dateutil<span class="w"> </span>&gt;<span class="o">=</span><span class="m">2</span>.1,&lt;<span class="m">3</span>.0.0
-<span class="w"> </span>-<span class="w"> </span>urllib3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.25.4,&lt;<span class="m">1</span>.27
-<span class="w"> </span>-<span class="w"> </span>urllib3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.25.4,&lt;<span class="m">2</span>.2.0<span class="w"> </span><span class="o">||</span><span class="w"> </span>&gt;2.2.0,&lt;<span class="m">3</span>
-
-required<span class="w"> </span>by
-<span class="w"> </span>-<span class="w"> </span>boto3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.34.144,&lt;<span class="m">1</span>.35.0
-<span class="w"> </span>-<span class="w"> </span>s3transfer<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.33.2,&lt;<span class="m">2</span>.0a.0
-</code></pre></div>
-<p>Despite displaying both ranges in <code>poetry show</code>, <strong>Poetry will only use the oldest range when running <code>poetry lock</code> or <code>poetry install</code></strong> .  This can lead to a disconnect between the package ranges that Poetry is reporting as valid and the package ranges that Poetry will actually attempt to use when running.</p>
-<p>I discovered this the hard way when trying to install <code>kinde-python-sdk</code> and <code>boto3</code> within the same project. <code>boto3</code> requires <code>botocore</code> which requires <code>urllib3</code>.  <code>kinde-python-sdk</code> also requires <code>urllib3</code>. Since my project was set to use <code>python = "&gt;=3.9,&lt;3.12"</code>, Poetry was listing both ranges in <code>poetry show</code>, but only using the range <code>urllib3 &gt;=1.25.4,&lt;1.27</code> when installing <code>botocore</code>. This resulted in headaches because <code>kinde-python-sdk</code> requires <code>urllib3 &gt;=2.2.1,&lt;2.3.0</code>, so it appeared like <code>botocore</code> and <code>kinde-python-sdk</code> could coexist when I ran <code>poetry show</code>, but failed to install every time I tried.</p>
-<p>Another important detail to note is that <strong>this is all dependent on the Python version specified in <code>pyproject.toml</code>.  The Python version you are actually running does not change the behaviour of Poetry.</strong>  I ran into all of these problems when running Python 3.11, so was confused for hours.</p>
-<p><code>poetry show</code> should report the Python versions that each package dependency range is valid for, since this turned a relatively simple dependency conflict into a multi-hour dependency conflict.  I was only able to figure out the exact cause by reading the setup script for <code>botocore</code>.</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/poetry-showing-dependencies-it-refuses-to-install</guid>
-            <pubDate>2024-07-15</pubDate>
-        </item>
-        
-        <item>
-            <title>LinkedIn's Ghost Text</title>
-            <link>https://notes.zachmanson.com/linkedins-ghost-text</link>
-            
-            <description>Why does LinkedIn copy text twice?</description>
-            
-            <content:encoded>
-                <![CDATA[<p>Why does LinkedIn do this?</p>
-<video autoplay loop muted>
-   <source src="/media/linkedin-duplication.webm" type="video/webm">
-</video>
-
-<p>If you look into the source of a LinkedIn profile page (at your own personal risk) you'll find a text element like this</p>
-<p><img alt="" src="/media/linkedin-element.png" /></p>
-<p>will have HTML like this</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;display-flex flex-row justify-space-between&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;</span>
-<span class="s">          display-flex flex-column full-width&quot;</span><span class="p">&gt;</span>
-
-        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;display-flex flex-wrap align-items-center full-height&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mr1 t-bold&quot;</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Product manager, Creative coder<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Product manager, Creative coder<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="cm">&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Freelancer/Consultant<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Freelancer/Consultant<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal t-black--light&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>2009 - 2018 · 9 yrs<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>2009 - 2018 · 9 yrs<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal t-black--light&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Europe<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Europe<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-
-    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-
-    <span class="cm">&lt;!----&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pvs-entity__action-container&quot;</span><span class="p">&gt;</span>
-        <span class="cm">&lt;!----&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></div>
-<p>Gross.  Why the hidden duplicated text?  Why the empty comments?  Why seperate aria versions of text?  Is this related to using Ember?  LinkedIn has so many little unpleasantries like this.</p>
-<hr />
-<h2 id="2024-update-linkedin-still-shit">2024 Update: LinkedIn Still Shit</h2>
-<p>Still here.  Still broken. Still annoying</p>
-<video autoplay loop muted>
-   <source src="/media/linkedin-duplication-2.webm" type="video/webm">
-</video>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/linkedins-ghost-text</guid>
-            <pubDate>2023-04-16</pubDate>
-        </item>
-        
-        <item>
-            <title>Kinde Design Decisions</title>
-            <link>https://notes.zachmanson.com/kinde-design-decisions</link>
-            
-            <content:encoded>
-                <![CDATA[<p>This is a list of problems with the Kinde interface.</p>
-<h2 id="useless-dropdowns">Useless Dropdowns</h2>
-<p>This dropdown should list the environments instead of revealing a button to take you to a page that lists the environments. This is an unnecessary second click.</p>
-<p><img alt="" src="/media/kinde-1.png" /></p>
-<p>This also means you are unable to switch environment without losing the page you are on.</p>
-<h2 id="unclickable-icons">Unclickable Icons</h2>
-<p>For some reason the left facing chevron is not clickable, only the word "Home" is.</p>
-<p><img alt="" src="/media/kinde-2.png" /></p>
-<h2 id="bizarre-breadcrumbs">Bizarre Breadcrumbs</h2>
-<p>When you go to the "Users Profile" screen, the top left back icon doesn't take you back to the "Users" screen, but remains a "Home" button.</p>
-<p>The only way to navigate back is the the small grey "User" text above the user's name.</p>
-<p><img alt="" src="/media/kinde-3.png" /></p>
-<p>This is something that almost all basic websites can get right.  Breadcrumb navigation or consistent back behaviour would be vastly preferable here.</p>
-<p>There is little consistency between parts of the interface that are clickable and those that are not.  This makes navigating quite difficult.</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/kinde-design-decisions</guid>
-            <pubDate>2024-07-01</pubDate>
         </item>
         
         <item>
