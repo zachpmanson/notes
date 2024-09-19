@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Networks/Internet/Digital Garden.md",
+                "file": "Notes/Design/Typography.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Networks/Internet/Digital Garden.md",
+                "file": "Notes/Design/Typography.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Networks/Internet/Digital Garden.md",
+                "file": "Notes/Design/Typography.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Networks/Internet/Digital Garden.md"
+                "file": "Notes/Design/Typography.md"
               }
             }
           }
@@ -148,9 +148,16 @@
   },
   "active": "da0b71a6b0e2718a",
   "lastOpenFiles": [
-    "Archive/Bookmarks/Digital Gardens.md",
-    "Notes/Networks/Internet/Digital Garden.md",
+    "Notes/Design/Web Design/Web Design.md",
+    "Notes/Design/Typography.md",
+    "Archive/Bookmarks/Audio.md",
+    "Archive/Bookmarks/Websites.md",
+    "Archive/Bookmarks/Bookmarks.md",
     "Archive/Lines.md",
+    "Projects/Mastodon Thread Unroller.md",
+    "Notes/Networks/Internet/Fediverse/Mastodon/Mastodon.md",
+    "Notes/Networks/Internet/Digital Garden.md",
+    "Archive/Bookmarks/Digital Gardens.md",
     "Notes/Software/Development/Web Development/React.md",
     "Meta/Credits.md",
     "Archive/Problems/Nextcloud AIO occ.md",
@@ -167,20 +174,13 @@
     "Notes/Networks/Internet/Fediverse/Fediverse.md",
     "Notes/Software/Programs/GNU/Screen/Screen Commands.md",
     "Notes/Software/Programs/SQLite.md",
-    "Archive/Bookmarks/Bookmarks.md",
-    "Archive/Bookmarks/Cheatsheets.md",
-    "Notes/Software/Programs/Programs.md",
-    "Projects/Alculator.md",
-    "Projects/Minecraftle/Minecraftle.md",
-    "Projects/Penultimate Guitar.md",
-    "Archive/Problems/Prisma Schema Changes and Vercel.md",
     "Notes/Language/Nomenclature",
     "Notes/Software/Programs/Vi(m)/Vim Plugins",
     "Notes/Language/Words",
     "Notes/Software/Terminals",
     "Notes/Software/Development/Non-Programming Languages/HTML",
     "Notes/Software/Development/Non-Programming Languages/CSS",
-    "Notes/Software/Design/Web Design",
+    "Notes/Design/Web Design",
     "Notes/Cybersecurity",
     "Media/trpc-typeerror.png",
     "Media/kinde-3.png",

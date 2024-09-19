@@ -6,3 +6,5 @@
 - [Mofi](https://mofi.loud.red/), content-aware fill and trim for music
 - [YouGlish](https://youglish.com/), a tool to learn English word pronounciations by hearing examples in existing YouTube videos
 - [The Endless Acid Banger](https://www.vitling.xyz/toys/acid-banger/)
+- [a public voicemail system](https://afterthebeep.tel)
+- [crowdwave](https://www.crowdwave.com/) 

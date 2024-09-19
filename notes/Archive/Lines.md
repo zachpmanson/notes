@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> Poor, sad, misbegotten, incredibly effective, massively successful PHP. Reading PHP code is like reading poetry, the poetry you wrote freshman year of college.
+
+-- [Paul Ford](https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/)
+
+---
+
 > I know I'm the last committer, I committed atrocities
 
 -- [Michael B. Paulson](https://www.youtube.com/watch?v=odhjF1obcUo)
