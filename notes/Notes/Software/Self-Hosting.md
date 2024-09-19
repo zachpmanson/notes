@@ -8,6 +8,7 @@ Nextcloud is a fantastic platform you can use to self-host a number of different
 ## Links
 
 - [Awesome Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted), a huge list of self-hosting resources from /r/selfhosting
+- [Dokku](https://hamel.dev/blog/posts/dokku/)
 
 ## Related
 

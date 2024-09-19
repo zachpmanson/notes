@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Design/Typography.md",
+                "file": "Notes/Software/Self-Hosting.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Design/Typography.md",
+                "file": "Notes/Software/Self-Hosting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Design/Typography.md",
+                "file": "Notes/Software/Self-Hosting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Design/Typography.md"
+                "file": "Notes/Software/Self-Hosting.md"
               }
             }
           }
@@ -146,10 +146,11 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "da0b71a6b0e2718a",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Notes/Design/Web Design/Web Design.md",
+    "Notes/Language/Nomenclature/Microsoft Product Names.md",
     "Notes/Design/Typography.md",
+    "Notes/Design/Web Design/Web Design.md",
     "Archive/Bookmarks/Audio.md",
     "Archive/Bookmarks/Websites.md",
     "Archive/Bookmarks/Bookmarks.md",
@@ -173,7 +174,6 @@
     "Notes/Networks/Internet/Fediverse/Fediverse Family Tree.md",
     "Notes/Networks/Internet/Fediverse/Fediverse.md",
     "Notes/Software/Programs/GNU/Screen/Screen Commands.md",
-    "Notes/Software/Programs/SQLite.md",
     "Notes/Language/Nomenclature",
     "Notes/Software/Programs/Vi(m)/Vim Plugins",
     "Notes/Language/Words",
