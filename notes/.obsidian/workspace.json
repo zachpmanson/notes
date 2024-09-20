@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Self-Hosting.md",
+                "file": "Archive/Bookmarks/Audio.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Self-Hosting.md",
+                "file": "Archive/Bookmarks/Audio.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Self-Hosting.md",
+                "file": "Archive/Bookmarks/Audio.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Self-Hosting.md"
+                "file": "Archive/Bookmarks/Audio.md"
               }
             }
           }
@@ -146,8 +146,11 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "da0b71a6b0e2718a",
   "lastOpenFiles": [
+    "Archive/Bookmarks/Archives.md",
+    "Archive/Archive.md",
+    "Notes/Software/Self-Hosting.md",
     "Notes/Language/Nomenclature/Microsoft Product Names.md",
     "Notes/Design/Typography.md",
     "Notes/Design/Web Design/Web Design.md",
@@ -170,10 +173,7 @@
     "Archive/Folklore/Yak Shaving.md",
     "Archive/Problems/Nextcloud Phone Photo Upload.md",
     "Archive/Problems/Self-Hosted Postgres and Prisma.md",
-    "Notes/Software/Self-Hosting.md",
     "Notes/Networks/Internet/Fediverse/Fediverse Family Tree.md",
-    "Notes/Networks/Internet/Fediverse/Fediverse.md",
-    "Notes/Software/Programs/GNU/Screen/Screen Commands.md",
     "Notes/Language/Nomenclature",
     "Notes/Software/Programs/Vi(m)/Vim Plugins",
     "Notes/Language/Words",

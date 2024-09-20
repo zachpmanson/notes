@@ -8,3 +8,8 @@
 - [The Endless Acid Banger](https://www.vitling.xyz/toys/acid-banger/)
 - [a public voicemail system](https://afterthebeep.tel)
 - [crowdwave](https://www.crowdwave.com/) 
+
+## Harmontown
+
+- [Archive of Harmontown episodes and media](https://www.youtube.com/@JoneseyCat/videos)
+- Harmontown Text Search
