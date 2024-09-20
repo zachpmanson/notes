@@ -11,7 +11,7 @@
 
 ## Harmontown
 
-[Harmontown's website](https://harmontown.com) started [receiving DCMA takedown requests](https://www.reddit.com/r/Harmontown/comments/1et500a/website_down/licjk5h/) after it made the video archive public, so took them down.
+[Harmontown's website](https://harmontown.com) started [receiving DMCA takedown requests](https://www.reddit.com/r/Harmontown/comments/1et500a/website_down/licjk5h/) after it made the video archive public, so took them down.
 
 - [Archive of Harmontown episodes and media](https://www.youtube.com/@JoneseyCat/videos)
 - Harmontown Text Search
