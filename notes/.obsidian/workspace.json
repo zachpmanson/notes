@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/Audio.md",
+                "file": "Archive/Folklore/Folklore.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8726bc2d0a43a2d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Software/Development/Programming Languages/JavaScript/Next.js.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/Audio.md",
+                "file": "Notes/Software/Development/Programming Languages/JavaScript/Next.js.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/Audio.md",
+                "file": "Notes/Software/Development/Programming Languages/JavaScript/Next.js.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/Audio.md"
+                "file": "Notes/Software/Development/Programming Languages/JavaScript/Next.js.md"
               }
             }
           }
@@ -133,7 +146,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,15 +160,18 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "da0b71a6b0e2718a",
+  "active": "8726bc2d0a43a2d2",
   "lastOpenFiles": [
+    "Archive/Folklore/Dear Google Cloud.md",
+    "Archive/Folklore/Folklore.md",
+    "Notes/Software/Programs/sed.md",
+    "Archive/Bookmarks/Audio.md",
     "Archive/Bookmarks/Archives.md",
     "Archive/Archive.md",
     "Notes/Software/Self-Hosting.md",
     "Notes/Language/Nomenclature/Microsoft Product Names.md",
     "Notes/Design/Typography.md",
     "Notes/Design/Web Design/Web Design.md",
-    "Archive/Bookmarks/Audio.md",
     "Archive/Bookmarks/Websites.md",
     "Archive/Bookmarks/Bookmarks.md",
     "Archive/Lines.md",
@@ -171,9 +188,6 @@
     "Archive/Problems/Poetry Showing Dependencies it Refuses to Install.md",
     "Archive/Folklore/The Patron Saint of Yak Shaves.md",
     "Archive/Folklore/Yak Shaving.md",
-    "Archive/Problems/Nextcloud Phone Photo Upload.md",
-    "Archive/Problems/Self-Hosted Postgres and Prisma.md",
-    "Notes/Networks/Internet/Fediverse/Fediverse Family Tree.md",
     "Notes/Language/Nomenclature",
     "Notes/Software/Programs/Vi(m)/Vim Plugins",
     "Notes/Language/Words",

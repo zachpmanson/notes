@@ -20,7 +20,7 @@ This places places a space around all occurrences of `(` and `)`.
 
 `g` means global, applies to every instance on the line rather than just the first of every line.
 
-This is tedious
+This is tedious.
 
 ## Script
 
