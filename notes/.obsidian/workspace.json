@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Folklore/Folklore.md",
+                "file": "Notes/Design/Typography.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/JavaScript/Next.js.md",
+                "file": "Archive/Folklore/Life of an Oracle Developer.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "87e8ccc3d17ba37b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Archive/Folklore/We Do Not Break Userspace.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/JavaScript/Next.js.md",
+                "file": "Notes/Design/Typography.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/JavaScript/Next.js.md",
+                "file": "Notes/Design/Typography.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/JavaScript/Next.js.md"
+                "file": "Notes/Design/Typography.md"
               }
             }
           }
@@ -160,10 +171,14 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "8726bc2d0a43a2d2",
+  "active": "da0b71a6b0e2718a",
   "lastOpenFiles": [
-    "Archive/Folklore/Dear Google Cloud.md",
+    "Notes/Design/Design.md",
     "Archive/Folklore/Folklore.md",
+    "Archive/Folklore/We Do Not Break Userspace.md",
+    "Archive/Folklore/Life of an Oracle Developer.md",
+    "Notes/Software/Development/Programming Languages/JavaScript/Next.js.md",
+    "Archive/Folklore/Dear Google Cloud.md",
     "Notes/Software/Programs/sed.md",
     "Archive/Bookmarks/Audio.md",
     "Archive/Bookmarks/Archives.md",
@@ -184,10 +199,6 @@
     "Archive/Problems/Nextcloud AIO occ.md",
     "Notes/Software/Mistakes/Position of 0 and 1 Keys.md",
     "Notes/Software/Programs/Vi(m)/Vi(m) Movement Origins.md",
-    "Notes/Software/Exploits/XZ/XZ.md",
-    "Archive/Problems/Poetry Showing Dependencies it Refuses to Install.md",
-    "Archive/Folklore/The Patron Saint of Yak Shaves.md",
-    "Archive/Folklore/Yak Shaving.md",
     "Notes/Language/Nomenclature",
     "Notes/Software/Programs/Vi(m)/Vim Plugins",
     "Notes/Language/Words",
