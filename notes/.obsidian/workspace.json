@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Design/Typography.md",
+                "file": "Notes/Software/Development/Non-Programming Languages/SQL.md",
                 "mode": "source",
                 "source": false
               }
@@ -72,7 +72,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#relics",
+                "query": "samaltman",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Design/Typography.md",
+                "file": "Notes/Software/Development/Non-Programming Languages/SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Design/Typography.md",
+                "file": "Notes/Software/Development/Non-Programming Languages/SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Design/Typography.md"
+                "file": "Notes/Software/Development/Non-Programming Languages/SQL.md"
               }
             }
           }
@@ -173,6 +173,10 @@
   },
   "active": "da0b71a6b0e2718a",
   "lastOpenFiles": [
+    "Notes/Software/Development/Non-Programming Languages/SQL.md",
+    "Notes/Software/Untitled",
+    "Archive/Folklore/The Reddit Long Con.md",
+    "Notes/Design/Typography.md",
     "Notes/Design/Design.md",
     "Archive/Folklore/Folklore.md",
     "Archive/Folklore/We Do Not Break Userspace.md",
@@ -185,7 +189,6 @@
     "Archive/Archive.md",
     "Notes/Software/Self-Hosting.md",
     "Notes/Language/Nomenclature/Microsoft Product Names.md",
-    "Notes/Design/Typography.md",
     "Notes/Design/Web Design/Web Design.md",
     "Archive/Bookmarks/Websites.md",
     "Archive/Bookmarks/Bookmarks.md",
@@ -197,8 +200,6 @@
     "Notes/Software/Development/Web Development/React.md",
     "Meta/Credits.md",
     "Archive/Problems/Nextcloud AIO occ.md",
-    "Notes/Software/Mistakes/Position of 0 and 1 Keys.md",
-    "Notes/Software/Programs/Vi(m)/Vi(m) Movement Origins.md",
     "Notes/Language/Nomenclature",
     "Notes/Software/Programs/Vi(m)/Vim Plugins",
     "Notes/Language/Words",
@@ -212,7 +213,6 @@
     "Media/kinde-2.png",
     "Media/kinde-1.png",
     "Media/sliding-menu.mp4",
-    "Media/sr.mp4",
     "Media/pal.jpg",
     "Media/smart-shuffle-popup.png",
     "Media/chris-vs-cits.png",
