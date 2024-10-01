@@ -8,6 +8,7 @@
 - [The Endless Acid Banger](https://www.vitling.xyz/toys/acid-banger/)
 - [a public voicemail system](https://afterthebeep.tel)
 - [crowdwave](https://www.crowdwave.com/) 
+- [Bop Spotter](https://walzr.com/bop-spotter), a vibe catcher placed in public
 
 ## Harmontown
 

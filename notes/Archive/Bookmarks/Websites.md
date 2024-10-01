@@ -4,7 +4,7 @@ Intentionally miscellaneous.
 - [The Annotated Pratchett File](https://www.lspace.org/books/apf/), distilled discussions on the works of Terry Pratchett
 - [years in review](https://years.cblgh.org/), Alexander Cobleigh's years, reviewed
 - [Basilisk Collection](https://suricrasia.online/unfiction/basilisk/)
-- [DenverCoder9 on FamistForums](www.mirrorsoferis.com/forum/thread05232003a.html)
+- [DenverCoder9 on FamistForums](https://www.mirrorsoferis.com/forum/thread05232003a.html)
 - [freezine](https://freezine.xyz/index.html), an old kind of zine, best on a desktop browser
 - [La Jachère](https://jache.re/), Adrian Demleitner's wiki
 - [Chronophoto](https://www.chronophoto.app/game.html), a game of historical imagery

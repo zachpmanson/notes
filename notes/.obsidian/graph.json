@@ -5,8 +5,44 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
-  "colorGroups": [],
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:Projects  ",
+      "color": {
+        "a": 1,
+        "rgb": 6608476
+      }
+    },
+    {
+      "query": "path:Notes  ",
+      "color": {
+        "a": 1,
+        "rgb": 6066646
+      }
+    },
+    {
+      "query": "path:Archive  ",
+      "color": {
+        "a": 1,
+        "rgb": 9453901
+      }
+    },
+    {
+      "query": "path:Posts  ",
+      "color": {
+        "a": 1,
+        "rgb": 15314219
+      }
+    },
+    {
+      "query": "path:Meta  ",
+      "color": {
+        "a": 1,
+        "rgb": 6084269
+      }
+    }
+  ],
   "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
@@ -17,6 +53,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.2463755438111554,
-  "close": true
+  "scale": 0.9481665808094222,
+  "close": false
 }
