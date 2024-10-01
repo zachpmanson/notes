@@ -23,8 +23,12 @@
             "id": "27715f9eb055d282",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Software/Development/Kinds of Problems.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
@@ -52,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -102,7 +106,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.50247192382812
+    "width": 253.50247192382812,
+    "collapsed": true
   },
   "right": {
     "id": "b30ab2faf3f39acc",
@@ -118,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/Websites.md",
+                "file": "Notes/Software/Development/Kinds of Problems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/Websites.md",
+                "file": "Notes/Software/Development/Kinds of Problems.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/Websites.md"
+                "file": "Notes/Software/Development/Kinds of Problems.md"
               }
             }
           }
@@ -180,8 +185,10 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "27715f9eb055d282",
   "lastOpenFiles": [
+    "Notes/Software/Development/Development.md",
+    "Archive/Bookmarks/Websites.md",
     "www.mirrorsoferis.com/forum/thread05232003a.html.md",
     "www.mirrorsoferis.com/forum",
     "www.mirrorsoferis.com",
@@ -204,13 +211,11 @@
     "Notes/Software/Self-Hosting.md",
     "Notes/Language/Nomenclature/Microsoft Product Names.md",
     "Notes/Design/Web Design/Web Design.md",
-    "Archive/Bookmarks/Websites.md",
     "Archive/Bookmarks/Bookmarks.md",
     "Archive/Lines.md",
     "Projects/Mastodon Thread Unroller.md",
     "Notes/Networks/Internet/Fediverse/Mastodon/Mastodon.md",
     "Notes/Networks/Internet/Digital Garden.md",
-    "Archive/Bookmarks/Digital Gardens.md",
     "Notes/Language/Nomenclature",
     "Notes/Software/Programs/Vi(m)/Vim Plugins",
     "Notes/Language/Words",

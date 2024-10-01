@@ -7,3 +7,7 @@
 | during | angry, confused, know where to look | angry, confused, do not know where to look |
 | immediate aftermath | laughing at my own stupidity | relief that i am not stupid, angry |
 | long term aftermath | never make that mistake again | paranoia that others are stupid |
+
+## Related
+
+- [A Taxonomy of Tech Debt](https://technology.riotgames.com/news/taxonomy-tech-debt)
