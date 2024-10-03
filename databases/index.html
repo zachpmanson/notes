@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="icon" href="/static/icon/icon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+
+  <link rel="alternate" type="application/rss+xml" href="https://notes.zachmanson.com/posts.xml" title="notes: posts" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: databases</title>
+</head>
+
+<body>
+  <nav>
+    <div class="main-icon">
+      <a href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
+          viewBox="26.88 56.87 216.25 156.27">
+          <path
+            style="stroke-width: 15px; stroke-linecap: butt; stroke-linejoin: round; stroke: rgb(10, 10, 10); fill: none;"
+            d="M135,75 A60,60 0 0,0 75,135 A60,60 0 0,0 135,195 A60,60 0 0,0 195,135 A60,60 0 0,0 135,75 M45,90 A15,15 0 0,1 60,75 A15,15 0 0,1 75,90 L75,135 L75,180 A15,15 0 0,1 60,195 A15,15 0 0,1 45,180 M225,90 A15,15 0 0,0 210,75 A15,15 0 0,0 195,90 L195,135 L195,180 A15,15 0 0,0 210,195 L210,195 A15,15 0 0,0 225,180 M135,105 A30,30 0 0,1 165,135 A30,30 0 0,1 135,165 A30,30 0 0,1 105,135 A30,30 0 0,1 135,105 M45,105 L45,105 L45,165 M225,105 L225,105 L225,165 ">
+          </path>
+        </svg>
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
+      <div class="nav-segments">
+        
+
+        <div class="flex flex-col text-left nav-links">
+          <a href="/software" class="activated-link">Software</a>
+          
+          
+          <a href="/art">Art</a>
+          
+          
+          
+          <a href="/courses">Courses</a>
+          
+          
+          
+          <a href="/cybersecurity">Cybersecurity</a>
+          
+          
+          
+          <a href="/design">Design</a>
+          
+          
+          
+          <a href="/language">Language</a>
+          
+          
+          
+          <a href="/mathematics">Mathematics</a>
+          
+          
+          
+          <a href="/miscellany">Miscellany</a>
+          
+          
+          
+          <a href="/music">Music</a>
+          
+          
+          
+          <a href="/networks">Networks</a>
+          
+          
+          
+          
+          
+        </div>
+        
+
+        
+
+        <div class="flex flex-col text-left nav-links">
+          <a href="/databases" class="activated-link">Databases</a>
+          
+          
+          
+          
+          
+          <a href="/development">Development</a>
+          
+          
+          
+          <a href="/exploits">Exploits</a>
+          
+          
+          
+          <a href="/machine-learning">Machine Learning</a>
+          
+          
+          
+          <a href="/mistakes">Mistakes</a>
+          
+          
+          
+          <a href="/open-source">Open Source</a>
+          
+          
+          
+          <a href="/programs">Programs</a>
+          
+          
+          
+          <a href="/self-hosting">Self-Hosting</a>
+          
+          
+          
+          <a href="/terminals">Terminals</a>
+          
+          
+          
+          <a href="/unix">Unix</a>
+          
+          
+        </div>
+        
+
+        
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header>
+      <h1>The real heroes.</h1>
+    </header>
+
+    <article><p>Databases are pure joy when they are well-structured, and nightmares when they aren't.  All databases structure decays as a function of continued development over time.</p>
+<p>Databases are their own little world, speaking their own <a href="/sql">little language</a>, following different rules to the rest of the <a href="/software">software</a> world. They are hard to version control, hard to scale, and hard to live without.</p>
+<h2 id="databases-management-systems">Databases Management Systems</h2>
+<p>Someone else (someone smarter) did the hard work for us!</p>
+<ul>
+<li><a href="/postgres">Postgres</a></li>
+<li><a href="/sqlite">SQLite</a></li>
+</ul>
+<h2 id="object-relational-mapper">Object Relational Mapper</h2>
+<p>Since databases usually only speak <a href="/sql">SQL</a>, a <a href="/language">language</a> that is not very nice to use, there have been many attempts at creating translation layers between database models and normal <a href="/programming-languages">programming language</a> constructs. I have used a few of these.</p>
+<ul>
+<li><a href="/prisma">Prisma</a><ul>
+<li>Schema definition is really cool, with automatic diffing and migration creation. Having a single location for the entire database is nice.</li>
+<li>Automatic type definitions are also really nice</li>
+<li>It's custom querying syntax is fine for simpler queries, but it lets you fall to normal SQL easily.</li>
+<li>Not having to manually write out models makes this very fun to use.</li>
+<li>Because it limits the scope of what it attempts to do, it avoids the pitfalls of most ORMs</li>
+<li>Doesn't do anything for data migrations, other than give you an SQL file to fill out yourself. I kind of... respect this more? Other data migration tools end up becoming this just nested within other languages constructs (looking at you Alembic)<ul>
+<li>procedural SQL is awful but also kind of the only thing you can trust</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>SQLAlchemy<ul>
+<li>uhhhh</li>
+<li>Very big, tries to do a lot of different things.</li>
+<li>Does an admirable job.</li>
+<li>Suffers standard ORM problems, annoying to have to manually match Python objects to Database objects</li>
+<li>Doesn't do shit for type definitions that I didn't write myself.</li>
+<li>Custom query syntax allows you to do complex things, but requires a lot of relearning how to do things that would be very straightforward in SQL.</li>
+<li>It gives you plenty of deep tools that let you shoot yourself in the foot.</li>
+<li>this + Alembic for revisions is.... okay<ul>
+<li>it bothers me that it doesn't use timestamps in the filename of each revision</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>TypeORM<ul>
+<li>similar to SQLAlchemy</li>
+<li>really I just never want to have to use anything that requires manual model creation anymore</li>
+</ul>
+</li>
+</ul>
+<p>Really all I want is something that can automatically create type definitions for database tables and automatically create migrations that I can later edit. In terms of querying syntax, I only want to use it for simple queries, and prefer an ORM that knows this and gets out of my way when I want to rawdog the database. (this is why I like using Prisma)</p>
+<h2 id="interesting-links">Interesting Links</h2>
+<ul>
+<li><a href="https://brandur.org/fragments/code-database-vs-app">Code in database vs. code in application</a>, a discussion on the pros and cons of having application login in triggers/stored procedures vs server code</li>
+</ul></article>
+  </main>
+
+  <footer>
+    <details>
+      <summary>
+        <div class="footer-row">
+          
+          meta
+          
+          <a href="/recent-changes">recent</a>
+          <a href="/mocking-functions-in-python" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Databases/Databases.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Software/Databases/Databases.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'Databases'">reply</a>
+        </div>
+      </summary>
+      <div class="extra-small">
+        <div class="footer-row">
+          <a href="/sitemap">sitemap</a>
+          <a href="/mocking-functions-in-python">random</a>
+        </div>
+      </div>
+
+      
+
+      <p class="backlinks"><strong>Incoming:</strong>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
+      
+
+      
+      <p>
+        
+
+        <span class="backlinks">
+          <strong>
+            Updated:
+          </strong>
+          <date>2024-10-03</date>
+        </span>
+
+      </p>
+    </details>
+
+  </footer>
+  
+</body>
+
+</html>
