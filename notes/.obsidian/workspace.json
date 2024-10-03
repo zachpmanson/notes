@@ -11,12 +11,8 @@
             "id": "da0b71a6b0e2718a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Software/Development/Non-Programming Languages/SQL.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           },
           {
@@ -54,8 +50,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "990ef47b1f1e1b45",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Software/Databases/Databases.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "186b803aaea59f98",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Software/Development/Programming Languages/JavaScript/Prisma.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -121,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Non-Programming Languages/SQL.md",
+                "file": "Notes/Software/Databases/Databases.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Non-Programming Languages/SQL.md",
+                "file": "Notes/Software/Databases/Databases.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Non-Programming Languages/SQL.md"
+                "file": "Notes/Software/Databases/Databases.md"
               }
             }
           }
@@ -183,8 +204,12 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "da0b71a6b0e2718a",
+  "active": "990ef47b1f1e1b45",
   "lastOpenFiles": [
+    "Notes/Software/Development/Programming Languages/JavaScript/Prisma.md",
+    "Notes/Software/Databases/Databases.md",
+    "Notes/Software/Development/Non-Programming Languages/SQL.md",
+    "Notes/Software/Databases",
     "Notes/Software/Software.md",
     "Notes/Notes.md",
     "Notes/Software/Development/Development Methodologies/Development Methodologies.md",
@@ -197,8 +222,6 @@
     "Notes/Software/Unix/Unix.md",
     "Archive/Folklore/Life of an Oracle Developer.md",
     "Archive/Bookmarks/Audio.md",
-    "Notes/Software/Development/Non-Programming Languages/SQL.md",
-    "Notes/Software/Untitled",
     "Archive/Folklore/The Reddit Long Con.md",
     "Notes/Design/Typography.md",
     "Notes/Design/Design.md",
@@ -212,8 +235,6 @@
     "Notes/Software/Self-Hosting.md",
     "Notes/Language/Nomenclature/Microsoft Product Names.md",
     "Notes/Design/Web Design/Web Design.md",
-    "Archive/Bookmarks/Bookmarks.md",
-    "Archive/Lines.md",
     "Notes/Language/Nomenclature",
     "Notes/Software/Programs/Vi(m)/Vim Plugins",
     "Notes/Language/Words",
