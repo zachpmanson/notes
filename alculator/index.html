@@ -119,7 +119,7 @@
 <p><code>singleprice</code> and <code>inanysixprice</code> are even worse, as they are used semi-interchangably. <code>singleprice</code> tends to represent the price of a single bottle, and <code>inanysixprice</code> tends to represent the price of a single bottle in a pack of 6.  Althought sometimes it's a pack of 4.  Or 8.  When <code>singleprice</code> isn't undefined, <code>singleprice</code> sometimes refers to the price of a pack of 6.  The only way to know for sure is by checking if <code>singleprice?.PackType === "Pack"</code> or <code>singleprice?.PackType === "Bottle"</code>.  And of course, when <code>singleprice</code> does mean a pack, the number of units is <em>usually</em> stored in a string.</p>
 <p>This is all in service of avoiding frontend rendering logic as much as possible.  Perhaps this is why their API server is so horrendously slow. It can take minutes to return a list of 500 drinks, and times out easily.  To get all of their products (1000+ beers, 6000+ red wines) in my script I needed to sequentially chain queries in batches of 100 drinks.</p>
 <p>The data itself is riddled with mistakes an inconsistencies. "Standard Drinks" is inconsistently used in packs, where usually it represents a single unit and <a href="https://www.danmurphys.com.au/product/808932">occasionally it represents the sum of all the units</a>.  Sometimes fields are just completely wrong (<a href="https://www.danmurphys.com.au/product/194571">White Bay Brewing Alcohol Volume especially bad</a>), or use values for bottles of different sizes (<a href="https://www.danmurphys.com.au/product/907223">350mL bottle with 11 standards</a>). These products are collected in the <a href="https://github.com/pavo-etc/alculator/blob/main/science/blacklist.json"><code>blacklist.json</code></a> file and ignored by the script that downloads the catalogue.</p>
-<p><a href="https://github.com/pavo-etc/alculator/blob/main/science/api.js">The final script</a> is warty and takes about 15 minutes to run, but converts the data to a sane schema.  This script is run daily via GitHub Action, and the new data is directly stored in JSON files and committed to the repo.  This is inefficient, but meant I didn't have to mess around with databases in my deployment.  I do hope to one day set up a proper database for this.</p>
+<p><a href="https://github.com/pavo-etc/alculator/blob/main/science/api.js">The final script</a> is warty and takes about 15 minutes to run, but converts the data to a sane schema.  This script is run daily via GitHub Action, and the new data is directly stored in JSON files and committed to the repo.  This is inefficient, but meant I didn't have to mess around with <a href="/databases">databases</a> in my deployment.  I do hope to one day set up a proper database for this.</p>
 <p>The source code is available on <a href="https://github.com/pavo-etc/alculator">GitHub</a>.</p></article>
   </main>
 
@@ -131,7 +131,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/w11l02---makefiles" class="not-extra-small">random</a>
+          <a href="/development" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Projects/Alculator.md" class="desktop">edit</a>
@@ -142,7 +142,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/w11l02---makefiles">random</a>
+          <a href="/development">random</a>
         </div>
       </div>
 
@@ -161,6 +161,8 @@
         <a href="/postgres">Postgres</a>
         
         <a href="/react">React</a>
+        
+        <a href="/recent-changes">Recent Changes</a>
         
         <a href="/spite-driven-development">Spite Driven Development</a>
         
@@ -183,7 +185,7 @@
           <strong>
             Updated:
           </strong>
-          <date>2024-09-10</date>
+          <date>2024-10-07</date>
         </span>
 
       </p>

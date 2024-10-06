@@ -344,7 +344,7 @@
     </header>
 
     <article><p>Freezegun is a python library designed to override datetime so that tests can run with consistent timestamps.  This works great in most cases, but can break when used with SQLAlchemy relationships.</p>
-<p>If you use <code>func.current_date()</code> or <code>func.now()</code> from SQLAlchemy func, they will be generated in the database so won't respect the frozen datetime used by freezegun.</p>
+<p>If you use <code>func.current_date()</code> or <code>func.now()</code> from SQLAlchemy func, they will be generated in the <a href="/databases">database</a> so won't respect the frozen datetime used by freezegun.</p>
 <p>If you use datetime.now() an ORM model relationship like this:</p>
 <div class="highlight"><pre><span></span><code>    <span class="n">user</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">relationship</span><span class="p">(</span>
         <span class="s2">&quot;User&quot;</span><span class="p">,</span>
@@ -370,7 +370,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/react" class="not-extra-small">random</a>
+          <a href="/aima-chapter-01" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Python Freezegun vs SQLAlchemy.md" class="desktop">edit</a>
@@ -381,10 +381,18 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/react">random</a>
+          <a href="/aima-chapter-01">random</a>
         </div>
       </div>
 
+      
+
+      <p class="backlinks"><strong>Incoming:</strong>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
       
 
       
@@ -395,7 +403,7 @@
           <strong>
             Updated:
           </strong>
-          <date>2024-07-03</date>
+          <date>2024-10-07</date>
         </span>
 
       </p>

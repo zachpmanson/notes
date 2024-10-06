@@ -343,7 +343,7 @@
       <h1>Deploying Elk on Vercel</h1>
     </header>
 
-    <article><p>The <a href="https://github.com/elk-zone/elk">Elk</a> <a href="/mastodon">Mastodon</a> client is my preferred frontend, written in Nuxt. It has support for deploying seamlessly on Vercel but it needs access to a caching database.  By default it expects Cloudflare but it also supports Vercel KV (Redis) which is included in Vercel's free tier (hobby plan).</p>
+    <article><p>The <a href="https://github.com/elk-zone/elk">Elk</a> <a href="/mastodon">Mastodon</a> client is my preferred frontend, written in Nuxt. It has support for deploying seamlessly on Vercel but it needs access to a caching <a href="/databases">database</a>.  By default it expects Cloudflare but it also supports Vercel KV (Redis) which is included in Vercel's free tier (hobby plan).</p>
 <p>You will need to activate <a href="https://vercel.com/docs/storage/vercel-kv">Vercel KV</a>, start a db project and and get the <code>KV_REST_API_URL</code> and <code>KV_REST_API_TOKEN</code> values it provides. Then set these values for your deployment env.</p>
 <div class="highlight"><pre><span></span><code>NUXT_STORAGE_DRIVER=vercel
 KV_REST_API_URL=...
@@ -359,7 +359,7 @@ KV_REST_API_TOKEN=...
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/originality-not-required" class="not-extra-small">random</a>
+          <a href="/typescript" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Deploying Elk on Vercel.md" class="desktop">edit</a>
@@ -370,10 +370,18 @@ KV_REST_API_TOKEN=...
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/originality-not-required">random</a>
+          <a href="/typescript">random</a>
         </div>
       </div>
 
+      
+
+      <p class="backlinks"><strong>Incoming:</strong>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
       
 
       
@@ -384,7 +392,7 @@ KV_REST_API_TOKEN=...
           <strong>
             Updated:
           </strong>
-          <date>2024-04-05</date>
+          <date>2024-10-07</date>
         </span>
 
       </p>
