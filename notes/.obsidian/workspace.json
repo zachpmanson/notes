@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "da0b71a6b0e2718a",
+            "id": "990ef47b1f1e1b45",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -16,67 +16,19 @@
             }
           },
           {
-            "id": "27715f9eb055d282",
+            "id": "e2486cb7973e7090",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Kinds of Problems.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e936ec7db27dbf34",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Archive/Bookmarks/Websites.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "87e8ccc3d17ba37b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Archive/Folklore/We Do Not Break Userspace.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "990ef47b1f1e1b45",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Software/Databases/Databases.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "186b803aaea59f98",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Software/Development/Programming Languages/JavaScript/Prisma.md",
+                "file": "Notes/Mathematics/Computer Science/Monads.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -105,7 +57,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "samaltman",
+                "query": "database",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -142,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Databases/Databases.md",
+                "file": "Notes/Mathematics/Computer Science/Monads.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Databases/Databases.md",
+                "file": "Notes/Mathematics/Computer Science/Monads.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Databases/Databases.md"
+                "file": "Notes/Mathematics/Computer Science/Monads.md"
               }
             }
           }
@@ -204,37 +156,37 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "990ef47b1f1e1b45",
+  "active": "e2486cb7973e7090",
   "lastOpenFiles": [
+    "Notes/Mathematics/Computer Science/Functors.md",
+    "Notes/Mathematics/Computer Science/Monads.md",
+    "Notes/Mathematics/Computer Science/Computer Science.md",
+    "Notes/Software/Unix/Unix.md",
+    "Meta/Random.md",
     "Notes/Software/Development/Programming Languages/JavaScript/Prisma.md",
-    "Notes/Software/Databases/Databases.md",
-    "Notes/Software/Development/Non-Programming Languages/SQL.md",
-    "Notes/Software/Databases",
-    "Notes/Software/Software.md",
-    "Notes/Notes.md",
-    "Notes/Software/Development/Development Methodologies/Development Methodologies.md",
-    "Notes/Software/Development/Kinds of Problems.md",
-    "Notes/Software/Development/Development.md",
+    "Archive/Folklore/We Do Not Break Userspace.md",
     "Archive/Bookmarks/Websites.md",
-    "www.mirrorsoferis.com/forum/thread05232003a.html.md",
+    "Notes/Software/Development/Kinds of Problems.md",
+    "Notes/Software/Development/Programming Concepts/Noisy Neighbour.md",
+    "Archive/Bookmarks/Lists.md",
+    "Projects/Minecraftle/Minecraftle.md",
+    "Projects/Alculator.md",
+    "Archive/Folklore/Cool URIs Don't Change.md",
+    "Notes/Software/Databases/Databases.md",
+    "Archive/Folklore/Dear Google Cloud.md",
+    "Archive/Problems/Deploying Elk on Vercel.md",
+    "Archive/Folklore/File Over App.md",
+    "Archive/Folklore/Folklore.md",
+    "Archive/Folklore/Guerilla Open Access Manifesto.md",
+    "Archive/Folklore/In the Beginning was the Command Line.md",
+    "Archive/Folklore/Leaving LinkedIn.md",
+    "Projects/Minecraftle/Minecraftle v2.0.md",
+    "Notes/Software/Machine Learning/Generative Models/Stable Diffusion/Prompt Resources.md",
+    "Archive/Problems/Python Freezegun vs SQLAlchemy.md",
+    "Notes/Software/Machine Learning/Machine Learning Concepts/ReAct Prompting.md",
+    "Notes/Software/Databases",
     "www.mirrorsoferis.com/forum",
     "www.mirrorsoferis.com",
-    "Notes/Software/Unix/Unix.md",
-    "Archive/Folklore/Life of an Oracle Developer.md",
-    "Archive/Bookmarks/Audio.md",
-    "Archive/Folklore/The Reddit Long Con.md",
-    "Notes/Design/Typography.md",
-    "Notes/Design/Design.md",
-    "Archive/Folklore/Folklore.md",
-    "Archive/Folklore/We Do Not Break Userspace.md",
-    "Notes/Software/Development/Programming Languages/JavaScript/Next.js.md",
-    "Archive/Folklore/Dear Google Cloud.md",
-    "Notes/Software/Programs/sed.md",
-    "Archive/Bookmarks/Archives.md",
-    "Archive/Archive.md",
-    "Notes/Software/Self-Hosting.md",
-    "Notes/Language/Nomenclature/Microsoft Product Names.md",
-    "Notes/Design/Web Design/Web Design.md",
     "Notes/Language/Nomenclature",
     "Notes/Software/Programs/Vi(m)/Vim Plugins",
     "Notes/Language/Words",

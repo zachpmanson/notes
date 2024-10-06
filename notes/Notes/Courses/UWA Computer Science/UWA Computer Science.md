@@ -38,7 +38,7 @@ CITS1401 Computational Thinking with Python:
 - took 3 weeks to get to if statements in Python which is pretty poor
 - decent intro though
 
-CITS1402 Relational Databases
+CITS1402 Relational [[Databases]]
 
 - dead boring but theres no way not to be, it's databases
 

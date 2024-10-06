@@ -3,7 +3,7 @@
   "search": "",
   "showTags": true,
   "showAttachments": false,
-  "hideUnresolved": false,
+  "hideUnresolved": true,
   "showOrphans": true,
   "collapse-color-groups": false,
   "colorGroups": [
@@ -11,7 +11,7 @@
       "query": "path:Projects  ",
       "color": {
         "a": 1,
-        "rgb": 6608476
+        "rgb": 15770624
       }
     },
     {
@@ -39,11 +39,11 @@
       "query": "path:Meta  ",
       "color": {
         "a": 1,
-        "rgb": 6084269
+        "rgb": 12779755
       }
     }
   ],
-  "collapse-display": false,
+  "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1.04694860813704,
@@ -53,6 +53,6 @@
   "repelStrength": 10.146324054247,
   "linkStrength": 1,
   "linkDistance": 282,
-  "scale": 0.2540172410467364,
+  "scale": 0.2608985518359555,
   "close": true
 }

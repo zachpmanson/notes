@@ -10,7 +10,7 @@ ReAct prompting is a technique that allows LLMs to outsource tasks to specialise
 > 
 > Thought: So the answer is …
 
-The act clause is the LLM selecting from a limited number of options that is has been informed of ahead of time, such as searching Wikipedia, entering a calculation into a calculator, searching a database etc.. A ReAct harness program will detect the act clause, take the action, and feed the result back into LLM.  The LLM then uses this data to inform its answer.  This is similar to how Bing Chat's Sydney AI works.
+The act clause is the LLM selecting from a limited number of options that is has been informed of ahead of time, such as searching Wikipedia, entering a calculation into a calculator, searching a [[Databases|database]] etc.. A ReAct harness program will detect the act clause, take the action, and feed the result back into LLM.  The LLM then uses this data to inform its answer.  This is similar to how Bing Chat's Sydney AI works.
 
 Here is an example flow by Simon Willison:
 
