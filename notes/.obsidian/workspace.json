@@ -11,8 +11,12 @@
             "id": "990ef47b1f1e1b45",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Mathematics/Computer Science/Complexity Theory/Complexity Classes.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
@@ -27,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Mathematics/Computer Science/Monads.md",
+                "file": "Notes/Mathematics/Computer Science/Complexity Theory/Complexity Classes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Mathematics/Computer Science/Monads.md",
+                "file": "Notes/Mathematics/Computer Science/Complexity Theory/Complexity Classes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Mathematics/Computer Science/Monads.md"
+                "file": "Notes/Mathematics/Computer Science/Complexity Theory/Complexity Classes.md"
               }
             }
           }
@@ -156,10 +159,14 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "e2486cb7973e7090",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Notes/Mathematics/Computer Science/Functors.md",
+    "Notes/Mathematics/Computer Science/Complexity Theory/Complexity Theory.md",
+    "Notes/Mathematics/Computer Science/Complexity Theory/Decision Problems.md",
     "Notes/Mathematics/Computer Science/Monads.md",
+    "Notes/Mathematics/Computer Science/Functors.md",
+    "Notes/Mathematics/Computer Science/Complexity Theory/Complexity Classes.md",
+    "Notes/Mathematics/Computer Science/Continuation-Passing Style.md",
     "Notes/Mathematics/Computer Science/Computer Science.md",
     "Notes/Software/Unix/Unix.md",
     "Meta/Random.md",
@@ -180,10 +187,6 @@
     "Archive/Folklore/Guerilla Open Access Manifesto.md",
     "Archive/Folklore/In the Beginning was the Command Line.md",
     "Archive/Folklore/Leaving LinkedIn.md",
-    "Projects/Minecraftle/Minecraftle v2.0.md",
-    "Notes/Software/Machine Learning/Generative Models/Stable Diffusion/Prompt Resources.md",
-    "Archive/Problems/Python Freezegun vs SQLAlchemy.md",
-    "Notes/Software/Machine Learning/Machine Learning Concepts/ReAct Prompting.md",
     "Notes/Software/Databases",
     "www.mirrorsoferis.com/forum",
     "www.mirrorsoferis.com",

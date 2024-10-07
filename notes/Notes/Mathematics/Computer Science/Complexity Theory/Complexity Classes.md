@@ -25,7 +25,7 @@ In October 2004 Omer Reingold proved that SL = L and as a consequence, symmetric
 Class NL is the set of decision problems that can be solved by a **n**on-deterministic Turing machine using a **l**ogarithmic amount of memory. An example of an NL problem is the STCON (directed s-t connectivity aka the **directed reachability problem**), which is NL-complete.
 
 ### P
-Class P is the set of decision problems that are solvable on a deterministic Turing machine in **p**olynomial time.  These problems are generally considered to be tractable.  This class is  also called PTIME.  An example of a P problem is determining if a number is prime.
+Class P is the set of decision problems that are solvable on a deterministic Turing machine in polynomial time.  These problems are generally considered to be tractable.  This class is  also called PTIME.  An example of a P problem is determining if a number is prime.
 
 ### NP
 Class NP is the set of decision problems that are solvable on a **n**on-deterministic Turing machine in **p**olynomial time.  It is an open question whether `P = NP`, though it's widely believed that `P != NP`.  An example of an NP problem is the travelling salesman problem.
@@ -38,7 +38,13 @@ We haven't actually definitively proved this class exists.
 #### NP-Complete
 There are many important NP-complete problems.  Famous examples include the travelling salesman problem (TSP), the knapsack problem and the boolean satisfiability problem.   Many important problems have been shown to be NP-complete, and no fast algorithm for any of them is known
 
+### PSPACE
+TBD
+
+### EXP
+TBD
+
 ## Links
 - [Wikipedia's list of complexity classes](https://en.wikipedia.org/wiki/List_of_complexity_classes)
 - [Complexity Zoo](https://complexityzoo.net/Complexity_Zoo), a wiki on complexity classes
-
+- [What P vs NP is actually about](https://vasekrozhon.wordpress.com/2024/08/18/what-p-vs-np-is-actually-about/)
