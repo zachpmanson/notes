@@ -12,7 +12,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: linguistic concepts</title>
+  <title>notes: continuation-passing style</title>
 </head>
 
 <body>
@@ -34,45 +34,29 @@
         
 
         <div class="flex flex-col text-left nav-links">
-          <a href="/language" class="activated-link">Language</a>
+          <a href="/computer-science" class="activated-link">Computer Science</a>
           
           
-          <a href="/art">Art</a>
-          
-          
-          
-          <a href="/courses">Courses</a>
-          
-          
-          
-          <a href="/cybersecurity">Cybersecurity</a>
-          
-          
-          
-          <a href="/design">Design</a>
+          <a href="/arity">Arity</a>
           
           
           
           
           
           
-          <a href="/mathematics">Mathematics</a>
+          <a href="/friendship-paradox">Friendship Paradox</a>
           
           
           
-          <a href="/miscellany">Miscellany</a>
+          <a href="/infinity">Infinity</a>
           
           
           
-          <a href="/music">Music</a>
+          <a href="/power-set">Power Set</a>
           
           
           
-          <a href="/networks">Networks</a>
-          
-          
-          
-          <a href="/software">Software</a>
+          <a href="/rank">Rank</a>
           
           
         </div>
@@ -81,53 +65,30 @@
         
 
         <div class="flex flex-col text-left nav-links">
-          <a href="/linguistic-concepts" class="activated-link">Linguistic Concepts</a>
+          <a href="/continuation-passing-style" class="activated-link">Continuation-Passing Style</a>
           
           
-          <a href="/characters">Characters</a>
-          
-          
-          
-          <a href="/diacritics">Diacritics</a>
-          
-          
-          
-          <a href="/dictionary">Dictionary</a>
-          
-          
-          
-          <a href="/etymology">Etymology</a>
-          
-          
-          
-          <a href="/latin-phrases">Latin Phrases</a>
+          <a href="/complexity-theory">Complexity Theory</a>
           
           
           
           
           
           
-          <a href="/nomenclature">Nomenclature</a>
+          <a href="/currying">Currying</a>
           
           
           
-          <a href="/nononyms">Nononyms</a>
+          <a href="/functors">Functors</a>
           
           
           
-          <a href="/words">Words</a>
+          <a href="/monads">Monads</a>
           
           
         </div>
         
 
-        
-
-        <div class="flex flex-col text-left nav-links">
-          
-          <a href="/rebracketing">Rebracketing</a>
-          
-        </div>
         
       </div>
     </div>
@@ -135,10 +96,24 @@
 
   <main>
     <header>
-      <h1>Linguistic Concepts</h1>
+      <h1>Continuation-Passing Style</h1>
     </header>
 
-    <article><p>🌱</p></article>
+    <article><blockquote>
+<p>In functional programming, continuation-passing style (CPS) is a style of programming in which control is passed explicitly in the form of a continuation. This is contrasted with direct style, which is the usual style of programming</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://en.wikipedia.org/wiki/Continuation-passing_style">Wikipedia</a></cite></p>
+<p>A function <strong>foo</strong> written in CPS style takes a callback <strong>bar</strong>, and <strong>bar</strong> is executed as the return value of <strong>foo</strong>.  The callback <strong>bar</strong> is called a <em>continuation</em> function. The continuation function is a tail call.</p>
+<h2 id="gleam">Gleam</h2>
+<p>Gleam has an interesting syntactic sugar around this pattern with the <code>use</code> keyword:</p>
+<div class="highlight"><pre><span></span><code>// standard callback
+f(a, fn(b) { g(b) })
+
+// with use
+use b &lt;- f(a)
+g(b)
+</code></pre></div>
+<p>Sort of an inverted callback.  A callback function  is a function definition stored in variable for later execution when its arguments have been computed; CPS stores a set of arguments that can be bound to a function, and that function will be executed when the arguments are calculated.</p></article>
   </main>
 
   <footer>
@@ -149,21 +124,29 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/deploying-elk-on-vercel" class="not-extra-small">random</a>
+          <a href="/dispatch-from-the-cyberpunk-city" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
-          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Language/Linguistic Concepts.md" class="desktop">edit</a>
-          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Language/Linguistic Concepts.md" class="mobile">edit</a>
-          <a href="mailto:zachpmanson@gmail.com?subject=On 'Linguistic Concepts'">reply</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Mathematics/Computer Science/Continuation-Passing Style.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Mathematics/Computer Science/Continuation-Passing Style.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'Continuation-Passing Style'">reply</a>
         </div>
       </summary>
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/deploying-elk-on-vercel">random</a>
+          <a href="/dispatch-from-the-cyberpunk-city">random</a>
         </div>
       </div>
 
+      
+
+      <p class="backlinks"><strong>Incoming:</strong>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
       
 
       
@@ -174,7 +157,7 @@
           <strong>
             Updated:
           </strong>
-          <date>2000-01-01</date>
+          <date>2024-10-07</date>
         </span>
 
       </p>
