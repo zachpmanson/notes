@@ -1,7 +1,7 @@
 ---
 subtitle: The Rise of "Worse is Better"
 ---
-The following was [written by Richard Gabriel](https://dreamsongs.com/RiseOfWorseIsBetter.html) and presented at Europal in March 1990, later published by AI Expert as part of a larger essay in June 1991.
+The following was [written by Richard Gabriel](https://dreamsongs.com/RiseOfWorseIsBetter.html) and presented at Europal in March 1990, later published by AI Expert as part of a larger essay in June 1991. The full paper can be viewed [here](http://web.archive.org/web/19990210084721/http://www.ai.mit.edu/docs/articles/good-news/good-news.html).
 
 ---
 

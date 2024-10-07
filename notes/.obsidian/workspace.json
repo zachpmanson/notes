@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "990ef47b1f1e1b45",
+            "id": "736712987226a561",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Mathematics/Computer Science/Complexity Theory/Complexity Classes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e2486cb7973e7090",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Mathematics/Computer Science/Monads.md",
+                "file": "Archive/Folklore/Worse is Better.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Mathematics/Computer Science/Complexity Theory/Complexity Classes.md",
+                "file": "Archive/Folklore/Worse is Better.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Mathematics/Computer Science/Complexity Theory/Complexity Classes.md",
+                "file": "Archive/Folklore/Worse is Better.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Mathematics/Computer Science/Complexity Theory/Complexity Classes.md"
+                "file": "Archive/Folklore/Worse is Better.md"
               }
             }
           }
@@ -161,11 +149,11 @@
   },
   "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Mathematics/Computer Science/Monads.md",
+    "Notes/Mathematics/Computer Science/Complexity Theory/Complexity Classes.md",
     "Notes/Mathematics/Computer Science/Complexity Theory/Complexity Theory.md",
     "Notes/Mathematics/Computer Science/Complexity Theory/Decision Problems.md",
-    "Notes/Mathematics/Computer Science/Monads.md",
     "Notes/Mathematics/Computer Science/Functors.md",
-    "Notes/Mathematics/Computer Science/Complexity Theory/Complexity Classes.md",
     "Notes/Mathematics/Computer Science/Continuation-Passing Style.md",
     "Notes/Mathematics/Computer Science/Computer Science.md",
     "Notes/Software/Unix/Unix.md",
