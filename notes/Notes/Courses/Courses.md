@@ -14,3 +14,4 @@ subtitle: Notes on courses I have taken or textbooks I have read.
 - [CITS3005 Knowledge Graphs](https://teaching.csse.uwa.edu.au/units/CITS3005/) ([[UWA Computer Science]])
 - [Stanford Hackers and Heroes](https://web.stanford.edu/class/cs81n/), more of a literary class on seminal hacker texts
 - [Skill Trees](https://github.com/sjpiper145/MakerSkillTree)
+- [NandToTetris](https://www.nand2tetris.org/course)

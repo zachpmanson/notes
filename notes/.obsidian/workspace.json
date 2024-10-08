@@ -33,7 +33,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Exploits/Exploits.md",
+                "file": "Notes/Courses/Courses.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Exploits/Exploits.md",
+                "file": "Notes/Courses/Courses.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Exploits/Exploits.md",
+                "file": "Notes/Courses/Courses.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Exploits/Exploits.md"
+                "file": "Notes/Courses/Courses.md"
               }
             }
           }
@@ -168,8 +168,10 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "a792a55a6f435393",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Exploits/XZ/XZ.md",
+    "Notes/Software/Exploits/Exploits.md",
     "Notes/Software/Databases/Databases.md",
     "Notes/Language/Etymology.md",
     "Notes/Language/Words/Idempotent.md",
@@ -194,8 +196,6 @@
     "Projects/Minecraftle/Minecraftle.md",
     "Projects/Alculator.md",
     "Archive/Folklore/Cool URIs Don't Change.md",
-    "Archive/Folklore/Dear Google Cloud.md",
-    "Archive/Problems/Deploying Elk on Vercel.md",
     "Notes/Software/Databases",
     "www.mirrorsoferis.com/forum",
     "www.mirrorsoferis.com",
