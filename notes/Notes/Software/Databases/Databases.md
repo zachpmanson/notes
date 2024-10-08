@@ -23,6 +23,7 @@ Since databases usually only speak [[SQL]], a [[language]] that is not very nice
 	- Because it limits the scope of what it attempts to do, it avoids the pitfalls of most ORMs
 	- Doesn't do anything for data migrations, other than give you an SQL file to fill out yourself. I kind of... respect this more? Other data migration tools end up becoming this just nested within other languages constructs (looking at you Alembic)
 		- procedural SQL is awful but also kind of the only thing you can trust
+	- makes transactions very straightforward
 - SQLAlchemy
 	- uhhhh
 	- Very big, tries to do a lot of different things.

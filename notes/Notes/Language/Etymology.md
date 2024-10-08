@@ -6,6 +6,7 @@ subtitle: Some words with interesting origins.
 - [[Dude]]
 - [[Figment]]
 - [[Gruntle]]
+- [[Idempotent]]
 - [[Inspire, Expire, and Conspire]]
 - [[Lukewarm]]
 - [[Pejorative]]
