@@ -96,3 +96,8 @@ A helpful resources outside of man pages:
 - `head` and `tail`
 	- display n lines from top or bottom of
 	- `-n <number|-number>`  show `n` lines, if negative show all but final `n` lines
+
+## Interesting Links
+
+- [Unix Program Design](https://harmful.cat-v.org/cat-v/unix_prog_design.pdf)
+	- Rob Pike and Brian W. Kernighan on the `cat` program and how it is a good example of Unix program philosphy.
