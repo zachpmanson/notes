@@ -154,6 +154,82 @@
 <li>Half of your program has a limited set of system resources that are shared between all users, performance of the server can impact all users simultaneously</li>
 </ol>
 <p>None of this has even gotten to <a href="/javascript">JavaScript</a> and <a href="/css">CSS</a>, each of which are their own rabbit-holes.</p>
+<p>Problems that arise from this:</p>
+<ul>
+<li>You have a machine in your house you want to serve <a href="/html">HTML</a> files to people on the internet (Apache, Nginx)<ul>
+<li>They don't look pretty (CSS)<ul>
+<li>Your CSS looks bad on small screens! (responsive design, flexbox)</li>
+</ul>
+</li>
+<li>There's no way to make them change without manually changing the HTML (server rendering, initially with Perl, PHP)<ul>
+<li>You want your users to be able to send information to you (HTML Forms and later APIs)<ul>
+<li>You want certain users to see different things (<a href="/authentication">Authentication</a> and <a href="/authorization">Authorization</a>)</li>
+</ul>
+</li>
+<li>You want to store data used to render your site, and store data about your users (<a href="/databases">databases</a>, MySQL, <a href="/postgres">Postgres</a>)<ul>
+<li>You need to ensure that your users can't sneak database queries into their data (<a href="/sql">SQL</a> santisation)</li>
+<li>Your programming language of choice doesn't match the model that <a href="/sql">SQL</a> databases use (ORMs)</li>
+<li>Your database is too slow! Your schema wasn't designed for efficient queries with so many users. You need to redesign the database and migrate the data to the new schema (database schema migrations and revision management)</li>
+<li>Still too many people are trying to read and write to your database at once (Redis, write-through caching)</li>
+<li>Your database is getting too slow! You need to start scaling (Vertical scaling, data migration)</li>
+<li>Even on the biggest server you can afford you database is still too slow! (sharding, horizontal scaling)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>There's no way to make that page move (<a href="/javascript">JavaScript</a>)<ul>
+<li>The page is programmable but there's no way to make that page request more data (XMLHttpRequest)<ul>
+<li>Sending XML kinda sucks (JSON)</li>
+<li>Now that you can send between your site and your server using APIs! But you need to ensure that the requests and responses actually contain the data you expect them to (Request and Response validation, JSON de/serialisation)</li>
+<li>You only want your own website to be able to send your server requests (CORS)<ul>
+<li>You want other websites to send your server requests (CORS)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>JavaScript is really annoying and varies between browsers (JQuery)</li>
+<li>Even with JQuery, complex applications become pretty hard to manage (JavaScript libraries for complex web applications, AngularJS, <a href="/react">React</a>, many many more)<ul>
+<li>These libraries are so nice we want to use them for everything instead of gross HTML (JS managed routing, React Router, single page applications)</li>
+<li>Interface design with CSS kinda sucks for specially for complex applications (SASS, Tailwind, prebuilt UI component libraries, Styled Components)</li>
+<li>Complex applications need complex application state models (Redux, Zustand, NGXS)</li>
+<li>Complex applications need sane data fetching patterns and caching (React Query, SWR, RTK Query)<ul>
+<li>It's annoying to have to build bespoke APIs for every different combination of data that your frontend wants, wouldn't it be nice if the frontend could just tell us what it wanted and the backend figured it out (GraphQL)</li>
+</ul>
+</li>
+<li>Even with caching and internal state and JS routing, single applications are pretty slow to actually show useful information since they take multiple requests roundtrips to build the UI and then load the data<ul>
+<li>Server rendered frontend frameworks, where the frontend code for a page is run on the server before sending it to the client so that the initial data is already present on first load, then normal SPA behaviour can take over after that (made possible because of Node.js, <a href="/next.js">Next.js</a>, Remix)<ul>
+<li>Your server now needs to run JavaScript, which is probably only possible using Node.js</li>
+<li>This is great for basic applications but starts to get awkward when you have complex data structures and component structures as you need to know all data requirements at a route level rather than a component level<ul>
+<li>Server components allow server side rendering on a component level, by running some of the rendering code on the backend, populating it with data, and slotting that wholesale into a SPA (React Server Components)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Your marketing team wants a website they can control without writing code (CMS, Wordpress, many more)<ul>
+<li>They want it on the same domain name (server routing configuration, e.g. Nginx conf)</li>
+</ul>
+</li>
+<li>Your backend server machine's operating system needs to be configured for security (Linux system administration)<ul>
+<li>Uh oh! CVE in one of the libraries your server uses! You need a way to update your dependencies (package managers)</li>
+<li>Your server state is getting a bit complicated, you aren't sure if you could recreate it now if you wanted to. You also have trouble matching it on your development device.  (Docker)</li>
+<li>Your backend server is being crushed by your immense popularity, (bigger server, vertical scaling)</li>
+<li>You bought the biggest server you can afford and its still too much traffic! (horizontal scaling)<ul>
+<li>How do you distribute load across your multiple servers (load balancing)</li>
+<li>Sometimes your load is so high that you need to add more servers to your fleet of servers, but its annoying to do it manually (Kubernetes)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Managing your own servers is getting time consuming, </li>
+</ul>
+</li>
+</ul>
 <h2 id="links">Links</h2>
 <ul>
 <li><a href="https://frantic.im/javascript-gom-jabbar/">JavaScript Gom Jabbar</a></li>
@@ -163,7 +239,6 @@
 </ul>
 </li>
 <li><a href="https://www.kryogenix.org/code/browser/everyonehasjs.html">Everyone Has JavaScript, Right?</a></li>
-<li><a href="https://eev.ee/blog/2020/02/01/old-css-new-css/">Old CSS, new CSS</a></li>
 <li><a href="https://frankchimero.com/blog/2015/the-webs-grain/">The Web's Grain</a></li>
 <li><a href="https://bower.sh/my-love-letter-to-front-end-web-development">My love letter to front-end web development</a></li>
 </ul></article>
@@ -177,7 +252,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/tmux" class="not-extra-small">random</a>
+          <a href="/lemniscate" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Web Development/Web Development.md" class="desktop">edit</a>
@@ -188,7 +263,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/tmux">random</a>
+          <a href="/lemniscate">random</a>
         </div>
       </div>
 
@@ -201,6 +276,8 @@
         <a href="/imposter-syndrome-day-632">Imposter Syndrome Day 632</a>
         
         <a href="/minecraftle-v1.1">Minecraftle v1.1</a>
+        
+        <a href="/recent-changes">Recent Changes</a>
         
         <a href="/slug">Slug</a>
         
@@ -220,7 +297,7 @@
           <strong>
             Updated:
           </strong>
-          <date>2024-08-19</date>
+          <date>2024-10-15</date>
         </span>
 
       </p>
