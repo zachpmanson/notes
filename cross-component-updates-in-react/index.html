@@ -12,7 +12,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: windows 11 without a microsoft account</title>
+  <title>notes: cross component updates in react</title>
 </head>
 
 <body>
@@ -65,7 +65,7 @@
         
 
         <div class="flex flex-col text-left nav-links">
-          <a href="/windows-11-without-a-microsoft-account" class="activated-link">Windows 11 Without a Microsoft Account</a>
+          <a href="/cross-component-updates-in-react" class="activated-link">Cross Component Updates in React</a>
           
           
           <a href="/alembic-revision-collision">Alembic Revision Collision</a>
@@ -100,7 +100,6 @@
           
           
           
-          <a href="/cross-component-updates-in-react">Cross Component Updates in React</a>
           
           
           
@@ -312,6 +311,7 @@
           
           
           
+          <a href="/windows-11-without-a-microsoft-account">Windows 11 Without a Microsoft Account</a>
           
           
           
@@ -344,11 +344,66 @@
 
   <main>
     <header>
-      <h1>Windows 11 Without a Microsoft Account</h1>
+      <h1>Cross Component Updates in React</h1>
     </header>
 
-    <article><p>To set up Windows 11 without a Microsoft account you need to attempt to log in several times to non-existent accounts.  It will then let you continue with a local-only account.</p>
-<p>Taken from <a href="https://cathode.church/@Gaelan/110862411002519450">Gaelen Steele's toot</a>.</p></article>
+    <article><p>React doesn't like it when you do updates to other component's state in a <code>useMemo</code>.</p>
+<h2 id="bad">Bad</h2>
+<div class="highlight"><pre><span></span><code>function A() {
+  const rows = useMemo(() =&gt; {
+    ...
+    if (!appliances) return [];
+    const newRows = appliances.map&lt;MonitorTableRow&gt;((a) =&gt; ({
+      id: a.site_appliance.id,
+      appliance_id: a.appliance.id,
+      sa: a,
+      name: a.appliance.title,
+      model_num: a.appliance.model_num ?? &quot;&quot;,
+      max_load: getApplianceLoad(a.appliance, a.appliance.max_load),
+    }));
+    dispatch(setAppliancesTable(rows));
+    return newRows;
+  }, [appliances, usageSources, costPerUnit, monitorAppliances, applianceIdToMonitor]);
+  ...
+  return &lt;&gt;&lt;/&gt;;
+}
+
+function B() {
+  const { appliancesTable } = useSelector(state =&gt; state.appliances)
+  ...
+  return &lt;&gt;&lt;/&gt;
+}
+</code></pre></div>
+<h2 id="good">Good</h2>
+<div class="highlight"><pre><span></span><code>function A() {
+  const rows = useMemo(() =&gt; {
+    ...
+    if (!appliances) return [];
+    const newRows = appliances.map&lt;MonitorTableRow&gt;((a) =&gt; ({
+      id: a.site_appliance.id,
+      appliance_id: a.appliance.id,
+      sa: a,
+      name: a.appliance.title,
+      model_num: a.appliance.model_num ?? &quot;&quot;,
+      max_load: getApplianceLoad(a.appliance, a.appliance.max_load),
+    }));
+
+    return newRows;
+  }, [appliances, usageSources, costPerUnit, monitorAppliances, applianceIdToMonitor]);
+
+  useEffect(() =&gt; {
+    dispatch(setAppliancesTable(rows));
+  }, [rows]);
+  ...
+  return &lt;&gt;&lt;/&gt;;
+}
+
+function B() {
+  const { appliancesTable } = useSelector(state =&gt; state.appliances)
+  ...
+  return &lt;&gt;&lt;/&gt;
+}
+</code></pre></div></article>
   </main>
 
   <footer>
@@ -359,21 +414,29 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/indigos-eternal-cafe" class="not-extra-small">random</a>
+          <a href="/w07l02---regular-expressions" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
-          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Windows 11 Without a Microsoft Account.md" class="desktop">edit</a>
-          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Problems/Windows 11 Without a Microsoft Account.md" class="mobile">edit</a>
-          <a href="mailto:zachpmanson@gmail.com?subject=On 'Windows 11 Without a Microsoft Account'">reply</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Cross Component Updates in React.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Problems/Cross Component Updates in React.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'Cross Component Updates in React'">reply</a>
         </div>
       </summary>
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/indigos-eternal-cafe">random</a>
+          <a href="/w07l02---regular-expressions">random</a>
         </div>
       </div>
 
+      
+
+      <p class="backlinks"><strong>Incoming:</strong>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
       
 
       
@@ -384,7 +447,7 @@
           <strong>
             Updated:
           </strong>
-          <date>2023-08-12</date>
+          <date>2024-10-16</date>
         </span>
 
       </p>
