@@ -5,7 +5,7 @@ tags:
   - venting
   - dirty-hacks
 ---
-RTK Query with [[React]] is pretty great! The primary pattern you find yourself using with it is: 
+RTK Query with [[Notes/Software/Development/Web Development/React]] is pretty great! The primary pattern you find yourself using with it is: 
 
 1. writing a small API definition that provides 
 	1.  the endpoint url 

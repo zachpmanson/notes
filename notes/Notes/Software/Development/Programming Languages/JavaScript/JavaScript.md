@@ -9,7 +9,7 @@ subtitle: The language that somehow powers the world.
 - [[RTK Query Sending Form Data]]
 - [[RTK Query vs. Infinite Scrolling]]
 - [[React useState Not Mutating Object]]
-- [[React]]
+- [[Notes/Software/Development/Web Development/React]]
 - [[Prisma Schema Changes and Vercel]]
 - [[Next.js with tRPC and Layouts]]
 - [[Next.js API Validation Template]]
