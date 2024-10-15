@@ -11,3 +11,4 @@
 ## Related
 
 - [A Taxonomy of Tech Debt](https://technology.riotgames.com/news/taxonomy-tech-debt)
+- [Gettiers](https://jsomers.net/blog/gettiers)

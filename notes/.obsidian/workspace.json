@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Web Development/Web Development.md",
+                "file": "Notes/Software/Development/Kinds of Problems.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Web Development/Web Development.md",
+                "file": "Notes/Software/Development/Kinds of Problems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Web Development/Web Development.md",
+                "file": "Notes/Software/Development/Kinds of Problems.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Web Development/Web Development.md"
+                "file": "Notes/Software/Development/Kinds of Problems.md"
               }
             }
           }
@@ -162,8 +162,8 @@
   },
   "active": "b0d2a7677ba8aba1",
   "lastOpenFiles": [
-    "Notes/Software/Development/Non-Programming Languages/CSS/CSS.md",
     "Notes/Software/Development/Web Development/Web Development.md",
+    "Notes/Software/Development/Non-Programming Languages/CSS/CSS.md",
     "Notes/Software/Development/Programming Languages/JavaScript/Next.js.md",
     "Notes/Software/Unix/Unix Programs.md",
     "Notes/Networks/Internet/Internet Standards/OAuth/OAuth.md",
