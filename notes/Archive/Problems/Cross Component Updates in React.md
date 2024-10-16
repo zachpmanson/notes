@@ -1,4 +1,4 @@
-React doesn't like it when you do updates to other component's state in a `useMemo`.
+React doesn't like it when you do updates to other component's state in a `useMemo`. [This is the error that will log in console](https://github.com/facebook/react/issues/18178), this was what fixed it for me.
 
 ## Bad
 
