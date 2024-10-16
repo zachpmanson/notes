@@ -347,7 +347,7 @@
       <h1>Cross Component Updates in React</h1>
     </header>
 
-    <article><p>React doesn't like it when you do updates to other component's state in a <code>useMemo</code>.</p>
+    <article><p>React doesn't like it when you do updates to other component's state in a <code>useMemo</code>. <a href="https://github.com/facebook/react/issues/18178">This is the error that will log in console</a>, this was what fixed it for me.</p>
 <h2 id="bad">Bad</h2>
 <div class="highlight"><pre><span></span><code>function A() {
   const rows = useMemo(() =&gt; {
@@ -414,7 +414,7 @@ function B() {
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/w07l02---regular-expressions" class="not-extra-small">random</a>
+          <a href="/llama-family-tree" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Cross Component Updates in React.md" class="desktop">edit</a>
@@ -425,7 +425,7 @@ function B() {
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/w07l02---regular-expressions">random</a>
+          <a href="/llama-family-tree">random</a>
         </div>
       </div>
 
