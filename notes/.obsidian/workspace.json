@@ -11,12 +11,8 @@
             "id": "b0d2a7677ba8aba1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Archive/Problems/Cross Component Updates in React.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           },
           {
@@ -30,8 +26,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5c64356fcd7ab15c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Software/Development/Programming Languages/Python.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -81,7 +90,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.50247192382812
+    "width": 253.50247192382812,
+    "collapsed": true
   },
   "right": {
     "id": "b30ab2faf3f39acc",
@@ -97,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Problems/Cross Component Updates in React.md",
+                "file": "Notes/Software/Development/Programming Languages/Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Problems/Cross Component Updates in React.md",
+                "file": "Notes/Software/Development/Programming Languages/Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Problems/Cross Component Updates in React.md"
+                "file": "Notes/Software/Development/Programming Languages/Python.md"
               }
             }
           }
@@ -159,10 +169,10 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "b0d2a7677ba8aba1",
+  "active": "5c64356fcd7ab15c",
   "lastOpenFiles": [
-    "Notes/Software/Development/Web Development/React.md",
     "Archive/Problems/Cross Component Updates in React.md",
+    "Notes/Software/Development/Web Development/React.md",
     "Notes/Software/Development/Kinds of Problems.md",
     "Notes/Software/Development/Web Development/Web Development.md",
     "Notes/Software/Development/Non-Programming Languages/CSS/CSS.md",

@@ -12,3 +12,7 @@
 - [[Jinja Components]]
 - [[ironprof]]
 - [[COVID-19 Tracker]]
+
+## Interesting Links
+
+- [Adding Syntax to CPython](https://leontrolski.github.io/grammar.html)
