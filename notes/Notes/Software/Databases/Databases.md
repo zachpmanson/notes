@@ -4,6 +4,7 @@ subtitle: The real heroes.
 Databases are pure joy when they are well-structured, and nightmares when they aren't.  All databases structure decays as a function of continued development over time.
 
 Databases are their own little world, speaking their own [[SQL|little language]], following different rules to the rest of the [[software]] world. They are hard to version control, hard to scale, and hard to live without.
+
 ## Databases Management Systems
 
 Someone else (someone smarter) did the hard work for us!
@@ -24,16 +25,17 @@ Since databases usually only speak [[SQL]], a [[language]] that is not very nice
 	- Doesn't do anything for data migrations, other than give you an SQL file to fill out yourself. I kind of... respect this more? Other data migration tools end up becoming this just nested within other languages constructs (looking at you Alembic)
 		- procedural SQL is awful but also kind of the only thing you can trust
 	- makes transactions very straightforward
-- SQLAlchemy
+- [[SQLAlchemy]]
 	- uhhhh
 	- Very big, tries to do a lot of different things.
 	- Does an admirable job.
 	- Suffers standard ORM problems, annoying to have to manually match Python objects to Database objects
-	- Doesn't do shit for type definitions that I didn't write myself.
+	- Doesn't do shit for type definitions that I didn't write myself. (update SQLAlchemy v2 is much better for this, v1 is poor)
 	- Custom query syntax allows you to do complex things, but requires a lot of relearning how to do things that would be very straightforward in SQL.
 	- It gives you plenty of deep tools that let you shoot yourself in the foot.
 	- this + Alembic for revisions is.... okay
 		- it bothers me that it doesn't use timestamps in the filename of each revision
+		- but it works
 - TypeORM
 	- similar to SQLAlchemy
 	- really I just never want to have to use anything that requires manual model creation anymore
