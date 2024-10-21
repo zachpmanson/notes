@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Cursed TypeScript Projects.md",
+                "file": "Archive/Bookmarks/Manifestos.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Cursed TypeScript Projects.md",
+                "file": "Archive/Bookmarks/Manifestos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Cursed TypeScript Projects.md",
+                "file": "Archive/Bookmarks/Manifestos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Cursed TypeScript Projects.md"
+                "file": "Archive/Bookmarks/Manifestos.md"
               }
             }
           }
@@ -155,13 +155,17 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "43042a341688ab8e",
   "lastOpenFiles": [
+    "Archive/Bookmarks/Lists.md",
+    "Archive/Bookmarks/Manifestos.md",
+    "Archive/Folklore/The CMD-Click Manifesto.md",
+    "Archive/Folklore/Guerilla Open Access Manifesto.md",
+    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Cursed TypeScript Projects.md",
     "Notes/Software/Development/Non-Programming Languages/HTML/HTML.md",
     "Archive/Folklore/Regular Expressions and HTML.md",
     "Notes/Software/Development/Non-Programming Languages/HTML/HTML Self-Closing Tags.md",
     "Archive/Bookmarks/Digital Gardens.md",
-    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Cursed TypeScript Projects.md",
     "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
     "Archive/Bookmarks/Blogs.md",
     "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
@@ -179,10 +183,6 @@
     "Notes/Software/Programs/Postgres.md",
     "Notes/Software/Databases/Databases.md",
     "Notes/Courses/Courses.md",
-    "Notes/Software/Exploits/XZ/XZ.md",
-    "Notes/Software/Exploits/Exploits.md",
-    "Notes/Language/Etymology.md",
-    "Notes/Language/Words/Idempotent.md",
     "Notes/Software/Databases",
     "www.mirrorsoferis.com/forum",
     "www.mirrorsoferis.com",
