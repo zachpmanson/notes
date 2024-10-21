@@ -33,14 +33,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/Python.md",
+                "file": "Archive/Bookmarks/Digital Gardens.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b6fbcfa7911bb4ca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Cursed TypeScript Projects.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -90,8 +102,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.50247192382812,
-    "collapsed": true
+    "width": 253.50247192382812
   },
   "right": {
     "id": "b30ab2faf3f39acc",
@@ -107,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/Python.md",
+                "file": "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Cursed TypeScript Projects.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/Python.md",
+                "file": "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Cursed TypeScript Projects.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/Python.md"
+                "file": "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Cursed TypeScript Projects.md"
               }
             }
           }
@@ -169,8 +180,14 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "5c64356fcd7ab15c",
+  "active": "b6fbcfa7911bb4ca",
   "lastOpenFiles": [
+    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
+    "Archive/Bookmarks/Digital Gardens.md",
+    "Archive/Bookmarks/Blogs.md",
+    "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
+    "Notes/Software/Development/Programming Languages/JavaScript/Anything-to-Number Conversion Table.md",
+    "Notes/Software/Development/Programming Languages/Python.md",
     "Archive/Problems/Cross Component Updates in React.md",
     "Notes/Software/Development/Web Development/React.md",
     "Notes/Software/Development/Kinds of Problems.md",
@@ -191,12 +208,6 @@
     "Notes/Mathematics/Idempotency.md",
     "Notes/Mathematics/Mathematics.md",
     "Notes/Software/Development/Programming Languages/JavaScript/Prisma.md",
-    "Notes/Mathematics/Computer Science/Monads.md",
-    "Notes/Mathematics/Computer Science/Complexity Theory/Complexity Classes.md",
-    "Notes/Mathematics/Computer Science/Complexity Theory/Complexity Theory.md",
-    "Notes/Mathematics/Computer Science/Complexity Theory/Decision Problems.md",
-    "Notes/Mathematics/Computer Science/Functors.md",
-    "Notes/Mathematics/Computer Science/Continuation-Passing Style.md",
     "Notes/Software/Databases",
     "www.mirrorsoferis.com/forum",
     "www.mirrorsoferis.com",

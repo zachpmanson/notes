@@ -19,3 +19,7 @@ subtitle: The language that somehow powers the world.
 - [[JavaScript Pretty Printing]]
 - [[JavaScript Math Not Defined]]
 - [[Anything-to-Number Conversion Table]]
+
+## Interesting Links
+
+- [What if we'd had better `html`-in-`js` syntax all along?](https://leontrolski.github.io/dom-syntax.html)
