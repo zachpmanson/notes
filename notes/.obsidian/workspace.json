@@ -16,31 +16,7 @@
             }
           },
           {
-            "id": "3d821e3ce72dee97",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Software/Development/Non-Programming Languages/CSS/CSS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5c64356fcd7ab15c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Archive/Bookmarks/Digital Gardens.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b6fbcfa7911bb4ca",
+            "id": "43042a341688ab8e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -52,7 +28,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -166,8 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,10 +155,14 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "b6fbcfa7911bb4ca",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
+    "Notes/Software/Development/Non-Programming Languages/HTML/HTML.md",
+    "Archive/Folklore/Regular Expressions and HTML.md",
+    "Notes/Software/Development/Non-Programming Languages/HTML/HTML Self-Closing Tags.md",
     "Archive/Bookmarks/Digital Gardens.md",
+    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Cursed TypeScript Projects.md",
+    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
     "Archive/Bookmarks/Blogs.md",
     "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
     "Notes/Software/Development/Programming Languages/JavaScript/Anything-to-Number Conversion Table.md",
@@ -204,10 +183,6 @@
     "Notes/Software/Exploits/Exploits.md",
     "Notes/Language/Etymology.md",
     "Notes/Language/Words/Idempotent.md",
-    "Archive/Folklore/Worse is Better.md",
-    "Notes/Mathematics/Idempotency.md",
-    "Notes/Mathematics/Mathematics.md",
-    "Notes/Software/Development/Programming Languages/JavaScript/Prisma.md",
     "Notes/Software/Databases",
     "www.mirrorsoferis.com/forum",
     "www.mirrorsoferis.com",

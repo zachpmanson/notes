@@ -1,4 +1,4 @@
-The seminal analysis of using regex to parse HTML by bobince, posted to [Stack Overflow on 2009-11-03](https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags) by bobince.
+The seminal analysis of using regex to parse [[HTML]] by bobince, posted to [Stack Overflow on 2009-11-03](https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags) by bobince.
 
 ---
 
