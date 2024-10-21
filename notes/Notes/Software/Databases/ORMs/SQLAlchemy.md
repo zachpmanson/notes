@@ -1,7 +1,7 @@
 ---
 subtitle: The Python ORM for things that aren't Django.
 ---
-## Links
+## Related
 
 - [[Python Freezegun vs SQLAlchemy]]
 

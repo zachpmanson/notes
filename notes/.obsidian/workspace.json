@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Databases/ORMs/ORMs.md",
+                "file": "Archive/Bookmarks/Blogs.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Databases/ORMs/ORMs.md",
+                "file": "Archive/Bookmarks/Blogs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Databases/ORMs/ORMs.md",
+                "file": "Archive/Bookmarks/Blogs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Databases/ORMs/ORMs.md"
+                "file": "Archive/Bookmarks/Blogs.md"
               }
             }
           }
@@ -162,7 +162,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -177,10 +178,11 @@
   },
   "active": "43042a341688ab8e",
   "lastOpenFiles": [
-    "Notes/Software/Databases/Databases.md",
+    "Archive/Bookmarks/Websites.md",
+    "Notes/Software/Databases/ORMs/SQLAlchemy.md",
     "Notes/Software/Databases/ORMs/ORMs.md",
     "Notes/Software/Databases/ORMs/Prisma.md",
-    "Notes/Software/Databases/ORMs/SQLAlchemy.md",
+    "Notes/Software/Databases/Databases.md",
     "Notes/Software/Databases/ORMs",
     "Notes/Software/Development/Programming Languages/JavaScript/Next.js.md",
     "Notes/Software/Development/Non-Programming Languages/SQL.md",
@@ -203,7 +205,6 @@
     "Notes/Software/Development/Kinds of Problems.md",
     "Notes/Software/Development/Web Development/Web Development.md",
     "Notes/Software/Development/Non-Programming Languages/CSS/CSS.md",
-    "Notes/Software/Unix/Unix Programs.md",
     "Notes/Software/Databases",
     "www.mirrorsoferis.com/forum",
     "www.mirrorsoferis.com",
