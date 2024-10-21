@@ -21,18 +21,10 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Databases/Databases.md",
+                "file": "Notes/Software/Databases/ORMs/ORMs.md",
                 "mode": "source",
                 "source": false
               }
-            }
-          },
-          {
-            "id": "e16415728bc561e4",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
             }
           },
           {
@@ -114,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Databases/Databases.md",
+                "file": "Notes/Software/Databases/ORMs/ORMs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Software/Databases/Databases.md",
+                "file": "Notes/Software/Databases/ORMs/ORMs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Software/Databases/Databases.md"
+                "file": "Notes/Software/Databases/ORMs/ORMs.md"
               }
             }
           }
@@ -178,12 +170,12 @@
   },
   "active": "43042a341688ab8e",
   "lastOpenFiles": [
+    "Notes/Software/Databases/Databases.md",
+    "Notes/Software/Databases/ORMs/ORMs.md",
     "Archive/Bookmarks/Blogs.md",
     "Archive/Bookmarks/Websites.md",
     "Notes/Software/Databases/ORMs/SQLAlchemy.md",
-    "Notes/Software/Databases/ORMs/ORMs.md",
     "Notes/Software/Databases/ORMs/Prisma.md",
-    "Notes/Software/Databases/Databases.md",
     "Notes/Software/Databases/ORMs",
     "Notes/Software/Development/Programming Languages/JavaScript/Next.js.md",
     "Notes/Software/Development/Non-Programming Languages/SQL.md",
