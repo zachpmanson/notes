@@ -1,5 +1,8 @@
 ---
 subtitle: The real heroes.
+date: 2024-10-21
+tags:
+  - posts
 ---
 Databases are pure joy when they are well-structured, and nightmares when they aren't.  All databases structure decays as a function of continued development over time.
 

@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/Blogs.md",
+                "file": "Notes/Software/Databases/Databases.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/Blogs.md",
+                "file": "Notes/Software/Databases/Databases.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/Blogs.md",
+                "file": "Notes/Software/Databases/Databases.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Archive/Bookmarks/Blogs.md"
+                "file": "Notes/Software/Databases/Databases.md"
               }
             }
           }
@@ -178,6 +178,7 @@
   },
   "active": "43042a341688ab8e",
   "lastOpenFiles": [
+    "Archive/Bookmarks/Blogs.md",
     "Archive/Bookmarks/Websites.md",
     "Notes/Software/Databases/ORMs/SQLAlchemy.md",
     "Notes/Software/Databases/ORMs/ORMs.md",
@@ -196,7 +197,6 @@
     "Notes/Software/Development/Non-Programming Languages/HTML/HTML Self-Closing Tags.md",
     "Archive/Bookmarks/Digital Gardens.md",
     "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
-    "Archive/Bookmarks/Blogs.md",
     "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
     "Notes/Software/Development/Programming Languages/JavaScript/Anything-to-Number Conversion Table.md",
     "Notes/Software/Development/Programming Languages/Python.md",
