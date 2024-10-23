@@ -40,3 +40,4 @@ Web archives:
 - [You Can't Stop Pirate Libraries](https://reason.com/2022/07/24/you-cant-stop-pirate-libraries/)
 - [The Pirate Library Controversy](https://publiclibrariesonline.org/2016/06/the-pirate-library-controversy/)
 - [Lost Media Wiki](https://lostmediawiki.com/Home)
+- [Torching the Modern-Day Library of Alexandria](https://www.theatlantic.com/technology/archive/2017/04/the-tragedy-of-google-books/523320/) ([archive.is](https://archive.is/rQ7Zb))
