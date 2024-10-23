@@ -33,7 +33,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Networks/Internet/Pirate Libraries/Pirate Libraries.md",
+                "file": "Notes/Mathematics/Sheffer Stroke.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Networks/Internet/Pirate Libraries/Pirate Libraries.md",
+                "file": "Notes/Mathematics/Sheffer Stroke.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Networks/Internet/Pirate Libraries/Pirate Libraries.md",
+                "file": "Notes/Mathematics/Sheffer Stroke.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Networks/Internet/Pirate Libraries/Pirate Libraries.md"
+                "file": "Notes/Mathematics/Sheffer Stroke.md"
               }
             }
           }
@@ -168,9 +168,11 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "a4510c42e1b320e7",
   "lastOpenFiles": [
     "Posts/Imposter Syndrome Day 632.md",
+    "Notes/Mathematics/Sheffer Stroke.md",
+    "Notes/Networks/Internet/Pirate Libraries/Pirate Libraries.md",
     "Notes/Software/Databases/ORMs/ORMs.md",
     "Notes/Software/Databases/Databases.md",
     "Archive/Bookmarks/Blogs.md",
@@ -195,8 +197,6 @@
     "Notes/Software/Development/Programming Languages/Python.md",
     "Archive/Problems/Cross Component Updates in React.md",
     "Notes/Software/Development/Web Development/React.md",
-    "Notes/Software/Development/Kinds of Problems.md",
-    "Notes/Software/Development/Web Development/Web Development.md",
     "Notes/Software/Databases",
     "www.mirrorsoferis.com/forum",
     "www.mirrorsoferis.com",
