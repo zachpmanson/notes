@@ -33,7 +33,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Mathematics/Sheffer Stroke.md",
+                "file": "Archive/Bookmarks/Archives.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Mathematics/Sheffer Stroke.md",
+                "file": "Archive/Bookmarks/Archives.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Notes/Mathematics/Sheffer Stroke.md",
+                "file": "Archive/Bookmarks/Archives.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Mathematics/Sheffer Stroke.md"
+                "file": "Archive/Bookmarks/Archives.md"
               }
             }
           }
@@ -170,8 +170,17 @@
   },
   "active": "a4510c42e1b320e7",
   "lastOpenFiles": [
-    "Posts/Imposter Syndrome Day 632.md",
+    "Archive/Archive.md",
     "Notes/Mathematics/Sheffer Stroke.md",
+    "Notes/Mathematics/Set Theory/Power Set.md",
+    "Notes/Mathematics/Mathematics.md",
+    "Notes/Mathematics/Set Theory/Infinity.md",
+    "Notes/Mathematics/Idempotency.md",
+    "Notes/Mathematics/Friendship Paradox.md",
+    "Notes/Mathematics/Arity.md",
+    "Notes/Mathematics/Set Theory",
+    "Notes/Mathematics/Rank.md",
+    "Posts/Imposter Syndrome Day 632.md",
     "Notes/Networks/Internet/Pirate Libraries/Pirate Libraries.md",
     "Notes/Software/Databases/ORMs/ORMs.md",
     "Notes/Software/Databases/Databases.md",
@@ -189,14 +198,6 @@
     "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Cursed TypeScript Projects.md",
     "Notes/Software/Development/Non-Programming Languages/HTML/HTML.md",
     "Archive/Folklore/Regular Expressions and HTML.md",
-    "Notes/Software/Development/Non-Programming Languages/HTML/HTML Self-Closing Tags.md",
-    "Archive/Bookmarks/Digital Gardens.md",
-    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
-    "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
-    "Notes/Software/Development/Programming Languages/JavaScript/Anything-to-Number Conversion Table.md",
-    "Notes/Software/Development/Programming Languages/Python.md",
-    "Archive/Problems/Cross Component Updates in React.md",
-    "Notes/Software/Development/Web Development/React.md",
     "Notes/Software/Databases",
     "www.mirrorsoferis.com/forum",
     "www.mirrorsoferis.com",
@@ -205,7 +206,6 @@
     "Notes/Language/Words",
     "Notes/Software/Terminals",
     "Notes/Software/Development/Non-Programming Languages/HTML",
-    "Notes/Software/Development/Non-Programming Languages/CSS",
     "Media/trpc-typeerror.png",
     "Media/kinde-3.png",
     "Media/kinde-2.png",

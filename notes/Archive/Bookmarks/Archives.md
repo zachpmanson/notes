@@ -6,6 +6,7 @@ subtitle: Various archival websites.
 - [List of Web archiving initiatives](https://en.wikipedia.org/wiki/List_of_Web_archiving_initiatives)
 - [Archive of Djikstra's writings](https://www.cs.utexas.edu/users/EWD/welcome.html)
 - [Public Works](https://public.work)
+- [HathiTrust Digital Library](https://www.hathitrust.org/the-collection/), based on Google Books
 
 General Internet Archives:
 

@@ -8,7 +8,7 @@ The sizes of infinite sets are measured using cardinal numbers, using generalise
 
 Through this, infinite sets can have different cardinalities.  The classic example is that the cardinality of the set of real numbers (ℝ) is greater than the cardinality of the set of natural numbers (ℕ), as there is no possible bijective function that can map the set of natural numbers to the set of  real numbers.
 
-Cardinalities of infinite sets are represented using aleph numbers, written as ℵ with a subscript denoting the relative size. The cardinality of ℕ that is the smallest infinity cardinality, which is represented by ℵ₀ (aleph-null). The cardinality of ℝ is called the "cardinality of the continuum" and is represented by 2^ℵ₀.  ℝ has the same cardinality as the the [[power set]] of ℕ.
+Cardinalities of infinite sets are represented using aleph numbers, written as ℵ with a subscript denoting the relative size. The cardinality of ℕ that is the smallest infinity cardinality, which is represented by ℵ₀ (aleph-null). The cardinality of ℝ is called the "cardinality of the continuum" and is represented by 2^ℵ₀.  ℝ has the same cardinality as the the [[Power Set]] of ℕ.
 
 The set of all functions from ℝ to ℝ has an even greater cardinality than that of ℝ,  (2^ℵ₀)^(2^ℵ₀).
 
