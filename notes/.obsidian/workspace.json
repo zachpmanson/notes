@@ -12,31 +12,37 @@
             "type": "leaf",
             "state": {
               "type": "graph",
-              "state": {}
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           },
           {
-            "id": "4c5d46540fa5eb98",
+            "id": "efd476c6384307a4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Posts/Imposter Syndrome Day 632.md",
+                "file": "Archive/Folklore/The Case of the 500-Mile Email.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "The Case of the 500-Mile Email"
             }
           },
           {
-            "id": "a4510c42e1b320e7",
+            "id": "5e88ae7a01a9a12c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/Archives.md",
+                "file": "Archive/Lines.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Lines"
             }
           }
         ],
@@ -60,7 +66,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -69,13 +77,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Idempotency",
-                "matchingCase": false,
+                "query": "HTML",
+                "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabeticalReverse"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -83,7 +93,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -106,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Archive/Bookmarks/Archives.md",
+                "file": "Archive/Lines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +126,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Lines"
             }
           },
           {
@@ -123,10 +137,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archive/Bookmarks/Archives.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
             }
           },
           {
@@ -137,7 +152,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -145,9 +162,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Archive/Bookmarks/Archives.md"
-              }
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Outline"
             }
           }
         ]
@@ -168,36 +185,36 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "a4510c42e1b320e7",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
-    "Archive/Archive.md",
-    "Notes/Mathematics/Sheffer Stroke.md",
-    "Notes/Mathematics/Set Theory/Power Set.md",
-    "Notes/Mathematics/Mathematics.md",
-    "Notes/Mathematics/Set Theory/Infinity.md",
-    "Notes/Mathematics/Idempotency.md",
-    "Notes/Mathematics/Friendship Paradox.md",
-    "Notes/Mathematics/Arity.md",
-    "Notes/Mathematics/Set Theory",
-    "Notes/Mathematics/Rank.md",
-    "Posts/Imposter Syndrome Day 632.md",
-    "Notes/Networks/Internet/Pirate Libraries/Pirate Libraries.md",
-    "Notes/Software/Databases/ORMs/ORMs.md",
-    "Notes/Software/Databases/Databases.md",
-    "Archive/Bookmarks/Blogs.md",
-    "Archive/Bookmarks/Websites.md",
-    "Notes/Software/Databases/ORMs/SQLAlchemy.md",
-    "Notes/Software/Databases/ORMs/Prisma.md",
-    "Notes/Software/Databases/ORMs",
-    "Notes/Software/Development/Programming Languages/JavaScript/Next.js.md",
-    "Notes/Software/Development/Non-Programming Languages/SQL.md",
-    "Archive/Bookmarks/Manifestos.md",
-    "Archive/Bookmarks/Lists.md",
-    "Archive/Folklore/The CMD-Click Manifesto.md",
-    "Archive/Folklore/Guerilla Open Access Manifesto.md",
-    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Cursed TypeScript Projects.md",
-    "Notes/Software/Development/Non-Programming Languages/HTML/HTML.md",
+    "Archive/Folklore/A Conspiracy To Kill IE6.md",
+    "Archive/Folklore/The Case of the 500-Mile Email.md",
+    "Archive/Folklore/Amazon's First Job Posting.md",
+    "Archive/Problems/Automatic Dark Mode.md",
+    "Archive/Folklore/Cool URIs Don't Change.md",
+    "Archive/Problems/Freeze Page without Mouse.md",
+    "Posts/GitHub Pages Redirection.md",
+    "Notes/Software/Development/Web Development/HTML First Development.md",
+    "Notes/Software/Development/Non-Programming Languages/HTML/HTML Self-Closing Tags.md",
+    "Archive/Folklore/In the Beginning was the Command Line.md",
+    "Archive/Folklore/Incomplete List of Mistakes in the Design of CSS.md",
+    "Projects/ironprof.md",
+    "Archive/Problems/Jinja Components.md",
+    "Notes/Software/Unix/macOS/macOS CLI Tools.md",
+    "Notes/Software/Development/Non-Programming Languages/Markdown.md",
+    "Meta/Meta.md",
+    "Notes/Courses/UWA Computer Science/CITS2003/Michael Wise Quotes.md",
+    "Projects/Ochrs/Ochrs.md",
+    "Projects/Ochrs/Ochrs Syntax.md",
+    "Notes/Software/Development/Programming Languages/Python.md",
+    "Archive/Problems/React and blur().md",
     "Archive/Folklore/Regular Expressions and HTML.md",
+    "Archive/Templates/Reset CSS Rules.md",
+    "Archive/Folklore/Svelte parses HTML all wrong.md",
+    "Posts/The H Chord.md",
+    "Posts/The Poor Man's Static Site Generator.md",
+    "Notes/Mathematics/Set Theory",
+    "Notes/Software/Databases/ORMs",
     "Notes/Software/Databases",
     "www.mirrorsoferis.com/forum",
     "www.mirrorsoferis.com",

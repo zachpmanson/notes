@@ -2,7 +2,7 @@
 subtitle: Building resuable components in plain HTML using Jinja
 date: 2022-11-17
 ---
-Building sites with vanilla HTML can be a pain in the ass if you want to redesign an element that appears in every page, like a navigation bar or footer. Static site generators solve this problem with components, but I like reinventing the wheel. Jinja templating can be used to ape components since it is capable of passing arbitrary functions into its DOM templates.
+Building sites with vanilla [[HTML]] can be a pain in the ass if you want to redesign an element that appears in every page, like a navigation bar or footer. Static site generators solve this problem with components, but I like reinventing the wheel. Jinja templating can be used to ape components since it is capable of passing arbitrary functions into its DOM templates.
 
 ```python
 # ssg.py

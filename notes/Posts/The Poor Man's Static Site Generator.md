@@ -44,7 +44,7 @@ if x == 5:
 ```
 ````
 
-Pandoc will turn this Markdown into the following HTML:
+Pandoc will turn this Markdown into the following [[HTML]]:
 
 ```HTML
 <h1 id="title">Title</h1>

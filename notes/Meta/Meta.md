@@ -15,7 +15,7 @@ There is:
 	- e.g.  [[Projects]]>[[Ochrs]]>[[Ochrs Syntax]]
 	- each page can only belong to 1 directory
 	- in the [[Obsidian]] vault this site is written in, this is the directory structure of the [[Markdown]] files
-	- in the HTML version of this site, this is the navigation that can be done using the links in the header
+	- in the [[HTML]] version of this site, this is the navigation that can be done using the links in the header
 - Backlinks
 	- these are arbitrary bidirectional links that form a network of pages within the wiki
 	- work the same in Obsidian and HTML

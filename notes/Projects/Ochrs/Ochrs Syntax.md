@@ -8,7 +8,7 @@ Most of these are officially supported, some are from [pymdownx](https://faceles
 
 ## Footnotes
 
-The footnotes extension allows plain HTML style footnotes to be automatically generated, and hopefully parsed by [[RSS]] readers.  The syntax is:
+The footnotes extension allows plain [[HTML]] style footnotes to be automatically generated, and hopefully parsed by [[RSS]] readers.  The syntax is:
 
 ```
 Some text with a footnote[^1] and a footnote with a label [^label]

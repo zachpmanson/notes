@@ -1,4 +1,4 @@
-CSS has an automatic dark mode, which works well if you use mostly unstyled HTML.
+CSS has an automatic dark mode, which works well if you use mostly unstyled [[HTML]].
 
 ```css
 :root {

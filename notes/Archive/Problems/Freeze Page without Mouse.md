@@ -1,4 +1,4 @@
-For selected finnicky elements in a HTML page.
+For selected finnicky elements in a [[HTML]] page.
 
 Put this in the console:
 

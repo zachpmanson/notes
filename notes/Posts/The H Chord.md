@@ -21,7 +21,7 @@ Huh?
 
 <details markdown="1">
 <summary>An aside on Ultimate Guitar HTML</summary>
-The way Ultimate Guitar handles data is bizarre. It passes a static dehydrated HTML page to the client.  The data payload is in the HTML as well, but instead of being contained in a `script` tag it's a giant JSON payload in an escaped string within an attribute of a random `div`
+The way Ultimate Guitar handles data is bizarre. It passes a static dehydrated [[HTML]] page to the client.  The data payload is in the HTML as well, but instead of being contained in a `script` tag it's a giant JSON payload in an escaped string within an attribute of a random `div`
 </details>
 
 ## One Google Search Later
