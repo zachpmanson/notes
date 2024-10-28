@@ -116,6 +116,8 @@ nav {
 
     transition: max-height 0.15s ease-out;
 
+    scrollbar-gutter: stable;
+
     a {
       width: fit-content;
     }
