@@ -1,3 +1,7 @@
+---
+subtitle: There is no magic.
+---
+
 ## Useful Links
 
 - [Beej's Guides](https://beej.us/guide/)

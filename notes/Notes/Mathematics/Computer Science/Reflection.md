@@ -1,0 +1,1 @@
+Reflection is the ability for a program to inspect its own internals, potentially modifying its own behaviour.  An example of reflection is the Python `getattr()` function, where a program will inspect the attributes of its own objects.

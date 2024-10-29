@@ -3,6 +3,15 @@ subtitle: Some lines worth noting, but not worth their own page.
 ---
 This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://drwho.virtadpt.net/drwho.plan.txt). See also [Gwern's page on epigrams](https://gwern.net/epigram).
 
+---
+
+> If I can’t rely on the data on the screen being accurate, it might as well not be there. So now we begin the most beautiful process in software - starting from scratch.
+
+-- [Lily Mara](https://lilymara.xyz/posts/2024/01/transit-kindle/)
+
+---
+
+
 > You can tell quite a lot about a person by looking at what they choose to write in close proximity to the word "experience".
 
 -- [Mike Playle](https://mastodon.social/@FenTiger/113364157137390517)
