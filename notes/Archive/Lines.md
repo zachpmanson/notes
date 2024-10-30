@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> A billionaire may never be held accountable. Therefore, a billionaire must never make a management decision.
+
+-- [John S Russel](https://social.jsr.com/@jsr/112398571801354404)
+
+---
+
 > If I can’t rely on the data on the screen being accurate, it might as well not be there. So now we begin the most beautiful process in software - starting from scratch.
 
 -- [Lily Mara](https://lilymara.xyz/posts/2024/01/transit-kindle/)

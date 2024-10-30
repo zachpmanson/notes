@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Development.md",
+                "file": "Notes/Design/Web Design/Web Design.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Development"
+              "title": "Web Design"
             }
           }
         ],
@@ -215,8 +215,10 @@
   },
   "active": "5a637670363995d1",
   "lastOpenFiles": [
-    "Notes/Software/Software.md",
+    "Notes/Design/Design.md",
     "Archive/Lines.md",
+    "Notes/Software/Development/Development.md",
+    "Notes/Software/Software.md",
     "Notes/Networks/Internet/Internet Standards/RSS.md",
     "Notes/Software/Programs/Nextcloud.md",
     "Notes/Mathematics/Computer Science/Reflection.md",
@@ -239,8 +241,6 @@
     "Notes/Software/Development/Non-Programming Languages/Markdown.md",
     "Meta/Meta.md",
     "Notes/Courses/UWA Computer Science/CITS2003/Michael Wise Quotes.md",
-    "Projects/Ochrs/Ochrs.md",
-    "Projects/Ochrs/Ochrs Syntax.md",
     "Notes/Mathematics/Set Theory",
     "Notes/Software/Databases/ORMs",
     "Notes/Software/Databases",
