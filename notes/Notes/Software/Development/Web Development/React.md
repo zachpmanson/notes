@@ -6,6 +6,7 @@ It's a whole thing.
 ## Interesting Links
 
 - [A Historical Reference of React Criticism](https://www.zachleat.com/web/react-criticism/)
+- [33 line React](https://leontrolski.github.io/33-line-react.html)
 
 ## Interesting Library
 
