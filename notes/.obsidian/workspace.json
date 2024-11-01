@@ -65,12 +65,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Design/Typography.md",
+                "file": "Notes/Design/Spotify Design Decisions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Typography"
+              "title": "Spotify Design Decisions"
             }
           }
         ],
@@ -213,8 +213,11 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "5a637670363995d1",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Media/spotify-music-video.png",
+    "Notes/Design/Spotify Design Decisions.md",
+    "Notes/Design/Typography.md",
     "Notes/Software/Development/Web Development/React.md",
     "Notes/Design/Web Design/Web Design.md",
     "Notes/Design/Design.md",
@@ -238,9 +241,6 @@
     "Archive/Folklore/In the Beginning was the Command Line.md",
     "Archive/Folklore/Incomplete List of Mistakes in the Design of CSS.md",
     "Projects/ironprof.md",
-    "Archive/Problems/Jinja Components.md",
-    "Notes/Software/Unix/macOS/macOS CLI Tools.md",
-    "Notes/Software/Development/Non-Programming Languages/Markdown.md",
     "Notes/Mathematics/Set Theory",
     "Notes/Software/Databases/ORMs",
     "Notes/Software/Databases",
@@ -260,7 +260,6 @@
     "Media/chris-vs-cits.png",
     "Media/dialup-handshake-audio.png",
     "Media/spotify-top-bar.png",
-    "Media/mctl-routes.png",
     "Untitled.canvas"
   ]
 }

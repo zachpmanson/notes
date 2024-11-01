@@ -95,6 +95,13 @@ Similar to the previous issue, if you searched for a song using the search tab, 
 
 As of 2024 it appears this behaviour has been removed.
 
+## Useless Music Video Indicator
+
+They have added a subtitle and icon for songs with music videos, which looks like it is clickable or has some feature attached to it. But it just... doesn't?
+
+![[spotify-music-video.png]]
+
+
 ## Upcoming Complaints
 
 - Rapidly toggling through Shuffle button states can cause the cycle to desync in strange ways
