@@ -3,6 +3,7 @@ subtitle: How German monks broke my website
 date: 2023-05-08
 tags:
   - posts
+  - venting
 ---
 
 I received a [strange bug report](https://github.com/pavo-etc/penultimate-guitar/issues/41) on [[Penultimate Guitar]] where the Next.js rendering would fail completely on certain songs.
