@@ -48,11 +48,11 @@ In the rest of the world, this "H" note didn't catch on.
 
 In time, notation for sharp and flat notes other than B flat was needed. This use of square and round "b" to denote B and B flat eventually evolved into our modern notation for indicating natural and non-natural, *accidentals*. ♭ comes from the round "b", while ♯ and ♮ come from the square "b".
 
-Somehow, Germany still hasn't fully corrected this mistake, continuing to use "H" to represent B natural and many places. Including Ultimate Guitar. Ugh.
+Somehow, Germany still hasn't fully corrected this mistake, continuing to use "H" to represent B natural in many places. Including Ultimate Guitar. Ugh.
 
 ## Resolution
 
-I don't love dealing with problems caused by the whims of millenia dead monks, but this was an interesting rabbit hole to fall into. The issue has since been patched, and I look forward to my mistakes ruining someone's day in 3023.
+I don't love dealing with problems caused by the whims of millennia dead monks, but this was an interesting rabbit hole to fall into. The issue has since been patched, and I look forward to my mistakes ruining someone's day in 3023.
 
 ![[gods-mistakes.png]]
 
