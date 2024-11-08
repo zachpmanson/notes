@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> The only thing required to be a grifter, inadvertently or not, is to have your presentation skills outstrip your technical skill
+
+-- [Nikhil Suresh](https://ludic.mataroa.blog/blog/fury-driven-development/)
+
+---
+
 > A billionaire may never be held accountable. Therefore, a billionaire must never make a management decision.
 
 -- [John S Russel](https://social.jsr.com/@jsr/112398571801354404)
