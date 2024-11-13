@@ -9,7 +9,7 @@ Databases are their own little world, speaking their own [[SQL|little language]]
 
 Someone else (someone smarter) did the hard work for us!
 
-- [[Postgres]]
+- [[Notes/Software/Programs/Postgres]]
 - [[SQLite]]
 
 

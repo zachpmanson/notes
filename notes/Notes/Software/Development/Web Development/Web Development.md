@@ -19,7 +19,7 @@ Problems that arise from this:
 	- There's no way to make them change without manually changing the HTML (server rendering, initially with Perl, PHP)
 		- You want your users to be able to send information to you (HTML Forms and later APIs)
 			- You want certain users to see different things ([[Authentication]] and [[Authorization]])
-		- You want to store data used to render your site, and store data about your users ([[databases]], MySQL, [[Postgres]])
+		- You want to store data used to render your site, and store data about your users ([[databases]], MySQL, [[Notes/Software/Programs/Postgres]])
 			- You need to ensure that your users can't sneak database queries into their data ([[SQL]] santisation)
 			- Your programming language of choice doesn't match the model that [[SQL]] databases use (ORMs)
 			- Your database is too slow! Your schema wasn't designed for efficient queries with so many users. You need to redesign the database and migrate the data to the new schema (database schema migrations and revision management)
