@@ -1,3 +1,10 @@
+---
+tags:
+  - posts
+date: 2024-11-13
+---
+
+
 Grep can be used as a timer, and can be blocking.
 
 This will block until the logs print accept connections twice, or 500 seconds elapses, with an return code to match. Good for blocking a CD pipeline until a certain log has been output.
