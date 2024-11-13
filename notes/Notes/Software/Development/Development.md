@@ -18,4 +18,3 @@ subtitle: There is no magic.
 - [Software disenchantment](https://tonsky.me/blog/disenchantment/)
 - [An app can be a home-cooked meal](https://www.robinsloan.com/notes/home-cooked-app/)
 - [How is computer programming different today than 20 years ago?](https://ssg.dev/how-is-computer-programming-different-today-than-20-years-ago-9d0154d1b6ce)
-

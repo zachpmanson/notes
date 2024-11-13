@@ -27,7 +27,7 @@ The way Ultimate Guitar handles data is bizarre. It passes a static dehydrated [
 
 ## One Google Search Later
 
-Germany and the Netherlands ha(d/ve) their own musical key notation that include(d/s) a H chord. [This site](https://www.guitarsite.com/newsletters/010122/12.shtml) claims it ended in "1994/1995", though I've seen [other](https://github.com/pavo-etc/penultimate-guitar/issues/41#issuecomment-1538452351) [sources](https://www.reddit.com/r/musictheory/comments/8rn0ve) claim its still taught this way. This comes as an artifact of the bizarre history Western music notation, which is a problem I seem to keep running into recently in my attempts to learn more about music theory.
+Germany and the Netherlands ha(d/ve) their own musical key notation that include(d/s) a H chord. [This site](https://www.guitarsite.com/newsletters/010122/12.shtml) claims it ended in "1994/1995", though I've seen [other](https://github.com/pavo-etc/penultimate-guitar/issues/41#issuecomment-1538452351) [sources](https://www.reddit.com/r/musictheory/comments/8rn0ve) claim its still taught this way. This comes as an artefact of the bizarre history Western music notation, which is a problem I seem to keep running into recently in my attempts to learn more about music theory.
 
 > I learned in music school that the chord is called "B" (like in the rest of the world), but the note is called "H" (eg. the C Major scale would be C, D, E, F, G, A, H, C).
 
