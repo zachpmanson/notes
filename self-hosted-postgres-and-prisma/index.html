@@ -164,6 +164,10 @@
           
           
           
+          <a href="/grep-timer">Grep Timer</a>
+          
+          
+          
           <a href="/hacking-sagemcom-router-admin-account">Hacking Sagemcom Router Admin Account</a>
           
           
@@ -233,6 +237,10 @@
           
           
           <a href="/poetry-showing-dependencies-it-refuses-to-install">Poetry Showing Dependencies it Refuses to Install</a>
+          
+          
+          
+          <a href="/postgres-in-docker-startup">Postgres in Docker Startup</a>
           
           
           
@@ -349,7 +357,7 @@
 
     <article><p>Learnings from setting up Postgres on a DigitalOcean droplet for <a href="/penultimate-guitar">Penultimate Guitar</a>.  This was done on trackstar-22, so should presumably work on any Ubuntu 22.04 instance.</p>
 <ol>
-<li>Install <a href="/postgres">postgres</a>. This will add a <code>postgres</code> user account to the system. I set up another user account to interact with the <a href="/databases">database</a>, in this case called <code>pg-user</code>.</li>
+<li>Install <a href="/postgres">Postgres</a>. This will add a <code>postgres</code> user account to the system. I set up another user account to interact with the <a href="/databases">database</a>, in this case called <code>pg-user</code>.</li>
 <li>Using <code>psql</code>, create a database that will be used for your application.</li>
 <li>Whiler running <code>pg-user</code>, in <code>psql</code>, run <code>\password</code> and set a password for this account to interact with Postgres.  This password should not use an <code>@</code>, as it will conflict with the connection string later. </li>
 <li>
@@ -392,7 +400,7 @@ listen_addresses = &#39;*&#39;
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/on-writing" class="not-extra-small">random</a>
+          <a href="/worse-is-better" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Self-Hosted Postgres and Prisma.md" class="desktop">edit</a>
@@ -403,7 +411,7 @@ listen_addresses = &#39;*&#39;
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/on-writing">random</a>
+          <a href="/worse-is-better">random</a>
         </div>
       </div>
 
@@ -416,6 +424,8 @@ listen_addresses = &#39;*&#39;
         <a href="/postgres">Postgres</a>
         
         <a href="/prisma">Prisma</a>
+        
+        <a href="/recent-changes">Recent Changes</a>
         
         <a href="/self-hosting">Self-Hosting</a>
         
@@ -431,7 +441,7 @@ listen_addresses = &#39;*&#39;
           <strong>
             Updated:
           </strong>
-          <date>2024-10-07</date>
+          <date>2024-11-13</date>
         </span>
 
       </p>
