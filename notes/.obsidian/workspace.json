@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Development.md",
+                "file": "Notes/Software/Programs/Postgres.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Development"
+              "title": "Postgres"
             }
           }
         ],
@@ -132,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Development.md",
+                "file": "Notes/Software/Programs/Postgres.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Development"
+              "title": "Backlinks for Postgres"
             }
           },
           {
@@ -200,6 +200,8 @@
   },
   "active": "78f1ec64271ac6a5",
   "lastOpenFiles": [
+    "Posts/Posts.md",
+    "Notes/Software/Development/Development.md",
     "Notes/Software/Software.md",
     "Archive/Problems/Postgres in Docker Startup.md",
     "Notes/Software/Programs/Postgres.md",
@@ -208,7 +210,6 @@
     "Archive/Problems/Problems.md",
     "Archive/Lines.md",
     "Notes/Software/Reverse Engineering/Reverse Engineering.md",
-    "Notes/Software/Development/Development.md",
     "Notes/Software/Reverse Engineering",
     "Posts/The H Chord.md",
     "Notes/Software/Exploits/Exploits.md",
@@ -227,7 +228,6 @@
     "Notes/Software/Programs/Nextcloud.md",
     "Notes/Mathematics/Computer Science/Reflection.md",
     "Notes/Mathematics/Computer Science/Computer Science.md",
-    "Notes/Mathematics/Computer Science/Complexity Theory/Complexity Theory.md",
     "Notes/Mathematics/Set Theory",
     "Notes/Software/Databases/ORMs",
     "Notes/Software/Databases",
