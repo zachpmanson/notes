@@ -357,7 +357,8 @@
 
     <article><p><a href="/postgres">Postgres</a> in <a href="/docker">Docker</a> is great. If you mount a folder to <code>/docker-entrypoint-initdb.d/</code> within the container, all <code>.sh</code> and <code>.sql</code> files will be <a href="https://github.com/docker-library/postgres/blob/master/docker-entrypoint.sh#L332">executed</a>. This is great! And it will only run if there is no existing database data volume, so its perfect for seeding databases.</p>
 <p>A problem I ran into is that Postgres runs this during startup, which by default can't be detected by a CD pipeline, and the database cannot be connected until these scripts have completed. <a href="https://github.com/docker-library/postgres/issues/146#issuecomment-341211148">Lots of people have had trouble with this.</a></p>
-<p>I used a <a href="/grep-timer">Grep Timer</a> to watch the logs for the 2 success messages and block the pipeline.</p></article>
+<p>I used a <a href="/grep-timer">Grep Timer</a> to watch the logs for the 2 success messages and block the pipeline.</p>
+<p><a href="https://docs.docker.com/guides/pre-seeding/#pre-seed-the-postgres-database-using-a-sql-script">Docker docs on this</a></p></article>
   </main>
 
   <footer>
@@ -368,7 +369,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/non-programming-languages" class="not-extra-small">random</a>
+          <a href="/wikipedia-articles" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Postgres in Docker Startup.md" class="desktop">edit</a>
@@ -379,7 +380,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/non-programming-languages">random</a>
+          <a href="/wikipedia-articles">random</a>
         </div>
       </div>
 
@@ -401,7 +402,7 @@
           <strong>
             Updated:
           </strong>
-          <date>2024-11-13</date>
+          <date>2024-11-14</date>
         </span>
 
       </p>
