@@ -17,3 +17,7 @@ the squiggle links on this site
 the comic strip design of [anhvn.com](https://anhvn.com/)
 
 ![[ahnvn.jpg]]
+
+everything on [maxbo.me](https://maxbo.me/)
+
+![[maxbo.jpeg]]

@@ -1,4 +1,4 @@
-An interesting thread by [Patrick McKenzie](https://twitter.com/patio11/status/936615043126370306).
+ÇÇÇAn interesting thread by [Patrick McKenzie](https://twitter.com/patio11/status/936615043126370306).
 
 ---
 
