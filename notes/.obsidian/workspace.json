@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Exploits/XZ/XZ.md",
+                "file": "Notes/Networks/Internet/Pirate Libraries/Pirate Libraries.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "XZ"
+              "title": "Pirate Libraries"
             }
           }
         ],
@@ -91,7 +91,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "libgen",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -112,11 +112,13 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 253.50247192382812
+    "width": 253.50247192382812,
+    "collapsed": true
   },
   "right": {
     "id": "b30ab2faf3f39acc",
@@ -132,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Exploits/XZ/XZ.md",
+                "file": "Notes/Networks/Internet/Pirate Libraries/Pirate Libraries.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +144,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for XZ"
+              "title": "Backlinks for Pirate Libraries"
             }
           },
           {
@@ -185,7 +187,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -198,8 +201,12 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "78f1ec64271ac6a5",
   "lastOpenFiles": [
+    "Archive/Bookmarks/Archives.md",
+    "Archive/Archive.md",
+    "Notes/Networks/Internet/Pirate Libraries/Pirate Libraries.md",
+    "Notes/Software/Exploits/XZ/XZ.md",
     "Notes/Software/Programs/Postgres.md",
     "Posts/Posts.md",
     "Notes/Software/Development/Development.md",
@@ -224,10 +231,6 @@
     "Notes/Design/Typography.md",
     "Notes/Software/Development/Web Development/React.md",
     "Notes/Design/Web Design/Web Design.md",
-    "Notes/Design/Design.md",
-    "Notes/Software/Programs/Nextcloud.md",
-    "Notes/Mathematics/Computer Science/Reflection.md",
-    "Notes/Mathematics/Computer Science/Computer Science.md",
     "Notes/Mathematics/Set Theory",
     "Notes/Software/Databases/ORMs",
     "Notes/Software/Databases",

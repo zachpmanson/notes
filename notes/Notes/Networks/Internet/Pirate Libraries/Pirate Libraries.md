@@ -7,7 +7,7 @@ Also known as shadow libraries, are potentially the best thing humans have ever 
 
 They have no regard for copyright law, generally viewing them as part of a broken system or distractions to (what the pirate librarians might call) their noble goals.
 
-Library Genesis (libgen) and Sci-Hub (a superset of libgen) focus primarily on academic materials, textbooks and journal publications.  The projects are borne from the goal of allowing access to documents that would normally only be accessible through expensive journals.
+Library Genesis (libgen), Sci-Hub (a superset of libgen) and annas-archive focus primarily on academic materials, textbooks and journal publications.  The projects are borne from the goal of allowing access to documents that would normally only be accessible through expensive journals.
 
 Books3 is another pirate library, containing ≈196000 books sourced from Bibliotik.  It is named in the spirit of OpenAI's dubiously sourced collections of books, Books1 and Books2.  Books3 has become well known for its use in training [[large language models]] like [[LLaMA]].
 
@@ -41,3 +41,4 @@ Web archives:
 - [The Pirate Library Controversy](https://publiclibrariesonline.org/2016/06/the-pirate-library-controversy/)
 - [Lost Media Wiki](https://lostmediawiki.com/Home)
 - [Torching the Modern-Day Library of Alexandria](https://www.theatlantic.com/technology/archive/2017/04/the-tragedy-of-google-books/523320/) ([archive.is](https://archive.is/rQ7Zb))
+- 
