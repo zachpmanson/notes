@@ -1,6 +1,13 @@
 :root {
   color-scheme: light dark;
   --primary: light-dark(black, white);
+  --sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
+  --serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman,
+    Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol;
+  --mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 }
 
 * {
@@ -9,7 +16,7 @@
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: var(--sans);
   text-align: center;
   line-height: 1.4;
 }
@@ -136,10 +143,12 @@ nav:hover .nav-links {
 h1 {
   font-size: 1.5rem;
   margin-top: 2rem;
+  font-family: var(--serif);
 }
 
 h2 {
   font-size: 1.25rem;
+  margin-bottom: 0.2rem;
 }
 
 h3 {
@@ -199,7 +208,7 @@ hr {
 }
 
 date {
-  font-family: monospace;
+  font-family: var(--mono);
 }
 
 footer {
