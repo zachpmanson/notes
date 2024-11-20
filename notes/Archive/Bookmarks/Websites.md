@@ -29,6 +29,7 @@ Intentionally miscellaneous.
 - [WTF Happened In 1971?](https://wtfhappenedin1971.com/)
 - [girl.surgery](https://girl.surgery/)
 - [They Rule](https://theyrule.net/), visualising the connections between executives at the biggest companies
+- [Walky Space](https://walky.space/), open shared canvases
 
 ## Artists
 

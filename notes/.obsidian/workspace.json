@@ -37,12 +37,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Development Methodologies/Spite Driven Development.md",
+                "file": "Archive/Bookmarks/Websites.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Spite Driven Development"
+              "title": "Websites"
             }
           }
         ],
@@ -98,8 +98,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -186,8 +185,9 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "5e88ae7a01a9a12c",
+  "active": "92d501343c1157e0",
   "lastOpenFiles": [
+    "Notes/Software/Development/Development Methodologies/Spite Driven Development.md",
     "Notes/Design/Typography.md",
     "Notes/Design/Fun Design.md",
     "Media/maxbo.jpeg",
@@ -215,7 +215,6 @@
     "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Declarative Merging.md",
     "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
     "Notes/Software/Development/Development Methodologies/Development Methodologies.md",
-    "Index.md",
     "Media/spotify-music-video.png",
     "Notes/Mathematics/Set Theory",
     "Notes/Software/Databases/ORMs",
