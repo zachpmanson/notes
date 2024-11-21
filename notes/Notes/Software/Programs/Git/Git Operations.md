@@ -63,3 +63,11 @@ git checkout develop
 git checkout -
 git checkout -
 ```
+
+## Git Status Exclude Untracked Files
+
+Good home directory bare repos (for config files).
+
+```sh
+git status -uno
+```
