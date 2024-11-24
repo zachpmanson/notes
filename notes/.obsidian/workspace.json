@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Design/Design.md",
+                "file": "Notes/Language/Nomenclature/Microsoft Product Names.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Design"
+              "title": "Microsoft Product Names"
             }
           }
         ],
@@ -177,11 +177,12 @@
   },
   "active": "5ec1bf6503b4614d",
   "lastOpenFiles": [
+    "Notes/Software/Development/Web Development/Web Development.md",
+    "Notes/Design/Design.md",
     "Notes/Design/Fun Design.md",
     "Notes/Design/Web Design/Web Design.md",
     "Notes/Software/Programs/Git/Git Operations.md",
     "Notes/Design/Designs I Want To Steal.md",
-    "Notes/Design/Design.md",
     "Notes/Software/Programs/Git/Git Bare Repositories.md",
     "Notes/Software/Programs/Git/Git.md",
     "Archive/Folklore/The Nazi Bar Problem.md",
@@ -203,7 +204,6 @@
     "Notes/Networks/Internet/Pirate Libraries/Pirate Libraries.md",
     "Archive/Bookmarks/Archives.md",
     "Archive/Archive.md",
-    "Notes/Software/Exploits/XZ/XZ.md",
     "Notes/Software/Reverse Engineering",
     "Media/spotify-music-video.png",
     "Notes/Mathematics/Set Theory",
