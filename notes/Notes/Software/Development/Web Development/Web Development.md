@@ -21,7 +21,7 @@ Problems that arise from this:
 			- You want certain users to see different things ([[Authentication]] and [[Authorization]])
 		- You want to store data used to render your site, and store data about your users ([[databases]], MySQL, [[Notes/Software/Programs/Postgres]])
 			- You need to ensure that your users can't sneak database queries into their data ([[SQL]] sanitisation)
-			- Your programming language of choice doesn't match the model that [[SQL]] databases use (ORMs)
+			- Your programming [[language]] of choice doesn't match the model that [[SQL]] databases use ([[ORMs]])
 			- Your database is too slow! Your schema wasn't designed for efficient queries with so many users. You need to redesign the database and migrate the data to the new schema (database schema migrations and revision management)
 			- Still too many people are trying to read and write to your database at once (Redis, write-through caching)
 			- Your database is getting too slow! You need to start scaling (Vertical scaling, data migration)
@@ -53,7 +53,8 @@ Problems that arise from this:
 		- You bought the biggest server you can afford and its still too much traffic! (horizontal scaling)
 			- How do you distribute load across your multiple servers (load balancing)
 			- Sometimes your load is so high that you need to add more servers to your fleet of servers, but its annoying to do it manually (Kubernetes)
-	- Managing your own servers is getting time consuming, 
+	- Managing your own servers is getting time consuming, if only there was a way to have code handle the provisioning of servers (Terraform)
+	- This language you've been using JavaScript has constant type errors, if only you could specify types ([[TypeScript]])
 ## Links
 
 - [JavaScript Gom Jabbar](https://frantic.im/javascript-gom-jabbar/)
@@ -63,3 +64,4 @@ Problems that arise from this:
 - [Everyone Has JavaScript, Right?](https://www.kryogenix.org/code/browser/everyonehasjs.html)
 - [The Web's Grain](https://frankchimero.com/blog/2015/the-webs-grain/)
 - [My love letter to front-end web development](https://bower.sh/my-love-letter-to-front-end-web-development)
+- [Handling Cookies is a Minefield](https://grayduck.mn/2024/11/21/handling-cookies-is-a-minefield/)
