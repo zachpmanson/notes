@@ -194,9 +194,9 @@
 <li>JavaScript is really annoying and varies between browsers (JQuery)</li>
 <li>Even with JQuery, complex applications become pretty hard to manage (JavaScript libraries for complex web applications, AngularJS, <a href="/react">React</a>, many many more)<ul>
 <li>These libraries are so nice we want to use them for everything instead of gross HTML (JS managed routing, React Router, single page applications)</li>
-<li>Interface design with CSS kinda sucks for specially for complex applications (SASS, Tailwind, prebuilt UI component libraries, Styled Components)</li>
+<li>Interface design with CSS kinda sucks for especially for complex applications (SASS, Tailwind, prebuilt UI component libraries, Styled Components)</li>
 <li>Complex applications need complex application state models (Redux, Zustand, NGXS)</li>
-<li>Complex applications need sane data fetching patterns and caching (React Query, SWR, RTK Query)<ul>
+<li>Complex applications need sane data fetching patterns and caching (React Query, SWR, <a href="/rtk-query-vs.-infinite-scrolling">RTK Query</a>)<ul>
 <li>It's annoying to have to build bespoke APIs for every different combination of data that your frontend wants, wouldn't it be nice if the frontend could just tell us what it wanted and the backend figured it out (GraphQL)</li>
 </ul>
 </li>
@@ -213,6 +213,8 @@
 </li>
 </ul>
 </li>
+<li>This language you've been using JavaScript has constant type errors, if only you could specify types (<a href="/typescript">TypeScript</a>)</li>
+<li>Both JavaScript and TypeScript are bad at actually representing HTML (JSX)</li>
 </ul>
 </li>
 <li>Your marketing team wants a website they can control without writing code (CMS, Wordpress, many more)<ul>
@@ -221,17 +223,16 @@
 </li>
 <li>Your backend server machine's operating system needs to be configured for security (Linux system administration)<ul>
 <li>Uh oh! CVE in one of the libraries your server uses! You need a way to update your dependencies (package managers)</li>
-<li>Your server state is getting a bit complicated, you aren't sure if you could recreate it now if you wanted to. You also have trouble matching it on your development device.  (Docker)</li>
+<li>Your server state is getting a bit complicated, you aren't sure if you could recreate it now if you wanted to. You also have trouble matching it on your development device.  (<a href="/docker">Docker</a>)</li>
 <li>Your backend server is being crushed by your immense popularity, (bigger server, vertical scaling)</li>
 <li>You bought the biggest server you can afford and its still too much traffic! (horizontal scaling)<ul>
 <li>How do you distribute load across your multiple servers (load balancing)</li>
-<li>Sometimes your load is so high that you need to add more servers to your fleet of servers, but its annoying to do it manually (Kubernetes)</li>
+<li>Sometimes your load is so high that you need to add more servers to your fleet of servers, but it's annoying to do it manually (Kubernetes)</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>Managing your own servers is getting time consuming, if only there was a way to have code handle the provisioning of servers (Terraform)</li>
-<li>This language you've been using JavaScript has constant type errors, if only you could specify types (<a href="/typescript">TypeScript</a>)</li>
 </ul>
 </li>
 </ul>
@@ -247,6 +248,7 @@
 <li><a href="https://frankchimero.com/blog/2015/the-webs-grain/">The Web's Grain</a></li>
 <li><a href="https://bower.sh/my-love-letter-to-front-end-web-development">My love letter to front-end web development</a></li>
 <li><a href="https://grayduck.mn/2024/11/21/handling-cookies-is-a-minefield/">Handling Cookies is a Minefield</a></li>
+<li><a href="https://blog.heroku.com/how-to-make-progressive-web-app">Creating PWAs</a></li>
 </ul></article>
   </main>
 
@@ -258,7 +260,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/jinja-components" class="not-extra-small">random</a>
+          <a href="/fiction" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Web Development/Web Development.md" class="desktop">edit</a>
@@ -269,7 +271,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/jinja-components">random</a>
+          <a href="/fiction">random</a>
         </div>
       </div>
 
@@ -303,7 +305,7 @@
           <strong>
             Updated:
           </strong>
-          <date>2024-11-25</date>
+          <date>2024-12-10</date>
         </span>
 
       </p>
