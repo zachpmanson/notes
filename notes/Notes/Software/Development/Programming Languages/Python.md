@@ -16,3 +16,4 @@
 ## Interesting Links
 
 - [Adding Syntax to CPython](https://leontrolski.github.io/grammar.html)
+- [Why if TYPE_CHECKING?](https://vickiboykis.com/2023/12/11/why-if-type_checking/)

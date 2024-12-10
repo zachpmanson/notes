@@ -1,4 +1,4 @@
-From [this Gist](https://gist.github.com/Jak-Ch-ll/12d3ac96c1562e85c508dd40d309be45#file-usepreservescroll-tsx) and [this writeup](https://jak-ch-ll.medium.com/next-js-preserve-scroll-history-334cf699802a).
+From [this Gist](https://gist.github.com/Jak-Ch-ll/12d3ac96c1562e85c508dd40d309be45#file-usepreservescroll-tsx) and [this writeup](https://jak-ch-ll.medium.com/next-js-preserve-scroll-history-334cf699802a). Put this hook into your [[Next.js]] `_app.tsx` file.
 
 
 ```ts
