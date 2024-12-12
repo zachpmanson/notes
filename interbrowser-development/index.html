@@ -106,7 +106,23 @@
     <article><p>For the most part browsers and their APIs are cross compatible, but there are a few differences that need to be paid attention to.</p>
 <h2 id="clipboard-api">Clipboard API</h2>
 <p><em>As of 2024-09-04</em></p>
-<p>Firefox and Chrome have different permission requirements to access the clipboard. I think Firefox is more standards compliant here?</p></article>
+<p>Firefox and Chrome have different permission requirements to access the clipboard. I think Firefox is more standards compliant here?</p>
+<h2 id="currency-formatting">Currency Formatting</h2>
+<p><em>As of 2024-12-12</em></p>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">formatted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">amount</span><span class="p">.</span><span class="nx">toLocaleString</span><span class="p">(</span><span class="kc">undefined</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">style</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;currency&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">currency</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;AUD&quot;</span><span class="p">,</span>
+<span class="si">}</span><span class="sb">)}`</span><span class="p">;</span>
+<span class="c1">// In Firefox when in Australia: $10.00</span>
+<span class="c1">// In Chrome when in Australia: A$10.00</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">formatted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">amount</span><span class="p">.</span><span class="nx">toLocaleString</span><span class="p">(</span><span class="s2">&quot;en-AU&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">style</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;currency&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">currency</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;AUD&quot;</span><span class="p">,</span>
+<span class="si">}</span><span class="sb">)}`</span><span class="p">;</span>
+<span class="c1">// In Firefox when in Australia: $10.00</span>
+<span class="c1">// In Chrome when in Australia: $10.00</span>
+</code></pre></div></article>
   </main>
 
   <footer>
@@ -117,7 +133,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/w09l02---awk" class="not-extra-small">random</a>
+          <a href="/vi(m)-movement-origins" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Web Development/Interbrowser Development.md" class="desktop">edit</a>
@@ -128,10 +144,18 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/w09l02---awk">random</a>
+          <a href="/vi(m)-movement-origins">random</a>
         </div>
       </div>
 
+      
+
+      <p class="backlinks"><strong>Incoming:</strong>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
       
 
       
@@ -142,7 +166,7 @@
           <strong>
             Updated:
           </strong>
-          <date>2024-09-04</date>
+          <date>2024-12-12</date>
         </span>
 
       </p>
