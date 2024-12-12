@@ -12,3 +12,4 @@ Authentication should be handled by OpenID Connect, which provides an identity l
 
 - [OAuth From First Principles](https://stack-auth.com/blog/oauth-from-first-principles)
 - [A beginner's guide to OAuth 2.0](https://pilcrowonpaper.com/blog/oauth-guide/)
+- [Dear OAuth Providers](https://pilcrowonpaper.com/blog/dear-oauth-providers/)
