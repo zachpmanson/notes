@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Folklore/Dropbox Feedback.md",
+                "file": "Archive/Lines.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Dropbox Feedback"
+              "title": "Lines"
             }
           },
           {
@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -189,9 +189,10 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "54a2699cdec2cd88",
+  "active": "57b4fadd3f40b4b4",
   "lastOpenFiles": [
     "Archive/Folklore/Dropbox Feedback.md",
+    "Notes/Software/Development/Web Development/Interbrowser Development.md",
     "Notes/Networks/Internet/Internet Standards/OAuth/OAuth.md",
     "Notes/Software/Programs/Vi(m)/Vi(m) Movement Origins.md",
     "Notes/Software/Programs/Vi(m)/Vim Plugins/Vim Plugins.md",
@@ -216,7 +217,6 @@
     "Notes/Language/Nomenclature/Microsoft Product Names.md",
     "Notes/Design/Design.md",
     "Notes/Design/Fun Design.md",
-    "Notes/Design/Web Design/Web Design.md",
     "Media/maxbo.jpeg",
     "Notes/Software/Reverse Engineering",
     "Media/spotify-music-video.png",
