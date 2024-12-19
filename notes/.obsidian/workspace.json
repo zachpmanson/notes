@@ -8,31 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f13c8966c26a8aa4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Software/Development/Web Development/Web Development.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Web Development"
-            }
-          },
-          {
             "id": "57b4fadd3f40b4b4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Archive/Lines.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Lines"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           },
           {
@@ -48,9 +30,23 @@
               "icon": "lucide-file",
               "title": "Interbrowser Development"
             }
+          },
+          {
+            "id": "b4ded8d2b41bd804",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Archive/Bookmarks/Websites.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Websites"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -106,7 +102,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.50247192382812
+    "width": 253.50247192382812,
+    "collapsed": true
   },
   "right": {
     "id": "b30ab2faf3f39acc",
@@ -189,8 +186,10 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "57b4fadd3f40b4b4",
+  "active": "b4ded8d2b41bd804",
   "lastOpenFiles": [
+    "Notes/Networks/Internet/Fediverse/Fediverse.md",
+    "Archive/Lines.md",
     "Archive/Folklore/Dropbox Feedback.md",
     "Notes/Software/Development/Web Development/Interbrowser Development.md",
     "Notes/Networks/Internet/Internet Standards/OAuth/OAuth.md",
@@ -215,8 +214,6 @@
     "Notes/Language/Language.md",
     "Archive/Bookmarks/Web Communities.md",
     "Notes/Language/Nomenclature/Microsoft Product Names.md",
-    "Notes/Design/Design.md",
-    "Notes/Design/Fun Design.md",
     "Media/maxbo.jpeg",
     "Notes/Software/Reverse Engineering",
     "Media/spotify-music-video.png",
