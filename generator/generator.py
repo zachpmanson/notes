@@ -217,7 +217,7 @@ def generate_pages():
                         "siblings": (
                             siblings
                             if parent is None or tree[parent].children_visible
-                            else []
+                            else [node]
                         ),
                         "piblings": piblings,
                         "tags": page_tags,
