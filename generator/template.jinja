@@ -32,11 +32,11 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         {% if piblings != None %}
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/{{sanitize_url(parent)|e}}" class="activated-link">{{node["parent"]}}</a>
+        <div class="nav-links piblings">
+          {# <a href="/{{sanitize_url(parent)|e}}" class="activated-link">{{node["parent"]}}</a> #}
           {% for pibling in piblings %}
           {% if pibling == parent %}
+          <a href="/{{sanitize_url(parent)|e}}" class="activated-link">{{node["parent"]}}</a>
           {% else %}
           <a href="/{{sanitize_url(pibling)|e}}">{{pibling}}</a>
           {% endif %}
@@ -45,21 +45,21 @@
         {% endif %}
 
         {% if siblings != None %}
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/{{sanitize_url(title)|e}}" class="activated-link">{{title}}</a>
+        <div class="nav-links siblings">
+          {# <a href="/{{sanitize_url(title)|e}}" class="activated-link">{{title}}</a> #}
           {% for sibling in siblings %}
           {% if sibling == title %}
+          <a href="/{{sanitize_url(title)|e}}" class="activated-link">{{title}}</a>
           {% else %}
           <a href="/{{sanitize_url(sibling)|e}}">{{sibling}}</a>
           {%endif%}
+
           {% endfor %}
         </div>
         {% endif %}
 
         {% if children != None and len(children) > 0 %}
-
-        <div class="flex flex-col text-left nav-links">
+        <div class="nav-links children">
           {% for child in children %}
           <a href="/{{sanitize_url(child)|e}}">{{child}}</a>
           {% endfor %}
@@ -145,6 +145,19 @@
   {% if node["script"] != None %}
   <script>{{ node["script"] }}</script>
   {% endif %}
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>
