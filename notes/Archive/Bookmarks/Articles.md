@@ -25,3 +25,7 @@
 ## Misc
 
 - [Optimal Mario Kart 8 Builds Along the Pareto Frontier](https://www.mayerowitz.io/blog/mario-meets-pareto)
+
+## Places
+
+- [Cities and Ambition](https://paulgraham.com/cities.html)
