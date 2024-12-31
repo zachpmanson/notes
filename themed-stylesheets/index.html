@@ -32,11 +32,11 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
+        <div class="nav-links piblings">
+          
+          
+          
           <a href="/css" class="activated-link">CSS</a>
-          
-          
           
           
           
@@ -55,12 +55,13 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
+        <div class="nav-links siblings">
+          
+          
+          
           <a href="/themed-stylesheets" class="activated-link">Themed Stylesheets</a>
           
-          
-          
+
           
         </div>
         
@@ -92,7 +93,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/cross-component-updates-in-react" class="not-extra-small">random</a>
+          <a href="/lukewarm" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Non-Programming Languages/CSS/Themed Stylesheets.md" class="desktop">edit</a>
@@ -103,7 +104,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/cross-component-updates-in-react">random</a>
+          <a href="/lukewarm">random</a>
         </div>
       </div>
 
@@ -125,6 +126,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

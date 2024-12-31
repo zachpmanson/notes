@@ -32,9 +32,8 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/ochrs" class="activated-link">Ochrs</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/alculator">Alculator</a>
@@ -53,6 +52,7 @@
           
           
           
+          <a href="/ochrs" class="activated-link">Ochrs</a>
           
           
           
@@ -75,24 +75,28 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/ochrs-2.0" class="activated-link">Ochrs 2.0</a>
+        <div class="nav-links siblings">
+          
           
           
           <a href="/ochrs-1.0">Ochrs 1.0</a>
           
+
           
           
+          <a href="/ochrs-2.0" class="activated-link">Ochrs 2.0</a>
           
+
           
           
           <a href="/ochrs-deploy">Ochrs Deploy</a>
           
+
           
           
           <a href="/ochrs-syntax">Ochrs Syntax</a>
           
+
           
         </div>
         
@@ -121,7 +125,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/usenet-post-warning" class="not-extra-small">random</a>
+          <a href="/resume-driven-development" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Projects/Ochrs/Ochrs 2.0.md" class="desktop">edit</a>
@@ -132,7 +136,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/usenet-post-warning">random</a>
+          <a href="/resume-driven-development">random</a>
         </div>
       </div>
 
@@ -164,6 +168,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

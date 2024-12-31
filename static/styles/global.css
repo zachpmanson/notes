@@ -103,31 +103,71 @@ nav {
     flex-wrap: nowrap;
     width: fit-content;
     scroll-snap-align: end;
+
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 0.25rem;
+      gap: 0.5rem;
+
+      text-align: left;
+
+      max-height: 7.5rem;
+      max-width: 35ch;
+      min-width: 10ch;
+      width: max-content;
+
+      padding: 1rem;
+      padding-right: 0;
+
+      overflow-y: auto;
+      overflow-x: hidden;
+
+      transition: max-height 0.15s ease-out;
+
+      scrollbar-gutter: stable;
+
+      /* a {
+        width: fit-content;
+      } */
+    }
+
+    .activated-link {
+      font-weight: bold;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .activated-link:hover {
+      text-decoration: underline;
+      text-decoration-style: wavy;
+    }
+
+    /* a[href^="/"].activated-link:hover::after {
+      content: "";
+    } */
+
+    .nav-links.piblings + .nav-links.siblings {
+      border-left: 1px dotted var(--primary);
+    }
+    .nav-links.siblings + .nav-links.children {
+      border-left: 1px dotted var(--primary);
+    }
   }
 
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 0.25rem;
-    gap: 0.5rem;
+  .piblings a[href^="/"].activated-link::after,
+  .nav-segments:has(.children) .siblings a[href^="/"].activated-link::after {
+    content: "";
+    flex-grow: 1;
+    min-width: 3em;
+    display: inline-block;
+    border-top: 1px dotted var(--primary);
+  }
 
-    max-height: 5.5rem;
-    max-width: 35ch;
-    min-width: 10ch;
-    width: max-content;
-
-    padding: 1rem;
-
-    overflow-y: auto;
-    overflow-x: hidden;
-
-    transition: max-height 0.15s ease-out;
-
-    scrollbar-gutter: stable;
-
-    a {
-      width: fit-content;
-    }
+  .nav-links a[href^="/"]:not(.activated-link) {
+    padding-right: 1rem;
   }
 }
 
@@ -196,20 +236,6 @@ a[href^="/"]:hover,
 a[href^="./"]:hover,
 a[href*="zachmanson.com"]:hover {
   text-decoration-style: wavy;
-}
-
-.activated-link {
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.activated-link:hover {
-  text-decoration: underline;
-  text-decoration-style: wavy;
-}
-
-a[href^="/"].activated-link:hover::after {
-  content: none;
 }
 
 .bold {

@@ -32,9 +32,8 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/templates" class="activated-link">Templates</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/bookmarks">Bookmarks</a>
@@ -57,34 +56,40 @@
           
           
           
+          <a href="/templates" class="activated-link">Templates</a>
           
           
         </div>
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/reset-css-rules" class="activated-link">Reset CSS Rules</a>
+        <div class="nav-links siblings">
+          
           
           
           <a href="/git-activity-in-multiple-folders">Git Activity in Multiple Folders</a>
           
+
           
           
           <a href="/next.js-api-validation-template">Next.js API Validation Template</a>
           
+
           
           
           <a href="/python-getopt()-template">Python getopt() Template</a>
           
+
           
           
+          <a href="/reset-css-rules" class="activated-link">Reset CSS Rules</a>
           
+
           
           
           <a href="/time-ago-function">Time Ago Function</a>
           
+
           
         </div>
         
@@ -160,7 +165,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/things-many-people-find-too-obvious-to-have-told-you-already" class="not-extra-small">random</a>
+          <a href="/characters" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Templates/Reset CSS Rules.md" class="desktop">edit</a>
@@ -171,7 +176,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/things-many-people-find-too-obvious-to-have-told-you-already">random</a>
+          <a href="/characters">random</a>
         </div>
       </div>
 
@@ -193,6 +198,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

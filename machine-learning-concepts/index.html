@@ -32,9 +32,8 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/machine-learning" class="activated-link">Machine Learning</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/databases">Databases</a>
@@ -49,6 +48,7 @@
           
           
           
+          <a href="/machine-learning" class="activated-link">Machine Learning</a>
           
           
           
@@ -83,35 +83,39 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/machine-learning-concepts" class="activated-link">Machine Learning Concepts</a>
+        <div class="nav-links siblings">
+          
           
           
           <a href="/generative-models">Generative Models</a>
           
+
           
           
           <a href="/limitations-of-machine-learning">Limitations of Machine Learning</a>
           
+
           
           
+          <a href="/machine-learning-concepts" class="activated-link">Machine Learning Concepts</a>
           
+
           
           
           <a href="/neural-networks">Neural Networks</a>
           
+
           
           
           <a href="/pytorch">PyTorch</a>
           
+
           
         </div>
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
+        <div class="nav-links children">
           
           <a href="/few-shot-learning">Few-Shot Learning</a>
           
@@ -145,7 +149,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/infinity" class="not-extra-small">random</a>
+          <a href="/the-smallest-quine" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Machine Learning/Machine Learning Concepts.md" class="desktop">edit</a>
@@ -156,7 +160,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/infinity">random</a>
+          <a href="/the-smallest-quine">random</a>
         </div>
       </div>
 
@@ -178,6 +182,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

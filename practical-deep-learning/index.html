@@ -32,15 +32,15 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/courses" class="activated-link">Courses</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/art">Art</a>
           
           
           
+          <a href="/courses" class="activated-link">Courses</a>
           
           
           
@@ -79,20 +79,23 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/practical-deep-learning" class="activated-link">Practical Deep Learning</a>
+        <div class="nav-links siblings">
+          
           
           
           <a href="/artificial-intelligence---a-modern-approach">Artificial Intelligence - A Modern Approach</a>
           
+
           
           
+          <a href="/practical-deep-learning" class="activated-link">Practical Deep Learning</a>
           
+
           
           
           <a href="/uwa-computer-science">UWA Computer Science</a>
           
+
           
         </div>
         
@@ -141,7 +144,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/carproblems.txt" class="not-extra-small">random</a>
+          <a href="/linux" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Courses/Practical Deep Learning/Practical Deep Learning.md" class="desktop">edit</a>
@@ -152,7 +155,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/carproblems.txt">random</a>
+          <a href="/linux">random</a>
         </div>
       </div>
 
@@ -182,6 +185,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

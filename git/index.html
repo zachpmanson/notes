@@ -32,9 +32,8 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/programs" class="activated-link">Programs</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/databases">Databases</a>
@@ -61,6 +60,7 @@
           
           
           
+          <a href="/programs" class="activated-link">Programs</a>
           
           
           
@@ -83,67 +83,79 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/git" class="activated-link">Git</a>
+        <div class="nav-links siblings">
+          
           
           
           <a href="/awk">AWK</a>
           
+
           
           
           <a href="/docker">Docker</a>
           
+
           
           
           <a href="/elk">Elk</a>
           
+
           
           
           <a href="/gnu">GNU</a>
           
+
           
           
+          <a href="/git" class="activated-link">Git</a>
           
+
           
           
           <a href="/make">Make</a>
           
+
           
           
           <a href="/nextcloud">Nextcloud</a>
           
+
           
           
           <a href="/obsidian">Obsidian</a>
           
+
           
           
           <a href="/postgres">Postgres</a>
           
+
           
           
           <a href="/sqlite">SQLite</a>
           
+
           
           
           <a href="/tmux">Tmux</a>
           
+
           
           
           <a href="/vi(m)">Vi(m)</a>
           
+
           
           
           <a href="/sed">sed</a>
           
+
           
         </div>
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
+        <div class="nav-links children">
           
           <a href="/git-bare-repositories">Git Bare Repositories</a>
           
@@ -189,7 +201,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/minecraftle-v1.1" class="not-extra-small">random</a>
+          <a href="/bash-syntax" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Programs/Git/Git.md" class="desktop">edit</a>
@@ -200,7 +212,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/minecraftle-v1.1">random</a>
+          <a href="/bash-syntax">random</a>
         </div>
       </div>
 
@@ -248,6 +260,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

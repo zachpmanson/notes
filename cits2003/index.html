@@ -32,9 +32,8 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/uwa-computer-science" class="activated-link">UWA Computer Science</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/artificial-intelligence---a-modern-approach">Artificial Intelligence - A Modern Approach</a>
@@ -45,29 +44,31 @@
           
           
           
+          <a href="/uwa-computer-science" class="activated-link">UWA Computer Science</a>
           
           
         </div>
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
+        <div class="nav-links siblings">
+          
+          
+          
           <a href="/cits2003" class="activated-link">CITS2003</a>
           
-          
-          
+
           
           
           <a href="/chris-mcdonald">Chris McDonald</a>
           
+
           
         </div>
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
+        <div class="nav-links children">
           
           <a href="/cits2003-lectures">CITS2003 Lectures</a>
           
@@ -108,7 +109,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/select-decorator-depreciated" class="not-extra-small">random</a>
+          <a href="/ochrs-1.0" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Courses/UWA Computer Science/CITS2003/CITS2003.md" class="desktop">edit</a>
@@ -119,7 +120,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/select-decorator-depreciated">random</a>
+          <a href="/ochrs-1.0">random</a>
         </div>
       </div>
 
@@ -151,6 +152,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

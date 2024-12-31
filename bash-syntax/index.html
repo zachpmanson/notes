@@ -32,11 +32,11 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
+        <div class="nav-links piblings">
+          
+          
+          
           <a href="/bash" class="activated-link">Bash</a>
-          
-          
           
           
           
@@ -47,20 +47,23 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/bash-syntax" class="activated-link">Bash Syntax</a>
+        <div class="nav-links siblings">
+          
           
           
           <a href="/bash-regular-expressions">Bash Regular Expressions</a>
           
+
           
           
           <a href="/bash-startup-scripts">Bash Startup Scripts</a>
           
+
           
           
+          <a href="/bash-syntax" class="activated-link">Bash Syntax</a>
           
+
           
         </div>
         
@@ -282,7 +285,7 @@ $1 == -l
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/next.js-with-trpc-and-layouts" class="not-extra-small">random</a>
+          <a href="/the-reddit-long-con" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Programs/GNU/Bash/Bash Syntax.md" class="desktop">edit</a>
@@ -293,7 +296,7 @@ $1 == -l
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/next.js-with-trpc-and-layouts">random</a>
+          <a href="/the-reddit-long-con">random</a>
         </div>
       </div>
 
@@ -315,6 +318,19 @@ $1 == -l
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

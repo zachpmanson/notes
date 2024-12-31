@@ -32,9 +32,8 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/set-theory" class="activated-link">Set Theory</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/arity">Arity</a>
@@ -57,6 +56,7 @@
           
           
           
+          <a href="/set-theory" class="activated-link">Set Theory</a>
           
           
           
@@ -67,16 +67,18 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
+        <div class="nav-links siblings">
+          
+          
+          
           <a href="/infinity" class="activated-link">Infinity</a>
           
-          
-          
+
           
           
           <a href="/power-set">Power Set</a>
           
+
           
         </div>
         
@@ -117,7 +119,7 @@ This concept is as much a philosophical one as it is a mathematical one, an agai
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/git-subdirectory-branch" class="not-extra-small">random</a>
+          <a href="/ochrs-syntax" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Mathematics/Set Theory/Infinity.md" class="desktop">edit</a>
@@ -128,7 +130,7 @@ This concept is as much a philosophical one as it is a mathematical one, an agai
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/git-subdirectory-branch">random</a>
+          <a href="/ochrs-syntax">random</a>
         </div>
       </div>
 
@@ -160,6 +162,19 @@ This concept is as much a philosophical one as it is a mathematical one, an agai
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

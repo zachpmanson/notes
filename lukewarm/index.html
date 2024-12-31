@@ -32,9 +32,8 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/words" class="activated-link">Words</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/characters">Characters</a>
@@ -69,66 +68,80 @@
           
           
           
+          <a href="/words" class="activated-link">Words</a>
           
           
         </div>
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/lukewarm" class="activated-link">Lukewarm</a>
+        <div class="nav-links siblings">
+          
           
           
           <a href="/ampersand-and-epershand">Ampersand & Epershand</a>
           
+
           
           
           <a href="/dude">Dude</a>
           
+
           
           
           <a href="/em-size">Em Size</a>
           
+
           
           
           <a href="/figment">Figment</a>
           
+
           
           
           <a href="/gruntle">Gruntle</a>
           
+
           
           
           <a href="/idempotent">Idempotent</a>
           
+
           
           
           <a href="/inspire-expire-and-conspire">Inspire, Expire, and Conspire</a>
           
+
           
           
+          <a href="/lukewarm" class="activated-link">Lukewarm</a>
           
+
           
           
           <a href="/nocent">Nocent</a>
           
+
           
           
           <a href="/pejorative">Pejorative</a>
           
+
           
           
           <a href="/podcast">Podcast</a>
           
+
           
           
           <a href="/slug">Slug</a>
           
+
           
           
           <a href="/thou">Thou</a>
           
+
           
         </div>
         
@@ -155,7 +168,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/characters" class="not-extra-small">random</a>
+          <a href="/figment" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Language/Words/Lukewarm.md" class="desktop">edit</a>
@@ -166,7 +179,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/characters">random</a>
+          <a href="/figment">random</a>
         </div>
       </div>
 
@@ -198,6 +211,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

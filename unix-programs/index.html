@@ -32,9 +32,8 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/unix" class="activated-link">Unix</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/databases">Databases</a>
@@ -77,38 +76,45 @@
           
           
           
+          <a href="/unix" class="activated-link">Unix</a>
           
           
         </div>
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/unix-programs" class="activated-link">Unix Programs</a>
+        <div class="nav-links siblings">
+          
           
           
           <a href="/gecos">GECOS</a>
           
+
           
           
           <a href="/linux">Linux</a>
           
+
           
           
           <a href="/unix-files">Unix Files</a>
           
+
           
           
           <a href="/unix-processes">Unix Processes</a>
           
+
           
           
+          <a href="/unix-programs" class="activated-link">Unix Programs</a>
           
+
           
           
           <a href="/macos">macOS</a>
           
+
           
         </div>
         
@@ -276,7 +282,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/exploits" class="not-extra-small">random</a>
+          <a href="/stylesheet" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Unix/Unix Programs.md" class="desktop">edit</a>
@@ -287,7 +293,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/exploits">random</a>
+          <a href="/stylesheet">random</a>
         </div>
       </div>
 
@@ -309,6 +315,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

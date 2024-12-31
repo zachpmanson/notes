@@ -32,15 +32,15 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/meta" class="activated-link">Meta</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/archive">Archive</a>
           
           
           
+          <a href="/meta" class="activated-link">Meta</a>
           
           
           
@@ -59,40 +59,48 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/future-changes" class="activated-link">Future Changes</a>
+        <div class="nav-links siblings">
+          
           
           
           <a href="/credits">Credits</a>
           
+
           
           
           <a href="/dns">DNS</a>
           
+
           
           
+          <a href="/future-changes" class="activated-link">Future Changes</a>
           
+
           
           
           <a href="/random">Random</a>
           
+
           
           
           <a href="/recent-changes">Recent Changes</a>
           
+
           
           
           <a href="/sitemap">Sitemap</a>
           
+
           
           
           <a href="/stylesheet">Stylesheet</a>
           
+
           
           
           <a href="/tags">Tags</a>
           
+
           
         </div>
         
@@ -118,7 +126,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/collaborative-awe" class="not-extra-small">random</a>
+          <a href="/continuation-passing-style" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Meta/Future Changes.md" class="desktop">edit</a>
@@ -129,7 +137,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/collaborative-awe">random</a>
+          <a href="/continuation-passing-style">random</a>
         </div>
       </div>
 
@@ -151,6 +159,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

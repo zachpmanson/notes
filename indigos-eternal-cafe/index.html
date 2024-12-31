@@ -32,15 +32,15 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/fiction" class="activated-link">Fiction</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/bookmarks">Bookmarks</a>
           
           
           
+          <a href="/fiction" class="activated-link">Fiction</a>
           
           
           
@@ -63,16 +63,18 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
+        <div class="nav-links siblings">
+          
+          
+          
           <a href="/indigos-eternal-cafe" class="activated-link">Indigo's Eternal Cafe</a>
           
-          
-          
+
           
           
           <a href="/techaro">Techaro</a>
           
+
           
         </div>
         
@@ -102,7 +104,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/set-theory" class="not-extra-small">random</a>
+          <a href="/ssh-connection-hanging" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Fiction/Indigo's Eternal Cafe.md" class="desktop">edit</a>
@@ -113,7 +115,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/set-theory">random</a>
+          <a href="/ssh-connection-hanging">random</a>
         </div>
       </div>
 
@@ -135,6 +137,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

@@ -32,11 +32,11 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
+        <div class="nav-links piblings">
+          
+          
+          
           <a href="/artificial-intelligence---a-modern-approach" class="activated-link">Artificial Intelligence - A Modern Approach</a>
-          
-          
           
           
           
@@ -51,36 +51,43 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/aima-chapter-02" class="activated-link">AIMA Chapter 02</a>
+        <div class="nav-links siblings">
+          
           
           
           <a href="/aima-chapter-01">AIMA Chapter 01</a>
           
+
           
           
+          <a href="/aima-chapter-02" class="activated-link">AIMA Chapter 02</a>
           
+
           
           
           <a href="/aima-chapter-03">AIMA Chapter 03</a>
           
+
           
           
           <a href="/agents">Agents</a>
           
+
           
           
           <a href="/problem-solving-agents">Problem Solving Agents</a>
           
+
           
           
           <a href="/search-algorithms">Search Algorithms</a>
           
+
           
           
           <a href="/task-environments">Task Environments</a>
           
+
           
         </div>
         
@@ -106,7 +113,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/linux" class="not-extra-small">random</a>
+          <a href="/the-damned-can-now-play-three-chords" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 02.md" class="desktop">edit</a>
@@ -117,7 +124,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/linux">random</a>
+          <a href="/the-damned-can-now-play-three-chords">random</a>
         </div>
       </div>
 
@@ -147,6 +154,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

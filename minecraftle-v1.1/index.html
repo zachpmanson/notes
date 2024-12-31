@@ -32,9 +32,8 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/minecraftle" class="activated-link">Minecraftle</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/alculator">Alculator</a>
@@ -49,6 +48,7 @@
           
           
           
+          <a href="/minecraftle" class="activated-link">Minecraftle</a>
           
           
           
@@ -75,20 +75,23 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/minecraftle-v1.1" class="activated-link">Minecraftle v1.1</a>
+        <div class="nav-links siblings">
+          
           
           
           <a href="/how-minecraft-stores-crafting-recipes">How Minecraft Stores Crafting Recipes</a>
           
+
           
           
+          <a href="/minecraftle-v1.1" class="activated-link">Minecraftle v1.1</a>
           
+
           
           
           <a href="/minecraftle-v2.0">Minecraftle v2.0</a>
           
+
           
         </div>
         
@@ -179,7 +182,7 @@ After:
           <date>2023-01-26</date>
           
           <a href="/recent-changes">recent</a>
-          <a href="/python-total-packages-size" class="not-extra-small">random</a>
+          <a href="/thoughts-on-flash" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Projects/Minecraftle/Minecraftle v1.1.md" class="desktop">edit</a>
@@ -190,7 +193,7 @@ After:
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/python-total-packages-size">random</a>
+          <a href="/thoughts-on-flash">random</a>
         </div>
       </div>
 
@@ -235,6 +238,19 @@ After:
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

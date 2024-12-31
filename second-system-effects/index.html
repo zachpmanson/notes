@@ -32,9 +32,8 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/programming-concepts" class="activated-link">Programming Concepts</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/datetime">DateTime</a>
@@ -61,6 +60,7 @@
           
           
           
+          <a href="/programming-concepts" class="activated-link">Programming Concepts</a>
           
           
           
@@ -75,32 +75,38 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/second-system-effects" class="activated-link">Second System Effects</a>
+        <div class="nav-links siblings">
+          
           
           
           <a href="/authentication">Authentication</a>
           
+
           
           
           <a href="/authorization">Authorization</a>
           
+
           
           
           <a href="/closures">Closures</a>
           
+
           
           
           <a href="/footguns">Footguns</a>
           
+
           
           
           <a href="/noisy-neighbour">Noisy Neighbour</a>
           
+
           
           
+          <a href="/second-system-effects" class="activated-link">Second System Effects</a>
           
+
           
         </div>
         
@@ -130,7 +136,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/react-usestate-not-mutating-object" class="not-extra-small">random</a>
+          <a href="/git" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Programming Concepts/Second System Effects.md" class="desktop">edit</a>
@@ -141,7 +147,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/react-usestate-not-mutating-object">random</a>
+          <a href="/git">random</a>
         </div>
       </div>
 
@@ -163,6 +169,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

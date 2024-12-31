@@ -32,9 +32,8 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/software" class="activated-link">Software</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/art">Art</a>
@@ -73,58 +72,70 @@
           
           
           
+          <a href="/software" class="activated-link">Software</a>
           
           
         </div>
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/self-hosting" class="activated-link">Self-Hosting</a>
+        <div class="nav-links siblings">
+          
           
           
           <a href="/databases">Databases</a>
           
+
           
           
           <a href="/development">Development</a>
           
+
           
           
           <a href="/exploits">Exploits</a>
           
+
           
           
           <a href="/machine-learning">Machine Learning</a>
           
+
           
           
           <a href="/mistakes">Mistakes</a>
           
+
           
           
           <a href="/open-source">Open Source</a>
           
+
           
           
           <a href="/programs">Programs</a>
           
+
           
           
           <a href="/reverse-engineering">Reverse Engineering</a>
           
+
           
           
+          <a href="/self-hosting" class="activated-link">Self-Hosting</a>
           
+
           
           
           <a href="/terminals">Terminals</a>
           
+
           
           
           <a href="/unix">Unix</a>
           
+
           
         </div>
         
@@ -162,7 +173,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/a-conspiracy-to-kill-ie6" class="not-extra-small">random</a>
+          <a href="/words" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Self-Hosting.md" class="desktop">edit</a>
@@ -173,7 +184,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/a-conspiracy-to-kill-ie6">random</a>
+          <a href="/words">random</a>
         </div>
       </div>
 
@@ -195,6 +206,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

@@ -32,9 +32,8 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/non-programming-languages" class="activated-link">Non-Programming Languages</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/datetime">DateTime</a>
@@ -57,6 +56,7 @@
           
           
           
+          <a href="/non-programming-languages" class="activated-link">Non-Programming Languages</a>
           
           
           
@@ -75,24 +75,28 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/sql" class="activated-link">SQL</a>
+        <div class="nav-links siblings">
+          
           
           
           <a href="/css">CSS</a>
           
+
           
           
           <a href="/html">HTML</a>
           
+
           
           
           <a href="/markdown">Markdown</a>
           
+
           
           
+          <a href="/sql" class="activated-link">SQL</a>
           
+
           
         </div>
         
@@ -125,7 +129,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/incomplete-list-of-mistakes-in-the-design-of-css" class="not-extra-small">random</a>
+          <a href="/prisma" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Non-Programming Languages/SQL.md" class="desktop">edit</a>
@@ -136,7 +140,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/incomplete-list-of-mistakes-in-the-design-of-css">random</a>
+          <a href="/prisma">random</a>
         </div>
       </div>
 
@@ -170,6 +174,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

@@ -32,9 +32,8 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/miscellany" class="activated-link">Miscellany</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/art">Art</a>
@@ -61,6 +60,7 @@
           
           
           
+          <a href="/miscellany" class="activated-link">Miscellany</a>
           
           
           
@@ -79,36 +79,43 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/things-i-can-hold" class="activated-link">Things I Can Hold</a>
+        <div class="nav-links siblings">
+          
           
           
           <a href="/on-taking-notes">On Taking Notes</a>
           
+
           
           
           <a href="/on-writing">On Writing</a>
           
+
           
           
           <a href="/pens">Pens</a>
           
+
           
           
           <a href="/process-box">Process Box</a>
           
+
           
           
           <a href="/sewing">Sewing</a>
           
+
           
           
           <a href="/thin-deep-slices">Thin Deep Slices</a>
           
+
           
           
+          <a href="/things-i-can-hold" class="activated-link">Things I Can Hold</a>
           
+
           
         </div>
         
@@ -137,7 +144,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/figment" class="not-extra-small">random</a>
+          <a href="/rob-pikes-5-rules-of-programming" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Miscellany/Things I Can Hold.md" class="desktop">edit</a>
@@ -148,7 +155,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/figment">random</a>
+          <a href="/rob-pikes-5-rules-of-programming">random</a>
         </div>
       </div>
 
@@ -170,6 +177,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

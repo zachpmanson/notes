@@ -32,15 +32,15 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/computer-science" class="activated-link">Computer Science</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/arity">Arity</a>
           
           
           
+          <a href="/computer-science" class="activated-link">Computer Science</a>
           
           
           
@@ -67,39 +67,44 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
+        <div class="nav-links siblings">
+          
+          
+          
           <a href="/complexity-theory" class="activated-link">Complexity Theory</a>
           
-          
-          
+
           
           
           <a href="/continuation-passing-style">Continuation-Passing Style</a>
           
+
           
           
           <a href="/currying">Currying</a>
           
+
           
           
           <a href="/functors">Functors</a>
           
+
           
           
           <a href="/monads">Monads</a>
           
+
           
           
           <a href="/reflection">Reflection</a>
           
+
           
         </div>
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
+        <div class="nav-links children">
           
           <a href="/complexity-classes">Complexity Classes</a>
           
@@ -128,7 +133,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/sed" class="not-extra-small">random</a>
+          <a href="/open-source" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Mathematics/Computer Science/Complexity Theory/Complexity Theory.md" class="desktop">edit</a>
@@ -139,7 +144,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/sed">random</a>
+          <a href="/open-source">random</a>
         </div>
       </div>
 
@@ -161,6 +166,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

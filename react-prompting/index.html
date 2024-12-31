@@ -32,9 +32,8 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/machine-learning-concepts" class="activated-link">Machine Learning Concepts</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/generative-models">Generative Models</a>
@@ -45,6 +44,7 @@
           
           
           
+          <a href="/machine-learning-concepts" class="activated-link">Machine Learning Concepts</a>
           
           
           
@@ -59,28 +59,33 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/react-prompting" class="activated-link">ReAct Prompting</a>
+        <div class="nav-links siblings">
+          
           
           
           <a href="/few-shot-learning">Few-Shot Learning</a>
           
+
           
           
           <a href="/flash-attention">Flash Attention</a>
           
+
           
           
           <a href="/low-rank-adaptation">Low-Rank Adaptation</a>
           
+
           
           
           <a href="/quantization">Quantization</a>
           
+
           
           
+          <a href="/react-prompting" class="activated-link">ReAct Prompting</a>
           
+
           
         </div>
         
@@ -191,7 +196,7 @@ Answer: The capital of France is Paris
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/w09l02---awk" class="not-extra-small">random</a>
+          <a href="/r" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Machine Learning/Machine Learning Concepts/ReAct Prompting.md" class="desktop">edit</a>
@@ -202,7 +207,7 @@ Answer: The capital of France is Paris
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/w09l02---awk">random</a>
+          <a href="/r">random</a>
         </div>
       </div>
 
@@ -232,6 +237,19 @@ Answer: The capital of France is Paris
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

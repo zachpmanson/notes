@@ -32,9 +32,8 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/notes" class="activated-link">Notes</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/archive">Archive</a>
@@ -45,6 +44,7 @@
           
           
           
+          <a href="/notes" class="activated-link">Notes</a>
           
           
           
@@ -59,55 +59,64 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
+        <div class="nav-links siblings">
+          
+          
+          
           <a href="/art" class="activated-link">Art</a>
           
-          
-          
+
           
           
           <a href="/courses">Courses</a>
           
+
           
           
           <a href="/cybersecurity">Cybersecurity</a>
           
+
           
           
           <a href="/design">Design</a>
           
+
           
           
           <a href="/language">Language</a>
           
+
           
           
           <a href="/mathematics">Mathematics</a>
           
+
           
           
           <a href="/miscellany">Miscellany</a>
           
+
           
           
           <a href="/music">Music</a>
           
+
           
           
           <a href="/networks">Networks</a>
           
+
           
           
           <a href="/software">Software</a>
           
+
           
         </div>
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
+        <div class="nav-links children">
           
           <a href="/art-resources">Art Resources</a>
           
@@ -133,7 +142,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/vim-plugins" class="not-extra-small">random</a>
+          <a href="/incomplete-list-of-mistakes-in-the-design-of-css" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Art.md" class="desktop">edit</a>
@@ -144,7 +153,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/vim-plugins">random</a>
+          <a href="/incomplete-list-of-mistakes-in-the-design-of-css">random</a>
         </div>
       </div>
 
@@ -166,6 +175,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

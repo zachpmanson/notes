@@ -32,9 +32,8 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/nomenclature" class="activated-link">Nomenclature</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/characters">Characters</a>
@@ -61,6 +60,7 @@
           
           
           
+          <a href="/nomenclature" class="activated-link">Nomenclature</a>
           
           
           
@@ -75,24 +75,28 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/program-names" class="activated-link">Program Names</a>
+        <div class="nav-links siblings">
+          
           
           
           <a href="/eponyms">Eponyms</a>
           
+
           
           
           <a href="/microsoft-product-names">Microsoft Product Names</a>
           
+
           
           
           <a href="/names-to-avoid">Names To Avoid</a>
           
+
           
           
+          <a href="/program-names" class="activated-link">Program Names</a>
           
+
           
         </div>
         
@@ -139,7 +143,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/mocking-functions-in-python" class="not-extra-small">random</a>
+          <a href="/complexity-classes" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Language/Nomenclature/Program Names.md" class="desktop">edit</a>
@@ -150,7 +154,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/mocking-functions-in-python">random</a>
+          <a href="/complexity-classes">random</a>
         </div>
       </div>
 
@@ -180,6 +184,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

@@ -32,9 +32,8 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/javascript" class="activated-link">JavaScript</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/brainfuck">Brainfuck</a>
@@ -53,6 +52,7 @@
           
           
           
+          <a href="/javascript" class="activated-link">JavaScript</a>
           
           
           
@@ -71,27 +71,29 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/typescript" class="activated-link">TypeScript</a>
+        <div class="nav-links siblings">
+          
           
           
           <a href="/anything-to-number-conversion-table">Anything-to-Number Conversion Table</a>
           
+
           
           
           <a href="/next.js">Next.js</a>
           
+
           
           
+          <a href="/typescript" class="activated-link">TypeScript</a>
           
+
           
         </div>
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
+        <div class="nav-links children">
           
           <a href="/cursed-typescript-projects">Cursed TypeScript Projects</a>
           
@@ -121,7 +123,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/tools" class="not-extra-small">random</a>
+          <a href="/tricking-llms" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md" class="desktop">edit</a>
@@ -132,7 +134,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/tools">random</a>
+          <a href="/tricking-llms">random</a>
         </div>
       </div>
 
@@ -168,6 +170,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

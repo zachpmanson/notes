@@ -32,9 +32,8 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/mistakes" class="activated-link">Mistakes</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/databases">Databases</a>
@@ -53,6 +52,7 @@
           
           
           
+          <a href="/mistakes" class="activated-link">Mistakes</a>
           
           
           
@@ -83,20 +83,23 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/referer-http-field" class="activated-link">Referer HTTP Field</a>
+        <div class="nav-links siblings">
+          
           
           
           <a href="/dotfiles-being-hidden">Dotfiles Being Hidden</a>
           
+
           
           
           <a href="/position-of-0-and-1-keys">Position of 0 and 1 Keys</a>
           
+
           
           
+          <a href="/referer-http-field" class="activated-link">Referer HTTP Field</a>
           
+
           
         </div>
         
@@ -123,7 +126,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/heaven-banning" class="not-extra-small">random</a>
+          <a href="/declarative-merging" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Mistakes/Referer HTTP Field.md" class="desktop">edit</a>
@@ -134,7 +137,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/heaven-banning">random</a>
+          <a href="/declarative-merging">random</a>
         </div>
       </div>
 
@@ -163,6 +166,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

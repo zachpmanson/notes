@@ -32,15 +32,15 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/meta" class="activated-link">Meta</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/archive">Archive</a>
           
           
           
+          <a href="/meta" class="activated-link">Meta</a>
           
           
           
@@ -59,40 +59,48 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/stylesheet" class="activated-link">Stylesheet</a>
+        <div class="nav-links siblings">
+          
           
           
           <a href="/credits">Credits</a>
           
+
           
           
           <a href="/dns">DNS</a>
           
+
           
           
           <a href="/future-changes">Future Changes</a>
           
+
           
           
           <a href="/random">Random</a>
           
+
           
           
           <a href="/recent-changes">Recent Changes</a>
           
+
           
           
           <a href="/sitemap">Sitemap</a>
           
+
           
           
+          <a href="/stylesheet" class="activated-link">Stylesheet</a>
           
+
           
           
           <a href="/tags">Tags</a>
           
+
           
         </div>
         
@@ -177,7 +185,7 @@ two spaces at the end.</p>
 </ul>
 <hr />
 <p>Build-time Ochrs functions:</p>
-<p>Last build time: 2024-12-19 23:58:25</p>
+<p>Last build time: 2024-12-31 01:50:03</p>
 <p>List of Ochrs functions: ochrs-funcs, example, page-count, build-time, md-extensions, recent-edit, sitemap, tags, random-js, chrono</p>
 <p>More explanation of these can be found on <a href="/ochrs-syntax">Ochrs Syntax</a>.</p>
 <hr />
@@ -242,7 +250,7 @@ two spaces at the end.</p>
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/dns" class="not-extra-small">random</a>
+          <a href="/reset-css-rules" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Meta/Stylesheet.md" class="desktop">edit</a>
@@ -253,7 +261,7 @@ two spaces at the end.</p>
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/dns">random</a>
+          <a href="/reset-css-rules">random</a>
         </div>
       </div>
 
@@ -283,6 +291,19 @@ two spaces at the end.</p>
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

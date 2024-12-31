@@ -34,35 +34,39 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/notes" class="activated-link">Notes</a>
+        <div class="nav-links siblings">
+          
           
           
           <a href="/archive">Archive</a>
           
+
           
           
           <a href="/meta">Meta</a>
           
+
           
           
+          <a href="/notes" class="activated-link">Notes</a>
           
+
           
           
           <a href="/posts">Posts</a>
           
+
           
           
           <a href="/projects">Projects</a>
           
+
           
         </div>
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
+        <div class="nav-links children">
           
           <a href="/art">Art</a>
           
@@ -106,7 +110,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/ampersand-and-epershand" class="not-extra-small">random</a>
+          <a href="/themed-stylesheets" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Notes.md" class="desktop">edit</a>
@@ -117,7 +121,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/ampersand-and-epershand">random</a>
+          <a href="/themed-stylesheets">random</a>
         </div>
       </div>
 
@@ -149,6 +153,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

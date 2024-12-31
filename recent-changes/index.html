@@ -32,15 +32,15 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/meta" class="activated-link">Meta</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/archive">Archive</a>
           
           
           
+          <a href="/meta" class="activated-link">Meta</a>
           
           
           
@@ -59,40 +59,48 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/recent-changes" class="activated-link">Recent Changes</a>
+        <div class="nav-links siblings">
+          
           
           
           <a href="/credits">Credits</a>
           
+
           
           
           <a href="/dns">DNS</a>
           
+
           
           
           <a href="/future-changes">Future Changes</a>
           
+
           
           
           <a href="/random">Random</a>
           
+
           
           
+          <a href="/recent-changes" class="activated-link">Recent Changes</a>
           
+
           
           
           <a href="/sitemap">Sitemap</a>
           
+
           
           
           <a href="/stylesheet">Stylesheet</a>
           
+
           
           
           <a href="/tags">Tags</a>
           
+
           
         </div>
         
@@ -107,11 +115,12 @@
       <h1>Things I've recently been thinking about.</h1>
     </header>
 
-    <article><p>2024-12-20: <a href="/websites">Websites</a><br />
+    <article><p>2024-12-31: <a href="/articles">Articles</a><br />
+2024-12-31: <a href="/interbrowser-development">Interbrowser Development</a><br />
+2024-12-20: <a href="/websites">Websites</a><br />
 2024-12-20: <a href="/fediverse">Fediverse</a><br />
 2024-12-17: <a href="/lines">Lines</a><br />
 2024-12-12: <a href="/dropbox-feedback">Dropbox Feedback</a><br />
-2024-12-12: <a href="/interbrowser-development">Interbrowser Development</a><br />
 2024-12-12: <a href="/oauth">OAuth</a><br />
 2024-12-11: <a href="/next.js-scroll-position-preservation">Next.js Scroll Position Preservation</a><br />
 2024-12-11: <a href="/vi(m)-movement-origins">Vi(m) Movement Origins</a><br />
@@ -126,8 +135,7 @@
 2024-11-21: <a href="/web-design">Web Design</a><br />
 2024-11-20: <a href="/things-many-people-find-too-obvious-to-have-told-you-already">Things Many People Find Too Obvious To Have Told You Already</a><br />
 2024-11-20: <a href="/docker-volumes">Docker Volumes</a><br />
-2024-11-19: <a href="/cybersecurity">Cybersecurity</a><br />
-2024-11-19: <a href="/xz">XZ</a></p></article>
+2024-11-19: <a href="/cybersecurity">Cybersecurity</a></p></article>
   </main>
 
   <footer>
@@ -138,7 +146,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/sqlite" class="not-extra-small">random</a>
+          <a href="/limitations-of-machine-learning" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Meta/Recent Changes.md" class="desktop">edit</a>
@@ -149,7 +157,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/sqlite">random</a>
+          <a href="/limitations-of-machine-learning">random</a>
         </div>
       </div>
 
@@ -179,6 +187,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

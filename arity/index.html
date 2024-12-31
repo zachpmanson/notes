@@ -32,9 +32,8 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/mathematics" class="activated-link">Mathematics</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/art">Art</a>
@@ -57,6 +56,7 @@
           
           
           
+          <a href="/mathematics" class="activated-link">Mathematics</a>
           
           
           
@@ -79,36 +79,43 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
+        <div class="nav-links siblings">
+          
+          
+          
           <a href="/arity" class="activated-link">Arity</a>
           
-          
-          
+
           
           
           <a href="/computer-science">Computer Science</a>
           
+
           
           
           <a href="/friendship-paradox">Friendship Paradox</a>
           
+
           
           
           <a href="/idempotency">Idempotency</a>
           
+
           
           
           <a href="/rank">Rank</a>
           
+
           
           
           <a href="/set-theory">Set Theory</a>
           
+
           
           
           <a href="/sheffer-stroke">Sheffer Stroke</a>
           
+
           
         </div>
         
@@ -141,7 +148,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/react-and-blur()" class="not-extra-small">random</a>
+          <a href="/ruby-on-rails" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Mathematics/Arity.md" class="desktop">edit</a>
@@ -152,7 +159,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/react-and-blur()">random</a>
+          <a href="/ruby-on-rails">random</a>
         </div>
       </div>
 
@@ -174,6 +181,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

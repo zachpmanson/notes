@@ -32,9 +32,8 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/design" class="activated-link">Design</a>
+        <div class="nav-links piblings">
+          
           
           
           <a href="/art">Art</a>
@@ -49,6 +48,7 @@
           
           
           
+          <a href="/design" class="activated-link">Design</a>
           
           
           
@@ -79,32 +79,38 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/typography" class="activated-link">Typography</a>
+        <div class="nav-links siblings">
+          
           
           
           <a href="/designs-i-want-to-steal">Designs I Want To Steal</a>
           
+
           
           
           <a href="/fun-design">Fun Design</a>
           
+
           
           
           <a href="/kinde-design-decisions">Kinde Design Decisions</a>
           
+
           
           
           <a href="/spotify-design-decisions">Spotify Design Decisions</a>
           
+
           
           
+          <a href="/typography" class="activated-link">Typography</a>
           
+
           
           
           <a href="/web-design">Web Design</a>
           
+
           
         </div>
         
@@ -140,7 +146,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/audio" class="not-extra-small">random</a>
+          <a href="/the-cab-ride-ill-never-forget" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Design/Typography.md" class="desktop">edit</a>
@@ -151,7 +157,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/audio">random</a>
+          <a href="/the-cab-ride-ill-never-forget">random</a>
         </div>
       </div>
 
@@ -181,6 +187,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>

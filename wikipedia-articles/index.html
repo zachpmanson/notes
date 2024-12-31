@@ -32,11 +32,11 @@
     <div class="nav-segments-container">
       <div class="nav-segments">
         
-
-        <div class="flex flex-col text-left nav-links">
+        <div class="nav-links piblings">
+          
+          
+          
           <a href="/bookmarks" class="activated-link">Bookmarks</a>
-          
-          
           
           
           
@@ -63,80 +63,98 @@
         
 
         
-
-        <div class="flex flex-col text-left nav-links">
-          <a href="/wikipedia-articles" class="activated-link">Wikipedia Articles</a>
+        <div class="nav-links siblings">
+          
           
           
           <a href="/archives">Archives</a>
           
+
           
           
           <a href="/articles">Articles</a>
           
+
           
           
           <a href="/audio">Audio</a>
           
+
           
           
           <a href="/blogs">Blogs</a>
           
+
           
           
           <a href="/chatrooms">Chatrooms</a>
           
+
           
           
           <a href="/cheatsheets">Cheatsheets</a>
           
+
           
           
           <a href="/digital-gardens">Digital Gardens</a>
           
+
           
           
           <a href="/forum-threads">Forum Threads</a>
           
+
           
           
           <a href="/hacks">Hacks</a>
           
+
           
           
           <a href="/lists">Lists</a>
           
+
           
           
           <a href="/manifestos">Manifestos</a>
           
+
           
           
           <a href="/technology-gibberish">Technology Gibberish</a>
           
+
           
           
           <a href="/tools">Tools</a>
           
+
           
           
           <a href="/web-communities">Web Communities</a>
           
+
           
           
           <a href="/websites">Websites</a>
           
+
           
           
+          <a href="/wikipedia-articles" class="activated-link">Wikipedia Articles</a>
           
+
           
           
           <a href="/wikis">Wikis</a>
           
+
           
           
           <a href="/xkcd">xkcd</a>
           
+
           
         </div>
         
@@ -213,7 +231,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/microsoft-product-names" class="not-extra-small">random</a>
+          <a href="/view-deleted-file-in-git" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Bookmarks/Wikipedia Articles.md" class="desktop">edit</a>
@@ -224,7 +242,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/microsoft-product-names">random</a>
+          <a href="/view-deleted-file-in-git">random</a>
         </div>
       </div>
 
@@ -254,6 +272,19 @@
 
   </footer>
   
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 300);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
 </body>
 
 </html>
