@@ -612,7 +612,7 @@ privatization of knowledge — we'll make it a thing of the past. Will you join 
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/javascript-pretty-printing" class="not-extra-small">random</a>
+          <a href="/diaeresis" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Folklore/Guerilla Open Access Manifesto.md" class="desktop">edit</a>
@@ -623,7 +623,7 @@ privatization of knowledge — we'll make it a thing of the past. Will you join 
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/javascript-pretty-printing">random</a>
+          <a href="/diaeresis">random</a>
         </div>
       </div>
 
@@ -655,9 +655,19 @@ privatization of knowledge — we'll make it a thing of the past. Will you join 
   
   <script type="module">
     let allActivatedLinks = document.querySelectorAll(".activated-link");
+
+    function checkVisible(el) {
+      let rect = el.getBoundingClientRect();
+      let viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+      return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+    }
+
+
     function scrollActivatedLinksIntoView(behavior="smooth") {
       for (let link of allActivatedLinks) {
-        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+        if (checkVisible(link.parentElement)) {
+          link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+        }
       }
     }
     

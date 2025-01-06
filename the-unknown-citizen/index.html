@@ -595,7 +595,7 @@ Had anything been wrong, we should certainly have heard.</p></article>
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/cheatsheets" class="not-extra-small">random</a>
+          <a href="/the-curse-of-the-last-good-day" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Folklore/The Unknown Citizen.md" class="desktop">edit</a>
@@ -606,7 +606,7 @@ Had anything been wrong, we should certainly have heard.</p></article>
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/cheatsheets">random</a>
+          <a href="/the-curse-of-the-last-good-day">random</a>
         </div>
       </div>
 
@@ -630,9 +630,19 @@ Had anything been wrong, we should certainly have heard.</p></article>
   
   <script type="module">
     let allActivatedLinks = document.querySelectorAll(".activated-link");
+
+    function checkVisible(el) {
+      let rect = el.getBoundingClientRect();
+      let viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+      return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+    }
+
+
     function scrollActivatedLinksIntoView(behavior="smooth") {
       for (let link of allActivatedLinks) {
-        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+        if (checkVisible(link.parentElement)) {
+          link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+        }
       }
     }
     

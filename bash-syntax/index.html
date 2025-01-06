@@ -285,7 +285,7 @@ $1 == -l
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/computer-science" class="not-extra-small">random</a>
+          <a href="/w09l02---awk" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Programs/GNU/Bash/Bash Syntax.md" class="desktop">edit</a>
@@ -296,7 +296,7 @@ $1 == -l
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/computer-science">random</a>
+          <a href="/w09l02---awk">random</a>
         </div>
       </div>
 
@@ -320,9 +320,19 @@ $1 == -l
   
   <script type="module">
     let allActivatedLinks = document.querySelectorAll(".activated-link");
+
+    function checkVisible(el) {
+      let rect = el.getBoundingClientRect();
+      let viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+      return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+    }
+
+
     function scrollActivatedLinksIntoView(behavior="smooth") {
       for (let link of allActivatedLinks) {
-        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+        if (checkVisible(link.parentElement)) {
+          link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+        }
       }
     }
     

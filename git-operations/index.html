@@ -174,7 +174,7 @@ git checkout -
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/the-nazi-bar-problem" class="not-extra-small">random</a>
+          <a href="/openoffice-cant-print-on-tuesdays" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Programs/Git/Git Operations.md" class="desktop">edit</a>
@@ -185,7 +185,7 @@ git checkout -
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/the-nazi-bar-problem">random</a>
+          <a href="/openoffice-cant-print-on-tuesdays">random</a>
         </div>
       </div>
 
@@ -219,9 +219,19 @@ git checkout -
   
   <script type="module">
     let allActivatedLinks = document.querySelectorAll(".activated-link");
+
+    function checkVisible(el) {
+      let rect = el.getBoundingClientRect();
+      let viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+      return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+    }
+
+
     function scrollActivatedLinksIntoView(behavior="smooth") {
       for (let link of allActivatedLinks) {
-        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+        if (checkVisible(link.parentElement)) {
+          link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+        }
       }
     }
     

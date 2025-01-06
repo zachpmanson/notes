@@ -619,7 +619,7 @@ Yak shave 7: Avoid adoption of it for greater good</p>
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/w08l02---debugging" class="not-extra-small">random</a>
+          <a href="/vim-plugins" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Folklore/The Patron Saint of Yak Shaves.md" class="desktop">edit</a>
@@ -630,7 +630,7 @@ Yak shave 7: Avoid adoption of it for greater good</p>
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/w08l02---debugging">random</a>
+          <a href="/vim-plugins">random</a>
         </div>
       </div>
 
@@ -661,9 +661,19 @@ Yak shave 7: Avoid adoption of it for greater good</p>
   
   <script type="module">
     let allActivatedLinks = document.querySelectorAll(".activated-link");
+
+    function checkVisible(el) {
+      let rect = el.getBoundingClientRect();
+      let viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+      return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+    }
+
+
     function scrollActivatedLinksIntoView(behavior="smooth") {
       for (let link of allActivatedLinks) {
-        link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+        if (checkVisible(link.parentElement)) {
+          link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+        }
       }
     }
     
