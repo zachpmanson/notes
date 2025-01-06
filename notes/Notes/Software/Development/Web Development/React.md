@@ -7,6 +7,7 @@ It's a whole thing.
 
 - [A Historical Reference of React Criticism](https://www.zachleat.com/web/react-criticism/)
 - [33 line React](https://leontrolski.github.io/33-line-react.html)
+- [React Server Components](https://www.joshwcomeau.com/react/server-components/)
 
 ## Interesting Library
 
