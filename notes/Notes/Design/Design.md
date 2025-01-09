@@ -8,3 +8,5 @@ subtitle: Something I desperately need to get better at.
 - https://muffinlabs.com/, very clean, dense, impressive
 - https://maxbo.me/, hideous I love it
 - https://muffinlabs.com/, basic i love it
+- https://morrisbrodersen.de/  
+  basic clean

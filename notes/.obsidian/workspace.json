@@ -37,12 +37,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Web Development/React.md",
+                "file": "Notes/Hardware/USB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "React"
+              "title": "USB"
             }
           }
         ],
@@ -185,11 +185,16 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "49b8f541ba7dbbdb",
   "lastOpenFiles": [
+    "Notes/Software/Software.md",
+    "Notes/Hardware/USB.md",
+    "Notes/Hardware",
+    "Notes/Design/Design.md",
+    "Notes/Design/Designs I Want To Steal.md",
+    "Notes/Software/Development/Web Development/React.md",
     "Archive/Problems/Automatic Dark Mode.md",
     "Notes/Design/Dark Mode.md",
-    "Notes/Design/Design.md",
     "Notes/Software/Development/Web Development/Interbrowser Development.md",
     "Archive/Bookmarks/Articles.md",
     "Archive/Bookmarks/Websites.md",
@@ -205,14 +210,10 @@
     "Notes/Software/Development/Programming Languages/Python.md",
     "Notes/Software/Development/Programming Languages/JavaScript/Next.js.md",
     "Archive/Problems/Next.js Scroll Position Preservation.md",
-    "Notes/Software/Development/Web Development/React.md",
     "Archive/Problems/JavaScript Math Not Defined.md",
     "Projects/Alculator.md",
     "Notes/Software/Programs/Docker/Docker.md",
     "Notes/Software/Programs/Git/Git.md",
-    "Notes/Software/Programs/Git/Git Operations.md",
-    "Posts/Imposter Syndrome Day 632.md",
-    "Notes/Software/Exploits/Exploits.md",
     "Media/maxbo.jpeg",
     "Notes/Software/Reverse Engineering",
     "Media/spotify-music-video.png",
@@ -224,7 +225,6 @@
     "Notes/Language/Nomenclature",
     "Notes/Software/Programs/Vi(m)/Vim Plugins",
     "Notes/Language/Words",
-    "Notes/Software/Terminals",
     "Media/trpc-typeerror.png",
     "Media/kinde-3.png",
     "Media/kinde-2.png",
