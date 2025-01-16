@@ -14,4 +14,4 @@ subtitle: Writeups and mods.
 - [Humans in Minecraft](https://www.youtube.com/watch?v=YHGMfQ1TDPA)
 - [find + mkdir is Turing complete](https://ogiekako.vercel.app/blog/find_mkdir_tc)
 - [Font with Built In Syntax Highlighting](https://blog.glyphdrawing.club/font-with-built-in-syntax-highlighting/)
-
+- [Doom in a PDF](https://doompdf.pages.dev/doom.pdf)

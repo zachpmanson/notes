@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> I study on LinkedIn for up to two hours a day after work sometimes.
+
+-- [An executive](https://ludic.mataroa.blog/blog/brainwash-an-executive-today/)
+
+---
+
 > The history of software production as a profession (as against computer science) is essentially a series of incremental increases in the size and complexity of systems (and teams) that don't fall apart under their own weight. There isn't much evidence we have approached the limit here, so it's a pretty good bet for at least the medium term.
 
 -- [ska](https://news.ycombinator.com/item?id=42436444)
