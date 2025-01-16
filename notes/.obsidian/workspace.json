@@ -37,12 +37,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Lines.md",
+                "file": "Notes/Language/Apsenyms.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lines"
+              "title": "Apsenyms"
             }
           }
         ],
@@ -188,6 +188,7 @@
   },
   "active": "49b8f541ba7dbbdb",
   "lastOpenFiles": [
+    "Archive/Lines.md",
     "Archive/Bookmarks/Hacks.md",
     "Notes/Software/Development/Non-Programming Languages/SQL.md",
     "Archive/Folklore/Dropbox Feedback.md",
@@ -204,7 +205,6 @@
     "Archive/Bookmarks/Articles.md",
     "Archive/Bookmarks/Websites.md",
     "Notes/Networks/Internet/Fediverse/Fediverse.md",
-    "Archive/Lines.md",
     "Notes/Networks/Internet/Internet Standards/OAuth/OAuth.md",
     "Notes/Software/Programs/Vi(m)/Vi(m) Movement Origins.md",
     "Notes/Software/Programs/Vi(m)/Vim Plugins/Vim Plugins.md",
