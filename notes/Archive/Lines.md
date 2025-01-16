@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> Code is, ultimately, characters on a screen, and software engineers do nothing but hammer that code into shapes that spark Joy and Money.
+
+-- [Ludic](https://ludic.mataroa.blog/blog/get-me-out-of-data-hell/)
+
+---
+
 > I study on LinkedIn for up to two hours a day after work sometimes.
 
 -- [An executive](https://ludic.mataroa.blog/blog/brainwash-an-executive-today/)
