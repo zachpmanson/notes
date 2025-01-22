@@ -63,3 +63,7 @@ Still here.  Still broken. Still annoying
 <video autoplay loop muted>
    <source src="/media/linkedin-duplication-2.webm" type="video/webm">
 </video>
+
+## 2025 Update: Slack also does this
+
+When you highlight, copy and paste a name.

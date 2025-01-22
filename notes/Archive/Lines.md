@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> I believe Apple silicon has Jira coprocessor
+
+-- [rplnt](https://news.ycombinator.com/item?id=42756594)
+
+---
+
 > Code is, ultimately, characters on a screen, and software engineers do nothing but hammer that code into shapes that spark Joy and Money.
 
 -- [Ludic](https://ludic.mataroa.blog/blog/get-me-out-of-data-hell/)
