@@ -1,5 +1,5 @@
 
-Mounting a [[Notes/Software/Programs/Git/Git]] branch to a subdirectory.
+Mounting a [[Git]] branch to a subdirectory.
 
 Create an orphaned branch if it doesn't already exist, and remove any shared history with the trunk.
 

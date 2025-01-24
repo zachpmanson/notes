@@ -1,6 +1,6 @@
 ## New Computer
 
-Setting global [[Notes/Software/Programs/Git/Git]] config options:
+Setting global [[Git]] config options:
 
 ```sh
 git config --global user.name "name"
