@@ -9,13 +9,12 @@ Microsoft somehow manages to have constantly terrible names.
 - Copilot+ PCs
 - GitHub Copilot Workspace, completely unrelated to Github Copilot and GitHub Workspaces
 	- This is also completely unrelated to every other Microsoft product that is X Copilot, or X+Copilot.
-		- Microsoft Copilot
-		- Microsoft 365 Copilot
-- Everything with 365
-	- Microsoft 365 Copilot
-	- Microsoft 365 (which is distinct from  
-		- aka Microsoft 365 Apps I think this is rebranded MS Office
-	- WIndows 365
+- Office 365
+- Microsoft 365 Copilot
+- Microsoft 365
+	- aka Microsoft 365 Apps I think this is rebranded MS Office
+	- aka Microsoft 365 (Office)
+- Windows 365
 - .NET, its predecessors, its children and the confusing relationship between them
 - Windows App, [the app for Windows that allows you to run Windows apps](https://arstechnica.com/gadgets/2024/09/microsoft-releases-a-new-windows-app-called-windows-app-for-running-windows-apps/?utm_brand=arstechnica&utm_social-type=owned&utm_source=mastodon&utm_medium=social) 
 	- supersedes Microsoft Remote Desktop
