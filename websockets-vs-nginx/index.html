@@ -12,7 +12,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: javascript yyyy-mm-dd in local time</title>
+  <title>notes: websockets vs nginx</title>
 </head>
 
 <body>
@@ -212,7 +212,7 @@
 
           
           
-          <a href="/javascript-yyyy-mm-dd-in-local-time" class="activated-link">JavaScript YYYY-MM-DD in Local Time</a>
+          <a href="/javascript-yyyy-mm-dd-in-local-time">JavaScript YYYY-MM-DD in Local Time</a>
           
 
           
@@ -387,7 +387,7 @@
 
           
           
-          <a href="/websockets-vs-nginx">WebSockets vs Nginx</a>
+          <a href="/websockets-vs-nginx" class="activated-link">WebSockets vs Nginx</a>
           
 
           
@@ -431,14 +431,24 @@
 
   <main>
     <header>
-      <h1>JavaScript YYYY-MM-DD in Local Time</h1>
+      <h1>WebSockets vs Nginx</h1>
     </header>
 
-    <article><p>The <a href="/javascript">JavaScript</a> <a href="/datetime">datetime</a> library is anemic.  If you need the current date in the user's locale written in YYYY-MM-DD, use this fun hack:</p>
-<div class="highlight"><pre><span></span><code>let currentDate = new Date().toLocaleString(&quot;sv&quot;).slice(0, 10);
+    <article><p>If you are using a nginx as a reverse proxy for a websocket and you want to support upgrading ws to wss, you are in trouble. Nginx will consume and <code>upgrade</code> value from the <code>Connection</code> header, as well as the value <code>Upgrade: websocket</code>. You will need to manually pass these values through, e.g.</p>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="k">location</span><span class="w"> </span><span class="s">/</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kn">proxy_pass</span><span class="w"> </span><span class="s">http://127.0.0.1:8001</span><span class="p">;</span>
+<span class="w">    </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">Connection</span><span class="w"> </span><span class="nv">$http_connection</span><span class="p">;</span>
+<span class="w">    </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">Upgrade</span><span class="w"> </span><span class="nv">$http_upgrade</span><span class="p">;</span>
+<span class="w">    </span><span class="kn">proxy_pass_request_headers</span><span class="w"> </span><span class="no">on</span><span class="p">;</span><span class="w"> </span><span class="c1"># this is the same as default values</span>
+<span class="w">    </span><span class="p">}</span>
 </code></pre></div>
-<p>"sv" means Sweden, and in Sweden the locale string is formatted "2023-11-05 00:18:41".</p>
-<p>Found this solution on <a href="https://stackoverflow.com/a/58614322">StackOverflow by Tom</a> when making <a href="/minecraftle">Minecraftle</a> work across timezones.</p></article>
+<p>Some links discussing this:</p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/65309160/client-is-not-using-the-websocket-protocol-upgrade-token-not-found-in-connec">https://stackoverflow.com/questions/65309160/client-is-not-using-the-websocket-protocol-upgrade-token-not-found-in-connec</a></li>
+<li><a href="https://github.com/gorilla/websocket/issues/507/">https://github.com/gorilla/websocket/issues/507/</a></li>
+<li><a href="http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_pass_request_headers">http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_pass_request_headers</a></li>
+<li><a href="https://stackoverflow.com/questions/15193743/nginx-reverse-proxy-websockets">https://stackoverflow.com/questions/15193743/nginx-reverse-proxy-websockets</a></li>
+</ul></article>
   </main>
 
   <footer>
@@ -449,18 +459,18 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/elk" class="not-extra-small">random</a>
+          <a href="/no-coffee-==-no-job" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
-          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/JavaScript YYYY-MM-DD in Local Time.md" class="desktop">edit</a>
-          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Problems/JavaScript YYYY-MM-DD in Local Time.md" class="mobile">edit</a>
-          <a href="mailto:zachpmanson@gmail.com?subject=On 'JavaScript YYYY-MM-DD in Local Time'">reply</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/WebSockets vs Nginx.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Problems/WebSockets vs Nginx.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'WebSockets vs Nginx'">reply</a>
         </div>
       </summary>
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/elk">random</a>
+          <a href="/no-coffee-==-no-job">random</a>
         </div>
       </div>
 
@@ -468,19 +478,12 @@
 
       <p class="backlinks"><strong>Incoming:</strong>
         
-        <a href="/javascript">JavaScript</a>
+        <a href="/recent-changes">Recent Changes</a>
         
         </span>
       </p>
       
 
-      
-      <p class="backlinks"><strong> <a href="/tags">Tags:</a></strong>
-        
-        <a href="/tags#dirty-hacks">#dirty-hacks</a>
-        
-        </span>
-      </p>
       
       <p>
         
@@ -489,7 +492,7 @@
           <strong>
             Updated:
           </strong>
-          <date>2024-09-10</date>
+          <date>2025-02-03</date>
         </span>
 
       </p>
