@@ -24,6 +24,7 @@ Pirate libraries:
 - Gigapedia
 - Kolkhoz
 - Librusec
+- Anna's Archive
 
 An adjacent concept is preservation of media, where pirated copies are seen as a defence against permanent loss. This is the thinking behind the Internet Archive and the sites it has inspired.  This kind of thinking is also prevalent in the world of video games, a medium where many works are rendered unavailable by missing online services, changing hardware landscape or lost source code. There are many cases where old games have been recovered or restored through pirated versions.
 
@@ -41,4 +42,5 @@ Web archives:
 - [The Pirate Library Controversy](https://publiclibrariesonline.org/2016/06/the-pirate-library-controversy/)
 - [Lost Media Wiki](https://lostmediawiki.com/Home)
 - [Torching the Modern-Day Library of Alexandria](https://www.theatlantic.com/technology/archive/2017/04/the-tragedy-of-google-books/523320/) ([archive.is](https://archive.is/rQ7Zb))
-- 
+- [Visualising all ISBNs](https://annas-archive.org/blog/all-isbns.html)
+	- [And a solution](https://phiresky.github.io/blog/2025/visualizing-all-books-in-isbn-space/)

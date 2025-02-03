@@ -13,15 +13,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Machine Learning/Generative Models/Generative Models.md",
+                "file": "Notes/Software/Development/Development.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Generative Models"
+              "title": "Development"
+            }
+          },
+          {
+            "id": "b0ce33e80e00a430",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Archive/Problems/Problems.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Problems"
+            }
+          },
+          {
+            "id": "5391341494302255",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Archive/Problems/WebSockets vs Nginx.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "WebSockets vs Nginx"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -160,9 +189,14 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "92d501343c1157e0",
+  "active": "5391341494302255",
   "lastOpenFiles": [
+    "Archive/Problems/Problems.md",
+    "Archive/Problems/WebSockets vs Nginx.md",
+    "Notes/Networks/Internet/Pirate Libraries/Pirate Libraries.md",
+    "Notes/Software/Development/Development.md",
     "Notes/Software/Programs/Git/Git.md",
+    "Notes/Software/Machine Learning/Generative Models/Generative Models.md",
     "Notes/Miscellany/Crochet/Crochet.md",
     "Notes/Language/Words/Podcast.md",
     "Notes/Language/Nomenclature/Microsoft Product Names.md",
@@ -185,12 +219,7 @@
     "Archive/Folklore/Dropbox Feedback.md",
     "Archive/Folklore/The Cab Ride I'll Never Forget.md",
     "Notes/Hardware/USB.md",
-    "Notes/Software/Software.md",
     "Notes/Hardware",
-    "Notes/Design/Design.md",
-    "Notes/Design/Designs I Want To Steal.md",
-    "Notes/Software/Development/Web Development/React.md",
-    "Archive/Problems/Automatic Dark Mode.md",
     "Media/maxbo.jpeg",
     "Notes/Software/Reverse Engineering",
     "Media/spotify-music-video.png",
