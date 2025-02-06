@@ -18,6 +18,7 @@ subtitle: Names I like.
 - [[Unix]], a play on words of a prior system called Multics
 - Rubocop, the linter for Ruby
 - libass, a library for subtitle rendering
+- X (windowing system), derived from a window system called W, which ran on the V operating system
 
 Interesting articles:
 

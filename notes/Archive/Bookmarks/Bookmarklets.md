@@ -1,0 +1,2 @@
+- [Jesse Ruderman's bookmarklets](https://www.squarefree.com/bookmarklets/)
+- [bookmarkl.ink](https://bookmarkl.ink/)
