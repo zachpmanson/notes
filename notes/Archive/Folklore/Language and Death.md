@@ -56,9 +56,8 @@ J: No. They they brought the language to you and then you inherited it and did w
 
 H: Yeah. and I I extra like this because like words aren't a thing that exists. They're just like, breath.
 
-
 J: Yeah.
 
-J: Yeah. Anyway, that brings me to a FC Wimbledon News. America's favorite fourth tier English soccer team, which is made ultimately out of language just like the rest of us
+J: Yeah. Anyway, that brings me to AFC Wimbledon News. America's favorite fourth tier English soccer team, which is made ultimately out of language just like the rest of us
 
 H: and ideas.
