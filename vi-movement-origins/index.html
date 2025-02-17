@@ -12,7 +12,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: vi(m)</title>
+  <title>notes: vi movement origins</title>
 </head>
 
 <body>
@@ -36,47 +36,55 @@
           
           
           
-          <a href="/databases">Databases</a>
+          <a href="/awk">AWK</a>
           
           
           
-          <a href="/development">Development</a>
+          <a href="/docker">Docker</a>
           
           
           
-          <a href="/exploits">Exploits</a>
+          <a href="/elk">Elk</a>
           
           
           
-          <a href="/machine-learning">Machine Learning</a>
+          <a href="/gnu">GNU</a>
           
           
           
-          <a href="/mistakes">Mistakes</a>
+          <a href="/git">Git</a>
           
           
           
-          <a href="/open-source">Open Source</a>
+          <a href="/make">Make</a>
           
           
           
-          <a href="/programs" class="activated-link">Programs</a>
+          <a href="/nextcloud">Nextcloud</a>
           
           
           
-          <a href="/reverse-engineering">Reverse Engineering</a>
+          <a href="/obsidian">Obsidian</a>
           
           
           
-          <a href="/self-hosting">Self-Hosting</a>
+          <a href="/postgres">Postgres</a>
           
           
           
-          <a href="/terminals">Terminals</a>
+          <a href="/sqlite">SQLite</a>
           
           
           
-          <a href="/unix">Unix</a>
+          <a href="/tmux">Tmux</a>
+          
+          
+          
+          <a href="/vim" class="activated-link">Vim</a>
+          
+          
+          
+          <a href="/sed">sed</a>
           
           
         </div>
@@ -87,81 +95,18 @@
           
           
           
-          <a href="/awk">AWK</a>
+          <a href="/vi-movement-origins" class="activated-link">Vi Movement Origins</a>
           
 
           
-          
-          <a href="/docker">Docker</a>
-          
-
-          
-          
-          <a href="/elk">Elk</a>
-          
-
-          
-          
-          <a href="/gnu">GNU</a>
-          
-
-          
-          
-          <a href="/git">Git</a>
-          
-
-          
-          
-          <a href="/make">Make</a>
-          
-
-          
-          
-          <a href="/nextcloud">Nextcloud</a>
-          
-
-          
-          
-          <a href="/obsidian">Obsidian</a>
-          
-
-          
-          
-          <a href="/postgres">Postgres</a>
-          
-
-          
-          
-          <a href="/sqlite">SQLite</a>
-          
-
-          
-          
-          <a href="/tmux">Tmux</a>
-          
-
-          
-          
-          <a href="/vi(m)" class="activated-link">Vi(m)</a>
-          
-
-          
-          
-          <a href="/sed">sed</a>
-          
-
-          
-        </div>
-        
-
-        
-        <div class="nav-links children">
-          
-          <a href="/vi(m)-movement-origins">Vi(m) Movement Origins</a>
           
           <a href="/vim-plugins">Vim Plugins</a>
           
+
+          
         </div>
+        
+
         
       </div>
     </div>
@@ -169,12 +114,16 @@
 
   <main>
     <header>
-      <h1>Vi(m)</h1>
+      <h1>Vi Movement Origins</h1>
     </header>
 
-    <article><p>Vi is a text editor created for <a href="/unix">Unix</a> by Bill Joy in 1976. Its name is short for for visual mode, as it was a originally only a visual interface for ex, a line editor created by Joy and Chuck Haley. Its name has spawned the backronym visual interface.</p>
-<p>Vim (Vi IMproved) is an expanded clone of Vim created by Bram Moolenaar in 1991.</p>
-<p>Neovim is a form of Vim that goes ever further in modernising Vim, adding many features but most notably LSP support.</p></article>
+    <article><p>Vi uses hjkl for navigation as it was developed on an ADM-3A terminal which didn't have dedicated arrow keys, using hjkl for navigation.</p>
+<p><img alt="" src="/media/ADM3A.png" />
+The placement of control and escape are also different to modern QWERTY keyboards, and is the reason that the Escape key is so heavily used in Vi.</p>
+<p>The reason that the ADM-3A used hjkl for navigation is due to the ASCII standard.  The first 32 characters are control characters, used for in-band signalling to cause effects other than representable written symbols. Control characters can be invoked by holding the Control key in conjunction with other keys. The keys used are determined by running XOR on the first bit of the ASCII character.  For example, D is 1000100.  XOR on the first digit results in 0000100 which is the ASCII control character EOT (end of transmission).  This is why pressing Ctrl-D on modern terminals exits the terminal. Ctrl-I follows a similar pattern, aligning with TAB, which  works in modern terminals as well.</p>
+<p>Applying this to Ctrl-H results in BS (backspace), which is why H was chosen to move the the cursor back one space on the ADM-3A. Applying this to Ctrl-J results in LF (line feed, a new line), which is why J was chosen to move the cursor down one line on the ADM-3A. For conceptual symmetry K and L became the inverses of these, though Ctrl-K corresponds to VT (vertical tab), and Ctrl-L corresponds to FF (form feed, similar to a page break).  These were both useful control characters in the contexts of printing terminals but less  broadly applicable for screen based terminals like the ADM-3A. This use of L and K was new with the ADM-3A</p>
+<p>I first learnt of this <a href="https://twitter.com/hillelogram/status/1326600125569961991">here</a>, which links to <a href="https://sltls.org/ASCII">this table</a> which greatly helps in visualising this property.  <a href="https://susam.net/blog/control-escape-meta-tricks.html">Control, Escape, and Meta Tricks</a> by Susam Pal touches on similar topics. <a href="https://jvns.ca/ascii.html">Julia Evans has also created a great visualisation of this.</a></p>
+<p>The Home and tilde symbols on the chevron key is potentially associated with the use of ~ to reference the user home directory in Unix. This key usage was also a first by ADM-3A.</p></article>
   </main>
 
   <footer>
@@ -185,18 +134,18 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/few-shot-learning" class="not-extra-small">random</a>
+          <a href="/bookmarks" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
-          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Programs/Vi(m)/Vi(m).md" class="desktop">edit</a>
-          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Software/Programs/Vi(m)/Vi(m).md" class="mobile">edit</a>
-          <a href="mailto:zachpmanson@gmail.com?subject=On 'Vi(m)'">reply</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Programs/Vim/Vi Movement Origins.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Software/Programs/Vim/Vi Movement Origins.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'Vi Movement Origins'">reply</a>
         </div>
       </summary>
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/few-shot-learning">random</a>
+          <a href="/bookmarks">random</a>
         </div>
       </div>
 
@@ -204,12 +153,19 @@
 
       <p class="backlinks"><strong>Incoming:</strong>
         
-        <a href="/unix">Unix</a>
+        <a href="/recent-changes">Recent Changes</a>
         
         </span>
       </p>
       
 
+      
+      <p class="backlinks"><strong> <a href="/tags">Tags:</a></strong>
+        
+        <a href="/tags#relics">#relics</a>
+        
+        </span>
+      </p>
       
       <p>
         
@@ -218,7 +174,7 @@
           <strong>
             Updated:
           </strong>
-          <date>2024-09-10</date>
+          <date>2025-02-17</date>
         </span>
 
       </p>
