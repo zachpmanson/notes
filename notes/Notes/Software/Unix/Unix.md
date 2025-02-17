@@ -70,7 +70,7 @@ More environment variables can be setup in the `~/.profile` executable.
 
 ## Related
 
-- [[Vi(m)]]
+- [[Vim]]
 - [[The bin Split]]
 - [[Rob Pike's Lesson in Shortcuts]]
 - [[GECOS]]

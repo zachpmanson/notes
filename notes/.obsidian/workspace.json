@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Folklore/Language and Death.md",
+                "file": "Notes/Software/Programs/Vim/Vim Plugins/Vim Plugins.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Language and Death"
+              "title": "Vim Plugins"
             }
           }
         ]
@@ -163,8 +163,8 @@
   },
   "active": "57b4fadd3f40b4b4",
   "lastOpenFiles": [
-    "Archive/Archive.md",
     "Archive/Folklore/Language and Death.md",
+    "Archive/Archive.md",
     "Notes/Software/Programs/Git/Git.md",
     "Archive/Bookmarks/Bookmarks.md",
     "Notes/Language/Nomenclature/Program Names.md",
@@ -201,7 +201,7 @@
     "www.mirrorsoferis.com/forum",
     "www.mirrorsoferis.com",
     "Notes/Language/Nomenclature",
-    "Notes/Software/Programs/Vi(m)/Vim Plugins",
+    "Notes/Software/Programs/Vim/Vim Plugins",
     "Media/trpc-typeerror.png",
     "Media/kinde-3.png",
     "Media/kinde-2.png",
