@@ -6,3 +6,6 @@
 > Another important difference between `void` and `never` is how they interact with other types. `void` can be used as the return type for functions that return `undefined`, while `never` can be used as the return type for functions that throw errors or have infinite loops. However, `void` cannot be used as a subtype of other types, while `never` can be used as a subtype of all types.
 
 -- [Sumit Kumar Singh](https://designtechworld.medium.com/never-vs-void-in-typescript-understanding-key-differences-1e5e22c57ea8)
+
+
+TODO: Add undefined vs void here
