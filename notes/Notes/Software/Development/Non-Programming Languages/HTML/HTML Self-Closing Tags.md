@@ -2,7 +2,7 @@
 tags:
   - relics
 ---
-XML has the concept of self-closing tags, where a tag can end with a `/` and then omit its closing tag, containing no content beyond the tag name and attributes. While it share a lot of DNA with XML, [[HTML]] doesn't actually support self closing tags, ignoring any slash at the end of a tag. These pairs are all semantically identical.
+XML has the concept of self-closing tags, where a tag can end with a `/` and then omit its closing tag, containing no content beyond the tag name and attributes. While it shares a lot of DNA with XML, [[HTML]] doesn't actually support self closing tags, ignoring any slash at the end of a tag. These pairs are all semantically identical.
 
 ```html
 <br>

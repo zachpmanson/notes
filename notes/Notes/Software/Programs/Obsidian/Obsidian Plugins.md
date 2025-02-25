@@ -1,6 +1,6 @@
 - ~~[[Ochrs]]-deploy, obviously~~ No longer using this, now switched to Obsidian Git + GitHub actions for deploying
 - Advanced Tables, proper table support
-- Automatically Reveal Active File, automatically reveal the active file in the navigation when you open a file.
+- ~~Automatically Reveal Active File, automatically reveal the active file in the navigation when you open a file.~~ no longer needed, now a built in option
 - Obsidian Git, a pretty great [[Git]] client that attaches itself to Obsidian
 - Obsidian Linter, provides a very customisable linter
 - Obsidian Commander, allows any palette command to be added as a shortcut to any panel
