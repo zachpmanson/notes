@@ -5,6 +5,6 @@ This is not natively supported by multi-account containers, but Tree Style Tabs 
 Go to Tree Style Tabs Settings, turn on expert mode, and enable in "New Tabs not from Existing Tabs", Container: "Inherit from the current tab".
 
 
-![[Screenshot 2025-02-26 at 09.52.39.png]]
+![[container-tab-inheritence.png]]
 
 I found this option [on the GitHub issue for this exact problem](https://github.com/mozilla/multi-account-containers/issues/462#issuecomment-1960136802).
