@@ -41,6 +41,7 @@
 ## Geography
 - [Blandford, New South Wales](https://en.wikipedia.org/wiki/Blandford,_New_South_Wales)
 - [Ernst Thälmann Island](https://en.wikipedia.org/wiki/Ernst_Th%C3%A4lmann_Island), which may legally belong to West Germany to this day
+- [West Berlin](https://en.wikipedia.org/wiki/West_Berlin)
 
 ## Miscellaneous
 
