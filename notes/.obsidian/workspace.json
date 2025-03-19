@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "4b8505776dd04637",
+        "id": "1a96652bbab176aa",
         "type": "tabs",
         "children": [
           {
-            "id": "57b4fadd3f40b4b4",
+            "id": "9f1d886ca6fcb079",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Problems/Firefox Photon.md",
+                "file": "Archive/Bookmarks/Wikipedia Articles.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Firefox Photon"
-            }
-          },
-          {
-            "id": "55a8db07b83ec2d8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Archive/Problems/Firefox Multi-Account Containers New Tab Behaviour.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Firefox Multi-Account Containers New Tab Behaviour"
+              "title": "Wikipedia Articles"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/void vs. never.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for void vs. never"
+              "title": "Backlinks"
             }
           },
           {
@@ -142,7 +126,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
@@ -153,16 +139,66 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "f8effb8933f4ceab",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": true,
+                  "showTags": true,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": false,
+                  "colorGroups": [
+                    {
+                      "query": "",
+                      "color": {
+                        "a": 1,
+                        "rgb": 14701138
+                      }
+                    }
+                  ],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.6359590061741309,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph of RTK Query vs. Infinite Scrolling"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 431.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -176,11 +212,26 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "55a8db07b83ec2d8",
+  "active": "9f1d886ca6fcb079",
   "lastOpenFiles": [
-    "Media/container-tab-inheritence.png",
-    "Archive/Problems/Firefox Multi-Account Containers New Tab Behaviour.md",
+    "Archive/Bookmarks/Bookmarks.md",
+    "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
+    "Notes/Software/Development/Web Development/Web Development.md",
+    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
     "Archive/Problems/Firefox Photon.md",
+    "Notes/Networks/Internet/Fediverse/Federating with Meta.md",
+    "Notes/Networks/Internet/Fediverse/Fediverse.md",
+    "Notes/Networks/Internet/Fediverse/Fediverse Family Tree.md",
+    "Notes/Software/Software.md",
+    "Notes/Software/Self-Hosting.md",
+    "Notes/Software/Unix/Unix.md",
+    "Notes/Software/Development/Non-Programming Languages/Markdown.md",
+    "Notes/Software/Programs/Obsidian/Obsidian.md",
+    "Notes/Networks/Internet/Digital Garden.md",
+    "Notes/Software/Programs/Git/Git.md",
+    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Cursed TypeScript Projects.md",
+    "Archive/Problems/Firefox Multi-Account Containers New Tab Behaviour.md",
+    "Media/container-tab-inheritence.png",
     "Notes/Software/Development/Programming Languages/R/R Variable Assignment.md",
     "Meta/Meta.md",
     "Notes/Software/Development/Development.md",
@@ -190,20 +241,6 @@
     "Notes/Software/Development/Non-Programming Languages/HTML/HTML.md",
     "tags.md",
     "Archive/Folklore/A Story About 'Magic'.md",
-    "Notes/Software/Programs/Obsidian/Obsidian Plugins.md",
-    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/void vs. never.md",
-    "Archive/Bookmarks/Hacks.md",
-    "Notes/Software/Programs/Git/Git.md",
-    "Notes/Software/Programs/Vim/Vim Plugins/Vim Plugins.md",
-    "Archive/Folklore/Language and Death.md",
-    "Archive/Archive.md",
-    "Archive/Bookmarks/Bookmarks.md",
-    "Notes/Language/Nomenclature/Program Names.md",
-    "Notes/Language/Nomenclature/Nomenclature.md",
-    "Archive/Bookmarks/Bookmarklets.md",
-    "Archive/Problems/WebSockets vs Nginx.md",
-    "Archive/Problems/Problems.md",
-    "Notes/Networks/Internet/Pirate Libraries/Pirate Libraries.md",
     "Media/linkedin-element.png",
     "Notes/Miscellany/Crochet",
     "Notes/Hardware",

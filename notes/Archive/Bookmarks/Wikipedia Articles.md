@@ -38,9 +38,12 @@
 - [James while John had had had had had had had had had had had a better effect on the teacher](https://en.wikipedia.org/wiki/James_while_John_had_had_had_had_had_had_had_had_had_had_had_a_better_effect_on_the_teacher)
 - [List of Generation Z slang](https://en.wikipedia.org/wiki/List_of_Generation_Z_slang)
 
+## Geography
+- [Blandford, New South Wales](https://en.wikipedia.org/wiki/Blandford,_New_South_Wales)
+- [Ernst Thälmann Island](https://en.wikipedia.org/wiki/Ernst_Th%C3%A4lmann_Island), which may legally belong to West Germany to this day
+
 ## Miscellaneous
 
-- [Blandford, New South Wales](https://en.wikipedia.org/wiki/Blandford,_New_South_Wales)
 - [Anti-copyright notice](https://en.wikipedia.org/wiki/Anti-copyright_notice)
 - [Carcinisation](https://en.wikipedia.org/wiki/Carcinisation) 
 - [Evolutionary game theory](https://en.wikipedia.org/wiki/Evolutionary_game_theory#Hawk_dove) 

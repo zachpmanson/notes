@@ -34,7 +34,7 @@ There is a little boilerplate you have to write, but the meat of a basic RTK Que
 This will generate a hook called `useGetLocation` which will be cached.  Suddenly you never need to store a `Location` object in state to share it across components and you can just call `useGetLocation({id:5})` every time you need it. It also provides a lazy version of the hook that returns a normal function you can use to retrieve the data, which is good for APIs that need to be called multiple times.
 
 ```jsx
-function LocationCard({id}: {id:number}) {
+function LocationCard({ id }: {id: number}) {
 	const {data: location, isLoading} = useGetLocation({id:id});
 	const [getLocationsLazy] = useLazyGetLocation();
 	...
