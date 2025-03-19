@@ -13,7 +13,7 @@
             <link>https://notes.zachmanson.com/dirty-hacks</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Wed, 26 Feb 2025 00:14:57 </lastBuildDate>
+        <lastBuildDate>Wed, 19 Mar 2025 23:02:23 </lastBuildDate>
         
         <item>
             <title>RTK Query vs. Infinite Scrolling</title>
@@ -44,7 +44,7 @@
 <span class="w">    </span><span class="p">}),</span>
 </code></pre></div>
 <p>This will generate a hook called <code>useGetLocation</code> which will be cached.  Suddenly you never need to store a <code>Location</code> object in state to share it across components and you can just call <code>useGetLocation({id:5})</code> every time you need it. It also provides a lazy version of the hook that returns a normal function you can use to retrieve the data, which is good for APIs that need to be called multiple times.</p>
-<div class="highlight"><pre><span></span><code>function LocationCard({id}: {id:number}) {
+<div class="highlight"><pre><span></span><code>function LocationCard({ id }: {id: number}) {
     const {data: location, isLoading} = useGetLocation({id:id});
     const [getLocationsLazy] = useLazyGetLocation();
     ...
