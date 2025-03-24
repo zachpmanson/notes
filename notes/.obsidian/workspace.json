@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/Wikipedia Articles.md",
+                "file": "Archive/Problems/MUI TextField Border.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Wikipedia Articles"
+              "title": "MUI TextField Border"
             }
           }
         ]
@@ -214,6 +214,9 @@
   },
   "active": "9f1d886ca6fcb079",
   "lastOpenFiles": [
+    "Archive/Problems/Problems.md",
+    "Archive/Problems/MUI TextField Border.md",
+    "Archive/Bookmarks/Wikipedia Articles.md",
     "Archive/Bookmarks/Bookmarks.md",
     "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
     "Notes/Software/Development/Web Development/Web Development.md",
@@ -238,9 +241,6 @@
     "Notes/Software/Development/Non-Programming Languages/HTML/HTML Self-Closing Tags.md",
     "Notes/Software/Development/Non-Programming Languages/HTML/target.md",
     "Archive/Folklore/Svelte parses HTML all wrong.md",
-    "Notes/Software/Development/Non-Programming Languages/HTML/HTML.md",
-    "tags.md",
-    "Archive/Folklore/A Story About 'Magic'.md",
     "Media/linkedin-element.png",
     "Notes/Miscellany/Crochet",
     "Notes/Hardware",
