@@ -10,6 +10,9 @@
 - [crowdwave](https://www.crowdwave.com/) 
 - [Bop Spotter](https://walzr.com/bop-spotter), a vibe catcher placed in public
 
+## Similarity
+- [Music DNA](https://pudding.cool/2025/04/music-dna/)
+
 ## Harmontown
 
 [Harmontown's website](https://harmontown.com) started [receiving DMCA takedown requests](https://www.reddit.com/r/Harmontown/comments/1et500a/website_down/licjk5h/) after it made the video archive public, so took them down.
