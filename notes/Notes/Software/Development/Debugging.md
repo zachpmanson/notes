@@ -1,6 +1,6 @@
 > Believe what you see, not what you believe
 
--- [[Michael Wise Quotes|Michael Wise]]
+-- [[Michael Wise|Michael Wise]]
 
 - Synthetic execution
 	- use your brain, pretend to be the program in execution

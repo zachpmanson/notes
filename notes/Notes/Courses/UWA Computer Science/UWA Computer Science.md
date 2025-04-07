@@ -59,11 +59,11 @@ CITS2002 Systems Programming
 - includes [[Make]] for some reason, no reason literally cut this its covered in CITS2002 and is actually relevant there
 - also includes [[Git]] but never actually requires its use so it feels useless even though it is most students first introduction to it. git should be in CITS1401.
 - somehow manages to completely screw up the assessments every year
-- see [[Michael Wise Quotes]]
+- see [[Michael Wise]]
 
 CITS2200 Data Structures & Algorithms
 
-- necessary evil
+- [[Amitava Datta|necessary evil]]
 - teaches important concepts effectively, relatively dry though
 - assessments are done in Java and this leads to many stupid problems
 
