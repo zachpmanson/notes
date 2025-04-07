@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Archive/Bookmarks/Audio.md",
+                "file": "Archive/Folklore/Please Think More.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Audio"
+              "title": "Please Think More"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 325.5024719238281,
-    "collapsed": true
+    "width": 325.5024719238281
   },
   "right": {
     "id": "b30ab2faf3f39acc",
@@ -215,6 +214,11 @@
   },
   "active": "9f1d886ca6fcb079",
   "lastOpenFiles": [
+    "Media/think.webp",
+    "Archive/Folklore/Christ McDonald.md",
+    "Archive/Folklore/Please Think More.md",
+    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
+    "Archive/Bookmarks/Audio.md",
     "Notes/Software/Programs/Doom.md",
     "Notes/Software/Software.md",
     "Notes/Software/Development/Programming Languages/C/C.md",
@@ -236,12 +240,7 @@
     "Notes/Software/Programs/Obsidian/Obsidian.md",
     "Notes/Networks/Internet/Digital Garden.md",
     "Notes/Software/Programs/Git/Git.md",
-    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/Cursed TypeScript Projects.md",
-    "Archive/Problems/Firefox Multi-Account Containers New Tab Behaviour.md",
     "Media/container-tab-inheritence.png",
-    "Notes/Software/Development/Programming Languages/R/R Variable Assignment.md",
-    "Meta/Meta.md",
-    "Notes/Software/Development/Development.md",
     "Media/linkedin-element.png",
     "Notes/Miscellany/Crochet",
     "Notes/Hardware",
