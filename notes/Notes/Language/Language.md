@@ -6,3 +6,4 @@ subtitle: Notes on (non-programming) languages, primarily English.
 -- James D. Nicoll
 
 - [You’re probably using the wrong dictionary](https://jsomers.net/blog/dictionary)
+- [The Small World of English](https://www.inotherwords.app/linguabase/)

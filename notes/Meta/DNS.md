@@ -22,9 +22,6 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	- **[minecraftle.zachmanson.com](https://minecraftle.zachmanson.com)**  
 	  deployed instance of [[Minecraftle]], a puzzle game based on Wordle and Minecraft crafting recipes   
 	  mctl (digitalocean)  
-	- **[minecraftle-public.zachmanson.com](https://minecraftle-public.zachmanson.com)** 
-	  static asset server for minecraftle so I don't overload vercel   
-	  trackstar (public asset serving (probably should migrate to mctl))
 	- **[db.zachmanson.com](db.zachmanson.com)**  
 	  postgres databases for Penultimate Guitar, Minecraftle, Alculator, api   
 	  trackstar

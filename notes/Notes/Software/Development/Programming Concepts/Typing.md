@@ -1,0 +1,5 @@
+- Strong typing
+- Weak typing
+- Static typing
+- Dynamic typing
+- [String(ly) typing](https://www.hanselman.com/blog/stringly-typed-vs-strongly-typed)
