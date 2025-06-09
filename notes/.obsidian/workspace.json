@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Language/Language.md",
+                "file": "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Language"
+              "title": "JavaScript"
+            }
+          },
+          {
+            "id": "d66ebe5b460b678e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Archive/Lines.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Lines"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -212,8 +227,23 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "5eaa03500de39ab5",
+  "active": "d66ebe5b460b678e",
   "lastOpenFiles": [
+    "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
+    "Archive/Bookmarks/Lists.md",
+    "Archive/Lines.md",
+    "Archive/Bookmarks/Technology Gibberish.md",
+    "Archive/Bookmarks/Hacks.md",
+    "Archive/Bookmarks/Articles.md",
+    "Archive/Bookmarks/Audio.md",
+    "Archive/Bookmarks/Blogs.md",
+    "Archive/Bookmarks/Bookmarks.md",
+    "Archive/Bookmarks/Wikipedia Articles.md",
+    "Archive/Bookmarks/Websites.md",
+    "Notes/Notes.md",
+    "Notes/Software/Programs/Postgres.md",
+    "Archive/Fiction/Techaro.md",
+    "Notes/Language/Language.md",
     "Meta/DNS.md",
     "Meta/db.zachmanson.com.md",
     "Notes/Software/Development/Development Methodologies/Development Methodologies.md",
@@ -225,26 +255,11 @@
     "Notes/Courses/Courses.md",
     "Notes/Courses/UWA Computer Science/Amitava Datta.md",
     "Notes/Courses/UWA Computer Science/Chris McDonald.md",
-    "Notes/Courses/UWA Computer Science/CITS2003/CITS2003.md",
     "Media/you-are-young-no.png",
-    "Notes/Courses/UWA Computer Science/UWA Computer Science.md",
     "Media/think.webp",
-    "Archive/Problems/Poetry Showing Dependencies it Refuses to Install.md",
     "Media/data-structures-and-algorithms.png",
     "Media/Pasted image 20250407143356.png",
     "Media/pen.webp",
-    "Archive/Folklore/Christ McDonald.md",
-    "Archive/Bookmarks/Audio.md",
-    "Notes/Software/Programs/Doom.md",
-    "Notes/Software/Software.md",
-    "Notes/Software/Development/Programming Languages/C/C.md",
-    "Archive/Problems/MUI TextField Border.md",
-    "Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md",
-    "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
-    "Archive/Problems/Problems.md",
-    "Archive/Bookmarks/Wikipedia Articles.md",
-    "Archive/Bookmarks/Bookmarks.md",
-    "Archive/Problems/RTK Query vs. Infinite Scrolling.md",
     "Media/container-tab-inheritence.png",
     "Media/linkedin-element.png",
     "Notes/Miscellany/Crochet",

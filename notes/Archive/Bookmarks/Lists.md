@@ -4,6 +4,7 @@
 - [List of nuclear close calls](https://en.wikipedia.org/wiki/List_of_nuclear_close_calls)
 - [Devine Lu Linvega's Bookmarks](https://wiki.xxiivv.com/site/bookmarks.html)
 - [List of lists of falsehoods programmers believe](https://github.com/kdeldycke/awesome-falsehood)
+- [Historical Tech Tree](https://www.historicaltechtree.com/), a graph of technologies that let to other technologies
 
 Related:
 

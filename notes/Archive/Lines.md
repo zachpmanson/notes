@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> In general, empathy is how I feed my family
+
+-- [Tony Gilroy](https://youtu.be/9kUFBXrw0DU?si=jggs3F8Lr0b_YPu7&t=1055), on empathy as a byproduct of creative work
+
+---
+
 > It's not fun or possible to know everything which is why we are supposed to share the load. Share the load.
 
 -- [Hank Green](https://youtube.com/watch?v=dqkvoFPj5zU)
