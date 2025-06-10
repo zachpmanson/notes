@@ -1,12 +1,11 @@
 ---
 subtitle: Something I desperately need to get better at.
 ---
-- https://www.interroban.gg/
-- https://www.libraryofdune.com/
-- https://robinrendle.com/ is always good
-- https://bower.sh/ uses dracula like my homepage does but it looks much nicer
-- https://muffinlabs.com/, very clean, dense, impressive
-- https://maxbo.me/, hideous I love it
-- https://muffinlabs.com/, basic i love it
-- https://morrisbrodersen.de/  
-  basic clean
+- [interroban.gg](https://www.interroban.gg/)
+- [libraryofdune.com](https://www.libraryofdune.com/)
+- [robinrendle.com](https://robinrendle.com/) is always good
+- [bower.sh](https://bower.sh/) uses dracula like my homepage does but it looks much nicer
+- [muffinlabs.com](https://muffinlabs.com/), very clean, dense, impressive
+- [maxbo.me](https://maxbo.me/), hideous I love it
+- [muffinlabs.com](https://muffinlabs.com/), basic i love it
+- [morrisbrodersen.de](https://morrisbrodersen.de/), basic clean
