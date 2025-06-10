@@ -35,8 +35,7 @@
               "title": "Markwhen"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -227,10 +226,10 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "d66ebe5b460b678e",
+  "active": "5eaa03500de39ab5",
   "lastOpenFiles": [
-    "Notes/Software/Development/Non-Programming Languages/Markdown.md",
     "Notes/Software/Development/Non-Programming Languages/Markwhen.md",
+    "Notes/Software/Development/Non-Programming Languages/Markdown.md",
     "Notes/Design/Design.md",
     "Notes/Design/Web Design/Web Design.md",
     "Archive/Lines.md",

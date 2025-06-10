@@ -24,3 +24,4 @@ subtitle: The language that somehow powers the world.
 ## Interesting Links
 
 - [What if we'd had better `html`-in-`js` syntax all along?](https://leontrolski.github.io/dom-syntax.html)
+- [Directive prologues and JavaScript dark matter](https://macwright.com/2025/04/29/directive-prologues-and-javascript-dark-matter.html)
