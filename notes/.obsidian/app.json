@@ -2,5 +2,6 @@
   "alwaysUpdateLinks": true,
   "attachmentFolderPath": "Media",
   "newFileLocation": "current",
-  "vimMode": true
+  "vimMode": true,
+  "promptDelete": false
 }
