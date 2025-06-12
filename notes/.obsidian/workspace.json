@@ -13,6 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Notes/Software/Software vs Timezones.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Software vs Timezones"
+            }
+          },
+          {
+            "id": "d66ebe5b460b678e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Notes/Time/Time.md",
                 "mode": "source",
                 "source": false
@@ -22,20 +36,17 @@
             }
           },
           {
-            "id": "d66ebe5b460b678e",
+            "id": "54ca7f5482f62cec",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Software/Development/Non-Programming Languages/Markwhen.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Markwhen"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -67,7 +78,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#relics  ",
+                "query": "Related",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,7 +99,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -108,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Software/Programs/Git/Git.md",
+                "file": "Notes/Time/Time.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +130,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Git"
+              "title": "Backlinks for Time"
             }
           },
           {
@@ -226,15 +238,15 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "5eaa03500de39ab5",
+  "active": "ae2026764fcf906e",
   "lastOpenFiles": [
+    "Notes/Software/Development/Non-Programming Languages/Markwhen.md",
     "Notes/Software/Software vs Timezones.md",
-    "Archive/Problems/WebSockets vs Nginx.md",
     "Notes/Time/Time.md",
+    "Archive/Problems/WebSockets vs Nginx.md",
     "Notes/Time",
     "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
     "Notes/Time",
-    "Notes/Software/Development/Non-Programming Languages/Markwhen.md",
     "Notes/Software/Development/Non-Programming Languages/Markdown.md",
     "Notes/Design/Design.md",
     "Notes/Design/Web Design/Web Design.md",
