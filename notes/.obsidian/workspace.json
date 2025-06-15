@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Time/Time.md",
+                "file": "Notes/Software/Development/Programming Languages/Python.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Time"
+              "title": "Python"
             }
           },
           {
@@ -238,11 +238,11 @@
       "cmdr:Git: Create backup": false
     }
   },
-  "active": "ae2026764fcf906e",
+  "active": "d66ebe5b460b678e",
   "lastOpenFiles": [
+    "Notes/Time/Time.md",
     "Notes/Software/Development/Non-Programming Languages/Markwhen.md",
     "Notes/Software/Software vs Timezones.md",
-    "Notes/Time/Time.md",
     "Archive/Problems/WebSockets vs Nginx.md",
     "Notes/Time",
     "Notes/Software/Development/Programming Languages/JavaScript/JavaScript.md",
