@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Software/Development/Programming Languages/Python.md",
+                "file": "Notes/Language/Characters/Characters.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Python"
+              "title": "Characters"
             }
           },
           {
@@ -99,8 +99,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -120,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Time/Time.md",
+                "file": "Notes/Language/Characters/Characters.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +129,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Time"
+              "title": "Backlinks for Characters"
             }
           },
           {
@@ -240,6 +239,9 @@
   },
   "active": "d66ebe5b460b678e",
   "lastOpenFiles": [
+    "Notes/Language/Language.md",
+    "Notes/Language/Characters/English Characters.md",
+    "Notes/Software/Development/Programming Languages/Python.md",
     "Notes/Time/Time.md",
     "Notes/Software/Development/Non-Programming Languages/Markwhen.md",
     "Notes/Software/Software vs Timezones.md",
@@ -263,11 +265,8 @@
     "Notes/Notes.md",
     "Notes/Software/Programs/Postgres.md",
     "Archive/Fiction/Techaro.md",
-    "Notes/Language/Language.md",
     "Meta/DNS.md",
     "Meta/db.zachmanson.com.md",
-    "Notes/Software/Development/Development Methodologies/Development Methodologies.md",
-    "Notes/Software/Development/Programming Concepts/Typing.md",
     "Media/you-are-young-no.png",
     "Media/think.webp",
     "Media/data-structures-and-algorithms.png",
