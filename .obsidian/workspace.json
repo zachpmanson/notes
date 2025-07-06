@@ -1,0 +1,213 @@
+{
+  "main": {
+    "id": "06bec071fe448529",
+    "type": "split",
+    "children": [
+      {
+        "id": "3d9c92fd7d09d139",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f38c35290fff5531",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b6b05d5563abcddc",
+    "type": "split",
+    "children": [
+      {
+        "id": "86378d91e7deb4a3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c0340312a4d0e1f8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "e88ca564fab97045",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "8c66ec32ce6a5e11",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "fd530bc1fc9c0899",
+    "type": "split",
+    "children": [
+      {
+        "id": "c870e21bae10407f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cf8ff0aa7b819711",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "78e2776baf454c92",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "9b78010c235d981d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "77048f9fb65ef00d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "f38c35290fff5531",
+  "lastOpenFiles": [
+    "update-notes.sh",
+    "static/styles/global.css",
+    "static/styles/code.css",
+    "static/icon/icon.svg",
+    "static/styles",
+    "static/icon",
+    "static",
+    "setup.sh",
+    "notes/Projects/Ochrs/Ochrs.md",
+    "notes/Projects/Ochrs/Ochrs Deploy.md",
+    "notes/Projects/Ochrs/Ochrs Syntax.md",
+    "notes/Projects/Minecraftle/Minecraftle.md",
+    "notes/Projects/Minecraftle/Minecraftle v1.1.md",
+    "notes/Projects/Ochrs/Ochrs 1.0.md",
+    "notes/Projects/Ochrs/Ochrs 2.0.md",
+    "notes/Projects/Minecraftle/How Minecraft Stores Crafting Recipes.md",
+    "notes/Projects/Minecraftle/Minecraftle v2.0.md",
+    "notes/Projects/snakeware.md",
+    "notes/Projects/ironprof.md",
+    "notes/Projects/Status Messenger.md",
+    "notes/Projects/Projects.md",
+    "notes/Projects/Penultimate Guitar.md",
+    "notes/Projects/Ochrs",
+    "notes/Projects/Minecraftle",
+    "notes/Projects/Mastodon Thread Unroller.md",
+    "notes/Projects/COVID-19 Tracker.md",
+    "notes/Projects/Alculator.md",
+    "notes/Projects",
+    "notes/Posts/Usernames.md",
+    "notes/Posts/The Poor Man's Static Site Generator.md",
+    "notes/Posts/The H Chord.md",
+    "notes/Posts/The Curse of the Last Good Day.md",
+    "notes/Posts/Posts.md",
+    "notes/Posts/Planting a Flag in Wikipedia.md",
+    "notes/Posts/LinkedIn's Ghost Text.md",
+    "notes/Posts/Imposter Syndrome Day 632.md",
+    "notes/Posts",
+    "notes/Media/you-are-young-no.png",
+    "notes/Media/xz-analysis.png",
+    "notes/Media/wisdom-of-the-ancients.png",
+    "notes/Media/wikipedia-popup.png",
+    "notes/Media/webring.svg",
+    "notes/Media/verification-can.png",
+    "notes/Media/vercel-warnings.png",
+    "notes/Media/uwa-cits.png",
+    "notes/Media/ug.png"
+  ]
+}
