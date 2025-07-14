@@ -7,3 +7,4 @@ subtitle: Notes on (non-programming) languages, primarily English.
 
 - [You’re probably using the wrong dictionary](https://jsomers.net/blog/dictionary)
 - [The Small World of English](https://www.inotherwords.app/linguabase/)
+- [Prisencolinensinainciusol](https://www.youtube.com/watch?v=bQDY3HFkh_Y)
