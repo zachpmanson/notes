@@ -1,4 +1,4 @@
-Taken from [Anil Dashes's post](http://dashes.com/2013/07/17/rules_of_internet/) ([archive](https://web.archive.org/web/20130721030627/http://dashes.com/anil/2013/07/rules-of-internet.html))  from 2023-07-17.  It seems to have aged pretty well.
+Taken from [Anil Dash's post](http://dashes.com/2013/07/17/rules_of_internet/) ([archive](https://web.archive.org/web/20130721030627/http://dashes.com/anil/2013/07/rules-of-internet.html))  from 2023-07-17.  It seems to have aged pretty well.
 
 ---
 
