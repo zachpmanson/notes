@@ -1,3 +1,5 @@
+> 
+
 DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscuresorrows.com/).
 
 - **Accrete**: grow by accumulation or coalescence
@@ -56,3 +58,7 @@ DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscu
 - **Yuenyeung** (Cantonese): coffee with tea
 - **Zipper blues**: A depressed feeling one gets from constantly having to move around or not being able to stay in one place. Comes from having to always zip up ones jacket because they always have to leave. Depression caused by successive movement and not being able to settle in one place. Frustration caused by constant mobility and inability to maintain a residence.
 
+
+> English is an awfully subtle instrument. A dictionary that ignores these little shades is dangerous; in fact in those cases it's worse than useless. It's misleading, deflating. It divests those words of their worth and purpose.
+
+-- [James Somers](https://jsomers.net/blog/dictionary)
