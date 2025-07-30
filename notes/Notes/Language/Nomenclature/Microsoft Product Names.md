@@ -7,6 +7,7 @@ Microsoft somehow manages to have constantly terrible names.
 - Xbox One (the third Xbox)
 - Xbox One X & One S followed by the completely different Xbox Series X & Series S
 - Copilot+ PCs
+- Microsoft Copilot Studio
 - Microsoft Edge Copilot
   - Microsoft Edge Copilot Mode
 - GitHub Copilot Workspace, completely unrelated to Github Copilot and GitHub Workspaces
