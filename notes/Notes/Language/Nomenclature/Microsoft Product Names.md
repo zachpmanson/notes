@@ -7,6 +7,9 @@ Microsoft somehow manages to have constantly terrible names.
 - Xbox One (the third Xbox)
 - Xbox One X & One S followed by the completely different Xbox Series X & Series S
 - Copilot+ PCs
+- Microsoft Copilot (consumer)
+- Microsoft 365 Copilot App
+- Microsoft 365 Copilot Chat
 - Microsoft Copilot Studio
 - Microsoft Edge Copilot
   - Microsoft Edge Copilot Mode
@@ -21,3 +24,7 @@ Microsoft somehow manages to have constantly terrible names.
 - .NET, its predecessors, its children and the confusing relationship between them
 - Windows App, [the app for Windows that allows you to run Windows apps](https://arstechnica.com/gadgets/2024/09/microsoft-releases-a-new-windows-app-called-windows-app-for-running-windows-apps/?utm_brand=arstechnica&utm_social-type=owned&utm_source=mastodon&utm_medium=social) 
 	- supersedes Microsoft Remote Desktop
+
+## Links
+
+- [Microsoft 365 Product Name Changes](https://m365maps.com/renames.htm)
