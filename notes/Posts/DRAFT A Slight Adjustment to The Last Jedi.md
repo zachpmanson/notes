@@ -1,7 +1,5 @@
 The lightspeed ram is incredible but it does break the world. 
 
-Easily most visually striking scene in all Star Wars films, it took my breath away in the theatre. It affects all ongoing plotlines simultaneously, finding a novel way to use mechanics that have existed in the Star Wars films since 1977. Using a ship entering hyperspace as an offensive weapon is clever and the level of devastation that it is shown to inflict makes intuitive sense, given the speed involved.
-
 It is such a devastating attack that it's sorta crazy nobody in-universe has tried it before, especially given the existence of autonomous robots that can operate ships. The film provides no counter to this attack. It's not unreasonable to wonder what kind of impact this style of attack could have had on the Death Star.
 
 The Last Jedi doesn't provide any explanation for why this has never been tried before. The Rise of Skywalker attempts to explain it, stating that the "Holdo Maneuver" was "one in a million". That explanation feels unsatisfactory to me, both because it mean that Holdo either:
