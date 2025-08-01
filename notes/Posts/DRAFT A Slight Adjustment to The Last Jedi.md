@@ -22,11 +22,13 @@ It also creates a logical reason why a droid-piloted lightspeed ram wouldn't hav
 
 The psuedoscience of how this works could be easily explained, even within limited explanation that hyperspace has in Star Wars. 
 
-> A Resistance engineer (perhaps named Rose) hurriedly pushes past officers on the bridge, panting as she reaches Admiral Holdo. A sergeant begins to berate her for forcing her way onto the bridge, but he is put at ease by Holdo. Holdo asks the engineer what is so important it warrant the comotion.
+> A Resistance engineer (perhaps named Rose) hurriedly pushes past officers on the bridge, panting as she reaches Admiral Holdo. A sergeant begins to berate her for forcing her way onto the bridge, but he is put at ease by Holdo. Holdo asks the engineer what is so important it warrants the commotion.
 > 
-> "If they are tracking us through hyperspace, their ship must be in normal space and hyperspace simultaneously" says the engineer as she catches her breath.
+> "If they are tracking us through hyperspace, their ship must be in normal space and hyperspace at the same time" says the engineer as she catches her breath.
 > 
-> Holdo's expression drops. She pauses for a moment, eyes calculating. What the engineer is intimating has never been done before. The rooms is silent for a moment. Holdo snaps back to reality before ordering the bridge be cleared and the ship evacuated.
+> Holdo's expression drops. She pauses, eyes calculating. What the engineer is intimating has never been done before. The rooms is silent.
+> 
+> Holdo snaps back to reality, ordering the bridge be cleared and the ship evacuated.
 
 This cleanly explains why this has never been done before, it wasn't possible until hyperspace tracking was developed. This battle will have implications for all future battles, where there is always a mutually assured destruction option on the table.
 
