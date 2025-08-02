@@ -16,7 +16,7 @@ The Last Jedi itself is excruciatingly close to a sensible explanation that make
 
 The more I think about this the more sense it makes. 
 
-This places an interesting limit both mechanics that The Last Jedi introduces. By tracking a ship through hyperspace, you are opening yourself up to a potentially devastating attack, but an attack that likely will cost the enemy heavily too. If your enemy suspects that you're going to ram them, they can turn of their hyperspace tracking equipment, which protects them but may allow you an opportunity to escape.
+This places an interesting limit both mechanics that The Last Jedi introduces. By tracking a ship through hyperspace, you are opening yourself up to a potentially devastating attack, but an attack that likely will cost the enemy heavily too. If your enemy suspects that you're going to ram them, they can turn off their hyperspace tracking equipment, which protects them but may allow you an opportunity to escape.
 
 It also creates a logical reason why a droid-piloted lightspeed ram wouldn't have worked in The Last Jedi, since it is well established that ships can be scanned for the presence of lifeforms. Your enemy could detect that your ship has no lifeforms aboard, surmise you are planning on ramming them, giving them the opportunity to counter.
 
