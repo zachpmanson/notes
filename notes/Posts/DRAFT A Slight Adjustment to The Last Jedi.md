@@ -2,7 +2,7 @@ The lightspeed ram is incredible but it does break the world.
 
 It is such a devastating attack that it's sorta crazy nobody in-universe has tried it before, especially given the existence of autonomous robots that can operate ships. The film provides no counter to this attack. It's not unreasonable to wonder what kind of impact this style of attack could have had on the Death Star.
 
-The Last Jedi doesn't provide any explanation for why this has never been tried before. The Rise of Skywalker attempts to explain it, stating that the "Holdo Maneuver" was "one in a million". That explanation feels unsatisfactory to me, both because it mean that Holdo either:
+The Last Jedi doesn't provide any explanation for why this has never been tried before. The Rise of Skywalker attempts to explain it, stating that the "Holdo Maneuver" was "one in a million". That explanation feels unsatisfactory to me, because it mean that Holdo either:
 
 1. was extremely lucky and noticed that the conditions were just right for it to work so went for it
 2. was risking everything when the attack was extremely unlikely to work
