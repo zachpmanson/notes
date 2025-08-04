@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> when you age, you start realising that everyone doesn’t necessarily have their shit together like you thought they did as a kid, but they just become better and better at hiding it until the closet becomes full.
+
+-- [Alex Pagano](https://achillesheel.substack.com/p/be-adult)
+
+---
+
 > I consider English orthography worthy of UNESCO protection
 
 -- [mousethatroared](https://news.ycombinator.com/item?id=44485628)
