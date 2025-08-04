@@ -1,4 +1,4 @@
-The lightspeed ram is incredible but it does break the world. 
+The lightspeed ram in The Last Jedi is incredible but it does break the world. 
 
 It is such a devastating attack that it's sorta crazy nobody in-universe has tried it before, especially given the existence of autonomous robots that can operate ships. The film provides no counter to this attack. It's not unreasonable to wonder what kind of impact this style of attack could have had on the Death Star.
 
