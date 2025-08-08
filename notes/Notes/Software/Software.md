@@ -9,4 +9,3 @@ subtitle: Notes on programs and software engineering.
 
 -- [Not Zev Eisenberg](https://mastodon.social/@ZevEisenberg/112435500743889014)
 
-- [The Cursed Computer Iceberg](https://suricrasia.online/iceberg/)

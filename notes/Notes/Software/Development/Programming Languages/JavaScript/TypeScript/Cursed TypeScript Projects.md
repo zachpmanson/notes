@@ -1,6 +1,5 @@
 ---
-tags:
-  - cursed
+tags: []
 ---
 Assorted abuse of TypeScript's type system.
 
