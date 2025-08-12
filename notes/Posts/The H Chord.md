@@ -58,7 +58,7 @@ I don't love dealing with problems caused by the whims of millennia dead monks, 
 ![[gods-mistakes.png]]
 
 <details markdown="1">
-<summary> An aside on The Flat, Sharp, and Natural. A Historical Sketch </summary>
+<summary>An aside on The Flat, Sharp, and Natural. A Historical Sketch</summary>
 
 When I first copied the text from the article, it copied that "square b" as a "h". Funny that modern OCR technology makes the same mistakes at 1000 year old monks.
 
