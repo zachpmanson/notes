@@ -7,3 +7,4 @@ Examples:
 - The [[Comma Operator]]
 - Python tuple syntax
 - Python default argument initialisation
+- [Big list of them](https://qouteall.fun/qouteall-blog/2025/Traps%20to%20Developers)
