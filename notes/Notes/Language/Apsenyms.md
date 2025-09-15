@@ -1,5 +1,5 @@
 ---
-subtitle: Words that seem like they should exist but aren't used
+subtitle: Words that seem like they should exist but aren't used (unpaired words)
 ---
 - [[Gruntle]] (disgruntle)
 - Lukecool ([[Lukewarm]])
