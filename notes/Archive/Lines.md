@@ -3,6 +3,10 @@ subtitle: Some lines worth noting, but not worth their own page.
 ---
 This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://drwho.virtadpt.net/drwho.plan.txt). See also [Gwern's page on epigrams](https://gwern.net/epigram).
 
+> Radicalism is when no house
+
+-- [Brandon Ewing](https://youtu.be/yGooLJoyrI4?si=vaGdjKAX4sUpcMh0&t=2615)
+
 ---
 
 > when you age, you start realising that everyone doesn’t necessarily have their shit together like you thought they did as a kid, but they just become better and better at hiding it until the closet becomes full.
