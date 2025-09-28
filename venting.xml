@@ -13,7 +13,7 @@
             <link>https://notes.zachmanson.com/venting</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Mon, 15 Sep 2025 00:02:14 </lastBuildDate>
+        <lastBuildDate>Sun, 28 Sep 2025 05:55:40 </lastBuildDate>
         
         <item>
             <title>Poetry Showing Dependencies it Refuses to Install</title>
@@ -126,52 +126,19 @@ required<span class="w"> </span>by
         </item>
         
         <item>
-            <title>The H Chord</title>
-            <link>https://notes.zachmanson.com/the-h-chord</link>
+            <title>Nextcloud Phone Photo Upload</title>
+            <link>https://notes.zachmanson.com/nextcloud-phone-photo-upload</link>
             
-            <description>How German monks broke my website</description>
+            <description>Just use FolderSync.</description>
             
             <content:encoded>
-                <![CDATA[<p>I received a <a href="https://github.com/pavo-etc/penultimate-guitar/issues/41">strange bug report</a> on <a href="/penultimate-guitar">Penultimate Guitar</a> where the Next.js rendering would fail completely on certain songs.</p>
-<h2 id="the-error">The Error</h2>
-<p>The type error was being triggered by a chord component, where the key was undefined. The chords are pulled from Ultimate Guitar, so I inspected the JSON payload from the <a href="https://tabs.ultimate-guitar.com/tab/1684995">original source</a>.</p>
-<p><img alt="" src="/media/ug.png" /></p>
-<p>Why the hell is there a <code>[ch]H[/ch]</code> chord in there? That's definitely the cause as I never accounted for non-existent keys. Looking at Ultimate Guitar, it renders as a B chord.</p>
-<p><img alt="" src="/media/ug-rendered.png" /></p>
-<p>Huh?</p>
-<details>
-<summary>An aside on Ultimate Guitar HTML</summary>
-<p>The way Ultimate Guitar handles data is bizarre. It passes a static dehydrated <a href="/html">HTML</a> page to the client.  The data payload is in the HTML as well, but instead of being contained in a <code>script</code> tag it's a giant JSON payload in an escaped string within an attribute of a random <code>div</code></p>
-</details>
-<h2 id="one-google-search-later">One Google Search Later</h2>
-<p>Germany and the Netherlands ha(d/ve) their own musical key notation that include(d/s) a H chord. <a href="https://www.guitarsite.com/newsletters/010122/12.shtml">This site</a> claims it ended in "1994/1995", though I've seen <a href="https://github.com/pavo-etc/penultimate-guitar/issues/41#issuecomment-1538452351">other</a> <a href="https://www.reddit.com/r/musictheory/comments/8rn0ve">sources</a> claim its still taught this way. This comes as an artefact of the bizarre history Western music notation, which is a problem I seem to keep running into recently in my attempts to learn more about music theory.</p>
-<blockquote>
-<p>I learned in music school that the chord is called "B" (like in the rest of the world), but the note is called "H" (eg. the C Major scale would be C, D, E, F, G, A, H, C).</p>
-</blockquote>
-<p><cite>TobTobXX, who reported the bug</cite></p>
-<h2 id="western-musics-stupid-origins">Western Music's Stupid Origins</h2>
-<p>Western music is based on ecclesiastic modes used in church in the early Middle Ages, which only used the diatonic notes of the C scale (<em>natural</em> notes). The musical notation systems of the time reflected this, not accounting for notes outside of the C scale. When sharps and flats later came into more common use, the existing notation systems needed a way to distinguish them from the natural notes they sat between.</p>
-<p>This problem first arose with B natural and B flat, according to the <a href="https://www.britannica.com/art/musical-expression">Encyclopedia Britannica</a>. The first method of distinguishing B from B flat was using two different forms of the lowercase "b" character:</p>
-<p><img alt="" src="/media/The-Flat-Sharp-And-Natural-A-Historical-Sketch.png" /></p>
-<p>Niecks, Frederick. “The Flat, Sharp, and Natural. A Historical Sketch.” <em>Proceedings of the Musical Association</em>, vol. 16, 1889, pp. 79–100.</p>
-<p>Somewhere along the line in Germany, monks transcribing these square and round "b" characters confused the squared "b" for "h", and this was later assumed to be intentional. "H" became a convention for writing B natural, while the "b" character remained convention for writing B flat. "B" and "b" became amalgamated, both coming to represent modern B flat.</p>
-<p>In the rest of the world, this "H" note didn't catch on.</p>
-<p>In time, notation for sharp and flat notes other than B flat was needed. This use of square and round "b" to denote B and B flat eventually evolved into our modern notation for indicating natural and non-natural, <em>accidentals</em>. ♭ comes from the round "b", while ♯ and ♮ come from the square "b".</p>
-<p>Somehow, Germany still hasn't fully corrected this mistake, continuing to use "H" to represent B natural in many places. Including Ultimate Guitar. Ugh.</p>
-<h2 id="resolution">Resolution</h2>
-<p>I don't love dealing with problems caused by the whims of millennia dead monks, but this was an interesting rabbit hole to fall into. The issue has since been patched, and I look forward to my mistakes ruining someone's day in 3023.</p>
-<p><img alt="" src="/media/gods-mistakes.png" /></p>
-<details>
-<summary>An aside on The Flat, Sharp, and Natural. A Historical Sketch</summary>
-<p>When I first copied the text from the article, it copied that "square b" as a "h". Funny that modern OCR technology makes the same mistakes at 1000 year old monks.</p>
-<blockquote>
-<p>The first known writer who distinguished between b natural and b flat was Odo of Clugny, who died in 942 ; the b natural being indicated by a square b (h), the b flat by a round b (b)</p>
-</blockquote>
-<p>It was also a pain in the ass to find a copy of that article. It's mostly found on paywalled academic sites despite the article definitely being out of copyright. Luckily the Internet Archive <a href="https://scholar.archive.org/work/3jdud373effq3e376gqtlkxqvq">has a copy</a>.</p>
-</details>]]>
+                <![CDATA[<p>Nextcloud is excellent, and its Android app is great.  I found the app's Auto-Upload feature to be nigh unusable.</p>
+<p>I have 20GiB+ of photos on my phone and would like a backup.  My primary Nextcloud account is synced to my PCs, so any file added to it will be downloaded to all devices.  I don't need local access to these photos on all my PCs, so I created a seperate Nextcloud account just for camera roll uploads. If I needed to access these photos from a PC I could log in to the Nextcloud web interface with the camera roll account.</p>
+<p>Attempting to use Auto-Upload on my phone's Camera folder was messy.  It kept uploading photos to the wrong Nextcloud account, incorrectly counting how many files there were, and did not supporting bidirectional sync.  It was unpredictable how long it would take to actually trigger an upload, not having a manual way of starting one.  It also limited automatic uploads to a single folder. These issues were all seperate from the fact that the UI was extremely glitchy as it tried to show 20GiB of photos.</p>
+<p>I found using <a href="https://www.tacit.dk/foldersync">FolderSync</a> a much better experience.  It let me set up bidirectional sync between custom Nextcloud folders and local folders, let me choose cadence for syncing (with many configuration options like only allowing upload when charging) and allowed me to manually trigger a sync.  The premium version is absolutely worth it.  I'm only scratching the surface of what it can do here, but for my needs it's perfect.</p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/the-h-chord</guid>
-            <pubDate>2023-05-08</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/nextcloud-phone-photo-upload</guid>
+            <pubDate>2024-05-01</pubDate>
         </item>
         
         <item>
@@ -404,22 +371,6 @@ required<span class="w"> </span>by
         </item>
         
         <item>
-            <title>Nextcloud Phone Photo Upload</title>
-            <link>https://notes.zachmanson.com/nextcloud-phone-photo-upload</link>
-            
-            <description>Just use FolderSync.</description>
-            
-            <content:encoded>
-                <![CDATA[<p>Nextcloud is excellent, and its Android app is great.  I found the app's Auto-Upload feature to be nigh unusable.</p>
-<p>I have 20GiB+ of photos on my phone and would like a backup.  My primary Nextcloud account is synced to my PCs, so any file added to it will be downloaded to all devices.  I don't need local access to these photos on all my PCs, so I created a seperate Nextcloud account just for camera roll uploads. If I needed to access these photos from a PC I could log in to the Nextcloud web interface with the camera roll account.</p>
-<p>Attempting to use Auto-Upload on my phone's Camera folder was messy.  It kept uploading photos to the wrong Nextcloud account, incorrectly counting how many files there were, and did not supporting bidirectional sync.  It was unpredictable how long it would take to actually trigger an upload, not having a manual way of starting one.  It also limited automatic uploads to a single folder. These issues were all seperate from the fact that the UI was extremely glitchy as it tried to show 20GiB of photos.</p>
-<p>I found using <a href="https://www.tacit.dk/foldersync">FolderSync</a> a much better experience.  It let me set up bidirectional sync between custom Nextcloud folders and local folders, let me choose cadence for syncing (with many configuration options like only allowing upload when charging) and allowed me to manually trigger a sync.  The premium version is absolutely worth it.  I'm only scratching the surface of what it can do here, but for my needs it's perfect.</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/nextcloud-phone-photo-upload</guid>
-            <pubDate>2024-05-01</pubDate>
-        </item>
-        
-        <item>
             <title>LinkedIn's Ghost Text</title>
             <link>https://notes.zachmanson.com/linkedins-ghost-text</link>
             
@@ -547,6 +498,55 @@ The day after writing the previous paragraph, I noticed they added the DJ to the
             </content:encoded>
             <guid isPermaLink="false">https://notes.zachmanson.com/spotify-design-decisions</guid>
             <pubDate>2024-03-17</pubDate>
+        </item>
+        
+        <item>
+            <title>The H Chord</title>
+            <link>https://notes.zachmanson.com/the-h-chord</link>
+            
+            <description>How German monks broke my website</description>
+            
+            <content:encoded>
+                <![CDATA[<p>I received a <a href="https://github.com/pavo-etc/penultimate-guitar/issues/41">strange bug report</a> on <a href="/penultimate-guitar">Penultimate Guitar</a> where the Next.js rendering would fail completely on certain songs.</p>
+<h2 id="the-error">The Error</h2>
+<p>The type error was being triggered by a chord component, where the key was undefined. The chords are pulled from Ultimate Guitar, so I inspected the JSON payload from the <a href="https://tabs.ultimate-guitar.com/tab/1684995">original source</a>.</p>
+<p><img alt="" src="/media/ug.png" /></p>
+<p>Why the hell is there a <code>[ch]H[/ch]</code> chord in there? That's definitely the cause as I never accounted for non-existent keys. Looking at Ultimate Guitar, it renders as a B chord.</p>
+<p><img alt="" src="/media/ug-rendered.png" /></p>
+<p>Huh?</p>
+<details>
+<summary>An aside on Ultimate Guitar HTML</summary>
+<p>The way Ultimate Guitar handles data is bizarre. It passes a static dehydrated <a href="/html">HTML</a> page to the client.  The data payload is in the HTML as well, but instead of being contained in a <code>script</code> tag it's a giant JSON payload in an escaped string within an attribute of a random <code>div</code></p>
+</details>
+<h2 id="one-google-search-later">One Google Search Later</h2>
+<p>Germany and the Netherlands ha(d/ve) their own musical key notation that include(d/s) a H chord. <a href="https://www.guitarsite.com/newsletters/010122/12.shtml">This site</a> claims it ended in "1994/1995", though I've seen <a href="https://github.com/pavo-etc/penultimate-guitar/issues/41#issuecomment-1538452351">other</a> <a href="https://www.reddit.com/r/musictheory/comments/8rn0ve">sources</a> claim its still taught this way. This comes as an artefact of the bizarre history Western music notation, which is a problem I seem to keep running into recently in my attempts to learn more about music theory.</p>
+<blockquote>
+<p>I learned in music school that the chord is called "B" (like in the rest of the world), but the note is called "H" (eg. the C Major scale would be C, D, E, F, G, A, H, C).</p>
+</blockquote>
+<p><cite>TobTobXX, who reported the bug</cite></p>
+<h2 id="western-musics-stupid-origins">Western Music's Stupid Origins</h2>
+<p>Western music is based on ecclesiastic modes used in church in the early Middle Ages, which only used the diatonic notes of the C scale (<em>natural</em> notes). The musical notation systems of the time reflected this, not accounting for notes outside of the C scale. When sharps and flats later came into more common use, the existing notation systems needed a way to distinguish them from the natural notes they sat between.</p>
+<p>This problem first arose with B natural and B flat, according to the <a href="https://www.britannica.com/art/musical-expression">Encyclopedia Britannica</a>. The first method of distinguishing B from B flat was using two different forms of the lowercase "b" character:</p>
+<p><img alt="" src="/media/The-Flat-Sharp-And-Natural-A-Historical-Sketch.png" /></p>
+<p>Niecks, Frederick. “The Flat, Sharp, and Natural. A Historical Sketch.” <em>Proceedings of the Musical Association</em>, vol. 16, 1889, pp. 79–100.</p>
+<p>Somewhere along the line in Germany, monks transcribing these square and round "b" characters confused the squared "b" for "h", and this was later assumed to be intentional. "H" became a convention for writing B natural, while the "b" character remained convention for writing B flat. "B" and "b" became amalgamated, both coming to represent modern B flat.</p>
+<p>In the rest of the world, this "H" note didn't catch on.</p>
+<p>In time, notation for sharp and flat notes other than B flat was needed. This use of square and round "b" to denote B and B flat eventually evolved into our modern notation for indicating natural and non-natural, <em>accidentals</em>. ♭ comes from the round "b", while ♯ and ♮ come from the square "b".</p>
+<p>Somehow, Germany still hasn't fully corrected this mistake, continuing to use "H" to represent B natural in many places. Including Ultimate Guitar. Ugh.</p>
+<h2 id="resolution">Resolution</h2>
+<p>I don't love dealing with problems caused by the whims of millennia dead monks, but this was an interesting rabbit hole to fall into. The issue has since been patched, and I look forward to my mistakes ruining someone's day in 3023.</p>
+<p><img alt="" src="/media/gods-mistakes.png" /></p>
+<details>
+<summary>An aside on The Flat, Sharp, and Natural. A Historical Sketch</summary>
+<p>When I first copied the text from the article, it copied that "square b" as a "h". Funny that modern OCR technology makes the same mistakes at 1000 year old monks.</p>
+<blockquote>
+<p>The first known writer who distinguished between b natural and b flat was Odo of Clugny, who died in 942 ; the b natural being indicated by a square b (h), the b flat by a round b (b)</p>
+</blockquote>
+<p>It was also a pain in the ass to find a copy of that article. It's mostly found on paywalled academic sites despite the article definitely being out of copyright. Luckily the Internet Archive <a href="https://scholar.archive.org/work/3jdud373effq3e376gqtlkxqvq">has a copy</a>.</p>
+</details>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/the-h-chord</guid>
+            <pubDate>2023-05-08</pubDate>
         </item>
         
         <item>
