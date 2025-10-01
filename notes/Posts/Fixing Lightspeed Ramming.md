@@ -1,10 +1,18 @@
+---
+tags:
+  - posts
+date: 2025-10-01
+---
+
+
 The lightspeed ram in The Last Jedi is incredible but it does break the world. 
 
-It is such a devastating attack that it's sorta crazy nobody in-universe has tried it before, especially given the existence of autonomous robots that can operate ships. The film provides no counter to this attack. It's not unreasonable to wonder what kind of impact this style of attack could have had on the Death Star.
+It is such a devastating attack that it's crazy nobody in-universe has tried it before, especially given the existence of autonomous robots that can operate ships. The film provides no counter to this attack. It's not unreasonable to wonder what kind of impact this style of attack could have had on the Death Star.
 
 ![[HoldoManeuver.png]]
 
-The Last Jedi doesn't provide any explanation for why this has never been tried before. The Rise of Skywalker attempts to explain it, stating that the "Holdo Maneuver" was "one in a million". That explanation feels unsatisfactory to me, because it mean that Holdo either:
+The Last Jedi film doesn't provide any explanation for why this has never been tried before. The novelisation has an explanation, stating the the Raddus has experimental shields allowing it to do this, but this is not in the text of the film at all. Further, it is contradicted in The Rise of Skywalker's
+attempted explanation which states that the "Holdo Maneuver" was "one in a million". That explanation feels unsatisfactory to me, because it mean that Holdo either:
 
 1. was extremely lucky and noticed that the conditions were just right for it to work so went for it
 2. was risking everything when the attack was extremely unlikely to work
@@ -22,13 +30,13 @@ This places an interesting limit both mechanics introduced in The Last Jedi. By 
 
 It also creates a logical reason why a droid-piloted lightspeed ram wouldn't have worked in The Last Jedi, since it is well established that ships can be scanned for the presence of lifeforms. Your enemy could detect that your ship has no lifeforms aboard, surmise you are planning on ramming them, giving them the opportunity to counter.
 
-The psuedoscience of how this works could be easily explained, even within limited explanation that hyperspace has in Star Wars. 
+The pseudoscience of how this works could be easily explained, even within limited explanation that hyperspace has in Star Wars. 
 
-> A Resistance engineer (perhaps named Rose) hurriedly pushes past officers on the bridge, panting as she reaches Admiral Holdo. A sergeant begins to berate her for forcing her way onto the bridge, but he is put at ease by the Admiral. Holdo asks the engineer what's so important it warrants the commotion.
+> A Resistance engineer (perhaps named Rose) hurriedly pushes past officers on the bridge, panting as she reaches Admiral Holdo. A sergeant begins to berate her for forcing her way onto the bridge but he is put at ease by the Admiral. Holdo asks the engineer what's so important it warrants the commotion.
 > 
 > "If they're tracking us through hyperspace, their ship must be in normal space and hyperspace at the same time" says the engineer as she catches her breath.
 > 
-> Holdo's expression drops. She pauses, eyes calculating. What the engineer is intimating has never been done before. The rooms is silent.
+> Holdo's expression drops. She pauses, eyes calculating. What the engineer is intimating has never been done before. The room is silent.
 > 
 > Holdo snaps back to reality, ordering the bridge be cleared and the ship evacuated.
 
