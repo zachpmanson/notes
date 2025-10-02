@@ -1,6 +1,8 @@
 ---
 subtitle: An internet that could have been.
-date: 2025-10-01
+date: 2025-10-02
+tags:
+  - posts
 ---
 A Wikipedia article that makes me sad is the one on [Feed URI scheme](https://en.wikipedia.org/wiki/Feed_URI_scheme). It is a draft proposal from 2003 for a URI scheme designed to link to [[RSS]]/Atom Readers directly to a feed. 
 
