@@ -11,7 +11,7 @@ It never made it to official status, and the Wikipedia page listing programs tha
 
 NetNewsWire still exists, actively supported and of extremely high quality. At the time of writing it is what I use for following feeds. 19 years later, it still supports `feed://` links! It works great. I wish this was more common.
 
-In honours of this I have added a subscribe link to this website!
+In honour of this I have added a subscribe link to this website!
 
 
 [^1]: [As stated by Jens Alfke](https://lobste.rs/c/d29mru), a former Apple developer, who developed the feature with Ricci Adams. The comment also mentions that the feed reader was supported in Apple Mail, although I do not know if Apple Mail supported `feed://` links.
