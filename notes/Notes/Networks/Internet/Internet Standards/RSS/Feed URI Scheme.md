@@ -10,7 +10,7 @@ A link that looks like this [`feed://notes.zachmanson.com/posts.xml`](feed://not
 
 It never made it to official status, and the Wikipedia page listing programs that support it was last updated in 2006. The software cited is NetNewsWire, FeedDemon, Flock, and Safari(‽‽‽‽). Of these, FeedDemon was discontinued in June 2013, Flock was a browser that was discontinued in 2011, Safari support was removed at some point after 2007[^1][^2].
 
-NetNewsWire still exists, actively supported and of extremely high quality. At the time of writing it is what I use for following feeds. 19 years later, it still supports `feed://` links! It works great. I wish this was more common.
+NetNewsWire still exists, is actively supported and is of extremely high quality. At the time of writing it is what I use for following feeds. 19 years later, it still supports `feed://` links! It works great. I wish this was more common.
 
 I discovered that Pocket Casts, my longtime podcast app[^3] also supports `feed://` links, interpreting the link as a podcast feed, though it seemed unable to differentiate podcast feeds from text feeds.
 
