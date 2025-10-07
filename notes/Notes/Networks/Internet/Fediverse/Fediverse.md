@@ -31,3 +31,4 @@ The fediverse is a series of social networks that are able to communicate with o
 
 - [How decentralized is Bluesky really?](https://dustycloud.org/blog/how-decentralized-is-bluesky/)
 - [Re: Re: Bluesky and Decentralization](https://dustycloud.org/blog/re-re-bluesky-decentralization/#f)
+- [Are We Decentralized Yet](https://arewedecentralizedyet.online/)

@@ -3,6 +3,14 @@ subtitle: Some lines worth noting, but not worth their own page.
 ---
 This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://drwho.virtadpt.net/drwho.plan.txt). See also [Gwern's page on epigrams](https://gwern.net/epigram).
 
+---
+
+> Deloitte has a human intelligence problem
+
+-- [Deborah O'Neill](https://www.theguardian.com/australia-news/2025/oct/06/deloitte-to-pay-money-back-to-albanese-government-after-using-ai-in-440000-report)
+
+---
+
 > Radicalism is when no house
 
 -- [Brandon Ewing](https://youtu.be/yGooLJoyrI4?si=vaGdjKAX4sUpcMh0&t=2615)
