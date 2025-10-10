@@ -1,0 +1,1 @@
+Wherever possible, collect all the data you need first, then operate on it. Do not lazy load mid-calculation, one off database queries will inevitably be called 500 times consecutively by someone else paying less attention.
