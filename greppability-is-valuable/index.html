@@ -206,7 +206,7 @@
     </header>
 
     <article><p>Being able to run a text search over a codebase is extremely valuable. This is especially true at API borders (service boundaries), where one project will call another project and you need to switch codebases to find where that API definition is. Often the only decent way to find the relevant function in these circumstances is string matching (or extremely consistent file structures which we currently do not have).</p>
-<p>If I am in <a href="https://www.notion.so/Frontend-1a6657e5d53f4e01a6d97ed8b30ab276?pvs=21">Frontend</a> and I can see some data is coming from an API called <code>GET /api/client/foo/bar</code> it is much quicker for me to track down the API definition with a search for <code>"client/foo/bar"</code> than any other method. So <a href="https://www.notion.so/Backend-ec9cc4fb92eb42e5966fc492b5b83acb?pvs=21">Backend</a> will need to have <code>"client/foo/bar"</code> as a full string.</p>
+<p>If I am in frontend and I can see some data is coming from an API called <code>GET /api/client/foo/bar</code> it is much quicker for me to track down the API definition with a search for <code>"client/foo/bar"</code> than any other method. So backend will need to have <code>"client/foo/bar"</code> as a full string.</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># BAD</span>
 <span class="n">router</span> <span class="o">=</span> <span class="n">APIRouter</span><span class="p">(</span><span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;/v1/usage-test&quot;</span><span class="p">)</span>
 
@@ -232,7 +232,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/i-no-longer-built-software" class="not-extra-small">random</a>
+          <a href="/web-design" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Code Opinions/Greppability is Valuable.md" class="desktop">edit</a>
@@ -243,7 +243,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/i-no-longer-built-software">random</a>
+          <a href="/web-design">random</a>
         </div>
       </div>
 
