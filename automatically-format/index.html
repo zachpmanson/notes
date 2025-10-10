@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/static/styles/global.css" />
+  <link rel="stylesheet" href="/static/styles/code.css" />
+
+  <link rel="icon" href="/static/icon/icon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="/static/icon/favicon.ico" />
+
+  <link rel="alternate" type="application/rss+xml" href="https://notes.zachmanson.com/posts.xml" title="notes: posts" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: automatically format</title>
+</head>
+
+<body>
+  <nav>
+    <div class="main-icon">
+      <a href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
+          viewBox="26.88 56.87 216.25 156.27">
+          <path
+            style="stroke-width: 15px; stroke-linecap: butt; stroke-linejoin: round; stroke: rgb(10, 10, 10); fill: none;"
+            d="M135,75 A60,60 0 0,0 75,135 A60,60 0 0,0 135,195 A60,60 0 0,0 195,135 A60,60 0 0,0 135,75 M45,90 A15,15 0 0,1 60,75 A15,15 0 0,1 75,90 L75,135 L75,180 A15,15 0 0,1 60,195 A15,15 0 0,1 45,180 M225,90 A15,15 0 0,0 210,75 A15,15 0 0,0 195,90 L195,135 L195,180 A15,15 0 0,0 210,195 L210,195 A15,15 0 0,0 225,180 M135,105 A30,30 0 0,1 165,135 A30,30 0 0,1 135,165 A30,30 0 0,1 105,135 A30,30 0 0,1 135,105 M45,105 L45,105 L45,165 M225,105 L225,105 L225,165 ">
+          </path>
+        </svg>
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
+      <div class="nav-segments">
+        
+        <div class="nav-links piblings">
+          
+          
+          
+          <a href="/code-opinions" class="activated-link">Code Opinions</a>
+          
+          
+          
+          <a href="/datetime">DateTime</a>
+          
+          
+          
+          <a href="/debugging">Debugging</a>
+          
+          
+          
+          <a href="/development-methodologies">Development Methodologies</a>
+          
+          
+          
+          <a href="/kinds-of-problems">Kinds of Problems</a>
+          
+          
+          
+          <a href="/kinds-of-work">Kinds of Work</a>
+          
+          
+          
+          <a href="/non-programming-languages">Non-Programming Languages</a>
+          
+          
+          
+          <a href="/programming-concepts">Programming Concepts</a>
+          
+          
+          
+          <a href="/programming-languages">Programming Languages</a>
+          
+          
+          
+          <a href="/web-development">Web Development</a>
+          
+          
+        </div>
+        
+
+        
+        <div class="nav-links siblings">
+          
+          
+          
+          <a href="/automatically-format" class="activated-link">Automatically Format</a>
+          
+
+          
+          
+          <a href="/avoid-state">Avoid State</a>
+          
+
+          
+          
+          <a href="/avoid-varchar">Avoid Varchar</a>
+          
+
+          
+          
+          <a href="/collect-then-operate">Collect Then Operate</a>
+          
+
+          
+          
+          <a href="/command-click">Command Click</a>
+          
+
+          
+          
+          <a href="/contain-pandas">Contain Pandas</a>
+          
+
+          
+          
+          <a href="/fail-loudly">Fail Loudly</a>
+          
+
+          
+          
+          <a href="/favour-colocation">Favour Colocation</a>
+          
+
+          
+          
+          <a href="/greppability-is-valuable">Greppability is Valuable</a>
+          
+
+          
+          
+          <a href="/inherit-cautiously">Inherit Cautiously</a>
+          
+
+          
+          
+          <a href="/name-prefixes">Name Prefixes</a>
+          
+
+          
+          
+          <a href="/query-params-vs-path-params">Query Params vs Path Params</a>
+          
+
+          
+          
+          <a href="/query-params-are-wonderful">Query params are wonderful</a>
+          
+
+          
+          
+          <a href="/react-prop-types">React Prop Types</a>
+          
+
+          
+          
+          <a href="/reconsider-state">Reconsider State</a>
+          
+
+          
+          
+          <a href="/request-validation">Request Validation</a>
+          
+
+          
+          
+          <a href="/return-types">Return Types</a>
+          
+
+          
+          
+          <a href="/route-changing">Route Changing</a>
+          
+
+          
+          
+          <a href="/setters-vs-getters">Setters vs Getters</a>
+          
+
+          
+          
+          <a href="/validate-in-ci">Validate in CI</a>
+          
+
+          
+          
+          <a href="/back_populates-vs-backref">back_populates vs backref</a>
+          
+
+          
+          
+          <a href="/getattr()-is-a-red-flag">getattr() is a red flag</a>
+          
+
+          
+        </div>
+        
+
+        
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header>
+      <h1>If you don’t have an automatic formatter set up I do not trust you</h1>
+    </header>
+
+    <article><p>Do you even trust yourself?</p>
+<p>Black/ruff for <a href="/python">Python</a>, Prettier for <a href="/typescript">TypeScript</a>. Format on save.</p></article>
+  </main>
+
+  <footer>
+    <details>
+      <summary>
+        <div class="footer-row">
+          
+          meta
+          
+          <a href="/recent-changes">recent</a>
+          <a href="/amitava-datta" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Code Opinions/Automatically Format.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Software/Development/Code Opinions/Automatically Format.md" class="mobile">edit</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'Automatically Format'">reply</a>
+        </div>
+      </summary>
+      <div class="extra-small">
+        <div class="footer-row">
+          <a href="/sitemap">sitemap</a>
+          <a href="/amitava-datta">random</a>
+        </div>
+      </div>
+
+      
+
+      <p class="backlinks"><strong>Incoming:</strong>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
+      
+
+      
+      <p>
+        
+
+        <span class="backlinks">
+          <strong>
+            Updated:
+          </strong>
+          <date>2025-10-10</date>
+        </span>
+
+      </p>
+    </details>
+
+  </footer>
+  
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+
+    function checkVisible(el) {
+      let rect = el.getBoundingClientRect();
+      let viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+      return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+    }
+
+
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        if (checkVisible(link.parentElement)) {
+          link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+        }
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 350);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
+</body>
+
+</html>
