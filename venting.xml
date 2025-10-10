@@ -13,22 +13,30 @@
             <link>https://notes.zachmanson.com/venting</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Fri, 10 Oct 2025 00:09:50 </lastBuildDate>
+        <lastBuildDate>Fri, 10 Oct 2025 00:25:20 </lastBuildDate>
         
         <item>
-            <title>Nextcloud Phone Photo Upload</title>
-            <link>https://notes.zachmanson.com/nextcloud-phone-photo-upload</link>
-            
-            <description>Just use FolderSync.</description>
+            <title>Kinde Design Decisions</title>
+            <link>https://notes.zachmanson.com/kinde-design-decisions</link>
             
             <content:encoded>
-                <![CDATA[<p>Nextcloud is excellent, and its Android app is great.  I found the app's Auto-Upload feature to be nigh unusable.</p>
-<p>I have 20GiB+ of photos on my phone and would like a backup.  My primary Nextcloud account is synced to my PCs, so any file added to it will be downloaded to all devices.  I don't need local access to these photos on all my PCs, so I created a seperate Nextcloud account just for camera roll uploads. If I needed to access these photos from a PC I could log in to the Nextcloud web interface with the camera roll account.</p>
-<p>Attempting to use Auto-Upload on my phone's Camera folder was messy.  It kept uploading photos to the wrong Nextcloud account, incorrectly counting how many files there were, and did not supporting bidirectional sync.  It was unpredictable how long it would take to actually trigger an upload, not having a manual way of starting one.  It also limited automatic uploads to a single folder. These issues were all seperate from the fact that the UI was extremely glitchy as it tried to show 20GiB of photos.</p>
-<p>I found using <a href="https://www.tacit.dk/foldersync">FolderSync</a> a much better experience.  It let me set up bidirectional sync between custom Nextcloud folders and local folders, let me choose cadence for syncing (with many configuration options like only allowing upload when charging) and allowed me to manually trigger a sync.  The premium version is absolutely worth it.  I'm only scratching the surface of what it can do here, but for my needs it's perfect.</p>]]>
+                <![CDATA[<p>This is a list of problems with the Kinde interface.</p>
+<h2 id="useless-dropdowns">Useless Dropdowns</h2>
+<p>This dropdown should list the environments instead of revealing a button to take you to a page that lists the environments. This is an unnecessary second click.</p>
+<p><img alt="" src="/media/kinde-1.png" /></p>
+<p>This also means you are unable to switch environment without losing the page you are on.</p>
+<h2 id="unclickable-icons">Unclickable Icons</h2>
+<p>For some reason the left facing chevron is not clickable, only the word "Home" is.</p>
+<p><img alt="" src="/media/kinde-2.png" /></p>
+<h2 id="bizarre-breadcrumbs">Bizarre Breadcrumbs</h2>
+<p>When you go to the "Users Profile" screen, the top left back icon doesn't take you back to the "Users" screen, but remains a "Home" button.</p>
+<p>The only way to navigate back is the the small grey "User" text above the user's name.</p>
+<p><img alt="" src="/media/kinde-3.png" /></p>
+<p>This is something that almost all basic websites can get right.  Breadcrumb navigation or consistent back behaviour would be vastly preferable here.</p>
+<p>There is little consistency between parts of the interface that are clickable and those that are not.  This makes navigating quite difficult.</p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/nextcloud-phone-photo-upload</guid>
-            <pubDate>2024-05-01</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/kinde-design-decisions</guid>
+            <pubDate>2024-07-01</pubDate>
         </item>
         
         <item>
@@ -261,27 +269,65 @@
         </item>
         
         <item>
-            <title>Kinde Design Decisions</title>
-            <link>https://notes.zachmanson.com/kinde-design-decisions</link>
+            <title>LinkedIn's Ghost Text</title>
+            <link>https://notes.zachmanson.com/linkedins-ghost-text</link>
+            
+            <description>Why does LinkedIn copy text twice?</description>
             
             <content:encoded>
-                <![CDATA[<p>This is a list of problems with the Kinde interface.</p>
-<h2 id="useless-dropdowns">Useless Dropdowns</h2>
-<p>This dropdown should list the environments instead of revealing a button to take you to a page that lists the environments. This is an unnecessary second click.</p>
-<p><img alt="" src="/media/kinde-1.png" /></p>
-<p>This also means you are unable to switch environment without losing the page you are on.</p>
-<h2 id="unclickable-icons">Unclickable Icons</h2>
-<p>For some reason the left facing chevron is not clickable, only the word "Home" is.</p>
-<p><img alt="" src="/media/kinde-2.png" /></p>
-<h2 id="bizarre-breadcrumbs">Bizarre Breadcrumbs</h2>
-<p>When you go to the "Users Profile" screen, the top left back icon doesn't take you back to the "Users" screen, but remains a "Home" button.</p>
-<p>The only way to navigate back is the the small grey "User" text above the user's name.</p>
-<p><img alt="" src="/media/kinde-3.png" /></p>
-<p>This is something that almost all basic websites can get right.  Breadcrumb navigation or consistent back behaviour would be vastly preferable here.</p>
-<p>There is little consistency between parts of the interface that are clickable and those that are not.  This makes navigating quite difficult.</p>]]>
+                <![CDATA[<p>Why does LinkedIn do this?</p>
+<video autoplay loop muted>
+   <source src="/media/linkedin-duplication.webm" type="video/webm">
+</video>
+
+<p>If you look into the source of a LinkedIn profile page (at your own personal risk) you'll find a text element like this</p>
+<p><img alt="" src="/media/linkedin-element.png" /></p>
+<p>will have HTML like this</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;display-flex flex-row justify-space-between&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;</span>
+<span class="s">          display-flex flex-column full-width&quot;</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;display-flex flex-wrap align-items-center full-height&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mr1 t-bold&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Product manager, Creative coder<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Product manager, Creative coder<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="cm">&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Freelancer/Consultant<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Freelancer/Consultant<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal t-black--light&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>2009 - 2018 · 9 yrs<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>2009 - 2018 · 9 yrs<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal t-black--light&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Europe<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Europe<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+    <span class="cm">&lt;!----&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pvs-entity__action-container&quot;</span><span class="p">&gt;</span>
+        <span class="cm">&lt;!----&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Gross.  Why the hidden duplicated text?  Why the empty comments?  Why seperate aria versions of text?  Is this related to using Ember?  LinkedIn has so many little unpleasantries like this.</p>
+<hr />
+<h2 id="2024-update-linkedin-still-shit">2024 Update: LinkedIn Still Shit</h2>
+<p>Still here.  Still broken. Still annoying</p>
+<video autoplay loop muted>
+   <source src="/media/linkedin-duplication-2.webm" type="video/webm">
+</video>
+
+<h2 id="2025-update-slack-also-does-this">2025 Update: Slack also does this</h2>
+<p>When you highlight, copy and paste a name.</p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/kinde-design-decisions</guid>
-            <pubDate>2024-07-01</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/linkedins-ghost-text</guid>
+            <pubDate>2023-04-16</pubDate>
         </item>
         
         <item>
@@ -353,65 +399,19 @@ The day after writing the previous paragraph, I noticed they added the DJ to the
         </item>
         
         <item>
-            <title>LinkedIn's Ghost Text</title>
-            <link>https://notes.zachmanson.com/linkedins-ghost-text</link>
+            <title>Nextcloud Phone Photo Upload</title>
+            <link>https://notes.zachmanson.com/nextcloud-phone-photo-upload</link>
             
-            <description>Why does LinkedIn copy text twice?</description>
+            <description>Just use FolderSync.</description>
             
             <content:encoded>
-                <![CDATA[<p>Why does LinkedIn do this?</p>
-<video autoplay loop muted>
-   <source src="/media/linkedin-duplication.webm" type="video/webm">
-</video>
-
-<p>If you look into the source of a LinkedIn profile page (at your own personal risk) you'll find a text element like this</p>
-<p><img alt="" src="/media/linkedin-element.png" /></p>
-<p>will have HTML like this</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;display-flex flex-row justify-space-between&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;</span>
-<span class="s">          display-flex flex-column full-width&quot;</span><span class="p">&gt;</span>
-
-        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;display-flex flex-wrap align-items-center full-height&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mr1 t-bold&quot;</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Product manager, Creative coder<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Product manager, Creative coder<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="cm">&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Freelancer/Consultant<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Freelancer/Consultant<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal t-black--light&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>2009 - 2018 · 9 yrs<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>2009 - 2018 · 9 yrs<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal t-black--light&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Europe<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Europe<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-
-    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-
-    <span class="cm">&lt;!----&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pvs-entity__action-container&quot;</span><span class="p">&gt;</span>
-        <span class="cm">&lt;!----&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></div>
-<p>Gross.  Why the hidden duplicated text?  Why the empty comments?  Why seperate aria versions of text?  Is this related to using Ember?  LinkedIn has so many little unpleasantries like this.</p>
-<hr />
-<h2 id="2024-update-linkedin-still-shit">2024 Update: LinkedIn Still Shit</h2>
-<p>Still here.  Still broken. Still annoying</p>
-<video autoplay loop muted>
-   <source src="/media/linkedin-duplication-2.webm" type="video/webm">
-</video>
-
-<h2 id="2025-update-slack-also-does-this">2025 Update: Slack also does this</h2>
-<p>When you highlight, copy and paste a name.</p>]]>
+                <![CDATA[<p>Nextcloud is excellent, and its Android app is great.  I found the app's Auto-Upload feature to be nigh unusable.</p>
+<p>I have 20GiB+ of photos on my phone and would like a backup.  My primary Nextcloud account is synced to my PCs, so any file added to it will be downloaded to all devices.  I don't need local access to these photos on all my PCs, so I created a seperate Nextcloud account just for camera roll uploads. If I needed to access these photos from a PC I could log in to the Nextcloud web interface with the camera roll account.</p>
+<p>Attempting to use Auto-Upload on my phone's Camera folder was messy.  It kept uploading photos to the wrong Nextcloud account, incorrectly counting how many files there were, and did not supporting bidirectional sync.  It was unpredictable how long it would take to actually trigger an upload, not having a manual way of starting one.  It also limited automatic uploads to a single folder. These issues were all seperate from the fact that the UI was extremely glitchy as it tried to show 20GiB of photos.</p>
+<p>I found using <a href="https://www.tacit.dk/foldersync">FolderSync</a> a much better experience.  It let me set up bidirectional sync between custom Nextcloud folders and local folders, let me choose cadence for syncing (with many configuration options like only allowing upload when charging) and allowed me to manually trigger a sync.  The premium version is absolutely worth it.  I'm only scratching the surface of what it can do here, but for my needs it's perfect.</p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/linkedins-ghost-text</guid>
-            <pubDate>2023-04-16</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/nextcloud-phone-photo-upload</guid>
+            <pubDate>2024-05-01</pubDate>
         </item>
         
         <item>
