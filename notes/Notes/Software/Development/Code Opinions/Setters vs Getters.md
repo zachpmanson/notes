@@ -1,5 +1,5 @@
 ---
-subtitle: "`@property` getter should not have logic"
+subtitle: "@property getter should not have logic"
 ---
 
 I know that it looks pretty for `def method(self): return f"{self.first_name} + {self.last_name}"` to be `User.full_name` rather than `User.full_name()`, but the bigger impact is obscuring the fact that you are making a function call. 
