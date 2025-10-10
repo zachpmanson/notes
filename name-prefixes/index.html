@@ -208,7 +208,12 @@
     <article><p>It can be very useful to use a prefix when naming things, for example when you have many similar variables that you need to easily tell apart or a list of files of different kinds so you can group them together alphabetically.</p>
 <p>A great example of this is found in the SvelteKit file route naming conventions, where all files related to routing are prefixed with a <code>+</code> so they all appear together at the top in a folder.</p>
 <p>A time where name prefixes are not useful is when differentiating variable types, for example prefixing interfaces with <code>I</code> (aka Hungarian notation). This is not useful as my editor should be able to provide me this information very clearly. In the case of interfaces, VS Code highlights them in a special color, and will vomit errors if you misuse an interface as a variable. This convention is a relic of the days of yore, before decent language servers and usable IDEs. If we ever start writing a project in C++ I am willing to reconsider this stance.</p>
-<p>(Yes I know this is a convention in C# but it is not in TypeScript, and in the past has been <a href="https://www.notion.so/Zach-s-Strong-Code-Opinions-fight-me-1192638fb2aa808c92c6d74ebe061417?pvs=21">specifically disavowed</a> by the TypeScript team) (which is saying a lot since both languages were designed by the same guy)</p>
+<p>Yes I know this is a convention in C# but it is not in TypeScript, and in the past has been <a href="https://web.archive.org/web/20150515151542/http://www.typescriptlang.org/Handbook#writing-dts-files">specifically disavowed</a>by the TypeScript team in the past (which is saying a lot since both languages were designed by the same guy):</p>
+<blockquote>
+<h3 id="naming-conventions">Naming Conventions</h3>
+<p>In general, do not prefix interfaces with I (e.g. IColor). Because the concept of an interface in TypeScript is much more broad than in C# or Java, the IFoo naming convention is not broadly useful.</p>
+</blockquote>
+<p><cite class="standalone">TypeScript handbook, 2015</cite></p>
 <p>If your editor can’t easily show you what type your variable is, you have made a mistake already.</p></article>
   </main>
 
@@ -220,7 +225,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/docker-networks" class="not-extra-small">random</a>
+          <a href="/software-vs-timezones" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Code Opinions/Name Prefixes.md" class="desktop">edit</a>
@@ -231,7 +236,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/docker-networks">random</a>
+          <a href="/software-vs-timezones">random</a>
         </div>
       </div>
 
