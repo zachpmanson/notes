@@ -2,7 +2,7 @@
 subtitle: React prop type definitions should be inline and anonymous
 ---
 
-Unless you have a good reason. Only example I can think of is components sharing props, but this is rare, or potentially interface perf vs type perf but I am yet to work on a codebase where that mattered.)
+Unless you have a good reason. Only example I can think of is components sharing props (this is rare) or interface perf vs type perf (but I am yet to work on a codebase where that mattered).
 
 ```tsx
 // BAD
