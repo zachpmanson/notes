@@ -1,0 +1,1 @@
+Your teammates won't know what side effects your function has. Reduce the amount of time they have to spend tracking these down by avoiding creating them, where possible.
