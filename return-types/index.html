@@ -205,9 +205,11 @@
       <h1>Functions return types should not change depending on parameters</h1>
     </header>
 
-    <article><p>Functions should return <code>None</code>, return <code>SomeType | None</code> or <code>SomeType</code> . <code>SomeType</code> can be a tuple, but that tuple should always have the same number of arguments. Flags like <code>calculate_cost(return_as_float=True)</code> should not exist. If you must have multiple versions of the same function with slightly different return signatures, I should be able to access everything in a typesafe way. This either means there should be
-- <code>@typing.overload</code> decorators providing all the typesafe variants of the function
-- 1 function containing the core logic and a other functions that wraps it and does type conversion (Both should have type inference or type hints.)</p></article>
+    <article><p>Functions should return <code>None</code>, return <code>SomeType | None</code> or <code>SomeType</code> . <code>SomeType</code> can be a tuple, but that tuple should always have the same number of arguments. Flags like <code>calculate_cost(return_as_float=True)</code> should not exist. If you must have multiple versions of the same function with slightly different return signatures, I should be able to access everything in a typesafe way. This either means there should be</p>
+<ul>
+<li><code>@typing.overload</code> decorators providing all the typesafe variants of the function</li>
+<li>1 function containing the core logic and a other functions that wraps it and does type conversion (Both should have type inference or type hints.)</li>
+</ul></article>
   </main>
 
   <footer>
@@ -218,7 +220,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/javascript-pretty-printing" class="not-extra-small">random</a>
+          <a href="/cits2003" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Code Opinions/Return Types.md" class="desktop">edit</a>
@@ -229,7 +231,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/javascript-pretty-printing">random</a>
+          <a href="/cits2003">random</a>
         </div>
       </div>
 
@@ -251,7 +253,7 @@
           <strong>
             Updated:
           </strong>
-          <date>2025-10-10</date>
+          <date>2025-10-13</date>
         </span>
 
       </p>
