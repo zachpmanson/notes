@@ -17,3 +17,4 @@ This is cursed, do not do this:
         else:
             return getattr(self, f"per_day_{metric}")
 ...
+```
