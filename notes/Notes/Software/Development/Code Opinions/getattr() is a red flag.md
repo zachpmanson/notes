@@ -1,9 +1,9 @@
 
 The only time I can think you might want to use this is when we have split table that share parent super class e.g. `BaseUsage`, `Usage`, `GasUsage`, `LPGUsage` . 
 
-(to be fair, I believe that we generally want to avoid needing that kind of abstraction in the future)
+(to be fair, I believe that we generally want to avoid needing that kind of abstraction)
 
-Other than that, why do you need `getattr()` ? Is there a better way of referencing the attribute, that doesn’t break VS Code type inference?
+Other than that, why do you need `getattr()` ? Is there a better way of referencing the attribute, that doesn’t break VS Code type inference? Remember, [[Command Click]].
 
 Reflection is powerful and also may be a sign you’ve gone too far.
 
