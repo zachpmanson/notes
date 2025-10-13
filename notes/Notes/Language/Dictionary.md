@@ -1,4 +1,3 @@
-> 
 
 DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscuresorrows.com/).
 
