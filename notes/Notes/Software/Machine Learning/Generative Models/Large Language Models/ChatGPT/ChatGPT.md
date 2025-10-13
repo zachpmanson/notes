@@ -1,4 +1,4 @@
-OpenAI's conversational AI based on the GPT-3.5/4 language models.
+OpenAI's conversational AI based on the GPT series language models.
 
 ## Interesting Articles
 
