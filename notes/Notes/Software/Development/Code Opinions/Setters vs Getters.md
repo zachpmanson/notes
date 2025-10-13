@@ -17,4 +17,4 @@ class X:
 		return self._name
 ```
 
-If you are not doing either of these things, property is just hiding a function call, which is a practice I consider dangerous. I have seen prosebit hide network calls behind @property. Never do this.
+If you are not doing either of these things, property is just hiding a function call, which is a practice I consider dangerous. I have seen network calls hidden behind @property. Never do this.
