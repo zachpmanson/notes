@@ -13,7 +13,25 @@
             <link>https://notes.zachmanson.com/#venting</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Tue, 14 Oct 2025 00:14:26 </lastBuildDate>
+        <lastBuildDate>Tue, 14 Oct 2025 00:37:28 </lastBuildDate>
+        
+        <item>
+            <title>Code Opinions</title>
+            <link>https://notes.zachmanson.com/code-opinions</link>
+            
+            <description>Zach's Strong Code Opinions (fight me)</description>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Break any of these rules sooner than say anything outright barbarous.</p>
+</blockquote>
+<p>— George Orwell</p>
+<p>This whole website is a living document, but this page is especially living. These are strong beliefs that are weakly held, I'm certain many of these will change over time.</p>
+<p>Some of these will seem trivial and obvious, but they are all written because I have seem them consistently violated in professional settings. These writing were initially intended to be a code practices guide, but they became just angry venting.</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/code-opinions</guid>
+            <pubDate>2025-10-14</pubDate>
+        </item>
         
 
     </channel>
