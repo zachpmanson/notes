@@ -3,3 +3,5 @@ Tests that mock many things are fragile. It will be unavoidable that you will ne
 I have seen far too many unit tests that boil down to "call function A, mock all the functions that function A calls". Tests like this are shallow, and will not last.
 
 When you [[Favour Immutablility]], your functions become easier to reason about, and often easier to test, since you have fewer side effects and your test can validate the return object.
+
+In [[Python]] especially, patches often rely on STRING PATHS meaning they won't get updated by LSP renames.
