@@ -222,7 +222,8 @@
 
     <article><p>Tests that mock many things are fragile. It will be unavoidable that you will need to mock side effects (<a href="/avoid-side-effects">Avoid Side Effects</a>) such as network calls, but every mocked function is something that can (will) break in the future, likely in a way that is hard to detect.</p>
 <p>I have seen far too many unit tests that boil down to "call function A, mock all the functions that function A calls". Tests like this are shallow, and will not last.</p>
-<p>When you <a href="/favour-immutablility">Favour Immutablility</a>, your functions become easier to reason about, and often easier to test, since you have fewer side effects and your test can validate the return object.</p></article>
+<p>When you <a href="/favour-immutablility">Favour Immutablility</a>, your functions become easier to reason about, and often easier to test, since you have fewer side effects and your test can validate the return object.</p>
+<p>In <a href="/python">Python</a> especially, patches often rely on STRING PATHS meaning they won't get updated by LSP renames.</p></article>
   </main>
 
   <footer>
@@ -233,7 +234,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/docker-networks" class="not-extra-small">random</a>
+          <a href="/sql" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Code Opinions/Avoid Mocks.md" class="desktop">edit</a>
@@ -244,7 +245,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/docker-networks">random</a>
+          <a href="/sql">random</a>
         </div>
       </div>
 
