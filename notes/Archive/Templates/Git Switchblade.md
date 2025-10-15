@@ -1,3 +1,9 @@
+---
+date: 2025-10-15
+tags:
+  - posts
+---
+
 A script that will attempt to stash changes on your current branch when you switch(blade), and will restore those changes when you switch(blade) back.
 
 ```bash
