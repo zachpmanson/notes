@@ -1,0 +1,1 @@
+Tests should have concrete inputs, and concrete outputs. If you are testing things that aren't concrete inputs and outputs, what exactly are you testing? If your output is a side effect then you mock it, but generally your outputs are data.
