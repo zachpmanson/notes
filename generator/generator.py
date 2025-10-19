@@ -16,10 +16,10 @@ import markdown
 import frontmatter
 from markdown.extensions.codehilite import CodeHiliteExtension
 
-from extensions.cite import CiteExtension
-from extensions.backlink import BacklinkExtension
+from generator.extensions.cite import CiteExtension
+from generator.extensions.backlink import BacklinkExtension
 
-import helpers
+import generator.helpers as helpers
 
 from pprint import pprint
 
@@ -491,7 +491,7 @@ post_template = jinja2.Template(open("generator/template.jinja", "r").read())
 
 VERBOSE = False
 
-if __name__ == "__main__":
+def build_feeds():
     try:
         opts, args = getopt.getopt(sys.argv[1:], "v")
     except getopt.GetoptError as err:

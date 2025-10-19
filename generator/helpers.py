@@ -1,8 +1,7 @@
 # Self contained helper functions
 
 import sys
-
-from generator import Node
+import generator
 
 
 def sanitize_url(url):
@@ -45,7 +44,7 @@ def tags_js():
     """
 
 
-def chronological_tag(tag: str, tag_pages: list[str], tree: dict[str, Node]):
+def chronological_tag(tag: str, tag_pages: list[str], tree: dict[str, generator.Node]):
     nodes = {page: tree[page] for page in tag_pages if tree[page].post_date}
     nodes = dict(
         sorted(nodes.items(), key=lambda item: item[1].post_date, reverse=True)

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -e
-source ./venv/bin/activate
+# source ./venv/bin/activate
 rm -rf ./site/*
 
 
@@ -23,9 +23,8 @@ fi
 
 echo Activated venv
 echo Generating...
-python3 ./generator/generator.py $1
+uv run main.py
 echo Generated!
-deactivate
 echo Deactivated venv
 mkdir -p ./site/media ./site/static
 cp -R ./static/* ./site/static/
