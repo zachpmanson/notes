@@ -13,6 +13,6 @@ git reset --hard origin/gh-pages
 cd ..
 
 
-python3 -m venv venv 
-. ./venv/bin/activate
-python3 -m pip install -r generator/requirements.txt
+# python3 -m venv venv 
+# . ./venv/bin/activate
+# python3 -m pip install -r generator/requirements.txt
