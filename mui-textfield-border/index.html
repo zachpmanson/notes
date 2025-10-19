@@ -454,46 +454,46 @@
       <h1>Changing MUI TextField Border Color</h1>
     </header>
 
-    <article><div class="highlight"><pre><span></span><code>import { Search } from &quot;@mui/icons-material&quot;;
-import { outlinedInputClasses, styled, TextField } from &quot;@mui/material&quot;;
+    <article><div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Search</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@mui/icons-material&quot;</span><span class="p">;</span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">outlinedInputClasses</span><span class="p">,</span><span class="w"> </span><span class="nx">styled</span><span class="p">,</span><span class="w"> </span><span class="nx">TextField</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s2">&quot;@mui/material&quot;</span><span class="p">;</span>
 
-// mui should die https://stackoverflow.com/a/58963947
-const StyledTextField = styled(TextField)({
-  [`&amp; .${outlinedInputClasses.root} .${outlinedInputClasses.notchedOutline}`]: {
-    borderColor: &quot;rgba(0, 0, 0, 0.23) !important&quot;, // yes I checked, this important is required
-  },
-  [`&amp; .${outlinedInputClasses.root}.${outlinedInputClasses.focused} .${outlinedInputClasses.notchedOutline}`]: {
-    borderColor: &quot;rgba(0, 0, 0, 0.23) !important&quot;,
-  },
-});
+<span class="c1">// mui should die https://stackoverflow.com/a/58963947</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">StyledTextField</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">styled</span><span class="p">(</span><span class="nx">TextField</span><span class="p">)({</span>
+<span class="w">  </span><span class="p">[</span><span class="sb">`&amp; .</span><span class="si">${</span><span class="nx">outlinedInputClasses</span><span class="p">.</span><span class="nx">root</span><span class="si">}</span><span class="sb"> .</span><span class="si">${</span><span class="nx">outlinedInputClasses</span><span class="p">.</span><span class="nx">notchedOutline</span><span class="si">}</span><span class="sb">`</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">borderColor</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;rgba(0, 0, 0, 0.23) !important&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// yes I checked, this important is required</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="p">[</span><span class="sb">`&amp; .</span><span class="si">${</span><span class="nx">outlinedInputClasses</span><span class="p">.</span><span class="nx">root</span><span class="si">}</span><span class="sb">.</span><span class="si">${</span><span class="nx">outlinedInputClasses</span><span class="p">.</span><span class="nx">focused</span><span class="si">}</span><span class="sb"> .</span><span class="si">${</span><span class="nx">outlinedInputClasses</span><span class="p">.</span><span class="nx">notchedOutline</span><span class="si">}</span><span class="sb">`</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">borderColor</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;rgba(0, 0, 0, 0.23) !important&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="p">});</span>
 
-export default function QuickSearch({
-  onConfirm,
-  searchPlaceholder = &quot;Quick Search&quot;,
-  text,
-  setText,
-  isFetching,
-}: {
-  onConfirm: () =&gt; void;
-  searchPlaceholder?: string;
-  text: string;
-  setText: (text: string) =&gt; void;
-  isFetching?: boolean;
-}) {
-  return (
-    &lt;StyledTextField
-      id=&quot;outlined-basic&quot;
-      variant=&quot;outlined&quot;
-      className=&quot;min-w-[400px]&quot;
-      value={text}
-      placeholder={searchPlaceholder}
-      onKeyDown={(event: any) =&gt; {
-        if (event.key === &quot;Enter&quot;) onConfirm();
-      }}
-      onChange={(event) =&gt; setText(event.target.value)}
-    /&gt;
-  );
-}
+<span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">QuickSearch</span><span class="p">({</span>
+<span class="w">  </span><span class="nx">onConfirm</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">searchPlaceholder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Quick Search&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">text</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">setText</span><span class="p">,</span>
+<span class="w">  </span><span class="nx">isFetching</span><span class="p">,</span>
+<span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">onConfirm</span><span class="o">:</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="ow">void</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">searchPlaceholder?</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">text</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">setText</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">text</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="ow">void</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">isFetching?</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span><span class="p">;</span>
+<span class="p">})</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="p">&lt;</span><span class="nt">StyledTextField</span>
+<span class="w">      </span><span class="na">id</span><span class="o">=</span><span class="s">&quot;outlined-basic&quot;</span>
+<span class="w">      </span><span class="na">variant</span><span class="o">=</span><span class="s">&quot;outlined&quot;</span>
+<span class="w">      </span><span class="na">className</span><span class="o">=</span><span class="s">&quot;min-w-[400px]&quot;</span>
+<span class="w">      </span><span class="na">value</span><span class="o">=</span><span class="p">{</span><span class="nx">text</span><span class="p">}</span>
+<span class="w">      </span><span class="na">placeholder</span><span class="o">=</span><span class="p">{</span><span class="nx">searchPlaceholder</span><span class="p">}</span>
+<span class="w">      </span><span class="na">onKeyDown</span><span class="o">=</span><span class="p">{(</span><span class="nx">event</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">key</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">&quot;Enter&quot;</span><span class="p">)</span><span class="w"> </span><span class="nx">onConfirm</span><span class="p">();</span>
+<span class="w">      </span><span class="p">}}</span>
+<span class="w">      </span><span class="na">onChange</span><span class="o">=</span><span class="p">{(</span><span class="nx">event</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">setText</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">)}</span>
+<span class="w">    </span><span class="p">/&gt;</span>
+<span class="w">  </span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div></article>
   </main>
 
@@ -505,7 +505,7 @@ export default function QuickSearch({
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/steve-yegges-tale-of-geoworks" class="not-extra-small">random</a>
+          <a href="/ochrs-syntax" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/MUI TextField Border.md" class="desktop">edit</a>
@@ -516,7 +516,7 @@ export default function QuickSearch({
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/steve-yegges-tale-of-geoworks">random</a>
+          <a href="/ochrs-syntax">random</a>
         </div>
       </div>
 

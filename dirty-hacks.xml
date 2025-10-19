@@ -13,7 +13,7 @@
             <link>https://notes.zachmanson.com/dirty-hacks</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Wed, 15 Oct 2025 06:07:11 </lastBuildDate>
+        <lastBuildDate>Sun, 19 Oct 2025 08:32:44 </lastBuildDate>
         
         <item>
             <title>RTK Query vs. Infinite Scrolling</title>
@@ -44,16 +44,16 @@
 <span class="w">    </span><span class="p">}),</span>
 </code></pre></div>
 <p>This will generate a hook called <code>useGetLocation</code> which will be cached.  Suddenly you never need to store a <code>Location</code> object in state to share it across components and you can just call <code>useGetLocation({id:5})</code> every time you need it. It also provides a lazy version of the hook that returns a normal function you can use to retrieve the data, which is good for APIs that need to be called multiple times.</p>
-<div class="highlight"><pre><span></span><code>function LocationCard({ id }: {id: number}) {
-    const {data: location, isLoading} = useGetLocation({id:id});
-    const [getLocationsLazy] = useLazyGetLocation();
-    ...
-    return (
-        &lt;div&gt;
-            {location.address}
-        &lt;/div&gt;
-    );
-}
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">LocationCard</span><span class="p">({</span><span class="w"> </span><span class="nx">id</span><span class="w"> </span><span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="nx">location</span><span class="p">,</span><span class="w"> </span><span class="nx">isLoading</span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useGetLocation</span><span class="p">({</span><span class="nx">id</span><span class="o">:</span><span class="nx">id</span><span class="p">});</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">getLocationsLazy</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useLazyGetLocation</span><span class="p">();</span>
+<span class="w">    </span><span class="p">...</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">            </span><span class="p">{</span><span class="nx">location</span><span class="p">.</span><span class="nx">address</span><span class="p">}</span>
+<span class="w">        </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>For straightforward GET requests this pattern stellar.  RTK Query encourages you to put all the API definitions into a single file (<code>src/api/api.ts</code>), or into a small number files with particular scopes.  For small-medium applications this works well, if you know the URL of an endpoint you want to hit you can just search within the <code>api.ts</code> file, use the accompanying hook and you are good to go, type safety and all.  I'm sure this single file approach would breakdown for big applications but its very pleasant at smaller scales.</p>
 <p>RTK Query also lets you do POST/PUT/PATCH requests with a similar definition style. Instead of using <code>build.query</code>, you use <code>build.mutation</code>.</p>
@@ -79,22 +79,22 @@
 <span class="w">    </span><span class="p">}),</span>
 </code></pre></div>
 <p>The hooks generated here will return a function that can be used to send requests.</p>
-<div class="highlight"><pre><span></span><code>function LocationCard({id}: {id:number}) {
-    const {data: location, isLoading} = useGetLocationQuery({id:id})
-    const [patchLocation, isPatchLoading] = usePatchLocationMutation()
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">LocationCard</span><span class="p">({</span><span class="nx">id</span><span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">id</span><span class="o">:</span><span class="nx">number</span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="nx">location</span><span class="p">,</span><span class="w"> </span><span class="nx">isLoading</span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useGetLocationQuery</span><span class="p">({</span><span class="nx">id</span><span class="o">:</span><span class="nx">id</span><span class="p">})</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">patchLocation</span><span class="p">,</span><span class="w"> </span><span class="nx">isPatchLoading</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">usePatchLocationMutation</span><span class="p">()</span>
 
-    function onUpdate(locationUpdate:Partial&lt;Location&gt;) {
-        patchLocation(locationUpdate)
-    }
-    ...
-    return (
-        &lt;div&gt;
-            {location.address}
-            ...
-            {/* some input that calls onUpdate on change */}
-        &lt;/div&gt;
-    )
-}
+<span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">onUpdate</span><span class="p">(</span><span class="nx">locationUpdate</span><span class="o">:</span><span class="nx">Partial</span><span class="p">&lt;</span><span class="nt">Location</span><span class="p">&gt;)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">patchLocation</span><span class="p">(</span><span class="nx">locationUpdate</span><span class="p">)</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">...</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">            </span><span class="p">{</span><span class="nx">location</span><span class="p">.</span><span class="nx">address</span><span class="p">}</span>
+<span class="w">            </span><span class="p">...</span>
+<span class="w">            </span><span class="p">{</span><span class="cm">/* some input that calls onUpdate on change */</span><span class="p">}</span>
+<span class="w">        </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">)</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>But wait! If I patch a location, how will the useGetLocation hook know that it's cache is invalid?</p>
 <h2 id="cache-invalidation">Cache Invalidation</h2>
@@ -203,41 +203,41 @@
 <span class="w">    </span><span class="p">}),</span>
 </code></pre></div>
 <p>Then in the component where the hook is called, ensure that the page number is reset to 1 whenever a mutation occurs that will invalidate the <code>useGetLocationsQuery</code> data.  Since this page isn't an increase from the previous, the old cache will be discarded. This can be annoying since the component that triggers the mutation and invalidates the data may be completely seperate from the component that queries for the data.  </p>
-<div class="highlight"><pre><span></span><code>function EditLocationAddress({id}: {id:number}) {
-    const [patchLocation, isPatchLoading] = usePatchLocationMutation();
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">EditLocationAddress</span><span class="p">({</span><span class="nx">id</span><span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">id</span><span class="o">:</span><span class="kt">number</span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">patchLocation</span><span class="p">,</span><span class="w"> </span><span class="nx">isPatchLoading</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">usePatchLocationMutation</span><span class="p">();</span>
 
-    function onUpdate(locationUpdate:Partial&lt;Location&gt;) {
-        patchLocation(locationUpdate);
-        // TODO somehow reset the page number to 0 in all relevant places
-    }
-    ...
-    return (
-        &lt;div&gt;
-            {/* some input that calls onUpdate on change */}
-        &lt;/div&gt;
-    );
-}
+<span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">onUpdate</span><span class="p">(</span><span class="nx">locationUpdate</span><span class="o">:</span><span class="kt">Partial</span><span class="p">&lt;</span><span class="nt">Location</span><span class="p">&gt;)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">patchLocation</span><span class="p">(</span><span class="nx">locationUpdate</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// TODO somehow reset the page number to 0 in all relevant places</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">...</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">            </span><span class="p">{</span><span class="cm">/* some input that calls onUpdate on change */</span><span class="p">}</span>
+<span class="w">        </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>There is probably a clever way of doing this where the cached page number is used as the canonical page number across all components, and then you could force a reset back to one from any component, but I haven't needed to implement this just yet in any applications.</p>
 <p>Maybe something like this? I haven't tried it yet.</p>
-<div class="highlight"><pre><span></span><code>function EditLocationAddress({id}: {id:number}) {
-    const [patchLocation, isPatchLoading] = usePatchLocationMutation();
-    const [getLocationsLazy] = useLazyGetLocationsQuery();
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">EditLocationAddress</span><span class="p">({</span><span class="nx">id</span><span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">id</span><span class="o">:</span><span class="nx">number</span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">patchLocation</span><span class="p">,</span><span class="w"> </span><span class="nx">isPatchLoading</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">usePatchLocationMutation</span><span class="p">();</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">getLocationsLazy</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useLazyGetLocationsQuery</span><span class="p">();</span>
 
-    function onUpdate(locationUpdate:Partial&lt;Location&gt;) {
-        patchLocation(locationUpdate);
-        getLocationsLazy(
-            { page: 1 },
-            true // lazy queries ignore cache by default, true overrides this
-        );
-    }
-    ...
-    return (
-        &lt;div&gt;
-            {/* some input that calls onUpdate on change */}
-        &lt;/div&gt;
-    );
-}
+<span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">onUpdate</span><span class="p">(</span><span class="nx">locationUpdate</span><span class="o">:</span><span class="nx">Partial</span><span class="p">&lt;</span><span class="nt">Location</span><span class="p">&gt;)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">patchLocation</span><span class="p">(</span><span class="nx">locationUpdate</span><span class="p">);</span>
+<span class="w">        </span><span class="nx">getLocationsLazy</span><span class="p">(</span>
+<span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nx">page</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">},</span>
+<span class="w">            </span><span class="kc">true</span><span class="w"> </span><span class="c1">// lazy queries ignore cache by default, true overrides this</span>
+<span class="w">        </span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">...</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">            </span><span class="p">{</span><span class="cm">/* some input that calls onUpdate on change */</span><span class="p">}</span>
+<span class="w">        </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div>]]>
             </content:encoded>
             <guid isPermaLink="false">https://notes.zachmanson.com/rtk-query-vs.-infinite-scrolling</guid>

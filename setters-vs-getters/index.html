@@ -231,15 +231,15 @@
     </header>
 
     <article><p>I know that it looks prettier when the getter is simple:</p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">User</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">User</span><span class="p">:</span>
     <span class="n">first_name</span><span class="p">:</span> <span class="nb">str</span>
     <span class="n">last_name</span><span class="p">:</span> <span class="nb">str</span>
 
-    <span class="k">def</span> <span class="nf">full_name_1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">full_name_1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">first_name</span><span class="si">}</span><span class="s2"> + </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">last_name</span><span class="si">}</span><span class="s2">&quot;</span>
 
     <span class="nd">@property</span><span class="o">.</span><span class="n">getter</span>
-    <span class="k">def</span> <span class="nf">full_name_2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">full_name_2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">first_name</span><span class="si">}</span><span class="s2"> + </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">last_name</span><span class="si">}</span><span class="s2">&quot;</span>
 
 
@@ -250,10 +250,10 @@
 <p>The real power of <code>@property</code> is not the getter, but the setter.</p>
 <p>You can define a custom setter with validation logic OR
 You can intentionally leave out a setter so that an attribute is read only:</p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">X</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">X</span><span class="p">:</span>
     <span class="n">_name</span> <span class="o">=</span> <span class="mi">5</span>
     <span class="nd">@property</span><span class="o">.</span><span class="n">getter</span>
-    <span class="k">def</span> <span class="nf">name</span><span class="p">():</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">name</span><span class="p">():</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span>
 </code></pre></div>
 <p>If you are not doing either of these things, property is just hiding a function call which may contain side effect, which is a practice I consider dangerous. I have seen network calls hidden get behind @property. Never do this.</p></article>
@@ -267,7 +267,7 @@ You can intentionally leave out a setter so that an attribute is read only:</p>
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/aima-chapter-03" class="not-extra-small">random</a>
+          <a href="/html-first-development" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Code Opinions/Setters vs Getters.md" class="desktop">edit</a>
@@ -278,7 +278,7 @@ You can intentionally leave out a setter so that an attribute is read only:</p>
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/aima-chapter-03">random</a>
+          <a href="/html-first-development">random</a>
         </div>
       </div>
 

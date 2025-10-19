@@ -236,7 +236,7 @@
 <p>Reflection is powerful and also may be a sign you’ve gone too far.</p>
 <p>This is cursed, do not do this:</p>
 <div class="highlight"><pre><span></span><code><span class="o">...</span>
-    <span class="k">def</span> <span class="nf">per_day_metric</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">metric</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;spend&quot;</span><span class="p">,</span> <span class="s2">&quot;rev&quot;</span><span class="p">,</span> <span class="s2">&quot;client_saved&quot;</span><span class="p">,</span> <span class="s2">&quot;usage&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;spend&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">per_day_metric</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">metric</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;spend&quot;</span><span class="p">,</span> <span class="s2">&quot;rev&quot;</span><span class="p">,</span> <span class="s2">&quot;client_saved&quot;</span><span class="p">,</span> <span class="s2">&quot;usage&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;spend&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">metric</span> <span class="o">==</span> <span class="s2">&quot;spend&quot;</span><span class="p">:</span>
             <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;per_day_spend&quot;</span><span class="p">)(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
@@ -253,7 +253,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/referer-http-field" class="not-extra-small">random</a>
+          <a href="/limitations-of-machine-learning" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Code Opinions/getattr() is a red flag.md" class="desktop">edit</a>
@@ -264,7 +264,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/referer-http-field">random</a>
+          <a href="/limitations-of-machine-learning">random</a>
         </div>
       </div>
 

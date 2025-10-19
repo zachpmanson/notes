@@ -456,60 +456,60 @@
 
     <article><p>React doesn't like it when you do updates to other component's state in a <code>useMemo</code>. <a href="https://github.com/facebook/react/issues/18178">This is the error that will log in console</a>, this was what fixed it for me.</p>
 <h2 id="bad">Bad</h2>
-<div class="highlight"><pre><span></span><code>function A() {
-  const rows = useMemo(() =&gt; {
-    ...
-    if (!appliances) return [];
-    const newRows = appliances.map&lt;MonitorTableRow&gt;((a) =&gt; ({
-      id: a.site_appliance.id,
-      appliance_id: a.appliance.id,
-      sa: a,
-      name: a.appliance.title,
-      model_num: a.appliance.model_num ?? &quot;&quot;,
-      max_load: getApplianceLoad(a.appliance, a.appliance.max_load),
-    }));
-    dispatch(setAppliancesTable(rows));
-    return newRows;
-  }, [appliances, usageSources, costPerUnit, monitorAppliances, applianceIdToMonitor]);
-  ...
-  return &lt;&gt;&lt;/&gt;;
-}
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">A</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">rows</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useMemo</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">...</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">appliances</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="p">[];</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">newRows</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">appliances</span><span class="p">.</span><span class="nx">map</span><span class="p">&lt;</span><span class="nt">MonitorTableRow</span><span class="p">&gt;((</span><span class="nx">a</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
+<span class="w">      </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">a.site_appliance.id</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">appliance_id</span><span class="o">:</span><span class="w"> </span><span class="kt">a.appliance.id</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">sa</span><span class="o">:</span><span class="w"> </span><span class="kt">a</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="kt">a.appliance.title</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">model_num</span><span class="o">:</span><span class="w"> </span><span class="kt">a.appliance.model_num</span><span class="w"> </span><span class="o">??</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">max_load</span><span class="o">:</span><span class="w"> </span><span class="kt">getApplianceLoad</span><span class="p">(</span><span class="nx">a</span><span class="p">.</span><span class="nx">appliance</span><span class="p">,</span><span class="w"> </span><span class="nx">a</span><span class="p">.</span><span class="nx">appliance</span><span class="p">.</span><span class="nx">max_load</span><span class="p">),</span>
+<span class="w">    </span><span class="p">}));</span>
+<span class="w">    </span><span class="nx">dispatch</span><span class="p">(</span><span class="nx">setAppliancesTable</span><span class="p">(</span><span class="nx">rows</span><span class="p">));</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">newRows</span><span class="p">;</span>
+<span class="w">  </span><span class="p">},</span><span class="w"> </span><span class="p">[</span><span class="nx">appliances</span><span class="p">,</span><span class="w"> </span><span class="nx">usageSources</span><span class="p">,</span><span class="w"> </span><span class="nx">costPerUnit</span><span class="p">,</span><span class="w"> </span><span class="nx">monitorAppliances</span><span class="p">,</span><span class="w"> </span><span class="nx">applianceIdToMonitor</span><span class="p">]);</span>
+<span class="w">  </span><span class="p">...</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;&gt;&lt;/&gt;;</span>
+<span class="p">}</span>
 
-function B() {
-  const { appliancesTable } = useSelector(state =&gt; state.appliances)
-  ...
-  return &lt;&gt;&lt;/&gt;
-}
+<span class="kd">function</span><span class="w"> </span><span class="nx">B</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">appliancesTable</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useSelector</span><span class="p">(</span><span class="nx">state</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">state</span><span class="p">.</span><span class="nx">appliances</span><span class="p">)</span>
+<span class="w">  </span><span class="p">...</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;&gt;&lt;/&gt;</span>
+<span class="p">}</span>
 </code></pre></div>
 <h2 id="good">Good</h2>
-<div class="highlight"><pre><span></span><code>function A() {
-  const rows = useMemo(() =&gt; {
-    ...
-    if (!appliances) return [];
-    const newRows = appliances.map&lt;MonitorTableRow&gt;((a) =&gt; ({
-      id: a.site_appliance.id,
-      appliance_id: a.appliance.id,
-      sa: a,
-      name: a.appliance.title,
-      model_num: a.appliance.model_num ?? &quot;&quot;,
-      max_load: getApplianceLoad(a.appliance, a.appliance.max_load),
-    }));
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">A</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">rows</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useMemo</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">...</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">appliances</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="p">[];</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">newRows</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">appliances</span><span class="p">.</span><span class="nx">map</span><span class="p">&lt;</span><span class="nt">MonitorTableRow</span><span class="p">&gt;((</span><span class="nx">a</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
+<span class="w">      </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">a.site_appliance.id</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">appliance_id</span><span class="o">:</span><span class="w"> </span><span class="kt">a.appliance.id</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">sa</span><span class="o">:</span><span class="w"> </span><span class="kt">a</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="kt">a.appliance.title</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">model_num</span><span class="o">:</span><span class="w"> </span><span class="kt">a.appliance.model_num</span><span class="w"> </span><span class="o">??</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">max_load</span><span class="o">:</span><span class="w"> </span><span class="kt">getApplianceLoad</span><span class="p">(</span><span class="nx">a</span><span class="p">.</span><span class="nx">appliance</span><span class="p">,</span><span class="w"> </span><span class="nx">a</span><span class="p">.</span><span class="nx">appliance</span><span class="p">.</span><span class="nx">max_load</span><span class="p">),</span>
+<span class="w">    </span><span class="p">}));</span>
 
-    return newRows;
-  }, [appliances, usageSources, costPerUnit, monitorAppliances, applianceIdToMonitor]);
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">newRows</span><span class="p">;</span>
+<span class="w">  </span><span class="p">},</span><span class="w"> </span><span class="p">[</span><span class="nx">appliances</span><span class="p">,</span><span class="w"> </span><span class="nx">usageSources</span><span class="p">,</span><span class="w"> </span><span class="nx">costPerUnit</span><span class="p">,</span><span class="w"> </span><span class="nx">monitorAppliances</span><span class="p">,</span><span class="w"> </span><span class="nx">applianceIdToMonitor</span><span class="p">]);</span>
 
-  useEffect(() =&gt; {
-    dispatch(setAppliancesTable(rows));
-  }, [rows]);
-  ...
-  return &lt;&gt;&lt;/&gt;;
-}
+<span class="w">  </span><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">dispatch</span><span class="p">(</span><span class="nx">setAppliancesTable</span><span class="p">(</span><span class="nx">rows</span><span class="p">));</span>
+<span class="w">  </span><span class="p">},</span><span class="w"> </span><span class="p">[</span><span class="nx">rows</span><span class="p">]);</span>
+<span class="w">  </span><span class="p">...</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;&gt;&lt;/&gt;;</span>
+<span class="p">}</span>
 
-function B() {
-  const { appliancesTable } = useSelector(state =&gt; state.appliances)
-  ...
-  return &lt;&gt;&lt;/&gt;
-}
+<span class="kd">function</span><span class="w"> </span><span class="nx">B</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">appliancesTable</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useSelector</span><span class="p">(</span><span class="nx">state</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">state</span><span class="p">.</span><span class="nx">appliances</span><span class="p">)</span>
+<span class="w">  </span><span class="p">...</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;&gt;&lt;/&gt;</span>
+<span class="p">}</span>
 </code></pre></div></article>
   </main>
 
@@ -521,7 +521,7 @@ function B() {
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/dear-google-cloud" class="not-extra-small">random</a>
+          <a href="/tricking-llms" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Cross Component Updates in React.md" class="desktop">edit</a>
@@ -532,7 +532,7 @@ function B() {
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/dear-google-cloud">random</a>
+          <a href="/tricking-llms">random</a>
         </div>
       </div>
 

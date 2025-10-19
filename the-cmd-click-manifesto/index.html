@@ -570,18 +570,18 @@
 <li>Stack traces should correspond with the structure of the code.</li>
 <li>
 <p>Higher order functions break the golden property, use them as a last resort.</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">do_something</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">f</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">]):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">do_something</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">f</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">]):</span>
     <span class="n">f</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>  <span class="c1"># I can&#39;t CMD-click f</span>
 </code></pre></div>
 </li>
 <li>
 <p>Trad Object Orientated code tends to break the golden property (this makes sense as <a href="https://leontrolski.github.io/poor-mans-object.html#:~:text=objects%20are%20a%20poor%20man%27s%20closures%20are%20a%20poor%20man%27s%20objects">objects are closures</a>), use it as a last resort.</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">do_something</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="n">Animal</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">do_something</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="n">Animal</span><span class="p">):</span>
     <span class="n">a</span><span class="o">.</span><span class="n">meow</span><span class="p">()</span>  <span class="c1"># I can&#39;t CMD-click meow</span>
 </code></pre></div>
 <p><em>This case it is ambiguous as <code>meow()</code> could be on any <code>Cat</code>, <code>Lion</code>, <code>Tiger</code>...</em>
 8. Use enum-like information to distinguish between otherwise similar data.</p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Cat</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span> <span class="o">...</span>                <span class="c1"># bad</span>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Cat</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span> <span class="o">...</span>                <span class="c1"># bad</span>
 <span class="n">a</span> <span class="o">=</span> <span class="n">Animal</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="n">AnimalKind</span><span class="o">.</span><span class="n">CAT</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>  <span class="c1"># good</span>
 </code></pre></div>
 </li>
@@ -590,15 +590,15 @@
 </li>
 <li>
 <p>Choose behaviour based on data, not class hierarchies:</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">do_something</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">do_something</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">data</span><span class="o">.</span><span class="n">kind</span> <span class="o">==</span> <span class="n">Kind</span><span class="o">.</span><span class="n">A</span><span class="p">:</span>
         <span class="n">g</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>  <span class="c1"># I can CMD-click g</span>
 </code></pre></div>
 </li>
 <li>
 <p>Say arbitrarily complicated things about data, rather than be constrained by inflexible heirarchies.</p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Cat</span><span class="p">(</span><span class="n">Animal</span><span class="p">,</span> <span class="n">FourLegged</span><span class="p">):</span> <span class="o">...</span>                  <span class="c1"># bad</span>
-<span class="k">def</span> <span class="nf">has_even_number_of_legs</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="n">AnimalKind</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span>  <span class="c1"># good</span>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Cat</span><span class="p">(</span><span class="n">Animal</span><span class="p">,</span> <span class="n">FourLegged</span><span class="p">):</span> <span class="o">...</span>                  <span class="c1"># bad</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">has_even_number_of_legs</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="n">AnimalKind</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span>  <span class="c1"># good</span>
 </code></pre></div>
 </li>
 <li>
@@ -618,11 +618,11 @@
 </li>
 <li>
 <p>Good code expresses the smallest possible state space the program could operate in - <strong>YAGNI</strong>.</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">do_something</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">f</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">]):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">do_something</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">f</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">]):</span>
     <span class="c1"># f could be anything - big state space</span>
     <span class="n">f</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">do_something</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">kind</span><span class="p">:</span> <span class="n">Kind</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">do_something</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">kind</span><span class="p">:</span> <span class="n">Kind</span><span class="p">):</span>
     <span class="c1"># we enumerate the specific things we can do - small state space</span>
     <span class="k">if</span> <span class="n">kind</span> <span class="o">==</span> <span class="n">Kind</span><span class="o">.</span><span class="n">A</span><span class="p">:</span>
         <span class="n">g</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
@@ -645,7 +645,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/ghidhra-hidpi" class="not-extra-small">random</a>
+          <a href="/characters" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Folklore/The CMD-Click Manifesto.md" class="desktop">edit</a>
@@ -656,7 +656,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/ghidhra-hidpi">random</a>
+          <a href="/characters">random</a>
         </div>
       </div>
 

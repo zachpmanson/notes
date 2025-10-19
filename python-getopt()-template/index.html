@@ -110,13 +110,13 @@
     </header>
 
     <article><p>Adapted from the <a href="https://docs.python.org/3/library/getopt.html">getopt() docs</a>.</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">getopt</span>
-<span class="kn">import</span> <span class="nn">sys</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">getopt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
 
-<span class="k">def</span> <span class="nf">usage</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">usage</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;usage: ... [-v] [-h] [-o=output]&quot;</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">stderr</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">opts</span><span class="p">,</span> <span class="n">args</span> <span class="o">=</span> <span class="n">getopt</span><span class="o">.</span><span class="n">getopt</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span> <span class="s2">&quot;ho:v&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;help&quot;</span><span class="p">,</span> <span class="s2">&quot;output=&quot;</span><span class="p">])</span>
     <span class="k">except</span> <span class="n">getopt</span><span class="o">.</span><span class="n">GetoptError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
@@ -151,7 +151,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/microsoft-product-names" class="not-extra-small">random</a>
+          <a href="/give-bad-things-scary-names" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Templates/Python getopt() Template.md" class="desktop">edit</a>
@@ -162,7 +162,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/microsoft-product-names">random</a>
+          <a href="/give-bad-things-scary-names">random</a>
         </div>
       </div>
 

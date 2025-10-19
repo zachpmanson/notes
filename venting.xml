@@ -13,7 +13,320 @@
             <link>https://notes.zachmanson.com/venting</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Wed, 15 Oct 2025 06:07:11 </lastBuildDate>
+        <lastBuildDate>Sun, 19 Oct 2025 08:32:44 </lastBuildDate>
+        
+        <item>
+            <title>Nextcloud Phone Photo Upload</title>
+            <link>https://notes.zachmanson.com/nextcloud-phone-photo-upload</link>
+            
+            <description>Just use FolderSync.</description>
+            
+            <content:encoded>
+                <![CDATA[<p>Nextcloud is excellent, and its Android app is great.  I found the app's Auto-Upload feature to be nigh unusable.</p>
+<p>I have 20GiB+ of photos on my phone and would like a backup.  My primary Nextcloud account is synced to my PCs, so any file added to it will be downloaded to all devices.  I don't need local access to these photos on all my PCs, so I created a seperate Nextcloud account just for camera roll uploads. If I needed to access these photos from a PC I could log in to the Nextcloud web interface with the camera roll account.</p>
+<p>Attempting to use Auto-Upload on my phone's Camera folder was messy.  It kept uploading photos to the wrong Nextcloud account, incorrectly counting how many files there were, and did not supporting bidirectional sync.  It was unpredictable how long it would take to actually trigger an upload, not having a manual way of starting one.  It also limited automatic uploads to a single folder. These issues were all seperate from the fact that the UI was extremely glitchy as it tried to show 20GiB of photos.</p>
+<p>I found using <a href="https://www.tacit.dk/foldersync">FolderSync</a> a much better experience.  It let me set up bidirectional sync between custom Nextcloud folders and local folders, let me choose cadence for syncing (with many configuration options like only allowing upload when charging) and allowed me to manually trigger a sync.  The premium version is absolutely worth it.  I'm only scratching the surface of what it can do here, but for my needs it's perfect.</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/nextcloud-phone-photo-upload</guid>
+            <pubDate>2024-05-01</pubDate>
+        </item>
+        
+        <item>
+            <title>RTK Query vs. Infinite Scrolling</title>
+            <link>https://notes.zachmanson.com/rtk-query-vs.-infinite-scrolling</link>
+            
+            <content:encoded>
+                <![CDATA[<p>RTK Query with <a href="/react">React</a> is pretty great! The primary pattern you find yourself using with it is: </p>
+<ol>
+<li>writing a small API definition that provides <ol>
+<li>the endpoint url </li>
+<li>type definitions for request args and response schema</li>
+<li>(usually) simply logic for converting passed argument type into request params/body</li>
+<li>(usually) simple logic for converting response payload into the response schema</li>
+</ol>
+</li>
+<li>importing a hook that RTK Query automatically generates for you</li>
+<li>reuse the same hook across multiple components</li>
+</ol>
+<p>RTK Query handles loading states, stale while revalidate states, error states, type safety, and caching.</p>
+<p>When writing React components, the caching is the most impactful of these.   You can just call the same hook in many different components, and as long as the params are the same the same it will only be a single network request. This removes the need for many invocations <code>useState</code> and Redux state calls, since you can just feign a call to the backend every time you need that data.</p>
+<p>There is a little boilerplate you have to write, but the meat of a basic RTK Query definition will look something like this:</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">getLocation</span><span class="o">:</span><span class="w"> </span><span class="kt">build.query</span><span class="o">&lt;</span><span class="nx">Location</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">({</span>
+<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">ids</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
+<span class="w">        </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;api/v1/location&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">params</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="w"> </span><span class="p">},</span>
+<span class="w">      </span><span class="p">}),</span>
+<span class="w">      </span><span class="nx">transformResponse</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
+<span class="w">    </span><span class="p">}),</span>
+</code></pre></div>
+<p>This will generate a hook called <code>useGetLocation</code> which will be cached.  Suddenly you never need to store a <code>Location</code> object in state to share it across components and you can just call <code>useGetLocation({id:5})</code> every time you need it. It also provides a lazy version of the hook that returns a normal function you can use to retrieve the data, which is good for APIs that need to be called multiple times.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">LocationCard</span><span class="p">({</span><span class="w"> </span><span class="nx">id</span><span class="w"> </span><span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="nx">location</span><span class="p">,</span><span class="w"> </span><span class="nx">isLoading</span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useGetLocation</span><span class="p">({</span><span class="nx">id</span><span class="o">:</span><span class="nx">id</span><span class="p">});</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">getLocationsLazy</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useLazyGetLocation</span><span class="p">();</span>
+<span class="w">    </span><span class="p">...</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">            </span><span class="p">{</span><span class="nx">location</span><span class="p">.</span><span class="nx">address</span><span class="p">}</span>
+<span class="w">        </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>For straightforward GET requests this pattern stellar.  RTK Query encourages you to put all the API definitions into a single file (<code>src/api/api.ts</code>), or into a small number files with particular scopes.  For small-medium applications this works well, if you know the URL of an endpoint you want to hit you can just search within the <code>api.ts</code> file, use the accompanying hook and you are good to go, type safety and all.  I'm sure this single file approach would breakdown for big applications but its very pleasant at smaller scales.</p>
+<p>RTK Query also lets you do POST/PUT/PATCH requests with a similar definition style. Instead of using <code>build.query</code>, you use <code>build.mutation</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">addLocation</span><span class="o">:</span><span class="w"> </span><span class="kt">build.mutation</span><span class="o">&lt;</span>
+<span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="nx">location_id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">site_id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">address</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span><span class="w"> </span><span class="nx">abn</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span><span class="w"> </span><span class="nx">user_id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">},</span>
+<span class="w">      </span><span class="nx">NewLocation</span>
+<span class="w">    </span><span class="o">&gt;</span><span class="p">({</span>
+<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">body</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
+<span class="w">        </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;api/v1/location&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">method</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;POST&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">body</span><span class="o">:</span><span class="w"> </span><span class="kt">body</span><span class="p">,</span>
+<span class="w">      </span><span class="p">}),</span>
+<span class="w">    </span><span class="p">}),</span>
+<span class="w">    </span><span class="nx">patchLocation</span><span class="o">:</span><span class="w"> </span><span class="kt">build.mutation</span><span class="o">&lt;</span><span class="ow">void</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="kt">Partial</span><span class="o">&lt;</span><span class="nx">Location</span><span class="o">&gt;</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">({</span>
+<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">id</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nx">method</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;PATCH&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="sb">`api/v1/location/</span><span class="si">${</span><span class="nx">primaryKey</span><span class="si">}</span><span class="sb">`</span><span class="p">,</span>
+<span class="w">          </span><span class="nx">body</span><span class="o">:</span><span class="w"> </span><span class="kt">data</span><span class="p">,</span>
+<span class="w">        </span><span class="p">};</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nx">transformResponse</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
+<span class="w">    </span><span class="p">}),</span>
+</code></pre></div>
+<p>The hooks generated here will return a function that can be used to send requests.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">LocationCard</span><span class="p">({</span><span class="nx">id</span><span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">id</span><span class="o">:</span><span class="nx">number</span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="nx">location</span><span class="p">,</span><span class="w"> </span><span class="nx">isLoading</span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useGetLocationQuery</span><span class="p">({</span><span class="nx">id</span><span class="o">:</span><span class="nx">id</span><span class="p">})</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">patchLocation</span><span class="p">,</span><span class="w"> </span><span class="nx">isPatchLoading</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">usePatchLocationMutation</span><span class="p">()</span>
+
+<span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">onUpdate</span><span class="p">(</span><span class="nx">locationUpdate</span><span class="o">:</span><span class="nx">Partial</span><span class="p">&lt;</span><span class="nt">Location</span><span class="p">&gt;)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">patchLocation</span><span class="p">(</span><span class="nx">locationUpdate</span><span class="p">)</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">...</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">            </span><span class="p">{</span><span class="nx">location</span><span class="p">.</span><span class="nx">address</span><span class="p">}</span>
+<span class="w">            </span><span class="p">...</span>
+<span class="w">            </span><span class="p">{</span><span class="cm">/* some input that calls onUpdate on change */</span><span class="p">}</span>
+<span class="w">        </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>But wait! If I patch a location, how will the useGetLocation hook know that it's cache is invalid?</p>
+<h2 id="cache-invalidation">Cache Invalidation</h2>
+<p>RTK Query uses a tag system for cache invalidation, where a tag represents a kind of query.  Queries can assign themselves tags, and mutations can provide a list of tags they will invalidate. </p>
+<p>These can be static</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">getLocation</span><span class="o">:</span><span class="w"> </span><span class="kt">build.query</span><span class="o">&lt;</span><span class="nx">Location</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">({</span>
+<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">ids</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
+<span class="w">        </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;api/v1/location&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">params</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="w"> </span><span class="p">},</span>
+<span class="w">      </span><span class="p">}),</span>
+<span class="w">      </span><span class="nx">transformResponse</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">providesTags</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Location&#39;</span><span class="p">],</span>
+<span class="w">    </span><span class="p">}),</span>
+</code></pre></div>
+<p>or dynamic, based on the params given</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">getLocation</span><span class="o">:</span><span class="w"> </span><span class="kt">build.query</span><span class="o">&lt;</span><span class="nx">Location</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">({</span>
+<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">ids</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
+<span class="w">        </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;api/v1/location&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">params</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="w"> </span><span class="p">},</span>
+<span class="w">      </span><span class="p">}),</span>
+<span class="w">      </span><span class="nx">transformResponse</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">providesTags</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">result</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">,</span><span class="w"> </span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">[{</span><span class="kr">type</span><span class="o">:</span><span class="s2">&quot;Location&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">id</span><span class="p">}]</span>
+<span class="w">    </span><span class="p">}),</span>
+</code></pre></div>
+<p>And similarly for mutations</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">patchLocation</span><span class="o">:</span><span class="w"> </span><span class="kt">build.mutation</span><span class="o">&lt;</span><span class="ow">void</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="kt">Partial</span><span class="o">&lt;</span><span class="nx">Location</span><span class="o">&gt;</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">({</span>
+<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">id</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nx">method</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;PATCH&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="sb">`api/v1/location/</span><span class="si">${</span><span class="nx">primaryKey</span><span class="si">}</span><span class="sb">`</span><span class="p">,</span>
+<span class="w">          </span><span class="nx">body</span><span class="o">:</span><span class="w"> </span><span class="kt">data</span><span class="p">,</span>
+<span class="w">        </span><span class="p">};</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nx">transformResponse</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">invalidatesTags</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">result</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">,</span><span class="w"> </span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Location&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">arg.id</span><span class="w"> </span><span class="p">}]</span><span class="w"> </span><span class="c1">// or just [&quot;Location&quot;] to invalidate the whole category</span>
+<span class="w">    </span><span class="p">}),</span>
+</code></pre></div>
+<p>Where you can, dynamic tags are generally better since you have much more granular control.  Again, this works pretty well for straightforward queries.</p>
+<h2 id="pagination">Pagination</h2>
+<p>RTK Query doesn't include a mechanism for paging data, but passing a page number as a param works fine if you have discrete pages.</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">getLocations</span><span class="o">:</span><span class="w"> </span><span class="kt">build.query</span><span class="o">&lt;</span><span class="nx">Location</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">page</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">({</span>
+<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">page</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
+<span class="w">        </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;api/v1/locations&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">params</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">page</span><span class="w"> </span><span class="p">}</span>
+<span class="w">      </span><span class="p">}),</span>
+<span class="w">      </span><span class="nx">transformResponse</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">providesTags</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">result</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">,</span><span class="w"> </span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">[...</span><span class="nx">result</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">location</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="kr">type</span><span class="o">:</span><span class="s2">&quot;Location&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">location.id</span><span class="p">}),</span><span class="w"> </span><span class="p">{</span><span class="kr">type</span><span class="o">:</span><span class="s2">&quot;Location&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;LIST&quot;</span><span class="p">}],</span>
+<span class="w">    </span><span class="p">}),</span>
+</code></pre></div>
+<h2 id="but-what-about-infinite-scroll">But what about infinite scroll?</h2>
+<p>When infinitely scrolling, normally you'd have an array that stores all the results that have been loaded so far, and then you'd append new results to the end of this list when they are loaded in (maybe even dropping some entries from the start if you are memory constrained).  The hook generated by the previous example will only ever let you access one page's entries at a time. </p>
+<p>RTK Query doesn't have any special functions for infinite scrolling, but the pieces it gives you are enough to make it work. When writing a query definition you can explicitly set which params contribute are used to define unique cache entries, and another function to say how old cache entries should be overwritten by new ones.</p>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">getLocations</span><span class="o">:</span><span class="w"> </span><span class="kt">build.query</span><span class="o">&lt;</span><span class="nx">Location</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">page</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">({</span>
+<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
+<span class="w">        </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;api/v1/locations&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">params</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">page</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">      </span><span class="p">}),</span>
+<span class="w">      </span><span class="nx">transformResponse</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">providesTags</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">result</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">,</span><span class="w"> </span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">[...</span><span class="nx">result</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">location</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="kr">type</span><span class="o">:</span><span class="s2">&quot;Location&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">location.id</span><span class="p">}),</span><span class="w"> </span><span class="p">{</span><span class="kr">type</span><span class="o">:</span><span class="s2">&quot;Location&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;LIST&quot;</span><span class="p">}],</span>
+
+<span class="w">      </span><span class="c1">// overwrite cached value when page value changes, treat page</span>
+<span class="w">      </span><span class="nx">serializeQueryArgs</span><span class="o">:</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">queryArgs</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="p">...</span><span class="nx">queryArgs</span><span class="p">,</span><span class="w"> </span><span class="nx">page</span><span class="o">:</span><span class="w"> </span><span class="kt">undefined</span><span class="w"> </span><span class="p">}),</span>
+
+<span class="w">      </span><span class="c1">// when overwriting cache value, append new data to old list</span>
+<span class="w">      </span><span class="nx">merge</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">currentCache</span><span class="p">,</span><span class="w"> </span><span class="nx">newData</span><span class="p">,</span><span class="w"> </span><span class="nx">otherArgs</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nx">currentCache</span><span class="p">.</span><span class="nx">items</span><span class="p">.</span><span class="nx">push</span><span class="p">(...</span><span class="nx">newData</span><span class="p">);</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">    </span><span class="p">}),</span>
+</code></pre></div>
+<p>This works riiiiight until you need to invalidate the cache. Say you have a page with infinite scroll via pressing a load more button at the bottom, and the user has pressed it 3 times. At this stage, the hook will look like <code>const {data} = useGetLocationsQuery({page: 4});</code>. If page size is 20, data, will contain 80 entries. Then you edit an entry that appears on page 3. Or you add a new location.  Both of these operation will invalidate the cache, but the merge strategy provided will simply add the new cache to the end of the previous cache, so  <code>const {data} = useGetLocationsQuery({page: 4});</code> will now have 100 entries, 80 from the original 4 pages and 20 from the 4th page repeated again.  <strong>Ideally the merge function would have a way of distinguishing cache updates that are due to tag invalidation from cache updates due to parameter changes, but there is currently no way to do this</strong>.</p>
+<h2 id="workarounds">Workarounds</h2>
+<p>There are a <a href="https://github.com/reduxjs/redux-toolkit/discussions/1163">number</a> <a href="https://github.com/reduxjs/redux-toolkit/issues/3733">of</a> <a href="https://github.com/reduxjs/redux-toolkit/discussions/3174">discussion</a> of how to mitigate this.  The solution I went with looks like this.</p>
+<p>Firstly, the response payload must include the page number metadata.  This is usually the case with paginated endpoints, but this data now needs to be included in the cached result in the query definition.</p>
+<p>When merging the cache, only append the new data if the new data page number is greater than the old value:</p>
+<div class="highlight"><pre><span></span><code><span class="kr">type</span><span class="w"> </span><span class="nx">PaginatedData</span><span class="o">&lt;</span><span class="nx">ItemType</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nx">page</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">pages</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">per_page</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">total</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">items</span><span class="o">:</span><span class="w"> </span><span class="kt">ItemType</span><span class="p">[];</span>
+<span class="p">};</span>
+<span class="p">...</span>
+
+<span class="w">    </span><span class="nx">getLocations</span><span class="o">:</span><span class="w"> </span><span class="kt">build.query</span><span class="o">&lt;</span><span class="nx">PaginatedData</span><span class="o">&lt;</span><span class="nx">Location</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">page</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">({</span>
+<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
+<span class="w">        </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;api/v1/locations&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nx">params</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">page</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">      </span><span class="p">}),</span>
+<span class="w">      </span><span class="nx">transformResponse</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
+<span class="w">      </span><span class="nx">providesTags</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">result</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">,</span><span class="w"> </span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">[...</span><span class="nx">result</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">location</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="kr">type</span><span class="o">:</span><span class="s2">&quot;Location&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">location.id</span><span class="p">}),</span><span class="w"> </span><span class="p">{</span><span class="kr">type</span><span class="o">:</span><span class="s2">&quot;Location&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;LIST&quot;</span><span class="p">}],</span>
+
+<span class="w">      </span><span class="c1">// overwrite cached value when page value changes, treat page</span>
+<span class="w">      </span><span class="nx">serializeQueryArgs</span><span class="o">:</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">queryArgs</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="p">...</span><span class="nx">queryArgs</span><span class="p">,</span><span class="w"> </span><span class="nx">page</span><span class="o">:</span><span class="w"> </span><span class="kt">undefined</span><span class="w"> </span><span class="p">}),</span>
+
+<span class="w">      </span><span class="c1">// when overwriting cache value, append new data to old list if page value increases</span>
+<span class="w">      </span><span class="nx">merge</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">currentCache</span><span class="p">,</span><span class="w"> </span><span class="nx">newData</span><span class="p">,</span><span class="w"> </span><span class="nx">otherArgs</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">newData</span><span class="p">.</span><span class="nx">page</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">currentCache</span><span class="p">.</span><span class="nx">page</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nx">currentCache</span><span class="p">.</span><span class="nx">items</span><span class="p">.</span><span class="nx">push</span><span class="p">(...</span><span class="nx">newData</span><span class="p">.</span><span class="nx">items</span><span class="p">);</span>
+<span class="w">          </span><span class="nx">currentCache</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="nx">newData</span><span class="p">,</span><span class="w"> </span><span class="nx">items</span><span class="o">:</span><span class="w"> </span><span class="kt">currentCache.items</span><span class="w"> </span><span class="p">};</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="k">return</span><span class="w"> </span><span class="nx">newData</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">    </span><span class="p">}),</span>
+</code></pre></div>
+<p>Then in the component where the hook is called, ensure that the page number is reset to 1 whenever a mutation occurs that will invalidate the <code>useGetLocationsQuery</code> data.  Since this page isn't an increase from the previous, the old cache will be discarded. This can be annoying since the component that triggers the mutation and invalidates the data may be completely seperate from the component that queries for the data.  </p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">EditLocationAddress</span><span class="p">({</span><span class="nx">id</span><span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">id</span><span class="o">:</span><span class="kt">number</span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">patchLocation</span><span class="p">,</span><span class="w"> </span><span class="nx">isPatchLoading</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">usePatchLocationMutation</span><span class="p">();</span>
+
+<span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">onUpdate</span><span class="p">(</span><span class="nx">locationUpdate</span><span class="o">:</span><span class="kt">Partial</span><span class="p">&lt;</span><span class="nt">Location</span><span class="p">&gt;)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">patchLocation</span><span class="p">(</span><span class="nx">locationUpdate</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// TODO somehow reset the page number to 0 in all relevant places</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">...</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">            </span><span class="p">{</span><span class="cm">/* some input that calls onUpdate on change */</span><span class="p">}</span>
+<span class="w">        </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>There is probably a clever way of doing this where the cached page number is used as the canonical page number across all components, and then you could force a reset back to one from any component, but I haven't needed to implement this just yet in any applications.</p>
+<p>Maybe something like this? I haven't tried it yet.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">EditLocationAddress</span><span class="p">({</span><span class="nx">id</span><span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">id</span><span class="o">:</span><span class="nx">number</span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">patchLocation</span><span class="p">,</span><span class="w"> </span><span class="nx">isPatchLoading</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">usePatchLocationMutation</span><span class="p">();</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">getLocationsLazy</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useLazyGetLocationsQuery</span><span class="p">();</span>
+
+<span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">onUpdate</span><span class="p">(</span><span class="nx">locationUpdate</span><span class="o">:</span><span class="nx">Partial</span><span class="p">&lt;</span><span class="nt">Location</span><span class="p">&gt;)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">patchLocation</span><span class="p">(</span><span class="nx">locationUpdate</span><span class="p">);</span>
+<span class="w">        </span><span class="nx">getLocationsLazy</span><span class="p">(</span>
+<span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="nx">page</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">},</span>
+<span class="w">            </span><span class="kc">true</span><span class="w"> </span><span class="c1">// lazy queries ignore cache by default, true overrides this</span>
+<span class="w">        </span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="p">...</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">            </span><span class="p">{</span><span class="cm">/* some input that calls onUpdate on change */</span><span class="p">}</span>
+<span class="w">        </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/rtk-query-vs.-infinite-scrolling</guid>
+            <pubDate>2024-06-03</pubDate>
+        </item>
+        
+        <item>
+            <title>Spotify Design Decisions</title>
+            <link>https://notes.zachmanson.com/spotify-design-decisions</link>
+            
+            <content:encoded>
+                <![CDATA[<p>This page is a list of <a href="/design">Design</a> decisions made by Spotify that I consider shitty.  I'm sure some of them were only A/B tested, coming and going silently, but some have lingered for years. In any case I have been subjected to all of these personally.</p>
+<p>See also: <a href="https://www.todepond.com/wikiblogarden/work/dear-spotify/">Dear spotify product manager</a> by Lu Wilson, <a href="https://www.youtube.com/watch?v=suhEIUapSJQ">Redesigning Spotify</a> by Juxtopposed</p>
+<h2 id="unable-to-remove-dj-shortcut-on-desktop">Unable to Remove DJ Shortcut On Desktop</h2>
+<p>On desktop they have added a link to the DJ feature at the top of Your Library, below pinned playlists.  Despite not being a playlist (nor a feature I use), it continues to appear even when you have set the filter to only show playlists.  As far as I know it cannot be removed?  But it can be pinned.  Despite already being permalocked to the top.
+<img alt="" src="/media/dj.png" />
+The day after writing the previous paragraph, I noticed they added the DJ to the same section in the mobile app. In the mobile app a long press on the DJ icon does shows you an option to hide it, which seems to sync across all my devices.  Why is this option not available in the desktop client!</p>
+<h2 id="custom-playlist-sorting">Custom Playlist Sorting</h2>
+<p>For as long as I can remember you can order the playlists you have created/followed in any order along the left side of the desktop app. You can even put them in nested folders which is fantastic.  I have many playlists organised into folders in particular orders.  I know how to get to the playlist I want quickly because I have put it in a particular place. This custom order and "Recently played" are the only two i would ever want.</p>
+<p>Spotify seems to hate this use case.  To my knowledge its never been possible to rearrange order of playlists on the mobile app, only the desktop client.</p>
+<p>When you attempt to add a song to playlist on mobile, there isn't even an option to sort by recently played anymore.  This is diametrically opposed to desktop, where the right click menu will ONLY allow you to sort by custom order. </p>
+<p><img alt="" src="/media/no-custom-order.png" /></p>
+<h2 id="smart-shuffle-button-cycle-lock">Smart Shuffle Button Cycle Lock</h2>
+<p>Spotify has added a feature called Smart Shuffle that works like normal shuffling, but also adds recommended songs in-between ever few tracks in the queue.  On paper I like this feature, though I have never found myself actually using it. I was introduced to it through the following infuriating UX.</p>
+<p>I go the the Now Playing screen on the Android Spotify client. The playlist I am listening to is currently set to shuffle (regular shuffle), but I would like to turn off regular shuffle.  I press the button with a shuffle icon, which has for 10+ years been a single toggle that would instantly take effect.  Instead of a simple 2 option toggle, I find that it has been converted in to a 3 option cycle button, where pressing it cycles through the options of <code>Linear -&gt; Shuffle -&gt; Smart Shuffle -&gt; Linear</code>. I can see the thinking behind this decision, but it breaks muscle memory established all other music players for decades.  That is not my issue though.</p>
+<p>When you click the button and move the state from <code>Shuffle</code> to <code>Smart Shuffle</code>, the application begins loading the Smart Shuffle recommendations which means it must query Spotify servers, which is an operation that takes multiple seconds.  While this occurs, the button with a Shuffle icon becomes a button with a loading spinner, and becomes unclickable. I must wait multiple seconds before I can turn off Smart Shuffle.</p>
+<p><code>Linear -&gt; Shuffle -&gt; Loading (multiple seconds) -&gt; Smart Shuffle -&gt; Linear</code></p>
+<p>This is deeply infuriating.  I never even wanted to use Smart Shuffle in the first place and now I must wait for it.</p>
+<p>This occurred every time I wanted to turn off  <code>Shuffle</code>.  Which is a lot.</p>
+<p>As of 2024-01-21, this loading state of the button appears to have been removed, thankfully.</p>
+<h2 id="smart-shuffle-cycle-order">Smart Shuffle Cycle Order</h2>
+<p>Oh sorry did I say the order was <code>Linear -&gt; Shuffle -&gt; Smart Shuffle</code>?  Its actually <code>Linear -&gt; Smart Shuffle -&gt; Shuffle</code>.  Wait no go back.  Wait... it's a different order on my phone vs on desktop? This is real wtf.</p>
+<h2 id="smart-shuffle-popup">Smart Shuffle Popup</h2>
+<p>I clicked shuffle once and this came up. Thankfully it only ever appeared once on 2023-11-14, but it never should have in the first place. </p>
+<p><img alt="" src="/media/smart-shuffle-popup.png" /></p>
+<h2 id="overflow-menu-loading">Overflow Menu Loading</h2>
+<p>For some godforsaken reason, the overflow menu for a track sometimes appears to require a network request before it can show.  If this request is slow, it will show a loading spinner in place of the menu, until the server responds.  Or in some cases, the <strong>overflow menu will fail to load entirely</strong>.  This is insane, since for the most part, the options on this menu are identical.  This is doubly insane since the menu can load without any issue what-so-ever in offline mode.</p>
+<p>I have only ever experienced this issue on the Android mobile app, which for many years did not support swiping on a song to queue a song.  At this time you were only able to queue a song. through the overflow menu, which often times meant waiting multiple seconds for menu to appear.  God forbid you wanting to queue multiple songs in a row. Thankfully you can now bypass the menu loading by swiping a track to the right.</p>
+<p>Oh wait!</p>
+<h2 id="cant-swipe-to-queue-on-blend-playlists">Can't Swipe to Queue on Blend Playlists</h2>
+<p>On Android you cannot swipe to queue a playlist if the playlist is a blend playlist??? Why would this screen use a different component to represent a list of songs to every other screen in the app? </p>
+<video src='/media/blend-swiping.webm' controls></video>
+
+<h2 id="secret-sliding-menu">Secret Sliding Menu</h2>
+<p>This one I only just noticed now while typing this post. There is a sliding menu that appears if you click on your profile picture in the corner of any of the 3 main screens.  It seems a bit sparse, like it would be better suited to being a drop down? In any case this menu can actually be accessed from any playlist folder screen as well, despite there being no indication of this.  This only seems to work on playlist folder screens though, as it doesn't work for any other subpages.</p>
+<p>This one was annoying as I accidentally triggered in when attempting to swipe in from the left to go back a screen.</p>
+<video src='/media/sliding-menu.webm' controls></video>
+
+<h2 id="cant-swipe-up-to-access-player">Can't Swipe Up to Access Player</h2>
+<p>On Android you can swipe down on the player interface but you cannot swipe up to reveal it.  When you attempt this you will almost definitely skip the song that is currently playing, since the minimised version of the player only detects left and right swipes.</p>
+<video src='/media/swipe-up.webm' controls></video>
+
+<h2 id="top-bar-alignment">Top Bar Alignment</h2>
+<p>Who the fuck let this happen.</p>
+<p><img alt="" src="/media/spotify-top-bar.png" /></p>
+<h2 id="liked-songs-filters-are-actually-a-playlist">Liked Songs Filters Are Actually a Playlist</h2>
+<p>For years, if you used the text filter on your Liked Songs and then played one of the songs, the queue would only populate with songs that matched that filter.  This could be useful for only listening to a particular artist within your Liked Songs, but was usually just annoying.</p>
+<p>As of 2024 it appears this behaviour has been removed.</p>
+<h2 id="search-results-are-actually-a-playlist">Search Results Are Actually a Playlist</h2>
+<p>Similar to the previous issue, if you searched for a song using the search tab, and then played one of the results, the queue would populate with all the other search results meaning you would hear the same song repeated several times, or covers, or random other tracks with similar names.</p>
+<p>As of 2024 it appears this behaviour has been removed.</p>
+<h2 id="useless-music-video-indicator">Useless Music Video Indicator</h2>
+<p>They have added a subtitle and icon for songs with music videos, which looks like it is clickable or has some feature attached to it. But it just... doesn't?</p>
+<p><img alt="" src="/media/spotify-music-video.png" /></p>
+<h2 id="upcoming-complaints">Upcoming Complaints</h2>
+<ul>
+<li>Rapidly toggling through Shuffle button states can cause the cycle to desync in strange ways</li>
+<li>Spotify (regular) Shuffle algorithm has some problems</li>
+</ul>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/spotify-design-decisions</guid>
+            <pubDate>2024-03-17</pubDate>
+        </item>
         
         <item>
             <title>LinkedIn's Ghost Text</title>
@@ -188,316 +501,27 @@ required<span class="w"> </span>by
         </item>
         
         <item>
-            <title>Spotify Design Decisions</title>
-            <link>https://notes.zachmanson.com/spotify-design-decisions</link>
+            <title>Kinde Design Decisions</title>
+            <link>https://notes.zachmanson.com/kinde-design-decisions</link>
             
             <content:encoded>
-                <![CDATA[<p>This page is a list of <a href="/design">Design</a> decisions made by Spotify that I consider shitty.  I'm sure some of them were only A/B tested, coming and going silently, but some have lingered for years. In any case I have been subjected to all of these personally.</p>
-<p>See also: <a href="https://www.todepond.com/wikiblogarden/work/dear-spotify/">Dear spotify product manager</a> by Lu Wilson, <a href="https://www.youtube.com/watch?v=suhEIUapSJQ">Redesigning Spotify</a> by Juxtopposed</p>
-<h2 id="unable-to-remove-dj-shortcut-on-desktop">Unable to Remove DJ Shortcut On Desktop</h2>
-<p>On desktop they have added a link to the DJ feature at the top of Your Library, below pinned playlists.  Despite not being a playlist (nor a feature I use), it continues to appear even when you have set the filter to only show playlists.  As far as I know it cannot be removed?  But it can be pinned.  Despite already being permalocked to the top.
-<img alt="" src="/media/dj.png" />
-The day after writing the previous paragraph, I noticed they added the DJ to the same section in the mobile app. In the mobile app a long press on the DJ icon does shows you an option to hide it, which seems to sync across all my devices.  Why is this option not available in the desktop client!</p>
-<h2 id="custom-playlist-sorting">Custom Playlist Sorting</h2>
-<p>For as long as I can remember you can order the playlists you have created/followed in any order along the left side of the desktop app. You can even put them in nested folders which is fantastic.  I have many playlists organised into folders in particular orders.  I know how to get to the playlist I want quickly because I have put it in a particular place. This custom order and "Recently played" are the only two i would ever want.</p>
-<p>Spotify seems to hate this use case.  To my knowledge its never been possible to rearrange order of playlists on the mobile app, only the desktop client.</p>
-<p>When you attempt to add a song to playlist on mobile, there isn't even an option to sort by recently played anymore.  This is diametrically opposed to desktop, where the right click menu will ONLY allow you to sort by custom order. </p>
-<p><img alt="" src="/media/no-custom-order.png" /></p>
-<h2 id="smart-shuffle-button-cycle-lock">Smart Shuffle Button Cycle Lock</h2>
-<p>Spotify has added a feature called Smart Shuffle that works like normal shuffling, but also adds recommended songs in-between ever few tracks in the queue.  On paper I like this feature, though I have never found myself actually using it. I was introduced to it through the following infuriating UX.</p>
-<p>I go the the Now Playing screen on the Android Spotify client. The playlist I am listening to is currently set to shuffle (regular shuffle), but I would like to turn off regular shuffle.  I press the button with a shuffle icon, which has for 10+ years been a single toggle that would instantly take effect.  Instead of a simple 2 option toggle, I find that it has been converted in to a 3 option cycle button, where pressing it cycles through the options of <code>Linear -&gt; Shuffle -&gt; Smart Shuffle -&gt; Linear</code>. I can see the thinking behind this decision, but it breaks muscle memory established all other music players for decades.  That is not my issue though.</p>
-<p>When you click the button and move the state from <code>Shuffle</code> to <code>Smart Shuffle</code>, the application begins loading the Smart Shuffle recommendations which means it must query Spotify servers, which is an operation that takes multiple seconds.  While this occurs, the button with a Shuffle icon becomes a button with a loading spinner, and becomes unclickable. I must wait multiple seconds before I can turn off Smart Shuffle.</p>
-<p><code>Linear -&gt; Shuffle -&gt; Loading (multiple seconds) -&gt; Smart Shuffle -&gt; Linear</code></p>
-<p>This is deeply infuriating.  I never even wanted to use Smart Shuffle in the first place and now I must wait for it.</p>
-<p>This occurred every time I wanted to turn off  <code>Shuffle</code>.  Which is a lot.</p>
-<p>As of 2024-01-21, this loading state of the button appears to have been removed, thankfully.</p>
-<h2 id="smart-shuffle-cycle-order">Smart Shuffle Cycle Order</h2>
-<p>Oh sorry did I say the order was <code>Linear -&gt; Shuffle -&gt; Smart Shuffle</code>?  Its actually <code>Linear -&gt; Smart Shuffle -&gt; Shuffle</code>.  Wait no go back.  Wait... it's a different order on my phone vs on desktop? This is real wtf.</p>
-<h2 id="smart-shuffle-popup">Smart Shuffle Popup</h2>
-<p>I clicked shuffle once and this came up. Thankfully it only ever appeared once on 2023-11-14, but it never should have in the first place. </p>
-<p><img alt="" src="/media/smart-shuffle-popup.png" /></p>
-<h2 id="overflow-menu-loading">Overflow Menu Loading</h2>
-<p>For some godforsaken reason, the overflow menu for a track sometimes appears to require a network request before it can show.  If this request is slow, it will show a loading spinner in place of the menu, until the server responds.  Or in some cases, the <strong>overflow menu will fail to load entirely</strong>.  This is insane, since for the most part, the options on this menu are identical.  This is doubly insane since the menu can load without any issue what-so-ever in offline mode.</p>
-<p>I have only ever experienced this issue on the Android mobile app, which for many years did not support swiping on a song to queue a song.  At this time you were only able to queue a song. through the overflow menu, which often times meant waiting multiple seconds for menu to appear.  God forbid you wanting to queue multiple songs in a row. Thankfully you can now bypass the menu loading by swiping a track to the right.</p>
-<p>Oh wait!</p>
-<h2 id="cant-swipe-to-queue-on-blend-playlists">Can't Swipe to Queue on Blend Playlists</h2>
-<p>On Android you cannot swipe to queue a playlist if the playlist is a blend playlist??? Why would this screen use a different component to represent a list of songs to every other screen in the app? </p>
-<video src='/media/blend-swiping.webm' controls></video>
-
-<h2 id="secret-sliding-menu">Secret Sliding Menu</h2>
-<p>This one I only just noticed now while typing this post. There is a sliding menu that appears if you click on your profile picture in the corner of any of the 3 main screens.  It seems a bit sparse, like it would be better suited to being a drop down? In any case this menu can actually be accessed from any playlist folder screen as well, despite there being no indication of this.  This only seems to work on playlist folder screens though, as it doesn't work for any other subpages.</p>
-<p>This one was annoying as I accidentally triggered in when attempting to swipe in from the left to go back a screen.</p>
-<video src='/media/sliding-menu.webm' controls></video>
-
-<h2 id="cant-swipe-up-to-access-player">Can't Swipe Up to Access Player</h2>
-<p>On Android you can swipe down on the player interface but you cannot swipe up to reveal it.  When you attempt this you will almost definitely skip the song that is currently playing, since the minimised version of the player only detects left and right swipes.</p>
-<video src='/media/swipe-up.webm' controls></video>
-
-<h2 id="top-bar-alignment">Top Bar Alignment</h2>
-<p>Who the fuck let this happen.</p>
-<p><img alt="" src="/media/spotify-top-bar.png" /></p>
-<h2 id="liked-songs-filters-are-actually-a-playlist">Liked Songs Filters Are Actually a Playlist</h2>
-<p>For years, if you used the text filter on your Liked Songs and then played one of the songs, the queue would only populate with songs that matched that filter.  This could be useful for only listening to a particular artist within your Liked Songs, but was usually just annoying.</p>
-<p>As of 2024 it appears this behaviour has been removed.</p>
-<h2 id="search-results-are-actually-a-playlist">Search Results Are Actually a Playlist</h2>
-<p>Similar to the previous issue, if you searched for a song using the search tab, and then played one of the results, the queue would populate with all the other search results meaning you would hear the same song repeated several times, or covers, or random other tracks with similar names.</p>
-<p>As of 2024 it appears this behaviour has been removed.</p>
-<h2 id="useless-music-video-indicator">Useless Music Video Indicator</h2>
-<p>They have added a subtitle and icon for songs with music videos, which looks like it is clickable or has some feature attached to it. But it just... doesn't?</p>
-<p><img alt="" src="/media/spotify-music-video.png" /></p>
-<h2 id="upcoming-complaints">Upcoming Complaints</h2>
-<ul>
-<li>Rapidly toggling through Shuffle button states can cause the cycle to desync in strange ways</li>
-<li>Spotify (regular) Shuffle algorithm has some problems</li>
-</ul>]]>
+                <![CDATA[<p>This is a list of problems with the Kinde interface.</p>
+<h2 id="useless-dropdowns">Useless Dropdowns</h2>
+<p>This dropdown should list the environments instead of revealing a button to take you to a page that lists the environments. This is an unnecessary second click.</p>
+<p><img alt="" src="/media/kinde-1.png" /></p>
+<p>This also means you are unable to switch environment without losing the page you are on.</p>
+<h2 id="unclickable-icons">Unclickable Icons</h2>
+<p>For some reason the left facing chevron is not clickable, only the word "Home" is.</p>
+<p><img alt="" src="/media/kinde-2.png" /></p>
+<h2 id="bizarre-breadcrumbs">Bizarre Breadcrumbs</h2>
+<p>When you go to the "Users Profile" screen, the top left back icon doesn't take you back to the "Users" screen, but remains a "Home" button.</p>
+<p>The only way to navigate back is the the small grey "User" text above the user's name.</p>
+<p><img alt="" src="/media/kinde-3.png" /></p>
+<p>This is something that almost all basic websites can get right.  Breadcrumb navigation or consistent back behaviour would be vastly preferable here.</p>
+<p>There is little consistency between parts of the interface that are clickable and those that are not.  This makes navigating quite difficult.</p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/spotify-design-decisions</guid>
-            <pubDate>2024-03-17</pubDate>
-        </item>
-        
-        <item>
-            <title>RTK Query vs. Infinite Scrolling</title>
-            <link>https://notes.zachmanson.com/rtk-query-vs.-infinite-scrolling</link>
-            
-            <content:encoded>
-                <![CDATA[<p>RTK Query with <a href="/react">React</a> is pretty great! The primary pattern you find yourself using with it is: </p>
-<ol>
-<li>writing a small API definition that provides <ol>
-<li>the endpoint url </li>
-<li>type definitions for request args and response schema</li>
-<li>(usually) simply logic for converting passed argument type into request params/body</li>
-<li>(usually) simple logic for converting response payload into the response schema</li>
-</ol>
-</li>
-<li>importing a hook that RTK Query automatically generates for you</li>
-<li>reuse the same hook across multiple components</li>
-</ol>
-<p>RTK Query handles loading states, stale while revalidate states, error states, type safety, and caching.</p>
-<p>When writing React components, the caching is the most impactful of these.   You can just call the same hook in many different components, and as long as the params are the same the same it will only be a single network request. This removes the need for many invocations <code>useState</code> and Redux state calls, since you can just feign a call to the backend every time you need that data.</p>
-<p>There is a little boilerplate you have to write, but the meat of a basic RTK Query definition will look something like this:</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">getLocation</span><span class="o">:</span><span class="w"> </span><span class="kt">build.query</span><span class="o">&lt;</span><span class="nx">Location</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">({</span>
-<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">ids</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
-<span class="w">        </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;api/v1/location&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">params</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="w"> </span><span class="p">},</span>
-<span class="w">      </span><span class="p">}),</span>
-<span class="w">      </span><span class="nx">transformResponse</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
-<span class="w">    </span><span class="p">}),</span>
-</code></pre></div>
-<p>This will generate a hook called <code>useGetLocation</code> which will be cached.  Suddenly you never need to store a <code>Location</code> object in state to share it across components and you can just call <code>useGetLocation({id:5})</code> every time you need it. It also provides a lazy version of the hook that returns a normal function you can use to retrieve the data, which is good for APIs that need to be called multiple times.</p>
-<div class="highlight"><pre><span></span><code>function LocationCard({ id }: {id: number}) {
-    const {data: location, isLoading} = useGetLocation({id:id});
-    const [getLocationsLazy] = useLazyGetLocation();
-    ...
-    return (
-        &lt;div&gt;
-            {location.address}
-        &lt;/div&gt;
-    );
-}
-</code></pre></div>
-<p>For straightforward GET requests this pattern stellar.  RTK Query encourages you to put all the API definitions into a single file (<code>src/api/api.ts</code>), or into a small number files with particular scopes.  For small-medium applications this works well, if you know the URL of an endpoint you want to hit you can just search within the <code>api.ts</code> file, use the accompanying hook and you are good to go, type safety and all.  I'm sure this single file approach would breakdown for big applications but its very pleasant at smaller scales.</p>
-<p>RTK Query also lets you do POST/PUT/PATCH requests with a similar definition style. Instead of using <code>build.query</code>, you use <code>build.mutation</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">addLocation</span><span class="o">:</span><span class="w"> </span><span class="kt">build.mutation</span><span class="o">&lt;</span>
-<span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="nx">location_id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">site_id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">address</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span><span class="w"> </span><span class="nx">abn</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span><span class="w"> </span><span class="nx">user_id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">},</span>
-<span class="w">      </span><span class="nx">NewLocation</span>
-<span class="w">    </span><span class="o">&gt;</span><span class="p">({</span>
-<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">body</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
-<span class="w">        </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;api/v1/location&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">method</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;POST&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">body</span><span class="o">:</span><span class="w"> </span><span class="kt">body</span><span class="p">,</span>
-<span class="w">      </span><span class="p">}),</span>
-<span class="w">    </span><span class="p">}),</span>
-<span class="w">    </span><span class="nx">patchLocation</span><span class="o">:</span><span class="w"> </span><span class="kt">build.mutation</span><span class="o">&lt;</span><span class="ow">void</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="kt">Partial</span><span class="o">&lt;</span><span class="nx">Location</span><span class="o">&gt;</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">({</span>
-<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">id</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">{</span>
-<span class="w">          </span><span class="nx">method</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;PATCH&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="sb">`api/v1/location/</span><span class="si">${</span><span class="nx">primaryKey</span><span class="si">}</span><span class="sb">`</span><span class="p">,</span>
-<span class="w">          </span><span class="nx">body</span><span class="o">:</span><span class="w"> </span><span class="kt">data</span><span class="p">,</span>
-<span class="w">        </span><span class="p">};</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="nx">transformResponse</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
-<span class="w">    </span><span class="p">}),</span>
-</code></pre></div>
-<p>The hooks generated here will return a function that can be used to send requests.</p>
-<div class="highlight"><pre><span></span><code>function LocationCard({id}: {id:number}) {
-    const {data: location, isLoading} = useGetLocationQuery({id:id})
-    const [patchLocation, isPatchLoading] = usePatchLocationMutation()
-
-    function onUpdate(locationUpdate:Partial&lt;Location&gt;) {
-        patchLocation(locationUpdate)
-    }
-    ...
-    return (
-        &lt;div&gt;
-            {location.address}
-            ...
-            {/* some input that calls onUpdate on change */}
-        &lt;/div&gt;
-    )
-}
-</code></pre></div>
-<p>But wait! If I patch a location, how will the useGetLocation hook know that it's cache is invalid?</p>
-<h2 id="cache-invalidation">Cache Invalidation</h2>
-<p>RTK Query uses a tag system for cache invalidation, where a tag represents a kind of query.  Queries can assign themselves tags, and mutations can provide a list of tags they will invalidate. </p>
-<p>These can be static</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">getLocation</span><span class="o">:</span><span class="w"> </span><span class="kt">build.query</span><span class="o">&lt;</span><span class="nx">Location</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">({</span>
-<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">ids</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
-<span class="w">        </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;api/v1/location&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">params</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="w"> </span><span class="p">},</span>
-<span class="w">      </span><span class="p">}),</span>
-<span class="w">      </span><span class="nx">transformResponse</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
-<span class="w">      </span><span class="nx">providesTags</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Location&#39;</span><span class="p">],</span>
-<span class="w">    </span><span class="p">}),</span>
-</code></pre></div>
-<p>or dynamic, based on the params given</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">getLocation</span><span class="o">:</span><span class="w"> </span><span class="kt">build.query</span><span class="o">&lt;</span><span class="nx">Location</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">({</span>
-<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">ids</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
-<span class="w">        </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;api/v1/location&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">params</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="w"> </span><span class="p">},</span>
-<span class="w">      </span><span class="p">}),</span>
-<span class="w">      </span><span class="nx">transformResponse</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
-<span class="w">      </span><span class="nx">providesTags</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">result</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">,</span><span class="w"> </span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">[{</span><span class="kr">type</span><span class="o">:</span><span class="s2">&quot;Location&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">id</span><span class="p">}]</span>
-<span class="w">    </span><span class="p">}),</span>
-</code></pre></div>
-<p>And similarly for mutations</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">patchLocation</span><span class="o">:</span><span class="w"> </span><span class="kt">build.mutation</span><span class="o">&lt;</span><span class="ow">void</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="kt">Partial</span><span class="o">&lt;</span><span class="nx">Location</span><span class="o">&gt;</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">({</span>
-<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">id</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">{</span>
-<span class="w">          </span><span class="nx">method</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;PATCH&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="sb">`api/v1/location/</span><span class="si">${</span><span class="nx">primaryKey</span><span class="si">}</span><span class="sb">`</span><span class="p">,</span>
-<span class="w">          </span><span class="nx">body</span><span class="o">:</span><span class="w"> </span><span class="kt">data</span><span class="p">,</span>
-<span class="w">        </span><span class="p">};</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">      </span><span class="nx">transformResponse</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
-<span class="w">      </span><span class="nx">invalidatesTags</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">result</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">,</span><span class="w"> </span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Location&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">arg.id</span><span class="w"> </span><span class="p">}]</span><span class="w"> </span><span class="c1">// or just [&quot;Location&quot;] to invalidate the whole category</span>
-<span class="w">    </span><span class="p">}),</span>
-</code></pre></div>
-<p>Where you can, dynamic tags are generally better since you have much more granular control.  Again, this works pretty well for straightforward queries.</p>
-<h2 id="pagination">Pagination</h2>
-<p>RTK Query doesn't include a mechanism for paging data, but passing a page number as a param works fine if you have discrete pages.</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">getLocations</span><span class="o">:</span><span class="w"> </span><span class="kt">build.query</span><span class="o">&lt;</span><span class="nx">Location</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">page</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">({</span>
-<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">page</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
-<span class="w">        </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;api/v1/locations&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">params</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">page</span><span class="w"> </span><span class="p">}</span>
-<span class="w">      </span><span class="p">}),</span>
-<span class="w">      </span><span class="nx">transformResponse</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
-<span class="w">      </span><span class="nx">providesTags</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">result</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">,</span><span class="w"> </span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">[...</span><span class="nx">result</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">location</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="kr">type</span><span class="o">:</span><span class="s2">&quot;Location&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">location.id</span><span class="p">}),</span><span class="w"> </span><span class="p">{</span><span class="kr">type</span><span class="o">:</span><span class="s2">&quot;Location&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;LIST&quot;</span><span class="p">}],</span>
-<span class="w">    </span><span class="p">}),</span>
-</code></pre></div>
-<h2 id="but-what-about-infinite-scroll">But what about infinite scroll?</h2>
-<p>When infinitely scrolling, normally you'd have an array that stores all the results that have been loaded so far, and then you'd append new results to the end of this list when they are loaded in (maybe even dropping some entries from the start if you are memory constrained).  The hook generated by the previous example will only ever let you access one page's entries at a time. </p>
-<p>RTK Query doesn't have any special functions for infinite scrolling, but the pieces it gives you are enough to make it work. When writing a query definition you can explicitly set which params contribute are used to define unique cache entries, and another function to say how old cache entries should be overwritten by new ones.</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nx">getLocations</span><span class="o">:</span><span class="w"> </span><span class="kt">build.query</span><span class="o">&lt;</span><span class="nx">Location</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">page</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">({</span>
-<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
-<span class="w">        </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;api/v1/locations&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">params</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">page</span><span class="w"> </span><span class="p">}</span>
-
-<span class="w">      </span><span class="p">}),</span>
-<span class="w">      </span><span class="nx">transformResponse</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
-<span class="w">      </span><span class="nx">providesTags</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">result</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">,</span><span class="w"> </span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">[...</span><span class="nx">result</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">location</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="kr">type</span><span class="o">:</span><span class="s2">&quot;Location&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">location.id</span><span class="p">}),</span><span class="w"> </span><span class="p">{</span><span class="kr">type</span><span class="o">:</span><span class="s2">&quot;Location&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;LIST&quot;</span><span class="p">}],</span>
-
-<span class="w">      </span><span class="c1">// overwrite cached value when page value changes, treat page</span>
-<span class="w">      </span><span class="nx">serializeQueryArgs</span><span class="o">:</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">queryArgs</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="p">...</span><span class="nx">queryArgs</span><span class="p">,</span><span class="w"> </span><span class="nx">page</span><span class="o">:</span><span class="w"> </span><span class="kt">undefined</span><span class="w"> </span><span class="p">}),</span>
-
-<span class="w">      </span><span class="c1">// when overwriting cache value, append new data to old list</span>
-<span class="w">      </span><span class="nx">merge</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">currentCache</span><span class="p">,</span><span class="w"> </span><span class="nx">newData</span><span class="p">,</span><span class="w"> </span><span class="nx">otherArgs</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">          </span><span class="nx">currentCache</span><span class="p">.</span><span class="nx">items</span><span class="p">.</span><span class="nx">push</span><span class="p">(...</span><span class="nx">newData</span><span class="p">);</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">    </span><span class="p">}),</span>
-</code></pre></div>
-<p>This works riiiiight until you need to invalidate the cache. Say you have a page with infinite scroll via pressing a load more button at the bottom, and the user has pressed it 3 times. At this stage, the hook will look like <code>const {data} = useGetLocationsQuery({page: 4});</code>. If page size is 20, data, will contain 80 entries. Then you edit an entry that appears on page 3. Or you add a new location.  Both of these operation will invalidate the cache, but the merge strategy provided will simply add the new cache to the end of the previous cache, so  <code>const {data} = useGetLocationsQuery({page: 4});</code> will now have 100 entries, 80 from the original 4 pages and 20 from the 4th page repeated again.  <strong>Ideally the merge function would have a way of distinguishing cache updates that are due to tag invalidation from cache updates due to parameter changes, but there is currently no way to do this</strong>.</p>
-<h2 id="workarounds">Workarounds</h2>
-<p>There are a <a href="https://github.com/reduxjs/redux-toolkit/discussions/1163">number</a> <a href="https://github.com/reduxjs/redux-toolkit/issues/3733">of</a> <a href="https://github.com/reduxjs/redux-toolkit/discussions/3174">discussion</a> of how to mitigate this.  The solution I went with looks like this.</p>
-<p>Firstly, the response payload must include the page number metadata.  This is usually the case with paginated endpoints, but this data now needs to be included in the cached result in the query definition.</p>
-<p>When merging the cache, only append the new data if the new data page number is greater than the old value:</p>
-<div class="highlight"><pre><span></span><code><span class="kr">type</span><span class="w"> </span><span class="nx">PaginatedData</span><span class="o">&lt;</span><span class="nx">ItemType</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">page</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
-<span class="w">  </span><span class="nx">pages</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
-<span class="w">  </span><span class="nx">per_page</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
-<span class="w">  </span><span class="nx">total</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span>
-<span class="w">  </span><span class="nx">items</span><span class="o">:</span><span class="w"> </span><span class="kt">ItemType</span><span class="p">[];</span>
-<span class="p">};</span>
-<span class="p">...</span>
-
-<span class="w">    </span><span class="nx">getLocations</span><span class="o">:</span><span class="w"> </span><span class="kt">build.query</span><span class="o">&lt;</span><span class="nx">PaginatedData</span><span class="o">&lt;</span><span class="nx">Location</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">page</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span><span class="o">&gt;</span><span class="p">({</span>
-<span class="w">      </span><span class="nx">query</span><span class="o">:</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span>
-<span class="w">        </span><span class="nx">url</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;api/v1/locations&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nx">params</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">page</span><span class="w"> </span><span class="p">}</span>
-
-<span class="w">      </span><span class="p">}),</span>
-<span class="w">      </span><span class="nx">transformResponse</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">response</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span>
-<span class="w">      </span><span class="nx">providesTags</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">result</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">,</span><span class="w"> </span><span class="nx">arg</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">[...</span><span class="nx">result</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">location</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="kr">type</span><span class="o">:</span><span class="s2">&quot;Location&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="kt">location.id</span><span class="p">}),</span><span class="w"> </span><span class="p">{</span><span class="kr">type</span><span class="o">:</span><span class="s2">&quot;Location&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;LIST&quot;</span><span class="p">}],</span>
-
-<span class="w">      </span><span class="c1">// overwrite cached value when page value changes, treat page</span>
-<span class="w">      </span><span class="nx">serializeQueryArgs</span><span class="o">:</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="nx">queryArgs</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">({</span><span class="w"> </span><span class="p">...</span><span class="nx">queryArgs</span><span class="p">,</span><span class="w"> </span><span class="nx">page</span><span class="o">:</span><span class="w"> </span><span class="kt">undefined</span><span class="w"> </span><span class="p">}),</span>
-
-<span class="w">      </span><span class="c1">// when overwriting cache value, append new data to old list if page value increases</span>
-<span class="w">      </span><span class="nx">merge</span><span class="o">:</span><span class="w"> </span><span class="p">(</span><span class="nx">currentCache</span><span class="p">,</span><span class="w"> </span><span class="nx">newData</span><span class="p">,</span><span class="w"> </span><span class="nx">otherArgs</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">newData</span><span class="p">.</span><span class="nx">page</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">currentCache</span><span class="p">.</span><span class="nx">page</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">          </span><span class="nx">currentCache</span><span class="p">.</span><span class="nx">items</span><span class="p">.</span><span class="nx">push</span><span class="p">(...</span><span class="nx">newData</span><span class="p">.</span><span class="nx">items</span><span class="p">);</span>
-<span class="w">          </span><span class="nx">currentCache</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="nx">newData</span><span class="p">,</span><span class="w"> </span><span class="nx">items</span><span class="o">:</span><span class="w"> </span><span class="kt">currentCache.items</span><span class="w"> </span><span class="p">};</span>
-<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">          </span><span class="k">return</span><span class="w"> </span><span class="nx">newData</span><span class="p">;</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">      </span><span class="p">},</span>
-<span class="w">    </span><span class="p">}),</span>
-</code></pre></div>
-<p>Then in the component where the hook is called, ensure that the page number is reset to 1 whenever a mutation occurs that will invalidate the <code>useGetLocationsQuery</code> data.  Since this page isn't an increase from the previous, the old cache will be discarded. This can be annoying since the component that triggers the mutation and invalidates the data may be completely seperate from the component that queries for the data.  </p>
-<div class="highlight"><pre><span></span><code>function EditLocationAddress({id}: {id:number}) {
-    const [patchLocation, isPatchLoading] = usePatchLocationMutation();
-
-    function onUpdate(locationUpdate:Partial&lt;Location&gt;) {
-        patchLocation(locationUpdate);
-        // TODO somehow reset the page number to 0 in all relevant places
-    }
-    ...
-    return (
-        &lt;div&gt;
-            {/* some input that calls onUpdate on change */}
-        &lt;/div&gt;
-    );
-}
-</code></pre></div>
-<p>There is probably a clever way of doing this where the cached page number is used as the canonical page number across all components, and then you could force a reset back to one from any component, but I haven't needed to implement this just yet in any applications.</p>
-<p>Maybe something like this? I haven't tried it yet.</p>
-<div class="highlight"><pre><span></span><code>function EditLocationAddress({id}: {id:number}) {
-    const [patchLocation, isPatchLoading] = usePatchLocationMutation();
-    const [getLocationsLazy] = useLazyGetLocationsQuery();
-
-    function onUpdate(locationUpdate:Partial&lt;Location&gt;) {
-        patchLocation(locationUpdate);
-        getLocationsLazy(
-            { page: 1 },
-            true // lazy queries ignore cache by default, true overrides this
-        );
-    }
-    ...
-    return (
-        &lt;div&gt;
-            {/* some input that calls onUpdate on change */}
-        &lt;/div&gt;
-    );
-}
-</code></pre></div>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/rtk-query-vs.-infinite-scrolling</guid>
-            <pubDate>2024-06-03</pubDate>
-        </item>
-        
-        <item>
-            <title>Nextcloud Phone Photo Upload</title>
-            <link>https://notes.zachmanson.com/nextcloud-phone-photo-upload</link>
-            
-            <description>Just use FolderSync.</description>
-            
-            <content:encoded>
-                <![CDATA[<p>Nextcloud is excellent, and its Android app is great.  I found the app's Auto-Upload feature to be nigh unusable.</p>
-<p>I have 20GiB+ of photos on my phone and would like a backup.  My primary Nextcloud account is synced to my PCs, so any file added to it will be downloaded to all devices.  I don't need local access to these photos on all my PCs, so I created a seperate Nextcloud account just for camera roll uploads. If I needed to access these photos from a PC I could log in to the Nextcloud web interface with the camera roll account.</p>
-<p>Attempting to use Auto-Upload on my phone's Camera folder was messy.  It kept uploading photos to the wrong Nextcloud account, incorrectly counting how many files there were, and did not supporting bidirectional sync.  It was unpredictable how long it would take to actually trigger an upload, not having a manual way of starting one.  It also limited automatic uploads to a single folder. These issues were all seperate from the fact that the UI was extremely glitchy as it tried to show 20GiB of photos.</p>
-<p>I found using <a href="https://www.tacit.dk/foldersync">FolderSync</a> a much better experience.  It let me set up bidirectional sync between custom Nextcloud folders and local folders, let me choose cadence for syncing (with many configuration options like only allowing upload when charging) and allowed me to manually trigger a sync.  The premium version is absolutely worth it.  I'm only scratching the surface of what it can do here, but for my needs it's perfect.</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/nextcloud-phone-photo-upload</guid>
-            <pubDate>2024-05-01</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/kinde-design-decisions</guid>
+            <pubDate>2024-07-01</pubDate>
         </item>
         
         <item>
@@ -547,30 +571,6 @@ The day after writing the previous paragraph, I noticed they added the DJ to the
             </content:encoded>
             <guid isPermaLink="false">https://notes.zachmanson.com/the-h-chord</guid>
             <pubDate>2023-05-08</pubDate>
-        </item>
-        
-        <item>
-            <title>Kinde Design Decisions</title>
-            <link>https://notes.zachmanson.com/kinde-design-decisions</link>
-            
-            <content:encoded>
-                <![CDATA[<p>This is a list of problems with the Kinde interface.</p>
-<h2 id="useless-dropdowns">Useless Dropdowns</h2>
-<p>This dropdown should list the environments instead of revealing a button to take you to a page that lists the environments. This is an unnecessary second click.</p>
-<p><img alt="" src="/media/kinde-1.png" /></p>
-<p>This also means you are unable to switch environment without losing the page you are on.</p>
-<h2 id="unclickable-icons">Unclickable Icons</h2>
-<p>For some reason the left facing chevron is not clickable, only the word "Home" is.</p>
-<p><img alt="" src="/media/kinde-2.png" /></p>
-<h2 id="bizarre-breadcrumbs">Bizarre Breadcrumbs</h2>
-<p>When you go to the "Users Profile" screen, the top left back icon doesn't take you back to the "Users" screen, but remains a "Home" button.</p>
-<p>The only way to navigate back is the the small grey "User" text above the user's name.</p>
-<p><img alt="" src="/media/kinde-3.png" /></p>
-<p>This is something that almost all basic websites can get right.  Breadcrumb navigation or consistent back behaviour would be vastly preferable here.</p>
-<p>There is little consistency between parts of the interface that are clickable and those that are not.  This makes navigating quite difficult.</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/kinde-design-decisions</guid>
-            <pubDate>2024-07-01</pubDate>
         </item>
         
 

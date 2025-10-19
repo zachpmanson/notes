@@ -231,40 +231,40 @@
     </header>
 
     <article><p>Unless you have a good reason. Only example I can think of is components sharing props (this is rare) or interface perf vs type perf (but I am yet to work on a codebase where that mattered).</p>
-<div class="highlight"><pre><span></span><code>// BAD
-type ComponentAProps = { 
-  a: string;
-  b: string;
-}
-function ComponentA({a, b}: ComponentAProps) {
-    return &lt;&gt;{a} {b}&lt;/&gt;
-}
+<div class="highlight"><pre><span></span><code><span class="c1">// BAD</span>
+<span class="kr">type</span><span class="w"> </span><span class="nx">ComponentAProps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<span class="w">  </span><span class="nx">a</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">b</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">ComponentA</span><span class="p">({</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="nx">ComponentAProps</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;&gt;{</span><span class="nx">a</span><span class="p">}</span><span class="w"> </span><span class="p">{</span><span class="nx">b</span><span class="p">}&lt;/&gt;</span>
+<span class="p">}</span>
 
-// BAD
-function ComponentA(props: {a: number; b: string}) {
-    const {a, b} = props;
-    return &lt;&gt;{a} {b}&lt;/&gt;
-}
+<span class="c1">// BAD</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">ComponentA</span><span class="p">(</span><span class="nx">props</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">a</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">b</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">props</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;&gt;{</span><span class="nx">a</span><span class="p">}</span><span class="w"> </span><span class="p">{</span><span class="nx">b</span><span class="p">}&lt;/&gt;</span>
+<span class="p">}</span>
 
-// I CAN LIVE WITH THIS BUT YOU&#39;RE WEIRD
-function ComponentA(props: {a: number; b:string}) {
-    return &lt;&gt;{props.a} {props.b}&lt;/&gt;
-}
+<span class="c1">// I CAN LIVE WITH THIS BUT YOU&#39;RE WEIRD</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">ComponentA</span><span class="p">(</span><span class="nx">props</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">a</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">b</span><span class="o">:</span><span class="kt">string</span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;&gt;{</span><span class="nx">props</span><span class="p">.</span><span class="nx">a</span><span class="p">}</span><span class="w"> </span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">b</span><span class="p">}&lt;/&gt;</span>
+<span class="p">}</span>
 
-// LITERALLY THE WORST OF BOTH WORLDS YOU MASOCHIST
-type ComponentAProps = { 
-  a: string;
-  b: string;
-}
-function ComponentA(props: ComponentAProps) {
-    const {a, b} = props;
-    return &lt;&gt;{a} {b}&lt;/&gt;
-}
+<span class="c1">// LITERALLY THE WORST OF BOTH WORLDS YOU MASOCHIST</span>
+<span class="kr">type</span><span class="w"> </span><span class="nx">ComponentAProps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<span class="w">  </span><span class="nx">a</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">b</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">ComponentA</span><span class="p">(</span><span class="nx">props</span><span class="o">:</span><span class="w"> </span><span class="kt">ComponentAProps</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">props</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;&gt;{</span><span class="nx">a</span><span class="p">}</span><span class="w"> </span><span class="p">{</span><span class="nx">b</span><span class="p">}&lt;/&gt;</span>
+<span class="p">}</span>
 
-// GOOD
-function ComponentA({a, b}: {a: number; b:string}) {
-    return &lt;&gt;{a} {b}&lt;/&gt;
-}
+<span class="c1">// GOOD</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">ComponentA</span><span class="p">({</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">a</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">b</span><span class="o">:</span><span class="kt">string</span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;&gt;{</span><span class="nx">a</span><span class="p">}</span><span class="w"> </span><span class="p">{</span><span class="nx">b</span><span class="p">}&lt;/&gt;</span>
+<span class="p">}</span>
 </code></pre></div>
 <p>It is extremely rare that you need to use prop type definitions more that once, so the separate type definition is just adding boilerplate with no benefit. Yes I know that its annoying repeating the same thing twice in a row with the anonymous type, but its the best of a bunch of bad options. It should be maximally obvious what params a component needs.</p>
 <p><a href="/favour-colocation">Generally its good to keep types as close to their usage as possible</a>.</p></article>
@@ -278,7 +278,7 @@ function ComponentA({a, b}: {a: number; b:string}) {
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/the-crawford-principles" class="not-extra-small">random</a>
+          <a href="/programming-concepts" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Code Opinions/React Prop Types.md" class="desktop">edit</a>
@@ -289,7 +289,7 @@ function ComponentA({a, b}: {a: number; b:string}) {
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/the-crawford-principles">random</a>
+          <a href="/programming-concepts">random</a>
         </div>
       </div>
 

@@ -456,7 +456,7 @@
 
     <article><p>Building sites with vanilla <a href="/html">HTML</a> can be a pain in the ass if you want to redesign an element that appears in every page, like a navigation bar or footer. Static site generators solve this problem with components, but I like reinventing the wheel. Jinja templating can be used to ape components since it is capable of passing arbitrary functions into its DOM templates.</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># ssg.py</span>
-<span class="k">def</span> <span class="nf">blog_footer</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">blog_footer</span><span class="p">():</span>
     <span class="k">return</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">    &lt;footer&gt;</span>
 <span class="s2">      &lt;p&gt;</span>
@@ -500,7 +500,7 @@
 </code></pre></div>
 <p>This follows normal Python rules, so inheritance is followed and parameters can be passed into functions in the template.</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># components.py</span>
-<span class="k">def</span> <span class="nf">nav</span><span class="p">(</span><span class="n">activated_link</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">nav</span><span class="p">(</span><span class="n">activated_link</span><span class="p">):</span>
     <span class="n">links</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;projects&quot;</span><span class="p">,</span> <span class="s2">&quot;blog&quot;</span><span class="p">]</span>
     <span class="n">link_elements</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">link</span> <span class="ow">in</span> <span class="n">links</span><span class="p">:</span>
@@ -522,7 +522,7 @@
 <span class="s2">        &lt;/div&gt;</span>
 <span class="s2">    &lt;/nav&gt;&quot;&quot;&quot;</span>
 
-<span class="k">def</span> <span class="nf">blog_footer</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">blog_footer</span><span class="p">():</span>
     <span class="k">return</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">    &lt;footer&gt;</span>
 <span class="s2">      &lt;p&gt;</span>
@@ -535,7 +535,7 @@
 <span class="s2">    &lt;/footer&gt;&quot;&quot;&quot;</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="c1"># ssg.py</span>
-<span class="kn">import</span> <span class="nn">components</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">components</span>
 
 <span class="n">page_template</span> <span class="o">=</span> <span class="n">jinja2</span><span class="o">.</span><span class="n">Template</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;template.html&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;output.html&quot;</span><span class="p">),</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
@@ -595,7 +595,7 @@
           <date>2022-11-17</date>
           
           <a href="/recent-changes">recent</a>
-          <a href="/generative-models" class="not-extra-small">random</a>
+          <a href="/do-things-tell-people" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Problems/Jinja Components.md" class="desktop">edit</a>
@@ -606,7 +606,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/generative-models">random</a>
+          <a href="/do-things-tell-people">random</a>
         </div>
       </div>
 

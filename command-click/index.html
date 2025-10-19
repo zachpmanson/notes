@@ -234,7 +234,7 @@
 <p>In Python especially this is frustrating because many libraries do not provide comprehensive type definitions that are automatically assigned (looking at you SQLAlchemy v1.4). This means you will have to  annotate yourself.</p>
 <p>Life is so much better if you do this. For everyone involved. Turn on Pyright type checking, get angry when you see red squiggles.</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># VERY BAD</span>
-<span class="k">async</span> <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{}):</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{}):</span>
     <span class="k">pass</span>
 </code></pre></div>
 <p>Python makes <code>@dataclasses</code> and <code>TypedDict</code> really easy to use, I recommend them highly.</p>
@@ -249,7 +249,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/docker-networks" class="not-extra-small">random</a>
+          <a href="/random" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Code Opinions/Command Click.md" class="desktop">edit</a>
@@ -260,7 +260,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/docker-networks">random</a>
+          <a href="/random">random</a>
         </div>
       </div>
 
@@ -271,8 +271,6 @@
         <a href="/contain-pandas">Contain Pandas</a>
         
         <a href="/inherit-cautiously">Inherit Cautiously</a>
-        
-        <a href="/recent-changes">Recent Changes</a>
         
         <a href="/request-validation">Request Validation</a>
         
