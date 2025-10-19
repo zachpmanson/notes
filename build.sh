@@ -23,11 +23,11 @@ fi
 
 echo Activated venv
 echo Generating...
-uv run main.py
+uv run main.py $1
 echo Generated!
 echo Deactivated venv
-mkdir -p ./site/media ./site/static
-cp -R ./static/* ./site/static/
+mkdir -p ./site/media ./site/_static
+cp -R ./static/* ./site/_static/
 cp -R ./notes/Media/* ./site/media/
 echo "notes.zachmanson.com" >./site/CNAME
 echo Done!
