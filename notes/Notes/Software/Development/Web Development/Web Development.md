@@ -68,3 +68,4 @@ Problems that arise from this:
 - [My love letter to front-end web development](https://bower.sh/my-love-letter-to-front-end-web-development)
 - [Handling Cookies is a Minefield](https://grayduck.mn/2024/11/21/handling-cookies-is-a-minefield/)
 - [Creating PWAs](https://blog.heroku.com/how-to-make-progressive-web-app)
+- [Why is everything so scalable?](https://www.stavros.io/posts/why-is-everything-so-scalable/)
