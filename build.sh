@@ -26,6 +26,7 @@ echo Generating...
 uv run main.py $1
 echo Generated!
 echo Deactivated venv
+touch ./site/.nojekyll
 mkdir -p ./site/media ./site/_static
 cp -R ./static/* ./site/_static/
 cp -R ./notes/Media/* ./site/media/
