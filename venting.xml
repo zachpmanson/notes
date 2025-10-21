@@ -13,7 +13,336 @@
             <link>https://notes.zachmanson.com/venting</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Mon, 20 Oct 2025 02:42:02 </lastBuildDate>
+        <lastBuildDate>Tue, 21 Oct 2025 23:22:23 </lastBuildDate>
+        
+        <item>
+            <title>Spotify Design Decisions</title>
+            <link>https://notes.zachmanson.com/spotify-design-decisions</link>
+            
+            <content:encoded>
+                <![CDATA[<p>This page is a list of <a href="/design">Design</a> decisions made by Spotify that I consider shitty.  I'm sure some of them were only A/B tested, coming and going silently, but some have lingered for years. In any case I have been subjected to all of these personally.</p>
+<p>See also: <a href="https://www.todepond.com/wikiblogarden/work/dear-spotify/">Dear spotify product manager</a> by Lu Wilson, <a href="https://www.youtube.com/watch?v=suhEIUapSJQ">Redesigning Spotify</a> by Juxtopposed</p>
+<h2 id="unable-to-remove-dj-shortcut-on-desktop">Unable to Remove DJ Shortcut On Desktop</h2>
+<p>On desktop they have added a link to the DJ feature at the top of Your Library, below pinned playlists.  Despite not being a playlist (nor a feature I use), it continues to appear even when you have set the filter to only show playlists.  As far as I know it cannot be removed?  But it can be pinned.  Despite already being permalocked to the top.
+<img alt="" src="/media/dj.png" />
+The day after writing the previous paragraph, I noticed they added the DJ to the same section in the mobile app. In the mobile app a long press on the DJ icon does shows you an option to hide it, which seems to sync across all my devices.  Why is this option not available in the desktop client!</p>
+<h2 id="custom-playlist-sorting">Custom Playlist Sorting</h2>
+<p>For as long as I can remember you can order the playlists you have created/followed in any order along the left side of the desktop app. You can even put them in nested folders which is fantastic.  I have many playlists organised into folders in particular orders.  I know how to get to the playlist I want quickly because I have put it in a particular place. This custom order and "Recently played" are the only two i would ever want.</p>
+<p>Spotify seems to hate this use case.  To my knowledge its never been possible to rearrange order of playlists on the mobile app, only the desktop client.</p>
+<p>When you attempt to add a song to playlist on mobile, there isn't even an option to sort by recently played anymore.  This is diametrically opposed to desktop, where the right click menu will ONLY allow you to sort by custom order. </p>
+<p><img alt="" src="/media/no-custom-order.png" /></p>
+<h2 id="smart-shuffle-button-cycle-lock">Smart Shuffle Button Cycle Lock</h2>
+<p>Spotify has added a feature called Smart Shuffle that works like normal shuffling, but also adds recommended songs in-between ever few tracks in the queue.  On paper I like this feature, though I have never found myself actually using it. I was introduced to it through the following infuriating UX.</p>
+<p>I go the the Now Playing screen on the Android Spotify client. The playlist I am listening to is currently set to shuffle (regular shuffle), but I would like to turn off regular shuffle.  I press the button with a shuffle icon, which has for 10+ years been a single toggle that would instantly take effect.  Instead of a simple 2 option toggle, I find that it has been converted in to a 3 option cycle button, where pressing it cycles through the options of <code>Linear -&gt; Shuffle -&gt; Smart Shuffle -&gt; Linear</code>. I can see the thinking behind this decision, but it breaks muscle memory established all other music players for decades.  That is not my issue though.</p>
+<p>When you click the button and move the state from <code>Shuffle</code> to <code>Smart Shuffle</code>, the application begins loading the Smart Shuffle recommendations which means it must query Spotify servers, which is an operation that takes multiple seconds.  While this occurs, the button with a Shuffle icon becomes a button with a loading spinner, and becomes unclickable. I must wait multiple seconds before I can turn off Smart Shuffle.</p>
+<p><code>Linear -&gt; Shuffle -&gt; Loading (multiple seconds) -&gt; Smart Shuffle -&gt; Linear</code></p>
+<p>This is deeply infuriating.  I never even wanted to use Smart Shuffle in the first place and now I must wait for it.</p>
+<p>This occurred every time I wanted to turn off  <code>Shuffle</code>.  Which is a lot.</p>
+<p>As of 2024-01-21, this loading state of the button appears to have been removed, thankfully.</p>
+<h2 id="smart-shuffle-cycle-order">Smart Shuffle Cycle Order</h2>
+<p>Oh sorry did I say the order was <code>Linear -&gt; Shuffle -&gt; Smart Shuffle</code>?  Its actually <code>Linear -&gt; Smart Shuffle -&gt; Shuffle</code>.  Wait no go back.  Wait... it's a different order on my phone vs on desktop? This is real wtf.</p>
+<h2 id="smart-shuffle-popup">Smart Shuffle Popup</h2>
+<p>I clicked shuffle once and this came up. Thankfully it only ever appeared once on 2023-11-14, but it never should have in the first place. </p>
+<p><img alt="" src="/media/smart-shuffle-popup.png" /></p>
+<h2 id="overflow-menu-loading">Overflow Menu Loading</h2>
+<p>For some godforsaken reason, the overflow menu for a track sometimes appears to require a network request before it can show.  If this request is slow, it will show a loading spinner in place of the menu, until the server responds.  Or in some cases, the <strong>overflow menu will fail to load entirely</strong>.  This is insane, since for the most part, the options on this menu are identical.  This is doubly insane since the menu can load without any issue what-so-ever in offline mode.</p>
+<p>I have only ever experienced this issue on the Android mobile app, which for many years did not support swiping on a song to queue a song.  At this time you were only able to queue a song. through the overflow menu, which often times meant waiting multiple seconds for menu to appear.  God forbid you wanting to queue multiple songs in a row. Thankfully you can now bypass the menu loading by swiping a track to the right.</p>
+<p>Oh wait!</p>
+<h2 id="cant-swipe-to-queue-on-blend-playlists">Can't Swipe to Queue on Blend Playlists</h2>
+<p>On Android you cannot swipe to queue a playlist if the playlist is a blend playlist??? Why would this screen use a different component to represent a list of songs to every other screen in the app? </p>
+<video src='/media/blend-swiping.webm' controls></video>
+
+<h2 id="secret-sliding-menu">Secret Sliding Menu</h2>
+<p>This one I only just noticed now while typing this post. There is a sliding menu that appears if you click on your profile picture in the corner of any of the 3 main screens.  It seems a bit sparse, like it would be better suited to being a drop down? In any case this menu can actually be accessed from any playlist folder screen as well, despite there being no indication of this.  This only seems to work on playlist folder screens though, as it doesn't work for any other subpages.</p>
+<p>This one was annoying as I accidentally triggered in when attempting to swipe in from the left to go back a screen.</p>
+<video src='/media/sliding-menu.webm' controls></video>
+
+<h2 id="cant-swipe-up-to-access-player">Can't Swipe Up to Access Player</h2>
+<p>On Android you can swipe down on the player interface but you cannot swipe up to reveal it.  When you attempt this you will almost definitely skip the song that is currently playing, since the minimised version of the player only detects left and right swipes.</p>
+<video src='/media/swipe-up.webm' controls></video>
+
+<h2 id="top-bar-alignment">Top Bar Alignment</h2>
+<p>Who the fuck let this happen.</p>
+<p><img alt="" src="/media/spotify-top-bar.png" /></p>
+<h2 id="liked-songs-filters-are-actually-a-playlist">Liked Songs Filters Are Actually a Playlist</h2>
+<p>For years, if you used the text filter on your Liked Songs and then played one of the songs, the queue would only populate with songs that matched that filter.  This could be useful for only listening to a particular artist within your Liked Songs, but was usually just annoying.</p>
+<p>As of 2024 it appears this behaviour has been removed.</p>
+<h2 id="search-results-are-actually-a-playlist">Search Results Are Actually a Playlist</h2>
+<p>Similar to the previous issue, if you searched for a song using the search tab, and then played one of the results, the queue would populate with all the other search results meaning you would hear the same song repeated several times, or covers, or random other tracks with similar names.</p>
+<p>As of 2024 it appears this behaviour has been removed.</p>
+<h2 id="useless-music-video-indicator">Useless Music Video Indicator</h2>
+<p>They have added a subtitle and icon for songs with music videos, which looks like it is clickable or has some feature attached to it. But it just... doesn't?</p>
+<p><img alt="" src="/media/spotify-music-video.png" /></p>
+<h2 id="upcoming-complaints">Upcoming Complaints</h2>
+<ul>
+<li>Rapidly toggling through Shuffle button states can cause the cycle to desync in strange ways</li>
+<li>Spotify (regular) Shuffle algorithm has some problems</li>
+</ul>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/spotify-design-decisions</guid>
+            <pubDate>2024-03-17</pubDate>
+        </item>
+        
+        <item>
+            <title>The H Chord</title>
+            <link>https://notes.zachmanson.com/the-h-chord</link>
+            
+            <description>How German monks broke my website</description>
+            
+            <content:encoded>
+                <![CDATA[<p>I received a <a href="https://github.com/pavo-etc/penultimate-guitar/issues/41">strange bug report</a> on <a href="/penultimate-guitar">Penultimate Guitar</a> where the Next.js rendering would fail completely on certain songs.</p>
+<h2 id="the-error">The Error</h2>
+<p>The type error was being triggered by a chord component, where the key was undefined. The chords are pulled from Ultimate Guitar, so I inspected the JSON payload from the <a href="https://tabs.ultimate-guitar.com/tab/1684995">original source</a>.</p>
+<p><img alt="" src="/media/ug.png" /></p>
+<p>Why the hell is there a <code>[ch]H[/ch]</code> chord in there? That's definitely the cause as I never accounted for non-existent keys. Looking at Ultimate Guitar, it renders as a B chord.</p>
+<p><img alt="" src="/media/ug-rendered.png" /></p>
+<p>Huh?</p>
+<details>
+<summary>An aside on Ultimate Guitar HTML</summary>
+<p>The way Ultimate Guitar handles data is bizarre. It passes a static dehydrated <a href="/html">HTML</a> page to the client.  The data payload is in the HTML as well, but instead of being contained in a <code>script</code> tag it's a giant JSON payload in an escaped string within an attribute of a random <code>div</code></p>
+</details>
+<h2 id="one-google-search-later">One Google Search Later</h2>
+<p>Germany and the Netherlands ha(d/ve) their own musical key notation that include(d/s) a H chord. <a href="https://www.guitarsite.com/newsletters/010122/12.shtml">This site</a> claims it ended in "1994/1995", though I've seen <a href="https://github.com/pavo-etc/penultimate-guitar/issues/41#issuecomment-1538452351">other</a> <a href="https://www.reddit.com/r/musictheory/comments/8rn0ve">sources</a> claim its still taught this way. This comes as an artefact of the bizarre history Western music notation, which is a problem I seem to keep running into recently in my attempts to learn more about music theory.</p>
+<blockquote>
+<p>I learned in music school that the chord is called "B" (like in the rest of the world), but the note is called "H" (eg. the C Major scale would be C, D, E, F, G, A, H, C).</p>
+</blockquote>
+<p><cite>TobTobXX, who reported the bug</cite></p>
+<h2 id="western-musics-stupid-origins">Western Music's Stupid Origins</h2>
+<p>Western music is based on ecclesiastic modes used in church in the early Middle Ages, which only used the diatonic notes of the C scale (<em>natural</em> notes). The musical notation systems of the time reflected this, not accounting for notes outside of the C scale. When sharps and flats later came into more common use, the existing notation systems needed a way to distinguish them from the natural notes they sat between.</p>
+<p>This problem first arose with B natural and B flat, according to the <a href="https://www.britannica.com/art/musical-expression">Encyclopedia Britannica</a>. The first method of distinguishing B from B flat was using two different forms of the lowercase "b" character:</p>
+<p><img alt="" src="/media/The-Flat-Sharp-And-Natural-A-Historical-Sketch.png" /></p>
+<p>Niecks, Frederick. “The Flat, Sharp, and Natural. A Historical Sketch.” <em>Proceedings of the Musical Association</em>, vol. 16, 1889, pp. 79–100.</p>
+<p>Somewhere along the line in Germany, monks transcribing these square and round "b" characters confused the squared "b" for "h", and this was later assumed to be intentional. "H" became a convention for writing B natural, while the "b" character remained convention for writing B flat. "B" and "b" became amalgamated, both coming to represent modern B flat.</p>
+<p>In the rest of the world, this "H" note didn't catch on.</p>
+<p>In time, notation for sharp and flat notes other than B flat was needed. This use of square and round "b" to denote B and B flat eventually evolved into our modern notation for indicating natural and non-natural, <em>accidentals</em>. ♭ comes from the round "b", while ♯ and ♮ come from the square "b".</p>
+<p>Somehow, Germany still hasn't fully corrected this mistake, continuing to use "H" to represent B natural in many places. Including Ultimate Guitar. Ugh.</p>
+<h2 id="resolution">Resolution</h2>
+<p>I don't love dealing with problems caused by the whims of millennia dead monks, but this was an interesting rabbit hole to fall into. The issue has since been patched, and I look forward to my mistakes ruining someone's day in 3023.</p>
+<p><img alt="" src="/media/gods-mistakes.png" /></p>
+<details>
+<summary>An aside on The Flat, Sharp, and Natural. A Historical Sketch</summary>
+<p>When I first copied the text from the article, it copied that "square b" as a "h". Funny that modern OCR technology makes the same mistakes at 1000 year old monks.</p>
+<blockquote>
+<p>The first known writer who distinguished between b natural and b flat was Odo of Clugny, who died in 942 ; the b natural being indicated by a square b (h), the b flat by a round b (b)</p>
+</blockquote>
+<p>It was also a pain in the ass to find a copy of that article. It's mostly found on paywalled academic sites despite the article definitely being out of copyright. Luckily the Internet Archive <a href="https://scholar.archive.org/work/3jdud373effq3e376gqtlkxqvq">has a copy</a>.</p>
+</details>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/the-h-chord</guid>
+            <pubDate>2023-05-08</pubDate>
+        </item>
+        
+        <item>
+            <title>Nextcloud Phone Photo Upload</title>
+            <link>https://notes.zachmanson.com/nextcloud-phone-photo-upload</link>
+            
+            <description>Just use FolderSync.</description>
+            
+            <content:encoded>
+                <![CDATA[<p>Nextcloud is excellent, and its Android app is great.  I found the app's Auto-Upload feature to be nigh unusable.</p>
+<p>I have 20GiB+ of photos on my phone and would like a backup.  My primary Nextcloud account is synced to my PCs, so any file added to it will be downloaded to all devices.  I don't need local access to these photos on all my PCs, so I created a seperate Nextcloud account just for camera roll uploads. If I needed to access these photos from a PC I could log in to the Nextcloud web interface with the camera roll account.</p>
+<p>Attempting to use Auto-Upload on my phone's Camera folder was messy.  It kept uploading photos to the wrong Nextcloud account, incorrectly counting how many files there were, and did not supporting bidirectional sync.  It was unpredictable how long it would take to actually trigger an upload, not having a manual way of starting one.  It also limited automatic uploads to a single folder. These issues were all seperate from the fact that the UI was extremely glitchy as it tried to show 20GiB of photos.</p>
+<p>I found using <a href="https://www.tacit.dk/foldersync">FolderSync</a> a much better experience.  It let me set up bidirectional sync between custom Nextcloud folders and local folders, let me choose cadence for syncing (with many configuration options like only allowing upload when charging) and allowed me to manually trigger a sync.  The premium version is absolutely worth it.  I'm only scratching the surface of what it can do here, but for my needs it's perfect.</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/nextcloud-phone-photo-upload</guid>
+            <pubDate>2024-05-01</pubDate>
+        </item>
+        
+        <item>
+            <title>LinkedIn's Ghost Text</title>
+            <link>https://notes.zachmanson.com/linkedins-ghost-text</link>
+            
+            <description>Why does LinkedIn copy text twice?</description>
+            
+            <content:encoded>
+                <![CDATA[<p>Why does LinkedIn do this?</p>
+<video autoplay loop muted>
+   <source src="/media/linkedin-duplication.webm" type="video/webm">
+</video>
+
+<p>If you look into the source of a LinkedIn profile page (at your own personal risk) you'll find a text element like this</p>
+<p><img alt="" src="/media/linkedin-element.png" /></p>
+<p>will have HTML like this</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;display-flex flex-row justify-space-between&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;</span>
+<span class="s">          display-flex flex-column full-width&quot;</span><span class="p">&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;display-flex flex-wrap align-items-center full-height&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mr1 t-bold&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Product manager, Creative coder<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Product manager, Creative coder<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="cm">&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Freelancer/Consultant<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Freelancer/Consultant<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal t-black--light&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>2009 - 2018 · 9 yrs<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>2009 - 2018 · 9 yrs<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal t-black--light&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Europe<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Europe<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+    <span class="cm">&lt;!----&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pvs-entity__action-container&quot;</span><span class="p">&gt;</span>
+        <span class="cm">&lt;!----&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>Gross.  Why the hidden duplicated text?  Why the empty comments?  Why seperate aria versions of text?  Is this related to using Ember?  LinkedIn has so many little unpleasantries like this.</p>
+<hr />
+<h2 id="2024-update-linkedin-still-shit">2024 Update: LinkedIn Still Shit</h2>
+<p>Still here.  Still broken. Still annoying</p>
+<video autoplay loop muted>
+   <source src="/media/linkedin-duplication-2.webm" type="video/webm">
+</video>
+
+<h2 id="2025-update-slack-also-does-this">2025 Update: Slack also does this</h2>
+<p>When you highlight, copy and paste a name.</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/linkedins-ghost-text</guid>
+            <pubDate>2023-04-16</pubDate>
+        </item>
+        
+        <item>
+            <title>Kinde Design Decisions</title>
+            <link>https://notes.zachmanson.com/kinde-design-decisions</link>
+            
+            <content:encoded>
+                <![CDATA[<p>This is a list of problems with the Kinde interface.</p>
+<h2 id="useless-dropdowns">Useless Dropdowns</h2>
+<p>This dropdown should list the environments instead of revealing a button to take you to a page that lists the environments. This is an unnecessary second click.</p>
+<p><img alt="" src="/media/kinde-1.png" /></p>
+<p>This also means you are unable to switch environment without losing the page you are on.</p>
+<h2 id="unclickable-icons">Unclickable Icons</h2>
+<p>For some reason the left facing chevron is not clickable, only the word "Home" is.</p>
+<p><img alt="" src="/media/kinde-2.png" /></p>
+<h2 id="bizarre-breadcrumbs">Bizarre Breadcrumbs</h2>
+<p>When you go to the "Users Profile" screen, the top left back icon doesn't take you back to the "Users" screen, but remains a "Home" button.</p>
+<p>The only way to navigate back is the the small grey "User" text above the user's name.</p>
+<p><img alt="" src="/media/kinde-3.png" /></p>
+<p>This is something that almost all basic websites can get right.  Breadcrumb navigation or consistent back behaviour would be vastly preferable here.</p>
+<p>There is little consistency between parts of the interface that are clickable and those that are not.  This makes navigating quite difficult.</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/kinde-design-decisions</guid>
+            <pubDate>2024-07-01</pubDate>
+        </item>
+        
+        <item>
+            <title>Poetry Showing Dependencies it Refuses to Install</title>
+            <link>https://notes.zachmanson.com/poetry-showing-dependencies-it-refuses-to-install</link>
+            
+            <content:encoded>
+                <![CDATA[<p>When Poetry lists the dependencies for a package it doesn't show the Python versions that those ranges are valid for.  For example, <a href="https://github.com/boto/botocore/blob/develop/setup.py">this</a> <code>setup.py</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="n">requires</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;jmespath&gt;=0.7.1,&lt;2.0.0&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;python-dateutil&gt;=2.1,&lt;3.0.0&#39;</span><span class="p">,</span>
+    <span class="c1"># Prior to Python 3.10, Python doesn&#39;t require openssl 1.1.1</span>
+    <span class="c1"># but urllib3 2.0+ does. This means all botocore users will be</span>
+    <span class="c1"># broken by default on Amazon Linux 2 and AWS Lambda without this pin.</span>
+    <span class="s1">&#39;urllib3&gt;=1.25.4,&lt;1.27 ; python_version &lt; &quot;3.10&quot;&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;urllib3&gt;=1.25.4,!=2.2.0,&lt;3 ; python_version &gt;= &quot;3.10&quot;&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+</code></pre></div>
+<p>will not have the Python version shown when running <code>poetry show</code>, despite some the package ranges depending on the Python version of the project.  On a Python project where the <code>pyproject.toml</code> specifies Python 3.9, <code>poetry show</code> will only return the urllib3 version range that is valid for Python 3.9.</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
+&gt;<span class="w"> </span>head<span class="w"> </span>pyproject.toml
+<span class="o">[</span>tool.poetry<span class="o">]</span>
+<span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;prosebit&quot;</span>
+<span class="nv">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span>
+<span class="nv">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="nv">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;Your Name &lt;you@example.com&gt;&quot;</span><span class="o">]</span>
+<span class="nv">readme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;README.md&quot;</span>
+
+<span class="o">[</span>tool.poetry.dependencies<span class="o">]</span>
+<span class="nv">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;3.9&quot;</span>
+
+<span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
+&gt;<span class="w"> </span>poetry<span class="w"> </span>show<span class="w"> </span>botocore
+<span class="w"> </span>name<span class="w">         </span>:<span class="w"> </span>botocore<span class="w">                               </span>
+<span class="w"> </span>version<span class="w">      </span>:<span class="w"> </span><span class="m">1</span>.34.144<span class="w">                               </span>
+<span class="w"> </span>description<span class="w">  </span>:<span class="w"> </span>Low-level,<span class="w"> </span>data-driven<span class="w"> </span>core<span class="w"> </span>of<span class="w"> </span>boto<span class="w"> </span><span class="m">3</span>.<span class="w"> </span>
+
+dependencies
+<span class="w"> </span>-<span class="w"> </span>jmespath<span class="w"> </span>&gt;<span class="o">=</span><span class="m">0</span>.7.1,&lt;<span class="m">2</span>.0.0
+<span class="w"> </span>-<span class="w"> </span>python-dateutil<span class="w"> </span>&gt;<span class="o">=</span><span class="m">2</span>.1,&lt;<span class="m">3</span>.0.0
+<span class="w"> </span>-<span class="w"> </span>urllib3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.25.4,&lt;<span class="m">1</span>.27
+
+required<span class="w"> </span>by
+<span class="w"> </span>-<span class="w"> </span>boto3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.34.144,&lt;<span class="m">1</span>.35.0
+<span class="w"> </span>-<span class="w"> </span>s3transfer<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.33.2,&lt;<span class="m">2</span>.0a.0
+</code></pre></div>
+<p>On a Python project where the <code>pyproject.toml</code> specifies Python 3.10, <code>poetry show</code> will only return the urllib3 version range that is valid for Python 3.10.</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
+&gt;<span class="w"> </span>head<span class="w"> </span>pyproject.toml
+<span class="o">[</span>tool.poetry<span class="o">]</span>
+<span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;prosebit&quot;</span>
+<span class="nv">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span>
+<span class="nv">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="nv">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;Your Name &lt;you@example.com&gt;&quot;</span><span class="o">]</span>
+<span class="nv">readme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;README.md&quot;</span>
+
+<span class="o">[</span>tool.poetry.dependencies<span class="o">]</span>
+<span class="nv">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;3.10&quot;</span>
+
+<span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
+&gt;<span class="w"> </span>poetry<span class="w"> </span>show<span class="w"> </span>botocore
+<span class="w"> </span>name<span class="w">         </span>:<span class="w"> </span>botocore<span class="w">                               </span>
+<span class="w"> </span>version<span class="w">      </span>:<span class="w"> </span><span class="m">1</span>.34.144<span class="w">                               </span>
+<span class="w"> </span>description<span class="w">  </span>:<span class="w"> </span>Low-level,<span class="w"> </span>data-driven<span class="w"> </span>core<span class="w"> </span>of<span class="w"> </span>boto<span class="w"> </span><span class="m">3</span>.<span class="w"> </span>
+
+dependencies
+<span class="w"> </span>-<span class="w"> </span>jmespath<span class="w"> </span>&gt;<span class="o">=</span><span class="m">0</span>.7.1,&lt;<span class="m">2</span>.0.0
+<span class="w"> </span>-<span class="w"> </span>python-dateutil<span class="w"> </span>&gt;<span class="o">=</span><span class="m">2</span>.1,&lt;<span class="m">3</span>.0.0
+<span class="w"> </span>-<span class="w"> </span>urllib3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.25.4,&lt;<span class="m">2</span>.2.0<span class="w"> </span><span class="o">||</span><span class="w"> </span>&gt;2.2.0,&lt;<span class="m">3</span>
+
+required<span class="w"> </span>by
+<span class="w"> </span>-<span class="w"> </span>boto3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.34.144,&lt;<span class="m">1</span>.35.0
+<span class="w"> </span>-<span class="w"> </span>s3transfer<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.33.2,&lt;<span class="m">2</span>.0a.0
+</code></pre></div>
+<p>On a Python project where a range is specified that covers multiple urllib3 package ranges, <strong><code>poetry show</code> will show both ranges without specifying that the ranges apply to different Python versions</strong>.</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
+&gt;<span class="w"> </span>head<span class="w"> </span>pyproject.toml
+<span class="o">[</span>tool.poetry<span class="o">]</span>
+<span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;prosebit&quot;</span>
+<span class="nv">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span>
+<span class="nv">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="nv">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;Your Name &lt;you@example.com&gt;&quot;</span><span class="o">]</span>
+<span class="nv">readme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;README.md&quot;</span>
+
+<span class="o">[</span>tool.poetry.dependencies<span class="o">]</span>
+<span class="nv">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&gt;=3.9,&lt;3.12&quot;</span>
+
+<span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
+&gt;<span class="w"> </span>poetry<span class="w"> </span>show<span class="w"> </span>botocore
+<span class="w"> </span>name<span class="w">         </span>:<span class="w"> </span>botocore<span class="w">                               </span>
+<span class="w"> </span>version<span class="w">      </span>:<span class="w"> </span><span class="m">1</span>.34.144<span class="w">                               </span>
+<span class="w"> </span>description<span class="w">  </span>:<span class="w"> </span>Low-level,<span class="w"> </span>data-driven<span class="w"> </span>core<span class="w"> </span>of<span class="w"> </span>boto<span class="w"> </span><span class="m">3</span>.<span class="w"> </span>
+
+dependencies
+<span class="w"> </span>-<span class="w"> </span>jmespath<span class="w"> </span>&gt;<span class="o">=</span><span class="m">0</span>.7.1,&lt;<span class="m">2</span>.0.0
+<span class="w"> </span>-<span class="w"> </span>python-dateutil<span class="w"> </span>&gt;<span class="o">=</span><span class="m">2</span>.1,&lt;<span class="m">3</span>.0.0
+<span class="w"> </span>-<span class="w"> </span>urllib3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.25.4,&lt;<span class="m">1</span>.27
+<span class="w"> </span>-<span class="w"> </span>urllib3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.25.4,&lt;<span class="m">2</span>.2.0<span class="w"> </span><span class="o">||</span><span class="w"> </span>&gt;2.2.0,&lt;<span class="m">3</span>
+
+required<span class="w"> </span>by
+<span class="w"> </span>-<span class="w"> </span>boto3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.34.144,&lt;<span class="m">1</span>.35.0
+<span class="w"> </span>-<span class="w"> </span>s3transfer<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.33.2,&lt;<span class="m">2</span>.0a.0
+</code></pre></div>
+<p>Despite displaying both ranges in <code>poetry show</code>, <strong>Poetry will only use the oldest range when running <code>poetry lock</code> or <code>poetry install</code></strong> .  This can lead to a disconnect between the package ranges that Poetry is reporting as valid and the package ranges that Poetry will actually attempt to use when running.</p>
+<p>I discovered this the hard way when trying to install <code>kinde-python-sdk</code> and <code>boto3</code> within the same project. <code>boto3</code> requires <code>botocore</code> which requires <code>urllib3</code>.  <code>kinde-python-sdk</code> also requires <code>urllib3</code>. Since my project was set to use <code>python = "&gt;=3.9,&lt;3.12"</code>, Poetry was listing both ranges in <code>poetry show</code>, but only using the range <code>urllib3 &gt;=1.25.4,&lt;1.27</code> when installing <code>botocore</code>. This resulted in headaches because <code>kinde-python-sdk</code> requires <code>urllib3 &gt;=2.2.1,&lt;2.3.0</code>, so it appeared like <code>botocore</code> and <code>kinde-python-sdk</code> could coexist when I ran <code>poetry show</code>, but failed to install every time I tried.</p>
+<p>Another important detail to note is that <strong>this is all dependent on the Python version specified in <code>pyproject.toml</code>.  The Python version you are actually running does not change the behaviour of Poetry.</strong>  I ran into all of these problems when running Python 3.11, so was confused for hours.</p>
+<p><code>poetry show</code> should report the Python versions that each package dependency range is valid for, since this turned a relatively simple dependency conflict into a multi-hour dependency conflict.  I was only able to figure out the exact cause by reading the setup script for <code>botocore</code>.</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/poetry-showing-dependencies-it-refuses-to-install</guid>
+            <pubDate>2024-07-15</pubDate>
+        </item>
         
         <item>
             <title>RTK Query vs. Infinite Scrolling</title>
@@ -242,335 +571,6 @@
             </content:encoded>
             <guid isPermaLink="false">https://notes.zachmanson.com/rtk-query-vs.-infinite-scrolling</guid>
             <pubDate>2024-06-03</pubDate>
-        </item>
-        
-        <item>
-            <title>LinkedIn's Ghost Text</title>
-            <link>https://notes.zachmanson.com/linkedins-ghost-text</link>
-            
-            <description>Why does LinkedIn copy text twice?</description>
-            
-            <content:encoded>
-                <![CDATA[<p>Why does LinkedIn do this?</p>
-<video autoplay loop muted>
-   <source src="/media/linkedin-duplication.webm" type="video/webm">
-</video>
-
-<p>If you look into the source of a LinkedIn profile page (at your own personal risk) you'll find a text element like this</p>
-<p><img alt="" src="/media/linkedin-element.png" /></p>
-<p>will have HTML like this</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;display-flex flex-row justify-space-between&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;</span>
-<span class="s">          display-flex flex-column full-width&quot;</span><span class="p">&gt;</span>
-
-        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;display-flex flex-wrap align-items-center full-height&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mr1 t-bold&quot;</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Product manager, Creative coder<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Product manager, Creative coder<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="cm">&lt;!----&gt;&lt;!----&gt;&lt;!----&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Freelancer/Consultant<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Freelancer/Consultant<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal t-black--light&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>2009 - 2018 · 9 yrs<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>2009 - 2018 · 9 yrs<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;t-14 t-normal t-black--light&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Europe<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;visually-hidden&quot;</span><span class="p">&gt;</span><span class="cm">&lt;!----&gt;</span>Europe<span class="cm">&lt;!----&gt;</span><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-
-    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-
-    <span class="cm">&lt;!----&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pvs-entity__action-container&quot;</span><span class="p">&gt;</span>
-        <span class="cm">&lt;!----&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</code></pre></div>
-<p>Gross.  Why the hidden duplicated text?  Why the empty comments?  Why seperate aria versions of text?  Is this related to using Ember?  LinkedIn has so many little unpleasantries like this.</p>
-<hr />
-<h2 id="2024-update-linkedin-still-shit">2024 Update: LinkedIn Still Shit</h2>
-<p>Still here.  Still broken. Still annoying</p>
-<video autoplay loop muted>
-   <source src="/media/linkedin-duplication-2.webm" type="video/webm">
-</video>
-
-<h2 id="2025-update-slack-also-does-this">2025 Update: Slack also does this</h2>
-<p>When you highlight, copy and paste a name.</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/linkedins-ghost-text</guid>
-            <pubDate>2023-04-16</pubDate>
-        </item>
-        
-        <item>
-            <title>Poetry Showing Dependencies it Refuses to Install</title>
-            <link>https://notes.zachmanson.com/poetry-showing-dependencies-it-refuses-to-install</link>
-            
-            <content:encoded>
-                <![CDATA[<p>When Poetry lists the dependencies for a package it doesn't show the Python versions that those ranges are valid for.  For example, <a href="https://github.com/boto/botocore/blob/develop/setup.py">this</a> <code>setup.py</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="n">requires</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s1">&#39;jmespath&gt;=0.7.1,&lt;2.0.0&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;python-dateutil&gt;=2.1,&lt;3.0.0&#39;</span><span class="p">,</span>
-    <span class="c1"># Prior to Python 3.10, Python doesn&#39;t require openssl 1.1.1</span>
-    <span class="c1"># but urllib3 2.0+ does. This means all botocore users will be</span>
-    <span class="c1"># broken by default on Amazon Linux 2 and AWS Lambda without this pin.</span>
-    <span class="s1">&#39;urllib3&gt;=1.25.4,&lt;1.27 ; python_version &lt; &quot;3.10&quot;&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;urllib3&gt;=1.25.4,!=2.2.0,&lt;3 ; python_version &gt;= &quot;3.10&quot;&#39;</span><span class="p">,</span>
-<span class="p">]</span>
-</code></pre></div>
-<p>will not have the Python version shown when running <code>poetry show</code>, despite some the package ranges depending on the Python version of the project.  On a Python project where the <code>pyproject.toml</code> specifies Python 3.9, <code>poetry show</code> will only return the urllib3 version range that is valid for Python 3.9.</p>
-<div class="highlight"><pre><span></span><code><span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
-&gt;<span class="w"> </span>head<span class="w"> </span>pyproject.toml
-<span class="o">[</span>tool.poetry<span class="o">]</span>
-<span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;prosebit&quot;</span>
-<span class="nv">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span>
-<span class="nv">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
-<span class="nv">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;Your Name &lt;you@example.com&gt;&quot;</span><span class="o">]</span>
-<span class="nv">readme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;README.md&quot;</span>
-
-<span class="o">[</span>tool.poetry.dependencies<span class="o">]</span>
-<span class="nv">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;3.9&quot;</span>
-
-<span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
-&gt;<span class="w"> </span>poetry<span class="w"> </span>show<span class="w"> </span>botocore
-<span class="w"> </span>name<span class="w">         </span>:<span class="w"> </span>botocore<span class="w">                               </span>
-<span class="w"> </span>version<span class="w">      </span>:<span class="w"> </span><span class="m">1</span>.34.144<span class="w">                               </span>
-<span class="w"> </span>description<span class="w">  </span>:<span class="w"> </span>Low-level,<span class="w"> </span>data-driven<span class="w"> </span>core<span class="w"> </span>of<span class="w"> </span>boto<span class="w"> </span><span class="m">3</span>.<span class="w"> </span>
-
-dependencies
-<span class="w"> </span>-<span class="w"> </span>jmespath<span class="w"> </span>&gt;<span class="o">=</span><span class="m">0</span>.7.1,&lt;<span class="m">2</span>.0.0
-<span class="w"> </span>-<span class="w"> </span>python-dateutil<span class="w"> </span>&gt;<span class="o">=</span><span class="m">2</span>.1,&lt;<span class="m">3</span>.0.0
-<span class="w"> </span>-<span class="w"> </span>urllib3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.25.4,&lt;<span class="m">1</span>.27
-
-required<span class="w"> </span>by
-<span class="w"> </span>-<span class="w"> </span>boto3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.34.144,&lt;<span class="m">1</span>.35.0
-<span class="w"> </span>-<span class="w"> </span>s3transfer<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.33.2,&lt;<span class="m">2</span>.0a.0
-</code></pre></div>
-<p>On a Python project where the <code>pyproject.toml</code> specifies Python 3.10, <code>poetry show</code> will only return the urllib3 version range that is valid for Python 3.10.</p>
-<div class="highlight"><pre><span></span><code><span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
-&gt;<span class="w"> </span>head<span class="w"> </span>pyproject.toml
-<span class="o">[</span>tool.poetry<span class="o">]</span>
-<span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;prosebit&quot;</span>
-<span class="nv">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span>
-<span class="nv">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
-<span class="nv">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;Your Name &lt;you@example.com&gt;&quot;</span><span class="o">]</span>
-<span class="nv">readme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;README.md&quot;</span>
-
-<span class="o">[</span>tool.poetry.dependencies<span class="o">]</span>
-<span class="nv">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;3.10&quot;</span>
-
-<span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
-&gt;<span class="w"> </span>poetry<span class="w"> </span>show<span class="w"> </span>botocore
-<span class="w"> </span>name<span class="w">         </span>:<span class="w"> </span>botocore<span class="w">                               </span>
-<span class="w"> </span>version<span class="w">      </span>:<span class="w"> </span><span class="m">1</span>.34.144<span class="w">                               </span>
-<span class="w"> </span>description<span class="w">  </span>:<span class="w"> </span>Low-level,<span class="w"> </span>data-driven<span class="w"> </span>core<span class="w"> </span>of<span class="w"> </span>boto<span class="w"> </span><span class="m">3</span>.<span class="w"> </span>
-
-dependencies
-<span class="w"> </span>-<span class="w"> </span>jmespath<span class="w"> </span>&gt;<span class="o">=</span><span class="m">0</span>.7.1,&lt;<span class="m">2</span>.0.0
-<span class="w"> </span>-<span class="w"> </span>python-dateutil<span class="w"> </span>&gt;<span class="o">=</span><span class="m">2</span>.1,&lt;<span class="m">3</span>.0.0
-<span class="w"> </span>-<span class="w"> </span>urllib3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.25.4,&lt;<span class="m">2</span>.2.0<span class="w"> </span><span class="o">||</span><span class="w"> </span>&gt;2.2.0,&lt;<span class="m">3</span>
-
-required<span class="w"> </span>by
-<span class="w"> </span>-<span class="w"> </span>boto3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.34.144,&lt;<span class="m">1</span>.35.0
-<span class="w"> </span>-<span class="w"> </span>s3transfer<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.33.2,&lt;<span class="m">2</span>.0a.0
-</code></pre></div>
-<p>On a Python project where a range is specified that covers multiple urllib3 package ranges, <strong><code>poetry show</code> will show both ranges without specifying that the ranges apply to different Python versions</strong>.</p>
-<div class="highlight"><pre><span></span><code><span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
-&gt;<span class="w"> </span>head<span class="w"> </span>pyproject.toml
-<span class="o">[</span>tool.poetry<span class="o">]</span>
-<span class="nv">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;prosebit&quot;</span>
-<span class="nv">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span>
-<span class="nv">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
-<span class="nv">authors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;Your Name &lt;you@example.com&gt;&quot;</span><span class="o">]</span>
-<span class="nv">readme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;README.md&quot;</span>
-
-<span class="o">[</span>tool.poetry.dependencies<span class="o">]</span>
-<span class="nv">python</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&gt;=3.9,&lt;3.12&quot;</span>
-
-<span class="o">[</span>~/projects/prosebit<span class="o">]</span><span class="w"> </span><span class="o">(</span>develop<span class="o">)</span><span class="w">  </span>
-&gt;<span class="w"> </span>poetry<span class="w"> </span>show<span class="w"> </span>botocore
-<span class="w"> </span>name<span class="w">         </span>:<span class="w"> </span>botocore<span class="w">                               </span>
-<span class="w"> </span>version<span class="w">      </span>:<span class="w"> </span><span class="m">1</span>.34.144<span class="w">                               </span>
-<span class="w"> </span>description<span class="w">  </span>:<span class="w"> </span>Low-level,<span class="w"> </span>data-driven<span class="w"> </span>core<span class="w"> </span>of<span class="w"> </span>boto<span class="w"> </span><span class="m">3</span>.<span class="w"> </span>
-
-dependencies
-<span class="w"> </span>-<span class="w"> </span>jmespath<span class="w"> </span>&gt;<span class="o">=</span><span class="m">0</span>.7.1,&lt;<span class="m">2</span>.0.0
-<span class="w"> </span>-<span class="w"> </span>python-dateutil<span class="w"> </span>&gt;<span class="o">=</span><span class="m">2</span>.1,&lt;<span class="m">3</span>.0.0
-<span class="w"> </span>-<span class="w"> </span>urllib3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.25.4,&lt;<span class="m">1</span>.27
-<span class="w"> </span>-<span class="w"> </span>urllib3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.25.4,&lt;<span class="m">2</span>.2.0<span class="w"> </span><span class="o">||</span><span class="w"> </span>&gt;2.2.0,&lt;<span class="m">3</span>
-
-required<span class="w"> </span>by
-<span class="w"> </span>-<span class="w"> </span>boto3<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.34.144,&lt;<span class="m">1</span>.35.0
-<span class="w"> </span>-<span class="w"> </span>s3transfer<span class="w"> </span>&gt;<span class="o">=</span><span class="m">1</span>.33.2,&lt;<span class="m">2</span>.0a.0
-</code></pre></div>
-<p>Despite displaying both ranges in <code>poetry show</code>, <strong>Poetry will only use the oldest range when running <code>poetry lock</code> or <code>poetry install</code></strong> .  This can lead to a disconnect between the package ranges that Poetry is reporting as valid and the package ranges that Poetry will actually attempt to use when running.</p>
-<p>I discovered this the hard way when trying to install <code>kinde-python-sdk</code> and <code>boto3</code> within the same project. <code>boto3</code> requires <code>botocore</code> which requires <code>urllib3</code>.  <code>kinde-python-sdk</code> also requires <code>urllib3</code>. Since my project was set to use <code>python = "&gt;=3.9,&lt;3.12"</code>, Poetry was listing both ranges in <code>poetry show</code>, but only using the range <code>urllib3 &gt;=1.25.4,&lt;1.27</code> when installing <code>botocore</code>. This resulted in headaches because <code>kinde-python-sdk</code> requires <code>urllib3 &gt;=2.2.1,&lt;2.3.0</code>, so it appeared like <code>botocore</code> and <code>kinde-python-sdk</code> could coexist when I ran <code>poetry show</code>, but failed to install every time I tried.</p>
-<p>Another important detail to note is that <strong>this is all dependent on the Python version specified in <code>pyproject.toml</code>.  The Python version you are actually running does not change the behaviour of Poetry.</strong>  I ran into all of these problems when running Python 3.11, so was confused for hours.</p>
-<p><code>poetry show</code> should report the Python versions that each package dependency range is valid for, since this turned a relatively simple dependency conflict into a multi-hour dependency conflict.  I was only able to figure out the exact cause by reading the setup script for <code>botocore</code>.</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/poetry-showing-dependencies-it-refuses-to-install</guid>
-            <pubDate>2024-07-15</pubDate>
-        </item>
-        
-        <item>
-            <title>Nextcloud Phone Photo Upload</title>
-            <link>https://notes.zachmanson.com/nextcloud-phone-photo-upload</link>
-            
-            <description>Just use FolderSync.</description>
-            
-            <content:encoded>
-                <![CDATA[<p>Nextcloud is excellent, and its Android app is great.  I found the app's Auto-Upload feature to be nigh unusable.</p>
-<p>I have 20GiB+ of photos on my phone and would like a backup.  My primary Nextcloud account is synced to my PCs, so any file added to it will be downloaded to all devices.  I don't need local access to these photos on all my PCs, so I created a seperate Nextcloud account just for camera roll uploads. If I needed to access these photos from a PC I could log in to the Nextcloud web interface with the camera roll account.</p>
-<p>Attempting to use Auto-Upload on my phone's Camera folder was messy.  It kept uploading photos to the wrong Nextcloud account, incorrectly counting how many files there were, and did not supporting bidirectional sync.  It was unpredictable how long it would take to actually trigger an upload, not having a manual way of starting one.  It also limited automatic uploads to a single folder. These issues were all seperate from the fact that the UI was extremely glitchy as it tried to show 20GiB of photos.</p>
-<p>I found using <a href="https://www.tacit.dk/foldersync">FolderSync</a> a much better experience.  It let me set up bidirectional sync between custom Nextcloud folders and local folders, let me choose cadence for syncing (with many configuration options like only allowing upload when charging) and allowed me to manually trigger a sync.  The premium version is absolutely worth it.  I'm only scratching the surface of what it can do here, but for my needs it's perfect.</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/nextcloud-phone-photo-upload</guid>
-            <pubDate>2024-05-01</pubDate>
-        </item>
-        
-        <item>
-            <title>Spotify Design Decisions</title>
-            <link>https://notes.zachmanson.com/spotify-design-decisions</link>
-            
-            <content:encoded>
-                <![CDATA[<p>This page is a list of <a href="/design">Design</a> decisions made by Spotify that I consider shitty.  I'm sure some of them were only A/B tested, coming and going silently, but some have lingered for years. In any case I have been subjected to all of these personally.</p>
-<p>See also: <a href="https://www.todepond.com/wikiblogarden/work/dear-spotify/">Dear spotify product manager</a> by Lu Wilson, <a href="https://www.youtube.com/watch?v=suhEIUapSJQ">Redesigning Spotify</a> by Juxtopposed</p>
-<h2 id="unable-to-remove-dj-shortcut-on-desktop">Unable to Remove DJ Shortcut On Desktop</h2>
-<p>On desktop they have added a link to the DJ feature at the top of Your Library, below pinned playlists.  Despite not being a playlist (nor a feature I use), it continues to appear even when you have set the filter to only show playlists.  As far as I know it cannot be removed?  But it can be pinned.  Despite already being permalocked to the top.
-<img alt="" src="/media/dj.png" />
-The day after writing the previous paragraph, I noticed they added the DJ to the same section in the mobile app. In the mobile app a long press on the DJ icon does shows you an option to hide it, which seems to sync across all my devices.  Why is this option not available in the desktop client!</p>
-<h2 id="custom-playlist-sorting">Custom Playlist Sorting</h2>
-<p>For as long as I can remember you can order the playlists you have created/followed in any order along the left side of the desktop app. You can even put them in nested folders which is fantastic.  I have many playlists organised into folders in particular orders.  I know how to get to the playlist I want quickly because I have put it in a particular place. This custom order and "Recently played" are the only two i would ever want.</p>
-<p>Spotify seems to hate this use case.  To my knowledge its never been possible to rearrange order of playlists on the mobile app, only the desktop client.</p>
-<p>When you attempt to add a song to playlist on mobile, there isn't even an option to sort by recently played anymore.  This is diametrically opposed to desktop, where the right click menu will ONLY allow you to sort by custom order. </p>
-<p><img alt="" src="/media/no-custom-order.png" /></p>
-<h2 id="smart-shuffle-button-cycle-lock">Smart Shuffle Button Cycle Lock</h2>
-<p>Spotify has added a feature called Smart Shuffle that works like normal shuffling, but also adds recommended songs in-between ever few tracks in the queue.  On paper I like this feature, though I have never found myself actually using it. I was introduced to it through the following infuriating UX.</p>
-<p>I go the the Now Playing screen on the Android Spotify client. The playlist I am listening to is currently set to shuffle (regular shuffle), but I would like to turn off regular shuffle.  I press the button with a shuffle icon, which has for 10+ years been a single toggle that would instantly take effect.  Instead of a simple 2 option toggle, I find that it has been converted in to a 3 option cycle button, where pressing it cycles through the options of <code>Linear -&gt; Shuffle -&gt; Smart Shuffle -&gt; Linear</code>. I can see the thinking behind this decision, but it breaks muscle memory established all other music players for decades.  That is not my issue though.</p>
-<p>When you click the button and move the state from <code>Shuffle</code> to <code>Smart Shuffle</code>, the application begins loading the Smart Shuffle recommendations which means it must query Spotify servers, which is an operation that takes multiple seconds.  While this occurs, the button with a Shuffle icon becomes a button with a loading spinner, and becomes unclickable. I must wait multiple seconds before I can turn off Smart Shuffle.</p>
-<p><code>Linear -&gt; Shuffle -&gt; Loading (multiple seconds) -&gt; Smart Shuffle -&gt; Linear</code></p>
-<p>This is deeply infuriating.  I never even wanted to use Smart Shuffle in the first place and now I must wait for it.</p>
-<p>This occurred every time I wanted to turn off  <code>Shuffle</code>.  Which is a lot.</p>
-<p>As of 2024-01-21, this loading state of the button appears to have been removed, thankfully.</p>
-<h2 id="smart-shuffle-cycle-order">Smart Shuffle Cycle Order</h2>
-<p>Oh sorry did I say the order was <code>Linear -&gt; Shuffle -&gt; Smart Shuffle</code>?  Its actually <code>Linear -&gt; Smart Shuffle -&gt; Shuffle</code>.  Wait no go back.  Wait... it's a different order on my phone vs on desktop? This is real wtf.</p>
-<h2 id="smart-shuffle-popup">Smart Shuffle Popup</h2>
-<p>I clicked shuffle once and this came up. Thankfully it only ever appeared once on 2023-11-14, but it never should have in the first place. </p>
-<p><img alt="" src="/media/smart-shuffle-popup.png" /></p>
-<h2 id="overflow-menu-loading">Overflow Menu Loading</h2>
-<p>For some godforsaken reason, the overflow menu for a track sometimes appears to require a network request before it can show.  If this request is slow, it will show a loading spinner in place of the menu, until the server responds.  Or in some cases, the <strong>overflow menu will fail to load entirely</strong>.  This is insane, since for the most part, the options on this menu are identical.  This is doubly insane since the menu can load without any issue what-so-ever in offline mode.</p>
-<p>I have only ever experienced this issue on the Android mobile app, which for many years did not support swiping on a song to queue a song.  At this time you were only able to queue a song. through the overflow menu, which often times meant waiting multiple seconds for menu to appear.  God forbid you wanting to queue multiple songs in a row. Thankfully you can now bypass the menu loading by swiping a track to the right.</p>
-<p>Oh wait!</p>
-<h2 id="cant-swipe-to-queue-on-blend-playlists">Can't Swipe to Queue on Blend Playlists</h2>
-<p>On Android you cannot swipe to queue a playlist if the playlist is a blend playlist??? Why would this screen use a different component to represent a list of songs to every other screen in the app? </p>
-<video src='/media/blend-swiping.webm' controls></video>
-
-<h2 id="secret-sliding-menu">Secret Sliding Menu</h2>
-<p>This one I only just noticed now while typing this post. There is a sliding menu that appears if you click on your profile picture in the corner of any of the 3 main screens.  It seems a bit sparse, like it would be better suited to being a drop down? In any case this menu can actually be accessed from any playlist folder screen as well, despite there being no indication of this.  This only seems to work on playlist folder screens though, as it doesn't work for any other subpages.</p>
-<p>This one was annoying as I accidentally triggered in when attempting to swipe in from the left to go back a screen.</p>
-<video src='/media/sliding-menu.webm' controls></video>
-
-<h2 id="cant-swipe-up-to-access-player">Can't Swipe Up to Access Player</h2>
-<p>On Android you can swipe down on the player interface but you cannot swipe up to reveal it.  When you attempt this you will almost definitely skip the song that is currently playing, since the minimised version of the player only detects left and right swipes.</p>
-<video src='/media/swipe-up.webm' controls></video>
-
-<h2 id="top-bar-alignment">Top Bar Alignment</h2>
-<p>Who the fuck let this happen.</p>
-<p><img alt="" src="/media/spotify-top-bar.png" /></p>
-<h2 id="liked-songs-filters-are-actually-a-playlist">Liked Songs Filters Are Actually a Playlist</h2>
-<p>For years, if you used the text filter on your Liked Songs and then played one of the songs, the queue would only populate with songs that matched that filter.  This could be useful for only listening to a particular artist within your Liked Songs, but was usually just annoying.</p>
-<p>As of 2024 it appears this behaviour has been removed.</p>
-<h2 id="search-results-are-actually-a-playlist">Search Results Are Actually a Playlist</h2>
-<p>Similar to the previous issue, if you searched for a song using the search tab, and then played one of the results, the queue would populate with all the other search results meaning you would hear the same song repeated several times, or covers, or random other tracks with similar names.</p>
-<p>As of 2024 it appears this behaviour has been removed.</p>
-<h2 id="useless-music-video-indicator">Useless Music Video Indicator</h2>
-<p>They have added a subtitle and icon for songs with music videos, which looks like it is clickable or has some feature attached to it. But it just... doesn't?</p>
-<p><img alt="" src="/media/spotify-music-video.png" /></p>
-<h2 id="upcoming-complaints">Upcoming Complaints</h2>
-<ul>
-<li>Rapidly toggling through Shuffle button states can cause the cycle to desync in strange ways</li>
-<li>Spotify (regular) Shuffle algorithm has some problems</li>
-</ul>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/spotify-design-decisions</guid>
-            <pubDate>2024-03-17</pubDate>
-        </item>
-        
-        <item>
-            <title>Kinde Design Decisions</title>
-            <link>https://notes.zachmanson.com/kinde-design-decisions</link>
-            
-            <content:encoded>
-                <![CDATA[<p>This is a list of problems with the Kinde interface.</p>
-<h2 id="useless-dropdowns">Useless Dropdowns</h2>
-<p>This dropdown should list the environments instead of revealing a button to take you to a page that lists the environments. This is an unnecessary second click.</p>
-<p><img alt="" src="/media/kinde-1.png" /></p>
-<p>This also means you are unable to switch environment without losing the page you are on.</p>
-<h2 id="unclickable-icons">Unclickable Icons</h2>
-<p>For some reason the left facing chevron is not clickable, only the word "Home" is.</p>
-<p><img alt="" src="/media/kinde-2.png" /></p>
-<h2 id="bizarre-breadcrumbs">Bizarre Breadcrumbs</h2>
-<p>When you go to the "Users Profile" screen, the top left back icon doesn't take you back to the "Users" screen, but remains a "Home" button.</p>
-<p>The only way to navigate back is the the small grey "User" text above the user's name.</p>
-<p><img alt="" src="/media/kinde-3.png" /></p>
-<p>This is something that almost all basic websites can get right.  Breadcrumb navigation or consistent back behaviour would be vastly preferable here.</p>
-<p>There is little consistency between parts of the interface that are clickable and those that are not.  This makes navigating quite difficult.</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/kinde-design-decisions</guid>
-            <pubDate>2024-07-01</pubDate>
-        </item>
-        
-        <item>
-            <title>The H Chord</title>
-            <link>https://notes.zachmanson.com/the-h-chord</link>
-            
-            <description>How German monks broke my website</description>
-            
-            <content:encoded>
-                <![CDATA[<p>I received a <a href="https://github.com/pavo-etc/penultimate-guitar/issues/41">strange bug report</a> on <a href="/penultimate-guitar">Penultimate Guitar</a> where the Next.js rendering would fail completely on certain songs.</p>
-<h2 id="the-error">The Error</h2>
-<p>The type error was being triggered by a chord component, where the key was undefined. The chords are pulled from Ultimate Guitar, so I inspected the JSON payload from the <a href="https://tabs.ultimate-guitar.com/tab/1684995">original source</a>.</p>
-<p><img alt="" src="/media/ug.png" /></p>
-<p>Why the hell is there a <code>[ch]H[/ch]</code> chord in there? That's definitely the cause as I never accounted for non-existent keys. Looking at Ultimate Guitar, it renders as a B chord.</p>
-<p><img alt="" src="/media/ug-rendered.png" /></p>
-<p>Huh?</p>
-<details>
-<summary>An aside on Ultimate Guitar HTML</summary>
-<p>The way Ultimate Guitar handles data is bizarre. It passes a static dehydrated <a href="/html">HTML</a> page to the client.  The data payload is in the HTML as well, but instead of being contained in a <code>script</code> tag it's a giant JSON payload in an escaped string within an attribute of a random <code>div</code></p>
-</details>
-<h2 id="one-google-search-later">One Google Search Later</h2>
-<p>Germany and the Netherlands ha(d/ve) their own musical key notation that include(d/s) a H chord. <a href="https://www.guitarsite.com/newsletters/010122/12.shtml">This site</a> claims it ended in "1994/1995", though I've seen <a href="https://github.com/pavo-etc/penultimate-guitar/issues/41#issuecomment-1538452351">other</a> <a href="https://www.reddit.com/r/musictheory/comments/8rn0ve">sources</a> claim its still taught this way. This comes as an artefact of the bizarre history Western music notation, which is a problem I seem to keep running into recently in my attempts to learn more about music theory.</p>
-<blockquote>
-<p>I learned in music school that the chord is called "B" (like in the rest of the world), but the note is called "H" (eg. the C Major scale would be C, D, E, F, G, A, H, C).</p>
-</blockquote>
-<p><cite>TobTobXX, who reported the bug</cite></p>
-<h2 id="western-musics-stupid-origins">Western Music's Stupid Origins</h2>
-<p>Western music is based on ecclesiastic modes used in church in the early Middle Ages, which only used the diatonic notes of the C scale (<em>natural</em> notes). The musical notation systems of the time reflected this, not accounting for notes outside of the C scale. When sharps and flats later came into more common use, the existing notation systems needed a way to distinguish them from the natural notes they sat between.</p>
-<p>This problem first arose with B natural and B flat, according to the <a href="https://www.britannica.com/art/musical-expression">Encyclopedia Britannica</a>. The first method of distinguishing B from B flat was using two different forms of the lowercase "b" character:</p>
-<p><img alt="" src="/media/The-Flat-Sharp-And-Natural-A-Historical-Sketch.png" /></p>
-<p>Niecks, Frederick. “The Flat, Sharp, and Natural. A Historical Sketch.” <em>Proceedings of the Musical Association</em>, vol. 16, 1889, pp. 79–100.</p>
-<p>Somewhere along the line in Germany, monks transcribing these square and round "b" characters confused the squared "b" for "h", and this was later assumed to be intentional. "H" became a convention for writing B natural, while the "b" character remained convention for writing B flat. "B" and "b" became amalgamated, both coming to represent modern B flat.</p>
-<p>In the rest of the world, this "H" note didn't catch on.</p>
-<p>In time, notation for sharp and flat notes other than B flat was needed. This use of square and round "b" to denote B and B flat eventually evolved into our modern notation for indicating natural and non-natural, <em>accidentals</em>. ♭ comes from the round "b", while ♯ and ♮ come from the square "b".</p>
-<p>Somehow, Germany still hasn't fully corrected this mistake, continuing to use "H" to represent B natural in many places. Including Ultimate Guitar. Ugh.</p>
-<h2 id="resolution">Resolution</h2>
-<p>I don't love dealing with problems caused by the whims of millennia dead monks, but this was an interesting rabbit hole to fall into. The issue has since been patched, and I look forward to my mistakes ruining someone's day in 3023.</p>
-<p><img alt="" src="/media/gods-mistakes.png" /></p>
-<details>
-<summary>An aside on The Flat, Sharp, and Natural. A Historical Sketch</summary>
-<p>When I first copied the text from the article, it copied that "square b" as a "h". Funny that modern OCR technology makes the same mistakes at 1000 year old monks.</p>
-<blockquote>
-<p>The first known writer who distinguished between b natural and b flat was Odo of Clugny, who died in 942 ; the b natural being indicated by a square b (h), the b flat by a round b (b)</p>
-</blockquote>
-<p>It was also a pain in the ass to find a copy of that article. It's mostly found on paywalled academic sites despite the article definitely being out of copyright. Luckily the Internet Archive <a href="https://scholar.archive.org/work/3jdud373effq3e376gqtlkxqvq">has a copy</a>.</p>
-</details>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/the-h-chord</guid>
-            <pubDate>2023-05-08</pubDate>
         </item>
         
 
