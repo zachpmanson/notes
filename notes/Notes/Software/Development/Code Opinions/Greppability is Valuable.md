@@ -19,4 +19,4 @@ async def get(request: Request):
      
 ```
 
-Further reading: https://morizbuesing.com/blog/greppability-code-metric/
+Further reading: [Greppability is an underrated code metric](https://morizbuesing.com/blog/greppability-code-metric/)

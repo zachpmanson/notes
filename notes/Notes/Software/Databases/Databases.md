@@ -16,3 +16,4 @@ Someone else (someone smarter) did the hard work for us!
 ## Interesting Links
 
 - [Code in database vs. code in application](https://brandur.org/fragments/code-database-vs-app), a discussion on the pros and cons of having application login in triggers/stored procedures vs server code
+- [Create your own database](https://www.nan.fyi/database)
