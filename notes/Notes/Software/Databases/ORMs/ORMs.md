@@ -1,5 +1,5 @@
 ---
-subtitle: Maybe better than not?
+subtitle: A necessary evil.
 tags:
   - posts
 date: 2024-10-21
@@ -7,7 +7,7 @@ date: 2024-10-21
 Since databases usually only speak [[SQL]], a [[language]] that is not very nice to use, there have been many attempts at creating translation layers between database models and normal [[Programming Languages|programming language]] constructs. I have used a few of these.
 
 - [[Prisma]]
-	- Schema definition is really cool, with automatic diffing and migration creation. Having a single location for the entire database is nice.
+	- Schema definition is really cool, with automatic diffing and migration creation. Having a single location for the entire database is nice (although might break down with larger projects)
 	- Automatic type definitions are also really nice
 	- It's custom querying syntax is fine for simpler queries, but it lets you fall to normal SQL easily.
 	- Not having to manually write out models makes this very fun to use.
