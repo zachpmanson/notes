@@ -1,1 +1,2 @@
 - [Write tests. Not too many. Mostly integration.](https://kentcdodds.com/blog/write-tests)
+- [If you mock, are you even testing?](https://understandlegacycode.com/blog/if-you-mock-are-you-even-testing/)
