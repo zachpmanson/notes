@@ -18,6 +18,7 @@ subtitle: There is no magic.
 - [An app can be a home-cooked meal](https://www.robinsloan.com/notes/home-cooked-app/)
 - [How is computer programming different today than 20 years ago?](https://ssg.dev/how-is-computer-programming-different-today-than-20-years-ago-9d0154d1b6ce)
 - [On Long Term Software Development](https://berthub.eu/articles/posts/on-long-term-software-development/)
+- [Software Development in the Time of Strange New Angels](https://davegriffith.substack.com/p/software-development-in-the-time)
 
 ## Writeups
 

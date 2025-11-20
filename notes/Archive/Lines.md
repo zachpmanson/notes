@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> However, I suppose they caught on to the unpatchable strategy of Having Friends
+
+-- [Andrew Moses](https://www.amoses.dev/blog/wifi-location/)
+
+---
+
 > Long week, long month, long life
 
 -- John Green/David Leviathan, Will Grayson, Will Grayson
