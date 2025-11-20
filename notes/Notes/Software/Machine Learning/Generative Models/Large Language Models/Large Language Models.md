@@ -27,6 +27,7 @@ A more comprehensive list of models:
 ## Interesting Articles
 
 - [We Have No Moat, And Neither Does OpenAI](https://www.semianalysis.com/p/google-we-have-no-moat-and-neither), a leaked internal Google document about the success of open source models and how to change their approach against OpenAI
+- [Kinds of Stealing](https://seths.blog/2025/11/kinds-of-stealing/)
 
 ## Links
 
