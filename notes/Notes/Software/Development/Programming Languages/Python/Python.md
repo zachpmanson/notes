@@ -18,3 +18,4 @@
 - [Adding Syntax to CPython](https://leontrolski.github.io/grammar.html)
 - [Why if TYPE_CHECKING?](https://vickiboykis.com/2023/12/11/why-if-type_checking/)
 - [The fastest way to detect a vowel in a string](https://austinhenley.com/blog/vowels.html)
+- [How to Benchmark (Python) Code](https://switowski.com/blog/how-to-benchmark-python-code/)
