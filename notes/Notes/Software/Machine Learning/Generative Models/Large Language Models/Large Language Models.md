@@ -35,3 +35,4 @@ A more comprehensive list of models:
 - [LLM Tracker](https://docs.google.com/spreadsheets/d/1kT4or6b0Fedd-W_jMwYpb63e1ZR3aePczz3zlbJW-Y4), a spreadsheet detailing the different LLMs and their properties
 - [Brex's Prompt Engineering Guide](https://github.com/brexhq/prompt-engineering)
 - [The Secret Sauce behind 100K context window in LLMs: all tricks in one place](https://blog.gopenai.com/how-to-speed-up-llms-and-use-100k-context-window-all-tricks-in-one-place-ffd40577b4c)
+- [Signs of AI Writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing)
