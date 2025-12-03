@@ -12,6 +12,7 @@ subtitle: A comic strip by Randall Munroe.
 - [Is It Worth the Time?](https://xkcd.com/1205/)
 - [Python Environment](https://xkcd.com/1987/)
 - [Dependency](https://xkcd.com/2347/)
+- [Fifteen Years](https://xkcd.com/3172/)
 ## Other Links
 
 - [How Random is xkcd?](https://hardmath123.github.io/xkcd-random.html)
