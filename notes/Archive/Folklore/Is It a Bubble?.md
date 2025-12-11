@@ -283,7 +283,7 @@ As to the final bullet point, see the table below, which comes from Goldman Sach
 ![Exhibit 7](https://www.oaktreecapital.com/images/oaktreecaplibraries/insights/memos/commentary/is-it-a-bubble-exhibit7.jpg?sfvrsn=d6aa2866_2)
 
 
-In Conclusion
+## In Conclusion
 
 For my final citation, I’ll look to Sam Altman of OpenAI. His comments seem to me to capture the essence of what’s going on:
 
