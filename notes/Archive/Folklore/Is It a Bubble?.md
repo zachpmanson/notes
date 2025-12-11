@@ -257,7 +257,7 @@ One of the things occupying many observers at this juncture – including me –
 
 Derek Thompson, who supplied the quote with which I opened this memo, ended his newsletter with some terrific historical perspective:
 
-The railroads were a bubble and they transformed America. Electricity was a bubble, and it transformed America. The broadband build-out of the late-1990s was a bubble that transformed America. I am not rooting for a bubble, and quite the contrary, I hope that the US economy doesn’t experience another recession for many years. **But given the amount of debt now flowing into AI data center construction, I think it’s unlikely that AI will be the first transformative technology that isn’t overbuilt and doesn’t incur a brief painful correction.** (“AI Could Be the Railroad of the 21st Century. Brace Yourself.” November 4 – emphasis added)
+> The railroads were a bubble and they transformed America. Electricity was a bubble, and it transformed America. The broadband build-out of the late-1990s was a bubble that transformed America. I am not rooting for a bubble, and quite the contrary, I hope that the US economy doesn’t experience another recession for many years. **But given the amount of debt now flowing into AI data center construction, I think it’s unlikely that AI will be the first transformative technology that isn’t overbuilt and doesn’t incur a brief painful correction.** (“AI Could Be the Railroad of the 21st Century. Brace Yourself.” November 4 – emphasis added)
 
 The skeptics readily cite ways in which today’s events are comparable to the internet bubble:
 
