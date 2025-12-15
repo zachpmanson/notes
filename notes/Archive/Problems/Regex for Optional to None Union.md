@@ -1,3 +1,5 @@
+For VS Code find and replace regex.
+
 ```
 Optional\[((?:[^[\]]|\[(?:[^[\]]|\[[^\]]*\])*\])*)\]
 
