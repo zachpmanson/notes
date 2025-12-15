@@ -315,7 +315,7 @@ def format_tags(taglist):
     """Formats tags and adds them to the tags object"""
     global current_node
     # formatted_tags = []
-    for tag in taglist:
+    for tag in (taglist or []):
         if tag in tags.keys():
             tags[tag].add(current_node)
         else:
