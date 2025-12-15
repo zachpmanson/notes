@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> Any sufficiently familiar technology is indistinguishable from nature.
+
+-- Virginia Postrel
+
+---
+
 > If you have the disposable income to pay to remove advertising, you are exactly the market segment advertisers want to reach. They will always be willing to pay to outbid that segment’s own desire to not see ads.
 
 -- [Tim Raymond](https://news.ycombinator.com/item?id=46193402)
