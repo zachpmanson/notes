@@ -120,43 +120,7 @@
       <h1>A necessary evil.</h1>
     </header>
 
-    <article><p>Since databases usually only speak <a href="/sql">SQL</a>, a <a href="/language">language</a> that is not very nice to use, there have been many attempts at creating translation layers between database models and normal <a href="/programming-languages">programming language</a> constructs. I have used a few of these.</p>
-<ul>
-<li><a href="/prisma">Prisma</a><ul>
-<li>Schema definition is really cool, with automatic diffing and migration creation. Having a single location for the entire database is nice (although might break down with larger projects)</li>
-<li>Automatic type definitions are also really nice</li>
-<li>It's custom querying syntax is fine for simpler queries, but it lets you fall to normal SQL easily.</li>
-<li>Not having to manually write out models makes this very fun to use.</li>
-<li>Because it limits the scope of what it attempts to do, it avoids the pitfalls of most ORMs</li>
-<li>Doesn't do anything for data migrations, other than give you an SQL file to fill out yourself. I kind of... respect this more? Other data migration tools end up becoming this just nested within other languages constructs (looking at you Alembic)<ul>
-<li>procedural SQL is awful but also kind of the only thing you can trust</li>
-</ul>
-</li>
-<li>makes transactions very straightforward</li>
-</ul>
-</li>
-<li><a href="/sqlalchemy">SQLAlchemy</a><ul>
-<li>uhhhh</li>
-<li>Very big, tries to do a lot of different things.</li>
-<li>Does an admirable job.</li>
-<li>Suffers standard ORM problems, annoying to have to manually match Python objects to Database objects</li>
-<li>Doesn't do shit for type definitions that I didn't write myself. (update SQLAlchemy v2 is much better for this, v1 is poor)</li>
-<li>Custom query syntax allows you to do complex things, but requires a lot of relearning how to do things that would be very straightforward in SQL.</li>
-<li>It gives you plenty of deep tools that let you shoot yourself in the foot.</li>
-<li>this + Alembic for revisions is.... okay<ul>
-<li>it bothers me that it doesn't use timestamps in the filename of each revision</li>
-<li>but it works</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>TypeORM<ul>
-<li>similar to SQLAlchemy</li>
-<li>really I just never want to have to use anything that requires manual model creation anymore</li>
-</ul>
-</li>
-</ul>
-<p>Really all I want is something that can automatically create type definitions for database tables and automatically create migrations that I can later edit. In terms of querying syntax, I only want to use it for simple queries, and prefer an ORM that knows this and gets out of my way when I want to rawdog the database. (this is why I like using Prisma)</p></article>
+    <article><p>Since databases usually only speak <a href="/sql">SQL</a>, a <a href="/language">language</a> that is not very nice to use, there have been many attempts at creating translation layers between database models and normal <a href="/programming-languages">programming language</a> constructs.</p></article>
   </main>
 
   <footer>
@@ -164,10 +128,10 @@
       <summary>
         <div class="footer-row">
           
-          <date>2024-10-21</date>
+          meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/file-over-app" class="not-extra-small">random</a>
+          <a href="/seleniumbasic" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Databases/ORMs/ORMs.md" class="desktop">edit</a>
@@ -178,7 +142,7 @@
       <div class="extra-small">
         <div class="footer-row">
           <a href="/sitemap">sitemap</a>
-          <a href="/file-over-app">random</a>
+          <a href="/seleniumbasic">random</a>
         </div>
       </div>
 
@@ -195,29 +159,14 @@
       
 
       
-      <p class="backlinks"><strong> <a href="/tags">Tags:</a></strong>
-        
-        <a href="/tags#posts">#posts</a>
-        
-        </span>
-      </p>
-      
       <p>
-        
-        <span class="backlinks">
-          <strong>
-            Posted:
-          </strong>
-          <date>2024-10-21</date>
-
-        </span>
         
 
         <span class="backlinks">
           <strong>
             Updated:
           </strong>
-          <date>2025-10-27</date>
+          <date>2025-11-11</date>
         </span>
 
       </p>
