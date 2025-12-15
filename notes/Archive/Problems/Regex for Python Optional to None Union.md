@@ -1,4 +1,4 @@
-For VS Code find and replace regex.
+For VS Code find and replace regex for [[Python]] type hints.
 
 ```
 Optional\[((?:[^[\]]|\[(?:[^[\]]|\[[^\]]*\])*\])*)\]
