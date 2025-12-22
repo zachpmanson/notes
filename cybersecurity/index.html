@@ -151,18 +151,26 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/unique-constraint-in-pgadmin" class="not-extra-small">random</a>
+          <a href="/mui-textfield-border" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
-          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Cybersecurity/Cybersecurity.md" class="desktop">edit</a>
-          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Cybersecurity/Cybersecurity.md" class="mobile">edit</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Cybersecurity'">reply</a>
         </div>
       </summary>
-      <div class="extra-small">
-        <div class="footer-row">
-          <a href="/sitemap">sitemap</a>
-          <a href="/unique-constraint-in-pgadmin">random</a>
+      <div class="footer-row">
+        <input type="radio" name="theme" id="theme-system" class="invisible" checked>
+        <label for="theme-system" class="nonsystem-only"><a>system</a></label>
+
+        <input type="radio" name="theme" id="theme-light" class="invisible">
+        <label for="theme-light" class="dark-only"><a>light</a></label>
+
+        <input type="radio" name="theme" id="theme-dark" class="invisible">
+        <label for="theme-dark" class="light-only"><a>dark</a></label>
+        
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Cybersecurity/Cybersecurity.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Cybersecurity/Cybersecurity.md" class="mobile">edit</a>
+          <a href="/sitemap" class="extra-small">sitemap</a>
+          <a href="/mui-textfield-border" class="extra-small">random</a>
         </div>
       </div>
 
@@ -207,6 +215,21 @@
     });
     scrollActivatedLinksIntoView();
   </script>
+  <script type="module">
+      if (localStorage?.getItem("theme") === "dark") {
+        document.querySelector("#theme-dark").checked = true;
+      } else if (localStorage?.getItem("theme") === "light") {
+        document.querySelector("#theme-light").checked = true;
+      }
+
+      function setTheme(theme) {
+        localStorage.setItem("theme", theme);
+      }
+      document.querySelectorAll("#theme-system").forEach(el => el.addEventListener("click", () => setTheme(undefined)));
+      document.querySelectorAll("#theme-light").forEach(el => el.addEventListener("click", () => setTheme("light")));
+      document.querySelectorAll("#theme-dark").forEach(el => el.addEventListener("click", () => setTheme("dark")));
+  </script>
+
 </body>
 
 </html>
