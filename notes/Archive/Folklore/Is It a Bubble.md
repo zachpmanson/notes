@@ -1,3 +1,7 @@
+---
+subtitle: Is It a Bubble?
+---
+
 Howard Marks writing on AI, [published on 2025-12-09](https://www.oaktreecapital.com/insights/memo/is-it-a-bubble).
 
 ---
