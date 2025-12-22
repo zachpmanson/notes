@@ -1,17 +1,56 @@
 :root {
   color-scheme: light dark;
   --primary: light-dark(black, white);
-  --sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
-    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
-    sans-serif;
-  --serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman,
-    Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji,
-    Segoe UI Emoji, Segoe UI Symbol;
+  --background: light-dark(white, #1c1b22);
+  --light-only: light-dark(revert, none);
+  --dark-only: light-dark(none, revert);
+  --nonsystem-only: none;
+
+  --sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu,
+    roboto, noto, arial, sans-serif;
+  --serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   --mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+}
+
+:root:has(#theme-dark:checked) {
+  --primary: white;
+  --background: #1c1b22;
+  --light-only: none;
+  --dark-only: revert;
+  --nonsystem-only: revert;
+
+  svg,
+  img[src$=".svg"] {
+    filter: invert(1);
+  }
+}
+:root:has(#theme-light:checked) {
+  --primary: black;
+  --background: white;
+  --light-only: revert;
+  --dark-only: none;
+  --nonsystem-only: revert;
+
+  svg,
+  img[src$=".svg"] {
+    filter: unset;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:has(#theme-system:checked) {
+    svg,
+    img[src$=".svg"] {
+      filter: invert(1);
+    }
+  }
 }
 
 * {
   box-sizing: border-box;
+  /* transition: background-color 0.3s ease, color 0.3s ease; */
+  /* transition: color 0.3s ease, color 0.3s ease; */
 }
 
 body {
@@ -19,6 +58,8 @@ body {
   font-family: var(--sans);
   text-align: center;
   line-height: 1.4;
+  background-color: var(--background);
+  color: var(--primary);
 }
 
 main {
@@ -364,13 +405,12 @@ table {
   margin: 0.5rem 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  svg {
-    filter: invert(1);
-  }
-  img[src$=".svg"] {
-    filter: invert(1);
-  }
+.extra-small {
+  display: none;
+}
+
+.not-extra-small {
+  display: initial;
 }
 
 .desktop {
@@ -381,12 +421,20 @@ table {
   display: none;
 }
 
-.extra-small {
+.invisible {
   display: none;
 }
 
-.not-extra-small {
-  display: initial;
+.light-only {
+  display: var(--light-only);
+}
+
+.dark-only {
+  display: var(--dark-only);
+}
+
+.nonsystem-only {
+  display: var(--nonsystem-only);
 }
 
 @media (max-width: 768px) {
