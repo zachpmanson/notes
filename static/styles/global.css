@@ -24,6 +24,11 @@
   img[src$=".svg"] {
     filter: invert(1);
   }
+
+  ::selection {
+    background-color: #3f638b;
+    color: var(--primary);
+  }
 }
 :root:has(#theme-light:checked) {
   --primary: black;
@@ -35,6 +40,11 @@
   svg,
   img[src$=".svg"] {
     filter: unset;
+  }
+
+  ::selection {
+    background-color: #b4d5ff;
+    color: var(--primary);
   }
 }
 
