@@ -39,6 +39,7 @@ Problems that arise from this:
 			- You only want your own website to be able to send your server requests (CORS)
 				- You want other websites to send your server requests (CORS)
 		- JavaScript is really annoying and varies between browsers (JQuery)
+			- some new JavaScript features are really nice but old browsers don't support them (polyfills, Babel, Lebab)
 		- Even with JQuery, complex applications become pretty hard to manage (JavaScript libraries for complex web applications, AngularJS, [[React]], many many more)
 			- These libraries are so nice we want to use them for everything instead of gross HTML (JS managed routing, React Router, single page applications)
 			- Interface design with CSS kinda sucks for especially for complex applications (SASS, Tailwind, prebuilt UI component libraries, Styled Components)
