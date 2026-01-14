@@ -50,7 +50,7 @@ Problems that arise from this:
 					- Your server now needs to run JavaScript, which is probably only possible using Node.js
 					- This is great for basic applications but starts to get awkward when you have complex data structures and component structures as you need to know all data requirements at a route level rather than a component level
 						- Server components allow server side rendering on a component level, by running some of the rendering code on the backend, populating it with data, and slotting that wholesale into a SPA (React Server Components)
-		- This language you've been using JavaScript has constant type errors, if only you could specify types ([[TypeScript]])
+		- This language you've been using JavaScript has constant type errors, if only you could specify types ([[TypeScript]], Flow)
 		- Both JavaScript and TypeScript are bad at actually representing HTML (JSX)
 	- Your marketing team wants a website they can control without writing code (CMS, Wordpress, many more)
 		- They want it on the same domain name (server routing configuration, e.g. Nginx conf)
