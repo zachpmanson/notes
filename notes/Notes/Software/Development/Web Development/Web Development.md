@@ -71,7 +71,6 @@ Problems that arise from this:
 - Frontend
 	- [The single most impor­tant factor that dif­fer­enti­ates front-end frame­works](https://themer.dev/blog/the-single-most-important-factor-that-differentiates-front-end-frameworks)
 - [Everyone Has JavaScript, Right?](https://www.kryogenix.org/code/browser/everyonehasjs.html)
-- [The Web's Grain](https://frankchimero.com/blog/2015/the-webs-grain/)
 - [My love letter to front-end web development](https://bower.sh/my-love-letter-to-front-end-web-development)
 - [Handling Cookies is a Minefield](https://grayduck.mn/2024/11/21/handling-cookies-is-a-minefield/)
 - [Creating PWAs](https://blog.heroku.com/how-to-make-progressive-web-app)
