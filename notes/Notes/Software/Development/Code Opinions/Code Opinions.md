@@ -1,7 +1,7 @@
 ---
 subtitle: Zach's Strong Code Opinions (fight me)
 tags:
-  - "#venting"
+  - venting
   - posts
 date: 2025-10-14
 ---
