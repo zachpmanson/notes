@@ -7,7 +7,7 @@ date: 2025-10-14
 ---
 > Break any of these rules sooner than say anything outright barbarous.
 
-— George Orwell
+-- George Orwell
 
 This whole website is a living document, but this page is especially living. These are strong beliefs that are weakly held, I'm certain many of these will change over time.
 
