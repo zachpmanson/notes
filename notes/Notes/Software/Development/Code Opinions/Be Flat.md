@@ -1,0 +1,1 @@
+Ceteris paribus, prefer flatter function call trees.
