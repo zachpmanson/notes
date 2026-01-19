@@ -2,6 +2,7 @@
 - [TWO HUNDRED FIFTY THINGS AN ARCHITECT SHOULD KNOW](https://www.readingdesign.org/250-things)
 - [List of lists of lists](https://en.wikipedia.org/wiki/List_of_lists_of_lists)
 - [List of nuclear close calls](https://en.wikipedia.org/wiki/List_of_nuclear_close_calls)
+- [List of long place names](https://en.wikipedia.org/wiki/List_of_long_place_names)
 - [Devine Lu Linvega's Bookmarks](https://wiki.xxiivv.com/site/bookmarks.html)
 - [List of lists of falsehoods programmers believe](https://github.com/kdeldycke/awesome-falsehood)
 - [Historical Tech Tree](https://www.historicaltechtree.com/), a graph of technologies that let to other technologies
