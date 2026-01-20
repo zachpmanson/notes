@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> Nostalgia is not a strategy
+
+-- Mark Carney
+
+---
+
 > Any sufficiently familiar technology is indistinguishable from nature.
 
 -- Virginia Postrel
