@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+>  I totally get that there are amazing people out there who would give me plenty of runway, but what I’m building toward isn’t financially defensible. It’s not a moat. It’s a life raft.
+
+-- [Steve Yegge](https://steve-yegge.medium.com/steveys-birthday-blog-34f437139cb5)
+
+---
+
 > Nostalgia is not a strategy
 
 -- Mark Carney
