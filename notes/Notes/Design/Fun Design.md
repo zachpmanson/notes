@@ -21,3 +21,7 @@ the comic strip design of [anhvn.com](https://anhvn.com/)
 everything on [maxbo.me](https://maxbo.me/)
 
 ![[maxbo.jpeg]]
+
+village cinemas text colour a loading indicator
+
+![[village-cinemas.png]]
