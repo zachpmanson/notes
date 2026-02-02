@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/_static/styles/global.css" />
+  <link rel="stylesheet" href="/_static/styles/code.css" />
+
+  <link rel="icon" href="/_static/icon/favicon.svg" type="image/svg+xml">
+
+  <link rel="alternate" type="application/rss+xml" href="https://notes.zachmanson.com/posts.xml" title="notes: posts" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: slack design decisions</title>
+</head>
+
+<body>
+  <nav>
+    <div class="main-icon">
+      <a href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
+          viewBox="26.88 56.87 216.25 156.27">
+          <path
+            style="stroke-width: 15px; stroke-linecap: butt; stroke-linejoin: round; stroke: rgb(10, 10, 10); fill: none;"
+            d="M135,75 A60,60 0 0,0 75,135 A60,60 0 0,0 135,195 A60,60 0 0,0 195,135 A60,60 0 0,0 135,75 M45,90 A15,15 0 0,1 60,75 A15,15 0 0,1 75,90 L75,135 L75,180 A15,15 0 0,1 60,195 A15,15 0 0,1 45,180 M225,90 A15,15 0 0,0 210,75 A15,15 0 0,0 195,90 L195,135 L195,180 A15,15 0 0,0 210,195 L210,195 A15,15 0 0,0 225,180 M135,105 A30,30 0 0,1 165,135 A30,30 0 0,1 135,165 A30,30 0 0,1 105,135 A30,30 0 0,1 135,105 M45,105 L45,105 L45,165 M225,105 L225,105 L225,165 ">
+          </path>
+        </svg>
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
+      <div class="nav-segments">
+        
+        <div class="nav-links piblings">
+          
+          
+          
+          <a href="/art">Art</a>
+          
+          
+          
+          <a href="/courses">Courses</a>
+          
+          
+          
+          <a href="/cybersecurity">Cybersecurity</a>
+          
+          
+          
+          <a href="/design" class="activated-link">Design</a>
+          
+          
+          
+          <a href="/hardware">Hardware</a>
+          
+          
+          
+          <a href="/language">Language</a>
+          
+          
+          
+          <a href="/mathematics">Mathematics</a>
+          
+          
+          
+          <a href="/miscellany">Miscellany</a>
+          
+          
+          
+          <a href="/music">Music</a>
+          
+          
+          
+          <a href="/networks">Networks</a>
+          
+          
+          
+          <a href="/software">Software</a>
+          
+          
+          
+          <a href="/time">Time</a>
+          
+          
+        </div>
+        
+
+        
+        <div class="nav-links siblings">
+          
+          
+          
+          <a href="/dark-mode">Dark Mode</a>
+          
+
+          
+          
+          <a href="/fun-design">Fun Design</a>
+          
+
+          
+          
+          <a href="/kinde-design-decisions">Kinde Design Decisions</a>
+          
+
+          
+          
+          <a href="/slack-design-decisions" class="activated-link">Slack Design Decisions</a>
+          
+
+          
+          
+          <a href="/spotify-design-decisions">Spotify Design Decisions</a>
+          
+
+          
+          
+          <a href="/typography">Typography</a>
+          
+
+          
+          
+          <a href="/web-design">Web Design</a>
+          
+
+          
+        </div>
+        
+
+        
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header>
+      <h1>Slack Design Decisions</h1>
+    </header>
+
+    <article><h2 id="anonymous-group-chats">Anonymous Group Chats</h2>
+<p>Group chats cannot be named, they are only listed by the members in the group chat listed alphabetically and comma separated. This makes differentiating group chats that share members from each other.</p>
+<p><img alt="" src="/media/slack-group-names.png" /></p>
+<p>I assume this is to funnel users into using channels, but there are many short term conversations that don't necessarily fit into channels well, I feel that group chats are inevitable. If they wanted to funnel people I would go one step further and not allow group chats at all.</p>
+<p>If I don't have the group chat members memorised for the conversation I am looking for, I need to click around through all of them till I find it.</p>
+<p>This is compounded by another (great) feature: when a new person is added to a group chat, you can granularly select what part of the message history they are able to view.</p>
+<p><img alt="" src="/media/slack-conversation-forking.png" /></p>
+<p>Some of these options result in "message transfers", where instead of adding the new person to the group, it creates a fork of the group chat with all the original members plus the new ones, containing only the messages that the new person is allowed to see. The messages from the original group chat disappear. If I was not the person who created the forked group chat, its easy to lose track of what message is where</p>
+<p>This is compounded further by the next problem:</p>
+<h2 id="direct-messaging-order">Direct Messaging Order</h2>
+<p>Slack shows direct messages ordered by:</p>
+<ol>
+<li>Unread messages</li>
+<li>Alphabetical</li>
+</ol>
+<p>This is unhinged and unlike every single other messaging app ever made. It means that clicking a conversation immediately moves the conversation as it is no longer "unread" and cannot be at the top anymore.</p>
+<p><img alt="" src="/media/slack-dm-moving.mov" /></p>
+<p>To my brain this feels very unintuitive, and it makes it difficult to find recent messages that I've already ordered. This is doubly bad for group chats, triply bad for forked group chats.</p>
+<p>Slack has a seperate DM screen that functions like a normal messaging app, the alphabetical order is only on the homescreen. I cannot justify this difference.</p></article>
+  </main>
+
+  <footer>
+    <details>
+      <summary>
+        <div class="footer-row">
+          
+          meta
+          
+          <a href="/recent-changes">recent</a>
+          <a href="/large-language-models" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'Slack Design Decisions'">reply</a>
+        </div>
+      </summary>
+      <div class="footer-row">
+        <input type="radio" name="theme" id="theme-system" class="invisible" checked>
+        <label for="theme-system" class="nonsystem-only"><a>system</a></label>
+
+        <input type="radio" name="theme" id="theme-light" class="invisible">
+        <label for="theme-light" class="dark-only"><a>light</a></label>
+
+        <input type="radio" name="theme" id="theme-dark" class="invisible">
+        <label for="theme-dark" class="light-only"><a>dark</a></label>
+        
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Design/Slack Design Decisions.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Design/Slack Design Decisions.md" class="mobile">edit</a>
+          <a href="/sitemap" class="extra-small">sitemap</a>
+          <a href="/large-language-models" class="extra-small">random</a>
+        </div>
+      </div>
+
+      
+
+      <p class="backlinks"><strong>Incoming:</strong>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
+      
+
+      
+      <p>
+        
+
+        <span class="backlinks">
+          <strong>
+            Updated:
+          </strong>
+          <date>2026-02-03</date>
+        </span>
+
+      </p>
+    </details>
+
+  </footer>
+  
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+
+    function checkVisible(el) {
+      let rect = el.getBoundingClientRect();
+      let viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+      return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+    }
+
+
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        if (checkVisible(link.parentElement)) {
+          link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+        }
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 350);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
+  <script type="module">
+      if (localStorage?.getItem("theme") === "dark") {
+        document.querySelector("#theme-dark").checked = true;
+      } else if (localStorage?.getItem("theme") === "light") {
+        document.querySelector("#theme-light").checked = true;
+      }
+
+      function setTheme(theme) {
+        localStorage.setItem("theme", theme);
+      }
+      document.querySelectorAll("#theme-system").forEach(el => el.addEventListener("click", () => setTheme(undefined)));
+      document.querySelectorAll("#theme-light").forEach(el => el.addEventListener("click", () => setTheme("light")));
+      document.querySelectorAll("#theme-dark").forEach(el => el.addEventListener("click", () => setTheme("dark")));
+  </script>
+
+</body>
+
+</html>
