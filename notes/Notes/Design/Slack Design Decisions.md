@@ -1,7 +1,7 @@
 
 ## Anonymous Group Chats
 
-Group chats cannot be named, they are only listed by the members in the group chat listed alphabetically and comma separated. This makes differentiating group chats that share members from each other.
+Group chats cannot be named, they are only listed by the members in the group chat listed alphabetically and comma separated. This makes differentiating group chats that share members from each other very difficult.
 
 ![[slack-group-names.png]]
 
