@@ -26,7 +26,7 @@ Slack shows direct messages ordered by:
 
 This is unhinged and unlike every single other messaging app ever made. It means that clicking a conversation immediately moves the conversation as it is no longer "unread" and cannot be at the top anymore.
 
-![[slack-dm-moving.mov]]
+![[slack-dm-moving.webm]]
 
 
 To my brain this feels very unintuitive, and it makes it difficult to find recent messages that I've already ordered. This is doubly bad for group chats, triply bad for forked group chats.
