@@ -13,7 +13,7 @@ This is compounded by another (great) feature: when a new person is added to a g
 
 ![[slack-conversation-forking.png]]
 
-Some of these options result in "message transfers", where instead of adding the new person to the group, it creates a fork of the group chat with all the original members plus the new ones, containing only the messages that the new person is allowed to see. The messages from the original group chat disappear. If I was not the person who created the forked group chat, its easy to lose track of what message is where
+Some of these options result in "message transfers", where instead of adding the new person to the group, it creates a fork of the group chat with all the original members plus the new ones, containing only the messages that the new person is allowed to see. The messages from the original group chat disappear. If I was not the person who created the forked group chat, its easy to lose track of what message is where.
 
 This is compounded further by the next problem:
 
