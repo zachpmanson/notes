@@ -5,6 +5,10 @@ tags:
   - venting
   - dirty-hacks
 ---
+**Update 2026-02-04: There is now native support for infinite scrolling-style loading patterns.** See the [announcement here](https://github.com/reduxjs/redux-toolkit/releases/tag/v2.6.0) and the [docs here](https://redux-toolkit.js.org/rtk-query/usage/infinite-queries).
+
+---
+
 RTK Query with [[Notes/Software/Development/Web Development/React]] is pretty great! The primary pattern you find yourself using with it is: 
 
 1. writing a small API definition that provides 
