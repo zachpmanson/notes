@@ -5,4 +5,4 @@ To compile NetNewsWire I needed a developer organisation but I did not want to p
 3. Personal Team
 4. Mange Certificates
 5. Create a new certificate
-6. Now it can be viewed in Keychain Access
+6. Now it can be viewed in Keychain Access]
