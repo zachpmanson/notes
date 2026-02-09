@@ -4,10 +4,13 @@ Things I'm currently working on in piano.
 <input type="checkbox"> G scale  
 <input type="checkbox"> Sweden  
 <input type="checkbox"> Wet Hands  
-<input type="checkbox"> Hooked on a feeling  
+<input type="checkbox"> Hooked on a Feeling  
 <input type="checkbox"> Auld Lang Syne  
 
+**Left Hand 2 Octave Fingering for C Major:**
 
+5 4 3 2 1 3 2 1 4 3 2 1 3 2 1
 
-![C major scale bass clef piano fingering](https://www.piano-lessons-info.com/images/xCScale-Lh2o.jpg.pagespeed.ic.tiey_1tIUo.jpg "C major scale bass clef piano fingering")
-![C Major Scale on Piano Fingering  Treble Clef](https://www.piano-lessons-info.com/images/xCScale-rh2o.jpg.pagespeed.ic.eDfbAbWCWP.jpg "C Major Scale on Piano Fingering  Treble Clef")
+**Right Hand 2 Octave Fingering for C Major:**
+
+1 2 3 1 2 3 4 1 2 3 1 2 3 4 5
