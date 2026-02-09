@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/_static/styles/global.css" />
+  <link rel="stylesheet" href="/_static/styles/code.css" />
+
+  <link rel="icon" href="/_static/icon/favicon.svg" type="image/svg+xml">
+
+  <link rel="alternate" type="application/rss+xml" href="https://notes.zachmanson.com/posts.xml" title="notes: posts" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: the graphing calculator story</title>
+</head>
+
+<body>
+  <nav>
+    <div class="main-icon">
+      <a href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
+          viewBox="26.88 56.87 216.25 156.27">
+          <path
+            style="stroke-width: 15px; stroke-linecap: butt; stroke-linejoin: round; stroke: rgb(10, 10, 10); fill: none;"
+            d="M135,75 A60,60 0 0,0 75,135 A60,60 0 0,0 135,195 A60,60 0 0,0 195,135 A60,60 0 0,0 135,75 M45,90 A15,15 0 0,1 60,75 A15,15 0 0,1 75,90 L75,135 L75,180 A15,15 0 0,1 60,195 A15,15 0 0,1 45,180 M225,90 A15,15 0 0,0 210,75 A15,15 0 0,0 195,90 L195,135 L195,180 A15,15 0 0,0 210,195 L210,195 A15,15 0 0,0 225,180 M135,105 A30,30 0 0,1 165,135 A30,30 0 0,1 135,165 A30,30 0 0,1 105,135 A30,30 0 0,1 135,105 M45,105 L45,105 L45,165 M225,105 L225,105 L225,165 ">
+          </path>
+        </svg>
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
+      <div class="nav-segments">
+        
+        <div class="nav-links piblings">
+          
+          
+          
+          <a href="/bookmarks">Bookmarks</a>
+          
+          
+          
+          <a href="/fiction">Fiction</a>
+          
+          
+          
+          <a href="/folklore" class="activated-link">Folklore</a>
+          
+          
+          
+          <a href="/lines">Lines</a>
+          
+          
+          
+          <a href="/problems">Problems</a>
+          
+          
+          
+          <a href="/templates">Templates</a>
+          
+          
+        </div>
+        
+
+        
+        <div class="nav-links siblings">
+          
+          
+          
+          <a href="/10-rules-of-internet">10 Rules of Internet</a>
+          
+
+          
+          
+          <a href="/a-conspiracy-to-kill-ie6">A Conspiracy To Kill IE6</a>
+          
+
+          
+          
+          <a href="/a-story-about-magic">A Story About 'Magic'</a>
+          
+
+          
+          
+          <a href="/alice-in-modeland">Alice in Modeland</a>
+          
+
+          
+          
+          <a href="/aliens-and-calendars">Aliens and Calendars</a>
+          
+
+          
+          
+          <a href="/amazons-first-job-posting">Amazon's First Job Posting</a>
+          
+
+          
+          
+          <a href="/an-update-on-facebook-video-marketing-metrics">An Update on Facebook Video Marketing Metrics</a>
+          
+
+          
+          
+          <a href="/bell-labs-productivity-mystery">Bell Labs' Productivity Mystery</a>
+          
+
+          
+          
+          <a href="/best-practices-for-time-travellers">Best Practices for Time Travellers</a>
+          
+
+          
+          
+          <a href="/bill-gates-tries-to-install-windows-movie-maker">Bill Gates Tries To Install Windows Movie Maker</a>
+          
+
+          
+          
+          <a href="/bill-gates-wrote-fat-on-an-airplane">Bill Gates Wrote FAT on an Airplane</a>
+          
+
+          
+          
+          <a href="/blinkenlichten">Blinkenlichten</a>
+          
+
+          
+          
+          <a href="/c-locale-braindeath">C Locale Braindeath</a>
+          
+
+          
+          
+          <a href="/cannot-simultaneously-fix-and-keep-job.-therefore-wont-fix.">Cannot simultaneously fix and keep job. Therefore, won't fix.</a>
+          
+
+          
+          
+          <a href="/christ-mcdonald">Christ McDonald</a>
+          
+
+          
+          
+          <a href="/competing-with-gpt">Competing with GPT</a>
+          
+
+          
+          
+          <a href="/context-menu-hell">Context Menu Hell</a>
+          
+
+          
+          
+          <a href="/cool-uris-dont-change">Cool URIs Don't Change</a>
+          
+
+          
+          
+          <a href="/dear-google-cloud">Dear Google Cloud</a>
+          
+
+          
+          
+          <a href="/digg-v4">Digg v4</a>
+          
+
+          
+          
+          <a href="/dispatch-from-the-cyberpunk-city">Dispatch From the Cyberpunk City</a>
+          
+
+          
+          
+          <a href="/do-things-tell-people">Do Things, Tell People</a>
+          
+
+          
+          
+          <a href="/dropbox-feedback">Dropbox Feedback</a>
+          
+
+          
+          
+          <a href="/ellsbergs-advice-for-kissinger">Ellsberg's Advice For Kissinger</a>
+          
+
+          
+          
+          <a href="/facing-the-street">Facing the Street</a>
+          
+
+          
+          
+          <a href="/factory-factory-factory">Factory Factory Factory</a>
+          
+
+          
+          
+          <a href="/feminist-server-manifesto">Feminist Server Manifesto</a>
+          
+
+          
+          
+          <a href="/file-over-app">File Over App</a>
+          
+
+          
+          
+          <a href="/git-koans">Git Koans</a>
+          
+
+          
+          
+          <a href="/group-chats-rule-the-world">Group Chats Rule the World</a>
+          
+
+          
+          
+          <a href="/growth-at-tumblr-and-wordpress">Growth at Tumblr and Wordpress</a>
+          
+
+          
+          
+          <a href="/guerilla-open-access-manifesto">Guerilla Open Access Manifesto</a>
+          
+
+          
+          
+          <a href="/heaven-banning">Heaven Banning</a>
+          
+
+          
+          
+          <a href="/i-no-longer-built-software">I No Longer Built Software</a>
+          
+
+          
+          
+          <a href="/in-the-beginning-was-the-command-line">In the Beginning was the Command Line</a>
+          
+
+          
+          
+          <a href="/incomplete-list-of-mistakes-in-the-design-of-css">Incomplete List of Mistakes in the Design of CSS</a>
+          
+
+          
+          
+          <a href="/interviewing-for-canonical">Interviewing for Canonical</a>
+          
+
+          
+          
+          <a href="/is-it-a-bubble">Is It a Bubble</a>
+          
+
+          
+          
+          <a href="/jsx-react-native-and-typescript">JSX, React Native, and TypeScript</a>
+          
+
+          
+          
+          <a href="/kurt-vonnegut-grades">Kurt Vonnegut Grades</a>
+          
+
+          
+          
+          <a href="/language-and-death">Language and Death</a>
+          
+
+          
+          
+          <a href="/larry-page-builds-a-web-robot">Larry Page Builds a Web Robot</a>
+          
+
+          
+          
+          <a href="/leaving-linkedin">Leaving LinkedIn</a>
+          
+
+          
+          
+          <a href="/life-of-an-oracle-developer">Life of an Oracle Developer</a>
+          
+
+          
+          
+          <a href="/man-spends-entire-career-mastering-crappy-codebase">Man Spends Entire Career Mastering Crappy Codebase</a>
+          
+
+          
+          
+          <a href="/no-coffee-==-no-job">No Coffee == No Job</a>
+          
+
+          
+          
+          <a href="/no-dogs-were-harmed-in-the-making-of-this-app">No dogs were harmed in the making of this app</a>
+          
+
+          
+          
+          <a href="/not-a-real-engineer">Not a real engineer</a>
+          
+
+          
+          
+          <a href="/on-the-origin-of-.ds_store">On the Origin of .DS_Store</a>
+          
+
+          
+          
+          <a href="/on-the-origin-of-emacs">On the Origin of Emacs</a>
+          
+
+          
+          
+          <a href="/on-the-origin-of-toots">On the Origin of Toots</a>
+          
+
+          
+          
+          <a href="/on-the-origins-of-rust">On the Origins of Rust</a>
+          
+
+          
+          
+          <a href="/openoffice-cant-print-on-tuesdays">OpenOffice Can't Print on Tuesdays</a>
+          
+
+          
+          
+          <a href="/oracle-as-lawnmower">Oracle as Lawnmower</a>
+          
+
+          
+          
+          <a href="/originality-not-required">Originality Not Required</a>
+          
+
+          
+          
+          <a href="/psd-is-not-my-favourite-file-format">PSD is not my favourite file format</a>
+          
+
+          
+          
+          <a href="/please-drink-verification-can">Please Drink Verification Can</a>
+          
+
+          
+          
+          <a href="/pocket-veto">Pocket Veto</a>
+          
+
+          
+          
+          <a href="/price-of-chatgpts-api-vs-human">Price of ChatGPT's API vs Human</a>
+          
+
+          
+          
+          <a href="/put-yourself-in-jia-tans-shoes">Put yourself in Jia Tan's shoes</a>
+          
+
+          
+          
+          <a href="/regular-expressions-and-html">Regular Expressions and HTML</a>
+          
+
+          
+          
+          <a href="/rob-pikes-5-rules-of-programming">Rob Pike's 5 Rules of Programming</a>
+          
+
+          
+          
+          <a href="/rob-pikes-lesson-in-shortcuts">Rob Pike's Lesson in Shortcuts</a>
+          
+
+          
+          
+          <a href="/sre-threats">SRE Threats</a>
+          
+
+          
+          
+          <a href="/sleep-sort">Sleep Sort</a>
+          
+
+          
+          
+          <a href="/steve-yegges-tale-of-geoworks">Steve Yegge's Tale of Geoworks</a>
+          
+
+          
+          
+          <a href="/steveys-google-platforms-rant">Stevey's Google Platforms Rant</a>
+          
+
+          
+          
+          <a href="/superstitious-encoding">Superstitious Encoding</a>
+          
+
+          
+          
+          <a href="/svelte-parses-html-all-wrong">Svelte parses HTML all wrong</a>
+          
+
+          
+          
+          <a href="/the-bitter-lesson">The Bitter Lesson</a>
+          
+
+          
+          
+          <a href="/the-cmd-click-manifesto">The CMD-Click Manifesto</a>
+          
+
+          
+          
+          <a href="/the-cab-ride-ill-never-forget">The Cab Ride I'll Never Forget</a>
+          
+
+          
+          
+          <a href="/the-case-of-the-500-mile-email">The Case of the 500-Mile Email</a>
+          
+
+          
+          
+          <a href="/the-crawford-principles">The Crawford Principles</a>
+          
+
+          
+          
+          <a href="/the-damned-can-now-play-three-chords">The Damned Can Now Play Three Chords</a>
+          
+
+          
+          
+          <a href="/the-descent-to-c">The Descent to C</a>
+          
+
+          
+          
+          <a href="/the-future-of-open-source">The Future of Open Source</a>
+          
+
+          
+          
+          <a href="/the-graphing-calculator-story" class="activated-link">The Graphing Calculator Story</a>
+          
+
+          
+          
+          <a href="/the-nazi-bar-problem">The Nazi Bar Problem</a>
+          
+
+          
+          
+          <a href="/the-patron-saint-of-yak-shaves">The Patron Saint of Yak Shaves</a>
+          
+
+          
+          
+          <a href="/the-reddit-long-con">The Reddit Long Con</a>
+          
+
+          
+          
+          <a href="/the-smallest-quine">The Smallest Quine</a>
+          
+
+          
+          
+          <a href="/the-unknown-citizen">The Unknown Citizen</a>
+          
+
+          
+          
+          <a href="/the-bin-split">The bin Split</a>
+          
+
+          
+          
+          <a href="/things-many-people-find-too-obvious-to-have-told-you-already">Things Many People Find Too Obvious To Have Told You Already</a>
+          
+
+          
+          
+          <a href="/thoughts-on-flash">Thoughts On Flash</a>
+          
+
+          
+          
+          <a href="/tiktoks-enshittification">TikTok's Enshittification</a>
+          
+
+          
+          
+          <a href="/time-traveller-on-irc">Time Traveller on IRC</a>
+          
+
+          
+          
+          <a href="/unix-recovery-legend">Unix Recovery Legend</a>
+          
+
+          
+          
+          <a href="/usenet-post-warning">Usenet Post Warning</a>
+          
+
+          
+          
+          <a href="/vibe-code-warning-(written-by-human)">VIBE CODE WARNING (WRITTEN BY HUMAN)</a>
+          
+
+          
+          
+          <a href="/virtues-of-a-good-programmer">Virtues of a Good Programmer</a>
+          
+
+          
+          
+          <a href="/we-do-not-break-userspace">We Do Not Break Userspace</a>
+          
+
+          
+          
+          <a href="/we-have-no-moat-and-neither-does-openai">We Have No Moat, And Neither Does OpenAI</a>
+          
+
+          
+          
+          <a href="/when-is-midnight">When Is Midnight</a>
+          
+
+          
+          
+          <a href="/wikipedia-and-anti-elitism">Wikipedia and Anti-Elitism</a>
+          
+
+          
+          
+          <a href="/worse-is-better">Worse is Better</a>
+          
+
+          
+          
+          <a href="/yak-shaving">Yak Shaving</a>
+          
+
+          
+          
+          <a href="/carproblems.txt">carproblems.txt</a>
+          
+
+          
+        </div>
+        
+
+        
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header>
+      <h1>The Graphing Calculator Story</h1>
+    </header>
+
+    <article><p><a href="https://www.pacifict.com/story/">Written in 2004</a> by Ron Avitzur.</p>
+<hr />
+<p>Pacific Tech's Graphing Calculator has a long history. I began the work in 1985 while in school. That became <a href="https://www.pacifict.com/ron/milo.jpg">Milo</a>, and later became part of <a href="https://www.adobe.com/products/framemaker.html">FrameMaker</a>. Over the last twenty years, many people have contributed to it. Graphing Calculator 1.0, which Apple bundled with the original PowerPC computers, originated under unique circumstances.</p>
+<p>I used to be a contractor for Apple, working on a secret project. Unfortunately, the computer we were building never saw the light of day. The project was so plagued by politics and ego that when the engineers requested technical oversight, our manager hired a psychologist instead. In August 1993, the project was canceled. A year of my work evaporated, my contract ended, and I was unemployed.</p>
+<p>I was frustrated by all the wasted effort, so I decided to uncancel my small part of the project. I had been paid to do a job, and I wanted to finish it. My electronic badge still opened Apple's doors, so I just kept showing up.</p>
+<p>I had many sympathizers. Apple's engineers thought what I was doing was cool. Whenever I gave demos, my colleagues said, "I wish I'd had that when I was in school." Those working on Apple's project to change the microprocessor in its computers to the IBM PowerPC were especially supportive. They thought my software would show off the speed of their new machine. None of them was able to hire me, however, so I worked unofficially, in classic "skunkworks" fashion.</p>
+<p>I knew nothing about the PowerPC and had no idea how to modify my software to run on it. One August night, after dinner, two guys showed up to announce that they would camp out in my office until the modification was done. The three of us spent the next six hours editing fifty thousand lines of code. The work was delicate surgery requiring arcane knowledge of the MacOS, the PowerPC, and my own software. It would have taken weeks for any one of us working alone.</p>
+<p>At 1:00 a.m., we trekked to an office that had a PowerPC prototype. We looked at each other, took a deep breath, and launched the application. The monitor burst into flames. We calmly carried it outside to avoid setting off smoke detectors, plugged in another monitor, and tried again. The software hadn't caused the fire; the monitor had just chosen that moment to malfunction. The software ran over fifty times faster than it had run on the old microprocessor. We played with it for a while and agreed, "This doesn't suck" (high praise in Apple lingo). We had an impressive demo, but it would take months of hard work to turn it into a product.</p>
+<p>I asked my friend Greg Robbins to help me. His contract in another division at Apple had just ended, so he told his manager that he would start reporting to me. She didn't ask who I was and let him keep his office and badge. In turn, I told people that I was reporting to him. Since that left no managers in the loop, we had no meetings and could be extremely productive. We worked twelve hours a day, seven days a week. Greg had unlimited energy and a perfectionist's attention to detail. He usually stayed behind closed doors programming all day, while I spent much of my time talking with other engineers. Since I had asked him to help as a personal favor, I had to keep pace with him. Thanks to an uncurtained east-facing window in my bedroom, I woke with the dawn and usually arrived ten minutes before Greg did. He would think I had been working for hours and feel obliged to work late to stay on par. I in turn felt obliged to stay as late as he did. This feedback loop created an ever-increasing spiral of productivity.</p>
+<p>People around the Apple campus saw us all the time and assumed we belonged. Few asked who we were or what we were doing.When someone did ask me, I never lied, but relied on the power of corporate apathy. The conversations usually went like this:</p>
+<p>Q: <em>Do you work here?</em><br />
+A: <em>No</em>.<br />
+Q: <em>You mean you're a contractor?</em><br />
+A: <em>Actually, no.</em><br />
+Q: <em>But then who's paying you?</em><br />
+A: <em>No one.</em><br />
+Q: <em>How do you live?</em><br />
+A: <em>I live simply.</em><br />
+Q: (Incredulously) <em>What are you doing here?!</em></p>
+<p>At that point I'd give a demo and explain that the project had been canceled but that I was staying to finish it anyway. Since I had neither a mortgage nor a family, I could afford to live off savings. Most engineers at Apple had been through many canceled projects and completely understood my motivation.</p>
+<p>Apple at that time had a strong tradition of skunkworks projects, in which engineers continued to work on canceled projects in hopes of producing demos that would inspire management to revive them. On occasion, they succeeded. One project, appropriately code-named Spectre, was canceled and restarted no fewer than five times. Engineers worked after hours on their skunkworks, in addition to working full time on their assigned projects. Greg and I, as nonemployees who had no daytime responsibilities, were merely extending this tradition to the next level.</p>
+<p>In September, Apple Facilities tried to move people into our officially empty offices. They noticed us. The Facilities woman assumed that I had merely changed projects and had not yet moved to my new group, something that happened all the time. She asked what group I worked in, since it would be that group's responsibility to find me space. When I told her the truth, she was not amused. She called Security, had them cancel our badges, and told us in no uncertain terms to leave the premises.</p>
+<p>We were saved by the layoffs that began that month. Twenty percent of Apple's fifteen thousand workers lost their jobs, but Greg and I were safe because we weren't on the books in the first place and didn't officially exist. Afterwards, there were plenty of empty offices. We found two and started sneaking into the building every day, waiting out in front for real employees to arrive and casually tailgating them through the door. Lots of people knew us and no one asked questions, since we wore our old badges as decoys.</p>
+<p>We were making great progress, but we couldn't get it done alone. Creating sophisticated software requires a team effort. One person can use smoke and mirrors to make a demo that dazzles an audience. But shipping that to a million customers will expose its flaws and leave everyone looking bad. It is a cliche in our business that the first 90 percent of the work is easy, the second 90 percent wears you down, and the last 90 percent - the attention to detail - makes a good product. Making software that is simultaneously easy to learn, easy to use, friendly, useful, and powerful takes people with an incredible combination of skills, talent, and artistry working together with intensity and patience. Greg and I could do the core engineering, but that was a far cry from creating a finished product.</p>
+<p>Among other things, we needed professional quality assurance (QA), the difficult and time-consuming testing that would show us the design flaws and implementation bugs we couldn't see in our own work. Out of nowhere, two QA guys we had never met approached us, having heard about our venture through the rumor mill. (We had become a kind of underground cause célèbre.) Their day job, QA-ing system software, was mind-numbingly boring. They volunteered to help us, saying, "Let's not tell our boss about this, OK?" One guy had a Ph.D. in mathematics; the other had previously written mathematical software himself. They were a godsend. They started right away.</p>
+<p>Next, we needed help writing software to draw the three-dimensional images that our software produced. A friend with expertise in this area took a weekend off from his startup company to write all of this software. He did in two days what would have taken me a month.</p>
+<p>My skunkworks project was beginning to look real with help from these professionals as well as others in graphic design, documentation, programming, mathematics, and user interface. The secret to programming is not intelligence, though of course that helps. It is not hard work or experience, though they help, too. The secret to programming is having smart friends.</p>
+<p>There was one last pressing question: How could we get this thing included with the system software when the new machines shipped? The thought that we might fail to do this terrified me far more than the possibility of criminal prosecution for trespass. All the sweat that Greg and I had put in, all the clandestine aid from the friends, acquaintances, and strangers on whom I had shamelessly imposed, all the donations of time, expertise, hardware, soft drinks, and junk food would be wasted.</p>
+<p>Once again, my sanity was saved by the kindness of a stranger. At 2:00 one morning, a visitor appeared in my office: the engineer responsible for making the PowerPC system disk master. He explained things this way: "Apple is a hardware company. There are factories far away building Apple computers. One of the final steps of their assembly line is to copy all of the system software from the 'Golden Master' hard disk onto each computer's hard disk. I create the Golden Master and FedEx it to the manufacturing plant. In a very real and pragmatic sense, I decide what software does and does not ship." He told me that if I gave him our software the day before the production run began, it could appear on the Golden Master disk. Then, before anyone realized it was there, thirty thousand units with our software on the disks would be boxed in a warehouse. (In retrospect, he may have been joking. But we didn't know that, so it allowed us to move forward with confidence.)</p>
+<p>Once we had a plausible way to ship, Apple became the ideal work environment. Every engineer we knew was willing to help us. We got resources that would never have been available to us had we been on the payroll. For example, at that time only about two hundred PowerPC chips existed in the world. Most of those at Apple were being used by the hardware design engineers. Only a few dozen coveted PowerPC machines were even available in System Software for people working on the operating system. We had two. Engineers would come to our offices at midnight and practically slip machines under the door. One said, "Officially, this machine doesn't exist, you didn't get it from me, and I don't know you. Make sure it doesn't leave the building."</p>
+<p>In October, when we thought we were almost finished, engineers who had been helping us had me demonstrate our software to their managers. A dozen people packed into my office. I didn't expect their support, but I felt obliged to make a good-faith effort to go through their official channels. I gave a twenty-minute demonstration, eliciting "oohs" and "ahhs." Afterward, they asked, "Who do you report to? What group are you in? Why haven't we seen this earlier?" I explained that I had been sneaking into the building and that the project didn't exist. They laughed, until they realized I was serious. Then they told me, "Don't repeat this story."</p>
+<p>The director of PowerPC software was an academic on leave from Dartmouth. The director of PowerPC marketing was the son of a math teacher. Seeing the value of putting this educational software on every Macintosh in every school, they promptly adopted us.</p>
+<p>Then things got really weird. The QA manager assigned people to test our product. (I didn't tell him that those people were already working on it.) The localization group assigned people to translate it into twenty languages. The human interface group ran a formal usability study. I was at the center of a whirlwind of activity. Nevertheless, Greg and I still had to sneak into the building. The people in charge of the PowerPC project, upon which the company's future depended, couldn't get us badges without a purchase order. They couldn't get a purchase order without a signed contract. They couldn't get a contract without approval from Legal, and if Legal heard the truth, we'd be escorted out of the building.</p>
+<p>Greg was lurking outside one day, trying to act casual, when another engineer accosted him and said, "I'm sick and tired of you guys loitering in front of the building every day!" Later he phoned the appropriate bureaucrats on our behalf. I listened to his side of the conversation for twenty minutes: "No, there is no PO, because we're not paying them. No, there is no contract, because they are not contractors. No, they are not employees; we have no intention of hiring them. Yes, they must have building access because they are shipping code on our box. No, we don't have a PO number. There is no PO, because we're not paying them." Finally, he wore them down. They said to use the standard form to apply for badges, but to cross out <em>Contractor</em> and write in <em>Vendor</em>. Where it asked for a PO number, we were to use the magic words "No dollar contract." We got badges the next day. They were orange Vendor badges, the same kind the people working in the cafeteria, watering the plants, and fixing the photocopy machines had.</p>
+<p>Official recognition made life exciting. Suddenly even more people became enthusiastically involved. When formal usability testing with students and teachers began, we discovered, again, that we were far from being done.</p>
+<p>I had long been proud of the elegance and simplicity of our design. I wanted our program to ship with every Macintosh, so I had designed it for all users, even those who know little about computers and hate math. I wanted to make mathematics as easy and enjoyable as playing a game. In a classroom, any time spent frustrated with the computer is time taken away from teaching. Sitting behind a two-way mirror, watching first-time users struggle with our software, reminded me that programmers are the least qualified people to design software for novices. Humbled after five days of this, Greg and I went back and painstakingly added feedback to the software, as if we were standing next to users, explaining it ourselves.</p>
+<p>Our recognition made life interesting in other ways since we could no longer remain a well kept secret. After a demo to outside developers, one person called Apple claiming that we infringed his patent, causing a fire drill until I could show prior art. Another company, the makers of Mathematica™, simply demanded that our product be pulled. Apple very politely declined. One week we were evading security, the next week Apple is rising to our defense.</p>
+<p>By November, we were in full crunch mode, working sixteen hours a day, seven days a week, and feeling the pressure. The home stretch was a blur - wake up, grab a bagel, eat it while driving, work till we drop, sleep, repeat. If this story were a movie, you would now see the clock hand spinning and the calendar pages blowing away in the wind.</p>
+<p>We finished in January 1994. Graphing Calculator has been part of the Macintosh ever since. Teachers around the world use it as an animated blackboard to illustrate abstract concepts visually. It shipped on more than twenty million machines. It never officially existed.</p>
+<p>Why did Greg and I do something so ludicrous as sneaking into an eight-billion-dollar corporation to do volunteer work? Apple was having financial troubles then, so we joked that we were volunteering for a nonprofit organization. In reality, our motivation was complex. Partly, the PowerPC was an awesome machine, and we wanted to show off what could be done with it; in the Spinal Tap idiom, we said, "OK, this one goes to eleven." Partly, we were thinking of the storytelling value. Partly, it was a macho computer guy thing - we had never shipped a million copies of software before. Mostly, Greg and I felt that creating quality educational software was a public service. We were doing it to help kids learn math. Public schools are too poor to buy software, so the most effective way to deliver it is to install it at the factory.</p>
+<p>Beyond this lies another set of questions, both psychological and political. Was I doing this out of bitterness that my project had been canceled? Was I subversively coopting the resources of a multinational corporation for my own ends? Or was I naive, manipulated by the system into working incredibly hard for its benefit? Was I a loose cannon, driven by arrogance and ego, or was I just devoted to furthering the cause of education?</p>
+<p>I view the events as an experiment in subverting power structures. I had none of the traditional power over others that is inherent to the structure of corporations and bureaucracies. I had neither budget nor headcount. I answered to no one, and no one had to do anything I asked. Dozens of people collaborated spontaneously, motivated by loyalty, friendship, or the love of craftsmanship. We were hackers, creating something for the sheer joy of making it work.</p>
+<p>After six months of grueling unpaid labor, Greg couldn't explain to his parents what he had done. They didn't use computers, and the only periodical they read was the New York Times. So as the project was winding down, I asked Greg if he wanted his photo in the Times so his parents would know what he was up to. He gave the only possible response: "Yeah, right." We made a bet for dinner at Le Mouton Noir, a fine French restaurant in Saratoga. To be honest, I expected to lose, but I made a phone call. Greg doesn't bet against me any more: On March 11, 1994, the front page of the Times business section contained an article on the alliance among Apple, IBM, and Motorola, picturing Greg and me in my front yard with a view of the Santa Cruz Mountains. Someone I knew in Apple Public Relations was livid. I had asked if she wanted to send someone for the interview, but she had said that engineers are not allowed to talk with the press. It's hard to enforce that kind of thing with people who can't be fired. It was positive press for Apple, though, and our parents were pleased.</p>
+<p>We wanted to release a Windows version as part of Windows 98, but sadly, Microsoft has effective building security.</p>
+<p>Postscript: After the events described, we made everything retroactively legitimate by licensing the software to Apple for distribution. Pacific Tech started a few years later, and continued to develop Graphing Calculator, both in new free versions that Apple bundled with Mac OS 8 and Mac OS 9, and commercial releases.</p></article>
+  </main>
+
+  <footer>
+    <details>
+      <summary>
+        <div class="footer-row">
+          
+          meta
+          
+          <a href="/recent-changes">recent</a>
+          <a href="/guerilla-open-access-manifesto" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'The Graphing Calculator Story'">reply</a>
+        </div>
+      </summary>
+      <div class="footer-row">
+        <input type="radio" name="theme" id="theme-system" class="invisible" checked>
+        <label for="theme-system" class="nonsystem-only"><a>system</a></label>
+
+        <input type="radio" name="theme" id="theme-light" class="invisible">
+        <label for="theme-light" class="dark-only"><a>light</a></label>
+
+        <input type="radio" name="theme" id="theme-dark" class="invisible">
+        <label for="theme-dark" class="light-only"><a>dark</a></label>
+        
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Folklore/The Graphing Calculator Story.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Folklore/The Graphing Calculator Story.md" class="mobile">edit</a>
+          <a href="/sitemap" class="extra-small">sitemap</a>
+          <a href="/guerilla-open-access-manifesto" class="extra-small">random</a>
+        </div>
+      </div>
+
+      
+
+      <p class="backlinks"><strong>Incoming:</strong>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
+      
+
+      
+      <p>
+        
+
+        <span class="backlinks">
+          <strong>
+            Updated:
+          </strong>
+          <date>2026-02-09</date>
+        </span>
+
+      </p>
+    </details>
+
+  </footer>
+  
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+
+    function checkVisible(el) {
+      let rect = el.getBoundingClientRect();
+      let viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+      return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+    }
+
+
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        if (checkVisible(link.parentElement)) {
+          link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+        }
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 350);
+    });
+    scrollActivatedLinksIntoView();
+  </script>
+  <script type="module">
+      if (localStorage?.getItem("theme") === "dark") {
+        document.querySelector("#theme-dark").checked = true;
+      } else if (localStorage?.getItem("theme") === "light") {
+        document.querySelector("#theme-light").checked = true;
+      }
+
+      function setTheme(theme) {
+        localStorage.setItem("theme", theme);
+      }
+      document.querySelectorAll("#theme-system").forEach(el => el.addEventListener("click", () => setTheme(undefined)));
+      document.querySelectorAll("#theme-light").forEach(el => el.addEventListener("click", () => setTheme("light")));
+      document.querySelectorAll("#theme-dark").forEach(el => el.addEventListener("click", () => setTheme("dark")));
+  </script>
+
+</body>
+
+</html>
