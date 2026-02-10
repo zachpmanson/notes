@@ -11,7 +11,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="UTF-8" />
-  <title>notes: templates</title>
+  <title>notes: kill ports</title>
 </head>
 
 <body>
@@ -35,23 +35,27 @@
           
           
           
-          <a href="/archive" class="activated-link">Archive</a>
+          <a href="/bookmarks">Bookmarks</a>
           
           
           
-          <a href="/meta">Meta</a>
+          <a href="/fiction">Fiction</a>
           
           
           
-          <a href="/notes">Notes</a>
+          <a href="/folklore">Folklore</a>
           
           
           
-          <a href="/posts">Posts</a>
+          <a href="/lines">Lines</a>
           
           
           
-          <a href="/projects">Projects</a>
+          <a href="/problems">Problems</a>
+          
+          
+          
+          <a href="/snippets" class="activated-link">Snippets</a>
           
           
         </div>
@@ -62,56 +66,48 @@
           
           
           
-          <a href="/bookmarks">Bookmarks</a>
-          
-
-          
-          
-          <a href="/fiction">Fiction</a>
-          
-
-          
-          
-          <a href="/folklore">Folklore</a>
-          
-
-          
-          
-          <a href="/lines">Lines</a>
-          
-
-          
-          
-          <a href="/problems">Problems</a>
-          
-
-          
-          
-          <a href="/templates" class="activated-link">Templates</a>
-          
-
-          
-        </div>
-        
-
-        
-        <div class="nav-links children">
-          
           <a href="/git-activity-in-multiple-folders">Git Activity in Multiple Folders</a>
+          
+
+          
           
           <a href="/git-switchblade">Git Switchblade</a>
           
+
+          
+          
           <a href="/javascript-closure-debounce">JavaScript Closure Debounce</a>
+          
+
+          
+          
+          <a href="/kill-ports" class="activated-link">Kill Ports</a>
+          
+
+          
           
           <a href="/next.js-api-validation-template">Next.js API Validation Template</a>
           
+
+          
+          
           <a href="/python-getopt()-template">Python getopt() Template</a>
+          
+
+          
           
           <a href="/reset-css-rules">Reset CSS Rules</a>
           
+
+          
+          
           <a href="/time-ago-function">Time Ago Function</a>
           
+
+          
         </div>
+        
+
         
       </div>
     </div>
@@ -119,10 +115,17 @@
 
   <main>
     <header>
-      <h1>Things I never want to write again.</h1>
+      <h1>Kill Ports</h1>
     </header>
 
-    <article><p>A place for me to dump common idioms and templates, whether that be programming or otherwise.</p></article>
+    <article><p>A bash function to kill all processes running on a port.</p>
+<div class="highlight"><pre><span></span><code><span class="k">function</span><span class="w"> </span>kport<span class="o">()</span><span class="w"> </span><span class="o">{</span>
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span>Killing<span class="w"> </span>the<span class="w"> </span>following<span class="w"> </span>processes:
+<span class="w">    </span>lsof<span class="w"> </span>-i<span class="w"> </span>-P<span class="w"> </span>-n<span class="w"> </span><span class="p">|</span><span class="w">  </span>grep<span class="w"> </span><span class="s2">&quot;:</span><span class="nv">$1</span><span class="s2">&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>tr<span class="w"> </span>-s<span class="w"> </span><span class="s1">&#39; &#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>cut<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot; &quot;</span><span class="w"> </span>-f<span class="w"> </span><span class="m">1</span>,2,9
+<span class="w">    </span><span class="nb">kill</span><span class="w"> </span><span class="k">$(</span>lsof<span class="w"> </span>-i<span class="w"> </span>-P<span class="w"> </span>-n<span class="w"> </span><span class="p">|</span><span class="w">  </span>grep<span class="w"> </span><span class="s2">&quot;:</span><span class="nv">$1</span><span class="s2">&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>tr<span class="w"> </span>-s<span class="w"> </span><span class="s1">&#39; &#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>cut<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot; &quot;</span><span class="w"> </span>-f<span class="w"> </span><span class="m">2</span><span class="k">)</span><span class="w">   </span>
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;All processes sent kill signal&quot;</span>
+<span class="o">}</span>
+</code></pre></div></article>
   </main>
 
   <footer>
@@ -133,10 +136,10 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/sleep-sort" class="not-extra-small">random</a>
+          <a href="/firefox-multi-account-containers-new-tab-behaviour" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
-          <a href="mailto:zachpmanson@gmail.com?subject=On 'Templates'">reply</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'Kill Ports'">reply</a>
         </div>
       </summary>
       <div class="footer-row">
@@ -149,13 +152,21 @@
         <input type="radio" name="theme" id="theme-dark" class="invisible">
         <label for="theme-dark" class="light-only"><a>dark</a></label>
         
-          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Templates/Templates.md" class="desktop">edit</a>
-          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Templates/Templates.md" class="mobile">edit</a>
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Snippets/Kill Ports.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Snippets/Kill Ports.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/sleep-sort" class="extra-small">random</a>
+          <a href="/firefox-multi-account-containers-new-tab-behaviour" class="extra-small">random</a>
         </div>
       </div>
 
+      
+
+      <p class="backlinks"><strong>Incoming:</strong>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
       
 
       
@@ -166,7 +177,7 @@
           <strong>
             Updated:
           </strong>
-          <date>2024-03-06</date>
+          <date>2026-02-10</date>
         </span>
 
       </p>
