@@ -9,6 +9,10 @@
 - [The Friendship That Made Google Huge](https://www.newyorker.com/magazine/2018/12/10/the-friendship-that-made-google-huge)
 - [The Man Who Killed Google Search](https://www.wheresyoured.at/the-men-who-killed-google/)
 
+## Focus
+
+- [Aesthetics of Single Threading](https://ta.fo/aesthetics-of-single-threading/)
+
 ## Relationships
 
 - [How much is a friendship worth?](https://manuelmoreale.com/how-much-is-a-friendship-worth)

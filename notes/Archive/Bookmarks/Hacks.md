@@ -7,6 +7,7 @@ subtitle: Writeups and mods.
 - [The DocWriter](https://jsomers.net/blog/docwriter), a typewriter that supports Google Docs
 - [The Short Stack](https://github.com/loopj/short-stack), the world's smallest Nintendo Wii
 - [Jailbreaking a Kindle as a Second Monitor](https://gist.github.com/adtac/eb639d3c707b55a28f0ee9a420aa7e0c)
+- [Hacking an old Kindle to display bus arrival times](https://www.mariannefeng.com/portfolio/kindle/)
 
 ## Software
 
