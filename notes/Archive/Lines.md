@@ -6,6 +6,18 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> Most of your screen time isn't leisure. It isn't addiction. It isn't even a choice.
+> 
+> It's maintenance.
+> 
+> Your phone is not a slot machine.
+> 
+> It's a to-do list that writes itself.
+
+-- [Terry Godier](https://www.terrygodier.com/the-last-quiet-thing)
+
+---
+
 > Don’t rent your livelihood.
 
 -- [Not Scott Smitelli](https://www.scottsmitelli.com/articles/you-dont-have-to/)

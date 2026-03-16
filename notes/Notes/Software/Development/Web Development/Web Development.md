@@ -75,3 +75,4 @@ Problems that arise from this:
 - [Handling Cookies is a Minefield](https://grayduck.mn/2024/11/21/handling-cookies-is-a-minefield/)
 - [Creating PWAs](https://blog.heroku.com/how-to-make-progressive-web-app)
 - [Why is everything so scalable?](https://www.stavros.io/posts/why-is-everything-so-scalable/)
+- [Shipping a button in 2026...](https://www.youtube.com/watch?v=xE9W9Ghe4Jk&t=107s)
