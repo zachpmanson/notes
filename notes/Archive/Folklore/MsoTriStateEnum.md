@@ -1,4 +1,4 @@
-A real datatype for Microsoft ~~Office~~ [[Microsoft Product Names|365 Copilot]].
+A real datatype for Microsoft ~~Office~~ [[Microsoft Product Names|365 Copilot]]. Found [here](https://learn.microsoft.com/en-au/dotnet/api/microsoft.office.core.msotristate?view=office-pia) on 2026-03-17.
 
 ---
 ## In this article
