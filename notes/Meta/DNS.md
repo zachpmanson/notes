@@ -43,12 +43,12 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	- [**unroller.zachmanson.com**](https://unroller.zachmanson.com)  
 	  deployed instance of [[Mastodon Thread Unroller]]  
 	  vercel
-	- **[phanpy.zachmanson.com](https://elk.zachmanson.com)**  
-	  deployed instance. of my patched version of Phanpy
+	- **[phanpy.zachmanson.com](https://phanpy.zachmanson.com)**  
+	  deployed instance. of my patched version of Phanpy. 
 	  vercel
 
-	- [**mates.zachmanson.com**](https://mates.zachmanson.com)
-	  deployment for experimental mates project
+	- [**mates.zachmanson.com**](https://mates.zachmanson.com) 
+	  deployment for ex. erimental mates project  
 	  vercel
 
 - **[manson.dev](https://manson.dev)**  
