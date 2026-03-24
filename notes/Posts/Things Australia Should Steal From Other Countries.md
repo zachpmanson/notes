@@ -4,7 +4,8 @@ date: 2025-06-01
 
 And vice versa.
 
-Things Australia should steal
+Things Australia should steal:
+
 - ubiquitous public transport, underground rail
 - street art
 - cheap beer
@@ -29,6 +30,7 @@ Things Australia should steal
 
 
 Things Australia does better:
+
 - comfortable seats on public transport 
 - cleanliness
 - water fountains
