@@ -20,7 +20,7 @@ My childhood assumption is more reasonable than my teachers would have told me. 
 
 Given the attitude my teacher had when teaching this "rule", I find the youth of this "rule" very satisfying. The unconvincing arguments they gave supporting it are not set in stone.
 
-The part that is most stupid about this whole situation to me is that the apostrophe does very little actually make things clearer. It is extremely hard to construct sentence where the meaning of *it(')s* cannot easily be gleaned from context, and most sentences where either form is valid in the same place sound awkward.
+The part that is most stupid about this whole situation to me is that the apostrophe does very little to actually make things clearer. It is extremely hard to construct sentence where the meaning of *it(')s* cannot easily be gleaned from context, and most sentences where either form is valid in the same place sound awkward.
 
 The closest example I have found to a sentence where the apostrophe adds semantic clarity is this:
 
