@@ -303,7 +303,7 @@ def process_markdown(text, rss=False):
     else:
         processed_text = markdown.markdown(
             text, 
-            extensions = [*md_extensions,"extensions.pathconverter"],
+            extensions = [*md_extensions, "generator.extensions.pathconverter"],
             extension_configs={
                 "extensions.pathconverter": {
                     "domain": "notes.zachmanson.com",
