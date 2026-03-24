@@ -16,6 +16,7 @@ DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscu
 - **Gloaming**: twilight; dusk
 - **[[Gruntle]]**: to put in a good humor
 - **Ichor**: God's equivalent for blood
+- **Idiolect**: the speech patterns of a particular person
 - **Impresario**: a person who organizes and often finances concerts, plays, or operas
 - **Interlocutor**: a person who takes part in a dialogue or conversation
 - **Jugaad** (Indo-Aryan): a non-conventional, frugal innovation, often termed a "hack"
