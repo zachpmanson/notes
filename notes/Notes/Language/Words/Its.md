@@ -5,16 +5,16 @@ tags:
 ---
 
 
-*it(')s* has an interesting history. When I was in school I was taught that there are two forms of the word *it(')s*
+*It(')s* has an interesting history. When I was in school I was taught that there are two forms of the word *it(')s*
 
 - its - possessive
 - it's - contraction of *it is*
 
 If I were in school and mixed up these two I would be admonished. There's a part of my brain I will never be able to exorcise the belief that confusing these two spellings is a sign of poor grammar. But equally, my brain never liked the apostrophe-less *its* for possession. The word seemed naked to me.
 
-*it(')s* sits at the crossroads of the two main uses of the apostrophe in English, contraction and possession.
+*It(')s* sits at the crossroads of the two main uses of the apostrophe in English, contraction and possession.
 
-The possessive form of *it(')s* has an interesting quirk in that it sits at the crossroads of another inconsistency -- do possessive pronouns get apostrophes?. If you think of *it* as a pronoun akin to *his*, *hers*, and *theirs* (sometimes called "definite" pronouns) then the apostrophe-less *its* seems fine. If you think of *it* as similar to other neutral pronoun possessive like *one's* or *somebody's* ("indefinite" pronouns, then the absent apostrophe seems inconsistent. The concept of definite pronouns was never pointed out to me in school, primary school me intuited that *its* should be treated the same as my name but I was told that it was just an edge case I would have remember forever
+The possessive form of *it(')s* has an interesting quirk in that it sits at the crossroads of another inconsistency - do possessive pronouns get apostrophes? If you think of *it* as a pronoun akin to *his*, *hers*, and *theirs* (sometimes called "definite" pronouns) then the apostrophe-less *its* seems fine. If you think of *it* as similar to other neutral pronoun possessive like *one's* or *somebody's* ("indefinite" pronouns, then the absent apostrophe seems inconsistent. The concept of definite pronouns was never pointed out to me in school, primary school me intuited that *its* should be treated the same as my name but I was told that it was just an edge case I would have remember forever
 
 My childhood assumption is more reasonable than my teachers would have told me.  Like many grammar rules, the rules around *it(')s* have changed over time. [Etymonline](https://www.etymonline.com/search?q=its) claims possessive *it(')s* dates back to the 1500s and was originally spelt *it's*, only in the 1800s did the apostrophe fall out of use. It seems like the 1800s change occurred to make room for contracted *it's* because to the other contraction for *it is*, *'tis*, fell out of fashion.
 
