@@ -1,3 +1,8 @@
+---
+date: 2026-03-24
+---
+
+
 *it(')s* has an interesting history. When I was in school I was taught that there are two forms of the word *it(')s*
 
 - its - possessive
