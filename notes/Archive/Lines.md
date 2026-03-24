@@ -3,6 +3,11 @@ subtitle: Some lines worth noting, but not worth their own page.
 ---
 This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://drwho.virtadpt.net/drwho.plan.txt). See also [Gwern's page on epigrams](https://gwern.net/epigram).
 
+---
+
+> Here's something four-year-olds know: Media that's targeted at you but doesn't include you may not be worth sitting still for.
+
+-- [Clay Shirky](https://web.archive.org/web/20080604020024/http://www.herecomeseverybody.org/2008/04/looking-for-the-mouse.html)
 
 ---
 
