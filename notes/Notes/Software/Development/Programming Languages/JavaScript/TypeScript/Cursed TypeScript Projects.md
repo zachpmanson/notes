@@ -8,3 +8,4 @@ Assorted abuse of TypeScript's type system.
 - [Implementing Regular Expressions in TypeScript Types (Badly)](https://skalt.github.io/projects/brzozowski_ts/)
 - [Simple Deterministic Infinite Automaton](https://github.com/microsoft/TypeScript/issues/6579#issuecomment-710776922)
 - [Doom](https://www.youtube.com/watch?v=0mCsluv5FXA)
+- [Typescript Sudoku](https://github.com/gruhn/typescript-sudoku)
