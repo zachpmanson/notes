@@ -65,11 +65,12 @@ def get_tree():
                     subtitle=None,
                     children=set(),
                     body="",
+                    rss_body="",
                     backlinks=set(),
                     mod_date="2000-01-01",
                     creation_date="2000-01-01",
                     post_date=None,
-                    breadcrump_path="",
+                    breadcrumb_path="",
                     random_page="",
                     script=None,
                 )
@@ -93,11 +94,12 @@ def get_tree():
                     subtitle=None,
                     children=set(),
                     body="",
+                    rss_body="",
                     backlinks=set(),
                     mod_date="2000-01-01",
                     creation_date="2000-01-01",
                     post_date=None,
-                    breadcrump_path="",
+                    breadcrumb_path="",
                     random_page="",
                     script=None,
                 )
@@ -154,6 +156,7 @@ def traverse_tree():
         current_node = node
         tree[node].body = preprocess_markdown(tree[node].body)
         tree[node].body = process_markdown(tree[node].body)
+        tree[node].rss_body = process_markdown(tree[node].body, rss=True)
 
 
 def generate_pages():
@@ -293,8 +296,22 @@ def preprocess_markdown(text):
     return text
 
 
-def process_markdown(text):
-    processed_text = markdown.markdown(text, extensions=md_extensions)
+def process_markdown(text, rss=False):
+    if rss:
+        processed_text = markdown.markdown(text, extensions=md_extensions)
+    else:
+        processed_text = markdown.markdown(
+            text, 
+            extensions = [*md_extensions,"extensions.pathconverter"],
+            extension_configs={
+                "extensions.pathconverter": {
+                    "domain": "notes.zachmanson.com",
+                    "base_path": "",
+                    "absolute": True,
+                }
+            },
+        )
+
     return processed_text
 
 
@@ -387,8 +404,7 @@ def apply_js():
 def create_feeds():
     """Builds the rss and atom feeds from tagged pages"""
 
-    for tag_name, tag_pages in tags.items():
-
+    for tag_name, tag_pages in tags.items():                
         rss_template = jinja2.Template(open("generator/rss.jinja", "r").read())
         rss = rss_template.render(
             {
@@ -446,13 +462,14 @@ class Node:
     title: str
     subtitle: Optional[str]
     body: str
+    rss_body: str
 
     backlinks: set[str]
 
     mod_date: str  # "2023-02-23 20:54:42 +0800%"
     creation_date: str  # "2023-02-23 20:54:42 +0800%"
 
-    breadcrump_path: str  # path in notes folder as string
+    breadcrumb_path: str  # path in notes folder as string
     random_page: str  # random page when using static random
     script: Optional[str]  # js to include
     post_date: Optional[str]  # date used for chronological sorting
@@ -467,11 +484,12 @@ tree: dict[str, Node] = {
         subtitle=None,
         children=set(),
         body="",
+        rss_body="",
         backlinks=set(),
         mod_date="1970-01-01",
         creation_date="1970-01-01",
         post_date=None,
-        breadcrump_path="Index.md",
+        breadcrumb_path="Index.md",
         random_page="",
         script=None,
     )

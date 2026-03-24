@@ -22,7 +22,7 @@
             <description>{{post.subtitle}}</description>
             {% endif %}
             <content:encoded>
-                <![CDATA[{{post.body}}]]>
+                <![CDATA[{{post.rss_body}}]]>
             </content:encoded>
             <guid isPermaLink="false">https://notes.zachmanson.com/{{sanitize_url(post.title)|e}}</guid>
             <pubDate>{{post.post_date}}</pubDate>
