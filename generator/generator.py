@@ -299,8 +299,6 @@ def preprocess_markdown(text):
 
 def process_markdown(text, rss=False):
     if rss:
-        processed_text = markdown.markdown(text, extensions=md_extensions)
-    else:
         processed_text = markdown.markdown(
             text, 
             extensions = [*md_extensions, "generator.extensions.pathconverter"],
@@ -312,6 +310,8 @@ def process_markdown(text, rss=False):
                 }
             },
         )
+    else:
+        processed_text = markdown.markdown(text, extensions=md_extensions)
 
     return processed_text
 
