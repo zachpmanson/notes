@@ -303,7 +303,7 @@ def process_markdown(text, rss=False):
             text, 
             extensions = [*md_extensions, "generator.extensions.pathconverter"],
             extension_configs={
-                "extensions.pathconverter": {
+                "generator.extensions.pathconverter": {
                     "domain": "notes.zachmanson.com",
                     "base_path": "",
                     "absolute": True,
