@@ -4,6 +4,13 @@ subtitle: Some lines worth noting, but not worth their own page.
 This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://drwho.virtadpt.net/drwho.plan.txt). See also [Gwern's page on epigrams](https://gwern.net/epigram).
 
 
+
+---
+
+> Create with no intent, consume with no intent, congratulations, you have industrialized nothingness.
+
+-- [PewDiePie](https://youtu.be/5nL-Eq1lpDU?si=wQxgKkthvg2gFdp7)
+
 ---
 
 > Most of your screen time isn't leisure. It isn't addiction. It isn't even a choice.

@@ -25,3 +25,7 @@ everything on [maxbo.me](https://maxbo.me/)
 village cinemas text colour a loading indicator
 
 ![[village-cinemas.png]]
+
+[girl.surgery](https://girl.surgery/)
+
+![[girl-surgery.png]]
