@@ -18,7 +18,7 @@ from markdown.extensions.codehilite import CodeHiliteExtension
 
 from generator.extensions.cite import CiteExtension
 from generator.extensions.backlink import BacklinkExtension
-from extensions.pathconverter import PathConverterExtension
+from generator.extensions.pathconverter import PathConverterExtension
 
 import generator.helpers as helpers
 
