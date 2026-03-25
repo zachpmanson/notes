@@ -49,7 +49,7 @@ Navigate to [the channel list](https://www.youtube.com/feed/channels), add the f
         e.replace(/[<>&'"]/g, (e) => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;", "'": "&apos;", '"': "&quot;" })[e]);
       if (items.length > 0) {
         console.log(items.map(([e]) => e).join("\n"));
-        let e = `<?xml version="1.0" encoding="UTF-8"?>\n<opml version="1.0">\n\t<head>\n\t\t<title>YouTube Subscriptions as RSS</title>\n\t</head>\n\t<body>\n\t\t<outline text="YouTube Subscriptions">${items.map(([e, t, n]) => `\n\t\t\t<outline type="rss" text="${a(t)}" title="${a(t)}" xmlUrl="${e}" htmlUrl="${n}"/>`).join("")}\n\t\t</outline>\n\t\t<outline text="YouTube Subscription Videos">${items.map(([e, t, n]) => `\n\t\t\t<outline type="rss" text="${a(t)}" title="${a(t).replace("channel_id=UC","playlist_id=UULF")}" xmlUrl="${e}" htmlUrl="${n}"/>`).join("")}\n\t\t</outline>\n\t</body>\n</opml>`;
+        let e = `<?xml version="1.0" encoding="UTF-8"?>\n<opml version="1.0">\n\t<head>\n\t\t<title>YouTube Subscriptions as RSS</title>\n\t</head>\n\t<body>\n\t\t<outline text="YouTube Subscriptions">${items.map(([e, t, n]) => `\n\t\t\t<outline type="rss" text="${a(t)}" title="${a(t)}" xmlUrl="${e}" htmlUrl="${n}"/>`).join("")}\n\t\t</outline>\n\t\t<outline text="YouTube Subscription Videos">${items.map(([e, t, n]) => `\n\t\t\t<outline type="rss" text="${a(t)}" title="${a(t)}" xmlUrl="${e.replace("channel_id=UC","playlist_id=UULF")}" htmlUrl="${n}"/>`).join("")}\n\t\t</outline>\n\t</body>\n</opml>`;
         const t = window.URL.createObjectURL(new Blob([e], { type: "text/plain" })),
           n = document.createElement("a");
         (n.setAttribute("download", "youtube_subs.opml"),
@@ -64,5 +64,4 @@ Navigate to [the channel list](https://www.youtube.com/feed/channels), add the f
     }
   })();
 })();
-
 ```
