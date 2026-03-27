@@ -1,28 +1,26 @@
-import os
-import re
-from datetime import datetime
-import getopt
-import sys
-import random
 import csv
-from pathlib import Path
-
+import getopt
+import os
+import random
+import re
+import sys
 from dataclasses import dataclass
+from datetime import datetime
+from pathlib import Path
+from pprint import pprint
 from types import FunctionType
 from typing import Optional
+from xml.etree.ElementInclude import include
 
+import frontmatter
 import jinja2
 import markdown
-import frontmatter
 from markdown.extensions.codehilite import CodeHiliteExtension
 
-from generator.extensions.cite import CiteExtension
-from generator.extensions.backlink import BacklinkExtension
-from generator.extensions.pathconverter import PathConverterExtension
-
 import generator.helpers as helpers
-
-from pprint import pprint
+from generator.extensions.backlink import BacklinkExtension
+from generator.extensions.cite import CiteExtension
+from generator.extensions.pathconverter.pathconverter import PathConverterExtension
 
 
 def get_tree():
@@ -299,16 +297,18 @@ def preprocess_markdown(text):
 
 def process_markdown(text, rss=False):
     if rss:
+
         processed_text = markdown.markdown(
-            text, 
-            extensions = [*md_extensions, "generator.extensions.pathconverter"],
-            extension_configs={
-                "generator.extensions.pathconverter": {
-                    "domain": "notes.zachmanson.com",
-                    "base_path": "",
-                    "absolute": True,
-                }
-            },
+            text,
+            extensions=[
+                *md_extensions,
+                PathConverterExtension(
+                    domain="https://notes.zachmanson.com",
+                    base_path="/",
+                    absolute=True,
+                    include_domain=True,
+                ),
+            ],
         )
     else:
         processed_text = markdown.markdown(text, extensions=md_extensions)
@@ -333,7 +333,7 @@ def format_tags(taglist):
     """Formats tags and adds them to the tags object"""
     global current_node
     # formatted_tags = []
-    for tag in (taglist or []):
+    for tag in taglist or []:
         if tag in tags.keys():
             tags[tag].add(current_node)
         else:
@@ -405,7 +405,7 @@ def apply_js():
 def create_feeds():
     """Builds the rss and atom feeds from tagged pages"""
 
-    for tag_name, tag_pages in tags.items():                
+    for tag_name, tag_pages in tags.items():
         rss_template = jinja2.Template(open("generator/rss.jinja", "r").read())
         rss = rss_template.render(
             {
@@ -509,6 +509,7 @@ orphans: list[str] = []
 post_template = jinja2.Template(open("generator/template.jinja", "r").read())
 
 VERBOSE = False
+
 
 def build_feeds():
     try:

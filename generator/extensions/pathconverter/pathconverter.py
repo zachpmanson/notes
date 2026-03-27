@@ -33,12 +33,14 @@ THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABI
 CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 """
-from markdown import Extension
-from markdown.postprocessors import Postprocessor
-from . import util
 import os
 import re
 from urllib.parse import urlunparse
+
+from markdown import Extension
+from markdown.postprocessors import Postprocessor
+
+from . import util
 
 RE_TAG_HTML = r'''(?xus)
     (?:
@@ -94,7 +96,7 @@ def repl_relative(m, base_path, relative_path):
     return link
 
 
-def repl_absolute(m, base_path, file_scheme, domain):
+def repl_absolute(m, base_path, file_scheme, domain, include_domain):
     """Replace path with absolute path."""
     if domain == None:
         domain = ""
@@ -119,13 +121,22 @@ def repl_absolute(m, base_path, file_scheme, domain):
                     start,
                     urlunparse((scheme, netloc, path, params, query, fragment))
                 )
+        elif is_absolute and include_domain:
+            if not file_scheme:
+                link = '%s"%s%s"' % (
+                    m.group('name'),
+                    domain,
+                    urlunparse((scheme, netloc, path, params, query, fragment))
+                )
+
+          
     except Exception:  # pragma: no cover
         # Parsing crashed and burned; no need to continue.
         pass
     return link
 
 
-def repl(m, base_path, rel_path=None, file_scheme=None, domain=None):
+def repl(m, base_path, rel_path=None, file_scheme=None, domain=None, include_domain=False):
     """Replace."""
 
     if m.group('avoid'):
@@ -133,7 +144,7 @@ def repl(m, base_path, rel_path=None, file_scheme=None, domain=None):
     else:
         tag = m.group('open')
         if rel_path is None:
-            tag += RE_TAG_LINK_ATTR.sub(lambda m2: repl_absolute(m2, base_path, file_scheme, domain), m.group('attr'))
+            tag += RE_TAG_LINK_ATTR.sub(lambda m2: repl_absolute(m2, base_path, file_scheme, domain, include_domain), m.group('attr'))
         else:
             tag += RE_TAG_LINK_ATTR.sub(lambda m2: repl_relative(m2, base_path, rel_path), m.group('attr'))
         tag += m.group('close')
@@ -149,13 +160,14 @@ class PathConverterPostprocessor(Postprocessor):
         domain = self.config['domain']
         basepath = self.config['base_path']
         relativepath = self.config['relative_path']
+        include_domain = bool(self.config['include_domain'])
         absolute = bool(self.config['absolute'])
         filescheme = bool(self.config['file_scheme'])
         tags = re.compile(RE_TAG_HTML % '|'.join(self.config['tags'].split()))
         if not absolute and basepath and relativepath:
             text = tags.sub(lambda m: repl(m, basepath, rel_path=relativepath), text)
         elif absolute and basepath:
-            text = tags.sub(lambda m: repl(m, basepath, file_scheme=filescheme, domain=domain), text)
+            text = tags.sub(lambda m: repl(m, basepath, file_scheme=filescheme, domain=domain, include_domain=include_domain), text)
         return text
 
 
@@ -167,6 +179,7 @@ class PathConverterExtension(Extension):
 
         self.config = {
             'domain': ["", "https://example.com"],
+            'include_domain': [False, "Include domain in path - Default: False"],
             'base_path': ["", "Base path used to find files - Default: \"\""],
             'relative_path': ["", "Path that files will be relative to (not needed if using absolute) - Default: \"\""],
             'absolute': [False, "Paths are absolute by default; disable for relative - Default: False"],
