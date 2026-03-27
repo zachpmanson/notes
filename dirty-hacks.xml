@@ -13,7 +13,7 @@
             <link>https://notes.zachmanson.com/dirty-hacks</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Wed, 25 Mar 2026 23:14:59 </lastBuildDate>
+        <lastBuildDate>Fri, 27 Mar 2026 00:59:38 </lastBuildDate>
         
         <item>
             <title>RTK Query vs. Infinite Scrolling</title>
@@ -22,7 +22,7 @@
             <content:encoded>
                 <![CDATA[<p><strong>Update 2026-02-04: There is now native support for infinite scrolling-style loading patterns.</strong> See the <a href="https://github.com/reduxjs/redux-toolkit/releases/tag/v2.6.0">announcement here</a> and the <a href="https://redux-toolkit.js.org/rtk-query/usage/infinite-queries">docs here</a>.</p>
 <hr />
-<p>RTK Query with <a href="/react">React</a> is pretty great! The primary pattern you find yourself using with it is: </p>
+<p>RTK Query with <a href="https://notes.zachmanson.com/react">React</a> is pretty great! The primary pattern you find yourself using with it is: </p>
 <ol>
 <li>writing a small API definition that provides <ol>
 <li>the endpoint url </li>
