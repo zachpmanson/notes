@@ -6,3 +6,8 @@ Future writing:
 - [Hammock Driven Development](https://www.youtube.com/watch?v=f84n5oFoZBc)
 - [Suffering-oriented programming](http://nathanmarz.com/blog/suffering-oriented-programming.html)
 - [Gaslight Driven Development](https://tonsky.me/blog/gaslight-driven-development/)
+
+
+## Further Reading
+
+- [Little Known Development Methods (2009)](https://lr0.org/blog/p/lkdm/)
