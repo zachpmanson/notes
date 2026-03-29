@@ -5,6 +5,15 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> In order for me to write poetry that isn’t political
+> I must listen to the birds
+> and in order to hear the birds
+> the warplanes must be silent.
+
+-- Marwan Makhoul
+
+---
+
 > No for-profit company has managed to make a chat system pay for itself.
 
 -- [Simon Heath](https://wiki.alopex.li/ADiveIntoOpenChat)
