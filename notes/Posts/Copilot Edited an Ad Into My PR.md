@@ -11,6 +11,6 @@ After a team member summoned Copilot to correct a typo in a PR of mine, **Copilo
 
 This is horrific. I knew this kind of bullshit would happen eventually, but I didn't expect it so soon.
 
-> first, they are good to their users; then they abuse their users to make things better for their business customers; finally, they abuse those business customers to claw back all the value for themselves
+> Here is how platforms die: first, they are good to their users; then they abuse their users to make things better for their business customers; finally, they abuse those business customers to claw back all the value for themselves. Then, they die.
 
 -- [[TikTok's Enshittification|Cory Doctorow]]
