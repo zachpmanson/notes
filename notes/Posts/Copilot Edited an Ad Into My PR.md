@@ -5,7 +5,7 @@ tags:
   - venting
 ---
 
-After a team member summoned Copilot to correct a typo in a PR, **Copilot edited my PR description to include and ad for itself and Raycast**.
+After a team member summoned Copilot to correct a typo in a PR of mine, **Copilot edited my PR description to include and ad for itself and Raycast**.
 
 ![[copilot-hell.png]]
 
