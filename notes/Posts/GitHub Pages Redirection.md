@@ -1,6 +1,8 @@
 ---
 subtitle: This feed has moved and GitHub Pages won't let me redirect you automatically.
 date: 2024-03-29
+tags:
+  - posts
 ---
 (This was written as to tell people to move from my old RSS feed to my new RSS feed on notes.zachmanson.com.  If you are reading this on notes.zachmanson.com you are in the right place.) 
 
