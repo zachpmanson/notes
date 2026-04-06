@@ -6,9 +6,11 @@
   --dark-only: light-dark(none, revert);
   --nonsystem-only: none;
 
-  --sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu,
+  --sans:
+    -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu,
     roboto, noto, arial, sans-serif;
-  --serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif,
+  --serif:
+    Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif,
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   --mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 }
@@ -70,6 +72,7 @@ body {
   line-height: 1.4;
   background-color: var(--background);
   color: var(--primary);
+  font-variant-numeric: tabular-nums;
 }
 
 main {
