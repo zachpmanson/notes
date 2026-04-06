@@ -308,10 +308,6 @@ hr {
   background-color: var(--primary);
 }
 
-date {
-  font-family: var(--mono);
-}
-
 footer {
   max-width: 80ch;
   margin: auto;
