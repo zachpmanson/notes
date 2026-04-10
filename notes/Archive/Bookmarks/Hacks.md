@@ -8,6 +8,7 @@ subtitle: Writeups and mods.
 - [The Short Stack](https://github.com/loopj/short-stack), the world's smallest Nintendo Wii
 - [Jailbreaking a Kindle as a Second Monitor](https://gist.github.com/adtac/eb639d3c707b55a28f0ee9a420aa7e0c)
 - [Hacking an old Kindle to display bus arrival times](https://www.mariannefeng.com/portfolio/kindle/)
+- https://bryankeller.github.io/2026/04/08/porting-mac-os-x-nintendo-wii.html
 
 ## Software
 
