@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> My customers, basically, are working and have too much week left at the end of their paycheck
+
+-- [Micheal Goldstein](https://www.youtube.com/watch?v=WwKV3SEBfGk](https://youtu.be/WwKV3SEBfGk?si=PuElpCiB0NmSo3iC&t=50)
+
+---
+
 > In order for me to write poetry that isn’t political
 > I must listen to the birds
 > and in order to hear the birds
