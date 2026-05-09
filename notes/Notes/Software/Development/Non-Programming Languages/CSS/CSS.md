@@ -6,3 +6,4 @@
 - [Chase McCoy Experiments](https://lab.chsmc.org)
 - [Minecraft in Pure CSS](https://benjaminaster.com/css-minecraft/)
 - [DOOM in CSS](https://nielsleenheer.com/articles/2026/css-is-doomed-rendering-doom-in-3d-with-css/)
+- [Multi-stroke text effect in CSS](https://yuanchuan.dev/multi-stroke-text-effect-in-css)
