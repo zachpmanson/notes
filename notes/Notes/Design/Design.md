@@ -10,3 +10,7 @@ subtitle: Something I desperately need to get better at.
 - [muffinlabs.com](https://muffinlabs.com/), basic i love it
 - [morrisbrodersen.de](https://morrisbrodersen.de/), basic clean
 - https://hojberg.xyz/, nice typography
+
+## Interesting Links
+
+- [Laws of UX] (https://lawsofux.com/)
