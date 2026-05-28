@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> Sometimes, tools don’t move the needle because there’s no needle to move.
+
+-- [Fernando Borretti](https://borretti.me/article/human-bottlenecks)
+
+---
+
 > My customers, basically, are working and have too much week left at the end of their paycheck
 
 -- [Micheal Goldstein](https://www.youtube.com/watch?v=WwKV3SEBfGk](https://youtu.be/WwKV3SEBfGk?si=PuElpCiB0NmSo3iC&t=50)
