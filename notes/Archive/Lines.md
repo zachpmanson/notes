@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> LLMs give you an extra arm and most people use it to jerk themselves off
+
+-- [Joël Franušić's friend](https://mastodon.social/@jpf/116734916023228712)
+
+---
+
 > Sometimes, tools don’t move the needle because there’s no needle to move.
 
 -- [Fernando Borretti](https://borretti.me/article/human-bottlenecks)
