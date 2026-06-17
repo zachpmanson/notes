@@ -36,10 +36,10 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	  vercel + gh actions
 	- **mc.zachmanson.com**  
 	  minecraft server  
-	  trenzalore
+	  asahi
 	- **[nextcloud.zachmanson.com](https://nextcloud.zachmanson.com)**  
 	  nextcloud instance  
-	  trenzalore
+	  naboo
 	- [**unroller.zachmanson.com**](https://unroller.zachmanson.com)  
 	  deployed instance of [[Mastodon Thread Unroller]]  
 	  vercel
