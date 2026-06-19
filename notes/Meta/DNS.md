@@ -27,7 +27,7 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	  trackstar
 	- **[pg.zachmanson.com](https://pg.zachmanson.com)** 
 	  deployed instance of [[Penultimate Guitar]]   
-	  vercel
+	  naboo
 	- **[todont.zachmanson.com](https://todont.zachmanson.com)**  
 	  an extremely basic todo I built to learn React  
 	  vercel
