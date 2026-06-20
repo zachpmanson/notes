@@ -54,3 +54,7 @@
 - [Letters of last resort](https://en.wikipedia.org/wiki/Letters_of_last_resort)
 - [Telling the bees](https://en.wikipedia.org/wiki/Telling_the_bees)
 - [Methods of Divination](https://en.wikipedia.org/wiki/Methods_of_divination)
+
+## Alternate Interfaces
+
+- [Windows XP](https://explorer.samismith.com/)

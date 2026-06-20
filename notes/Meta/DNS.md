@@ -46,7 +46,6 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	- **[phanpy.zachmanson.com](https://phanpy.zachmanson.com)**  
 	  deployed instance. of my patched version of Phanpy. 
 	  vercel
-
 	- [**mates.zachmanson.com**](https://mates.zachmanson.com) 
 	  deployment for ex. erimental mates project  
 	  vercel
