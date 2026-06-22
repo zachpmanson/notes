@@ -31,6 +31,12 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	- **[pg.zachmanson.com](https://pg.zachmanson.com)** 
 	  deployed instance of [[Penultimate Guitar]]   
 	  naboo
+	- **[bingo.zachmanson.com](https://bingo.zachmanson.com)** 
+	  live bingo games!  
+	  naboo
+	- **[status.zachmanson.com](https://status.zachmanson.com)** 
+	  uptime koma instance for all services  
+	  naboo
 	- **[todont.zachmanson.com](https://todont.zachmanson.com)**  
 	  an extremely basic todo I built to learn React  
 	  vercel
