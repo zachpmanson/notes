@@ -22,6 +22,9 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	- **[minecraftle.zachmanson.com](https://minecraftle.zachmanson.com)**  
 	  deployed instance of [[Minecraftle]], a puzzle game based on Wordle and Minecraft crafting recipes   
 	  mctl (digitalocean)  
+	- [staging.mineraftle.zachmanson.com](https://staging.mineraftle.zachmanson.com)  
+	  staging env for testing mincraftle things  
+	  vercel
 	- **[db.zachmanson.com](db.zachmanson.com)**  
 	  postgres databases for Penultimate Guitar, Minecraftle, Alculator, api   
 	  trackstar
@@ -46,7 +49,6 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	- **[phanpy.zachmanson.com](https://phanpy.zachmanson.com)**  
 	  deployed instance. of my patched version of Phanpy. 
 	  vercel
-
 	- [**mates.zachmanson.com**](https://mates.zachmanson.com) 
 	  deployment for ex. erimental mates project  
 	  vercel
