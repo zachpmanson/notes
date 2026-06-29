@@ -18,3 +18,4 @@
 	- https://www.postgresql.org/docs/current/using-explain.html
 	- https://thoughtbot.com/blog/reading-an-explain-analyze-query-plan
 	- [a tool for analysing it](https://explain.depesz.com/)
+- [How PgBouncer Works](https://www.augusteo.com/blog/how-pgbouncer-works/)
