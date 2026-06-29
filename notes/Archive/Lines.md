@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> It never gets easier, you just get faster.
+
+-- Greg LeMond
+
+---
+
 > Tap and Go works the same way Myki does  
 > Card tells reader “I’m card 6742069”  
 > Reader tells server “card 6742069 just touched on at South Kensington at 4:20PM”  
