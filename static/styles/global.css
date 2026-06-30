@@ -73,6 +73,7 @@ body {
   background-color: var(--background);
   color: var(--primary);
   font-variant-numeric: tabular-nums;
+  min-height: 100vh;
 }
 
 main {
@@ -166,6 +167,8 @@ nav {
       text-align: left;
 
       max-height: 7.5rem;
+
+      transition: max-height 0.15s ease-in-out;
       max-width: 35ch;
       min-width: 10ch;
       width: max-content;
@@ -175,8 +178,6 @@ nav {
 
       overflow-y: auto;
       overflow-x: hidden;
-
-      transition: max-height 0.15s ease-out;
 
       scrollbar-gutter: stable;
 
@@ -222,6 +223,11 @@ nav {
   .nav-links a[href^="/"]:not(.activated-link) {
     padding-right: 1rem;
   }
+}
+
+nav:target .nav-links {
+  max-height: 30rem;
+  transition: none;
 }
 
 nav:hover .nav-links {
