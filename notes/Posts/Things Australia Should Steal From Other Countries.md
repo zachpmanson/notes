@@ -39,3 +39,4 @@ Things Australia does better:
 - bathrooms
 - no toilet attendants 
 - maccas
+- mandatory voting & preferential voting

@@ -3,6 +3,12 @@ subtitle: The language/package manager/OS.
 ---
 I don't quite know where to put this yet.
 
+## Advice Advised
+
+- Use flakes
+- Don't use nix-env
+- Use nix-ld
+
 ## Resources
 
 - [NixOS: Everything Everywhere All At Once](https://www.youtube.com/watch?v=CwfKlX3rA6E&t=4s), the video that convinced me to try NixOS
