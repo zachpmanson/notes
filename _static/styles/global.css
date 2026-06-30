@@ -225,14 +225,14 @@ nav {
   }
 }
 
-nav:target .nav-links {
-  max-height: 30rem;
-  transition: none;
-}
-
 nav:hover .nav-links {
   max-height: 30rem;
   transition: max-height 0.15s ease-in;
+}
+
+nav:target .nav-links {
+  max-height: max(30rem, 40vh);
+  transition: none;
 }
 
 .meta {
