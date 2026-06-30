@@ -7,7 +7,6 @@
 #   history      <- build.sh         (regenerate history.csv only)
 #   dev          <- dev.sh           (serve + rebuild on change)
 #   deploy       <- deploy.sh        (build and push the gh-pages site)
-#   update-notes <- update-notes.sh  (commit note changes, then deploy)
 #
 # Pass extra args to the generator with ARGS, e.g. `make build ARGS=foo`.
 #
@@ -84,20 +83,3 @@ deploy:
 	    git commit -m "gh-pages deployment $$(date -Iseconds)" && \
 	    echo "Uploading to webserver..." && \
 	    git push
-
-## Commit any note changes on main, then deploy the site
-update-notes:
-	git pull --autostash
-	@set -e; \
-	if [[ $$(git status --porcelain) ]]; then \
-	    git add -N notes; \
-	    FILESCHANGED=$$(git diff --name-only notes | sed 's/.*/"&"/' | xargs -n1 basename | sed 's/\.md//' | tr "\n" " "); \
-	    CLEANFILENAMES=$${FILESCHANGED% }; \
-	    git add notes; \
-	    git commit -m "Update notes: $$CLEANFILENAMES"; \
-	    git push; \
-	    echo "Commited notes to main branch"; \
-	else \
-	    echo "No changes to notes"; \
-	fi
-	$(MAKE) deploy
