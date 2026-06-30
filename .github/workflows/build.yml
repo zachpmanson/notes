@@ -15,11 +15,11 @@ jobs:
           fetch-depth: 0
       - name: Install uv
         uses: astral-sh/setup-uv@v6
-      - name: run ./setup.sh
+      - name: make setup
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          ./setup.sh
+          make setup
 
-      - name: run ./deploy.sh
-        run: ./deploy.sh
+      - name: make deploy
+        run: make deploy
