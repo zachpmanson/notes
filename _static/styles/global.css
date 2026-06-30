@@ -231,7 +231,7 @@ nav:hover .nav-links {
 }
 
 nav:target .nav-links {
-  max-height: max(30rem, 40vh);
+  max-height: min(30rem, 40vh);
   transition: none;
 }
 
