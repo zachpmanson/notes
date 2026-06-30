@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,35 +35,35 @@
           
           
           
-          <a href="/brainfuck">Brainfuck</a>
+          <a href="/brainfuck#nav">Brainfuck</a>
           
           
           
-          <a href="/c">C</a>
+          <a href="/c#nav">C</a>
           
           
           
-          <a href="/c++">C++</a>
+          <a href="/c++#nav">C++</a>
           
           
           
-          <a href="/go">Go</a>
+          <a href="/go#nav">Go</a>
           
           
           
-          <a href="/javascript">JavaScript</a>
+          <a href="/javascript#nav">JavaScript</a>
           
           
           
-          <a href="/python">Python</a>
+          <a href="/python#nav">Python</a>
           
           
           
-          <a href="/r">R</a>
+          <a href="/r#nav">R</a>
           
           
           
-          <a href="/ruby" class="activated-link">Ruby</a>
+          <a href="/ruby#nav" class="activated-link">Ruby</a>
           
           
         </div>
@@ -74,7 +74,7 @@
           
           
           
-          <a href="/ruby-on-rails" class="activated-link">Ruby on Rails</a>
+          <a href="/ruby-on-rails#nav" class="activated-link">Ruby on Rails</a>
           
 
           
@@ -106,7 +106,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/activitypub" class="not-extra-small">random</a>
+          <a href="/ochrs-2.0" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Ruby on Rails'">reply</a>
@@ -125,7 +125,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Programming Languages/Ruby/Ruby on Rails.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Software/Development/Programming Languages/Ruby/Ruby on Rails.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/activitypub" class="extra-small">random</a>
+          <a href="/ochrs-2.0" class="extra-small">random</a>
         </div>
       </div>
 
@@ -168,7 +168,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

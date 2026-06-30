@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,27 +35,27 @@
           
           
           
-          <a href="/bookmarks">Bookmarks</a>
+          <a href="/bookmarks#nav">Bookmarks</a>
           
           
           
-          <a href="/fiction" class="activated-link">Fiction</a>
+          <a href="/fiction#nav" class="activated-link">Fiction</a>
           
           
           
-          <a href="/folklore">Folklore</a>
+          <a href="/folklore#nav">Folklore</a>
           
           
           
-          <a href="/lines">Lines</a>
+          <a href="/lines#nav">Lines</a>
           
           
           
-          <a href="/problems">Problems</a>
+          <a href="/problems#nav">Problems</a>
           
           
           
-          <a href="/snippets">Snippets</a>
+          <a href="/snippets#nav">Snippets</a>
           
           
         </div>
@@ -66,12 +66,12 @@
           
           
           
-          <a href="/indigos-eternal-cafe" class="activated-link">Indigo's Eternal Cafe</a>
+          <a href="/indigos-eternal-cafe#nav" class="activated-link">Indigo's Eternal Cafe</a>
           
 
           
           
-          <a href="/techaro">Techaro</a>
+          <a href="/techaro#nav">Techaro</a>
           
 
           
@@ -103,7 +103,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/llama" class="not-extra-small">random</a>
+          <a href="/code-opinions" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Indigo's Eternal Cafe'">reply</a>
@@ -122,7 +122,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Fiction/Indigo's Eternal Cafe.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Fiction/Indigo's Eternal Cafe.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/llama" class="extra-small">random</a>
+          <a href="/code-opinions" class="extra-small">random</a>
         </div>
       </div>
 
@@ -165,7 +165,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

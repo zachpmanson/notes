@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,35 +35,35 @@
           
           
           
-          <a href="/brainfuck">Brainfuck</a>
+          <a href="/brainfuck#nav">Brainfuck</a>
           
           
           
-          <a href="/c">C</a>
+          <a href="/c#nav">C</a>
           
           
           
-          <a href="/c++">C++</a>
+          <a href="/c++#nav">C++</a>
           
           
           
-          <a href="/go">Go</a>
+          <a href="/go#nav">Go</a>
           
           
           
-          <a href="/javascript" class="activated-link">JavaScript</a>
+          <a href="/javascript#nav" class="activated-link">JavaScript</a>
           
           
           
-          <a href="/python">Python</a>
+          <a href="/python#nav">Python</a>
           
           
           
-          <a href="/r">R</a>
+          <a href="/r#nav">R</a>
           
           
           
-          <a href="/ruby">Ruby</a>
+          <a href="/ruby#nav">Ruby</a>
           
           
         </div>
@@ -74,17 +74,17 @@
           
           
           
-          <a href="/anything-to-number-conversion-table">Anything-to-Number Conversion Table</a>
+          <a href="/anything-to-number-conversion-table#nav">Anything-to-Number Conversion Table</a>
           
 
           
           
-          <a href="/next.js">Next.js</a>
+          <a href="/next.js#nav">Next.js</a>
           
 
           
           
-          <a href="/typescript" class="activated-link">TypeScript</a>
+          <a href="/typescript#nav" class="activated-link">TypeScript</a>
           
 
           
@@ -94,11 +94,11 @@
         
         <div class="nav-links children">
           
-          <a href="/cursed-typescript-projects">Cursed TypeScript Projects</a>
+          <a href="/cursed-typescript-projects#nav">Cursed TypeScript Projects</a>
           
-          <a href="/declarative-merging">Declarative Merging</a>
+          <a href="/declarative-merging#nav">Declarative Merging</a>
           
-          <a href="/void-vs.-never">void vs. never</a>
+          <a href="/void-vs.-never#nav">void vs. never</a>
           
         </div>
         
@@ -130,7 +130,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/regex-for-python-optional-to-none-union" class="not-extra-small">random</a>
+          <a href="/doom" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'TypeScript'">reply</a>
@@ -149,7 +149,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Software/Development/Programming Languages/JavaScript/TypeScript/TypeScript.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/regex-for-python-optional-to-none-union" class="extra-small">random</a>
+          <a href="/doom" class="extra-small">random</a>
         </div>
       </div>
 
@@ -210,7 +210,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

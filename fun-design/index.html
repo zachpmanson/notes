@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,51 +35,51 @@
           
           
           
-          <a href="/art">Art</a>
+          <a href="/art#nav">Art</a>
           
           
           
-          <a href="/courses">Courses</a>
+          <a href="/courses#nav">Courses</a>
           
           
           
-          <a href="/cybersecurity">Cybersecurity</a>
+          <a href="/cybersecurity#nav">Cybersecurity</a>
           
           
           
-          <a href="/design" class="activated-link">Design</a>
+          <a href="/design#nav" class="activated-link">Design</a>
           
           
           
-          <a href="/hardware">Hardware</a>
+          <a href="/hardware#nav">Hardware</a>
           
           
           
-          <a href="/language">Language</a>
+          <a href="/language#nav">Language</a>
           
           
           
-          <a href="/mathematics">Mathematics</a>
+          <a href="/mathematics#nav">Mathematics</a>
           
           
           
-          <a href="/miscellany">Miscellany</a>
+          <a href="/miscellany#nav">Miscellany</a>
           
           
           
-          <a href="/music">Music</a>
+          <a href="/music#nav">Music</a>
           
           
           
-          <a href="/networks">Networks</a>
+          <a href="/networks#nav">Networks</a>
           
           
           
-          <a href="/software">Software</a>
+          <a href="/software#nav">Software</a>
           
           
           
-          <a href="/time">Time</a>
+          <a href="/time#nav">Time</a>
           
           
         </div>
@@ -90,42 +90,42 @@
           
           
           
-          <a href="/dark-mode">Dark Mode</a>
+          <a href="/dark-mode#nav">Dark Mode</a>
           
 
           
           
-          <a href="/fun-design" class="activated-link">Fun Design</a>
+          <a href="/fun-design#nav" class="activated-link">Fun Design</a>
           
 
           
           
-          <a href="/github-design-decisions">GitHub Design Decisions</a>
+          <a href="/github-design-decisions#nav">GitHub Design Decisions</a>
           
 
           
           
-          <a href="/kinde-design-decisions">Kinde Design Decisions</a>
+          <a href="/kinde-design-decisions#nav">Kinde Design Decisions</a>
           
 
           
           
-          <a href="/slack-design-decisions">Slack Design Decisions</a>
+          <a href="/slack-design-decisions#nav">Slack Design Decisions</a>
           
 
           
           
-          <a href="/spotify-design-decisions">Spotify Design Decisions</a>
+          <a href="/spotify-design-decisions#nav">Spotify Design Decisions</a>
           
 
           
           
-          <a href="/typography">Typography</a>
+          <a href="/typography#nav">Typography</a>
           
 
           
           
-          <a href="/web-design">Web Design</a>
+          <a href="/web-design#nav">Web Design</a>
           
 
           
@@ -166,7 +166,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/guerilla-open-access-manifesto" class="not-extra-small">random</a>
+          <a href="/sticky-elements" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Fun Design'">reply</a>
@@ -185,7 +185,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Design/Fun Design.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Design/Fun Design.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/guerilla-open-access-manifesto" class="extra-small">random</a>
+          <a href="/sticky-elements" class="extra-small">random</a>
         </div>
       </div>
 
@@ -228,7 +228,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

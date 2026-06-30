@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,43 +35,43 @@
           
           
           
-          <a href="/apsenyms">Apsenyms</a>
+          <a href="/apsenyms#nav">Apsenyms</a>
           
           
           
-          <a href="/characters">Characters</a>
+          <a href="/characters#nav">Characters</a>
           
           
           
-          <a href="/diacritics">Diacritics</a>
+          <a href="/diacritics#nav">Diacritics</a>
           
           
           
-          <a href="/dictionary">Dictionary</a>
+          <a href="/dictionary#nav">Dictionary</a>
           
           
           
-          <a href="/etymology">Etymology</a>
+          <a href="/etymology#nav">Etymology</a>
           
           
           
-          <a href="/latin-phrases">Latin Phrases</a>
+          <a href="/latin-phrases#nav">Latin Phrases</a>
           
           
           
-          <a href="/linguistic-concepts">Linguistic Concepts</a>
+          <a href="/linguistic-concepts#nav">Linguistic Concepts</a>
           
           
           
-          <a href="/linguistic-forensics">Linguistic Forensics</a>
+          <a href="/linguistic-forensics#nav">Linguistic Forensics</a>
           
           
           
-          <a href="/nomenclature" class="activated-link">Nomenclature</a>
+          <a href="/nomenclature#nav" class="activated-link">Nomenclature</a>
           
           
           
-          <a href="/words">Words</a>
+          <a href="/words#nav">Words</a>
           
           
         </div>
@@ -82,22 +82,22 @@
           
           
           
-          <a href="/eponyms" class="activated-link">Eponyms</a>
+          <a href="/eponyms#nav" class="activated-link">Eponyms</a>
           
 
           
           
-          <a href="/microsoft-product-names">Microsoft Product Names</a>
+          <a href="/microsoft-product-names#nav">Microsoft Product Names</a>
           
 
           
           
-          <a href="/names-to-avoid">Names To Avoid</a>
+          <a href="/names-to-avoid#nav">Names To Avoid</a>
           
 
           
           
-          <a href="/program-names">Program Names</a>
+          <a href="/program-names#nav">Program Names</a>
           
 
           
@@ -150,7 +150,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/pirate-libraries" class="not-extra-small">random</a>
+          <a href="/idempotent" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Eponyms'">reply</a>
@@ -169,7 +169,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Language/Nomenclature/Eponyms.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Language/Nomenclature/Eponyms.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/pirate-libraries" class="extra-small">random</a>
+          <a href="/idempotent" class="extra-small">random</a>
         </div>
       </div>
 
@@ -220,7 +220,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

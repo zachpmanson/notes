@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,39 +35,39 @@
           
           
           
-          <a href="/alculator">Alculator</a>
+          <a href="/alculator#nav">Alculator</a>
           
           
           
-          <a href="/covid-19-tracker">COVID-19 Tracker</a>
+          <a href="/covid-19-tracker#nav">COVID-19 Tracker</a>
           
           
           
-          <a href="/mastodon-thread-unroller">Mastodon Thread Unroller</a>
+          <a href="/mastodon-thread-unroller#nav">Mastodon Thread Unroller</a>
           
           
           
-          <a href="/minecraftle" class="activated-link">Minecraftle</a>
+          <a href="/minecraftle#nav" class="activated-link">Minecraftle</a>
           
           
           
-          <a href="/ochrs">Ochrs</a>
+          <a href="/ochrs#nav">Ochrs</a>
           
           
           
-          <a href="/penultimate-guitar">Penultimate Guitar</a>
+          <a href="/penultimate-guitar#nav">Penultimate Guitar</a>
           
           
           
-          <a href="/status-messenger">Status Messenger</a>
+          <a href="/status-messenger#nav">Status Messenger</a>
           
           
           
-          <a href="/ironprof">ironprof</a>
+          <a href="/ironprof#nav">ironprof</a>
           
           
           
-          <a href="/snakeware">snakeware</a>
+          <a href="/snakeware#nav">snakeware</a>
           
           
         </div>
@@ -78,17 +78,17 @@
           
           
           
-          <a href="/how-minecraft-stores-crafting-recipes">How Minecraft Stores Crafting Recipes</a>
+          <a href="/how-minecraft-stores-crafting-recipes#nav">How Minecraft Stores Crafting Recipes</a>
           
 
           
           
-          <a href="/minecraftle-v1.1">Minecraftle v1.1</a>
+          <a href="/minecraftle-v1.1#nav">Minecraftle v1.1</a>
           
 
           
           
-          <a href="/minecraftle-v2.0" class="activated-link">Minecraftle v2.0</a>
+          <a href="/minecraftle-v2.0#nav" class="activated-link">Minecraftle v2.0</a>
           
 
           
@@ -127,7 +127,7 @@
           <date>2024-04-08</date>
           
           <a href="/recent-changes">recent</a>
-          <a href="/superstitious-encoding" class="not-extra-small">random</a>
+          <a href="/chris-mcdonald" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Minecraftle v2.0'">reply</a>
@@ -146,7 +146,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Projects/Minecraftle/Minecraftle v2.0.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Projects/Minecraftle/Minecraftle v2.0.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/superstitious-encoding" class="extra-small">random</a>
+          <a href="/chris-mcdonald" class="extra-small">random</a>
         </div>
       </div>
 
@@ -204,7 +204,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

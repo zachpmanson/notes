@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,51 +35,51 @@
           
           
           
-          <a href="/art">Art</a>
+          <a href="/art#nav">Art</a>
           
           
           
-          <a href="/courses" class="activated-link">Courses</a>
+          <a href="/courses#nav" class="activated-link">Courses</a>
           
           
           
-          <a href="/cybersecurity">Cybersecurity</a>
+          <a href="/cybersecurity#nav">Cybersecurity</a>
           
           
           
-          <a href="/design">Design</a>
+          <a href="/design#nav">Design</a>
           
           
           
-          <a href="/hardware">Hardware</a>
+          <a href="/hardware#nav">Hardware</a>
           
           
           
-          <a href="/language">Language</a>
+          <a href="/language#nav">Language</a>
           
           
           
-          <a href="/mathematics">Mathematics</a>
+          <a href="/mathematics#nav">Mathematics</a>
           
           
           
-          <a href="/miscellany">Miscellany</a>
+          <a href="/miscellany#nav">Miscellany</a>
           
           
           
-          <a href="/music">Music</a>
+          <a href="/music#nav">Music</a>
           
           
           
-          <a href="/networks">Networks</a>
+          <a href="/networks#nav">Networks</a>
           
           
           
-          <a href="/software">Software</a>
+          <a href="/software#nav">Software</a>
           
           
           
-          <a href="/time">Time</a>
+          <a href="/time#nav">Time</a>
           
           
         </div>
@@ -90,17 +90,17 @@
           
           
           
-          <a href="/artificial-intelligence---a-modern-approach">Artificial Intelligence - A Modern Approach</a>
+          <a href="/artificial-intelligence---a-modern-approach#nav">Artificial Intelligence - A Modern Approach</a>
           
 
           
           
-          <a href="/practical-deep-learning">Practical Deep Learning</a>
+          <a href="/practical-deep-learning#nav">Practical Deep Learning</a>
           
 
           
           
-          <a href="/uwa-computer-science" class="activated-link">UWA Computer Science</a>
+          <a href="/uwa-computer-science#nav" class="activated-link">UWA Computer Science</a>
           
 
           
@@ -110,13 +110,13 @@
         
         <div class="nav-links children">
           
-          <a href="/amitava-datta">Amitava Datta</a>
+          <a href="/amitava-datta#nav">Amitava Datta</a>
           
-          <a href="/cits2003">CITS2003</a>
+          <a href="/cits2003#nav">CITS2003</a>
           
-          <a href="/chris-mcdonald">Chris McDonald</a>
+          <a href="/chris-mcdonald#nav">Chris McDonald</a>
           
-          <a href="/michael-wise">Michael Wise</a>
+          <a href="/michael-wise#nav">Michael Wise</a>
           
         </div>
         
@@ -294,7 +294,7 @@
           <date>2023-06-19</date>
           
           <a href="/recent-changes">recent</a>
-          <a href="/life-of-an-oracle-developer" class="not-extra-small">random</a>
+          <a href="/feed-uri-scheme" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'UWA Computer Science'">reply</a>
@@ -313,7 +313,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Courses/UWA Computer Science/UWA Computer Science.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Courses/UWA Computer Science/UWA Computer Science.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/life-of-an-oracle-developer" class="extra-small">random</a>
+          <a href="/feed-uri-scheme" class="extra-small">random</a>
         </div>
       </div>
 
@@ -395,7 +395,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

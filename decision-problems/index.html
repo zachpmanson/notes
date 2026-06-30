@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,27 +35,27 @@
           
           
           
-          <a href="/complexity-theory" class="activated-link">Complexity Theory</a>
+          <a href="/complexity-theory#nav" class="activated-link">Complexity Theory</a>
           
           
           
-          <a href="/continuation-passing-style">Continuation-Passing Style</a>
+          <a href="/continuation-passing-style#nav">Continuation-Passing Style</a>
           
           
           
-          <a href="/currying">Currying</a>
+          <a href="/currying#nav">Currying</a>
           
           
           
-          <a href="/functors">Functors</a>
+          <a href="/functors#nav">Functors</a>
           
           
           
-          <a href="/monads">Monads</a>
+          <a href="/monads#nav">Monads</a>
           
           
           
-          <a href="/reflection">Reflection</a>
+          <a href="/reflection#nav">Reflection</a>
           
           
         </div>
@@ -66,12 +66,12 @@
           
           
           
-          <a href="/complexity-classes">Complexity Classes</a>
+          <a href="/complexity-classes#nav">Complexity Classes</a>
           
 
           
           
-          <a href="/decision-problems" class="activated-link">Decision Problems</a>
+          <a href="/decision-problems#nav" class="activated-link">Decision Problems</a>
           
 
           
@@ -101,7 +101,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/enhancement-proposal-for-the-h-programming-language" class="not-extra-small">random</a>
+          <a href="/msotristateenum" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Decision Problems'">reply</a>
@@ -120,7 +120,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Mathematics/Computer Science/Complexity Theory/Decision Problems.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Mathematics/Computer Science/Complexity Theory/Decision Problems.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/enhancement-proposal-for-the-h-programming-language" class="extra-small">random</a>
+          <a href="/msotristateenum" class="extra-small">random</a>
         </div>
       </div>
 
@@ -171,7 +171,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

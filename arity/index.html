@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,51 +35,51 @@
           
           
           
-          <a href="/art">Art</a>
+          <a href="/art#nav">Art</a>
           
           
           
-          <a href="/courses">Courses</a>
+          <a href="/courses#nav">Courses</a>
           
           
           
-          <a href="/cybersecurity">Cybersecurity</a>
+          <a href="/cybersecurity#nav">Cybersecurity</a>
           
           
           
-          <a href="/design">Design</a>
+          <a href="/design#nav">Design</a>
           
           
           
-          <a href="/hardware">Hardware</a>
+          <a href="/hardware#nav">Hardware</a>
           
           
           
-          <a href="/language">Language</a>
+          <a href="/language#nav">Language</a>
           
           
           
-          <a href="/mathematics" class="activated-link">Mathematics</a>
+          <a href="/mathematics#nav" class="activated-link">Mathematics</a>
           
           
           
-          <a href="/miscellany">Miscellany</a>
+          <a href="/miscellany#nav">Miscellany</a>
           
           
           
-          <a href="/music">Music</a>
+          <a href="/music#nav">Music</a>
           
           
           
-          <a href="/networks">Networks</a>
+          <a href="/networks#nav">Networks</a>
           
           
           
-          <a href="/software">Software</a>
+          <a href="/software#nav">Software</a>
           
           
           
-          <a href="/time">Time</a>
+          <a href="/time#nav">Time</a>
           
           
         </div>
@@ -90,37 +90,37 @@
           
           
           
-          <a href="/arity" class="activated-link">Arity</a>
+          <a href="/arity#nav" class="activated-link">Arity</a>
           
 
           
           
-          <a href="/computer-science">Computer Science</a>
+          <a href="/computer-science#nav">Computer Science</a>
           
 
           
           
-          <a href="/friendship-paradox">Friendship Paradox</a>
+          <a href="/friendship-paradox#nav">Friendship Paradox</a>
           
 
           
           
-          <a href="/idempotency">Idempotency</a>
+          <a href="/idempotency#nav">Idempotency</a>
           
 
           
           
-          <a href="/rank">Rank</a>
+          <a href="/rank#nav">Rank</a>
           
 
           
           
-          <a href="/set-theory">Set Theory</a>
+          <a href="/set-theory#nav">Set Theory</a>
           
 
           
           
-          <a href="/sheffer-stroke">Sheffer Stroke</a>
+          <a href="/sheffer-stroke#nav">Sheffer Stroke</a>
           
 
           
@@ -155,7 +155,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/python" class="not-extra-small">random</a>
+          <a href="/feminist-server-manifesto" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Arity'">reply</a>
@@ -174,7 +174,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Mathematics/Arity.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Mathematics/Arity.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/python" class="extra-small">random</a>
+          <a href="/feminist-server-manifesto" class="extra-small">random</a>
         </div>
       </div>
 
@@ -217,7 +217,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

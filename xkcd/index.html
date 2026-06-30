@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,27 +35,27 @@
           
           
           
-          <a href="/bookmarks" class="activated-link">Bookmarks</a>
+          <a href="/bookmarks#nav" class="activated-link">Bookmarks</a>
           
           
           
-          <a href="/fiction">Fiction</a>
+          <a href="/fiction#nav">Fiction</a>
           
           
           
-          <a href="/folklore">Folklore</a>
+          <a href="/folklore#nav">Folklore</a>
           
           
           
-          <a href="/lines">Lines</a>
+          <a href="/lines#nav">Lines</a>
           
           
           
-          <a href="/problems">Problems</a>
+          <a href="/problems#nav">Problems</a>
           
           
           
-          <a href="/snippets">Snippets</a>
+          <a href="/snippets#nav">Snippets</a>
           
           
         </div>
@@ -66,97 +66,97 @@
           
           
           
-          <a href="/archives">Archives</a>
+          <a href="/archives#nav">Archives</a>
           
 
           
           
-          <a href="/articles">Articles</a>
+          <a href="/articles#nav">Articles</a>
           
 
           
           
-          <a href="/audio">Audio</a>
+          <a href="/audio#nav">Audio</a>
           
 
           
           
-          <a href="/blogs">Blogs</a>
+          <a href="/blogs#nav">Blogs</a>
           
 
           
           
-          <a href="/bookmarklets">Bookmarklets</a>
+          <a href="/bookmarklets#nav">Bookmarklets</a>
           
 
           
           
-          <a href="/chatrooms">Chatrooms</a>
+          <a href="/chatrooms#nav">Chatrooms</a>
           
 
           
           
-          <a href="/cheatsheets">Cheatsheets</a>
+          <a href="/cheatsheets#nav">Cheatsheets</a>
           
 
           
           
-          <a href="/digital-gardens">Digital Gardens</a>
+          <a href="/digital-gardens#nav">Digital Gardens</a>
           
 
           
           
-          <a href="/forum-threads">Forum Threads</a>
+          <a href="/forum-threads#nav">Forum Threads</a>
           
 
           
           
-          <a href="/hacks">Hacks</a>
+          <a href="/hacks#nav">Hacks</a>
           
 
           
           
-          <a href="/lists">Lists</a>
+          <a href="/lists#nav">Lists</a>
           
 
           
           
-          <a href="/manifestos">Manifestos</a>
+          <a href="/manifestos#nav">Manifestos</a>
           
 
           
           
-          <a href="/technology-gibberish">Technology Gibberish</a>
+          <a href="/technology-gibberish#nav">Technology Gibberish</a>
           
 
           
           
-          <a href="/tools">Tools</a>
+          <a href="/tools#nav">Tools</a>
           
 
           
           
-          <a href="/web-communities">Web Communities</a>
+          <a href="/web-communities#nav">Web Communities</a>
           
 
           
           
-          <a href="/websites">Websites</a>
+          <a href="/websites#nav">Websites</a>
           
 
           
           
-          <a href="/wikipedia-articles">Wikipedia Articles</a>
+          <a href="/wikipedia-articles#nav">Wikipedia Articles</a>
           
 
           
           
-          <a href="/wikis">Wikis</a>
+          <a href="/wikis#nav">Wikis</a>
           
 
           
           
-          <a href="/xkcd" class="activated-link">xkcd</a>
+          <a href="/xkcd#nav" class="activated-link">xkcd</a>
           
 
           
@@ -166,7 +166,7 @@
         
         <div class="nav-links children">
           
-          <a href="/dependency-2">Dependency 2</a>
+          <a href="/dependency-2#nav">Dependency 2</a>
           
         </div>
         
@@ -209,7 +209,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/react-and-blur()" class="not-extra-small">random</a>
+          <a href="/podcast" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'xkcd'">reply</a>
@@ -228,7 +228,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Bookmarks/xkcd/xkcd.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Bookmarks/xkcd/xkcd.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/react-and-blur()" class="extra-small">random</a>
+          <a href="/podcast" class="extra-small">random</a>
         </div>
       </div>
 
@@ -271,7 +271,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

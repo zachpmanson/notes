@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,23 +35,23 @@
           
           
           
-          <a href="/archive" class="activated-link">Archive</a>
+          <a href="/archive#nav" class="activated-link">Archive</a>
           
           
           
-          <a href="/meta">Meta</a>
+          <a href="/meta#nav">Meta</a>
           
           
           
-          <a href="/notes">Notes</a>
+          <a href="/notes#nav">Notes</a>
           
           
           
-          <a href="/posts">Posts</a>
+          <a href="/posts#nav">Posts</a>
           
           
           
-          <a href="/projects">Projects</a>
+          <a href="/projects#nav">Projects</a>
           
           
         </div>
@@ -62,32 +62,32 @@
           
           
           
-          <a href="/bookmarks">Bookmarks</a>
+          <a href="/bookmarks#nav">Bookmarks</a>
           
 
           
           
-          <a href="/fiction">Fiction</a>
+          <a href="/fiction#nav">Fiction</a>
           
 
           
           
-          <a href="/folklore">Folklore</a>
+          <a href="/folklore#nav">Folklore</a>
           
 
           
           
-          <a href="/lines" class="activated-link">Lines</a>
+          <a href="/lines#nav" class="activated-link">Lines</a>
           
 
           
           
-          <a href="/problems">Problems</a>
+          <a href="/problems#nav">Problems</a>
           
 
           
           
-          <a href="/snippets">Snippets</a>
+          <a href="/snippets#nav">Snippets</a>
           
 
           
@@ -832,7 +832,7 @@ ALTAR TABLE</p>
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/factory-factory-factory" class="not-extra-small">random</a>
+          <a href="/digital-gardens" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Lines'">reply</a>
@@ -851,7 +851,7 @@ ALTAR TABLE</p>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Lines.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Lines.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/factory-factory-factory" class="extra-small">random</a>
+          <a href="/digital-gardens" class="extra-small">random</a>
         </div>
       </div>
 
@@ -906,7 +906,8 @@ ALTAR TABLE</p>
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

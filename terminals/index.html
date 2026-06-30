@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,51 +35,51 @@
           
           
           
-          <a href="/art">Art</a>
+          <a href="/art#nav">Art</a>
           
           
           
-          <a href="/courses">Courses</a>
+          <a href="/courses#nav">Courses</a>
           
           
           
-          <a href="/cybersecurity">Cybersecurity</a>
+          <a href="/cybersecurity#nav">Cybersecurity</a>
           
           
           
-          <a href="/design">Design</a>
+          <a href="/design#nav">Design</a>
           
           
           
-          <a href="/hardware">Hardware</a>
+          <a href="/hardware#nav">Hardware</a>
           
           
           
-          <a href="/language">Language</a>
+          <a href="/language#nav">Language</a>
           
           
           
-          <a href="/mathematics">Mathematics</a>
+          <a href="/mathematics#nav">Mathematics</a>
           
           
           
-          <a href="/miscellany">Miscellany</a>
+          <a href="/miscellany#nav">Miscellany</a>
           
           
           
-          <a href="/music">Music</a>
+          <a href="/music#nav">Music</a>
           
           
           
-          <a href="/networks">Networks</a>
+          <a href="/networks#nav">Networks</a>
           
           
           
-          <a href="/software" class="activated-link">Software</a>
+          <a href="/software#nav" class="activated-link">Software</a>
           
           
           
-          <a href="/time">Time</a>
+          <a href="/time#nav">Time</a>
           
           
         </div>
@@ -90,67 +90,67 @@
           
           
           
-          <a href="/databases">Databases</a>
+          <a href="/databases#nav">Databases</a>
           
 
           
           
-          <a href="/development">Development</a>
+          <a href="/development#nav">Development</a>
           
 
           
           
-          <a href="/exploits">Exploits</a>
+          <a href="/exploits#nav">Exploits</a>
           
 
           
           
-          <a href="/machine-learning">Machine Learning</a>
+          <a href="/machine-learning#nav">Machine Learning</a>
           
 
           
           
-          <a href="/mistakes">Mistakes</a>
+          <a href="/mistakes#nav">Mistakes</a>
           
 
           
           
-          <a href="/open-source">Open Source</a>
+          <a href="/open-source#nav">Open Source</a>
           
 
           
           
-          <a href="/programs">Programs</a>
+          <a href="/programs#nav">Programs</a>
           
 
           
           
-          <a href="/reverse-engineering">Reverse Engineering</a>
+          <a href="/reverse-engineering#nav">Reverse Engineering</a>
           
 
           
           
-          <a href="/self-hosting">Self-Hosting</a>
+          <a href="/self-hosting#nav">Self-Hosting</a>
           
 
           
           
-          <a href="/software-vs-timezones">Software vs Timezones</a>
+          <a href="/software-vs-timezones#nav">Software vs Timezones</a>
           
 
           
           
-          <a href="/terminals" class="activated-link">Terminals</a>
+          <a href="/terminals#nav" class="activated-link">Terminals</a>
           
 
           
           
-          <a href="/testing">Testing</a>
+          <a href="/testing#nav">Testing</a>
           
 
           
           
-          <a href="/unix">Unix</a>
+          <a href="/unix#nav">Unix</a>
           
 
           
@@ -160,7 +160,7 @@
         
         <div class="nav-links children">
           
-          <a href="/80-columns">80 Columns</a>
+          <a href="/80-columns#nav">80 Columns</a>
           
         </div>
         
@@ -203,7 +203,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/few-shot-learning" class="not-extra-small">random</a>
+          <a href="/html-first-development" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Terminals'">reply</a>
@@ -222,7 +222,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Terminals/Terminals.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Software/Terminals/Terminals.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/few-shot-learning" class="extra-small">random</a>
+          <a href="/html-first-development" class="extra-small">random</a>
         </div>
       </div>
 
@@ -282,7 +282,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

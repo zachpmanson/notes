@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,15 +35,15 @@
           
           
           
-          <a href="/chatgpt">ChatGPT</a>
+          <a href="/chatgpt#nav">ChatGPT</a>
           
           
           
-          <a href="/llama" class="activated-link">LLaMA</a>
+          <a href="/llama#nav" class="activated-link">LLaMA</a>
           
           
           
-          <a href="/tricking-llms">Tricking LLMs</a>
+          <a href="/tricking-llms#nav">Tricking LLMs</a>
           
           
         </div>
@@ -54,17 +54,17 @@
           
           
           
-          <a href="/alpaca">Alpaca</a>
+          <a href="/alpaca#nav">Alpaca</a>
           
 
           
           
-          <a href="/llama-family-tree" class="activated-link">LLaMA Family Tree</a>
+          <a href="/llama-family-tree#nav" class="activated-link">LLaMA Family Tree</a>
           
 
           
           
-          <a href="/llama-timeline">LLaMA Timeline</a>
+          <a href="/llama-timeline#nav">LLaMA Timeline</a>
           
 
           
@@ -121,7 +121,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/dropbox-feedback" class="not-extra-small">random</a>
+          <a href="/a-story-about-magic" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'LLaMA Family Tree'">reply</a>
@@ -140,7 +140,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Machine Learning/Generative Models/Large Language Models/LLaMA/LLaMA Family Tree.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Software/Machine Learning/Generative Models/Large Language Models/LLaMA/LLaMA Family Tree.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/dropbox-feedback" class="extra-small">random</a>
+          <a href="/a-story-about-magic" class="extra-small">random</a>
         </div>
       </div>
 
@@ -191,7 +191,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

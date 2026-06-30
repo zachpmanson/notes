@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,47 +35,47 @@
           
           
           
-          <a href="/code-opinions">Code Opinions</a>
+          <a href="/code-opinions#nav">Code Opinions</a>
           
           
           
-          <a href="/datetime">DateTime</a>
+          <a href="/datetime#nav">DateTime</a>
           
           
           
-          <a href="/debugging">Debugging</a>
+          <a href="/debugging#nav">Debugging</a>
           
           
           
-          <a href="/development-methodologies">Development Methodologies</a>
+          <a href="/development-methodologies#nav">Development Methodologies</a>
           
           
           
-          <a href="/kinds-of-problems">Kinds of Problems</a>
+          <a href="/kinds-of-problems#nav">Kinds of Problems</a>
           
           
           
-          <a href="/kinds-of-work">Kinds of Work</a>
+          <a href="/kinds-of-work#nav">Kinds of Work</a>
           
           
           
-          <a href="/non-programming-languages">Non-Programming Languages</a>
+          <a href="/non-programming-languages#nav">Non-Programming Languages</a>
           
           
           
-          <a href="/programming-concepts" class="activated-link">Programming Concepts</a>
+          <a href="/programming-concepts#nav" class="activated-link">Programming Concepts</a>
           
           
           
-          <a href="/programming-languages">Programming Languages</a>
+          <a href="/programming-languages#nav">Programming Languages</a>
           
           
           
-          <a href="/testing">Testing</a>
+          <a href="/testing#nav">Testing</a>
           
           
           
-          <a href="/web-development">Web Development</a>
+          <a href="/web-development#nav">Web Development</a>
           
           
         </div>
@@ -86,47 +86,47 @@
           
           
           
-          <a href="/authentication">Authentication</a>
+          <a href="/authentication#nav">Authentication</a>
           
 
           
           
-          <a href="/authorization">Authorization</a>
+          <a href="/authorization#nav">Authorization</a>
           
 
           
           
-          <a href="/closures" class="activated-link">Closures</a>
+          <a href="/closures#nav" class="activated-link">Closures</a>
           
 
           
           
-          <a href="/cursed">Cursed</a>
+          <a href="/cursed#nav">Cursed</a>
           
 
           
           
-          <a href="/dynamic-programming">Dynamic Programming</a>
+          <a href="/dynamic-programming#nav">Dynamic Programming</a>
           
 
           
           
-          <a href="/footguns">Footguns</a>
+          <a href="/footguns#nav">Footguns</a>
           
 
           
           
-          <a href="/noisy-neighbour">Noisy Neighbour</a>
+          <a href="/noisy-neighbour#nav">Noisy Neighbour</a>
           
 
           
           
-          <a href="/second-system-effects">Second System Effects</a>
+          <a href="/second-system-effects#nav">Second System Effects</a>
           
 
           
           
-          <a href="/typing">Typing</a>
+          <a href="/typing#nav">Typing</a>
           
 
           
@@ -167,7 +167,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/eponyms" class="not-extra-small">random</a>
+          <a href="/credits" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Closures'">reply</a>
@@ -186,7 +186,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Programming Concepts/Closures.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Software/Development/Programming Concepts/Closures.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/eponyms" class="extra-small">random</a>
+          <a href="/credits" class="extra-small">random</a>
         </div>
       </div>
 
@@ -229,7 +229,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

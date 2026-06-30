@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,27 +35,27 @@
           
           
           
-          <a href="/bookmarks">Bookmarks</a>
+          <a href="/bookmarks#nav">Bookmarks</a>
           
           
           
-          <a href="/fiction">Fiction</a>
+          <a href="/fiction#nav">Fiction</a>
           
           
           
-          <a href="/folklore">Folklore</a>
+          <a href="/folklore#nav">Folklore</a>
           
           
           
-          <a href="/lines">Lines</a>
+          <a href="/lines#nav">Lines</a>
           
           
           
-          <a href="/problems">Problems</a>
+          <a href="/problems#nav">Problems</a>
           
           
           
-          <a href="/snippets" class="activated-link">Snippets</a>
+          <a href="/snippets#nav" class="activated-link">Snippets</a>
           
           
         </div>
@@ -66,47 +66,47 @@
           
           
           
-          <a href="/fanned-cards-in-css">Fanned Cards in CSS</a>
+          <a href="/fanned-cards-in-css#nav">Fanned Cards in CSS</a>
           
 
           
           
-          <a href="/git-activity-in-multiple-folders" class="activated-link">Git Activity in Multiple Folders</a>
+          <a href="/git-activity-in-multiple-folders#nav" class="activated-link">Git Activity in Multiple Folders</a>
           
 
           
           
-          <a href="/git-switchblade">Git Switchblade</a>
+          <a href="/git-switchblade#nav">Git Switchblade</a>
           
 
           
           
-          <a href="/javascript-closure-debounce">JavaScript Closure Debounce</a>
+          <a href="/javascript-closure-debounce#nav">JavaScript Closure Debounce</a>
           
 
           
           
-          <a href="/kill-ports">Kill Ports</a>
+          <a href="/kill-ports#nav">Kill Ports</a>
           
 
           
           
-          <a href="/next.js-api-validation-template">Next.js API Validation Template</a>
+          <a href="/next.js-api-validation-template#nav">Next.js API Validation Template</a>
           
 
           
           
-          <a href="/python-getopt()-template">Python getopt() Template</a>
+          <a href="/python-getopt()-template#nav">Python getopt() Template</a>
           
 
           
           
-          <a href="/reset-css-rules">Reset CSS Rules</a>
+          <a href="/reset-css-rules#nav">Reset CSS Rules</a>
           
 
           
           
-          <a href="/time-ago-function">Time Ago Function</a>
+          <a href="/time-ago-function#nav">Time Ago Function</a>
           
 
           
@@ -144,7 +144,7 @@
           <date>2024-04-22</date>
           
           <a href="/recent-changes">recent</a>
-          <a href="/w01l02---unix" class="not-extra-small">random</a>
+          <a href="/a-conspiracy-to-kill-ie6" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Git Activity in Multiple Folders'">reply</a>
@@ -163,7 +163,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Snippets/Git Activity in Multiple Folders.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Snippets/Git Activity in Multiple Folders.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/w01l02---unix" class="extra-small">random</a>
+          <a href="/a-conspiracy-to-kill-ie6" class="extra-small">random</a>
         </div>
       </div>
 
@@ -229,7 +229,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

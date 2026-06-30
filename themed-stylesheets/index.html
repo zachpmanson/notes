@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,23 +35,23 @@
           
           
           
-          <a href="/css" class="activated-link">CSS</a>
+          <a href="/css#nav" class="activated-link">CSS</a>
           
           
           
-          <a href="/html">HTML</a>
+          <a href="/html#nav">HTML</a>
           
           
           
-          <a href="/markdown">Markdown</a>
+          <a href="/markdown#nav">Markdown</a>
           
           
           
-          <a href="/markwhen">Markwhen</a>
+          <a href="/markwhen#nav">Markwhen</a>
           
           
           
-          <a href="/sql">SQL</a>
+          <a href="/sql#nav">SQL</a>
           
           
         </div>
@@ -62,7 +62,7 @@
           
           
           
-          <a href="/themed-stylesheets" class="activated-link">Themed Stylesheets</a>
+          <a href="/themed-stylesheets#nav" class="activated-link">Themed Stylesheets</a>
           
 
           
@@ -102,7 +102,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/dynamic-programming" class="not-extra-small">random</a>
+          <a href="/key" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Themed Stylesheets'">reply</a>
@@ -121,7 +121,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Non-Programming Languages/CSS/Themed Stylesheets.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Software/Development/Non-Programming Languages/CSS/Themed Stylesheets.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/dynamic-programming" class="extra-small">random</a>
+          <a href="/key" class="extra-small">random</a>
         </div>
       </div>
 
@@ -172,7 +172,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

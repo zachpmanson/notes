@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,11 +35,11 @@
           
           
           
-          <a href="/bash" class="activated-link">Bash</a>
+          <a href="/bash#nav" class="activated-link">Bash</a>
           
           
           
-          <a href="/screen">Screen</a>
+          <a href="/screen#nav">Screen</a>
           
           
         </div>
@@ -50,17 +50,17 @@
           
           
           
-          <a href="/bash-regular-expressions">Bash Regular Expressions</a>
+          <a href="/bash-regular-expressions#nav">Bash Regular Expressions</a>
           
 
           
           
-          <a href="/bash-startup-scripts">Bash Startup Scripts</a>
+          <a href="/bash-startup-scripts#nav">Bash Startup Scripts</a>
           
 
           
           
-          <a href="/bash-syntax" class="activated-link">Bash Syntax</a>
+          <a href="/bash-syntax#nav" class="activated-link">Bash Syntax</a>
           
 
           
@@ -284,7 +284,7 @@ $1 == -l
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/javascript-math-not-defined" class="not-extra-small">random</a>
+          <a href="/w09l02---awk" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Bash Syntax'">reply</a>
@@ -303,7 +303,7 @@ $1 == -l
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Programs/GNU/Bash/Bash Syntax.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Software/Programs/GNU/Bash/Bash Syntax.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/javascript-math-not-defined" class="extra-small">random</a>
+          <a href="/w09l02---awk" class="extra-small">random</a>
         </div>
       </div>
 
@@ -346,7 +346,8 @@ $1 == -l
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

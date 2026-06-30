@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,43 +35,43 @@
           
           
           
-          <a href="/apsenyms">Apsenyms</a>
+          <a href="/apsenyms#nav">Apsenyms</a>
           
           
           
-          <a href="/characters" class="activated-link">Characters</a>
+          <a href="/characters#nav" class="activated-link">Characters</a>
           
           
           
-          <a href="/diacritics">Diacritics</a>
+          <a href="/diacritics#nav">Diacritics</a>
           
           
           
-          <a href="/dictionary">Dictionary</a>
+          <a href="/dictionary#nav">Dictionary</a>
           
           
           
-          <a href="/etymology">Etymology</a>
+          <a href="/etymology#nav">Etymology</a>
           
           
           
-          <a href="/latin-phrases">Latin Phrases</a>
+          <a href="/latin-phrases#nav">Latin Phrases</a>
           
           
           
-          <a href="/linguistic-concepts">Linguistic Concepts</a>
+          <a href="/linguistic-concepts#nav">Linguistic Concepts</a>
           
           
           
-          <a href="/linguistic-forensics">Linguistic Forensics</a>
+          <a href="/linguistic-forensics#nav">Linguistic Forensics</a>
           
           
           
-          <a href="/nomenclature">Nomenclature</a>
+          <a href="/nomenclature#nav">Nomenclature</a>
           
           
           
-          <a href="/words">Words</a>
+          <a href="/words#nav">Words</a>
           
           
         </div>
@@ -82,22 +82,22 @@
           
           
           
-          <a href="/ampersand" class="activated-link">Ampersand</a>
+          <a href="/ampersand#nav" class="activated-link">Ampersand</a>
           
 
           
           
-          <a href="/interrobang">Interrobang</a>
+          <a href="/interrobang#nav">Interrobang</a>
           
 
           
           
-          <a href="/lemniscate">Lemniscate</a>
+          <a href="/lemniscate#nav">Lemniscate</a>
           
 
           
           
-          <a href="/multiocular-o">Multiocular O</a>
+          <a href="/multiocular-o#nav">Multiocular O</a>
           
 
           
@@ -128,7 +128,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/fixing-lightspeed-ramming" class="not-extra-small">random</a>
+          <a href="/xz" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Ampersand'">reply</a>
@@ -147,7 +147,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Language/Characters/Ampersand.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Language/Characters/Ampersand.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/fixing-lightspeed-ramming" class="extra-small">random</a>
+          <a href="/xz" class="extra-small">random</a>
         </div>
       </div>
 
@@ -190,7 +190,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

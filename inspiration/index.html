@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,51 +35,51 @@
           
           
           
-          <a href="/art" class="activated-link">Art</a>
+          <a href="/art#nav" class="activated-link">Art</a>
           
           
           
-          <a href="/courses">Courses</a>
+          <a href="/courses#nav">Courses</a>
           
           
           
-          <a href="/cybersecurity">Cybersecurity</a>
+          <a href="/cybersecurity#nav">Cybersecurity</a>
           
           
           
-          <a href="/design">Design</a>
+          <a href="/design#nav">Design</a>
           
           
           
-          <a href="/hardware">Hardware</a>
+          <a href="/hardware#nav">Hardware</a>
           
           
           
-          <a href="/language">Language</a>
+          <a href="/language#nav">Language</a>
           
           
           
-          <a href="/mathematics">Mathematics</a>
+          <a href="/mathematics#nav">Mathematics</a>
           
           
           
-          <a href="/miscellany">Miscellany</a>
+          <a href="/miscellany#nav">Miscellany</a>
           
           
           
-          <a href="/music">Music</a>
+          <a href="/music#nav">Music</a>
           
           
           
-          <a href="/networks">Networks</a>
+          <a href="/networks#nav">Networks</a>
           
           
           
-          <a href="/software">Software</a>
+          <a href="/software#nav">Software</a>
           
           
           
-          <a href="/time">Time</a>
+          <a href="/time#nav">Time</a>
           
           
         </div>
@@ -90,12 +90,12 @@
           
           
           
-          <a href="/art-resources">Art Resources</a>
+          <a href="/art-resources#nav">Art Resources</a>
           
 
           
           
-          <a href="/inspiration" class="activated-link">Inspiration</a>
+          <a href="/inspiration#nav" class="activated-link">Inspiration</a>
           
 
           
@@ -126,7 +126,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/credits" class="not-extra-small">random</a>
+          <a href="/docker" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Inspiration'">reply</a>
@@ -145,7 +145,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Art/Inspiration.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Art/Inspiration.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/credits" class="extra-small">random</a>
+          <a href="/docker" class="extra-small">random</a>
         </div>
       </div>
 
@@ -196,7 +196,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

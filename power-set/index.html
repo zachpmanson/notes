@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,31 +35,31 @@
           
           
           
-          <a href="/arity">Arity</a>
+          <a href="/arity#nav">Arity</a>
           
           
           
-          <a href="/computer-science">Computer Science</a>
+          <a href="/computer-science#nav">Computer Science</a>
           
           
           
-          <a href="/friendship-paradox">Friendship Paradox</a>
+          <a href="/friendship-paradox#nav">Friendship Paradox</a>
           
           
           
-          <a href="/idempotency">Idempotency</a>
+          <a href="/idempotency#nav">Idempotency</a>
           
           
           
-          <a href="/rank">Rank</a>
+          <a href="/rank#nav">Rank</a>
           
           
           
-          <a href="/set-theory" class="activated-link">Set Theory</a>
+          <a href="/set-theory#nav" class="activated-link">Set Theory</a>
           
           
           
-          <a href="/sheffer-stroke">Sheffer Stroke</a>
+          <a href="/sheffer-stroke#nav">Sheffer Stroke</a>
           
           
         </div>
@@ -70,12 +70,12 @@
           
           
           
-          <a href="/infinity">Infinity</a>
+          <a href="/infinity#nav">Infinity</a>
           
 
           
           
-          <a href="/power-set" class="activated-link">Power Set</a>
+          <a href="/power-set#nav" class="activated-link">Power Set</a>
           
 
           
@@ -104,7 +104,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/position-of-0-and-1-keys" class="not-extra-small">random</a>
+          <a href="/kinde-design-decisions" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Power Set'">reply</a>
@@ -123,7 +123,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Mathematics/Set Theory/Power Set.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Mathematics/Set Theory/Power Set.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/position-of-0-and-1-keys" class="extra-small">random</a>
+          <a href="/kinde-design-decisions" class="extra-small">random</a>
         </div>
       </div>
 
@@ -174,7 +174,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

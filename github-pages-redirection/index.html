@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,23 +35,23 @@
           
           
           
-          <a href="/archive">Archive</a>
+          <a href="/archive#nav">Archive</a>
           
           
           
-          <a href="/meta">Meta</a>
+          <a href="/meta#nav">Meta</a>
           
           
           
-          <a href="/notes">Notes</a>
+          <a href="/notes#nav">Notes</a>
           
           
           
-          <a href="/posts" class="activated-link">Posts</a>
+          <a href="/posts#nav" class="activated-link">Posts</a>
           
           
           
-          <a href="/projects">Projects</a>
+          <a href="/projects#nav">Projects</a>
           
           
         </div>
@@ -62,7 +62,7 @@
           
           
           
-          <a href="/github-pages-redirection" class="activated-link">GitHub Pages Redirection</a>
+          <a href="/github-pages-redirection#nav" class="activated-link">GitHub Pages Redirection</a>
           
 
           
@@ -96,7 +96,7 @@
           <date>2024-03-29</date>
           
           <a href="/recent-changes">recent</a>
-          <a href="/markdown-in-html" class="not-extra-small">random</a>
+          <a href="/the-patron-saint-of-yak-shaves" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'GitHub Pages Redirection'">reply</a>
@@ -115,7 +115,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Posts/GitHub Pages Redirection.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Posts/GitHub Pages Redirection.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/markdown-in-html" class="extra-small">random</a>
+          <a href="/the-patron-saint-of-yak-shaves" class="extra-small">random</a>
         </div>
       </div>
 
@@ -181,7 +181,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

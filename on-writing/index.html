@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,51 +35,51 @@
           
           
           
-          <a href="/art">Art</a>
+          <a href="/art#nav">Art</a>
           
           
           
-          <a href="/courses">Courses</a>
+          <a href="/courses#nav">Courses</a>
           
           
           
-          <a href="/cybersecurity">Cybersecurity</a>
+          <a href="/cybersecurity#nav">Cybersecurity</a>
           
           
           
-          <a href="/design">Design</a>
+          <a href="/design#nav">Design</a>
           
           
           
-          <a href="/hardware">Hardware</a>
+          <a href="/hardware#nav">Hardware</a>
           
           
           
-          <a href="/language">Language</a>
+          <a href="/language#nav">Language</a>
           
           
           
-          <a href="/mathematics">Mathematics</a>
+          <a href="/mathematics#nav">Mathematics</a>
           
           
           
-          <a href="/miscellany" class="activated-link">Miscellany</a>
+          <a href="/miscellany#nav" class="activated-link">Miscellany</a>
           
           
           
-          <a href="/music">Music</a>
+          <a href="/music#nav">Music</a>
           
           
           
-          <a href="/networks">Networks</a>
+          <a href="/networks#nav">Networks</a>
           
           
           
-          <a href="/software">Software</a>
+          <a href="/software#nav">Software</a>
           
           
           
-          <a href="/time">Time</a>
+          <a href="/time#nav">Time</a>
           
           
         </div>
@@ -90,47 +90,47 @@
           
           
           
-          <a href="/crochet">Crochet</a>
+          <a href="/crochet#nav">Crochet</a>
           
 
           
           
-          <a href="/maclunkey">Maclunkey</a>
+          <a href="/maclunkey#nav">Maclunkey</a>
           
 
           
           
-          <a href="/on-taking-notes">On Taking Notes</a>
+          <a href="/on-taking-notes#nav">On Taking Notes</a>
           
 
           
           
-          <a href="/on-writing" class="activated-link">On Writing</a>
+          <a href="/on-writing#nav" class="activated-link">On Writing</a>
           
 
           
           
-          <a href="/pens">Pens</a>
+          <a href="/pens#nav">Pens</a>
           
 
           
           
-          <a href="/process-box">Process Box</a>
+          <a href="/process-box#nav">Process Box</a>
           
 
           
           
-          <a href="/sewing">Sewing</a>
+          <a href="/sewing#nav">Sewing</a>
           
 
           
           
-          <a href="/thin-deep-slices">Thin Deep Slices</a>
+          <a href="/thin-deep-slices#nav">Thin Deep Slices</a>
           
 
           
           
-          <a href="/things-i-can-hold">Things I Can Hold</a>
+          <a href="/things-i-can-hold#nav">Things I Can Hold</a>
           
 
           
@@ -248,7 +248,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

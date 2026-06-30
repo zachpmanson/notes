@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,63 +35,63 @@
           
           
           
-          <a href="/awk">AWK</a>
+          <a href="/awk#nav">AWK</a>
           
           
           
-          <a href="/docker">Docker</a>
+          <a href="/docker#nav">Docker</a>
           
           
           
-          <a href="/doom">Doom</a>
+          <a href="/doom#nav">Doom</a>
           
           
           
-          <a href="/elk">Elk</a>
+          <a href="/elk#nav">Elk</a>
           
           
           
-          <a href="/gnu">GNU</a>
+          <a href="/gnu#nav">GNU</a>
           
           
           
-          <a href="/git">Git</a>
+          <a href="/git#nav">Git</a>
           
           
           
-          <a href="/make">Make</a>
+          <a href="/make#nav">Make</a>
           
           
           
-          <a href="/nextcloud">Nextcloud</a>
+          <a href="/nextcloud#nav">Nextcloud</a>
           
           
           
-          <a href="/obsidian">Obsidian</a>
+          <a href="/obsidian#nav">Obsidian</a>
           
           
           
-          <a href="/postgres">Postgres</a>
+          <a href="/postgres#nav">Postgres</a>
           
           
           
-          <a href="/sqlite">SQLite</a>
+          <a href="/sqlite#nav">SQLite</a>
           
           
           
-          <a href="/spotify">Spotify</a>
+          <a href="/spotify#nav">Spotify</a>
           
           
           
-          <a href="/tmux">Tmux</a>
+          <a href="/tmux#nav">Tmux</a>
           
           
           
-          <a href="/vim" class="activated-link">Vim</a>
+          <a href="/vim#nav" class="activated-link">Vim</a>
           
           
           
-          <a href="/sed">sed</a>
+          <a href="/sed#nav">sed</a>
           
           
         </div>
@@ -102,12 +102,12 @@
           
           
           
-          <a href="/vi-movement-origins" class="activated-link">Vi Movement Origins</a>
+          <a href="/vi-movement-origins#nav" class="activated-link">Vi Movement Origins</a>
           
 
           
           
-          <a href="/vim-plugins">Vim Plugins</a>
+          <a href="/vim-plugins#nav">Vim Plugins</a>
           
 
           
@@ -141,7 +141,7 @@ The placement of control and escape are also different to modern QWERTY keyboard
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/music" class="not-extra-small">random</a>
+          <a href="/rebracketing" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Vi Movement Origins'">reply</a>
@@ -160,7 +160,7 @@ The placement of control and escape are also different to modern QWERTY keyboard
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Programs/Vim/Vi Movement Origins.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Software/Programs/Vim/Vi Movement Origins.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/music" class="extra-small">random</a>
+          <a href="/rebracketing" class="extra-small">random</a>
         </div>
       </div>
 
@@ -210,7 +210,8 @@ The placement of control and escape are also different to modern QWERTY keyboard
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

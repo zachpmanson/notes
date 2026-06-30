@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,11 +35,11 @@
           
           
           
-          <a href="/archaic-syntax" class="activated-link">Archaic Syntax</a>
+          <a href="/archaic-syntax#nav" class="activated-link">Archaic Syntax</a>
           
           
           
-          <a href="/pointer-operations">Pointer Operations</a>
+          <a href="/pointer-operations#nav">Pointer Operations</a>
           
           
         </div>
@@ -50,17 +50,17 @@
           
           
           
-          <a href="/c-auto-keyword">C auto Keyword</a>
+          <a href="/c-auto-keyword#nav">C auto Keyword</a>
           
 
           
           
-          <a href="/comma-operator">Comma Operator</a>
+          <a href="/comma-operator#nav">Comma Operator</a>
           
 
           
           
-          <a href="/digraphs-and-trigraphs" class="activated-link">Digraphs and Trigraphs</a>
+          <a href="/digraphs-and-trigraphs#nav" class="activated-link">Digraphs and Trigraphs</a>
           
 
           
@@ -179,7 +179,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/w07l02---regular-expressions" class="not-extra-small">random</a>
+          <a href="/git-activity-in-multiple-folders" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Digraphs and Trigraphs'">reply</a>
@@ -198,7 +198,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Programming Languages/C/Archaic Syntax/Digraphs and Trigraphs.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Software/Development/Programming Languages/C/Archaic Syntax/Digraphs and Trigraphs.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/w07l02---regular-expressions" class="extra-small">random</a>
+          <a href="/git-activity-in-multiple-folders" class="extra-small">random</a>
         </div>
       </div>
 
@@ -248,7 +248,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

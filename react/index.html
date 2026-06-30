@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,47 +35,47 @@
           
           
           
-          <a href="/code-opinions">Code Opinions</a>
+          <a href="/code-opinions#nav">Code Opinions</a>
           
           
           
-          <a href="/datetime">DateTime</a>
+          <a href="/datetime#nav">DateTime</a>
           
           
           
-          <a href="/debugging">Debugging</a>
+          <a href="/debugging#nav">Debugging</a>
           
           
           
-          <a href="/development-methodologies">Development Methodologies</a>
+          <a href="/development-methodologies#nav">Development Methodologies</a>
           
           
           
-          <a href="/kinds-of-problems">Kinds of Problems</a>
+          <a href="/kinds-of-problems#nav">Kinds of Problems</a>
           
           
           
-          <a href="/kinds-of-work">Kinds of Work</a>
+          <a href="/kinds-of-work#nav">Kinds of Work</a>
           
           
           
-          <a href="/non-programming-languages">Non-Programming Languages</a>
+          <a href="/non-programming-languages#nav">Non-Programming Languages</a>
           
           
           
-          <a href="/programming-concepts">Programming Concepts</a>
+          <a href="/programming-concepts#nav">Programming Concepts</a>
           
           
           
-          <a href="/programming-languages">Programming Languages</a>
+          <a href="/programming-languages#nav">Programming Languages</a>
           
           
           
-          <a href="/testing">Testing</a>
+          <a href="/testing#nav">Testing</a>
           
           
           
-          <a href="/web-development" class="activated-link">Web Development</a>
+          <a href="/web-development#nav" class="activated-link">Web Development</a>
           
           
         </div>
@@ -86,17 +86,17 @@
           
           
           
-          <a href="/html-first-development">HTML First Development</a>
+          <a href="/html-first-development#nav">HTML First Development</a>
           
 
           
           
-          <a href="/interbrowser-development">Interbrowser Development</a>
+          <a href="/interbrowser-development#nav">Interbrowser Development</a>
           
 
           
           
-          <a href="/react" class="activated-link">React</a>
+          <a href="/react#nav" class="activated-link">React</a>
           
 
           
@@ -145,7 +145,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/deploying-docker-from-arm" class="not-extra-small">random</a>
+          <a href="/art-resources" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'React'">reply</a>
@@ -164,7 +164,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Web Development/React.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Software/Development/Web Development/React.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/deploying-docker-from-arm" class="extra-small">random</a>
+          <a href="/art-resources" class="extra-small">random</a>
         </div>
       </div>
 
@@ -227,7 +227,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

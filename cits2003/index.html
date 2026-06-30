@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,15 +35,15 @@
           
           
           
-          <a href="/artificial-intelligence---a-modern-approach">Artificial Intelligence - A Modern Approach</a>
+          <a href="/artificial-intelligence---a-modern-approach#nav">Artificial Intelligence - A Modern Approach</a>
           
           
           
-          <a href="/practical-deep-learning">Practical Deep Learning</a>
+          <a href="/practical-deep-learning#nav">Practical Deep Learning</a>
           
           
           
-          <a href="/uwa-computer-science" class="activated-link">UWA Computer Science</a>
+          <a href="/uwa-computer-science#nav" class="activated-link">UWA Computer Science</a>
           
           
         </div>
@@ -54,22 +54,22 @@
           
           
           
-          <a href="/amitava-datta">Amitava Datta</a>
+          <a href="/amitava-datta#nav">Amitava Datta</a>
           
 
           
           
-          <a href="/cits2003" class="activated-link">CITS2003</a>
+          <a href="/cits2003#nav" class="activated-link">CITS2003</a>
           
 
           
           
-          <a href="/chris-mcdonald">Chris McDonald</a>
+          <a href="/chris-mcdonald#nav">Chris McDonald</a>
           
 
           
           
-          <a href="/michael-wise">Michael Wise</a>
+          <a href="/michael-wise#nav">Michael Wise</a>
           
 
           
@@ -79,7 +79,7 @@
         
         <div class="nav-links children">
           
-          <a href="/cits2003-lectures">CITS2003 Lectures</a>
+          <a href="/cits2003-lectures#nav">CITS2003 Lectures</a>
           
         </div>
         
@@ -116,7 +116,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/worse-is-better" class="not-extra-small">random</a>
+          <a href="/html-self-closing-tags" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'CITS2003'">reply</a>
@@ -135,7 +135,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Courses/UWA Computer Science/CITS2003/CITS2003.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Courses/UWA Computer Science/CITS2003/CITS2003.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/worse-is-better" class="extra-small">random</a>
+          <a href="/html-self-closing-tags" class="extra-small">random</a>
         </div>
       </div>
 
@@ -188,7 +188,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

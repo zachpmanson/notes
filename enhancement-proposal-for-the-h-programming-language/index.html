@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,23 +35,23 @@
           
           
           
-          <a href="/archive">Archive</a>
+          <a href="/archive#nav">Archive</a>
           
           
           
-          <a href="/meta">Meta</a>
+          <a href="/meta#nav">Meta</a>
           
           
           
-          <a href="/notes">Notes</a>
+          <a href="/notes#nav">Notes</a>
           
           
           
-          <a href="/posts" class="activated-link">Posts</a>
+          <a href="/posts#nav" class="activated-link">Posts</a>
           
           
           
-          <a href="/projects">Projects</a>
+          <a href="/projects#nav">Projects</a>
           
           
         </div>
@@ -62,7 +62,7 @@
           
           
           
-          <a href="/enhancement-proposal-for-the-h-programming-language" class="activated-link">Enhancement Proposal for the h Programming Language</a>
+          <a href="/enhancement-proposal-for-the-h-programming-language#nav" class="activated-link">Enhancement Proposal for the h Programming Language</a>
           
 
           
@@ -184,7 +184,7 @@ h<span class="w"> </span>h<span class="w"> </span>h<span class="w"> </span><span
           <date>2022-03-18</date>
           
           <a href="/recent-changes">recent</a>
-          <a href="/prisma" class="not-extra-small">random</a>
+          <a href="/automatic-dark-mode" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Enhancement Proposal for the h Programming Language'">reply</a>
@@ -203,7 +203,7 @@ h<span class="w"> </span>h<span class="w"> </span>h<span class="w"> </span><span
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Posts/Enhancement Proposal for the h Programming Language.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Posts/Enhancement Proposal for the h Programming Language.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/prisma" class="extra-small">random</a>
+          <a href="/automatic-dark-mode" class="extra-small">random</a>
         </div>
       </div>
 
@@ -261,7 +261,8 @@ h<span class="w"> </span>h<span class="w"> </span>h<span class="w"> </span><span
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

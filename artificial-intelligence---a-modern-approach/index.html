@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,51 +35,51 @@
           
           
           
-          <a href="/art">Art</a>
+          <a href="/art#nav">Art</a>
           
           
           
-          <a href="/courses" class="activated-link">Courses</a>
+          <a href="/courses#nav" class="activated-link">Courses</a>
           
           
           
-          <a href="/cybersecurity">Cybersecurity</a>
+          <a href="/cybersecurity#nav">Cybersecurity</a>
           
           
           
-          <a href="/design">Design</a>
+          <a href="/design#nav">Design</a>
           
           
           
-          <a href="/hardware">Hardware</a>
+          <a href="/hardware#nav">Hardware</a>
           
           
           
-          <a href="/language">Language</a>
+          <a href="/language#nav">Language</a>
           
           
           
-          <a href="/mathematics">Mathematics</a>
+          <a href="/mathematics#nav">Mathematics</a>
           
           
           
-          <a href="/miscellany">Miscellany</a>
+          <a href="/miscellany#nav">Miscellany</a>
           
           
           
-          <a href="/music">Music</a>
+          <a href="/music#nav">Music</a>
           
           
           
-          <a href="/networks">Networks</a>
+          <a href="/networks#nav">Networks</a>
           
           
           
-          <a href="/software">Software</a>
+          <a href="/software#nav">Software</a>
           
           
           
-          <a href="/time">Time</a>
+          <a href="/time#nav">Time</a>
           
           
         </div>
@@ -90,17 +90,17 @@
           
           
           
-          <a href="/artificial-intelligence---a-modern-approach" class="activated-link">Artificial Intelligence - A Modern Approach</a>
+          <a href="/artificial-intelligence---a-modern-approach#nav" class="activated-link">Artificial Intelligence - A Modern Approach</a>
           
 
           
           
-          <a href="/practical-deep-learning">Practical Deep Learning</a>
+          <a href="/practical-deep-learning#nav">Practical Deep Learning</a>
           
 
           
           
-          <a href="/uwa-computer-science">UWA Computer Science</a>
+          <a href="/uwa-computer-science#nav">UWA Computer Science</a>
           
 
           
@@ -110,19 +110,19 @@
         
         <div class="nav-links children">
           
-          <a href="/aima-chapter-01">AIMA Chapter 01</a>
+          <a href="/aima-chapter-01#nav">AIMA Chapter 01</a>
           
-          <a href="/aima-chapter-02">AIMA Chapter 02</a>
+          <a href="/aima-chapter-02#nav">AIMA Chapter 02</a>
           
-          <a href="/aima-chapter-03">AIMA Chapter 03</a>
+          <a href="/aima-chapter-03#nav">AIMA Chapter 03</a>
           
-          <a href="/agents">Agents</a>
+          <a href="/agents#nav">Agents</a>
           
-          <a href="/problem-solving-agents">Problem Solving Agents</a>
+          <a href="/problem-solving-agents#nav">Problem Solving Agents</a>
           
-          <a href="/search-algorithms">Search Algorithms</a>
+          <a href="/search-algorithms#nav">Search Algorithms</a>
           
-          <a href="/task-environments">Task Environments</a>
+          <a href="/task-environments#nav">Task Environments</a>
           
         </div>
         
@@ -148,7 +148,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/void-vs.-never" class="not-extra-small">random</a>
+          <a href="/sqlalchemy" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Artificial Intelligence - A Modern Approach'">reply</a>
@@ -167,7 +167,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Courses/Artificial Intelligence - A Modern Approach/Artificial Intelligence - A Modern Approach.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/void-vs.-never" class="extra-small">random</a>
+          <a href="/sqlalchemy" class="extra-small">random</a>
         </div>
       </div>
 
@@ -218,7 +218,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

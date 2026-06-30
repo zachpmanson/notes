@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -37,15 +37,15 @@
         
         <div class="nav-links children">
           
-          <a href="/archive">Archive</a>
+          <a href="/archive#nav">Archive</a>
           
-          <a href="/meta">Meta</a>
+          <a href="/meta#nav">Meta</a>
           
-          <a href="/notes">Notes</a>
+          <a href="/notes#nav">Notes</a>
           
-          <a href="/posts">Posts</a>
+          <a href="/posts#nav">Posts</a>
           
-          <a href="/projects">Projects</a>
+          <a href="/projects#nav">Projects</a>
           
         </div>
         
@@ -71,7 +71,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/testing" class="not-extra-small">random</a>
+          <a href="/problem-solving-agents" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Index'">reply</a>
@@ -90,7 +90,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Index.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Index.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/testing" class="extra-small">random</a>
+          <a href="/problem-solving-agents" class="extra-small">random</a>
         </div>
       </div>
 
@@ -141,7 +141,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

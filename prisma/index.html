@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,7 +35,7 @@
           
           
           
-          <a href="/orms" class="activated-link">ORMs</a>
+          <a href="/orms#nav" class="activated-link">ORMs</a>
           
           
         </div>
@@ -46,12 +46,12 @@
           
           
           
-          <a href="/prisma" class="activated-link">Prisma</a>
+          <a href="/prisma#nav" class="activated-link">Prisma</a>
           
 
           
           
-          <a href="/sqlalchemy">SQLAlchemy</a>
+          <a href="/sqlalchemy#nav">SQLAlchemy</a>
           
 
           
@@ -87,7 +87,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/michael-wise" class="not-extra-small">random</a>
+          <a href="/noisy-neighbour" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Prisma'">reply</a>
@@ -106,7 +106,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Databases/ORMs/Prisma.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Software/Databases/ORMs/Prisma.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/michael-wise" class="extra-small">random</a>
+          <a href="/noisy-neighbour" class="extra-small">random</a>
         </div>
       </div>
 
@@ -161,7 +161,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

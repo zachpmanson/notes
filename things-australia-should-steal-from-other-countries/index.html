@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,23 +35,23 @@
           
           
           
-          <a href="/archive">Archive</a>
+          <a href="/archive#nav">Archive</a>
           
           
           
-          <a href="/meta">Meta</a>
+          <a href="/meta#nav">Meta</a>
           
           
           
-          <a href="/notes">Notes</a>
+          <a href="/notes#nav">Notes</a>
           
           
           
-          <a href="/posts" class="activated-link">Posts</a>
+          <a href="/posts#nav" class="activated-link">Posts</a>
           
           
           
-          <a href="/projects">Projects</a>
+          <a href="/projects#nav">Projects</a>
           
           
         </div>
@@ -62,7 +62,7 @@
           
           
           
-          <a href="/things-australia-should-steal-from-other-countries" class="activated-link">Things Australia Should Steal From Other Countries</a>
+          <a href="/things-australia-should-steal-from-other-countries#nav" class="activated-link">Things Australia Should Steal From Other Countries</a>
           
 
           
@@ -124,7 +124,7 @@
           <date>2025-06-01</date>
           
           <a href="/recent-changes">recent</a>
-          <a href="/firefox-multi-account-containers-new-tab-behaviour" class="not-extra-small">random</a>
+          <a href="/web-development" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Things Australia Should Steal From Other Countries'">reply</a>
@@ -143,7 +143,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Posts/Things Australia Should Steal From Other Countries.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Posts/Things Australia Should Steal From Other Countries.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/firefox-multi-account-containers-new-tab-behaviour" class="extra-small">random</a>
+          <a href="/web-development" class="extra-small">random</a>
         </div>
       </div>
 
@@ -209,7 +209,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,51 +35,51 @@
           
           
           
-          <a href="/art">Art</a>
+          <a href="/art#nav">Art</a>
           
           
           
-          <a href="/courses">Courses</a>
+          <a href="/courses#nav">Courses</a>
           
           
           
-          <a href="/cybersecurity">Cybersecurity</a>
+          <a href="/cybersecurity#nav">Cybersecurity</a>
           
           
           
-          <a href="/design">Design</a>
+          <a href="/design#nav">Design</a>
           
           
           
-          <a href="/hardware">Hardware</a>
+          <a href="/hardware#nav">Hardware</a>
           
           
           
-          <a href="/language" class="activated-link">Language</a>
+          <a href="/language#nav" class="activated-link">Language</a>
           
           
           
-          <a href="/mathematics">Mathematics</a>
+          <a href="/mathematics#nav">Mathematics</a>
           
           
           
-          <a href="/miscellany">Miscellany</a>
+          <a href="/miscellany#nav">Miscellany</a>
           
           
           
-          <a href="/music">Music</a>
+          <a href="/music#nav">Music</a>
           
           
           
-          <a href="/networks">Networks</a>
+          <a href="/networks#nav">Networks</a>
           
           
           
-          <a href="/software">Software</a>
+          <a href="/software#nav">Software</a>
           
           
           
-          <a href="/time">Time</a>
+          <a href="/time#nav">Time</a>
           
           
         </div>
@@ -90,52 +90,52 @@
           
           
           
-          <a href="/apsenyms">Apsenyms</a>
+          <a href="/apsenyms#nav">Apsenyms</a>
           
 
           
           
-          <a href="/characters">Characters</a>
+          <a href="/characters#nav">Characters</a>
           
 
           
           
-          <a href="/diacritics" class="activated-link">Diacritics</a>
+          <a href="/diacritics#nav" class="activated-link">Diacritics</a>
           
 
           
           
-          <a href="/dictionary">Dictionary</a>
+          <a href="/dictionary#nav">Dictionary</a>
           
 
           
           
-          <a href="/etymology">Etymology</a>
+          <a href="/etymology#nav">Etymology</a>
           
 
           
           
-          <a href="/latin-phrases">Latin Phrases</a>
+          <a href="/latin-phrases#nav">Latin Phrases</a>
           
 
           
           
-          <a href="/linguistic-concepts">Linguistic Concepts</a>
+          <a href="/linguistic-concepts#nav">Linguistic Concepts</a>
           
 
           
           
-          <a href="/linguistic-forensics">Linguistic Forensics</a>
+          <a href="/linguistic-forensics#nav">Linguistic Forensics</a>
           
 
           
           
-          <a href="/nomenclature">Nomenclature</a>
+          <a href="/nomenclature#nav">Nomenclature</a>
           
 
           
           
-          <a href="/words">Words</a>
+          <a href="/words#nav">Words</a>
           
 
           
@@ -145,7 +145,7 @@
         
         <div class="nav-links children">
           
-          <a href="/diaeresis">Diaeresis</a>
+          <a href="/diaeresis#nav">Diaeresis</a>
           
         </div>
         
@@ -169,7 +169,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/complexity-classes" class="not-extra-small">random</a>
+          <a href="/macos" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Diacritics'">reply</a>
@@ -188,7 +188,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Language/Diacritics.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Language/Diacritics.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/complexity-classes" class="extra-small">random</a>
+          <a href="/macos" class="extra-small">random</a>
         </div>
       </div>
 
@@ -231,7 +231,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

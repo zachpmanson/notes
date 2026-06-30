@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,51 +35,51 @@
           
           
           
-          <a href="/art">Art</a>
+          <a href="/art#nav">Art</a>
           
           
           
-          <a href="/courses">Courses</a>
+          <a href="/courses#nav">Courses</a>
           
           
           
-          <a href="/cybersecurity">Cybersecurity</a>
+          <a href="/cybersecurity#nav">Cybersecurity</a>
           
           
           
-          <a href="/design">Design</a>
+          <a href="/design#nav">Design</a>
           
           
           
-          <a href="/hardware">Hardware</a>
+          <a href="/hardware#nav">Hardware</a>
           
           
           
-          <a href="/language">Language</a>
+          <a href="/language#nav">Language</a>
           
           
           
-          <a href="/mathematics">Mathematics</a>
+          <a href="/mathematics#nav">Mathematics</a>
           
           
           
-          <a href="/miscellany" class="activated-link">Miscellany</a>
+          <a href="/miscellany#nav" class="activated-link">Miscellany</a>
           
           
           
-          <a href="/music">Music</a>
+          <a href="/music#nav">Music</a>
           
           
           
-          <a href="/networks">Networks</a>
+          <a href="/networks#nav">Networks</a>
           
           
           
-          <a href="/software">Software</a>
+          <a href="/software#nav">Software</a>
           
           
           
-          <a href="/time">Time</a>
+          <a href="/time#nav">Time</a>
           
           
         </div>
@@ -90,47 +90,47 @@
           
           
           
-          <a href="/crochet">Crochet</a>
+          <a href="/crochet#nav">Crochet</a>
           
 
           
           
-          <a href="/maclunkey">Maclunkey</a>
+          <a href="/maclunkey#nav">Maclunkey</a>
           
 
           
           
-          <a href="/on-taking-notes">On Taking Notes</a>
+          <a href="/on-taking-notes#nav">On Taking Notes</a>
           
 
           
           
-          <a href="/on-writing">On Writing</a>
+          <a href="/on-writing#nav">On Writing</a>
           
 
           
           
-          <a href="/pens">Pens</a>
+          <a href="/pens#nav">Pens</a>
           
 
           
           
-          <a href="/process-box">Process Box</a>
+          <a href="/process-box#nav">Process Box</a>
           
 
           
           
-          <a href="/sewing">Sewing</a>
+          <a href="/sewing#nav">Sewing</a>
           
 
           
           
-          <a href="/thin-deep-slices">Thin Deep Slices</a>
+          <a href="/thin-deep-slices#nav">Thin Deep Slices</a>
           
 
           
           
-          <a href="/things-i-can-hold" class="activated-link">Things I Can Hold</a>
+          <a href="/things-i-can-hold#nav" class="activated-link">Things I Can Hold</a>
           
 
           
@@ -165,7 +165,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/killing-process-by-port" class="not-extra-small">random</a>
+          <a href="/w04l02---prosh" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Things I Can Hold'">reply</a>
@@ -184,7 +184,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Miscellany/Things I Can Hold.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Miscellany/Things I Can Hold.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/killing-process-by-port" class="extra-small">random</a>
+          <a href="/w04l02---prosh" class="extra-small">random</a>
         </div>
       </div>
 
@@ -227,7 +227,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

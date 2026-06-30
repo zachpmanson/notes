@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,15 +35,15 @@
           
           
           
-          <a href="/artificial-intelligence---a-modern-approach" class="activated-link">Artificial Intelligence - A Modern Approach</a>
+          <a href="/artificial-intelligence---a-modern-approach#nav" class="activated-link">Artificial Intelligence - A Modern Approach</a>
           
           
           
-          <a href="/practical-deep-learning">Practical Deep Learning</a>
+          <a href="/practical-deep-learning#nav">Practical Deep Learning</a>
           
           
           
-          <a href="/uwa-computer-science">UWA Computer Science</a>
+          <a href="/uwa-computer-science#nav">UWA Computer Science</a>
           
           
         </div>
@@ -54,37 +54,37 @@
           
           
           
-          <a href="/aima-chapter-01" class="activated-link">AIMA Chapter 01</a>
+          <a href="/aima-chapter-01#nav" class="activated-link">AIMA Chapter 01</a>
           
 
           
           
-          <a href="/aima-chapter-02">AIMA Chapter 02</a>
+          <a href="/aima-chapter-02#nav">AIMA Chapter 02</a>
           
 
           
           
-          <a href="/aima-chapter-03">AIMA Chapter 03</a>
+          <a href="/aima-chapter-03#nav">AIMA Chapter 03</a>
           
 
           
           
-          <a href="/agents">Agents</a>
+          <a href="/agents#nav">Agents</a>
           
 
           
           
-          <a href="/problem-solving-agents">Problem Solving Agents</a>
+          <a href="/problem-solving-agents#nav">Problem Solving Agents</a>
           
 
           
           
-          <a href="/search-algorithms">Search Algorithms</a>
+          <a href="/search-algorithms#nav">Search Algorithms</a>
           
 
           
           
-          <a href="/task-environments">Task Environments</a>
+          <a href="/task-environments#nav">Task Environments</a>
           
 
           
@@ -128,7 +128,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/minecraftle" class="not-extra-small">random</a>
+          <a href="/c-locale-braindeath" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'AIMA Chapter 01'">reply</a>
@@ -147,7 +147,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 01.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Courses/Artificial Intelligence - A Modern Approach/AIMA Chapter 01.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/minecraftle" class="extra-small">random</a>
+          <a href="/c-locale-braindeath" class="extra-small">random</a>
         </div>
       </div>
 
@@ -190,7 +190,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

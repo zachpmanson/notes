@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,31 +35,31 @@
           
           
           
-          <a href="/arity">Arity</a>
+          <a href="/arity#nav">Arity</a>
           
           
           
-          <a href="/computer-science" class="activated-link">Computer Science</a>
+          <a href="/computer-science#nav" class="activated-link">Computer Science</a>
           
           
           
-          <a href="/friendship-paradox">Friendship Paradox</a>
+          <a href="/friendship-paradox#nav">Friendship Paradox</a>
           
           
           
-          <a href="/idempotency">Idempotency</a>
+          <a href="/idempotency#nav">Idempotency</a>
           
           
           
-          <a href="/rank">Rank</a>
+          <a href="/rank#nav">Rank</a>
           
           
           
-          <a href="/set-theory">Set Theory</a>
+          <a href="/set-theory#nav">Set Theory</a>
           
           
           
-          <a href="/sheffer-stroke">Sheffer Stroke</a>
+          <a href="/sheffer-stroke#nav">Sheffer Stroke</a>
           
           
         </div>
@@ -70,32 +70,32 @@
           
           
           
-          <a href="/complexity-theory">Complexity Theory</a>
+          <a href="/complexity-theory#nav">Complexity Theory</a>
           
 
           
           
-          <a href="/continuation-passing-style" class="activated-link">Continuation-Passing Style</a>
+          <a href="/continuation-passing-style#nav" class="activated-link">Continuation-Passing Style</a>
           
 
           
           
-          <a href="/currying">Currying</a>
+          <a href="/currying#nav">Currying</a>
           
 
           
           
-          <a href="/functors">Functors</a>
+          <a href="/functors#nav">Functors</a>
           
 
           
           
-          <a href="/monads">Monads</a>
+          <a href="/monads#nav">Monads</a>
           
 
           
           
-          <a href="/reflection">Reflection</a>
+          <a href="/reflection#nav">Reflection</a>
           
 
           
@@ -137,7 +137,7 @@ g(b)
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/domain-based-link-colours" class="not-extra-small">random</a>
+          <a href="/heaven-banning" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Continuation-Passing Style'">reply</a>
@@ -156,7 +156,7 @@ g(b)
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Mathematics/Computer Science/Continuation-Passing Style.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Mathematics/Computer Science/Continuation-Passing Style.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/domain-based-link-colours" class="extra-small">random</a>
+          <a href="/heaven-banning" class="extra-small">random</a>
         </div>
       </div>
 
@@ -199,7 +199,8 @@ g(b)
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

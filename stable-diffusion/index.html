@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,23 +35,23 @@
           
           
           
-          <a href="/generative-models" class="activated-link">Generative Models</a>
+          <a href="/generative-models#nav" class="activated-link">Generative Models</a>
           
           
           
-          <a href="/limitations-of-machine-learning">Limitations of Machine Learning</a>
+          <a href="/limitations-of-machine-learning#nav">Limitations of Machine Learning</a>
           
           
           
-          <a href="/machine-learning-concepts">Machine Learning Concepts</a>
+          <a href="/machine-learning-concepts#nav">Machine Learning Concepts</a>
           
           
           
-          <a href="/neural-networks">Neural Networks</a>
+          <a href="/neural-networks#nav">Neural Networks</a>
           
           
           
-          <a href="/pytorch">PyTorch</a>
+          <a href="/pytorch#nav">PyTorch</a>
           
           
         </div>
@@ -62,12 +62,12 @@
           
           
           
-          <a href="/large-language-models">Large Language Models</a>
+          <a href="/large-language-models#nav">Large Language Models</a>
           
 
           
           
-          <a href="/stable-diffusion" class="activated-link">Stable Diffusion</a>
+          <a href="/stable-diffusion#nav" class="activated-link">Stable Diffusion</a>
           
 
           
@@ -77,9 +77,9 @@
         
         <div class="nav-links children">
           
-          <a href="/prompt-cheatsheet">Prompt Cheatsheet</a>
+          <a href="/prompt-cheatsheet#nav">Prompt Cheatsheet</a>
           
-          <a href="/prompt-resources">Prompt Resources</a>
+          <a href="/prompt-resources#nav">Prompt Resources</a>
           
         </div>
         
@@ -111,7 +111,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/multiocular-o" class="not-extra-small">random</a>
+          <a href="/language" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Stable Diffusion'">reply</a>
@@ -130,7 +130,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Machine Learning/Generative Models/Stable Diffusion/Stable Diffusion.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Software/Machine Learning/Generative Models/Stable Diffusion/Stable Diffusion.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/multiocular-o" class="extra-small">random</a>
+          <a href="/language" class="extra-small">random</a>
         </div>
       </div>
 
@@ -181,7 +181,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

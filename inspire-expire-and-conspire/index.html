@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,43 +35,43 @@
           
           
           
-          <a href="/apsenyms">Apsenyms</a>
+          <a href="/apsenyms#nav">Apsenyms</a>
           
           
           
-          <a href="/characters">Characters</a>
+          <a href="/characters#nav">Characters</a>
           
           
           
-          <a href="/diacritics">Diacritics</a>
+          <a href="/diacritics#nav">Diacritics</a>
           
           
           
-          <a href="/dictionary">Dictionary</a>
+          <a href="/dictionary#nav">Dictionary</a>
           
           
           
-          <a href="/etymology">Etymology</a>
+          <a href="/etymology#nav">Etymology</a>
           
           
           
-          <a href="/latin-phrases">Latin Phrases</a>
+          <a href="/latin-phrases#nav">Latin Phrases</a>
           
           
           
-          <a href="/linguistic-concepts">Linguistic Concepts</a>
+          <a href="/linguistic-concepts#nav">Linguistic Concepts</a>
           
           
           
-          <a href="/linguistic-forensics">Linguistic Forensics</a>
+          <a href="/linguistic-forensics#nav">Linguistic Forensics</a>
           
           
           
-          <a href="/nomenclature">Nomenclature</a>
+          <a href="/nomenclature#nav">Nomenclature</a>
           
           
           
-          <a href="/words" class="activated-link">Words</a>
+          <a href="/words#nav" class="activated-link">Words</a>
           
           
         </div>
@@ -82,72 +82,72 @@
           
           
           
-          <a href="/ampersand-and-epershand">Ampersand & Epershand</a>
+          <a href="/ampersand-and-epershand#nav">Ampersand & Epershand</a>
           
 
           
           
-          <a href="/dude">Dude</a>
+          <a href="/dude#nav">Dude</a>
           
 
           
           
-          <a href="/em-size">Em Size</a>
+          <a href="/em-size#nav">Em Size</a>
           
 
           
           
-          <a href="/figment">Figment</a>
+          <a href="/figment#nav">Figment</a>
           
 
           
           
-          <a href="/gruntle">Gruntle</a>
+          <a href="/gruntle#nav">Gruntle</a>
           
 
           
           
-          <a href="/idempotent">Idempotent</a>
+          <a href="/idempotent#nav">Idempotent</a>
           
 
           
           
-          <a href="/inspire-expire-and-conspire" class="activated-link">Inspire, Expire, and Conspire</a>
+          <a href="/inspire-expire-and-conspire#nav" class="activated-link">Inspire, Expire, and Conspire</a>
           
 
           
           
-          <a href="/its">Its</a>
+          <a href="/its#nav">Its</a>
           
 
           
           
-          <a href="/lukewarm">Lukewarm</a>
+          <a href="/lukewarm#nav">Lukewarm</a>
           
 
           
           
-          <a href="/nocent">Nocent</a>
+          <a href="/nocent#nav">Nocent</a>
           
 
           
           
-          <a href="/pejorative">Pejorative</a>
+          <a href="/pejorative#nav">Pejorative</a>
           
 
           
           
-          <a href="/podcast">Podcast</a>
+          <a href="/podcast#nav">Podcast</a>
           
 
           
           
-          <a href="/slug">Slug</a>
+          <a href="/slug#nav">Slug</a>
           
 
           
           
-          <a href="/thou">Thou</a>
+          <a href="/thou#nav">Thou</a>
           
 
           
@@ -180,7 +180,7 @@ which comes from the Latin <em>exspirare</em>, meaning to "breathe out, blow out
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/minecraftle-v1.1" class="not-extra-small">random</a>
+          <a href="/resume-driven-development" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Inspire, Expire, and Conspire'">reply</a>
@@ -199,7 +199,7 @@ which comes from the Latin <em>exspirare</em>, meaning to "breathe out, blow out
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Language/Words/Inspire, Expire, and Conspire.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Language/Words/Inspire, Expire, and Conspire.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/minecraftle-v1.1" class="extra-small">random</a>
+          <a href="/resume-driven-development" class="extra-small">random</a>
         </div>
       </div>
 
@@ -250,7 +250,8 @@ which comes from the Latin <em>exspirare</em>, meaning to "breathe out, blow out
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

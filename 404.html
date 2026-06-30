@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -37,32 +37,32 @@
           
           
           
-          <a href="/404.html" class="activated-link">404</a>
+          <a href="/404.html#nav" class="activated-link">404</a>
           
 
           
           
-          <a href="/archive">Archive</a>
+          <a href="/archive#nav">Archive</a>
           
 
           
           
-          <a href="/meta">Meta</a>
+          <a href="/meta#nav">Meta</a>
           
 
           
           
-          <a href="/notes">Notes</a>
+          <a href="/notes#nav">Notes</a>
           
 
           
           
-          <a href="/posts">Posts</a>
+          <a href="/posts#nav">Posts</a>
           
 
           
           
-          <a href="/projects">Projects</a>
+          <a href="/projects#nav">Projects</a>
           
 
           
@@ -79,7 +79,7 @@
       <h1>404</h1>
     </header>
 
-    <article><p>Last build at 2026-06-30 05:34:15. This site currently has 568 pages.</p>
+    <article><p>Last build at 2026-06-30 07:33:42. This site currently has 568 pages.</p>
 <h2 id="sitemap">Sitemap</h2>
 <ul>
 <li><a href="/">Index</a><ul>
@@ -824,7 +824,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/growth-at-tumblr-and-wordpress" class="not-extra-small">random</a>
+          <a href="/llama" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On '404'">reply</a>
@@ -843,7 +843,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/404.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/404.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/growth-at-tumblr-and-wordpress" class="extra-small">random</a>
+          <a href="/llama" class="extra-small">random</a>
         </div>
       </div>
 
@@ -886,7 +886,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {

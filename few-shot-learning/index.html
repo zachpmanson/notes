@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="nav">
     <div class="main-icon">
       <a href="/">
         <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
@@ -35,23 +35,23 @@
           
           
           
-          <a href="/generative-models">Generative Models</a>
+          <a href="/generative-models#nav">Generative Models</a>
           
           
           
-          <a href="/limitations-of-machine-learning">Limitations of Machine Learning</a>
+          <a href="/limitations-of-machine-learning#nav">Limitations of Machine Learning</a>
           
           
           
-          <a href="/machine-learning-concepts" class="activated-link">Machine Learning Concepts</a>
+          <a href="/machine-learning-concepts#nav" class="activated-link">Machine Learning Concepts</a>
           
           
           
-          <a href="/neural-networks">Neural Networks</a>
+          <a href="/neural-networks#nav">Neural Networks</a>
           
           
           
-          <a href="/pytorch">PyTorch</a>
+          <a href="/pytorch#nav">PyTorch</a>
           
           
         </div>
@@ -62,27 +62,27 @@
           
           
           
-          <a href="/few-shot-learning" class="activated-link">Few-Shot Learning</a>
+          <a href="/few-shot-learning#nav" class="activated-link">Few-Shot Learning</a>
           
 
           
           
-          <a href="/flash-attention">Flash Attention</a>
+          <a href="/flash-attention#nav">Flash Attention</a>
           
 
           
           
-          <a href="/low-rank-adaptation">Low-Rank Adaptation</a>
+          <a href="/low-rank-adaptation#nav">Low-Rank Adaptation</a>
           
 
           
           
-          <a href="/quantization">Quantization</a>
+          <a href="/quantization#nav">Quantization</a>
           
 
           
           
-          <a href="/react-prompting">ReAct Prompting</a>
+          <a href="/react-prompting#nav">ReAct Prompting</a>
           
 
           
@@ -117,7 +117,7 @@
           meta
           
           <a href="/recent-changes">recent</a>
-          <a href="/penultimate-guitar" class="not-extra-small">random</a>
+          <a href="/themed-stylesheets" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Few-Shot Learning'">reply</a>
@@ -136,7 +136,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Machine Learning/Machine Learning Concepts/Few-Shot Learning.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Software/Machine Learning/Machine Learning Concepts/Few-Shot Learning.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/penultimate-guitar" class="extra-small">random</a>
+          <a href="/themed-stylesheets" class="extra-small">random</a>
         </div>
       </div>
 
@@ -179,7 +179,8 @@
     document.querySelector("nav").addEventListener("mouseleave", ()=>{
       setTimeout(scrollActivatedLinksIntoView, 350);
     });
-    scrollActivatedLinksIntoView();
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
   </script>
   <script type="module">
       if (localStorage?.getItem("theme") === "dark") {
