@@ -11,7 +11,7 @@ I'm very grateful that the expats have looked after me, I'd have been lost witho
 
 When I have an idea for a project that excites me I often think of nothing else.  I'll stay up till dawn working on the project, not letting myself rest until the feature is done or the bug is fixed.  This is complemented by by a desire to always be progressing in one way or another.  This manifests as a constant tug of wanting to learn something, progress a skill.  It was the feeling that drove me to start learning piano (though everything I learnt must be atrophied now).
 
-When in the grips of this, anything unimportant feels like a waste of time.  For example, video games lose their appeal immediately.
+When in the grips of this, anything unimportant feels like a waste of [[time]].  For example, video games lose their appeal immediately.
 
 This is all preamble to the point: the normal drive I have to build something or create something is still there but my brain has made "making new friends" the primary goal.  Any time free time I'm not spending on this makes me feel wasteful. This is often.
 
