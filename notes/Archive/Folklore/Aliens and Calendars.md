@@ -1,7 +1,9 @@
----  
-tags:  
-  - relics  
----  
+---
+tags:
+  - relics
+---
+
+
 The following was written by Foone, [posted to Twitter](https://news.ycombinator.com/item?id=32096553) on 2022-09-21.  
 
 ---  
