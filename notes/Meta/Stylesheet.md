@@ -17,6 +17,8 @@ two spaces at the end.
 
 This is a sentence with a <cite>Zach Manson</cite> citation in the middle of it.
 
+This text should have ==some highlights!==
+
 ---
 
 # Heading
