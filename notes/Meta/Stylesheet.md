@@ -17,7 +17,7 @@ two spaces at the end.
 
 This is a sentence with a <cite>Zach Manson</cite> citation in the middle of it.
 
-This text should have ==some highlights!==
+This text should have ==some highlighted text!==
 
 ---
 
@@ -113,6 +113,12 @@ External image:
 Chronologised tag:
 
 <ochrs:chrono:posts>
+
+---
+
+Chronologised inlien tag:
+
+<ochrs:yak-shaving:inline-chrono:show-title>
 
 [^1]: This is a footnote.
 [^2]: This is also a footnote.
