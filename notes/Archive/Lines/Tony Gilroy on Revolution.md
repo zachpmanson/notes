@@ -1,3 +1,7 @@
+---
+date: 2026-07-01
+---
+
 A series of phrases Tony Gilroy [said in an interview](https://www.youtube.com/watch?v=SUUw-UfK64Q) .
 
 > Building the perfect enemy is in the catalogue
