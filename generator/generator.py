@@ -4,13 +4,9 @@ import os
 import random
 import re
 import sys
-from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
-from pprint import pprint
 from types import FunctionType
-from typing import Optional
-from xml.etree.ElementInclude import include
 
 import frontmatter
 import jinja2
@@ -21,6 +17,7 @@ import generator.helpers as helpers
 from generator.extensions.backlink import BacklinkExtension
 from generator.extensions.cite import CiteExtension
 from generator.extensions.pathconverter.pathconverter import PathConverterExtension
+from generator.types import Node
 
 
 def get_tree():
@@ -44,7 +41,6 @@ def get_tree():
         title = root.split("/")[-1]
         if title == "notes":
             title = "Index"
-        # print(title,tree[title])
 
         for file in files:
             if file in ignore_names:
@@ -55,24 +51,21 @@ def get_tree():
                 continue
 
             page_name = file[:-3]
-            try:
-                tree[page_name]
-            except KeyError:
-                tree[page_name] = Node(
-                    parent=title,
-                    title=page_name,
-                    subtitle=None,
-                    children=set(),
-                    body="",
-                    rss_body="",
-                    backlinks=set(),
-                    mod_date="2000-01-01",
-                    creation_date="2000-01-01",
-                    post_date=None,
-                    breadcrumb_path="",
-                    random_page="",
-                    script=None,
-                )
+            tree[page_name] = tree.get(page_name) or Node(
+                parent=title,
+                title=page_name,
+                subtitle=None,
+                children=set(),
+                body="",
+                rss_body="",
+                backlinks=set(),
+                mod_date="2000-01-01",
+                creation_date="2000-01-01",
+                post_date=None,
+                breadcrumb_path="",
+                random_page="",
+                script=None,
+            )
 
             if title != page_name:
                 tree[title].children.add(page_name)
@@ -269,7 +262,7 @@ def generate_tags():
     tags_md = ""
     for tag in sorted(tags.keys()):
         pages = sorted(tags[tag])
-        panel = f"<details markdown='1'><summary>\n## {tag}\n</summary>\n\n"
+        panel = f"<details markdown='1'><summary>\n#{tag}\n</summary>\n\n"
         panel += "\n".join(
             [f"- [{page}](/{helpers.sanitize_url(page)})" for page in pages]
         )
@@ -362,10 +355,12 @@ def format_ochrs_func(matches):
         segments = matches.group(1).split(":")
         name = segments[0]
         if len(segments) > 1:
-            args = segments[1:]
+            args = tuple(segments[1:])
+            value = str(ochrs_funcs[name](args))
         else:
             args = []
-        value = str(ochrs_funcs[name](*args))
+            value = str(ochrs_funcs[name]())
+
     except KeyError as e:
         print("KeyError:", e, file=sys.stderr)
         value = "unknown ochrs func"
@@ -447,36 +442,13 @@ ochrs_funcs: dict[str, FunctionType] = {
     "md-extensions": lambda: ", ".join(
         [e if isinstance(e, str) else str(type(e).__name__) for e in md_extensions]
     ),
-    "recent-edit": lambda i: helpers.format_recent_edit(tree, i),
+    "recent-edit": lambda i: helpers.format_recent_edit(tree, i[0]),
     "sitemap": lambda: sitemap_md,
     "tags": lambda: tags_md,
     "random-js": lambda: helpers.random_js(tree),
-    "chrono": lambda x: helpers.chronological_tag(x, tags[x], tree),
+    "chrono": lambda x: helpers.chronological_tag(x, tags[x[0]], tree),
+    "inline-chrono": lambda x: helpers.inline_chronological_tag(x[0], tags[x[0]], tree, x[1]), 
 }
-
-
-@dataclass
-class Node:
-    parent: Optional[str]
-    children: set[str]
-
-    title: str
-    subtitle: Optional[str]
-    body: str
-    rss_body: str
-
-    backlinks: set[str]
-
-    mod_date: str  # "2023-02-23 20:54:42 +0800%"
-    creation_date: str  # "2023-02-23 20:54:42 +0800%"
-
-    breadcrumb_path: str  # path in notes folder as string
-    random_page: str  # random page when using static random
-    script: Optional[str]  # js to include
-    post_date: Optional[str]  # date used for chronological sorting
-
-    children_visible: bool = True
-
 
 tree: dict[str, Node] = {
     "Index": Node(
@@ -512,6 +484,8 @@ VERBOSE = False
 
 
 def build_feeds():
+    global VERBOSE
+
     try:
         opts, args = getopt.getopt(sys.argv[1:], "v")
     except getopt.GetoptError as err:

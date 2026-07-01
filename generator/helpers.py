@@ -1,11 +1,15 @@
 # Self contained helper functions
 
 import sys
-import generator
+import unicodedata
+
+from generator.types import Node
 
 
 def sanitize_url(url):
     """Converts page name to usable URL"""
+    clean_url = unicodedata.normalize("NFD", url)
+
     clean_url = url.lower()
 
     if clean_url == "index":
@@ -44,7 +48,7 @@ def tags_js():
     """
 
 
-def chronological_tag(tag: str, tag_pages: list[str], tree: dict[str, generator.Node]):
+def chronological_tag(tag: str, tag_pages: list[str], tree: dict[str, Node]):
     nodes = {page: tree[page] for page in tag_pages if tree[page].post_date}
     nodes = dict(
         sorted(nodes.items(), key=lambda item: item[1].post_date, reverse=True)
@@ -59,3 +63,22 @@ def chronological_tag(tag: str, tag_pages: list[str], tree: dict[str, generator.
         "\n".join(html)
         + f"<a href='/{tag}.xml'>RSS Feed</a> | <a href='feed://notes.zachmanson.com/{tag}.xml'>Subscribe</a>"
     )
+
+def inline_chronological_tag(tag: str, tag_pages: list[str], tree: dict[str, Node], show_title:str):
+    nodes = {page: tree[page] for page in tag_pages if tree[page].post_date}
+    nodes = dict(
+        sorted(nodes.items(), key=lambda item: item[1].post_date, reverse=True)
+    )
+    html = []
+    render_title= show_title=="show-title"
+
+    for page, node in nodes.items():
+        element = "\n"
+        if render_title:
+            element += f"<h1>{node.subtitle or node.title}</h1>\n"
+
+        element += node.body
+        element += f"\n\n<a href='/{sanitize_url(node.title)}'>⌾</a>"
+        html.append(element)
+
+    return "<br><br>".join(html)

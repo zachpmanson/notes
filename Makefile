@@ -72,7 +72,7 @@ clean:
 dev:
 	cd site && python3 -m http.server & \
 	trap 'kill $$(jobs -p)' EXIT; \
-	watchman-make -p '**/*.jinja' '**/*.py' '**/*.md' '**/*.css' -r 'clear; $(MAKE) build'
+	watchman-make -p '**/*.jinja' '**/*.py' '**/*.md' '**/*.css' -r '$(MAKE) build-fast'
 
 ## Build the site and push it to the gh-pages branch
 deploy:
