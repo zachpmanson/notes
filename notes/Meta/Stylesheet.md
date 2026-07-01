@@ -118,7 +118,7 @@ Chronologised tag:
 
 Chronologised inlien tag:
 
-<ochrs:yak-shaving:inline-chrono:show-title>
+<ochrs:venting:inline-chrono:show-title>
 
 [^1]: This is a footnote.
 [^2]: This is also a footnote.
