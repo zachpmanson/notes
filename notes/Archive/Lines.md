@@ -5,6 +5,12 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
+> A podcast has to eat something, there's basically the choices of what a podcast can eat. a podcast can eat the news, the podcast can eat guests, or the podcast can eat the lives of the hosts.
+
+-- [CGP Grey](https://relay.fm/cortex/167)
+
+---
+
 > It never gets easier, you just get faster.
 
 -- Greg LeMond
