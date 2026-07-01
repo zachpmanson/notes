@@ -1,4 +1,4 @@
-An old greentext from the wake of the Xbox One launch. I have [a screenshot](/media/verification-can.png) of the original but I can't be bothered tracking down the URL.
+An old greentext from the wake of the Xbox One launch. I have [a screenshot](verification-can.png) of the original but I can't be bothered tracking down the URL.
 
 ---
 

@@ -59,9 +59,9 @@ generate:
 # Copy static assets and site metadata into ./site (internal)
 static:
 	touch ./site/.nojekyll
-	mkdir -p ./site/media ./site/_static
+	mkdir -p ./site/assets ./site/_static
 	cp -R ./static/* ./site/_static/
-	cp -R ./notes/Media/* ./site/media/
+	cp -R ./notes/Assets/* ./site/assets/
 	echo "notes.zachmanson.com" > ./site/CNAME
 
 # Empty the generated site directory (internal)

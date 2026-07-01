@@ -280,10 +280,10 @@ def preprocess_markdown(text):
     # TODO: Move this to a seperate md extension
     # add webm backlink
     text = re.sub(
-        r"!\[\[([^\]]+\.webm)?\]\]", "<video src='/media/\\1' controls></video>", text
+        r"!\[\[([^\]]+\.webm)?\]\]", "<video src='/assets/\\1' controls></video>", text
     )
     # add images backlink
-    text = re.sub(r"!\[\[([^\]]+)?\]\]", "![](/media/\\1)", text)
+    text = re.sub(r"!\[\[([^\]]+)?\]\]", "![](/assets/\\1)", text)
 
     return text
 
@@ -432,7 +432,7 @@ md_extensions = [
     "footnotes",
 ]
 
-ignore_names: list[str] = [".obsidian", "Media", ".trash"]
+ignore_names: list[str] = [".obsidian", "Assets", ".trash"]
 
 ochrs_funcs: dict[str, FunctionType] = {
     "ochrs-funcs": lambda: ", ".join(list(ochrs_funcs.keys())),
