@@ -22,4 +22,3 @@ I'd like to make an editor mode that doesn't allow backspace. Fully seperate edi
 
 - Merlin Mann [on writer's block](http://www.43folders.com/2004/11/18/hack-your-way-out-of-writers-block)
 - [The Grug Brained Writer](https://www.autodidacts.io/grug/)
-- 
