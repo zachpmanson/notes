@@ -116,7 +116,7 @@ Chronologised tag:
 
 ---
 
-Chronologised inlien tag:
+Chronologised inline tag:
 
 <ochrs:inline-chrono:venting:show-title>
 
