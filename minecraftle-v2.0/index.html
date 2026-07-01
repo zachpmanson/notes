@@ -114,7 +114,7 @@
 <h3 id="database-broke">Database Broke</h3>
 <p>I accidentally ran the migration script twice, once a few weeks prior to deployment to generate some test data and once on the day I deployed.  I forgot about the initial run in the intervening weeks.  Making matters worse, the second run used the old dump of the database, meaning that all scores were double what they were 3 weeks prior.  This was painful to diagnose as some scores had gone up while others had gone down.  I was eventually able to figure out what had happened thanks to <a href="https://github.com/zachpmanson/minecraftle/issues/34">this bug report</a> which contained a screenshot of the scores the day before.  Thank you very much <a href="https://github.com/suppergerrie2">suppergerrie2</a>!</p>
 <h3 id="cdn-vs-audio-files">CDN vs Audio Files</h3>
-<p><img alt="" src="/media/mctl-routes.png" /></p>
+<p><img alt="" src="/assets/mctl-routes.png" /></p>
 <p>Back when Minecraftle was just a uni project, one of my teammates, Harrison Oates, added a button that would play in game audio from Minecraft.  This was cute and insignificant, to the point where I forgot it existed.  When I deployed on Vercel this became a problem since almost all my bandwidth (100GiB) was used by this single mp3 file! I removed this feature, but other static assets were going to use my remaining bandwidth.  I had to switch to running it on a new DigitalOcean droplet for the rest of the month.</p>
 <p>Hopefully this are the last updates Minecraftle will need for a long time!</p></article>
   </main>
@@ -127,7 +127,7 @@
           <date>2024-04-08</date>
           
           <a href="/recent-changes">recent</a>
-          <a href="/fediverse" class="not-extra-small">random</a>
+          <a href="/casio" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Minecraftle v2.0'">reply</a>
@@ -146,7 +146,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Projects/Minecraftle/Minecraftle v2.0.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Projects/Minecraftle/Minecraftle v2.0.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/fediverse" class="extra-small">random</a>
+          <a href="/casio" class="extra-small">random</a>
         </div>
       </div>
 
