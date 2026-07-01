@@ -78,7 +78,7 @@ body {
 
 main {
   text-align: left;
-  margin: auto;
+  /* margin: auto; */
   max-width: 80ch;
 }
 
@@ -316,7 +316,7 @@ hr {
 
 footer {
   max-width: 80ch;
-  margin: auto;
+  /* margin: auto; */
 
   details {
     margin: auto;
