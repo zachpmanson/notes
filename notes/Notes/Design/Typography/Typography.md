@@ -5,6 +5,7 @@
 - [Practical Typography book](https://practicaltypography.com)
 - [Words of Type Wiki](https://wiki.wordsoftype.com/)
 - [India Street Lettering](https://indiastreetlettering.com/sightings/)
+- [Modern Font Stacks](https://modernfontstacks.com)
 
 ## Typefaces
 
