@@ -427,6 +427,7 @@ md_extensions = [
     "tables",
     "pymdownx.superfences",
     "pymdownx.tilde",
+    "pymdownx.mark",
     "markdown_checklist.extension",
     CiteExtension(),
     "footnotes",
