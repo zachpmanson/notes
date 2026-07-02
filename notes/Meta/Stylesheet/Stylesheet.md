@@ -116,10 +116,6 @@ Chronologised tag:
 
 ---
 
-Chronologised inline tag:
-
-<ochrs:inline-chrono:venting:show-title>
-
 [^1]: This is a footnote.
 [^2]: This is also a footnote.
 [^citation needed]: this needs citation

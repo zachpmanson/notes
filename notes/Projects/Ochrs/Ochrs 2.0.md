@@ -4,4 +4,4 @@ The first time I used [[Obsidian]] I immediately knew I wanted all my notes to b
 
 The code itself is similar to [[ironprof]], a simple static site generator script I wrote for my [personal site](https://zachmanson.com) that recursively builds jinja templates and converts Markdown into blogposts.
 
-Ochrs 2.0 uses Python-Markdown for all parsing, and introduces a few [[Ochrs Syntax|custom syntax]] behaviours on top of this.  The [[stylesheet]] shows how all common elements look. 
+Ochrs 2.0 uses Python-Markdown for all parsing, and introduces a few [[Ochrs Syntax|custom syntax]] behaviours on top of this.  The [[Stylesheet]] shows how all common elements look. 
