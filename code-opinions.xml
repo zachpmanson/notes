@@ -13,7 +13,7 @@
             <link>https://notes.zachmanson.com/code-opinions</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Thu, 02 Jul 2026 03:01:08 </lastBuildDate>
+        <lastBuildDate>Thu, 02 Jul 2026 03:02:01 </lastBuildDate>
         
         <item>
             <title>Code Opinions</title>
@@ -35,7 +35,7 @@
 <p><cite class="standalone">George Orwell</cite></p>
 <p>This whole website is a living document, but this page is especially living. These are strong beliefs that are weakly held, I'm certain many of these will change over time.</p>
 <p>Some of these will seem trivial and obvious, but they are all written because I have seem them consistently violated in professional settings. These writing were initially intended to be a code practices guide, but they became just angry venting. </p>
-<p><ochrs:inline-chrono:code-opinions:show-title></p>
+<p><ochrs:inline:code-opinions:show-title></p>
 <p><a href="https://notes.zachmanson.com/code-opinions">⌾</a></p>]]>
             </content:encoded>
             <guid isPermaLink="false">https://notes.zachmanson.com/code-opinions</guid>
