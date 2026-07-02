@@ -13,7 +13,7 @@
             <link>https://notes.zachmanson.com/venting</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Thu, 02 Jul 2026 03:07:16 </lastBuildDate>
+        <lastBuildDate>Thu, 02 Jul 2026 03:10:46 </lastBuildDate>
         
         <item>
             <title>RTK Query vs. Infinite Scrolling</title>
@@ -247,39 +247,6 @@
         </item>
         
         <item>
-            <title>Nextcloud Phone Photo Upload</title>
-            <link>https://notes.zachmanson.com/nextcloud-phone-photo-upload</link>
-            
-            <description>Just use FolderSync.</description>
-            
-            <content:encoded>
-                <![CDATA[<p>Nextcloud is excellent, and its Android app is great.  I found the app's Auto-Upload feature to be nigh unusable.</p>
-<p>I have 20GiB+ of photos on my phone and would like a backup.  My primary Nextcloud account is synced to my PCs, so any file added to it will be downloaded to all devices.  I don't need local access to these photos on all my PCs, so I created a seperate Nextcloud account just for camera roll uploads. If I needed to access these photos from a PC I could log in to the Nextcloud web interface with the camera roll account.</p>
-<p>Attempting to use Auto-Upload on my phone's Camera folder was messy.  It kept uploading photos to the wrong Nextcloud account, incorrectly counting how many files there were, and did not supporting bidirectional sync.  It was unpredictable how long it would take to actually trigger an upload, not having a manual way of starting one.  It also limited automatic uploads to a single folder. These issues were all seperate from the fact that the UI was extremely glitchy as it tried to show 20GiB of photos.</p>
-<p>I found using <a href="https://www.tacit.dk/foldersync">FolderSync</a> a much better experience.  It let me set up bidirectional sync between custom Nextcloud folders and local folders, let me choose cadence for syncing (with many configuration options like only allowing upload when charging) and allowed me to manually trigger a sync.  The premium version is absolutely worth it.  I'm only scratching the surface of what it can do here, but for my needs it's perfect.</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/nextcloud-phone-photo-upload</guid>
-            <pubDate>2024-05-01</pubDate>
-        </item>
-        
-        <item>
-            <title>Copilot Edited an Ad Into My PR</title>
-            <link>https://notes.zachmanson.com/copilot-edited-an-ad-into-my-pr</link>
-            
-            <content:encoded>
-                <![CDATA[<p>After a team member summoned Copilot to correct a typo in a PR of mine, <strong>Copilot edited my PR description to include and ad for itself and Raycast</strong>.</p>
-<p><img alt="" src="https://notes.zachmanson.com/assets/copilot-hell.png" /></p>
-<p>This is horrific. I knew this kind of bullshit would happen eventually, but I didn't expect it so soon.</p>
-<blockquote>
-<p>Here is how platforms die: first, they are good to their users; then they abuse their users to make things better for their business customers; finally, they abuse those business customers to claw back all the value for themselves. Then, they die.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://notes.zachmanson.com/tiktoks-enshittification">Cory Doctorow</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/copilot-edited-an-ad-into-my-pr</guid>
-            <pubDate>2026-03-30</pubDate>
-        </item>
-        
-        <item>
             <title>LinkedIn's Ghost Text</title>
             <link>https://notes.zachmanson.com/linkedins-ghost-text</link>
             
@@ -388,6 +355,46 @@
             </content:encoded>
             <guid isPermaLink="false">https://notes.zachmanson.com/the-h-chord</guid>
             <pubDate>2023-05-08</pubDate>
+        </item>
+        
+        <item>
+            <title>Kinde Design Decisions</title>
+            <link>https://notes.zachmanson.com/kinde-design-decisions</link>
+            
+            <content:encoded>
+                <![CDATA[<p>This is a list of problems with the Kinde interface.</p>
+<h2 id="useless-dropdowns">Useless Dropdowns</h2>
+<p>This dropdown should list the environments instead of revealing a button to take you to a page that lists the environments. This is an unnecessary second click.</p>
+<p><img alt="" src="https://notes.zachmanson.com/assets/kinde-1.png" /></p>
+<p>This also means you are unable to switch environment without losing the page you are on.</p>
+<h2 id="unclickable-icons">Unclickable Icons</h2>
+<p>For some reason the left facing chevron is not clickable, only the word "Home" is.</p>
+<p><img alt="" src="https://notes.zachmanson.com/assets/kinde-2.png" /></p>
+<h2 id="bizarre-breadcrumbs">Bizarre Breadcrumbs</h2>
+<p>When you go to the "Users Profile" screen, the top left back icon doesn't take you back to the "Users" screen, but remains a "Home" button.</p>
+<p>The only way to navigate back is the the small grey "User" text above the user's name.</p>
+<p><img alt="" src="https://notes.zachmanson.com/assets/kinde-3.png" /></p>
+<p>This is something that almost all basic websites can get right.  Breadcrumb navigation or consistent back behaviour would be vastly preferable here.</p>
+<p>There is little consistency between parts of the interface that are clickable and those that are not.  This makes navigating quite difficult.</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/kinde-design-decisions</guid>
+            <pubDate>2024-07-01</pubDate>
+        </item>
+        
+        <item>
+            <title>Nextcloud Phone Photo Upload</title>
+            <link>https://notes.zachmanson.com/nextcloud-phone-photo-upload</link>
+            
+            <description>Just use FolderSync.</description>
+            
+            <content:encoded>
+                <![CDATA[<p>Nextcloud is excellent, and its Android app is great.  I found the app's Auto-Upload feature to be nigh unusable.</p>
+<p>I have 20GiB+ of photos on my phone and would like a backup.  My primary Nextcloud account is synced to my PCs, so any file added to it will be downloaded to all devices.  I don't need local access to these photos on all my PCs, so I created a seperate Nextcloud account just for camera roll uploads. If I needed to access these photos from a PC I could log in to the Nextcloud web interface with the camera roll account.</p>
+<p>Attempting to use Auto-Upload on my phone's Camera folder was messy.  It kept uploading photos to the wrong Nextcloud account, incorrectly counting how many files there were, and did not supporting bidirectional sync.  It was unpredictable how long it would take to actually trigger an upload, not having a manual way of starting one.  It also limited automatic uploads to a single folder. These issues were all seperate from the fact that the UI was extremely glitchy as it tried to show 20GiB of photos.</p>
+<p>I found using <a href="https://www.tacit.dk/foldersync">FolderSync</a> a much better experience.  It let me set up bidirectional sync between custom Nextcloud folders and local folders, let me choose cadence for syncing (with many configuration options like only allowing upload when charging) and allowed me to manually trigger a sync.  The premium version is absolutely worth it.  I'm only scratching the surface of what it can do here, but for my needs it's perfect.</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/nextcloud-phone-photo-upload</guid>
+            <pubDate>2024-05-01</pubDate>
         </item>
         
         <item>
@@ -581,6 +588,226 @@ required<span class="w"> </span>by
 <p><cite class="standalone">George Orwell</cite></p>
 <p>This whole website is a living document, but this page is especially living. These are strong beliefs that are weakly held, I'm certain many of these will change over time.</p>
 <p>Some of these will seem trivial and obvious, but they are all written because I have seem them consistently violated in professional settings. These writing were initially intended to be a code practices guide, but they became just angry venting. </p>
+<h1>getattr() is a red flag</h1>
+<p>The only time I can think you might want to use this is when we have split table that share parent super class e.g. <code>BaseUsage</code>, <code>Usage</code>, <code>GasUsage</code>, <code>LPGUsage</code> . </p>
+<p>(to be fair, I believe that we generally want to avoid needing that kind of abstraction)</p>
+<p>Other than that, why do you need <code>getattr()</code> ? Is there a better way of referencing the attribute, that doesn’t break VS Code type inference? Remember, <a href="https://notes.zachmanson.com/command-click">Command Click</a>.</p>
+<p>Reflection is powerful and also may be a sign you’ve gone too far.</p>
+<p>This is cursed, do not do this:</p>
+<div class="highlight"><pre><span></span><code><span class="o">...</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">per_day_metric</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">metric</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;spend&quot;</span><span class="p">,</span> <span class="s2">&quot;rev&quot;</span><span class="p">,</span> <span class="s2">&quot;client_saved&quot;</span><span class="p">,</span> <span class="s2">&quot;usage&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;spend&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">metric</span> <span class="o">==</span> <span class="s2">&quot;spend&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;per_day_spend&quot;</span><span class="p">)(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;per_day_</span><span class="si">{</span><span class="n">metric</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="o">...</span>
+</code></pre></div>
+<p><a href="https://notes.zachmanson.com/getattr()-is-a-red-flag">⌾</a><br><br></p>
+<h1>back_populates is better than backref</h1>
+<p>Yes, <code>backref</code> is more concise, but it also creates attributes that only exist during runtime. I want to see every attribute (and type) in the code as I am writing it.</p>
+<p><a href="https://docs.sqlalchemy.org/en/14/orm/backref.html">Even SQLAlchemy docs advise <code>back_populates</code> over <code>backref</code>.</a></p>
+<p><a href="https://notes.zachmanson.com/back_populates-vs-backref">⌾</a><br><br></p>
+<h1>Lint+format in CI, not on commit</h1>
+<p>Commit should be fast. Don’t make me wait. Lint+format needs to be in CI regardless so let’s limit the speed bottleneck to being purely on PR CI.</p>
+<p><a href="https://notes.zachmanson.com/validate-in-ci">⌾</a><br><br></p>
+<h1>Test Inputs and Outputs</h1>
+<p>Tests should have concrete inputs, and concrete outputs. If you are testing things that aren't concrete inputs and outputs, what exactly are you testing? If your output is a side effect then you mock it, but generally your outputs are data.</p>
+<p><a href="https://notes.zachmanson.com/test-inputs-and-outputs">⌾</a><br><br></p>
+<h1>Only use a getter when you care about the setter</h1>
+<p>I know that it looks prettier when the getter is simple:</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">User</span><span class="p">:</span>
+    <span class="n">first_name</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">last_name</span><span class="p">:</span> <span class="nb">str</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">full_name_1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">first_name</span><span class="si">}</span><span class="s2"> + </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">last_name</span><span class="si">}</span><span class="s2">&quot;</span>
+
+    <span class="nd">@property</span><span class="o">.</span><span class="n">getter</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">full_name_2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">first_name</span><span class="si">}</span><span class="s2"> + </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">last_name</span><span class="si">}</span><span class="s2">&quot;</span>
+
+
+<span class="n">User</span><span class="o">.</span><span class="n">full_name_1</span>
+<span class="n">User</span><span class="o">.</span><span class="n">full_name_2</span><span class="p">()</span>
+</code></pre></div>
+<p>but the bigger impact is obscuring the fact that you are making a function call.</p>
+<p>The real power of <code>@property</code> is not the getter, but the setter.</p>
+<p>You can define a custom setter with validation logic OR
+You can intentionally leave out a setter so that an attribute is read only:</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">X</span><span class="p">:</span>
+    <span class="n">_name</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="nd">@property</span><span class="o">.</span><span class="n">getter</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">name</span><span class="p">():</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span>
+</code></pre></div>
+<p>If you are not doing either of these things, property is just hiding a function call which may contain side effect, which is a practice I consider dangerous. I have seen network calls hidden get behind @property. Never do this.</p>
+<p><a href="https://notes.zachmanson.com/setters-vs-getters">⌾</a><br><br></p>
+<h1>Functions return types should not change depending on parameters</h1>
+<p>Functions should return <code>None</code>, return <code>SomeType | None</code> or <code>SomeType</code> . <code>SomeType</code> can be a tuple, but that tuple should always have the same number of arguments. Flags like <code>calculate_cost(return_as_float=True)</code> should not exist. If you must have multiple versions of the same function with slightly different return signatures, I should be able to access everything in a typesafe way. This either means there should be</p>
+<ul>
+<li><code>@typing.overload</code> decorators providing all the typesafe variants of the function</li>
+<li>1 function containing the core logic and a other functions that wraps it and does type conversion (Both should have type inference or type hints.)</li>
+</ul>
+<p><a href="https://notes.zachmanson.com/return-types">⌾</a><br><br></p>
+<h1>If you do not have request validation I do not trust you</h1>
+<p>Do not create API endpoints that do not validate query params or request body. 
+Do not create API endpoints that do not validate query params or request body.
+Do not create API endpoints that do not validate query params or request body.
+Do not create API endpoints that do not validate query params or request body.</p>
+<p>If there isn’t a class definition with a Pydantic model in it or a Yup/Zod definition, ask yourself why. You better have a very good reason. This is as much for security as it is for convenience. If I can’t instantly tell what params your query needs, you have made a mistake.</p>
+<p>This also forces you to be typesafe. Perhaps this is an extension of <a href="https://notes.zachmanson.com/command-click">Command Click</a>.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># BAD - No human should ever have to do this</span>
+<span class="n">data_type</span> <span class="o">=</span> <span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;type&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="n">test_date_str</span> <span class="o">=</span> <span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;date&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="n">site_id</span> <span class="o">=</span> <span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;site_id&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="n">channels_str</span> <span class="o">=</span> <span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;channels&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="n">last_active_price</span> <span class="o">=</span> <span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;last_active_price&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="n">meter_num</span> <span class="o">=</span> <span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;meter_num&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="n">identity</span> <span class="o">=</span> <span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;identity&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="n">on_at</span> <span class="o">=</span> <span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;on_at&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">off_at</span> <span class="o">=</span> <span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;off_at&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">is_all_day</span> <span class="o">=</span> <span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;is_all_day&quot;</span><span class="p">,</span> <span class="s2">&quot;no&quot;</span><span class="p">)</span>
+<span class="n">experiment_type</span> <span class="o">=</span> <span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;experiment_type&quot;</span><span class="p">,</span> <span class="s2">&quot;sum&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p><a href="https://notes.zachmanson.com/request-validation">⌾</a><br><br></p>
+<h1>It is extremely unlikely that your calculation needs state</h1>
+<p>Do you have some numbers and you need them to turn into some other kinds of numbers? <a href="https://notes.zachmanson.com/avoid-state">Avoid State</a>. When I say state, I don't mean a short lived variable to store a value before you loop over something, I mean a class attributed that is mutated in X number of times across different methods.</p>
+<p>A good rule of thumb is "all stateful variables this function uses should be declared within this function and all mutations should be visible by reading this function"</p>
+<p>Overuse of objects can result in <a href="https://news.ycombinator.com/item?id=45751859">object-oriented obfuscation</a>.</p>
+<p><a href="https://notes.zachmanson.com/reconsider-state">⌾</a><br><br></p>
+<h1>React prop type definitions should be inline and anonymous</h1>
+<p>Unless you have a good reason. Only example I can think of is components sharing props (this is rare) or interface perf vs type perf (but I am yet to work on a codebase where that mattered).</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// BAD</span>
+<span class="kr">type</span><span class="w"> </span><span class="nx">ComponentAProps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<span class="w">  </span><span class="nx">a</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">b</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">ComponentA</span><span class="p">({</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="nx">ComponentAProps</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;&gt;{</span><span class="nx">a</span><span class="p">}</span><span class="w"> </span><span class="p">{</span><span class="nx">b</span><span class="p">}&lt;/&gt;</span>
+<span class="p">}</span>
+
+<span class="c1">// BAD</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">ComponentA</span><span class="p">(</span><span class="nx">props</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">a</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">b</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">props</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;&gt;{</span><span class="nx">a</span><span class="p">}</span><span class="w"> </span><span class="p">{</span><span class="nx">b</span><span class="p">}&lt;/&gt;</span>
+<span class="p">}</span>
+
+<span class="c1">// I CAN LIVE WITH THIS BUT YOU&#39;RE WEIRD</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">ComponentA</span><span class="p">(</span><span class="nx">props</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">a</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">b</span><span class="o">:</span><span class="kt">string</span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;&gt;{</span><span class="nx">props</span><span class="p">.</span><span class="nx">a</span><span class="p">}</span><span class="w"> </span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">b</span><span class="p">}&lt;/&gt;</span>
+<span class="p">}</span>
+
+<span class="c1">// LITERALLY THE WORST OF BOTH WORLDS YOU MASOCHIST</span>
+<span class="kr">type</span><span class="w"> </span><span class="nx">ComponentAProps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<span class="w">  </span><span class="nx">a</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+<span class="w">  </span><span class="nx">b</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">ComponentA</span><span class="p">(</span><span class="nx">props</span><span class="o">:</span><span class="w"> </span><span class="kt">ComponentAProps</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">props</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;&gt;{</span><span class="nx">a</span><span class="p">}</span><span class="w"> </span><span class="p">{</span><span class="nx">b</span><span class="p">}&lt;/&gt;</span>
+<span class="p">}</span>
+
+<span class="c1">// GOOD</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">ComponentA</span><span class="p">({</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">a</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">b</span><span class="o">:</span><span class="kt">string</span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;&gt;{</span><span class="nx">a</span><span class="p">}</span><span class="w"> </span><span class="p">{</span><span class="nx">b</span><span class="p">}&lt;/&gt;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>It is extremely rare that you need to use prop type definitions more that once, so the separate type definition is just adding boilerplate with no benefit. Yes I know that its annoying repeating the same thing twice in a row with the anonymous type, but its the best of a bunch of bad options. It should be maximally obvious what params a component needs.</p>
+<p><a href="https://notes.zachmanson.com/favour-colocation">Generally its good to keep types as close to their usage as possible</a>.</p>
+<p><a href="https://notes.zachmanson.com/react-prop-types">⌾</a><br><br></p>
+<h1>Query params are wonderful</h1>
+<p>Query params are a simple kind of global state that can be stored in a link! That’s so useful! When using <a href="https://notes.zachmanson.com/react">React</a> and <a href="https://notes.zachmanson.com/next.js">Next.js</a>, using <code>nuqs</code> makes query params super easy to manage, as if they are <code>useState</code> calls! So please use it. It even supports date parsing, enums, and arrays!</p>
+<p>For example, query params are great for storing what particular location you just selected, or for the tab that is currently active.</p>
+<p>Query params also allow you to skip writing state models!</p>
+<p>(they also don't trigger full page rerenders in Next.js Pages Router)</p>
+<p><a href="https://notes.zachmanson.com/query-params-are-wonderful">⌾</a><br><br></p>
+<h1>Prefer query params/request body to URL params</h1>
+<p>Putting variables into the URL path is inflexible and makes parsing things quite confusing. Query params are much easier to change down the line.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># BAD</span>
+/api/sites/&lt;site_id&gt;/&lt;energy_type&gt;/&lt;time_resolution&gt;
+/api/sites/102/elec/monthly
+
+<span class="c1"># GOOD</span>
+/api/site?site_id<span class="o">=</span>&lt;site_id&gt;<span class="p">&amp;</span><span class="nv">energy_type</span><span class="o">=</span>&lt;energy_type&gt;<span class="p">&amp;</span><span class="nv">resolution</span><span class="o">=</span>&lt;time_resolution&gt;
+/api/site?site_id<span class="o">=</span><span class="m">102</span><span class="p">&amp;</span><span class="nv">energy_type</span><span class="o">=</span>elec<span class="p">&amp;</span><span class="nv">resolution</span><span class="o">=</span>monthly
+</code></pre></div>
+<p>Slightly unrelated, but also note that DELETE endpoints can only have query params, not a JSON body. Isn't that strange.</p>
+<p><a href="https://notes.zachmanson.com/query-params-vs-path-params">⌾</a><br><br></p>
+<h1>Do not change the URL path if the screen hasn’t changed</h1>
+<p>For many screens we have a searchbar where you can select a location. If selecting the location doesn’t change the whole page, do not change the URL path, just update query params. Each URL route should reflect a whole page. This is particularly important in <a href="https://notes.zachmanson.com/next.js">Next.js</a> Pages Router as URL changes trigger full page rerenders no matter what. This will interrupt any an animations (and is inefficient).</p>
+<p><a href="https://notes.zachmanson.com/pathname-changing">⌾</a><br><br></p>
+<h1>Name prefixes are good (sometimes)</h1>
+<p>It can be very useful to use a prefix when naming things, for example when you have many similar variables that you need to easily tell apart or a list of files of different kinds so you can group them together alphabetically.</p>
+<p>A great example of this is found in the SvelteKit file route naming conventions, where all files related to routing are prefixed with a <code>+</code> so they all appear together at the top in a folder.</p>
+<p>A time where name prefixes are not useful is when differentiating variable types, for example prefixing interfaces with <code>I</code> (aka Hungarian notation). This is not useful as my editor should be able to provide me this information very clearly. In the case of interfaces, VS Code highlights them in a special color, and will vomit errors if you misuse an interface as a variable. This convention is a relic of the days of yore, before decent language servers and usable IDEs. If we ever start writing a project in C++ I am willing to reconsider this stance.</p>
+<p>Yes I know this is a convention in C# but it is not in TypeScript, and in the past has been <a href="https://web.archive.org/web/20150515151542/http://www.typescriptlang.org/Handbook#writing-dts-files">specifically disavowed</a> by the TypeScript team in the past (which is saying a lot since both languages were designed by the same guy):</p>
+<blockquote>
+<h3 id="naming-conventions">Naming Conventions</h3>
+<p>In general, do not prefix interfaces with I (e.g. IColor). Because the concept of an interface in TypeScript is much more broad than in C# or Java, the IFoo naming convention is not broadly useful.</p>
+</blockquote>
+<p><cite class="standalone">TypeScript handbook, 2015</cite></p>
+<p>If your editor can’t easily show you what type your variable is, you have made a mistake already.</p>
+<p><a href="https://notes.zachmanson.com/name-prefixes">⌾</a><br><br></p>
+<h1>Please be careful with inheritance</h1>
+<p>Mixins can be a beautiful thing. If I can’t Ctrl+Click on your method name and have my editor take me directly to your method you need there better a very good reason. Maybe try adding some type hints and flattening your trees. Perhaps this is an extension of <a href="https://notes.zachmanson.com/command-click">Command Click</a>.</p>
+<p><a href="https://notes.zachmanson.com/inherit-cautiously">⌾</a><br><br></p>
+<h1>Greppability is Valuable</h1>
+<p>Being able to run a text search over a codebase is extremely valuable. This is especially true at API borders (service boundaries), where one project will call another project and you need to switch codebases to find where that API definition is. Often the only decent way to find the relevant function in these circumstances is string matching (or extremely consistent file structures which we currently do not have).</p>
+<p>If I am in frontend and I can see some data is coming from an API called <code>GET /api/client/foo/bar</code> it is much quicker for me to track down the API definition with a search for <code>"client/foo/bar"</code> than any other method. So backend will need to have <code>"client/foo/bar"</code> as a full string.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># BAD</span>
+<span class="n">router</span> <span class="o">=</span> <span class="n">APIRouter</span><span class="p">(</span><span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;/v1/usage-test&quot;</span><span class="p">)</span>
+
+<span class="nd">@router</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/result-calculation&quot;</span><span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="n">request</span><span class="p">:</span> <span class="n">Request</span><span class="p">):</span>
+    <span class="o">...</span>
+
+<span class="c1"># GOOD</span>
+<span class="n">router</span> <span class="o">=</span> <span class="n">APIRouter</span><span class="p">()</span>
+
+<span class="nd">@router</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/v1/usage-test/result-calculation&quot;</span><span class="p">)</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="n">request</span><span class="p">:</span> <span class="n">Request</span><span class="p">):</span>
+    <span class="o">...</span>
+</code></pre></div>
+<p>Further reading: <a href="https://morizbuesing.com/blog/greppability-code-metric/">Greppability is an underrated code metric</a></p>
+<p><a href="https://notes.zachmanson.com/greppability-is-valuable">⌾</a><br><br></p>
+<h1>Give Bad Things Scary Names</h1>
+<p>Things that are annoying get fixed. Have a legacy function that is truly disgusting, uses dodgy abstractions and produces footguns but you don't have the time to rewrite it right now? Give it a truly fucked up name, that reflects how ugly it is on the inside. Make the next developer feel bad for using this.</p>
+<p>A great example of this is the <a href="https://github.com/reactjs/react.dev/issues/3896">React <code>__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED</code></a>.</p>
+<p><a href="https://notes.zachmanson.com/give-bad-things-scary-names">⌾</a><br><br></p>
+<h1>Favour Immutablility</h1>
+<p>Immutability in calculations is so so so much easier to reason about. Unless there are hardware/performance constraints, err towards immutability.</p>
+<p>For any given function, you do not have to worry about your objects being mutated, only the return value of the function. All the logic that matters to the function you are looking at is within the function itself.</p>
+<p><a href="https://notes.zachmanson.com/favour-immutablility">⌾</a><br><br></p>
+<h1>Favour Colocation</h1>
+<p>Generally, things are easier to find when they are close to each other, e.g. if a type definition is only used in one file, include the type definition in that file! Don’t even export it if you can avoid it.</p>
+<p>This is part of why Tailwind is so nice to use, all the styles are right there, in the one place they are relevant.</p>
+<p><a href="https://notes.zachmanson.com/favour-colocation">⌾</a><br><br></p>
+<h1>Fail Loudly</h1>
+<p>Code that fails quietly will never be fixed.</p>
+<p><a href="https://notes.zachmanson.com/fail-loudly">⌾</a><br><br></p>
+<h1>Do not put anything in __init__.py</h1>
+<p>I hate <code>__init__.py</code>. It has an awful name, it encourages duplicating exports, circular imports, its difficult to type, hard to search for. I know it is required(ish) for <a href="https://notes.zachmanson.com/python">Python</a> module resolution, so create it in every file. But leave it completely empty.</p>
+<p>The only case where I support re-exporting from this file is if you are creating a library.</p>
+<p><a href="https://notes.zachmanson.com/do-not-put-anything-in-__init__.py">⌾</a><br><br></p>
+<h1>Contain Pandas</h1>
+<p>Pandas is an incredible tool! Especially for data exploration. Sadly it does not allow type validation, making is difficult to ascertain what are inside <code>pd.DataFrame</code> objects outside of using a debugger. Remember, <a href="https://notes.zachmanson.com/command-click">Command Click</a>. When pandas transformations are needed, try to limit how much a single dataframe gets passed around, ideally keeping its entire existence within a single function with type information for the input and outputs. This will allow future developers to easily figure out what is in the dataframe. Sometimes passing a dataframe through multiple functions will be unavoidable, that's okay! Just be aware.</p>
+<p>If you are passing a dataframe to a function, its a good idea to add a check on what columns are expected to exist. This should <a href="https://notes.zachmanson.com/fail-loudly">fail loudly</a>.</p>
+<p><a href="https://notes.zachmanson.com/contain-pandas">⌾</a><br><br></p>
+<h1>If my editor can't tell me what type a variable is, someone has messed up</h1>
+<p>This means that inputs need type hints, and outputs can hopefully be type inferred.</p>
+<p>In <a href="https://notes.zachmanson.com/python">Python</a> especially this is frustrating because many libraries do not provide comprehensive type definitions that are automatically assigned (looking at you SQLAlchemy v1.4). This means you will have to  annotate yourself.</p>
+<p>Life is so much better if you do this. For everyone involved. Turn on Pyright type checking, get angry when you see red squiggles.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># VERY BAD</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{}):</span>
+    <span class="k">pass</span>
+</code></pre></div>
+<p>Python makes <code>@dataclasses</code> and <code>TypedDict</code> (or better yet, Pydantic) really easy to use, I recommend them highly.</p>
+<p>Further reading: <a href="https://leontrolski.github.io/cmd-click-manifesto.html">The CMD-Click Manifesto</a></p>
+<p><a href="https://notes.zachmanson.com/command-click">⌾</a><br><br></p>
+<h1>Collect Then Operate</h1>
+<p>Wherever possible, collect all the data you need first, then operate on it. Do not lazy load mid-calculation, one off database queries will inevitably be called 500 times consecutively by someone else paying less attention.</p>
+<p>This also means testing is easier, as you can create all your test data outside of your services, and pass the data in whole.</p>
+<p><a href="https://notes.zachmanson.com/collect-then-operate">⌾</a><br><br></p>
 <h1>Zach's Strong Code Opinions (fight me)</h1>
 <blockquote>
 <p>Break any of these rules sooner than say anything outright barbarous.</p>
@@ -589,34 +816,50 @@ required<span class="w"> </span>by
 <p>This whole website is a living document, but this page is especially living. These are strong beliefs that are weakly held, I'm certain many of these will change over time.</p>
 <p>Some of these will seem trivial and obvious, but they are all written because I have seem them consistently violated in professional settings. These writing were initially intended to be a code practices guide, but they became just angry venting. </p>
 <p><ochrs:inline:code-opinions:show-title></p>
-<p><a href="https://notes.zachmanson.com/code-opinions">⌾</a></p>]]>
+<p><a href="https://notes.zachmanson.com/code-opinions">⌾</a><br><br></p>
+<h1>Be Flat</h1>
+<p>Ceteris paribus, prefer flatter function call trees.</p>
+<p><a href="https://notes.zachmanson.com/be-flat">⌾</a><br><br></p>
+<h1>Don’t use varchar by default</h1>
+<p>This is the advice of the Postgres developers. <a href="https://wiki.postgresql.org/wiki/Don't_Do_This#Don't_use_varchar(n)_by_default). Really read the whole doc, its grea">Read this for more information</a>.</p>
+<p><a href="https://notes.zachmanson.com/avoid-varchar">⌾</a><br><br></p>
+<h1>Don't add state if you don't need to</h1>
+<p>Every possible state you add is something you need to remember to account for. It also becomes something every future dev will need to remember to account for. Keep state variables as minimal as possible, especially when dealing with classes. If you are using a class as a namespace sure I guess that makes sense, but those methods better all be static.</p>
+<p>If I see something like this <code>cost = CostCalculator(start_date).calculate_costs_v2(data, end_date)</code> I’m gonna be mad.</p>
+<p><a href="https://notes.zachmanson.com/avoid-state">⌾</a><br><br></p>
+<h1>Avoid Side Effects</h1>
+<p>Your teammates won't know what side effects your function has. Reduce the amount of time they have to spend tracking these down by avoiding creating them, where possible.</p>
+<p><a href="https://notes.zachmanson.com/avoid-side-effects">⌾</a><br><br></p>
+<h1>Avoid Mocks</h1>
+<p>Tests that mock many things are fragile. It will be unavoidable that you will need to mock side effects (<a href="https://notes.zachmanson.com/avoid-side-effects">Avoid Side Effects</a>) such as network calls, but every mocked function is something that can (will) break in the future, likely in a way that is hard to detect.</p>
+<p>I have seen far too many unit tests that boil down to "call function A, mock all the functions that function A calls". Tests like this are shallow, and will not last.</p>
+<p>When you <a href="https://notes.zachmanson.com/favour-immutablility">Favour Immutablility</a>, your functions become easier to reason about, and often easier to test, since you have fewer side effects and your test can validate the return object.</p>
+<p>In <a href="https://notes.zachmanson.com/python">Python</a> especially, patches often rely on STRING PATHS meaning they won't get updated by LSP renames.</p>
+<p><a href="https://notes.zachmanson.com/avoid-mocks">⌾</a><br><br></p>
+<h1>If you don’t have an automatic formatter set up I do not trust you</h1>
+<p>Do you even trust yourself?</p>
+<p>Black/ruff for <a href="https://notes.zachmanson.com/python">Python</a>, Prettier for <a href="https://notes.zachmanson.com/typescript">TypeScript</a>. Format on save.</p>
+<p><a href="https://notes.zachmanson.com/automatically-format">⌾</a></p>]]>
             </content:encoded>
             <guid isPermaLink="false">https://notes.zachmanson.com/code-opinions</guid>
             <pubDate>2025-10-14</pubDate>
         </item>
         
         <item>
-            <title>Kinde Design Decisions</title>
-            <link>https://notes.zachmanson.com/kinde-design-decisions</link>
+            <title>Copilot Edited an Ad Into My PR</title>
+            <link>https://notes.zachmanson.com/copilot-edited-an-ad-into-my-pr</link>
             
             <content:encoded>
-                <![CDATA[<p>This is a list of problems with the Kinde interface.</p>
-<h2 id="useless-dropdowns">Useless Dropdowns</h2>
-<p>This dropdown should list the environments instead of revealing a button to take you to a page that lists the environments. This is an unnecessary second click.</p>
-<p><img alt="" src="https://notes.zachmanson.com/assets/kinde-1.png" /></p>
-<p>This also means you are unable to switch environment without losing the page you are on.</p>
-<h2 id="unclickable-icons">Unclickable Icons</h2>
-<p>For some reason the left facing chevron is not clickable, only the word "Home" is.</p>
-<p><img alt="" src="https://notes.zachmanson.com/assets/kinde-2.png" /></p>
-<h2 id="bizarre-breadcrumbs">Bizarre Breadcrumbs</h2>
-<p>When you go to the "Users Profile" screen, the top left back icon doesn't take you back to the "Users" screen, but remains a "Home" button.</p>
-<p>The only way to navigate back is the the small grey "User" text above the user's name.</p>
-<p><img alt="" src="https://notes.zachmanson.com/assets/kinde-3.png" /></p>
-<p>This is something that almost all basic websites can get right.  Breadcrumb navigation or consistent back behaviour would be vastly preferable here.</p>
-<p>There is little consistency between parts of the interface that are clickable and those that are not.  This makes navigating quite difficult.</p>]]>
+                <![CDATA[<p>After a team member summoned Copilot to correct a typo in a PR of mine, <strong>Copilot edited my PR description to include and ad for itself and Raycast</strong>.</p>
+<p><img alt="" src="https://notes.zachmanson.com/assets/copilot-hell.png" /></p>
+<p>This is horrific. I knew this kind of bullshit would happen eventually, but I didn't expect it so soon.</p>
+<blockquote>
+<p>Here is how platforms die: first, they are good to their users; then they abuse their users to make things better for their business customers; finally, they abuse those business customers to claw back all the value for themselves. Then, they die.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://notes.zachmanson.com/tiktoks-enshittification">Cory Doctorow</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/kinde-design-decisions</guid>
-            <pubDate>2024-07-01</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/copilot-edited-an-ad-into-my-pr</guid>
+            <pubDate>2026-03-30</pubDate>
         </item>
         
 
