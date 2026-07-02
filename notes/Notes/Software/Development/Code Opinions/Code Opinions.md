@@ -14,4 +14,4 @@ This whole website is a living document, but this page is especially living. The
 
 Some of these will seem trivial and obvious, but they are all written because I have seem them consistently violated in professional settings. These writing were initially intended to be a code practices guide, but they became just angry venting. 
 
-<ochrs:inline-chrono:code-opinions:show-title>
+<ochrs:inline:code-opinions:show-title>
