@@ -146,9 +146,10 @@ def traverse_tree():
     # generate page bodies and record backlinks
     for node in tree.keys():
         current_node = node
-        tree[node].body = preprocess_markdown(tree[node].body)
-        tree[node].body = process_markdown(tree[node].body)
-        tree[node].rss_body = process_markdown(tree[node].body, rss=True)
+        preprocessed_md = preprocess_markdown(tree[node].body)
+
+        tree[node].body = process_markdown(preprocessed_md)
+        tree[node].rss_body = process_markdown(preprocessed_md, rss=True)
 
 
 def generate_pages():
