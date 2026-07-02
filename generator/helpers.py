@@ -64,13 +64,28 @@ def chronological_tag(tag: str, tag_pages: list[str], tree: dict[str, Node]):
         + f"<a href='/{tag}.xml'>RSS Feed</a> | <a href='feed://notes.zachmanson.com/{tag}.xml'>Subscribe</a>"
     )
 
-def inline_chronological_tag(tag: str, tag_pages: list[str], tree: dict[str, Node], show_title:str):
+
+def inline_tag(
+    tag: str,
+    tag_pages: list[str],
+    tree: dict[str, Node],
+    show_title: str,
+    chronological: bool,
+):
     nodes = {page: tree[page] for page in tag_pages if tree[page].post_date}
-    nodes = dict(
-        sorted(nodes.items(), key=lambda item: item[1].post_date, reverse=True)
-    )
+
+    def sort_by_post_date(item):
+        return item[1].post_date
+
+    def sort_by_title(item):
+        return item[1].title
+
+    sort_fn = sort_by_post_date if chronological else sort_by_title
+
+    nodes = dict(sorted(nodes.items(), key=sort_fn, reverse=True))
+
     html = []
-    render_title= show_title=="show-title"
+    render_title = show_title == "show-title"
 
     for page, node in nodes.items():
         element = "\n"

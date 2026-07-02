@@ -448,7 +448,12 @@ ochrs_funcs: dict[str, FunctionType] = {
     "tags": lambda: tags_md,
     "random-js": lambda: helpers.random_js(tree),
     "chrono": lambda x: helpers.chronological_tag(x, tags[x[0]], tree),
-    "inline-chrono": lambda x: helpers.inline_chronological_tag(x[0], tags[x[0]], tree, x[1]), 
+    "inline-chrono": lambda x: helpers.inline_tag(
+        x[0], tags[x[0]], tree, x[1], chronological=True
+    ),
+    "inline": lambda x: helpers.inline_tag(
+        x[0], tags[x[0]], tree, x[1], chronological=False
+    ),
 }
 
 tree: dict[str, Node] = {
