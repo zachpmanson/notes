@@ -81,7 +81,7 @@ def inline_tag(
         return item[1].post_date
 
     def sort_by_title(item):
-        return item[1].title
+        return item[1].title.lower()
 
     sort_fn = sort_by_post_date if chronological else sort_by_title
 
@@ -91,6 +91,10 @@ def inline_tag(
     render_title = show_title == "show-title"
 
     for page, node in nodes.items():
+        # Exclude the page with the same name as the tag
+        if sanitize_url(node.title) == sanitize_url(tag):
+            continue
+
         element = "\n"
         if render_title:
             element += f"<h1>{node.subtitle or node.title}</h1>\n"
