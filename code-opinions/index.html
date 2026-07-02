@@ -229,25 +229,6 @@
 <p><cite class="standalone">George Orwell</cite></p>
 <p>This whole website is a living document, but this page is especially living. These are strong beliefs that are weakly held, I'm certain many of these will change over time.</p>
 <p>Some of these will seem trivial and obvious, but they are all written because I have seem them consistently violated in professional settings. These writing were initially intended to be a code practices guide, but they became just angry venting. </p>
-<h1>getattr() is a red flag</h1>
-<p>The only time I can think you might want to use this is when we have split table that share parent super class e.g. <code>BaseUsage</code>, <code>Usage</code>, <code>GasUsage</code>, <code>LPGUsage</code> . </p>
-<p>(to be fair, I believe that we generally want to avoid needing that kind of abstraction)</p>
-<p>Other than that, why do you need <code>getattr()</code> ? Is there a better way of referencing the attribute, that doesn’t break VS Code type inference? Remember, <a href="/command-click">Command Click</a>.</p>
-<p>Reflection is powerful and also may be a sign you’ve gone too far.</p>
-<p>This is cursed, do not do this:</p>
-<div class="highlight"><pre><span></span><code><span class="o">...</span>
-    <span class="k">def</span><span class="w"> </span><span class="nf">per_day_metric</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">metric</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;spend&quot;</span><span class="p">,</span> <span class="s2">&quot;rev&quot;</span><span class="p">,</span> <span class="s2">&quot;client_saved&quot;</span><span class="p">,</span> <span class="s2">&quot;usage&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;spend&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">metric</span> <span class="o">==</span> <span class="s2">&quot;spend&quot;</span><span class="p">:</span>
-            <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;per_day_spend&quot;</span><span class="p">)(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;per_day_</span><span class="si">{</span><span class="n">metric</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="o">...</span>
-</code></pre></div>
-<p><a href='/getattr()-is-a-red-flag'>⌾</a><br><br></p>
-<h1>back_populates is better than backref</h1>
-<p>Yes, <code>backref</code> is more concise, but it also creates attributes that only exist during runtime. I want to see every attribute (and type) in the code as I am writing it.</p>
-<p><a href="https://docs.sqlalchemy.org/en/14/orm/backref.html">Even SQLAlchemy docs advise <code>back_populates</code> over <code>backref</code>.</a></p>
-<p><a href='/back_populates-vs-backref'>⌾</a><br><br></p>
 <h1>Lint+format in CI, not on commit</h1>
 <p>Commit should be fast. Don’t make me wait. Lint+format needs to be in CI regardless so let’s limit the speed bottleneck to being purely on PR CI.</p>
 <p><a href='/validate-in-ci'>⌾</a><br><br></p>
@@ -356,12 +337,6 @@ Do not create API endpoints that do not validate query params or request body.</
 <p>It is extremely rare that you need to use prop type definitions more that once, so the separate type definition is just adding boilerplate with no benefit. Yes I know that its annoying repeating the same thing twice in a row with the anonymous type, but its the best of a bunch of bad options. It should be maximally obvious what params a component needs.</p>
 <p><a href="/favour-colocation">Generally its good to keep types as close to their usage as possible</a>.</p>
 <p><a href='/react-prop-types'>⌾</a><br><br></p>
-<h1>Query params are wonderful</h1>
-<p>Query params are a simple kind of global state that can be stored in a link! That’s so useful! When using <a href="/react">React</a> and <a href="/next.js">Next.js</a>, using <code>nuqs</code> makes query params super easy to manage, as if they are <code>useState</code> calls! So please use it. It even supports date parsing, enums, and arrays!</p>
-<p>For example, query params are great for storing what particular location you just selected, or for the tab that is currently active.</p>
-<p>Query params also allow you to skip writing state models!</p>
-<p>(they also don't trigger full page rerenders in Next.js Pages Router)</p>
-<p><a href='/query-params-are-wonderful'>⌾</a><br><br></p>
 <h1>Prefer query params/request body to URL params</h1>
 <p>Putting variables into the URL path is inflexible and makes parsing things quite confusing. Query params are much easier to change down the line.</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># BAD</span>
@@ -374,6 +349,12 @@ Do not create API endpoints that do not validate query params or request body.</
 </code></pre></div>
 <p>Slightly unrelated, but also note that DELETE endpoints can only have query params, not a JSON body. Isn't that strange.</p>
 <p><a href='/query-params-vs-path-params'>⌾</a><br><br></p>
+<h1>Query params are wonderful</h1>
+<p>Query params are a simple kind of global state that can be stored in a link! That’s so useful! When using <a href="/react">React</a> and <a href="/next.js">Next.js</a>, using <code>nuqs</code> makes query params super easy to manage, as if they are <code>useState</code> calls! So please use it. It even supports date parsing, enums, and arrays!</p>
+<p>For example, query params are great for storing what particular location you just selected, or for the tab that is currently active.</p>
+<p>Query params also allow you to skip writing state models!</p>
+<p>(they also don't trigger full page rerenders in Next.js Pages Router)</p>
+<p><a href='/query-params-are-wonderful'>⌾</a><br><br></p>
 <h1>Do not change the URL path if the screen hasn’t changed</h1>
 <p>For many screens we have a searchbar where you can select a location. If selecting the location doesn’t change the whole page, do not change the URL path, just update query params. Each URL route should reflect a whole page. This is particularly important in <a href="/next.js">Next.js</a> Pages Router as URL changes trigger full page rerenders no matter what. This will interrupt any an animations (and is inefficient).</p>
 <p><a href='/pathname-changing'>⌾</a><br><br></p>
@@ -415,6 +396,21 @@ Do not create API endpoints that do not validate query params or request body.</
 <p>Things that are annoying get fixed. Have a legacy function that is truly disgusting, uses dodgy abstractions and produces footguns but you don't have the time to rewrite it right now? Give it a truly fucked up name, that reflects how ugly it is on the inside. Make the next developer feel bad for using this.</p>
 <p>A great example of this is the <a href="https://github.com/reactjs/react.dev/issues/3896">React <code>__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED</code></a>.</p>
 <p><a href='/give-bad-things-scary-names'>⌾</a><br><br></p>
+<h1>getattr() is a red flag</h1>
+<p>The only time I can think you might want to use this is when we have split table that share parent super class e.g. <code>BaseUsage</code>, <code>Usage</code>, <code>GasUsage</code>, <code>LPGUsage</code> . </p>
+<p>(to be fair, I believe that we generally want to avoid needing that kind of abstraction)</p>
+<p>Other than that, why do you need <code>getattr()</code> ? Is there a better way of referencing the attribute, that doesn’t break VS Code type inference? Remember, <a href="/command-click">Command Click</a>.</p>
+<p>Reflection is powerful and also may be a sign you’ve gone too far.</p>
+<p>This is cursed, do not do this:</p>
+<div class="highlight"><pre><span></span><code><span class="o">...</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">per_day_metric</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">metric</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;spend&quot;</span><span class="p">,</span> <span class="s2">&quot;rev&quot;</span><span class="p">,</span> <span class="s2">&quot;client_saved&quot;</span><span class="p">,</span> <span class="s2">&quot;usage&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;spend&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">metric</span> <span class="o">==</span> <span class="s2">&quot;spend&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;per_day_spend&quot;</span><span class="p">)(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;per_day_</span><span class="si">{</span><span class="n">metric</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="o">...</span>
+</code></pre></div>
+<p><a href='/getattr()-is-a-red-flag'>⌾</a><br><br></p>
 <h1>Favour Immutablility</h1>
 <p>Immutability in calculations is so so so much easier to reason about. Unless there are hardware/performance constraints, err towards immutability.</p>
 <p>For any given function, you do not have to worry about your objects being mutated, only the return value of the function. All the logic that matters to the function you are looking at is within the function itself.</p>
@@ -449,18 +445,13 @@ Do not create API endpoints that do not validate query params or request body.</
 <p>Wherever possible, collect all the data you need first, then operate on it. Do not lazy load mid-calculation, one off database queries will inevitably be called 500 times consecutively by someone else paying less attention.</p>
 <p>This also means testing is easier, as you can create all your test data outside of your services, and pass the data in whole.</p>
 <p><a href='/collect-then-operate'>⌾</a><br><br></p>
-<h1>Zach's Strong Code Opinions (fight me)</h1>
-<blockquote>
-<p>Break any of these rules sooner than say anything outright barbarous.</p>
-</blockquote>
-<p><cite class="standalone">George Orwell</cite></p>
-<p>This whole website is a living document, but this page is especially living. These are strong beliefs that are weakly held, I'm certain many of these will change over time.</p>
-<p>Some of these will seem trivial and obvious, but they are all written because I have seem them consistently violated in professional settings. These writing were initially intended to be a code practices guide, but they became just angry venting. </p>
-<p><ochrs:inline:code-opinions:show-title></p>
-<p><a href='/code-opinions'>⌾</a><br><br></p>
 <h1>Be Flat</h1>
 <p>Ceteris paribus, prefer flatter function call trees.</p>
 <p><a href='/be-flat'>⌾</a><br><br></p>
+<h1>back_populates is better than backref</h1>
+<p>Yes, <code>backref</code> is more concise, but it also creates attributes that only exist during runtime. I want to see every attribute (and type) in the code as I am writing it.</p>
+<p><a href="https://docs.sqlalchemy.org/en/14/orm/backref.html">Even SQLAlchemy docs advise <code>back_populates</code> over <code>backref</code>.</a></p>
+<p><a href='/back_populates-vs-backref'>⌾</a><br><br></p>
 <h1>Don’t use varchar by default</h1>
 <p>This is the advice of the Postgres developers. <a href="https://wiki.postgresql.org/wiki/Don't_Do_This#Don't_use_varchar(n)_by_default). Really read the whole doc, its grea">Read this for more information</a>.</p>
 <p><a href='/avoid-varchar'>⌾</a><br><br></p>
@@ -491,7 +482,7 @@ Do not create API endpoints that do not validate query params or request body.</
           <date>2025-10-14</date>
           
           <a href="/recent-changes">recent</a>
-          <a href="/sql" class="not-extra-small">random</a>
+          <a href="/blogs" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Code Opinions'">reply</a>
@@ -510,7 +501,7 @@ Do not create API endpoints that do not validate query params or request body.</
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Code Opinions/Code Opinions.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Software/Development/Code Opinions/Code Opinions.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/sql" class="extra-small">random</a>
+          <a href="/blogs" class="extra-small">random</a>
         </div>
       </div>
 
