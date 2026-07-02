@@ -4,6 +4,7 @@ tags:
   - venting
   - posts
 date: 2025-10-14
+children: false
 ---
 > Break any of these rules sooner than say anything outright barbarous.
 
