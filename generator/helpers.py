@@ -77,15 +77,12 @@ def inline_tag(
     else:
         nodes = {page: tree[page] for page in tag_pages}
 
-    def sort_by_post_date(item):
-        return item[1].post_date
-
-    def sort_by_title(item):
-        return item[1].title.lower()
-
-    sort_fn = sort_by_post_date if chronological else sort_by_title
-
-    nodes = dict(sorted(nodes.items(), key=sort_fn, reverse=True))
+    if chronological:
+        nodes = dict(
+            sorted(nodes.items(), key=lambda item: item[1].post_date, reverse=True)
+        )
+    else:
+        nodes = dict(sorted(nodes.items(), key=lambda item: item[1].title.lower()))
 
     html = []
     render_title = show_title == "show-title"
