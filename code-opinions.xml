@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+    <channel>
+        <title>notes: code-opinions</title>
+        <link>https://notes.zachmanson.com/code-opinions</link>
+        <description>Notes tagged #code-opinions</description>
+        <atom:link href="https://notes.zachmanson.com/code-opinions" rel="self" />
+        <docs>http://www.rssboard.org/rss-specification</docs>
+        <generator>ochrs</generator>
+        <image>
+            <url>https://zachmanson.com/icons/android-chrome-256x256.png</url>
+            <title>notes: code-opinions</title>
+            <link>https://notes.zachmanson.com/code-opinions</link>
+        </image>
+        <language>en</language>
+        <lastBuildDate>Thu, 02 Jul 2026 03:01:08 </lastBuildDate>
+        
+        <item>
+            <title>Code Opinions</title>
+            <link>https://notes.zachmanson.com/code-opinions</link>
+            
+            <description>Zach's Strong Code Opinions (fight me)</description>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Break any of these rules sooner than say anything outright barbarous.</p>
+</blockquote>
+<p><cite class="standalone">George Orwell</cite></p>
+<p>This whole website is a living document, but this page is especially living. These are strong beliefs that are weakly held, I'm certain many of these will change over time.</p>
+<p>Some of these will seem trivial and obvious, but they are all written because I have seem them consistently violated in professional settings. These writing were initially intended to be a code practices guide, but they became just angry venting. </p>
+<h1>Zach's Strong Code Opinions (fight me)</h1>
+<blockquote>
+<p>Break any of these rules sooner than say anything outright barbarous.</p>
+</blockquote>
+<p><cite class="standalone">George Orwell</cite></p>
+<p>This whole website is a living document, but this page is especially living. These are strong beliefs that are weakly held, I'm certain many of these will change over time.</p>
+<p>Some of these will seem trivial and obvious, but they are all written because I have seem them consistently violated in professional settings. These writing were initially intended to be a code practices guide, but they became just angry venting. </p>
+<p><ochrs:inline-chrono:code-opinions:show-title></p>
+<p><a href="https://notes.zachmanson.com/code-opinions">⌾</a></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/code-opinions</guid>
+            <pubDate>2025-10-14</pubDate>
+        </item>
+        
+
+    </channel>
+</rss>
