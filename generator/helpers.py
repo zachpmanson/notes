@@ -72,7 +72,10 @@ def inline_tag(
     show_title: str,
     chronological: bool,
 ):
-    nodes = {page: tree[page] for page in tag_pages if tree[page].post_date}
+    if chronological:
+        nodes = {page: tree[page] for page in tag_pages if tree[page].post_date}
+    else:
+        nodes = {page: tree[page] for page in tag_pages}
 
     def sort_by_post_date(item):
         return item[1].post_date
