@@ -3,6 +3,10 @@ subtitle: The declarative operating system.
 ---
 Not to be confused with its brother [[Nix]].
 
+> It's kind of like building lego, only with more stepping on small pieces.
+
+-- [Wolfgang](https://www.youtube.com/watch?app=desktop&v=f-x5cB6qCzA&feature=youtu.be)
+
 ## Advice Advised
 
 - Use flakes
