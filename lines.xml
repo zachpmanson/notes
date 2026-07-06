@@ -13,521 +13,34 @@
             <link>https://notes.zachmanson.com/lines</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Sat, 04 Jul 2026 01:26:55 </lastBuildDate>
+        <lastBuildDate>Mon, 06 Jul 2026 04:53:42 </lastBuildDate>
         
         <item>
-            <title>Devine Lu Linvega on APIs</title>
-            <link>https://notes.zachmanson.com/devine-lu-linvega-on-apis</link>
+            <title>Simon Heath on Chat Systems</title>
+            <link>https://notes.zachmanson.com/simon-heath-on-chat-systems</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>Today, you're either above the API or below the API. You either tell robots what to do, or are told by robots what to do.</p>
+<p>No for-profit company has managed to make a chat system pay for itself.</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://notes.zachmanson.com/////%5Bhttps%3A/wiki.xxiivv.com/site/technocracy.html%5D%28https%3A/wiki.xxiivv.com/site/technocracy.html%29">Devine Lu Linvega</a></cite></p>]]>
+<p><cite class="standalone"><a href="https://wiki.alopex.li/ADiveIntoOpenChat">Simon Heath</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/devine-lu-linvega-on-apis</guid>
-            <pubDate>2024-03-05</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/simon-heath-on-chat-systems</guid>
+            <pubDate>2026-03-24</pubDate>
         </item>
         
         <item>
-            <title>Nikhil Suresh on Grifters</title>
-            <link>https://notes.zachmanson.com/nikhil-suresh-on-grifters</link>
+            <title>Xe Iaso on Microservices</title>
+            <link>https://notes.zachmanson.com/xe-iaso-on-microservices</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>You see, while hype is <em>nice</em>, it's only nice in small bursts for <em>practitioners</em>. We have a few key things that a grifter does not have, such as job stability, genuine friendships, and <em>souls</em>. What we do <em>not</em> have is the ability to trivially switch fields the moment the gold rush is over, due to the sad fact that we actually need to study things and build experience. Grifters, on the other hand, wield the omnitool that they self-aggrandizingly call 'politics'. That is to say, it turns out that the core competency of smiling and promising people things that you can't actually deliver is <em>highly transferable</em>.</p>
+<p>And these kind of conflicts is how you end up with the microservices pattern. Your backend gets carved up into parts maintained by different teams. In an ideal spherical cow reading of microservices, every microservice has a well-defined API that it uses to communicate with other services to help a user request turn into a response. Does this happen? Scholars continue to debate to this day.</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://ludic.mataroa.blog/blog/i-will-fucking-piledrive-you-if-you-mention-ai-again/">Nikhil Suresh</a></cite></p>]]>
+<p><cite class="standalone"><a href="https://xeiaso.net/talks/2024/shashin/">Xe Iaso</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/nikhil-suresh-on-grifters</guid>
-            <pubDate>2024-11-13</pubDate>
-        </item>
-        
-        <item>
-            <title>Feminist Server Manifesto on Networking</title>
-            <link>https://notes.zachmanson.com/feminist-server-manifesto-on-networking</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>networking is actually an awkward, promiscuous and parasitic practice</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://notes.zachmanson.com/feminist-server-manifesto">Feminist Server Manifesto</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/feminist-server-manifesto-on-networking</guid>
-            <pubDate>2024-04-02</pubDate>
-        </item>
-        
-        <item>
-            <title>Sam Kriss on IoT</title>
-            <link>https://notes.zachmanson.com/sam-kriss-on-iot</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Remember the Internet of Things? Your own lightbulbs blinking out ads in seizure-inducing Morse code, your own coffee machine calling the police if you try to feed it some unlicensed beans.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://samkriss.substack.com/p/the-internet-is-already-over">Sam Kriss</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/sam-kriss-on-iot</guid>
-            <pubDate>2024-07-08</pubDate>
-        </item>
-        
-        <item>
-            <title>Hank Green on Humanity</title>
-            <link>https://notes.zachmanson.com/hank-green-on-humanity</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>all of humanity is necessary for all of the things that we do, there's nothing that's not a collaboration with almost every dead person.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://www.youtube.com/watch?v=qVu2qnlQcvM">Hank Green</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/hank-green-on-humanity</guid>
-            <pubDate>2026-07-01</pubDate>
-        </item>
-        
-        <item>
-            <title>Joel Franusic's Friend on LLMs</title>
-            <link>https://notes.zachmanson.com/joel-franusics-friend-on-llms</link>
-            
-            <description>Joël Franušić's Friend on LLMs</description>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>LLMs give you an extra arm and most people use it to jerk themselves off</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://mastodon.social/@jpf/116734916023228712">Joël Franušić's friend</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/joel-franusics-friend-on-llms</guid>
-            <pubDate>2026-06-16</pubDate>
-        </item>
-        
-        <item>
-            <title>MrHippoPants on Myki Privacy</title>
-            <link>https://notes.zachmanson.com/mrhippopants-on-myki-privacy</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Tap and Go works the same way Myki does<br />
-Card tells reader “I’m card 6742069”<br />
-Reader tells server “card 6742069 just touched on at South Kensington at 4:20PM”<br />
-Inspector wants to check ticket, ticket tells handheld scanner “I’m card 6742069”<br />
-Handheld scanner asks server “when did card 6742069 touch on?”<br />
-Server responds<br />
-Ticket inspector arrests you for feet on seats<br />
-Your family leave you<br />
-You die in prison</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://www.reddit.com/r/melbourne/comments/1ubbzho/tap_and_go_arrives_on_trams/osv9zur/">MrHippoPants</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/mrhippopants-on-myki-privacy</guid>
-            <pubDate>2026-06-22</pubDate>
-        </item>
-        
-        <item>
-            <title>Tom M on Entropy</title>
-            <link>https://notes.zachmanson.com/tom-m-on-entropy</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Tom M: Entropy's #1 enemy</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://tmewett.com/">Tom M</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/tom-m-on-entropy</guid>
-            <pubDate>2024-08-02</pubDate>
-        </item>
-        
-        <item>
-            <title>Robin Sloan on Social Spaces</title>
-            <link>https://notes.zachmanson.com/robin-sloan-on-social-spaces</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>An industrialist might soon purchase Twitter, Inc. His substantial success launching reusable spacecraft does nothing to prepare him for the challenge of building social spaces. The latter calls on every liberal art at once, while the former is just rocket science.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://www.robinsloan.com/lab/lost-thread/">Robin Sloan</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/robin-sloan-on-social-spaces</guid>
-            <pubDate>2023-10-24</pubDate>
-        </item>
-        
-        <item>
-            <title>Xe Iaso on Evangelion</title>
-            <link>https://notes.zachmanson.com/xe-iaso-on-evangelion</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>If you've never seen it before, Evangelion is a terribly depressing anime. It is the kind of thing that disturbs the comforted and comforts the disturbed.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://xeiaso.net/blog/2024/much-ado-about-nothing/">Xe Iaso</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/xe-iaso-on-evangelion</guid>
-            <pubDate>2024-04-28</pubDate>
-        </item>
-        
-        <item>
-            <title>Brandon Ewing on Housing</title>
-            <link>https://notes.zachmanson.com/brandon-ewing-on-housing</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Radicalism is when no house</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://youtu.be/yGooLJoyrI4?si=vaGdjKAX4sUpcMh0&amp;t=2615">Brandon Ewing</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/brandon-ewing-on-housing</guid>
-            <pubDate>2025-09-28</pubDate>
-        </item>
-        
-        <item>
-            <title>Robin Sloan on Speaking Online</title>
-            <link>https://notes.zachmanson.com/robin-sloan-on-speaking-online</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>On the internet, if you stop speaking: you disappear. And, by corollary: on the internet, you only notice the people who are speaking nonstop.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://notes.andymatuschak.org/Work_with_the_garage_door_up">Robin Sloan</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/robin-sloan-on-speaking-online</guid>
-            <pubDate>2024-03-19</pubDate>
-        </item>
-        
-        <item>
-            <title>Virginia Postrel on Technology</title>
-            <link>https://notes.zachmanson.com/virginia-postrel-on-technology</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Any sufficiently familiar technology is indistinguishable from nature.</p>
-</blockquote>
-<p><cite class="standalone">Virginia Postrel</cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/virginia-postrel-on-technology</guid>
-            <pubDate>2025-12-15</pubDate>
-        </item>
-        
-        <item>
-            <title>An Executive on LinkedIn</title>
-            <link>https://notes.zachmanson.com/an-executive-on-linkedin</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>I study on LinkedIn for up to two hours a day after work sometimes.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://ludic.mataroa.blog/blog/brainwash-an-executive-today/">An executive</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/an-executive-on-linkedin</guid>
-            <pubDate>2025-01-16</pubDate>
-        </item>
-        
-        <item>
-            <title>projectileboy's Friend on Artists</title>
-            <link>https://notes.zachmanson.com/projectileboys-friend-on-artists</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>We work in a field of people who envision themselves as artists, when all that is wanted are painters.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=40558212">projectileboy's friend</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/projectileboys-friend-on-artists</guid>
-            <pubDate>2024-06-03</pubDate>
-        </item>
-        
-        <item>
-            <title>Hank Green on Resisting</title>
-            <link>https://notes.zachmanson.com/hank-green-on-resisting</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Something awaits for me in the divine for resisting</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://www.youtube.com/watch?v=jXO5axomU7Q">Chris Fleming</a> (<a href="https://www.youtube.com/watch?v=oS3sdM2uRO4">actually here</a>)</cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/hank-green-on-resisting</guid>
-            <pubDate>2026-07-01</pubDate>
-        </item>
-        
-        <item>
-            <title>Not Scott Smitelli on Renting</title>
-            <link>https://notes.zachmanson.com/not-scott-smitelli-on-renting</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Don’t rent your livelihood.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://www.scottsmitelli.com/articles/you-dont-have-to/">Not Scott Smitelli</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/not-scott-smitelli-on-renting</guid>
-            <pubDate>2026-03-02</pubDate>
-        </item>
-        
-        <item>
-            <title>randomtako on Study Break</title>
-            <link>https://notes.zachmanson.com/randomtako-on-study-break</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>its study break, and just like its name suggests we study till we break</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://discord.com/channels/586127025228742656/586575812455563269/1223648851475304479">@randomtako.</a> on <a href="https://notes.zachmanson.com/uwa-computer-science">UWA Computer Science</a> discord</cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/randomtako-on-study-break</guid>
-            <pubDate>2024-03-31</pubDate>
-        </item>
-        
-        <item>
-            <title>Dijkstra on His Head</title>
-            <link>https://notes.zachmanson.com/dijkstra-on-his-head</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>as a slow-witted human being I have a very small head</p>
-</blockquote>
-<p><cite class="standalone">Prof.dr. Edsger W. Dijkstra, <em>Notes on Structured Programming</em> Ch. 1</cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/dijkstra-on-his-head</guid>
-            <pubDate>2024-04-30</pubDate>
-        </item>
-        
-        <item>
-            <title>Paul Ford on PHP</title>
-            <link>https://notes.zachmanson.com/paul-ford-on-php</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Poor, sad, misbegotten, incredibly effective, massively successful PHP. Reading PHP code is like reading poetry, the poetry you wrote freshman year of college.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/">Paul Ford</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/paul-ford-on-php</guid>
-            <pubDate>2024-09-19</pubDate>
-        </item>
-        
-        <item>
-            <title>William Morris on Art</title>
-            <link>https://notes.zachmanson.com/william-morris-on-art</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>You can't have art without resistance in the materials</p>
-</blockquote>
-<p><cite class="standalone">William Morris</cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/william-morris-on-art</guid>
-            <pubDate>2023-10-24</pubDate>
-        </item>
-        
-        <item>
-            <title>ska on DJs</title>
-            <link>https://notes.zachmanson.com/ska-on-djs</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>DJs are not even close to fungible</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=41113201">ska</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/ska-on-djs</guid>
-            <pubDate>2024-07-31</pubDate>
-        </item>
-        
-        <item>
-            <title>Someone on Senior Engineers</title>
-            <link>https://notes.zachmanson.com/someone-on-senior-engineers</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>The most important output of senior engineers is more senior engineers.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://twitter.com/timbray/status/1198367676353015808">Some guy Tim Bray overheard</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/someone-on-senior-engineers</guid>
-            <pubDate>2024-02-05</pubDate>
-        </item>
-        
-        <item>
-            <title>Bill Wurtz on Human Age</title>
-            <link>https://notes.zachmanson.com/bill-wurtz-on-human-age</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>The age of humans compared to the earth, now that's some nothing shit</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://billwurtz.com/reality/201606202210.mp4">Bill Wurtz</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/bill-wurtz-on-human-age</guid>
-            <pubDate>2024-04-27</pubDate>
-        </item>
-        
-        <item>
-            <title>monkaiju on Courts</title>
-            <link>https://notes.zachmanson.com/monkaiju-on-courts</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>The courts are like the doors to the Ritz, open to everyone!</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=38085197">monkaiju</a> (my favourite phrasing of a <a href="http://constructionblog.practicallaw.com/justice-like-the-ritz-is-open-to-all/">much older aphorism</a>)</cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/monkaiju-on-courts</guid>
-            <pubDate>2024-02-23</pubDate>
-        </item>
-        
-        <item>
-            <title>Mark Carney on Nostalgia</title>
-            <link>https://notes.zachmanson.com/mark-carney-on-nostalgia</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Nostalgia is not a strategy</p>
-</blockquote>
-<p><cite class="standalone">Mark Carney</cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/mark-carney-on-nostalgia</guid>
-            <pubDate>2026-01-20</pubDate>
-        </item>
-        
-        <item>
-            <title>James Wood on Stories</title>
-            <link>https://notes.zachmanson.com/james-wood-on-stories</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>A story is essentially just a rather entitled hypothesis</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://www.newyorker.com/magazine/2024/08/12/devils-contract-the-history-of-the-faustian-bargain-ed-simon-book-review">James Wood</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/james-wood-on-stories</guid>
-            <pubDate>2024-08-18</pubDate>
-        </item>
-        
-        <item>
-            <title>Thin Deep Slices</title>
-            <link>https://notes.zachmanson.com/thin-deep-slices</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Enormous subjects are best approached in thin, deep slices. I discovered this when first learning how to program. The textbooks never worked; it all only started to click when I started to do little projects for myself. The project wasn’t just motivation but an organizing principle, a magnet to arrange the random iron filings I picked up along the way. I’d care to learn about some abstract concept, like “memoization,” because I needed it to solve my problem; and these concepts would lose their abstractness in the light of my example.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://jsomers.net/i-should-have-loved-biology/">James Somers</a></cite></p>
-<p>I love the phrase "thin deep slices" for learning.  This is also in <a href="https://notes.zachmanson.com/lines">Lines</a>.  This page exists so I can come back to it later, I want to think about this more.</p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/thin-deep-slices</guid>
-            <pubDate>2024-04-22</pubDate>
-        </item>
-        
-        <item>
-            <title>Alan Kay on Reinvention</title>
-            <link>https://notes.zachmanson.com/alan-kay-on-reinvention</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>It used to be the case that people were admonished to "not re-invent the wheel". We now live in an age that spends a lot of time "reinventing the flat tire!"</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=11941199">Alan Kay</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/alan-kay-on-reinvention</guid>
-            <pubDate>2024-08-26</pubDate>
-        </item>
-        
-        <item>
-            <title>Ian Crosby Danskin on Truth</title>
-            <link>https://notes.zachmanson.com/ian-crosby-danskin-on-truth</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>There is a floor on how simple the truth can be and still be the truth.  Falsehoods don't have that.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://www.youtube.com/watch?v=dF98ii6r_gU">Ian Crosby Danskin</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/ian-crosby-danskin-on-truth</guid>
-            <pubDate>2023-10-24</pubDate>
-        </item>
-        
-        <item>
-            <title>Zach Holman on Timezones</title>
-            <link>https://notes.zachmanson.com/zach-holman-on-timezones</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>You can't <em>imagine</em> how much harder it would be to be a JavaScript programmer in 1882</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://zachholman.com/talk/utc-is-enough-for-everyone-right">Zach Holman</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/zach-holman-on-timezones</guid>
-            <pubDate>2023-10-24</pubDate>
-        </item>
-        
-        <item>
-            <title>John S Russel on Accountability</title>
-            <link>https://notes.zachmanson.com/john-s-russel-on-accountability</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>A billionaire may never be held accountable. Therefore, a billionaire must never make a management decision.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://social.jsr.com/@jsr/112398571801354404">John S Russel</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/john-s-russel-on-accountability</guid>
-            <pubDate>2024-10-30</pubDate>
-        </item>
-        
-        <item>
-            <title>Zain Rizvi on Woodworking</title>
-            <link>https://notes.zachmanson.com/zain-rizvi-on-woodworking</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>With woodworking you actually get to hold your creations.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://www.zainrizvi.io/blog/why-software-engineers-like-woodworking/">Zain Rizvi in  <em>Why Software Engineers like Woodworking</em></a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/zain-rizvi-on-woodworking</guid>
-            <pubDate>2024-04-01</pubDate>
-        </item>
-        
-        <item>
-            <title>Greg LeMond on Getting Faster</title>
-            <link>https://notes.zachmanson.com/greg-lemond-on-getting-faster</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>It never gets easier, you just get faster.</p>
-</blockquote>
-<p><cite class="standalone">Greg LeMond</cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/greg-lemond-on-getting-faster</guid>
-            <pubDate>2026-06-29</pubDate>
-        </item>
-        
-        <item>
-            <title>Christo Buschek on Algorithms</title>
-            <link>https://notes.zachmanson.com/christo-buschek-on-algorithms</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>First, that algorithmic curation commonly depends on numeric thresholds which are very often poorly understood.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://knowingmachines.org/models-all-the-way#section2">Christo Buschek &amp; Jer Thorp</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/christo-buschek-on-algorithms</guid>
-            <pubDate>2024-06-13</pubDate>
-        </item>
-        
-        <item>
-            <title>James Somers on Computing Layers</title>
-            <link>https://notes.zachmanson.com/james-somers-on-computing-layers</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>The world of computing, I came to learn, is vast but organized almost geologically, as if deposited in layers</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://www.newyorker.com/magazine/2023/11/20/a-coder-considers-the-waning-days-of-the-craft">James Somers</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/james-somers-on-computing-layers</guid>
-            <pubDate>2024-04-22</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/xe-iaso-on-microservices</guid>
+            <pubDate>2024-05-06</pubDate>
         </item>
         
         <item>
@@ -545,89 +58,172 @@ You die in prison</p>
         </item>
         
         <item>
-            <title>Steve Yegge on Writing Blogs</title>
-            <link>https://notes.zachmanson.com/steve-yegge-on-writing-blogs</link>
+            <title>monkaiju on Courts</title>
+            <link>https://notes.zachmanson.com/monkaiju-on-courts</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>Your soul might occasionally emit statements that are legally actionable,</p>
+<p>The courts are like the doors to the Ritz, open to everyone!</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://sites.google.com/site/steveyegge2/you-should-write-blogs">Steve Yegge</a></cite></p>]]>
+<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=38085197">monkaiju</a> (my favourite phrasing of a <a href="http://constructionblog.practicallaw.com/justice-like-the-ritz-is-open-to-all/">much older aphorism</a>)</cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/steve-yegge-on-writing-blogs</guid>
-            <pubDate>2024-07-02</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/monkaiju-on-courts</guid>
+            <pubDate>2024-02-23</pubDate>
         </item>
         
         <item>
-            <title>UnemployedTechie2021 on Exes</title>
-            <link>https://notes.zachmanson.com/unemployedtechie2021-on-exes</link>
+            <title>Robin Sloan on Speaking Online</title>
+            <link>https://notes.zachmanson.com/robin-sloan-on-speaking-online</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>Girlfriends are temporary, ex-girlfriends are forever</p>
+<p>On the internet, if you stop speaking: you disappear. And, by corollary: on the internet, you only notice the people who are speaking nonstop.</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://old.reddit.com/r/Showerthoughts/comments/xa48um/girlfriends_are_temporary_exgirlfriends_are/">/u/UnemployedTechie2021 (maybe)</a></cite></p>]]>
+<p><cite class="standalone"><a href="https://notes.andymatuschak.org/Work_with_the_garage_door_up">Robin Sloan</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/unemployedtechie2021-on-exes</guid>
-            <pubDate>2024-03-05</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/robin-sloan-on-speaking-online</guid>
+            <pubDate>2024-03-19</pubDate>
         </item>
         
         <item>
-            <title>Foone Turing on Buffer Overflows</title>
-            <link>https://notes.zachmanson.com/foone-turing-on-buffer-overflows</link>
+            <title>David Beasley on Lambda</title>
+            <link>https://notes.zachmanson.com/david-beasley-on-lambda</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>My robot girlfriend walks in with the crop, I'm already tied to the bed. "what's the safeword?", she asks. I respond by saying the letter "A" for 90 seconds straight followed by a short hex string.</p>
-<p>calc.exe opens up on her eyes. Finally, a PoC!</p>
-<p>Shouldn't have used fixed length buffers without bounds checking, babe. This is a rookie C mistake.</p>
+<p><code>lambda</code> has the benefit of making the code compact and foreboding. Plus, it prevents people from trying to add meaningful names, documentation or type-hints to the thing that is about to unfold.</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://digipres.club/@foone/111398681509322271">Foone Turing</a></cite></p>]]>
+<p><cite class="standalone"><a href="https://github.com/dabeaz/blog/blob/main/2023/three-problems.md">David Beasley</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/foone-turing-on-buffer-overflows</guid>
-            <pubDate>2023-11-14</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/david-beasley-on-lambda</guid>
+            <pubDate>2023-10-24</pubDate>
         </item>
         
         <item>
-            <title>Joe Brockmeier on Memoir</title>
-            <link>https://notes.zachmanson.com/joe-brockmeier-on-memoir</link>
+            <title>Paul Ford on PHP</title>
+            <link>https://notes.zachmanson.com/paul-ford-on-php</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>as well-detailed in Hazel's memoir (and mercilessly abbreviated here),</p>
+<p>Poor, sad, misbegotten, incredibly effective, massively successful PHP. Reading PHP code is like reading poetry, the poetry you wrote freshman year of college.</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://lwn.net/SubscriberLink/978463/608c876c1153fd31/">Joe Brockmeier</a></cite></p>]]>
+<p><cite class="standalone"><a href="https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/">Paul Ford</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/joe-brockmeier-on-memoir</guid>
-            <pubDate>2024-06-20</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/paul-ford-on-php</guid>
+            <pubDate>2024-09-19</pubDate>
         </item>
         
         <item>
-            <title>Nikhil Suresh on Presentation Skills</title>
-            <link>https://notes.zachmanson.com/nikhil-suresh-on-presentation-skills</link>
+            <title>lori on Moderation</title>
+            <link>https://notes.zachmanson.com/lori-on-moderation</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>The only thing required to be a grifter, inadvertently or not, is to have your presentation skills outstrip your technical skill</p>
+<p>The site will live or die by how it handles its first porn of misty from Pokemon
+Written on cohost, though I came across it in their <a href="https://hackers.town/@lori/110656479473125841">pre-emptive autopsy of cohost</a>.</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://ludic.mataroa.blog/blog/fury-driven-development/">Nikhil Suresh</a></cite></p>]]>
+<p><cite class="standalone"><a href="https://d-shoot.net/">lori</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/nikhil-suresh-on-presentation-skills</guid>
-            <pubDate>2024-11-08</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/lori-on-moderation</guid>
+            <pubDate>2023-10-24</pubDate>
         </item>
         
         <item>
-            <title>Jes Olsen on Fandom</title>
-            <link>https://notes.zachmanson.com/jes-olsen-on-fandom</link>
+            <title>Randall Munroe on Success</title>
+            <link>https://notes.zachmanson.com/randall-munroe-on-success</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>fandom is a wiki website (allegedly)</p>
+<p>I never trust anyone who's more excited about success than about doing the thing they want to be successful at.</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://j3s.sh/thought/stop-using-fandom.html">Jes Olsen</a></cite></p>]]>
+<p><cite class="standalone"><a href="http://xkcd.com/874/">Randall Munroe</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/jes-olsen-on-fandom</guid>
-            <pubDate>2024-08-02</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/randall-munroe-on-success</guid>
+            <pubDate>2023-10-24</pubDate>
+        </item>
+        
+        <item>
+            <title>Someone on Testing</title>
+            <link>https://notes.zachmanson.com/someone-on-testing</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Test what you detest</p>
+</blockquote>
+<p><cite class="standalone">ughh idk <a href="https://www.youtube.com/watch?v=MbU-PKukdMw">this video</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/someone-on-testing</guid>
+            <pubDate>2024-05-27</pubDate>
+        </item>
+        
+        <item>
+            <title>Ian Crosby Danskin on Truth</title>
+            <link>https://notes.zachmanson.com/ian-crosby-danskin-on-truth</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>There is a floor on how simple the truth can be and still be the truth.  Falsehoods don't have that.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://www.youtube.com/watch?v=dF98ii6r_gU">Ian Crosby Danskin</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/ian-crosby-danskin-on-truth</guid>
+            <pubDate>2023-10-24</pubDate>
+        </item>
+        
+        <item>
+            <title>Technoblade on Hell</title>
+            <link>https://notes.zachmanson.com/technoblade-on-hell</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Look I'm an atheist, but when God sends me to hell I want him to hesitate</p>
+</blockquote>
+<p><cite class="standalone">Technoblade</cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/technoblade-on-hell</guid>
+            <pubDate>2023-10-24</pubDate>
+        </item>
+        
+        <item>
+            <title>Justin Duke on Commitments</title>
+            <link>https://notes.zachmanson.com/justin-duke-on-commitments</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>I write the above in pencil, not pen</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://jmduke.com/posts/microblog/why-buttondown-isnt-oss/">Justin Duke</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/justin-duke-on-commitments</guid>
+            <pubDate>2024-08-27</pubDate>
+        </item>
+        
+        <item>
+            <title>mousethatroared on Orthography</title>
+            <link>https://notes.zachmanson.com/mousethatroared-on-orthography</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>I consider English orthography worthy of UNESCO protection</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=44485628">mousethatroared</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/mousethatroared-on-orthography</guid>
+            <pubDate>2025-07-07</pubDate>
+        </item>
+        
+        <item>
+            <title>Clay Shirky on Children</title>
+            <link>https://notes.zachmanson.com/clay-shirky-on-children</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Here's something four-year-olds know: Media that's targeted at you but doesn't include you may not be worth sitting still for.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://web.archive.org/web/20080604020024/http://www.herecomeseverybody.org/2008/04/looking-for-the-mouse.html">Clay Shirky</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/clay-shirky-on-children</guid>
+            <pubDate>2026-03-24</pubDate>
         </item>
         
         <item>
@@ -655,18 +251,360 @@ You die in prison</p>
         </item>
         
         <item>
-            <title>lori on Moderation</title>
-            <link>https://notes.zachmanson.com/lori-on-moderation</link>
+            <title>Xe Iaso on Xeact</title>
+            <link>https://notes.zachmanson.com/xe-iaso-on-xeact</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>The site will live or die by how it handles its first porn of misty from Pokemon
-Written on cohost, though I came across it in their <a href="https://hackers.town/@lori/110656479473125841">pre-emptive autopsy of cohost</a>.</p>
+<p>Xeact remains open-source software to this day where it is used by thousands of milli-developers.</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://d-shoot.net/">lori</a></cite></p>]]>
+<p><cite class="standalone"><a href="https://pony.social/@cadey/111808337595814449">Xe Iaso</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/lori-on-moderation</guid>
+            <guid isPermaLink="false">https://notes.zachmanson.com/xe-iaso-on-xeact</guid>
+            <pubDate>2024-01-24</pubDate>
+        </item>
+        
+        <item>
+            <title>Alex Pagano on Aging</title>
+            <link>https://notes.zachmanson.com/alex-pagano-on-aging</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>when you age, you start realising that everyone doesn’t necessarily have their shit together like you thought they did as a kid, but they just become better and better at hiding it until the closet becomes full.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://achillesheel.substack.com/p/be-adult">Alex Pagano</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/alex-pagano-on-aging</guid>
+            <pubDate>2025-08-04</pubDate>
+        </item>
+        
+        <item>
+            <title>Zach Weinersmith on Inspiration</title>
+            <link>https://notes.zachmanson.com/zach-weinersmith-on-inspiration</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Inspiration can convince you something is interesting or worth doing, or from time to time get you some really good sentences. But by the time you're, say, 80% of the way into something, it's kind of like an old relationship</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://mastodon.social/@ZachWeinersmith/112329077414080736">Zach Weinersmith</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/zach-weinersmith-on-inspiration</guid>
+            <pubDate>2024-04-25</pubDate>
+        </item>
+        
+        <item>
+            <title>Nikhil Suresh on Grifters</title>
+            <link>https://notes.zachmanson.com/nikhil-suresh-on-grifters</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>You see, while hype is <em>nice</em>, it's only nice in small bursts for <em>practitioners</em>. We have a few key things that a grifter does not have, such as job stability, genuine friendships, and <em>souls</em>. What we do <em>not</em> have is the ability to trivially switch fields the moment the gold rush is over, due to the sad fact that we actually need to study things and build experience. Grifters, on the other hand, wield the omnitool that they self-aggrandizingly call 'politics'. That is to say, it turns out that the core competency of smiling and promising people things that you can't actually deliver is <em>highly transferable</em>.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://ludic.mataroa.blog/blog/i-will-fucking-piledrive-you-if-you-mention-ai-again/">Nikhil Suresh</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/nikhil-suresh-on-grifters</guid>
+            <pubDate>2024-11-13</pubDate>
+        </item>
+        
+        <item>
+            <title>Wikipedia on Magic Numbers</title>
+            <link>https://notes.zachmanson.com/wikipedia-on-magic-numbers</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>In ISO C, file handles (of type FILE) cannot be safely copied as their addresses may be magic</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://en.wikipedia.org/wiki/Magic_(programming)">Wikipedia - Magic (programming)</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/wikipedia-on-magic-numbers</guid>
             <pubDate>2023-10-24</pubDate>
+        </item>
+        
+        <item>
+            <title>Hank Green on Knowledge</title>
+            <link>https://notes.zachmanson.com/hank-green-on-knowledge</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>It's not fun or possible to know everything which is why we are supposed to share the load. Share the load.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://youtube.com/watch?v=dqkvoFPj5zU">Hank Green</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/hank-green-on-knowledge</guid>
+            <pubDate>2025-02-03</pubDate>
+        </item>
+        
+        <item>
+            <title>ryandv on Information Diet</title>
+            <link>https://notes.zachmanson.com/ryandv-on-information-diet</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>"You are what you eat" also applies to information diets.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=41794949">ryandv</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/ryandv-on-information-diet</guid>
+            <pubDate>2024-10-14</pubDate>
+        </item>
+        
+        <item>
+            <title>Joe Brockmeier on Memoir</title>
+            <link>https://notes.zachmanson.com/joe-brockmeier-on-memoir</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>as well-detailed in Hazel's memoir (and mercilessly abbreviated here),</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://lwn.net/SubscriberLink/978463/608c876c1153fd31/">Joe Brockmeier</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/joe-brockmeier-on-memoir</guid>
+            <pubDate>2024-06-20</pubDate>
+        </item>
+        
+        <item>
+            <title>Someone on Half-Assing</title>
+            <link>https://notes.zachmanson.com/someone-on-half-assing</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>It's okay to half-ass something, when all you need is half an ass</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=40557662">Who knows</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/someone-on-half-assing</guid>
+            <pubDate>2024-06-03</pubDate>
+        </item>
+        
+        <item>
+            <title>Greg LeMond on Getting Faster</title>
+            <link>https://notes.zachmanson.com/greg-lemond-on-getting-faster</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>It never gets easier, you just get faster.</p>
+</blockquote>
+<p><cite class="standalone">Greg LeMond</cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/greg-lemond-on-getting-faster</guid>
+            <pubDate>2026-06-29</pubDate>
+        </item>
+        
+        <item>
+            <title>John Green on Algorithms</title>
+            <link>https://notes.zachmanson.com/john-green-on-algorithms</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Algorithms are human-directed and humans are algorithm-directed in ways we do not fully understand.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://youtu.be/kqPZg4gULaQ">John Green</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/john-green-on-algorithms</guid>
+            <pubDate>2024-03-05</pubDate>
+        </item>
+        
+        <item>
+            <title>Someone on Sydney Melbourne</title>
+            <link>https://notes.zachmanson.com/someone-on-sydney-melbourne</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>In Sydney everyone is pretending to be rich, in Melbourne everyone is pretending to be poor</p>
+</blockquote>
+<p><cite class="standalone">A guy I saw on instagram and then lost track of</cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/someone-on-sydney-melbourne</guid>
+            <pubDate>2026-02-26</pubDate>
+        </item>
+        
+        <item>
+            <title>Foone Turing on Buffer Overflows</title>
+            <link>https://notes.zachmanson.com/foone-turing-on-buffer-overflows</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>My robot girlfriend walks in with the crop, I'm already tied to the bed. "what's the safeword?", she asks. I respond by saying the letter "A" for 90 seconds straight followed by a short hex string.</p>
+<p>calc.exe opens up on her eyes. Finally, a PoC!</p>
+<p>Shouldn't have used fixed length buffers without bounds checking, babe. This is a rookie C mistake.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://digipres.club/@foone/111398681509322271">Foone Turing</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/foone-turing-on-buffer-overflows</guid>
+            <pubDate>2023-11-14</pubDate>
+        </item>
+        
+        <item>
+            <title>Brandon Ewing on Housing</title>
+            <link>https://notes.zachmanson.com/brandon-ewing-on-housing</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Radicalism is when no house</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://youtu.be/yGooLJoyrI4?si=vaGdjKAX4sUpcMh0&amp;t=2615">Brandon Ewing</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/brandon-ewing-on-housing</guid>
+            <pubDate>2025-09-28</pubDate>
+        </item>
+        
+        <item>
+            <title>Thin Deep Slices</title>
+            <link>https://notes.zachmanson.com/thin-deep-slices</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Enormous subjects are best approached in thin, deep slices. I discovered this when first learning how to program. The textbooks never worked; it all only started to click when I started to do little projects for myself. The project wasn’t just motivation but an organizing principle, a magnet to arrange the random iron filings I picked up along the way. I’d care to learn about some abstract concept, like “memoization,” because I needed it to solve my problem; and these concepts would lose their abstractness in the light of my example.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://jsomers.net/i-should-have-loved-biology/">James Somers</a></cite></p>
+<p>I love the phrase "thin deep slices" for learning.  This is also in <a href="https://notes.zachmanson.com/lines">Lines</a>.  This page exists so I can come back to it later, I want to think about this more.</p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/thin-deep-slices</guid>
+            <pubDate>2024-04-22</pubDate>
+        </item>
+        
+        <item>
+            <title>Terry Godier on Screen Time</title>
+            <link>https://notes.zachmanson.com/terry-godier-on-screen-time</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Most of your screen time isn't leisure. It isn't addiction. It isn't even a choice.</p>
+<p>It's maintenance.</p>
+<p>Your phone is not a slot machine.</p>
+<p>It's a to-do list that writes itself.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://www.terrygodier.com/the-last-quiet-thing">Terry Godier</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/terry-godier-on-screen-time</guid>
+            <pubDate>2026-03-16</pubDate>
+        </item>
+        
+        <item>
+            <title>IBM on Accountability</title>
+            <link>https://notes.zachmanson.com/ibm-on-accountability</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>A COMPUTER CAN NEVER BE HELD ACCOUNTABLE</p>
+<p>THEREFORE A COMPUTER MUST NEVER MAKE A MANAGEMENT DECISION</p>
+</blockquote>
+<p><cite class="standalone">Internal IBM Presentation 1979</cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/ibm-on-accountability</guid>
+            <pubDate>2024-02-18</pubDate>
+        </item>
+        
+        <item>
+            <title>Barnaby Keene on TypeScript</title>
+            <link>https://notes.zachmanson.com/barnaby-keene-on-typescript</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>TypeScript is an entire language backed by a trillion-dollar corporation with the sole purpose of reducing the likelihood of undefined is not a function popping up in error messages.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://southcla.ws/sql">Barnaby Keene</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/barnaby-keene-on-typescript</guid>
+            <pubDate>2024-09-04</pubDate>
+        </item>
+        
+        <item>
+            <title>Paul Graham on Greatness</title>
+            <link>https://notes.zachmanson.com/paul-graham-on-greatness</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>I've found that people who are great at something are not so much convinced of their own greatness as mystified at why everyone else seems so incompetent.</p>
+</blockquote>
+<p><cite class="standalone"><a href="http://www.paulgraham.com/gh.html">Paul Graham</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/paul-graham-on-greatness</guid>
+            <pubDate>2023-10-24</pubDate>
+        </item>
+        
+        <item>
+            <title>Deborah O'Neill on Deloitte</title>
+            <link>https://notes.zachmanson.com/deborah-oneill-on-deloitte</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Deloitte has a human intelligence problem</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://www.theguardian.com/australia-news/2025/oct/06/deloitte-to-pay-money-back-to-albanese-government-after-using-ai-in-440000-report">Deborah O'Neill</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/deborah-oneill-on-deloitte</guid>
+            <pubDate>2025-10-07</pubDate>
+        </item>
+        
+        <item>
+            <title>James Wood on Stories</title>
+            <link>https://notes.zachmanson.com/james-wood-on-stories</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>A story is essentially just a rather entitled hypothesis</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://www.newyorker.com/magazine/2024/08/12/devils-contract-the-history-of-the-faustian-bargain-ed-simon-book-review">James Wood</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/james-wood-on-stories</guid>
+            <pubDate>2024-08-18</pubDate>
+        </item>
+        
+        <item>
+            <title>Michael Hayden on Metadata</title>
+            <link>https://notes.zachmanson.com/michael-hayden-on-metadata</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>We kill people based on metadata. But that's not what we do with this metadata</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://abcnews.go.com/blogs/headlines/2014/05/ex-nsa-chief-we-kill-people-based-on-metadata">Michael Hayden</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/michael-hayden-on-metadata</guid>
+            <pubDate>2023-10-24</pubDate>
+        </item>
+        
+        <item>
+            <title>Paul Ford on Buddhism</title>
+            <link>https://notes.zachmanson.com/paul-ford-on-buddhism</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>a physicist stares at the ceiling while an undergraduate, high off internet forums, explains that Buddhism anticipated quantum theory</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://www.wired.com/story/own-future-artificial-intelligence-read-shakespeare/">Paul Ford</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/paul-ford-on-buddhism</guid>
+            <pubDate>2024-04-23</pubDate>
+        </item>
+        
+        <item>
+            <title>UnemployedTechie2021 on Exes</title>
+            <link>https://notes.zachmanson.com/unemployedtechie2021-on-exes</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Girlfriends are temporary, ex-girlfriends are forever</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://old.reddit.com/r/Showerthoughts/comments/xa48um/girlfriends_are_temporary_exgirlfriends_are/">/u/UnemployedTechie2021 (maybe)</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/unemployedtechie2021-on-exes</guid>
+            <pubDate>2024-03-05</pubDate>
+        </item>
+        
+        <item>
+            <title>Philip Wadler on Trees</title>
+            <link>https://notes.zachmanson.com/philip-wadler-on-trees</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Joyce Kilmer and most computer scientists agree: there is no poem as lovely as a tree.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://homepages.inf.ed.ac.uk/wadler/papers/prettier/prettier.pdf">Philip Wadler</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/philip-wadler-on-trees</guid>
+            <pubDate>2024-02-20</pubDate>
         </item>
         
         <item>
@@ -684,31 +622,478 @@ Written on cohost, though I came across it in their <a href="https://hackers.tow
         </item>
         
         <item>
-            <title>Matthew Morgan on Quality</title>
-            <link>https://notes.zachmanson.com/matthew-morgan-on-quality</link>
+            <title>Hank Green on Resisting</title>
+            <link>https://notes.zachmanson.com/hank-green-on-resisting</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>This is quality determined by quantity: the more stuff in the wastebasket, the better the strip</p>
+<p>Something awaits for me in the divine for resisting</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://therepublicofletters.substack.com/p/calvin-and-hobbes-and-the-price-of">Matthew Morgan</a></cite></p>]]>
+<p><cite class="standalone"><a href="https://www.youtube.com/watch?v=jXO5axomU7Q">Chris Fleming</a> (<a href="https://www.youtube.com/watch?v=oS3sdM2uRO4">actually here</a>)</cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/matthew-morgan-on-quality</guid>
+            <guid isPermaLink="false">https://notes.zachmanson.com/hank-green-on-resisting</guid>
             <pubDate>2026-07-01</pubDate>
         </item>
         
         <item>
-            <title>Tristram Oaten on Data Collection</title>
-            <link>https://notes.zachmanson.com/tristram-oaten-on-data-collection</link>
+            <title>PewDiePie on Content Creation</title>
+            <link>https://notes.zachmanson.com/pewdiepie-on-content-creation</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>I do not collect your data. Stop sending it to me.</p>
+<p>Create with no intent, consume with no intent, congratulations, you have industrialized nothingness.</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://noboilerplate.org/">Tristram Oaten</a></cite></p>]]>
+<p><cite class="standalone"><a href="https://youtu.be/5nL-Eq1lpDU?si=wQxgKkthvg2gFdp7">PewDiePie</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/tristram-oaten-on-data-collection</guid>
-            <pubDate>2024-02-28</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/pewdiepie-on-content-creation</guid>
+            <pubDate>2026-03-24</pubDate>
+        </item>
+        
+        <item>
+            <title>projectileboy's Friend on Artists</title>
+            <link>https://notes.zachmanson.com/projectileboys-friend-on-artists</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>We work in a field of people who envision themselves as artists, when all that is wanted are painters.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=40558212">projectileboy's friend</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/projectileboys-friend-on-artists</guid>
+            <pubDate>2024-06-03</pubDate>
+        </item>
+        
+        <item>
+            <title>Bill Wurtz on Being Human</title>
+            <link>https://notes.zachmanson.com/bill-wurtz-on-being-human</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>being human is about to come back in style</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://billwurtz.com/201407210945.html">Bill Wurtz</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/bill-wurtz-on-being-human</guid>
+            <pubDate>2024-04-27</pubDate>
+        </item>
+        
+        <item>
+            <title>Devine Lu Linvega on APIs</title>
+            <link>https://notes.zachmanson.com/devine-lu-linvega-on-apis</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Today, you're either above the API or below the API. You either tell robots what to do, or are told by robots what to do.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://notes.zachmanson.com/////%5Bhttps%3A/wiki.xxiivv.com/site/technocracy.html%5D%28https%3A/wiki.xxiivv.com/site/technocracy.html%29">Devine Lu Linvega</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/devine-lu-linvega-on-apis</guid>
+            <pubDate>2024-03-05</pubDate>
+        </item>
+        
+        <item>
+            <title>Steph Ango on Plain Text</title>
+            <link>https://notes.zachmanson.com/steph-ango-on-plain-text</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>If you want your writing to still be readable on a computer from the 2060s or 2160s, it’s important that your notes can be read on a computer from the 1960s.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://notes.zachmanson.com/file-over-app">Steph Ango</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/steph-ango-on-plain-text</guid>
+            <pubDate>2024-03-11</pubDate>
+        </item>
+        
+        <item>
+            <title>Elle Mundy on OOP</title>
+            <link>https://notes.zachmanson.com/elle-mundy-on-oop</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>who called it object oriented programming and not class struggle</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://mastodon.world/@exchgr/110686507297491516">Elle Mundy</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/elle-mundy-on-oop</guid>
+            <pubDate>2023-10-24</pubDate>
+        </item>
+        
+        <item>
+            <title>jl6 on ISO 8601</title>
+            <link>https://notes.zachmanson.com/jl6-on-iso-8601</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Treating Sunday as the first day of the week is a religious tradition going back thousands of years.</p>
+<p>However, I know only one god, <em>and</em> his name is ISO 8601.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=38149243">jl6</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/jl6-on-iso-8601</guid>
+            <pubDate>2023-11-07</pubDate>
+        </item>
+        
+        <item>
+            <title>Bill Wurtz on Human Age</title>
+            <link>https://notes.zachmanson.com/bill-wurtz-on-human-age</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>The age of humans compared to the earth, now that's some nothing shit</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://billwurtz.com/reality/201606202210.mp4">Bill Wurtz</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/bill-wurtz-on-human-age</guid>
+            <pubDate>2024-04-27</pubDate>
+        </item>
+        
+        <item>
+            <title>Zain Rizvi on Woodworking</title>
+            <link>https://notes.zachmanson.com/zain-rizvi-on-woodworking</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>With woodworking you actually get to hold your creations.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://www.zainrizvi.io/blog/why-software-engineers-like-woodworking/">Zain Rizvi in  <em>Why Software Engineers like Woodworking</em></a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/zain-rizvi-on-woodworking</guid>
+            <pubDate>2024-04-01</pubDate>
+        </item>
+        
+        <item>
+            <title>Lu Wilson on Ideas</title>
+            <link>https://notes.zachmanson.com/lu-wilson-on-ideas</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>NO MORE IDEAS</p>
+<p>WE HAVE ENOUGH</p>
+<p>(merge them instead)</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://www.todepond.com/wikiblogarden/my-wikiblogarden/">Lu Wilson</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/lu-wilson-on-ideas</guid>
+            <pubDate>2023-11-12</pubDate>
+        </item>
+        
+        <item>
+            <title>Afterthoughts on Crisis</title>
+            <link>https://notes.zachmanson.com/afterthoughts-on-crisis</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Existential crisis aren't funny but aren't they... comedy flavoured?</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://www.youtube.com/watch?v=LhZxoKNopJQ">Afterthoughts</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/afterthoughts-on-crisis</guid>
+            <pubDate>2024-06-25</pubDate>
+        </item>
+        
+        <item>
+            <title>Someone on Bridge Engineering</title>
+            <link>https://notes.zachmanson.com/someone-on-bridge-engineering</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Any idiot can build a bridge that stands, but it takes an engineer to build a bridge that barely stands.</p>
+</blockquote>
+<p><cite class="standalone">couldn't actually find a good source, <a href="https://notes.zachmanson.com/////Any%20fool%20can%20build%20a%20bridge%20that%20stands.%20It%20takes%20an%20engineer%20to%20build%20a%20bridge%20that%20barely%20stands">first saw here</a> but appears in many other places</cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/someone-on-bridge-engineering</guid>
+            <pubDate>2024-05-13</pubDate>
+        </item>
+        
+        <item>
+            <title>Neal Stephenson on Command Line</title>
+            <link>https://notes.zachmanson.com/neal-stephenson-on-command-line</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>As if I were a self-styled Moses, coming down from the mountain all alone, carrying the stone tablets bearing the Ten Commandments carved in immutable stone--the original command-line interface</p>
+</blockquote>
+<p><cite class="standalone">Neal Stephenson, <a href="https://notes.zachmanson.com/in-the-beginning-was-the-command-line">In the Beginning was the Command Line</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/neal-stephenson-on-command-line</guid>
+            <pubDate>2024-07-29</pubDate>
+        </item>
+        
+        <item>
+            <title>Sy Brand on Unix</title>
+            <link>https://notes.zachmanson.com/sy-brand-on-unix</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>In Unix everything is a file. Files are files, folders are files, disks are files, your keyboard is a file, your mouth is a file, the air is a file, you can't breathe, your file lungs fill with files and you try to scream but only files come out oh god Dennis how could you do thi</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://twitter.com/TartanLlama/status/1375045731644538882">Sy Brand</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/sy-brand-on-unix</guid>
+            <pubDate>2023-10-24</pubDate>
+        </item>
+        
+        <item>
+            <title>Robin Sloan on Social Spaces</title>
+            <link>https://notes.zachmanson.com/robin-sloan-on-social-spaces</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>An industrialist might soon purchase Twitter, Inc. His substantial success launching reusable spacecraft does nothing to prepare him for the challenge of building social spaces. The latter calls on every liberal art at once, while the former is just rocket science.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://www.robinsloan.com/lab/lost-thread/">Robin Sloan</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/robin-sloan-on-social-spaces</guid>
+            <pubDate>2023-10-24</pubDate>
+        </item>
+        
+        <item>
+            <title>Feminist Server Manifesto on Networking</title>
+            <link>https://notes.zachmanson.com/feminist-server-manifesto-on-networking</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>networking is actually an awkward, promiscuous and parasitic practice</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://notes.zachmanson.com/feminist-server-manifesto">Feminist Server Manifesto</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/feminist-server-manifesto-on-networking</guid>
+            <pubDate>2024-04-02</pubDate>
+        </item>
+        
+        <item>
+            <title>seph on Coursework</title>
+            <link>https://notes.zachmanson.com/seph-on-coursework</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Yea as long as you do all the work and watch all the lectures you’ll be chilling</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://discord.com/channels/586127025228742656/586575812455563269/783525026573451334">seph</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/seph-on-coursework</guid>
+            <pubDate>2024-04-08</pubDate>
+        </item>
+        
+        <item>
+            <title>Sarai Rosenberg on Seniority</title>
+            <link>https://notes.zachmanson.com/sarai-rosenberg-on-seniority</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Speaking as the most senior member of my team, nothing useful starts with that phrase</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://infosec.exchange/@saraislet">Sarai Rosenberg</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/sarai-rosenberg-on-seniority</guid>
+            <pubDate>2024-03-05</pubDate>
+        </item>
+        
+        <item>
+            <title>Merlin Mann on Blogging</title>
+            <link>https://notes.zachmanson.com/merlin-mann-on-blogging</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Blog posts are written, not defecated</p>
+</blockquote>
+<p><cite class="standalone"><a href="http://www.43folders.com/2008/08/19/good-blogs">Merlin Mann</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/merlin-mann-on-blogging</guid>
+            <pubDate>2024-07-29</pubDate>
+        </item>
+        
+        <item>
+            <title>Steve Yegge on Life Raft</title>
+            <link>https://notes.zachmanson.com/steve-yegge-on-life-raft</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>I totally get that there are amazing people out there who would give me plenty of runway, but what I’m building toward isn’t financially defensible. It’s not a moat. It’s a life raft.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://steve-yegge.medium.com/steveys-birthday-blog-34f437139cb5">Steve Yegge</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/steve-yegge-on-life-raft</guid>
+            <pubDate>2026-01-26</pubDate>
+        </item>
+        
+        <item>
+            <title>varjag on XML</title>
+            <link>https://notes.zachmanson.com/varjag-on-xml</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>XML is dead, the millennials’ best kill so far.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://lobste.rs/s/czzkxt/how_is_computer_programming_different#c_gdznjc">varjag</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/varjag-on-xml</guid>
+            <pubDate>2024-05-29</pubDate>
+        </item>
+        
+        <item>
+            <title>Cory Doctorow on Enshittification</title>
+            <link>https://notes.zachmanson.com/cory-doctorow-on-enshittification</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Here is how platforms die: first, they are good to their users; then they abuse their users to make things better for their business customers; finally, they abuse those business customers to claw back all the value for themselves. Then, they die.</p>
+</blockquote>
+<p><cite class="standalone">Cory Doctorow, <a href="https://notes.zachmanson.com/tiktoks-enshittification">TikTok's Enshittification</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/cory-doctorow-on-enshittification</guid>
+            <pubDate>2023-10-24</pubDate>
+        </item>
+        
+        <item>
+            <title>Matt Holt on Open Source</title>
+            <link>https://notes.zachmanson.com/matt-holt-on-open-source</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Users need open source projects, but open source projects do not need users.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://matt.life/writing/the-asymmetry-of-open-source">Matt Holt</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/matt-holt-on-open-source</guid>
+            <pubDate>2023-10-24</pubDate>
+        </item>
+        
+        <item>
+            <title>Kate Temkin on Security Budgets</title>
+            <link>https://notes.zachmanson.com/kate-temkin-on-security-budgets</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>security budget:</p>
+<ul>
+<li>$1 looking into languages that don’t trivially buffer overflow  </li>
+<li>50¢ looking into enabling exploit mitigation features  </li>
+<li>1¢ research into things like compile-time diversity</li>
+<li>$10M hiring a disgraced CISO from a FAANG company  </li>
+<li>$100 hiring a red team to ignore feedback from</li>
+</ul>
+<p>someone who is good at the economy please help me. my enterprise platform is dying</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://chaos.social/@ktemkin/111876050821938340">Kate Temkin</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/kate-temkin-on-security-budgets</guid>
+            <pubDate>2024-02-05</pubDate>
+        </item>
+        
+        <item>
+            <title>Nikhil Suresh on Presentation Skills</title>
+            <link>https://notes.zachmanson.com/nikhil-suresh-on-presentation-skills</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>The only thing required to be a grifter, inadvertently or not, is to have your presentation skills outstrip your technical skill</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://ludic.mataroa.blog/blog/fury-driven-development/">Nikhil Suresh</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/nikhil-suresh-on-presentation-skills</guid>
+            <pubDate>2024-11-08</pubDate>
+        </item>
+        
+        <item>
+            <title>jacoblambda on CRUD</title>
+            <link>https://notes.zachmanson.com/jacoblambda-on-crud</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Your standard CRUD applications and web services are largely just a rigamarole of reciting the right incantation and duct taping bits together. It's immensely non-stimulating work when done properly.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=33887808">jacoblambda</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/jacoblambda-on-crud</guid>
+            <pubDate>2024-01-30</pubDate>
+        </item>
+        
+        <item>
+            <title>CGP Grey on Podcasts</title>
+            <link>https://notes.zachmanson.com/cgp-grey-on-podcasts</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>A podcast has to eat something, there's basically the choices of what a podcast can eat. a podcast can eat the news, the podcast can eat guests, or the podcast can eat the lives of the hosts.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://relay.fm/cortex/167">CGP Grey</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/cgp-grey-on-podcasts</guid>
+            <pubDate>2026-07-01</pubDate>
+        </item>
+        
+        <item>
+            <title>Bert Hubert on the Immune System</title>
+            <link>https://notes.zachmanson.com/bert-hubert-on-the-immune-system</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Imagine a flashy spaceship lands in your backyard. The door opens and you are invited to investigate everything to see what you can learn. The technology is clearly millions of years beyond what we can make.</p>
+<p>This is biology.</p>
+</blockquote>
+<p><cite class="standalone">Bert Hubert, <a href="https://berthub.eu/articles/posts/immune-system/">“Our Amazing Immune System”</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/bert-hubert-on-the-immune-system</guid>
+            <pubDate>2024-04-23</pubDate>
+        </item>
+        
+        <item>
+            <title>thepasswordis on Proof</title>
+            <link>https://notes.zachmanson.com/thepasswordis-on-proof</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>"Proof" for thousands of years was whatever was written down, and that was even easier to forge.</p>
+<p>There was a brief time (maybe 100 years at the most) where photos and videos were practically proof of something happening; that is coming to an end now, but that's just a regression to the mean, not new territory.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=39386870">thepasswordis</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/thepasswordis-on-proof</guid>
+            <pubDate>2024-02-15</pubDate>
+        </item>
+        
+        <item>
+            <title>Paul Ford on Deadlines</title>
+            <link>https://notes.zachmanson.com/paul-ford-on-deadlines</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>The only technology that you need is deadlines.</p>
+</blockquote>
+<p><cite class="standalone">Paul Ford, <a href="https://aboard.com/podcast-episode-2-failure/">here</a> (allegedly, I came across the quote <a href="https://blog.jim-nielsen.com/2023/deadlines-as-technology/">here</a>)</cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/paul-ford-on-deadlines</guid>
+            <pubDate>2023-10-24</pubDate>
+        </item>
+        
+        <item>
+            <title>Mike Playle on Experience</title>
+            <link>https://notes.zachmanson.com/mike-playle-on-experience</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>You can tell quite a lot about a person by looking at what they choose to write in close proximity to the word "experience".</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://mastodon.social/@FenTiger/113364157137390517">Mike Playle</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/mike-playle-on-experience</guid>
+            <pubDate>2024-10-27</pubDate>
+        </item>
+        
+        <item>
+            <title>Hank Green on Humanity</title>
+            <link>https://notes.zachmanson.com/hank-green-on-humanity</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>all of humanity is necessary for all of the things that we do, there's nothing that's not a collaboration with almost every dead person.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://www.youtube.com/watch?v=qVu2qnlQcvM">Hank Green</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/hank-green-on-humanity</guid>
+            <pubDate>2026-07-01</pubDate>
         </item>
         
         <item>
@@ -728,60 +1113,392 @@ Written on cohost, though I came across it in their <a href="https://hackers.tow
         </item>
         
         <item>
-            <title>rplnt on Jira</title>
-            <link>https://notes.zachmanson.com/rplnt-on-jira</link>
+            <title>Tim Raymond on Advertising</title>
+            <link>https://notes.zachmanson.com/tim-raymond-on-advertising</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>I believe Apple silicon has Jira coprocessor</p>
+<p>If you have the disposable income to pay to remove advertising, you are exactly the market segment advertisers want to reach. They will always be willing to pay to outbid that segment’s own desire to not see ads.</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=42756594">rplnt</a></cite></p>]]>
+<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=46193402">Tim Raymond</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/rplnt-on-jira</guid>
-            <pubDate>2025-01-22</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/tim-raymond-on-advertising</guid>
+            <pubDate>2025-12-09</pubDate>
         </item>
         
         <item>
-            <title>Jennifer Lepp on Originality</title>
-            <link>https://notes.zachmanson.com/jennifer-lepp-on-originality</link>
+            <title>Matthew Morgan on Quality</title>
+            <link>https://notes.zachmanson.com/matthew-morgan-on-quality</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>I think that’s the real danger, that you can do that and then nothing’s original anymore. Everything’s just a copy of something else.  The problem is, that’s what readers like.</p>
+<p>This is quality determined by quantity: the more stuff in the wastebasket, the better the strip</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://www.theverge.com/c/23194235/ai-fiction-writing-amazon-kindle-sudowrite-jasper">Jennifer Lepp</a></cite></p>]]>
+<p><cite class="standalone"><a href="https://therepublicofletters.substack.com/p/calvin-and-hobbes-and-the-price-of">Matthew Morgan</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/jennifer-lepp-on-originality</guid>
-            <pubDate>2023-11-06</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/matthew-morgan-on-quality</guid>
+            <pubDate>2026-07-01</pubDate>
         </item>
         
         <item>
-            <title>Bert Hubert on the Immune System</title>
-            <link>https://notes.zachmanson.com/bert-hubert-on-the-immune-system</link>
+            <title>vasco on Dating Apps</title>
+            <link>https://notes.zachmanson.com/vasco-on-dating-apps</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>Imagine a flashy spaceship lands in your backyard. The door opens and you are invited to investigate everything to see what you can learn. The technology is clearly millions of years beyond what we can make.</p>
-<p>This is biology.</p>
+<p>Nothing will make a nerd a communist faster than getting a taste of real life on dating apps.</p>
 </blockquote>
-<p><cite class="standalone">Bert Hubert, <a href="https://berthub.eu/articles/posts/immune-system/">“Our Amazing Immune System”</a></cite></p>]]>
+<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=444786591">vasco</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/bert-hubert-on-the-immune-system</guid>
+            <guid isPermaLink="false">https://notes.zachmanson.com/vasco-on-dating-apps</guid>
+            <pubDate>2025-07-06</pubDate>
+        </item>
+        
+        <item>
+            <title>Skylar Hill on Engineering</title>
+            <link>https://notes.zachmanson.com/skylar-hill-on-engineering</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Engineering is the art of finding the solution that only sucks in ways that don't matter</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://elk.zone/solarpunk.moe/@stellarskylark/112039397451154354">Skylar Hill</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/skylar-hill-on-engineering</guid>
+            <pubDate>2024-03-04</pubDate>
+        </item>
+        
+        <item>
+            <title>Dijkstra on Incomplete Notes</title>
+            <link>https://notes.zachmanson.com/dijkstra-on-incomplete-notes</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>For another thing, as a document this is very incomplete: I am only too aware of the fact that it ends in mid-air. Yet I have decided to have these notes duplicated, besides some practical considerations mainly to show what I have thought to those who expressed interest in it or to those whose comments I would welcome.</p>
+</blockquote>
+<p><cite class="standalone">Prof.dr. Edsger W. Dijkstra, Introduction to <em>Notes on Structured Programming</em></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/dijkstra-on-incomplete-notes</guid>
+            <pubDate>2024-04-27</pubDate>
+        </item>
+        
+        <item>
+            <title>Tony Gilroy on Empathy</title>
+            <link>https://notes.zachmanson.com/tony-gilroy-on-empathy</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>In general, empathy is how I feed my family</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://youtu.be/9kUFBXrw0DU?si=jggs3F8Lr0b_YPu7&amp;t=1055">Tony Gilroy</a>, on empathy as a byproduct of creative work</cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/tony-gilroy-on-empathy</guid>
+            <pubDate>2025-06-09</pubDate>
+        </item>
+        
+        <item>
+            <title>Fernando Borretti on Useless Tools</title>
+            <link>https://notes.zachmanson.com/fernando-borretti-on-useless-tools</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Sometimes, tools don’t move the needle because there’s no needle to move.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://borretti.me/article/human-bottlenecks">Fernando Borretti</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/fernando-borretti-on-useless-tools</guid>
+            <pubDate>2026-05-28</pubDate>
+        </item>
+        
+        <item>
+            <title>John Green on Time</title>
+            <link>https://notes.zachmanson.com/john-green-on-time</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Long week, long month, long life</p>
+</blockquote>
+<p><cite class="standalone">John Green/David Leviathan, Will Grayson, Will Grayson</cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/john-green-on-time</guid>
+            <pubDate>2025-10-08</pubDate>
+        </item>
+        
+        <item>
+            <title>ska on DJs</title>
+            <link>https://notes.zachmanson.com/ska-on-djs</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>DJs are not even close to fungible</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=41113201">ska</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/ska-on-djs</guid>
+            <pubDate>2024-07-31</pubDate>
+        </item>
+        
+        <item>
+            <title>Richard Feynman on Computers</title>
+            <link>https://notes.zachmanson.com/richard-feynman-on-computers</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>The computer disease that anybody who works with computers now knows about. It's a very serious disease and it interferes completely with the work and it was a serious problem we were trying to do. The disease with computers is that you play with them.</p>
+</blockquote>
+<p><cite class="standalone">Richard Feynman, <a href="https://youtu.be/uY-u1qyRM5w?t=3100">Los Alamos from Below</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/richard-feynman-on-computers</guid>
+            <pubDate>2023-11-02</pubDate>
+        </item>
+        
+        <item>
+            <title>Andy Bell on Startups</title>
+            <link>https://notes.zachmanson.com/andy-bell-on-startups</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Sure, if you’re based in San Francisco and you go to your adult daycare—sorry, I mean startup office</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://andy-bell.co.uk/speed-for-who/">Andy Bell</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/andy-bell-on-startups</guid>
+            <pubDate>2024-06-03</pubDate>
+        </item>
+        
+        <item>
+            <title>Tristram Oaten on Data Collection</title>
+            <link>https://notes.zachmanson.com/tristram-oaten-on-data-collection</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>I do not collect your data. Stop sending it to me.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://noboilerplate.org/">Tristram Oaten</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/tristram-oaten-on-data-collection</guid>
+            <pubDate>2024-02-28</pubDate>
+        </item>
+        
+        <item>
+            <title>Xe Iaso on Hacks</title>
+            <link>https://notes.zachmanson.com/xe-iaso-on-hacks</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>This is a <em>hack</em> and if you use it and something breaks, you get to keep both pieces.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://xeiaso.net/notes/2024/cronchgif/">Xe Iaso</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/xe-iaso-on-hacks</guid>
+            <pubDate>2024-06-20</pubDate>
+        </item>
+        
+        <item>
+            <title>Fireship on Web Scraping</title>
+            <link>https://notes.zachmanson.com/fireship-on-web-scraping</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Web scraping is an absolutely despicable practice and if you want to learn how to do it at an industrial scale check out this video on my second channel</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://www.youtube.com/watch?v=3AS5x05XIyg">Fireship</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/fireship-on-web-scraping</guid>
+            <pubDate>2023-10-24</pubDate>
+        </item>
+        
+        <item>
+            <title>Marwan Makhoul on Poetry</title>
+            <link>https://notes.zachmanson.com/marwan-makhoul-on-poetry</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>In order for me to write poetry that isn’t political
+I must listen to the birds
+and in order to hear the birds
+the warplanes must be silent.</p>
+</blockquote>
+<p><cite class="standalone">Marwan Makhoul</cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/marwan-makhoul-on-poetry</guid>
+            <pubDate>2026-03-29</pubDate>
+        </item>
+        
+        <item>
+            <title>Frederik Pohl on Science Fiction</title>
+            <link>https://notes.zachmanson.com/frederik-pohl-on-science-fiction</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>A good science fiction story should be able to predict not the automobile but the traffic jam</p>
+</blockquote>
+<p><cite class="standalone">Frederik Pohl</cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/frederik-pohl-on-science-fiction</guid>
+            <pubDate>2023-11-19</pubDate>
+        </item>
+        
+        <item>
+            <title>Mark Carney on Nostalgia</title>
+            <link>https://notes.zachmanson.com/mark-carney-on-nostalgia</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Nostalgia is not a strategy</p>
+</blockquote>
+<p><cite class="standalone">Mark Carney</cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/mark-carney-on-nostalgia</guid>
+            <pubDate>2026-01-20</pubDate>
+        </item>
+        
+        <item>
+            <title>Christo Buschek on Algorithms</title>
+            <link>https://notes.zachmanson.com/christo-buschek-on-algorithms</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>First, that algorithmic curation commonly depends on numeric thresholds which are very often poorly understood.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://knowingmachines.org/models-all-the-way#section2">Christo Buschek &amp; Jer Thorp</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/christo-buschek-on-algorithms</guid>
+            <pubDate>2024-06-13</pubDate>
+        </item>
+        
+        <item>
+            <title>Cory Doctorow on Copyright</title>
+            <link>https://notes.zachmanson.com/cory-doctorow-on-copyright</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Whenever a new technology has disrupted copyright, we've changed copyright. Copyright isn't an ethical proposition, it's a utlititarian one. There's nothing <em>moral</em> about paying a composer tuppence for the piano-roll rights, there's nothing <em>immoral</em> about not paying Hollywood for the right to videotape a movie off your TV. They're just the best way of balancing out so that people's physical property rights in their VCRs and phonographs are respected and so that creators get enough of a dangling carrot to go on making shows and music and books and paintings.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://craphound.com/msftdrm.txt">Cory Doctorow</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/cory-doctorow-on-copyright</guid>
+            <pubDate>2024-06-20</pubDate>
+        </item>
+        
+        <item>
+            <title>IlllllllllllllI on NFTs</title>
+            <link>https://notes.zachmanson.com/illllllllllllli-on-nfts</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>It's easy to say with hindsight that NFTs are a stupid scam but it was also easy at the beginning to say that and through the middle too</p>
+</blockquote>
+<p><cite class="standalone">@IlllllllllllllI <a href="https://twitter.com/IlllllllllllllI/status/1536632345972944897">on 2022-06-14</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/illllllllllllli-on-nfts</guid>
+            <pubDate>2023-10-24</pubDate>
+        </item>
+        
+        <item>
+            <title>Jes Olsen on Fandom</title>
+            <link>https://notes.zachmanson.com/jes-olsen-on-fandom</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>fandom is a wiki website (allegedly)</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://j3s.sh/thought/stop-using-fandom.html">Jes Olsen</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/jes-olsen-on-fandom</guid>
+            <pubDate>2024-08-02</pubDate>
+        </item>
+        
+        <item>
+            <title>Xe Iaso on AI</title>
+            <link>https://notes.zachmanson.com/xe-iaso-on-ai</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Linear algebra churned through the sand in a remote data center</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://xeiaso.net/blog/sine/">Xe Iaso</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/xe-iaso-on-ai</guid>
+            <pubDate>2024-01-24</pubDate>
+        </item>
+        
+        <item>
+            <title>Lu Wilson on Software Craft</title>
+            <link>https://notes.zachmanson.com/lu-wilson-on-software-craft</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Software isn’t a thing, it’s a craft. A chair maker doesn’t develop a single chair for years on end. They make more and more chairs, better chairs. And they don’t pass on <em>chairs</em> to future generations. They pass on skills and knowledge and experience and expertise. We should see software the same way.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://www.todepond.com/wikiblogarden/my-wikiblogarden/pictures/serious/">Lu Wilson</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/lu-wilson-on-software-craft</guid>
+            <pubDate>2024-05-10</pubDate>
+        </item>
+        
+        <item>
+            <title>John S Russel on Accountability</title>
+            <link>https://notes.zachmanson.com/john-s-russel-on-accountability</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>A billionaire may never be held accountable. Therefore, a billionaire must never make a management decision.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://social.jsr.com/@jsr/112398571801354404">John S Russel</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/john-s-russel-on-accountability</guid>
+            <pubDate>2024-10-30</pubDate>
+        </item>
+        
+        <item>
+            <title>James Somers on Creative Ruts</title>
+            <link>https://notes.zachmanson.com/james-somers-on-creative-ruts</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Everyone falls into creative ruts, but two people rarely do so at the same time.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://www.newyorker.com/magazine/2018/12/10/the-friendship-that-made-google-huge">James Somers</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/james-somers-on-creative-ruts</guid>
             <pubDate>2024-04-23</pubDate>
         </item>
         
         <item>
-            <title>Bill Wurtz on Happiness</title>
-            <link>https://notes.zachmanson.com/bill-wurtz-on-happiness</link>
+            <title>Virginia Postrel on Technology</title>
+            <link>https://notes.zachmanson.com/virginia-postrel-on-technology</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>yes, i understand you can't buy happiness. but can you sell it</p>
+<p>Any sufficiently familiar technology is indistinguishable from nature.</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://billwurtz.com/note201410032021.html">Bill Wurtz</a></cite></p>]]>
+<p><cite class="standalone">Virginia Postrel</cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/bill-wurtz-on-happiness</guid>
-            <pubDate>2024-04-27</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/virginia-postrel-on-technology</guid>
+            <pubDate>2025-12-15</pubDate>
+        </item>
+        
+        <item>
+            <title>MrHippoPants on Myki Privacy</title>
+            <link>https://notes.zachmanson.com/mrhippopants-on-myki-privacy</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Tap and Go works the same way Myki does<br />
+Card tells reader “I’m card 6742069”<br />
+Reader tells server “card 6742069 just touched on at South Kensington at 4:20PM”<br />
+Inspector wants to check ticket, ticket tells handheld scanner “I’m card 6742069”<br />
+Handheld scanner asks server “when did card 6742069 touch on?”<br />
+Server responds<br />
+Ticket inspector arrests you for feet on seats<br />
+Your family leave you<br />
+You die in prison</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://www.reddit.com/r/melbourne/comments/1ubbzho/tap_and_go_arrives_on_trams/osv9zur/">MrHippoPants</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/mrhippopants-on-myki-privacy</guid>
+            <pubDate>2026-06-22</pubDate>
         </item>
         
         <item>
@@ -800,298 +1517,131 @@ More on this on the <a href="https://creativecommons.org/2004/04/05/woodyguthrie
         </item>
         
         <item>
-            <title>mcdonje on Ad Budgets</title>
-            <link>https://notes.zachmanson.com/mcdonje-on-ad-budgets</link>
+            <title>Xe Iaso on Free Code</title>
+            <link>https://notes.zachmanson.com/xe-iaso-on-free-code</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>Society tends to normalize things that have ad budgets.</p>
+<p>This code is free as in mattress. If you decide to use it, it's your problem.</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=45250455">mcdonje</a></cite></p>]]>
+<p><cite class="standalone"><a href="https://xeiaso.net/blog/GraphicalEmoji">Xe Iaso</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/mcdonje-on-ad-budgets</guid>
-            <pubDate>2026-03-24</pubDate>
-        </item>
-        
-        <item>
-            <title>Tom Delalande on Go</title>
-            <link>https://notes.zachmanson.com/tom-delalande-on-go</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Go is not much fun but that is by design</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://youtu.be/-MbTj8DGOP0?si=KzoWGuRY2SIMw5yu&amp;t=181">Tom Delalande</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/tom-delalande-on-go</guid>
-            <pubDate>2024-08-08</pubDate>
-        </item>
-        
-        <item>
-            <title>Someone on Bridge Engineering</title>
-            <link>https://notes.zachmanson.com/someone-on-bridge-engineering</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Any idiot can build a bridge that stands, but it takes an engineer to build a bridge that barely stands.</p>
-</blockquote>
-<p><cite class="standalone">couldn't actually find a good source, <a href="https://notes.zachmanson.com/////Any%20fool%20can%20build%20a%20bridge%20that%20stands.%20It%20takes%20an%20engineer%20to%20build%20a%20bridge%20that%20barely%20stands">first saw here</a> but appears in many other places</cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/someone-on-bridge-engineering</guid>
-            <pubDate>2024-05-13</pubDate>
-        </item>
-        
-        <item>
-            <title>IlllllllllllllI on NFTs</title>
-            <link>https://notes.zachmanson.com/illllllllllllli-on-nfts</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>It's easy to say with hindsight that NFTs are a stupid scam but it was also easy at the beginning to say that and through the middle too</p>
-</blockquote>
-<p><cite class="standalone">@IlllllllllllllI <a href="https://twitter.com/IlllllllllllllI/status/1536632345972944897">on 2022-06-14</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/illllllllllllli-on-nfts</guid>
+            <guid isPermaLink="false">https://notes.zachmanson.com/xe-iaso-on-free-code</guid>
             <pubDate>2023-10-24</pubDate>
         </item>
         
         <item>
-            <title>James Somers on Creative Ruts</title>
-            <link>https://notes.zachmanson.com/james-somers-on-creative-ruts</link>
+            <title>Dijkstra on His Head</title>
+            <link>https://notes.zachmanson.com/dijkstra-on-his-head</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>Everyone falls into creative ruts, but two people rarely do so at the same time.</p>
+<p>as a slow-witted human being I have a very small head</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://www.newyorker.com/magazine/2018/12/10/the-friendship-that-made-google-huge">James Somers</a></cite></p>]]>
+<p><cite class="standalone">Prof.dr. Edsger W. Dijkstra, <em>Notes on Structured Programming</em> Ch. 1</cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/james-somers-on-creative-ruts</guid>
+            <guid isPermaLink="false">https://notes.zachmanson.com/dijkstra-on-his-head</guid>
+            <pubDate>2024-04-30</pubDate>
+        </item>
+        
+        <item>
+            <title>Tom M on Entropy</title>
+            <link>https://notes.zachmanson.com/tom-m-on-entropy</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Tom M: Entropy's #1 enemy</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://tmewett.com/">Tom M</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/tom-m-on-entropy</guid>
+            <pubDate>2024-08-02</pubDate>
+        </item>
+        
+        <item>
+            <title>Steph Ango on Constraints</title>
+            <link>https://notes.zachmanson.com/steph-ango-on-constraints</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Collect constraints you enjoy. Unusual constraints make things more fun. You can always change them later. This is <em>your</em> style, after all. It’s not a life commitment, it’s just the way you do things. For now.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://stephango.com/style">Steph Ango</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/steph-ango-on-constraints</guid>
+            <pubDate>2024-03-11</pubDate>
+        </item>
+        
+        <item>
+            <title>Alan Kay on Reinvention</title>
+            <link>https://notes.zachmanson.com/alan-kay-on-reinvention</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>It used to be the case that people were admonished to "not re-invent the wheel". We now live in an age that spends a lot of time "reinventing the flat tire!"</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=11941199">Alan Kay</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/alan-kay-on-reinvention</guid>
+            <pubDate>2024-08-26</pubDate>
+        </item>
+        
+        <item>
+            <title>randomtako on Study Break</title>
+            <link>https://notes.zachmanson.com/randomtako-on-study-break</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>its study break, and just like its name suggests we study till we break</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://discord.com/channels/586127025228742656/586575812455563269/1223648851475304479">@randomtako.</a> on <a href="https://notes.zachmanson.com/uwa-computer-science">UWA Computer Science</a> discord</cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/randomtako-on-study-break</guid>
+            <pubDate>2024-03-31</pubDate>
+        </item>
+        
+        <item>
+            <title>Joel Franusic's Friend on LLMs</title>
+            <link>https://notes.zachmanson.com/joel-franusics-friend-on-llms</link>
+            
+            <description>Joël Franušić's Friend on LLMs</description>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>LLMs give you an extra arm and most people use it to jerk themselves off</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://mastodon.social/@jpf/116734916023228712">Joël Franušić's friend</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/joel-franusics-friend-on-llms</guid>
+            <pubDate>2026-06-16</pubDate>
+        </item>
+        
+        <item>
+            <title>Amazon Interview Candidate on C++</title>
+            <link>https://notes.zachmanson.com/amazon-interview-candidate-on-c++</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>When C++ is your hammer, everything starts to look like your thumb.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://sites.google.com/site/steveyegge2/choosing-languages?authuser=0">Amazon Interview Candidate</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/amazon-interview-candidate-on-c++</guid>
+            <pubDate>2024-07-03</pubDate>
+        </item>
+        
+        <item>
+            <title>Paul Ford on English Majors</title>
+            <link>https://notes.zachmanson.com/paul-ford-on-english-majors</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>I am an English major to death. (You know us not by what we’ve read but by what we are ashamed not to have read.)</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://www.wired.com/story/own-future-artificial-intelligence-read-shakespeare/">Paul Ford</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/paul-ford-on-english-majors</guid>
             <pubDate>2024-04-23</pubDate>
-        </item>
-        
-        <item>
-            <title>Merlin Mann on Blogging</title>
-            <link>https://notes.zachmanson.com/merlin-mann-on-blogging</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Blog posts are written, not defecated</p>
-</blockquote>
-<p><cite class="standalone"><a href="http://www.43folders.com/2008/08/19/good-blogs">Merlin Mann</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/merlin-mann-on-blogging</guid>
-            <pubDate>2024-07-29</pubDate>
-        </item>
-        
-        <item>
-            <title>Barnaby Keene on TypeScript</title>
-            <link>https://notes.zachmanson.com/barnaby-keene-on-typescript</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>TypeScript is an entire language backed by a trillion-dollar corporation with the sole purpose of reducing the likelihood of undefined is not a function popping up in error messages.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://southcla.ws/sql">Barnaby Keene</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/barnaby-keene-on-typescript</guid>
-            <pubDate>2024-09-04</pubDate>
-        </item>
-        
-        <item>
-            <title>Michael B. Paulson on Git</title>
-            <link>https://notes.zachmanson.com/michael-b.-paulson-on-git</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>I know I'm the last committer, I committed atrocities</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://www.youtube.com/watch?v=odhjF1obcUo">Michael B. Paulson</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/michael-b.-paulson-on-git</guid>
-            <pubDate>2024-09-17</pubDate>
-        </item>
-        
-        <item>
-            <title>John Green on Time</title>
-            <link>https://notes.zachmanson.com/john-green-on-time</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Long week, long month, long life</p>
-</blockquote>
-<p><cite class="standalone">John Green/David Leviathan, Will Grayson, Will Grayson</cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/john-green-on-time</guid>
-            <pubDate>2025-10-08</pubDate>
-        </item>
-        
-        <item>
-            <title>Someone on Half-Assing</title>
-            <link>https://notes.zachmanson.com/someone-on-half-assing</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>It's okay to half-ass something, when all you need is half an ass</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=40557662">Who knows</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/someone-on-half-assing</guid>
-            <pubDate>2024-06-03</pubDate>
-        </item>
-        
-        <item>
-            <title>CGP Grey on Podcasts</title>
-            <link>https://notes.zachmanson.com/cgp-grey-on-podcasts</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>A podcast has to eat something, there's basically the choices of what a podcast can eat. a podcast can eat the news, the podcast can eat guests, or the podcast can eat the lives of the hosts.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://relay.fm/cortex/167">CGP Grey</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/cgp-grey-on-podcasts</guid>
-            <pubDate>2026-07-01</pubDate>
-        </item>
-        
-        <item>
-            <title>Ludic on Software Engineers</title>
-            <link>https://notes.zachmanson.com/ludic-on-software-engineers</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Code is, ultimately, characters on a screen, and software engineers do nothing but hammer that code into shapes that spark Joy and Money.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://ludic.mataroa.blog/blog/get-me-out-of-data-hell/">Ludic</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/ludic-on-software-engineers</guid>
-            <pubDate>2025-01-16</pubDate>
-        </item>
-        
-        <item>
-            <title>Neal Stephenson on Command Line</title>
-            <link>https://notes.zachmanson.com/neal-stephenson-on-command-line</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>As if I were a self-styled Moses, coming down from the mountain all alone, carrying the stone tablets bearing the Ten Commandments carved in immutable stone--the original command-line interface</p>
-</blockquote>
-<p><cite class="standalone">Neal Stephenson, <a href="https://notes.zachmanson.com/in-the-beginning-was-the-command-line">In the Beginning was the Command Line</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/neal-stephenson-on-command-line</guid>
-            <pubDate>2024-07-29</pubDate>
-        </item>
-        
-        <item>
-            <title>Steve Yegge on Life Raft</title>
-            <link>https://notes.zachmanson.com/steve-yegge-on-life-raft</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>I totally get that there are amazing people out there who would give me plenty of runway, but what I’m building toward isn’t financially defensible. It’s not a moat. It’s a life raft.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://steve-yegge.medium.com/steveys-birthday-blog-34f437139cb5">Steve Yegge</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/steve-yegge-on-life-raft</guid>
-            <pubDate>2026-01-26</pubDate>
-        </item>
-        
-        <item>
-            <title>vasco on Dating Apps</title>
-            <link>https://notes.zachmanson.com/vasco-on-dating-apps</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Nothing will make a nerd a communist faster than getting a taste of real life on dating apps.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=444786591">vasco</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/vasco-on-dating-apps</guid>
-            <pubDate>2025-07-06</pubDate>
-        </item>
-        
-        <item>
-            <title>seph on Coursework</title>
-            <link>https://notes.zachmanson.com/seph-on-coursework</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Yea as long as you do all the work and watch all the lectures you’ll be chilling</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://discord.com/channels/586127025228742656/586575812455563269/783525026573451334">seph</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/seph-on-coursework</guid>
-            <pubDate>2024-04-08</pubDate>
-        </item>
-        
-        <item>
-            <title>Fernando Borretti on Useless Tools</title>
-            <link>https://notes.zachmanson.com/fernando-borretti-on-useless-tools</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Sometimes, tools don’t move the needle because there’s no needle to move.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://borretti.me/article/human-bottlenecks">Fernando Borretti</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/fernando-borretti-on-useless-tools</guid>
-            <pubDate>2026-05-28</pubDate>
-        </item>
-        
-        <item>
-            <title>Xe Iaso on Xeact</title>
-            <link>https://notes.zachmanson.com/xe-iaso-on-xeact</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Xeact remains open-source software to this day where it is used by thousands of milli-developers.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://pony.social/@cadey/111808337595814449">Xe Iaso</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/xe-iaso-on-xeact</guid>
-            <pubDate>2024-01-24</pubDate>
-        </item>
-        
-        <item>
-            <title>IBM on Accountability</title>
-            <link>https://notes.zachmanson.com/ibm-on-accountability</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>A COMPUTER CAN NEVER BE HELD ACCOUNTABLE</p>
-<p>THEREFORE A COMPUTER MUST NEVER MAKE A MANAGEMENT DECISION</p>
-</blockquote>
-<p><cite class="standalone">Internal IBM Presentation 1979</cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/ibm-on-accountability</guid>
-            <pubDate>2024-02-18</pubDate>
-        </item>
-        
-        <item>
-            <title>Skylar Hill on Engineering</title>
-            <link>https://notes.zachmanson.com/skylar-hill-on-engineering</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Engineering is the art of finding the solution that only sucks in ways that don't matter</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://elk.zone/solarpunk.moe/@stellarskylark/112039397451154354">Skylar Hill</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/skylar-hill-on-engineering</guid>
-            <pubDate>2024-03-04</pubDate>
-        </item>
-        
-        <item>
-            <title>Someone on Testing</title>
-            <link>https://notes.zachmanson.com/someone-on-testing</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Test what you detest</p>
-</blockquote>
-<p><cite class="standalone">ughh idk <a href="https://www.youtube.com/watch?v=MbU-PKukdMw">this video</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/someone-on-testing</guid>
-            <pubDate>2024-05-27</pubDate>
         </item>
         
         <item>
@@ -1123,690 +1673,45 @@ More on this on the <a href="https://creativecommons.org/2004/04/05/woodyguthrie
         </item>
         
         <item>
-            <title>jl6 on ISO 8601</title>
-            <link>https://notes.zachmanson.com/jl6-on-iso-8601</link>
+            <title>G. K. Chesterton on Advertising</title>
+            <link>https://notes.zachmanson.com/g.-k.-chesterton-on-advertising</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>Treating Sunday as the first day of the week is a religious tradition going back thousands of years.</p>
-<p>However, I know only one god, <em>and</em> his name is ISO 8601.</p>
+<p>It is really not so repulsive to see the poor asking for money as to see the rich asking for more money.  And advertisement is the rich asking for more money.  A man would be annoyed if he found himself in a mob of millionaires, all holding out their silk hats for a penny; or all shouting with one voice, “Give me money.” Yet advertisement does really assault the eye very much as such a shout would assault the ear.  “Budge’s Boots are the Best” simply means “Give me money”; “Use Seraphic Soap” simply means “Give me money.” It is a complete mistake to suppose that common people make our towns commonplace, with unsightly things like advertisements.  Most of those whose wares are thus placarded everywhere are very wealthy gentlemen with coronets and country seats, men who are probably very particular about the artistic adornment of their own homes.  They disfigure their towns in order to decorate their houses.</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=38149243">jl6</a></cite></p>]]>
+<p><cite class="standalone">G. K. Chesterton, <a href="http://www.gkc.org.uk/gkc/books/GKC_New_Jerusalem.html">The New Jerusalem</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/jl6-on-iso-8601</guid>
-            <pubDate>2023-11-07</pubDate>
-        </item>
-        
-        <item>
-            <title>Dijkstra on Incomplete Notes</title>
-            <link>https://notes.zachmanson.com/dijkstra-on-incomplete-notes</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>For another thing, as a document this is very incomplete: I am only too aware of the fact that it ends in mid-air. Yet I have decided to have these notes duplicated, besides some practical considerations mainly to show what I have thought to those who expressed interest in it or to those whose comments I would welcome.</p>
-</blockquote>
-<p><cite class="standalone">Prof.dr. Edsger W. Dijkstra, Introduction to <em>Notes on Structured Programming</em></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/dijkstra-on-incomplete-notes</guid>
-            <pubDate>2024-04-27</pubDate>
-        </item>
-        
-        <item>
-            <title>Afterthoughts on Crisis</title>
-            <link>https://notes.zachmanson.com/afterthoughts-on-crisis</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Existential crisis aren't funny but aren't they... comedy flavoured?</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://www.youtube.com/watch?v=LhZxoKNopJQ">Afterthoughts</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/afterthoughts-on-crisis</guid>
-            <pubDate>2024-06-25</pubDate>
-        </item>
-        
-        <item>
-            <title>Xe Iaso on Microservices</title>
-            <link>https://notes.zachmanson.com/xe-iaso-on-microservices</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>And these kind of conflicts is how you end up with the microservices pattern. Your backend gets carved up into parts maintained by different teams. In an ideal spherical cow reading of microservices, every microservice has a well-defined API that it uses to communicate with other services to help a user request turn into a response. Does this happen? Scholars continue to debate to this day.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://xeiaso.net/talks/2024/shashin/">Xe Iaso</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/xe-iaso-on-microservices</guid>
-            <pubDate>2024-05-06</pubDate>
-        </item>
-        
-        <item>
-            <title>Fireship on Web Scraping</title>
-            <link>https://notes.zachmanson.com/fireship-on-web-scraping</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Web scraping is an absolutely despicable practice and if you want to learn how to do it at an industrial scale check out this video on my second channel</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://www.youtube.com/watch?v=3AS5x05XIyg">Fireship</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/fireship-on-web-scraping</guid>
+            <guid isPermaLink="false">https://notes.zachmanson.com/g.-k.-chesterton-on-advertising</guid>
             <pubDate>2023-10-24</pubDate>
         </item>
         
         <item>
-            <title>PewDiePie on Content Creation</title>
-            <link>https://notes.zachmanson.com/pewdiepie-on-content-creation</link>
+            <title>rplnt on Jira</title>
+            <link>https://notes.zachmanson.com/rplnt-on-jira</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>Create with no intent, consume with no intent, congratulations, you have industrialized nothingness.</p>
+<p>I believe Apple silicon has Jira coprocessor</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://youtu.be/5nL-Eq1lpDU?si=wQxgKkthvg2gFdp7">PewDiePie</a></cite></p>]]>
+<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=42756594">rplnt</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/pewdiepie-on-content-creation</guid>
-            <pubDate>2026-03-24</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/rplnt-on-jira</guid>
+            <pubDate>2025-01-22</pubDate>
         </item>
         
         <item>
-            <title>Kate Temkin on Security Budgets</title>
-            <link>https://notes.zachmanson.com/kate-temkin-on-security-budgets</link>
+            <title>James Somers on Computing Layers</title>
+            <link>https://notes.zachmanson.com/james-somers-on-computing-layers</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>security budget:</p>
-<ul>
-<li>$1 looking into languages that don’t trivially buffer overflow  </li>
-<li>50¢ looking into enabling exploit mitigation features  </li>
-<li>1¢ research into things like compile-time diversity</li>
-<li>$10M hiring a disgraced CISO from a FAANG company  </li>
-<li>$100 hiring a red team to ignore feedback from</li>
-</ul>
-<p>someone who is good at the economy please help me. my enterprise platform is dying</p>
+<p>The world of computing, I came to learn, is vast but organized almost geologically, as if deposited in layers</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://chaos.social/@ktemkin/111876050821938340">Kate Temkin</a></cite></p>]]>
+<p><cite class="standalone"><a href="https://www.newyorker.com/magazine/2023/11/20/a-coder-considers-the-waning-days-of-the-craft">James Somers</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/kate-temkin-on-security-budgets</guid>
-            <pubDate>2024-02-05</pubDate>
-        </item>
-        
-        <item>
-            <title>Sarai Rosenberg on Seniority</title>
-            <link>https://notes.zachmanson.com/sarai-rosenberg-on-seniority</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Speaking as the most senior member of my team, nothing useful starts with that phrase</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://infosec.exchange/@saraislet">Sarai Rosenberg</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/sarai-rosenberg-on-seniority</guid>
-            <pubDate>2024-03-05</pubDate>
-        </item>
-        
-        <item>
-            <title>John Green on Algorithms</title>
-            <link>https://notes.zachmanson.com/john-green-on-algorithms</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Algorithms are human-directed and humans are algorithm-directed in ways we do not fully understand.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://youtu.be/kqPZg4gULaQ">John Green</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/john-green-on-algorithms</guid>
-            <pubDate>2024-03-05</pubDate>
-        </item>
-        
-        <item>
-            <title>Matt Holt on Open Source</title>
-            <link>https://notes.zachmanson.com/matt-holt-on-open-source</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Users need open source projects, but open source projects do not need users.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://matt.life/writing/the-asymmetry-of-open-source">Matt Holt</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/matt-holt-on-open-source</guid>
-            <pubDate>2023-10-24</pubDate>
-        </item>
-        
-        <item>
-            <title>Steph Ango on Plain Text</title>
-            <link>https://notes.zachmanson.com/steph-ango-on-plain-text</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>If you want your writing to still be readable on a computer from the 2060s or 2160s, it’s important that your notes can be read on a computer from the 1960s.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://notes.zachmanson.com/file-over-app">Steph Ango</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/steph-ango-on-plain-text</guid>
-            <pubDate>2024-03-11</pubDate>
-        </item>
-        
-        <item>
-            <title>Randall Munroe on Success</title>
-            <link>https://notes.zachmanson.com/randall-munroe-on-success</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>I never trust anyone who's more excited about success than about doing the thing they want to be successful at.</p>
-</blockquote>
-<p><cite class="standalone"><a href="http://xkcd.com/874/">Randall Munroe</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/randall-munroe-on-success</guid>
-            <pubDate>2023-10-24</pubDate>
-        </item>
-        
-        <item>
-            <title>Deborah O'Neill on Deloitte</title>
-            <link>https://notes.zachmanson.com/deborah-oneill-on-deloitte</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Deloitte has a human intelligence problem</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://www.theguardian.com/australia-news/2025/oct/06/deloitte-to-pay-money-back-to-albanese-government-after-using-ai-in-440000-report">Deborah O'Neill</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/deborah-oneill-on-deloitte</guid>
-            <pubDate>2025-10-07</pubDate>
-        </item>
-        
-        <item>
-            <title>Tristram Oaten on Stealing Art</title>
-            <link>https://notes.zachmanson.com/tristram-oaten-on-stealing-art</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Don't let OpenAI steal the art for you, steal the damn work for yourself</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://www.youtube.com/watch?v=kul0z3OTmVM&amp;t=306s">Tristram Oaten</a> <a href="https://www.youtube.com/watch?v=qjPAWy_2FL0&amp;t=306s">original (privated) video</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/tristram-oaten-on-stealing-art</guid>
-            <pubDate>2024-09-05</pubDate>
-        </item>
-        
-        <item>
-            <title>Paul Ford on Buddhism</title>
-            <link>https://notes.zachmanson.com/paul-ford-on-buddhism</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>a physicist stares at the ceiling while an undergraduate, high off internet forums, explains that Buddhism anticipated quantum theory</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://www.wired.com/story/own-future-artificial-intelligence-read-shakespeare/">Paul Ford</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/paul-ford-on-buddhism</guid>
-            <pubDate>2024-04-23</pubDate>
-        </item>
-        
-        <item>
-            <title>Andrew Moses on Friends</title>
-            <link>https://notes.zachmanson.com/andrew-moses-on-friends</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>However, I suppose they caught on to the unpatchable strategy of Having Friends</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://www.amoses.dev/blog/wifi-location/">Andrew Moses</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/andrew-moses-on-friends</guid>
-            <pubDate>2025-11-20</pubDate>
-        </item>
-        
-        <item>
-            <title>Alex Pagano on Aging</title>
-            <link>https://notes.zachmanson.com/alex-pagano-on-aging</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>when you age, you start realising that everyone doesn’t necessarily have their shit together like you thought they did as a kid, but they just become better and better at hiding it until the closet becomes full.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://achillesheel.substack.com/p/be-adult">Alex Pagano</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/alex-pagano-on-aging</guid>
-            <pubDate>2025-08-04</pubDate>
-        </item>
-        
-        <item>
-            <title>Cory Doctorow on Enshittification</title>
-            <link>https://notes.zachmanson.com/cory-doctorow-on-enshittification</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Here is how platforms die: first, they are good to their users; then they abuse their users to make things better for their business customers; finally, they abuse those business customers to claw back all the value for themselves. Then, they die.</p>
-</blockquote>
-<p><cite class="standalone">Cory Doctorow, <a href="https://notes.zachmanson.com/tiktoks-enshittification">TikTok's Enshittification</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/cory-doctorow-on-enshittification</guid>
-            <pubDate>2023-10-24</pubDate>
-        </item>
-        
-        <item>
-            <title>Cory Doctorow on Copyright</title>
-            <link>https://notes.zachmanson.com/cory-doctorow-on-copyright</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Whenever a new technology has disrupted copyright, we've changed copyright. Copyright isn't an ethical proposition, it's a utlititarian one. There's nothing <em>moral</em> about paying a composer tuppence for the piano-roll rights, there's nothing <em>immoral</em> about not paying Hollywood for the right to videotape a movie off your TV. They're just the best way of balancing out so that people's physical property rights in their VCRs and phonographs are respected and so that creators get enough of a dangling carrot to go on making shows and music and books and paintings.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://craphound.com/msftdrm.txt">Cory Doctorow</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/cory-doctorow-on-copyright</guid>
-            <pubDate>2024-06-20</pubDate>
-        </item>
-        
-        <item>
-            <title>Richard Feynman on Computers</title>
-            <link>https://notes.zachmanson.com/richard-feynman-on-computers</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>The computer disease that anybody who works with computers now knows about. It's a very serious disease and it interferes completely with the work and it was a serious problem we were trying to do. The disease with computers is that you play with them.</p>
-</blockquote>
-<p><cite class="standalone">Richard Feynman, <a href="https://youtu.be/uY-u1qyRM5w?t=3100">Los Alamos from Below</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/richard-feynman-on-computers</guid>
-            <pubDate>2023-11-02</pubDate>
-        </item>
-        
-        <item>
-            <title>Tim Raymond on Advertising</title>
-            <link>https://notes.zachmanson.com/tim-raymond-on-advertising</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>If you have the disposable income to pay to remove advertising, you are exactly the market segment advertisers want to reach. They will always be willing to pay to outbid that segment’s own desire to not see ads.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=46193402">Tim Raymond</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/tim-raymond-on-advertising</guid>
-            <pubDate>2025-12-09</pubDate>
-        </item>
-        
-        <item>
-            <title>Hank Green on Knowledge</title>
-            <link>https://notes.zachmanson.com/hank-green-on-knowledge</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>It's not fun or possible to know everything which is why we are supposed to share the load. Share the load.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://youtube.com/watch?v=dqkvoFPj5zU">Hank Green</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/hank-green-on-knowledge</guid>
-            <pubDate>2025-02-03</pubDate>
-        </item>
-        
-        <item>
-            <title>varjag on XML</title>
-            <link>https://notes.zachmanson.com/varjag-on-xml</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>XML is dead, the millennials’ best kill so far.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://lobste.rs/s/czzkxt/how_is_computer_programming_different#c_gdznjc">varjag</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/varjag-on-xml</guid>
-            <pubDate>2024-05-29</pubDate>
-        </item>
-        
-        <item>
-            <title>Simon Heath on Chat Systems</title>
-            <link>https://notes.zachmanson.com/simon-heath-on-chat-systems</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>No for-profit company has managed to make a chat system pay for itself.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://wiki.alopex.li/ADiveIntoOpenChat">Simon Heath</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/simon-heath-on-chat-systems</guid>
-            <pubDate>2026-03-24</pubDate>
-        </item>
-        
-        <item>
-            <title>Michael Hayden on Metadata</title>
-            <link>https://notes.zachmanson.com/michael-hayden-on-metadata</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>We kill people based on metadata. But that's not what we do with this metadata</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://abcnews.go.com/blogs/headlines/2014/05/ex-nsa-chief-we-kill-people-based-on-metadata">Michael Hayden</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/michael-hayden-on-metadata</guid>
-            <pubDate>2023-10-24</pubDate>
-        </item>
-        
-        <item>
-            <title>Someone on Sydney Melbourne</title>
-            <link>https://notes.zachmanson.com/someone-on-sydney-melbourne</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>In Sydney everyone is pretending to be rich, in Melbourne everyone is pretending to be poor</p>
-</blockquote>
-<p><cite class="standalone">A guy I saw on instagram and then lost track of</cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/someone-on-sydney-melbourne</guid>
-            <pubDate>2026-02-26</pubDate>
-        </item>
-        
-        <item>
-            <title>Lu Wilson on Software Craft</title>
-            <link>https://notes.zachmanson.com/lu-wilson-on-software-craft</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Software isn’t a thing, it’s a craft. A chair maker doesn’t develop a single chair for years on end. They make more and more chairs, better chairs. And they don’t pass on <em>chairs</em> to future generations. They pass on skills and knowledge and experience and expertise. We should see software the same way.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://www.todepond.com/wikiblogarden/my-wikiblogarden/pictures/serious/">Lu Wilson</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/lu-wilson-on-software-craft</guid>
-            <pubDate>2024-05-10</pubDate>
-        </item>
-        
-        <item>
-            <title>Xe Iaso on Hacks</title>
-            <link>https://notes.zachmanson.com/xe-iaso-on-hacks</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>This is a <em>hack</em> and if you use it and something breaks, you get to keep both pieces.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://xeiaso.net/notes/2024/cronchgif/">Xe Iaso</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/xe-iaso-on-hacks</guid>
-            <pubDate>2024-06-20</pubDate>
-        </item>
-        
-        <item>
-            <title>Kurt Vonnegut on Writing</title>
-            <link>https://notes.zachmanson.com/kurt-vonnegut-on-writing</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Write to please just one person. If you open a window and make love to the world, so to speak, your story will get pneumonia.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://www.goodreads.com/quotes/231652-write-to-please-just-one-person-if-you-open-a">Kurt Vonnegut </a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/kurt-vonnegut-on-writing</guid>
-            <pubDate>2024-07-02</pubDate>
-        </item>
-        
-        <item>
-            <title>Zach Weinersmith on Inspiration</title>
-            <link>https://notes.zachmanson.com/zach-weinersmith-on-inspiration</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Inspiration can convince you something is interesting or worth doing, or from time to time get you some really good sentences. But by the time you're, say, 80% of the way into something, it's kind of like an old relationship</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://mastodon.social/@ZachWeinersmith/112329077414080736">Zach Weinersmith</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/zach-weinersmith-on-inspiration</guid>
-            <pubDate>2024-04-25</pubDate>
-        </item>
-        
-        <item>
-            <title>Paul Graham on Greatness</title>
-            <link>https://notes.zachmanson.com/paul-graham-on-greatness</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>I've found that people who are great at something are not so much convinced of their own greatness as mystified at why everyone else seems so incompetent.</p>
-</blockquote>
-<p><cite class="standalone"><a href="http://www.paulgraham.com/gh.html">Paul Graham</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/paul-graham-on-greatness</guid>
-            <pubDate>2023-10-24</pubDate>
-        </item>
-        
-        <item>
-            <title>Paul Ford on English Majors</title>
-            <link>https://notes.zachmanson.com/paul-ford-on-english-majors</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>I am an English major to death. (You know us not by what we’ve read but by what we are ashamed not to have read.)</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://www.wired.com/story/own-future-artificial-intelligence-read-shakespeare/">Paul Ford</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/paul-ford-on-english-majors</guid>
-            <pubDate>2024-04-23</pubDate>
-        </item>
-        
-        <item>
-            <title>Technoblade on Hell</title>
-            <link>https://notes.zachmanson.com/technoblade-on-hell</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Look I'm an atheist, but when God sends me to hell I want him to hesitate</p>
-</blockquote>
-<p><cite class="standalone">Technoblade</cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/technoblade-on-hell</guid>
-            <pubDate>2023-10-24</pubDate>
-        </item>
-        
-        <item>
-            <title>jacoblambda on CRUD</title>
-            <link>https://notes.zachmanson.com/jacoblambda-on-crud</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Your standard CRUD applications and web services are largely just a rigamarole of reciting the right incantation and duct taping bits together. It's immensely non-stimulating work when done properly.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=33887808">jacoblambda</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/jacoblambda-on-crud</guid>
-            <pubDate>2024-01-30</pubDate>
-        </item>
-        
-        <item>
-            <title>Philip Wadler on Trees</title>
-            <link>https://notes.zachmanson.com/philip-wadler-on-trees</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Joyce Kilmer and most computer scientists agree: there is no poem as lovely as a tree.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://homepages.inf.ed.ac.uk/wadler/papers/prettier/prettier.pdf">Philip Wadler</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/philip-wadler-on-trees</guid>
-            <pubDate>2024-02-20</pubDate>
-        </item>
-        
-        <item>
-            <title>Andy Bell on Startups</title>
-            <link>https://notes.zachmanson.com/andy-bell-on-startups</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Sure, if you’re based in San Francisco and you go to your adult daycare—sorry, I mean startup office</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://andy-bell.co.uk/speed-for-who/">Andy Bell</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/andy-bell-on-startups</guid>
-            <pubDate>2024-06-03</pubDate>
-        </item>
-        
-        <item>
-            <title>Marwan Makhoul on Poetry</title>
-            <link>https://notes.zachmanson.com/marwan-makhoul-on-poetry</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>In order for me to write poetry that isn’t political
-I must listen to the birds
-and in order to hear the birds
-the warplanes must be silent.</p>
-</blockquote>
-<p><cite class="standalone">Marwan Makhoul</cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/marwan-makhoul-on-poetry</guid>
-            <pubDate>2026-03-29</pubDate>
-        </item>
-        
-        <item>
-            <title>Justin Duke on Commitments</title>
-            <link>https://notes.zachmanson.com/justin-duke-on-commitments</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>I write the above in pencil, not pen</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://jmduke.com/posts/microblog/why-buttondown-isnt-oss/">Justin Duke</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/justin-duke-on-commitments</guid>
-            <pubDate>2024-08-27</pubDate>
-        </item>
-        
-        <item>
-            <title>James Somers on Biology</title>
-            <link>https://notes.zachmanson.com/james-somers-on-biology</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>I’ve never come across a subject so fractal in its complexity. It reminds me of computing that way. A day of programming might involve constructing an elaborate regular expression, investigating a file descriptor leak, debugging a race condition in the application you just wrote, and thinking through the interface of a module. Everywhere you look—the compiler, the shell, the CPU, the DOM—is an abstraction hiding lifetimes of work. Biology is like this, just much, much worse, because living systems aren’t intentionally designed.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://jsomers.net/i-should-have-loved-biology/">James Somers</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/james-somers-on-biology</guid>
-            <pubDate>2024-04-23</pubDate>
-        </item>
-        
-        <item>
-            <title>Savannah Brown on Limits</title>
-            <link>https://notes.zachmanson.com/savannah-brown-on-limits</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Miyazaki said he can feel it every day, the limit of his ability, and he was talking about getting older but I think that's something a lot of us have experienced. Personally I can feel myself straining against the limit of my ability as though it were a brick fucking wall and my true potential, whatever the hell that is, is some amorphous shape on the other side that I can't quite reach.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://youtu.be/jKV-cym4QfQ">Savannah Brown</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/savannah-brown-on-limits</guid>
-            <pubDate>2023-10-24</pubDate>
-        </item>
-        
-        <item>
-            <title>Xe Iaso on Free Code</title>
-            <link>https://notes.zachmanson.com/xe-iaso-on-free-code</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>This code is free as in mattress. If you decide to use it, it's your problem.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://xeiaso.net/blog/GraphicalEmoji">Xe Iaso</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/xe-iaso-on-free-code</guid>
-            <pubDate>2023-10-24</pubDate>
-        </item>
-        
-        <item>
-            <title>Paul Ford on Deadlines</title>
-            <link>https://notes.zachmanson.com/paul-ford-on-deadlines</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>The only technology that you need is deadlines.</p>
-</blockquote>
-<p><cite class="standalone">Paul Ford, <a href="https://aboard.com/podcast-episode-2-failure/">here</a> (allegedly, I came across the quote <a href="https://blog.jim-nielsen.com/2023/deadlines-as-technology/">here</a>)</cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/paul-ford-on-deadlines</guid>
-            <pubDate>2023-10-24</pubDate>
-        </item>
-        
-        <item>
-            <title>Sy Brand on Unix</title>
-            <link>https://notes.zachmanson.com/sy-brand-on-unix</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>In Unix everything is a file. Files are files, folders are files, disks are files, your keyboard is a file, your mouth is a file, the air is a file, you can't breathe, your file lungs fill with files and you try to scream but only files come out oh god Dennis how could you do thi</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://twitter.com/TartanLlama/status/1375045731644538882">Sy Brand</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/sy-brand-on-unix</guid>
-            <pubDate>2023-10-24</pubDate>
-        </item>
-        
-        <item>
-            <title>Clay Shirky on Children</title>
-            <link>https://notes.zachmanson.com/clay-shirky-on-children</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>Here's something four-year-olds know: Media that's targeted at you but doesn't include you may not be worth sitting still for.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://web.archive.org/web/20080604020024/http://www.herecomeseverybody.org/2008/04/looking-for-the-mouse.html">Clay Shirky</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/clay-shirky-on-children</guid>
-            <pubDate>2026-03-24</pubDate>
-        </item>
-        
-        <item>
-            <title>thepasswordis on Proof</title>
-            <link>https://notes.zachmanson.com/thepasswordis-on-proof</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>"Proof" for thousands of years was whatever was written down, and that was even easier to forge.</p>
-<p>There was a brief time (maybe 100 years at the most) where photos and videos were practically proof of something happening; that is coming to an end now, but that's just a regression to the mean, not new territory.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=39386870">thepasswordis</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/thepasswordis-on-proof</guid>
-            <pubDate>2024-02-15</pubDate>
-        </item>
-        
-        <item>
-            <title>mousethatroared on Orthography</title>
-            <link>https://notes.zachmanson.com/mousethatroared-on-orthography</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>I consider English orthography worthy of UNESCO protection</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=44485628">mousethatroared</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/mousethatroared-on-orthography</guid>
-            <pubDate>2025-07-07</pubDate>
-        </item>
-        
-        <item>
-            <title>Lu Wilson on Ideas</title>
-            <link>https://notes.zachmanson.com/lu-wilson-on-ideas</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>NO MORE IDEAS</p>
-<p>WE HAVE ENOUGH</p>
-<p>(merge them instead)</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://www.todepond.com/wikiblogarden/my-wikiblogarden/">Lu Wilson</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/lu-wilson-on-ideas</guid>
-            <pubDate>2023-11-12</pubDate>
-        </item>
-        
-        <item>
-            <title>ryandv on Information Diet</title>
-            <link>https://notes.zachmanson.com/ryandv-on-information-diet</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>"You are what you eat" also applies to information diets.</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=41794949">ryandv</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/ryandv-on-information-diet</guid>
-            <pubDate>2024-10-14</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/james-somers-on-computing-layers</guid>
+            <pubDate>2024-04-22</pubDate>
         </item>
         
         <item>
@@ -1829,59 +1734,73 @@ ALTAR TABLE</p>
         </item>
         
         <item>
-            <title>Tony Gilroy on Empathy</title>
-            <link>https://notes.zachmanson.com/tony-gilroy-on-empathy</link>
+            <title>Ludic on Software Engineers</title>
+            <link>https://notes.zachmanson.com/ludic-on-software-engineers</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>In general, empathy is how I feed my family</p>
+<p>Code is, ultimately, characters on a screen, and software engineers do nothing but hammer that code into shapes that spark Joy and Money.</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://youtu.be/9kUFBXrw0DU?si=jggs3F8Lr0b_YPu7&amp;t=1055">Tony Gilroy</a>, on empathy as a byproduct of creative work</cite></p>]]>
+<p><cite class="standalone"><a href="https://ludic.mataroa.blog/blog/get-me-out-of-data-hell/">Ludic</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/tony-gilroy-on-empathy</guid>
-            <pubDate>2025-06-09</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/ludic-on-software-engineers</guid>
+            <pubDate>2025-01-16</pubDate>
         </item>
         
         <item>
-            <title>Mike Playle on Experience</title>
-            <link>https://notes.zachmanson.com/mike-playle-on-experience</link>
+            <title>Tristram Oaten on Stealing Art</title>
+            <link>https://notes.zachmanson.com/tristram-oaten-on-stealing-art</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>You can tell quite a lot about a person by looking at what they choose to write in close proximity to the word "experience".</p>
+<p>Don't let OpenAI steal the art for you, steal the damn work for yourself</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://mastodon.social/@FenTiger/113364157137390517">Mike Playle</a></cite></p>]]>
+<p><cite class="standalone"><a href="https://www.youtube.com/watch?v=kul0z3OTmVM&amp;t=306s">Tristram Oaten</a> <a href="https://www.youtube.com/watch?v=qjPAWy_2FL0&amp;t=306s">original (privated) video</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/mike-playle-on-experience</guid>
-            <pubDate>2024-10-27</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/tristram-oaten-on-stealing-art</guid>
+            <pubDate>2024-09-05</pubDate>
         </item>
         
         <item>
-            <title>Steph Ango on Constraints</title>
-            <link>https://notes.zachmanson.com/steph-ango-on-constraints</link>
+            <title>Andrew Moses on Friends</title>
+            <link>https://notes.zachmanson.com/andrew-moses-on-friends</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>Collect constraints you enjoy. Unusual constraints make things more fun. You can always change them later. This is <em>your</em> style, after all. It’s not a life commitment, it’s just the way you do things. For now.</p>
+<p>However, I suppose they caught on to the unpatchable strategy of Having Friends</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://stephango.com/style">Steph Ango</a></cite></p>]]>
+<p><cite class="standalone"><a href="https://www.amoses.dev/blog/wifi-location/">Andrew Moses</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/steph-ango-on-constraints</guid>
-            <pubDate>2024-03-11</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/andrew-moses-on-friends</guid>
+            <pubDate>2025-11-20</pubDate>
         </item>
         
         <item>
-            <title>Wikipedia on Magic Numbers</title>
-            <link>https://notes.zachmanson.com/wikipedia-on-magic-numbers</link>
+            <title>Michael B. Paulson on Git</title>
+            <link>https://notes.zachmanson.com/michael-b.-paulson-on-git</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>In ISO C, file handles (of type FILE) cannot be safely copied as their addresses may be magic</p>
+<p>I know I'm the last committer, I committed atrocities</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://en.wikipedia.org/wiki/Magic_(programming)">Wikipedia - Magic (programming)</a></cite></p>]]>
+<p><cite class="standalone"><a href="https://www.youtube.com/watch?v=odhjF1obcUo">Michael B. Paulson</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/wikipedia-on-magic-numbers</guid>
-            <pubDate>2023-10-24</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/michael-b.-paulson-on-git</guid>
+            <pubDate>2024-09-17</pubDate>
+        </item>
+        
+        <item>
+            <title>Not Scott Smitelli on Renting</title>
+            <link>https://notes.zachmanson.com/not-scott-smitelli-on-renting</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Don’t rent your livelihood.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://www.scottsmitelli.com/articles/you-dont-have-to/">Not Scott Smitelli</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/not-scott-smitelli-on-renting</guid>
+            <pubDate>2026-03-02</pubDate>
         </item>
         
         <item>
@@ -1899,31 +1818,31 @@ ALTAR TABLE</p>
         </item>
         
         <item>
-            <title>Amazon Interview Candidate on C++</title>
-            <link>https://notes.zachmanson.com/amazon-interview-candidate-on-c++</link>
+            <title>Jennifer Lepp on Originality</title>
+            <link>https://notes.zachmanson.com/jennifer-lepp-on-originality</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>When C++ is your hammer, everything starts to look like your thumb.</p>
+<p>I think that’s the real danger, that you can do that and then nothing’s original anymore. Everything’s just a copy of something else.  The problem is, that’s what readers like.</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://sites.google.com/site/steveyegge2/choosing-languages?authuser=0">Amazon Interview Candidate</a></cite></p>]]>
+<p><cite class="standalone"><a href="https://www.theverge.com/c/23194235/ai-fiction-writing-amazon-kindle-sudowrite-jasper">Jennifer Lepp</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/amazon-interview-candidate-on-c++</guid>
-            <pubDate>2024-07-03</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/jennifer-lepp-on-originality</guid>
+            <pubDate>2023-11-06</pubDate>
         </item>
         
         <item>
-            <title>Elle Mundy on OOP</title>
-            <link>https://notes.zachmanson.com/elle-mundy-on-oop</link>
+            <title>An Executive on LinkedIn</title>
+            <link>https://notes.zachmanson.com/an-executive-on-linkedin</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>who called it object oriented programming and not class struggle</p>
+<p>I study on LinkedIn for up to two hours a day after work sometimes.</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://mastodon.world/@exchgr/110686507297491516">Elle Mundy</a></cite></p>]]>
+<p><cite class="standalone"><a href="https://ludic.mataroa.blog/blog/brainwash-an-executive-today/">An executive</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/elle-mundy-on-oop</guid>
-            <pubDate>2023-10-24</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/an-executive-on-linkedin</guid>
+            <pubDate>2025-01-16</pubDate>
         </item>
         
         <item>
@@ -1941,31 +1860,87 @@ ALTAR TABLE</p>
         </item>
         
         <item>
-            <title>Frederik Pohl on Science Fiction</title>
-            <link>https://notes.zachmanson.com/frederik-pohl-on-science-fiction</link>
+            <title>Xe Iaso on Evangelion</title>
+            <link>https://notes.zachmanson.com/xe-iaso-on-evangelion</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>A good science fiction story should be able to predict not the automobile but the traffic jam</p>
+<p>If you've never seen it before, Evangelion is a terribly depressing anime. It is the kind of thing that disturbs the comforted and comforts the disturbed.</p>
 </blockquote>
-<p><cite class="standalone">Frederik Pohl</cite></p>]]>
+<p><cite class="standalone"><a href="https://xeiaso.net/blog/2024/much-ado-about-nothing/">Xe Iaso</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/frederik-pohl-on-science-fiction</guid>
-            <pubDate>2023-11-19</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/xe-iaso-on-evangelion</guid>
+            <pubDate>2024-04-28</pubDate>
         </item>
         
         <item>
-            <title>G. K. Chesterton on Advertising</title>
-            <link>https://notes.zachmanson.com/g.-k.-chesterton-on-advertising</link>
+            <title>Someone on Senior Engineers</title>
+            <link>https://notes.zachmanson.com/someone-on-senior-engineers</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>It is really not so repulsive to see the poor asking for money as to see the rich asking for more money.  And advertisement is the rich asking for more money.  A man would be annoyed if he found himself in a mob of millionaires, all holding out their silk hats for a penny; or all shouting with one voice, “Give me money.” Yet advertisement does really assault the eye very much as such a shout would assault the ear.  “Budge’s Boots are the Best” simply means “Give me money”; “Use Seraphic Soap” simply means “Give me money.” It is a complete mistake to suppose that common people make our towns commonplace, with unsightly things like advertisements.  Most of those whose wares are thus placarded everywhere are very wealthy gentlemen with coronets and country seats, men who are probably very particular about the artistic adornment of their own homes.  They disfigure their towns in order to decorate their houses.</p>
+<p>The most important output of senior engineers is more senior engineers.</p>
 </blockquote>
-<p><cite class="standalone">G. K. Chesterton, <a href="http://www.gkc.org.uk/gkc/books/GKC_New_Jerusalem.html">The New Jerusalem</a></cite></p>]]>
+<p><cite class="standalone"><a href="https://twitter.com/timbray/status/1198367676353015808">Some guy Tim Bray overheard</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/g.-k.-chesterton-on-advertising</guid>
+            <guid isPermaLink="false">https://notes.zachmanson.com/someone-on-senior-engineers</guid>
+            <pubDate>2024-02-05</pubDate>
+        </item>
+        
+        <item>
+            <title>Kurt Vonnegut on Writing</title>
+            <link>https://notes.zachmanson.com/kurt-vonnegut-on-writing</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Write to please just one person. If you open a window and make love to the world, so to speak, your story will get pneumonia.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://www.goodreads.com/quotes/231652-write-to-please-just-one-person-if-you-open-a">Kurt Vonnegut </a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/kurt-vonnegut-on-writing</guid>
+            <pubDate>2024-07-02</pubDate>
+        </item>
+        
+        <item>
+            <title>Steve Yegge on Writing Blogs</title>
+            <link>https://notes.zachmanson.com/steve-yegge-on-writing-blogs</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Your soul might occasionally emit statements that are legally actionable,</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://sites.google.com/site/steveyegge2/you-should-write-blogs">Steve Yegge</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/steve-yegge-on-writing-blogs</guid>
+            <pubDate>2024-07-02</pubDate>
+        </item>
+        
+        <item>
+            <title>William Morris on Art</title>
+            <link>https://notes.zachmanson.com/william-morris-on-art</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>You can't have art without resistance in the materials</p>
+</blockquote>
+<p><cite class="standalone">William Morris</cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/william-morris-on-art</guid>
             <pubDate>2023-10-24</pubDate>
+        </item>
+        
+        <item>
+            <title>Sam Kriss on IoT</title>
+            <link>https://notes.zachmanson.com/sam-kriss-on-iot</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Remember the Internet of Things? Your own lightbulbs blinking out ads in seizure-inducing Morse code, your own coffee machine calling the police if you try to feed it some unlicensed beans.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://samkriss.substack.com/p/the-internet-is-already-over">Sam Kriss</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/sam-kriss-on-iot</guid>
+            <pubDate>2024-07-08</pubDate>
         </item>
         
         <item>
@@ -1983,62 +1958,87 @@ ALTAR TABLE</p>
         </item>
         
         <item>
-            <title>David Beasley on Lambda</title>
-            <link>https://notes.zachmanson.com/david-beasley-on-lambda</link>
+            <title>James Somers on Biology</title>
+            <link>https://notes.zachmanson.com/james-somers-on-biology</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p><code>lambda</code> has the benefit of making the code compact and foreboding. Plus, it prevents people from trying to add meaningful names, documentation or type-hints to the thing that is about to unfold.</p>
+<p>I’ve never come across a subject so fractal in its complexity. It reminds me of computing that way. A day of programming might involve constructing an elaborate regular expression, investigating a file descriptor leak, debugging a race condition in the application you just wrote, and thinking through the interface of a module. Everywhere you look—the compiler, the shell, the CPU, the DOM—is an abstraction hiding lifetimes of work. Biology is like this, just much, much worse, because living systems aren’t intentionally designed.</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://github.com/dabeaz/blog/blob/main/2023/three-problems.md">David Beasley</a></cite></p>]]>
+<p><cite class="standalone"><a href="https://jsomers.net/i-should-have-loved-biology/">James Somers</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/david-beasley-on-lambda</guid>
+            <guid isPermaLink="false">https://notes.zachmanson.com/james-somers-on-biology</guid>
+            <pubDate>2024-04-23</pubDate>
+        </item>
+        
+        <item>
+            <title>mcdonje on Ad Budgets</title>
+            <link>https://notes.zachmanson.com/mcdonje-on-ad-budgets</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Society tends to normalize things that have ad budgets.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://news.ycombinator.com/item?id=45250455">mcdonje</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/mcdonje-on-ad-budgets</guid>
+            <pubDate>2026-03-24</pubDate>
+        </item>
+        
+        <item>
+            <title>Tom Delalande on Go</title>
+            <link>https://notes.zachmanson.com/tom-delalande-on-go</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Go is not much fun but that is by design</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://youtu.be/-MbTj8DGOP0?si=KzoWGuRY2SIMw5yu&amp;t=181">Tom Delalande</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/tom-delalande-on-go</guid>
+            <pubDate>2024-08-08</pubDate>
+        </item>
+        
+        <item>
+            <title>Savannah Brown on Limits</title>
+            <link>https://notes.zachmanson.com/savannah-brown-on-limits</link>
+            
+            <content:encoded>
+                <![CDATA[<blockquote>
+<p>Miyazaki said he can feel it every day, the limit of his ability, and he was talking about getting older but I think that's something a lot of us have experienced. Personally I can feel myself straining against the limit of my ability as though it were a brick fucking wall and my true potential, whatever the hell that is, is some amorphous shape on the other side that I can't quite reach.</p>
+</blockquote>
+<p><cite class="standalone"><a href="https://youtu.be/jKV-cym4QfQ">Savannah Brown</a></cite></p>]]>
+            </content:encoded>
+            <guid isPermaLink="false">https://notes.zachmanson.com/savannah-brown-on-limits</guid>
             <pubDate>2023-10-24</pubDate>
         </item>
         
         <item>
-            <title>Terry Godier on Screen Time</title>
-            <link>https://notes.zachmanson.com/terry-godier-on-screen-time</link>
+            <title>Bill Wurtz on Happiness</title>
+            <link>https://notes.zachmanson.com/bill-wurtz-on-happiness</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>Most of your screen time isn't leisure. It isn't addiction. It isn't even a choice.</p>
-<p>It's maintenance.</p>
-<p>Your phone is not a slot machine.</p>
-<p>It's a to-do list that writes itself.</p>
+<p>yes, i understand you can't buy happiness. but can you sell it</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://www.terrygodier.com/the-last-quiet-thing">Terry Godier</a></cite></p>]]>
+<p><cite class="standalone"><a href="https://billwurtz.com/note201410032021.html">Bill Wurtz</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/terry-godier-on-screen-time</guid>
-            <pubDate>2026-03-16</pubDate>
-        </item>
-        
-        <item>
-            <title>Bill Wurtz on Being Human</title>
-            <link>https://notes.zachmanson.com/bill-wurtz-on-being-human</link>
-            
-            <content:encoded>
-                <![CDATA[<blockquote>
-<p>being human is about to come back in style</p>
-</blockquote>
-<p><cite class="standalone"><a href="https://billwurtz.com/201407210945.html">Bill Wurtz</a></cite></p>]]>
-            </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/bill-wurtz-on-being-human</guid>
+            <guid isPermaLink="false">https://notes.zachmanson.com/bill-wurtz-on-happiness</guid>
             <pubDate>2024-04-27</pubDate>
         </item>
         
         <item>
-            <title>Xe Iaso on AI</title>
-            <link>https://notes.zachmanson.com/xe-iaso-on-ai</link>
+            <title>Zach Holman on Timezones</title>
+            <link>https://notes.zachmanson.com/zach-holman-on-timezones</link>
             
             <content:encoded>
                 <![CDATA[<blockquote>
-<p>Linear algebra churned through the sand in a remote data center</p>
+<p>You can't <em>imagine</em> how much harder it would be to be a JavaScript programmer in 1882</p>
 </blockquote>
-<p><cite class="standalone"><a href="https://xeiaso.net/blog/sine/">Xe Iaso</a></cite></p>]]>
+<p><cite class="standalone"><a href="https://zachholman.com/talk/utc-is-enough-for-everyone-right">Zach Holman</a></cite></p>]]>
             </content:encoded>
-            <guid isPermaLink="false">https://notes.zachmanson.com/xe-iaso-on-ai</guid>
-            <pubDate>2024-01-24</pubDate>
+            <guid isPermaLink="false">https://notes.zachmanson.com/zach-holman-on-timezones</guid>
+            <pubDate>2023-10-24</pubDate>
         </item>
         
 
