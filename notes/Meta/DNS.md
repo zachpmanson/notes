@@ -34,6 +34,9 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	- **[bingo.zachmanson.com](https://bingo.zachmanson.com)** 
 	  live bingo games!  
 	  naboo
+	- **[jiracule](https://jiracule.zachmanson.com)**  
+	  a frontend for Jira that doesn't take 1GiB of RAM  
+	  naboo
 	- **[status.zachmanson.com](https://status.zachmanson.com)** 
 	  uptime koma instance for all services  
 	  naboo
