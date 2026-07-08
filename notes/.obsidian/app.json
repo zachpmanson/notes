@@ -1,6 +1,6 @@
 {
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "Static",
+  "attachmentFolderPath": "Assets",
   "newFileLocation": "current",
   "vimMode": true,
   "promptDelete": false
