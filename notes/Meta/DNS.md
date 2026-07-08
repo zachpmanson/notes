@@ -21,7 +21,7 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	  vercel
 	- **[minecraftle.zachmanson.com](https://minecraftle.zachmanson.com)**  
 	  deployed instance of [[Minecraftle]], a puzzle game based on Wordle and Minecraft crafting recipes   
-	  vercel
+	  naboo
 	- [staging.mineraftle.zachmanson.com](https://staging.mineraftle.zachmanson.com)  
 	  staging env for testing mincraftle things  
 	  vercel
@@ -59,8 +59,11 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	  deployed instance. of my patched version of Phanpy. 
 	  vercel
 	- [**mates.zachmanson.com**](https://mates.zachmanson.com) 
-	  deployment for ex. erimental mates project  
+	  deployment for exerimental mates project  
 	  vercel
+	- [chat.zachmanson.com](https://chat.zachmanson.com)  
+	  ejabberd server  
+	  naboo
 
 - **[manson.dev](https://manson.dev)**  
   currently a directory forward to zachmanson.com, I intend to make it an email server + subdomain forward to zachmanson.com  
