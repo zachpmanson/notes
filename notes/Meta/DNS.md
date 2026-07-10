@@ -22,9 +22,6 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	- <img src="https://minecraftle.zachmanson.com/icons/apple-touch-icon.png" alt="" height="16" style="vertical-align:middle"> **[minecraftle.zachmanson.com](https://minecraftle.zachmanson.com)**  
 	  deployed instance of [[Minecraftle]], a puzzle game based on Wordle and Minecraft crafting recipes   
 	  naboo
-	- [staging.mineraftle.zachmanson.com](https://staging.mineraftle.zachmanson.com)  
-	  staging env for testing mincraftle things  
-	  vercel
 	- **[db.zachmanson.com](db.zachmanson.com)**  
 	  postgres databases for Penultimate Guitar, Minecraftle, Alculator, api   
 	  trackstar
