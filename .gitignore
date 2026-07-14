@@ -1,6 +1,7 @@
 .DS_Store
 notes/.obsidian/workspace.json
 venv/
+.venv/
 .direnv/
 site/
 __pycache__/
