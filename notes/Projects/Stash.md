@@ -7,8 +7,13 @@ See it on [GitHub](https://github.com/zachpmanson/stash).
 <div style="display:flex; gap:2rem; flex-wrap:wrap" markdown="1">
 
 ![[stash-home.png]]
+
 ![[stash-folder.png]]
+
 ![[stash-articles.png]]
+
 ![[stash-reader.png]]
+
 ![[stash-tts.png]]
+
 </div>
