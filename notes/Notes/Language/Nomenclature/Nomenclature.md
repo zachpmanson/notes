@@ -28,5 +28,5 @@ Telling someone their language (their abstraction of the world) is incorrect -- 
 I have no solutions to any of these problems. We can only play the cards we are given. I just spend an inordinate amount of time wondering how things could be different. If only I had a name for that...
 
 
-[1]: This is compounded by the truth having a complexity floor that lies don't.
-[2]: I can only imagine how much more complex this becomes in languages with gendered nouns.
+[^1]: This is compounded by the truth having a complexity floor that lies don't.
+[^2]: I can only imagine how much more complex this becomes in languages with gendered nouns.
