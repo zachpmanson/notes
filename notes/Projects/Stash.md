@@ -9,9 +9,7 @@ See it on [GitHub](https://github.com/zachpmanson/stash).
 ![[stash-home.png]]
 
 ![[stash-folder.png]]
-
 ![[stash-articles.png]]
-
 ![[stash-reader.png]]
 
 ![[stash-tts.png]]
