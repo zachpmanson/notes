@@ -4,6 +4,8 @@ It's local only, and somewhere between Pocket and Pinterest.
 
 See it on [GitHub](https://github.com/zachpmanson/stash).
 
+<div style="display:flex; gap:2rem;" markdown="1">
+
 ![[stash-home.png]]
 
 ![[stash-folder.png]]
@@ -13,3 +15,5 @@ See it on [GitHub](https://github.com/zachpmanson/stash).
 ![[stash-reader.png]]
 
 ![[stash-tts.png]]
+
+</div>
