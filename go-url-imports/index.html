@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/_static/styles/global.css" />
+  <link rel="stylesheet" href="/_static/styles/code.css" />
+
+  <link rel="icon" href="/_static/icon/favicon.svg" type="image/svg+xml">
+
+  <link rel="alternate" type="application/rss+xml" href="https://notes.zachmanson.com/posts.xml" title="notes: posts" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: go url imports</title>
+</head>
+
+<body>
+  <nav id="nav">
+    <div class="main-icon">
+      <a href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
+          viewBox="26.88 56.87 216.25 156.27">
+          <path
+            style="stroke-width: 15px; stroke-linecap: butt; stroke-linejoin: round; stroke: rgb(10, 10, 10); fill: none;"
+            d="M135,75 A60,60 0 0,0 75,135 A60,60 0 0,0 135,195 A60,60 0 0,0 195,135 A60,60 0 0,0 135,75 M45,90 A15,15 0 0,1 60,75 A15,15 0 0,1 75,90 L75,135 L75,180 A15,15 0 0,1 60,195 A15,15 0 0,1 45,180 M225,90 A15,15 0 0,0 210,75 A15,15 0 0,0 195,90 L195,135 L195,180 A15,15 0 0,0 210,195 L210,195 A15,15 0 0,0 225,180 M135,105 A30,30 0 0,1 165,135 A30,30 0 0,1 135,165 A30,30 0 0,1 105,135 A30,30 0 0,1 135,105 M45,105 L45,105 L45,165 M225,105 L225,105 L225,165 ">
+          </path>
+        </svg>
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
+      <div class="nav-segments">
+        
+        <div class="nav-links piblings">
+          
+          
+          
+          <a href="/bookmarks#nav">Bookmarks</a>
+          
+          
+          
+          <a href="/fiction#nav">Fiction</a>
+          
+          
+          
+          <a href="/folklore#nav" class="activated-link">Folklore</a>
+          
+          
+          
+          <a href="/lines#nav">Lines</a>
+          
+          
+          
+          <a href="/problems#nav">Problems</a>
+          
+          
+          
+          <a href="/snippets#nav">Snippets</a>
+          
+          
+        </div>
+        
+
+        
+        <div class="nav-links siblings">
+          
+          
+          
+          <a href="/10-rules-of-internet#nav">10 Rules of Internet</a>
+          
+
+          
+          
+          <a href="/a-conspiracy-to-kill-ie6#nav">A Conspiracy To Kill IE6</a>
+          
+
+          
+          
+          <a href="/a-story-about-magic#nav">A Story About 'Magic'</a>
+          
+
+          
+          
+          <a href="/alice-in-modeland#nav">Alice in Modeland</a>
+          
+
+          
+          
+          <a href="/aliens-and-calendars#nav">Aliens and Calendars</a>
+          
+
+          
+          
+          <a href="/amazons-first-job-posting#nav">Amazon's First Job Posting</a>
+          
+
+          
+          
+          <a href="/an-update-on-facebook-video-marketing-metrics#nav">An Update on Facebook Video Marketing Metrics</a>
+          
+
+          
+          
+          <a href="/bell-labs-productivity-mystery#nav">Bell Labs' Productivity Mystery</a>
+          
+
+          
+          
+          <a href="/best-practices-for-time-travellers#nav">Best Practices for Time Travellers</a>
+          
+
+          
+          
+          <a href="/bill-gates-tries-to-install-windows-movie-maker#nav">Bill Gates Tries To Install Windows Movie Maker</a>
+          
+
+          
+          
+          <a href="/bill-gates-wrote-fat-on-an-airplane#nav">Bill Gates Wrote FAT on an Airplane</a>
+          
+
+          
+          
+          <a href="/blinkenlichten#nav">Blinkenlichten</a>
+          
+
+          
+          
+          <a href="/c-locale-braindeath#nav">C Locale Braindeath</a>
+          
+
+          
+          
+          <a href="/cannot-simultaneously-fix-and-keep-job.-therefore-wont-fix.#nav">Cannot simultaneously fix and keep job. Therefore, won't fix.</a>
+          
+
+          
+          
+          <a href="/christ-mcdonald#nav">Christ McDonald</a>
+          
+
+          
+          
+          <a href="/competing-with-gpt#nav">Competing with GPT</a>
+          
+
+          
+          
+          <a href="/context-menu-hell#nav">Context Menu Hell</a>
+          
+
+          
+          
+          <a href="/cool-uris-dont-change#nav">Cool URIs Don't Change</a>
+          
+
+          
+          
+          <a href="/dear-google-cloud#nav">Dear Google Cloud</a>
+          
+
+          
+          
+          <a href="/digg-v4#nav">Digg v4</a>
+          
+
+          
+          
+          <a href="/dispatch-from-the-cyberpunk-city#nav">Dispatch From the Cyberpunk City</a>
+          
+
+          
+          
+          <a href="/do-things-tell-people#nav">Do Things, Tell People</a>
+          
+
+          
+          
+          <a href="/dropbox-feedback#nav">Dropbox Feedback</a>
+          
+
+          
+          
+          <a href="/ellsbergs-advice-for-kissinger#nav">Ellsberg's Advice For Kissinger</a>
+          
+
+          
+          
+          <a href="/facing-the-street#nav">Facing the Street</a>
+          
+
+          
+          
+          <a href="/factory-factory-factory#nav">Factory Factory Factory</a>
+          
+
+          
+          
+          <a href="/feminist-server-manifesto#nav">Feminist Server Manifesto</a>
+          
+
+          
+          
+          <a href="/file-over-app#nav">File Over App</a>
+          
+
+          
+          
+          <a href="/git-koans#nav">Git Koans</a>
+          
+
+          
+          
+          <a href="/go-url-imports#nav" class="activated-link">Go URL Imports</a>
+          
+
+          
+          
+          <a href="/group-chats-rule-the-world#nav">Group Chats Rule the World</a>
+          
+
+          
+          
+          <a href="/growth-at-tumblr-and-wordpress#nav">Growth at Tumblr and Wordpress</a>
+          
+
+          
+          
+          <a href="/guerilla-open-access-manifesto#nav">Guerilla Open Access Manifesto</a>
+          
+
+          
+          
+          <a href="/heaven-banning#nav">Heaven Banning</a>
+          
+
+          
+          
+          <a href="/hyperanalyze#nav">HyperAnalyze</a>
+          
+
+          
+          
+          <a href="/i-no-longer-built-software#nav">I No Longer Built Software</a>
+          
+
+          
+          
+          <a href="/in-the-beginning-was-the-command-line#nav">In the Beginning was the Command Line</a>
+          
+
+          
+          
+          <a href="/incomplete-list-of-mistakes-in-the-design-of-css#nav">Incomplete List of Mistakes in the Design of CSS</a>
+          
+
+          
+          
+          <a href="/interviewing-for-canonical#nav">Interviewing for Canonical</a>
+          
+
+          
+          
+          <a href="/is-it-a-bubble#nav">Is It a Bubble</a>
+          
+
+          
+          
+          <a href="/jsx-react-native-and-typescript#nav">JSX, React Native, and TypeScript</a>
+          
+
+          
+          
+          <a href="/kurt-vonnegut-grades#nav">Kurt Vonnegut Grades</a>
+          
+
+          
+          
+          <a href="/language-and-death#nav">Language and Death</a>
+          
+
+          
+          
+          <a href="/larry-page-builds-a-web-robot#nav">Larry Page Builds a Web Robot</a>
+          
+
+          
+          
+          <a href="/leaving-linkedin#nav">Leaving LinkedIn</a>
+          
+
+          
+          
+          <a href="/life-of-an-oracle-developer#nav">Life of an Oracle Developer</a>
+          
+
+          
+          
+          <a href="/man-spends-entire-career-mastering-crappy-codebase#nav">Man Spends Entire Career Mastering Crappy Codebase</a>
+          
+
+          
+          
+          <a href="/msotristateenum#nav">MsoTriStateEnum</a>
+          
+
+          
+          
+          <a href="/no-coffee-==-no-job#nav">No Coffee == No Job</a>
+          
+
+          
+          
+          <a href="/no-dogs-were-harmed-in-the-making-of-this-app#nav">No dogs were harmed in the making of this app</a>
+          
+
+          
+          
+          <a href="/not-a-real-engineer#nav">Not a real engineer</a>
+          
+
+          
+          
+          <a href="/on-the-origin-of-.ds_store#nav">On the Origin of .DS_Store</a>
+          
+
+          
+          
+          <a href="/on-the-origin-of-emacs#nav">On the Origin of Emacs</a>
+          
+
+          
+          
+          <a href="/on-the-origin-of-toots#nav">On the Origin of Toots</a>
+          
+
+          
+          
+          <a href="/on-the-origins-of-dynamic-programming#nav">On the Origins of Dynamic Programming</a>
+          
+
+          
+          
+          <a href="/on-the-origins-of-rust#nav">On the Origins of Rust</a>
+          
+
+          
+          
+          <a href="/openoffice-cant-print-on-tuesdays#nav">OpenOffice Can't Print on Tuesdays</a>
+          
+
+          
+          
+          <a href="/oracle-as-lawnmower#nav">Oracle as Lawnmower</a>
+          
+
+          
+          
+          <a href="/originality-not-required#nav">Originality Not Required</a>
+          
+
+          
+          
+          <a href="/psd-is-not-my-favourite-file-format#nav">PSD is not my favourite file format</a>
+          
+
+          
+          
+          <a href="/please-drink-verification-can#nav">Please Drink Verification Can</a>
+          
+
+          
+          
+          <a href="/pocket-veto#nav">Pocket Veto</a>
+          
+
+          
+          
+          <a href="/potential#nav">Potential</a>
+          
+
+          
+          
+          <a href="/price-of-chatgpts-api-vs-human#nav">Price of ChatGPT's API vs Human</a>
+          
+
+          
+          
+          <a href="/put-yourself-in-jia-tans-shoes#nav">Put yourself in Jia Tan's shoes</a>
+          
+
+          
+          
+          <a href="/regular-expressions-and-html#nav">Regular Expressions and HTML</a>
+          
+
+          
+          
+          <a href="/rob-pikes-5-rules-of-programming#nav">Rob Pike's 5 Rules of Programming</a>
+          
+
+          
+          
+          <a href="/rob-pikes-lesson-in-shortcuts#nav">Rob Pike's Lesson in Shortcuts</a>
+          
+
+          
+          
+          <a href="/sre-threats#nav">SRE Threats</a>
+          
+
+          
+          
+          <a href="/sleep-sort#nav">Sleep Sort</a>
+          
+
+          
+          
+          <a href="/steve-yegges-tale-of-geoworks#nav">Steve Yegge's Tale of Geoworks</a>
+          
+
+          
+          
+          <a href="/steveys-google-platforms-rant#nav">Stevey's Google Platforms Rant</a>
+          
+
+          
+          
+          <a href="/superstitious-encoding#nav">Superstitious Encoding</a>
+          
+
+          
+          
+          <a href="/svelte-parses-html-all-wrong#nav">Svelte parses HTML all wrong</a>
+          
+
+          
+          
+          <a href="/the-bitter-lesson#nav">The Bitter Lesson</a>
+          
+
+          
+          
+          <a href="/the-cmd-click-manifesto#nav">The CMD-Click Manifesto</a>
+          
+
+          
+          
+          <a href="/the-cab-ride-ill-never-forget#nav">The Cab Ride I'll Never Forget</a>
+          
+
+          
+          
+          <a href="/the-case-of-the-500-mile-email#nav">The Case of the 500-Mile Email</a>
+          
+
+          
+          
+          <a href="/the-crawford-principles#nav">The Crawford Principles</a>
+          
+
+          
+          
+          <a href="/the-damned-can-now-play-three-chords#nav">The Damned Can Now Play Three Chords</a>
+          
+
+          
+          
+          <a href="/the-descent-to-c#nav">The Descent to C</a>
+          
+
+          
+          
+          <a href="/the-future-of-open-source#nav">The Future of Open Source</a>
+          
+
+          
+          
+          <a href="/the-graphing-calculator-story#nav">The Graphing Calculator Story</a>
+          
+
+          
+          
+          <a href="/the-nazi-bar-problem#nav">The Nazi Bar Problem</a>
+          
+
+          
+          
+          <a href="/the-patron-saint-of-yak-shaves#nav">The Patron Saint of Yak Shaves</a>
+          
+
+          
+          
+          <a href="/the-reddit-long-con#nav">The Reddit Long Con</a>
+          
+
+          
+          
+          <a href="/the-smallest-quine#nav">The Smallest Quine</a>
+          
+
+          
+          
+          <a href="/the-unknown-citizen#nav">The Unknown Citizen</a>
+          
+
+          
+          
+          <a href="/the-bin-split#nav">The bin Split</a>
+          
+
+          
+          
+          <a href="/things-many-people-find-too-obvious-to-have-told-you-already#nav">Things Many People Find Too Obvious To Have Told You Already</a>
+          
+
+          
+          
+          <a href="/thoughts-on-flash#nav">Thoughts On Flash</a>
+          
+
+          
+          
+          <a href="/tiktoks-enshittification#nav">TikTok's Enshittification</a>
+          
+
+          
+          
+          <a href="/time-traveller-on-irc#nav">Time Traveller on IRC</a>
+          
+
+          
+          
+          <a href="/unix-recovery-legend#nav">Unix Recovery Legend</a>
+          
+
+          
+          
+          <a href="/usenet-post-warning#nav">Usenet Post Warning</a>
+          
+
+          
+          
+          <a href="/vibe-code-warning-(written-by-human)#nav">VIBE CODE WARNING (WRITTEN BY HUMAN)</a>
+          
+
+          
+          
+          <a href="/virtues-of-a-good-programmer#nav">Virtues of a Good Programmer</a>
+          
+
+          
+          
+          <a href="/we-do-not-break-userspace#nav">We Do Not Break Userspace</a>
+          
+
+          
+          
+          <a href="/we-have-no-moat-and-neither-does-openai#nav">We Have No Moat, And Neither Does OpenAI</a>
+          
+
+          
+          
+          <a href="/when-is-midnight#nav">When Is Midnight</a>
+          
+
+          
+          
+          <a href="/wikipedia-and-anti-elitism#nav">Wikipedia and Anti-Elitism</a>
+          
+
+          
+          
+          <a href="/worse-is-better#nav">Worse is Better</a>
+          
+
+          
+          
+          <a href="/yak-shaving#nav">Yak Shaving</a>
+          
+
+          
+          
+          <a href="/carproblems.txt#nav">carproblems.txt</a>
+          
+
+          
+        </div>
+        
+
+        
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header>
+      <h1>The Troubles of Go URL Imports</h1>
+    </header>
+
+    <article><p>A great writeup by mort96 on <a href="https://news.ycombinator.com/item?id=48157827">2026-05-16</a>.</p>
+<hr />
+<p>The core issue is philosophical. Whether you happen to have public infrastructure which provides a web front-end for your git repository, and what exact server that web front-end happens to be hosted on, ought to be completely incidental to compiling source code. But since you ask, Go is the best example of how this can go terribly wrong in practice, IMO. Here are just a few scattered pain points I've encountered:</p>
+<ul>
+<li>
+<p>In order to follow convention, you need to decide on git web hosting infrastructure <em>before</em> you start writing code. The tooling asks you for a URL the moment you run 'go mod init'. My preferred way of doing things is to start work on a project just on my computer and then maybe put it on one or more online git web host eventually, if the project goes anywhere. That order doesn't work with ideomatic Go. To work around this, I write mostly non-ideomatic Go where I use the name of the project instead of a URL as a package name.</p>
+</li>
+<li>
+<p>I view hosting infrastructure as incidental. I may throw a project on GitHub. I may change my mind and move it to Codeberg. I may move it to my own git forge. I may get tired of hosting my own git forge and move it to sr.ht. With Go, each of these moves requires a huge "touch a bunch of lines in every file" style commit if you're using the ideomatic "git web host as package identifier" style required to work with 'go get'. In other languages, it requires at most a readme change, and for dependencies, it requires at most a git submodule or package manifest change.</p>
+</li>
+<li>
+<p>Go requires that you use a Go-compatible git web host. Because Go decided to make URLs look like 'example.com/foo/bar/baz/qux', it has no way to determine which part of that is the git repo and which part is a subdirectory of the repo; should it 'git clone example.com/foo/bar/baz.git' and look at the 'qux' subfolder or should it 'git clone example.com/foo.git' and look for 'bar/baz/qux'? The only solution is for Go to make an HTTP request to 'example.com/foo/bar/baz/qux?go_get=1' and parse the response HTML and look for a Go-specific meta tag which tells Go what part is a git repo. This is an immense "layering violation" and extremely ugly hack in my opinion. This feels so unnecessary too, since this is an easily solvable problem: just make URLs look like 'example.com/foo/bar/baz:qux', so that Go knows to look for 'qux' in 'example.com/foo/bar/baz.git'.</p>
+</li>
+<li>
+<p>Private repos are a horrible experience. You need to convince Go to not look them up in Google's package checksum database, you need to convince Go to not get them from Google's caching infrastructure, you need to make a ~/.netrc file with credentials, you need a git host web frontend which understands and supports the way Go + .netrc makes authenticated GET requests. If any of these things are misconfigured, you get a cryptic error message about how terminal prompts are disabled on Google's servers. It's all very brittle and hard to debug, and the guidance has changed drastically over time (editing your global .gitignore to rewrite relevant HTTP sources to use SSH used to be the advice, but that had its own significant problems).</p>
+</li>
+<li>
+<p>It has the "feeling" of being decentralized since it's all just git URLs, but in reality, Go's tooling depends heavily on Google's centralized package cache and checksum infrastructure which has been introduced over time to smooth over foundational issues with the design.</p>
+</li>
+</ul>
+<p>I was once part of separating a complex project out of a company and moving it to its own infrastructure on a different domain name and git host. The Rust and C++ repositories were a breeze, just change the URL in a CI job. The node.js repositories required changing some references in the source code from one NPM org name to another but were otherwise painless. The Go repositories were absolute hell.</p>
+<p>I have considered writing a blog post about all this.</p></article>
+  </main>
+
+  <footer>
+    <details>
+      <summary>
+        <div class="footer-row">
+          
+          meta
+          
+          <a href="/recent-changes">recent</a>
+          <a href="/fernando-borretti-on-useless-tools" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'Go URL Imports'">reply</a>
+        </div>
+      </summary>
+      <div class="footer-row">
+        <input type="radio" name="theme" id="theme-system" class="invisible" checked>
+        <label for="theme-system" class="nonsystem-only"><a>system</a></label>
+
+        <input type="radio" name="theme" id="theme-light" class="invisible">
+        <label for="theme-light" class="dark-only"><a>light</a></label>
+
+        <input type="radio" name="theme" id="theme-dark" class="invisible">
+        <label for="theme-dark" class="light-only"><a>dark</a></label>
+        
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Folklore/Go URL Imports.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Folklore/Go URL Imports.md" class="mobile">edit</a>
+          <a href="/sitemap" class="extra-small">sitemap</a>
+          <a href="/fernando-borretti-on-useless-tools" class="extra-small">random</a>
+        </div>
+      </div>
+
+      
+
+      <p class="backlinks"><strong>Incoming:</strong>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
+      
+
+      
+      <p>
+        
+
+        <span class="backlinks">
+          <strong>
+            Updated:
+          </strong>
+          <date>2026-07-27</date>
+        </span>
+
+      </p>
+    </details>
+
+  </footer>
+  
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+
+    function checkVisible(el) {
+      let rect = el.getBoundingClientRect();
+      let viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+      return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+    }
+
+
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        if (checkVisible(link.parentElement)) {
+          link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+        }
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 350);
+    });
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
+  </script>
+  <script type="module">
+      if (localStorage?.getItem("theme") === "dark") {
+        document.querySelector("#theme-dark").checked = true;
+      } else if (localStorage?.getItem("theme") === "light") {
+        document.querySelector("#theme-light").checked = true;
+      }
+
+      function setTheme(theme) {
+        localStorage.setItem("theme", theme);
+      }
+      document.querySelectorAll("#theme-system").forEach(el => el.addEventListener("click", () => setTheme(undefined)));
+      document.querySelectorAll("#theme-light").forEach(el => el.addEventListener("click", () => setTheme("light")));
+      document.querySelectorAll("#theme-dark").forEach(el => el.addEventListener("click", () => setTheme("dark")));
+  </script>
+
+</body>
+
+</html>
