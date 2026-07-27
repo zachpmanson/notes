@@ -6,9 +6,9 @@
 - [Words of Type Wiki](https://wiki.wordsoftype.com/)
 - [India Street Lettering](https://indiastreetlettering.com/sightings/)
 - [Modern Font Stacks](https://modernfontstacks.com)
+- [Fonts In Use](https://fontsinuse.com/), archive of typography
 
 ## Typefaces
 
 - [Departure Mono](https://departuremono.com/)
 - [Lofi Forest](https://kilotype.de/families/lofi-forest)
-
