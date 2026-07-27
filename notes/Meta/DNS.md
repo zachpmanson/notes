@@ -37,9 +37,6 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	- <img src="https://phanpy.zachmanson.com/favicon.ico" alt="" style="display:inline-block;height:1em;width:auto;max-height:1em;margin:0 0.3em 0 0;vertical-align:-0.15em"> **[phanpy.zachmanson.com](https://phanpy.zachmanson.com)**  
 	  deployed instance. of my patched version of Phanpy. 
 	  vercel
-	- <img src="https://mates.zachmanson.com/favicon.svg" alt="" style="display:inline-block;height:1em;width:auto;max-height:1em;margin:0 0.3em 0 0;vertical-align:-0.15em"> [**mates.zachmanson.com**](https://mates.zachmanson.com) 
-	  deployment for exerimental mates project  
-	  vercel
 	- [chat.zachmanson.com](https://chat.zachmanson.com)  
 	  ejabberd server  
 	  naboo
