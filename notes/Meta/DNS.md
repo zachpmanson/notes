@@ -32,7 +32,7 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	  nextcloud instance  
 	  naboo
 	- <img src="https://status.zachmanson.com/icon.svg" alt="" style="display:inline-block;height:1em;width:auto;max-height:1em;margin:0 0.3em 0 0;vertical-align:-0.15em"> **[status.zachmanson.com](https://status.zachmanson.com)** 
-	  uptime koma instance for all services  
+	  downtime monitor  
 	  naboo
 	- <img src="https://phanpy.zachmanson.com/favicon.ico" alt="" style="display:inline-block;height:1em;width:auto;max-height:1em;margin:0 0.3em 0 0;vertical-align:-0.15em"> **[phanpy.zachmanson.com](https://phanpy.zachmanson.com)**  
 	  deployed instance. of my patched version of Phanpy. 
