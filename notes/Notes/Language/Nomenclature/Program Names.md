@@ -10,7 +10,7 @@ subtitle: Names I like.
 - VSCodium, which is to VS Code what Chromium is to Chrome
 - Iceweasel, a fork of Firefox
 - `dnf`, DaNdiFied YUM, an improved version of YUM
-- [[Alpaca]], a LLM based on [[LLaMA]]
+- Alpaca, a LLM based on [[LLaMA]]
 - Dalai, an installer and interface for LLaMA
 - APL, A Programming Language
 - Lebab, a transpiler from ES5 code to ES6/ES7, the opposite of Babel
