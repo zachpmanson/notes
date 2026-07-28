@@ -12,3 +12,4 @@
 
 - [Departure Mono](https://departuremono.com/)
 - [Lofi Forest](https://kilotype.de/families/lofi-forest)
+- [A Lefthanded Font, Sinistral](https://undercase.xyz/media/pages/custom/a-guide-to-sinistral-hand/2af7767931-1658855020/sinistralguide_072622.pdf)
