@@ -38,7 +38,7 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	  deployed instance. of my patched version of Phanpy. 
 	  vercel
 	- [chat.zachmanson.com](https://chat.zachmanson.com)  
-	  ejabberd server  
+	  ejabberd server and converse.js frontend  
 	  naboo
 	- **[db.zachmanson.com](db.zachmanson.com)**  
 	  postgres databases for Penultimate Guitar, Minecraftle, Alculator, api   
