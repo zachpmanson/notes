@@ -17,7 +17,7 @@ I used to think that programming had a unique trait that it is physically imposs
 
 Confusion about a name can prevent understanding something through osmosis. Outside of my own family, whenever I encounter someone who knows about Burma, the only thing they know is that they don't know what to call it. Not knowing where in your brain to put something is so unnerving, instead of a string of letters and sounds you now need to maintain an abstract model in your mind. Any other news they've heard, maybe the recent military takeover, can't find a place to be stored unless they have that baseline understanding already set up. That takes a lot of RAM in a person's mind, RAM you need available if you are going to change their mind.
 
-Language is too good an abstraction of the world. It feels accurate so much of the time that it's easy to forget it's an abstraction. In many regards, language is synonymous with reality, as far as the sensation in my brain is concerned.
+[[Language]] is too good an abstraction of the world. It feels accurate so much of the time that it's easy to forget it's an abstraction. In many regards, language is synonymous with reality, as far as the sensation in my brain is concerned.
 
 Speakers are protective of their language. It is a living collective history. Someone invented every word in this sentence, I will never know their name but their influence remains. Suppressing an entire language can be an element of cultural genocide. It influences the way people see their own worlds, but it is an abstraction make no mistake. Changing society, however noble, often means changing the language of the society. It is not a surprise that social change is often waylaid by distractions found in the constraints of language and names.
 
