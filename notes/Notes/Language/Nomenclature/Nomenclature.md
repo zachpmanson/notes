@@ -1,8 +1,3 @@
----
-tags:
-  - posts
-date: 2026-07-19
----
 
 
 It is frustrating how powerful a good name is, or how destructive a poor name is. A name is that imprecise or distracting can derail what it represents. It is difficult to give a topic the breath it deserves when you are choking on the nomenclature. Evil can be hidden behind a pleasant name, or obscured from criticism by an awkward one. If you are fighting for a cause who's name requires a subtitle to convey its sentiment, you are carrying weight that your opponents likely aren't.[^1] 
