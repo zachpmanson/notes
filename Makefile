@@ -1,23 +1,8 @@
-# Ochrs static wiki generator
-#
-# Migrated from the *.sh scripts. Each target mirrors a former script:
-#   setup        <- setup.sh         (one-time gh-pages worktree setup)
-#   build        <- build.sh         (full build, regenerates history index)
-#   build-fast   <- build.sh -f      (build, skip history index)
-#   history      <- build.sh         (regenerate history.csv only)
-#   dev          <- dev.sh           (serve + rebuild on change)
-#   deploy       <- deploy.sh        (build and push the gh-pages site)
-#
-# Pass extra args to the generator with ARGS, e.g. `make build ARGS=foo`.
-#
-# Note: macOS ships GNU Make 3.81, so this avoids .ONESHELL/.SHELLFLAGS;
-# multi-line recipes are joined with `\` into a single shell invocation.
-
 SHELL := /usr/bin/env bash
 
 ARGS ?=
 
-.PHONY: setup build build-fast history generate static dev deploy update-notes clean
+.PHONY: setup build build-fast history generate static dev deploy update-notes clean format
 
 ## One-time setup: add the gh-pages worktree under ./site
 setup:
@@ -73,6 +58,11 @@ dev:
 	cd site && python3 -m http.server & \
 	trap 'kill $$(jobs -p)' EXIT; \
 	watchman-make -p '**/*.jinja' '**/*.py' '**/*.md' '**/*.css' -r '$(MAKE) build-fast'
+
+## Format code
+format:
+	uv run ruff format .
+	uv run ruff check --fix .
 
 ## Build the site and push it to the gh-pages branch
 deploy:
