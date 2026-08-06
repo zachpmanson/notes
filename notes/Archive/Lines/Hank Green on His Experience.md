@@ -4,7 +4,7 @@ date: 2026-07-27
 
 > In my experience, experience is real.
 
--- [https://youtu.be/3tTo02OIX50?si=3j5or7SdDZJ9bdn4](https://youtu.be/3tTo02OIX50)
+-- [Hank Green](https://youtu.be/3tTo02OIX50)
 
 And a fun followup in the comments:
 
