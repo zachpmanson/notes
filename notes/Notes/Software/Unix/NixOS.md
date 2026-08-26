@@ -17,4 +17,4 @@ Not to be confused with its brother [[Nix]].
 
 - [NixOS: Everything Everywhere All At Once](https://www.youtube.com/watch?v=CwfKlX3rA6E&t=4s), the video that convinced me to try NixOS
 - [Chris Titus NixOS Series](https://christitus.com/nixos-explained/)
-- [Nix Secrets](https://fzakaria.com/2024/07/12/nix-secrets-for-dummies)
+- [Nix Secrets For Dummies](https://fzakaria.com/2024/07/12/nix-secrets-for-dummies)
