@@ -139,7 +139,7 @@
 <p>The current workflow is me chatting to the named agents and telling them what to work on, or directing them to GitHub issues. For example, I have an app for <a href="/stash">stashing</a> photos and links for later. I wanted to add JSON-LD recipe parsing to that, which is a conversation I started on my laptop, continued on my phone on the bus, where it would send me APKs over XMPP and which I would test before giving feedback.</p>
 <p>Agents can be ephemeral, spawned by existing agents or by the system itself. I've set up a systemd job to watch a GitHub project set up for the fleet at a 20 minute cadence, any issues marked as "Ready" will spin up an agent called R2-D2 who will have a crack at implementing it. R2-D2 just puts up PRs that get triaged later. He can message me if he wants but there's no guarantee I will reply in time so all his context is tracked in the GitHub issue. He only takes one issue at a time, and anything outside of the GitHub issue will not be preserved. If he completes his issue, he moves it from "Ready" to "In review", if he doesn't it gets moved to "Stalled".</p>
 <div style="display:flex; gap:2rem; flex-wrap:wrap">
-<p><img alt="" src="/assets/fleet-1.png" />
+<p><img alt="" src="/assets/Screenshot_20260828-181808.png" />
 <img alt="" src="/assets/fleet-r2d2.png" /></p>
 </div>
 <p>Having the agents with direct server access enables a lot of useful things, like debugging server specific issues. A good example of this is <a href="/penultimate-guitar">Penultimate Guitar</a>, where most of the routes are written to disk after first generation so they can be directly served in future. On NixOS these writes were aggressively failing because NixOS has very different expectations of what directories are writable to most operating systems. The pages still loaded within a reasonable time, so I did not notice the error until they accumulated, blew up and took down the Penultimate Guitar backend. When the site went down I was able to just ask an agent "PG went down, restart it and figure out why" on the train.  One of my agents found the problem in the error logs, read through my system config (since the whole system config is a single git repo in NixOS) and proposed a solution that worked.</p>
@@ -157,7 +157,7 @@
           <date>2026-08-28</date>
           
           <a href="/recent-changes">recent</a>
-          <a href="/lu-wilson-on-ideas" class="not-extra-small">random</a>
+          <a href="/things-australia-should-steal-from-other-countries" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'The Fleet'">reply</a>
@@ -176,7 +176,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Projects/The Fleet.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Projects/The Fleet.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/lu-wilson-on-ideas" class="extra-small">random</a>
+          <a href="/things-australia-should-steal-from-other-countries" class="extra-small">random</a>
         </div>
       </div>
 
