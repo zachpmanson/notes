@@ -12,7 +12,7 @@ The agents default directory is has a wiki about me, my projects, the infrastruc
 
 The [[Linux]] [[Unix Files#File Permissions|permission model]] is what I use to prevent the models from accessing things that they shouldn't. The agents have access to a few sysadmin scripts, such as `deploy-service` which lets them deploy a whitelisted set of services that run on `systemd` on the machine (`git pull` latest nix config to `/tmp` dir, `nix flake update <service>`, and rebuild). Since it's nix, if one of the flake updates goes wrong, the build either fails or is trivially reverted by me.  Another service is `persona-ctl` which provisions XMPP accounts and lets agents spawn/kill other agents.
 
-![[fleet-1.png]]
+![[fleet-2.png]]
 
 Each agent know its own name as injected by `pi-msg` and one is designated the leader, though this role is more of an equal among peers. The leader's role is coordinating in group chats when agents don't take turns properly, and theoretically is in charge of spinning up other agents though all agents have access to the relevant commands. The only actual difference is that Beltino's systemd service will auto-restart. At the time of writing I have 4 long lived named agents.
 
@@ -22,9 +22,18 @@ The current workflow is me chatting to the named agents and telling them what to
  
 Agents can be ephemeral, spawned by existing agents or by the system itself. I've set up a systemd job to watch a GitHub project set up for the fleet at a 20 minute cadence, any issues marked as "Ready" will spin up an agent called R2-D2 who will have a crack at implementing it. R2-D2 just puts up PRs that get triaged later. He can message me if he wants but there's no guarantee I will reply in time so all his context is tracked in the GitHub issue. He only takes one issue at a time, and anything outside of the GitHub issue will not be preserved. If he completes his issue, he moves it from "Ready" to "In review", if he doesn't it gets moved to "Stalled".
 
+<div style="display:flex; gap:2rem; flex-wrap:wrap" markdown="1">
+<div style="display:flex; gap:2rem; flex-wrap:wrap" markdown="1">
+<div style="display:flex; gap:2rem; flex-wrap:wrap" markdown="1">
+
+![[fleet-1.png]]
+![[fleet-r2d2.png]]
+
+</div>
+
 Having the agents with direct server access enables a lot of useful things, like debugging server specific issues. A good example of this is [[Penultimate Guitar]], where most of the routes are written to disk after first generation so they can be directly served in future. On NixOS these writes were aggressively failing because NixOS has very different expectations of what directories are writable to most operating systems. The pages still loaded within a reasonable time, so I did not notice the error until they accumulated, blew up and took down the Penultimate Guitar backend. When the site went down I was able to just ask an agent "PG went down, restart it and figure out why" on the train.  One of my agents found the problem in the error logs, read through my system config (since the whole system config is a single git repo in NixOS) and proposed a solution that worked.
 
-![[fleet-2.png]]
+
 
 NixOS and LLMs fit together very naturally. All the things that benefit humans also benefit agents, and the things that chafe humans do not chafe agents. I can tell an agent to pull a Nix flake, add it to the system config, put it behind Caddy, add Basic Auth and bam, you have a new private service.  So many things that would be an awful stateful nightmare are complete non-problems thanks to NixOS. 
 
