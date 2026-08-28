@@ -23,8 +23,6 @@ The current workflow is me chatting to the named agents and telling them what to
 Agents can be ephemeral, spawned by existing agents or by the system itself. I've set up a systemd job to watch a GitHub project set up for the fleet at a 20 minute cadence, any issues marked as "Ready" will spin up an agent called R2-D2 who will have a crack at implementing it. R2-D2 just puts up PRs that get triaged later. He can message me if he wants but there's no guarantee I will reply in time so all his context is tracked in the GitHub issue. He only takes one issue at a time, and anything outside of the GitHub issue will not be preserved. If he completes his issue, he moves it from "Ready" to "In review", if he doesn't it gets moved to "Stalled".
 
 <div style="display:flex; gap:2rem; flex-wrap:wrap" markdown="1">
-<div style="display:flex; gap:2rem; flex-wrap:wrap" markdown="1">
-<div style="display:flex; gap:2rem; flex-wrap:wrap" markdown="1">
 
 ![[fleet-1.png]]
 ![[fleet-r2d2.png]]
