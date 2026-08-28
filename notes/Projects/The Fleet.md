@@ -28,4 +28,6 @@ Having the agents with direct server access enables a lot of useful things, like
 
 NixOS and LLMs fit together very naturally. All the things that benefit humans also benefit agents, and the things that chafe humans do not chafe agents. I can tell an agent to pull a Nix flake, add it to the system config, put it behind Caddy, add Basic Auth and bam, you have a new private service.  So many things that would be an awful stateful nightmare are complete non-problems thanks to NixOS. 
 
-I'm excited at the prospect of the agent's intelligence increasing as new models come up. Pi is model agnostic, at the time of writing all the agent are running Deepseek V4 Flash 0731, but I'll play around with others in time. Everything about this is *under construction*, but even in its young state I've gotten plenty done.
+I'm excited at the prospect of the agent's intelligence increasing as new models come out. Pi is model agnostic, at the time of writing all the agent are running Deepseek V4 Flash 0731, but I'll play around with others in time. Everything about this is *under construction*, but even in its young state I've gotten plenty done. I'm not someone who cares about the GitHub heatmap, but I think the last month illustrates my point well.
+
+![[fleet-heatmap.png]]
