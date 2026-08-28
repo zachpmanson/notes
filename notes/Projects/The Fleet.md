@@ -38,4 +38,4 @@ I'm excited at the prospect of the agent's intelligence increasing as new models
 
 ![[fleet-heatmap.png]]
 
-Quantity isn't quality, but it's *something*.
+Quantity isn't quality, but it is *something*.
