@@ -6,7 +6,7 @@ tags:
 ---
 The set up is a [[NixOS]] server with two user accounts, `~zach` and  `~agents`. The `~agents` account has a series of `pi-msg` agents. `pi-msg` is my XMPP wrapper the Pi coding harness that eschews the TUI and forces all comms to be over XMPP. Each `pi-msg` instance has name and a corresponding XMPP account.
 
-Since its NixOS, the agents can run `nix shell -p <package>` to ephemerally install any package they desire without the need to worry about global machine state. All my projects have nix flake dev shell definitions, so the agents have exactly the correct environment for every project. Managing this without dev shells would be untenable. I do have some standard tools installed globally for them like `curl`, `gh` CLI, a mail and calendar CLI called `docket`.
+Since it's NixOS, the agents can run `nix shell -p <package>` to ephemerally install any package they desire without the need to worry about global machine state. All my projects have nix flake dev shell definitions, so the agents have exactly the correct environment for every project. Managing this without dev shells would be untenable. I do have some standard tools installed globally for them like `curl`, `gh` CLI, a mail and calendar CLI called `docket`.
 
 The agents default directory is has a wiki about me, my projects, the infrastructure that they have access to and whatever else they think is worth committing to long term memory. They manage this, not me.
 
