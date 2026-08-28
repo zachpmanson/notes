@@ -25,6 +25,7 @@ Agents can be ephemeral, spawned by existing agents or by the system itself. I'v
 <div style="display:flex; gap:2rem; flex-wrap:wrap" markdown="1">
 
 ![[fleet-4.png]]
+
 ![[fleet-r2d2.png]]
 
 </div>
