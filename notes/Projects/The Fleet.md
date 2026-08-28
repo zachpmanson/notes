@@ -14,7 +14,7 @@ The [[Linux]] [[Unix Files#File Permissions|permission model]] is what I use to 
 
 ![[fleet-1.png]]
 
-Each agent know its own name as injected by `pi-msg` and one is designated the leader, though this role is more of an equal among peers. The leader's role is coordinating in group chats when agents don't take turns properly in the group chat, and theoretically is in charge of spinning up other agents though all agents have access to the relevant commands. The only actual difference is that Beltino's systemd service will auto-restart. At the time of writing I have 4 long lived named agents.
+Each agent know its own name as injected by `pi-msg` and one is designated the leader, though this role is more of an equal among peers. The leader's role is coordinating in group chats when agents don't take turns properly, and theoretically is in charge of spinning up other agents though all agents have access to the relevant commands. The only actual difference is that Beltino's systemd service will auto-restart. At the time of writing I have 4 long lived named agents.
 
 On the client-side I am using the excellent Fluux, and the flawed Conversations. Fluux is made by the same team as ejabberd and clearly has great taste, though is missing some XMPP features. Conversations' XMPP functionality is great but the UI is crufty. I've forked both of these to adjust them to my taste, for example Markdown support and making the XMPP status more prominent as `pi-msg` uses that to expose the agent's current state.
 
