@@ -131,7 +131,7 @@
 
     <article><p>The set up is a <a href="/nixos">NixOS</a> server with two user accounts, <code>~zach</code> and  <code>~agents</code>. The <code>~agents</code> account has a series of <code>pi-msg</code> agents. <code>pi-msg</code> is my XMPP wrapper the Pi coding harness that eschews the TUI and forces all comms to be over XMPP. Each <code>pi-msg</code> instance has name and a corresponding XMPP account.</p>
 <p>Since its NixOS, the agents can run <code>nix shell -p &lt;package&gt;</code> to ephemerally install any package they desire without the need to worry about global machine state. All my projects have nix flake dev shell definitions, so the agents have exactly the correct environment for every project. Managing this without dev shells would be untenable. I do have some standard tools installed globally for them like <code>curl</code>, <code>gh</code> CLI, a mail and calendar CLI called <code>docket</code>.</p>
-<p>The agents default directory is has a wiki about me, my projects, the infrastructure that it has access to and whatever else it thinks is worth committing to long term memory. They manage this, not me.</p>
+<p>The agents default directory is has a wiki about me, my projects, the infrastructure that they have access to and whatever else they think is worth committing to long term memory. They manage this, not me.</p>
 <p>The <a href="/linux">Linux</a> <a href="/unix-files#file-permissions">permission model</a> is what I use to prevent the models from accessing things that they shouldn't. The agents have access to a few sysadmin scripts, such as <code>deploy-service</code> which lets them deploy a whitelisted set of services that run on <code>systemd</code> on the machine (<code>git pull</code> latest nix config to <code>/tmp</code> dir, <code>nix flake update &lt;service&gt;</code>, and rebuild). Since it's nix, if one of the flake updates goes wrong, the build either fails or is trivially reverted by me.  Another service is <code>persona-ctl</code> which provisions XMPP accounts and lets agents spawn/kill other agents.</p>
 <p><img alt="" src="/assets/fleet-1.png" /></p>
 <p>Each agent know its own name as injected by <code>pi-msg</code> and the one is designated the leader, though this role is more of an equal among peers. The leader's role is coordinating in group chats when agents don't take turns properly in the group chat, and theoretically is in charge of spinning up other agents though all agents have access to the relevant commands. The only actual difference is that Beltino's systemd service will auto-restart. At the time of writing I have 4 long lived named agents.</p>
@@ -152,7 +152,7 @@
           <date>2026-08-28</date>
           
           <a href="/recent-changes">recent</a>
-          <a href="/do-things-tell-people" class="not-extra-small">random</a>
+          <a href="/ludic-on-software-engineers" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'The Fleet'">reply</a>
@@ -171,7 +171,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Projects/The Fleet.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Projects/The Fleet.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/do-things-tell-people" class="extra-small">random</a>
+          <a href="/ludic-on-software-engineers" class="extra-small">random</a>
         </div>
       </div>
 
