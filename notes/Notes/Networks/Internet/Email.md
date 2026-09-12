@@ -33,6 +33,7 @@ This problem is more or less exactly the same problems you would run into on pap
 Then Ben writes his reply, and sends a copy to me and and to April, hopefully using the same subject line so we know it's related to our existing thread. We continue on, all future messages contain all 3 of us as recipients and we continue our discussion.
 
 Adding Ben to the chain worked, but there were several places context could have been lost and would be invisible to Ben:
+
 - if the quote history was removed anywhere in the previous messages
 - if quote history was tampered with Ben will be missing the original copy
 - attachments from earlier in the chain may not be preserved in Ben's copy
