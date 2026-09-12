@@ -74,3 +74,4 @@ If you treat email like a group chat you will never be happy. [But I'm not going
 [^html]: It's formalised for plain text email but not for [[HTML]] email. HTML is too powerful for email. I would want GFM email, that's my dream amount of formatting. Nobody needs `div` in an email.
 [^bcc]: I don't even know how BCC works and I have no plans to.
 [^well]: There's 18 different systems that all might make sense if they were the only system but each mail client does it differently and the underlying quoting mechanism is so dodgy that it can't be trusted so it's better as a user to pretend there is no system.
+[references]: email RFCs say that references header the way to detect whats in a thread, but Gmail apparently doesn't respect this and will make divergent subject lines show as different threads?
