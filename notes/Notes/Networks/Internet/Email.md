@@ -68,9 +68,9 @@ If you treat email like a group chat you will never be happy. [But I'm not going
 
 
 
-[annotations]: Some people use this as a feature where they annotate the quote of email they are replying to. I hate this but it's common.
-[partial-quoting]: Apple Mail makes this easy to do by highlighting text before you press reply. Given this has the potential to break downstream forwarding I think this is an anti-feature.
-[timezones]: Email clients often don't include the timezone a quote is from, so sometimes it is actually impossible to determine the timeline of a conversation from the context you have
-[html]: It's formalised for plain text email but not for [[HTML]] email. HTML is too powerful for email. I would want GFM email, that's my dream amount of formatting. Nobody needs `div` in an email.
-[bcc]: I don't even know how BCC works and I have no plans to.
-[well]: There's 18 different systems that all might make sense if they were the only system but each mail client does it differently and the underlying quoting mechanism is so dodgy that it can't be trusted so it's better as a user to pretend there is no system.
+[^annotations]: Some people use this as a feature where they annotate the quote of email they are replying to. I hate this but it's common.
+[^partial-quoting]: Apple Mail makes this easy to do by highlighting text before you press reply. Given this has the potential to break downstream forwarding I think this is an anti-feature.
+[^timezones]: Email clients often don't include the timezone a quote is from, so sometimes it is actually impossible to determine the timeline of a conversation from the context you have
+[^html]: It's formalised for plain text email but not for [[HTML]] email. HTML is too powerful for email. I would want GFM email, that's my dream amount of formatting. Nobody needs `div` in an email.
+[^bcc]: I don't even know how BCC works and I have no plans to.
+[^well]: There's 18 different systems that all might make sense if they were the only system but each mail client does it differently and the underlying quoting mechanism is so dodgy that it can't be trusted so it's better as a user to pretend there is no system.
