@@ -46,17 +46,17 @@ In a 1:1 conversation these aren't issues, and a 3 person chain is doable, but e
 
 ## It Breaks
 
-In professional settings, email chains get ridiculous. Even if your company does all of its internal communications through Slack et al., email is needed to talk to other organisations. In my work it's common for me to be forwarded an email thread that started 9 months ago, with dozens participants, 3 organisations, with broken quoting history, that is actually only 1 of the 4 threads on the project, each containing a different subset of recipients. The chance that I am missing context asymptotically approaches 100%.
+In professional settings, email chains get ridiculous. Even if your company does all of its internal communications through Slack et al., email is needed to talk to other organisations. In my work I often get forwarded an email thread that started 9 months ago, across 3 organisations with dozens participants, with broken quoting history, that later turns out to be 1 of the 4 threads on the project, each containing a different subset of recipients. The chance that I am missing context asymptotically approaches 100%.
 
-Whenever this would happen I would tear my hair out trying to understand who said what to who and I would inevitably lose track of who is in which thread. Have you ever tried to reconstruct the timeline of 2 parallel email chains you've been forwarded?[^timezones] I don't recommend it.
+Whenever this would happen I would tear my hair out trying to understand who said what to who and where. Have you ever tried to reconstruct the timeline of 2 parallel email chains you've been forwarded?[^timezones] I don't recommend it.
 
 This is a diagram of all of the emails for a particular project at work involving 3 companies and 28 participants. Note that this is just the messages I am privy to, there are many more that I cannot see because the email chain quoting broke months before I was added to any of the threads. Also note that empty circles are messages that I only have access to via unspooling quote sections, they were not actually sent to me.
 
 ![[email-diagram.svg]]
 
-Half the messages in the chain were never sent to me! Until I made this visualisation I had no clue how complex this was, all I knew is that I was struggling to comprehend it.
+Half the messages in the chain were never sent to me! Until I made this visualisation I had no clue how complex this was, all I knew is that as a user I was struggling to comprehend it.
 
-I thought there was some true understanding that I was missing, how can the whole world run on this system where I have to read quoted threads backwards, ignore bloated email signatures and mangled quotes? There must be a system behind this that I'm just not getting.
+I thought there was some true understanding that I was missing. How can the whole world run on this system where I have to read quoted threads backwards, ignore bloated email signatures and mangled quotes? There must be a system behind this that I'm just not getting.
 
 But no. There is no system.[^well]
 
