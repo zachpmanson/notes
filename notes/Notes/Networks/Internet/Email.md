@@ -26,7 +26,7 @@ Me and April are very happy with a 6 month long chain discussing Lego Star Wars 
 
 Ben won't get all 6 months of emails properly, both of the options will only send Ben 1 email. But fear not, my email client of choice injects a quote of the message it is a reply to, and April's client does the same thing, so the message Ben gets will contain 6 months worth of nested quoted emails which he can read in reverse order to catch up to the conversation. This is a bit annoying in format, but more importantly it's fragile.
 
-The quoted section is just a convention, every email client does it slightly differently, and it's exposed in the email editor UI so I could alter the quoted text[^annotations] while Ben would be none the wiser. If I deleted the quoted text in an email to April 2 months ago[^partial-quoting], then that would break the quoting chain for all future emails and Ben would not see any messages before that deletion, and wouldn't know there were any older than 2 months.
+The quoted section is just a convention[^html], every email client does it slightly differently, and it's exposed in the email editor UI so I could alter the quoted text[^annotations][^link-substitution] while Ben would be none the wiser. If I deleted the quoted text in an email to April 2 months ago[^partial-quoting], April and I are unlikely to notice since we both have the original copies but that would break the nested quoting chain for all future emails and Ben would not see any messages before that deletion. He wouldn't even know there were any older than 2 months.
 
 This problem is more or less exactly the same problems you would run into on paper. April and I send letters for 6 months, I want to get Ben's thoughts so I need to send him a copy of every letter April and I have sent on the subject. I could alter the emails and Ben wouldn't know, or I could send him a subset of the chain and he wouldn't know. He just has to trust that I'm sharing everything he needs. The only difference is email clients add quotes automatically-ish, which automates me walking around my house finding all the letters in the thread and making photocopies.
 
@@ -63,7 +63,9 @@ But no. There is no system.[^well]
 
 ## It's just paper
 
-Of course paper than can teleport doesn't work as a group chat. How could it! How could you expect it to. Anyone can address any piece of paper to anyone, anyone can quote or not quote the context, anyone can alter the context it contains. It's actually insane that it works as well as it does. The email standard is the ultimate *building the plane in midair*, where attachments are bolted on as inline text and CC is actually the same as TO[^bcc] and forwarding is guaranteed to mangle whatever thread it contains. Quoting is an informal convention[^html], every client does it differently. It's just paper. It's just paper. It's just paper. 
+Of course paper than can teleport doesn't work as a group chat. How could it! How could you expect it to. Anyone can address any piece of paper to anyone, anyone can quote or not quote the context, anyone can alter the context it contains. Imagine the diagram above but it was done with paper. Ensuring 28 people are all receiving the right context with sheets of people would be immensely messy. It's actually insane that it works as well as it does.
+
+The email ecosystem is a great example of *building the plane in midair*, where attachments are bolted on as inline text and CC is actually the same as TO[^bcc] and forwarding is guaranteed to mangle whatever thread it contains. Quoting is an informal convention[^html], every client does it differently. The mechanics of who is privy to what messages is just as complex and inscrutable to end users as the rest of the email ecosystem. It's just paper. It's just paper. It's just paper. 
 
 If you treat email like a group chat you will never be happy. [But I'm not going to let that stop me](https://github.com/zachpmanson/chainmail).
 
@@ -75,4 +77,5 @@ If you treat email like a group chat you will never be happy. [But I'm not going
 [^html]: It's formalised for plain text email but not for [[HTML]] email. HTML is too powerful for email. I would want GFM email, that's my dream amount of formatting. Nobody needs `div` in an email.
 [^bcc]: I don't even know how BCC works and I have no plans to.
 [^well]: There's 18 different systems that all might make sense if they were the only system but each mail client does it differently and the underlying quoting mechanism is so dodgy that it can't be trusted so it's better as a user to pretend there is no system.
-[^references]: email RFCs say that references header the way to detect whats in a thread, but Gmail apparently doesn't respect this and will make divergent subject lines show as different threads?
+[^references]: Email RFCs say that references header the way to detect whats in a thread, but Gmail apparently doesn't respect this and will make divergent subject lines show as different threads?
+[^link-substitution]: Some companies do link substitution where all external links are replaced with a link forwarding service which.... adds some security maybe? Or tracking? I've been on the receiving end of these but it's not been policy anywhere I have worked.
