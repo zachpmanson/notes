@@ -16,8 +16,8 @@ For 1:1 conversations, email is pretty good. Similar to how me and my friend Apr
 - we can read the conversation in chronological order and everything makes sense
 - I can send attachments like photos and we both have copies of them
 - we could start multiple conversations in parallel based on subject and it could work decently
-	- it has the potential to be confusing but we could make it work if we were strict about discussing specific topics in specific threads
-	- even if I wanted to reply to an older message, as long as its in the same subject thread its easy to know what I'm referencing by quoting the relevant passages
+	- it has the potential to be confusing but we could make it work if we were strict about discussing specific subjects in specific threads
+	- even if I wanted to reply to an older message, as long as it's in the same subject thread it's easy to know what I'm referencing by quoting the relevant passages
 - if April and I both send messages at the same time, its straightforward to figure out that both of our messages were written without the context of the other based on timestamps and content
 
 ## The Cracks Form
@@ -26,7 +26,7 @@ Me and April are very happy with a 6 month long chain discussing Lego Star Wars 
 
 Ben won't get all 6 months of emails properly, both of the options will only send Ben 1 email. But fear not, my email client of choice injects a quote of the message it is a reply to, and April's client does the same thing, so the message Ben gets will contain 6 months worth of nested quoted emails which he can read in reverse order to catch up to the conversation. This is a bit annoying in format, but more importantly it's fragile.
 
-The quoted section is just a convention, every email client does it slightly differently, and it's exposed in the email editor UI so I could alter the quoted text[^annotations] and Ben would be none the wiser. If I deleted the quoted text in an email to April 2 months ago[^partial-quoting], then that would break the quoting chain for all future emails and Ben would not see any messages before that deletion, and wouldn't know there were any older than 2 months.
+The quoted section is just a convention, every email client does it slightly differently, and it's exposed in the email editor UI so I could alter the quoted text[^annotations] while Ben would be none the wiser. If I deleted the quoted text in an email to April 2 months ago[^partial-quoting], then that would break the quoting chain for all future emails and Ben would not see any messages before that deletion, and wouldn't know there were any older than 2 months.
 
 This problem is more or less exactly the same problems you would run into on paper. April and I send letters for 6 months, I want to get Ben's thoughts so I need to send him a copy of every letter April and I have sent on the subject. I could alter the emails and Ben wouldn't know, or I could send him a subset of the chain and he wouldn't know. He just has to trust that I'm sharing everything he needs. The only difference is email clients add quotes automatically-ish, which automates me walking around my house finding all the letters in the thread and making photocopies.
 
