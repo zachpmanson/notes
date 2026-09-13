@@ -65,7 +65,7 @@ But no. There is no system.[^well]
 
 Of course paper than can teleport doesn't work as a group chat. How could it! How could you expect it to. Anyone can address any piece of paper to anyone, anyone can quote or not quote the context, anyone can alter the context it contains. Imagine the diagram above but it was done with paper. Ensuring 28 people are all receiving the right context with sheets of paper would be immensely messy. It's actually insane that it works as well as it does.
 
-The email ecosystem is a great example of *building the plane in midair*, where attachments are bolted on as inline text and CC is actually the same as TO[^bcc] and forwarding is guaranteed to mangle whatever thread it contains. Quoting is an informal convention[^html], every client does it differently. The mechanics of who is privy to what messages is just as complex and inscrutable to end users as the rest of the email ecosystem. It's just paper. It's just paper. It's just paper. 
+The email ecosystem is a great example of *building the plane in midair*, where attachments are bolted on as inline text, CC is actually the same as TO[^bcc], forwarding is guaranteed to mangle whatever thread it contains, quoting is an informal convention[^html] which every client does differently. The mechanics of who is privy to what messages are just as complex and inscrutable to end users as the rest of the email ecosystem is to end users. It's just paper. It's just paper. It's just paper. 
 
 If you treat email like a group chat you will never be happy. [But I'm not going to let that stop me](https://github.com/zachpmanson/chainmail).
 
@@ -76,6 +76,6 @@ If you treat email like a group chat you will never be happy. [But I'm not going
 [^timezones]: Email clients often don't include the timezone a quote is from, so sometimes it is actually impossible to determine the timeline of a conversation from the context you have
 [^html]: It's formalised for plain text email but not for [[HTML]] email. HTML is too powerful for email. I would want GFM email, that's my dream amount of formatting. Nobody needs `div` in an email.
 [^bcc]: I don't even know how BCC works and I have no plans to.
-[^well]: There's 18 different systems that all might make sense if they were the only system but each mail client does it differently and the underlying quoting mechanism is so dodgy that it can't be trusted so it's better as a user to pretend there is no system.
+[^well]: There's 18 different systems that all might make sense if any one of them was the only system, but each mail client does it differently and the underlying quoting mechanism is so dodgy that it can't be trusted, so as an end users it's better to act as if there there is no system.
 [^references]: Email RFCs say that references header the way to detect whats in a thread, but Gmail apparently doesn't respect this and will make divergent subject lines show as different threads?
 [^link-substitution]: Some companies do link substitution where all external links are replaced with a link forwarding service which.... adds some security maybe? Or tracking? I've been on the receiving end of these but it's not been policy anywhere I have worked.
