@@ -15,9 +15,8 @@ For 1:1 conversations, email is pretty good. Similar to how me and my friend Apr
 - all participants know the full and consistent conversation history
 - we can read the conversation in chronological order and everything makes sense
 - I can send attachments like photos and we both have copies of them
-- we could start multiple conversations in parallel based on subject and it could work decently
-	- it has the potential to be confusing but we could make it work if we were strict about discussing specific subjects in specific threads
-	- even if I wanted to reply to an older message, as long as it's in the same subject thread it's easy to know what I'm referencing by quoting the relevant passages
+- we could start multiple conversations in parallel based on subject
+	- it has the potential to be confusing if we aren't strict about discussing specific subjects in specific threads
 - if April and I both send messages at the same time, its straightforward to figure out that both of our messages were written without the context of the other based on timestamps and content
 
 ## The Cracks Form
