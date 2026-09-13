@@ -42,7 +42,7 @@ Adding Ben to the chain worked, but there were several places context could have
 - if the conversation history forks (2 messages both reply to the same parent message), the email quoting section going forward may be missing that other branch of messages
 - if someone presses Reply instead of Reply All, someone is going to miss a message
 
-In a 1:1 conversation these aren't really issues, and even a 3 person chain is doable, but each additional person increases the chain increases the surface area for something to go wrong.
+In a 1:1 conversation these aren't issues, and a 3 person chain is doable, but each additional participant increases the surface area for something to go wrong.
 
 ## It Breaks
 
