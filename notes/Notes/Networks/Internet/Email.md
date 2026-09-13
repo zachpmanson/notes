@@ -63,7 +63,7 @@ But no. There is no system.[^well]
 
 ## It's just paper
 
-Of course paper than can teleport doesn't work as a group chat. How could it! How could you expect it to. Anyone can address any piece of paper to anyone, anyone can quote or not quote the context, anyone can alter the context it contains. Imagine the diagram above but it was done with paper. Ensuring 28 people are all receiving the right context with sheets of people would be immensely messy. It's actually insane that it works as well as it does.
+Of course paper than can teleport doesn't work as a group chat. How could it! How could you expect it to. Anyone can address any piece of paper to anyone, anyone can quote or not quote the context, anyone can alter the context it contains. Imagine the diagram above but it was done with paper. Ensuring 28 people are all receiving the right context with sheets of paper would be immensely messy. It's actually insane that it works as well as it does.
 
 The email ecosystem is a great example of *building the plane in midair*, where attachments are bolted on as inline text and CC is actually the same as TO[^bcc] and forwarding is guaranteed to mangle whatever thread it contains. Quoting is an informal convention[^html], every client does it differently. The mechanics of who is privy to what messages is just as complex and inscrutable to end users as the rest of the email ecosystem. It's just paper. It's just paper. It's just paper. 
 
