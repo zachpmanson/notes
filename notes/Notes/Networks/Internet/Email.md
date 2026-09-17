@@ -4,7 +4,7 @@ date: 2026-09-12
 tags:
   - posts
 ---
-Email is infuriating until you realise it's just paper that can teleport, each reply and thread is also just paper, and it has all the same strengths and weaknesses of paper letters.
+Email is infuriating until you realise it's just paper that can teleport. Your messages are paper, each reply is paper, threads are just piles of paper, with all the same strengths and weaknesses of letters written on paper.
 
 Which makes it immediately clear why email is so bad at being a group chat.
 
