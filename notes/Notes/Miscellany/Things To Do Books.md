@@ -1,0 +1,3 @@
+- [Cut them up](https://attainablefelicity.mattkirkland.com/20260915/cut-up-your-books.html)
+- Highlight them
+- write in them
