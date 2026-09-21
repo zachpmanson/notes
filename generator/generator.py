@@ -402,15 +402,16 @@ def create_feeds():
     """Builds the rss and atom feeds from tagged pages"""
 
     for tag_name, tag_pages in tags.items():
-        rss_template = jinja2.Template(open("generator/rss.jinja", "r").read())
-        rss = rss_template.render(
-            {
-                "tag": tag_name,
-                "lastBuildDate": datetime.now().strftime("%a, %d %b %Y %H:%M:%S %z"),
-                "posts": [tree[node] for node in tag_pages if tree[node].post_date],
-                "sanitize_url": helpers.sanitize_url,
-            }
-        )
+        with open("generator/rss.jinja", "r") as f:
+            rss_template = jinja2.Template(f.read())
+            rss = rss_template.render(
+                {
+                    "tag": tag_name,
+                    "lastBuildDate": datetime.now().strftime("%a, %d %b %Y %H:%M:%S %z"),
+                    "posts": [tree[node] for node in tag_pages if tree[node].post_date],
+                    "sanitize_url": helpers.sanitize_url,
+                }
+            )
 
         with open(f"site/{tag_name}.xml", "w") as f:
             f.write(rss)
@@ -448,7 +449,7 @@ ochrs_funcs: dict[str, FunctionType] = {
     "sitemap": lambda: sitemap_md,
     "tags": lambda: tags_md,
     "random-js": lambda: helpers.random_js(tree),
-    "chrono": lambda x: helpers.chronological_tag(x, tags[x[0]], tree),
+    "chrono": lambda x: helpers.chronological_tag(x[0], tags[x[0]], tree),
     "inline-chrono": lambda x: helpers.inline_tag(
         x[0], tags[x[0]], tree, x[1], chronological=True
     ),
