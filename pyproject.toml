@@ -11,5 +11,6 @@ dependencies = [
     "pygments>=2.19.2",
     "pymdown-extensions>=10.16.1",
     "python-frontmatter>=1.1.0",
+    "pywatchman>=4.0.0",
     "pyyaml>=6.0.3",
 ]
