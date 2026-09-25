@@ -1,6 +1,6 @@
 ## Designs
 
-- [Bee](https://www.crochet365knittoo.com/crochet-bee/)
+- [[Crochet Bee]]
 
 ## Resources
 
