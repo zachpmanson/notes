@@ -7,6 +7,7 @@
 - [India Street Lettering](https://indiastreetlettering.com/sightings/)
 - [Modern Font Stacks](https://modernfontstacks.com)
 - [Fonts In Use](https://fontsinuse.com/), archive of typography
+- [Appear Offline](https://appear-offline.com/), text distortion and other services
 
 ## Typefaces
 
