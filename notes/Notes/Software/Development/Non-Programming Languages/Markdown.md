@@ -7,3 +7,11 @@ Computers have been used for typesetting for a long time. Roff (runoff) predates
 Markdown is designed to simply the process of writing text markup, and aides generally in the creation of [[HTML]]. HTML places the formatting instructions within the document, but it is very cumbersome to write. Markdown moves [[tags]] and tree structure into simpler character-based syntax.
 
 Markdown is widely used in popular [[programs]], such as Discord, Reddit, GitHub, and [[Obsidian]]. 
+
+## Extensions
+
+Curly braces are vaguely reserved for use in Markdown extensions (like [[Ochrs Syntax]]).
+
+> Markdoc is Stripe’s own content authoring system, implementing a rich superset of [Markdown](https://daringfireball.net/projects/markdown/), and released this week as an open source project. It looks wonderful. I love their syntax extensions — very true to the spirit of Markdown. They use curly braces for their extensions; I’m not sure I ever made this clear, publicly, but I avoided using curly braces in Markdown itself — even though they are very tempting characters — to unofficially reserve them for implementation-specific extensions. Markdoc’s extensive use of curly braces for its syntax is exactly the sort of thing I was thinking about.
+
+-- [John Gruber](https://daringfireball.net/linked/2022/05/19/markdoc)
