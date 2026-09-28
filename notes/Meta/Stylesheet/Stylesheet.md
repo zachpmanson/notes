@@ -91,9 +91,9 @@ Unordered list with line breaks:
 
 Build-time Ochrs functions:
 
-Last build time: <ochrs:build-time>
+Last build time: {ochrs:build-time}
 
-List of Ochrs functions: <ochrs:ochrs-funcs>
+List of Ochrs functions: {ochrs:ochrs-funcs}
 
 More explanation of these can be found on [[Ochrs Syntax]].
 
@@ -112,7 +112,7 @@ External image:
 
 Chronologised tag:
 
-<ochrs:chrono:posts>
+{ochrs:chrono:posts}
 
 
 [^1]: This is a footnote.

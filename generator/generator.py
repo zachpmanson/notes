@@ -321,7 +321,7 @@ def preprocess_markdown(text):
     # TODO: Move this to a seperate md extension
     # add ochrs functions
     text = outside_fenced_code(
-        text, lambda chunk: re.sub(r"<ochrs:(.+?)>", format_ochrs_func, chunk)
+        text, lambda chunk: re.sub(r"\{ochrs:(.+?)\}", format_ochrs_func, chunk)
     )
 
     # TODO: Move this to a seperate md extension
@@ -484,7 +484,7 @@ ignore_names: list[str] = [".obsidian", "Assets", ".trash"]
 
 ochrs_funcs: dict[str, FunctionType] = {
     "ochrs-funcs": lambda: ", ".join(list(ochrs_funcs.keys())),
-    "example": lambda: "<ochrs:func-name:arg1:arg2>",
+    "example": lambda: "{ochrs:func-name:arg1:arg2}",
     "page-count": lambda: len(tree),
     "build-time": lambda: datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
     "md-extensions": lambda: ", ".join(
