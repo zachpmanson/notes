@@ -273,10 +273,56 @@ def generate_tags():
         tags_md += panel
 
 
+FENCE_RE = re.compile(r"^ {0,3}(`{3,}|~{3,})")
+
+
+def outside_fenced_code(text, func):
+    """Apply func to the parts of text that are not fenced code blocks.
+
+    Fenced code is left untouched, so a code sample containing something that
+    looks like an ochrs function is rendered literally instead of being
+    substituted.
+    """
+    chunks = []
+    buffer = []
+    fence = None
+
+    def flush():
+        if buffer:
+            chunks.append(func("".join(buffer)))
+            buffer.clear()
+
+    for line in text.splitlines(keepends=True):
+        if fence is None:
+            match = FENCE_RE.match(line)
+            if match:
+                flush()
+                fence = match.group(1)
+                chunks.append(line)
+                continue
+            buffer.append(line)
+            continue
+
+        chunks.append(line)
+        closing = FENCE_RE.match(line)
+        if (
+            closing
+            and closing.group(1)[0] == fence[0]
+            and len(closing.group(1)) >= len(fence)
+            and not line[closing.end() :].strip()
+        ):
+            fence = None
+
+    flush()
+    return "".join(chunks)
+
+
 def preprocess_markdown(text):
     # TODO: Move this to a seperate md extension
     # add ochrs functions
-    text = re.sub(r"<ochrs:(.+?)>", format_ochrs_func, text)
+    text = outside_fenced_code(
+        text, lambda chunk: re.sub(r"\{ochrs:(.+?)\}", format_ochrs_func, chunk)
+    )
 
     # TODO: Move this to a seperate md extension
     # add webm backlink
@@ -439,7 +485,7 @@ ignore_names: list[str] = [".obsidian", "Assets", ".trash"]
 
 ochrs_funcs: dict[str, FunctionType] = {
     "ochrs-funcs": lambda: ", ".join(list(ochrs_funcs.keys())),
-    "example": lambda: "<ochrs:func-name:arg1:arg2>",
+    "example": lambda: "{ochrs:func-name:arg1:arg2}",
     "page-count": lambda: len(tree),
     "build-time": lambda: datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
     "md-extensions": lambda: ", ".join(

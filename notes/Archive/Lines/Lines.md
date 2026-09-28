@@ -8,4 +8,4 @@ This page is a rip-off, check out Bryce Alexander Lynch's [.plan file](https://d
 
 ---
 
-<ochrs:inline-chrono:lines:no-titles>
+{ochrs:inline-chrono:lines:no-titles}
