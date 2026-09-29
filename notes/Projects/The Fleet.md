@@ -32,7 +32,7 @@ Agents can be ephemeral, spawned by existing agents or by the system itself. I'v
 
 Tasks can also have timestamps so they can be scheduled for future execution.
 
-![[Screenshot 2026-09-29 at 2.54.22 pm.png]]
+![[the-fleet-5.png]]
 
 Having the agents with direct server access enables a lot of useful things, like debugging server specific issues. A good example of this is [[Penultimate Guitar]], where most of the routes are written to disk after first generation so they can be directly served in future. On NixOS these writes were aggressively failing because NixOS has very different expectations of what directories are writable to most operating systems. The pages still loaded within a reasonable time, so I did not notice the error until they accumulated, blew up and took down the Penultimate Guitar backend. When the site went down I was able to just ask an agent "PG went down, restart it and figure out why" on the train.  One of my agents found the problem in the error logs, read through my system config (since the whole system config is a single git repo in NixOS), then proposed and deployed a solution that worked.
 
