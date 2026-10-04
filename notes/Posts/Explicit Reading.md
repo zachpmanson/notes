@@ -1,3 +1,9 @@
+---
+date: 2026-10-04
+tags:
+  - posts
+---
+
 Since the recent explosion of very bespoke software since I set up [[the fleet]], there are a few patterns I've realised work much better for my brain. Chief among them is: *mark as read should be an explicit action.*
 
 I've been working custom an [[RSS]] client called Dripfeed with a rarity weighted algorithm. The scaling on my algorithm means that infrequent feeds are very strongly boosted, which is good but it meant that articles I already read would stick around at the top of my main feed for months. This led to building a priority queue style sort, with all unread items sitting above all read items. This helped, but meant when I opened posts they would be immediately banished from the top of my main feed down to the read section. If I didn't read the whole article then and there it would be very hard to go down and find them in the shadow realm.
