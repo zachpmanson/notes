@@ -35,4 +35,4 @@ I've implemented explicit reading in two web apps -- Dripfeed Web and Chainmail 
 
 I wish dearly that Slack had this as an option. Since I've been on this kick of custom clients for any service that bothers me[^1], every day I resist looking into the logistics of building a custom Slack client. 
 
-[^1]: In the last 2 months I've worked on custom clients for GitHub Issues (Emissions), Jira (Jiracule), XMPP (forks of Conversations and Fluux), Nextcloud News (Dripfeed, web and mobile), Gmail+GCal MCP (Docket), and Gmail (Chainmail). Some of these were due to poor performance in the official app and others due to wanting specific UX tweaks.
+[^1]: In the last 2 months I've worked on custom clients for GitHub Issues (Emissions), Jira (Jiracule), [[XMPP]] (forks of Conversations and Fluux), Nextcloud News (Dripfeed, web and mobile), Gmail+GCal MCP (Docket), and Gmail (Chainmail). Some of these were due to poor performance in the official app and others due to wanting specific UX tweaks.
