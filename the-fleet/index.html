@@ -129,7 +129,7 @@
       <h1> A fleet of agents I can access from any device.</h1>
     </header>
 
-    <article><p>The set up is a <a href="/nixos">NixOS</a> server with two user accounts, <code>~zach</code> and  <code>~agents</code>. The <code>~agents</code> account has a series of <code>pi-msg</code> agents. <a href="https://github.com/zachpmanson/pi-msg"><code>pi-msg</code></a> is my XMPP wrapper the Pi coding harness that eschews the TUI and forces all comms to be over XMPP. Each <code>pi-msg</code> instance has name and a corresponding XMPP account.</p>
+    <article><p>The set up is a <a href="/nixos">NixOS</a> server with two user accounts, <code>~zach</code> and  <code>~agents</code>. The <code>~agents</code> account has a series of <code>pi-msg</code> agents. <a href="https://github.com/zachpmanson/pi-msg"><code>pi-msg</code></a> is my <a href="/xmpp">XMPP</a> wrapper the Pi coding harness that eschews the TUI and forces all comms to be over XMPP. Each <code>pi-msg</code> instance has name and a corresponding XMPP account.</p>
 <p>Since it's NixOS, the agents can run <code>nix shell -p &lt;package&gt;</code> to ephemerally install any package they desire without the need to worry about global machine state. All my projects have <a href="/nix">nix</a> flake dev shell definitions, so the agents have exactly the correct environment for every project. Managing this without dev shells would be untenable. I do have some standard tools installed globally for them like <code>curl</code>, <code>gh</code> CLI, a mail and calendar CLI called <a href="https://github.com/zachpmanson/docket"><code>docket</code></a>.</p>
 <p>The agents default directory is has a wiki about me, my <a href="/projects">projects</a>, the infrastructure that they have access to and whatever else they think is worth committing to long term memory. They manage this, not me.</p>
 <p>The <a href="/linux">Linux</a> <a href="/unix-files#file-permissions">permission model</a> is what I use to prevent the models from accessing things that they shouldn't. The agents have access to a few sysadmin scripts, such as <code>deploy-service</code> which lets them deploy a whitelisted set of services that run on <code>systemd</code> on the machine (<code>git pull</code> latest nix config to <code>/tmp</code> dir, <code>nix flake update &lt;service&gt;</code>, and rebuild). Since it's nix, if one of the flake updates goes wrong, the build either fails or is trivially reverted by me.  Another service is <code>persona-ctl</code> which provisions XMPP accounts and lets agents spawn/kill other agents.</p>
@@ -159,7 +159,7 @@
           <date>2026-08-28</date>
           
           <a href="/recent-changes">recent</a>
-          <a href="/explicit-reading" class="not-extra-small">random</a>
+          <a href="/ellsbergs-advice-for-kissinger" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'The Fleet'">reply</a>
@@ -178,7 +178,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Projects/The Fleet.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Projects/The Fleet.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/explicit-reading" class="extra-small">random</a>
+          <a href="/ellsbergs-advice-for-kissinger" class="extra-small">random</a>
         </div>
       </div>
 
@@ -217,7 +217,7 @@
           <strong>
             Updated:
           </strong>
-          <date>2026-09-29</date>
+          <date>2026-10-04</date>
         </span>
 
       </p>
