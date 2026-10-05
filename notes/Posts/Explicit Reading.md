@@ -4,7 +4,7 @@ tags:
   - posts
 ---
 
-Since the recent explosion of bespoke software in my life since I set up [[the fleet]], there are a few patterns I've realised work much better for my brain. Chief among them is: *mark as read should be an explicit action.*
+Since the recent explosion of bespoke software in my life since I set up [[the fleet]], there are a few patterns I've discovered work much better for my brain. Chief among them is: *mark as read should be an explicit action.*
 
 By that I mean, apps that track unread state should not mark an item as read as a side effect of me opening it. It should require a second, explicit action to mark something as read. This could be a button at the bottom of an article, or replying to an [[email]], but never implicit from navigating through the app.
 
