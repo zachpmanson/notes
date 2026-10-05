@@ -8,7 +8,7 @@ Everyone says they want a pure chronological feed but the dream breaks as soon a
 
 The last few months I've been trying to [[RSS]]-ify my life as much as possible. I hit a roadblock when I tried to have news websites mixed in with social networks. News sites are hyper-posters -- ABC News posts 40 times a day. There's no chance of seeing my friends buried under all of that.
 
-This applies on small scales and big, ABC News drowns out my daily post friend the same way my daily posting friend drowns out my quarterly posting friend. What I want is frequency weighted chronological feeds, which are broadly chronological but are punished for posting too much. Infrequent feeds should be boosted, frequent feeds should be dragged down, but two feeds of similar frequency should come out approximately chronological.
+This applies on small scales and big, ABC News drowns out my daily post friend the same way my daily posting friend drowns out my quarterly posting friend. What I want is frequency weighted chronological feeds. Infrequent feeds should be boosted, frequent feeds should be dragged down, but two feeds of similar frequency should come out approximately chronological.
 
 After a bunch of experimentation, here is the algorithm I landed on:
 
