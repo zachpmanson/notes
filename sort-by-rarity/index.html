@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/_static/styles/global.css" />
+  <link rel="stylesheet" href="/_static/styles/code.css" />
+
+  <link rel="icon" href="/_static/icon/favicon.svg" type="image/svg+xml">
+
+  <link rel="alternate" type="application/rss+xml" href="https://notes.zachmanson.com/posts.xml" title="notes: posts" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: sort by rarity</title>
+</head>
+
+<body>
+  <nav id="nav">
+    <div class="main-icon">
+      <a href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
+          viewBox="26.88 56.87 216.25 156.27">
+          <path
+            style="stroke-width: 15px; stroke-linecap: butt; stroke-linejoin: round; stroke: rgb(10, 10, 10); fill: none;"
+            d="M135,75 A60,60 0 0,0 75,135 A60,60 0 0,0 135,195 A60,60 0 0,0 195,135 A60,60 0 0,0 135,75 M45,90 A15,15 0 0,1 60,75 A15,15 0 0,1 75,90 L75,135 L75,180 A15,15 0 0,1 60,195 A15,15 0 0,1 45,180 M225,90 A15,15 0 0,0 210,75 A15,15 0 0,0 195,90 L195,135 L195,180 A15,15 0 0,0 210,195 L210,195 A15,15 0 0,0 225,180 M135,105 A30,30 0 0,1 165,135 A30,30 0 0,1 135,165 A30,30 0 0,1 105,135 A30,30 0 0,1 135,105 M45,105 L45,105 L45,165 M225,105 L225,105 L225,165 ">
+          </path>
+        </svg>
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
+      <div class="nav-segments">
+        
+        <div class="nav-links piblings">
+          
+          
+          
+          <a href="/archive#nav">Archive</a>
+          
+          
+          
+          <a href="/meta#nav">Meta</a>
+          
+          
+          
+          <a href="/notes#nav">Notes</a>
+          
+          
+          
+          <a href="/posts#nav" class="activated-link">Posts</a>
+          
+          
+          
+          <a href="/projects#nav">Projects</a>
+          
+          
+        </div>
+        
+
+        
+        <div class="nav-links siblings">
+          
+          
+          
+          <a href="/sort-by-rarity#nav" class="activated-link">Sort By Rarity</a>
+          
+
+          
+        </div>
+        
+
+        
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header>
+      <h1>Sort By Rarity</h1>
+    </header>
+
+    <article><p>Everyone says they want a chronological feed but the dream of a pure chronological feed breaks as soon as one of your feeds posts 20x more often as the rest.</p>
+<p>The last few months I've been trying to <a href="/rss">RSS</a>-ify my life as much as possible. I hit a roadblock when I tried to have news websites mixed in with social networks. News sites are hyper-posters -- ABC News posts 40 times a day. There's no chance of seeing my friends buried under all of that.</p>
+<p>This applies on small scales and big, ABC News drowns out my daily post friend the same way my daily posting friend drowns out my quarterly posting friend. What I want is frequency weighted chronological feeds, which are broadly chronological but are punished for posting too much. Infrequent feeds should be boosted, frequent feeds should be dragged down, but two feeds of similar frequency should come out approximately chronological.</p>
+<p>After a bunch of experimentation, here is the algorithm I landed on:</p>
+<div class="highlight"><pre><span></span><code>actual_age = hours since post was published
+gap = average hours between posts of feed
+
+multiplier = clamp((72 / max(0.1, gap))^2.5, 0.0001, 100)
+effective_age = actual_age * multiplier
+</code></pre></div>
+<p>I have implemented this in my RSS reader Dripfeed as <em>Sort by Rarity</em>, where each feed is given a rarity score, and that is used to scale the real age of each post within the feed. The scaled age, aka effective age, gets sorted chronologically.  RSS is particularly well suited to this since each pull of an RSS feed comes with the latest 20 posts which is plenty to put together a moving average.</p>
+<p>Gap is constant per feed, but will change a little with every new post.  72 hours is the midpoint I settled on. Feeds that post more often that this are punished, feeds less often than that are rewarded. The clamp puts limits on how much something can be scaled by this method, scaling is  "saturated" by that point, where all things return to pure chronological.</p>
+<p>Within the clamp this is an inverse power law, so relative differences in most frequency are treated with equal scaling differences. If feed A's frequency is 2x feed B's frequency, feed A will get ≈5.7x the scaling. This applies to all timespans, if feed A posts daily and feed B bi-daily, or feed A is monthly and feed B is bi-monthly. The curve gets even sharper as the frequency ratio grows.</p>
+<p>This is quite aggressive scaling, but that's what I want.  A monthly post will stay at the top of the feed for weeks, only being outranked by other more recent monthly posts. At the time of writing Dan Luu published a post 15 days ago that still has an effective age of 8 min because he posts once every 29 days. That's so rare that it overpowers even my monthly feeds. There are 2 other elements that are needed to make this algorithm work nicely.</p>
+<ol>
+<li>Priority queue showing all unread items before all read items</li>
+<li><a href="/explicit-reading">Explicit reading</a></li>
+</ol>
+<p>Here's how different kinds of feeds get treated by this formula:</p>
+<table>
+<thead>
+<tr>
+<th>Feed</th>
+<th>Avg Gap</th>
+<th>Multiplier</th>
+<th>Effective age after 1m</th>
+<th>5m</th>
+<th>30m</th>
+<th>1h</th>
+<th>6h</th>
+<th>24h</th>
+<th>72h</th>
+<th>1wk</th>
+<th>2wk</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hourly (ABC News)</td>
+<td>&lt;2h</td>
+<td>100 (capped)</td>
+<td>2h</td>
+<td>8h</td>
+<td>2d</td>
+<td>4d</td>
+<td>25d</td>
+<td>100d</td>
+<td>300d</td>
+<td>700d</td>
+<td>1,400d</td>
+</tr>
+<tr>
+<td>Multi-daily (Daring Fireball)</td>
+<td>6–8h</td>
+<td>100 (capped)</td>
+<td>2h</td>
+<td>8h</td>
+<td>2d</td>
+<td>4d</td>
+<td>25d</td>
+<td>100d</td>
+<td>300d</td>
+<td>700d</td>
+<td>1,400d</td>
+</tr>
+<tr>
+<td>Daily (SMBC)</td>
+<td>24h</td>
+<td>15.59</td>
+<td>16m</td>
+<td>78m</td>
+<td>8h</td>
+<td>16h</td>
+<td>4d</td>
+<td>16d</td>
+<td>47d</td>
+<td>109d</td>
+<td>218d</td>
+</tr>
+<tr>
+<td>Weekly (Friend’s Letterboxd)</td>
+<td>7d</td>
+<td>0.12</td>
+<td>7s</td>
+<td>36s</td>
+<td>4m</td>
+<td>7m</td>
+<td>43m</td>
+<td>3h</td>
+<td>9h</td>
+<td>20h</td>
+<td>40h</td>
+</tr>
+<tr>
+<td>Monthly (Friend’s Blog)</td>
+<td>30d</td>
+<td>0.0032</td>
+<td>0s</td>
+<td>1s</td>
+<td>6s</td>
+<td>11s</td>
+<td>1m</td>
+<td>5m</td>
+<td>14m</td>
+<td>32m</td>
+<td>64m</td>
+</tr>
+</tbody>
+</table>
+<p>The majority of my feeds are quite rare, collectively there's enough that they push down the hyper-posters. The more niche something is the more you see it. That's perfect! That's exactly what I want. Surface the weird and the rare.</p>
+<p><img alt="" src="/assets/rarity-buckets.png" /></p>
+<h2 id="byo-algorithm">BYO Algorithm</h2>
+<p>I came to this equation after playing around with many different options in a little RSS feed testbed I spun up. Experimenting with different half-lives and sharper power laws let me tune it just how I wanted, with a simulated feed live. This was fun and a bit eye opening to how poor pure chronological feeds are.</p>
+<p><img alt="" src="/assets/rarity-tester.png" /></p>
+<p><a href="https://github.com/zachpmanson/dripfeed/tree/master/tools/rarity-tester">I recommend some playing around with it</a> if you want to implement something similar, my scaling might be a bit strong for your taste. Bring your own OPML file.</p>
+<p>Now that I've done it, I lament every app that doesn't let me pick my own algorithm.</p>
+<p><img alt="" src="/assets/rarity chart.png" /></p></article>
+  </main>
+
+  <footer>
+    <details>
+      <summary>
+        <div class="footer-row">
+          
+          <date>2026-10-05</date>
+          
+          <a href="/recent-changes">recent</a>
+          <a href="/bash-regular-expressions" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'Sort By Rarity'">reply</a>
+        </div>
+      </summary>
+      <div class="footer-row">
+        <input type="radio" name="theme" id="theme-system" class="invisible" checked>
+        <label for="theme-system" class="nonsystem-only"><a>system</a></label>
+
+        <input type="radio" name="theme" id="theme-light" class="invisible">
+        <label for="theme-light" class="dark-only"><a>light</a></label>
+
+        <input type="radio" name="theme" id="theme-dark" class="invisible">
+        <label for="theme-dark" class="light-only"><a>dark</a></label>
+        
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Posts/Sort By Rarity.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Posts/Sort By Rarity.md" class="mobile">edit</a>
+          <a href="/sitemap" class="extra-small">sitemap</a>
+          <a href="/bash-regular-expressions" class="extra-small">random</a>
+        </div>
+      </div>
+
+      
+
+      <p class="backlinks"><strong>Incoming:</strong>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
+      
+
+      
+      <p class="backlinks"><strong> <a href="/tags">Tags:</a></strong>
+        
+        <a href="/tags#posts">#posts</a>
+        
+        </span>
+      </p>
+      
+      <p>
+        
+        <span class="backlinks">
+          <strong>
+            Posted:
+          </strong>
+          <date>2026-10-05</date>
+
+        </span>
+        
+
+        <span class="backlinks">
+          <strong>
+            Updated:
+          </strong>
+          <date>2026-10-05</date>
+        </span>
+
+      </p>
+    </details>
+
+  </footer>
+  
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+
+    function checkVisible(el) {
+      let rect = el.getBoundingClientRect();
+      let viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+      return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+    }
+
+
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        if (checkVisible(link.parentElement)) {
+          link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+        }
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 350);
+    });
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
+  </script>
+  <script type="module">
+      if (localStorage?.getItem("theme") === "dark") {
+        document.querySelector("#theme-dark").checked = true;
+      } else if (localStorage?.getItem("theme") === "light") {
+        document.querySelector("#theme-light").checked = true;
+      }
+
+      function setTheme(theme) {
+        localStorage.setItem("theme", theme);
+      }
+      document.querySelectorAll("#theme-system").forEach(el => el.addEventListener("click", () => setTheme(undefined)));
+      document.querySelectorAll("#theme-light").forEach(el => el.addEventListener("click", () => setTheme("light")));
+      document.querySelectorAll("#theme-dark").forEach(el => el.addEventListener("click", () => setTheme("dark")));
+  </script>
+
+</body>
+
+</html>
