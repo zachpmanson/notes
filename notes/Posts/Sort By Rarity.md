@@ -4,7 +4,7 @@ tags:
   - posts
 ---
 
-Everyone says they want a chronological feed but the dream of a pure chronological feed breaks as soon as one of your feeds posts 20x more often as the rest.
+Everyone says they want a pure chronological feed but the dream breaks as soon as one of your feeds posts 20x more often as the rest.
 
 The last few months I've been trying to [[RSS]]-ify my life as much as possible. I hit a roadblock when I tried to have news websites mixed in with social networks. News sites are hyper-posters -- ABC News posts 40 times a day. There's no chance of seeing my friends buried under all of that.
 
