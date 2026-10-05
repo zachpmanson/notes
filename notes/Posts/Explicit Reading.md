@@ -16,14 +16,14 @@ Explicit reading turns every app into a todo list. I have found work email much 
 
 Something important about this pattern is giving multiple ways to toggle the read state. In the Android version of Dripfeed there are 3 ways to mark something as read:
 
+- swiping a feed item to the left toggles read state
 - a read state toggle in the action bar of each article
 - a button at the bottom of each article that marks as read and returns the user to the feed
-- swiping a feed item to the left toggles read state
 
 <div style="display:flex; gap:2rem; flex-wrap:wrap" markdown="1">
-![[dripfeed-mark-as-read-1.png]]
-
 ![[dripfeed-mark-as-read-2.png]]
+
+![[dripfeed-mark-as-read-1.png]]
 </div>
 
 I've implemented explicit reading in two web apps -- Dripfeed Web and Chainmail -- both with the same two ways of marking items as read:
