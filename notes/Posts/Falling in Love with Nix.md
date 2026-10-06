@@ -1,3 +1,9 @@
+---
+date: 2026-10-06
+tags:
+  - posts
+---
+
 Nix is phenomenal. Nix makes hard things so easy that I'm astounded anyone is doing it any other way. There are whole classes of problems that you just can't encounter on Nix. I first dipped my toe in the water 4 months ago and it's been bliss.
 
 [[Nix]] and [[NixOS]] have lots of different tendrils that impact different kinds of work. Here are the problems that they have solved for me.
@@ -136,10 +142,4 @@ I've fallen into the pattern of spinning up a flake, chucking it behind caddy wi
 
 I now run NixOS on my server, nix-darwin on two macOS machines, and nix packaging on every project I have. If you area software engineer who touches Linux, Nix is worth trying.
 
-[^1]: Especially when reading Farid Zakaria's recent nix saga is insane
-- unifying all versions of all packages into one resolution tree  
-- making executables out of sqlite databases  
-- adding API routes to a sqlite executable with an insert statement ?!?!?  
-- making one flake that contains all flakes  
-- adding version ranged to nix  
-- run any nix package any nix version in your browser
+[^1]: Especially when reading Farid Zakaria’s recent Nix saga is insane: [Unifying all versions of all packages into one resolution tree](https://fzakaria.com/2026/08/17/nixpkgs-multiverse-the-fewest-nixpkgs); [Making executables out of SQLite databases](https://fzakaria.com/2026/08/23/your-executable-is-a-sqlite-database); [Adding API routes to a SQLite executable with an `INSERT` statement?!?!](https://fzakaria.com/2026/08/24/actually-queryable-executables); [Making one flake that contains all flakes](https://fzakaria.com/2026/08/28/one-flake-to-rule-them-all); [Adding version ranges to Nix](https://fzakaria.com/2026/09/01/the-holy-grail-of-nixpkgs-version-ranges); [Running any Nix package, any version, in your browser](https://fzakaria.com/2026/09/04/any-nix-package-live-in-your-browser)
