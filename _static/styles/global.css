@@ -375,10 +375,11 @@ cite.standalone::before {
 }
 
 table {
+  display: block;
   border-collapse: collapse;
-  width: 100%;
+  width: max-content;
+  max-width: calc(100vw - 2rem);
   overflow-x: auto;
-
 }
 
 table,
