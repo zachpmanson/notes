@@ -27,6 +27,7 @@ This text should have ==some highlighted text!==
 
 ### Subsubheading
 
+
 ---
 
 Backlink: [[Projects]]
@@ -36,6 +37,7 @@ Backlink: [[Projects]]
 [[Ochrs#ochrs-deploy|Backlink with anchor]]
 
 [External link](https://suricrasia.online/unfiction/basilisk/)
+
 
 This has `some inline` code text.
 
@@ -86,6 +88,17 @@ Unordered list with line breaks:
 	- **[tracker.zachmanson.com](https://tracker.zachmanson.com)**  
 	  likely defunct [[COVID-19 Tracker]] for WA  
 	  trackstar
+
+---
+
+| Feed                          | Avg Gap | Multiplier   | Effective age after 1m | 5m  | 30m | 1h  | 6h  | 24h  | 72h  | 1wk  | 2wk    |
+| ----------------------------- | ------- | ------------ | ---------------------- | --- | --- | --- | --- | ---- | ---- | ---- | ------ |
+| Hourly (ABC News)             | <2h     | 100 (capped) | 2h                     | 8h  | 2d  | 4d  | 25d | 100d | 300d | 700d | 1,400d |
+| Multi-daily (Daring Fireball) | 6–8h    | 100 (capped) | 2h                     | 8h  | 2d  | 4d  | 25d | 100d | 300d | 700d | 1,400d |
+| Daily (SMBC)                  | 24h     | 15.59        | 16m                    | 78m | 8h  | 16h | 4d  | 16d  | 47d  | 109d | 218d   |
+| Weekly (Friend’s Letterboxd)  | 7d      | 0.12         | 7s                     | 36s | 4m  | 7m  | 43m | 3h   | 9h   | 20h  | 40h    |
+| Monthly (Friend’s Blog)       | 30d     | 0.0032       | 0s                     | 1s  | 6s  | 11s | 1m  | 5m   | 14m  | 32m  | 64m    |
+
 
 ---
 
