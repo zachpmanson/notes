@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/_static/styles/global.css" />
+  <link rel="stylesheet" href="/_static/styles/code.css" />
+
+  <link rel="icon" href="/_static/icon/favicon.svg" type="image/svg+xml">
+
+  <link rel="alternate" type="application/rss+xml" href="https://notes.zachmanson.com/posts.xml" title="notes: posts" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: falling in love with nix</title>
+</head>
+
+<body>
+  <nav id="nav">
+    <div class="main-icon">
+      <a href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
+          viewBox="26.88 56.87 216.25 156.27">
+          <path
+            style="stroke-width: 15px; stroke-linecap: butt; stroke-linejoin: round; stroke: rgb(10, 10, 10); fill: none;"
+            d="M135,75 A60,60 0 0,0 75,135 A60,60 0 0,0 135,195 A60,60 0 0,0 195,135 A60,60 0 0,0 135,75 M45,90 A15,15 0 0,1 60,75 A15,15 0 0,1 75,90 L75,135 L75,180 A15,15 0 0,1 60,195 A15,15 0 0,1 45,180 M225,90 A15,15 0 0,0 210,75 A15,15 0 0,0 195,90 L195,135 L195,180 A15,15 0 0,0 210,195 L210,195 A15,15 0 0,0 225,180 M135,105 A30,30 0 0,1 165,135 A30,30 0 0,1 135,165 A30,30 0 0,1 105,135 A30,30 0 0,1 135,105 M45,105 L45,105 L45,165 M225,105 L225,105 L225,165 ">
+          </path>
+        </svg>
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
+      <div class="nav-segments">
+        
+        <div class="nav-links piblings">
+          
+          
+          
+          <a href="/archive#nav">Archive</a>
+          
+          
+          
+          <a href="/meta#nav">Meta</a>
+          
+          
+          
+          <a href="/notes#nav">Notes</a>
+          
+          
+          
+          <a href="/posts#nav" class="activated-link">Posts</a>
+          
+          
+          
+          <a href="/projects#nav">Projects</a>
+          
+          
+        </div>
+        
+
+        
+        <div class="nav-links siblings">
+          
+          
+          
+          <a href="/falling-in-love-with-nix#nav" class="activated-link">Falling in Love with Nix</a>
+          
+
+          
+        </div>
+        
+
+        
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header>
+      <h1>Falling in Love with Nix</h1>
+    </header>
+
+    <article><p>Nix is phenomenal. Nix makes hard things so easy that I'm astounded anyone is doing it any other way. There are whole classes of problems that you just can't encounter on Nix. I first dipped my toe in the water 4 months ago and it's been bliss.</p>
+<p><a href="/nix">Nix</a> and <a href="/nixos">NixOS</a> have lots of different tendrils that impact different kinds of work. Here are the problems that they have solved for me.</p>
+<h2 id="roses">Roses</h2>
+<h3 id="per-project-dependency-mangement">Per Project Dependency Mangement</h3>
+<p>Each software project relies on slightly different environments. My site builder might need Node 24, my fork of an open source project needs Node 20, my work frontend might need Node 22. And maybe theres some program I like that only distributes through npm, so I need a global npm install. </p>
+<p>For Node.js, the tool generally reached for is nvm which allows you to install parallel Node versions. I don't know how that interacts with a global npm, and thinking about that stresses me out -- but fair enough, let's use nvm. Problem solved.</p>
+<p>Now repeat the same problem on the same machine for Python. And add in the system vendored Python. And the Homebrew version that you needed as a dependency for watchman. uv now solves this problem right? Great. But I installed uv through... pip? And pip is built with...Python I assume? Where is that stored? You know the xkcd.</p>
+<p><img alt="xkcd 1987" src="https://imgs.xkcd.com/comics/python_environment.png" /></p>
+<p>Repeat this for every language for every project on your machine. Cross your fingers that each project is set up to use nvm or uv or rvm so its clear what it needs. Every language has run into this problem and has come up with a bespoke version manager.</p>
+<p>This really isn't a language problem, its an OS problem.</p>
+<p>In Nix, you just drop a flake.nix in whatever folder you want to have certain deps installed, declare that this directory requires python@3.14, node@20.1, ruby@3.4  and you are done. Whenever you navigate to that directory, your shell will recognise and install the dependencies that project declares. When you navigate out of the directory, those versions disappear. Install as many parallel versions of dependencies as your like and they will never interfere with each other.</p>
+<h3 id="entire-system-config-an-a-git-repo">Entire System Config an a Git Repo</h3>
+<p>Even before I used Nix I wanted this. I did it with a <a href="https://www.atlassian.com/git/tutorials/dotfiles">bare config dotfile repo</a> which worked decently for one machine but started to topple when you had multiple machines. The config dotfile repo works a bit differently from normal git usage, some of my existing git reflexes were a bit misplaced here. The bare dotfile repo made it easy to forget or miss staging files, since they are spread out over the whole machine I never really thought to add them in the moment.</p>
+<p>Nix does not let you forget to commit anything, it will complain about dirty repos when you build and you can't do anything without building. Setting up a nix rebuild script is a rite of passage, which almost always starts with abstracting away git entirely.</p>
+<h3 id="multiple-systems-config-in-the-same-git-repo">Multiple Systems Config in the Same Git Repo</h3>
+<p>A big problem I ran into with the bare dotfiles repo is sharing them between multiple machines. I my old dotfiles repo had 1 branch per machine, but it's really not how git is meant to be used and I felt it. Sharing config between machines involved merging and managing git branches, often with conflicts.</p>
+<p>Nix lets multiple machines' config live side by side, where you pass in the name of the machine you want to build as an attribute to the build command. Using home manager to handle all the dotfile writing, I can shard my dotfiles into different components, some in a shared directory and some parts in a host specific directory. This can be quite granular,  e.g. all my tmux shortcuts and layout is shared between all machines but the tmux colour scheme is machine specific.</p>
+<h3 id="build-errors-for-whole-machine-config">Build Errors For Whole Machine Config</h3>
+<p>When you build a NixOS config, it's like running a compiler on your whole machine. So many errors that you'd normally discover at runtime surface at build time, savings yourself so so so many disasters.</p>
+<h3 id="no-kipple">No Kipple</h3>
+<blockquote>
+<p>Kipple is useless objects, like junk mail or match folders after you use the last match or gum wrappers or yesterday's homeopape. When nobody's around, kipple reproduces itself. For instance, if you go to bed leaving any kipple around your apartment, when you wake up the next morning there's twice as much of it. It always gets more and more.</p>
+</blockquote>
+<p><cite class="standalone">Phillip K. Dick, <em>Do Androids Dream of Electric Sheep</em></cite></p>
+<p>It is inevitable that you install something as a one-off, and then you forget and that program lives on your machine forever. Nix makes this very hard to do since you have to declare all programs that you install, usually only in 1 place. So you can easily look at that list as cut the fat. If you have anything you only want to install once, you can use an ephemeral shell with that program installed. This will get garbage collected at some point down the track.</p>
+<h3 id="single-language-for-all-server-config">Single Language For All Server Config</h3>
+<p>Yes you need to learn the Nix language. Two counterpoints: AI makes learning a new language far, far easier than ever before, and, more importantly, <strong>you now only need 1 language for all configuration</strong>.</p>
+<p>systemd services? Write it in Nix. Bash aliases? Write it in Nix. Nginx config? Caddy? ejabberd? sudoers? vim? sshd? docker? All able to write in Nix.</p>
+<p>This also means you can share variables between all these configurations. An example:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># hosts/naboo/ports.nix</span>
+<span class="p">{</span>
+  <span class="ss">http</span> <span class="o">=</span> <span class="mi">80</span><span class="p">;</span>
+  <span class="ss">https</span> <span class="o">=</span> <span class="mi">443</span><span class="p">;</span>
+
+  <span class="ss">nextcloudAio</span> <span class="o">=</span> <span class="mi">8080</span><span class="p">;</span>
+  <span class="ss">nextcloudApache</span> <span class="o">=</span> <span class="mi">11000</span><span class="p">;</span>
+
+  <span class="ss">penultimateGuitar</span> <span class="o">=</span> <span class="mi">3000</span><span class="p">;</span>
+  <span class="ss">bingo</span> <span class="o">=</span> <span class="mi">3002</span><span class="p">;</span>
+  <span class="ss">minecraftle</span> <span class="o">=</span> <span class="mi">3003</span><span class="p">;</span>
+  <span class="ss">jiracule</span> <span class="o">=</span> <span class="mi">3004</span><span class="p">;</span>
+  <span class="ss">spells</span> <span class="o">=</span> <span class="mi">3005</span><span class="p">;</span>
+  <span class="ss">downtime</span> <span class="o">=</span> <span class="mi">3006</span><span class="p">;</span>
+  <span class="ss">btopStream</span> <span class="o">=</span> <span class="mi">3007</span><span class="p">;</span>
+
+  <span class="ss">chainmail</span> <span class="o">=</span> <span class="mi">8765</span><span class="p">;</span>
+  <span class="ss">conductor</span> <span class="o">=</span> <span class="mi">8085</span><span class="p">;</span>
+  <span class="ss">ollama</span> <span class="o">=</span> <span class="mi">11434</span><span class="p">;</span>
+
+  <span class="ss">xmppClient</span> <span class="o">=</span> <span class="mi">5222</span><span class="p">;</span>
+  <span class="ss">xmppClientTls</span> <span class="o">=</span> <span class="mi">5223</span><span class="p">;</span>
+  <span class="ss">ejabberdHttp</span> <span class="o">=</span> <span class="mi">5280</span><span class="p">;</span>
+  <span class="ss">xmppProxy</span> <span class="o">=</span> <span class="mi">7777</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>This file contains constants of the ports that different services and programs run on my server. These constants are wired into all the different places that need them, e.g. Nextcloud port is wired into Nextcloud configuration and into Caddy configuration. This prevents this from ever drifting or colliding with each other. Beautiful.</p>
+<h3 id="first-class-support-for-my-own-packages">First Class Support For My Own Packages</h3>
+<p>My own GitHub repos are supported just as well as the official nixpkg package repository. I just add <a href="https://github.com/zachpmanson/duplicates/blob/main/flake.nix">one file to my project repo</a>, add a link to that repo in my Nix configuration on a machine, and then I install it the same way I would install neovim.</p>
+<p>For example, I packaged my university project for system programming <code>duplicates</code>, now I can install that on any Nix machine with 2 lines of code.</p>
+<p>Amazing.</p>
+<h3 id="migrating-machines">Migrating Machines</h3>
+<p>This is one you hear from Nix evangelists online, and the one you say isn't such a big deal from Nix detractors. </p>
+<p>I was lucky that I first started dabbling with Nix one month before I got a new laptop. My old macbook had just been set up with nix-darwin. Setting up my programs and config on the new macbook was: git clone on the new machine, copy the old config, give it a new name for the new machine. Run rebuild... And it was done.</p>
+<p>I still needed to copy over my <code>/User/zach</code> downloads and documents, as well as reconfigure macOS system settings and desktop applications that couldn't be covered by Nix. That didn't deter me though, my only regret after that was not investing even further into Nix.</p>
+<h3 id="agents">Agents</h3>
+<p>Agents' being able to use Nix brings many of its advantages into focus, because they take full advantage of it. All my project devshells would be picked up, so no concerns about agents needing dependencies. Agents can read the whole system config and suggest fixes.</p>
+<p><a href="/the-fleet">The fleet</a> of agents I run on my server have access to the server config and can deploy services to it if I allow them. They install programs in ephemeral shells, they can introspect the server they are on. I've deployed entire web services  from my phone -- without giving agents any more privileges than they actually need.</p>
+<h2 id="buds">Buds</h2>
+<p>These are things that I often see listed as advantages that were not pros nor cons for me.</p>
+<h3 id="bleeding-edge">Bleeding Edge</h3>
+<p>Nix evangelists often talk about the number of and freshness of packages. This seems true but never actually mattered for me -- with one exception, wanting to use the latest version of Claude Code to test out new models. For the longest time on my macOS machines I was using the brew install of Claude Code, which often lagged days behind the latest version, barring me from the latest models at work. (median 1.6d lag in nixpkg, 10.8d lag on brew)</p>
+<h3 id="perfect-reproducibility">Perfect Reproducibility</h3>
+<p>While I suspect a lot of what I enjoy about Nix is enabled because it has perfect reproducibility, the reproducibility itself was not actually a particularly big draw for me. I do recognise that it is extremely cool.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<h2 id="thorns">Thorns</h2>
+<h3 id="its-too-good">It's Too Good</h3>
+<p>Nix is a worm that spreads via humans solving the problems it enables you encounter. I first touched Nix when installing NixOS on a new server to play around, and very soon I hit the flywheel.</p>
+<blockquote>
+<p>install nixos on server<br />
+-&gt; server config is easy, I'm now self hosting all the time<br />
+-&gt; host an XMPP server so agents can communicate with me and each other<br />
+-&gt; create custom XMPP client for agents to use to built utils for me<br />
+-&gt; want my new utils to be consistently available on all my machines<br />
+-&gt; begin setting up nix on my mac<br />
+-&gt; set up flakes in all my repos so nix can handle dependencies  </p>
+</blockquote>
+<p>And that's it. My only complain is that it's too good.</p>
+<p>I've fallen into the pattern of spinning up a flake, chucking it behind caddy with basic auth and bam! new web service.</p>
+<p>I now run NixOS on my server, nix-darwin on two macOS machines, and nix packaging on every project I have. If you area software engineer who touches Linux, Nix is worth trying.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Especially when reading Farid Zakaria's recent nix saga is insane
+- unifying all versions of all packages into one resolution tree<br />
+- making executables out of sqlite databases<br />
+- adding API routes to a sqlite executable with an insert statement ?!?!?<br />
+- making one flake that contains all flakes<br />
+- adding version ranged to nix<br />
+- run any nix package any nix version in your browser&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></article>
+  </main>
+
+  <footer>
+    <details>
+      <summary>
+        <div class="footer-row">
+          
+          meta
+          
+          <a href="/recent-changes">recent</a>
+          <a href="/software" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'Falling in Love with Nix'">reply</a>
+        </div>
+      </summary>
+      <div class="footer-row">
+        <input type="radio" name="theme" id="theme-system" class="invisible" checked>
+        <label for="theme-system" class="nonsystem-only"><a>system</a></label>
+
+        <input type="radio" name="theme" id="theme-light" class="invisible">
+        <label for="theme-light" class="dark-only"><a>light</a></label>
+
+        <input type="radio" name="theme" id="theme-dark" class="invisible">
+        <label for="theme-dark" class="light-only"><a>dark</a></label>
+        
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Posts/Falling in Love with Nix.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Posts/Falling in Love with Nix.md" class="mobile">edit</a>
+          <a href="/sitemap" class="extra-small">sitemap</a>
+          <a href="/software" class="extra-small">random</a>
+        </div>
+      </div>
+
+      
+
+      <p class="backlinks"><strong>Incoming:</strong>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
+      
+
+      
+      <p class="backlinks"><strong> <a href="/tags">Tags:</a></strong>
+        
+        <a href="/tags#posts">#posts</a>
+        
+        </span>
+      </p>
+      
+      <p>
+        
+
+        <span class="backlinks">
+          <strong>
+            Updated:
+          </strong>
+          <date>2026-10-06</date>
+        </span>
+
+      </p>
+    </details>
+
+  </footer>
+  
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+
+    function checkVisible(el) {
+      let rect = el.getBoundingClientRect();
+      let viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+      return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+    }
+
+
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        if (checkVisible(link.parentElement)) {
+          link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+        }
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 350);
+    });
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
+  </script>
+  <script type="module">
+      if (localStorage?.getItem("theme") === "dark") {
+        document.querySelector("#theme-dark").checked = true;
+      } else if (localStorage?.getItem("theme") === "light") {
+        document.querySelector("#theme-light").checked = true;
+      }
+
+      function setTheme(theme) {
+        localStorage.setItem("theme", theme);
+      }
+      document.querySelectorAll("#theme-system").forEach(el => el.addEventListener("click", () => setTheme(undefined)));
+      document.querySelectorAll("#theme-light").forEach(el => el.addEventListener("click", () => setTheme("light")));
+      document.querySelectorAll("#theme-dark").forEach(el => el.addEventListener("click", () => setTheme("dark")));
+  </script>
+
+</body>
+
+</html>
