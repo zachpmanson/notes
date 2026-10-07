@@ -410,6 +410,15 @@ td {
   justify-content: space-between;
   align-items: center;
   margin: 0.5rem 0;
+
+  &:hover time {
+    opacity: 100%;
+    transition: opacity 0.1s linear;
+  }
+
+  .post time {
+    opacity: 50%;
+  }
 }
 
 .extra-small {
