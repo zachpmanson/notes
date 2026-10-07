@@ -4,7 +4,11 @@ tags:
   - posts
 ---
 
-Nix is phenomenal. Nix makes hard things so easy that I'm astounded anyone is doing it any other way. There are whole classes of problems that you just can't encounter on Nix. I first dipped my toe in the water 4 months ago and it's been bliss.
+Nix is phenomenal. I first dipped my toe in the water 4 months ago and it's been bliss. There are whole classes of problems that you just can't encounter on Nix.
+
+> Software works pretty good already... you use Nix and you think "holy shit nothing \[else] should be working"
+
+-- [Farid Zakaria](https://youtu.be/dulffMFqD7k?si=WDV0MdeVKd51kOUv&t=93)
 
 [[Nix]] and [[NixOS]] have lots of different tendrils that impact different kinds of work. Here are the problems that they have solved for me.
 
