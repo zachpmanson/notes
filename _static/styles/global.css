@@ -416,7 +416,7 @@ td {
     transition: opacity 0.1s linear;
   }
 
-  .post time {
+  time {
     opacity: 50%;
   }
 }
