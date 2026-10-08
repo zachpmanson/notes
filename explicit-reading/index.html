@@ -81,9 +81,9 @@
 
     <article><p>Since the recent explosion of bespoke software in my life since I set up <a href="/the-fleet">the fleet</a>, there are a few patterns I've discovered work much better for my brain. Chief among them is: <em>mark as read should be an explicit action.</em></p>
 <p>By that I mean, apps that track unread state should not mark an item as read as a side effect of me opening it. It should require a second, explicit action to mark something as read. This could be a button at the bottom of an article, or replying to an <a href="/email">email</a>, but never implicit from navigating through the app.</p>
-<p>I've been working on an <a href="/rss">RSS</a> client called Dripfeed with a rarity weighted algorithm. The scaling on my algorithm means that infrequent feeds are very strongly boosted. As a byproduct, articles would stick around at the top of my main feed for months after I've read them simply because their feeds were infrequent. To mitigate this I set the app to hide articles after I read them. This helped, but meant when I opened a post it would be immediately banished from the top of my feed to the archive. If I didn't read the whole article then and there it would be very hard to go down and find them in the shadow realm later, if I even remember the article exists.</p>
-<p>To combat that I made a mode that required explicit toggling of unread state. This ended up being so pleasant that I'm now grafting it onto all my other software. I'm the kind of person where many articles and emails and messages slip through the cracks if I don't action them immediately. Forcing unread state to be managed manually has helped this greatly.  I have been calling the pattern <em>explicit reading</em>.</p>
-<p>Explicit reading turns every app into a todo list. I have found work email much easier to deal with since adding explicit reading toggles to my custom mail client, leaving them as unread until I've actually replied or actioned them.</p>
+<p>I have been calling the pattern <em>explicit reading</em>.</p>
+<p>I've added it to two different projects of mine, my mail client Chainmail and my RSS client Dripfeed.</p>
+<p>Explicit reading turns every app into a todo list. I have found work email much easier to deal with since adding explicit reading toggles to Chainmail, leaving them as unread until I've actually replied or actioned them. </p>
 <p>Something important about this pattern is giving multiple ways to toggle the read state. In the Android version of Dripfeed there are 3 ways to mark something as read:</p>
 <ul>
 <li>swiping a feed item to the left toggles read state</li>
@@ -94,12 +94,14 @@
 <p><img alt="" src="/assets/dripfeed-mark-as-read-2.png" /></p>
 <p><img alt="" src="/assets/dripfeed-mark-as-read-1.png" /></p>
 </div>
-<p>I've implemented explicit reading in two web apps -- Dripfeed Web and Chainmail -- both with the same two ways of marking items as read:</p>
+<p>In Dripfeed Web and Chainmail  there are the same two ways of marking items as read:</p>
 <ul>
 <li>a circle button at the top right of an open email/article</li>
 <li>double clicking an item in the left panel in a feed/mailbox </li>
 </ul>
 <p><img alt="" src="/assets/dripfeed-web.png" /></p>
+<p>I stumbled onto this pattern while working on Dripfeed. The main feature of Dripfeed is it's rarity weighted algorithm. The scaling on my algorithm means that infrequent feeds are very strongly boosted. As a byproduct, articles from infrequent feeds would stick around at the top of my main feed for months after I've read them. To mitigate this I set the app to hide articles after I read them. This helped, but meant when I opened a post it would be immediately banished from the top of my feed to the archive. If I didn't read the whole article then and there it would be very hard to go down and find them in the shadow realm later, if I even remember the article exists.</p>
+<p>To combat that I made a mode that required explicit toggling of unread state. This ended up being so pleasant that I began grafting it onto all my other software. I'm the kind of person where many articles and emails and messages slip through the cracks if I don't action them immediately. Forcing unread state to be managed manually has helped this greatly.</p>
 <p>I wish dearly that Slack had this as an option. Since I've been on this kick of custom clients for any service that bothers me<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, every day I resist looking into the logistics of building a custom Slack client. </p>
 <div class="footnote">
 <hr />
@@ -119,7 +121,7 @@
           <date>2026-10-04</date>
           
           <a href="/recent-changes">recent</a>
-          <a href="/tom-m-on-entropy" class="not-extra-small">random</a>
+          <a href="/do-things-tell-people" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Explicit Reading'">reply</a>
@@ -138,7 +140,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Posts/Explicit Reading.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Posts/Explicit Reading.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/tom-m-on-entropy" class="extra-small">random</a>
+          <a href="/do-things-tell-people" class="extra-small">random</a>
         </div>
       </div>
 
@@ -177,7 +179,7 @@
           <strong>
             Updated:
           </strong>
-          <date>2026-10-05</date>
+          <date>2026-10-08</date>
         </span>
 
       </p>
