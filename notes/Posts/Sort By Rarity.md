@@ -18,7 +18,7 @@ multiplier = clamp((72 / max(0.1, gap))^2.5, 0.0001, 100)
 effective_age = actual_age * multiplier
 ```
 
-I have implemented this in my RSS reader Dripfeed as *Sort by Rarity*, where each feed is given a rarity score, and that is used to scale the real age of each post within the feed. The scaled age, aka effective age, gets sorted chronologically.  RSS is particularly well suited to this since each pull of an RSS feed comes with the latest 20 posts which is plenty to put together a moving average.
+I have implemented this in my [[RSS]] reader Dripfeed as *Sort by Rarity*, where each feed is given a rarity score, and that is used to scale the real age of each post within the feed. The scaled age, aka effective age, gets sorted chronologically.  RSS is particularly well suited to this since each pull of an RSS feed comes with the latest 20 posts which is plenty to put together a moving average.
 
 Gap is constant per feed, but will change a little with every new post.  72 hours is the midpoint I settled on. Feeds that post more often that this are punished, feeds less often than that are rewarded. The clamp puts limits on how much something can be scaled by this method, scaling is  "saturated" by that point, where all things return to pure chronological.
 
