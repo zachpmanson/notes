@@ -32,7 +32,7 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	  downtime monitor  
 	  naboo
 	- <img src="https://dripfeed.zachmanson.com/favicon.svg" alt="" style="display:inline-block;height:1em;width:auto;max-height:1em;margin:0 0.3em 0 0;vertical-align:-0.15em"> **[dripfeed.zachmanson.com](https://dripfeed.zachmanson.com)** 
-	  nextcloud news clien.   
+	  nextcloud news client.
 	  naboo
 	- <img src="https://minecraftle.zachmanson.com/icons/apple-touch-icon.png" alt="" style="display:inline-block;height:1em;width:auto;max-height:1em;margin:0 0.3em 0 0;vertical-align:-0.15em"> **[minecraftle.zachmanson.com](https://minecraftle.zachmanson.com)**  
 	  deployed instance of [[Minecraftle]], a puzzle game based on Wordle and Minecraft crafting recipes   
@@ -50,7 +50,7 @@ This site is hosted on [zachmanson.com](https://zachmanson.com) alongside severa
 	  btop stream of naboo 
 	  naboo
 	- <img src="https://phanpy.zachmanson.com/favicon.ico" alt="" style="display:inline-block;height:1em;width:auto;max-height:1em;margin:0 0.3em 0 0;vertical-align:-0.15em"> **[phanpy.zachmanson.com](https://phanpy.zachmanson.com)**  
-	  deployed instance. of my patched version of Phanpy. 
+	  deployed instance of my patched version of Phanpy.
 	  vercel
 	- **[db.zachmanson.com](db.zachmanson.com)**  
 	  postgres databases for Penultimate Guitar, Minecraftle, Alculator, api   

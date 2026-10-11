@@ -6,7 +6,7 @@ They can be fully, partially, or not observable.
 
 Environments can be deterministic or nondeterministic. Most real situations are so complex they may as well be nondeterministic.  Sometimes people say stochastic as a synonym of deterministic. [[Artificial Intelligence - A Modern Approach]] prefers stochastic to refer to models with explicit probabilities, and nondeterministic to refer to non-explicit probabilities.
 
-They can be sequential or episodic, where classification tasks would be be episodic and a chess game would be sequential.
+They can be sequential or episodic, where classification tasks would be episodic and a chess game would be sequential.
 
 Single-agent or multi-agents. These can be cooperative or adversarial.
 

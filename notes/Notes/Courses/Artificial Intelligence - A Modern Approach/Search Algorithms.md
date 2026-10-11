@@ -5,7 +5,7 @@ Search algorithms are methods of finding a certain node in a graph.  They requir
 - action
 - path-cost
 
-There also must be a data structure containing the frontier of nodes that are net to be explored, usually a queue.
+There also must be a data structure containing the frontier of nodes that are yet to be explored, usually a queue.
 
 Search algorithms need to account for redundant paths, including primarily cycles.  Graph search algorithms account for this, tree like searches do not.  Finding all redundant paths is generally expensive, so usually only cycles are worried.
 
@@ -36,7 +36,7 @@ Best-first search is a general search algorithm where the next node to be explor
 	- can be modified to be more memory efficient using backtracking search
 	- can also have a depth limit to cap complexity, or iteratively deepened
 - bidirectional search
-	- searches from the initial and the goal state simultaneously, hoping the tow of them will meet
+	- searches from the initial and the goal state simultaneously, hoping the two of them will meet
 
 ## Informed Search Strategies
 
@@ -68,7 +68,7 @@ Heuristic functions can give domain-specific hints to an algorithm.
 	- best-first search but with linear space, uses the f limit to keep track of the f-value of the best alternative path from any ancestor of current node
 	- allows it to backtrack without storing the entire alternate tree, only storing remembering the best f-score from that tree
 	- is optimal if h(n) is admissible
-	- time complexity is a hrd thing to explain
+	- time complexity is a hard thing to explain
 	- ends up exploring the same space repeatedly
 - SMA*
 	- has limited memory for leaves, will drop worst f-value leaf as it expands

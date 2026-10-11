@@ -14,9 +14,9 @@ Nix is phenomenal. I first dipped my toe in the water 4 months ago and it's been
 
 ## Roses
 
-### Per Project Dependency Mangement
+### Per Project Dependency Management
 
-Each software project relies on slightly different environments. My site builder might need Node 24, my fork of an open source project needs Node 20, my work frontend might need Node 22. And maybe theres some program I like that only distributes through npm, so I need a global npm install. 
+Each software project relies on slightly different environments. My site builder might need Node 24, my fork of an open source project needs Node 20, my work frontend might need Node 22. And maybe there's some program I like that only distributes through npm, so I need a global npm install.
 
 For Node.js, the tool generally reached for is nvm which allows you to install parallel Node versions. I don't know how that interacts with a global npm, and thinking about that stresses me out -- but fair enough, let's use nvm. Problem solved.
 
@@ -24,11 +24,11 @@ Now repeat the same problem on the same machine for Python. And add in the syste
 
 ![xkcd 1987](https://imgs.xkcd.com/comics/python_environment.png)
 
-Repeat this for every language for every project on your machine. Cross your fingers that each project is set up to use nvm or uv or rvm so its clear what it needs. Every language has run into this problem and has come up with a bespoke version manager.
+Repeat this for every language for every project on your machine. Cross your fingers that each project is set up to use nvm or uv or rvm so it's clear what it needs. Every language has run into this problem and has come up with a bespoke version manager.
 
 This really isn't a language problem, its an OS problem.
 
-In Nix, you just drop a flake.nix in whatever folder you want to have certain deps installed, declare that this directory requires python@3.14, node@20.1, ruby@3.4  and you are done. Whenever you navigate to that directory, your shell will recognise and install the dependencies that project declares. When you navigate out of the directory, those versions disappear. Install as many parallel versions of dependencies as your like and they will never interfere with each other.
+In Nix, you just drop a flake.nix in whatever folder you want to have certain deps installed, declare that this directory requires python@3.14, node@20.1, ruby@3.4  and you are done. Whenever you navigate to that directory, your shell will recognise and install the dependencies that project declares. When you navigate out of the directory, those versions disappear. Install as many parallel versions of dependencies as you like and they will never interfere with each other.
 
 ### Entire System Config an a Git Repo
 
@@ -38,13 +38,13 @@ Nix does not let you forget to commit anything, it will complain about dirty rep
 
 ### Multiple Systems Config in the Same Git Repo
 
-A big problem I ran into with the bare dotfiles repo is sharing them between multiple machines. I my old dotfiles repo had 1 branch per machine, but it's really not how git is meant to be used and I felt it. Sharing config between machines involved merging and managing git branches, often with conflicts.
+A big problem I ran into with the bare dotfiles repo is sharing them between multiple machines. In my old dotfiles repo had 1 branch per machine, but it's really not how git is meant to be used and I felt it. Sharing config between machines involved merging and managing git branches, often with conflicts.
 
 Nix lets multiple machines' config live side by side, where you pass in the name of the machine you want to build as an attribute to the build command. Using home manager to handle all the dotfile writing, I can shard my dotfiles into different components, some in a shared directory and some parts in a host specific directory. This can be quite granular,  e.g. all my tmux shortcuts and layout is shared between all machines but the tmux colour scheme is machine specific.
 
 ### Build Errors For Whole Machine Config
 
-When you build a NixOS config, it's like running a compiler on your whole machine. So many errors that you'd normally discover at runtime surface at build time, savings yourself so so so many disasters.
+When you build a NixOS config, it's like running a compiler on your whole machine. So many errors that you'd normally discover at runtime surface at build time, saving yourself so so so many disasters.
 
 ### No Kipple
 
@@ -140,10 +140,10 @@ Nix is a worm that spreads via humans solving the problems it enables you encoun
 > -> begin setting up nix on my mac  
 > -> set up flakes in all my repos so nix can handle dependencies  
 
-And that's it. My only complain is that it's too good.
+And that's it. My only complaint is that it's too good.
 
 I've fallen into the pattern of spinning up a flake, chucking it behind caddy with basic auth and bam! new web service.
 
-I now run NixOS on my server, nix-darwin on two macOS machines, and nix packaging on every project I have. If you area software engineer who touches Linux, Nix is worth trying.
+I now run NixOS on my server, nix-darwin on two macOS machines, and nix packaging on every project I have. If you are a software engineer who touches Linux, Nix is worth trying.
 
 [^1]: Especially when reading Farid Zakaria’s recent Nix saga is insane: [Unifying all versions of all packages into one resolution tree](https://fzakaria.com/2026/08/17/nixpkgs-multiverse-the-fewest-nixpkgs); [Making executables out of SQLite databases](https://fzakaria.com/2026/08/23/your-executable-is-a-sqlite-database); [Adding API routes to a SQLite executable with an `INSERT` statement?!?!](https://fzakaria.com/2026/08/24/actually-queryable-executables); [Making one flake that contains all flakes](https://fzakaria.com/2026/08/28/one-flake-to-rule-them-all); [Adding version ranges to Nix](https://fzakaria.com/2026/09/01/the-holy-grail-of-nixpkgs-version-ranges); [Running any Nix package, any version, in your browser](https://fzakaria.com/2026/09/04/any-nix-package-live-in-your-browser)

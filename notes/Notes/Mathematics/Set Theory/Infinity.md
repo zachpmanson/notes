@@ -4,11 +4,11 @@ The [[lemniscate]] symbol (∞, U+221E) is used to represent infinity, a concept
 
 ### Cardinality
 
-The sizes of infinite sets are measured using cardinal numbers, using generalised natural numbers. Cardinality is measured using bijective functions, where two sets are equal in size (cardinality) iff they there is a bijective function that can map all elements from set A to set B. Bijection is  a function where there is a one to one correspondance between two sets.
+The sizes of infinite sets are measured using cardinal numbers, using generalised natural numbers. Cardinality is measured using bijective functions, where two sets are equal in size (cardinality) iff they there is a bijective function that can map all elements from set A to set B. Bijection is  a function where there is a one to one correspondence between two sets.
 
 Through this, infinite sets can have different cardinalities.  The classic example is that the cardinality of the set of real numbers (ℝ) is greater than the cardinality of the set of natural numbers (ℕ), as there is no possible bijective function that can map the set of natural numbers to the set of  real numbers.
 
-Cardinalities of infinite sets are represented using aleph numbers, written as ℵ with a subscript denoting the relative size. The cardinality of ℕ that is the smallest infinity cardinality, which is represented by ℵ₀ (aleph-null). The cardinality of ℝ is called the "cardinality of the continuum" and is represented by 2^ℵ₀.  ℝ has the same cardinality as the the [[Power Set]] of ℕ.
+Cardinalities of infinite sets are represented using aleph numbers, written as ℵ with a subscript denoting the relative size. The cardinality of ℕ that is the smallest infinity cardinality, which is represented by ℵ₀ (aleph-null). The cardinality of ℝ is called the "cardinality of the continuum" and is represented by 2^ℵ₀.  ℝ has the same cardinality as the [[Power Set]] of ℕ.
 
 The set of all functions from ℝ to ℝ has an even greater cardinality than that of ℝ,  (2^ℵ₀)^(2^ℵ₀).
 
@@ -23,7 +23,7 @@ Transinfinite numbers are numbers that are larger than the set of all finite num
 ## Actual Infinity
 
 The acceptance of infinity entities as given, actual and completed objects.
-This concept is as much a philosophical one as it is a mathematical one, an again is distinct from potential infinity.  The hilariously titled "pre-modern thinkers" generally disagreed with the concept of completed infinity, as exemplified in the motto *Infinitum actu non datur* meaning "there is only potential infinity but not an actual infinity". Wikipedia alleges (without source) that the concept of actual infinity is now commonly accepted.
+This concept is as much a philosophical one as it is a mathematical one, and again is distinct from potential infinity.  The hilariously titled "pre-modern thinkers" generally disagreed with the concept of completed infinity, as exemplified in the motto *Infinitum actu non datur* meaning "there is only potential infinity but not an actual infinity". Wikipedia alleges (without source) that the concept of actual infinity is now commonly accepted.
 
 ## Potential Infinity
 

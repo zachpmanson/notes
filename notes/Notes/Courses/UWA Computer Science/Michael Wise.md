@@ -16,7 +16,7 @@ Things said by <cite>Michael Wise</cite> in [[CITS2003]].
 
 [[W04L01 - Variables]]
 
-> I went to see Everything Everwhere All At Once.  Did anyone understand what was going on?
+> I went to see Everything Everywhere All At Once.  Did anyone understand what was going on?
 
 [[W08L01 - Sed]]
 

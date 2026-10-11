@@ -52,7 +52,7 @@ will have HTML like this
 </div>
 ```
 
-Gross.  Why the hidden duplicated text?  Why the empty comments?  Why seperate aria versions of text?  Is this related to using Ember?  LinkedIn has so many little unpleasantries like this.
+Gross.  Why the hidden duplicated text?  Why the empty comments?  Why separate aria versions of text?  Is this related to using Ember?  LinkedIn has so many little unpleasantries like this.
 
 ---
 

@@ -12,7 +12,7 @@ The story presents this in the context of Augustus' worsening condition and even
 
 So far, I've been lucky enough to be free of facing slow health declines in myself and those close to me, but the concept of the Last Good Day has sat quietly in the back of my mind since first encountering it. Whenever I have some kind of impending loss, no matter how small, my thoughts tend to orbit around it.
 
-With my bachelor's degree coming to a close soon, lots of my friends are moving away for careers or further study in other countries. The groups that have formed won't continue to exist in the way the have for the last 3 years. Not everyone is leaving of course and no one person is single load-bearing pillar of the group, but buildings tend not to handle losing half their supports.
+With my bachelor's degree coming to a close soon, lots of my friends are moving away for careers or further study in other countries. The groups that have formed won't continue to exist in the way they have for the last 3 years. Not everyone is leaving of course and no one person is single load-bearing pillar of the group, but buildings tend not to handle losing half their supports.
 
 I've been aware that this will happen for months, and at every group event in my head I'm constantly thinking *Is this going to be the Last Good Day? Is this Good enough? Can I make this better?* This is definitely not healthy and definitely doesn't help me enjoy the limited time left with my friends. This line of thinking is something I hesitate to even talk about with my friends in fear of inspiring the same kind of thought spirals in their minds.
 

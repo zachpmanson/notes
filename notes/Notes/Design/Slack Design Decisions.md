@@ -36,4 +36,4 @@ This is unhinged and unlike every single other messaging app ever made. It means
 
 To my brain this feels very unintuitive, and it makes it difficult to find recent messages that I've already ordered. This is doubly bad for group chats, triply bad for forked group chats.
 
-Slack has a seperate DM screen that functions like a normal messaging app, the alphabetical order is only on the homescreen. I cannot justify this difference.
+Slack has a separate DM screen that functions like a normal messaging app, the alphabetical order is only on the homescreen. I cannot justify this difference.

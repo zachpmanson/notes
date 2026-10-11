@@ -12,12 +12,12 @@ A problem X is complete for class C if it is hard for C and contained within C. 
 These are in order of hardness, according to L = SL ⊆ NL ⊆ P ⊆ NP ⊆ PSPACE = NPSPACE.
 
 ### L
-Class L is the set of decision problems that can be solved by a deterministic Turing machine using a **l**ogarithmic amount of memory.  An example of this kind of problem is detemining whether a graph has a directed cycle. It is also called LSPACE.
+Class L is the set of decision problems that can be solved by a deterministic Turing machine using a **l**ogarithmic amount of memory.  An example of this kind of problem is determining whether a graph has a directed cycle. It is also called LSPACE.
 
 #### SL
 Class SL (**s**ymmetric **l**ogspace) is the set of problems that can reduced to USTCON (undirected s-t connectivity, aka the **undirected reachability problem**).  USTCON is the problem of determining whether there exists a path between two vertices in an undirected graph.  This problem is SL-complete.
 
-SL was first defined in 1982 by Harry R. Lewis and Christos Papadimitriou.  It was originally distinct from L since USTCON wasmconsidered NL at the time but didn't seem to require non-determinisim.  They defined the symmetric Turing machine and used it to define SL.  They showed that USTCON was complete for SL and proved that L ⊆ SL ⊆ NL.
+SL was first defined in 1982 by Harry R. Lewis and Christos Papadimitriou.  It was originally distinct from L since USTCON was considered NL at the time but didn't seem to require nondeterminism.  They defined the symmetric Turing machine and used it to define SL.  They showed that USTCON was complete for SL and proved that L ⊆ SL ⊆ NL.
 
 In October 2004 Omer Reingold proved that SL = L and as a consequence, symmetric Turing machines are equivalent to deterministic Turing machines when limited to log space.
 

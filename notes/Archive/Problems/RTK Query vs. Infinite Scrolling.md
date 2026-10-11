@@ -233,7 +233,7 @@ type PaginatedData<ItemType> = {
 	}),
 ```
 
-Then in the component where the hook is called, ensure that the page number is reset to 1 whenever a mutation occurs that will invalidate the `useGetLocationsQuery` data.  Since this page isn't an increase from the previous, the old cache will be discarded. This can be annoying since the component that triggers the mutation and invalidates the data may be completely seperate from the component that queries for the data.  
+Then in the component where the hook is called, ensure that the page number is reset to 1 whenever a mutation occurs that will invalidate the `useGetLocationsQuery` data.  Since this page isn't an increase from the previous, the old cache will be discarded. This can be annoying since the component that triggers the mutation and invalidates the data may be completely separate from the component that queries for the data.
 
 ```tsx
 function EditLocationAddress({id}: {id:number}) {

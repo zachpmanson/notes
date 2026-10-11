@@ -9,8 +9,8 @@ It is such a devastating attack that it's crazy nobody in-universe has tried it 
 
 ![[HoldoManeuver.png]]
 
-The Last Jedi film doesn't provide any explanation for why this has never been tried before. The novelisation has an explanation, stating the the Raddus has experimental shields allowing it to do this, but this is not in the text of the film at all. Further, it is contradicted in The Rise of Skywalker's
-attempted explanation which states that the "Holdo Maneuver" was "one in a million". That explanation feels unsatisfactory to me, because it mean that Holdo either:
+The Last Jedi film doesn't provide any explanation for why this has never been tried before. The novelisation has an explanation, stating that the Raddus has experimental shields allowing it to do this, but this is not in the text of the film at all. Further, it is contradicted in The Rise of Skywalker's
+attempted explanation which states that the "Holdo Maneuver" was "one in a million". That explanation feels unsatisfactory to me, because it means that Holdo either:
 
 1. was extremely lucky and noticed that the conditions were just right for it to work so went for it
 2. was risking everything when the attack was extremely unlikely to work

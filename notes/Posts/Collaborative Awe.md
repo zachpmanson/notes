@@ -9,7 +9,7 @@ I recently received access to DALL-E and played around with it for a while. The 
 
 Once you submit a prompt to DALL-E, you are shown more curated images and their corresponding prompts while your request is processed.
 
-DALL-E is capable of producing some amazing images. It takes a bit of warming up, but after little practice I was able to create wonderful and bizarre generative art. Despite this, I felt I didn't know how to produce something as interesting or engaging as their curated images the presented to me when using DALL-E. I could logically understand that the tool had potential, but I felt separated from it.
+DALL-E is capable of producing some amazing images. It takes a bit of warming up, but after little practice I was able to create wonderful and bizarre generative art. Despite this, I felt I didn't know how to produce something as interesting or engaging as their curated images they presented to me when using DALL-E. I could logically understand that the tool had potential, but I felt separated from it.
 
 Using Midjourney is completely a different experience. Midjourney currently runs its generative art AI through a bot on their company Discord server. You generate images by typing in a command in certain channels, and all the images produced are visible to everyone on the server simultaneously. Before you can even type something you are assaulted by an unfiltered, non-curated array of incredible images, all diffusing right before your eyes.
 

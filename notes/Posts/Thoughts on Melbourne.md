@@ -9,7 +9,7 @@ I miss having more friends than I can handle.  In Perth I would often whine abou
 
 I'm very grateful that the expats have looked after me, I'd have been lost without them.  They've been carrying me so hard.  Despite that, when they are busy or I fear I'm smothering them, I have nobody to see. That's something I haven't felt in many years, if ever.
 
-When I have an idea for a project that excites me I often think of nothing else.  I'll stay up till dawn working on the project, not letting myself rest until the feature is done or the bug is fixed.  This is complemented by by a desire to always be progressing in one way or another.  This manifests as a constant tug of wanting to learn something, progress a skill.  It was the feeling that drove me to start learning piano (though everything I learnt must be atrophied now).
+When I have an idea for a project that excites me I often think of nothing else.  I'll stay up till dawn working on the project, not letting myself rest until the feature is done or the bug is fixed.  This is complemented by a desire to always be progressing in one way or another.  This manifests as a constant tug of wanting to learn something, progress a skill.  It was the feeling that drove me to start learning piano (though everything I learnt must be atrophied now).
 
 When in the grips of this, anything unimportant feels like a waste of [[time]].  For example, video games lose their appeal immediately.
 

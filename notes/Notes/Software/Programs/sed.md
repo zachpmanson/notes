@@ -16,7 +16,7 @@ Simple actions can be specified inline using `-e`.
 sed -e "s/[()]/ & /g" -e "s/ */ /g*" file.txt
 ```
 
-This places places a space around all occurrences of `(` and `)`.
+This places a space around all occurrences of `(` and `)`.
 
 `g` means global, applies to every instance on the line rather than just the first of every line.
 
@@ -65,7 +65,7 @@ Address variants:
 
 - regex replacements `s/<regex>/<replacement>/[g]`
 	- `g` make it global
-	- `&` in replacment means "the entire captured text"
+	- `&` in replacement means "the entire captured text"
 - delete `d`
 - print `p`
 	- must be used with `-n`

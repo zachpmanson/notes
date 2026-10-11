@@ -20,7 +20,7 @@ Things Australia should steal:
 - density of population
 - ground floor is level 0
 - miniature versions of city centres in town square
-- toilet bowl shape that enables you appreciate your art (shelfstool)
+- toilet bowl shape that enables you to appreciate your art (shelfstool)
 - unique streetnames
 - sex clubs, night clubs
 - people dressing up and putting effort into costumes for nights out

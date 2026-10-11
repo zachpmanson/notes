@@ -4,7 +4,7 @@
 
 Some of the most fascinating places on the [[Internet]].  I have collected a list of interesting [[digital gardens]].
 
-Interest writing on digital gardens:
+Interesting writing on digital gardens:
 
 - [What are digital gardens?](https://cagrimmett.com/ideas/2020/11/08/what-are-digital-gardens/)
 - [A Brief History & Ethos of the Digital Garden](https://maggieappleton.com/garden-history)

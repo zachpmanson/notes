@@ -8,7 +8,7 @@ It has a few variants.
 - AWK - Bell Labs, 1977
 - Gawk - [[GNU]] awk, 1988
 - Nawk - New awk, 1993
-- Mawk - Mark Brennan's awk intepreter, in Ubuntu
+- Mawk - Mark Brennan's awk interpreter, in Ubuntu
 
 A view of pattern action rules that are applied to lines from an input file.
 
@@ -18,7 +18,7 @@ Awk rules are put into an awk script or embedded to commands.  Syntax is based o
 
 A rule is 1+ awk statements  enclosed in parentheses `{ }`, which can be preceded by a pattern to filter lines.  Rules without patterns are applied to all lines.
 
-awk regards input lines as a sequence of split on field seperators, by default space or tab.
+awk regards input lines as a sequence of split on field separators, by default space or tab.
 
 - `$0` is whole line
 - `$1` is first field, etc
@@ -37,7 +37,7 @@ awk regards input lines as a sequence of split on field seperators, by default s
 ## Variables
 
 - type depends on usage
-- string is default, intial value is `""`, sometimes casted to 0
+- string is default, initial value is `""`, sometimes casted to 0
 - can be used just by invoking name, no `$` required 
 
 Built in vars:
@@ -94,7 +94,7 @@ for (i=0; i < 10; i++) {
 - `length(<string>)`
 - `substr(s,m,n)` - equivalent to `s[m:m+n]`
 - `sprintf(fmt, expr)` - like `printf` but returns rather than prints
-- `sub(r,t,s)` - sub t into s for first occurance of regex r
+- `sub(r,t,s)` - sub t into s for first occurrence of regex r
 - `gsub(r,t,s)` - `sub()` but global
 - `system(cmd)` - shell out, useful for things like [[Bash]] `sort`
 - `printf()` - its like C

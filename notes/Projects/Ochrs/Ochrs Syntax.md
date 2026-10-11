@@ -19,7 +19,7 @@ Some text with a footnote[^1] and a footnote with a label [^label]
 
 ### Citations
 
-CiteExtention is a custom extension that turns `-- Name Here` into `<cite>Name here</cite>`.
+CiteExtension is a custom extension that turns `-- Name Here` into `<cite>Name here</cite>`.
 
 ## Backlinks
 
@@ -27,7 +27,7 @@ BacklinkExtension is an enhanced version of [WikiLinkExtension](https://python-m
 
 ## Build-Time Functions
 
-There are also build-time functions that you have access to on all pages. The list of extensions above is one of these, generated at built-time by Ochrs. The format to insert one of these functions is:
+There are also build-time functions that you have access to on all pages. The list of extensions above is one of these, generated at build-time by Ochrs. The format to insert one of these functions is:
 
 ```
 Some normal text {ochrs:example} some more text
@@ -37,7 +37,7 @@ Currently available Ochrs functions:
 
 {ochrs:ochrs-funcs}
 
-This are parsed prior to [[Markdown]] generation, so will take precedence over any Markdown syntax.
+These are parsed prior to [[Markdown]] generation, so will take precedence over any Markdown syntax.
 
 ## Tags
 

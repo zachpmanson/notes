@@ -33,7 +33,7 @@ As stated in h's formal specification, it can be used to represent all possible 
 
 They later developed a syntax, compiler and runtime for [the h Programming Language](https://christine.website/blog/h-language-2019-06-30) (hlang). This programming language was designed for the output of the h conlang, and expanded the character set in use to include both the Romanic form "h" and its Lojbanic equivalent "'".
 
-A long-standing difficulty for the programming language is expressing mathematical notation in its output. While it is entirely possible to express any and all equations in the language, for this purpose it doesn't utiltise the "h" character to its maximum capacity and as such is unnecessarily verbose.
+A long-standing difficulty for the programming language is expressing mathematical notation in its output. While it is entirely possible to express any and all equations in the language, for this purpose it doesn't utilise the "h" character to its maximum capacity and as such is unnecessarily verbose.
 
 ## Goals
 
@@ -145,7 +145,7 @@ The "𝐡" character should be usable in all contexts where "h" and "'" are curr
 
 ## Dependencies
 
-As with hlang v1.0, this proposal not require any dependencies, other than UTF-8 formatted source files.
+As with hlang v1.0, this proposal does not require any dependencies, other than UTF-8 formatted source files.
 
 ## Acknowledgements
 

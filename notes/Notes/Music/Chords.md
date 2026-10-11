@@ -15,7 +15,7 @@ Inversions are alternate forms of chords that arrange the same notes differently
 
 ## Triads
 
-A triad (aka harmony) is the most basic kind of chord consisting of a root, third, and fifth.  This is sometimes called stacked thirds, since their is a third between the 2nd and 3rd note.
+A triad (aka harmony) is the most basic kind of chord consisting of a root, third, and fifth.  This is sometimes called stacked thirds, since there is a third between the 2nd and 3rd note.
 
 A third is an interval encompassing 3 staff positions (inclusive):
 

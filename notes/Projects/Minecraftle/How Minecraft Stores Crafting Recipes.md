@@ -4,11 +4,11 @@ date: 2022-03-31
 tags:
   - posts
 ---
-As of Minecraft version 1.18.1, there are 739 crafting recipes in the game...depending on how you count. This little rabbithole is something I fell into during a meeting for a group project this week. The project tasks us with building a "daily puzzle game" in vein of Wordle, as my [[web development]] unit likes the idea of looking anachronistic in a few years.
+As of Minecraft version 1.18.1, there are 739 crafting recipes in the game...depending on how you count. This little rabbithole is something I fell into during a meeting for a group project this week. The project tasks us with building a "daily puzzle game" in the vein of Wordle, as my [[web development]] unit likes the idea of looking anachronistic in a few years.
 
 The meeting was very preliminary, essentially just getting to know one another and bounce some ideas off each other. One idea I had been mulling over was "Wordle but with for Minecraft crafting recipes", which requires no explanation for players of these two games (which among my peers includes everyone). My group immediately latched onto the idea, but acknowledged the scope of including all Minecraft recipes would be challenge, both in terms of game design and actually acquiring them.
 
-Transcribing by hand was possible but likely impractical, as was automatically scraping the [wiki](https://minecraft.fandom.com/wiki/Minecraft_Wiki). Luckily, the thousands of modders before us had poured through Minecraft's source file and through [cursory googling](https://gaming.stackexchange.com/questions/382431/list-of-all-minecraft-crafting-recipes-for-crafting-web) we were able to get to `.minecraft/versions/1.18.1.jar/data/minecraft/recipes/`, where all crafting recipes in the game are stored as lovely little JSON files. Perfect!
+Transcribing by hand was possible but likely impractical, as was automatically scraping the [wiki](https://minecraft.fandom.com/wiki/Minecraft_Wiki). Luckily, the thousands of modders before us had pored through Minecraft's source file and through [cursory googling](https://gaming.stackexchange.com/questions/382431/list-of-all-minecraft-crafting-recipes-for-crafting-web) we were able to get to `.minecraft/versions/1.18.1.jar/data/minecraft/recipes/`, where all crafting recipes in the game are stored as lovely little JSON files. Perfect!
 
 Upon further inspection there are some mildly interesting quirks within these JSON files. The majority of recipes vaguely follow this format:
 
@@ -115,7 +115,7 @@ Smelted items have an even simpler format:
 }
 ```
 
-Puzzingly there is a value for cooking time for each item, though smelting time is dependent on the type of furnace used rather than the item being smelted.
+Puzzlingly there is a value for cooking time for each item, though smelting time is dependent on the type of furnace used rather than the item being smelted.
 
 For example, all items cooked in a blast furnace have the same value for cooking time:
 
@@ -226,7 +226,7 @@ Now we can focus on the real trouble - every other aspect of puzzle game design 
 
 [[Minecraftle]] is [playable](https://minecraftle.zachmanson.com) and nearly fully finished. We submitted two weeks ago but there are a few things I want to implement for my own interest. The JSON files discussed in this post were used, but their format was inconvenient for querying so needed to be restructured. Yesterday I rewrote the script to restructure the recipe JSON files since the initial version was a mess, and finally implemented the functions to validate recipes on object placement. These changes revealed a few more quirks in the recipe JSON files.
 
-Some recipes have multiple forms, such as torches which use coal or charcoal. I had assumed this would just result in two seperate recipe files, but:
+Some recipes have multiple forms, such as torches which use coal or charcoal. I had assumed this would just result in two separate recipe files, but:
 
 ```sh
 > cat torch.json
@@ -285,7 +285,7 @@ Another oddity reared its head with stone tools:
 }
 ```
 
-See it? `tag` replaces `item` in a number of cases, such as stone tools. Blackstone and cobbled deepslate have been added fairly recently to the game, and can be used for interchangably for cobblestone in a number of recipes. This kind of notation appears in a number of recipes:
+See it? `tag` replaces `item` in a number of cases, such as stone tools. Blackstone and cobbled deepslate have been added fairly recently to the game, and can be used interchangeably with cobblestone in a number of recipes. This kind of notation appears in a number of recipes:
 
 ```sh
 > grep  "\"tag\":" *

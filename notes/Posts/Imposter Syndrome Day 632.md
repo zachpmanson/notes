@@ -9,12 +9,12 @@ Either because
 
 - it's prefixed by "graduate"
 - I tricked a floundering company in to hiring me between waves of layoffs for obscene amounts of money
-	- more money than most of the people I worked along side who were far smarter than me
+	- more money than most of the people I worked alongside who were far smarter than me
 	- and who got laid off with me as if we equally deserved it
 - I tricked a company into hiring me because they liked my [[Minecraftle|minecraft]] game (twice)
 - [[software]] engineers aren't real engineers
 - [[web development]] isn't even real software engineering
-- I couldn't write a compiler if you held me at gun point
+- I couldn't write a compiler if you held me at gunpoint
 - all I do is [[glue work]] and waste time
 - all I do is build "dashboard for x company to monitor y"
 - I don't really understand how half the tools I use work, I just know the buttons I need to press

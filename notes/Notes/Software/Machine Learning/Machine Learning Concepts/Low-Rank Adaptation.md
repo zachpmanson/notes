@@ -2,7 +2,7 @@
 
 -- Hu et al., [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)
 
-Low-Rank Adaptation (LoRA) is a method that is designed to allow full fine-tuning of existing LLMs without having to (expensively) retrain all the model parameters, and avoids additional inference latency. It works by freezing the model weights of the initial LLM and injecting trainable rank decomcomposition matrices onto each layer of the Transformer architechture. This reduces the number of parameters used in downstream tasks greatly.  This can reduce the memory requirements significantly, and allows "on-par or better" quality than fine-tuning models.
+Low-Rank Adaptation (LoRA) is a method that is designed to allow full fine-tuning of existing LLMs without having to (expensively) retrain all the model parameters, and avoids additional inference latency. It works by freezing the model weights of the initial LLM and injecting trainable rank decomcomposition matrices onto each layer of the Transformer architecture. This reduces the number of parameters used in downstream tasks greatly.  This can reduce the memory requirements significantly, and allows "on-par or better" quality than fine-tuning models.
 
 LoRA was initially explored as a technique for use in LLMs but is also applicable to other kinds of models. [It is used](https://replicate.com/blog/lora-faster-fine-tuning-of-stable-diffusion) to fine-tune [[Stable Diffusion]] models faster than other tools like Dreambooth.
 
@@ -28,21 +28,21 @@ LoRA was initially explored as a technique for use in LLMs but is also applicabl
 
 [[Rank]] is the maximal number of linearly independent columns in a matrix.  It has been found that neural networks have low intrinsic rank.
 
-> A neural network contains many dense layers which perform matrix multiplication. The weight matrices in these layers typically have full-rank. When adapting to a specific task, Aghajanyan et al. (2020) shows that the pre-trained language models have a low “instrisic dimension” and can still  learn efficiently despite a random projection to a smaller subspace. Inspired by this, we hypothesize the updates to the weights also have a low “intrinsic rank” during adaptation.
+> A neural network contains many dense layers which perform matrix multiplication. The weight matrices in these layers typically have full-rank. When adapting to a specific task, Aghajanyan et al. (2020) shows that the pre-trained language models have a low “intrinsic dimension” and can still  learn efficiently despite a random projection to a smaller subspace. Inspired by this, we hypothesize the updates to the weights also have a low “intrinsic rank” during adaptation.
 
 -- Hu et al., [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)
 
-## Wait what is intrensic dimensionality
+## Wait what is intrinsic dimensionality
 
 > the **intrinsic dimensionality** of a space is the number of *required* pieces of information that we need to describe each object in the space, which may differ from the number of pieces of information that we *are* using, which we call the **extrinsic dimensionality** of the space
 
 -- Matthew N. Bernstein, in his [very good writeup](https://mbernste.github.io/posts/intrinsic_dimensionality/)
 
-This in essence means that the dimensionality that is actually needed may be lower than the full dimensionality of the matrix.  A simple example of this is imagining a set of points on a 2D place that exists within a 3D space.  This has 3 extrensic dimensions, but since only 2 are actually needed to describe points, it has 2 intrensic dimensions.
+This in essence means that the dimensionality that is actually needed may be lower than the full dimensionality of the matrix.  A simple example of this is imagining a set of points on a 2D plane that exists within a 3D space.  This has 3 extrinsic dimensions, but since only 2 are actually needed to describe points, it has 2 intrinsic dimensions.
 
-## So what is intrensic rank
+## So what is intrinsic rank
 
-I guess intrensic rank is the *required* maximal number of linearly independent columns in a matrix, as opposited to the extrensic rank which is the number of linearly indepedent columns.
+I guess intrinsic rank is the *required* maximal number of linearly independent columns in a matrix, as opposed to the extrinsic rank which is the number of linearly independent columns.
 
 > Extrinsic rank is an objective property of a matrix that is based solely on its entries, while intrinsic rank takes into account the structure and patterns of the data, and it can be lower than the extrinsic rank in cases where the data has low-dimensional structure or redundancy.
 

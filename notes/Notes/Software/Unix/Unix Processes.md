@@ -17,7 +17,7 @@ More than one process can run in a window by making other processes background p
 
 `ps` lists currently running processes.
 
-- `-l` gives lots of information information
+- `-l` gives lots of information
 - `-f` provides command args
 
 `top` list the processes using the most CPU resources at a given time

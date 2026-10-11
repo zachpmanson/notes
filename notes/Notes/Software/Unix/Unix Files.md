@@ -23,7 +23,7 @@ These are presented like this in `ls`:
 ```
 
 
-Directories are the same but are preceeded with a `d`:
+Directories are the same but are preceded with a `d`:
 
 ```
 drw- --- ---
@@ -32,7 +32,7 @@ drw- --- ---
 Setting file permissions can be done with `chmod`  
 - `chmod <octal mode> <files>`
 	- silly to use this 2023 except in shell scripts, but even then
-	- each group of 3 permission is views a 3 bits of an octal number
+	- each group of 3 permission is viewed a 3 bits of an octal number
 		- 100 r perm
 		- 010 w perm
 		- 001 x perm
@@ -70,7 +70,7 @@ date | wc
 
 ## Scripts
 
-Scripts are files that contains sets of commands on consecutive lives that can be repeatedly run.
+Scripts are files that contains sets of commands on consecutive lines that can be repeatedly run.
 
 The first line of a script says what interpreter should be used to execute the script.
 
@@ -84,4 +84,4 @@ Script needs to be made executable
 chmod u+x script.sh
 ```
 
-From here [[Bash]] takes overs.
+From here [[Bash]] takes over.

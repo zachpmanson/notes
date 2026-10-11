@@ -13,7 +13,7 @@ Some surprising name origins.
 - Algorithms, named after Muhammad ibn Musa al-Khwarizmi
 	- and algebra, named after his book Al-Jabr
 - Pap test, named after Georgios Papanikolaou
-- MySQL, named after creator Michael Windenius' duaghter, My Widenius
+- MySQL, named after creator Michael Windenius' daughter, My Widenius
 - Burpee, named after Royal Huddleston Burpee Sr.
 - Pilates, named after Joe Pilates
 - Mesmerize, named after Franz Mesmer

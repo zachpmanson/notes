@@ -74,7 +74,7 @@ Minecraftle 25/05/2022 3/10
 
 `172b3f2`: Optimised recipes validation, still relatively inefficient though.
 
-`cd0c61e`: Made game submission API a seperate endpoint to user stats endpoint, rather than being a hacky overload of the stats endpoint.
+`cd0c61e`: Made game submission API a separate endpoint to user stats endpoint, rather than being a hacky overload of the stats endpoint.
 
 `007865b`: Significantly reduced size of `recipes.json` to only include recipes that are actually possible to create with the given ingredients. This reduces initial pageload time and reduces load on my server.
 
@@ -82,15 +82,15 @@ Minecraftle 25/05/2022 3/10
 
 ## Revenge
 
-Since initial release 2500+ people have played the game. From what I can tell this primary originated from popularity at a local primary school and the now-defunct [LikeWordle.com](https://web.archive.org/web/20220927035303/https://likewordle.com/). Most of these players haven't become regular users though, only playing one or two games. Really its just me and my ex competing for the number one spot on the leaderboard. After months of hard work she overtook me as number 1 and I have been clawing my way back ever since. Obviously I could cheat since I'm the admin but where's the fun in that? Despite that, I'm not opposed to adding features to help me take back the crown.
+Since initial release 2500+ people have played the game. From what I can tell this primarily originated from popularity at a local primary school and the now-defunct [LikeWordle.com](https://web.archive.org/web/20220927035303/https://likewordle.com/). Most of these players haven't become regular users though, only playing one or two games. Really its just me and my ex competing for the number one spot on the leaderboard. After months of hard work she overtook me as number 1 and I have been clawing my way back ever since. Obviously I could cheat since I'm the admin but where's the fun in that? Despite that, I'm not opposed to adding features to help me take back the crown.
 
 `309a557`: Added indicators to the stats page to show users how far behind and ahead they are of their neighbours on the leaderboard.
 
-`5dca9d2`: Added an account recovery button since I accidentally deleted my account the day after taking back the crown (I swear). This does expose a prexisting security flaw, but does enable it to be used in a positive way. For reference, clearing your browser data will make your device forget which account is it associated with.
+`5dca9d2`: Added an account recovery button since I accidentally deleted my account the day after taking back the crown (I swear). This does expose a pre-existing security flaw, but does enable it to be used in a positive way. For reference, clearing your browser data will make your device forget which account is it associated with.
 
 ## Bugfixes
 
-`23dc225`: Fixed bug caused by the use of item tags in Minecraft source files. Item tags represent groups of items that are effectively interchangable in crafting recipes, such as coal and charcoal. Minecraftle conversion scripts have been updated to expect this, and will replace these with the preferred variant e.g. coal/charcoal group will be replaced with coal.
+`23dc225`: Fixed bug caused by the use of item tags in Minecraft source files. Item tags represent groups of items that are effectively interchangeable in crafting recipes, such as coal and charcoal. Minecraftle conversion scripts have been updated to expect this, and will replace these with the preferred variant e.g. coal/charcoal group will be replaced with coal.
 
 `d98e83a`: Forced game to be set to Perth timezone. Deployment VPS is in North America, so the server-side calculation of the current recipes wasn't changing at midnight in Perth, where most of the player base is.
 

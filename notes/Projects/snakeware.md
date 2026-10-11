@@ -6,9 +6,9 @@ date: 2024-03-26
 ---
 ![[snakeware.png]]
 
-snakeware is an experimental [[Linux]]-based OS with developed in 2020.  Its userspace is written entirely in Python, barring a single Busybox root process.  It was created by Joshua Moore drawing inspiration from the Commodore 64.  The window manager, snakewm, is written primarily with pygame_gui.  It is not based on X11 or Wayland, instead writing directly to the framebuffer (`/dev/fb0`).
+snakeware is an experimental [[Linux]]-based OS developed in 2020.  Its userspace is written entirely in Python, barring a single Busybox root process.  It was created by Joshua Moore drawing inspiration from the Commodore 64.  The window manager, snakewm, is written primarily with pygame_gui.  It is not based on X11 or Wayland, instead writing directly to the framebuffer (`/dev/fb0`).
 
-On first boot, snakeware launches you directly a the Python interpreter.  From here you can run Python commands directly, launch the window manager, or launch CLI games.
+On first boot, snakeware launches you directly to the Python interpreter.  From here you can run Python commands directly, launch the window manager, or launch CLI games.
 
 To launch snakewm from the interpreter, run the `snakewm` command.  From snakewm the aopp menu can be opened using the Super key.  From here a number of applications can be launched.
 

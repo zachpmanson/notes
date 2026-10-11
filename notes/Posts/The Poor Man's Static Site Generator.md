@@ -27,7 +27,7 @@ pandoc inputfile.md -o output.html --to=html5
 
 ## Code Highlighting
 
-There are plenty of tools that can do this, but Pandoc was the first I found that had code highlighting without having any depedencies like [highlight.js](https://highlightjs.org/), just saving the colour information in inline CSS
+There are plenty of tools that can do this, but Pandoc was the first I found that had code highlighting without having any dependencies like [highlight.js](https://highlightjs.org/), just saving the colour information in inline CSS
 
 Any fenced Markdown code blocks with a language specified (like the following) will have the syntax automatically highlighted by Pandoc.
 

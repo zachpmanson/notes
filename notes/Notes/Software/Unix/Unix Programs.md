@@ -4,7 +4,7 @@ When [[programs]] conclude they return an exit status.
  - positive integers represent an error state, usually 1 is used
  - in [[Bash]], `$?` can be used to access last commands exit status
 
-A helpful resources outside of man pages:
+A helpful resource outside of man pages:
 
 - [tldr.sh](https://tldr.sh/)
 	- web client [tldr.inbrowser.app](https://tldr.inbrowser.app/)
@@ -87,7 +87,7 @@ A helpful resources outside of man pages:
 	- `-perm <mode>` finds only files with certain permissions
 		- `mode` can be octal or symbolic
 - `diff <file1> <file2>`
-	- shows the differences between to files
+	- shows the differences between two files
 - `grep [<options>] <regex> <file>`
 	- `-i` case insensitive
 	- `-n` prepend numbers of matching lines

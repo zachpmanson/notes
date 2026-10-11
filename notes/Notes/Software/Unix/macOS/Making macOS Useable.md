@@ -3,7 +3,7 @@ macOS is a lovely operative system except that it is missing so many basic usabi
 ## Must have
 
 - No proper package manager  
-   [Homebrew](https://brew.sh/) package manger
+   [Homebrew](https://brew.sh/) package manager
 - No window tiling  
    [Amethyst](https://ianyh.com/amethyst/) tiling window manager
 - Can't set  3 finger tap on touchpad to middle click  

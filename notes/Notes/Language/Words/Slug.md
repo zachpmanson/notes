@@ -4,7 +4,7 @@ tags:
   - posts
 date: 2023-10-21
 ---
-In [[web development]], you sometimes come across a segment of a URL called a "slug", which is human readable string of text appended to a URL to make easier to determine the content the URL points to.  The slug itself if usually not actually necessary for web server to serve the correct page.  For example, these two links point to the same page:
+In [[web development]], you sometimes come across a segment of a URL called a "slug", which is human readable string of text appended to a URL to make easier to determine the content the URL points to.  The slug itself is usually not actually necessary for web server to serve the correct page.  For example, these two links point to the same page:
 
 [https://stackoverflow.com/questions/4230846/what-is-the-etymology-of-slug-in-a-url](https://stackoverflow.com/questions/4230846/what-is-the-etymology-of-slug-in-a-url)
 

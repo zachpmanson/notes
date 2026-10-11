@@ -6,7 +6,7 @@ The process of making computers learn to solve problems themselves, based on exa
 
 > Suppose we arrange for some automatic means of testing the effectiveness of any current weight assignment in terms of actual performance and provide a mechanism for altering the weight assignment so as to maximize the performance. We need not go into the details of such a procedure to see that it could be made entirely automatic and to see that a machine so programmed would "learn" from its experience.
 
--- Arther Samuel, Artificial Intelligence: A Frontier of Automation
+-- Arthur Samuel, Artificial Intelligence: A Frontier of Automation
 
 ## Important concepts
 
@@ -28,7 +28,7 @@ The process of making computers learn to solve problems themselves, based on exa
 - regression model is one that predicts >=1 numeric qualities
 	- do not use *regression* to refer to linear regression models
 - "overfitting" can occur when a model is trained for too long, and it starts to memorize the input data too precisely, rather than determining generalised rules
-- validation set is the subset of all labelled data that is seperated from the training set, used for measuring the accuracy of the model
+- validation set is the subset of all labelled data that is separated from the training set, used for measuring the accuracy of the model
 - model architecture is the functional form of a model
 - metric is a function that measures the quality of a models predictions using the validation set
 	- a simple example is the error rate of a classifier

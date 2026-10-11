@@ -1,4 +1,4 @@
-Firefox containers are great! But the the new tab behaviour always opens new tabs in the default container. I would like new tabs to open using the container from the currently open tab.
+Firefox containers are great! But the new tab behaviour always opens new tabs in the default container. I would like new tabs to open using the container from the currently open tab.
 
 This is not natively supported by multi-account containers, but Tree Style Tabs allows you to fix this.
 

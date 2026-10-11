@@ -108,7 +108,7 @@ CITS3006 Penetration Testing
 
 - amazing
 - final assessment is literally break into this VM, then secure it and swap with other groups
-- good balance of pratical and theoretical
+- good balance of practical and theoretical
 - Jin Hong is fantastic
 - lab instructors are all great
 - had one lecture that wasn't allowed to be recorded because it taught actual live vulnerabilities in UWA systems, excellent, all units should have one of these
@@ -118,7 +118,7 @@ CITS3007 Secure Coding
 
 - the worst C unit by default, only because the others are just so good
 - teaches you how to write vulnerable C code, and how to turn off compiler safety checks
-- is geniunely interesting
+- is genuinely interesting
 - Arran Stuart is great, seems like the lecturer who is most in touch with modern software engineering?
 
 CITS3401 Data Warehousing
@@ -126,13 +126,13 @@ CITS3401 Data Warehousing
 - actual trash
 - feels like I learnt 5 things about large scale data storage and nothing else
 - project is an arbitrary mess
-- pratical side of the unit is a joke
+- practical side of the unit is a joke
 - got really interesting for 2 weeks when it completely switches gears to talk about graph databases but then lets you down again
 
 CITS3403 Agile [[Web Development]]
 
 - really fun and very practical
-- FIRST ACTUAL USE OF [[Git]] (do no wait till third year, learn this in year 1 semester 1) how did it take this long
+- FIRST ACTUAL USE OF [[Git]] (do not wait till third year, learn this in year 1 semester 1) how did it take this long
 - well taught
 - [very](https://minecraftle.zachmanson.com) [[Minecraftle|fun project]]
 

@@ -23,13 +23,13 @@ For 1:1 conversations, email is pretty good. Similar to how me and my friend Apr
 
 Me and April are very happy with a 6 month long chain discussing Lego Star Wars The Complete Saga when I realise my friend Ben might have something to add. Email offers two ways to add Ben to the conversation, a) reply to the existing thread and add Ben as recipient or b) forward the latest message to Ben. Both of these have pros and cons but both lead to the same core problem. 
 
-Neither option actually sends Ben 6 months of emails, both send Ben 1 email. But fear not, my email client of choice injects a quote of the message it is a reply to, and April's client does the same thing, so the message Ben gets will contain 6 months worth of nested quoted emails which he can read in reverse order to catch up to the conversation. This is an annoying in format, but the bigger problem is that it's fragile.
+Neither option actually sends Ben 6 months of emails, both send Ben 1 email. But fear not, my email client of choice injects a quote of the message it is a reply to, and April's client does the same thing, so the message Ben gets will contain 6 months worth of nested quoted emails which he can read in reverse order to catch up to the conversation. This is an annoying format, but the bigger problem is that it's fragile.
 
 The quoted section is just a convention[^html] that every email client does it slightly differently. It's exposed in the email editor UI so I could alter the quoted text[^annotations][^link-substitution] while Ben would be none the wiser. If I deleted the quoted text in an email to April 3 weeks ago[^partial-quoting], April and I are unlikely to notice since we both have the original copies but that would break the nested quoting chain for all future emails and Ben would not see any messages before that deletion. He wouldn't even know there were any older than 3 weeks.
 
 This problem is more or less exactly the same problems you would run into on paper. April and I send letters for 6 months, I want to get Ben's thoughts so I need to send him a copy of every letter April and I have sent on the subject. I could alter the emails and Ben wouldn't know, or I could send him a subset of the chain and he wouldn't know. He just has to trust that I'm sharing everything he needs. The only difference is email clients add quotes automatically-ish, which automates me walking around my house finding all the letters in the thread and making photocopies.
 
-Then Ben writes his reply, and sends a copy to me and and to April, hopefully using the same subject line so we know it's related to our existing thread. We continue on, all future messages contain all 3 of us as recipients and we continue our discussion.
+Then Ben writes his reply, and sends a copy to me and to April, hopefully using the same subject line so we know it's related to our existing thread. We continue on, all future messages contain all 3 of us as recipients and we continue our discussion.
 
 Adding Ben to the chain worked, but there were several places context could have been lost and would be invisible to Ben:
 

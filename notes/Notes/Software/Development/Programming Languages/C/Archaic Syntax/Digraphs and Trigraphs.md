@@ -16,7 +16,7 @@ tags:
 |`??>`|`}`|
 |`??-`|`~`|
 
-The can accidentally be triggered causing strange behaviour. 
+They can accidentally be triggered causing strange behaviour.
 
 ```C
 // Will the next line be executed????????????????/

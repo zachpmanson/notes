@@ -6,4 +6,4 @@ For better or for worse, Spotify's product has had a huge impact on my life.
 
 ## Related
 
-- [[Spotify Design Decisions]]]
+- [[Spotify Design Decisions]]

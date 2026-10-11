@@ -1,3 +1,3 @@
-A  power set of S is the set of all subsets of S, usually represented as 𝒫(*S*), *P*(*S*), ℙ(S). Given S is a finite set, the cardinality is n, represented as `|S| = n`.  The cardinality of `|P(S)| = 2^n`. 
+A power set of S is the set of all subsets of S, usually represented as 𝒫(*S*), *P*(*S*), ℙ(S). Given S is a finite set, the cardinality is n, represented as `|S| = n`.  The cardinality of `|P(S)| = 2^n`.
 
 `|P(S)| >  |S|` always have higher cardinality than, as proven with Cantor's diagonal argument. For infinite sets this holds, for example given `S` is countably [[Infinity|infinite]],  `P(S)` is uncountably infinity.

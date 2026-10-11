@@ -10,7 +10,7 @@ An agent can perceive its environment with sensors and act upon the environment 
 
 Agents have performance measures that are the goals they aim to achieve.  Often information gathering is a rational decision to make in order to achieve goals.
 
-They exists within [[Task Environments]].
+They exist within [[Task Environments]].
 
 ## Types of Agents
 

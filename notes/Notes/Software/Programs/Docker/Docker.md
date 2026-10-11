@@ -22,7 +22,7 @@ Docker is a system for running virtual machines called containers.
 ## Architecture
 
 - Client - CLI interface
-- Daemon - background service that listend for API requests and manages docker objects
+- Daemon - background service that listens for API requests and manages docker objects
 - Docker desktop - manager for other components
 - Docker registry - a package repo, docker hub is the default
 - Docker objects
@@ -41,7 +41,7 @@ docker run \
 -it IMAGE:TAG
 ```
 
-- `mount` sets an folder on host to folder in container
+- `mount` sets a folder on host to folder in container
   - use absolute folders
 - `it` allows interaction
 - `TAG` is the version of the image

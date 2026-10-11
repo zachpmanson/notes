@@ -7,7 +7,7 @@ DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscu
 - **Avuncular**: kind and friendly towards a younger or less experienced person.
 - **Bikeshedding**: arguing about unimportant details, at the cost of working on important details
 - **Bus Factor**: the risk that a project will die if certain people get hit by bus
-- **Citogenesis** ([xkcd](https://xkcd.com/978/)): when misinformation it put on wikipedia, taken as fact by another author in their article, and later that article is added as a citation to the   
+- **Citogenesis** ([xkcd](https://xkcd.com/978/)): when misinformation is put on wikipedia, taken as fact by another author in their article, and later that article is added as a citation to the
 - **Complect**: intertwine, embrace especially; to plait together; interweave.
 - **Elided**: (of a sound or syllable) omitted when speaking.
 - **Enshittification** ([Pluralistic](https://pluralistic.net/2023/01/21/potemkin-ai/#hey-guys)): "how platforms die: first, they are good to their users; then they abuse their users to make things better for their business customers; finally, they abuse those business customers to claw back all the value for themselves. Then, they die."
@@ -42,12 +42,12 @@ DoOS refers to the [Dictionary of Obscure Sorrows](https://www.dictionaryofobscu
 - **Sargable**: a query which is able to be optimised through usage of an index
 - **Schadenfreude** (German): enjoyment obtained from the troubles of others
 - **Semantic satiation**: when you repeat a word so many times it loses its meaning
-- **Setsunai** (Japanese): nostalgic/whistful/longing/melancholy/sad/heartache/bittersweet
+- **Setsunai** (Japanese): nostalgic/wistful/longing/melancholy/sad/heartache/bittersweet
 - **Shibboleth** (Hebrew): a custom, principle, or belief distinguishing a particular class or group of people, especially a long-standing one regarded as outmoded or no longer important.
 - **Sonder** (DoOS): the realization that each random passerby is living a life as vivid and complex as your own
 - **Supplicant** (Latin): someone who prays to God
 - **Therianthrope**: what lycanthrope pretends to mean; lycanthrope only refers to wolf transformations
-- **Tsundoku** (Japanses): the stack(s) of books you’ve purchased but haven’t read
+- **Tsundoku** (Japanese): the stack(s) of books you’ve purchased but haven’t read
 - **Vellichor** (English): the strange wistfulness of used bookstores
 - **Vemödalen** (DoOS): the frustration of photographing something amazing when thousands of identical photos already exist—the same sunset, the same waterfall, the same curve of a hip, the same closeup of an eye—which can turn a unique subject into something hollow and pulpy and cheap, like a mass-produced piece of furniture you happen to have assembled yourself
 - **Watashiato** (DoOS): curiosity about the impact you’ve had on the lives of the people you know, wondering which of your harmless actions or long-forgotten words might have altered the plot of their stories in ways you’ll never get to see.

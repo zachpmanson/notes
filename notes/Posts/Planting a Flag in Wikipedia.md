@@ -4,7 +4,7 @@ date: 2023-02-06
 tags:
   - posts
 ---
-There is a wonderful browser extension with an awful name made by Third Iron called [LibKey Nomad](https://thirdiron.com/products/libkey-nomad/). It allows university staff and students gain access to academic journals that your univesity is subscribed to without logging in or requesting access. You install the extension, sign in with your university credentials, and then it just works. Whenever you are on a site that LibKey Nomad is automatically allowing you access to, it displays this little banner in the corner of the page.
+There is a wonderful browser extension with an awful name made by Third Iron called [LibKey Nomad](https://thirdiron.com/products/libkey-nomad/). It allows university staff and students gain access to academic journals that your university is subscribed to without logging in or requesting access. You install the extension, sign in with your university credentials, and then it just works. Whenever you are on a site that LibKey Nomad is automatically allowing you access to, it displays this little banner in the corner of the page.
 
 ![[proper-popup.png]]
 

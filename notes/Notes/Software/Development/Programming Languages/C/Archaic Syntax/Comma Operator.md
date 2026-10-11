@@ -1,4 +1,4 @@
-Comma is an operator than can be applied to expression in C, where the first argument is evaluated and then ignored, and the second value is returned.
+Comma is an operator that can be applied to expression in C, where the first argument is evaluated and then ignored, and the second value is returned.
 
 ```
 int a = (1, 2);

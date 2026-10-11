@@ -11,7 +11,7 @@ Has 2 kinds of components, rules and variables.
 	<commands>
 ```
 
-Can have multiple targets seperated by spaces, but don't.
+Can have multiple targets separated by spaces, but don't.
 Commands appear on successive lines, beginning with TAB.
 
 ## Variables
@@ -28,7 +28,7 @@ Use `$( )` to insert the value into rules.
 
 - `$@` - target
 - `$<` - first precondition
-- `$^` - a list of all preconditions (space seperated)
+- `$^` - a list of all preconditions (space separated)
 - `$*` - wildcard pattern match result
 
 ## Special Targets
@@ -37,7 +37,7 @@ There exist targets that are not compiled but useful for other purposes.
 
 `.PRECIOUS` allows files to be ignored when cleaning up intermediate files.  Useful for keeping files that are heavy to compute.
 
-## Invokation Args
+## Invocation Args
 
 - `-j <N>` makes N targets run in parallel
 - `-k` continue even if errors occur

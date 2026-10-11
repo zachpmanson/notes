@@ -15,7 +15,7 @@ It was initially written in ASM, but sparked the creation of [[C]] which was des
 - smaller kernel, a master process which provides services to system and user processes
 - a simple datatype (text) and simple interprocess communication
   - allows chaining of processes
-- seperation between ordinary users and superusers using privileges
+- separation between ordinary users and superusers using privileges
 - files
   - almost everything is a file
     - processes are files
@@ -41,9 +41,9 @@ It was initially written in ASM, but sparked the creation of [[C]] which was des
 
 ## Environment Variables
 
-Environment variables are defined by the system and will be will be passed to the shell.
+Environment variables are defined by the system and will be passed to the shell.
 
-- system path is stored in env var `PATH`, list of dirs seperated by `:`, usually contains the following paths
+- system path is stored in env var `PATH`, list of dirs separated by `:`, usually contains the following paths
   - `/bin`
     - top level system commands
     - `cat`, `echo`
