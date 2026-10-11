@@ -113,9 +113,9 @@
       <h1>Things noticed while stealing Mojang's work for marks</h1>
     </header>
 
-    <article><p>As of Minecraft version 1.18.1, there are 739 crafting recipes in the game...depending on how you count. This little rabbithole is something I fell into during a meeting for a group project this week. The project tasks us with building a "daily puzzle game" in vein of Wordle, as my <a href="/web-development">web development</a> unit likes the idea of looking anachronistic in a few years.</p>
+    <article><p>As of Minecraft version 1.18.1, there are 739 crafting recipes in the game...depending on how you count. This little rabbithole is something I fell into during a meeting for a group project this week. The project tasks us with building a "daily puzzle game" in the vein of Wordle, as my <a href="/web-development">web development</a> unit likes the idea of looking anachronistic in a few years.</p>
 <p>The meeting was very preliminary, essentially just getting to know one another and bounce some ideas off each other. One idea I had been mulling over was "Wordle but with for Minecraft crafting recipes", which requires no explanation for players of these two games (which among my peers includes everyone). My group immediately latched onto the idea, but acknowledged the scope of including all Minecraft recipes would be challenge, both in terms of game design and actually acquiring them.</p>
-<p>Transcribing by hand was possible but likely impractical, as was automatically scraping the <a href="https://minecraft.fandom.com/wiki/Minecraft_Wiki">wiki</a>. Luckily, the thousands of modders before us had poured through Minecraft's source file and through <a href="https://gaming.stackexchange.com/questions/382431/list-of-all-minecraft-crafting-recipes-for-crafting-web">cursory googling</a> we were able to get to <code>.minecraft/versions/1.18.1.jar/data/minecraft/recipes/</code>, where all crafting recipes in the game are stored as lovely little JSON files. Perfect!</p>
+<p>Transcribing by hand was possible but likely impractical, as was automatically scraping the <a href="https://minecraft.fandom.com/wiki/Minecraft_Wiki">wiki</a>. Luckily, the thousands of modders before us had pored through Minecraft's source file and through <a href="https://gaming.stackexchange.com/questions/382431/list-of-all-minecraft-crafting-recipes-for-crafting-web">cursory googling</a> we were able to get to <code>.minecraft/versions/1.18.1.jar/data/minecraft/recipes/</code>, where all crafting recipes in the game are stored as lovely little JSON files. Perfect!</p>
 <p>Upon further inspection there are some mildly interesting quirks within these JSON files. The majority of recipes vaguely follow this format:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;minecraft:crafting_shaped&quot;</span><span class="p">,</span>
@@ -205,7 +205,7 @@ cooked_mutton_from_campfire_cooking.json
 <span class="w">  </span><span class="nt">&quot;cookingtime&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span>
 <span class="p">}</span>
 </code></pre></div>
-<p>Puzzingly there is a value for cooking time for each item, though smelting time is dependent on the type of furnace used rather than the item being smelted.</p>
+<p>Puzzlingly there is a value for cooking time for each item, though smelting time is dependent on the type of furnace used rather than the item being smelted.</p>
 <p>For example, all items cooked in a blast furnace have the same value for cooking time:</p>
 <div class="highlight"><pre><span></span><code>zach@grannysmith<span class="w"> </span>recipes<span class="w"> </span>%<span class="w"> </span>cat<span class="w"> </span>*blast*<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot;cookingtime&quot;</span>
 <span class="w">  </span><span class="s2">&quot;cookingtime&quot;</span>:<span class="w"> </span><span class="m">100</span>
@@ -296,7 +296,7 @@ cooked_mutton_from_campfire_cooking.json
 <hr />
 <p><strong>Update 2022-06-05:</strong></p>
 <p><a href="/minecraftle">Minecraftle</a> is <a href="https://minecraftle.zachmanson.com">playable</a> and nearly fully finished. We submitted two weeks ago but there are a few things I want to implement for my own interest. The JSON files discussed in this post were used, but their format was inconvenient for querying so needed to be restructured. Yesterday I rewrote the script to restructure the recipe JSON files since the initial version was a mess, and finally implemented the functions to validate recipes on object placement. These changes revealed a few more quirks in the recipe JSON files.</p>
-<p>Some recipes have multiple forms, such as torches which use coal or charcoal. I had assumed this would just result in two seperate recipe files, but:</p>
+<p>Some recipes have multiple forms, such as torches which use coal or charcoal. I had assumed this would just result in two separate recipe files, but:</p>
 <div class="highlight"><pre><span></span><code>&gt;<span class="w"> </span>cat<span class="w"> </span>torch.json
 <span class="o">{</span>
 <span class="w">  </span><span class="s2">&quot;type&quot;</span>:<span class="w"> </span><span class="s2">&quot;minecraft:crafting_shaped&quot;</span>,
@@ -347,7 +347,7 @@ cooked_mutton_from_campfire_cooking.json
 <span class="w">  </span><span class="o">}</span>
 <span class="o">}</span>
 </code></pre></div>
-<p>See it? <code>tag</code> replaces <code>item</code> in a number of cases, such as stone tools. Blackstone and cobbled deepslate have been added fairly recently to the game, and can be used for interchangably for cobblestone in a number of recipes. This kind of notation appears in a number of recipes:</p>
+<p>See it? <code>tag</code> replaces <code>item</code> in a number of cases, such as stone tools. Blackstone and cobbled deepslate have been added fairly recently to the game, and can be used interchangeably with cobblestone in a number of recipes. This kind of notation appears in a number of recipes:</p>
 <div class="highlight"><pre><span></span><code>&gt;<span class="w"> </span>grep<span class="w">  </span><span class="s2">&quot;\&quot;tag\&quot;:&quot;</span><span class="w"> </span>*
 acacia_planks.json:<span class="w">      </span><span class="s2">&quot;tag&quot;</span>:<span class="w"> </span><span class="s2">&quot;minecraft:acacia_logs&quot;</span>
 barrel.json:<span class="w">      </span><span class="s2">&quot;tag&quot;</span>:<span class="w"> </span><span class="s2">&quot;minecraft:planks&quot;</span>
@@ -448,7 +448,7 @@ yellow_bed.json:<span class="w">      </span><span class="s2">&quot;tag&quot;</s
           <date>2022-03-31</date>
           
           <a href="/recent-changes">recent</a>
-          <a href="/brainfuck" class="not-extra-small">random</a>
+          <a href="/kinds-of-problems" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'How Minecraft Stores Crafting Recipes'">reply</a>
@@ -467,7 +467,7 @@ yellow_bed.json:<span class="w">      </span><span class="s2">&quot;tag&quot;</s
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Projects/Minecraftle/How Minecraft Stores Crafting Recipes.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Projects/Minecraftle/How Minecraft Stores Crafting Recipes.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/brainfuck" class="extra-small">random</a>
+          <a href="/kinds-of-problems" class="extra-small">random</a>
         </div>
       </div>
 
@@ -496,7 +496,7 @@ yellow_bed.json:<span class="w">      </span><span class="s2">&quot;tag&quot;</s
           <strong>
             Updated:
           </strong>
-          <date>2024-04-22</date>
+          <date>2026-10-12</date>
         </span>
 
       </p>

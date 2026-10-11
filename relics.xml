@@ -13,14 +13,14 @@
             <link>https://notes.zachmanson.com/relics</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Thu, 08 Oct 2026 02:29:33 </lastBuildDate>
+        <lastBuildDate>Sun, 11 Oct 2026 13:50:15 </lastBuildDate>
         
         <item>
             <title>Slug</title>
             <link>https://notes.zachmanson.com/slug</link>
             
             <content:encoded>
-                <![CDATA[<p>In <a href="https://notes.zachmanson.com/web-development">web development</a>, you sometimes come across a segment of a URL called a "slug", which is human readable string of text appended to a URL to make easier to determine the content the URL points to.  The slug itself if usually not actually necessary for web server to serve the correct page.  For example, these two links point to the same page:</p>
+                <![CDATA[<p>In <a href="https://notes.zachmanson.com/web-development">web development</a>, you sometimes come across a segment of a URL called a "slug", which is human readable string of text appended to a URL to make easier to determine the content the URL points to.  The slug itself is usually not actually necessary for web server to serve the correct page.  For example, these two links point to the same page:</p>
 <p><a href="https://stackoverflow.com/questions/4230846/what-is-the-etymology-of-slug-in-a-url">https://stackoverflow.com/questions/4230846/what-is-the-etymology-of-slug-in-a-url</a></p>
 <p><a href="https://stackoverflow.com/questions/4230846">https://stackoverflow.com/questions/4230846</a></p>
 <p>This use of the word's use in web media is following a convention from print media, where a "slug" is an informal name given to a story before publication.  Print media takes the term from printing presses, where a slug is a line of lead cast characters.</p>

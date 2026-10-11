@@ -86,22 +86,22 @@
 <p><cite class="standalone"><a href="https://youtu.be/dulffMFqD7k?si=WDV0MdeVKd51kOUv&amp;t=93">Farid Zakaria</a></cite></p>
 <p><a href="/nix">Nix</a> and <a href="/nixos">NixOS</a> have lots of different tendrils that impact different kinds of work. Here are the problems that they have solved for me.</p>
 <h2 id="roses">Roses</h2>
-<h3 id="per-project-dependency-mangement">Per Project Dependency Mangement</h3>
-<p>Each software project relies on slightly different environments. My site builder might need Node 24, my fork of an open source project needs Node 20, my work frontend might need Node 22. And maybe theres some program I like that only distributes through npm, so I need a global npm install. </p>
+<h3 id="per-project-dependency-management">Per Project Dependency Management</h3>
+<p>Each software project relies on slightly different environments. My site builder might need Node 24, my fork of an open source project needs Node 20, my work frontend might need Node 22. And maybe there's some program I like that only distributes through npm, so I need a global npm install.</p>
 <p>For Node.js, the tool generally reached for is nvm which allows you to install parallel Node versions. I don't know how that interacts with a global npm, and thinking about that stresses me out -- but fair enough, let's use nvm. Problem solved.</p>
 <p>Now repeat the same problem on the same machine for Python. And add in the system vendored Python. And the Homebrew version that you needed as a dependency for watchman. uv now solves this problem right? Great. But I installed uv through... pip? And pip is built with...Python I assume? Where is that stored? You know the xkcd.</p>
 <p><img alt="xkcd 1987" src="https://imgs.xkcd.com/comics/python_environment.png" /></p>
-<p>Repeat this for every language for every project on your machine. Cross your fingers that each project is set up to use nvm or uv or rvm so its clear what it needs. Every language has run into this problem and has come up with a bespoke version manager.</p>
+<p>Repeat this for every language for every project on your machine. Cross your fingers that each project is set up to use nvm or uv or rvm so it's clear what it needs. Every language has run into this problem and has come up with a bespoke version manager.</p>
 <p>This really isn't a language problem, its an OS problem.</p>
-<p>In Nix, you just drop a flake.nix in whatever folder you want to have certain deps installed, declare that this directory requires python@3.14, node@20.1, ruby@3.4  and you are done. Whenever you navigate to that directory, your shell will recognise and install the dependencies that project declares. When you navigate out of the directory, those versions disappear. Install as many parallel versions of dependencies as your like and they will never interfere with each other.</p>
+<p>In Nix, you just drop a flake.nix in whatever folder you want to have certain deps installed, declare that this directory requires python@3.14, node@20.1, ruby@3.4  and you are done. Whenever you navigate to that directory, your shell will recognise and install the dependencies that project declares. When you navigate out of the directory, those versions disappear. Install as many parallel versions of dependencies as you like and they will never interfere with each other.</p>
 <h3 id="entire-system-config-an-a-git-repo">Entire System Config an a Git Repo</h3>
 <p>Even before I used Nix I wanted this. I did it with a <a href="https://www.atlassian.com/git/tutorials/dotfiles">bare config dotfile repo</a> which worked decently for one machine but started to topple when you had multiple machines. The config dotfile repo works a bit differently from normal git usage, some of my existing git reflexes were a bit misplaced here. The bare dotfile repo made it easy to forget or miss staging files, since they are spread out over the whole machine I never really thought to add them in the moment.</p>
 <p>Nix does not let you forget to commit anything, it will complain about dirty repos when you build and you can't do anything without building. Setting up a nix rebuild script is a rite of passage, which almost always starts with abstracting away git entirely.</p>
 <h3 id="multiple-systems-config-in-the-same-git-repo">Multiple Systems Config in the Same Git Repo</h3>
-<p>A big problem I ran into with the bare dotfiles repo is sharing them between multiple machines. I my old dotfiles repo had 1 branch per machine, but it's really not how git is meant to be used and I felt it. Sharing config between machines involved merging and managing git branches, often with conflicts.</p>
+<p>A big problem I ran into with the bare dotfiles repo is sharing them between multiple machines. In my old dotfiles repo had 1 branch per machine, but it's really not how git is meant to be used and I felt it. Sharing config between machines involved merging and managing git branches, often with conflicts.</p>
 <p>Nix lets multiple machines' config live side by side, where you pass in the name of the machine you want to build as an attribute to the build command. Using home manager to handle all the dotfile writing, I can shard my dotfiles into different components, some in a shared directory and some parts in a host specific directory. This can be quite granular,  e.g. all my tmux shortcuts and layout is shared between all machines but the tmux colour scheme is machine specific.</p>
 <h3 id="build-errors-for-whole-machine-config">Build Errors For Whole Machine Config</h3>
-<p>When you build a NixOS config, it's like running a compiler on your whole machine. So many errors that you'd normally discover at runtime surface at build time, savings yourself so so so many disasters.</p>
+<p>When you build a NixOS config, it's like running a compiler on your whole machine. So many errors that you'd normally discover at runtime surface at build time, saving yourself so so so many disasters.</p>
 <h3 id="no-kipple">No Kipple</h3>
 <blockquote>
 <p>Kipple is useless objects, like junk mail or match folders after you use the last match or gum wrappers or yesterday's homeopape. When nobody's around, kipple reproduces itself. For instance, if you go to bed leaving any kipple around your apartment, when you wake up the next morning there's twice as much of it. It always gets more and more.</p>
@@ -168,9 +168,9 @@
 -&gt; begin setting up nix on my mac<br />
 -&gt; set up flakes in all my repos so nix can handle dependencies  </p>
 </blockquote>
-<p>And that's it. My only complain is that it's too good.</p>
+<p>And that's it. My only complaint is that it's too good.</p>
 <p>I've fallen into the pattern of spinning up a flake, chucking it behind caddy with basic auth and bam! new web service.</p>
-<p>I now run NixOS on my server, nix-darwin on two macOS machines, and nix packaging on every project I have. If you area software engineer who touches Linux, Nix is worth trying.</p>
+<p>I now run NixOS on my server, nix-darwin on two macOS machines, and nix packaging on every project I have. If you are a software engineer who touches Linux, Nix is worth trying.</p>
 <div class="footnote">
 <hr />
 <ol>
@@ -189,7 +189,7 @@
           <date>2026-10-06</date>
           
           <a href="/recent-changes">recent</a>
-          <a href="/paul-ford-on-php" class="not-extra-small">random</a>
+          <a href="/svelte-parses-html-all-wrong" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Falling in Love with Nix'">reply</a>
@@ -208,18 +208,10 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Posts/Falling in Love with Nix.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Posts/Falling in Love with Nix.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/paul-ford-on-php" class="extra-small">random</a>
+          <a href="/svelte-parses-html-all-wrong" class="extra-small">random</a>
         </div>
       </div>
 
-      
-
-      <p class="backlinks"><strong>Incoming:</strong>
-        
-        <a href="/recent-changes">Recent Changes</a>
-        
-        </span>
-      </p>
       
 
       
@@ -245,7 +237,7 @@
           <strong>
             Updated:
           </strong>
-          <date>2026-10-07</date>
+          <date>2026-10-12</date>
         </span>
 
       </p>

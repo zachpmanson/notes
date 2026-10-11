@@ -13,7 +13,7 @@
             <link>https://notes.zachmanson.com/dirty-hacks</link>
         </image>
         <language>en</language>
-        <lastBuildDate>Thu, 08 Oct 2026 02:29:33 </lastBuildDate>
+        <lastBuildDate>Sun, 11 Oct 2026 13:50:15 </lastBuildDate>
         
         <item>
             <title>RTK Query vs. Infinite Scrolling</title>
@@ -204,7 +204,7 @@
 <span class="w">      </span><span class="p">},</span>
 <span class="w">    </span><span class="p">}),</span>
 </code></pre></div>
-<p>Then in the component where the hook is called, ensure that the page number is reset to 1 whenever a mutation occurs that will invalidate the <code>useGetLocationsQuery</code> data.  Since this page isn't an increase from the previous, the old cache will be discarded. This can be annoying since the component that triggers the mutation and invalidates the data may be completely seperate from the component that queries for the data.  </p>
+<p>Then in the component where the hook is called, ensure that the page number is reset to 1 whenever a mutation occurs that will invalidate the <code>useGetLocationsQuery</code> data.  Since this page isn't an increase from the previous, the old cache will be discarded. This can be annoying since the component that triggers the mutation and invalidates the data may be completely separate from the component that queries for the data.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">EditLocationAddress</span><span class="p">({</span><span class="nx">id</span><span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">id</span><span class="o">:</span><span class="kt">number</span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">patchLocation</span><span class="p">,</span><span class="w"> </span><span class="nx">isPatchLoading</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">usePatchLocationMutation</span><span class="p">();</span>
 
