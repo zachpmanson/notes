@@ -6,6 +6,7 @@ Future writing:
 - [Hammock Driven Development](https://www.youtube.com/watch?v=f84n5oFoZBc)
 - [Suffering-oriented programming](http://nathanmarz.com/blog/suffering-oriented-programming.html)
 - [Gaslight Driven Development](https://tonsky.me/blog/gaslight-driven-development/)
+- [Taco Bell Programming](https://widgetsandshit.com/teddziuba/2010/10/taco-bell-programming.html)
 
 
 ## Further Reading
