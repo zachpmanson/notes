@@ -12,6 +12,7 @@
   --serif:
     Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif,
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  --body-font: Times New Roman, Droid Serif, Times;
   --mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 }
 
@@ -53,7 +54,6 @@
 
 @media (prefers-color-scheme: dark) {
   :root:has(#theme-system:checked) {
-
     svg,
     img[src$=".svg"] {
       filter: invert(1);
@@ -92,6 +92,9 @@ header {
 article {
   padding: 0 1rem;
   margin: auto;
+
+  /* font-family: var(--serif); */
+  font-family: var(--body-font);
 }
 
 img {
@@ -205,11 +208,11 @@ nav {
       content: "";
     } */
 
-    .nav-links.piblings+.nav-links.siblings {
+    .nav-links.piblings + .nav-links.siblings {
       border-left: 1px dotted var(--primary);
     }
 
-    .nav-links.siblings+.nav-links.children {
+    .nav-links.siblings + .nav-links.children {
       border-left: 1px dotted var(--primary);
     }
   }
@@ -249,26 +252,26 @@ h1 {
 }
 
 h2 {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   font-family: var(--serif);
 }
 
 h3 {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   font-family: var(--serif);
   font-weight: 100;
 }
 
-h2+p,
-h2+ol,
-h2+ul,
-h3+p,
-h3+ol,
-h3+ul {
+h2 + p,
+h2 + ol,
+h2 + ul,
+h3 + p,
+h3 + ol,
+h3 + ul {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -354,7 +357,7 @@ blockquote {
   border-left: 2px solid var(--primary);
 }
 
-blockquote+p>cite {
+blockquote + p > cite {
   margin-left: 1rem;
 }
 
@@ -384,7 +387,7 @@ table {
 th,
 td {
   border: 1px solid black;
-  padding: .2rem .5rem;
+  padding: 0.2rem 0.5rem;
 }
 
 .flex {
