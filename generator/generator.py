@@ -481,7 +481,7 @@ md_extensions = [
     "footnotes",
 ]
 
-ignore_names: list[str] = [".obsidian", "Assets", ".trash"]
+ignore_names: list[str] = [".obsidian", "Assets", ".trash", "Templates"]
 
 ochrs_funcs: dict[str, FunctionType] = {
     "ochrs-funcs": lambda: ", ".join(list(ochrs_funcs.keys())),
