@@ -91,7 +91,7 @@ effective_age = actual_age * multiplier
 <p>I have implemented this in my <a href="/rss">RSS</a> reader Dripfeed as <em>Sort by Rarity</em>, where each feed is given a rarity score, and that is used to scale the real age of each post within the feed. The scaled age, aka effective age, gets sorted chronologically.  RSS is particularly well suited to this since each pull of an RSS feed comes with the latest 20 posts which is plenty to put together a moving average.</p>
 <p>Gap is constant per feed, but will change a little with every new post.  72 hours is the midpoint I settled on. Feeds that post more often than this are punished, feeds less often than that are rewarded. The clamp puts limits on how much something can be scaled by this method, scaling is  "saturated" by that point, where all things return to pure chronological.</p>
 <p>Within the clamp this is an inverse power law, so relative differences in post frequency are treated with equal scaling differences. If feed A's frequency is 2x feed B's frequency, feed A will get ≈5.7x the scaling. This applies to all timespans, if feed A posts daily and feed B bi-daily, or feed A is monthly and feed B is bi-monthly. The curve gets even sharper as the frequency ratio grows.</p>
-<p>This is quite aggressive scaling, but that's what I want.  A monthly post will stay at the top of the feed for weeks, only being outranked by other more recent monthly posts. At the time of writing Dan Luu published a post 15 days ago that still has an effective age of 8 min because he posts once every 29 days. That's so rare that it overpowers even my monthly feeds. There are 2 other elements that are needed to make this algorithm work nicely.</p>
+<p>This is quite aggressive scaling, but that's what I want.  A monthly post will stay at the top of the feed for weeks, only being outranked by other more recent monthly posts. At the time of writing Dan Luu published a post 15 days ago that still has an effective age of 8 min because he posts once every 29 days. That's so rare that it overpowers even my weekly feeds. There are 2 other elements that are needed to make this algorithm work nicely.</p>
 <ol>
 <li>Priority queue showing all unread items before all read items</li>
 <li><a href="/explicit-reading">Explicit reading</a></li>
@@ -205,7 +205,7 @@ effective_age = actual_age * multiplier
           <date>2026-10-05</date>
           
           <a href="/recent-changes">recent</a>
-          <a href="/w03l02---processes" class="not-extra-small">random</a>
+          <a href="/hank-green-on-knowledge" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Sort By Rarity'">reply</a>
@@ -224,7 +224,7 @@ effective_age = actual_age * multiplier
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Posts/Sort By Rarity.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Posts/Sort By Rarity.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/w03l02---processes" class="extra-small">random</a>
+          <a href="/hank-green-on-knowledge" class="extra-small">random</a>
         </div>
       </div>
 
@@ -233,6 +233,8 @@ effective_age = actual_age * multiplier
       <p class="backlinks"><strong>Incoming:</strong>
         
         <a href="/explicit-reading">Explicit Reading</a>
+        
+        <a href="/recent-changes">Recent Changes</a>
         
         </span>
       </p>
@@ -261,7 +263,7 @@ effective_age = actual_age * multiplier
           <strong>
             Updated:
           </strong>
-          <date>2026-10-12</date>
+          <date>2026-11-09</date>
         </span>
 
       </p>
