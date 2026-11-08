@@ -24,7 +24,7 @@ Gap is constant per feed, but will change a little with every new post.  72 hour
 
 Within the clamp this is an inverse power law, so relative differences in post frequency are treated with equal scaling differences. If feed A's frequency is 2x feed B's frequency, feed A will get ≈5.7x the scaling. This applies to all timespans, if feed A posts daily and feed B bi-daily, or feed A is monthly and feed B is bi-monthly. The curve gets even sharper as the frequency ratio grows.
 
-This is quite aggressive scaling, but that's what I want.  A monthly post will stay at the top of the feed for weeks, only being outranked by other more recent monthly posts. At the time of writing Dan Luu published a post 15 days ago that still has an effective age of 8 min because he posts once every 29 days. That's so rare that it overpowers even my monthly feeds. There are 2 other elements that are needed to make this algorithm work nicely.
+This is quite aggressive scaling, but that's what I want.  A monthly post will stay at the top of the feed for weeks, only being outranked by other more recent monthly posts. At the time of writing Dan Luu published a post 15 days ago that still has an effective age of 8 min because he posts once every 29 days. That's so rare that it overpowers even my weekly feeds. There are 2 other elements that are needed to make this algorithm work nicely.
 
 1. Priority queue showing all unread items before all read items
 2. [[Explicit reading]]
