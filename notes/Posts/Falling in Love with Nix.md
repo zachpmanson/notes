@@ -12,7 +12,7 @@ tags:
 
 The Nix project has three pieces:
 
-1. The Nix language, a programming language designed for describing "how contents of existing files are used to derive new files"[^nix-lang-is]. It looks like JSON, but with functions.
+1. The Nix language, a programming language designed for describing "how contents of existing files are used to derive new files"[^nix-lang-is]. It looks like JSON, but with functions.[^nix-lang-desc]
 2. The Nix Package Manager, a package manager for software that can by built using the Nix language. This can be used on macOS or Linux, the same way you might use Brew or npm but you write what you want installed in the Nix language.
 3. [[NixOS]], a Linux distribution built around the Nix Package Manager. It uses the Nix language not just for installing packages, but for all system configuration.
 
