@@ -104,7 +104,7 @@
 <p>On top of being able to describe build instructions and package installs, the Nix language can also describe configuration files. You write your all desired system config files into a single repo, and then run a build on that repo, which will write application config files in their appropriate places. For example, on my macbook, my Vim config is written in Nix lang.</p>
 <p>Even before I used Nix, I wanted my dotfiles tracked in git. I did it with a <a href="https://www.atlassian.com/git/tutorials/dotfiles">bare config dotfile repo</a> which worked decently for one machine but started to topple when you had multiple machines. The config dotfile repo works a bit differently from normal <a href="/git">git</a> usage, some of my existing git reflexes were a bit misplaced here. The bare dotfile repo made it easy to forget or miss staging files, since they are spread out over the whole machine I never really thought to add them in the moment.</p>
 <p>When your system is built on Nix configuration, it does not let you forget to commit anything. It will complain about dirty repos when you build your configuration and you can't do anything without building. Setting up a Nix configuration rebuild script is a rite of passage, which almost always starts with abstracting away git entirely.</p>
-<p>NixOS takes this to the extreme. It's not just dotfiles and installed packages that are defined by Nix config, it's network settings, user accounts, hard drive mappings, systemd services.</p>
+<p>NixOS takes this to the extreme. It's not just dotfiles and installed packages that are defined by Nix config, it's network settings, user accounts, hard drive mappings, systemd services. Version control your entire system.</p>
 <h3 id="multiple-systems-config-in-the-same-git-repo">Multiple Systems Config in the Same Git Repo</h3>
 <p>A big problem I ran into with the bare dotfiles repo is sharing them between multiple machines. In my old dotfiles repo had 1 branch per machine, but it's really not how git is meant to be used and I felt it. Sharing config between machines involved merging and managing git branches, often with conflicts.</p>
 <p>Using a Nix configuration repo lets multiple machines' config live side by side, where you pass in the name of the machine you want to build as an attribute to the build command. I can shard my dotfiles into different components, some in a shared directory and some parts in a host specific directory. This can be quite granular. All my <a href="/tmux">tmux</a> shortcuts and layout is shared across all my machines but the tmux colour scheme is machine specific.</p>
@@ -205,7 +205,7 @@
           <date>2026-10-06</date>
           
           <a href="/recent-changes">recent</a>
-          <a href="/llama" class="not-extra-small">random</a>
+          <a href="/apple-developer-organisation-id-for-open-source" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Falling in Love with Nix'">reply</a>
@@ -224,7 +224,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Posts/Falling in Love with Nix.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Posts/Falling in Love with Nix.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/llama" class="extra-small">random</a>
+          <a href="/apple-developer-organisation-id-for-open-source" class="extra-small">random</a>
         </div>
       </div>
 
