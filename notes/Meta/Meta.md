@@ -49,4 +49,4 @@ How I want to use these:
 	- only to elevate tags to create a blog-style interface
 	- e.g. [[Posts]]
 
-Yes I know that [all you need is links](https://www.kevinslin.com/notes/kugez1yd9e5frboplescdvd/).
+	Yes I know that [all you need is links](https://www.kevinslin.com/notes/kugez1yd9e5frboplescdvd/). See also [The Design Space of Wikis](https://borretti.me/article/the-design-space-of-wikis), a writeup of the pros and cons of all these structures.
