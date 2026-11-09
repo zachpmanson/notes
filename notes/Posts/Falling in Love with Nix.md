@@ -45,7 +45,7 @@ Even before I used Nix, I wanted my dotfiles tracked in git. I did it with a [ba
 
 When your system is built on Nix configuration, it does not let you forget to commit anything. It will complain about dirty repos when you build your configuration and you can't do anything without building. Setting up a Nix configuration rebuild script is a rite of passage, which almost always starts with abstracting away git entirely.
 
-NixOS takes this to the extreme. It's not just dotfiles and installed packages that are defined by Nix config, it's network settings, user accounts, hard drive mappings, systemd services.
+NixOS takes this to the extreme. It's not just dotfiles and installed packages that are defined by Nix config, it's network settings, user accounts, hard drive mappings, systemd services. Version control your entire system.
 
 ### Multiple Systems Config in the Same Git Repo
 
