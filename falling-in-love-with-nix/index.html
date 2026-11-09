@@ -79,12 +79,18 @@
       <h1>Falling in Love with Nix</h1>
     </header>
 
-    <article><p>Nix is phenomenal. I first dipped my toe in the water 4 months ago and it's been bliss. There are whole classes of problems that you just can't encounter on Nix.</p>
+    <article><p><a href="/nix">Nix</a> is phenomenal. I first dipped my toe in the water 4 months ago and it's been bliss. There are whole classes of problems that you just can't encounter on Nix.</p>
 <blockquote>
 <p>Software works pretty good already... you use Nix and you think "holy shit nothing [else] should be working"</p>
 </blockquote>
 <p><cite class="standalone"><a href="https://youtu.be/dulffMFqD7k?si=WDV0MdeVKd51kOUv&amp;t=93">Farid Zakaria</a></cite></p>
-<p><a href="/nix">Nix</a> and <a href="/nixos">NixOS</a> have lots of different tendrils that impact different kinds of work. Here are the problems that they have solved for me.</p>
+<p>The Nix project has three pieces:</p>
+<ol>
+<li>The Nix language, a programming language designed for describing "how contents of existing files are used to derive new files"<sup id="fnref:nix-lang-is"><a class="footnote-ref" href="#fn:nix-lang-is">2</a></sup>. It looks like JSON, but with functions.</li>
+<li>The Nix Package Manager, a package manager for software that can by built using the Nix language. This can be used on macOS or Linux, the same way you might use Brew or npm but you write what you want installed in the Nix language.</li>
+<li><a href="/nixos">NixOS</a>, a Linux distribution built around the Nix Package Manager. It uses the Nix language not just for installing packages, but for all system configuration.</li>
+</ol>
+<p>Each of these tendrils impact different kinds of work. Here are the problems that they have solved for me.</p>
 <h2 id="roses">Roses</h2>
 <h3 id="per-project-dependency-management">Per Project Dependency Management</h3>
 <p>Each software project relies on slightly different environments. My site builder might need Node 24, my fork of an open source project needs Node 20, my work frontend might need Node 22. And maybe there's some program I like that only distributes through npm, so I need a global npm install.</p>
@@ -92,26 +98,29 @@
 <p>Now repeat the same problem on the same machine for Python. And add in the system vendored Python. And the Homebrew version that you needed as a dependency for watchman. uv now solves this problem right? Great. But I installed uv through... pip? And pip is built with...Python I assume? Where is that stored? You know the xkcd.</p>
 <p><img alt="xkcd 1987" src="https://imgs.xkcd.com/comics/python_environment.png" /></p>
 <p>Repeat this for every language for every project on your machine. Cross your fingers that each project is set up to use nvm or uv or rvm so it's clear what it needs. Every language has run into this problem and has come up with a bespoke version manager.</p>
-<p>This really isn't a language problem, its an OS problem.</p>
-<p>In Nix, you just drop a flake.nix in whatever folder you want to have certain deps installed, declare that this directory requires python@3.14, node@20.1, ruby@3.4  and you are done. Whenever you navigate to that directory, your shell will recognise and install the dependencies that project declares. When you navigate out of the directory, those versions disappear. Install as many parallel versions of dependencies as you like and they will never interfere with each other.</p>
+<p>This really shouldn't be managed as the language level, it should be managed by the OS and it's package manager.</p>
+<p>Using Nix Package Manager, you just drop a flake.nix in whatever folder you want to have certain deps installed, declare that this directory requires python@3.14, node@20.1, ruby@3.4  and you are done. Whenever you navigate to that directory, your shell will recognise and install the dependencies that project declares. When you navigate out of the directory, those versions disappear. Install as many parallel versions of dependencies as you like and they will never interfere with each other.</p>
 <h3 id="entire-system-config-an-a-git-repo">Entire System Config an a Git Repo</h3>
-<p>Even before I used Nix I wanted this. I did it with a <a href="https://www.atlassian.com/git/tutorials/dotfiles">bare config dotfile repo</a> which worked decently for one machine but started to topple when you had multiple machines. The config dotfile repo works a bit differently from normal git usage, some of my existing git reflexes were a bit misplaced here. The bare dotfile repo made it easy to forget or miss staging files, since they are spread out over the whole machine I never really thought to add them in the moment.</p>
-<p>Nix does not let you forget to commit anything, it will complain about dirty repos when you build and you can't do anything without building. Setting up a nix rebuild script is a rite of passage, which almost always starts with abstracting away git entirely.</p>
+<p>On top of being able to describe build instructions and package installs, the Nix language can also describe configuration files. You write your all desired system config files into a single repo, and then run a build on that repo, which will write application config files in their appropriate places. For example, on my macbook, my Vim config is written in Nix lang.</p>
+<p>Even before I used Nix, I wanted my dotfiles tracked in git. I did it with a <a href="https://www.atlassian.com/git/tutorials/dotfiles">bare config dotfile repo</a> which worked decently for one machine but started to topple when you had multiple machines. The config dotfile repo works a bit differently from normal <a href="/git">git</a> usage, some of my existing git reflexes were a bit misplaced here. The bare dotfile repo made it easy to forget or miss staging files, since they are spread out over the whole machine I never really thought to add them in the moment.</p>
+<p>When your system is built on Nix configuration, it does not let you forget to commit anything. It will complain about dirty repos when you build your configuration and you can't do anything without building. Setting up a Nix configuration rebuild script is a rite of passage, which almost always starts with abstracting away git entirely.</p>
+<p>NixOS takes this to the extreme. It's not just dotfiles and installed packages that are defined by Nix config, it's network settings, user accounts, hard drive mappings, systemd services.</p>
 <h3 id="multiple-systems-config-in-the-same-git-repo">Multiple Systems Config in the Same Git Repo</h3>
 <p>A big problem I ran into with the bare dotfiles repo is sharing them between multiple machines. In my old dotfiles repo had 1 branch per machine, but it's really not how git is meant to be used and I felt it. Sharing config between machines involved merging and managing git branches, often with conflicts.</p>
-<p>Nix lets multiple machines' config live side by side, where you pass in the name of the machine you want to build as an attribute to the build command. Using home manager to handle all the dotfile writing, I can shard my dotfiles into different components, some in a shared directory and some parts in a host specific directory. This can be quite granular,  e.g. all my tmux shortcuts and layout is shared between all machines but the tmux colour scheme is machine specific.</p>
+<p>Using a Nix configuration repo lets multiple machines' config live side by side, where you pass in the name of the machine you want to build as an attribute to the build command. I can shard my dotfiles into different components, some in a shared directory and some parts in a host specific directory. This can be quite granular. All my <a href="/tmux">tmux</a> shortcuts and layout is shared across all my machines but the tmux colour scheme is machine specific.</p>
 <h3 id="build-errors-for-whole-machine-config">Build Errors For Whole Machine Config</h3>
-<p>When you build a NixOS config, it's like running a compiler on your whole machine. So many errors that you'd normally discover at runtime surface at build time, saving yourself so so so many disasters.</p>
+<p>When you build a Nix config, it's like running a compiler on your whole machine. So many errors that you'd normally discover at runtime surface at build time, saving yourself so so so many disasters.</p>
 <h3 id="no-kipple">No Kipple</h3>
 <blockquote>
 <p>Kipple is useless objects, like junk mail or match folders after you use the last match or gum wrappers or yesterday's homeopape. When nobody's around, kipple reproduces itself. For instance, if you go to bed leaving any kipple around your apartment, when you wake up the next morning there's twice as much of it. It always gets more and more.</p>
 </blockquote>
 <p><cite class="standalone">Phillip K. Dick, <em>Do Androids Dream of Electric Sheep</em></cite></p>
-<p>It is inevitable that you install something as a one-off, and then you forget and that program lives on your machine forever. Nix makes this very hard to do since you have to declare all programs that you install, usually only in 1 place. So you can easily look at that list as cut the fat. If you have anything you only want to install once, you can use an ephemeral shell with that program installed. This will get garbage collected at some point down the track.</p>
+<p>It is inevitable that you install something as a one-off, and then you forget and that program lives on your machine forever. Nix configs makes this very hard to do since you have to declare all programs that you install in 1 place. You can easily look at that list as cut the fat.</p>
+<p>If you have anything you only want to install for one-time use, you can use start a shell with your desired program installed ephemerally, where it only lasts as long as that shell session. This will get garbage collected at some point down the track.</p>
 <h3 id="single-language-for-all-server-config">Single Language For All Server Config</h3>
 <p>Yes you need to learn the Nix language. Two counterpoints: AI makes learning a new language far, far easier than ever before, and, more importantly, <strong>you now only need 1 language for all configuration</strong>.</p>
 <p>systemd services? Write it in Nix. Bash aliases? Write it in Nix. Nginx config? Caddy? ejabberd? sudoers? vim? sshd? docker? All able to write in Nix.</p>
-<p>This also means you can share variables between all these configurations. An example:</p>
+<p>This also means you can share variables between all these configurations. An example from my main NixOS server:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># hosts/naboo/ports.nix</span>
 <span class="p">{</span>
   <span class="ss">http</span> <span class="o">=</span> <span class="mi">80</span><span class="p">;</span>
@@ -140,13 +149,14 @@
 </code></pre></div>
 <p>This file contains constants of the ports that different services and programs run on my server. These constants are wired into all the different places that need them, e.g. Nextcloud port is wired into Nextcloud configuration and into Caddy configuration. This prevents this from ever drifting or colliding with each other. Beautiful.</p>
 <h3 id="first-class-support-for-my-own-packages">First Class Support For My Own Packages</h3>
-<p>My own GitHub repos are supported just as well as the official nixpkg package repository. I just add <a href="https://github.com/zachpmanson/duplicates/blob/main/flake.nix">one file to my project repo</a>, add a link to that repo in my Nix configuration on a machine, and then I install it the same way I would install neovim.</p>
-<p>For example, I packaged my university project for system programming <code>duplicates</code>, now I can install that on any Nix machine with 2 lines of code.</p>
+<p>The Nix Package Manager requires you to declare what software repositories you want to use as the source of packages. Generally you use nixpkg, the official package repository. Despite being official, Nixpkg itself is just a public GitHub repo that follows a certain format. Compare that to npm the program and npm the repository, where the two are tightly intertwined.</p>
+<p>Following this, my own GitHub repos are supported just as well as the official nixpkg repository. I just add <a href="https://github.com/zachpmanson/duplicates/blob/main/flake.nix">one file to my project repo</a>, add a link to that repo in my Nix configuration on a machine, and then I install it the same way I would install neovim.</p>
+<p>For example, I packaged my university project for system programming <code>duplicates</code>, now I can install that on any Nix Package Manager machine with 2 lines of code.</p>
 <p>Amazing.</p>
 <h3 id="migrating-machines">Migrating Machines</h3>
 <p>This is one you hear from Nix evangelists online, and the one you say isn't such a big deal from Nix detractors. </p>
-<p>I was lucky that I first started dabbling with Nix one month before I got a new laptop. My old macbook had just been set up with nix-darwin. Setting up my programs and config on the new macbook was: git clone on the new machine, copy the old config, give it a new name for the new machine. Run rebuild... And it was done.</p>
-<p>I still needed to copy over my <code>/User/zach</code> downloads and documents, as well as reconfigure macOS system settings and desktop applications that couldn't be covered by Nix. That didn't deter me though, my only regret after that was not investing even further into Nix.</p>
+<p>I was lucky that I first started dabbling with Nix one month before I got a new laptop. My old macbook had just been set up with Nix Package Manager. Setting up my programs and config on the new macbook was: git clone on the new machine, copy the old config, give it a new name for the new machine. Run rebuild... And it was done.</p>
+<p>I still needed to copy over my <code>/User/zach</code> downloads and documents, as well as reconfigure macOS system settings and desktop applications that couldn't be covered by my Nix config. That didn't deter me though, my only regret after that was not investing even further into Nix.</p>
 <h3 id="agents">Agents</h3>
 <p>Agents' being able to use Nix brings many of its advantages into focus, because they take full advantage of it. All my project devshells would be picked up, so no concerns about agents needing dependencies. Agents can read the whole system config and suggest fixes.</p>
 <p><a href="/the-fleet">The fleet</a> of agents I run on my server have access to the server config and can deploy services to it if I allow them. They install programs in ephemeral shells, they can introspect the server they are on. I've deployed entire web services  from my phone -- without giving agents any more privileges than they actually need.</p>
@@ -177,6 +187,12 @@
 <li id="fn:1">
 <p>Especially when reading Farid Zakaria’s recent Nix saga, it's insane: <a href="https://fzakaria.com/2026/08/17/nixpkgs-multiverse-the-fewest-nixpkgs">Unifying all versions of all packages into one resolution tree</a>; <a href="https://fzakaria.com/2026/08/23/your-executable-is-a-sqlite-database">Making executables out of SQLite databases</a>; <a href="https://fzakaria.com/2026/08/24/actually-queryable-executables">Adding API routes to a SQLite executable with an <code>INSERT</code> statement?!?!</a>; <a href="https://fzakaria.com/2026/08/28/one-flake-to-rule-them-all">Making one flake that contains all flakes</a>; <a href="https://fzakaria.com/2026/09/01/the-holy-grail-of-nixpkgs-version-ranges">Adding version ranges to Nix</a>; <a href="https://fzakaria.com/2026/09/04/any-nix-package-live-in-your-browser">Running any Nix package, any version, in your browser</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
+<li id="fn:nix-lang-is">
+<p>Saw this description <a href="https://nix.dev/tutorials/nix-language.html">here</a>.&#160;<a class="footnote-backref" href="#fnref:nix-lang-is" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:nix-lang-desc">
+<p>Saw this description of its appearance <a href="https://zero-to-nix.com/concepts/nix-language/">here</a>.&#160;<a class="footnote-backref" href="#fnref:nix-lang-desc" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
 </ol>
 </div></article>
   </main>
@@ -189,7 +205,7 @@
           <date>2026-10-06</date>
           
           <a href="/recent-changes">recent</a>
-          <a href="/llama-timeline" class="not-extra-small">random</a>
+          <a href="/illllllllllllli-on-nfts" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Falling in Love with Nix'">reply</a>
@@ -208,7 +224,7 @@
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Posts/Falling in Love with Nix.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Posts/Falling in Love with Nix.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/llama-timeline" class="extra-small">random</a>
+          <a href="/illllllllllllli-on-nfts" class="extra-small">random</a>
         </div>
       </div>
 
@@ -245,7 +261,7 @@
           <strong>
             Updated:
           </strong>
-          <date>2026-11-02</date>
+          <date>2026-11-09</date>
         </span>
 
       </p>
