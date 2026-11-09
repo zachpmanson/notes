@@ -139,7 +139,7 @@ Nix evangelists often talk about the number of and freshness of packages. This s
 
 ### Perfect Reproducibility
 
-While I suspect a lot of what I enjoy about Nix is enabled because it has perfect reproducibility, the reproducibility itself was not actually a particularly big draw for me. I do recognise that it is extremely cool.[^1]
+While I suspect a lot of what I enjoy about Nix is enabled because it has perfect reproducibility, the reproducibility itself was not actually a particularly big draw for me. I do recognise that it is extremely cool.[^farid]
 
 ## Thorns
 
@@ -164,4 +164,4 @@ I now run NixOS on my server, nix-darwin on two macOS machines, and nix packagin
 
 [^nix-lang-is]: Saw this description [here](https://nix.dev/tutorials/nix-language.html).
 [^nix-lang-desc]: Saw this description of its appearance [here](https://zero-to-nix.com/concepts/nix-language/).
-[^1]: Especially when reading Farid Zakaria’s recent Nix saga, it's insane: [Unifying all versions of all packages into one resolution tree](https://fzakaria.com/2026/08/17/nixpkgs-multiverse-the-fewest-nixpkgs); [Making executables out of SQLite databases](https://fzakaria.com/2026/08/23/your-executable-is-a-sqlite-database); [Adding API routes to a SQLite executable with an `INSERT` statement?!?!](https://fzakaria.com/2026/08/24/actually-queryable-executables); [Making one flake that contains all flakes](https://fzakaria.com/2026/08/28/one-flake-to-rule-them-all); [Adding version ranges to Nix](https://fzakaria.com/2026/09/01/the-holy-grail-of-nixpkgs-version-ranges); [Running any Nix package, any version, in your browser](https://fzakaria.com/2026/09/04/any-nix-package-live-in-your-browser)
+[^farid]: Especially when reading Farid Zakaria’s recent Nix saga, it's insane: [Unifying all versions of all packages into one resolution tree](https://fzakaria.com/2026/08/17/nixpkgs-multiverse-the-fewest-nixpkgs); [Making executables out of SQLite databases](https://fzakaria.com/2026/08/23/your-executable-is-a-sqlite-database); [Adding API routes to a SQLite executable with an `INSERT` statement?!?!](https://fzakaria.com/2026/08/24/actually-queryable-executables); [Making one flake that contains all flakes](https://fzakaria.com/2026/08/28/one-flake-to-rule-them-all); [Adding version ranges to Nix](https://fzakaria.com/2026/09/01/the-holy-grail-of-nixpkgs-version-ranges); [Running any Nix package, any version, in your browser](https://fzakaria.com/2026/09/04/any-nix-package-live-in-your-browser)
