@@ -34,4 +34,4 @@ So for now I just have *Kyo o Ikiyo*. It has simple riffs, two guitars complimen
 
 [^translated]:  How Firefox translated it.
 
-[^discography]: An era I should bring back 
+[^discography]: An era I should bring back.
