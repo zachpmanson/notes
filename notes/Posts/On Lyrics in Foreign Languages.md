@@ -29,6 +29,7 @@ The other songs from that era I suspect are vulnerable to losing that effect. I 
 
 So for now I just have *Kyo o Ikiyo*. It has simple riffs, two guitars complimenting each other back and forth, the singer sounds like he misses someone and resigns himself to that fate at the end.  I still don't know what any of the words mean, but somewhere between my ears and my heart they get translated to warm sun, cold water, open doors, open days.
 
+![[sunny-day-service.jpg]]
 
 [^greatest]: Although Kyo o Ikiyo on the greatest hits album, by Spotify's measures its the 20th most popular song on that album.
 
