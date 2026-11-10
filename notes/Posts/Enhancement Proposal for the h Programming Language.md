@@ -1,6 +1,5 @@
 ---
 subtitle: hEP 001 – Mathematical 𝐡  in the Standard Implementation
-date: 2022-03-18
 tags:
   - posts
 ---
