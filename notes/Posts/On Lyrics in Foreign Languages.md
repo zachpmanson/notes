@@ -7,7 +7,7 @@ date: 2026-11-10
 I suspect that I am the world's greatest fan of the song *Kyo o Ikiyo* by Sunny Day Service. I know very little about the song or the band. I have listened to the song hundreds of times. In 2019 it was my 8th most listened to song.
 
 ![[top-songs-2019.png]]
-I have no idea if the band is popular. This song is on the 1995-2018 greatest hits album for Sunny Day Service,[^greatest] and given they have a greatest hits album they must have some kind of fan base. The frontman of the band appears to run the record label that publishes their music, [Rose Music](https://www.roserecordsshop.com/?ca=42)[^rose-music] and they are still doing tours in 2026.
+I have no idea if the band is popular. This song is on the 1995-2018 greatest hits album for Sunny Day Service,[^greatest] and given they have a greatest hits album they must have some kind of fan base. The frontman of the band appears to run the record label that publishes their music, [Rose Music](https://www.roserecordsshop.com/?ca=42),[^rose-music] and they are still doing tours in 2026.
 
 His website lists that he will soon be performing as the opening act to "the airport music concert"[^translated] as a one man act at Saporo Musica Hall Cafe with tickets going for 5000yen (drink included).  I wish I was going! "It will be a live that you can enjoy relaxingly at the cafe."[^translated] According to the Google Form the tickets are sold out.
 
