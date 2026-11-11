@@ -25,7 +25,8 @@ It's scary losing your old interpretations of songs. Like reading a book before 
 
 *Kyo o Ikiyo* is in a language I don't speak. I sing along in a facsimile of Japanese, much like I acted as a toddler when I would pretend to speak into a toy phone. There's something different about having strong emotions wrapped up in a song whose language you don't know, the lyrics become sponges for the the time you internalised them. Listening years down the line brings you right back, not quite as viscerally as smelling a scent from years past, but maybe the next best thing. 
 
-%%maybe swap this paragraph and the one after. then blend this paragraph with the conclusion%%
+<!-- maybe swap this paragraph and the one after. then blend this paragraph with the conclusion-->
+
 I don't think I could lose the way *Kyo o Ikiyo* makes me feel. Maybe if I learnt Japanese or force fed the song to myself till I grew numb to it,[^numb] but the language barrier prevents me from retroactively finding new meaning in the lyrics. Perhaps I'll reread this in 2036 and disagree, having re-associated it with some other period of my life but at the time of writing, listening to *Kyo o Ikiyo* makes me feel 17, swimming in a pool on a hot day, young and foolish, free and unburdened, self obsessed and naive. I'm sure I was stressed about something at the time. Whatever it was escapes me now, I remember it very fondly. 
 
 The other songs from that era of my life I suspect are vulnerable to losing that effect. I was listening to *Bar Italia* a whole lot back then too, a song about a drunken night gone on too long. When her and I listened in 2019 it was about the abstract idea of a drunken stumble home rather than the lived experience. Now when I sing the words they are tainted by my own nights out I can now half remember. I wish I wrote down my interpretation of the songs at the time, I wish I had bottled my thoughts to have another sip down the line.
