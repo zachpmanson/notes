@@ -15,6 +15,8 @@ COMMENT_TOKENS = re.compile(
     r"|^(?P<ti>[ \t]*(?:>[ \t]*)*)(?P<tf>~{3,})[^\n]*\n"
     r".*?^(?P=ti)(?P=tf)~*[ \t]*(?:\n|$)"
     r"|(?<!\\)(?:\\\\)*(?P<ticks>`+)(?!`)(?:(?!\n[ \t]*\n).)+?(?<!`)(?P=ticks)(?!`)"
+    # Transclusion may insert bodies already rendered earlier in traversal.
+    r"|(?i:<(?P<html_code>pre|code)\b[^>]*>.*?</(?P=html_code)\s*>)"
     r"|(?P<comment>%%.*?%%)",
     re.MULTILINE | re.DOTALL,
 )

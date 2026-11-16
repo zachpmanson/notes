@@ -117,6 +117,21 @@ class GeneratorCommentsTest(unittest.TestCase):
             self.assertIn("<pre>", html)
             self.assertIn("code sample", html)
 
+    def test_code_in_already_rendered_transcluded_bodies_is_preserved(self):
+        for source in ("`%%literal%%`", "```text\n%%literal%%\n```"):
+            child = SimpleNamespace(
+                title="Child", subtitle=None, body=generator.process_markdown(source)
+            )
+            with patch.object(generator, "tree", {"Child": child}), patch.object(
+                generator, "tags", {"demo": {"Child"}}
+            ):
+                for rss in (False, True):
+                    with self.subTest(source=source, rss=rss):
+                        html = generator.process_markdown(
+                            "{ochrs:inline:demo:show-title}", rss=rss
+                        )
+                        self.assertIn("%%literal%%", html)
+
     def test_visible_generator_functions_still_expand(self):
         self.assertEqual(
             generator.process_markdown("{ochrs:example}"),
