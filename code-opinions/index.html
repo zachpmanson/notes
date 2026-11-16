@@ -204,7 +204,7 @@
 <p>Life is so much better if you do this. For everyone involved. Turn on Pyright type checking, get angry when you see red squiggles.</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># VERY BAD</span>
 <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{}):</span>
-    <span class="k">pass</span>
+	<span class="k">pass</span>
 </code></pre></div>
 <p>Python makes <code>@dataclasses</code> and <code>TypedDict</code> (or better yet, Pydantic) really easy to use, I recommend them highly.</p>
 <p>Further reading: <a href="https://leontrolski.github.io/cmd-click-manifesto.html">The CMD-Click Manifesto</a></p>
@@ -256,13 +256,14 @@
 <span class="nd">@router</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/result-calculation&quot;</span><span class="p">)</span>
 <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="n">request</span><span class="p">:</span> <span class="n">Request</span><span class="p">):</span>
     <span class="o">...</span>
-
+    
 <span class="c1"># GOOD</span>
 <span class="n">router</span> <span class="o">=</span> <span class="n">APIRouter</span><span class="p">()</span>
 
 <span class="nd">@router</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/v1/usage-test/result-calculation&quot;</span><span class="p">)</span>
 <span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="n">request</span><span class="p">:</span> <span class="n">Request</span><span class="p">):</span>
     <span class="o">...</span>
+     
 </code></pre></div>
 <p>Further reading: <a href="https://morizbuesing.com/blog/greppability-code-metric/">Greppability is an underrated code metric</a></p>
 <p><a href='/greppability-is-valuable'>⌾</a><br><br></p>
@@ -310,18 +311,18 @@
 <span class="w">  </span><span class="nx">b</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kd">function</span><span class="w"> </span><span class="nx">ComponentA</span><span class="p">({</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="nx">ComponentAProps</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;&gt;{</span><span class="nx">a</span><span class="p">}</span><span class="w"> </span><span class="p">{</span><span class="nx">b</span><span class="p">}&lt;/&gt;</span>
+<span class="w">	</span><span class="k">return</span><span class="w"> </span><span class="p">&lt;&gt;{</span><span class="nx">a</span><span class="p">}</span><span class="w"> </span><span class="p">{</span><span class="nx">b</span><span class="p">}&lt;/&gt;</span>
 <span class="p">}</span>
 
 <span class="c1">// BAD</span>
 <span class="kd">function</span><span class="w"> </span><span class="nx">ComponentA</span><span class="p">(</span><span class="nx">props</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">a</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">b</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">props</span><span class="p">;</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;&gt;{</span><span class="nx">a</span><span class="p">}</span><span class="w"> </span><span class="p">{</span><span class="nx">b</span><span class="p">}&lt;/&gt;</span>
+<span class="w">	</span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">props</span><span class="p">;</span>
+<span class="w">	</span><span class="k">return</span><span class="w"> </span><span class="p">&lt;&gt;{</span><span class="nx">a</span><span class="p">}</span><span class="w"> </span><span class="p">{</span><span class="nx">b</span><span class="p">}&lt;/&gt;</span>
 <span class="p">}</span>
 
 <span class="c1">// I CAN LIVE WITH THIS BUT YOU&#39;RE WEIRD</span>
 <span class="kd">function</span><span class="w"> </span><span class="nx">ComponentA</span><span class="p">(</span><span class="nx">props</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">a</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">b</span><span class="o">:</span><span class="kt">string</span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;&gt;{</span><span class="nx">props</span><span class="p">.</span><span class="nx">a</span><span class="p">}</span><span class="w"> </span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">b</span><span class="p">}&lt;/&gt;</span>
+<span class="w">	</span><span class="k">return</span><span class="w"> </span><span class="p">&lt;&gt;{</span><span class="nx">props</span><span class="p">.</span><span class="nx">a</span><span class="p">}</span><span class="w"> </span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">b</span><span class="p">}&lt;/&gt;</span>
 <span class="p">}</span>
 
 <span class="c1">// LITERALLY THE WORST OF BOTH WORLDS YOU MASOCHIST</span>
@@ -330,13 +331,13 @@
 <span class="w">  </span><span class="nx">b</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="kd">function</span><span class="w"> </span><span class="nx">ComponentA</span><span class="p">(</span><span class="nx">props</span><span class="o">:</span><span class="w"> </span><span class="kt">ComponentAProps</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">props</span><span class="p">;</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;&gt;{</span><span class="nx">a</span><span class="p">}</span><span class="w"> </span><span class="p">{</span><span class="nx">b</span><span class="p">}&lt;/&gt;</span>
+<span class="w">	</span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">props</span><span class="p">;</span>
+<span class="w">	</span><span class="k">return</span><span class="w"> </span><span class="p">&lt;&gt;{</span><span class="nx">a</span><span class="p">}</span><span class="w"> </span><span class="p">{</span><span class="nx">b</span><span class="p">}&lt;/&gt;</span>
 <span class="p">}</span>
 
 <span class="c1">// GOOD</span>
 <span class="kd">function</span><span class="w"> </span><span class="nx">ComponentA</span><span class="p">({</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">}</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">a</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">;</span><span class="w"> </span><span class="nx">b</span><span class="o">:</span><span class="kt">string</span><span class="p">})</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;&gt;{</span><span class="nx">a</span><span class="p">}</span><span class="w"> </span><span class="p">{</span><span class="nx">b</span><span class="p">}&lt;/&gt;</span>
+<span class="w">	</span><span class="k">return</span><span class="w"> </span><span class="p">&lt;&gt;{</span><span class="nx">a</span><span class="p">}</span><span class="w"> </span><span class="p">{</span><span class="nx">b</span><span class="p">}&lt;/&gt;</span>
 <span class="p">}</span>
 </code></pre></div>
 <p>It is extremely rare that you need to use prop type definitions more that once, so the separate type definition is just adding boilerplate with no benefit. Yes I know that its annoying repeating the same thing twice in a row with the anonymous type, but its the best of a bunch of bad options. It should be maximally obvious what params a component needs.</p>
@@ -377,30 +378,31 @@ Do not create API endpoints that do not validate query params or request body.</
 <p><a href='/return-types'>⌾</a><br><br></p>
 <h1>Only use a getter when you care about the setter</h1>
 <p>I know that it looks prettier when the getter is simple:</p>
-<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">User</span><span class="p">:</span>
-    <span class="n">first_name</span><span class="p">:</span> <span class="nb">str</span>
-    <span class="n">last_name</span><span class="p">:</span> <span class="nb">str</span>
-
-    <span class="k">def</span><span class="w"> </span><span class="nf">full_name_1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">first_name</span><span class="si">}</span><span class="s2"> + </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">last_name</span><span class="si">}</span><span class="s2">&quot;</span>
-
-    <span class="nd">@property</span><span class="o">.</span><span class="n">getter</span>
-    <span class="k">def</span><span class="w"> </span><span class="nf">full_name_2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">first_name</span><span class="si">}</span><span class="s2"> + </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">last_name</span><span class="si">}</span><span class="s2">&quot;</span>
+<p><div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">User</span><span class="p">:</span>
+	<span class="n">first_name</span><span class="p">:</span> <span class="nb">str</span>
+	<span class="n">last_name</span><span class="p">:</span> <span class="nb">str</span>
+	
+	<span class="k">def</span><span class="w"> </span><span class="nf">full_name_1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+		<span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">first_name</span><span class="si">}</span><span class="s2"> + </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">last_name</span><span class="si">}</span><span class="s2">&quot;</span>
+		
+	<span class="nd">@property</span><span class="o">.</span><span class="n">getter</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">full_name_2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+		<span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">first_name</span><span class="si">}</span><span class="s2"> + </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">last_name</span><span class="si">}</span><span class="s2">&quot;</span>
 
 
 <span class="n">User</span><span class="o">.</span><span class="n">full_name_1</span>
 <span class="n">User</span><span class="o">.</span><span class="n">full_name_2</span><span class="p">()</span>
 </code></pre></div>
-<p>but the bigger impact is obscuring the fact that you are making a function call.</p>
+ 
+but the bigger impact is obscuring the fact that you are making a function call.</p>
 <p>The real power of <code>@property</code> is not the getter, but the setter.</p>
 <p>You can define a custom setter with validation logic OR
 You can intentionally leave out a setter so that an attribute is read only:</p>
 <div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">X</span><span class="p">:</span>
-    <span class="n">_name</span> <span class="o">=</span> <span class="mi">5</span>
-    <span class="nd">@property</span><span class="o">.</span><span class="n">getter</span>
-    <span class="k">def</span><span class="w"> </span><span class="nf">name</span><span class="p">():</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span>
+	<span class="n">_name</span> <span class="o">=</span> <span class="mi">5</span>
+	<span class="nd">@property</span><span class="o">.</span><span class="n">getter</span>
+	<span class="k">def</span><span class="w"> </span><span class="nf">name</span><span class="p">():</span>
+		<span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span>
 </code></pre></div>
 <p>If you are not doing either of these things, property is just hiding a function call which may contain side effect, which is a practice I consider dangerous. I have seen network calls hidden get behind @property. Never do this.</p>
 <p><a href='/setters-vs-getters'>⌾</a><br><br></p>
@@ -420,7 +422,7 @@ You can intentionally leave out a setter so that an attribute is read only:</p>
           <date>2025-10-14</date>
           
           <a href="/recent-changes">recent</a>
-          <a href="/stylesheet" class="not-extra-small">random</a>
+          <a href="/tim-raymond-on-advertising" class="not-extra-small">random</a>
           <a href="/posts">posts</a>
           <a href="/sitemap" class="not-extra-small">sitemap</a>
           <a href="mailto:zachpmanson@gmail.com?subject=On 'Code Opinions'">reply</a>
@@ -439,7 +441,7 @@ You can intentionally leave out a setter so that an attribute is read only:</p>
           <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Notes/Software/Development/Code Opinions/Code Opinions.md" class="desktop">edit</a>
           <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Notes/Software/Development/Code Opinions/Code Opinions.md" class="mobile">edit</a>
           <a href="/sitemap" class="extra-small">sitemap</a>
-          <a href="/stylesheet" class="extra-small">random</a>
+          <a href="/tim-raymond-on-advertising" class="extra-small">random</a>
         </div>
       </div>
 

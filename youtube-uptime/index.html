@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/_static/styles/global.css" />
+  <link rel="stylesheet" href="/_static/styles/code.css" />
+
+  <link rel="icon" href="/_static/icon/favicon.svg" type="image/svg+xml">
+
+  <link rel="alternate" type="application/rss+xml" href="https://notes.zachmanson.com/posts.xml" title="notes: posts" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: youtube uptime</title>
+</head>
+
+<body>
+  <nav id="nav">
+    <div class="main-icon">
+      <a href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
+          viewBox="26.88 56.87 216.25 156.27">
+          <path
+            style="stroke-width: 15px; stroke-linecap: butt; stroke-linejoin: round; stroke: rgb(10, 10, 10); fill: none;"
+            d="M135,75 A60,60 0 0,0 75,135 A60,60 0 0,0 135,195 A60,60 0 0,0 195,135 A60,60 0 0,0 135,75 M45,90 A15,15 0 0,1 60,75 A15,15 0 0,1 75,90 L75,135 L75,180 A15,15 0 0,1 60,195 A15,15 0 0,1 45,180 M225,90 A15,15 0 0,0 210,75 A15,15 0 0,0 195,90 L195,135 L195,180 A15,15 0 0,0 210,195 L210,195 A15,15 0 0,0 225,180 M135,105 A30,30 0 0,1 165,135 A30,30 0 0,1 135,165 A30,30 0 0,1 105,135 A30,30 0 0,1 135,105 M45,105 L45,105 L45,165 M225,105 L225,105 L225,165 ">
+          </path>
+        </svg>
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
+      <div class="nav-segments">
+        
+        <div class="nav-links piblings">
+          
+          
+          
+          <a href="/archive#nav">Archive</a>
+          
+          
+          
+          <a href="/meta#nav">Meta</a>
+          
+          
+          
+          <a href="/notes#nav">Notes</a>
+          
+          
+          
+          <a href="/posts#nav" class="activated-link">Posts</a>
+          
+          
+          
+          <a href="/projects#nav">Projects</a>
+          
+          
+        </div>
+        
+
+        
+        <div class="nav-links siblings">
+          
+          
+          
+          <a href="/youtube-uptime#nav" class="activated-link">YouTube Uptime</a>
+          
+
+          
+        </div>
+        
+
+        
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header>
+      <h1>YouTube Actually Has Zero 9s of Availability</h1>
+    </header>
+
+    <article><p>YouTube RSS returns 404 and 500 errors a quarter of the time.</p>
+<p><img alt="" src="/assets/youtube-down.png" /></p>
+<p>The 6 feeds in the screenshot above were being polled at 15 minute intervals, which is aggressive but that was the point. <a href="https://www.jefftk.com/p/looking-at-rss-user-agents">Some RSS readers do poll that aggressively</a> for better or for worse. My first assumption is this is some kind of rate limiting, but there's no backoff instruction in the headers, no 429 or 503. The failed requests return 404 most of the time, and occasionally 500? I assume feed readers are not be set up to interpret 404 as <em>let's begin exponential backoff</em>.</p>
+<p>This is nasty because it means that if you've already got some feeds subscribed, existing polling may have already exhausted your quota and adding a new feed can fail with 404, likely resulting in your reader rejecting the feed outright. This problem was the reason I started monitoring it, intermittent failures when adding new feeds.</p>
+<p><img alt="" src="/assets/uptime.svg" /></p>
+<p>96% of the failures happen between 15:00-17:00 in my timezone. I started tracking this on 2026-09-14 in Melbourne, meaning that I have readings before and after a local daylight savings shift. Following the DST shift, the problems start to happen around an hour earlier UTC. Adjusting everything to UTC reveals that the problems seem always seem to go away at 07:00, until 2026-11-02 when the problems start to go away at 08:00 UTC, lining up with the US Pacific timezone's daylight savings shift, so I guess 07:00 US Pacific is when the rate limit quotas get reset? That still doesn't explain the occasional 500 errors.</p>
+<p>In any case, YouTube should return 429 or 503 when rate limiting instead of 404.  I assume the rate limit is accumulative, so having 1 feed polling 100 times a day would be as bad as 50 feeds polling twice a day. I'll play around with this in the future, but if this is the case, it makes YouTube RSS less and less usable as you subscribe to more feeds. 15 minute polling is excessive, but I was running into problems in Nextcloud News, which has a default polling rate of 1 hour.<sup id="fnref:rachel"><a class="footnote-ref" href="#fn:rachel">1</a></sup> Assuming it's just naively counting requests, I would only need 24 channels to bring the feeds to 75% uptime. Given that at the time of writing I have 306 subscriptions<sup id="fnref:subs"><a class="footnote-ref" href="#fn:subs">2</a></sup>, adding new feeds would fail the majority of the day, and I assume many feeds would not get updated since a single poll would trip the rate limit quota. Until YouTube makes their feeds have suggest backing off<sup id="fnref:fear"><a class="footnote-ref" href="#fn:fear">3</a></sup>, migrating to YouTube to RSS is untenable.<sup id="fnref:protip"><a class="footnote-ref" href="#fn:protip">4</a></sup></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:rachel">
+<p>I'm sure rachelbythebay would disapprove.&#160;<a class="footnote-backref" href="#fnref:rachel" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:subs">
+<p>Yes I recognise this is ludicrous, I don't watch the vast majority of these. I'm overdue for a cull and a severe detox. YouTube is my vice, do not ask my about my screen time for it. My transition to RSS was supposed to be part of limiting my intake, since my RSS frontend Dripfeed was can to limit the amount you can actually consume.&#160;<a class="footnote-backref" href="#fnref:subs" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:fear">
+<p>I'm actually scared to point this out, if someone at Google sees this they are far more likely to decommission the RSS feeds than fix them.&#160;<a class="footnote-backref" href="#fnref:fear" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:protip">
+<p>Protip for YouTube RSS feeds: YouTube lists this URL format as the channel URL <code>feeds/videos.xml?channel_id=UCG&lt;channel_id&gt;</code>. If you change it to <code>/feeds/videos.xml?playlist_id=UULFG&lt;channel_id&gt;</code> you get a feed excluding YouTube Shorts.&#160;<a class="footnote-backref" href="#fnref:protip" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:reader">
+<p>NetNewsWire, then Nextcloud News, now Nextcloud News as a backend + my custom client Dripfeed.&#160;<a class="footnote-backref" href="#fnref:reader" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div></article>
+  </main>
+
+  <footer>
+    <details>
+      <summary>
+        <div class="footer-row">
+          
+          <date>2026-11-16</date>
+          
+          <a href="/recent-changes">recent</a>
+          <a href="/sitemap" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'YouTube Uptime'">reply</a>
+        </div>
+      </summary>
+      <div class="footer-row">
+        <input type="radio" name="theme" id="theme-system" class="invisible" checked>
+        <label for="theme-system" class="nonsystem-only"><a>system</a></label>
+
+        <input type="radio" name="theme" id="theme-light" class="invisible">
+        <label for="theme-light" class="dark-only"><a>light</a></label>
+
+        <input type="radio" name="theme" id="theme-dark" class="invisible">
+        <label for="theme-dark" class="light-only"><a>dark</a></label>
+        
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Posts/YouTube Uptime.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Posts/YouTube Uptime.md" class="mobile">edit</a>
+          <a href="/sitemap" class="extra-small">sitemap</a>
+          <a href="/sitemap" class="extra-small">random</a>
+        </div>
+      </div>
+
+      
+
+      <p class="backlinks"><strong>Incoming:</strong>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
+      
+
+      
+      <p class="backlinks"><strong> <a href="/tags">Tags:</a></strong>
+        
+        <a href="/tags#posts">#posts</a>
+        
+        </span>
+      </p>
+      
+      <p>
+        
+        <span class="backlinks">
+          <strong>
+            Posted:
+          </strong>
+          <date>2026-11-16</date>
+
+        </span>
+        
+
+        <span class="backlinks">
+          <strong>
+            Updated:
+          </strong>
+          <date>2026-11-16</date>
+        </span>
+
+      </p>
+    </details>
+
+  </footer>
+  
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+
+    function checkVisible(el) {
+      let rect = el.getBoundingClientRect();
+      let viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+      return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+    }
+
+
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        if (checkVisible(link.parentElement)) {
+          link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+        }
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 350);
+    });
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
+  </script>
+  <script type="module">
+      if (localStorage?.getItem("theme") === "dark") {
+        document.querySelector("#theme-dark").checked = true;
+      } else if (localStorage?.getItem("theme") === "light") {
+        document.querySelector("#theme-light").checked = true;
+      }
+
+      function setTheme(theme) {
+        localStorage.setItem("theme", theme);
+      }
+      document.querySelectorAll("#theme-system").forEach(el => el.addEventListener("click", () => setTheme(undefined)));
+      document.querySelectorAll("#theme-light").forEach(el => el.addEventListener("click", () => setTheme("light")));
+      document.querySelectorAll("#theme-dark").forEach(el => el.addEventListener("click", () => setTheme("dark")));
+  </script>
+
+</body>
+
+</html>
