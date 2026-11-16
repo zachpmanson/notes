@@ -11,11 +11,14 @@ from types import FunctionType
 import frontmatter
 import jinja2
 import markdown
+from markdown.extensions import Extension
 from markdown.extensions.codehilite import CodeHiliteExtension
+from markdown.preprocessors import Preprocessor
 
 import generator.helpers as helpers
 from generator.extensions.backlink import BacklinkExtension
 from generator.extensions.cite import CiteExtension
+from generator.extensions.comments import CommentExtension, CommentPreprocessor
 from generator.extensions.pathconverter.pathconverter import PathConverterExtension
 from generator.types import Node
 
@@ -146,10 +149,9 @@ def traverse_tree():
     # generate page bodies and record backlinks
     for node in tree.keys():
         current_node = node
-        preprocessed_md = preprocess_markdown(tree[node].body)
-
-        tree[node].body = process_markdown(preprocessed_md)
-        tree[node].rss_body = process_markdown(preprocessed_md, rss=True)
+        source = tree[node].body
+        tree[node].body = process_markdown(source)
+        tree[node].rss_body = process_markdown(source, rss=True)
 
 
 def generate_pages():
@@ -335,6 +337,20 @@ def preprocess_markdown(text):
     return text
 
 
+class GeneratorPreprocessor(Preprocessor):
+    def run(self, lines):
+        source = "\n".join(CommentPreprocessor(self.md).run(lines))
+        return preprocess_markdown(source).split("\n")
+
+
+class GeneratorExtension(Extension):
+    def extendMarkdown(self, md):
+        # Strip source comments before evaluating ochrs functions. The comments
+        # extension (26) then strips comments from transcluded bodies, before
+        # fenced code (25) is processed as in the original generation pipeline.
+        md.preprocessors.register(GeneratorPreprocessor(md), "generator", 27)
+
+
 def process_markdown(text, rss=False):
     if rss:
 
@@ -468,6 +484,8 @@ def create_feeds():
 
 md_extensions = [
     "fenced_code",
+    CommentExtension(),
+    GeneratorExtension(),
     BacklinkExtension(build_url=build_backlink, html_class="", end_url=""),
     CodeHiliteExtension(guess_lang=False),
     "md_in_html",
