@@ -8,6 +8,7 @@
 - [Modern Font Stacks](https://modernfontstacks.com)
 - [Fonts In Use](https://fontsinuse.com/), archive of typography
 - [Appear Offline](https://appear-offline.com/), text distortion and other services
+- [Subordinate Latin](https://maxbo.me/subordinate-latin), why latin characters in Japanese text look a bit different
 
 ## Typefaces
 
