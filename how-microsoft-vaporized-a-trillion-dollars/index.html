@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/_static/styles/global.css" />
+  <link rel="stylesheet" href="/_static/styles/code.css" />
+
+  <link rel="icon" href="/_static/icon/favicon.svg" type="image/svg+xml">
+
+  <link rel="alternate" type="application/rss+xml" href="https://notes.zachmanson.com/posts.xml" title="notes: posts" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>notes: how microsoft vaporized a trillion dollars</title>
+</head>
+
+<body>
+  <nav id="nav">
+    <div class="main-icon">
+      <a href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" version="1.1" style="fill: none;"
+          viewBox="26.88 56.87 216.25 156.27">
+          <path
+            style="stroke-width: 15px; stroke-linecap: butt; stroke-linejoin: round; stroke: rgb(10, 10, 10); fill: none;"
+            d="M135,75 A60,60 0 0,0 75,135 A60,60 0 0,0 135,195 A60,60 0 0,0 195,135 A60,60 0 0,0 135,75 M45,90 A15,15 0 0,1 60,75 A15,15 0 0,1 75,90 L75,135 L75,180 A15,15 0 0,1 60,195 A15,15 0 0,1 45,180 M225,90 A15,15 0 0,0 210,75 A15,15 0 0,0 195,90 L195,135 L195,180 A15,15 0 0,0 210,195 L210,195 A15,15 0 0,0 225,180 M135,105 A30,30 0 0,1 165,135 A30,30 0 0,1 135,165 A30,30 0 0,1 105,135 A30,30 0 0,1 135,105 M45,105 L45,105 L45,165 M225,105 L225,105 L225,165 ">
+          </path>
+        </svg>
+      </a>
+    </div>
+
+    <div class="nav-segments-container">
+      <div class="nav-segments">
+        
+        <div class="nav-links piblings">
+          
+          
+          
+          <a href="/bookmarks#nav">Bookmarks</a>
+          
+          
+          
+          <a href="/fiction#nav">Fiction</a>
+          
+          
+          
+          <a href="/folklore#nav" class="activated-link">Folklore</a>
+          
+          
+          
+          <a href="/lines#nav">Lines</a>
+          
+          
+          
+          <a href="/problems#nav">Problems</a>
+          
+          
+          
+          <a href="/snippets#nav">Snippets</a>
+          
+          
+        </div>
+        
+
+        
+        <div class="nav-links siblings">
+          
+          
+          
+          <a href="/10-rules-of-internet#nav">10 Rules of Internet</a>
+          
+
+          
+          
+          <a href="/a-conspiracy-to-kill-ie6#nav">A Conspiracy To Kill IE6</a>
+          
+
+          
+          
+          <a href="/a-story-about-magic#nav">A Story About 'Magic'</a>
+          
+
+          
+          
+          <a href="/alice-in-modeland#nav">Alice in Modeland</a>
+          
+
+          
+          
+          <a href="/aliens-and-calendars#nav">Aliens and Calendars</a>
+          
+
+          
+          
+          <a href="/amazons-first-job-posting#nav">Amazon's First Job Posting</a>
+          
+
+          
+          
+          <a href="/an-update-on-facebook-video-marketing-metrics#nav">An Update on Facebook Video Marketing Metrics</a>
+          
+
+          
+          
+          <a href="/bell-labs-productivity-mystery#nav">Bell Labs' Productivity Mystery</a>
+          
+
+          
+          
+          <a href="/best-practices-for-time-travellers#nav">Best Practices for Time Travellers</a>
+          
+
+          
+          
+          <a href="/bill-gates-tries-to-install-windows-movie-maker#nav">Bill Gates Tries To Install Windows Movie Maker</a>
+          
+
+          
+          
+          <a href="/bill-gates-wrote-fat-on-an-airplane#nav">Bill Gates Wrote FAT on an Airplane</a>
+          
+
+          
+          
+          <a href="/blinkenlichten#nav">Blinkenlichten</a>
+          
+
+          
+          
+          <a href="/c-locale-braindeath#nav">C Locale Braindeath</a>
+          
+
+          
+          
+          <a href="/cannot-simultaneously-fix-and-keep-job.-therefore-wont-fix.#nav">Cannot simultaneously fix and keep job. Therefore, won't fix.</a>
+          
+
+          
+          
+          <a href="/christ-mcdonald#nav">Christ McDonald</a>
+          
+
+          
+          
+          <a href="/competing-with-gpt#nav">Competing with GPT</a>
+          
+
+          
+          
+          <a href="/context-menu-hell#nav">Context Menu Hell</a>
+          
+
+          
+          
+          <a href="/cool-uris-dont-change#nav">Cool URIs Don't Change</a>
+          
+
+          
+          
+          <a href="/dear-google-cloud#nav">Dear Google Cloud</a>
+          
+
+          
+          
+          <a href="/digg-v4#nav">Digg v4</a>
+          
+
+          
+          
+          <a href="/dispatch-from-the-cyberpunk-city#nav">Dispatch From the Cyberpunk City</a>
+          
+
+          
+          
+          <a href="/do-things-tell-people#nav">Do Things, Tell People</a>
+          
+
+          
+          
+          <a href="/dropbox-feedback#nav">Dropbox Feedback</a>
+          
+
+          
+          
+          <a href="/ellsbergs-advice-for-kissinger#nav">Ellsberg's Advice For Kissinger</a>
+          
+
+          
+          
+          <a href="/facing-the-street#nav">Facing the Street</a>
+          
+
+          
+          
+          <a href="/factory-factory-factory#nav">Factory Factory Factory</a>
+          
+
+          
+          
+          <a href="/feminist-server-manifesto#nav">Feminist Server Manifesto</a>
+          
+
+          
+          
+          <a href="/file-over-app#nav">File Over App</a>
+          
+
+          
+          
+          <a href="/git-koans#nav">Git Koans</a>
+          
+
+          
+          
+          <a href="/go-url-imports#nav">Go URL Imports</a>
+          
+
+          
+          
+          <a href="/group-chats-rule-the-world#nav">Group Chats Rule the World</a>
+          
+
+          
+          
+          <a href="/growth-at-tumblr-and-wordpress#nav">Growth at Tumblr and Wordpress</a>
+          
+
+          
+          
+          <a href="/guerilla-open-access-manifesto#nav">Guerilla Open Access Manifesto</a>
+          
+
+          
+          
+          <a href="/heaven-banning#nav">Heaven Banning</a>
+          
+
+          
+          
+          <a href="/how-microsoft-vaporized-a-trillion-dollars#nav" class="activated-link">How Microsoft Vaporized a Trillion Dollars</a>
+          
+
+          
+          
+          <a href="/hyperanalyze#nav">HyperAnalyze</a>
+          
+
+          
+          
+          <a href="/i-no-longer-built-software#nav">I No Longer Built Software</a>
+          
+
+          
+          
+          <a href="/in-the-beginning-was-the-command-line#nav">In the Beginning was the Command Line</a>
+          
+
+          
+          
+          <a href="/incomplete-list-of-mistakes-in-the-design-of-css#nav">Incomplete List of Mistakes in the Design of CSS</a>
+          
+
+          
+          
+          <a href="/interviewing-for-canonical#nav">Interviewing for Canonical</a>
+          
+
+          
+          
+          <a href="/is-it-a-bubble#nav">Is It a Bubble</a>
+          
+
+          
+          
+          <a href="/jsx-react-native-and-typescript#nav">JSX, React Native, and TypeScript</a>
+          
+
+          
+          
+          <a href="/kurt-vonnegut-grades#nav">Kurt Vonnegut Grades</a>
+          
+
+          
+          
+          <a href="/language-and-death#nav">Language and Death</a>
+          
+
+          
+          
+          <a href="/larry-page-builds-a-web-robot#nav">Larry Page Builds a Web Robot</a>
+          
+
+          
+          
+          <a href="/leaving-linkedin#nav">Leaving LinkedIn</a>
+          
+
+          
+          
+          <a href="/life-of-an-oracle-developer#nav">Life of an Oracle Developer</a>
+          
+
+          
+          
+          <a href="/man-spends-entire-career-mastering-crappy-codebase#nav">Man Spends Entire Career Mastering Crappy Codebase</a>
+          
+
+          
+          
+          <a href="/msotristateenum#nav">MsoTriStateEnum</a>
+          
+
+          
+          
+          <a href="/no-coffee-==-no-job#nav">No Coffee == No Job</a>
+          
+
+          
+          
+          <a href="/no-dogs-were-harmed-in-the-making-of-this-app#nav">No dogs were harmed in the making of this app</a>
+          
+
+          
+          
+          <a href="/not-a-real-engineer#nav">Not a real engineer</a>
+          
+
+          
+          
+          <a href="/on-the-origin-of-.ds_store#nav">On the Origin of .DS_Store</a>
+          
+
+          
+          
+          <a href="/on-the-origin-of-emacs#nav">On the Origin of Emacs</a>
+          
+
+          
+          
+          <a href="/on-the-origin-of-toots#nav">On the Origin of Toots</a>
+          
+
+          
+          
+          <a href="/on-the-origins-of-dynamic-programming#nav">On the Origins of Dynamic Programming</a>
+          
+
+          
+          
+          <a href="/on-the-origins-of-rust#nav">On the Origins of Rust</a>
+          
+
+          
+          
+          <a href="/openoffice-cant-print-on-tuesdays#nav">OpenOffice Can't Print on Tuesdays</a>
+          
+
+          
+          
+          <a href="/oracle-as-lawnmower#nav">Oracle as Lawnmower</a>
+          
+
+          
+          
+          <a href="/originality-not-required#nav">Originality Not Required</a>
+          
+
+          
+          
+          <a href="/psd-is-not-my-favourite-file-format#nav">PSD is not my favourite file format</a>
+          
+
+          
+          
+          <a href="/please-drink-verification-can#nav">Please Drink Verification Can</a>
+          
+
+          
+          
+          <a href="/pocket-veto#nav">Pocket Veto</a>
+          
+
+          
+          
+          <a href="/potential#nav">Potential</a>
+          
+
+          
+          
+          <a href="/price-of-chatgpts-api-vs-human#nav">Price of ChatGPT's API vs Human</a>
+          
+
+          
+          
+          <a href="/put-yourself-in-jia-tans-shoes#nav">Put yourself in Jia Tan's shoes</a>
+          
+
+          
+          
+          <a href="/regular-expressions-and-html#nav">Regular Expressions and HTML</a>
+          
+
+          
+          
+          <a href="/rob-pikes-5-rules-of-programming#nav">Rob Pike's 5 Rules of Programming</a>
+          
+
+          
+          
+          <a href="/rob-pikes-lesson-in-shortcuts#nav">Rob Pike's Lesson in Shortcuts</a>
+          
+
+          
+          
+          <a href="/sre-threats#nav">SRE Threats</a>
+          
+
+          
+          
+          <a href="/sleep-sort#nav">Sleep Sort</a>
+          
+
+          
+          
+          <a href="/steve-yegges-tale-of-geoworks#nav">Steve Yegge's Tale of Geoworks</a>
+          
+
+          
+          
+          <a href="/steveys-google-platforms-rant#nav">Stevey's Google Platforms Rant</a>
+          
+
+          
+          
+          <a href="/superstitious-encoding#nav">Superstitious Encoding</a>
+          
+
+          
+          
+          <a href="/svelte-parses-html-all-wrong#nav">Svelte parses HTML all wrong</a>
+          
+
+          
+          
+          <a href="/the-bitter-lesson#nav">The Bitter Lesson</a>
+          
+
+          
+          
+          <a href="/the-cmd-click-manifesto#nav">The CMD-Click Manifesto</a>
+          
+
+          
+          
+          <a href="/the-cab-ride-ill-never-forget#nav">The Cab Ride I'll Never Forget</a>
+          
+
+          
+          
+          <a href="/the-case-of-the-500-mile-email#nav">The Case of the 500-Mile Email</a>
+          
+
+          
+          
+          <a href="/the-crawford-principles#nav">The Crawford Principles</a>
+          
+
+          
+          
+          <a href="/the-damned-can-now-play-three-chords#nav">The Damned Can Now Play Three Chords</a>
+          
+
+          
+          
+          <a href="/the-descent-to-c#nav">The Descent to C</a>
+          
+
+          
+          
+          <a href="/the-future-of-open-source#nav">The Future of Open Source</a>
+          
+
+          
+          
+          <a href="/the-graphing-calculator-story#nav">The Graphing Calculator Story</a>
+          
+
+          
+          
+          <a href="/the-nazi-bar-problem#nav">The Nazi Bar Problem</a>
+          
+
+          
+          
+          <a href="/the-patron-saint-of-yak-shaves#nav">The Patron Saint of Yak Shaves</a>
+          
+
+          
+          
+          <a href="/the-reddit-long-con#nav">The Reddit Long Con</a>
+          
+
+          
+          
+          <a href="/the-smallest-quine#nav">The Smallest Quine</a>
+          
+
+          
+          
+          <a href="/the-unknown-citizen#nav">The Unknown Citizen</a>
+          
+
+          
+          
+          <a href="/the-bin-split#nav">The bin Split</a>
+          
+
+          
+          
+          <a href="/things-many-people-find-too-obvious-to-have-told-you-already#nav">Things Many People Find Too Obvious To Have Told You Already</a>
+          
+
+          
+          
+          <a href="/thoughts-on-flash#nav">Thoughts On Flash</a>
+          
+
+          
+          
+          <a href="/tiktoks-enshittification#nav">TikTok's Enshittification</a>
+          
+
+          
+          
+          <a href="/time-traveller-on-irc#nav">Time Traveller on IRC</a>
+          
+
+          
+          
+          <a href="/unix-recovery-legend#nav">Unix Recovery Legend</a>
+          
+
+          
+          
+          <a href="/usenet-post-warning#nav">Usenet Post Warning</a>
+          
+
+          
+          
+          <a href="/vibe-code-warning-(written-by-human)#nav">VIBE CODE WARNING (WRITTEN BY HUMAN)</a>
+          
+
+          
+          
+          <a href="/virtues-of-a-good-programmer#nav">Virtues of a Good Programmer</a>
+          
+
+          
+          
+          <a href="/we-do-not-break-userspace#nav">We Do Not Break Userspace</a>
+          
+
+          
+          
+          <a href="/we-have-no-moat-and-neither-does-openai#nav">We Have No Moat, And Neither Does OpenAI</a>
+          
+
+          
+          
+          <a href="/what-happened-to-silicon-valley#nav">What Happened To Silicon Valley</a>
+          
+
+          
+          
+          <a href="/when-is-midnight#nav">When Is Midnight</a>
+          
+
+          
+          
+          <a href="/wikipedia-and-anti-elitism#nav">Wikipedia and Anti-Elitism</a>
+          
+
+          
+          
+          <a href="/worse-is-better#nav">Worse is Better</a>
+          
+
+          
+          
+          <a href="/yak-shaving#nav">Yak Shaving</a>
+          
+
+          
+          
+          <a href="/carproblems.txt#nav">carproblems.txt</a>
+          
+
+          
+        </div>
+        
+
+        
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header>
+      <h1>How Microsoft Vaporized a Trillion Dollars</h1>
+    </header>
+
+    <article><p>Written by Axel Rietschin start on 2026-03-29 as a series on <a href="https://isolveproblems.substack.com/p/how-microsoft-vaporized-a-trillion">his newsletter</a>, on how corner cutting compounded into Microsoft losing trust with OpenAI and the US Government as customers. I've reformatted it into a single article with fewer paragraph breaks.</p>
+<hr />
+<h2 id="part-1">Part 1</h2>
+<p>29 March 2026</p>
+<p>This is the first of a series of articles in which you will learn about what may be one of the silliest, most preventable, and most costly mishaps of the 21st century, where Microsoft all but lost OpenAI, its largest customer, and the trust of the US government.</p>
+<p>I joined Azure Core on the dull Monday morning of May 1st, 2023, as a senior member of the Overlake R&amp;D team, the folks behind the Azure Boost offload card and network accelerator. I wasn’t new to Azure, having run what is likely the longest-running production subscription of this cloud service, which launched in February 2010 as Windows Azure. I wasn’t new to Microsoft either, having been part of the Windows team since January 2013 and later helped migrate SharePoint Online to Azure, before joining the Core OS team as a kernel engineer, where I notably helped improve the kernel and helped invent and deliver the Container platform that supports Docker, Azure Kubernetes, Azure Container Instances, Azure App Services, and Windows Sandbox, all shipping technologies that resulted in multiple granted patents. Furthermore, I contributed to brainstorming the early Overlake cards in 2020-2021 and drafted a proposal for a Host OS &lt;-&gt; Accelerator Card communication protocol and network stack, when all we had was a debugger’s serial connection. I also served as a Core OS specialist, helping Azure Core engineers diagnose deep OS issues. I rejoined in 2023 as an Azure <em>expert</em> on day one, having contributed to the development of some of the technologies Azure relies on and having used the platform for more than a decade, both outside and inside Microsoft, at a global scale.</p>
+<p>As a returning employee, I skipped the New Employee Orientation and had my Global Security appointment for 12 noon to pick up my badge, but my future manager asked if I could come in earlier because the team had their monthly planning meeting that morning. I, of course, agreed and arrived a few minutes before 10 am at the entrance of the Studio X building, not far from The Commons on the West Campus in Redmond. A man showed up in the lobby and opened the door for me. I followed him to a meeting room through a labyrinth of corridors. The room was chock-full, with more people on a live conference call. The dev manager, the leads, the architects, the principal and senior engineers shared the space with what appeared to be new hires and junior personnel.</p>
+<p>The screen projected a slide where I recognized a number of familiar acronyms, like COM, WMI, perf counters, VHDX, NTFS, ETW, and a dozen others, mixed with new Azure-related ones, in an imbroglio of boxes linked by arrows. I sat quietly at the back while a man was walking the room through a big porting plan for their current stack to the Overlake accelerator. As I listened, it was not immediately clear what that series of boxes with Windows user-mode and kernel components had to do with that plan. After a few minutes, I risked a question: Are you planning to <em>port</em> those Windows features to Overlake? The answer was yes, or at least they were looking into it. The dev manager showed some doubt, and the man replied that they could at least “ask a couple of junior devs to look into it.”</p>
+<p>The room remained silent for an instant. I had seen the hardware specs for the SoC on the Overlake card in my previous tenure: the RAM capacity and the power budget, which was just a tiny fraction of the TDP you can expect from a regular server CPU. The hardware folks I spoke with in 2020 told me they could only spare 4KB of dual-ported memory on the FPGA for my doorbell's shared-memory communication protocol. Everything was nimble, efficient, and power-savvy, and the team I had joined 10 minutes earlier was <em>seriously</em> considering porting half of Windows to that tiny, fanless, Linux-running chip the size of a fingernail. That felt like Elon talking about colonizing Mars: <a href="https://youtube.com/shorts/5krJIVjjj0o?si=3pEZM5M0CENwybta">just nuke the poles, then grow an atmosphere</a>! Easier said than done, uh?</p>
+<p>That entire 122-strong org was knee-deep in impossible ruminations involving porting Windows to Linux to support their existing VM management agents. The man was a Principal Group Engineering Manager overseeing a chunk of the software running on each Azure node; his boss, a Partner Engineering Manager, was in the room with us, and they <em>really</em> contemplated porting Windows to Linux to support their current software. At first, I questioned my understanding. Was that serious? The rest of the talk left no doubt: the plan was outlined, and the dev leads were tasked with contributing people to the effort. It was immediately clear to me that this plan would never succeed and that the org needed <em>a lot</em> of help. That first hour in the new role left me with a mix of strange feelings, stupefaction, and incredulity.</p>
+<p>The stack was hitting its scaling limits on a 400 Watt Xeon at just a few dozen VMs per node, I later learned, a far cry from the 1,024 VMs limit I knew the hypervisor was capable of, and was a noisy neighbor consuming so many resources that it was causing jitter observable from the customer VMs. There is no dimension in the universe where this stack would fit on a tiny ARM SoC and scale up by many factors. It was not going to happen. I have seen a lot in my decades of industry (and Microsoft) experience, but I had never seen an organization so far from reality. My day-one problem was therefore not to ramp up on new technology, but rather to convince an entire org, up to my skip-skip-level, that they were on a death march. Somewhere, I knew it was going to be a fierce uphill battle. As you can imagine, it didn’t go well, as you will later learn.</p>
+<p>I spent the next few days reading more about the plans, studying the current systems, and visiting old friends in Core OS, my alma mater. I was lost away from home in a bizarre territory where people made plans that didn’t make sense with the aplomb of a drunk LLM. I notably spent more than 90 minutes chatting in person with the head of the Linux System Group, a solid scholar with a PhD from INRIA, who was among the folks who hired me on the kernel team years earlier. His org is responsible for delivering Mariner Linux (now Azure Linux) and the trimmed-down distro running on the Overlake / Azure Boost card. He kindly answered all my questions, and I learned that they had identified 173 agents (one hundred seventy-three) as candidates for porting to Overlake.</p>
+<p>I later researched this further and found that no one at Microsoft, not a single soul, could articulate why up to 173 agents were needed to manage an Azure node, what they all did, how they interacted with one another, what their feature set was, or even why they existed in the first place. Azure sells VMs, networking, and storage at the core. Add observability and servicing, and you should be good. Everything else, SQL, K8s, AI workloads, and whatnot all build on VMs with xPU, networking, and storage, and the heavy lifting to make the magic happen is done by the good Core OS folks and the hypervisor. How the Azure folks came up with 173 agents will probably remain a mystery, but it takes a serious amount of misunderstanding to get there, and this is also how disasters are built.</p>
+<p>Now, fathom for a second that this pile of uncontrolled “stuff” is orchestrating the VMs running Anthropic’s Claude, what’s left of OpenAI’s APIs on Azure, SharePoint Online, the government clouds and other mission-critical infrastructure, and you’ll be close to understanding how a grain of sand in that fragile pileup can cause a global collapse, with serious National Security implications as well as potential business-ending consequences for Microsoft. We are still far from the vaporized trillion in market cap, my letters to the CEO, to the Microsoft Board of Directors, and to the Cloud + AI EVP and their total silence, the quasi-loss of OpenAI, the breach of trust with the US government as publicly stated by the Secretary of Defense, the wasted engineering efforts, the Rust mandate, my stint on the OpenAI bare-metal team in Azure Core, the escort sessions from China and elsewhere, and the delayed features publicly implied as shipping since 2023, before the work even began. If you’re running production workloads on Azure or relying on it for mission-critical systems, this story matters more than you think.</p>
+<h2 id="part-2">Part 2</h2>
+<p>30 March 2026</p>
+<p>What I discovered in the following weeks and months was a strained organization, exhausted by constant incidents, <em>millions</em> of unattended crashes in the Azure node management stack, conflicting coding standards, limited security awareness, weak testing practices, code freezes born of fear, unrealistic timelines, blame-shifting, and a noticeable gap in senior technical leadership. Before diving deeper into each issue, it helps to understand how the team reached this point.</p>
+<p>During my earlier tenure as a kernel engineer on the Windows Core OS team, I reported to one of the most talented operating system engineers I encountered at Microsoft. He had decades of experience, stretching back to working with Dave Cutler on the Windows systems we know today. Among his contributions were the Server and Application Silos (code-named Helium and Argon), which form the foundation of the Windows Container platform. He also worked on research operating systems such as Midori and Singularity, and was one of the original contributors to the Azure Fabric, the meta operating system that orchestrates Microsoft’s cloud infrastructure.</p>
+<p>One day early in my time under him, he brought in some old team swag: a sweater emblazoned with 0×007FFF, the hex color of Azure. From him and over the years, I learned not only about kernel design but also about Azure’s origins and the intense competitive pressure that shaped it. Amazon had launched S3 and EC2 in 2006; Microsoft was late to the public cloud race and needed to move fast. The project, code-named Red Dog, began with a small team of just five or six elite engineers, led by Cutler.</p>
+<p>The heavy lifting on the nodes falls to the hypervisor and modified host and guest OSes optimized for virtualized environments. Nodes belong to clusters managed by the Fabric Controller, which handles resource inventory, VM placement, provisioning, servicing, load balancing, and scaling. A set of agents, including the central RdAgent, reports back to the controller and orchestrates local resources on each node, as well as the creation of virtual machines.</p>
+<p>Creating a VM is still fundamentally like ordering pizza (skipping some details): you choose from a menu of sizes and ingredients: 16 cores? Sure. 128 GB of memory? Done. 32 disks? No problem. Four NICs? GPU? You got it! From there, the node software pilots the hypervisor to create the partition, attach the required devices, including a disk containing the boot image, and start the VM.</p>
+<p>The project succeeded and shipped in February 2010 as Windows Azure. But as often happens with rushed, high-pressure efforts, many of the original core contributors eventually moved on. At the time, Microsoft was still heavily focused on PCs, tablets, and phones. Teams were porting Windows to ARM, shipping Windows 8 and 8.1, and acquiring Nokia while reimagining Xbox One around Hyper-V under Cutler’s leadership. Cloud was important but not yet central. OneDrive and SharePoint ran on separate infrastructure, and Azure remained a distant second to AWS.</p>
+<p>Just months after Satya Nadella became CEO in February 2014, he canceled the dedicated SDET (Software Development Engineer in Test) role, triggering significant layoffs. Due to Washington state WARN rules, Microsoft could not eliminate every tester position; hundreds remained. Many of these testers, strong at execution but with limited experience in system design or deep software engineering, were retrained. Some became data engineers focused on Windows 10 telemetry; others moved into software engineering roles (often down-leveled); and still others landed in lower-impact areas, including Azure OPEX, where they helped keep the lights on through on-call rotations and incident mitigation.</p>
+<p>Fast forward, and large parts of Azure operations were being run by these former testers. Many were dedicated colleagues, but the shift left gaps in architectural depth for mission-critical systems. OPEX teams exist to maintain production stability. Their work is grueling, with 24/7 on-call rotations, rapid mitigations, post-mortem analysis, and scripting fixes, leading to high attrition. They typically do not design new software or own long-term bug fixes; instead, they file repair items for product teams and maintain a living knowledge base of incidents.</p>
+<p>In 2018, Nadella repositioned the company around Cloud + AI and placed Scott Guthrie in charge. Windows was reorganized under Azure, and overnight the existing Azure teams became central to Microsoft’s most strategic bet. Most of the people stayed the same, save for a few high-profile transfers. By the time I rejoined in 2023, roughly half the organization responsible for Compute Node Services consisted of junior engineers with only one or two years of experience. The Group Engineering Manager’s background was in web performance (optimizing CSS for page load times), and the dev manager had limited Windows experience.</p>
+<p>This group was now tasked with moving their inherited stack to the new Azure Boost accelerator environment, an effort Microsoft had publicly implied was well underway at Ignite conferences since 2023. In reality, as the person responsible for the hypervisor-layer porting and reengineering, I knew the substantive work had barely begun. The team had no clear starting point. The existing stack suffered from chronic crash-causing defects and memory leaks, leaving everyone firefighting. Few engineers could reliably build the software locally; debugger usage was rare (I ended up writing the team's first how-to guide in 2024); and automated test coverage sat below 40%.</p>
+<p>Every monthly release introduced more new defects than it fixed. Most rollouts were panicked rollbacks. Millions of crashes occurred each month, the majority unattributed because teams had never claimed ownership of their modules in the Azure Watson crash reporting system. As a result, automated triage created few formal incidents, allowing monthly newsletters to tout glowing quality metrics unsupported by actual data.</p>
+<p>The Core OS team often absorbed blame for issues originating in the Azure node software. Crashes frequently leaked resources: files, disks, even entire VMs. Weak error handling led to malformed VMs (e.g., missing disks). When customers decommissioned them, the node software attempted to detach non-existent disks, triggering hypervisor errors. The Azure team pointed fingers at Hyper-V, sparking escalations that reached VP level. I once convened a high-stakes meeting with stakeholders from both sides; the Hyper-V leads were visibly frustrated by the repeated, misplaced blame.</p>
+<p>Layered on this chaos was an Azure-wide mandate: all new software must be written in Rust. Some porting plans were abandoned, and many junior engineers grew excited by the new language. Critical modules at the heart of Azure's node management, a critical part of the company's flagship Cloud + AI initiative, were sometimes designed by engineers with less than a year of tenure, under leads who lacked visibility into the details.</p>
+<p>None of it shipped. The VM management software continued to run and crash on Windows, despite repeated public statements from 2023 through 2025 claiming that key components had been offloaded to the Azure Boost accelerator and rewritten in Rust. From my direct involvement, I know those claims did not reflect reality as late as the end of 2024. Of the 64 key work items identified a year earlier to reengineer the VM management stack for offload, none had been completed, and work had not even started on approximately 60 of them. The list included foundational pieces such as a key-value store, tracing, logging, and observability infrastructure. Worse, early prototypes already pulled in nearly a thousand third-party Rust crates, many of which were transitive dependencies and largely unvetted, posing potential supply-chain risks.</p>
+<p>On top of all that, the org had a hard commitment to deliver the already long-delayed OpenAI bare-metal SKUs that had been promised for years. This work started around May 2024 with a target of Spring 2025 and was led by a Principal engineer who had evidently never tackled a task of that scale.</p>
+<p>Fast-forward to March 10, 2025: OpenAI signed an <a href="https://www.coreweave.com/news/coreweave-announces-agreement-with-openai-to-deliver-ai-infrastructure">$11.9 billion compute deal with CoreWeave</a> for model training and services. Sam Altman, OpenAI’s CEO, declared that “Advanced AI systems require reliable compute, and we’re excited to continue scaling with CoreWeave so we can train even more powerful models and offer great services to even more users” — words that landed as a pointed comment on Azure’s reliability and scalability. This was significant because just weeks earlier at the World Economic Forum in Davos, Satya Nadella had highlighted Microsoft’s “ROFR” (right of first refusal) with OpenAI, stating that OpenAI would need to come to Microsoft first and could only look elsewhere if Microsoft could not deliver.</p>
+<p>In September 2025, OpenAI—still technically under Microsoft’s ROFR—<a href="https://investors.coreweave.com/news/news-details/2025/CoreWeave-Expands-Agreement-with-OpenAI-by-up-to-6-5B/default.aspx">expanded its CoreWeave agreement by another $6.5 billion</a>. Around the same period, OpenAI also committed to a massive, multi-year computing power deal with Oracle valued at $300 billion. Microsoft, meanwhile, conducted major layoffs—approximately 15,000 roles across waves in May and July 2025 —most likely to compensate for the immediate losses to CoreWeave ahead of the next earnings calls.</p>
+<p>One can reasonably infer that Microsoft struggled to meet OpenAI’s demanding requirements on time and at scale. That outcome should come as no surprise after reading this series.</p>
+<h2 id="part-3">Part 3</h2>
+<p>1 April 2026</p>
+<p>Circling back to the origins of Azure, Cutler’s intent was to produce a system with the same level of quality, unshakable reliability, and attention to detail he was famous for in his work on VMS and NT. In a <a href="https://www.zdnet.com/article/red-dog-five-questions-with-microsoft-mystery-man-dave-cutler/">2009 interview</a> with ZDNET, he declared that the intent [for the Azure Fabric Controller] was that “it manages the placement, provisioning, updating, patching, capacity, load balancing, and scale out of nodes in the cloud all <strong>without any operational intervention.</strong>” (emphasis added) From my years with one of the original contributors to the Fabric, I learned that touching the nodes by hand was strictly off-limits: the original design intent was for Azure to operate without human intervention.</p>
+<p>When discussing the discretion around Azure promises at the time, Cutler said, “The answer to this is simply that the RD group is very conservative and we are not anywhere close to being done.” He further added that “[they] are taking each step slowly and attempting to have features 100% operational and solidly debugged before talking about them.” That was on February 24, 2009. A mere 48 weeks later, Azure shipped for general consumption.</p>
+<p>Fast forward to Summer 2025, and the Secretary of Defense, Pete Hegseth, <a href="https://www.war.gov/News/News-Stories/Article/Article/4288992/pentagon-halts-chinese-coders-affecting-dod-cloud-systems/">publicly cited</a> “a breach of trust” with Microsoft, following <a href="https://www.propublica.org/article/microsoft-digital-escorts-pentagon-defense-department-china-hackers">a ProPublica</a> article describing “digital escort sessions” conducted on Azure computers. The article details how escort sessions involve specialized $18-per-hour employees who copy/paste and execute commands on government cloud nodes under the direction of Microsoft support personnel, often based in foreign countries, including China.</p>
+<p>However, direct node access and manual interventions are common daily practices that extend well beyond government clouds. Cutler’s vision of a “no human touch” cloud service unfortunately never materialized, as the article mentions “hundreds of interactions” each month for the government clouds alone. The article reveals that the program was devised at the highest levels of the company, with support from CVP-level contributors who declared that “the digital escort strategy allowed the company to ‘go to market faster,’ positioning it to win major federal cloud contracts.”</p>
+<p>Azure shipped as an unfinished product under intense market pressure, and major corners were cut. Notably, routine manual intervention on the nodes was part of the strategy. Marketing and competitive pressure often work in mysterious ways; however, the 2025 articles do not explain <em>why</em> manual repairs were needed on the nodes. The answer is now simple: the software didn't work as well as hoped, largely because the system was rushed under intense pressure. Cue the post-launch talent exodus, its replacement by people with very different experience levels, and you end up with a system that overpromises and underdelivers, drowning in unsolvable problems.</p>
+<p>This gap between Cutler’s “no human touch” ideal and the reality of hundreds of manual interventions each month wasn’t abstract to me. In the Overlake team and Compute Node Services, the same underlying fragility I observed since day one, namely chronic crashes, resource leaks, malformed VMs, and a bloated agent ecosystem that no one could fully explain, created exactly the kind of instability that demanded constant human firefighting, including on sensitive government clouds. What I encountered in 2023–2024 was not occasional edge cases, but a steady stream of symptoms from a system that had never been allowed to stabilize, despite the foundations, namely the hypervisor and Windows OS, being robust. The manual escort sessions were, in many ways, the visible symptom of deeper architectural and process debt. I began raising these issues internally, including through formal warnings that eventually reached the highest levels of the company.</p>
+<p>On one particular occasion, a feature that had been baking for <em>eleven months</em>, intended to exchange secret encryption keys between some actor in the guest VMs and the host OS, generated two Sev-2 incidents within hours of being rolled out to general production. It turned out that one of the agents was calling into another <em>via an unknown endpoint</em>, resulting in errors logged on both sides. An infinite retry loop caused both agents to be busy logging errors, saturating the circular logs and reducing their horizon from the usual 2-3 days to about two hours. This incident illustrates a lack of deep code ownership, overly complex inter-agent interactions, gaps in technical leadership, and testing practices that allow major defects to reach production. I distinctly remember asking the dev manager for permission to halt the worldwide rollout, and it took the teams the entire weekend and half of the following week to roll back the system to the previous version.</p>
+<p>In another instance, it took <em>three months</em>, from January to March 2024, to run a file-deletion script across the fleet to clean up leaked files that had triggered a 100GB temporary files threshold on some nodes. Systemic failures and limitations of the automated systems, internally known as “OaaS” and “Geneva Actions,” made a simple task daunting. These incidents were emblematic of the daily reality for Azure OPEX teams: a constant flood of issues stemming directly from instabilities in the node software and in the surrounding support systems. These were not isolated failures but part of a persistent pattern. The same poorly understood, interdependent agent ecosystem creates fragile chains that turn minor changes into production crises.</p>
+<p>For Azure customers, those failures mostly manifest during commissioning or decommissioning large numbers of resources, or during other operations involving the node management stack. Nodes experiencing failures are placed in an “unhealthy” state, and user workloads are migrated to other physical machines so the faulty node can be repaired, causing service interruptions as VMs must be suspended and the gigabytes of memory they consume copied to another machine, where the VMs are “rehydrated,” and these recovery operations are not immune to errors. Resource leaks, crashes, “rogue” and “zombie” VMs, and node health issues are generally accommodated during normal times, as Azure has some room to spare and personnel to help with recovery around the clock. However, how the system would cope near capacity, for example, in case of crisis, is anyone’s guess. A “run on the bank” where a large number of customers suddenly require increased capacity is likely to end in a disaster.</p>
+<p>As these issues accumulated, I began raising them more formally through my management chain, including through structured warnings that ultimately reached senior leadership and beyond. I also mentioned potential security issues that I had discovered along the way. The responses varied from acknowledgment to defensiveness, revealing how deeply the culture had adapted to operating in a state of perpetual firefighting rather than addressing root causes. This tension came to a head with the Azure-wide Rust mandate, conflicting porting plans, and the parallel demands of high-visibility projects such as the long-delayed OpenAI bare-metal SKUs. What started as technical disagreements quickly exposed larger strategic and cultural fractures within the organization.</p>
+<h2 id="part-4">Part 4</h2>
+<p>1 April 2026</p>
+<p>Azure has operated under constant strain for as long as I can remember. Even during the periodic “quality pushes,” the backlog of issues never shrank; it only grew. In the spring and summer of 2024, a major push began to raise the number of VMs each node could host. The business case was straightforward: scaling up density on existing servers is far cheaper than building new data centers.</p>
+<p>On-premise Azure deployments had always been capped at 16 VMs per node. Microsoft’s own commercial clouds had run at 32 until that year, still a tiny fraction of the 1,024 the hypervisor itself could theoretically support. The goal was a 50% increase to 48 VMs per node, with 64 as the longer-term target. What should have been a matter of removing a few arbitrary software limits turned into a 50% increase in crashes and incidents. The problems scaled in exact proportion to the density.</p>
+<p>Earlier, while I was still working on the hypervisor interface re-engineering plan for the bottom of the Azure node stack, I had run a study with the Core OS team that owned the other side of the Hypervisor API. Call-trace data showed the node agents collectively hammering the hypervisor through its WMI user-mode interface at up to 10,000 calls per second during peak bursts. The Hyper-V team had no visibility into which agents were responsible or why so many calls were necessary. On our side, no one could give a definitive answer either.</p>
+<p>At that point, it became clear that the Overlake offload port would never happen. Not only because of the dependencies I described earlier, but because of the sheer dynamic behavior of the stack. The Hyper-V team had planned a cleaner, <a href="https://learn.microsoft.com/en-us/virtualization/api/hcs/overview">HCS</a>-style interface with a gRPC frontend, but the Azure team, under tight timelines, decided to press ahead with the existing VM abstraction layer (VMAL) and keep calling through <a href="https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-start-page">WMI</a> on the host as a stopgap. Even setting aside the Linux-port issues, the call volume made the plan impossible, even without factoring in the 50% and later 100% density increase expected to be layered on top. These elements combined into what I came to see as an unsustainable stretch of work, a plan that lacked the necessary depth and visibility to succeed.</p>
+<p>I stepped away from that part of the organization. The principal engineer who inherited the effort, a highly respected Windows veteran who had led the ARM32 port back in the Windows 8 era, lasted ten months before he, too, left the team. The VM management stack never ran offloaded from the Overlake/Azure Boost SoC.</p>
+<p>After stepping away from the VM density and offload work, I turned my attention to another foundational piece of the Azure node stack: the set of components the team called the “instance metadata services.” The name was borrowed from Amazon’s EC2. On Azure, it consists of a customer-facing web server (“WireServer”) running on each node’s host OS, together with supporting service components. One of its endpoints is <a href="https://learn.microsoft.com/en-us/azure/virtual-machines/instance-metadata-service?tabs=windows">publicly documented</a> and intended to provide information to guest VMs. What stood out was that this web service runs on the host OS, the secure side of the machine.</p>
+<p>Virtual machines are designed to provide strong isolation. A guest VM is a <em>containment</em> boundary: escaping it is difficult, and other VMs on the same node, as well as the host, share almost nothing with it. The VMs themselves act as security boundaries. A less obvious fact is that the host OS is not isolated from the VMs in the same way. The memory pages belonging to each VM partition are mapped into processes on the host. On Windows, these are the vmmem.exe processes. This mapping is necessary for practical operations such as saving a VM’s state to disk, including its full memory contents. The direct corollary is that any successful compromise of the host can give an attacker access to the complete memory of every VM running on that node. Keeping the host secure is therefore critical.</p>
+<p>In that context, hosting a web service that is directly reachable from any guest VM and running it on the secure host side created a significantly larger attack surface than I expected. In that same period, another team introduced the <a href="https://learn.microsoft.com/en-us/azure/virtual-machines/metadata-security-protocol/overview">Metadata Security Protocol</a>, which aims to enhance the security of Azure metadata services by adding HTTP headers that contain a hash-based message authentication code. While this new protocol is a welcome addition to mitigate illegitimate requests, it does not address the core concern I had about an attack directed at the web server itself.</p>
+<p>Many VM escape exploits exploit vulnerabilities in the virtual device drivers that sit halfway between the host and the VMs. Running a web server on the host OS with unsecured endpoints exposed to guest VMs, whether signed or not, poses a greater security risk. My recommendation was to remove WireServer and IMDS from the nodes entirely, a view shared without reservation by a VP security architect, author of a popular book about threat modeling, with whom I shared my concerns.</p>
+<p>Upon further digging, I discovered that WireServer was maintaining in-memory caches containing unencrypted tenant data, all mixed in the same memory areas, in violation of all hostile multi-tenancy security guidelines. It is conceivable that, with a little poking, an attacker could obtain data, including secrets such as certificates, belonging to other tenants on the node. Moreover, the code was leaking cached entries and even entire caches due to misunderstood memory ownership rules, and suffered from a large number of crashes, in the order of 300,000 to 500,000 crashes per month for the WireServer web server alone across the fleet.</p>
+<p>New code was throwing C++ exceptions in a codebase that was originally exception-free. The team had coding guidelines in direct contradiction of those of the larger organization, and their testing practices didn’t include long-running tests, so they missed memory leaks and other defects. The team had reached a point where it was too risky to make any code refactoring or engineering improvements. I submitted several bug fixes and refactoring, notably using smart pointers, but they were rejected for fear of breaking something. This further illustrates the pervasive gap in technical leadership throughout the organization.</p>
+<p>I described the WireServer/IMDS subsystem running on each Azure node as a “walking security liability,” which should be moved out of the nodes, a view shared by many stakeholders outside the organization. The team’s plan for Overlake was to repeat the same thing under a different name, thereby exposing the Azure Boost SoC to any guest VM through a direct network connection. These services should be hosted as first-party cloud services, with a credential/secrets cache inside each VM that needs it, containing only that VM’s secrets, encrypted with the help of a vTPM where applicable. This arrangement would also have worked well in bare-metal scenarios as an opt-in package leveraging the physical TPM.</p>
+<p>The org’s leadership responded with strong defensiveness and denial. Not long afterward, the organization terminated my employment.</p>
+<h2 id="part-5">Part 5</h2>
+<p>2 April 2026</p>
+<blockquote>
+<p>If you hear hoofbeats, think horses, not zebras.</p>
+</blockquote>
+<p>Microsoft rushed Azure out of the gates under intense competitive pressure. Corners were cut. Fundamental principles of reliability and operational simplicity were quietly abandoned. The company formalized the idea that defects could be fixed through human intervention on live production systems, all to accelerate time-to-market and secure major federal cloud contracts. As VP-level executives later admitted, the “digital escort strategy” helped the company “go to market faster.” Instead of going back to the drawing board to tackle the growing technical debt, Microsoft relied on quick fixes: layers of automation running mitigation scripts, a growing team of on-call staff, and, when automation was not enough, manual repairs. Public reports revealed hundreds of these interventions monthly on sensitive government clouds alone. In reality, across the much larger commercial fleet, the total number of interventions was significantly higher.</p>
+<p>OPEX and support engineers accessing privileged parts of the system submit a Just-In-Time (JIT) request for approval, which is broadcast on a dedicated mailing list. Any full-time member of the organization can approve these requests. Once approved, the requester receives 8 hours of system access, during which they can interact with physical nodes and fabric controllers, and manage secrets when the requested access level is set to RdmSecretsAdministrator. In just over two months, from August 14, 2024, to October 26, 2024, the Outlook folder I created to separate JIT requests from other messages collected 14,209 requests — nearly 200 per day. What may have started as temporary workarounds became standard procedures, just part of doing business. Azure never operated as smoothly or independently as promised. What Microsoft presented to the world, and to its most demanding customers, was a sophisticated system perpetually on life support.</p>
+<p>This foundational fragility, rooted in rushed decisions and wishful thinking about how fast the platform could grow and stabilize, led to small but ongoing disruptions. Over time, those disruptions built up. The result was a classic butterfly effect: internal flaws in Azure node software quality, testing discipline, and architectural clarity spread outward, undermining the execution of high-visibility commitments.</p>
+<p>By early 2025, OpenAI — still nominally under Microsoft’s right of first refusal — began aggressively diversifying its compute footprint. The visible consequences quickly became evident: Wall Street grew doubtful despite record profits, and investor confidence sharply declined. From its peak in late October 2025, Microsoft’s stock dropped over 30% in the following months, wiping out more than a trillion dollars in market value. The hoofbeats had been present all along.</p>
+<p>Hindsight makes the better path clear: pause aggressive feature velocity, invest heavily in stabilizing the core node stack, simplify the agent ecosystem, and rebuild testing and ownership discipline before layering on ambitious offload projects or promising bare-metal capabilities to flagship customers. But that path was never pursued. The organization had already adapted to constant firefighting. More importantly, Microsoft no longer had the deep senior systems talent — the experienced kernel, virtualization, and distributed-systems engineers who built the original Fabric — needed for such a fundamental overhaul. Replacing or re-architecting a system of Azure’s scale and complexity is like swapping an airplane’s engines mid-flight. Not impossible in theory, but extremely risky in practice, especially when the crew has changed and the original expertise has mostly left. The reality is clear: there is no quick fix. Azure is in a deep structural hole, and the company must now operate with the platform it has while stabilizing it under full load.</p>
+<p>The situation was salvageable, though. In 2024, I read the OpenAI PM specs, which detail the demands and promises Azure made to meet their needs. The current plans are likely to fail — history has proven that hunch correct — so I began creating new ones to rebuild the Azure node stack from first principles. A simple cross-platform component model to create portable modules that could be built for both Windows and Linux, and a new message bus communication system spanning the entire node, where agents could freely communicate across guest, host, and SoC boundaries, were the foundational elements of a new node platform. Those ideas were widely shared through written documents, with some presented at a high-profile cross-organization technical meeting. Some of OpenAI’s requests for their future bare-metal nodes, which would have allowed them to extract the last few percent from the hardware, required extensions to the Overlake card itself. I drafted these extensions and shared them with a division’s Technical Fellow, a renowned kernel architect who had recently shifted to Azure and whom I knew from my previous tenure in the kernel team. The improvements might have been part of Overlake 4, the next major version of the Windows Boost offloading platform, and a software-only implementation could have been deployed in the meantime to enable true read-only remote system images and fast system resets, a useful feature that allows for quick experimentation and rollbacks common in research domains.</p>
+<p>I created a new code repository that adheres to the latest Azure governance standards and began developing actual components, aiming to set an example and build momentum. I solved the “million files deletion problem,” which seems simple but still needs careful handling to run reliably at cloud scale. Next, I built an encrypting LRU cache to separate tenants’ data and follow basic security principles in hostile multi-tenancy environments. Still fairly simple, but that’s the goal of componentization. These components could be called directly from existing code, significantly enhancing resilience and security with minimal changes beyond deletions.</p>
+<p>The practical strategy I suggested was incremental improvement, where code sections are isolated and replaced with a simple call to a new component: choose an area, develop and thoroughly test a reliable, reusable replacement, then remove the old code and replace it with a call to the new component. This strategy goes a long way toward modernizing a running system with minimal disruption and offers gradual, consistent improvements. It uses small, reliable components that can be easily tested separately and solidified before integration into the main platform at scale. Eventually, there is nothing left to carve out, and the original components are just skeletons calling into new ones. Componentization also enables moving elements around; for example, a secure cache could be used on the offload accelerator, on the host, inside a guest VM, a guest L1/L2 container, or on a bare-metal node, with a uniform message bus connecting all parts.</p>
+<p>This vision was met with disdain among lower-level management in Azure Core, who may not have understood the urgency — or the scale — of the changes needed to make the platform truly scalable while <em>lowering</em> long-term OPEX costs. Gradual enhancement through componentization challenged the status quo of constant firefighting and the comfort of familiar, yet fragile, code paths. In the end, the organization chose the easiest route at the moment: keep adding complexity on a fragile foundation instead of investing in a careful, step-by-step modernization that could have restored autonomy and reliability.</p>
+<p>The outcome was expected. High-profile commitments fell through, customer trust continued to decline, and the internal weaknesses I had pointed out from the start kept showing in more visible ways outside the Redmond campus. What started as engineering disagreements turned into something bigger: a test of whether Microsoft could still perform at the level its most strategic customers and partners expected. The hoofbeats grew louder. Over the following months, I extended my concerns beyond my direct managers.</p>
+<h2 id="part-6">Part 6</h2>
+<p>2 April 2026</p>
+<p>Over the following months, with the patterns I had documented — agent sprawl and testing gaps, the continuous influx of crashes, the security surface in foundational services, and the repeated preference for short-term mitigations over structural fixes — all becoming increasingly difficult to contain at the working level, I extended my concerns upward. On November 19, 2024, I sent a detailed letter to the Executive Vice President of Cloud + AI. It laid out the technical findings in full, referenced the leadership gaps I had observed, and included concrete proposals for addressing the root causes.</p>
+<p>On January 7, 2025 — still months before any public indication of strain in the OpenAI relationship — I sent a more concise executive summary to the CEO. The letter opened with the potential risks to national security and to Microsoft’s core business, then followed with a compact set of bullets summarizing the key issues in the Azure node stack and the organizational challenges I had seen. It also noted that I stood ready to help lead a first-principles reconstruction of the Azure node management layer, if given the opportunity in the right capacity.</p>
+<p>When those communications produced no acknowledgment, I took the customary step of writing to the Board through the corporate secretary. That letter referenced the lack of response to the earlier messages, attached the communication sent to the CEO, and observed that the quasi-loss of OpenAI and the related issues appeared preventable given the advance warnings.</p>
+<p>In the months that followed, I received no reply — not a single acknowledgment, question, request for clarification, or confirmation of receipt — from the EVP, the CEO, or the Board. This complete absence of any feedback added its own dimension. The issues had been surfaced in calibrated, good-faith communications well in advance of visible customer shifts. Public optimism around Azure capabilities and strategic commitments continued at full pace. Yet the ground-level signals simply produced silence.</p>
+<p>The series began with a single engineer’s shock on his first day back in the organization. It ends with the same observation, now seen at every layer: the foundational problems in the node stack were visible, the operational and security consequences were measurable, and the proposed paths forward were concrete. At no level did those signals generate a response.</p>
+<p>The hoofbeats I mentioned in the previous installment had become audible far beyond the Azure Core buildings on the West Campus. Whether they were heard at the top remains unknown.</p>
+<p>Find me on LinkedIn: <a href="https://www.linkedin.com/in/axelrietschin">https://www.linkedin.com/in/axelrietschin</a></p>
+<hr />
+<p>April 4, 2026: CLARIFICATION: <em>“I took the customary step of writing to the Board through the corporate secretary,”</em> in paragraph 7, should be understood as it is customary to write to a company’s board or directors <em>through the corporate secretary</em> (as opposed to writing to board members directly or through any other avenue).</p></article>
+  </main>
+
+  <footer>
+    <details>
+      <summary>
+        <div class="footer-row">
+          
+          meta
+          
+          <a href="/recent-changes">recent</a>
+          <a href="/mastodon-thread-unroller" class="not-extra-small">random</a>
+          <a href="/posts">posts</a>
+          <a href="/sitemap" class="not-extra-small">sitemap</a>
+          <a href="mailto:zachpmanson@gmail.com?subject=On 'How Microsoft Vaporized a Trillion Dollars'">reply</a>
+        </div>
+      </summary>
+      <div class="footer-row">
+        <input type="radio" name="theme" id="theme-system" class="invisible" checked>
+        <label for="theme-system" class="nonsystem-only"><a>system</a></label>
+
+        <input type="radio" name="theme" id="theme-light" class="invisible">
+        <label for="theme-light" class="dark-only"><a>light</a></label>
+
+        <input type="radio" name="theme" id="theme-dark" class="invisible">
+        <label for="theme-dark" class="light-only"><a>dark</a></label>
+        
+          <a href="https://github.dev/zachpmanson/notes/blob/main/./notes/Archive/Folklore/How Microsoft Vaporized a Trillion Dollars.md" class="desktop">edit</a>
+          <a href="https://github.com/zachpmanson/notes/edit/main/./notes/Archive/Folklore/How Microsoft Vaporized a Trillion Dollars.md" class="mobile">edit</a>
+          <a href="/sitemap" class="extra-small">sitemap</a>
+          <a href="/mastodon-thread-unroller" class="extra-small">random</a>
+        </div>
+      </div>
+
+      
+
+      <p class="backlinks"><strong>Incoming:</strong>
+        
+        <a href="/recent-changes">Recent Changes</a>
+        
+        </span>
+      </p>
+      
+
+      
+      <p>
+        
+
+        <span class="backlinks">
+          <strong>
+            Updated:
+          </strong>
+          <date>2026-11-26</date>
+        </span>
+
+      </p>
+    </details>
+
+  </footer>
+  
+  <script type="module">
+    let allActivatedLinks = document.querySelectorAll(".activated-link");
+
+    function checkVisible(el) {
+      let rect = el.getBoundingClientRect();
+      let viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+      return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+    }
+
+
+    function scrollActivatedLinksIntoView(behavior="smooth") {
+      for (let link of allActivatedLinks) {
+        if (checkVisible(link.parentElement)) {
+          link.scrollIntoView({behavior: behavior, block: "center", inline: "nearest"});
+        }
+      }
+    }
+    
+    document.querySelector("nav").addEventListener("mouseleave", ()=>{
+      setTimeout(scrollActivatedLinksIntoView, 350);
+    });
+    
+    scrollActivatedLinksIntoView(location.hash === "#nav" ? "instant":"smooth");
+  </script>
+  <script type="module">
+      if (localStorage?.getItem("theme") === "dark") {
+        document.querySelector("#theme-dark").checked = true;
+      } else if (localStorage?.getItem("theme") === "light") {
+        document.querySelector("#theme-light").checked = true;
+      }
+
+      function setTheme(theme) {
+        localStorage.setItem("theme", theme);
+      }
+      document.querySelectorAll("#theme-system").forEach(el => el.addEventListener("click", () => setTheme(undefined)));
+      document.querySelectorAll("#theme-light").forEach(el => el.addEventListener("click", () => setTheme("light")));
+      document.querySelectorAll("#theme-dark").forEach(el => el.addEventListener("click", () => setTheme("dark")));
+  </script>
+
+</body>
+
+</html>
