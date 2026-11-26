@@ -9,7 +9,7 @@ I know very little about it, but I suspect that I am the world's greatest fan of
 ![[top-songs-2019.png]]
 I have no idea if the band is popular. The song is on their 1995-2018 greatest hits album[^greatest] -- given they have a greatest hits album they must have some kind of fan base. The frontman of the band appears to run the record label that publishes their music, [Rose Music](https://www.roserecordsshop.com/?ca=42),[^rose-music] and they are still doing tours in 2026.
 
-His website lists that he will soon be performing as the opening act to "the airport music concert"[^translated] as a one man act at Saporo Musica Hall Cafe with tickets going for 5000yen (drink included).  I wish I was going! "It will be a live that you can enjoy relaxingly at the cafe."[^translated] According to the Google Form the tickets are sold out.
+His website lists that he will soon be performing as the opening act to "the airport music concert"[^translated] as a one man act at Saporo Musica Hall Cafe with tickets going for 5000yen (drink included).  I wish I was going! "It will be a live that you can enjoy relaxingly at the cafe."[^translated] Sadly the Google Form tells me the tickets are sold out.
 
 According to Spotify, I have been listening to the song since 7th of Feb, 2019. It was the 24th song by Sunny Day Service I saved that week, though it's by far the one that stuck with me the most. I associate the song with the nascent relationship I had at the time. It was just before my final year of school, and after a monthlong family trip I had been reunited with my high school girlfriend of 5 months. After returning to Perth, there was an wave of new music in my life which this song was a part of. 
 
