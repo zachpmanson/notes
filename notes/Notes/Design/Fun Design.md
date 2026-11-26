@@ -30,3 +30,8 @@ village cinemas text colour a loading indicator
 
 ![[girl-surgery.png]]
 
+
+[tylerbainbridge.com](https://www.tylerbainbridge.com/)
+
+![[Pasted image 20261126130259.png]]
+
