@@ -4,7 +4,7 @@ date: 2026-11-10
 ---
 
 
-I know very little it, but I suspect that I am the world's greatest fan of the song *Kyo o Ikiyo* by Sunny Day Service. In 2019 it was my 8th most listened to song, by pessimistic estimates I have listened to it hundreds of times.
+I know very little about it, but I suspect that I am the world's greatest fan of the song *Kyo o Ikiyo* by Sunny Day Service. In 2019 it was my 8th most listened to song, by pessimistic estimates I have listened to it hundreds of times.
 
 ![[top-songs-2019.png]]
 I have no idea if the band is popular. The song is on their 1995-2018 greatest hits album[^greatest] -- given they have a greatest hits album they must have some kind of fan base. The frontman of the band appears to run the record label that publishes their music, [Rose Music](https://www.roserecordsshop.com/?ca=42),[^rose-music] and they are still doing tours in 2026.
